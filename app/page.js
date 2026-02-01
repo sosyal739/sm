@@ -680,19 +680,33 @@ export default function Home() {
                 {t.hero.description}
               </p>
               <div className="flex flex-wrap gap-4">
-                <Button size="lg" className="bg-[#34A853] hover:bg-[#2d9249] text-white" asChild>
+                <Button size="lg" className="bg-[#34A853] hover:bg-[#2d9249] text-white shadow-lg hover:shadow-2xl transform hover:scale-105 transition-all duration-300 animate-pulse-slow" asChild>
                   <a href="https://wa.me/491724106463" target="_blank" rel="noopener noreferrer">
-                    <MessageCircle className="mr-2 h-5 w-5" />
+                    <MessageCircle className="mr-2 h-5 w-5 animate-bounce-slow" />
                     {t.hero.cta1}
                   </a>
                 </Button>
-                <Button size="lg" className="bg-[#4285F4] hover:bg-[#3367d6] text-white" asChild>
-                  <a href="tel:+491724106463">
-                    <Phone className="mr-2 h-5 w-5" />
-                    {t.hero.cta2}
-                  </a>
+                <Button size="lg" className="bg-[#4285F4] hover:bg-[#3367d6] text-white shadow-lg hover:shadow-2xl transform hover:scale-105 transition-all duration-300" onClick={() => scrollToSection('contact')}>
+                  <Mail className="mr-2 h-5 w-5" />
+                  {t.hero.cta2}
                 </Button>
               </div>
+              <style jsx>{`
+                @keyframes pulse-slow {
+                  0%, 100% { box-shadow: 0 0 0 0 rgba(52, 168, 83, 0.7); }
+                  50% { box-shadow: 0 0 0 10px rgba(52, 168, 83, 0); }
+                }
+                @keyframes bounce-slow {
+                  0%, 100% { transform: translateY(0); }
+                  50% { transform: translateY(-5px); }
+                }
+                .animate-pulse-slow {
+                  animation: pulse-slow 2s infinite;
+                }
+                .animate-bounce-slow {
+                  animation: bounce-slow 1s infinite;
+                }
+              `}</style>
               <div className="flex items-center space-x-4 pt-4">
                 <div className="flex -space-x-2">
                   {[1, 2, 3].map((i) => (
