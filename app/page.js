@@ -209,7 +209,7 @@ const translations = {
       subtitle: 'Lassen Sie Ihr Unternehmen mit Google Ads, Meta Ads & SEO wachsen',
       description: 'Verlieren Sie sich nicht im Chaos der digitalen Welt. Wir bauen ein veränderungsresistentes, messbares und konversionsorientiertes Erfolgssystem für Ihr Unternehmen auf.',
       cta1: 'WhatsApp-Hotline',
-      cta2: 'Jetzt anrufen',
+      cta2: 'Angebot Erhalten',
       clients: 'Zufriedene Kunden & Firmen'
     },
     stats: {
