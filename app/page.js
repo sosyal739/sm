@@ -236,6 +236,18 @@ const translations = {
           description: 'Erreichen Sie Ihre Zielgruppe mit Facebook- und Instagram-Anzeigen. Detailliertes Targeting und konversionsorientierte Strategien.'
         },
         {
+          title: 'YouTube Video-Werbung',
+          description: 'Erreichen Sie Millionen mit Videoinhalten. Steigern Sie Ihre Markenbekanntheit mit TrueView-, Bumper- und Discovery-Anzeigen.'
+        },
+        {
+          title: 'TikTok Ads',
+          description: 'Der effektivste Weg, um ein junges und dynamisches Publikum zu erreichen. Maximieren Sie Ihre Markensichtbarkeit mit viralen Inhalten und gezielten Kampagnen.'
+        },
+        {
+          title: 'X (Twitter) Werbung',
+          description: 'Heben Sie sich bei Trendthemen hervor. Schaffen Sie Echtzeit-Engagement mit Promoted Tweets und Trend Takeover.'
+        },
+        {
           title: 'SEO Optimierung',
           description: 'Content-Strategie und technisches SEO, das Google und Nutzer lieben und organischen Traffic bringt.'
         },
