@@ -764,33 +764,57 @@ export default function Home() {
       </section>
 
       {/* Technologies Section */}
-      <section className="py-16 bg-white">
+      <section className="py-20 bg-gradient-to-br from-gray-50 to-white">
         <div className="container mx-auto px-4">
-          <h2 className="text-center text-sm font-semibold text-muted-foreground mb-8">{t.technologies.title}</h2>
-          <div className="flex flex-wrap justify-center items-center gap-8 md:gap-12">
-            <div className="text-center">
-              <div className="text-4xl mb-2">📊</div>
-              <p className="text-xs font-medium">Google Analytics</p>
+          <h2 className="text-center text-2xl font-bold text-gray-800 mb-12">{t.technologies.title}</h2>
+          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-8">
+            <div className="group text-center p-6 rounded-xl bg-white shadow-lg hover:shadow-2xl transition-all duration-300 hover:-translate-y-2">
+              <div className="text-7xl mb-4 group-hover:scale-110 transition-transform duration-300">📊</div>
+              <p className="text-sm font-bold text-gray-800">Google Analytics</p>
             </div>
-            <div className="text-center">
-              <div className="text-4xl mb-2">🎯</div>
-              <p className="text-xs font-medium">Google Ads</p>
+            <div className="group text-center p-6 rounded-xl bg-white shadow-lg hover:shadow-2xl transition-all duration-300 hover:-translate-y-2">
+              <div className="text-7xl mb-4 group-hover:scale-110 transition-transform duration-300">🎯</div>
+              <p className="text-sm font-bold text-gray-800">Google Ads</p>
             </div>
-            <div className="text-center">
-              <div className="text-4xl mb-2">📱</div>
-              <p className="text-xs font-medium">Meta Ads</p>
+            <div className="group text-center p-6 rounded-xl bg-white shadow-lg hover:shadow-2xl transition-all duration-300 hover:-translate-y-2">
+              <div className="text-7xl mb-4 group-hover:scale-110 transition-transform duration-300">📱</div>
+              <p className="text-sm font-bold text-gray-800">Meta Ads</p>
             </div>
-            <div className="text-center">
-              <div className="text-4xl mb-2">🔍</div>
-              <p className="text-xs font-medium">SEO Tools</p>
+            <div className="group text-center p-6 rounded-xl bg-white shadow-lg hover:shadow-2xl transition-all duration-300 hover:-translate-y-2">
+              <div className="text-7xl mb-4 group-hover:scale-110 transition-transform duration-300">🎬</div>
+              <p className="text-sm font-bold text-gray-800">YouTube Ads</p>
             </div>
-            <div className="text-center">
-              <div className="text-4xl mb-2">📈</div>
-              <p className="text-xs font-medium">Analytics</p>
+            <div className="group text-center p-6 rounded-xl bg-white shadow-lg hover:shadow-2xl transition-all duration-300 hover:-translate-y-2">
+              <div className="text-7xl mb-4 group-hover:scale-110 transition-transform duration-300">🎵</div>
+              <p className="text-sm font-bold text-gray-800">TikTok Ads</p>
             </div>
-            <div className="text-center">
-              <div className="text-4xl mb-2">🎨</div>
-              <p className="text-xs font-medium">Creative Tools</p>
+            <div className="group text-center p-6 rounded-xl bg-white shadow-lg hover:shadow-2xl transition-all duration-300 hover:-translate-y-2">
+              <div className="text-7xl mb-4 group-hover:scale-110 transition-transform duration-300">🐦</div>
+              <p className="text-sm font-bold text-gray-800">X (Twitter)</p>
+            </div>
+            <div className="group text-center p-6 rounded-xl bg-white shadow-lg hover:shadow-2xl transition-all duration-300 hover:-translate-y-2">
+              <div className="text-7xl mb-4 group-hover:scale-110 transition-transform duration-300">🔍</div>
+              <p className="text-sm font-bold text-gray-800">SEO Tools</p>
+            </div>
+            <div className="group text-center p-6 rounded-xl bg-white shadow-lg hover:shadow-2xl transition-all duration-300 hover:-translate-y-2">
+              <div className="text-7xl mb-4 group-hover:scale-110 transition-transform duration-300">📈</div>
+              <p className="text-sm font-bold text-gray-800">Analytics</p>
+            </div>
+            <div className="group text-center p-6 rounded-xl bg-white shadow-lg hover:shadow-2xl transition-all duration-300 hover:-translate-y-2">
+              <div className="text-7xl mb-4 group-hover:scale-110 transition-transform duration-300">🎨</div>
+              <p className="text-sm font-bold text-gray-800">Creative Tools</p>
+            </div>
+            <div className="group text-center p-6 rounded-xl bg-white shadow-lg hover:shadow-2xl transition-all duration-300 hover:-translate-y-2">
+              <div className="text-7xl mb-4 group-hover:scale-110 transition-transform duration-300">📊</div>
+              <p className="text-sm font-bold text-gray-800">Data Studio</p>
+            </div>
+            <div className="group text-center p-6 rounded-xl bg-white shadow-lg hover:shadow-2xl transition-all duration-300 hover:-translate-y-2">
+              <div className="text-7xl mb-4 group-hover:scale-110 transition-transform duration-300">🎯</div>
+              <p className="text-sm font-bold text-gray-800">Tag Manager</p>
+            </div>
+            <div className="group text-center p-6 rounded-xl bg-white shadow-lg hover:shadow-2xl transition-all duration-300 hover:-translate-y-2">
+              <div className="text-7xl mb-4 group-hover:scale-110 transition-transform duration-300">🚀</div>
+              <p className="text-sm font-bold text-gray-800">Optimization</p>
             </div>
           </div>
         </div>
