@@ -112,7 +112,7 @@ const translations = {
           rating: 5
         },
         {
-          name: 'Ayşe Demir',
+          name: 'Anna Weber',
           role: 'Klinik Sahibi',
           text: 'Kliniğimiz için Google ve Facebook reklamları yaptık. Eskiden haritalarda hiç çıkmazken şimdi bölgemizde ilk sıradayız. Telefonlarımız susmuyor. İşini gerçekten bilen, dürüst ve şeffaf bir uzman.',
           rating: 5
@@ -124,13 +124,13 @@ const translations = {
           rating: 5
         },
         {
-          name: 'Zeynep Kaya',
+          name: 'Sarah Mitchell',
           role: 'Mağaza Sahibi',
           text: 'Sadece reklam satmaya çalışanlardan değil, gerçekten strateji kuran birisi. Sektörümüz rekabetli olmasına rağmen 4 ayda hedeflediğimiz satış rakamlarına ulaştık. Güvenilir ve çalışkan.',
           rating: 5
         },
         {
-          name: 'Can Yılmaz',
+          name: 'Thomas Schmidt',
           role: 'Startup Kurucusu',
           text: 'Startup projemiz için danışmanlık aldık. Bütçemizi en verimli şekilde kullanarak bize harika bir büyüme planı çizdi. Kendisiyle çalışmak bir uzman ile değil, bir iş ortağıyla çalışmak gibi.',
           rating: 5
