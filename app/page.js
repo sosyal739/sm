@@ -48,6 +48,18 @@ const translations = {
           description: 'Facebook ve Instagram reklamlarıyla hedef kitlenize ulaşın. Detaylı hedefleme ve dönüşüm odaklı stratejiler.'
         },
         {
+          title: 'YouTube Video Reklamları',
+          description: 'Video içerikleriyle milyonlarca kişiye ulaşın. TrueView, Bumper ve Discovery reklamlarıyla marka bilinirliğinizi artırın.'
+        },
+        {
+          title: 'TikTok Ads',
+          description: 'Genç ve dinamik kitleye ulaşmanın en etkili yolu. Viral içerikler ve hedefli kampanyalarla marka görünürlüğünüzü maksimize edin.'
+        },
+        {
+          title: 'X (Twitter) Reklamları',
+          description: 'Trend konularda ön plana çıkın. Promoted Tweets ve Trend Takeover ile gerçek zamanlı etkileşim yaratın.'
+        },
+        {
           title: 'SEO Optimizasyonu',
           description: 'Google\'ın ve kullanıcıların seveceği, organik trafik getiren içerik stratejisi ve teknik SEO çalışmaları.'
         },
