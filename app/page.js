@@ -707,13 +707,22 @@ export default function Home() {
               </div>
             </div>
             <div className="relative">
-              <div className="relative rounded-2xl overflow-hidden shadow-2xl">
+              <div className="relative rounded-2xl overflow-hidden shadow-2xl animate-float">
                 <img
                   src="https://customer-assets.emergentagent.com/job_maralpresence/artifacts/cnlyuz94__prompt_create_4k_202601290226%20%281%29.jpeg"
                   alt="Salih Maral - Digital Marketing Expert"
                   className="w-full h-auto"
                 />
               </div>
+              <style jsx>{`
+                @keyframes float {
+                  0%, 100% { transform: translateY(0px); }
+                  50% { transform: translateY(-20px); }
+                }
+                .animate-float {
+                  animation: float 6s ease-in-out infinite;
+                }
+              `}</style>
             </div>
           </div>
         </div>
