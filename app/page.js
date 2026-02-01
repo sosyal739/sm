@@ -424,6 +424,18 @@ const translations = {
           description: 'Reach your target audience with Facebook and Instagram ads. Detailed targeting and conversion-focused strategies.'
         },
         {
+          title: 'YouTube Video Advertising',
+          description: 'Reach millions with video content. Increase your brand awareness with TrueView, Bumper and Discovery ads.'
+        },
+        {
+          title: 'TikTok Ads',
+          description: 'The most effective way to reach a young and dynamic audience. Maximize your brand visibility with viral content and targeted campaigns.'
+        },
+        {
+          title: 'X (Twitter) Advertising',
+          description: 'Stand out in trending topics. Create real-time engagement with Promoted Tweets and Trend Takeover.'
+        },
+        {
           title: 'SEO Optimization',
           description: 'Content strategy and technical SEO that Google and users love, bringing organic traffic.'
         },
