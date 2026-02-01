@@ -397,7 +397,7 @@ const translations = {
       subtitle: 'Grow Your Business with Google Ads, Meta Ads & SEO',
       description: "Don't get lost in the chaos of the digital world. We build a change-resistant, measurable and conversion-focused success system for your business.",
       cta1: 'WhatsApp Hotline',
-      cta2: 'Call Now',
+      cta2: 'Get Quote',
       clients: 'Happy Clients & Companies'
     },
     stats: {
