@@ -626,10 +626,10 @@ export default function Home() {
             </div>
             
             <div className="hidden md:flex items-center space-x-6">
-              <button onClick={() => scrollToSection('services')} className="text-sm font-medium hover:text-[#4285F4] transition-colors">{t.nav.services}</button>
-              <button onClick={() => scrollToSection('success')} className="text-sm font-medium hover:text-[#4285F4] transition-colors">{t.nav.success}</button>
-              <button onClick={() => scrollToSection('about')} className="text-sm font-medium hover:text-[#4285F4] transition-colors">{t.nav.about}</button>
-              <button onClick={() => scrollToSection('contact')} className="text-sm font-medium hover:text-[#4285F4] transition-colors">{t.nav.contact}</button>
+              <button onClick={() => scrollToSection('services')} className="text-sm font-bold text-gray-900 hover:text-[#4285F4] transition-colors">{t.nav.services}</button>
+              <button onClick={() => scrollToSection('success')} className="text-sm font-bold text-gray-900 hover:text-[#4285F4] transition-colors">{t.nav.success}</button>
+              <button onClick={() => scrollToSection('about')} className="text-sm font-bold text-gray-900 hover:text-[#4285F4] transition-colors">{t.nav.about}</button>
+              <button onClick={() => scrollToSection('contact')} className="text-sm font-bold text-gray-900 hover:text-[#4285F4] transition-colors">{t.nav.contact}</button>
             </div>
 
             <div className="flex items-center space-x-2">
