@@ -836,20 +836,23 @@ export default function Home() {
             <p className="text-sm font-semibold text-[#4285F4] mb-2">{t.why.subtitle}</p>
             <h2 className="text-4xl font-bold mb-4">{t.why.title}</h2>
           </div>
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
             {t.why.services.map((service, index) => (
-              <Card key={index} className="hover:shadow-lg transition-shadow border-t-4 border-t-[#4285F4]">
+              <Card key={index} className="hover:shadow-2xl transition-all duration-300 hover:-translate-y-2 border-t-4 border-t-[#4285F4] bg-gradient-to-br from-white to-gray-50">
                 <CardContent className="pt-6">
                   <div className="mb-4">
-                    {index === 0 && <BarChart3 className="h-10 w-10 text-[#4285F4]" />}
-                    {index === 1 && <Users className="h-10 w-10 text-[#EA4335]" />}
-                    {index === 2 && <TrendingUp className="h-10 w-10 text-[#34A853]" />}
-                    {index === 3 && <CheckCircle className="h-10 w-10 text-[#FBBC04]" />}
-                    {index === 4 && <BarChart3 className="h-10 w-10 text-[#EA4335]" />}
-                    {index === 5 && <Award className="h-10 w-10 text-[#4285F4]" />}
+                    {index === 0 && <BarChart3 className="h-12 w-12 text-[#4285F4]" />}
+                    {index === 1 && <Users className="h-12 w-12 text-[#EA4335]" />}
+                    {index === 2 && <div className="text-5xl">🎬</div>}
+                    {index === 3 && <div className="text-5xl">🎵</div>}
+                    {index === 4 && <div className="text-5xl">🐦</div>}
+                    {index === 5 && <TrendingUp className="h-12 w-12 text-[#34A853]" />}
+                    {index === 6 && <CheckCircle className="h-12 w-12 text-[#FBBC04]" />}
+                    {index === 7 && <BarChart3 className="h-12 w-12 text-[#EA4335]" />}
+                    {index === 8 && <Award className="h-12 w-12 text-[#4285F4]" />}
                   </div>
-                  <h3 className="text-xl font-semibold mb-3">{service.title}</h3>
-                  <p className="text-muted-foreground">{service.description}</p>
+                  <h3 className="text-xl font-bold mb-3 text-gray-800">{service.title}</h3>
+                  <p className="text-muted-foreground leading-relaxed">{service.description}</p>
                 </CardContent>
               </Card>
             ))}
