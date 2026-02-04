@@ -791,6 +791,58 @@ export default function Home() {
         <div className="container mx-auto px-4">
           <h2 className="text-center text-2xl font-bold text-gray-800 mb-12">{t.technologies.title}</h2>
           <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-8">
+            {/* Google Ads - REAL LOGO */}
+            <div className="group text-center p-6 rounded-xl bg-white shadow-lg hover:shadow-2xl transition-all duration-300 hover:-translate-y-2">
+              <div className="mb-4 flex items-center justify-center">
+                <svg className="w-16 h-16 group-hover:scale-110 transition-transform duration-300" viewBox="0 0 192 192" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M93.8 18.7c-26.3 6.8-48 25.3-58.7 50.1-3.6 8.3-4.6 12.4-5.5 21.7-.6 6.2-.6 7.8.4 14 2.5 15.6 9.6 30.2 20.5 42.2 7.5 8.3 18.2 16.1 28.5 20.8 6.8 3.1 18.6 6.7 25 7.6 4.4.6 13.6.6 18 0 12.4-1.6 25.2-6.2 36-12.9 3.6-2.2 11-7.7 14-10.4 15.4-13.8 26.3-32.3 30.8-52.3 1.4-6.3 1.8-11.4 1.8-20.5 0-9.1-.4-14.2-1.8-20.5-4.5-20-15.4-38.5-30.8-52.3-13.8-12.4-30.7-21-48.2-24.5-6.3-1.3-24.7-1.3-30 0z" fill="#4285F4"/>
+                  <path d="M86 96l14-28h8l-2 6 12-6h4l8 14-14 14h-8l2-6-12 6h-4z" fill="#FBBC04"/>
+                  <path d="M86 96l14-28h8l-2 6 12-6h4l8 14-14 14h-8l2-6-12 6h-4z" fill="url(#ga_grad)" fillOpacity="0.3"/>
+                  <defs>
+                    <linearGradient id="ga_grad" x1="86" y1="68" x2="86" y2="110" gradientUnits="userSpaceOnUse">
+                      <stop stopColor="white"/>
+                      <stop offset="1" stopColor="white" stopOpacity="0"/>
+                    </linearGradient>
+                  </defs>
+                </svg>
+              </div>
+              <p className="text-sm font-bold text-gray-800">Google Ads</p>
+            </div>
+
+            {/* Facebook Logo */}
+            <div className="group text-center p-6 rounded-xl bg-white shadow-lg hover:shadow-2xl transition-all duration-300 hover:-translate-y-2">
+              <div className="mb-4 flex items-center justify-center">
+                <svg className="w-16 h-16 group-hover:scale-110 transition-transform duration-300" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <circle cx="24" cy="24" r="20" fill="#1877F2"/>
+                  <path d="M29.5 15.5h-3.2c-2.3 0-3.8 1.5-3.8 3.8v2.9h-3.2v4h3.2V37h4.7V26.2h3.2l.5-4h-3.7v-2.5c0-1.1.3-1.8 1.8-1.8h2.2v-3.6c-.4 0-1.7-.2-3.2-.2z" fill="white"/>
+                </svg>
+              </div>
+              <p className="text-sm font-bold text-gray-800">Facebook</p>
+            </div>
+
+            {/* Instagram Logo */}
+            <div className="group text-center p-6 rounded-xl bg-white shadow-lg hover:shadow-2xl transition-all duration-300 hover:-translate-y-2">
+              <div className="mb-4 flex items-center justify-center">
+                <svg className="w-16 h-16 group-hover:scale-110 transition-transform duration-300" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <rect width="48" height="48" rx="12" fill="url(#instagram_grad)"/>
+                  <defs>
+                    <radialGradient id="instagram_grad" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(12.5 51.5) scale(50)">
+                      <stop offset="0" stopColor="#FD5"/>
+                      <stop offset="0.328" stopColor="#FF543F"/>
+                      <stop offset="0.348" stopColor="#FC5245"/>
+                      <stop offset="0.504" stopColor="#E64771"/>
+                      <stop offset="0.643" stopColor="#D53E91"/>
+                      <stop offset="0.761" stopColor="#CC39A4"/>
+                      <stop offset="0.841" stopColor="#C837AB"/>
+                    </radialGradient>
+                  </defs>
+                  <rect x="14" y="14" width="20" height="20" rx="5" stroke="white" strokeWidth="2" fill="none"/>
+                  <circle cx="24" cy="24" r="5" stroke="white" strokeWidth="2" fill="none"/>
+                  <circle cx="35" cy="13" r="1.5" fill="white"/>
+                </svg>
+              </div>
+              <p className="text-sm font-bold text-gray-800">Instagram</p>
+            </div>
             <div className="group text-center p-6 rounded-xl bg-white shadow-lg hover:shadow-2xl transition-all duration-300 hover:-translate-y-2">
               <div className="mb-4 flex items-center justify-center">
                 <svg className="w-16 h-16 group-hover:scale-110 transition-transform duration-300" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
