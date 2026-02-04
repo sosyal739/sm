@@ -626,7 +626,28 @@ export default function Home() {
             </div>
             
             <div className="hidden md:flex items-center space-x-6">
-              <button onClick={() => scrollToSection('services')} className="text-sm font-bold text-gray-900 hover:text-[#4285F4] transition-colors">{t.nav.services}</button>
+              <div className="relative group">
+                <button className="text-sm font-bold text-gray-900 hover:text-[#4285F4] transition-colors flex items-center">
+                  {t.nav.services}
+                  <svg className="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
+                  </svg>
+                </button>
+                <div className="absolute left-0 mt-2 w-64 bg-white rounded-lg shadow-2xl opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 z-50 border border-gray-100">
+                  <div className="py-2">
+                    {t.why.services.map((service, idx) => (
+                      <a
+                        key={idx}
+                        href={`/${lang}/hizmetler/${service.slug}`}
+                        className="block px-4 py-3 text-sm text-gray-700 hover:bg-[#4285F4]/10 hover:text-[#4285F4] transition-colors"
+                      >
+                        <div className="font-semibold">{service.title}</div>
+                        <div className="text-xs text-gray-500 mt-1">{service.description.substring(0, 50)}...</div>
+                      </a>
+                    ))}
+                  </div>
+                </div>
+              </div>
               <button onClick={() => scrollToSection('success')} className="text-sm font-bold text-gray-900 hover:text-[#4285F4] transition-colors">{t.nav.success}</button>
               <button onClick={() => scrollToSection('about')} className="text-sm font-bold text-gray-900 hover:text-[#4285F4] transition-colors">{t.nav.about}</button>
               <button onClick={() => scrollToSection('contact')} className="text-sm font-bold text-gray-900 hover:text-[#4285F4] transition-colors">{t.nav.contact}</button>
