@@ -1273,10 +1273,12 @@ export default function Home() {
             <div>
               <h4 className="font-semibold mb-4">{t.nav.services}</h4>
               <ul className="space-y-2 text-sm text-gray-400">
-                <li>Google Ads</li>
-                <li>Meta Ads</li>
-                <li>SEO</li>
-                <li>{lang === 'de' ? 'Beratung' : lang === 'en' ? 'Consulting' : 'Danışmanlık'}</li>
+                <li><a href={`/${lang}/hizmetler/google-ads`} className="hover:text-white transition-colors">Google Ads</a></li>
+                <li><a href={`/${lang}/hizmetler/meta-ads`} className="hover:text-white transition-colors">Meta Ads</a></li>
+                <li><a href={`/${lang}/hizmetler/tiktok-ads`} className="hover:text-white transition-colors">TikTok Ads</a></li>
+                <li><a href={`/${lang}/hizmetler/x-ads`} className="hover:text-white transition-colors">X Ads</a></li>
+                <li><a href={`/${lang}/hizmetler/seo`} className="hover:text-white transition-colors">SEO</a></li>
+                <li><a href={`/${lang}/hizmetler/yorum-yonetimi`} className="hover:text-white transition-colors">{lang === 'de' ? 'Bewertungen' : lang === 'en' ? 'Reviews' : 'Yorum Yönetimi'}</a></li>
               </ul>
             </div>
           </div>
