@@ -1232,11 +1232,9 @@ export default function Home() {
           <h2 className="text-4xl font-bold mb-4">{t.contact.cta.title}</h2>
           <p className="text-lg mb-8 max-w-2xl mx-auto opacity-90">{t.contact.cta.description}</p>
           <div className="flex flex-wrap justify-center gap-4">
-            <Button size="lg" className="bg-white text-[#4285F4] hover:bg-gray-100" asChild>
-              <a href="tel:+491724106463">
-                <Phone className="mr-2 h-5 w-5" />
-                {t.contact.cta.call}: 01724106463
-              </a>
+            <Button size="lg" className="bg-white text-[#4285F4] hover:bg-gray-100" onClick={() => scrollToSection('contact')}>
+              <Mail className="mr-2 h-5 w-5" />
+              {lang === 'de' ? 'Kostenloses Angebot' : lang === 'en' ? 'Free Quote' : 'Ücretsiz Teklif Alın'}
             </Button>
             <Button size="lg" className="bg-[#34A853] hover:bg-[#2d9249] text-white" asChild>
               <a href="https://wa.me/491724106463" target="_blank" rel="noopener noreferrer">
