@@ -36,44 +36,44 @@ const translations = {
       title: 'Kullanılan Profesyonel Teknolojiler'
     },
     why: {
-      title: 'Dijital Pazarlama Uzmanı ile Profesyonel Çözümler',
-      subtitle: 'Neden Biz?',
+      title: 'Dijital Pazarlama Hizmetlerimiz',
+      subtitle: 'Hizmetlerimiz',
       services: [
         {
           title: 'Google Ads Yönetimi',
-          description: 'Arama, Display, Shopping ve YouTube reklamlarında maksimum ROI için kampanya yönetimi ve optimizasyonu.'
+          description: 'Arama, Display, Shopping ve YouTube reklamlarında maksimum ROI. Profesyonel kampanya yönetimi ve optimizasyon.',
+          slug: 'google-ads',
+          icon: 'google-ads'
         },
         {
-          title: 'Meta Ads Kampanyaları',
-          description: 'Facebook ve Instagram reklamlarıyla hedef kitlenize ulaşın. Detaylı hedefleme ve dönüşüm odaklı stratejiler.'
-        },
-        {
-          title: 'YouTube Video Reklamları',
-          description: 'Video içerikleriyle milyonlarca kişiye ulaşın. TrueView, Bumper ve Discovery reklamlarıyla marka bilinirliğinizi artırın.'
+          title: 'Meta Ads (Facebook & Instagram)',
+          description: 'Facebook ve Instagram\'da hedef kitlenize ulaşın. Detaylı hedefleme ve yüksek dönüşüm oranları.',
+          slug: 'meta-ads',
+          icon: 'meta'
         },
         {
           title: 'TikTok Ads',
-          description: 'Genç ve dinamik kitleye ulaşmanın en etkili yolu. Viral içerikler ve hedefli kampanyalarla marka görünürlüğünüzü maksimize edin.'
+          description: 'Genç ve dinamik kitleye ulaşın. Viral içerikler ve etkili kampanya yönetimiyle marka bilinirliğinizi artırın.',
+          slug: 'tiktok-ads',
+          icon: 'tiktok'
         },
         {
-          title: 'X (Twitter) Reklamları',
-          description: 'Trend konularda ön plana çıkın. Promoted Tweets ve Trend Takeover ile gerçek zamanlı etkileşim yaratın.'
+          title: 'X (Twitter) Ads',
+          description: 'Trend konularda öne çıkın. Gerçek zamanlı etkileşim ve marka görünürlüğü için profesyonel X reklamları.',
+          slug: 'x-ads',
+          icon: 'x'
         },
         {
-          title: 'SEO Optimizasyonu',
-          description: 'Google\'ın ve kullanıcıların seveceği, organik trafik getiren içerik stratejisi ve teknik SEO çalışmaları.'
+          title: 'SEO Hizmetleri',
+          description: 'Google\'da üst sıralarda yer alın. İç SEO, dış SEO ve teknik SEO ile organik trafiğinizi katlamak.',
+          slug: 'seo',
+          icon: 'seo'
         },
         {
-          title: 'Kapsamlı Anahtar Kelime Analizi',
-          description: 'Hacim değil, dönüşüm odaklı kelimeleri hedefliyoruz. Sektörünüzdeki fırsatları keşfedip sizi nokta atışı müşterilerle buluşturuyoruz.'
-        },
-        {
-          title: 'Rakip & Pazar Analizi',
-          description: 'Rakiplerinizin stratejilerini analiz edip, onların önüne geçiyoruz. Pazar payınızı artıracak veriye dayalı yol haritaları çıkarıyoruz.'
-        },
-        {
-          title: 'Şeffaf & Aylık Raporlama',
-          description: 'Karmaşık verilerle değil, anlaşılır ve sonuç odaklı raporlarla ilerliyoruz. Ayın sonunda ne kazandığınızı net bir şekilde görün.'
+          title: 'Olumsuz Yorum Yönetimi',
+          description: 'Google Maps ve Trustpilot\'taki haksız yorumları silin. İtibarınızı koruyun, güveninizi geri kazanın.',
+          slug: 'yorum-yonetimi',
+          icon: 'review'
         }
       ]
     },
