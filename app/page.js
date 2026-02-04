@@ -808,11 +808,138 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Technologies Section */}
-      <section className="py-20 bg-gradient-to-br from-gray-50 to-white">
+      {/* Technologies Section - ANIMATED CAROUSEL */}
+      <section className="py-20 bg-gradient-to-br from-gray-50 to-white overflow-hidden">
         <div className="container mx-auto px-4">
-          <h2 className="text-center text-2xl font-bold text-gray-800 mb-12">{t.technologies.title}</h2>
-          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-8">
+          <h2 className="text-center text-2xl font-bold text-gray-800 mb-12">{lang === 'de' ? 'VERWENDETE PROFESSIONELLE TECHNOLOGIEN' : lang === 'en' ? 'PROFESSIONAL TECHNOLOGIES USED' : 'KULLANDIĞIMIZ PROFESYONEL TEKNOLOJİLER'}</h2>
+          
+          {/* Infinite scroll animation */}
+          <div className="relative">
+            <div className="flex animate-scroll space-x-12">
+              {/* Google Ads Editor */}
+              <div className="flex-shrink-0 group text-center p-6 rounded-xl bg-white shadow-lg hover:shadow-2xl transition-all duration-300 hover:-translate-y-2 w-48">
+                <div className="mb-4 flex items-center justify-center">
+                  <svg className="w-20 h-20 group-hover:scale-110 transition-transform duration-300" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <circle cx="24" cy="24" r="22" fill="#4285F4"/>
+                    <path d="M24 10L16 26H21L19 34L32 18H27L29 10H24Z" fill="#FBBC04"/>
+                    <text x="24" y="42" fontSize="6" fill="white" textAnchor="middle" fontWeight="bold">EDITOR</text>
+                  </svg>
+                </div>
+                <p className="text-sm font-bold text-gray-800">Google Ads Editor</p>
+              </div>
+
+              {/* Meta Business Suite */}
+              <div className="flex-shrink-0 group text-center p-6 rounded-xl bg-white shadow-lg hover:shadow-2xl transition-all duration-300 hover:-translate-y-2 w-48">
+                <div className="mb-4 flex items-center justify-center">
+                  <svg className="w-20 h-20 group-hover:scale-110 transition-transform duration-300" viewBox="0 0 48 48" fill="none">
+                    <circle cx="24" cy="24" r="22" fill="#0081FB"/>
+                    <path d="M29.5 14h-3.2c-2.3 0-3.8 1.5-3.8 3.8v2.9h-3.2v4h3.2V36h4.7V24.8h3.2l.5-4h-3.7v-2.5c0-1.1.3-1.8 1.8-1.8h2.2v-3.6c-.4 0-1.7-.2-3.2-.2z" fill="white"/>
+                  </svg>
+                </div>
+                <p className="text-sm font-bold text-gray-800">Meta Business</p>
+              </div>
+
+              {/* Semrush */}
+              <div className="flex-shrink-0 group text-center p-6 rounded-xl bg-white shadow-lg hover:shadow-2xl transition-all duration-300 hover:-translate-y-2 w-48">
+                <div className="mb-4 flex items-center justify-center">
+                  <svg className="w-20 h-20 group-hover:scale-110 transition-transform duration-300" viewBox="0 0 48 48" fill="none">
+                    <rect width="48" height="48" rx="8" fill="#FF6600"/>
+                    <text x="24" y="28" fontSize="14" fill="white" textAnchor="middle" fontWeight="bold">SE</text>
+                  </svg>
+                </div>
+                <p className="text-sm font-bold text-gray-800">Semrush</p>
+              </div>
+
+              {/* Ahrefs */}
+              <div className="flex-shrink-0 group text-center p-6 rounded-xl bg-white shadow-lg hover:shadow-2xl transition-all duration-300 hover:-translate-y-2 w-48">
+                <div className="mb-4 flex items-center justify-center">
+                  <svg className="w-20 h-20 group-hover:scale-110 transition-transform duration-300" viewBox="0 0 48 48" fill="none">
+                    <rect width="48" height="48" rx="8" fill="#FF7A59"/>
+                    <text x="24" y="28" fontSize="16" fill="white" textAnchor="middle" fontWeight="bold">A</text>
+                  </svg>
+                </div>
+                <p className="text-sm font-bold text-gray-800">Ahrefs</p>
+              </div>
+
+              {/* Data Studio */}
+              <div className="flex-shrink-0 group text-center p-6 rounded-xl bg-white shadow-lg hover:shadow-2xl transition-all duration-300 hover:-translate-y-2 w-48">
+                <div className="mb-4 flex items-center justify-center">
+                  <svg className="w-20 h-20 group-hover:scale-110 transition-transform duration-300" viewBox="0 0 48 48" fill="none">
+                    <rect width="48" height="48" rx="4" fill="#FBBC04"/>
+                    <rect x="10" y="10" width="28" height="28" rx="2" fill="white"/>
+                    <rect x="14" y="14" width="8" height="8" fill="#4285F4"/>
+                    <rect x="26" y="14" width="8" height="8" fill="#34A853"/>
+                    <rect x="14" y="26" width="8" height="8" fill="#EA4335"/>
+                    <rect x="26" y="26" width="8" height="8" fill="#FBBC04"/>
+                  </svg>
+                </div>
+                <p className="text-sm font-bold text-gray-800">Data Studio</p>
+              </div>
+
+              {/* Tag Manager */}
+              <div className="flex-shrink-0 group text-center p-6 rounded-xl bg-white shadow-lg hover:shadow-2xl transition-all duration-300 hover:-translate-y-2 w-48">
+                <div className="mb-4 flex items-center justify-center">
+                  <svg className="w-20 h-20 group-hover:scale-110 transition-transform duration-300" viewBox="0 0 48 48" fill="none">
+                    <rect width="48" height="48" rx="4" fill="#4285F4"/>
+                    <path d="M12 20L18 16L24 20L30 16L36 20" stroke="white" strokeWidth="3" fill="none"/>
+                    <rect x="16" y="26" width="4" height="8" fill="white"/>
+                    <rect x="22" y="24" width="4" height="10" fill="white"/>
+                    <rect x="28" y="22" width="4" height="12" fill="white"/>
+                  </svg>
+                </div>
+                <p className="text-sm font-bold text-gray-800">Tag Manager</p>
+              </div>
+
+              {/* Search Console */}
+              <div className="flex-shrink-0 group text-center p-6 rounded-xl bg-white shadow-lg hover:shadow-2xl transition-all duration-300 hover:-translate-y-2 w-48">
+                <div className="mb-4 flex items-center justify-center">
+                  <svg className="w-20 h-20 group-hover:scale-110 transition-transform duration-300" viewBox="0 0 48 48" fill="none">
+                    <circle cx="24" cy="24" r="22" fill="#34A853"/>
+                    <circle cx="20" cy="20" r="10" stroke="white" strokeWidth="3" fill="none"/>
+                    <path d="M27 27L35 35" stroke="white" strokeWidth="3" strokeLinecap="round"/>
+                  </svg>
+                </div>
+                <p className="text-sm font-bold text-gray-800">Search Console</p>
+              </div>
+
+              {/* Duplicate for seamless loop */}
+              <div className="flex-shrink-0 group text-center p-6 rounded-xl bg-white shadow-lg hover:shadow-2xl transition-all duration-300 hover:-translate-y-2 w-48">
+                <div className="mb-4 flex items-center justify-center">
+                  <svg className="w-20 h-20 group-hover:scale-110 transition-transform duration-300" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <circle cx="24" cy="24" r="22" fill="#4285F4"/>
+                    <path d="M24 10L16 26H21L19 34L32 18H27L29 10H24Z" fill="#FBBC04"/>
+                    <text x="24" y="42" fontSize="6" fill="white" textAnchor="middle" fontWeight="bold">EDITOR</text>
+                  </svg>
+                </div>
+                <p className="text-sm font-bold text-gray-800">Google Ads Editor</p>
+              </div>
+
+              <div className="flex-shrink-0 group text-center p-6 rounded-xl bg-white shadow-lg hover:shadow-2xl transition-all duration-300 hover:-translate-y-2 w-48">
+                <div className="mb-4 flex items-center justify-center">
+                  <svg className="w-20 h-20 group-hover:scale-110 transition-transform duration-300" viewBox="0 0 48 48" fill="none">
+                    <circle cx="24" cy="24" r="22" fill="#0081FB"/>
+                    <path d="M29.5 14h-3.2c-2.3 0-3.8 1.5-3.8 3.8v2.9h-3.2v4h3.2V36h4.7V24.8h3.2l.5-4h-3.7v-2.5c0-1.1.3-1.8 1.8-1.8h2.2v-3.6c-.4 0-1.7-.2-3.2-.2z" fill="white"/>
+                  </svg>
+                </div>
+                <p className="text-sm font-bold text-gray-800">Meta Business</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <style jsx>{`
+          @keyframes scroll {
+            0% { transform: translateX(0); }
+            100% { transform: translateX(-50%); }
+          }
+          .animate-scroll {
+            animation: scroll 30s linear infinite;
+          }
+          .animate-scroll:hover {
+            animation-play-state: paused;
+          }
+        `}</style>
+      </section>
             {/* Google Ads - REAL LOGO */}
             <div className="group text-center p-6 rounded-xl bg-white shadow-lg hover:shadow-2xl transition-all duration-300 hover:-translate-y-2">
               <div className="mb-4 flex items-center justify-center">
