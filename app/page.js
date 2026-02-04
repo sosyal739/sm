@@ -1263,7 +1263,7 @@ export default function Home() {
                 </p>
                 <p className="flex items-center space-x-2">
                   <Mail className="h-4 w-4" />
-                  <span>kontakt@dsalihmaral.de</span>
+                  <span>kontakt@salihmaral.de</span>
                 </p>
               </div>
             </div>
