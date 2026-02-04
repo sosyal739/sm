@@ -412,44 +412,44 @@ const translations = {
       title: 'Professional Technologies Used'
     },
     why: {
-      title: 'Professional Solutions with a Digital Marketing Expert',
-      subtitle: 'Why Us?',
+      title: 'Our Digital Marketing Services',
+      subtitle: 'Our Services',
       services: [
         {
           title: 'Google Ads Management',
-          description: 'Campaign management and optimization for maximum ROI in Search, Display, Shopping and YouTube ads.'
+          description: 'Maximum ROI in Search, Display, Shopping and YouTube ads. Professional campaign management and optimization.',
+          slug: 'google-ads',
+          icon: 'google-ads'
         },
         {
-          title: 'Meta Ads Campaigns',
-          description: 'Reach your target audience with Facebook and Instagram ads. Detailed targeting and conversion-focused strategies.'
-        },
-        {
-          title: 'YouTube Video Advertising',
-          description: 'Reach millions with video content. Increase your brand awareness with TrueView, Bumper and Discovery ads.'
+          title: 'Meta Ads (Facebook & Instagram)',
+          description: 'Reach your target audience on Facebook and Instagram. Detailed targeting and high conversion rates.',
+          slug: 'meta-ads',
+          icon: 'meta'
         },
         {
           title: 'TikTok Ads',
-          description: 'The most effective way to reach a young and dynamic audience. Maximize your brand visibility with viral content and targeted campaigns.'
+          description: 'Reach a young, dynamic audience. Increase your brand awareness with viral content and effective campaigns.',
+          slug: 'tiktok-ads',
+          icon: 'tiktok'
         },
         {
-          title: 'X (Twitter) Advertising',
-          description: 'Stand out in trending topics. Create real-time engagement with Promoted Tweets and Trend Takeover.'
+          title: 'X (Twitter) Ads',
+          description: 'Stand out in trending topics. Professional X advertising for real-time engagement and brand visibility.',
+          slug: 'x-ads',
+          icon: 'x'
         },
         {
-          title: 'SEO Optimization',
-          description: 'Content strategy and technical SEO that Google and users love, bringing organic traffic.'
+          title: 'SEO Services',
+          description: 'Achieve top rankings on Google. On-page, off-page and technical SEO to multiply your organic traffic.',
+          slug: 'seo',
+          icon: 'seo'
         },
         {
-          title: 'Comprehensive Keyword Analysis',
-          description: 'We target conversion-oriented keywords, not volume. We discover opportunities in your industry and connect you with targeted customers.'
-        },
-        {
-          title: 'Competitor & Market Analysis',
-          description: 'We analyze your competitors\' strategies and get ahead of them. We create data-driven roadmaps to increase your market share.'
-        },
-        {
-          title: 'Transparent & Monthly Reporting',
-          description: "We don't work with complex data, but with understandable and results-oriented reports. See clearly what you've gained at the end of the month."
+          title: 'Negative Review Management',
+          description: 'Remove unfair reviews on Google Maps and Trustpilot. Protect your reputation and restore trust.',
+          slug: 'yorum-yonetimi',
+          icon: 'review'
         }
       ]
     },
