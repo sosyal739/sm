@@ -843,6 +843,55 @@ export default function Home() {
               </div>
               <p className="text-sm font-bold text-gray-800">Instagram</p>
             </div>
+            {/* YouTube - REAL LOGO */}
+            <div className="group text-center p-6 rounded-xl bg-white shadow-lg hover:shadow-2xl transition-all duration-300 hover:-translate-y-2">
+              <div className="mb-4 flex items-center justify-center">
+                <svg className="w-16 h-16 group-hover:scale-110 transition-transform duration-300" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <rect width="48" height="48" rx="8" fill="#FF0000"/>
+                  <path d="M38.5 16.5c-.4-1.5-1.6-2.7-3.1-3.1C32.7 12.5 24 12.5 24 12.5s-8.7 0-11.4.9c-1.5.4-2.7 1.6-3.1 3.1C8.5 19.2 8.5 24 8.5 24s0 4.8.9 7.5c.4 1.5 1.6 2.7 3.1 3.1 2.7.9 11.4.9 11.4.9s8.7 0 11.4-.9c1.5-.4 2.7-1.6 3.1-3.1.9-2.7.9-7.5.9-7.5s0-4.8-.9-7.5z" fill="white"/>
+                  <path d="M21 29V18l9 5.5-9 5.5z" fill="#FF0000"/>
+                </svg>
+              </div>
+              <p className="text-sm font-bold text-gray-800">YouTube</p>
+            </div>
+
+            {/* TikTok - REAL LOGO */}
+            <div className="group text-center p-6 rounded-xl bg-white shadow-lg hover:shadow-2xl transition-all duration-300 hover:-translate-y-2">
+              <div className="mb-4 flex items-center justify-center">
+                <svg className="w-16 h-16 group-hover:scale-110 transition-transform duration-300" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <rect width="48" height="48" rx="12" fill="black"/>
+                  <path d="M34.1 18.3c-2.4 0-4.5-1.3-5.6-3.2v11.5c0 5.8-4.7 10.5-10.5 10.5S7.5 32.4 7.5 26.6c0-5.8 4.7-10.5 10.5-10.5.4 0 .8 0 1.2.1v5.2c-.4-.1-.8-.1-1.2-.1-2.9 0-5.2 2.3-5.2 5.2s2.3 5.2 5.2 5.2 5.2-2.3 5.2-5.2V8.5h5.2c0 .4.1.8.1 1.2.5 2.7 2.6 4.8 5.3 5.3.4.1.8.1 1.2.1v5.2c-.3 0-.6 0-.9 0z" fill="#00F2EA"/>
+                  <path d="M28.5 15.1c1.1 1.9 3.2 3.2 5.6 3.2v-5.2c-1.3-.2-2.5-.9-3.4-1.7-1.7-1.6-2.8-3.9-2.8-6.4h-5.2v22c0 2.9-2.3 5.2-5.2 5.2s-5.2-2.3-5.2-5.2 2.3-5.2 5.2-5.2c.4 0 .8 0 1.2.1v-5.2c-5.8 0-10.5 4.7-10.5 10.5s4.7 10.5 10.5 10.5 10.5-4.7 10.5-10.5V18.3z" fill="#FF004F"/>
+                </svg>
+              </div>
+              <p className="text-sm font-bold text-gray-800">TikTok</p>
+            </div>
+
+            {/* X (Twitter) - REAL LOGO */}
+            <div className="group text-center p-6 rounded-xl bg-white shadow-lg hover:shadow-2xl transition-all duration-300 hover:-translate-y-2">
+              <div className="mb-4 flex items-center justify-center">
+                <svg className="w-16 h-16 group-hover:scale-110 transition-transform duration-300" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <rect width="48" height="48" rx="12" fill="black"/>
+                  <path d="M30.5 13h4.7l-10.3 11.8L37 35h-9.5l-7.4-9.7L11.7 35H7l11-12.6L7.7 13h9.8l6.7 8.9L30.5 13zm-1.7 19.8h2.6L17.4 15.7h-2.8l13.2 17.1z" fill="white"/>
+                </svg>
+              </div>
+              <p className="text-sm font-bold text-gray-800">X (Twitter)</p>
+            </div>
+
+            {/* SEO Tools */}
+            <div className="group text-center p-6 rounded-xl bg-white shadow-lg hover:shadow-2xl transition-all duration-300 hover:-translate-y-2">
+              <div className="mb-4 flex items-center justify-center">
+                <svg className="w-16 h-16 group-hover:scale-110 transition-transform duration-300" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <circle cx="20" cy="20" r="13" stroke="#4285F4" strokeWidth="4" fill="none"/>
+                  <path d="M29 29L40 40" stroke="#34A853" strokeWidth="4" strokeLinecap="round"/>
+                  <circle cx="20" cy="20" r="8" fill="#4285F4" fillOpacity="0.2"/>
+                  <path d="M15 20L18 23L25 16" stroke="white" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+                </svg>
+              </div>
+              <p className="text-sm font-bold text-gray-800">SEO Tools</p>
+            </div>
+
+            {/* Analytics */}
             <div className="group text-center p-6 rounded-xl bg-white shadow-lg hover:shadow-2xl transition-all duration-300 hover:-translate-y-2">
               <div className="mb-4 flex items-center justify-center">
                 <svg className="w-16 h-16 group-hover:scale-110 transition-transform duration-300" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -852,94 +901,25 @@ export default function Home() {
                   <path d="M12 18L24 24V36L12 30V18Z" fill="#E8710A"/>
                 </svg>
               </div>
-              <p className="text-sm font-bold text-gray-800">Google Analytics</p>
-            </div>
-            <div className="group text-center p-6 rounded-xl bg-white shadow-lg hover:shadow-2xl transition-all duration-300 hover:-translate-y-2">
-              <div className="mb-4 flex items-center justify-center">
-                <svg className="w-16 h-16 group-hover:scale-110 transition-transform duration-300" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <circle cx="24" cy="24" r="20" fill="#4285F4"/>
-                  <path d="M24 14L18 28H22L20 34L30 20H26L28 14H24Z" fill="white"/>
-                </svg>
-              </div>
-              <p className="text-sm font-bold text-gray-800">Google Ads</p>
-            </div>
-            <div className="group text-center p-6 rounded-xl bg-white shadow-lg hover:shadow-2xl transition-all duration-300 hover:-translate-y-2">
-              <div className="mb-4 flex items-center justify-center">
-                <svg className="w-16 h-16 group-hover:scale-110 transition-transform duration-300" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <rect width="48" height="48" rx="8" fill="url(#metaGradient)"/>
-                  <defs>
-                    <linearGradient id="metaGradient" x1="0" y1="0" x2="48" y2="48">
-                      <stop offset="0%" stopColor="#0081FB"/>
-                      <stop offset="100%" stopColor="#0044F8"/>
-                    </linearGradient>
-                  </defs>
-                  <path d="M28 14H20C16.7 14 14 16.7 14 20V28C14 31.3 16.7 34 20 34H28C31.3 34 34 31.3 34 28V20C34 16.7 31.3 14 28 14Z" fill="white" fillOpacity="0.3"/>
-                  <circle cx="24" cy="24" r="6" fill="white"/>
-                </svg>
-              </div>
-              <p className="text-sm font-bold text-gray-800">Meta Ads</p>
-            </div>
-            <div className="group text-center p-6 rounded-xl bg-white shadow-lg hover:shadow-2xl transition-all duration-300 hover:-translate-y-2">
-              <div className="mb-4 flex items-center justify-center">
-                <svg className="w-16 h-16 group-hover:scale-110 transition-transform duration-300" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <rect width="48" height="48" rx="8" fill="#FF0000"/>
-                  <path d="M32 18L24 24L16 18V14L24 20L32 14V18Z" fill="white"/>
-                  <path d="M16 14H32V34H16V14Z" stroke="white" strokeWidth="2" fill="none"/>
-                  <path d="M18 22L24 26L30 22" stroke="white" strokeWidth="2" fill="none"/>
-                </svg>
-              </div>
-              <p className="text-sm font-bold text-gray-800">YouTube Ads</p>
-            </div>
-            <div className="group text-center p-6 rounded-xl bg-white shadow-lg hover:shadow-2xl transition-all duration-300 hover:-translate-y-2">
-              <div className="mb-4 flex items-center justify-center">
-                <svg className="w-16 h-16 group-hover:scale-110 transition-transform duration-300" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <rect width="48" height="48" rx="8" fill="#000000"/>
-                  <path d="M24 10C16.3 10 10 16.3 10 24C10 31.7 16.3 38 24 38C31.7 38 38 31.7 38 24C38 16.3 31.7 10 24 10Z" fill="#00F2EA"/>
-                  <path d="M28 20L20 28M20 20L28 28" stroke="#000000" strokeWidth="3" strokeLinecap="round"/>
-                </svg>
-              </div>
-              <p className="text-sm font-bold text-gray-800">TikTok Ads</p>
-            </div>
-            <div className="group text-center p-6 rounded-xl bg-white shadow-lg hover:shadow-2xl transition-all duration-300 hover:-translate-y-2">
-              <div className="mb-4 flex items-center justify-center">
-                <svg className="w-16 h-16 group-hover:scale-110 transition-transform duration-300" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <rect width="48" height="48" rx="8" fill="#000000"/>
-                  <path d="M14 18L24 28L34 18" stroke="white" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round"/>
-                </svg>
-              </div>
-              <p className="text-sm font-bold text-gray-800">X (Twitter)</p>
-            </div>
-            <div className="group text-center p-6 rounded-xl bg-white shadow-lg hover:shadow-2xl transition-all duration-300 hover:-translate-y-2">
-              <div className="mb-4 flex items-center justify-center">
-                <svg className="w-16 h-16 group-hover:scale-110 transition-transform duration-300" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <circle cx="24" cy="24" r="20" fill="#4285F4"/>
-                  <circle cx="24" cy="24" r="12" fill="white"/>
-                  <path d="M18 24C18 20.7 20.7 18 24 18" stroke="#4285F4" strokeWidth="2"/>
-                </svg>
-              </div>
-              <p className="text-sm font-bold text-gray-800">SEO Tools</p>
-            </div>
-            <div className="group text-center p-6 rounded-xl bg-white shadow-lg hover:shadow-2xl transition-all duration-300 hover:-translate-y-2">
-              <div className="mb-4 flex items-center justify-center">
-                <svg className="w-16 h-16 group-hover:scale-110 transition-transform duration-300" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <rect width="48" height="48" rx="4" fill="#34A853"/>
-                  <path d="M14 32L18 20L22 28L26 16L30 24L34 18" stroke="white" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round"/>
-                </svg>
-              </div>
               <p className="text-sm font-bold text-gray-800">Analytics</p>
             </div>
+
+            {/* Creative Tools */}
             <div className="group text-center p-6 rounded-xl bg-white shadow-lg hover:shadow-2xl transition-all duration-300 hover:-translate-y-2">
               <div className="mb-4 flex items-center justify-center">
                 <svg className="w-16 h-16 group-hover:scale-110 transition-transform duration-300" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <circle cx="24" cy="24" r="20" fill="#EA4335"/>
-                  <circle cx="20" cy="20" r="4" fill="white"/>
-                  <circle cx="28" cy="20" r="4" fill="white"/>
-                  <circle cx="20" cy="28" r="4" fill="white"/>
-                  <circle cx="28" cy="28" r="4" fill="white"/>
+                  <rect width="48" height="48" rx="8" fill="#EA4335"/>
+                  <path d="M24 14c-5.5 0-10 4.5-10 10s4.5 10 10 10 10-4.5 10-10-4.5-10-10-10zm0 16c-3.3 0-6-2.7-6-6s2.7-6 6-6 6 2.7 6 6-2.7 6-6 6z" fill="white"/>
+                  <circle cx="20" cy="20" r="3" fill="white"/>
+                  <circle cx="28" cy="20" r="3" fill="white"/>
+                  <circle cx="20" cy="28" r="3" fill="white"/>
+                  <circle cx="28" cy="28" r="3" fill="white"/>
                 </svg>
               </div>
-              <p className="text-sm font-bold text-gray-800">Creative Tools</p>
+              <p className="text-sm font-bold text-gray-800">Creative</p>
             </div>
+
+            {/* Data Studio */}
             <div className="group text-center p-6 rounded-xl bg-white shadow-lg hover:shadow-2xl transition-all duration-300 hover:-translate-y-2">
               <div className="mb-4 flex items-center justify-center">
                 <svg className="w-16 h-16 group-hover:scale-110 transition-transform duration-300" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -953,6 +933,8 @@ export default function Home() {
               </div>
               <p className="text-sm font-bold text-gray-800">Data Studio</p>
             </div>
+
+            {/* Tag Manager */}
             <div className="group text-center p-6 rounded-xl bg-white shadow-lg hover:shadow-2xl transition-all duration-300 hover:-translate-y-2">
               <div className="mb-4 flex items-center justify-center">
                 <svg className="w-16 h-16 group-hover:scale-110 transition-transform duration-300" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -965,6 +947,8 @@ export default function Home() {
               </div>
               <p className="text-sm font-bold text-gray-800">Tag Manager</p>
             </div>
+
+            {/* Optimization */}
             <div className="group text-center p-6 rounded-xl bg-white shadow-lg hover:shadow-2xl transition-all duration-300 hover:-translate-y-2">
               <div className="mb-4 flex items-center justify-center">
                 <svg className="w-16 h-16 group-hover:scale-110 transition-transform duration-300" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
