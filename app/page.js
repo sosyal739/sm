@@ -936,23 +936,79 @@ export default function Home() {
           </div>
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
             {t.why.services.map((service, index) => (
-              <Card key={index} className="hover:shadow-2xl transition-all duration-300 hover:-translate-y-2 border-t-4 border-t-[#4285F4] bg-gradient-to-br from-white to-gray-50">
-                <CardContent className="pt-6">
-                  <div className="mb-4">
-                    {index === 0 && <BarChart3 className="h-12 w-12 text-[#4285F4]" />}
-                    {index === 1 && <Users className="h-12 w-12 text-[#EA4335]" />}
-                    {index === 2 && <div className="text-5xl">🎬</div>}
-                    {index === 3 && <div className="text-5xl">🎵</div>}
-                    {index === 4 && <div className="text-5xl">🐦</div>}
-                    {index === 5 && <TrendingUp className="h-12 w-12 text-[#34A853]" />}
-                    {index === 6 && <CheckCircle className="h-12 w-12 text-[#FBBC04]" />}
-                    {index === 7 && <BarChart3 className="h-12 w-12 text-[#EA4335]" />}
-                    {index === 8 && <Award className="h-12 w-12 text-[#4285F4]" />}
-                  </div>
-                  <h3 className="text-xl font-bold mb-3 text-gray-800">{service.title}</h3>
-                  <p className="text-muted-foreground leading-relaxed">{service.description}</p>
-                </CardContent>
-              </Card>
+              <a 
+                key={index} 
+                href={`/${lang}/hizmetler/${service.slug}`}
+                className="block group"
+              >
+                <Card className="h-full hover:shadow-2xl transition-all duration-300 hover:-translate-y-2 border-t-4 border-t-[#4285F4] bg-gradient-to-br from-white to-gray-50 cursor-pointer">
+                  <CardContent className="pt-6">
+                    <div className="mb-4 flex items-center justify-center">
+                      {service.icon === 'google-ads' && (
+                        <svg className="w-16 h-16 group-hover:scale-110 transition-transform duration-300" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <circle cx="24" cy="24" r="20" fill="#4285F4"/>
+                          <path d="M24 14L18 28H22L20 34L30 20H26L28 14H24Z" fill="#FBBC04"/>
+                          <path d="M24 14L18 28H22L20 34L30 20H26L28 14H24Z" fill="url(#paint0_linear)" fillOpacity="0.3"/>
+                          <defs>
+                            <linearGradient id="paint0_linear" x1="24" y1="14" x2="24" y2="34" gradientUnits="userSpaceOnUse">
+                              <stop stopColor="white"/>
+                              <stop offset="1" stopColor="white" stopOpacity="0"/>
+                            </linearGradient>
+                          </defs>
+                        </svg>
+                      )}
+                      {service.icon === 'meta' && (
+                        <svg className="w-16 h-16 group-hover:scale-110 transition-transform duration-300" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path d="M24 4C12.95 4 4 12.95 4 24C4 33.93 11.19 42.08 20.63 43.73V29.69H15.28V24H20.63V19.77C20.63 14.48 23.62 11.72 28.43 11.72C30.75 11.72 33.17 12.13 33.17 12.13V17.31H30.52C27.91 17.31 27.06 18.95 27.06 20.63V24H32.94L32.01 29.69H27.06V43.73C36.5 42.08 43.69 33.93 43.69 24C43.69 12.95 34.74 4 23.69 4H24Z" fill="url(#paint0_linear_meta)"/>
+                          <defs>
+                            <linearGradient id="paint0_linear_meta" x1="24" y1="4" x2="24" y2="44" gradientUnits="userSpaceOnUse">
+                              <stop stopColor="#0081FB"/>
+                              <stop offset="1" stopColor="#0044F8"/>
+                            </linearGradient>
+                          </defs>
+                        </svg>
+                      )}
+                      {service.icon === 'tiktok' && (
+                        <svg className="w-16 h-16 group-hover:scale-110 transition-transform duration-300" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <rect width="48" height="48" rx="12" fill="black"/>
+                          <path d="M34.1 18.3c-2.4 0-4.5-1.3-5.6-3.2v11.5c0 5.8-4.7 10.5-10.5 10.5S7.5 32.4 7.5 26.6c0-5.8 4.7-10.5 10.5-10.5.4 0 .8 0 1.2.1v5.2c-.4-.1-.8-.1-1.2-.1-2.9 0-5.2 2.3-5.2 5.2s2.3 5.2 5.2 5.2 5.2-2.3 5.2-5.2V8.5h5.2c0 .4.1.8.1 1.2.5 2.7 2.6 4.8 5.3 5.3.4.1.8.1 1.2.1v5.2c-.3 0-.6 0-.9 0z" fill="#00F2EA"/>
+                          <path d="M28.5 15.1c1.1 1.9 3.2 3.2 5.6 3.2v-5.2c-1.3-.2-2.5-.9-3.4-1.7-1.7-1.6-2.8-3.9-2.8-6.4h-5.2v22c0 2.9-2.3 5.2-5.2 5.2s-5.2-2.3-5.2-5.2 2.3-5.2 5.2-5.2c.4 0 .8 0 1.2.1v-5.2c-5.8 0-10.5 4.7-10.5 10.5s4.7 10.5 10.5 10.5 10.5-4.7 10.5-10.5V18.3z" fill="#FF004F"/>
+                        </svg>
+                      )}
+                      {service.icon === 'x' && (
+                        <svg className="w-16 h-16 group-hover:scale-110 transition-transform duration-300" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <rect width="48" height="48" rx="12" fill="black"/>
+                          <path d="M30.5 13h4.7l-10.3 11.8L37 35h-9.5l-7.4-9.7L11.7 35H7l11-12.6L7.7 13h9.8l6.7 8.9L30.5 13zm-1.7 19.8h2.6L17.4 15.7h-2.8l13.2 17.1z" fill="white"/>
+                        </svg>
+                      )}
+                      {service.icon === 'seo' && (
+                        <svg className="w-16 h-16 group-hover:scale-110 transition-transform duration-300" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <circle cx="20" cy="20" r="13" stroke="#4285F4" strokeWidth="4" fill="none"/>
+                          <path d="M29 29L40 40" stroke="#34A853" strokeWidth="4" strokeLinecap="round"/>
+                          <circle cx="20" cy="20" r="8" fill="#4285F4" fillOpacity="0.2"/>
+                          <path d="M15 20L18 23L25 16" stroke="white" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+                        </svg>
+                      )}
+                      {service.icon === 'review' && (
+                        <svg className="w-16 h-16 group-hover:scale-110 transition-transform duration-300" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <rect width="48" height="48" rx="8" fill="#EA4335" fillOpacity="0.1"/>
+                          <path d="M24 8L27.5 18.5H38.5L29.5 25.5L33 36L24 29L15 36L18.5 25.5L9.5 18.5H20.5L24 8Z" fill="#FBBC04"/>
+                          <path d="M24 8L27.5 18.5H38.5L29.5 25.5L33 36L24 29L15 36L18.5 25.5L9.5 18.5H20.5L24 8Z" stroke="#EA4335" strokeWidth="2"/>
+                          <rect x="20" y="30" width="8" height="2" rx="1" fill="#EA4335"/>
+                        </svg>
+                      )}
+                    </div>
+                    <h3 className="text-xl font-bold mb-3 text-gray-800 group-hover:text-[#4285F4] transition-colors">{service.title}</h3>
+                    <p className="text-muted-foreground leading-relaxed mb-4">{service.description}</p>
+                    <div className="flex items-center text-[#4285F4] font-semibold group-hover:translate-x-2 transition-transform">
+                      <span>{lang === 'de' ? 'Mehr erfahren' : lang === 'en' ? 'Learn more' : 'Detayları Gör'}</span>
+                      <svg className="w-5 h-5 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+                      </svg>
+                    </div>
+                  </CardContent>
+                </Card>
+              </a>
             ))}
           </div>
         </div>
