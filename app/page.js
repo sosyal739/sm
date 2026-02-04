@@ -1293,6 +1293,47 @@ export default function Home() {
         </div>
       </section>
 
+      {/* Blog Preview Section */}
+      <section className="py-20 bg-white">
+        <div className="container mx-auto px-4">
+          <div className="text-center mb-12">
+            <h2 className="text-4xl font-bold mb-4">{lang === 'de' ? 'Unser Blog' : lang === 'en' ? 'Our Blog' : 'Blog Yazılarımız'}</h2>
+            <p className="text-lg text-muted-foreground">{lang === 'de' ? 'Neueste Artikel über digitales Marketing' : lang === 'en' ? 'Latest articles about digital marketing' : 'Dijital pazarlama hakkında güncel makaleler'}</p>
+          </div>
+          <div className="grid md:grid-cols-3 gap-6">
+            <Card className="hover:shadow-xl transition-shadow">
+              <CardContent className="pt-6">
+                <div className="text-5xl mb-4">🎯</div>
+                <h3 className="text-xl font-bold mb-3">Google Ads {lang === 'de' ? 'Leitfaden' : lang === 'en' ? 'Guide' : 'Rehberi'}</h3>
+                <p className="text-muted-foreground mb-4">{lang === 'de' ? 'Alles über Google Ads Kampagnen' : lang === 'en' ? 'Everything about Google Ads campaigns' : 'Google Ads kampanyaları hakkında her şey'}</p>
+                <Button variant="outline" className="w-full" asChild><a href="/blog">{ lang === 'de' ? 'Lesen' : lang === 'en' ? 'Read' : 'Oku'}</a></Button>
+              </CardContent>
+            </Card>
+            <Card className="hover:shadow-xl transition-shadow">
+              <CardContent className="pt-6">
+                <div className="text-5xl mb-4">📱</div>
+                <h3 className="text-xl font-bold mb-3">Meta Ads {lang === 'de' ? 'Erfolg' : lang === 'en' ? 'Success' : 'Başarısı'}</h3>
+                <p className="text-muted-foreground mb-4">{lang === 'de' ? 'Facebook & Instagram Strategien' : lang === 'en' ? 'Facebook & Instagram strategies' : 'Facebook & Instagram stratejileri'}</p>
+                <Button variant="outline" className="w-full" asChild><a href="/blog">{lang === 'de' ? 'Lesen' : lang === 'en' ? 'Read' : 'Oku'}</a></Button>
+              </CardContent>
+            </Card>
+            <Card className="hover:shadow-xl transition-shadow">
+              <CardContent className="pt-6">
+                <div className="text-5xl mb-4">🔍</div>
+                <h3 className="text-xl font-bold mb-3">SEO {lang === 'de' ? 'Tipps' : lang === 'en' ? 'Tips' : 'İpuçları'} 2026</h3>
+                <p className="text-muted-foreground mb-4">{lang === 'de' ? 'Top Rankings bei Google' : lang === 'en' ? 'Top rankings on Google' : 'Google\'da üst sıralarda'}</p>
+                <Button variant="outline" className="w-full" asChild><a href="/blog">{lang === 'de' ? 'Lesen' : lang === 'en' ? 'Read' : 'Oku'}</a></Button>
+              </CardContent>
+            </Card>
+          </div>
+          <div className="text-center mt-8">
+            <Button size="lg" variant="outline" asChild>
+              <a href="/blog">{lang === 'de' ? 'Alle Artikel ansehen' : lang === 'en' ? 'View all articles' : 'Tüm Yazıları Gör'}</a>
+            </Button>
+          </div>
+        </div>
+      </section>
+
       {/* Footer */}
       <footer className="py-12 bg-gray-900 text-white">
         <div className="container mx-auto px-4">
