@@ -224,44 +224,44 @@ const translations = {
       title: 'Verwendete professionelle Technologien'
     },
     why: {
-      title: 'Professionelle Lösungen mit einem Digital Marketing Experten',
-      subtitle: 'Warum wir?',
+      title: 'Unsere Digital Marketing Dienstleistungen',
+      subtitle: 'Unsere Dienstleistungen',
       services: [
         {
           title: 'Google Ads Management',
-          description: 'Kampagnenmanagement und Optimierung für maximalen ROI in Such-, Display-, Shopping- und YouTube-Anzeigen.'
+          description: 'Maximaler ROI in Such-, Display-, Shopping- und YouTube-Anzeigen. Professionelles Kampagnenmanagement.',
+          slug: 'google-ads',
+          icon: 'google-ads'
         },
         {
-          title: 'Meta Ads Kampagnen',
-          description: 'Erreichen Sie Ihre Zielgruppe mit Facebook- und Instagram-Anzeigen. Detailliertes Targeting und konversionsorientierte Strategien.'
-        },
-        {
-          title: 'YouTube Video-Werbung',
-          description: 'Erreichen Sie Millionen mit Videoinhalten. Steigern Sie Ihre Markenbekanntheit mit TrueView-, Bumper- und Discovery-Anzeigen.'
+          title: 'Meta Ads (Facebook & Instagram)',
+          description: 'Erreichen Sie Ihre Zielgruppe auf Facebook und Instagram. Detailliertes Targeting und hohe Conversion-Raten.',
+          slug: 'meta-ads',
+          icon: 'meta'
         },
         {
           title: 'TikTok Ads',
-          description: 'Der effektivste Weg, um ein junges und dynamisches Publikum zu erreichen. Maximieren Sie Ihre Markensichtbarkeit mit viralen Inhalten und gezielten Kampagnen.'
+          description: 'Erreichen Sie ein junges, dynamisches Publikum. Steigern Sie Ihre Markenbekanntheit mit viralen Inhalten.',
+          slug: 'tiktok-ads',
+          icon: 'tiktok'
         },
         {
-          title: 'X (Twitter) Werbung',
-          description: 'Heben Sie sich bei Trendthemen hervor. Schaffen Sie Echtzeit-Engagement mit Promoted Tweets und Trend Takeover.'
+          title: 'X (Twitter) Ads',
+          description: 'Heben Sie sich bei Trendthemen hervor. Professionelle X-Werbung für Echtzeit-Engagement und Markensichtbarkeit.',
+          slug: 'x-ads',
+          icon: 'x'
         },
         {
-          title: 'SEO Optimierung',
-          description: 'Content-Strategie und technisches SEO, das Google und Nutzer lieben und organischen Traffic bringt.'
+          title: 'SEO Dienstleistungen',
+          description: 'Erreichen Sie Top-Rankings bei Google. On-Page, Off-Page und technisches SEO für mehr organischen Traffic.',
+          slug: 'seo',
+          icon: 'seo'
         },
         {
-          title: 'Umfassende Keyword-Analyse',
-          description: 'Wir zielen auf konversionsorientierte Keywords ab, nicht auf Volumen. Wir entdecken Chancen in Ihrer Branche und bringen Sie mit gezielten Kunden zusammen.'
-        },
-        {
-          title: 'Wettbewerbs- & Marktanalyse',
-          description: 'Wir analysieren die Strategien Ihrer Konkurrenten und überholen sie. Wir erstellen datenbasierte Roadmaps, um Ihren Marktanteil zu erhöhen.'
-        },
-        {
-          title: 'Transparentes & monatliches Reporting',
-          description: 'Wir arbeiten nicht mit komplexen Daten, sondern mit verständlichen und ergebnisorientierten Berichten. Sehen Sie am Ende des Monats klar, was Sie gewonnen haben.'
+          title: 'Negative Bewertungen Löschen',
+          description: 'Entfernen Sie ungerechte Bewertungen bei Google Maps und Trustpilot. Schützen Sie Ihren Ruf.',
+          slug: 'yorum-yonetimi',
+          icon: 'review'
         }
       ]
     },
