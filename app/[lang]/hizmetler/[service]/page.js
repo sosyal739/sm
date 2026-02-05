@@ -23,34 +23,46 @@ export default function ServiceDetailPage() {
     ],
     features: [
       {
-        title: 'Arama Ağı Reklamları',
-        desc: 'Müşterilerin aktif aradığı anda karşılarına çıkın',
-        items: ['Anahtar kelime araştırması', 'Teklif optimizasyonu', 'A/B testing', 'Kalite skoru iyileştirme']
+        title: 'Arama Ağı Reklamları (Search Ads)',
+        desc: 'Müşterileriniz Google\'da arama yaptığında tam onların karşısına çıkın. Kullanıcıların satın alma niyeti en yüksek olduğu anda, aradıkları kelimelerle reklamınız görünsün. Yüksek kalite skoruyla düşük maliyetle maksimum dönüşüm.',
+        icon: '🎯',
+        color: '#4285F4',
+        items: ['Hedefli anahtar kelime araştırması', 'Teklif ve bütçe optimizasyonu', 'A/B test ile reklam metni geliştirme', 'Kalite skoru iyileştirme', 'Negatif kelime yönetimi', 'Coğrafi hedefleme']
       },
       {
-        title: 'Display Reklamları',
-        desc: '2M+ web sitesinde görsel reklamlar',
-        items: ['Banner tasarım', 'Remarketing', 'Responsive ads', 'Hedef kitle segmentasyonu']
+        title: 'Display Ağı Reklamları',
+        desc: 'Google\'ın ortağı 2 milyondan fazla web sitesi ve uygulamada görsel banner reklamlarınız görünsün. YouTube, Gmail ve milyonlarca popüler sitede potansiyel müşterilerinize ulaşın. Remarketing ile ziyaretçilerinizi geri çağırın.',
+        icon: '🖼️',
+        color: '#FBBC04',
+        items: ['Banner tasarım ve optimizasyon', 'Remarketing kampanyaları', 'Responsive display ads', 'Hedef kitle segmentasyonu', 'Placement stratejisi', 'Frekans capping']
       },
       {
         title: 'Shopping Reklamları',
-        desc: 'E-ticaret için ürün reklamları',
-        items: ['Merchant Center', 'Feed optimizasyonu', 'ROAS optimizasyonu', 'Ürün segmentasyonu']
+        desc: 'E-ticaret siteniz için özel tasarlanmış ürün reklamları. Müşteriler Google\'da ürün aradığında, ürün fotoğrafı, fiyat, mağaza adı ve değerlendirme puanıyla öne çıkın. Görsel alışveriş deneyimiyle dönüşüm oranlarını katlayın.',
+        icon: '🛒',
+        color: '#34A853',
+        items: ['Merchant Center kurulum', 'Ürün feed optimizasyonu', 'ROAS optimizasyonu', 'Otomatik teklif stratejileri', 'Ürün grupları segmentasyonu', 'Rekabetçi fiyat analizi']
       },
       {
         title: 'YouTube Video Reklamları',
-        desc: 'Video içeriklerle milyonlara ulaşın',
-        items: ['TrueView reklamlar', 'Bumper ads', 'Video remarketing', 'YouTube kanal büyütme']
+        desc: 'Dünyanın en büyük video platformunda milyarlarca izlenmeye ulaşın. Video içeriklerinizle hikaye anlatın, marka bilinirliği yaratın ve dönüşüm sağlayın. İzleyicilerin ilgisine göre hedefleme yaparak maksimum etki yaratın.',
+        icon: '📺',
+        color: '#EA4335',
+        items: ['TrueView In-Stream (atlanabilir)', 'Bumper ads (6 saniye)', 'Discovery reklamlar', 'Video remarketing', 'YouTube analytics', 'Kanalı büyütme stratejisi']
       },
       {
-        title: 'Performance Max',
-        desc: 'AI destekli otomatik optimizasyon',
-        items: ['Çoklu kanal', 'AI hedef kitle', 'Otomatik varyasyonlar', 'Gerçek zamanlı optimizasyon']
+        title: 'Performance Max Kampanyaları',
+        desc: 'Google\'ın yapay zeka teknolojisiyle tüm Google platformlarında (Arama, Display, YouTube, Gmail, Discover, Maps) otomatik optimizasyon. AI, en yüksek dönüşüm potansiyeli olan yerlerde reklamlarınızı gösterir. Maksimum performans, minimum efor.',
+        icon: '⚡',
+        color: '#4285F4',
+        items: ['AI destekli multi-kanal', 'Otomatik hedef kitle bulma', 'Dinamik reklam oluşturma', 'Gerçek zamanlı optimizasyon', 'Dönüşüm maksimizasyonu', 'Kapsamlı raporlama']
       },
       {
-        title: 'Yerel Kampanyalar',
-        desc: 'Google Maps ve yerel aramalarda öne çıkın',
-        items: ['Google My Business', 'Store visits', 'Yerel envanter', 'Konum hedefleme']
+        title: 'Yerel Kampanyalar (Local Ads)',
+        desc: 'Fiziksel mağazanız veya ofis varsa, Google Maps\'te ve yerel aramalarda öne çıkın. Yakınınızdaki müşteriler sizi aradığında hemen görünsün. Mağaza ziyareti artırın, telefon araması alın, yol tarifi isteyenlere ulaşın.',
+        icon: '📍',
+        color: '#34A853',
+        items: ['Google My Business optimizasyonu', 'Store visits takibi', 'Yerel envanter reklamları', 'Konum uzantıları', 'Çağrı uzantıları', 'Yakınlık bazlı hedefleme']
       }
     ]
   }
