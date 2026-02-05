@@ -122,24 +122,6 @@ const translations = {
           role: 'Restoran Sahibi',
           text: 'Daha önce farklı ajanslarla çalıştık ama verim alamadık. Salih Bey ile çalışmaya başladığımızdan beri raporlamalar o kadar net ki paramızın nereye gittiğini biliyoruz. Kesinlikle öneririm.',
           rating: 5
-        },
-        {
-          name: 'Sarah Mitchell',
-          role: 'Mağaza Sahibi',
-          text: 'Sadece reklam satmaya çalışanlardan değil, gerçekten strateji kuran birisi. Sektörümüz rekabetli olmasına rağmen 4 ayda hedeflediğimiz satış rakamlarına ulaştık. Güvenilir ve çalışkan.',
-          rating: 5
-        },
-        {
-          name: 'Thomas Schmidt',
-          role: 'Startup Kurucusu',
-          text: 'Startup projemiz için danışmanlık aldık. Bütçemizi en verimli şekilde kullanarak bize harika bir büyüme planı çizdi. Kendisiyle çalışmak bir uzman ile değil, bir iş ortağıyla çalışmak gibi.',
-          rating: 5
-        },
-        {
-          name: 'Elif Aksoy',
-          role: 'Butik Otel',
-          text: 'Otelimiz için Google Ads ve Meta reklamları yönetiyor. Rezervasyon sayımız inanılmaz arttı. Özellikle sezon dönemlerinde kampanya optimizasyonu sayesinde doluluk oranımız %95\'e çıktı.',
-          rating: 5
         }
       ]
     },
