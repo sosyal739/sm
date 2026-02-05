@@ -135,30 +135,43 @@ export default function ServiceDetailPage() {
           <h2 className="text-4xl font-bold text-center mb-16">Google Ads Kampanya Türleri</h2>
           
           <div className="grid lg:grid-cols-2 gap-8">
-            {data.features.map((f, i) => (
-              <Card key={i} className="hover:shadow-2xl transition-all duration-500 hover:-translate-y-2 border-l-4 border-l-[#4285F4]">
-                <CardContent className="p-8">
-                  <div className="flex items-start space-x-4 mb-6">
-                    <div className="p-4 rounded-xl bg-[#4285F4]/10">
-                      <Target className="h-12 w-12 text-[#4285F4]" />
-                    </div>
-                    <div>
-                      <h3 className="text-2xl font-bold mb-2 text-[#4285F4]">{f.title}</h3>
-                      <p className="text-muted-foreground">{f.desc}</p>
-                    </div>
-                  </div>
-
-                  <div className="grid gap-3">
-                    {f.items.map((item, idx) => (
-                      <div key={idx} className="flex items-start space-x-3 p-3 rounded-lg hover:bg-gray-50">
-                        <CheckCircle className="h-5 w-5 text-[#4285F4] flex-shrink-0 mt-0.5" />
-                        <span className="text-sm">{item}</span>
+            {data.features.map((f, i) => {
+              // Her kampanya tipi için farklı ikonlar
+              const icons = [
+                { emoji: '🔍', bg: 'bg-[#4285F4]/10', color: 'text-[#4285F4]' },
+                { emoji: '🖼️', bg: 'bg-[#FBBC04]/10', color: 'text-[#FBBC04]' },
+                { emoji: '🛍️', bg: 'bg-[#34A853]/10', color: 'text-[#34A853]' },
+                { emoji: '📹', bg: 'bg-[#EA4335]/10', color: 'text-[#EA4335]' },
+                { emoji: '⚡', bg: 'bg-[#4285F4]/10', color: 'text-[#4285F4]' },
+                { emoji: '📍', bg: 'bg-[#34A853]/10', color: 'text-[#34A853]' }
+              ]
+              const icon = icons[i]
+              
+              return (
+                <Card key={i} className="hover:shadow-2xl transition-all duration-500 hover:-translate-y-2 border-l-4 border-l-[#4285F4]">
+                  <CardContent className="p-8">
+                    <div className="flex items-start space-x-4 mb-6">
+                      <div className={`p-6 rounded-2xl ${icon.bg} text-6xl flex items-center justify-center`}>
+                        {icon.emoji}
                       </div>
-                    ))}
-                  </div>
-                </CardContent>
-              </Card>
-            ))}
+                      <div className="flex-1">
+                        <h3 className="text-2xl font-bold mb-2 text-[#4285F4]">{f.title}</h3>
+                        <p className="text-muted-foreground leading-relaxed">{f.desc}</p>
+                      </div>
+                    </div>
+
+                    <div className="grid gap-3">
+                      {f.items.map((item, idx) => (
+                        <div key={idx} className="flex items-start space-x-3 p-3 rounded-lg hover:bg-gray-50 transition-colors">
+                          <CheckCircle className={`h-5 w-5 flex-shrink-0 mt-0.5 ${icon.color}`} />
+                          <span className="text-sm">{item}</span>
+                        </div>
+                      ))}
+                    </div>
+                  </CardContent>
+                </Card>
+              )
+            })}
           </div>
         </div>
       </section>
