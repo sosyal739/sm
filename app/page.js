@@ -20,7 +20,7 @@ const translations = {
       title: 'Dijital Pazarlama Uzmanı',
       subtitle: 'Google Ads, Meta Ads & SEO ile İşletmenizi Büyütün',
       description: 'Dijital dünyadaki kaosun içinde kaybolmayın. İşletmeniz için değişime dirençli, ölçülebilir ve ticari dönüşüm odaklı bir başarı sistemi inşa ediyoruz.',
-      cta1: 'WhatsApp Hattı',
+      cta1: 'WhatsApp',
       cta2: 'Teklif Alın',
       clients: 'Mutlu Müşteri & Firma'
     },
@@ -122,24 +122,6 @@ const translations = {
           role: 'Restoran Sahibi',
           text: 'Daha önce farklı ajanslarla çalıştık ama verim alamadık. Salih Bey ile çalışmaya başladığımızdan beri raporlamalar o kadar net ki paramızın nereye gittiğini biliyoruz. Kesinlikle öneririm.',
           rating: 5
-        },
-        {
-          name: 'Sarah Mitchell',
-          role: 'Mağaza Sahibi',
-          text: 'Sadece reklam satmaya çalışanlardan değil, gerçekten strateji kuran birisi. Sektörümüz rekabetli olmasına rağmen 4 ayda hedeflediğimiz satış rakamlarına ulaştık. Güvenilir ve çalışkan.',
-          rating: 5
-        },
-        {
-          name: 'Thomas Schmidt',
-          role: 'Startup Kurucusu',
-          text: 'Startup projemiz için danışmanlık aldık. Bütçemizi en verimli şekilde kullanarak bize harika bir büyüme planı çizdi. Kendisiyle çalışmak bir uzman ile değil, bir iş ortağıyla çalışmak gibi.',
-          rating: 5
-        },
-        {
-          name: 'Elif Aksoy',
-          role: 'Butik Otel',
-          text: 'Otelimiz için Google Ads ve Meta reklamları yönetiyor. Rezervasyon sayımız inanılmaz arttı. Özellikle sezon dönemlerinde kampanya optimizasyonu sayesinde doluluk oranımız %95\'e çıktı.',
-          rating: 5
         }
       ]
     },
@@ -208,7 +190,7 @@ const translations = {
       title: 'Digital Marketing Experte',
       subtitle: 'Lassen Sie Ihr Unternehmen mit Google Ads, Meta Ads & SEO wachsen',
       description: 'Verlieren Sie sich nicht im Chaos der digitalen Welt. Wir bauen ein veränderungsresistentes, messbares und konversionsorientiertes Erfolgssystem für Ihr Unternehmen auf.',
-      cta1: 'WhatsApp-Hotline',
+      cta1: 'WhatsApp',
       cta2: 'Angebot Erhalten',
       clients: 'Zufriedene Kunden & Firmen'
     },
@@ -310,24 +292,6 @@ const translations = {
           role: 'Restaurant-Besitzer',
           text: 'Wir haben zuvor mit verschiedenen Agenturen zusammengearbeitet, aber keine Ergebnisse erzielt. Seit wir mit Herrn Maral arbeiten, sind die Berichte so klar, dass wir wissen, wohin unser Geld fließt. Ich empfehle ihn auf jeden Fall.',
           rating: 5
-        },
-        {
-          name: 'Lisa Becker',
-          role: 'Ladenbesitzerin',
-          text: 'Er ist nicht einer von denen, die nur versuchen, Werbung zu verkaufen, sondern jemand, der wirklich Strategie aufbaut. Obwohl unsere Branche wettbewerbsfähig ist, haben wir in 4 Monaten unsere Verkaufsziele erreicht. Zuverlässig und fleißig.',
-          rating: 5
-        },
-        {
-          name: 'David Klein',
-          role: 'Startup-Gründer',
-          text: 'Wir haben Beratung für unser Startup-Projekt erhalten. Er hat uns einen großartigen Wachstumsplan erstellt, indem er unser Budget optimal nutzte. Mit ihm zu arbeiten ist wie mit einem Geschäftspartner zu arbeiten, nicht mit einem Experten.',
-          rating: 5
-        },
-        {
-          name: 'Sophie Wagner',
-          role: 'Boutique-Hotel',
-          text: 'Er verwaltet Google Ads und Meta-Anzeigen für unser Hotel. Die Anzahl der Reservierungen ist unglaublich gestiegen. Besonders in der Hochsaison stieg unsere Auslastung dank Kampagnenoptimierung auf 95%.',
-          rating: 5
         }
       ]
     },
@@ -396,7 +360,7 @@ const translations = {
       title: 'Digital Marketing Expert',
       subtitle: 'Grow Your Business with Google Ads, Meta Ads & SEO',
       description: "Don't get lost in the chaos of the digital world. We build a change-resistant, measurable and conversion-focused success system for your business.",
-      cta1: 'WhatsApp Hotline',
+      cta1: 'WhatsApp',
       cta2: 'Get Quote',
       clients: 'Happy Clients & Companies'
     },
@@ -497,24 +461,6 @@ const translations = {
           name: 'Robert Brown',
           role: 'Restaurant Owner',
           text: 'We worked with different agencies before but didn\'t get results. Since we started working with Mr. Maral, the reports are so clear that we know where our money is going. I definitely recommend him.',
-          rating: 5
-        },
-        {
-          name: 'Emily Davis',
-          role: 'Store Owner',
-          text: 'He\'s not one of those who just tries to sell advertising, but someone who really builds strategy. Although our industry is competitive, we reached our sales targets in 4 months. Reliable and hardworking.',
-          rating: 5
-        },
-        {
-          name: 'Michael Wilson',
-          role: 'Startup Founder',
-          text: 'We received consultation for our startup project. He drew us a great growth plan by using our budget most efficiently. Working with him is like working with a business partner, not an expert.',
-          rating: 5
-        },
-        {
-          name: 'Jessica Miller',
-          role: 'Boutique Hotel',
-          text: 'He manages Google Ads and Meta ads for our hotel. The number of reservations has increased incredibly. Especially during the season, our occupancy rate rose to 95% thanks to campaign optimization.',
           rating: 5
         }
       ]
@@ -989,18 +935,20 @@ export default function Home() {
                         )}
                         {service.icon === 'meta' && (
                           <div className="p-4 rounded-2xl bg-white shadow-lg group-hover:shadow-2xl transition-shadow">
-                            <svg className="w-16 h-16" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
-                              <circle cx="24" cy="24" r="20" fill="#1877F2"/>
-                              <path d="M29.5 15.5h-3.2c-2.3 0-3.8 1.5-3.8 3.8v2.9h-3.2v4h3.2V37h4.7V26.2h3.2l.5-4h-3.7v-2.5c0-1.1.3-1.8 1.8-1.8h2.2v-3.6c-.4 0-1.7-.2-3.2-.2z" fill="white"/>
-                            </svg>
+                            <img 
+                              src="https://upload.wikimedia.org/wikipedia/commons/7/7b/Meta_Platforms_Inc._logo.svg" 
+                              alt="Meta" 
+                              className="w-16 h-12 object-contain"
+                            />
                           </div>
                         )}
                         {service.icon === 'tiktok' && (
                           <div className="p-4 rounded-2xl bg-white shadow-lg group-hover:shadow-2xl transition-shadow">
-                            <svg className="w-16 h-16" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
-                              <rect width="48" height="48" rx="12" fill="black"/>
-                              <path d="M34.1 18.3c-2.4 0-4.5-1.3-5.6-3.2v11.5c0 5.8-4.7 10.5-10.5 10.5S7.5 32.4 7.5 26.6c0-5.8 4.7-10.5 10.5-10.5.4 0 .8 0 1.2.1v5.2c-.4-.1-.8-.1-1.2-.1-2.9 0-5.2 2.3-5.2 5.2s2.3 5.2 5.2 5.2 5.2-2.3 5.2-5.2V8.5h5.2c0 .4.1.8.1 1.2.5 2.7 2.6 4.8 5.3 5.3.4.1.8.1 1.2.1v5.2c-.3 0-.6 0-.9 0z" fill="#00F2EA"/>
-                            </svg>
+                            <img 
+                              src="https://upload.wikimedia.org/wikipedia/en/a/a9/TikTok_logo.svg" 
+                              alt="TikTok" 
+                              className="w-16 h-16 object-contain"
+                            />
                           </div>
                         )}
                         {service.icon === 'x' && (
@@ -1177,66 +1125,117 @@ export default function Home() {
       </section>
 
       {/* Contact Section */}
-      <section id="contact" className="py-20 bg-muted/30">
-        <div className="container mx-auto px-4">
-          <div className="max-w-2xl mx-auto">
+      <section id="contact" className="py-20 bg-gradient-to-br from-gray-50 via-white to-gray-50 relative overflow-hidden">
+        {/* Background decorations */}
+        <div className="absolute top-0 left-0 w-96 h-96 bg-[#4285F4]/5 rounded-full blur-3xl -translate-x-1/2 -translate-y-1/2"></div>
+        <div className="absolute bottom-0 right-0 w-96 h-96 bg-[#34A853]/5 rounded-full blur-3xl translate-x-1/2 translate-y-1/2"></div>
+        
+        <div className="container mx-auto px-4 relative z-10">
+          <div className="max-w-4xl mx-auto">
+            {/* Header with icon */}
             <div className="text-center mb-12">
-              <h2 className="text-4xl font-bold mb-4">{t.contact.title}</h2>
-              <p className="text-lg text-muted-foreground">{t.contact.subtitle}</p>
+              <div className="inline-flex items-center justify-center w-20 h-20 bg-gradient-to-br from-[#4285F4] to-[#34A853] rounded-2xl mb-6 shadow-xl">
+                <Mail className="h-10 w-10 text-white" />
+              </div>
+              <h2 className="text-4xl font-bold mb-4 bg-gradient-to-r from-[#4285F4] via-[#EA4335] to-[#FBBC04] bg-clip-text text-transparent">{t.contact.title}</h2>
+              <p className="text-lg text-muted-foreground max-w-xl mx-auto">{t.contact.subtitle}</p>
             </div>
-            <Card>
-              <CardContent className="pt-6">
-                <form onSubmit={handleSubmit} className="space-y-4">
-                  <div>
-                    <Input
-                      placeholder={t.contact.form.name}
-                      value={formData.name}
-                      onChange={(e) => setFormData({ ...formData, name: e.target.value })}
-                      required
-                    />
-                  </div>
-                  <div>
-                    <Input
-                      type="email"
-                      placeholder={t.contact.form.email}
-                      value={formData.email}
-                      onChange={(e) => setFormData({ ...formData, email: e.target.value })}
-                      required
-                    />
-                  </div>
-                  <div>
-                    <Input
-                      type="tel"
-                      placeholder={t.contact.form.phone}
-                      value={formData.phone}
-                      onChange={(e) => setFormData({ ...formData, phone: e.target.value })}
-                      required
-                    />
-                  </div>
-                  <div>
-                    <Textarea
-                      placeholder={t.contact.form.message}
-                      value={formData.message}
-                      onChange={(e) => setFormData({ ...formData, message: e.target.value })}
-                      rows={5}
-                      required
-                    />
-                  </div>
-                  {formStatus.message && (
-                    <div className={`p-4 rounded-lg ${formStatus.type === 'success' ? 'bg-green-50 text-green-800' : 'bg-red-50 text-red-800'}`}>
-                      {formStatus.message}
+            
+            {/* Main contact card with border */}
+            <Card className="border-2 border-[#4285F4]/20 shadow-2xl bg-white/80 backdrop-blur-sm rounded-3xl overflow-hidden">
+              <div className="grid md:grid-cols-5 gap-0">
+                {/* Left side - Contact info */}
+                <div className="md:col-span-2 bg-gradient-to-br from-[#4285F4] to-[#34A853] p-8 text-white flex flex-col justify-center">
+                  <h3 className="text-2xl font-bold mb-6">{lang === 'de' ? 'Kontaktinformationen' : lang === 'en' ? 'Contact Information' : 'İletişim Bilgileri'}</h3>
+                  
+                  <div className="space-y-6">
+                    <div className="flex items-center space-x-4">
+                      <div className="w-12 h-12 bg-white/20 rounded-xl flex items-center justify-center">
+                        <Mail className="h-6 w-6" />
+                      </div>
+                      <div>
+                        <p className="text-sm opacity-80">E-posta</p>
+                        <p className="font-semibold">kontakt@salihmaral.de</p>
+                      </div>
                     </div>
-                  )}
-                  <Button
-                    type="submit"
-                    size="lg"
-                    className="w-full bg-gradient-to-r from-[#4285F4] to-[#34A853] hover:from-[#3367d6] hover:to-[#2d9249] text-white"
-                    disabled={isSubmitting}
-                  >
-                    {isSubmitting ? (lang === 'de' ? 'Wird gesendet...' : lang === 'en' ? 'Sending...' : 'Gönderiliyor...') : t.contact.form.submit}
-                  </Button>
-                </form>
-              </CardContent>
+                    
+                    <div className="flex items-center space-x-4">
+                      <div className="w-12 h-12 bg-[#25D366] rounded-xl flex items-center justify-center">
+                        <MessageCircle className="h-6 w-6" />
+                      </div>
+                      <div>
+                        <p className="text-sm opacity-80">WhatsApp</p>
+                        <a href="https://wa.me/491724106463" target="_blank" className="font-semibold hover:underline">{lang === 'de' ? 'Jetzt schreiben' : lang === 'en' ? 'Message Now' : 'Hemen Yaz'}</a>
+                      </div>
+                    </div>
+                  </div>
+                  
+                  <div className="mt-8 pt-6 border-t border-white/20">
+                    <p className="text-sm opacity-80">{lang === 'de' ? 'Antwort innerhalb von 24 Stunden' : lang === 'en' ? 'Response within 24 hours' : '24 saat içinde yanıt'}</p>
+                  </div>
+                </div>
+                
+                {/* Right side - Form */}
+                <div className="md:col-span-3 p-8">
+                  <h3 className="text-xl font-bold mb-6 text-gray-800">{lang === 'de' ? 'Nachricht senden' : lang === 'en' ? 'Send Message' : 'Mesaj Gönder'}</h3>
+                  <form onSubmit={handleSubmit} className="space-y-4">
+                    <div className="grid md:grid-cols-2 gap-4">
+                      <div>
+                        <Input
+                          placeholder={t.contact.form.name}
+                          value={formData.name}
+                          onChange={(e) => setFormData({ ...formData, name: e.target.value })}
+                          required
+                          className="border-2 focus:border-[#4285F4] transition-colors"
+                        />
+                      </div>
+                      <div>
+                        <Input
+                          type="email"
+                          placeholder={t.contact.form.email}
+                          value={formData.email}
+                          onChange={(e) => setFormData({ ...formData, email: e.target.value })}
+                          required
+                          className="border-2 focus:border-[#4285F4] transition-colors"
+                        />
+                      </div>
+                    </div>
+                    <div>
+                      <Input
+                        type="tel"
+                        placeholder={t.contact.form.phone}
+                        value={formData.phone}
+                        onChange={(e) => setFormData({ ...formData, phone: e.target.value })}
+                        required
+                        className="border-2 focus:border-[#4285F4] transition-colors"
+                      />
+                    </div>
+                    <div>
+                      <Textarea
+                        placeholder={t.contact.form.message}
+                        value={formData.message}
+                        onChange={(e) => setFormData({ ...formData, message: e.target.value })}
+                        rows={5}
+                        required
+                        className="border-2 focus:border-[#4285F4] transition-colors"
+                      />
+                    </div>
+                    {formStatus.message && (
+                      <div className={`p-4 rounded-lg ${formStatus.type === 'success' ? 'bg-green-50 text-green-800 border border-green-200' : 'bg-red-50 text-red-800 border border-red-200'}`}>
+                        {formStatus.message}
+                      </div>
+                    )}
+                    <Button
+                      type="submit"
+                      size="lg"
+                      className="w-full bg-gradient-to-r from-[#4285F4] to-[#34A853] hover:from-[#3367d6] hover:to-[#2d9249] text-white shadow-lg hover:shadow-xl transition-all"
+                      disabled={isSubmitting}
+                    >
+                      {isSubmitting ? (lang === 'de' ? 'Wird gesendet...' : lang === 'en' ? 'Sending...' : 'Gönderiliyor...') : t.contact.form.submit}
+                    </Button>
+                  </form>
+                </div>
+              </div>
             </Card>
           </div>
         </div>
