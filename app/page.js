@@ -20,7 +20,7 @@ const translations = {
       title: 'Dijital Pazarlama Uzmanı',
       subtitle: 'Google Ads, Meta Ads & SEO ile İşletmenizi Büyütün',
       description: 'Dijital dünyadaki kaosun içinde kaybolmayın. İşletmeniz için değişime dirençli, ölçülebilir ve ticari dönüşüm odaklı bir başarı sistemi inşa ediyoruz.',
-      cta1: 'WhatsApp Hattı',
+      cta1: 'WhatsApp',
       cta2: 'Teklif Alın',
       clients: 'Mutlu Müşteri & Firma'
     },
