@@ -3,9 +3,392 @@
 import { useParams, useRouter } from 'next/navigation'
 import { Button } from '@/components/ui/button'
 import { Card, CardContent } from '@/components/ui/card'
-import { CheckCircle, ArrowLeft, Phone, MessageCircle, Mail } from 'lucide-react'
+import { CheckCircle, ArrowLeft, Phone, MessageCircle, Mail, TrendingUp, Users, Target, Zap, Award, Eye } from 'lucide-react'
 
 const serviceData = {
+  tr: {
+    'google-ads': {
+      title: 'Google Ads Yönetimi',
+      subtitle: 'Maksimum ROI ile Profesyonel Google Reklamcılığı',
+      description: 'Google Ads ile işletmenizi büyütün. 15+ yıllık deneyimimizle, Google\'ın tüm reklam formatlarında uzmanız.',
+      hero: 'Google\'da görünür olun, müşterilerinize anında ulaşın. Doğru stratejilerle reklam bütçenizi maksimum verimlilikte kullanın.',
+      color: '#4285F4',
+      gradient: 'from-[#4285F4] to-[#34A853]',
+      icon: 'google-ads',
+      features: [
+        {
+          title: 'Arama Ağı Reklamları (Search Ads)',
+          description: 'Müşterilerin aktif olarak aradığı anda karşılarına çıkın. Anahtar kelime optimizasyonu ve teklif stratejileriyle en yüksek dönüşüm oranlarını yakalayın.',
+          icon: 'search',
+          details: [
+            'Hedefli anahtar kelime araştırması ve seçimi',
+            'Rekabet analizi ve teklif optimizasyonu',
+            'A/B test ile reklam metni optimizasyonu',
+            'Kalite skoru iyileştirme stratejileri',
+            'Negatif anahtar kelime yönetimi',
+            'Coğrafi ve demografik hedefleme'
+          ]
+        },
+        {
+          title: 'Display (Görüntülü) Reklamları',
+          description: 'Google\'ın 2 milyondan fazla web sitesi ve uygulamasında görünün. Görsel çekiciliğinizle marka bilinirliğinizi artırın.',
+          icon: 'display',
+          details: [
+            'Banner ve görsel reklam tasarımı',
+            'Remarketing kampanyaları',
+            'Responsive display reklamlar',
+            'Hedef kitle segmentasyonu',
+            'Placement hedefleme',
+            'Frekans kontrolü ve optimizasyonu'
+          ]
+        },
+        {
+          title: 'Shopping Reklamları',
+          description: 'E-ticaret işletmeniz için özel. Ürünlerinizi fotoğraf, fiyat ve mağaza bilgisiyle birlikte gösterin.',
+          icon: 'shopping',
+          details: [
+            'Google Merchant Center kurulumu',
+            'Ürün feed optimizasyonu',
+            'Shopping kampanyası stratejisi',
+            'ROAS (Reklam Harcaması Getirisi) optimizasyonu',
+            'Otomatik ve manuel teklif yönetimi',
+            'Ürün segmentasyonu ve bütçe dağıtımı'
+          ]
+        },
+        {
+          title: 'YouTube Video Reklamları',
+          description: 'Dünyanın en büyük video platformunda milyonlarca kullanıcıya ulaşın. Video içeriklerinizle etkileyici kampanyalar yürütün.',
+          icon: 'video',
+          details: [
+            'TrueView In-Stream reklamlar (atlanabilir)',
+            'TrueView Discovery reklamlar',
+            'Bumper ads (6 saniyelik kısa reklamlar)',
+            'Non-skippable ads (atlanamayan reklamlar)',
+            'Video remarketing',
+            'YouTube kanalı büyütme stratejileri'
+          ]
+        },
+        {
+          title: 'Performance Max Kampanyaları',
+          description: 'Google\'ın yapay zeka destekli en yeni kampanya tipi. Tüm Google ağlarında otomatik optimizasyon.',
+          icon: 'ai',
+          details: [
+            'Çoklu kanal optimizasyonu (Arama, Display, YouTube, Gmail, Discover)',
+            'Yapay zeka destekli hedef kitle bulma',
+            'Otomatik reklam varyasyonları',
+            'Gerçek zamanlı performans optimizasyonu',
+            'Dönüşüm değeri maksimizasyonu',
+            'Asset grupları yönetimi'
+          ]
+        },
+        {
+          title: 'Yerel Kampanyalar (Local Campaigns)',
+          description: 'Fiziksel mağazanız varsa, yakınınızdaki müşterilere ulaşın. Google Maps ve yerel aramalarda öne çıkın.',
+          icon: 'location',
+          details: [
+            'Google My Business entegrasyonu',
+            'Store visits (mağaza ziyareti) optimizasyonu',
+            'Yerel envanter reklamları',
+            'Konum genişletmeleri',
+            'Çağrı genişletmeleri',
+            'Yakınlık hedefleme'
+          ]
+        }
+      ],
+      stats: [
+        { value: '+250%', label: 'Ortalama ROI Artışı', icon: TrendingUp },
+        { value: '500+', label: 'Başarılı Kampanya', icon: Award },
+        { value: '%98', label: 'Müşteri Memnuniyeti', icon: Users },
+        { value: '24/7', label: 'Kampanya İzleme', icon: Eye }
+      ],
+      process: {
+        title: 'Çalışma Sürecimiz',
+        steps: [
+          {
+            title: '1. Keşif ve Strateji',
+            description: 'İşletmenizi, hedeflerinizi ve rekabetinizi analiz ediyoruz. Size özel bir Google Ads stratejisi oluşturuyoruz.',
+            icon: Target
+          },
+          {
+            title: '2. Kampanya Kurulumu',
+            description: 'Hesap yapılandırması, dönüşüm takibi, anahtar kelime araştırması ve reklam metinleri hazırlıyoruz.',
+            icon: Zap
+          },
+          {
+            title: '3. Optimizasyon',
+            description: 'Kampanyalarınızı sürekli izliyor, test ediyor ve optimize ediyoruz. Maksimum performans için ince ayarlar yapıyoruz.',
+            icon: TrendingUp
+          },
+          {
+            title: '4. Raporlama',
+            description: 'Aylık detaylı raporlarla ne kadar harcadığınızı, ne kadar kazandığınızı şeffaf bir şekilde görüyorsunuz.',
+            icon: Award
+          }
+        ]
+      },
+      why: {
+        title: 'Neden Bizimle Çalışmalısınız?',
+        reasons: [
+          'Google Ads sertifikalı uzman ekip',
+          '15+ yıllık kampanya yönetimi deneyimi',
+          'Şeffaf raporlama ve performans takibi',
+          'ROI odaklı strateji ve optimizasyon',
+          'Sektör ortalamasının üzerinde dönüşüm oranları',
+          '7/24 kampanya izleme ve müdahale'
+        ]
+      },
+      cta: {
+        title: 'Google Ads ile Büyümeye Başlayın',
+        description: 'Ücretsiz Google Ads analizi için hemen iletişime geçin. Reklamlarınızın potansiyelini keşfedin.'
+      }
+    }
+  }
+}
+
+const getIconComponent = (iconType) => {
+  const iconProps = { className: "h-12 w-12", strokeWidth: 1.5 }
+  switch(iconType) {
+    case 'search': return <Target {...iconProps} />
+    case 'display': return <Eye {...iconProps} />
+    case 'shopping': return <svg {...iconProps} fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" d="M16 11V7a4 4 0 00-8 0v4M5 9h14l1 12H4L5 9z" /></svg>
+    case 'video': return <svg {...iconProps} fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" d="M15 10l4.553-2.276A1 1 0 0121 8.618v6.764a1 1 0 01-1.447.894L15 14M5 18h8a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v8a2 2 0 002 2z" /></svg>
+    case 'ai': return <Zap {...iconProps} />
+    case 'location': return <svg {...iconProps} fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" /><path strokeLinecap="round" strokeLinejoin="round" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" /></svg>
+    default: return <CheckCircle {...iconProps} />
+  }
+}
+
+export default function ServiceDetailPage() {
+  const params = useParams()
+  const router = useRouter()
+  const { lang = 'tr', service } = params
+
+  const data = serviceData[lang]?.[service]
+
+  if (!data) {
+    return (
+      <div className="min-h-screen flex items-center justify-center">
+        <div className="text-center">
+          <h1 className="text-4xl font-bold mb-4">Hizmet Bulunamadı</h1>
+          <Button onClick={() => router.push('/')}>Ana Sayfaya Dön</Button>
+        </div>
+      </div>
+    )
+  }
+
+  const scrollToContact = () => {
+    router.push('/#contact')
+  }
+
+  return (
+    <div className="min-h-screen bg-background">
+      {/* Navigation */}
+      <nav className="fixed top-0 left-0 right-0 z-50 bg-white/95 backdrop-blur-sm border-b">
+        <div className="container mx-auto px-4 py-4">
+          <div className="flex items-center justify-between">
+            <button onClick={() => router.push('/')} className="flex items-center space-x-2 hover:opacity-80">
+              <ArrowLeft className="h-5 w-5" />
+              <span className="font-semibold">Geri</span>
+            </button>
+            <a href="/" className="text-xl font-bold bg-gradient-to-r from-[#4285F4] via-[#EA4335] to-[#FBBC04] bg-clip-text text-transparent">
+              Salih Maral
+            </a>
+            <div className="flex items-center space-x-4">
+              <Button size="sm" variant="outline" asChild>
+                <a href="tel:+491724106463">
+                  <Phone className="h-4 w-4 mr-2" />
+                  Ara
+                </a>
+              </Button>
+            </div>
+          </div>
+        </div>
+      </nav>
+
+      {/* Hero Section - Animated */}
+      <section className={`pt-32 pb-20 px-4 bg-gradient-to-br ${data.gradient} text-white relative overflow-hidden`}>
+        {/* Animated Background Elements */}
+        <div className="absolute inset-0 overflow-hidden">
+          <div className="absolute -top-40 -right-40 w-80 h-80 bg-white/10 rounded-full blur-3xl animate-pulse"></div>
+          <div className="absolute -bottom-40 -left-40 w-80 h-80 bg-white/10 rounded-full blur-3xl animate-pulse delay-1000"></div>
+        </div>
+
+        <div className="container mx-auto relative z-10">
+          <div className="max-w-4xl mx-auto text-center">
+            {/* Google Ads Logo */}
+            <div className="mb-8 inline-block">
+              <svg className="w-24 h-24 mx-auto animate-bounce-slow" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <circle cx="24" cy="24" r="22" fill="white" fillOpacity="0.2"/>
+                <circle cx="24" cy="24" r="20" fill="white"/>
+                <path d="M24 10L16 26H21L19 34L32 18H27L29 10H24Z" fill={data.color}/>
+              </svg>
+            </div>
+
+            <h1 className="text-6xl lg:text-7xl font-bold mb-6 drop-shadow-lg">{data.title}</h1>
+            <p className="text-2xl mb-6 opacity-90 font-semibold">{data.subtitle}</p>
+            <p className="text-xl mb-8 opacity-80 max-w-3xl mx-auto">{data.hero}</p>
+            
+            {/* Stats */}
+            <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mt-12">
+              {data.stats.map((stat, index) => {
+                const IconComponent = stat.icon
+                return (
+                  <div key={index} className="bg-white/10 backdrop-blur-sm rounded-xl p-6 transform hover:scale-105 transition-transform">
+                    <IconComponent className="h-8 w-8 mx-auto mb-3" />
+                    <p className="text-3xl font-bold mb-1">{stat.value}</p>
+                    <p className="text-sm opacity-80">{stat.label}</p>
+                  </div>
+                )
+              })}
+            </div>
+
+            <div className="flex flex-wrap justify-center gap-4 mt-12">
+              <Button size="lg" className="bg-white text-[#4285F4] hover:bg-gray-100 shadow-xl transform hover:scale-105 transition-all" asChild>
+                <a href="https://wa.me/491724106463" target="_blank" rel="noopener noreferrer">
+                  <MessageCircle className="mr-2 h-5 w-5" />
+                  WhatsApp ile İletişim
+                </a>
+              </Button>
+              <Button size="lg" variant="outline" className="border-white text-white hover:bg-white/10 shadow-xl" onClick={scrollToContact}>
+                <Mail className="mr-2 h-5 w-5" />
+                Ücretsiz Teklif Alın
+              </Button>
+            </div>
+          </div>
+        </div>
+
+        <style jsx>{`
+          @keyframes bounce-slow {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(-10px); }
+          }
+          .animate-bounce-slow {
+            animation: bounce-slow 3s infinite;
+          }
+          .delay-1000 {
+            animation-delay: 1s;
+          }
+        `}</style>
+      </section>
+
+      {/* Features Section - Card Grid */}
+      <section className="py-20 px-4 bg-gray-50">
+        <div className="container mx-auto">
+          <div className="text-center mb-16">
+            <h2 className="text-4xl font-bold mb-4">Google Ads Kampanya Türleri</h2>
+            <p className="text-xl text-muted-foreground">Her işletme türü için özel kampanya stratejileri</p>
+          </div>
+
+          <div className="grid lg:grid-cols-2 gap-8">
+            {data.features.map((feature, index) => (
+              <Card key={index} className="overflow-hidden hover:shadow-2xl transition-all duration-500 hover:-translate-y-2 border-l-4" style={{ borderLeftColor: data.color }}>
+                <CardContent className="p-8">
+                  <div className="flex items-start space-x-4 mb-6">
+                    <div className="p-4 rounded-xl bg-gradient-to-br" style={{ background: `linear-gradient(135deg, ${data.color}20, ${data.color}10)` }}>
+                      <div style={{ color: data.color }}>
+                        {getIconComponent(feature.icon)}
+                      </div>
+                    </div>
+                    <div className="flex-1">
+                      <h3 className="text-2xl font-bold mb-2" style={{ color: data.color }}>{feature.title}</h3>
+                      <p className="text-muted-foreground">{feature.description}</p>
+                    </div>
+                  </div>
+
+                  <div className="grid gap-3 mt-6">
+                    {feature.details.map((detail, idx) => (
+                      <div key={idx} className="flex items-start space-x-3 p-3 rounded-lg hover:bg-gray-50 transition-colors">
+                        <CheckCircle className="h-5 w-5 flex-shrink-0 mt-0.5" style={{ color: data.color }} />
+                        <span className="text-sm">{detail}</span>
+                      </div>
+                    ))}
+                  </div>
+                </CardContent>
+              </Card>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Process Section */}
+      <section className="py-20 px-4 bg-white">
+        <div className="container mx-auto">
+          <h2 className="text-4xl font-bold text-center mb-16">{data.process.title}</h2>
+          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+            {data.process.steps.map((step, index) => {
+              const IconComponent = step.icon
+              return (
+                <div key={index} className="relative group">
+                  <Card className="h-full hover:shadow-xl transition-all duration-300">
+                    <CardContent className="pt-8 text-center">
+                      <div className="w-20 h-20 mx-auto mb-6 rounded-full flex items-center justify-center bg-gradient-to-br" style={{ background: `linear-gradient(135deg, ${data.color}, ${data.gradient.split('to-')[1].replace('[', '#').replace(']', '')})` }}>
+                        <IconComponent className="h-10 w-10 text-white" />
+                      </div>
+                      <h3 className="text-xl font-bold mb-3">{step.title}</h3>
+                      <p className="text-muted-foreground">{step.description}</p>
+                    </CardContent>
+                  </Card>
+                  {index < data.process.steps.length - 1 && (
+                    <div className="hidden lg:block absolute top-1/2 -right-3 w-6 h-0.5 bg-gradient-to-r" style={{ background: `linear-gradient(90deg, ${data.color}, transparent)` }}></div>
+                  )}
+                </div>
+              )
+            })}
+          </div>
+        </div>
+      </section>
+
+      {/* Why Us Section */}
+      <section className="py-20 px-4" style={{ background: `linear-gradient(135deg, ${data.color}10, transparent)` }}>
+        <div className="container mx-auto">
+          <div className="max-w-3xl mx-auto">
+            <h2 className="text-4xl font-bold text-center mb-12">{data.why.title}</h2>
+            <div className="grid md:grid-cols-2 gap-4">
+              {data.why.reasons.map((reason, index) => (
+                <div key={index} className="flex items-center space-x-3 bg-white p-5 rounded-xl shadow-sm hover:shadow-lg transition-shadow">
+                  <div className="flex-shrink-0 w-8 h-8 rounded-full flex items-center justify-center" style={{ backgroundColor: `${data.color}20` }}>
+                    <CheckCircle className="h-5 w-5" style={{ color: data.color }} />
+                  </div>
+                  <span className="font-medium">{reason}</span>
+                </div>
+              ))}
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* CTA Section */}
+      <section className="py-20 px-4 bg-gradient-to-br" style={{ background: `linear-gradient(135deg, ${data.color}, ${data.gradient.split('to-')[1].replace('[', '#').replace(']', '')})` }}>
+        <div className="container mx-auto text-center text-white">
+          <h2 className="text-5xl font-bold mb-6">{data.cta.title}</h2>
+          <p className="text-xl mb-8 max-w-2xl mx-auto opacity-90">{data.cta.description}</p>
+          <div className="flex flex-wrap justify-center gap-4">
+            <Button size="lg" className="bg-white hover:bg-gray-100 shadow-2xl transform hover:scale-105 transition-all" style={{ color: data.color }} asChild>
+              <a href="tel:+491724106463">
+                <Phone className="mr-2 h-5 w-5" />
+                01724106463
+              </a>
+            </Button>
+            <Button size="lg" className="bg-[#34A853] hover:bg-[#2d9249] text-white shadow-2xl transform hover:scale-105 transition-all" asChild>
+              <a href="https://wa.me/491724106463" target="_blank" rel="noopener noreferrer">
+                <MessageCircle className="mr-2 h-5 w-5" />
+                WhatsApp
+              </a>
+            </Button>
+          </div>
+        </div>
+      </section>
+
+      {/* Footer */}
+      <footer className="py-12 bg-gray-900 text-white">
+        <div className="container mx-auto px-4 text-center">
+          <p className="text-sm text-gray-400">© 2026 Salih Maral. Tüm hakları saklıdır.</p>
+        </div>
+      </footer>
+    </div>
+  )
+}
+
   tr: {
     'google-ads': {
       title: 'Google Ads Yönetimi',
