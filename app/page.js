@@ -989,18 +989,20 @@ export default function Home() {
                         )}
                         {service.icon === 'meta' && (
                           <div className="p-4 rounded-2xl bg-white shadow-lg group-hover:shadow-2xl transition-shadow">
-                            <svg className="w-16 h-16" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
-                              <circle cx="24" cy="24" r="20" fill="#1877F2"/>
-                              <path d="M29.5 15.5h-3.2c-2.3 0-3.8 1.5-3.8 3.8v2.9h-3.2v4h3.2V37h4.7V26.2h3.2l.5-4h-3.7v-2.5c0-1.1.3-1.8 1.8-1.8h2.2v-3.6c-.4 0-1.7-.2-3.2-.2z" fill="white"/>
-                            </svg>
+                            <img 
+                              src="https://upload.wikimedia.org/wikipedia/commons/7/7b/Meta_Platforms_Inc._logo.svg" 
+                              alt="Meta" 
+                              className="w-16 h-12 object-contain"
+                            />
                           </div>
                         )}
                         {service.icon === 'tiktok' && (
                           <div className="p-4 rounded-2xl bg-white shadow-lg group-hover:shadow-2xl transition-shadow">
-                            <svg className="w-16 h-16" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
-                              <rect width="48" height="48" rx="12" fill="black"/>
-                              <path d="M34.1 18.3c-2.4 0-4.5-1.3-5.6-3.2v11.5c0 5.8-4.7 10.5-10.5 10.5S7.5 32.4 7.5 26.6c0-5.8 4.7-10.5 10.5-10.5.4 0 .8 0 1.2.1v5.2c-.4-.1-.8-.1-1.2-.1-2.9 0-5.2 2.3-5.2 5.2s2.3 5.2 5.2 5.2 5.2-2.3 5.2-5.2V8.5h5.2c0 .4.1.8.1 1.2.5 2.7 2.6 4.8 5.3 5.3.4.1.8.1 1.2.1v5.2c-.3 0-.6 0-.9 0z" fill="#00F2EA"/>
-                            </svg>
+                            <img 
+                              src="https://upload.wikimedia.org/wikipedia/en/a/a9/TikTok_logo.svg" 
+                              alt="TikTok" 
+                              className="w-16 h-16 object-contain"
+                            />
                           </div>
                         )}
                         {service.icon === 'x' && (
