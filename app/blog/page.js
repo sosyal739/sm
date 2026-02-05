@@ -103,7 +103,8 @@ export default function BlogPage() {
         <div className="container mx-auto">
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
             {blogPosts.map((post) => (
-              <Card key={post.id} className="hover:shadow-2xl transition-all duration-300 hover:-translate-y-2 overflow-hidden group cursor-pointer">
+              <a key={post.id} href={`/blog/${post.slug}`} className="block">
+                <Card className="hover:shadow-2xl transition-all duration-300 hover:-translate-y-2 overflow-hidden group cursor-pointer h-full">
                 <div className="h-48 bg-gradient-to-br from-[#4285F4]/20 to-[#34A853]/20 flex items-center justify-center">
                   <div className="text-6xl">{
                     post.category === 'Google Ads' ? '🎯' :
