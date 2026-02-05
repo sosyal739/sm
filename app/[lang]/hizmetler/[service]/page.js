@@ -553,20 +553,71 @@ export default function ServiceDetailPage() {
 
   return (
     <div className="min-h-screen bg-white">
-      {/* Navigation */}
-      <nav className="fixed top-0 left-0 right-0 z-50 bg-white border-b border-gray-100">
+      {/* Navigation - Same as Homepage */}
+      <nav className="fixed top-0 left-0 right-0 z-50 bg-white/95 backdrop-blur-sm border-b">
         <div className="container mx-auto px-4 py-4">
           <div className="flex items-center justify-between">
-            <button onClick={() => router.push('/')} className="flex items-center space-x-2 text-gray-600 hover:text-gray-900 transition-colors">
-              <ArrowLeft className="h-5 w-5" />
-              <span className="font-medium">Ana Sayfa</span>
-            </button>
-            <a href="/" className="text-xl font-bold text-gray-900">
-              Salih Maral
-            </a>
-            <Button size="sm" style={{ backgroundColor: data.primaryColor }} className="text-white hover:opacity-90" onClick={scrollToContact}>
-              İletişime Geç
-            </Button>
+            <div className="flex items-center space-x-2">
+              <Globe className="h-6 w-6 text-[#4285F4]" />
+              <a href="/" className="text-xl font-bold bg-gradient-to-r from-[#4285F4] via-[#EA4335] to-[#FBBC04] bg-clip-text text-transparent">
+                Salih Maral
+              </a>
+            </div>
+            
+            <div className="hidden md:flex items-center space-x-6">
+              <div className="relative group">
+                <button className="text-sm font-bold text-gray-900 hover:text-[#4285F4] transition-colors flex items-center">
+                  {navT.services}
+                  <svg className="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
+                  </svg>
+                </button>
+                <div className="absolute left-0 mt-2 w-64 bg-white rounded-lg shadow-2xl opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 z-50 border border-gray-100">
+                  <div className="py-2">
+                    {services.map((s, idx) => (
+                      <a
+                        key={idx}
+                        href={`/${lang}/hizmetler/${s.slug}`}
+                        className="block px-4 py-3 text-sm text-gray-700 hover:bg-[#4285F4]/10 hover:text-[#4285F4] transition-colors"
+                      >
+                        <div className="font-semibold">{s.title}</div>
+                      </a>
+                    ))}
+                  </div>
+                </div>
+              </div>
+              <a href="/#success" className="text-sm font-bold text-gray-900 hover:text-[#4285F4] transition-colors">{navT.success}</a>
+              <a href="/#about" className="text-sm font-bold text-gray-900 hover:text-[#4285F4] transition-colors">{navT.about}</a>
+              <a href="/blog" className="text-sm font-bold text-gray-900 hover:text-[#4285F4] transition-colors">Blog</a>
+              <a href="/#contact" className="text-sm font-bold text-gray-900 hover:text-[#4285F4] transition-colors">{navT.contact}</a>
+            </div>
+
+            <div className="flex items-center space-x-2">
+              <Button
+                variant={lang === 'de' ? 'default' : 'outline'}
+                size="sm"
+                onClick={() => handleLanguageChange('de')}
+                className={lang === 'de' ? 'bg-[#4285F4]' : ''}
+              >
+                DE
+              </Button>
+              <Button
+                variant={lang === 'en' ? 'default' : 'outline'}
+                size="sm"
+                onClick={() => handleLanguageChange('en')}
+                className={lang === 'en' ? 'bg-[#4285F4]' : ''}
+              >
+                EN
+              </Button>
+              <Button
+                variant={lang === 'tr' ? 'default' : 'outline'}
+                size="sm"
+                onClick={() => handleLanguageChange('tr')}
+                className={lang === 'tr' ? 'bg-[#4285F4]' : ''}
+              >
+                TR
+              </Button>
+            </div>
           </div>
         </div>
       </nav>
