@@ -292,24 +292,6 @@ const translations = {
           role: 'Restaurant-Besitzer',
           text: 'Wir haben zuvor mit verschiedenen Agenturen zusammengearbeitet, aber keine Ergebnisse erzielt. Seit wir mit Herrn Maral arbeiten, sind die Berichte so klar, dass wir wissen, wohin unser Geld fließt. Ich empfehle ihn auf jeden Fall.',
           rating: 5
-        },
-        {
-          name: 'Lisa Becker',
-          role: 'Ladenbesitzerin',
-          text: 'Er ist nicht einer von denen, die nur versuchen, Werbung zu verkaufen, sondern jemand, der wirklich Strategie aufbaut. Obwohl unsere Branche wettbewerbsfähig ist, haben wir in 4 Monaten unsere Verkaufsziele erreicht. Zuverlässig und fleißig.',
-          rating: 5
-        },
-        {
-          name: 'David Klein',
-          role: 'Startup-Gründer',
-          text: 'Wir haben Beratung für unser Startup-Projekt erhalten. Er hat uns einen großartigen Wachstumsplan erstellt, indem er unser Budget optimal nutzte. Mit ihm zu arbeiten ist wie mit einem Geschäftspartner zu arbeiten, nicht mit einem Experten.',
-          rating: 5
-        },
-        {
-          name: 'Sophie Wagner',
-          role: 'Boutique-Hotel',
-          text: 'Er verwaltet Google Ads und Meta-Anzeigen für unser Hotel. Die Anzahl der Reservierungen ist unglaublich gestiegen. Besonders in der Hochsaison stieg unsere Auslastung dank Kampagnenoptimierung auf 95%.',
-          rating: 5
         }
       ]
     },
