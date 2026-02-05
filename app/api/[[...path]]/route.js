@@ -23,7 +23,7 @@ if (process.env.NODE_ENV === 'development') {
 
 async function getDatabase() {
   const client = await clientPromise
-  return client.db('salih_maral_website')
+  return client.db(process.env.DB_NAME || 'salih_maral_website')
 }
 
 // GET handler
