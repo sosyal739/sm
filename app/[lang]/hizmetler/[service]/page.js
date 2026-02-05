@@ -414,7 +414,7 @@ export default function ServiceDetailPage() {
       ]
     },
 
-    'review-management': {
+    'yorum-yonetimi': {
       title: 'Olumsuz Yorum Yönetimi',
       subtitle: 'Online itibarınızı koruyun ve güçlendirin',
       description: 'Google Maps, Trustpilot ve diğer platformlardaki haksız, sahte veya manipülatif yorumları kaldırıyoruz. İtibar yönetimi ve kriz iletişimi ile markanızı koruyoruz.',
