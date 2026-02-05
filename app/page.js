@@ -1324,8 +1324,13 @@ export default function Home() {
               </ul>
             </div>
           </div>
-          <div className="border-t border-gray-800 pt-8 text-center text-sm text-gray-400">
+          <div className="border-t border-gray-800 pt-8 flex flex-col md:flex-row items-center justify-between text-sm text-gray-400">
             <p>© 2026 Salih Maral. {t.footer.rights}</p>
+            <div className="flex items-center space-x-6 mt-4 md:mt-0">
+              <a href="/impressum" className="hover:text-white transition-colors">Impressum</a>
+              <a href="/datenschutz" className="hover:text-white transition-colors">Datenschutzerklärung</a>
+              <a href="/blog" className="hover:text-white transition-colors">Blog</a>
+            </div>
           </div>
         </div>
       </footer>
