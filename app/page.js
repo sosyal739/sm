@@ -1125,66 +1125,127 @@ export default function Home() {
       </section>
 
       {/* Contact Section */}
-      <section id="contact" className="py-20 bg-muted/30">
-        <div className="container mx-auto px-4">
-          <div className="max-w-2xl mx-auto">
+      <section id="contact" className="py-20 bg-gradient-to-br from-gray-50 via-white to-gray-50 relative overflow-hidden">
+        {/* Background decorations */}
+        <div className="absolute top-0 left-0 w-96 h-96 bg-[#4285F4]/5 rounded-full blur-3xl -translate-x-1/2 -translate-y-1/2"></div>
+        <div className="absolute bottom-0 right-0 w-96 h-96 bg-[#34A853]/5 rounded-full blur-3xl translate-x-1/2 translate-y-1/2"></div>
+        
+        <div className="container mx-auto px-4 relative z-10">
+          <div className="max-w-4xl mx-auto">
+            {/* Header with icon */}
             <div className="text-center mb-12">
-              <h2 className="text-4xl font-bold mb-4">{t.contact.title}</h2>
-              <p className="text-lg text-muted-foreground">{t.contact.subtitle}</p>
+              <div className="inline-flex items-center justify-center w-20 h-20 bg-gradient-to-br from-[#4285F4] to-[#34A853] rounded-2xl mb-6 shadow-xl">
+                <Mail className="h-10 w-10 text-white" />
+              </div>
+              <h2 className="text-4xl font-bold mb-4 bg-gradient-to-r from-[#4285F4] via-[#EA4335] to-[#FBBC04] bg-clip-text text-transparent">{t.contact.title}</h2>
+              <p className="text-lg text-muted-foreground max-w-xl mx-auto">{t.contact.subtitle}</p>
             </div>
-            <Card>
-              <CardContent className="pt-6">
-                <form onSubmit={handleSubmit} className="space-y-4">
-                  <div>
-                    <Input
-                      placeholder={t.contact.form.name}
-                      value={formData.name}
-                      onChange={(e) => setFormData({ ...formData, name: e.target.value })}
-                      required
-                    />
-                  </div>
-                  <div>
-                    <Input
-                      type="email"
-                      placeholder={t.contact.form.email}
-                      value={formData.email}
-                      onChange={(e) => setFormData({ ...formData, email: e.target.value })}
-                      required
-                    />
-                  </div>
-                  <div>
-                    <Input
-                      type="tel"
-                      placeholder={t.contact.form.phone}
-                      value={formData.phone}
-                      onChange={(e) => setFormData({ ...formData, phone: e.target.value })}
-                      required
-                    />
-                  </div>
-                  <div>
-                    <Textarea
-                      placeholder={t.contact.form.message}
-                      value={formData.message}
-                      onChange={(e) => setFormData({ ...formData, message: e.target.value })}
-                      rows={5}
-                      required
-                    />
-                  </div>
-                  {formStatus.message && (
-                    <div className={`p-4 rounded-lg ${formStatus.type === 'success' ? 'bg-green-50 text-green-800' : 'bg-red-50 text-red-800'}`}>
-                      {formStatus.message}
+            
+            {/* Main contact card with border */}
+            <Card className="border-2 border-[#4285F4]/20 shadow-2xl bg-white/80 backdrop-blur-sm rounded-3xl overflow-hidden">
+              <div className="grid md:grid-cols-5 gap-0">
+                {/* Left side - Contact info */}
+                <div className="md:col-span-2 bg-gradient-to-br from-[#4285F4] to-[#34A853] p-8 text-white flex flex-col justify-center">
+                  <h3 className="text-2xl font-bold mb-6">{lang === 'de' ? 'Kontaktinformationen' : lang === 'en' ? 'Contact Information' : 'İletişim Bilgileri'}</h3>
+                  
+                  <div className="space-y-6">
+                    <div className="flex items-center space-x-4">
+                      <div className="w-12 h-12 bg-white/20 rounded-xl flex items-center justify-center">
+                        <Mail className="h-6 w-6" />
+                      </div>
+                      <div>
+                        <p className="text-sm opacity-80">E-posta</p>
+                        <p className="font-semibold">kontakt@salihmaral.de</p>
+                      </div>
                     </div>
-                  )}
-                  <Button
-                    type="submit"
-                    size="lg"
-                    className="w-full bg-gradient-to-r from-[#4285F4] to-[#34A853] hover:from-[#3367d6] hover:to-[#2d9249] text-white"
-                    disabled={isSubmitting}
-                  >
-                    {isSubmitting ? (lang === 'de' ? 'Wird gesendet...' : lang === 'en' ? 'Sending...' : 'Gönderiliyor...') : t.contact.form.submit}
-                  </Button>
-                </form>
-              </CardContent>
+                    
+                    <div className="flex items-center space-x-4">
+                      <div className="w-12 h-12 bg-white/20 rounded-xl flex items-center justify-center">
+                        <Phone className="h-6 w-6" />
+                      </div>
+                      <div>
+                        <p className="text-sm opacity-80">{lang === 'de' ? 'Telefon' : lang === 'en' ? 'Phone' : 'Telefon'}</p>
+                        <p className="font-semibold">+49 172 410 6463</p>
+                      </div>
+                    </div>
+                    
+                    <div className="flex items-center space-x-4">
+                      <div className="w-12 h-12 bg-[#25D366] rounded-xl flex items-center justify-center">
+                        <MessageCircle className="h-6 w-6" />
+                      </div>
+                      <div>
+                        <p className="text-sm opacity-80">WhatsApp</p>
+                        <a href="https://wa.me/491724106463" target="_blank" className="font-semibold hover:underline">{lang === 'de' ? 'Jetzt schreiben' : lang === 'en' ? 'Message Now' : 'Hemen Yaz'}</a>
+                      </div>
+                    </div>
+                  </div>
+                  
+                  <div className="mt-8 pt-6 border-t border-white/20">
+                    <p className="text-sm opacity-80">{lang === 'de' ? 'Antwort innerhalb von 24 Stunden' : lang === 'en' ? 'Response within 24 hours' : '24 saat içinde yanıt'}</p>
+                  </div>
+                </div>
+                
+                {/* Right side - Form */}
+                <div className="md:col-span-3 p-8">
+                  <h3 className="text-xl font-bold mb-6 text-gray-800">{lang === 'de' ? 'Nachricht senden' : lang === 'en' ? 'Send Message' : 'Mesaj Gönder'}</h3>
+                  <form onSubmit={handleSubmit} className="space-y-4">
+                    <div className="grid md:grid-cols-2 gap-4">
+                      <div>
+                        <Input
+                          placeholder={t.contact.form.name}
+                          value={formData.name}
+                          onChange={(e) => setFormData({ ...formData, name: e.target.value })}
+                          required
+                          className="border-2 focus:border-[#4285F4] transition-colors"
+                        />
+                      </div>
+                      <div>
+                        <Input
+                          type="email"
+                          placeholder={t.contact.form.email}
+                          value={formData.email}
+                          onChange={(e) => setFormData({ ...formData, email: e.target.value })}
+                          required
+                          className="border-2 focus:border-[#4285F4] transition-colors"
+                        />
+                      </div>
+                    </div>
+                    <div>
+                      <Input
+                        type="tel"
+                        placeholder={t.contact.form.phone}
+                        value={formData.phone}
+                        onChange={(e) => setFormData({ ...formData, phone: e.target.value })}
+                        required
+                        className="border-2 focus:border-[#4285F4] transition-colors"
+                      />
+                    </div>
+                    <div>
+                      <Textarea
+                        placeholder={t.contact.form.message}
+                        value={formData.message}
+                        onChange={(e) => setFormData({ ...formData, message: e.target.value })}
+                        rows={5}
+                        required
+                        className="border-2 focus:border-[#4285F4] transition-colors"
+                      />
+                    </div>
+                    {formStatus.message && (
+                      <div className={`p-4 rounded-lg ${formStatus.type === 'success' ? 'bg-green-50 text-green-800 border border-green-200' : 'bg-red-50 text-red-800 border border-red-200'}`}>
+                        {formStatus.message}
+                      </div>
+                    )}
+                    <Button
+                      type="submit"
+                      size="lg"
+                      className="w-full bg-gradient-to-r from-[#4285F4] to-[#34A853] hover:from-[#3367d6] hover:to-[#2d9249] text-white shadow-lg hover:shadow-xl transition-all"
+                      disabled={isSubmitting}
+                    >
+                      {isSubmitting ? (lang === 'de' ? 'Wird gesendet...' : lang === 'en' ? 'Sending...' : 'Gönderiliyor...') : t.contact.form.submit}
+                    </Button>
+                  </form>
+                </div>
+              </div>
             </Card>
           </div>
         </div>
