@@ -103,31 +103,31 @@ export default function BlogPage() {
         <div className="container mx-auto">
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
             {blogPosts.map((post) => (
-              <a key={post.id} href={`/blog/${post.slug}`} className="block">
+              <a key={post.id} href={`/blog/${post.slug}`} className="block h-full">
                 <Card className="hover:shadow-2xl transition-all duration-300 hover:-translate-y-2 overflow-hidden group cursor-pointer h-full">
-                <div className="h-48 bg-gradient-to-br from-[#4285F4]/20 to-[#34A853]/20 flex items-center justify-center">
-                  <div className="text-6xl">{
-                    post.category === 'Google Ads' ? '🎯' :
-                    post.category === 'Meta Ads' ? '📱' :
-                    post.category === 'TikTok Ads' ? '🎵' :
-                    post.category === 'SEO' ? '🔍' :
-                    post.category === 'X Ads' ? '🐦' :
-                    '⭐'
-                  }</div>
-                </div>
-                <CardContent className="pt-6">
-                  <Badge className="mb-3">{post.category}</Badge>
-                  <h3 className="text-xl font-bold mb-3 group-hover:text-[#4285F4] transition-colors">{post.title}</h3>
-                  <p className="text-muted-foreground mb-4 line-clamp-3">{post.excerpt}</p>
-                  <div className="flex items-center justify-between text-sm text-muted-foreground">
-                    <span>{post.date}</span>
-                    <span>{post.readTime}</span>
+                  <div className="h-48 bg-gradient-to-br from-[#4285F4]/20 to-[#34A853]/20 flex items-center justify-center">
+                    <div className="text-6xl">{
+                      post.category === 'Google Ads' ? '🎯' :
+                      post.category === 'Meta Ads' ? '📱' :
+                      post.category === 'TikTok Ads' ? '🎵' :
+                      post.category === 'SEO' ? '🔍' :
+                      post.category === 'X Ads' ? '🐦' :
+                      '⭐'
+                    }</div>
                   </div>
-                  <Button className="w-full mt-4 bg-[#4285F4]" asChild>
-                    <span>Devamını Oku</span>
-                  </Button>
-                </CardContent>
-              </Card>
+                  <CardContent className="pt-6">
+                    <Badge className="mb-3">{post.category}</Badge>
+                    <h3 className="text-xl font-bold mb-3 group-hover:text-[#4285F4] transition-colors">{post.title}</h3>
+                    <p className="text-muted-foreground mb-4 line-clamp-3">{post.excerpt}</p>
+                    <div className="flex items-center justify-between text-sm text-muted-foreground">
+                      <span>{post.date}</span>
+                      <span>{post.readTime}</span>
+                    </div>
+                    <Button className="w-full mt-4 bg-[#4285F4]" asChild>
+                      <span>Devamını Oku</span>
+                    </Button>
+                  </CardContent>
+                </Card>
               </a>
             ))}
           </div>
