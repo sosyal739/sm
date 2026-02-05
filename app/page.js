@@ -809,119 +809,104 @@ export default function Home() {
       </section>
 
       {/* Technologies Section - ANIMATED CAROUSEL */}
-      <section className="py-20 bg-gradient-to-br from-gray-50 to-white overflow-hidden">
+      <section className="py-16 bg-gray-50 overflow-hidden">
         <div className="container mx-auto px-4">
-          <h2 className="text-center text-2xl font-bold text-gray-800 mb-12">{lang === 'de' ? 'VERWENDETE PROFESSIONELLE TECHNOLOGIEN' : lang === 'en' ? 'PROFESSIONAL TECHNOLOGIES USED' : 'KULLANDIĞIMIZ PROFESYONEL TEKNOLOJİLER'}</h2>
+          <h2 className="text-center text-sm font-bold text-gray-500 tracking-widest mb-10">{lang === 'de' ? 'VERWENDETE PROFESSIONELLE TECHNOLOGIEN' : lang === 'en' ? 'PROFESSIONAL TECHNOLOGIES USED' : 'KULLANDIĞIMIZ PROFESYONEL TEKNOLOJİLER'}</h2>
           
           {/* Infinite scroll animation */}
           <div className="relative">
-            <div className="flex animate-scroll space-x-12">
-              {/* Google Ads Editor */}
-              <div className="flex-shrink-0 group text-center p-6 rounded-xl bg-white shadow-lg hover:shadow-2xl transition-all duration-300 hover:-translate-y-2 w-48">
-                <div className="mb-4 flex items-center justify-center">
-                  <svg className="w-20 h-20 group-hover:scale-110 transition-transform duration-300" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <circle cx="24" cy="24" r="22" fill="#4285F4"/>
-                    <path d="M24 10L16 26H21L19 34L32 18H27L29 10H24Z" fill="#FBBC04"/>
-                    <text x="24" y="42" fontSize="6" fill="white" textAnchor="middle" fontWeight="bold">EDITOR</text>
-                  </svg>
-                </div>
-                <p className="text-sm font-bold text-gray-800">Google Ads Editor</p>
+            <div className="flex animate-scroll items-center space-x-16">
+              {/* Google */}
+              <div className="flex-shrink-0 flex items-center space-x-2 opacity-70 hover:opacity-100 transition-opacity">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/2/2f/Google_2015_logo.svg" alt="Google" className="h-8 w-auto" />
               </div>
 
-              {/* Meta Business Suite */}
-              <div className="flex-shrink-0 group text-center p-6 rounded-xl bg-white shadow-lg hover:shadow-2xl transition-all duration-300 hover:-translate-y-2 w-48">
-                <div className="mb-4 flex items-center justify-center">
-                  <svg className="w-20 h-20 group-hover:scale-110 transition-transform duration-300" viewBox="0 0 48 48" fill="none">
-                    <circle cx="24" cy="24" r="22" fill="#0081FB"/>
-                    <path d="M29.5 14h-3.2c-2.3 0-3.8 1.5-3.8 3.8v2.9h-3.2v4h3.2V36h4.7V24.8h3.2l.5-4h-3.7v-2.5c0-1.1.3-1.8 1.8-1.8h2.2v-3.6c-.4 0-1.7-.2-3.2-.2z" fill="white"/>
-                  </svg>
-                </div>
-                <p className="text-sm font-bold text-gray-800">Meta Business</p>
+              {/* Analytics */}
+              <div className="flex-shrink-0 flex items-center space-x-2 opacity-70 hover:opacity-100 transition-opacity">
+                <svg className="h-8 w-8" viewBox="0 0 24 24" fill="none">
+                  <path d="M22 12c0 5.523-4.477 10-10 10S2 17.523 2 12 6.477 2 12 2s10 4.477 10 10z" fill="#F9AB00"/>
+                  <path d="M12 2v10l8.66 5" stroke="#E37400" strokeWidth="2"/>
+                </svg>
+                <span className="text-sm font-medium text-gray-600">Analytics</span>
+              </div>
+
+              {/* WordPress */}
+              <div className="flex-shrink-0 flex items-center opacity-70 hover:opacity-100 transition-opacity">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/9/98/WordPress_blue_logo.svg" alt="WordPress" className="h-8 w-auto" />
+              </div>
+
+              {/* Google Ads */}
+              <div className="flex-shrink-0 flex items-center opacity-70 hover:opacity-100 transition-opacity">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/c/c7/Google_Ads_logo.svg" alt="Google Ads" className="h-8 w-auto" />
+              </div>
+
+              {/* Screaming Frog */}
+              <div className="flex-shrink-0 flex items-center space-x-2 opacity-70 hover:opacity-100 transition-opacity">
+                <svg className="h-8 w-8" viewBox="0 0 24 24" fill="#6DB33F">
+                  <circle cx="12" cy="12" r="10" fill="#6DB33F"/>
+                  <circle cx="9" cy="10" r="2" fill="white"/>
+                  <circle cx="15" cy="10" r="2" fill="white"/>
+                  <path d="M8 15c2 2 6 2 8 0" stroke="white" strokeWidth="1.5" fill="none"/>
+                </svg>
+                <span className="text-sm font-medium text-gray-600">ScreamingFrog</span>
+              </div>
+
+              {/* Meta */}
+              <div className="flex-shrink-0 flex items-center opacity-70 hover:opacity-100 transition-opacity">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/7/7b/Meta_Platforms_Inc._logo.svg" alt="Meta" className="h-6 w-auto" />
               </div>
 
               {/* Semrush */}
-              <div className="flex-shrink-0 group text-center p-6 rounded-xl bg-white shadow-lg hover:shadow-2xl transition-all duration-300 hover:-translate-y-2 w-48">
-                <div className="mb-4 flex items-center justify-center">
-                  <svg className="w-20 h-20 group-hover:scale-110 transition-transform duration-300" viewBox="0 0 48 48" fill="none">
-                    <rect width="48" height="48" rx="8" fill="#FF6600"/>
-                    <text x="24" y="28" fontSize="14" fill="white" textAnchor="middle" fontWeight="bold">SE</text>
-                  </svg>
-                </div>
-                <p className="text-sm font-bold text-gray-800">Semrush</p>
+              <div className="flex-shrink-0 flex items-center space-x-2 opacity-70 hover:opacity-100 transition-opacity">
+                <svg className="h-8 w-8" viewBox="0 0 24 24">
+                  <rect width="24" height="24" rx="4" fill="#FF622D"/>
+                  <text x="12" y="16" fontSize="10" fill="white" textAnchor="middle" fontWeight="bold">SE</text>
+                </svg>
+                <span className="text-sm font-medium text-gray-600">Semrush</span>
               </div>
 
               {/* Ahrefs */}
-              <div className="flex-shrink-0 group text-center p-6 rounded-xl bg-white shadow-lg hover:shadow-2xl transition-all duration-300 hover:-translate-y-2 w-48">
-                <div className="mb-4 flex items-center justify-center">
-                  <svg className="w-20 h-20 group-hover:scale-110 transition-transform duration-300" viewBox="0 0 48 48" fill="none">
-                    <rect width="48" height="48" rx="8" fill="#FF7A59"/>
-                    <text x="24" y="28" fontSize="16" fill="white" textAnchor="middle" fontWeight="bold">A</text>
-                  </svg>
-                </div>
-                <p className="text-sm font-bold text-gray-800">Ahrefs</p>
-              </div>
-
-              {/* Data Studio */}
-              <div className="flex-shrink-0 group text-center p-6 rounded-xl bg-white shadow-lg hover:shadow-2xl transition-all duration-300 hover:-translate-y-2 w-48">
-                <div className="mb-4 flex items-center justify-center">
-                  <svg className="w-20 h-20 group-hover:scale-110 transition-transform duration-300" viewBox="0 0 48 48" fill="none">
-                    <rect width="48" height="48" rx="4" fill="#FBBC04"/>
-                    <rect x="10" y="10" width="28" height="28" rx="2" fill="white"/>
-                    <rect x="14" y="14" width="8" height="8" fill="#4285F4"/>
-                    <rect x="26" y="14" width="8" height="8" fill="#34A853"/>
-                    <rect x="14" y="26" width="8" height="8" fill="#EA4335"/>
-                    <rect x="26" y="26" width="8" height="8" fill="#FBBC04"/>
-                  </svg>
-                </div>
-                <p className="text-sm font-bold text-gray-800">Data Studio</p>
-              </div>
-
-              {/* Tag Manager */}
-              <div className="flex-shrink-0 group text-center p-6 rounded-xl bg-white shadow-lg hover:shadow-2xl transition-all duration-300 hover:-translate-y-2 w-48">
-                <div className="mb-4 flex items-center justify-center">
-                  <svg className="w-20 h-20 group-hover:scale-110 transition-transform duration-300" viewBox="0 0 48 48" fill="none">
-                    <rect width="48" height="48" rx="4" fill="#4285F4"/>
-                    <path d="M12 20L18 16L24 20L30 16L36 20" stroke="white" strokeWidth="3" fill="none"/>
-                    <rect x="16" y="26" width="4" height="8" fill="white"/>
-                    <rect x="22" y="24" width="4" height="10" fill="white"/>
-                    <rect x="28" y="22" width="4" height="12" fill="white"/>
-                  </svg>
-                </div>
-                <p className="text-sm font-bold text-gray-800">Tag Manager</p>
-              </div>
-
-              {/* Search Console */}
-              <div className="flex-shrink-0 group text-center p-6 rounded-xl bg-white shadow-lg hover:shadow-2xl transition-all duration-300 hover:-translate-y-2 w-48">
-                <div className="mb-4 flex items-center justify-center">
-                  <svg className="w-20 h-20 group-hover:scale-110 transition-transform duration-300" viewBox="0 0 48 48" fill="none">
-                    <circle cx="24" cy="24" r="22" fill="#34A853"/>
-                    <circle cx="20" cy="20" r="10" stroke="white" strokeWidth="3" fill="none"/>
-                    <path d="M27 27L35 35" stroke="white" strokeWidth="3" strokeLinecap="round"/>
-                  </svg>
-                </div>
-                <p className="text-sm font-bold text-gray-800">Search Console</p>
+              <div className="flex-shrink-0 flex items-center space-x-2 opacity-70 hover:opacity-100 transition-opacity">
+                <svg className="h-8 w-8" viewBox="0 0 24 24">
+                  <rect width="24" height="24" rx="4" fill="#FF6A3D"/>
+                  <text x="12" y="17" fontSize="14" fill="white" textAnchor="middle" fontWeight="bold">A</text>
+                </svg>
+                <span className="text-sm font-medium text-gray-600">Ahrefs</span>
               </div>
 
               {/* Duplicate for seamless loop */}
-              <div className="flex-shrink-0 group text-center p-6 rounded-xl bg-white shadow-lg hover:shadow-2xl transition-all duration-300 hover:-translate-y-2 w-48">
-                <div className="mb-4 flex items-center justify-center">
-                  <svg className="w-20 h-20 group-hover:scale-110 transition-transform duration-300" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <circle cx="24" cy="24" r="22" fill="#4285F4"/>
-                    <path d="M24 10L16 26H21L19 34L32 18H27L29 10H24Z" fill="#FBBC04"/>
-                    <text x="24" y="42" fontSize="6" fill="white" textAnchor="middle" fontWeight="bold">EDITOR</text>
-                  </svg>
-                </div>
-                <p className="text-sm font-bold text-gray-800">Google Ads Editor</p>
+              <div className="flex-shrink-0 flex items-center space-x-2 opacity-70 hover:opacity-100 transition-opacity">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/2/2f/Google_2015_logo.svg" alt="Google" className="h-8 w-auto" />
               </div>
 
-              <div className="flex-shrink-0 group text-center p-6 rounded-xl bg-white shadow-lg hover:shadow-2xl transition-all duration-300 hover:-translate-y-2 w-48">
-                <div className="mb-4 flex items-center justify-center">
-                  <svg className="w-20 h-20 group-hover:scale-110 transition-transform duration-300" viewBox="0 0 48 48" fill="none">
-                    <circle cx="24" cy="24" r="22" fill="#0081FB"/>
-                    <path d="M29.5 14h-3.2c-2.3 0-3.8 1.5-3.8 3.8v2.9h-3.2v4h3.2V36h4.7V24.8h3.2l.5-4h-3.7v-2.5c0-1.1.3-1.8 1.8-1.8h2.2v-3.6c-.4 0-1.7-.2-3.2-.2z" fill="white"/>
-                  </svg>
-                </div>
-                <p className="text-sm font-bold text-gray-800">Meta Business</p>
+              <div className="flex-shrink-0 flex items-center space-x-2 opacity-70 hover:opacity-100 transition-opacity">
+                <svg className="h-8 w-8" viewBox="0 0 24 24" fill="none">
+                  <path d="M22 12c0 5.523-4.477 10-10 10S2 17.523 2 12 6.477 2 12 2s10 4.477 10 10z" fill="#F9AB00"/>
+                  <path d="M12 2v10l8.66 5" stroke="#E37400" strokeWidth="2"/>
+                </svg>
+                <span className="text-sm font-medium text-gray-600">Analytics</span>
+              </div>
+
+              <div className="flex-shrink-0 flex items-center opacity-70 hover:opacity-100 transition-opacity">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/9/98/WordPress_blue_logo.svg" alt="WordPress" className="h-8 w-auto" />
+              </div>
+
+              <div className="flex-shrink-0 flex items-center opacity-70 hover:opacity-100 transition-opacity">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/c/c7/Google_Ads_logo.svg" alt="Google Ads" className="h-8 w-auto" />
+              </div>
+
+              <div className="flex-shrink-0 flex items-center space-x-2 opacity-70 hover:opacity-100 transition-opacity">
+                <svg className="h-8 w-8" viewBox="0 0 24 24" fill="#6DB33F">
+                  <circle cx="12" cy="12" r="10" fill="#6DB33F"/>
+                  <circle cx="9" cy="10" r="2" fill="white"/>
+                  <circle cx="15" cy="10" r="2" fill="white"/>
+                  <path d="M8 15c2 2 6 2 8 0" stroke="white" strokeWidth="1.5" fill="none"/>
+                </svg>
+                <span className="text-sm font-medium text-gray-600">ScreamingFrog</span>
+              </div>
+
+              <div className="flex-shrink-0 flex items-center opacity-70 hover:opacity-100 transition-opacity">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/7/7b/Meta_Platforms_Inc._logo.svg" alt="Meta" className="h-6 w-auto" />
               </div>
             </div>
           </div>
@@ -933,7 +918,7 @@ export default function Home() {
             100% { transform: translateX(-50%); }
           }
           .animate-scroll {
-            animation: scroll 30s linear infinite;
+            animation: scroll 25s linear infinite;
           }
           .animate-scroll:hover {
             animation-play-state: paused;
