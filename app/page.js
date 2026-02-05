@@ -981,10 +981,11 @@ export default function Home() {
                       <div className="mb-6 flex items-center justify-center transform group-hover:scale-110 group-hover:rotate-3 transition-all duration-500">
                         {service.icon === 'google-ads' && (
                           <div className="p-4 rounded-2xl bg-white shadow-lg group-hover:shadow-2xl transition-shadow">
-                            <svg className="w-16 h-16" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
-                              <circle cx="24" cy="24" r="20" fill="#4285F4"/>
-                              <path d="M24 14L18 28H22L20 34L30 20H26L28 14H24Z" fill="#FBBC04"/>
-                            </svg>
+                            <img 
+                              src="https://upload.wikimedia.org/wikipedia/commons/c/c7/Google_Ads_logo.svg" 
+                              alt="Google Ads" 
+                              className="w-16 h-16 object-contain"
+                            />
                           </div>
                         )}
                         {service.icon === 'meta' && (
