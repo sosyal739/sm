@@ -462,24 +462,6 @@ const translations = {
           role: 'Restaurant Owner',
           text: 'We worked with different agencies before but didn\'t get results. Since we started working with Mr. Maral, the reports are so clear that we know where our money is going. I definitely recommend him.',
           rating: 5
-        },
-        {
-          name: 'Emily Davis',
-          role: 'Store Owner',
-          text: 'He\'s not one of those who just tries to sell advertising, but someone who really builds strategy. Although our industry is competitive, we reached our sales targets in 4 months. Reliable and hardworking.',
-          rating: 5
-        },
-        {
-          name: 'Michael Wilson',
-          role: 'Startup Founder',
-          text: 'We received consultation for our startup project. He drew us a great growth plan by using our budget most efficiently. Working with him is like working with a business partner, not an expert.',
-          rating: 5
-        },
-        {
-          name: 'Jessica Miller',
-          role: 'Boutique Hotel',
-          text: 'He manages Google Ads and Meta ads for our hotel. The number of reservations has increased incredibly. Especially during the season, our occupancy rate rose to 95% thanks to campaign optimization.',
-          rating: 5
         }
       ]
     },
