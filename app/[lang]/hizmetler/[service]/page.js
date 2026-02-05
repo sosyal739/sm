@@ -243,7 +243,7 @@ export default function ServiceDetailPage() {
                 WhatsApp ile Yaz
               </a>
             </Button>
-            <Button size="lg" variant="outline" className="border-white text-white hover:bg-white/20 shadow-2xl transition-all duration-300 hover:scale-105" asChild>
+            <Button size="lg" className="bg-[#EA4335] hover:bg-[#C53929] text-white shadow-2xl transition-all duration-300 hover:scale-105" asChild>
               <a href="tel:+491724106463">
                 <Phone className="mr-2 h-5 w-5" />
                 Hemen Ara
