@@ -123,9 +123,12 @@ export default function BlogPage() {
                     <span>{post.date}</span>
                     <span>{post.readTime}</span>
                   </div>
-                  <Button className="w-full mt-4 bg-[#4285F4]">Devamını Oku</Button>
+                  <Button className="w-full mt-4 bg-[#4285F4]" asChild>
+                    <span>Devamını Oku</span>
+                  </Button>
                 </CardContent>
               </Card>
+              </a>
             ))}
           </div>
         </div>
