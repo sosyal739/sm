@@ -672,7 +672,7 @@ export default function Home() {
               <Button
                 variant={lang === 'de' ? 'default' : 'outline'}
                 size="sm"
-                onClick={() => setLang('de')}
+                onClick={() => handleLanguageChange('de')}
                 className={lang === 'de' ? 'bg-[#4285F4]' : ''}
               >
                 DE
@@ -680,7 +680,7 @@ export default function Home() {
               <Button
                 variant={lang === 'en' ? 'default' : 'outline'}
                 size="sm"
-                onClick={() => setLang('en')}
+                onClick={() => handleLanguageChange('en')}
                 className={lang === 'en' ? 'bg-[#4285F4]' : ''}
               >
                 EN
@@ -688,7 +688,7 @@ export default function Home() {
               <Button
                 variant={lang === 'tr' ? 'default' : 'outline'}
                 size="sm"
-                onClick={() => setLang('tr')}
+                onClick={() => handleLanguageChange('tr')}
                 className={lang === 'tr' ? 'bg-[#4285F4]' : ''}
               >
                 TR
