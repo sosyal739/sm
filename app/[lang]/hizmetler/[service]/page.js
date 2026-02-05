@@ -1,14 +1,68 @@
 'use client'
 
 import { useParams, useRouter } from 'next/navigation'
+import { useState, useEffect } from 'react'
 import { Button } from '@/components/ui/button'
 import { Card, CardContent } from '@/components/ui/card'
 import { CheckCircle, ArrowLeft, ArrowUpRight, TrendingUp, Search, Image, ShoppingCart, Play, Zap, MapPin, Users, Heart, Video, MessageSquare, Share2, Target, BarChart3, Globe, Link, FileText, Shield, Star, ThumbsDown, AlertTriangle, Eye, Award } from 'lucide-react'
+
+// Translations for navbar
+const navTranslations = {
+  tr: { services: 'Hizmetler', success: 'Başarılar', about: 'Hakkımda', contact: 'İletişim', home: 'Ana Sayfa' },
+  de: { services: 'Dienstleistungen', success: 'Erfolge', about: 'Über mich', contact: 'Kontakt', home: 'Startseite' },
+  en: { services: 'Services', success: 'Success', about: 'About', contact: 'Contact', home: 'Home' }
+}
+
+// Service slugs for dropdown
+const servicesList = {
+  tr: [
+    { title: 'Google Ads Yönetimi', slug: 'google-ads' },
+    { title: 'Meta Ads (Facebook & Instagram)', slug: 'meta-ads' },
+    { title: 'TikTok Ads', slug: 'tiktok-ads' },
+    { title: 'X (Twitter) Ads', slug: 'x-ads' },
+    { title: 'SEO Hizmetleri', slug: 'seo' },
+    { title: 'Olumsuz Yorum Yönetimi', slug: 'yorum-yonetimi' }
+  ],
+  de: [
+    { title: 'Google Ads Management', slug: 'google-ads' },
+    { title: 'Meta Ads (Facebook & Instagram)', slug: 'meta-ads' },
+    { title: 'TikTok Ads', slug: 'tiktok-ads' },
+    { title: 'X (Twitter) Ads', slug: 'x-ads' },
+    { title: 'SEO Dienstleistungen', slug: 'seo' },
+    { title: 'Bewertungsmanagement', slug: 'yorum-yonetimi' }
+  ],
+  en: [
+    { title: 'Google Ads Management', slug: 'google-ads' },
+    { title: 'Meta Ads (Facebook & Instagram)', slug: 'meta-ads' },
+    { title: 'TikTok Ads', slug: 'tiktok-ads' },
+    { title: 'X (Twitter) Ads', slug: 'x-ads' },
+    { title: 'SEO Services', slug: 'seo' },
+    { title: 'Review Management', slug: 'yorum-yonetimi' }
+  ]
+}
 
 export default function ServiceDetailPage() {
   const router = useRouter()
   const params = useParams()
   const { service } = params
+  const [lang, setLang] = useState('de')
+
+  // Load language from localStorage on mount
+  useEffect(() => {
+    const savedLang = localStorage.getItem('preferredLanguage')
+    if (savedLang && ['de', 'en', 'tr'].includes(savedLang)) {
+      setLang(savedLang)
+    }
+  }, [])
+
+  // Save language to localStorage when changed
+  const handleLanguageChange = (newLang) => {
+    setLang(newLang)
+    localStorage.setItem('preferredLanguage', newLang)
+  }
+
+  const navT = navTranslations[lang]
+  const services = servicesList[lang]
 
   const scrollToContact = () => {
     document.getElementById('contact-section')?.scrollIntoView({ behavior: 'smooth' })
