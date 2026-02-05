@@ -115,8 +115,8 @@ export default function ServiceDetailPage() {
         </div>
       </nav>
 
-      {/* Hero Section - Clean & Minimal */}
-      <section className="pt-28 pb-20 px-4 bg-[#F8F9FA]">
+      {/* Hero Section - Google Ads Colors */}
+      <section className="pt-28 pb-20 px-4 bg-gradient-to-br from-[#4285F4]/10 via-[#FBBC05]/5 to-[#34A853]/10">
         <div className="container mx-auto">
           <div className="max-w-4xl mx-auto text-center">
             {/* Google Ads Badge */}
@@ -170,8 +170,8 @@ export default function ServiceDetailPage() {
         </div>
       </section>
 
-      {/* Services Grid - Clean Cards */}
-      <section className="py-20 px-4 bg-white">
+      {/* Services Grid - Google Ads Colors */}
+      <section className="py-20 px-4 bg-gradient-to-br from-[#4285F4]/5 via-white to-[#34A853]/5">
         <div className="container mx-auto">
           <div className="text-center mb-16">
             <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Kampanya Türleri</h2>
@@ -184,7 +184,7 @@ export default function ServiceDetailPage() {
             {data.features.map((f, i) => {
               const IconComponent = f.icon
               return (
-                <Card key={i} className="bg-[#F8F9FA] border-0 hover:bg-white hover:shadow-lg transition-all duration-300 group">
+                <Card key={i} className="bg-white border-2 border-[#4285F4]/20 hover:border-[#4285F4] hover:shadow-xl transition-all duration-300 group rounded-xl">
                   <CardContent className="p-8">
                     <div className="w-14 h-14 rounded-xl bg-[#4285F4]/10 flex items-center justify-center mb-6 group-hover:bg-[#4285F4] transition-colors">
                       <IconComponent className="h-7 w-7 text-[#4285F4] group-hover:text-white transition-colors" />
