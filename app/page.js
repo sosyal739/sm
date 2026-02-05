@@ -581,6 +581,20 @@ export default function Home() {
   const [formStatus, setFormStatus] = useState({ type: '', message: '' })
   const [isSubmitting, setIsSubmitting] = useState(false)
 
+  // Load language from localStorage on mount
+  useEffect(() => {
+    const savedLang = localStorage.getItem('preferredLanguage')
+    if (savedLang && ['de', 'en', 'tr'].includes(savedLang)) {
+      setLang(savedLang)
+    }
+  }, [])
+
+  // Save language to localStorage when changed
+  const handleLanguageChange = (newLang) => {
+    setLang(newLang)
+    localStorage.setItem('preferredLanguage', newLang)
+  }
+
   const t = translations[lang]
 
   const handleSubmit = async (e) => {
