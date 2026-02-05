@@ -1160,16 +1160,6 @@ export default function Home() {
                     </div>
                     
                     <div className="flex items-center space-x-4">
-                      <div className="w-12 h-12 bg-white/20 rounded-xl flex items-center justify-center">
-                        <Phone className="h-6 w-6" />
-                      </div>
-                      <div>
-                        <p className="text-sm opacity-80">{lang === 'de' ? 'Telefon' : lang === 'en' ? 'Phone' : 'Telefon'}</p>
-                        <p className="font-semibold">+49 172 410 6463</p>
-                      </div>
-                    </div>
-                    
-                    <div className="flex items-center space-x-4">
                       <div className="w-12 h-12 bg-[#25D366] rounded-xl flex items-center justify-center">
                         <MessageCircle className="h-6 w-6" />
                       </div>
