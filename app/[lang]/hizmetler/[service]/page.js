@@ -659,12 +659,9 @@ export default function ServiceDetailPage() {
       <nav className="fixed top-0 left-0 right-0 z-50 bg-white/95 backdrop-blur-sm border-b">
         <div className="container mx-auto px-4 py-4">
           <div className="flex items-center justify-between">
-            <div className="flex items-center space-x-2">
-              <Globe className="h-6 w-6 text-[#4285F4]" />
-              <a href="/" className="text-xl font-bold bg-gradient-to-r from-[#4285F4] via-[#EA4335] to-[#FBBC04] bg-clip-text text-transparent">
-                Salih Maral
-              </a>
-            </div>
+            <a href="/" className="flex items-center">
+              <img src="/logo.png" alt="Salih Maral Logo" className="h-10 w-auto" />
+            </a>
             
             <div className="hidden md:flex items-center space-x-6">
               <div className="relative group">
