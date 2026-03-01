@@ -1528,8 +1528,8 @@ export default function BlogDetailPage() {
               <ArrowLeft className="h-5 w-5 text-[#4285F4]" />
               <span className="font-semibold text-gray-700">{t.backToBlog}</span>
             </button>
-            <a href="/" className="text-xl font-bold bg-gradient-to-r from-[#4285F4] via-[#EA4335] to-[#FBBC04] bg-clip-text text-transparent">
-              Salih Maral
+            <a href="/">
+              <img src="/logo.png" alt="Salih Maral Logo" className="h-10 w-auto" />
             </a>
             <div className="flex items-center space-x-2">
               <button 
