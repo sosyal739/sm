@@ -329,8 +329,8 @@ export default function BlogPage() {
       {/* Footer */}
       <footer className="py-12 bg-gray-900 text-white mt-12">
         <div className="container mx-auto px-4 text-center">
-          <a href="/" className="text-2xl font-bold bg-gradient-to-r from-[#4285F4] via-[#EA4335] to-[#FBBC04] bg-clip-text text-transparent">
-            Salih Maral
+          <a href="/" className="inline-block">
+            <img src="/logo.png" alt="Salih Maral Logo" className="h-12 w-auto mx-auto" />
           </a>
           <p className="text-sm text-gray-400 mt-4">{t.footer}</p>
         </div>
