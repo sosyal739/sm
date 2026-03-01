@@ -246,24 +246,6 @@ export default function ServiceDetailPage() {
         { title: lang === 'de' ? 'Große Reichweite' : lang === 'en' ? 'Wide Reach' : 'Geniş Erişim', desc: lang === 'de' ? 'Zugang zu über 3,5 Milliarden aktiven Nutzern' : lang === 'en' ? 'Access to over 3.5 billion active users' : '3.5 milyardan fazla aktif kullanıcıya erişim' },
         { title: lang === 'de' ? 'E-Commerce-Integration' : lang === 'en' ? 'E-Commerce Integration' : 'E-Ticaret Entegrasyonu', desc: lang === 'de' ? 'Shopify, WooCommerce Integrationen' : lang === 'en' ? 'Shopify, WooCommerce integrations' : 'Shopify, WooCommerce entegrasyonları' }
       ],
-          subtitle: 'E-Ticaret',
-          desc: 'Ürün kataloğunuzu Meta ile senkronize edin ve dinamik ürün reklamları oluşturun.',
-          icon: ShoppingCart,
-          items: ['Dinamik reklamlar', 'Koleksiyon reklamları', 'Instagram Shopping', 'Facebook Shops']
-        }
-      ],
-      process: [
-        { step: '01', title: 'Hedef Kitle Analizi', desc: 'Demografik, ilgi alanı ve davranış verilerini analiz ediyoruz.' },
-        { step: '02', title: 'Kreatif Strateji', desc: 'Platformlara özel görsel ve video içerikler hazırlıyoruz.' },
-        { step: '03', title: 'Kampanya Lansmanı', desc: 'A/B testleriyle en etkili reklam setlerini belirliyoruz.' },
-        { step: '04', title: 'Performans Takibi', desc: 'Meta Pixel ile dönüşümleri izliyor, optimize ediyoruz.' }
-      ],
-      benefits: [
-        { title: 'Detaylı Hedefleme', desc: 'Yaş, cinsiyet, ilgi alanı, davranış bazlı hedefleme' },
-        { title: 'Görsel Odaklı', desc: 'Dikkat çekici görsel ve video formatları' },
-        { title: 'Geniş Erişim', desc: '3.5 milyardan fazla aktif kullanıcıya erişim' },
-        { title: 'E-Ticaret Entegrasyonu', desc: 'Shopify, WooCommerce entegrasyonları' }
-      ],
       faq: [
         { 
           q: lang === 'de' ? 'Auf welcher Plattform sollte ich werben - Facebook oder Instagram?' : lang === 'en' ? 'Which platform should I advertise on - Facebook or Instagram?' : 'Hangi platformda reklam vermeliyim - Facebook mu Instagram mı?',
