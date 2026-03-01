@@ -547,10 +547,10 @@ export default function ServiceDetailPage() {
     },
 
     'yorum-yonetimi': {
-      title: 'Olumsuz Yorum Yönetimi',
-      subtitle: 'Online itibarınızı koruyun ve güçlendirin',
-      description: 'Google Maps, Trustpilot ve diğer platformlardaki haksız, sahte veya manipülatif yorumları kaldırıyoruz. İtibar yönetimi ve kriz iletişimi ile markanızı koruyoruz.',
-      badge: 'İtibar Yönetimi Uzmanı',
+      title: lang === 'de' ? 'Bewertungsmanagement' : lang === 'en' ? 'Review Management' : 'Olumsuz Yorum Yönetimi',
+      subtitle: lang === 'de' ? 'Schützen und stärken Sie Ihre Online-Reputation' : lang === 'en' ? 'Protect and strengthen your online reputation' : 'Online itibarınızı koruyun ve güçlendirin',
+      description: lang === 'de' ? 'Wir entfernen unfaire, gefälschte oder manipulative Bewertungen auf Google Maps, Trustpilot und anderen Plattformen. Wir schützen Ihre Marke mit Reputationsmanagement und Krisenkommunikation.' : lang === 'en' ? 'We remove unfair, fake or manipulative reviews on Google Maps, Trustpilot and other platforms. We protect your brand with reputation management and crisis communication.' : 'Google Maps, Trustpilot ve diğer platformlardaki haksız, sahte veya manipülatif yorumları kaldırıyoruz. İtibar yönetimi ve kriz iletişimi ile markanızı koruyoruz.',
+      badge: lang === 'de' ? 'Reputationsmanagement-Experte' : lang === 'en' ? 'Reputation Management Expert' : 'İtibar Yönetimi Uzmanı',
       primaryColor: '#EA4335',
       secondaryColor: '#FBBC04',
       accentColor: '#34A853',
@@ -562,66 +562,66 @@ export default function ServiceDetailPage() {
         </svg>
       ),
       stats: [
-        { value: '%95', label: 'Kaldırma Başarısı', trend: 'Haksız yorumlar' },
-        { value: '500+', label: 'Kaldırılan Yorum', trend: 'Toplam' },
-        { value: '48 Saat', label: 'Ortalama Süre', trend: 'İşlem süresi' },
-        { value: '+2.5', label: 'Puan Artışı', trend: 'Ortalama iyileşme' }
+        { value: '%95', label: lang === 'de' ? 'Entfernungserfolg' : lang === 'en' ? 'Removal Success' : 'Kaldırma Başarısı', trend: lang === 'de' ? 'Unfaire Bewertungen' : lang === 'en' ? 'Unfair reviews' : 'Haksız yorumlar' },
+        { value: '500+', label: lang === 'de' ? 'Entfernte Bewertungen' : lang === 'en' ? 'Removed Reviews' : 'Kaldırılan Yorum', trend: lang === 'de' ? 'Gesamt' : lang === 'en' ? 'Total' : 'Toplam' },
+        { value: lang === 'de' ? '48 Std.' : lang === 'en' ? '48 Hours' : '48 Saat', label: lang === 'de' ? 'Durchschnittliche Zeit' : lang === 'en' ? 'Average Time' : 'Ortalama Süre', trend: lang === 'de' ? 'Bearbeitungszeit' : lang === 'en' ? 'Processing time' : 'İşlem süresi' },
+        { value: '+2.5', label: lang === 'de' ? 'Bewertungsanstieg' : lang === 'en' ? 'Rating Increase' : 'Puan Artışı', trend: lang === 'de' ? 'Durchschnittliche Verbesserung' : lang === 'en' ? 'Average improvement' : 'Ortalama iyileşme' }
       ],
       features: [
         {
-          title: 'Google Yorum Kaldırma',
+          title: lang === 'de' ? 'Google Bewertungsentfernung' : lang === 'en' ? 'Google Review Removal' : 'Google Yorum Kaldırma',
           subtitle: 'Google Maps & Business',
-          desc: 'Google politikalarına aykırı yorumları tespit edip kaldırma başvurusu yapıyoruz.',
+          desc: lang === 'de' ? 'Wir identifizieren Bewertungen, die gegen Google-Richtlinien verstoßen, und beantragen deren Entfernung.' : lang === 'en' ? 'We identify reviews that violate Google policies and apply for their removal.' : 'Google politikalarına aykırı yorumları tespit edip kaldırma başvurusu yapıyoruz.',
           icon: MapPin,
-          items: ['Sahte yorum tespiti', 'Politika ihlali analizi', 'Resmi başvuru', 'Takip süreci']
+          items: lang === 'de' ? ['Erkennung gefälschter Bewertungen', 'Analyse von Richtlinienverstößen', 'Offizielle Beschwerde', 'Nachverfolgung'] : lang === 'en' ? ['Fake review detection', 'Policy violation analysis', 'Official complaint', 'Follow-up process'] : ['Sahte yorum tespiti', 'Politika ihlali analizi', 'Resmi başvuru', 'Takip süreci']
         },
         {
-          title: 'Trustpilot Yönetimi',
-          subtitle: 'E-Ticaret İtibarı',
-          desc: 'Trustpilot\'ta haksız yorumları kaldırıyor, itibarınızı yönetiyoruz.',
+          title: lang === 'de' ? 'Trustpilot Management' : lang === 'en' ? 'Trustpilot Management' : 'Trustpilot Yönetimi',
+          subtitle: lang === 'de' ? 'E-Commerce Reputation' : lang === 'en' ? 'E-Commerce Reputation' : 'E-Ticaret İtibarı',
+          desc: lang === 'de' ? 'Wir entfernen unfaire Bewertungen auf Trustpilot und verwalten Ihre Reputation.' : lang === 'en' ? 'We remove unfair reviews on Trustpilot and manage your reputation.' : 'Trustpilot\'ta haksız yorumları kaldırıyor, itibarınızı yönetiyoruz.',
           icon: Star,
-          items: ['Yorum analizi', 'Kaldırma başvurusu', 'Yanıt stratejisi', 'Puan iyileştirme']
+          items: lang === 'de' ? ['Bewertungsanalyse', 'Entfernungsantrag', 'Antwortstrategie', 'Bewertungsverbesserung'] : lang === 'en' ? ['Review analysis', 'Removal request', 'Response strategy', 'Rating improvement'] : ['Yorum analizi', 'Kaldırma başvurusu', 'Yanıt stratejisi', 'Puan iyileştirme']
         },
         {
-          title: 'Sosyal Medya İtibarı',
+          title: lang === 'de' ? 'Social Media Reputation' : lang === 'en' ? 'Social Media Reputation' : 'Sosyal Medya İtibarı',
           subtitle: 'Facebook, Instagram',
-          desc: 'Sosyal medya platformlarındaki olumsuz içerik ve yorumları yönetiyoruz.',
+          desc: lang === 'de' ? 'Wir verwalten negative Inhalte und Kommentare auf Social-Media-Plattformen.' : lang === 'en' ? 'We manage negative content and comments on social media platforms.' : 'Sosyal medya platformlarındaki olumsuz içerik ve yorumları yönetiyoruz.',
           icon: Users,
-          items: ['Yorum moderasyonu', 'Kriz yönetimi', 'Topluluk yönetimi', 'Marka savunuculuğu']
+          items: lang === 'de' ? ['Kommentarmoderation', 'Krisenmanagement', 'Community Management', 'Markenfürsprache'] : lang === 'en' ? ['Comment moderation', 'Crisis management', 'Community management', 'Brand advocacy'] : ['Yorum moderasyonu', 'Kriz yönetimi', 'Topluluk yönetimi', 'Marka savunuculuğu']
         },
         {
-          title: 'Rakip Sabotajı Tespiti',
-          subtitle: 'Sahte Yorum Analizi',
-          desc: 'Rakiplerinizin organize saldırılarını tespit edip kanıtlıyoruz.',
+          title: lang === 'de' ? 'Wettbewerber-Sabotage-Erkennung' : lang === 'en' ? 'Competitor Sabotage Detection' : 'Rakip Sabotajı Tespiti',
+          subtitle: lang === 'de' ? 'Analyse gefälschter Bewertungen' : lang === 'en' ? 'Fake Review Analysis' : 'Sahte Yorum Analizi',
+          desc: lang === 'de' ? 'Wir erkennen und dokumentieren organisierte Angriffe Ihrer Wettbewerber.' : lang === 'en' ? 'We detect and document organized attacks from your competitors.' : 'Rakiplerinizin organize saldırılarını tespit edip kanıtlıyoruz.',
           icon: AlertTriangle,
-          items: ['Pattern analizi', 'IP tespiti', 'Kanıt toplama', 'Hukuki destek']
+          items: lang === 'de' ? ['Musteranalyse', 'IP-Erkennung', 'Beweissammlung', 'Rechtliche Unterstützung'] : lang === 'en' ? ['Pattern analysis', 'IP detection', 'Evidence collection', 'Legal support'] : ['Pattern analizi', 'IP tespiti', 'Kanıt toplama', 'Hukuki destek']
         },
         {
-          title: 'Olumlu Yorum Stratejisi',
+          title: lang === 'de' ? 'Positive Bewertungsstrategie' : lang === 'en' ? 'Positive Review Strategy' : 'Olumlu Yorum Stratejisi',
           subtitle: 'Reputation Building',
-          desc: 'Memnun müşterilerinizden organik olumlu yorumlar almanızı sağlıyoruz.',
+          desc: lang === 'de' ? 'Wir helfen Ihnen, organische positive Bewertungen von zufriedenen Kunden zu erhalten.' : lang === 'en' ? 'We help you get organic positive reviews from satisfied customers.' : 'Memnun müşterilerinizden organik olumlu yorumlar almanızı sağlıyoruz.',
           icon: ThumbsDown,
-          items: ['Review kampanyaları', 'QR kod sistemleri', 'E-posta otomasyonu', 'Müşteri takibi']
+          items: lang === 'de' ? ['Bewertungskampagnen', 'QR-Code-Systeme', 'E-Mail-Automatisierung', 'Kundenbetreuung'] : lang === 'en' ? ['Review campaigns', 'QR code systems', 'Email automation', 'Customer follow-up'] : ['Review kampanyaları', 'QR kod sistemleri', 'E-posta otomasyonu', 'Müşteri takibi']
         },
         {
-          title: 'Kriz İletişimi',
+          title: lang === 'de' ? 'Krisenkommunikation' : lang === 'en' ? 'Crisis Communication' : 'Kriz İletişimi',
           subtitle: 'Damage Control',
-          desc: 'Viral olumsuz içerik durumlarında profesyonel kriz yönetimi.',
+          desc: lang === 'de' ? 'Professionelles Krisenmanagement bei viralen negativen Inhalten.' : lang === 'en' ? 'Professional crisis management for viral negative content.' : 'Viral olumsuz içerik durumlarında profesyonel kriz yönetimi.',
           icon: Shield,
-          items: ['Hızlı müdahale', 'Basın açıklaması', 'SEO suppress', 'İmaj onarımı']
+          items: lang === 'de' ? ['Schnelle Reaktion', 'Pressemitteilung', 'SEO Suppress', 'Image-Reparatur'] : lang === 'en' ? ['Quick response', 'Press release', 'SEO suppress', 'Image repair'] : ['Hızlı müdahale', 'Basın açıklaması', 'SEO suppress', 'İmaj onarımı']
         }
       ],
       process: [
-        { step: '01', title: 'Analiz', desc: 'Tüm platformlardaki yorumlarınızı detaylı analiz ediyoruz.' },
-        { step: '02', title: 'Strateji', desc: 'Her yorum için uygun aksiyon planı oluşturuyoruz.' },
-        { step: '03', title: 'Uygulama', desc: 'Kaldırma başvuruları ve itiraz süreçlerini yönetiyoruz.' },
-        { step: '04', title: 'İzleme', desc: 'Sürekli monitoring ile yeni yorumları takip ediyoruz.' }
+        { step: '01', title: lang === 'de' ? 'Analyse' : lang === 'en' ? 'Analysis' : 'Analiz', desc: lang === 'de' ? 'Wir analysieren Ihre Bewertungen auf allen Plattformen detailliert.' : lang === 'en' ? 'We analyze your reviews on all platforms in detail.' : 'Tüm platformlardaki yorumlarınızı detaylı analiz ediyoruz.' },
+        { step: '02', title: lang === 'de' ? 'Strategie' : lang === 'en' ? 'Strategy' : 'Strateji', desc: lang === 'de' ? 'Wir erstellen einen geeigneten Aktionsplan für jede Bewertung.' : lang === 'en' ? 'We create an appropriate action plan for each review.' : 'Her yorum için uygun aksiyon planı oluşturuyoruz.' },
+        { step: '03', title: lang === 'de' ? 'Umsetzung' : lang === 'en' ? 'Implementation' : 'Uygulama', desc: lang === 'de' ? 'Wir verwalten Entfernungsanträge und Einspruchsprozesse.' : lang === 'en' ? 'We manage removal applications and appeal processes.' : 'Kaldırma başvuruları ve itiraz süreçlerini yönetiyoruz.' },
+        { step: '04', title: lang === 'de' ? 'Überwachung' : lang === 'en' ? 'Monitoring' : 'İzleme', desc: lang === 'de' ? 'Wir verfolgen neue Bewertungen durch kontinuierliches Monitoring.' : lang === 'en' ? 'We track new reviews through continuous monitoring.' : 'Sürekli monitoring ile yeni yorumları takip ediyoruz.' }
       ],
       benefits: [
-        { title: 'Hızlı Sonuç', desc: '24-72 saat içinde ilk aksiyonlar' },
-        { title: 'Yasal Süreç', desc: 'Gerektiğinde hukuki destek' },
-        { title: 'Gizlilik', desc: 'Tüm süreçler gizli yürütülür' },
-        { title: 'Garanti', desc: 'Sonuç alınamazsa ücret iadesi' }
+        { title: lang === 'de' ? 'Schnelle Ergebnisse' : lang === 'en' ? 'Fast Results' : 'Hızlı Sonuç', desc: lang === 'de' ? 'Erste Aktionen innerhalb von 24-72 Stunden' : lang === 'en' ? 'First actions within 24-72 hours' : '24-72 saat içinde ilk aksiyonlar' },
+        { title: lang === 'de' ? 'Rechtlicher Prozess' : lang === 'en' ? 'Legal Process' : 'Yasal Süreç', desc: lang === 'de' ? 'Rechtliche Unterstützung bei Bedarf' : lang === 'en' ? 'Legal support when needed' : 'Gerektiğinde hukuki destek' },
+        { title: lang === 'de' ? 'Vertraulichkeit' : lang === 'en' ? 'Confidentiality' : 'Gizlilik', desc: lang === 'de' ? 'Alle Prozesse werden vertraulich durchgeführt' : lang === 'en' ? 'All processes are conducted confidentially' : 'Tüm süreçler gizli yürütülür' },
+        { title: lang === 'de' ? 'Garantie' : lang === 'en' ? 'Guarantee' : 'Garanti', desc: lang === 'de' ? 'Rückerstattung bei Misserfolg' : lang === 'en' ? 'Refund if unsuccessful' : 'Sonuç alınamazsa ücret iadesi' }
       ],
       faq: [
         { 
