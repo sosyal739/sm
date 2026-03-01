@@ -845,7 +845,9 @@ export default function ServiceDetailPage() {
         <div className="container mx-auto">
           <div className="max-w-4xl mx-auto">
             <div className="text-center mb-12">
-              <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Neden Bizi Tercih Etmelisiniz?</h2>
+              <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
+                {lang === 'de' ? 'Warum uns wählen?' : lang === 'en' ? 'Why Choose Us?' : 'Neden Bizi Tercih Etmelisiniz?'}
+              </h2>
             </div>
             
             <div className="grid md:grid-cols-2 gap-6">
