@@ -148,6 +148,24 @@ export default function ServiceDetailPage() {
         { title: 'Şeffaf Raporlama', desc: 'Haftalık ve aylık detaylı performans raporları' },
         { title: 'Kişiselleştirilmiş Strateji', desc: 'İşletmenize özel hazırlanmış kampanya planları' },
         { title: 'Sürekli Optimizasyon', desc: '7/24 kampanya izleme ve performans iyileştirme' }
+      ],
+      faq: [
+        { 
+          q: lang === 'de' ? 'Wie hoch sollte mein tägliches Werbebudget sein?' : lang === 'en' ? 'How much should my daily ad budget be?' : 'Günlük reklam bütçem ne kadar olmalı?',
+          a: lang === 'de' ? 'Es gibt kein Mindestbudget, aber um wettbewerbsfähig zu sein, müssen wir die Kosten pro Klick in Ihrer Branche analysieren. Wir empfehlen ein optimales Testbudget, um Daten zu sammeln. Wenn Kampagnen profitabel werden, erhöhen wir das Budget schrittweise.' : lang === 'en' ? 'There is no minimum budget, but to be competitive, we need to analyze the cost per click in your industry. We recommend an optimal test budget to collect data. As campaigns become profitable, we gradually increase the budget.' : 'Google Ads\'te minimum bütçe şartı yoktur, ancak rekabetçi olabilmek için sektörünüzün tıklama başı maliyet oranlarına bakmak gerekir. Veriyi toplamak için optimum bir test bütçesi öneriyoruz. Kampanyalar kârlı hale geldikçe bütçeyi kademeli artırıyoruz.'
+        },
+        { 
+          q: lang === 'de' ? 'Kann ich Anzeigen unter dem Namen meiner Konkurrenten schalten?' : lang === 'en' ? 'Can I advertise under my competitors\' names?' : 'Rakiplerimin isminde reklam verebilir miyim?',
+          a: lang === 'de' ? 'Ja, dies ist eine häufig verwendete und effektive Strategie. Sie können Kunden ansprechen, die nach Ihren Konkurrenten suchen. Allerdings müssen wir darauf achten, den Namen des Konkurrenten nicht im Anzeigentext zu verwenden.' : lang === 'en' ? 'Yes, this is a commonly used and effective strategy. You can target customers searching for your competitors. However, we must be careful not to use the competitor\'s name in the ad text.' : 'Evet, bu sık kullanılan ve etkili bir stratejidir. Rakiplerinizi arayan müşterilere kendi teklifinizi sunabilirsiniz. Ancak marka ihlali yapmamak için reklam metinlerinde rakibin adını geçirmiyoruz.'
+        },
+        { 
+          q: lang === 'de' ? 'Wann werden meine Anzeigen veröffentlicht?' : lang === 'en' ? 'When will my ads be published?' : 'Reklamlarım ne zaman yayınlanır?',
+          a: lang === 'de' ? 'Nach Abschluss der Kontoeinrichtung werden Anzeigen zur Genehmigung an Google gesendet. In der Regel werden sie innerhalb von 24 Stunden genehmigt und Sie beginnen sofort, Traffic zu erhalten. Im Gegensatz zu SEO müssen Sie nicht monatelang warten.' : lang === 'en' ? 'After account setup is complete, ads are sent to Google for approval. They are usually approved within 24 hours and you start receiving traffic immediately. Unlike SEO, you don\'t have to wait months.' : 'Hesap kurulumu tamamlandıktan sonra reklamlar Google onayına gönderilir. Genellikle 24 saat içinde onaylanır ve hemen trafik almaya başlarsınız. SEO gibi aylarca beklemenize gerek yoktur.'
+        },
+        { 
+          q: lang === 'de' ? 'Kann ich meine Werbung nicht selbst verwalten?' : lang === 'en' ? 'Can\'t I manage my ads myself?' : 'Kendi reklamımı kendim yönetemez miyim?',
+          a: lang === 'de' ? 'Natürlich können Sie, aber das Google Ads-Panel ist sehr detailliert. Eine falsche Auswahl kann dazu führen, dass 50% Ihres Budgets für irrelevante Klicks ausgegeben wird. Die Zusammenarbeit mit einem Experten spart Ihnen mehr, als Sie für die Beratung bezahlen.' : lang === 'en' ? 'Of course you can, but the Google Ads panel is very detailed. A wrong selection can cause 50% of your budget to go to irrelevant clicks. Working with an expert saves you more than you pay for consulting.' : 'Elbette yönetebilirsiniz, ancak Google Ads paneli çok detaylıdır. Yanlış bir seçim, bütçenizin %50\'sinin ilgisiz tıklamalara gitmesine neden olabilir. Bir uzmanla çalışmak, danışmanlık ücretinden çok daha fazlasını size geri kazandırır.'
+        }
       ]
     },
 
