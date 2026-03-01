@@ -1343,6 +1343,9 @@ export default function Home() {
           </div>
         </div>
       </footer>
+      
+      {/* Cookie Consent Banner */}
+      <CookieConsent />
     </div>
   )
 }
