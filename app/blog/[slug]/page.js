@@ -1498,6 +1498,20 @@ export default function BlogDetailPage() {
     }
   }, [])
 
+  // Dynamic SEO - Update document title
+  useEffect(() => {
+    const postData = blogPosts[slug]
+    const post = postData ? postData[lang] : null
+    if (post) {
+      document.title = `${post.title} | Salih Maral Blog`
+      // Update meta description
+      const metaDescription = document.querySelector('meta[name="description"]')
+      if (metaDescription) {
+        metaDescription.setAttribute('content', post.content.substring(0, 160).replace(/<[^>]*>/g, ''))
+      }
+    }
+  }, [slug, lang])
+
   const handleLanguageChange = (newLang) => {
     setLang(newLang)
     localStorage.setItem('preferredLanguage', newLang)
