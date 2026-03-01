@@ -1,10 +1,14 @@
 import { MongoClient } from 'mongodb'
 import { NextResponse } from 'next/server'
 import { v4 as uuidv4 } from 'uuid'
+import { Resend } from 'resend'
 
 const uri = process.env.MONGO_URL
 let client
 let clientPromise
+
+// Initialize Resend
+const resend = new Resend(process.env.RESEND_API_KEY)
 
 if (!uri) {
   throw new Error('Please add your Mongo URI to .env')
