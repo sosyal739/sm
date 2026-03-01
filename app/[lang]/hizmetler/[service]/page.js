@@ -818,9 +818,11 @@ export default function ServiceDetailPage() {
       <section className="py-20 px-4 bg-gray-50">
         <div className="container mx-auto">
           <div className="text-center mb-16">
-            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Nasıl Çalışıyoruz?</h2>
+            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
+              {lang === 'de' ? 'Wie arbeiten wir?' : lang === 'en' ? 'How do we work?' : 'Nasıl Çalışıyoruz?'}
+            </h2>
             <p className="text-lg text-gray-500 max-w-2xl mx-auto">
-              Şeffaf ve sistematik süreçlerimizle başarıya ulaşın
+              {lang === 'de' ? 'Erreichen Sie Erfolg mit unseren transparenten und systematischen Prozessen' : lang === 'en' ? 'Achieve success with our transparent and systematic processes' : 'Şeffaf ve sistematik süreçlerimizle başarıya ulaşın'}
             </p>
           </div>
           
