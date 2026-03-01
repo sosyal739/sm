@@ -263,9 +263,9 @@ export default function ServiceDetailPage() {
     },
 
     'tiktok-ads': {
-      title: 'TikTok Ads Yönetimi',
-      subtitle: 'Z kuşağına ulaşmanın en etkili yolu',
-      description: 'TikTok\'un viral gücünden yararlanın. Kısa video formatıyla genç kitleye ulaşın, trend olan içeriklerle marka bilinirliğinizi katlayın.',
+      title: lang === 'de' ? 'TikTok Ads Management' : lang === 'en' ? 'TikTok Ads Management' : 'TikTok Ads Yönetimi',
+      subtitle: lang === 'de' ? 'Der effektivste Weg, die Generation Z zu erreichen' : lang === 'en' ? 'The most effective way to reach Gen Z' : 'Z kuşağına ulaşmanın en etkili yolu',
+      description: lang === 'de' ? 'Nutzen Sie die virale Kraft von TikTok. Erreichen Sie ein junges Publikum mit Kurzvideoformaten und steigern Sie Ihre Markenbekanntheit mit trendigen Inhalten.' : lang === 'en' ? 'Leverage TikTok\'s viral power. Reach young audiences with short video formats and multiply your brand awareness with trending content.' : 'TikTok\'un viral gücünden yararlanın. Kısa video formatıyla genç kitleye ulaşın, trend olan içeriklerle marka bilinirliğinizi katlayın.',
       badge: 'TikTok Marketing Partner',
       primaryColor: '#000000',
       secondaryColor: '#FE2C55',
@@ -278,66 +278,66 @@ export default function ServiceDetailPage() {
         </svg>
       ),
       stats: [
-        { value: '1B+', label: 'Aktif Kullanıcı', trend: 'Aylık aktif' },
-        { value: '+300%', label: 'Etkileşim Oranı', trend: 'Diğer platformlara göre' },
-        { value: '52 dk', label: 'Günlük Kullanım', trend: 'Ortalama süre' },
-        { value: '%60', label: 'Z Kuşağı', trend: '16-24 yaş arası' }
+        { value: '1B+', label: lang === 'de' ? 'Aktive Nutzer' : lang === 'en' ? 'Active Users' : 'Aktif Kullanıcı', trend: lang === 'de' ? 'Monatlich aktiv' : lang === 'en' ? 'Monthly active' : 'Aylık aktif' },
+        { value: '+300%', label: lang === 'de' ? 'Engagement-Rate' : lang === 'en' ? 'Engagement Rate' : 'Etkileşim Oranı', trend: lang === 'de' ? 'Im Vergleich zu anderen Plattformen' : lang === 'en' ? 'Compared to other platforms' : 'Diğer platformlara göre' },
+        { value: '52 min', label: lang === 'de' ? 'Tägliche Nutzung' : lang === 'en' ? 'Daily Usage' : 'Günlük Kullanım', trend: lang === 'de' ? 'Durchschnittliche Zeit' : lang === 'en' ? 'Average time' : 'Ortalama süre' },
+        { value: '%60', label: lang === 'de' ? 'Generation Z' : lang === 'en' ? 'Gen Z' : 'Z Kuşağı', trend: lang === 'de' ? 'Alter 16-24' : lang === 'en' ? 'Age 16-24' : '16-24 yaş arası' }
       ],
       features: [
         {
-          title: 'In-Feed Reklamları',
+          title: lang === 'de' ? 'In-Feed-Anzeigen' : lang === 'en' ? 'In-Feed Ads' : 'In-Feed Reklamları',
           subtitle: 'For You Page',
-          desc: 'Kullanıcıların "For You" akışında organik içerikler arasında görünün.',
+          desc: lang === 'de' ? 'Erscheinen Sie im "For You"-Feed der Nutzer zwischen organischen Inhalten.' : lang === 'en' ? 'Appear in users\' "For You" feed among organic content.' : 'Kullanıcıların "For You" akışında organik içerikler arasında görünün.',
           icon: Play,
-          items: ['9-15 saniye videolar', 'Tam ekran deneyim', 'CTA butonları', 'Sesli içerik']
+          items: lang === 'de' ? ['9-15 Sekunden Videos', 'Vollbild-Erlebnis', 'CTA-Buttons', 'Audio-Inhalte'] : lang === 'en' ? ['9-15 second videos', 'Full screen experience', 'CTA buttons', 'Audio content'] : ['9-15 saniye videolar', 'Tam ekran deneyim', 'CTA butonları', 'Sesli içerik']
         },
         {
-          title: 'TopView Reklamları',
-          subtitle: 'Premium Görünürlük',
-          desc: 'Uygulama açılışında ilk görünen reklam olun. Maksimum görünürlük ve etki.',
+          title: lang === 'de' ? 'TopView-Anzeigen' : lang === 'en' ? 'TopView Ads' : 'TopView Reklamları',
+          subtitle: lang === 'de' ? 'Premium-Sichtbarkeit' : lang === 'en' ? 'Premium Visibility' : 'Premium Görünürlük',
+          desc: lang === 'de' ? 'Seien Sie die erste Anzeige beim App-Start. Maximale Sichtbarkeit und Wirkung.' : lang === 'en' ? 'Be the first ad when the app opens. Maximum visibility and impact.' : 'Uygulama açılışında ilk görünen reklam olun. Maksimum görünürlük ve etki.',
           icon: Eye,
-          items: ['60 saniyeye kadar', 'Ses açık başlangıç', 'Tam ekran', 'Günlük 1 marka']
+          items: lang === 'de' ? ['Bis zu 60 Sekunden', 'Ton an beim Start', 'Vollbild', 'Täglich 1 Marke'] : lang === 'en' ? ['Up to 60 seconds', 'Sound on start', 'Full screen', 'Daily 1 brand'] : ['60 saniyeye kadar', 'Ses açık başlangıç', 'Tam ekran', 'Günlük 1 marka']
         },
         {
           title: 'Branded Hashtag Challenge',
-          subtitle: 'Viral Kampanyalar',
-          desc: 'Markanız için özel hashtag challenge oluşturun, kullanıcı içeriklerini tetikleyin.',
+          subtitle: lang === 'de' ? 'Virale Kampagnen' : lang === 'en' ? 'Viral Campaigns' : 'Viral Kampanyalar',
+          desc: lang === 'de' ? 'Erstellen Sie eine spezielle Hashtag-Challenge für Ihre Marke, lösen Sie nutzergenerierte Inhalte aus.' : lang === 'en' ? 'Create a special hashtag challenge for your brand, trigger user-generated content.' : 'Markanız için özel hashtag challenge oluşturun, kullanıcı içeriklerini tetikleyin.',
           icon: Share2,
-          items: ['Özel hashtag sayfası', 'Kullanıcı katılımı', 'Viral potansiyel', 'UGC içerik']
+          items: lang === 'de' ? ['Spezielle Hashtag-Seite', 'Nutzerbeteiligung', 'Virales Potenzial', 'UGC-Inhalte'] : lang === 'en' ? ['Custom hashtag page', 'User participation', 'Viral potential', 'UGC content'] : ['Özel hashtag sayfası', 'Kullanıcı katılımı', 'Viral potansiyel', 'UGC içerik']
         },
         {
           title: 'Branded Effects',
-          subtitle: 'AR Filtreler',
-          desc: 'Markanıza özel AR filtreleri ve efektler oluşturun. Kullanıcılar içerik üretsin.',
+          subtitle: lang === 'de' ? 'AR-Filter' : lang === 'en' ? 'AR Filters' : 'AR Filtreler',
+          desc: lang === 'de' ? 'Erstellen Sie markenspezifische AR-Filter und Effekte. Lassen Sie Nutzer Inhalte erstellen.' : lang === 'en' ? 'Create brand-specific AR filters and effects. Let users create content.' : 'Markanıza özel AR filtreleri ve efektler oluşturun. Kullanıcılar içerik üretsin.',
           icon: Zap,
-          items: ['2D/3D efektler', 'Yüz filtreleri', 'Oyunlaştırma', 'Marka entegrasyonu']
+          items: lang === 'de' ? ['2D/3D-Effekte', 'Gesichtsfilter', 'Gamification', 'Markenintegration'] : lang === 'en' ? ['2D/3D effects', 'Face filters', 'Gamification', 'Brand integration'] : ['2D/3D efektler', 'Yüz filtreleri', 'Oyunlaştırma', 'Marka entegrasyonu']
         },
         {
           title: 'Spark Ads',
-          subtitle: 'Organik Boost',
-          desc: 'Mevcut organik TikTok içeriklerinizi veya influencer içeriklerini boost edin.',
+          subtitle: lang === 'de' ? 'Organischer Boost' : lang === 'en' ? 'Organic Boost' : 'Organik Boost',
+          desc: lang === 'de' ? 'Boosten Sie Ihre bestehenden organischen TikTok-Inhalte oder Influencer-Inhalte.' : lang === 'en' ? 'Boost your existing organic TikTok content or influencer content.' : 'Mevcut organik TikTok içeriklerinizi veya influencer içeriklerini boost edin.',
           icon: TrendingUp,
-          items: ['Organik içerik boost', 'Influencer içerikleri', 'Otantik görünüm', 'Yüksek etkileşim']
+          items: lang === 'de' ? ['Organischer Content-Boost', 'Influencer-Inhalte', 'Authentisches Aussehen', 'Hohes Engagement'] : lang === 'en' ? ['Organic content boost', 'Influencer content', 'Authentic look', 'High engagement'] : ['Organik içerik boost', 'Influencer içerikleri', 'Otantik görünüm', 'Yüksek etkileşim']
         },
         {
           title: 'TikTok Shop',
-          subtitle: 'Sosyal Ticaret',
-          desc: 'Uygulama içi alışveriş deneyimi. Videolardan direkt satış yapın.',
+          subtitle: lang === 'de' ? 'Social Commerce' : lang === 'en' ? 'Social Commerce' : 'Sosyal Ticaret',
+          desc: lang === 'de' ? 'In-App-Shopping-Erlebnis. Verkaufen Sie direkt aus Videos.' : lang === 'en' ? 'In-app shopping experience. Sell directly from videos.' : 'Uygulama içi alışveriş deneyimi. Videolardan direkt satış yapın.',
           icon: ShoppingCart,
-          items: ['Canlı alışveriş', 'Ürün vitrinleri', 'Affiliate marketing', 'Checkout entegrasyonu']
+          items: lang === 'de' ? ['Live-Shopping', 'Produktvitrinen', 'Affiliate Marketing', 'Checkout-Integration'] : lang === 'en' ? ['Live shopping', 'Product showcases', 'Affiliate marketing', 'Checkout integration'] : ['Canlı alışveriş', 'Ürün vitrinleri', 'Affiliate marketing', 'Checkout entegrasyonu']
         }
       ],
       process: [
-        { step: '01', title: 'Trend Analizi', desc: 'TikTok trendlerini ve viral içerikleri analiz ediyoruz.' },
-        { step: '02', title: 'İçerik Üretimi', desc: 'Platforma özgü, dikkat çekici videolar hazırlıyoruz.' },
-        { step: '03', title: 'Influencer Eşleştirme', desc: 'Markanıza uygun TikTok creator\'ları buluyoruz.' },
-        { step: '04', title: 'Viral Optimizasyon', desc: 'Algoritma dostu içeriklerle erişimi maksimize ediyoruz.' }
+        { step: '01', title: lang === 'de' ? 'Trendanalyse' : lang === 'en' ? 'Trend Analysis' : 'Trend Analizi', desc: lang === 'de' ? 'Wir analysieren TikTok-Trends und virale Inhalte.' : lang === 'en' ? 'We analyze TikTok trends and viral content.' : 'TikTok trendlerini ve viral içerikleri analiz ediyoruz.' },
+        { step: '02', title: lang === 'de' ? 'Content-Produktion' : lang === 'en' ? 'Content Production' : 'İçerik Üretimi', desc: lang === 'de' ? 'Wir erstellen plattformspezifische, aufmerksamkeitsstarke Videos.' : lang === 'en' ? 'We create platform-specific, attention-grabbing videos.' : 'Platforma özgü, dikkat çekici videolar hazırlıyoruz.' },
+        { step: '03', title: lang === 'de' ? 'Influencer-Matching' : lang === 'en' ? 'Influencer Matching' : 'Influencer Eşleştirme', desc: lang === 'de' ? 'Wir finden passende TikTok-Creator für Ihre Marke.' : lang === 'en' ? 'We find suitable TikTok creators for your brand.' : 'Markanıza uygun TikTok creator\'ları buluyoruz.' },
+        { step: '04', title: lang === 'de' ? 'Virale Optimierung' : lang === 'en' ? 'Viral Optimization' : 'Viral Optimizasyon', desc: lang === 'de' ? 'Wir maximieren die Reichweite mit algorithmusfreundlichen Inhalten.' : lang === 'en' ? 'We maximize reach with algorithm-friendly content.' : 'Algoritma dostu içeriklerle erişimi maksimize ediyoruz.' }
       ],
       benefits: [
-        { title: 'Genç Kitleye Erişim', desc: 'Z kuşağı ve genç millennials\'a direkt ulaşım' },
-        { title: 'Viral Potansiyel', desc: 'Organik viral yayılım imkanı' },
-        { title: 'Yüksek Etkileşim', desc: 'Diğer platformlardan 3x daha fazla etkileşim' },
-        { title: 'Düşük Maliyet', desc: 'CPM ve CPC\'de rekabetçi fiyatlar' }
+        { title: lang === 'de' ? 'Zugang zu jungem Publikum' : lang === 'en' ? 'Young Audience Access' : 'Genç Kitleye Erişim', desc: lang === 'de' ? 'Direkter Zugang zu Gen Z und jungen Millennials' : lang === 'en' ? 'Direct access to Gen Z and young millennials' : 'Z kuşağı ve genç millennials\'a direkt ulaşım' },
+        { title: lang === 'de' ? 'Virales Potenzial' : lang === 'en' ? 'Viral Potential' : 'Viral Potansiyel', desc: lang === 'de' ? 'Möglichkeit organischer viraler Verbreitung' : lang === 'en' ? 'Possibility of organic viral spread' : 'Organik viral yayılım imkanı' },
+        { title: lang === 'de' ? 'Hohes Engagement' : lang === 'en' ? 'High Engagement' : 'Yüksek Etkileşim', desc: lang === 'de' ? '3x mehr Engagement als andere Plattformen' : lang === 'en' ? '3x more engagement than other platforms' : 'Diğer platformlardan 3x daha fazla etkileşim' },
+        { title: lang === 'de' ? 'Niedrige Kosten' : lang === 'en' ? 'Low Cost' : 'Düşük Maliyet', desc: lang === 'de' ? 'Wettbewerbsfähige Preise bei CPM und CPC' : lang === 'en' ? 'Competitive prices in CPM and CPC' : 'CPM ve CPC\'de rekabetçi fiyatlar' }
       ],
       faq: [
         { 
@@ -350,7 +350,7 @@ export default function ServiceDetailPage() {
         },
         { 
           q: lang === 'de' ? 'Wie lange dauert es, Ergebnisse zu sehen?' : lang === 'en' ? 'How long does it take to see results?' : 'Sonuç almak ne kadar sürer?',
-          a: lang === 'de' ? 'TikTok ist eine der schnellsten Plattformen. Mit dem richtigen Inhalt können Sie innerhalb von 24-48 Stunden virale Reichweite erzielen. Allerdings ist eine konsistente Inhaltsstrategie für dauerhaften Erfolg wichtig.' : lang === 'en' ? 'TikTok is one of the fastest platforms. With the right content, you can achieve viral reach within 24-48 hours. However, a consistent content strategy is important for sustained success.' : 'TikTok en hızlı sonuç veren platformlardan biri. Doğru içerikle 24-48 saat içinde viral erişim yakalayabilirsiniz. Ancak sürdürülebilir başarı için tutarlı içerik stratejisi önemli.'
+          a: lang === 'de' ? 'TikTok ist eine der schnellsten Plattformen. Mit dem richtigen Inhalt können Sie innerhalb von 24-48 Stunden virale Reichweite erzielen.' : lang === 'en' ? 'TikTok is one of the fastest platforms. With the right content, you can achieve viral reach within 24-48 hours.' : 'TikTok en hızlı sonuç veren platformlardan biri. Doğru içerikle 24-48 saat içinde viral erişim yakalayabilirsiniz.'
         }
       ]
     },
