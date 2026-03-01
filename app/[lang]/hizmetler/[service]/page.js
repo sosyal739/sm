@@ -356,9 +356,9 @@ export default function ServiceDetailPage() {
     },
 
     'x-ads': {
-      title: 'X (Twitter) Ads Yönetimi',
-      subtitle: 'Gerçek zamanlı pazarlama ve trend yakalama',
-      description: 'X platformunda anlık trendlere katılın, gündem oluşturun ve profesyonel kitleye ulaşın. B2B pazarlama ve thought leadership için ideal platform.',
+      title: lang === 'de' ? 'X (Twitter) Ads Management' : lang === 'en' ? 'X (Twitter) Ads Management' : 'X (Twitter) Ads Yönetimi',
+      subtitle: lang === 'de' ? 'Echtzeit-Marketing und Trend-Erfassung' : lang === 'en' ? 'Real-time marketing and trend catching' : 'Gerçek zamanlı pazarlama ve trend yakalama',
+      description: lang === 'de' ? 'Nehmen Sie an aktuellen Trends auf der X-Plattform teil, setzen Sie die Agenda und erreichen Sie ein professionelles Publikum. Die ideale Plattform für B2B-Marketing und Thought Leadership.' : lang === 'en' ? 'Join instant trends on the X platform, set the agenda and reach professional audiences. The ideal platform for B2B marketing and thought leadership.' : 'X platformunda anlık trendlere katılın, gündem oluşturun ve profesyonel kitleye ulaşın. B2B pazarlama ve thought leadership için ideal platform.',
       badge: 'X Ads Certified',
       primaryColor: '#000000',
       secondaryColor: '#1DA1F2',
@@ -371,79 +371,79 @@ export default function ServiceDetailPage() {
         </svg>
       ),
       stats: [
-        { value: '500M+', label: 'Aktif Kullanıcı', trend: 'Aylık aktif' },
-        { value: '%80', label: 'Profesyonel Kitle', trend: 'İş dünyası kullanıcıları' },
-        { value: '6000', label: 'Tweet/Saniye', trend: 'Gerçek zamanlı' },
-        { value: '+150%', label: 'B2B Dönüşüm', trend: 'Ortalama artış' }
+        { value: '500M+', label: lang === 'de' ? 'Aktive Nutzer' : lang === 'en' ? 'Active Users' : 'Aktif Kullanıcı', trend: lang === 'de' ? 'Monatlich aktiv' : lang === 'en' ? 'Monthly active' : 'Aylık aktif' },
+        { value: '%80', label: lang === 'de' ? 'Professionelles Publikum' : lang === 'en' ? 'Professional Audience' : 'Profesyonel Kitle', trend: lang === 'de' ? 'Geschäftsnutzer' : lang === 'en' ? 'Business users' : 'İş dünyası kullanıcıları' },
+        { value: '6000', label: lang === 'de' ? 'Tweets/Sekunde' : lang === 'en' ? 'Tweets/Second' : 'Tweet/Saniye', trend: lang === 'de' ? 'Echtzeit' : lang === 'en' ? 'Real-time' : 'Gerçek zamanlı' },
+        { value: '+150%', label: lang === 'de' ? 'B2B-Conversion' : lang === 'en' ? 'B2B Conversion' : 'B2B Dönüşüm', trend: lang === 'de' ? 'Durchschnittliche Steigerung' : lang === 'en' ? 'Average increase' : 'Ortalama artış' }
       ],
       features: [
         {
           title: 'Promoted Tweets',
-          subtitle: 'Sponsorlu Tweetler',
-          desc: 'Tweetlerinizi daha geniş kitlelere ulaştırın. Timeline\'da organik görünüm.',
+          subtitle: lang === 'de' ? 'Gesponserte Tweets' : lang === 'en' ? 'Sponsored Tweets' : 'Sponsorlu Tweetler',
+          desc: lang === 'de' ? 'Erreichen Sie mit Ihren Tweets ein breiteres Publikum. Organisches Aussehen in der Timeline.' : lang === 'en' ? 'Reach a wider audience with your tweets. Organic appearance in the timeline.' : 'Tweetlerinizi daha geniş kitlelere ulaştırın. Timeline\'da organik görünüm.',
           icon: MessageSquare,
-          items: ['Metin + medya', 'Thread reklamları', 'Poll reklamları', 'Conversation cards']
+          items: lang === 'de' ? ['Text + Medien', 'Thread-Anzeigen', 'Poll-Anzeigen', 'Conversation Cards'] : lang === 'en' ? ['Text + media', 'Thread ads', 'Poll ads', 'Conversation cards'] : ['Metin + medya', 'Thread reklamları', 'Poll reklamları', 'Conversation cards']
         },
         {
           title: 'Promoted Accounts',
-          subtitle: 'Hesap Büyütme',
-          desc: 'Takipçi sayınızı artırın. "Kimi takip etmeli" önerilerinde görünün.',
+          subtitle: lang === 'de' ? 'Konto-Wachstum' : lang === 'en' ? 'Account Growth' : 'Hesap Büyütme',
+          desc: lang === 'de' ? 'Erhöhen Sie Ihre Followerzahl. Erscheinen Sie in "Wem folgen"-Empfehlungen.' : lang === 'en' ? 'Increase your follower count. Appear in "Who to follow" recommendations.' : 'Takipçi sayınızı artırın. "Kimi takip etmeli" önerilerinde görünün.',
           icon: Users,
-          items: ['Takipçi kazanımı', 'Hedefli öneriler', 'Sektörel hedefleme', 'İlgi alanı bazlı']
+          items: lang === 'de' ? ['Follower-Gewinnung', 'Gezielte Empfehlungen', 'Branchen-Targeting', 'Interessenbasiert'] : lang === 'en' ? ['Follower acquisition', 'Targeted recommendations', 'Industry targeting', 'Interest-based'] : ['Takipçi kazanımı', 'Hedefli öneriler', 'Sektörel hedefleme', 'İlgi alanı bazlı']
         },
         {
           title: 'Promoted Trends',
-          subtitle: 'Gündem Oluşturma',
-          desc: 'Trend listesinde 1 numarada görünün. Maksimum görünürlük ve etki.',
+          subtitle: lang === 'de' ? 'Agenda setzen' : lang === 'en' ? 'Set the Agenda' : 'Gündem Oluşturma',
+          desc: lang === 'de' ? 'Erscheinen Sie auf Platz 1 der Trendliste. Maximale Sichtbarkeit und Wirkung.' : lang === 'en' ? 'Appear #1 on the trend list. Maximum visibility and impact.' : 'Trend listesinde 1 numarada görünün. Maksimum görünürlük ve etki.',
           icon: TrendingUp,
-          items: ['24 saat trend', 'Özel hashtag', 'Explore sayfası', 'Maksimum erişim']
+          items: lang === 'de' ? ['24 Stunden Trend', 'Spezieller Hashtag', 'Explore-Seite', 'Maximale Reichweite'] : lang === 'en' ? ['24-hour trend', 'Custom hashtag', 'Explore page', 'Maximum reach'] : ['24 saat trend', 'Özel hashtag', 'Explore sayfası', 'Maksimum erişim']
         },
         {
-          title: 'Video Reklamları',
+          title: lang === 'de' ? 'Video-Anzeigen' : lang === 'en' ? 'Video Ads' : 'Video Reklamları',
           subtitle: 'Video Ads',
-          desc: 'Otomatik oynatılan video reklamlarla dikkat çekin ve mesajınızı iletin.',
+          desc: lang === 'de' ? 'Erregen Sie Aufmerksamkeit mit automatisch abspielenden Videoanzeigen und vermitteln Sie Ihre Botschaft.' : lang === 'en' ? 'Grab attention with auto-playing video ads and convey your message.' : 'Otomatik oynatılan video reklamlarla dikkat çekin ve mesajınızı iletin.',
           icon: Video,
-          items: ['Pre-roll videolar', 'Amplify sponsorluk', 'Video website cards', 'Canlı yayın boost']
+          items: lang === 'de' ? ['Pre-roll Videos', 'Amplify-Sponsoring', 'Video Website Cards', 'Live-Stream Boost'] : lang === 'en' ? ['Pre-roll videos', 'Amplify sponsorship', 'Video website cards', 'Live stream boost'] : ['Pre-roll videolar', 'Amplify sponsorluk', 'Video website cards', 'Canlı yayın boost']
         },
         {
-          title: 'Takeover Reklamları',
-          subtitle: 'Premium Yerleşim',
-          desc: 'Timeline veya Explore sayfasının en üstünde premium görünürlük.',
+          title: lang === 'de' ? 'Takeover-Anzeigen' : lang === 'en' ? 'Takeover Ads' : 'Takeover Reklamları',
+          subtitle: lang === 'de' ? 'Premium-Platzierung' : lang === 'en' ? 'Premium Placement' : 'Premium Yerleşim',
+          desc: lang === 'de' ? 'Premium-Sichtbarkeit ganz oben auf der Timeline oder Explore-Seite.' : lang === 'en' ? 'Premium visibility at the top of the Timeline or Explore page.' : 'Timeline veya Explore sayfasının en üstünde premium görünürlük.',
           icon: Award,
-          items: ['Timeline takeover', 'Explore takeover', 'Trend takeover+', 'Özel etkinlikler']
+          items: lang === 'de' ? ['Timeline Takeover', 'Explore Takeover', 'Trend Takeover+', 'Spezielle Events'] : lang === 'en' ? ['Timeline takeover', 'Explore takeover', 'Trend takeover+', 'Special events'] : ['Timeline takeover', 'Explore takeover', 'Trend takeover+', 'Özel etkinlikler']
         },
         {
           title: 'Carousel Ads',
-          subtitle: 'Çoklu İçerik',
-          desc: 'Tek tweet\'te 6\'ya kadar görsel veya video ile hikaye anlatın.',
+          subtitle: lang === 'de' ? 'Mehrere Inhalte' : lang === 'en' ? 'Multiple Content' : 'Çoklu İçerik',
+          desc: lang === 'de' ? 'Erzählen Sie eine Geschichte mit bis zu 6 Bildern oder Videos in einem Tweet.' : lang === 'en' ? 'Tell a story with up to 6 images or videos in a single tweet.' : 'Tek tweet\'te 6\'ya kadar görsel veya video ile hikaye anlatın.',
           icon: Image,
-          items: ['6 kart kapasitesi', 'Swipe deneyimi', 'Farklı CTA\'lar', 'Ürün vitrini']
+          items: lang === 'de' ? ['6 Karten Kapazität', 'Swipe-Erlebnis', 'Verschiedene CTAs', 'Produktvitrine'] : lang === 'en' ? ['6 card capacity', 'Swipe experience', 'Different CTAs', 'Product showcase'] : ['6 kart kapasitesi', 'Swipe deneyimi', 'Farklı CTA\'lar', 'Ürün vitrini']
         }
       ],
       process: [
-        { step: '01', title: 'Gündem Takibi', desc: 'Sektörünüzle ilgili trendleri ve konuşmaları izliyoruz.' },
-        { step: '02', title: 'İçerik Stratejisi', desc: 'Tweet takvimi ve real-time marketing planı oluşturuyoruz.' },
-        { step: '03', title: 'Hedefleme', desc: 'İlgi alanı, keyword ve follower lookalike hedefleme yapıyoruz.' },
-        { step: '04', title: 'Analiz', desc: 'Engagement, reach ve dönüşüm metriklerini takip ediyoruz.' }
+        { step: '01', title: lang === 'de' ? 'Trendverfolgung' : lang === 'en' ? 'Trend Tracking' : 'Gündem Takibi', desc: lang === 'de' ? 'Wir verfolgen Trends und Gespräche in Ihrer Branche.' : lang === 'en' ? 'We track trends and conversations in your industry.' : 'Sektörünüzle ilgili trendleri ve konuşmaları izliyoruz.' },
+        { step: '02', title: lang === 'de' ? 'Content-Strategie' : lang === 'en' ? 'Content Strategy' : 'İçerik Stratejisi', desc: lang === 'de' ? 'Wir erstellen einen Tweet-Kalender und Echtzeit-Marketingplan.' : lang === 'en' ? 'We create a tweet calendar and real-time marketing plan.' : 'Tweet takvimi ve real-time marketing planı oluşturuyoruz.' },
+        { step: '03', title: 'Targeting', desc: lang === 'de' ? 'Wir führen Targeting nach Interessen, Keywords und Follower-Lookalikes durch.' : lang === 'en' ? 'We perform targeting by interests, keywords and follower lookalikes.' : 'İlgi alanı, keyword ve follower lookalike hedefleme yapıyoruz.' },
+        { step: '04', title: lang === 'de' ? 'Analyse' : lang === 'en' ? 'Analysis' : 'Analiz', desc: lang === 'de' ? 'Wir verfolgen Engagement-, Reichweiten- und Conversion-Metriken.' : lang === 'en' ? 'We track engagement, reach and conversion metrics.' : 'Engagement, reach ve dönüşüm metriklerini takip ediyoruz.' }
       ],
       benefits: [
-        { title: 'Gerçek Zamanlı', desc: 'Anlık trendlere ve olaylara hızlı tepki' },
-        { title: 'B2B Güçlü', desc: 'Profesyonel ve karar verici kitleye erişim' },
-        { title: 'Thought Leadership', desc: 'Sektörde fikir lideri konumu oluşturma' },
-        { title: 'Viral Potansiyel', desc: 'Retweet ile organik yayılım' }
+        { title: lang === 'de' ? 'Echtzeit' : lang === 'en' ? 'Real-Time' : 'Gerçek Zamanlı', desc: lang === 'de' ? 'Schnelle Reaktion auf aktuelle Trends und Ereignisse' : lang === 'en' ? 'Quick response to current trends and events' : 'Anlık trendlere ve olaylara hızlı tepki' },
+        { title: lang === 'de' ? 'B2B stark' : lang === 'en' ? 'B2B Strong' : 'B2B Güçlü', desc: lang === 'de' ? 'Zugang zu professionellem und entscheidungstreffendem Publikum' : lang === 'en' ? 'Access to professional and decision-making audience' : 'Profesyonel ve karar verici kitleye erişim' },
+        { title: 'Thought Leadership', desc: lang === 'de' ? 'Position als Meinungsführer in der Branche aufbauen' : lang === 'en' ? 'Build thought leader position in the industry' : 'Sektörde fikir lideri konumu oluşturma' },
+        { title: lang === 'de' ? 'Virales Potenzial' : lang === 'en' ? 'Viral Potential' : 'Viral Potansiyel', desc: lang === 'de' ? 'Organische Verbreitung durch Retweets' : lang === 'en' ? 'Organic spread through retweets' : 'Retweet ile organik yayılım' }
       ],
       faq: [
         { 
           q: lang === 'de' ? 'Ist X (Twitter) für B2C-Unternehmen geeignet?' : lang === 'en' ? 'Is X (Twitter) suitable for B2C companies?' : 'X (Twitter) B2C şirketler için uygun mu?',
-          a: lang === 'de' ? 'Ja, aber X ist besonders stark für B2B und Dienstleistungen. Für B2C ist es effektiv für schnelle Kampagnen, Eventmarketing und Kundenservice. Die Echtzeit-Natur der Plattform macht sie ideal für aktuelle Ereignisse.' : lang === 'en' ? 'Yes, but X is particularly strong for B2B and services. For B2C, it\'s effective for quick campaigns, event marketing, and customer service. The real-time nature of the platform makes it ideal for current events.' : 'Evet, ancak X özellikle B2B ve hizmetler için güçlü. B2C için hızlı kampanyalar, etkinlik pazarlaması ve müşteri hizmetlerinde etkili. Platformun anlık doğası güncel olaylar için ideal.'
+          a: lang === 'de' ? 'Ja, aber X ist besonders stark für B2B und Dienstleistungen. Für B2C ist es effektiv für schnelle Kampagnen, Eventmarketing und Kundenservice.' : lang === 'en' ? 'Yes, but X is particularly strong for B2B and services. For B2C, it\'s effective for quick campaigns, event marketing, and customer service.' : 'Evet, ancak X özellikle B2B ve hizmetler için güçlü. B2C için hızlı kampanyalar, etkinlik pazarlaması ve müşteri hizmetlerinde etkili.'
         },
         { 
           q: lang === 'de' ? 'Wie kann ich Trends verfolgen?' : lang === 'en' ? 'How can I track trends?' : 'Trendleri nasıl takip edebilirim?',
-          a: lang === 'de' ? 'Wir überwachen kontinuierlich branchenspezifische Keywords und Hashtags. Mit Echtzeit-Benachrichtigungen informieren wir Sie über relevante Trends und erstellen schnell passende Inhalte, um Ihre Marke in aktuellen Gesprächen zu positionieren.' : lang === 'en' ? 'We continuously monitor industry-specific keywords and hashtags. With real-time alerts, we inform you about relevant trends and quickly create suitable content to position your brand in current conversations.' : 'Sektöre özel anahtar kelimeleri ve hashtag\'leri sürekli izliyoruz. Gerçek zamanlı bildirimlerle ilgili trendlerden haberdar ediyor, hızlıca uygun içerik üreterek markanızı güncel konuşmalara dahil ediyoruz.'
+          a: lang === 'de' ? 'Wir überwachen kontinuierlich branchenspezifische Keywords und Hashtags. Mit Echtzeit-Benachrichtigungen informieren wir Sie über relevante Trends.' : lang === 'en' ? 'We continuously monitor industry-specific keywords and hashtags. With real-time alerts, we inform you about relevant trends.' : 'Sektöre özel anahtar kelimeleri ve hashtag\'leri sürekli izliyoruz. Gerçek zamanlı bildirimlerle ilgili trendlerden haberdar ediyoruz.'
         },
         { 
           q: lang === 'de' ? 'Was ist der Unterschied zwischen organisch und bezahlt?' : lang === 'en' ? 'What is the difference between organic and paid?' : 'Organik ve ücretli arasındaki fark nedir?',
-          a: lang === 'de' ? 'Organisch sind kostenlose Posts, die durch Retweets verbreitet werden. Bezahlte Anzeigen erhöhen gezielt Ihre Reichweite. Wir empfehlen eine Kombination: organische Inhalte für Engagement, bezahlte für gezielte Reichweite und Conversions.' : lang === 'en' ? 'Organic are free posts spread through retweets. Paid ads increase your reach in a targeted way. We recommend a combination: organic content for engagement, paid for targeted reach and conversions.' : 'Organik, retweet\'lerle yayılan ücretsiz paylaşımlar. Ücretli reklamlar hedefli şekilde erişiminizi artırır. Kombinasyon öneriyoruz: organik içerik etkileşim için, ücretli hedefli erişim ve dönüşüm için.'
+          a: lang === 'de' ? 'Organisch sind kostenlose Posts, die durch Retweets verbreitet werden. Bezahlte Anzeigen erhöhen gezielt Ihre Reichweite.' : lang === 'en' ? 'Organic are free posts spread through retweets. Paid ads increase your reach in a targeted way.' : 'Organik, retweet\'lerle yayılan ücretsiz paylaşımlar. Ücretli reklamlar hedefli şekilde erişiminizi artırır.'
         }
       ]
     },
