@@ -483,6 +483,24 @@ export default function ServiceDetailPage() {
         { title: 'Yüksek ROI', desc: 'Uzun vadede en düşük müşteri edinme maliyeti' },
         { title: 'Güvenilirlik', desc: 'Organik sonuçlara kullanıcılar daha çok güvenir' },
         { title: '7/24 Görünürlük', desc: 'Reklamlar dursa bile trafik devam eder' }
+      ],
+      faq: [
+        { 
+          q: lang === 'de' ? 'Wann werde ich Ergebnisse von SEO-Arbeiten sehen?' : lang === 'en' ? 'When will I see results from SEO work?' : 'SEO çalışmalarından ne zaman sonuç alırım?',
+          a: lang === 'de' ? 'SEO ist ein Marathon, kein Sprint. Je nach Wettbewerbssituation Ihrer Branche und der Geschichte Ihrer Website sehen Sie die ersten Auswirkungen technischer Verbesserungen in 1-3 Monaten. Nachhaltiges Verkehrswachstum gewinnt jedoch normalerweise ab dem 6. Monat an Dynamik.' : lang === 'en' ? 'SEO is a marathon, not a sprint. Depending on your industry\'s competition and your site\'s history, you\'ll start seeing the first effects of technical improvements in 1-3 months. However, sustainable traffic growth typically gains momentum from the 6th month onwards.' : 'SEO bir sprint değil, maratondur. Sektörünüzün rekabet durumuna ve sitenizin geçmişine bağlı olarak, ilk teknik iyileştirmelerin etkisini 1-3 ay içinde görmeye başlarsınız. Ancak kalıcı trafik artışı genellikle 6. aydan itibaren ivme kazanır.'
+        },
+        { 
+          q: lang === 'de' ? 'Garantieren Sie den 1. Platz?' : lang === 'en' ? 'Do you guarantee 1st place ranking?' : '1. sıra garantisi veriyor musunuz?',
+          a: lang === 'de' ? 'Da sich die Algorithmen von Google ständig ändern und niemand ein Monopol hat, ist "garantierte SEO" nicht professionell oder ethisch. Allerdings garantieren wir mit bewährten Strategien und datengesteuerten Arbeiten, dass Ihre Sichtbarkeit und Ihr Traffic steigen werden.' : lang === 'en' ? 'Since Google\'s algorithms constantly change and no one has a monopoly, "guaranteed SEO" is not professional or ethical. However, with proven strategies and data-driven work, we guarantee that your visibility and traffic will increase.' : 'Google\'ın algoritmaları sürekli değiştiği ve kimsenin tekelinde olmadığı için "garantili SEO" profesyonel ve etik değildir. Ancak kanıtlanmış stratejiler ve veri odaklı çalışmalarla görünürlüğünüzü ve trafiğinizi artırma garantisi veriyoruz.'
+        },
+        { 
+          q: lang === 'de' ? 'Wie funktioniert Ihr Berichtsprozess?' : lang === 'en' ? 'How does your reporting process work?' : 'Raporlama süreciniz nasıl işliyor?',
+          a: lang === 'de' ? 'Transparenz ist für uns das wichtigste Prinzip. Am Ende jedes Monats präsentieren wir Ihnen einen speziellen, verständlichen Bericht. Dieser Bericht enthält die durchgeführten Arbeiten, den erhöhten Traffic, Änderungen in den Keyword-Rankings und die Planung für den nächsten Monat.' : lang === 'en' ? 'Transparency is the most important principle for us. At the end of each month, we present you with a special, understandable report. This report includes the work done, increased traffic, changes in keyword rankings, and planning for the next month.' : 'Şeffaflık bizim için en önemli ilkedir. Her ayın sonunda size özel, anlaşılır bir rapor sunuyoruz. Bu raporda yapılan işlemler, artan trafik, anahtar kelime sıralamalarındaki değişimler ve bir sonraki ayın planlaması yer alır.'
+        },
+        { 
+          q: lang === 'de' ? 'Machen Sie nur technische Arbeiten?' : lang === 'en' ? 'Do you only do technical work?' : 'Sadece teknik çalışma mı yapıyorsunuz?',
+          a: lang === 'de' ? 'Nein, wir verfolgen einen ganzheitlichen Ansatz. Technische Infrastrukturverbesserungen (Geschwindigkeit, mobile Kompatibilität), Content-Strategie (Blog, Kategorietexte) und Off-Site-Autoritätsarbeiten (Backlink, PR) werden gemeinsam durchgeführt. Erfolgreiche SEO erfordert die ausgewogene Verwaltung dieser drei Säulen.' : lang === 'en' ? 'No, we take a holistic approach. Technical infrastructure improvements (speed, mobile compatibility), content strategy (blog, category texts), and off-site authority work (backlink, PR) are conducted together. Successful SEO requires balanced management of these three pillars.' : 'Hayır, bütüncül bir yaklaşım benimsiyoruz. Teknik altyapı iyileştirmeleri (hız, mobil uyum), içerik stratejisi (blog, kategori yazıları) ve site dışı otorite çalışmaları (backlink, PR) bir arada yürütülür. Başarılı SEO bu üç ayağın dengeli yönetilmesini gerektirir.'
+        }
       ]
     },
 
