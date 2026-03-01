@@ -7,6 +7,7 @@ import { Input } from '@/components/ui/input'
 import { Textarea } from '@/components/ui/textarea'
 import { Badge } from '@/components/ui/badge'
 import { Phone, Mail, MessageCircle, CheckCircle, BarChart3, Users, Award, TrendingUp, Globe, Star } from 'lucide-react'
+import CookieConsent from '@/components/CookieConsent'
 
 const translations = {
   tr: {
@@ -578,12 +579,9 @@ export default function Home() {
       <nav className="fixed top-0 left-0 right-0 z-50 bg-white/95 backdrop-blur-sm border-b">
         <div className="container mx-auto px-4 py-4">
           <div className="flex items-center justify-between">
-            <div className="flex items-center space-x-2">
-              <Globe className="h-6 w-6 text-[#4285F4]" />
-              <span className="text-xl font-bold bg-gradient-to-r from-[#4285F4] via-[#EA4335] to-[#FBBC04] bg-clip-text text-transparent">
-                Salih Maral
-              </span>
-            </div>
+            <a href="/" className="flex items-center">
+              <img src="/logo.png" alt="Salih Maral Logo" className="h-10 w-auto" />
+            </a>
             
             <div className="hidden md:flex items-center space-x-6">
               <div className="relative group">
@@ -1307,7 +1305,7 @@ export default function Home() {
         <div className="container mx-auto px-4">
           <div className="grid md:grid-cols-3 gap-8 mb-8">
             <div>
-              <h3 className="text-xl font-bold mb-4 bg-gradient-to-r from-[#4285F4] to-[#34A853] bg-clip-text text-transparent">Salih Maral</h3>
+              <img src="/logo.png" alt="Salih Maral Logo" className="h-12 w-auto mb-4" />
               <p className="text-sm text-gray-400">{t.footer.description}</p>
             </div>
             <div>
@@ -1345,6 +1343,9 @@ export default function Home() {
           </div>
         </div>
       </footer>
+      
+      {/* Cookie Consent Banner */}
+      <CookieConsent />
     </div>
   )
 }

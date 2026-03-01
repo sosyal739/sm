@@ -1,0 +1,22 @@
+# Robots.txt for Salih Maral Digital Marketing
+# https://salihmaral.de
+
+User-agent: *
+Allow: /
+
+# Sitemap location
+Sitemap: https://salihmaral.de/sitemap.xml
+
+# Crawl-delay for politeness
+Crawl-delay: 1
+
+# Block unnecessary paths
+Disallow: /api/
+Disallow: /_next/
+Disallow: /admin/
+
+# Allow important pages
+Allow: /blog/
+Allow: /de/
+Allow: /en/
+Allow: /tr/

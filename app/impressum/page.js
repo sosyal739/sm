@@ -18,8 +18,8 @@ export default function ImpressumPage() {
               <ArrowLeft className="h-5 w-5" />
               <span className="font-semibold">Zurück</span>
             </button>
-            <a href="/" className="text-xl font-bold bg-gradient-to-r from-[#4285F4] via-[#EA4335] to-[#FBBC04] bg-clip-text text-transparent">
-              Salih Maral
+            <a href="/">
+              <img src="/logo.png" alt="Salih Maral Logo" className="h-10 w-auto" />
             </a>
             <div className="w-24"></div>
           </div>
