@@ -773,9 +773,11 @@ export default function ServiceDetailPage() {
       <section className="py-20 px-4" style={{ background: `linear-gradient(135deg, ${data.gradientFrom}05 0%, white 50%, ${data.gradientTo}05 100%)` }}>
         <div className="container mx-auto">
           <div className="text-center mb-16">
-            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Hizmet Detayları</h2>
+            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
+              {lang === 'de' ? 'Servicedetails' : lang === 'en' ? 'Service Details' : 'Hizmet Detayları'}
+            </h2>
             <p className="text-lg text-gray-500 max-w-2xl mx-auto">
-              İşletmenizin ihtiyaçlarına göre kapsamlı çözümler sunuyoruz
+              {lang === 'de' ? 'Wir bieten umfassende Lösungen nach den Bedürfnissen Ihres Unternehmens' : lang === 'en' ? 'We offer comprehensive solutions based on your business needs' : 'İşletmenizin ihtiyaçlarına göre kapsamlı çözümler sunuyoruz'}
             </p>
           </div>
           
