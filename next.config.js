@@ -4,8 +4,6 @@ const nextConfig = {
   images: {
     unoptimized: true,
   },
-  // For Vercel deployment with Next.js 16+ Turbopack
-  turbopack: {},
   async headers() {
     return [
       {
