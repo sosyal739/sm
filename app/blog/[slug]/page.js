@@ -30,7 +30,7 @@ const translations = {
     cta: {
       title: 'Professioneller Digital Marketing Service',
       subtitle: 'Kontaktieren Sie uns jetzt, um Ihr Unternehmen zu vergrößern!',
-      button1: 'Jetzt anrufen',
+      button1: 'Angebot anfordern',
       button2: 'WhatsApp'
     },
     footer: '© 2026 Salih Maral. Alle Rechte vorbehalten.'
