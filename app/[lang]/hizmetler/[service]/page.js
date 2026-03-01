@@ -1015,7 +1015,7 @@ export default function ServiceDetailPage() {
       {/* Footer */}
       <footer className="py-8 bg-gray-900 text-center">
         <div className="container mx-auto px-4">
-          <p className="text-sm text-gray-400">© 2026 Salih Maral. Tüm hakları saklıdır.</p>
+          <p className="text-sm text-gray-400">© 2026 Salih Maral. {lang === 'de' ? 'Alle Rechte vorbehalten.' : lang === 'en' ? 'All rights reserved.' : 'Tüm hakları saklıdır.'}</p>
           <div className="flex justify-center space-x-4 mt-4">
             <a href="/impressum" className="text-xs text-gray-500 hover:text-gray-300">Impressum</a>
             <a href="/datenschutz" className="text-xs text-gray-500 hover:text-gray-300">Datenschutz</a>
