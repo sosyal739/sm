@@ -622,6 +622,24 @@ export default function ServiceDetailPage() {
         { title: 'Yasal Süreç', desc: 'Gerektiğinde hukuki destek' },
         { title: 'Gizlilik', desc: 'Tüm süreçler gizli yürütülür' },
         { title: 'Garanti', desc: 'Sonuç alınamazsa ücret iadesi' }
+      ],
+      faq: [
+        { 
+          q: lang === 'de' ? 'Können Sie alle negativen Bewertungen entfernen?' : lang === 'en' ? 'Can you remove all negative reviews?' : 'Tüm olumsuz yorumları kaldırabilir misiniz?',
+          a: lang === 'de' ? 'Wir können nur Bewertungen entfernen, die gegen die Plattformrichtlinien verstoßen (gefälschte Bewertungen, Spam, Beleidigungen usw.). Echte, faktenbasierte negative Bewertungen können nicht entfernt werden, aber wir helfen Ihnen, darauf professionell zu reagieren.' : lang === 'en' ? 'We can only remove reviews that violate platform policies (fake reviews, spam, insults, etc.). Genuine, fact-based negative reviews cannot be removed, but we help you respond to them professionally.' : 'Sadece platform politikalarını ihlal eden yorumları kaldırabiliriz (sahte yorumlar, spam, hakaret vb.). Gerçek, olgulara dayalı olumsuz yorumlar kaldırılamaz ancak profesyonel yanıt vermenize yardımcı oluyoruz.'
+        },
+        { 
+          q: lang === 'de' ? 'Wie lange dauert der Entfernungsprozess?' : lang === 'en' ? 'How long does the removal process take?' : 'Kaldırma süreci ne kadar sürer?',
+          a: lang === 'de' ? 'Der Prozess variiert je nach Plattform. Bei Google dauert es normalerweise 3-14 Tage. Bei Trustpilot kann es bis zu 30 Tage dauern. Wir halten Sie während des gesamten Prozesses auf dem Laufenden.' : lang === 'en' ? 'The process varies by platform. For Google, it typically takes 3-14 days. For Trustpilot, it can take up to 30 days. We keep you informed throughout the entire process.' : 'Süreç platforma göre değişir. Google için genellikle 3-14 gün sürer. Trustpilot için 30 güne kadar sürebilir. Süreç boyunca sizi bilgilendiriyoruz.'
+        },
+        { 
+          q: lang === 'de' ? 'Was passiert, wenn die Bewertung nicht entfernt wird?' : lang === 'en' ? 'What happens if the review is not removed?' : 'Yorum kaldırılmazsa ne olur?',
+          a: lang === 'de' ? 'Wenn wir die Bewertung nicht entfernen können, helfen wir Ihnen mit alternativen Strategien: professionelle Antwort schreiben, positive Bewertungen fördern oder rechtliche Schritte einleiten. Bei Misserfolg bieten wir je nach Vereinbarung eine Rückerstattung an.' : lang === 'en' ? 'If we can\'t remove the review, we help you with alternative strategies: writing a professional response, encouraging positive reviews, or initiating legal action. In case of failure, we offer a refund depending on the agreement.' : 'Yorumu kaldıramazsak alternatif stratejilerle yardımcı oluyoruz: profesyonel yanıt yazma, olumlu yorum teşviki veya hukuki süreç başlatma. Başarısızlık durumunda anlaşmaya göre ücret iadesi sunuyoruz.'
+        },
+        { 
+          q: lang === 'de' ? 'Ist der Service vertraulich?' : lang === 'en' ? 'Is the service confidential?' : 'Hizmet gizli mi?',
+          a: lang === 'de' ? 'Absolut. Alle unsere Prozesse werden vertraulich durchgeführt. Wir geben niemals Informationen über unsere Kunden oder unsere Arbeit an Dritte weiter. Vertraulichkeit ist unser Grundprinzip.' : lang === 'en' ? 'Absolutely. All our processes are conducted confidentially. We never share information about our clients or our work with third parties. Confidentiality is our core principle.' : 'Kesinlikle. Tüm süreçlerimiz gizli yürütülür. Müşterilerimiz veya çalışmalarımız hakkında üçüncü taraflarla asla bilgi paylaşmıyoruz. Gizlilik temel ilkemizdir.'
+        }
       ]
     }
   }
