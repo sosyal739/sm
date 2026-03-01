@@ -1304,7 +1304,7 @@ export default function Home() {
         <div className="container mx-auto px-4">
           <div className="grid md:grid-cols-3 gap-8 mb-8">
             <div>
-              <h3 className="text-xl font-bold mb-4 bg-gradient-to-r from-[#4285F4] to-[#34A853] bg-clip-text text-transparent">Salih Maral</h3>
+              <img src="/logo.png" alt="Salih Maral Logo" className="h-12 w-auto mb-4" />
               <p className="text-sm text-gray-400">{t.footer.description}</p>
             </div>
             <div>
