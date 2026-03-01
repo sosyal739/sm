@@ -5,21 +5,8 @@ const nextConfig = {
   },
   // Next.js 16+ uses serverExternalPackages at root level
   serverExternalPackages: ['mongodb'],
-  webpack(config, { dev }) {
-    if (dev) {
-      // Reduce CPU/memory from file watching
-      config.watchOptions = {
-        poll: 2000, // check every 2 seconds
-        aggregateTimeout: 300, // wait before rebuilding
-        ignored: ['**/node_modules'],
-      };
-    }
-    return config;
-  },
-  onDemandEntries: {
-    maxInactiveAge: 10000,
-    pagesBufferLength: 2,
-  },
+  // Add empty turbopack config to avoid webpack/turbopack conflict
+  turbopack: {},
   async headers() {
     return [
       {
