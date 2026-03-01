@@ -984,16 +984,16 @@ export default function ServiceDetailPage() {
         <div className="container mx-auto">
           <div className="max-w-3xl mx-auto text-center">
             <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">
-              Ücretsiz Analiz ile Başlayın
+              {lang === 'de' ? 'Starten Sie mit einer kostenlosen Analyse' : lang === 'en' ? 'Start with a Free Analysis' : 'Ücretsiz Analiz ile Başlayın'}
             </h2>
             <p className="text-lg text-white/80 mb-8">
-              Mevcut durumunuzu analiz ediyor, size özel strateji önerileri sunuyoruz. Hiçbir ücret veya taahhüt yok.
+              {lang === 'de' ? 'Wir analysieren Ihre aktuelle Situation und bieten Ihnen maßgeschneiderte Strategieempfehlungen. Keine Kosten, keine Verpflichtungen.' : lang === 'en' ? 'We analyze your current situation and offer you customized strategy recommendations. No costs, no commitments.' : 'Mevcut durumunuzu analiz ediyor, size özel strateji önerileri sunuyoruz. Hiçbir ücret veya taahhüt yok.'}
             </p>
             
             <div className="flex flex-wrap justify-center gap-4 mb-8">
               <Button size="lg" className="bg-white hover:bg-gray-100 px-8 shadow-lg transition-all duration-300 hover:scale-105" style={{ color: data.primaryColor }} asChild>
-                <a href={`mailto:kontakt@salihmaral.de?subject=Ücretsiz%20${encodeURIComponent(data.title)}%20Analizi`}>
-                  Ücretsiz Analiz Al
+                <a href={`mailto:kontakt@salihmaral.de?subject=${lang === 'de' ? 'Kostenlose' : lang === 'en' ? 'Free' : 'Ücretsiz'}%20${encodeURIComponent(data.title)}%20${lang === 'de' ? 'Analyse' : lang === 'en' ? 'Analysis' : 'Analizi'}`}>
+                  {lang === 'de' ? 'Kostenlose Analyse anfordern' : lang === 'en' ? 'Get Free Analysis' : 'Ücretsiz Analiz Al'}
                   <ArrowUpRight className="ml-2 h-5 w-5" />
                 </a>
               </Button>
