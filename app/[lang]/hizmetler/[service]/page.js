@@ -68,13 +68,13 @@ export default function ServiceDetailPage() {
     document.getElementById('contact-section')?.scrollIntoView({ behavior: 'smooth' })
   }
 
-  // TÜM HİZMETLER VERİSİ
+  // TÜM HİZMETLER VERİSİ - ÇOK DİLLİ
   const servicesData = {
     'google-ads': {
-      title: 'Google Ads Yönetimi',
-      subtitle: 'Veri odaklı stratejilerle işletmenizi büyütün',
-      description: 'Google\'ın reklam platformunda 15 yıllık deneyimimizle, reklam bütçenizi en verimli şekilde kullanıyor ve ölçülebilir sonuçlar elde ediyoruz.',
-      badge: 'Google Partner Sertifikalı',
+      title: lang === 'de' ? 'Google Ads Management' : lang === 'en' ? 'Google Ads Management' : 'Google Ads Yönetimi',
+      subtitle: lang === 'de' ? 'Mit datengesteuerten Strategien Ihr Unternehmen wachsen lassen' : lang === 'en' ? 'Grow your business with data-driven strategies' : 'Veri odaklı stratejilerle işletmenizi büyütün',
+      description: lang === 'de' ? 'Mit 15 Jahren Erfahrung auf Googles Werbeplattform nutzen wir Ihr Werbebudget am effizientesten und erzielen messbare Ergebnisse.' : lang === 'en' ? 'With 15 years of experience on Google\'s advertising platform, we use your ad budget most efficiently and achieve measurable results.' : 'Google\'ın reklam platformunda 15 yıllık deneyimimizle, reklam bütçenizi en verimli şekilde kullanıyor ve ölçülebilir sonuçlar elde ediyoruz.',
+      badge: lang === 'de' ? 'Google Partner Zertifiziert' : lang === 'en' ? 'Google Partner Certified' : 'Google Partner Sertifikalı',
       primaryColor: '#4285F4',
       secondaryColor: '#34A853',
       accentColor: '#FBBC05',
@@ -88,66 +88,66 @@ export default function ServiceDetailPage() {
         </svg>
       ),
       stats: [
-        { value: '+250%', label: 'Ortalama ROI Artışı', trend: '+32% geçen aya göre' },
-        { value: '500+', label: 'Başarılı Kampanya', trend: 'Aktif yönetim' },
-        { value: '%98', label: 'Müşteri Memnuniyeti', trend: 'Son 12 ay' },
-        { value: '15+', label: 'Yıllık Deneyim', trend: 'Sertifikalı uzman' }
+        { value: '+250%', label: lang === 'de' ? 'Durchschn. ROI-Steigerung' : lang === 'en' ? 'Average ROI Increase' : 'Ortalama ROI Artışı', trend: lang === 'de' ? '+32% ggü. Vormonat' : lang === 'en' ? '+32% vs last month' : '+32% geçen aya göre' },
+        { value: '500+', label: lang === 'de' ? 'Erfolgreiche Kampagnen' : lang === 'en' ? 'Successful Campaigns' : 'Başarılı Kampanya', trend: lang === 'de' ? 'Aktives Management' : lang === 'en' ? 'Active management' : 'Aktif yönetim' },
+        { value: '%98', label: lang === 'de' ? 'Kundenzufriedenheit' : lang === 'en' ? 'Customer Satisfaction' : 'Müşteri Memnuniyeti', trend: lang === 'de' ? 'Letzte 12 Monate' : lang === 'en' ? 'Last 12 months' : 'Son 12 ay' },
+        { value: '15+', label: lang === 'de' ? 'Jahre Erfahrung' : lang === 'en' ? 'Years Experience' : 'Yıllık Deneyim', trend: lang === 'de' ? 'Zertifizierter Experte' : lang === 'en' ? 'Certified expert' : 'Sertifikalı uzman' }
       ],
       features: [
         {
-          title: 'Arama Ağı Reklamları',
+          title: lang === 'de' ? 'Suchnetzwerk-Anzeigen' : lang === 'en' ? 'Search Network Ads' : 'Arama Ağı Reklamları',
           subtitle: 'Search Ads',
-          desc: 'Müşterileriniz Google\'da arama yaptığında tam karşılarına çıkın. Satın alma niyeti yüksek kullanıcılara ulaşın.',
+          desc: lang === 'de' ? 'Erscheinen Sie direkt vor Ihren Kunden, wenn sie bei Google suchen. Erreichen Sie Nutzer mit hoher Kaufabsicht.' : lang === 'en' ? 'Appear directly in front of your customers when they search on Google. Reach users with high purchase intent.' : 'Müşterileriniz Google\'da arama yaptığında tam karşılarına çıkın. Satın alma niyeti yüksek kullanıcılara ulaşın.',
           icon: Search,
-          items: ['Anahtar kelime araştırması', 'Teklif optimizasyonu', 'A/B test stratejileri', 'Kalite skoru iyileştirme']
+          items: lang === 'de' ? ['Keyword-Recherche', 'Gebotsoptimierung', 'A/B-Test-Strategien', 'Qualitätsfaktor-Verbesserung'] : lang === 'en' ? ['Keyword research', 'Bid optimization', 'A/B test strategies', 'Quality score improvement'] : ['Anahtar kelime araştırması', 'Teklif optimizasyonu', 'A/B test stratejileri', 'Kalite skoru iyileştirme']
         },
         {
-          title: 'Display Reklamları',
-          subtitle: 'Görsel Ağ',
-          desc: '2 milyondan fazla web sitesinde banner reklamlarınızla potansiyel müşterilerinize ulaşın.',
+          title: lang === 'de' ? 'Display-Anzeigen' : lang === 'en' ? 'Display Ads' : 'Display Reklamları',
+          subtitle: lang === 'de' ? 'Visuelles Netzwerk' : lang === 'en' ? 'Visual Network' : 'Görsel Ağ',
+          desc: lang === 'de' ? 'Erreichen Sie potenzielle Kunden mit Bannerwerbung auf über 2 Millionen Websites.' : lang === 'en' ? 'Reach potential customers with banner ads on over 2 million websites.' : '2 milyondan fazla web sitesinde banner reklamlarınızla potansiyel müşterilerinize ulaşın.',
           icon: Image,
-          items: ['Banner tasarım', 'Remarketing', 'Hedef kitle segmentasyonu', 'Responsive display ads']
+          items: lang === 'de' ? ['Banner-Design', 'Remarketing', 'Zielgruppensegmentierung', 'Responsive Display Ads'] : lang === 'en' ? ['Banner design', 'Remarketing', 'Audience segmentation', 'Responsive display ads'] : ['Banner tasarım', 'Remarketing', 'Hedef kitle segmentasyonu', 'Responsive display ads']
         },
         {
-          title: 'Shopping Reklamları',
-          subtitle: 'E-Ticaret',
-          desc: 'Ürün fotoğrafı, fiyat ve mağaza bilgisiyle Google\'da öne çıkın ve satışlarınızı artırın.',
+          title: lang === 'de' ? 'Shopping-Anzeigen' : lang === 'en' ? 'Shopping Ads' : 'Shopping Reklamları',
+          subtitle: 'E-Commerce',
+          desc: lang === 'de' ? 'Heben Sie sich bei Google mit Produktfoto, Preis und Geschäftsinformationen ab und steigern Sie Ihren Umsatz.' : lang === 'en' ? 'Stand out on Google with product photo, price and store information and increase your sales.' : 'Ürün fotoğrafı, fiyat ve mağaza bilgisiyle Google\'da öne çıkın ve satışlarınızı artırın.',
           icon: ShoppingCart,
-          items: ['Merchant Center kurulum', 'Feed optimizasyonu', 'ROAS maksimizasyonu', 'Ürün segmentasyonu']
+          items: lang === 'de' ? ['Merchant Center Setup', 'Feed-Optimierung', 'ROAS-Maximierung', 'Produktsegmentierung'] : lang === 'en' ? ['Merchant Center setup', 'Feed optimization', 'ROAS maximization', 'Product segmentation'] : ['Merchant Center kurulum', 'Feed optimizasyonu', 'ROAS maksimizasyonu', 'Ürün segmentasyonu']
         },
         {
-          title: 'YouTube Reklamları',
+          title: lang === 'de' ? 'YouTube-Anzeigen' : lang === 'en' ? 'YouTube Ads' : 'YouTube Reklamları',
           subtitle: 'Video Ads',
-          desc: 'Dünyanın en büyük video platformunda milyarlarca izleyiciye hikayenizi anlatın.',
+          desc: lang === 'de' ? 'Erzählen Sie Ihre Geschichte Milliarden von Zuschauern auf der größten Videoplattform der Welt.' : lang === 'en' ? 'Tell your story to billions of viewers on the world\'s largest video platform.' : 'Dünyanın en büyük video platformunda milyarlarca izleyiciye hikayenizi anlatın.',
           icon: Play,
-          items: ['TrueView reklamlar', 'Bumper ads', 'Discovery reklamlar', 'Video remarketing']
+          items: lang === 'de' ? ['TrueView-Anzeigen', 'Bumper Ads', 'Discovery-Anzeigen', 'Video-Remarketing'] : lang === 'en' ? ['TrueView ads', 'Bumper ads', 'Discovery ads', 'Video remarketing'] : ['TrueView reklamlar', 'Bumper ads', 'Discovery reklamlar', 'Video remarketing']
         },
         {
           title: 'Performance Max',
-          subtitle: 'AI Destekli',
-          desc: 'Google\'ın yapay zekası ile tüm platformlarda otomatik optimizasyon ve maksimum dönüşüm.',
+          subtitle: lang === 'de' ? 'KI-gestützt' : lang === 'en' ? 'AI-Powered' : 'AI Destekli',
+          desc: lang === 'de' ? 'Automatische Optimierung und maximale Conversion auf allen Plattformen mit Googles KI.' : lang === 'en' ? 'Automatic optimization and maximum conversion across all platforms with Google\'s AI.' : 'Google\'ın yapay zekası ile tüm platformlarda otomatik optimizasyon ve maksimum dönüşüm.',
           icon: Zap,
-          items: ['Multi-kanal yönetim', 'Otomatik hedefleme', 'Dinamik reklamlar', 'Gerçek zamanlı optimizasyon']
+          items: lang === 'de' ? ['Multi-Kanal-Management', 'Auto-Targeting', 'Dynamische Anzeigen', 'Echtzeit-Optimierung'] : lang === 'en' ? ['Multi-channel management', 'Auto targeting', 'Dynamic ads', 'Real-time optimization'] : ['Multi-kanal yönetim', 'Otomatik hedefleme', 'Dinamik reklamlar', 'Gerçek zamanlı optimizasyon']
         },
         {
-          title: 'Yerel Reklamlar',
+          title: lang === 'de' ? 'Lokale Anzeigen' : lang === 'en' ? 'Local Ads' : 'Yerel Reklamlar',
           subtitle: 'Local Ads',
-          desc: 'Google Maps ve yerel aramalarda öne çıkarak yakınınızdaki müşterilere ulaşın.',
+          desc: lang === 'de' ? 'Erreichen Sie Kunden in Ihrer Nähe durch Google Maps und lokale Suchergebnisse.' : lang === 'en' ? 'Reach customers near you through Google Maps and local search results.' : 'Google Maps ve yerel aramalarda öne çıkarak yakınınızdaki müşterilere ulaşın.',
           icon: MapPin,
-          items: ['Google My Business', 'Konum hedefleme', 'Store visits takibi', 'Çağrı uzantıları']
+          items: lang === 'de' ? ['Google My Business', 'Standort-Targeting', 'Store Visits Tracking', 'Anruferweiterungen'] : lang === 'en' ? ['Google My Business', 'Location targeting', 'Store visits tracking', 'Call extensions'] : ['Google My Business', 'Konum hedefleme', 'Store visits takibi', 'Çağrı uzantıları']
         }
       ],
       process: [
-        { step: '01', title: 'Analiz', desc: 'İşletmenizi, rakiplerinizi ve hedef kitlenizi detaylı analiz ediyoruz.' },
-        { step: '02', title: 'Strateji', desc: 'Veriye dayalı özel bir Google Ads stratejisi oluşturuyoruz.' },
-        { step: '03', title: 'Uygulama', desc: 'Kampanyaları kuruyor, reklam metinlerini optimize ediyoruz.' },
-        { step: '04', title: 'Optimizasyon', desc: 'Sürekli izleme ve A/B testleriyle performansı maksimize ediyoruz.' }
+        { step: '01', title: lang === 'de' ? 'Analyse' : lang === 'en' ? 'Analysis' : 'Analiz', desc: lang === 'de' ? 'Wir analysieren Ihr Unternehmen, Ihre Konkurrenten und Ihre Zielgruppe im Detail.' : lang === 'en' ? 'We analyze your business, competitors and target audience in detail.' : 'İşletmenizi, rakiplerinizi ve hedef kitlenizi detaylı analiz ediyoruz.' },
+        { step: '02', title: lang === 'de' ? 'Strategie' : lang === 'en' ? 'Strategy' : 'Strateji', desc: lang === 'de' ? 'Wir erstellen eine datengesteuerte Google Ads-Strategie.' : lang === 'en' ? 'We create a data-driven Google Ads strategy.' : 'Veriye dayalı özel bir Google Ads stratejisi oluşturuyoruz.' },
+        { step: '03', title: lang === 'de' ? 'Umsetzung' : lang === 'en' ? 'Implementation' : 'Uygulama', desc: lang === 'de' ? 'Wir richten Kampagnen ein und optimieren Anzeigentexte.' : lang === 'en' ? 'We set up campaigns and optimize ad copy.' : 'Kampanyaları kuruyor, reklam metinlerini optimize ediyoruz.' },
+        { step: '04', title: lang === 'de' ? 'Optimierung' : lang === 'en' ? 'Optimization' : 'Optimizasyon', desc: lang === 'de' ? 'Wir maximieren die Leistung durch kontinuierliche Überwachung und A/B-Tests.' : lang === 'en' ? 'We maximize performance through continuous monitoring and A/B testing.' : 'Sürekli izleme ve A/B testleriyle performansı maksimize ediyoruz.' }
       ],
       benefits: [
-        { title: 'Google Partner Sertifikası', desc: 'Google tarafından onaylı resmi partner statüsü' },
-        { title: 'Şeffaf Raporlama', desc: 'Haftalık ve aylık detaylı performans raporları' },
-        { title: 'Kişiselleştirilmiş Strateji', desc: 'İşletmenize özel hazırlanmış kampanya planları' },
-        { title: 'Sürekli Optimizasyon', desc: '7/24 kampanya izleme ve performans iyileştirme' }
+        { title: lang === 'de' ? 'Google Partner Zertifikat' : lang === 'en' ? 'Google Partner Certificate' : 'Google Partner Sertifikası', desc: lang === 'de' ? 'Offizieller von Google genehmigter Partnerstatus' : lang === 'en' ? 'Official Google-approved partner status' : 'Google tarafından onaylı resmi partner statüsü' },
+        { title: lang === 'de' ? 'Transparente Berichterstattung' : lang === 'en' ? 'Transparent Reporting' : 'Şeffaf Raporlama', desc: lang === 'de' ? 'Wöchentliche und monatliche detaillierte Leistungsberichte' : lang === 'en' ? 'Weekly and monthly detailed performance reports' : 'Haftalık ve aylık detaylı performans raporları' },
+        { title: lang === 'de' ? 'Personalisierte Strategie' : lang === 'en' ? 'Personalized Strategy' : 'Kişiselleştirilmiş Strateji', desc: lang === 'de' ? 'Speziell für Ihr Unternehmen erstellte Kampagnenpläne' : lang === 'en' ? 'Campaign plans specially prepared for your business' : 'İşletmenize özel hazırlanmış kampanya planları' },
+        { title: lang === 'de' ? 'Kontinuierliche Optimierung' : lang === 'en' ? 'Continuous Optimization' : 'Sürekli Optimizasyon', desc: lang === 'de' ? '24/7 Kampagnenüberwachung und Leistungsverbesserung' : lang === 'en' ? '24/7 campaign monitoring and performance improvement' : '7/24 kampanya izleme ve performans iyileştirme' }
       ],
       faq: [
         { 
@@ -160,11 +160,11 @@ export default function ServiceDetailPage() {
         },
         { 
           q: lang === 'de' ? 'Wann werden meine Anzeigen veröffentlicht?' : lang === 'en' ? 'When will my ads be published?' : 'Reklamlarım ne zaman yayınlanır?',
-          a: lang === 'de' ? 'Nach Abschluss der Kontoeinrichtung werden Anzeigen zur Genehmigung an Google gesendet. In der Regel werden sie innerhalb von 24 Stunden genehmigt und Sie beginnen sofort, Traffic zu erhalten. Im Gegensatz zu SEO müssen Sie nicht monatelang warten.' : lang === 'en' ? 'After account setup is complete, ads are sent to Google for approval. They are usually approved within 24 hours and you start receiving traffic immediately. Unlike SEO, you don\'t have to wait months.' : 'Hesap kurulumu tamamlandıktan sonra reklamlar Google onayına gönderilir. Genellikle 24 saat içinde onaylanır ve hemen trafik almaya başlarsınız. SEO gibi aylarca beklemenize gerek yoktur.'
+          a: lang === 'de' ? 'Nach Abschluss der Kontoeinrichtung werden Anzeigen zur Genehmigung an Google gesendet. In der Regel werden sie innerhalb von 24 Stunden genehmigt und Sie beginnen sofort, Traffic zu erhalten.' : lang === 'en' ? 'After account setup is complete, ads are sent to Google for approval. They are usually approved within 24 hours and you start receiving traffic immediately.' : 'Hesap kurulumu tamamlandıktan sonra reklamlar Google onayına gönderilir. Genellikle 24 saat içinde onaylanır ve hemen trafik almaya başlarsınız.'
         },
         { 
           q: lang === 'de' ? 'Kann ich meine Werbung nicht selbst verwalten?' : lang === 'en' ? 'Can\'t I manage my ads myself?' : 'Kendi reklamımı kendim yönetemez miyim?',
-          a: lang === 'de' ? 'Natürlich können Sie, aber das Google Ads-Panel ist sehr detailliert. Eine falsche Auswahl kann dazu führen, dass 50% Ihres Budgets für irrelevante Klicks ausgegeben wird. Die Zusammenarbeit mit einem Experten spart Ihnen mehr, als Sie für die Beratung bezahlen.' : lang === 'en' ? 'Of course you can, but the Google Ads panel is very detailed. A wrong selection can cause 50% of your budget to go to irrelevant clicks. Working with an expert saves you more than you pay for consulting.' : 'Elbette yönetebilirsiniz, ancak Google Ads paneli çok detaylıdır. Yanlış bir seçim, bütçenizin %50\'sinin ilgisiz tıklamalara gitmesine neden olabilir. Bir uzmanla çalışmak, danışmanlık ücretinden çok daha fazlasını size geri kazandırır.'
+          a: lang === 'de' ? 'Natürlich können Sie, aber das Google Ads-Panel ist sehr detailliert. Eine falsche Auswahl kann dazu führen, dass 50% Ihres Budgets für irrelevante Klicks ausgegeben wird. Die Zusammenarbeit mit einem Experten spart Ihnen mehr.' : lang === 'en' ? 'Of course you can, but the Google Ads panel is very detailed. A wrong selection can cause 50% of your budget to go to irrelevant clicks. Working with an expert saves you more.' : 'Elbette yönetebilirsiniz, ancak Google Ads paneli çok detaylıdır. Yanlış bir seçim, bütçenizin %50\'sinin ilgisiz tıklamalara gitmesine neden olabilir. Bir uzmanla çalışmak size daha fazlasını kazandırır.'
         }
       ]
     },
