@@ -431,6 +431,20 @@ export default function ServiceDetailPage() {
         { title: 'B2B Güçlü', desc: 'Profesyonel ve karar verici kitleye erişim' },
         { title: 'Thought Leadership', desc: 'Sektörde fikir lideri konumu oluşturma' },
         { title: 'Viral Potansiyel', desc: 'Retweet ile organik yayılım' }
+      ],
+      faq: [
+        { 
+          q: lang === 'de' ? 'Ist X (Twitter) für B2C-Unternehmen geeignet?' : lang === 'en' ? 'Is X (Twitter) suitable for B2C companies?' : 'X (Twitter) B2C şirketler için uygun mu?',
+          a: lang === 'de' ? 'Ja, aber X ist besonders stark für B2B und Dienstleistungen. Für B2C ist es effektiv für schnelle Kampagnen, Eventmarketing und Kundenservice. Die Echtzeit-Natur der Plattform macht sie ideal für aktuelle Ereignisse.' : lang === 'en' ? 'Yes, but X is particularly strong for B2B and services. For B2C, it\'s effective for quick campaigns, event marketing, and customer service. The real-time nature of the platform makes it ideal for current events.' : 'Evet, ancak X özellikle B2B ve hizmetler için güçlü. B2C için hızlı kampanyalar, etkinlik pazarlaması ve müşteri hizmetlerinde etkili. Platformun anlık doğası güncel olaylar için ideal.'
+        },
+        { 
+          q: lang === 'de' ? 'Wie kann ich Trends verfolgen?' : lang === 'en' ? 'How can I track trends?' : 'Trendleri nasıl takip edebilirim?',
+          a: lang === 'de' ? 'Wir überwachen kontinuierlich branchenspezifische Keywords und Hashtags. Mit Echtzeit-Benachrichtigungen informieren wir Sie über relevante Trends und erstellen schnell passende Inhalte, um Ihre Marke in aktuellen Gesprächen zu positionieren.' : lang === 'en' ? 'We continuously monitor industry-specific keywords and hashtags. With real-time alerts, we inform you about relevant trends and quickly create suitable content to position your brand in current conversations.' : 'Sektöre özel anahtar kelimeleri ve hashtag\'leri sürekli izliyoruz. Gerçek zamanlı bildirimlerle ilgili trendlerden haberdar ediyor, hızlıca uygun içerik üreterek markanızı güncel konuşmalara dahil ediyoruz.'
+        },
+        { 
+          q: lang === 'de' ? 'Was ist der Unterschied zwischen organisch und bezahlt?' : lang === 'en' ? 'What is the difference between organic and paid?' : 'Organik ve ücretli arasındaki fark nedir?',
+          a: lang === 'de' ? 'Organisch sind kostenlose Posts, die durch Retweets verbreitet werden. Bezahlte Anzeigen erhöhen gezielt Ihre Reichweite. Wir empfehlen eine Kombination: organische Inhalte für Engagement, bezahlte für gezielte Reichweite und Conversions.' : lang === 'en' ? 'Organic are free posts spread through retweets. Paid ads increase your reach in a targeted way. We recommend a combination: organic content for engagement, paid for targeted reach and conversions.' : 'Organik, retweet\'lerle yayılan ücretsiz paylaşımlar. Ücretli reklamlar hedefli şekilde erişiminizi artırır. Kombinasyon öneriyoruz: organik içerik etkileşim için, ücretli hedefli erişim ve dönüşüm için.'
+        }
       ]
     },
 
