@@ -170,9 +170,9 @@ export default function ServiceDetailPage() {
     },
 
     'meta-ads': {
-      title: 'Meta Ads Yönetimi',
-      subtitle: 'Facebook & Instagram\'da milyonlara ulaşın',
-      description: 'Meta\'nın güçlü reklam platformuyla Facebook ve Instagram\'da hedef kitlenize ulaşın. Detaylı demografik hedefleme ve görsel odaklı kampanyalarla marka bilinirliğinizi artırın.',
+      title: lang === 'de' ? 'Meta Ads Management' : lang === 'en' ? 'Meta Ads Management' : 'Meta Ads Yönetimi',
+      subtitle: lang === 'de' ? 'Erreichen Sie Millionen auf Facebook & Instagram' : lang === 'en' ? 'Reach millions on Facebook & Instagram' : 'Facebook & Instagram\'da milyonlara ulaşın',
+      description: lang === 'de' ? 'Erreichen Sie Ihre Zielgruppe auf Facebook und Instagram mit Metas leistungsstarker Werbeplattform. Steigern Sie Ihre Markenbekanntheit mit detailliertem demografischem Targeting und visuell ausgerichteten Kampagnen.' : lang === 'en' ? 'Reach your target audience on Facebook and Instagram with Meta\'s powerful advertising platform. Increase your brand awareness with detailed demographic targeting and visually focused campaigns.' : 'Meta\'nın güçlü reklam platformuyla Facebook ve Instagram\'da hedef kitlenize ulaşın. Detaylı demografik hedefleme ve görsel odaklı kampanyalarla marka bilinirliğinizi artırın.',
       badge: 'Meta Business Partner',
       primaryColor: '#1877F2',
       secondaryColor: '#E4405F',
@@ -185,49 +185,67 @@ export default function ServiceDetailPage() {
         </svg>
       ),
       stats: [
-        { value: '3.5B+', label: 'Aktif Kullanıcı', trend: 'Facebook + Instagram' },
-        { value: '+180%', label: 'Etkileşim Artışı', trend: 'Ortalama sonuç' },
-        { value: '%94', label: 'Hedef Kitle Doğruluğu', trend: 'Demografik hedefleme' },
-        { value: '200+', label: 'Başarılı Kampanya', trend: 'Tamamlanan proje' }
+        { value: '3.5B+', label: lang === 'de' ? 'Aktive Nutzer' : lang === 'en' ? 'Active Users' : 'Aktif Kullanıcı', trend: 'Facebook + Instagram' },
+        { value: '+180%', label: lang === 'de' ? 'Engagement-Steigerung' : lang === 'en' ? 'Engagement Increase' : 'Etkileşim Artışı', trend: lang === 'de' ? 'Durchschnittsergebnis' : lang === 'en' ? 'Average result' : 'Ortalama sonuç' },
+        { value: '%94', label: lang === 'de' ? 'Zielgruppengenauigkeit' : lang === 'en' ? 'Target Audience Accuracy' : 'Hedef Kitle Doğruluğu', trend: lang === 'de' ? 'Demografisches Targeting' : lang === 'en' ? 'Demographic targeting' : 'Demografik hedefleme' },
+        { value: '200+', label: lang === 'de' ? 'Erfolgreiche Kampagnen' : lang === 'en' ? 'Successful Campaigns' : 'Başarılı Kampanya', trend: lang === 'de' ? 'Abgeschlossene Projekte' : lang === 'en' ? 'Completed projects' : 'Tamamlanan proje' }
       ],
       features: [
         {
-          title: 'Facebook Reklamları',
+          title: lang === 'de' ? 'Facebook-Anzeigen' : lang === 'en' ? 'Facebook Ads' : 'Facebook Reklamları',
           subtitle: 'Feed & Stories',
-          desc: 'Facebook\'un 2.9 milyar kullanıcısına ulaşın. Haber akışı, hikayeler ve Marketplace\'te görünür olun.',
+          desc: lang === 'de' ? 'Erreichen Sie Facebooks 2,9 Milliarden Nutzer. Seien Sie im News Feed, Stories und Marketplace sichtbar.' : lang === 'en' ? 'Reach Facebook\'s 2.9 billion users. Be visible in News Feed, Stories and Marketplace.' : 'Facebook\'un 2.9 milyar kullanıcısına ulaşın. Haber akışı, hikayeler ve Marketplace\'te görünür olun.',
           icon: Users,
-          items: ['Carousel reklamlar', 'Video reklamlar', 'Lead generation', 'Dinamik ürün reklamları']
+          items: lang === 'de' ? ['Carousel-Anzeigen', 'Video-Anzeigen', 'Lead-Generierung', 'Dynamische Produktanzeigen'] : lang === 'en' ? ['Carousel ads', 'Video ads', 'Lead generation', 'Dynamic product ads'] : ['Carousel reklamlar', 'Video reklamlar', 'Lead generation', 'Dinamik ürün reklamları']
         },
         {
-          title: 'Instagram Reklamları',
-          subtitle: 'Görsel Pazarlama',
-          desc: 'Görsel odaklı platformda markanızı öne çıkarın. Feed, Stories, Reels ve Explore\'da yer alın.',
+          title: lang === 'de' ? 'Instagram-Anzeigen' : lang === 'en' ? 'Instagram Ads' : 'Instagram Reklamları',
+          subtitle: lang === 'de' ? 'Visuelles Marketing' : lang === 'en' ? 'Visual Marketing' : 'Görsel Pazarlama',
+          desc: lang === 'de' ? 'Heben Sie Ihre Marke auf der visuellen Plattform hervor. Seien Sie in Feed, Stories, Reels und Explore präsent.' : lang === 'en' ? 'Highlight your brand on the visual platform. Be present in Feed, Stories, Reels and Explore.' : 'Görsel odaklı platformda markanızı öne çıkarın. Feed, Stories, Reels ve Explore\'da yer alın.',
           icon: Heart,
-          items: ['Story reklamları', 'Reels reklamları', 'Shopping reklamları', 'Influencer işbirlikleri']
+          items: lang === 'de' ? ['Story-Anzeigen', 'Reels-Anzeigen', 'Shopping-Anzeigen', 'Influencer-Kooperationen'] : lang === 'en' ? ['Story ads', 'Reels ads', 'Shopping ads', 'Influencer collaborations'] : ['Story reklamları', 'Reels reklamları', 'Shopping reklamları', 'Influencer işbirlikleri']
         },
         {
-          title: 'Messenger Reklamları',
-          subtitle: 'Direkt İletişim',
-          desc: 'Potansiyel müşterilerle birebir sohbet başlatın. Chatbot entegrasyonu ile 7/24 destek.',
+          title: lang === 'de' ? 'Messenger-Anzeigen' : lang === 'en' ? 'Messenger Ads' : 'Messenger Reklamları',
+          subtitle: lang === 'de' ? 'Direkte Kommunikation' : lang === 'en' ? 'Direct Communication' : 'Direkt İletişim',
+          desc: lang === 'de' ? 'Starten Sie Einzelgespräche mit potenziellen Kunden. 24/7 Support mit Chatbot-Integration.' : lang === 'en' ? 'Start one-on-one conversations with potential customers. 24/7 support with chatbot integration.' : 'Potansiyel müşterilerle birebir sohbet başlatın. Chatbot entegrasyonu ile 7/24 destek.',
           icon: MessageSquare,
-          items: ['Click-to-Messenger', 'Sponsored messages', 'Chatbot entegrasyonu', 'Otomatik yanıtlar']
+          items: ['Click-to-Messenger', 'Sponsored messages', lang === 'de' ? 'Chatbot-Integration' : lang === 'en' ? 'Chatbot integration' : 'Chatbot entegrasyonu', lang === 'de' ? 'Automatische Antworten' : lang === 'en' ? 'Automatic responses' : 'Otomatik yanıtlar']
         },
         {
           title: 'Audience Network',
-          subtitle: 'Genişletilmiş Erişim',
-          desc: 'Meta\'nın partner ağında binlerce uygulama ve web sitesinde reklamlarınızı gösterin.',
+          subtitle: lang === 'de' ? 'Erweiterte Reichweite' : lang === 'en' ? 'Extended Reach' : 'Genişletilmiş Erişim',
+          desc: lang === 'de' ? 'Zeigen Sie Ihre Anzeigen auf Tausenden von Apps und Websites im Meta-Partnernetzwerk.' : lang === 'en' ? 'Show your ads on thousands of apps and websites in Meta\'s partner network.' : 'Meta\'nın partner ağında binlerce uygulama ve web sitesinde reklamlarınızı gösterin.',
           icon: Globe,
-          items: ['Native reklamlar', 'Banner reklamlar', 'Interstitial ads', 'Rewarded video']
+          items: ['Native ads', 'Banner ads', 'Interstitial ads', 'Rewarded video']
         },
         {
           title: 'Remarketing',
-          subtitle: 'Yeniden Hedefleme',
-          desc: 'Web sitenizi ziyaret eden veya uygulamanızı kullanan kişilere tekrar ulaşın.',
+          subtitle: lang === 'de' ? 'Retargeting' : lang === 'en' ? 'Retargeting' : 'Yeniden Hedefleme',
+          desc: lang === 'de' ? 'Erreichen Sie erneut Personen, die Ihre Website besucht oder Ihre App genutzt haben.' : lang === 'en' ? 'Reach again people who visited your website or used your app.' : 'Web sitenizi ziyaret eden veya uygulamanızı kullanan kişilere tekrar ulaşın.',
           icon: Target,
           items: ['Website custom audiences', 'App activity targeting', 'Customer list targeting', 'Lookalike audiences']
         },
         {
-          title: 'Katalog Satışları',
+          title: lang === 'de' ? 'Katalogverkäufe' : lang === 'en' ? 'Catalog Sales' : 'Katalog Satışları',
+          subtitle: 'E-Commerce',
+          desc: lang === 'de' ? 'Synchronisieren Sie Ihren Produktkatalog mit Meta und erstellen Sie dynamische Produktanzeigen.' : lang === 'en' ? 'Sync your product catalog with Meta and create dynamic product ads.' : 'Ürün kataloğunuzu Meta ile senkronize edin ve dinamik ürün reklamları oluşturun.',
+          icon: ShoppingCart,
+          items: lang === 'de' ? ['Dynamische Anzeigen', 'Kollektionsanzeigen', 'Instagram Shopping', 'Facebook Shops'] : lang === 'en' ? ['Dynamic ads', 'Collection ads', 'Instagram Shopping', 'Facebook Shops'] : ['Dinamik reklamlar', 'Koleksiyon reklamları', 'Instagram Shopping', 'Facebook Shops']
+        }
+      ],
+      process: [
+        { step: '01', title: lang === 'de' ? 'Zielgruppenanalyse' : lang === 'en' ? 'Audience Analysis' : 'Hedef Kitle Analizi', desc: lang === 'de' ? 'Wir analysieren demografische, Interessen- und Verhaltensdaten.' : lang === 'en' ? 'We analyze demographic, interest and behavior data.' : 'Demografik, ilgi alanı ve davranış verilerini analiz ediyoruz.' },
+        { step: '02', title: lang === 'de' ? 'Kreativstrategie' : lang === 'en' ? 'Creative Strategy' : 'Kreatif Strateji', desc: lang === 'de' ? 'Wir erstellen plattformspezifische visuelle und Videoinhalte.' : lang === 'en' ? 'We prepare platform-specific visual and video content.' : 'Platformlara özel görsel ve video içerikler hazırlıyoruz.' },
+        { step: '03', title: lang === 'de' ? 'Kampagnenstart' : lang === 'en' ? 'Campaign Launch' : 'Kampanya Lansmanı', desc: lang === 'de' ? 'Wir ermitteln die effektivsten Anzeigensets durch A/B-Tests.' : lang === 'en' ? 'We determine the most effective ad sets through A/B testing.' : 'A/B testleriyle en etkili reklam setlerini belirliyoruz.' },
+        { step: '04', title: lang === 'de' ? 'Leistungsverfolgung' : lang === 'en' ? 'Performance Tracking' : 'Performans Takibi', desc: lang === 'de' ? 'Wir verfolgen und optimieren Conversions mit Meta Pixel.' : lang === 'en' ? 'We track and optimize conversions with Meta Pixel.' : 'Meta Pixel ile dönüşümleri izliyor, optimize ediyoruz.' }
+      ],
+      benefits: [
+        { title: lang === 'de' ? 'Detailliertes Targeting' : lang === 'en' ? 'Detailed Targeting' : 'Detaylı Hedefleme', desc: lang === 'de' ? 'Targeting nach Alter, Geschlecht, Interessen, Verhalten' : lang === 'en' ? 'Targeting by age, gender, interests, behavior' : 'Yaş, cinsiyet, ilgi alanı, davranış bazlı hedefleme' },
+        { title: lang === 'de' ? 'Visuell fokussiert' : lang === 'en' ? 'Visual Focus' : 'Görsel Odaklı', desc: lang === 'de' ? 'Aufmerksamkeitsstarke visuelle und Videoformate' : lang === 'en' ? 'Attention-grabbing visual and video formats' : 'Dikkat çekici görsel ve video formatları' },
+        { title: lang === 'de' ? 'Große Reichweite' : lang === 'en' ? 'Wide Reach' : 'Geniş Erişim', desc: lang === 'de' ? 'Zugang zu über 3,5 Milliarden aktiven Nutzern' : lang === 'en' ? 'Access to over 3.5 billion active users' : '3.5 milyardan fazla aktif kullanıcıya erişim' },
+        { title: lang === 'de' ? 'E-Commerce-Integration' : lang === 'en' ? 'E-Commerce Integration' : 'E-Ticaret Entegrasyonu', desc: lang === 'de' ? 'Shopify, WooCommerce Integrationen' : lang === 'en' ? 'Shopify, WooCommerce integrations' : 'Shopify, WooCommerce entegrasyonları' }
+      ],
           subtitle: 'E-Ticaret',
           desc: 'Ürün kataloğunuzu Meta ile senkronize edin ve dinamik ürün reklamları oluşturun.',
           icon: ShoppingCart,
