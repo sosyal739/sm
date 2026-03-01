@@ -1591,7 +1591,7 @@ export default function BlogDetailPage() {
             <p className="mb-8 text-white/80 text-lg">{t.cta.subtitle}</p>
             <div className="flex flex-wrap justify-center gap-4">
               <Button size="lg" className="bg-white text-[#4285F4] hover:bg-gray-100 font-semibold px-8" asChild>
-                <a href="tel:+491724106463">{t.cta.button1}</a>
+                <a href="/#contact">{t.cta.button1}</a>
               </Button>
               <Button size="lg" className="bg-[#25D366] hover:bg-[#128C7E] font-semibold px-8" asChild>
                 <a href="https://wa.me/491724106463" target="_blank">{t.cta.button2}</a>
