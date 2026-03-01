@@ -4,6 +4,8 @@ const nextConfig = {
   images: {
     unoptimized: true,
   },
+  // Required for Next.js 16 Turbopack compatibility
+  turbopack: {},
   async headers() {
     return [
       {
