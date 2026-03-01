@@ -44,16 +44,22 @@ const servicesList = {
 export default function ServiceDetailPage() {
   const router = useRouter()
   const params = useParams()
-  const { service } = params
+  const { service, lang: urlLang } = params
   const [lang, setLang] = useState('de')
 
-  // Load language from localStorage on mount
+  // Load language from URL first, then localStorage
   useEffect(() => {
-    const savedLang = localStorage.getItem('preferredLanguage')
-    if (savedLang && ['de', 'en', 'tr'].includes(savedLang)) {
-      setLang(savedLang)
+    // Priority: URL param > localStorage > default 'de'
+    if (urlLang && ['de', 'en', 'tr'].includes(urlLang)) {
+      setLang(urlLang)
+      localStorage.setItem('preferredLanguage', urlLang)
+    } else {
+      const savedLang = localStorage.getItem('preferredLanguage')
+      if (savedLang && ['de', 'en', 'tr'].includes(savedLang)) {
+        setLang(savedLang)
+      }
     }
-  }, [])
+  }, [urlLang])
 
   // Save language to localStorage when changed
   const handleLanguageChange = (newLang) => {
