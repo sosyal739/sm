@@ -245,6 +245,20 @@ export default function ServiceDetailPage() {
         { title: 'Görsel Odaklı', desc: 'Dikkat çekici görsel ve video formatları' },
         { title: 'Geniş Erişim', desc: '3.5 milyardan fazla aktif kullanıcıya erişim' },
         { title: 'E-Ticaret Entegrasyonu', desc: 'Shopify, WooCommerce entegrasyonları' }
+      ],
+      faq: [
+        { 
+          q: lang === 'de' ? 'Auf welcher Plattform sollte ich werben - Facebook oder Instagram?' : lang === 'en' ? 'Which platform should I advertise on - Facebook or Instagram?' : 'Hangi platformda reklam vermeliyim - Facebook mu Instagram mı?',
+          a: lang === 'de' ? 'Es hängt von Ihrer Zielgruppe ab. Instagram ist effektiver für jüngere Zielgruppen und visuelle Produkte. Facebook erreicht eine breitere Altersspanne und eignet sich besser für B2B. Wir analysieren Ihre Zielgruppe und empfehlen die optimale Verteilung.' : lang === 'en' ? 'It depends on your target audience. Instagram is more effective for younger audiences and visual products. Facebook reaches a wider age range and is better for B2B. We analyze your audience and recommend the optimal distribution.' : 'Hedef kitlenize bağlı. Instagram genç kitleler ve görsel ürünler için daha etkili. Facebook daha geniş yaş aralığına ulaşır ve B2B için daha iyi. Hedef kitlenizi analiz edip optimum dağılımı öneriyoruz.'
+        },
+        { 
+          q: lang === 'de' ? 'Wie viel sollte das Werbebudget sein?' : lang === 'en' ? 'How much should the advertising budget be?' : 'Reklam bütçesi ne kadar olmalı?',
+          a: lang === 'de' ? 'Für erste Tests empfehlen wir ein Budget, das genügend Daten sammeln kann. Meta\'s Algorithmus lernt aus Daten und optimiert entsprechend. Nach den Tests erhöhen wir das Budget für erfolgreiche Kampagnen.' : lang === 'en' ? 'For initial tests, we recommend a budget that can collect enough data. Meta\'s algorithm learns from data and optimizes accordingly. After tests, we increase budget for successful campaigns.' : 'İlk testler için yeterli veri toplayabilecek bir bütçe öneriyoruz. Meta\'nın algoritması veriden öğrenir ve buna göre optimize eder. Testlerden sonra başarılı kampanyaların bütçesini artırıyoruz.'
+        },
+        { 
+          q: lang === 'de' ? 'Ist die Erstellung von Inhalten in Ihrem Service enthalten?' : lang === 'en' ? 'Is content creation included in your service?' : 'İçerik üretimi hizmetinize dahil mi?',
+          a: lang === 'de' ? 'Ja, unser kreatives Team erstellt professionelle Grafiken und Videoinhalte. Wir können auch mit Ihren vorhandenen Inhalten arbeiten und diese für Werbezwecke optimieren.' : lang === 'en' ? 'Yes, our creative team produces professional graphics and video content. We can also work with your existing content and optimize it for advertising purposes.' : 'Evet, kreatif ekibimiz profesyonel grafik ve video içerikler üretiyor. Mevcut içeriklerinizi de kullanarak reklam için optimize edebiliyoruz.'
+        }
       ]
     },
 
