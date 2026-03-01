@@ -1,11 +1,10 @@
+/** @type {import('next').NextConfig} */
 const nextConfig = {
   output: 'standalone',
   images: {
     unoptimized: true,
   },
-  // Next.js 16+ uses serverExternalPackages at root level
-  serverExternalPackages: ['mongodb'],
-  // Add empty turbopack config to avoid webpack/turbopack conflict
+  // For Vercel deployment with Next.js 16+ Turbopack
   turbopack: {},
   async headers() {
     return [
