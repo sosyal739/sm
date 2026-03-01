@@ -16,7 +16,7 @@ const translations = {
     cta: {
       title: 'Profesyonel Dijital Pazarlama Hizmeti',
       subtitle: 'İşletmenizi büyütmek için hemen iletişime geçin!',
-      button1: 'Hemen Arayın',
+      button1: 'Teklif Alın',
       button2: 'WhatsApp'
     },
     footer: '© 2026 Salih Maral. Tüm hakları saklıdır.'
