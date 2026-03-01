@@ -44,7 +44,7 @@ const translations = {
     cta: {
       title: 'Professional Digital Marketing Service',
       subtitle: 'Contact us now to grow your business!',
-      button1: 'Call Now',
+      button1: 'Get a Quote',
       button2: 'WhatsApp'
     },
     footer: '© 2026 Salih Maral. All rights reserved.'
