@@ -251,15 +251,7 @@ export default function RootLayout({ children }) {
           dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
         />
       </head>
-      <body className={inter.className}>
-        {children}
-        <CookieConsentWrapper />
-      </body>
+      <body className={inter.className}>{children}</body>
     </html>
   )
-}
-
-// Client component wrapper for CookieConsent
-function CookieConsentWrapper() {
-  return null // Will be replaced with actual component
 }
