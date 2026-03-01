@@ -449,10 +449,10 @@ export default function ServiceDetailPage() {
     },
 
     'seo': {
-      title: 'SEO Hizmetleri',
-      subtitle: 'Google\'da organik olarak 1. sayfada yer alın',
-      description: 'Arama motoru optimizasyonu ile web sitenizi Google\'ın ilk sayfasına taşıyoruz. Sürdürülebilir organik trafik ve uzun vadeli dijital varlık için profesyonel SEO çözümleri.',
-      badge: 'SEO Uzmanı - 15 Yıl',
+      title: lang === 'de' ? 'SEO Dienstleistungen' : lang === 'en' ? 'SEO Services' : 'SEO Hizmetleri',
+      subtitle: lang === 'de' ? 'Organisch auf Seite 1 bei Google erscheinen' : lang === 'en' ? 'Appear organically on page 1 of Google' : 'Google\'da organik olarak 1. sayfada yer alın',
+      description: lang === 'de' ? 'Mit Suchmaschinenoptimierung bringen wir Ihre Website auf die erste Seite von Google. Professionelle SEO-Lösungen für nachhaltigen organischen Traffic und langfristige digitale Präsenz.' : lang === 'en' ? 'With search engine optimization, we bring your website to Google\'s first page. Professional SEO solutions for sustainable organic traffic and long-term digital presence.' : 'Arama motoru optimizasyonu ile web sitenizi Google\'ın ilk sayfasına taşıyoruz. Sürdürülebilir organik trafik ve uzun vadeli dijital varlık için profesyonel SEO çözümleri.',
+      badge: lang === 'de' ? 'SEO Experte - 15 Jahre' : lang === 'en' ? 'SEO Expert - 15 Years' : 'SEO Uzmanı - 15 Yıl',
       primaryColor: '#0F9D58',
       secondaryColor: '#4285F4',
       accentColor: '#F4B400',
@@ -465,66 +465,66 @@ export default function ServiceDetailPage() {
         </svg>
       ),
       stats: [
-        { value: '+400%', label: 'Organik Trafik', trend: 'Ortalama artış' },
-        { value: '150+', label: 'Üst Sıra Anahtar Kelime', trend: 'İlk sayfa' },
-        { value: '%85', label: 'Müşteri Kalıcılığı', trend: 'Uzun vadeli' },
-        { value: '6 Ay', label: 'Sonuç Süresi', trend: 'Ortalama' }
+        { value: '+400%', label: lang === 'de' ? 'Organischer Traffic' : lang === 'en' ? 'Organic Traffic' : 'Organik Trafik', trend: lang === 'de' ? 'Durchschnittliche Steigerung' : lang === 'en' ? 'Average increase' : 'Ortalama artış' },
+        { value: '150+', label: lang === 'de' ? 'Top-Ranking Keywords' : lang === 'en' ? 'Top-Ranking Keywords' : 'Üst Sıra Anahtar Kelime', trend: lang === 'de' ? 'Erste Seite' : lang === 'en' ? 'First page' : 'İlk sayfa' },
+        { value: '%85', label: lang === 'de' ? 'Kundenbindung' : lang === 'en' ? 'Customer Retention' : 'Müşteri Kalıcılığı', trend: lang === 'de' ? 'Langfristig' : lang === 'en' ? 'Long-term' : 'Uzun vadeli' },
+        { value: lang === 'de' ? '6 Monate' : lang === 'en' ? '6 Months' : '6 Ay', label: lang === 'de' ? 'Ergebniszeit' : lang === 'en' ? 'Result Time' : 'Sonuç Süresi', trend: lang === 'de' ? 'Durchschnitt' : lang === 'en' ? 'Average' : 'Ortalama' }
       ],
       features: [
         {
-          title: 'Teknik SEO',
-          subtitle: 'Site Altyapısı',
-          desc: 'Web sitenizin teknik altyapısını Google\'ın sevdiği şekilde optimize ediyoruz.',
+          title: lang === 'de' ? 'Technisches SEO' : lang === 'en' ? 'Technical SEO' : 'Teknik SEO',
+          subtitle: lang === 'de' ? 'Website-Infrastruktur' : lang === 'en' ? 'Site Infrastructure' : 'Site Altyapısı',
+          desc: lang === 'de' ? 'Wir optimieren die technische Infrastruktur Ihrer Website so, wie Google sie liebt.' : lang === 'en' ? 'We optimize your website\'s technical infrastructure the way Google loves it.' : 'Web sitenizin teknik altyapısını Google\'ın sevdiği şekilde optimize ediyoruz.',
           icon: Zap,
-          items: ['Site hızı optimizasyonu', 'Mobile-first indexing', 'Core Web Vitals', 'Schema markup']
+          items: lang === 'de' ? ['Website-Geschwindigkeitsoptimierung', 'Mobile-first Indexierung', 'Core Web Vitals', 'Schema Markup'] : lang === 'en' ? ['Site speed optimization', 'Mobile-first indexing', 'Core Web Vitals', 'Schema markup'] : ['Site hızı optimizasyonu', 'Mobile-first indexing', 'Core Web Vitals', 'Schema markup']
         },
         {
           title: 'On-Page SEO',
-          subtitle: 'Sayfa İçi',
-          desc: 'İçerik, meta etiketler ve sayfa yapısını arama motorları için optimize ediyoruz.',
+          subtitle: lang === 'de' ? 'Seitenoptimierung' : lang === 'en' ? 'Page Optimization' : 'Sayfa İçi',
+          desc: lang === 'de' ? 'Wir optimieren Inhalte, Meta-Tags und Seitenstruktur für Suchmaschinen.' : lang === 'en' ? 'We optimize content, meta tags and page structure for search engines.' : 'İçerik, meta etiketler ve sayfa yapısını arama motorları için optimize ediyoruz.',
           icon: FileText,
-          items: ['Meta title & description', 'Başlık hiyerarşisi', 'İç linkler', 'Görsel optimizasyonu']
+          items: lang === 'de' ? ['Meta-Titel & Beschreibung', 'Überschriftenhierarchie', 'Interne Links', 'Bildoptimierung'] : lang === 'en' ? ['Meta title & description', 'Heading hierarchy', 'Internal links', 'Image optimization'] : ['Meta title & description', 'Başlık hiyerarşisi', 'İç linkler', 'Görsel optimizasyonu']
         },
         {
           title: 'Off-Page SEO',
-          subtitle: 'Dış Faktörler',
-          desc: 'Kaliteli backlink\'ler ve marka sinyalleriyle sitenizin otoritesini artırıyoruz.',
+          subtitle: lang === 'de' ? 'Externe Faktoren' : lang === 'en' ? 'External Factors' : 'Dış Faktörler',
+          desc: lang === 'de' ? 'Wir erhöhen die Autorität Ihrer Website durch hochwertige Backlinks und Markensignale.' : lang === 'en' ? 'We increase your site\'s authority with quality backlinks and brand signals.' : 'Kaliteli backlink\'ler ve marka sinyalleriyle sitenizin otoritesini artırıyoruz.',
           icon: Link,
-          items: ['Link building', 'Guest posting', 'Digital PR', 'Marka bahsetmeleri']
+          items: lang === 'de' ? ['Linkaufbau', 'Gastbeiträge', 'Digital PR', 'Markenerwähnungen'] : lang === 'en' ? ['Link building', 'Guest posting', 'Digital PR', 'Brand mentions'] : ['Link building', 'Guest posting', 'Digital PR', 'Marka bahsetmeleri']
         },
         {
-          title: 'İçerik SEO',
+          title: lang === 'de' ? 'Content SEO' : lang === 'en' ? 'Content SEO' : 'İçerik SEO',
           subtitle: 'Content Marketing',
-          desc: 'Hedef kelimeleriniz için SEO uyumlu, değerli içerikler üretiyoruz.',
+          desc: lang === 'de' ? 'Wir erstellen SEO-optimierte, wertvolle Inhalte für Ihre Ziel-Keywords.' : lang === 'en' ? 'We create SEO-optimized, valuable content for your target keywords.' : 'Hedef kelimeleriniz için SEO uyumlu, değerli içerikler üretiyoruz.',
           icon: FileText,
-          items: ['Blog yazıları', 'Pillar content', 'Content cluster', 'E-A-T optimizasyonu']
+          items: lang === 'de' ? ['Blogartikel', 'Pillar Content', 'Content Cluster', 'E-A-T Optimierung'] : lang === 'en' ? ['Blog articles', 'Pillar content', 'Content cluster', 'E-A-T optimization'] : ['Blog yazıları', 'Pillar content', 'Content cluster', 'E-A-T optimizasyonu']
         },
         {
-          title: 'Yerel SEO',
+          title: lang === 'de' ? 'Lokales SEO' : lang === 'en' ? 'Local SEO' : 'Yerel SEO',
           subtitle: 'Local Search',
-          desc: 'Google Maps ve yerel aramalarda işletmenizi öne çıkarıyoruz.',
+          desc: lang === 'de' ? 'Wir heben Ihr Unternehmen in Google Maps und lokalen Suchanfragen hervor.' : lang === 'en' ? 'We highlight your business in Google Maps and local searches.' : 'Google Maps ve yerel aramalarda işletmenizi öne çıkarıyoruz.',
           icon: MapPin,
-          items: ['Google My Business', 'Yerel dizinler', 'NAP tutarlılığı', 'Müşteri yorumları']
+          items: lang === 'de' ? ['Google My Business', 'Lokale Verzeichnisse', 'NAP-Konsistenz', 'Kundenbewertungen'] : lang === 'en' ? ['Google My Business', 'Local directories', 'NAP consistency', 'Customer reviews'] : ['Google My Business', 'Yerel dizinler', 'NAP tutarlılığı', 'Müşteri yorumları']
         },
         {
-          title: 'SEO Analitik',
-          subtitle: 'Raporlama',
-          desc: 'Sıralama, trafik ve dönüşüm verilerini detaylı raporluyoruz.',
+          title: lang === 'de' ? 'SEO Analytics' : lang === 'en' ? 'SEO Analytics' : 'SEO Analitik',
+          subtitle: lang === 'de' ? 'Berichterstattung' : lang === 'en' ? 'Reporting' : 'Raporlama',
+          desc: lang === 'de' ? 'Wir berichten detailliert über Rankings, Traffic und Conversion-Daten.' : lang === 'en' ? 'We report in detail on rankings, traffic and conversion data.' : 'Sıralama, trafik ve dönüşüm verilerini detaylı raporluyoruz.',
           icon: BarChart3,
-          items: ['Google Search Console', 'Sıralama takibi', 'Rakip analizi', 'Aylık raporlar']
+          items: lang === 'de' ? ['Google Search Console', 'Ranking-Tracking', 'Wettbewerbsanalyse', 'Monatliche Berichte'] : lang === 'en' ? ['Google Search Console', 'Ranking tracking', 'Competitor analysis', 'Monthly reports'] : ['Google Search Console', 'Sıralama takibi', 'Rakip analizi', 'Aylık raporlar']
         }
       ],
       process: [
-        { step: '01', title: 'SEO Audit', desc: 'Mevcut sitenizi 200+ faktörde detaylı analiz ediyoruz.' },
-        { step: '02', title: 'Keyword Araştırma', desc: 'Hedef kitlenizin aradığı kelimeleri belirliyoruz.' },
-        { step: '03', title: 'Optimizasyon', desc: 'Teknik, on-page ve off-page optimizasyonları uyguluyoruz.' },
-        { step: '04', title: 'İzleme & Raporlama', desc: 'Sıralamaları izliyor, aylık detaylı raporlar sunuyoruz.' }
+        { step: '01', title: 'SEO Audit', desc: lang === 'de' ? 'Wir analysieren Ihre Website detailliert nach 200+ Faktoren.' : lang === 'en' ? 'We analyze your website in detail with 200+ factors.' : 'Mevcut sitenizi 200+ faktörde detaylı analiz ediyoruz.' },
+        { step: '02', title: lang === 'de' ? 'Keyword-Recherche' : lang === 'en' ? 'Keyword Research' : 'Keyword Araştırma', desc: lang === 'de' ? 'Wir identifizieren die Keywords, nach denen Ihre Zielgruppe sucht.' : lang === 'en' ? 'We identify the keywords your target audience is searching for.' : 'Hedef kitlenizin aradığı kelimeleri belirliyoruz.' },
+        { step: '03', title: lang === 'de' ? 'Optimierung' : lang === 'en' ? 'Optimization' : 'Optimizasyon', desc: lang === 'de' ? 'Wir führen technische, On-Page und Off-Page Optimierungen durch.' : lang === 'en' ? 'We implement technical, on-page and off-page optimizations.' : 'Teknik, on-page ve off-page optimizasyonları uyguluyoruz.' },
+        { step: '04', title: lang === 'de' ? 'Überwachung & Berichterstattung' : lang === 'en' ? 'Monitoring & Reporting' : 'İzleme & Raporlama', desc: lang === 'de' ? 'Wir überwachen Rankings und liefern monatliche detaillierte Berichte.' : lang === 'en' ? 'We monitor rankings and provide monthly detailed reports.' : 'Sıralamaları izliyor, aylık detaylı raporlar sunuyoruz.' }
       ],
       benefits: [
-        { title: 'Sürdürülebilir Trafik', desc: 'Reklam bütçesi olmadan organik ziyaretçi' },
-        { title: 'Yüksek ROI', desc: 'Uzun vadede en düşük müşteri edinme maliyeti' },
-        { title: 'Güvenilirlik', desc: 'Organik sonuçlara kullanıcılar daha çok güvenir' },
-        { title: '7/24 Görünürlük', desc: 'Reklamlar dursa bile trafik devam eder' }
+        { title: lang === 'de' ? 'Nachhaltiger Traffic' : lang === 'en' ? 'Sustainable Traffic' : 'Sürdürülebilir Trafik', desc: lang === 'de' ? 'Organische Besucher ohne Werbebudget' : lang === 'en' ? 'Organic visitors without ad budget' : 'Reklam bütçesi olmadan organik ziyaretçi' },
+        { title: lang === 'de' ? 'Hoher ROI' : lang === 'en' ? 'High ROI' : 'Yüksek ROI', desc: lang === 'de' ? 'Langfristig niedrigste Kundenakquisitionskosten' : lang === 'en' ? 'Lowest customer acquisition cost in the long term' : 'Uzun vadede en düşük müşteri edinme maliyeti' },
+        { title: lang === 'de' ? 'Vertrauenswürdigkeit' : lang === 'en' ? 'Trustworthiness' : 'Güvenilirlik', desc: lang === 'de' ? 'Nutzer vertrauen organischen Ergebnissen mehr' : lang === 'en' ? 'Users trust organic results more' : 'Organik sonuçlara kullanıcılar daha çok güvenir' },
+        { title: lang === 'de' ? '24/7 Sichtbarkeit' : lang === 'en' ? '24/7 Visibility' : '7/24 Görünürlük', desc: lang === 'de' ? 'Traffic fließt weiter, auch wenn Anzeigen stoppen' : lang === 'en' ? 'Traffic continues even when ads stop' : 'Reklamlar dursa bile trafik devam eder' }
       ],
       faq: [
         { 
