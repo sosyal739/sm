@@ -338,6 +338,20 @@ export default function ServiceDetailPage() {
         { title: 'Viral Potansiyel', desc: 'Organik viral yayılım imkanı' },
         { title: 'Yüksek Etkileşim', desc: 'Diğer platformlardan 3x daha fazla etkileşim' },
         { title: 'Düşük Maliyet', desc: 'CPM ve CPC\'de rekabetçi fiyatlar' }
+      ],
+      faq: [
+        { 
+          q: lang === 'de' ? 'Ist TikTok nur für junge Zielgruppen geeignet?' : lang === 'en' ? 'Is TikTok only suitable for young audiences?' : 'TikTok sadece genç kitleler için mi uygun?',
+          a: lang === 'de' ? 'Obwohl 60% der Nutzer zur Generation Z gehören, wächst auch das ältere Publikum schnell. Besonders für Produkte und Dienstleistungen mit visuellem und unterhaltsamen Potenzial eignet sich TikTok für alle Altersgruppen.' : lang === 'en' ? 'Although 60% of users are Gen Z, the older audience is also growing rapidly. Especially for products and services with visual and entertaining potential, TikTok is suitable for all ages.' : 'Kullanıcıların %60\'ı Z kuşağı olsa da, daha yaşlı kitle de hızla büyüyor. Özellikle görsel ve eğlenceli potansiyeli olan ürün ve hizmetler için TikTok her yaş grubuna hitap edebilir.'
+        },
+        { 
+          q: lang === 'de' ? 'Ist professionelle Videoproduktion erforderlich?' : lang === 'en' ? 'Is professional video production required?' : 'Profesyonel video prodüksiyonu gerekli mi?',
+          a: lang === 'de' ? 'Nein! TikTok bevorzugt authentische, natürliche Inhalte. Mit einem Smartphone aufgenommene, kreative und trendige Videos erzielen oft bessere Ergebnisse als professionelle Produktionen.' : lang === 'en' ? 'No! TikTok favors authentic, natural content. Creative and trendy videos shot with a smartphone often perform better than professional productions.' : 'Hayır! TikTok otantik, doğal içerikleri tercih ediyor. Telefonla çekilen yaratıcı ve trend içerikler, profesyonel prodüksiyonlardan daha iyi performans gösterebilir.'
+        },
+        { 
+          q: lang === 'de' ? 'Wie lange dauert es, Ergebnisse zu sehen?' : lang === 'en' ? 'How long does it take to see results?' : 'Sonuç almak ne kadar sürer?',
+          a: lang === 'de' ? 'TikTok ist eine der schnellsten Plattformen. Mit dem richtigen Inhalt können Sie innerhalb von 24-48 Stunden virale Reichweite erzielen. Allerdings ist eine konsistente Inhaltsstrategie für dauerhaften Erfolg wichtig.' : lang === 'en' ? 'TikTok is one of the fastest platforms. With the right content, you can achieve viral reach within 24-48 hours. However, a consistent content strategy is important for sustained success.' : 'TikTok en hızlı sonuç veren platformlardan biri. Doğru içerikle 24-48 saat içinde viral erişim yakalayabilirsiniz. Ancak sürdürülebilir başarı için tutarlı içerik stratejisi önemli.'
+        }
       ]
     },
 
