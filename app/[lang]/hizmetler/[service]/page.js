@@ -765,6 +765,118 @@ export default function ServiceDetailPage() {
         </div>
       </section>
 
+      {/* FAQ Section */}
+      {data.faq && data.faq.length > 0 && (
+        <section className="py-20 px-4 bg-gray-50">
+          <div className="container mx-auto">
+            <div className="max-w-4xl mx-auto">
+              <div className="text-center mb-12">
+                <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
+                  {lang === 'de' ? 'Häufig gestellte Fragen' : lang === 'en' ? 'Frequently Asked Questions' : 'Sıkça Sorulan Sorular'}
+                </h2>
+                <p className="text-lg text-gray-500">
+                  {lang === 'de' ? 'Ihre Fragen, unsere Antworten' : lang === 'en' ? 'Your questions, our answers' : 'Merak ettiklerinizi yanıtlıyoruz'}
+                </p>
+              </div>
+              
+              <div className="space-y-4">
+                {data.faq.map((item, i) => (
+                  <div key={i} className="bg-white rounded-xl border border-gray-200 overflow-hidden">
+                    <details className="group">
+                      <summary className="flex items-center justify-between p-6 cursor-pointer list-none">
+                        <h3 className="text-lg font-semibold text-gray-900 pr-4">{item.q}</h3>
+                        <div className="w-8 h-8 rounded-full flex items-center justify-center flex-shrink-0 transition-colors" style={{ backgroundColor: `${data.primaryColor}15` }}>
+                          <svg className="w-5 h-5 transition-transform group-open:rotate-180" style={{ color: data.primaryColor }} fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
+                          </svg>
+                        </div>
+                      </summary>
+                      <div className="px-6 pb-6 pt-0">
+                        <p className="text-gray-600 leading-relaxed">{item.a}</p>
+                      </div>
+                    </details>
+                  </div>
+                ))}
+              </div>
+            </div>
+          </div>
+        </section>
+      )}
+
+      {/* Optimization Section for Google Ads */}
+      {service === 'google-ads' && (
+        <section className="py-20 px-4 bg-white">
+          <div className="container mx-auto">
+            <div className="max-w-5xl mx-auto">
+              <div className="text-center mb-16">
+                <p className="text-sm font-semibold uppercase tracking-wider mb-2" style={{ color: data.primaryColor }}>
+                  {lang === 'de' ? 'KONTINUIERLICHE VERBESSERUNG' : lang === 'en' ? 'CONTINUOUS IMPROVEMENT' : 'SÜREKLİ İYİLEŞTİRME'}
+                </p>
+                <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
+                  {lang === 'de' ? 'Wir schalten nicht nur Werbung,' : lang === 'en' ? "We Don't Just Run Ads," : 'Reklamı Açıp Bırakmıyoruz,'}
+                  <br />
+                  <span style={{ color: data.primaryColor }}>
+                    {lang === 'de' ? 'Wir optimieren die Rentabilität.' : lang === 'en' ? 'We Optimize Profitability.' : 'Kârlılığı Optimize Ediyoruz.'}
+                  </span>
+                </h2>
+                <p className="text-lg text-gray-500 max-w-2xl mx-auto">
+                  {lang === 'de' ? 'Der Unterschied, mit einem erfahrenen Experten zu arbeiten, zeigt sich nicht in der Kampagneneinrichtung, sondern im anschließenden Optimierungs- und Krisenmanagementprozess.' : lang === 'en' ? 'The difference of working with an experienced expert is not in campaign setup, but in the subsequent optimization and crisis management process.' : 'Deneyimli bir uzmanla çalışmanın farkı, kampanya kurulumunda değil, sonrasındaki optimizasyon ve kriz yönetimi sürecinde ortaya çıkar.'}
+                </p>
+              </div>
+              
+              <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+                {[
+                  {
+                    step: '01',
+                    title: lang === 'de' ? 'Analyse & Setup' : lang === 'en' ? 'Analysis & Setup' : 'Analiz & Kurulum',
+                    desc: lang === 'de' ? 'Wir analysieren die Kosten pro Klick in Ihrer Branche und erstellen von Anfang an negative Keyword-Listen.' : lang === 'en' ? 'We analyze the cost per click in your industry and create negative keyword lists from the start.' : 'Sektörünüzün tıklama başı maliyet analizini yapar, negatif anahtar kelime listelerini baştan oluşturarak bütçenizin boşa gitmesini engelliyoruz.'
+                  },
+                  {
+                    step: '02',
+                    title: lang === 'de' ? 'A/B Tests' : lang === 'en' ? 'A/B Tests' : 'A/B Testleri',
+                    desc: lang === 'de' ? 'Wir begnügen uns nicht mit einer einzigen Anzeige. Mit verschiedenen Titeln und Bildern finden wir die beste Kombination.' : lang === 'en' ? 'We don\'t settle for a single ad. With different titles and images, we find the best combination.' : 'Tek bir reklam metniyle yetinmiyoruz. Farklı başlıklar ve görseller deneyerek kazanan kombinasyonu buluyoruz.'
+                  },
+                  {
+                    step: '03',
+                    title: lang === 'de' ? 'Qualitätsfaktor' : lang === 'en' ? 'Quality Score' : 'Kalite Puanı',
+                    desc: lang === 'de' ? 'Durch die Erhöhung der Anzeigen- und Landingpage-Harmonie zahlen Sie weniger als Ihre Konkurrenten und erscheinen höher.' : lang === 'en' ? 'By increasing ad and landing page harmony, you pay less than competitors and appear higher.' : 'Reklam ve açılış sayfası uyumunu artırarak, rakiplerinizden daha az ödeyip daha üst sırada çıkmanızı sağlıyoruz.'
+                  },
+                  {
+                    step: '04',
+                    title: lang === 'de' ? 'Skalierung' : lang === 'en' ? 'Scaling' : 'Ölçekleme',
+                    desc: lang === 'de' ? 'Nachdem wir profitable Kampagnen identifiziert haben, erhöhen wir das Budget kontrolliert und stoppen Verlustkampagnen.' : lang === 'en' ? 'After identifying profitable campaigns, we increase budget in a controlled manner and stop losing campaigns.' : 'Kâr getiren kampanyaları tespit edip bütçeyi kontrollü artırıyor, zarar edenleri anında durduruyoruz.'
+                  }
+                ].map((item, i) => (
+                  <div key={i} className="bg-gray-50 rounded-2xl p-6 hover:shadow-lg transition-shadow">
+                    <div className="w-12 h-12 rounded-xl mb-4 flex items-center justify-center" style={{ backgroundColor: data.primaryColor }}>
+                      <span className="text-white font-bold">{item.step}</span>
+                    </div>
+                    <h3 className="text-lg font-bold text-gray-900 mb-2">{item.title}</h3>
+                    <p className="text-sm text-gray-500 leading-relaxed">{item.desc}</p>
+                  </div>
+                ))}
+              </div>
+
+              {/* Stats Row */}
+              <div className="grid grid-cols-3 gap-6 mt-12 max-w-3xl mx-auto">
+                <div className="text-center p-6 bg-gray-50 rounded-xl">
+                  <p className="text-3xl font-bold" style={{ color: data.primaryColor }}>%98</p>
+                  <p className="text-sm text-gray-500">{lang === 'de' ? 'Kundenzufriedenheit' : lang === 'en' ? 'Customer Satisfaction' : 'Müşteri Memnuniyeti'}</p>
+                </div>
+                <div className="text-center p-6 bg-gray-50 rounded-xl">
+                  <p className="text-3xl font-bold" style={{ color: data.secondaryColor }}>4.5x</p>
+                  <p className="text-sm text-gray-500">{lang === 'de' ? 'Durchschnittlicher ROAS' : lang === 'en' ? 'Average ROAS' : 'Ortalama ROAS'}</p>
+                </div>
+                <div className="text-center p-6 bg-gray-50 rounded-xl">
+                  <p className="text-3xl font-bold" style={{ color: data.accentColor }}>7/24</p>
+                  <p className="text-sm text-gray-500">{lang === 'de' ? 'Kontoüberwachung' : lang === 'en' ? 'Account Monitoring' : 'Hesap Takibi'}</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      )}
+
       {/* CTA Section */}
       <section id="contact-section" className="py-20 px-4" style={{ backgroundColor: data.primaryColor }}>
         <div className="container mx-auto">
