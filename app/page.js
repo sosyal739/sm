@@ -1148,16 +1148,6 @@ export default function Home() {
                   
                   <div className="space-y-6">
                     <div className="flex items-center space-x-4">
-                      <div className="w-12 h-12 bg-white/20 rounded-xl flex items-center justify-center">
-                        <Mail className="h-6 w-6" />
-                      </div>
-                      <div>
-                        <p className="text-sm opacity-80">E-posta</p>
-                        <p className="font-semibold">kontakt@salihmaral.de</p>
-                      </div>
-                    </div>
-                    
-                    <div className="flex items-center space-x-4">
                       <div className="w-12 h-12 bg-[#25D366] rounded-xl flex items-center justify-center">
                         <MessageCircle className="h-6 w-6" />
                       </div>
