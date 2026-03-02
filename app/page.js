@@ -1032,7 +1032,7 @@ export default function Home() {
             <h2 className="text-4xl font-bold mb-4">{t.corporate.title}</h2>
             <p className="text-lg max-w-3xl mx-auto opacity-90">{t.corporate.description}</p>
             <Button size="lg" className="mt-6 bg-white text-[#4285F4] hover:bg-gray-100" asChild>
-              <a href="https://wa.me/491724106463" target="_blank" rel="noopener noreferrer">
+              <a href={`https://wa.me/491724106463?text=${lang === 'de' ? 'Hallo,%20ich%20interessiere%20mich%20für%20Ihre%20Digital%20Marketing%20Dienstleistungen.' : lang === 'en' ? 'Hello,%20I%20am%20interested%20in%20your%20digital%20marketing%20services.' : 'Merhaba,%20dijital%20pazarlama%20hizmetleriniz%20hakkında%20bilgi%20almak%20istiyorum.'}`} target="_blank" rel="noopener noreferrer">
                 {t.corporate.cta}
               </a>
             </Button>
