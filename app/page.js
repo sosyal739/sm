@@ -1303,7 +1303,7 @@ export default function Home() {
               <div className="space-y-2 text-sm text-gray-400">
                 <p className="flex items-center space-x-2">
                   <MessageCircle className="h-4 w-4" />
-                  <a href="https://wa.me/491724106463" target="_blank" className="hover:text-white transition-colors">WhatsApp</a>
+                  <a href={`https://wa.me/491724106463?text=${lang === 'de' ? 'Hallo,%20ich%20interessiere%20mich%20für%20Ihre%20Digital%20Marketing%20Dienstleistungen.' : lang === 'en' ? 'Hello,%20I%20am%20interested%20in%20your%20digital%20marketing%20services.' : 'Merhaba,%20dijital%20pazarlama%20hizmetleriniz%20hakkında%20bilgi%20almak%20istiyorum.'}`} target="_blank" className="hover:text-white transition-colors">WhatsApp</a>
                 </p>
               </div>
             </div>
