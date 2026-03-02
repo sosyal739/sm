@@ -995,7 +995,7 @@ export default function ServiceDetailPage() {
             
             <div className="flex flex-wrap justify-center gap-4 mb-8">
               <Button size="lg" className="bg-white hover:bg-gray-100 px-8 shadow-lg transition-all duration-300 hover:scale-105" style={{ color: data.primaryColor }} asChild>
-                <a href={`mailto:kontakt@salihmaral.de?subject=${lang === 'de' ? 'Kostenlose' : lang === 'en' ? 'Free' : 'Ücretsiz'}%20${encodeURIComponent(data.title)}%20${lang === 'de' ? 'Analyse' : lang === 'en' ? 'Analysis' : 'Analizi'}`}>
+                <a href="/#contact">
                   {lang === 'de' ? 'Kostenlose Analyse anfordern' : lang === 'en' ? 'Get Free Analysis' : 'Ücretsiz Analiz Al'}
                   <ArrowUpRight className="ml-2 h-5 w-5" />
                 </a>
@@ -1007,10 +1007,6 @@ export default function ServiceDetailPage() {
                 </a>
               </Button>
             </div>
-            
-            <p className="text-white/60 text-sm">
-              kontakt@salihmaral.de • +49 172 410 6463
-            </p>
           </div>
         </div>
       </section>
