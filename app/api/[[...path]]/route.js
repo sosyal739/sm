@@ -86,71 +86,75 @@ export async function POST(request) {
 
       // Send email notification via Resend
       try {
-        const contactEmail = process.env.CONTACT_EMAIL || 'salihmaralde@gmail.com'
-        
-        // Create HTML email template
-        const emailHtml = `
-          <!DOCTYPE html>
-          <html>
-          <head>
-            <style>
-              body { font-family: Arial, sans-serif; line-height: 1.6; color: #333; }
-              .container { max-width: 600px; margin: 0 auto; padding: 20px; }
-              .header { background: linear-gradient(135deg, #4285F4, #34A853); padding: 20px; text-align: center; border-radius: 8px 8px 0 0; }
-              .header h1 { color: white; margin: 0; font-size: 24px; }
-              .content { background: #f9f9f9; padding: 30px; border-radius: 0 0 8px 8px; }
-              .field { margin-bottom: 20px; }
-              .field-label { font-weight: bold; color: #4285F4; font-size: 12px; text-transform: uppercase; margin-bottom: 5px; }
-              .field-value { background: white; padding: 12px; border-radius: 6px; border-left: 3px solid #4285F4; }
-              .message-box { background: white; padding: 15px; border-radius: 6px; border-left: 3px solid #34A853; white-space: pre-wrap; }
-              .footer { text-align: center; margin-top: 20px; color: #666; font-size: 12px; }
-            </style>
-          </head>
-          <body>
-            <div class="container">
-              <div class="header">
-                <h1>🔔 Yeni İletişim Formu Mesajı</h1>
+        if (!resend) {
+          console.log('Resend not configured - skipping email notification')
+        } else {
+          const contactEmail = process.env.CONTACT_EMAIL || 'salihmaralde@gmail.com'
+          
+          // Create HTML email template
+          const emailHtml = `
+            <!DOCTYPE html>
+            <html>
+            <head>
+              <style>
+                body { font-family: Arial, sans-serif; line-height: 1.6; color: #333; }
+                .container { max-width: 600px; margin: 0 auto; padding: 20px; }
+                .header { background: linear-gradient(135deg, #4285F4, #34A853); padding: 20px; text-align: center; border-radius: 8px 8px 0 0; }
+                .header h1 { color: white; margin: 0; font-size: 24px; }
+                .content { background: #f9f9f9; padding: 30px; border-radius: 0 0 8px 8px; }
+                .field { margin-bottom: 20px; }
+                .field-label { font-weight: bold; color: #4285F4; font-size: 12px; text-transform: uppercase; margin-bottom: 5px; }
+                .field-value { background: white; padding: 12px; border-radius: 6px; border-left: 3px solid #4285F4; }
+                .message-box { background: white; padding: 15px; border-radius: 6px; border-left: 3px solid #34A853; white-space: pre-wrap; }
+                .footer { text-align: center; margin-top: 20px; color: #666; font-size: 12px; }
+              </style>
+            </head>
+            <body>
+              <div class="container">
+                <div class="header">
+                  <h1>🔔 Yeni İletişim Formu Mesajı</h1>
+                </div>
+                <div class="content">
+                  <div class="field">
+                    <div class="field-label">Gönderen</div>
+                    <div class="field-value">${name}</div>
+                  </div>
+                  <div class="field">
+                    <div class="field-label">E-posta</div>
+                    <div class="field-value"><a href="mailto:${email}">${email}</a></div>
+                  </div>
+                  <div class="field">
+                    <div class="field-label">Telefon</div>
+                    <div class="field-value"><a href="tel:${phone}">${phone}</a></div>
+                  </div>
+                  <div class="field">
+                    <div class="field-label">Dil / Language</div>
+                    <div class="field-value">${language === 'de' ? 'Almanca (DE)' : language === 'en' ? 'İngilizce (EN)' : 'Türkçe (TR)'}</div>
+                  </div>
+                  <div class="field">
+                    <div class="field-label">Mesaj</div>
+                    <div class="message-box">${message}</div>
+                  </div>
+                </div>
+                <div class="footer">
+                  <p>Bu mesaj salihmaral.de web sitesi iletişim formundan gönderilmiştir.</p>
+                  <p>Tarih: ${new Date().toLocaleString('tr-TR', { timeZone: 'Europe/Berlin' })}</p>
+                </div>
               </div>
-              <div class="content">
-                <div class="field">
-                  <div class="field-label">Gönderen</div>
-                  <div class="field-value">${name}</div>
-                </div>
-                <div class="field">
-                  <div class="field-label">E-posta</div>
-                  <div class="field-value"><a href="mailto:${email}">${email}</a></div>
-                </div>
-                <div class="field">
-                  <div class="field-label">Telefon</div>
-                  <div class="field-value"><a href="tel:${phone}">${phone}</a></div>
-                </div>
-                <div class="field">
-                  <div class="field-label">Dil / Language</div>
-                  <div class="field-value">${language === 'de' ? 'Almanca (DE)' : language === 'en' ? 'İngilizce (EN)' : 'Türkçe (TR)'}</div>
-                </div>
-                <div class="field">
-                  <div class="field-label">Mesaj</div>
-                  <div class="message-box">${message}</div>
-                </div>
-              </div>
-              <div class="footer">
-                <p>Bu mesaj salihmaral.de web sitesi iletişim formundan gönderilmiştir.</p>
-                <p>Tarih: ${new Date().toLocaleString('tr-TR', { timeZone: 'Europe/Berlin' })}</p>
-              </div>
-            </div>
-          </body>
-          </html>
-        `
+            </body>
+            </html>
+          `
 
-        await resend.emails.send({
-          from: 'Salih Maral Website <onboarding@resend.dev>',
-          to: contactEmail,
-          subject: `📬 Yeni İletişim: ${name} - salihmaral.de`,
-          html: emailHtml,
-          replyTo: email
-        })
+          const emailResult = await resend.emails.send({
+            from: 'Salih Maral Website <onboarding@resend.dev>',
+            to: contactEmail,
+            subject: `📬 Yeni İletişim: ${name} - salihmaral.de`,
+            html: emailHtml,
+            replyTo: email
+          })
 
-        console.log('Email notification sent successfully to:', contactEmail)
+          console.log('Email notification sent successfully to:', contactEmail, emailResult)
+        }
       } catch (emailError) {
         // Log email error but don't fail the request
         console.error('Failed to send email notification:', emailError)
