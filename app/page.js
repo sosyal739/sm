@@ -577,14 +577,13 @@ export default function Home() {
     <div className="min-h-screen bg-background">
       {/* Navigation */}
       <nav className="fixed top-0 left-0 right-0 z-50 bg-white/95 backdrop-blur-sm border-b">
-        <div className="container mx-auto px-4 py-3">
+        <div className="container mx-auto px-4 py-4">
           <div className="flex items-center justify-between">
             <a href="/" className="flex items-center">
-              <img src="/logo.png" alt="Salih Maral Logo" className="h-8 md:h-10 w-auto" />
+              <img src="/logo.png" alt="Salih Maral Logo" className="h-10 w-auto" />
             </a>
             
-            {/* Desktop Menu */}
-            <div className="hidden lg:flex items-center space-x-6">
+            <div className="hidden md:flex items-center space-x-6">
               <div className="relative group">
                 <button className="text-sm font-bold text-gray-900 hover:text-[#4285F4] transition-colors flex items-center">
                   {t.nav.services}
@@ -613,41 +612,12 @@ export default function Home() {
               <button onClick={() => scrollToSection('contact')} className="text-sm font-bold text-gray-900 hover:text-[#4285F4] transition-colors">{t.nav.contact}</button>
             </div>
 
-            {/* Mobile Menu - Horizontal Scroll */}
-            <div className="flex lg:hidden items-center overflow-x-auto scrollbar-hide space-x-3 mx-2 flex-1 justify-center">
-              <div className="relative group flex-shrink-0">
-                <button className="text-xs font-bold text-gray-900 whitespace-nowrap flex items-center">
-                  {t.nav.services}
-                  <svg className="w-3 h-3 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
-                  </svg>
-                </button>
-                <div className="absolute left-0 mt-2 w-56 bg-white rounded-lg shadow-2xl opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 z-50 border border-gray-100">
-                  <div className="py-2">
-                    {t.why.services.map((service, idx) => (
-                      <a
-                        key={idx}
-                        href={`/${lang}/hizmetler/${service.slug}`}
-                        className="block px-3 py-2 text-xs text-gray-700 hover:bg-[#4285F4]/10 hover:text-[#4285F4] transition-colors"
-                      >
-                        <div className="font-semibold">{service.title}</div>
-                      </a>
-                    ))}
-                  </div>
-                </div>
-              </div>
-              <button onClick={() => scrollToSection('success')} className="text-xs font-bold text-gray-900 whitespace-nowrap flex-shrink-0">{t.nav.success}</button>
-              <button onClick={() => scrollToSection('about')} className="text-xs font-bold text-gray-900 whitespace-nowrap flex-shrink-0">{t.nav.about}</button>
-              <a href="/blog" className="text-xs font-bold text-gray-900 whitespace-nowrap flex-shrink-0">Blog</a>
-              <button onClick={() => scrollToSection('contact')} className="text-xs font-bold text-gray-900 whitespace-nowrap flex-shrink-0">{t.nav.contact}</button>
-            </div>
-
-            <div className="flex items-center space-x-1 md:space-x-2 flex-shrink-0">
+            <div className="flex items-center space-x-2">
               <Button
                 variant={lang === 'de' ? 'default' : 'outline'}
                 size="sm"
                 onClick={() => handleLanguageChange('de')}
-                className={`text-xs px-2 md:px-3 ${lang === 'de' ? 'bg-[#4285F4]' : ''}`}
+                className={lang === 'de' ? 'bg-[#4285F4]' : ''}
               >
                 DE
               </Button>
@@ -655,7 +625,7 @@ export default function Home() {
                 variant={lang === 'en' ? 'default' : 'outline'}
                 size="sm"
                 onClick={() => handleLanguageChange('en')}
-                className={`text-xs px-2 md:px-3 ${lang === 'en' ? 'bg-[#4285F4]' : ''}`}
+                className={lang === 'en' ? 'bg-[#4285F4]' : ''}
               >
                 EN
               </Button>
@@ -663,7 +633,7 @@ export default function Home() {
                 variant={lang === 'tr' ? 'default' : 'outline'}
                 size="sm"
                 onClick={() => handleLanguageChange('tr')}
-                className={`text-xs px-2 md:px-3 ${lang === 'tr' ? 'bg-[#4285F4]' : ''}`}
+                className={lang === 'tr' ? 'bg-[#4285F4]' : ''}
               >
                 TR
               </Button>
@@ -691,7 +661,7 @@ export default function Home() {
               </p>
               <div className="flex flex-wrap gap-4">
                 <Button size="lg" className="bg-[#34A853] hover:bg-[#2d9249] text-white shadow-lg hover:shadow-2xl transform hover:scale-105 transition-all duration-300 animate-pulse-slow" asChild>
-                  <a href="https://wa.me/491724106463" target="_blank" rel="noopener noreferrer">
+                  <a href={`https://wa.me/491724106463?text=${lang === 'de' ? 'Hallo,%20ich%20interessiere%20mich%20für%20Ihre%20Digital%20Marketing%20Dienstleistungen.' : lang === 'en' ? 'Hello,%20I%20am%20interested%20in%20your%20digital%20marketing%20services.' : 'Merhaba,%20dijital%20pazarlama%20hizmetleriniz%20hakkında%20bilgi%20almak%20istiyorum.'}`} target="_blank" rel="noopener noreferrer">
                     <MessageCircle className="mr-2 h-5 w-5 animate-bounce-slow" />
                     {t.hero.cta1}
                   </a>
@@ -1062,7 +1032,7 @@ export default function Home() {
             <h2 className="text-4xl font-bold mb-4">{t.corporate.title}</h2>
             <p className="text-lg max-w-3xl mx-auto opacity-90">{t.corporate.description}</p>
             <Button size="lg" className="mt-6 bg-white text-[#4285F4] hover:bg-gray-100" asChild>
-              <a href="https://wa.me/491724106463" target="_blank" rel="noopener noreferrer">
+              <a href={`https://wa.me/491724106463?text=${lang === 'de' ? 'Hallo,%20ich%20interessiere%20mich%20für%20Ihre%20Digital%20Marketing%20Dienstleistungen.' : lang === 'en' ? 'Hello,%20I%20am%20interested%20in%20your%20digital%20marketing%20services.' : 'Merhaba,%20dijital%20pazarlama%20hizmetleriniz%20hakkında%20bilgi%20almak%20istiyorum.'}`} target="_blank" rel="noopener noreferrer">
                 {t.corporate.cta}
               </a>
             </Button>
@@ -1178,22 +1148,12 @@ export default function Home() {
                   
                   <div className="space-y-6">
                     <div className="flex items-center space-x-4">
-                      <div className="w-12 h-12 bg-white/20 rounded-xl flex items-center justify-center">
-                        <Mail className="h-6 w-6" />
-                      </div>
-                      <div>
-                        <p className="text-sm opacity-80">E-posta</p>
-                        <p className="font-semibold">kontakt@salihmaral.de</p>
-                      </div>
-                    </div>
-                    
-                    <div className="flex items-center space-x-4">
                       <div className="w-12 h-12 bg-[#25D366] rounded-xl flex items-center justify-center">
                         <MessageCircle className="h-6 w-6" />
                       </div>
                       <div>
                         <p className="text-sm opacity-80">WhatsApp</p>
-                        <a href="https://wa.me/491724106463" target="_blank" className="font-semibold hover:underline">{lang === 'de' ? 'Jetzt schreiben' : lang === 'en' ? 'Message Now' : 'Hemen Yaz'}</a>
+                        <a href={`https://wa.me/491724106463?text=${lang === 'de' ? 'Hallo,%20ich%20interessiere%20mich%20für%20Ihre%20Digital%20Marketing%20Dienstleistungen.' : lang === 'en' ? 'Hello,%20I%20am%20interested%20in%20your%20digital%20marketing%20services.' : 'Merhaba,%20dijital%20pazarlama%20hizmetleriniz%20hakkında%20bilgi%20almak%20istiyorum.'}`} target="_blank" className="font-semibold hover:underline">{lang === 'de' ? 'Jetzt schreiben' : lang === 'en' ? 'Message Now' : 'Hemen Yaz'}</a>
                       </div>
                     </div>
                   </div>
@@ -1280,7 +1240,7 @@ export default function Home() {
               {lang === 'de' ? 'Kostenloses Angebot' : lang === 'en' ? 'Free Quote' : 'Ücretsiz Teklif Alın'}
             </Button>
             <Button size="lg" className="bg-[#34A853] hover:bg-[#2d9249] text-white" asChild>
-              <a href="https://wa.me/491724106463" target="_blank" rel="noopener noreferrer">
+              <a href={`https://wa.me/491724106463?text=${lang === 'de' ? 'Hallo,%20ich%20interessiere%20mich%20für%20Ihre%20Digital%20Marketing%20Dienstleistungen.' : lang === 'en' ? 'Hello,%20I%20am%20interested%20in%20your%20digital%20marketing%20services.' : 'Merhaba,%20dijital%20pazarlama%20hizmetleriniz%20hakkında%20bilgi%20almak%20istiyorum.'}`} target="_blank" rel="noopener noreferrer">
                 <MessageCircle className="mr-2 h-5 w-5" />
                 {t.contact.cta.whatsapp}
               </a>
@@ -1342,12 +1302,8 @@ export default function Home() {
               <h4 className="font-semibold mb-4">{t.nav.contact}</h4>
               <div className="space-y-2 text-sm text-gray-400">
                 <p className="flex items-center space-x-2">
-                  <Phone className="h-4 w-4" />
-                  <span>01724106463</span>
-                </p>
-                <p className="flex items-center space-x-2">
-                  <Mail className="h-4 w-4" />
-                  <span>kontakt@salihmaral.de</span>
+                  <MessageCircle className="h-4 w-4" />
+                  <a href={`https://wa.me/491724106463?text=${lang === 'de' ? 'Hallo,%20ich%20interessiere%20mich%20für%20Ihre%20Digital%20Marketing%20Dienstleistungen.' : lang === 'en' ? 'Hello,%20I%20am%20interested%20in%20your%20digital%20marketing%20services.' : 'Merhaba,%20dijital%20pazarlama%20hizmetleriniz%20hakkında%20bilgi%20almak%20istiyorum.'}`} target="_blank" className="hover:text-white transition-colors">WhatsApp</a>
                 </p>
               </div>
             </div>
