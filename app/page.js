@@ -1240,7 +1240,7 @@ export default function Home() {
               {lang === 'de' ? 'Kostenloses Angebot' : lang === 'en' ? 'Free Quote' : 'Ücretsiz Teklif Alın'}
             </Button>
             <Button size="lg" className="bg-[#34A853] hover:bg-[#2d9249] text-white" asChild>
-              <a href="https://wa.me/491724106463" target="_blank" rel="noopener noreferrer">
+              <a href={`https://wa.me/491724106463?text=${lang === 'de' ? 'Hallo,%20ich%20interessiere%20mich%20für%20Ihre%20Digital%20Marketing%20Dienstleistungen.' : lang === 'en' ? 'Hello,%20I%20am%20interested%20in%20your%20digital%20marketing%20services.' : 'Merhaba,%20dijital%20pazarlama%20hizmetleriniz%20hakkında%20bilgi%20almak%20istiyorum.'}`} target="_blank" rel="noopener noreferrer">
                 <MessageCircle className="mr-2 h-5 w-5" />
                 {t.contact.cta.whatsapp}
               </a>
