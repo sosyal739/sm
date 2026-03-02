@@ -1608,7 +1608,7 @@ export default function BlogDetailPage() {
                 <a href="/#contact">{t.cta.button1}</a>
               </Button>
               <Button size="lg" className="bg-[#25D366] hover:bg-[#128C7E] font-semibold px-8" asChild>
-                <a href="https://wa.me/491724106463" target="_blank">{t.cta.button2}</a>
+                <a href={`https://wa.me/491724106463?text=${lang === 'de' ? 'Hallo,%20ich%20interessiere%20mich%20für%20Ihre%20Digital%20Marketing%20Dienstleistungen.' : lang === 'en' ? 'Hello,%20I%20am%20interested%20in%20your%20digital%20marketing%20services.' : 'Merhaba,%20dijital%20pazarlama%20hizmetleriniz%20hakkında%20bilgi%20almak%20istiyorum.'}`} target="_blank">{t.cta.button2}</a>
               </Button>
             </div>
           </div>
