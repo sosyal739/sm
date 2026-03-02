@@ -7,25 +7,27 @@ const uri = process.env.MONGO_URL
 let client
 let clientPromise
 
-// Initialize Resend
-const resend = new Resend(process.env.RESEND_API_KEY)
+// Initialize Resend (only if API key exists)
+const resend = process.env.RESEND_API_KEY ? new Resend(process.env.RESEND_API_KEY) : null
 
-if (!uri) {
-  throw new Error('Please add your Mongo URI to .env')
-}
-
-if (process.env.NODE_ENV === 'development') {
-  if (!global._mongoClientPromise) {
+// Only initialize MongoDB if URI exists (allows build without env vars)
+if (uri) {
+  if (process.env.NODE_ENV === 'development') {
+    if (!global._mongoClientPromise) {
+      client = new MongoClient(uri)
+      global._mongoClientPromise = client.connect()
+    }
+    clientPromise = global._mongoClientPromise
+  } else {
     client = new MongoClient(uri)
-    global._mongoClientPromise = client.connect()
+    clientPromise = client.connect()
   }
-  clientPromise = global._mongoClientPromise
-} else {
-  client = new MongoClient(uri)
-  clientPromise = client.connect()
 }
 
 async function getDatabase() {
+  if (!uri) {
+    throw new Error('MONGO_URL environment variable is not set')
+  }
   const client = await clientPromise
   return client.db(process.env.DB_NAME || 'salih_maral_website')
 }
