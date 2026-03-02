@@ -1312,12 +1312,8 @@ export default function Home() {
               <h4 className="font-semibold mb-4">{t.nav.contact}</h4>
               <div className="space-y-2 text-sm text-gray-400">
                 <p className="flex items-center space-x-2">
-                  <Phone className="h-4 w-4" />
-                  <span>01724106463</span>
-                </p>
-                <p className="flex items-center space-x-2">
-                  <Mail className="h-4 w-4" />
-                  <span>kontakt@salihmaral.de</span>
+                  <MessageCircle className="h-4 w-4" />
+                  <a href="https://wa.me/491724106463" target="_blank" className="hover:text-white transition-colors">WhatsApp</a>
                 </p>
               </div>
             </div>
