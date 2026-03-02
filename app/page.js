@@ -577,13 +577,14 @@ export default function Home() {
     <div className="min-h-screen bg-background">
       {/* Navigation */}
       <nav className="fixed top-0 left-0 right-0 z-50 bg-white/95 backdrop-blur-sm border-b">
-        <div className="container mx-auto px-4 py-4">
+        <div className="container mx-auto px-4 py-3">
           <div className="flex items-center justify-between">
             <a href="/" className="flex items-center">
-              <img src="/logo.png" alt="Salih Maral Logo" className="h-10 w-auto" />
+              <img src="/logo.png" alt="Salih Maral Logo" className="h-8 md:h-10 w-auto" />
             </a>
             
-            <div className="hidden md:flex items-center space-x-6">
+            {/* Desktop Menu */}
+            <div className="hidden lg:flex items-center space-x-6">
               <div className="relative group">
                 <button className="text-sm font-bold text-gray-900 hover:text-[#4285F4] transition-colors flex items-center">
                   {t.nav.services}
@@ -612,12 +613,41 @@ export default function Home() {
               <button onClick={() => scrollToSection('contact')} className="text-sm font-bold text-gray-900 hover:text-[#4285F4] transition-colors">{t.nav.contact}</button>
             </div>
 
-            <div className="flex items-center space-x-2">
+            {/* Mobile Menu - Horizontal Scroll */}
+            <div className="flex lg:hidden items-center overflow-x-auto scrollbar-hide space-x-3 mx-2 flex-1 justify-center">
+              <div className="relative group flex-shrink-0">
+                <button className="text-xs font-bold text-gray-900 whitespace-nowrap flex items-center">
+                  {t.nav.services}
+                  <svg className="w-3 h-3 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
+                  </svg>
+                </button>
+                <div className="absolute left-0 mt-2 w-56 bg-white rounded-lg shadow-2xl opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 z-50 border border-gray-100">
+                  <div className="py-2">
+                    {t.why.services.map((service, idx) => (
+                      <a
+                        key={idx}
+                        href={`/${lang}/hizmetler/${service.slug}`}
+                        className="block px-3 py-2 text-xs text-gray-700 hover:bg-[#4285F4]/10 hover:text-[#4285F4] transition-colors"
+                      >
+                        <div className="font-semibold">{service.title}</div>
+                      </a>
+                    ))}
+                  </div>
+                </div>
+              </div>
+              <button onClick={() => scrollToSection('success')} className="text-xs font-bold text-gray-900 whitespace-nowrap flex-shrink-0">{t.nav.success}</button>
+              <button onClick={() => scrollToSection('about')} className="text-xs font-bold text-gray-900 whitespace-nowrap flex-shrink-0">{t.nav.about}</button>
+              <a href="/blog" className="text-xs font-bold text-gray-900 whitespace-nowrap flex-shrink-0">Blog</a>
+              <button onClick={() => scrollToSection('contact')} className="text-xs font-bold text-gray-900 whitespace-nowrap flex-shrink-0">{t.nav.contact}</button>
+            </div>
+
+            <div className="flex items-center space-x-1 md:space-x-2 flex-shrink-0">
               <Button
                 variant={lang === 'de' ? 'default' : 'outline'}
                 size="sm"
                 onClick={() => handleLanguageChange('de')}
-                className={lang === 'de' ? 'bg-[#4285F4]' : ''}
+                className={`text-xs px-2 md:px-3 ${lang === 'de' ? 'bg-[#4285F4]' : ''}`}
               >
                 DE
               </Button>
@@ -625,7 +655,7 @@ export default function Home() {
                 variant={lang === 'en' ? 'default' : 'outline'}
                 size="sm"
                 onClick={() => handleLanguageChange('en')}
-                className={lang === 'en' ? 'bg-[#4285F4]' : ''}
+                className={`text-xs px-2 md:px-3 ${lang === 'en' ? 'bg-[#4285F4]' : ''}`}
               >
                 EN
               </Button>
@@ -633,7 +663,7 @@ export default function Home() {
                 variant={lang === 'tr' ? 'default' : 'outline'}
                 size="sm"
                 onClick={() => handleLanguageChange('tr')}
-                className={lang === 'tr' ? 'bg-[#4285F4]' : ''}
+                className={`text-xs px-2 md:px-3 ${lang === 'tr' ? 'bg-[#4285F4]' : ''}`}
               >
                 TR
               </Button>
