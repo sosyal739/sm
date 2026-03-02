@@ -89,7 +89,7 @@ export async function POST(request) {
         if (!resend) {
           console.log('Resend not configured - skipping email notification')
         } else {
-          const contactEmail = process.env.CONTACT_EMAIL || 'salihmaralde@gmail.com'
+          const contactEmail = process.env.CONTACT_EMAIL || 'fuslu454@gmail.com'
           
           // Create HTML email template
           const emailHtml = `
