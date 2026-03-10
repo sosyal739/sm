@@ -787,30 +787,71 @@ export default function ServiceDetailPage() {
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
             {data.features.map((f, i) => {
               const IconComponent = f.icon
+              const cardColors = [
+                { border: '#4285F4', bg: 'rgba(66,133,244,0.06)', hoverBg: 'rgba(66,133,244,0.12)', glow: 'rgba(66,133,244,0.15)', accent: 'linear-gradient(135deg, #4285F4, #34A853)' },
+                { border: '#EA4335', bg: 'rgba(234,67,53,0.06)', hoverBg: 'rgba(234,67,53,0.12)', glow: 'rgba(234,67,53,0.15)', accent: 'linear-gradient(135deg, #EA4335, #FBBC04)' },
+                { border: '#FBBC04', bg: 'rgba(251,188,4,0.06)', hoverBg: 'rgba(251,188,4,0.12)', glow: 'rgba(251,188,4,0.15)', accent: 'linear-gradient(135deg, #FBBC04, #34A853)' },
+                { border: '#34A853', bg: 'rgba(52,168,83,0.06)', hoverBg: 'rgba(52,168,83,0.12)', glow: 'rgba(52,168,83,0.15)', accent: 'linear-gradient(135deg, #34A853, #4285F4)' },
+                { border: '#1877F2', bg: 'rgba(24,119,242,0.06)', hoverBg: 'rgba(24,119,242,0.12)', glow: 'rgba(24,119,242,0.15)', accent: 'linear-gradient(135deg, #1877F2, #00C6FF)' },
+                { border: '#FF6D00', bg: 'rgba(255,109,0,0.06)', hoverBg: 'rgba(255,109,0,0.12)', glow: 'rgba(255,109,0,0.15)', accent: 'linear-gradient(135deg, #FF6D00, #EA4335)' },
+              ]
+              const cc = cardColors[i % cardColors.length]
               return (
-                <Card key={i} className="bg-white border-2 hover:shadow-xl transition-all duration-300 group rounded-xl" style={{ borderColor: `${data.primaryColor}20` }}>
-                  <CardContent className="p-8">
-                    <div className="w-14 h-14 rounded-xl flex items-center justify-center mb-6 transition-colors" style={{ backgroundColor: `${data.primaryColor}15` }}>
-                      <IconComponent className="h-7 w-7" style={{ color: data.primaryColor }} />
-                    </div>
-                    
-                    <div className="mb-4">
-                      <p className="text-xs font-medium uppercase tracking-wider mb-1" style={{ color: data.primaryColor }}>{f.subtitle}</p>
-                      <h3 className="text-xl font-bold text-gray-900">{f.title}</h3>
-                    </div>
-                    
-                    <p className="text-gray-500 text-sm mb-6 leading-relaxed">{f.desc}</p>
+                <div
+                  key={i}
+                  data-testid={`feature-card-${i}`}
+                  className="group relative rounded-xl overflow-hidden transition-all duration-500 ease-out hover:-translate-y-2 hover:scale-[1.02]"
+                  style={{
+                    background: cc.bg,
+                    boxShadow: `0 4px 20px ${cc.glow}`,
+                  }}
+                  onMouseEnter={(e) => {
+                    e.currentTarget.style.background = cc.hoverBg
+                    e.currentTarget.style.boxShadow = `0 12px 40px ${cc.glow}, 0 0 0 1px ${cc.border}`
+                  }}
+                  onMouseLeave={(e) => {
+                    e.currentTarget.style.background = cc.bg
+                    e.currentTarget.style.boxShadow = `0 4px 20px ${cc.glow}`
+                  }}
+                >
+                  {/* Top gradient accent bar */}
+                  <div className="h-1.5 w-full" style={{ background: cc.accent }}></div>
+                  
+                  {/* Left colored border */}
+                  <div className="absolute left-0 top-0 bottom-0 w-1 transition-all duration-500 group-hover:w-1.5" style={{ background: cc.accent }}></div>
 
-                    <div className="space-y-2">
-                      {f.items.map((item, idx) => (
-                        <div key={idx} className="flex items-center space-x-2">
-                          <CheckCircle className="h-4 w-4 flex-shrink-0" style={{ color: data.secondaryColor }} />
-                          <span className="text-sm text-gray-600">{item}</span>
-                        </div>
-                      ))}
-                    </div>
-                  </CardContent>
-                </Card>
+                  <Card className="bg-transparent border-0 shadow-none rounded-none">
+                    <CardContent className="p-8 pl-6">
+                      <div
+                        className="w-14 h-14 rounded-xl flex items-center justify-center mb-6 transition-all duration-500 group-hover:scale-110 group-hover:rotate-[-6deg]"
+                        style={{ backgroundColor: `${cc.border}18`, boxShadow: `0 4px 15px ${cc.glow}` }}
+                      >
+                        <IconComponent className="h-7 w-7 transition-colors duration-300" style={{ color: cc.border }} />
+                      </div>
+                      
+                      <div className="mb-4">
+                        <p className="text-xs font-medium uppercase tracking-wider mb-1 transition-colors duration-300" style={{ color: cc.border }}>{f.subtitle}</p>
+                        <h3 className="text-xl font-bold text-gray-900 group-hover:text-gray-800 transition-colors duration-300">{f.title}</h3>
+                      </div>
+                      
+                      <p className="text-gray-500 text-sm mb-6 leading-relaxed">{f.desc}</p>
+
+                      <div className="space-y-2.5">
+                        {f.items.map((item, idx) => (
+                          <div key={idx} className="flex items-center space-x-2.5 group/item">
+                            <div className="w-5 h-5 rounded-full flex items-center justify-center flex-shrink-0 transition-all duration-300 group-hover/item:scale-110" style={{ backgroundColor: `${cc.border}15` }}>
+                              <CheckCircle className="h-3.5 w-3.5 flex-shrink-0" style={{ color: cc.border }} />
+                            </div>
+                            <span className="text-sm text-gray-600 group-hover/item:text-gray-800 transition-colors duration-200">{item}</span>
+                          </div>
+                        ))}
+                      </div>
+                    </CardContent>
+                  </Card>
+                  
+                  {/* Hover glow effect */}
+                  <div className="absolute -bottom-4 -right-4 w-24 h-24 rounded-full opacity-0 group-hover:opacity-30 transition-opacity duration-700 blur-2xl" style={{ background: cc.border }}></div>
+                </div>
               )
             })}
           </div>
