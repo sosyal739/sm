@@ -441,18 +441,8 @@ export default function RootLayout({ children }) {
   return (
     <html lang="de">
       <head>
-        {/* Google Analytics */}
-        <script async src="https://www.googletagmanager.com/gtag/js?id=G-QT1CZE5BJK"></script>
-        <script
-          dangerouslySetInnerHTML={{
-            __html: `
-              window.dataLayer = window.dataLayer || [];
-              function gtag(){dataLayer.push(arguments);}
-              gtag('js', new Date());
-              gtag('config', 'G-QT1CZE5BJK');
-            `
-          }}
-        />
+        {/* Google Analytics - Loaded conditionally via CookieConsent component based on user consent */}
+        {/* DSGVO/GDPR Compliant - Only loads after explicit user consent */}
         <meta name="google-site-verification" content="whtq1HyXz-OCz37bLsqEluKHd_fER1KbDyCT2J2kmj4" />
         <link rel="icon" href="/favicon.png" type="image/png" />
         <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
