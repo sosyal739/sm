@@ -444,9 +444,19 @@ export default function RootLayout({ children }) {
         {/* Google Analytics - Loaded conditionally via CookieConsent component based on user consent */}
         {/* DSGVO/GDPR Compliant - Only loads after explicit user consent */}
         <meta name="google-site-verification" content="whtq1HyXz-OCz37bLsqEluKHd_fER1KbDyCT2J2kmj4" />
-        <link rel="icon" href="/favicon.png" type="image/png" />
-        <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+        
+        {/* Favicon - Multiple sizes for different devices and Google Search */}
+        <link rel="icon" type="image/x-icon" href="/favicon.ico" />
+        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+        <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+        <link rel="icon" type="image/png" sizes="48x48" href="/favicon-48x48.png" />
+        <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+        <link rel="icon" type="image/png" sizes="192x192" href="/android-chrome-192x192.png" />
+        <link rel="icon" type="image/png" sizes="512x512" href="/android-chrome-512x512.png" />
+        <link rel="manifest" href="/site.webmanifest" />
+        
         <meta name="theme-color" content="#4285F4" />
+        <meta name="msapplication-TileColor" content="#4285F4" />
         <meta name="geo.region" content="DE" />
         <meta name="geo.placename" content="Germany" />
         <script

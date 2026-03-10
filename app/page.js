@@ -896,97 +896,185 @@ export default function Home() {
             <div className="w-24 h-1 bg-gradient-to-r from-[#4285F4] to-[#34A853] mx-auto mt-4 rounded-full"></div>
           </div>
           
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8">
             {t.why.services.map((service, index) => {
-              // Renk şeması her hizmet için
-              const colors = [
-                { border: 'border-[#4285F4]', shadow: 'shadow-[#4285F4]/20', gradient: 'from-[#4285F4]/10 to-[#4285F4]/5' }, // Google Ads
-                { border: 'border-[#1877F2]', shadow: 'shadow-[#1877F2]/20', gradient: 'from-[#1877F2]/10 to-[#1877F2]/5' }, // Meta
-                { border: 'border-[#000000]', shadow: 'shadow-black/20', gradient: 'from-black/10 to-black/5' }, // TikTok
-                { border: 'border-[#000000]', shadow: 'shadow-black/20', gradient: 'from-black/10 to-black/5' }, // X
-                { border: 'border-[#34A853]', shadow: 'shadow-[#34A853]/20', gradient: 'from-[#34A853]/10 to-[#34A853]/5' }, // SEO
-                { border: 'border-[#FBBC04]', shadow: 'shadow-[#FBBC04]/20', gradient: 'from-[#FBBC04]/10 to-[#FBBC04]/5' }, // Reviews
+              // Her hizmet için özel renk şeması
+              const colorSchemes = [
+                { // Google Ads - Mavi/Sarı/Yeşil/Kırmızı
+                  gradient: 'from-[#4285F4]/10 via-[#FBBC04]/5 to-[#34A853]/10',
+                  hoverGradient: 'group-hover:from-[#4285F4]/20 group-hover:via-[#FBBC04]/10 group-hover:to-[#34A853]/20',
+                  border: 'border-[#4285F4]/30',
+                  hoverBorder: 'group-hover:border-[#4285F4]',
+                  shadow: 'shadow-[#4285F4]/10',
+                  hoverShadow: 'hover:shadow-[#4285F4]/30',
+                  accent: 'bg-gradient-to-r from-[#4285F4] via-[#EA4335] to-[#FBBC04]',
+                  text: 'text-[#4285F4]',
+                  glow: 'before:bg-[#4285F4]/20'
+                },
+                { // Meta - Mavi
+                  gradient: 'from-[#1877F2]/10 via-[#1877F2]/5 to-[#00C6FF]/10',
+                  hoverGradient: 'group-hover:from-[#1877F2]/20 group-hover:via-[#1877F2]/10 group-hover:to-[#00C6FF]/20',
+                  border: 'border-[#1877F2]/30',
+                  hoverBorder: 'group-hover:border-[#1877F2]',
+                  shadow: 'shadow-[#1877F2]/10',
+                  hoverShadow: 'hover:shadow-[#1877F2]/30',
+                  accent: 'bg-gradient-to-r from-[#1877F2] to-[#00C6FF]',
+                  text: 'text-[#1877F2]',
+                  glow: 'before:bg-[#1877F2]/20'
+                },
+                { // TikTok - Siyah/Pembe/Cyan
+                  gradient: 'from-[#ff0050]/10 via-black/5 to-[#00f2ea]/10',
+                  hoverGradient: 'group-hover:from-[#ff0050]/20 group-hover:via-black/10 group-hover:to-[#00f2ea]/20',
+                  border: 'border-black/30',
+                  hoverBorder: 'group-hover:border-black',
+                  shadow: 'shadow-black/10',
+                  hoverShadow: 'hover:shadow-black/30',
+                  accent: 'bg-gradient-to-r from-[#ff0050] via-black to-[#00f2ea]',
+                  text: 'text-black',
+                  glow: 'before:bg-black/20'
+                },
+                { // X - Siyah
+                  gradient: 'from-black/10 via-gray-500/5 to-black/10',
+                  hoverGradient: 'group-hover:from-black/15 group-hover:via-gray-500/10 group-hover:to-black/15',
+                  border: 'border-black/30',
+                  hoverBorder: 'group-hover:border-black',
+                  shadow: 'shadow-black/10',
+                  hoverShadow: 'hover:shadow-black/30',
+                  accent: 'bg-gradient-to-r from-gray-800 to-black',
+                  text: 'text-black',
+                  glow: 'before:bg-black/20'
+                },
+                { // SEO - Yeşil
+                  gradient: 'from-[#34A853]/10 via-[#34A853]/5 to-[#0F9D58]/10',
+                  hoverGradient: 'group-hover:from-[#34A853]/20 group-hover:via-[#34A853]/10 group-hover:to-[#0F9D58]/20',
+                  border: 'border-[#34A853]/30',
+                  hoverBorder: 'group-hover:border-[#34A853]',
+                  shadow: 'shadow-[#34A853]/10',
+                  hoverShadow: 'hover:shadow-[#34A853]/30',
+                  accent: 'bg-gradient-to-r from-[#34A853] to-[#0F9D58]',
+                  text: 'text-[#34A853]',
+                  glow: 'before:bg-[#34A853]/20'
+                },
+                { // Reviews - Sarı/Kırmızı
+                  gradient: 'from-[#FBBC04]/10 via-[#EA4335]/5 to-[#FBBC04]/10',
+                  hoverGradient: 'group-hover:from-[#FBBC04]/20 group-hover:via-[#EA4335]/10 group-hover:to-[#FBBC04]/20',
+                  border: 'border-[#FBBC04]/30',
+                  hoverBorder: 'group-hover:border-[#FBBC04]',
+                  shadow: 'shadow-[#FBBC04]/10',
+                  hoverShadow: 'hover:shadow-[#FBBC04]/30',
+                  accent: 'bg-gradient-to-r from-[#FBBC04] via-[#EA4335] to-[#FBBC04]',
+                  text: 'text-[#EA4335]',
+                  glow: 'before:bg-[#FBBC04]/20'
+                },
               ]
-              const color = colors[index]
+              const colors = colorSchemes[index]
               
               return (
                 <a 
                   key={index} 
                   href={`/${lang}/hizmetler/${service.slug}`}
-                  className="block group"
+                  className="block group h-full"
                 >
-                  <Card className={`h-full hover:shadow-2xl ${color.shadow} transition-all duration-500 hover:-translate-y-3 border-t-4 ${color.border} bg-gradient-to-br ${color.gradient} to-white cursor-pointer relative overflow-hidden`}>
-                    {/* Decorative corner */}
-                    <div className={`absolute top-0 right-0 w-20 h-20 bg-gradient-to-br ${color.gradient} transform rotate-45 translate-x-10 -translate-y-10 group-hover:scale-150 transition-transform duration-500`}></div>
+                  <Card className={`
+                    h-full relative overflow-hidden cursor-pointer
+                    bg-gradient-to-br ${colors.gradient} ${colors.hoverGradient}
+                    border ${colors.border} ${colors.hoverBorder}
+                    shadow-lg ${colors.shadow} ${colors.hoverShadow} hover:shadow-2xl
+                    transition-all duration-500 ease-out
+                    hover:-translate-y-3 hover:scale-[1.02]
+                    before:absolute before:inset-0 before:opacity-0 before:transition-opacity before:duration-500
+                    ${colors.glow} group-hover:before:opacity-100
+                    before:blur-3xl before:-z-10
+                  `}>
+                    {/* Animated accent line */}
+                    <div className={`h-1.5 ${colors.accent} w-full transform origin-left scale-x-100 group-hover:scale-x-100 transition-transform duration-500`}></div>
                     
-                    <CardContent className="pt-8 pb-6 px-6 relative">
-                      {/* Animated icon container */}
-                      <div className="mb-6 flex items-center justify-center transform group-hover:scale-110 group-hover:rotate-3 transition-all duration-500">
-                        {service.icon === 'google-ads' && (
-                          <div className="p-4 rounded-2xl bg-white shadow-lg group-hover:shadow-2xl transition-shadow">
+                    {/* Floating particles effect on hover */}
+                    <div className="absolute top-0 right-0 w-32 h-32 opacity-0 group-hover:opacity-100 transition-opacity duration-700">
+                      <div className={`absolute top-4 right-4 w-2 h-2 rounded-full ${colors.accent} animate-pulse`}></div>
+                      <div className={`absolute top-8 right-12 w-1.5 h-1.5 rounded-full ${colors.accent} animate-pulse delay-100`}></div>
+                      <div className={`absolute top-12 right-6 w-1 h-1 rounded-full ${colors.accent} animate-pulse delay-200`}></div>
+                    </div>
+                    
+                    <CardContent className="p-6 lg:p-8 flex flex-col h-full relative z-10">
+                      {/* Icon Container - Centered with glow effect */}
+                      <div className="flex justify-center mb-6">
+                        <div className={`
+                          p-4 rounded-2xl bg-white/80 backdrop-blur-sm
+                          shadow-lg group-hover:shadow-xl
+                          transform group-hover:scale-110 group-hover:-rotate-3
+                          transition-all duration-500 ease-out
+                          relative
+                        `}>
+                          {/* Icon glow on hover */}
+                          <div className={`absolute inset-0 rounded-2xl ${colors.accent} opacity-0 group-hover:opacity-20 blur-xl transition-opacity duration-500`}></div>
+                          
+                          {service.icon === 'google-ads' && (
                             <img 
                               src="https://upload.wikimedia.org/wikipedia/commons/c/c7/Google_Ads_logo.svg" 
                               alt="Google Ads" 
-                              className="w-16 h-16 object-contain"
+                              className="w-14 h-14 object-contain relative z-10"
                             />
-                          </div>
-                        )}
-                        {service.icon === 'meta' && (
-                          <div className="p-4 rounded-2xl bg-white shadow-lg group-hover:shadow-2xl transition-shadow">
+                          )}
+                          {service.icon === 'meta' && (
                             <img 
                               src="https://upload.wikimedia.org/wikipedia/commons/7/7b/Meta_Platforms_Inc._logo.svg" 
                               alt="Meta" 
-                              className="w-16 h-12 object-contain"
+                              className="w-14 h-10 object-contain relative z-10"
                             />
-                          </div>
-                        )}
-                        {service.icon === 'tiktok' && (
-                          <div className="p-4 rounded-2xl bg-white shadow-lg group-hover:shadow-2xl transition-shadow">
+                          )}
+                          {service.icon === 'tiktok' && (
                             <img 
                               src="https://upload.wikimedia.org/wikipedia/en/a/a9/TikTok_logo.svg" 
                               alt="TikTok" 
-                              className="w-16 h-16 object-contain"
+                              className="w-14 h-14 object-contain relative z-10"
                             />
-                          </div>
-                        )}
-                        {service.icon === 'x' && (
-                          <div className="p-4 rounded-2xl bg-white shadow-lg group-hover:shadow-2xl transition-shadow">
-                            <svg className="w-16 h-16" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          )}
+                          {service.icon === 'x' && (
+                            <svg className="w-14 h-14 relative z-10" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
                               <rect width="48" height="48" rx="12" fill="black"/>
                               <path d="M30.5 13h4.7l-10.3 11.8L37 35h-9.5l-7.4-9.7L11.7 35H7l11-12.6L7.7 13h9.8l6.7 8.9L30.5 13zm-1.7 19.8h2.6L17.4 15.7h-2.8l13.2 17.1z" fill="white"/>
                             </svg>
-                          </div>
-                        )}
-                        {service.icon === 'seo' && (
-                          <div className="p-4 rounded-2xl bg-white shadow-lg group-hover:shadow-2xl transition-shadow">
-                            <svg className="w-16 h-16" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          )}
+                          {service.icon === 'seo' && (
+                            <svg className="w-14 h-14 relative z-10" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
                               <circle cx="20" cy="20" r="13" stroke="#34A853" strokeWidth="4" fill="none"/>
                               <path d="M29 29L40 40" stroke="#34A853" strokeWidth="4" strokeLinecap="round"/>
                               <path d="M15 20L18 23L25 16" stroke="#34A853" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
                             </svg>
-                          </div>
-                        )}
-                        {service.icon === 'review' && (
-                          <div className="p-4 rounded-2xl bg-white shadow-lg group-hover:shadow-2xl transition-shadow">
-                            <svg className="w-16 h-16" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          )}
+                          {service.icon === 'review' && (
+                            <svg className="w-14 h-14 relative z-10" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
                               <path d="M24 8L27.5 18.5H38.5L29.5 25.5L33 36L24 29L15 36L18.5 25.5L9.5 18.5H20.5L24 8Z" fill="#FBBC04"/>
                               <path d="M24 8L27.5 18.5H38.5L29.5 25.5L33 36L24 29L15 36L18.5 25.5L9.5 18.5H20.5L24 8Z" stroke="#EA4335" strokeWidth="2"/>
                             </svg>
-                          </div>
-                        )}
+                          )}
+                        </div>
                       </div>
                       
-                      <h3 className="text-2xl font-bold mb-4 text-gray-800 group-hover:text-[#4285F4] transition-colors">{service.title}</h3>
-                      <p className="text-muted-foreground leading-relaxed mb-6">{service.description}</p>
+                      {/* Title - Centered */}
+                      <h3 className={`text-xl lg:text-2xl font-bold mb-3 text-gray-800 text-center group-hover:${colors.text} transition-colors duration-300`}>
+                        {service.title}
+                      </h3>
                       
-                      {/* CTA Button */}
-                      <div className="flex items-center justify-between pt-4 border-t border-gray-200">
-                        <span className="text-sm font-semibold text-[#4285F4] group-hover:translate-x-2 transition-transform">
+                      {/* Description - Centered */}
+                      <p className="text-gray-600 text-sm lg:text-base leading-relaxed text-center flex-grow mb-6">
+                        {service.description}
+                      </p>
+                      
+                      {/* CTA Button - Bottom with animated arrow */}
+                      <div className="flex items-center justify-center pt-4 border-t border-gray-200/50">
+                        <span className={`text-sm font-semibold ${colors.text} flex items-center gap-2 group-hover:gap-4 transition-all duration-300`}>
                           {lang === 'de' ? 'Mehr erfahren' : lang === 'en' ? 'Learn more' : 'Detayları Gör'}
+                          <svg 
+                            className="w-5 h-5 transform group-hover:translate-x-1 transition-transform duration-300 ease-out" 
+                            fill="none" 
+                            stroke="currentColor" 
+                            viewBox="0 0 24 24"
+                          >
+                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 7l5 5m0 0l-5 5m5-5H6" />
+                          </svg>
                         </span>
-                        <svg className="w-6 h-6 text-[#4285F4] group-hover:translate-x-2 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 7l5 5m0 0l-5 5m5-5H6" />
-                        </svg>
                       </div>
                     </CardContent>
                   </Card>
@@ -1006,20 +1094,28 @@ export default function Home() {
             <p className="text-lg text-muted-foreground max-w-3xl mx-auto">{t.success.description}</p>
           </div>
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
-            {t.success.metrics.map((metric, index) => (
-              <Card key={index} className="bg-white hover:shadow-xl transition-shadow">
-                <CardContent className="pt-6 text-center">
-                  <div className="mb-4">
-                    {index === 0 && <svg className="h-12 w-12 mx-auto text-[#34A853]" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z" /></svg>}
-                    {index === 1 && <Award className="h-12 w-12 mx-auto text-[#FBBC04]" />}
-                    {index === 2 && <svg className="h-12 w-12 mx-auto text-[#4285F4]" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" /><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z" /></svg>}
-                    {index === 3 && <svg className="h-12 w-12 mx-auto text-[#EA4335]" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 10V3L4 14h7v7l9-11h-7z" /></svg>}
-                  </div>
-                  <p className="text-xs text-muted-foreground mb-2">{metric.subtitle}</p>
-                  <h3 className="text-xl font-bold">{metric.title}</h3>
-                </CardContent>
-              </Card>
-            ))}
+            {t.success.metrics.map((metric, index) => {
+              const borderColors = [
+                'border-t-4 border-t-[#34A853] hover:shadow-[#34A853]/20',
+                'border-t-4 border-t-[#FBBC04] hover:shadow-[#FBBC04]/20',
+                'border-t-4 border-t-[#4285F4] hover:shadow-[#4285F4]/20',
+                'border-t-4 border-t-[#EA4335] hover:shadow-[#EA4335]/20'
+              ]
+              return (
+                <Card key={index} className={`bg-white hover:shadow-xl transition-all duration-300 hover:-translate-y-1 ${borderColors[index]}`}>
+                  <CardContent className="pt-6 text-center">
+                    <div className="mb-4">
+                      {index === 0 && <svg className="h-12 w-12 mx-auto text-[#34A853]" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z" /></svg>}
+                      {index === 1 && <Award className="h-12 w-12 mx-auto text-[#FBBC04]" />}
+                      {index === 2 && <svg className="h-12 w-12 mx-auto text-[#4285F4]" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" /><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z" /></svg>}
+                      {index === 3 && <svg className="h-12 w-12 mx-auto text-[#EA4335]" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 10V3L4 14h7v7l9-11h-7z" /></svg>}
+                    </div>
+                    <p className="text-xs text-muted-foreground mb-2">{metric.subtitle}</p>
+                    <h3 className="text-xl font-bold">{metric.title}</h3>
+                  </CardContent>
+                </Card>
+              )
+            })}
           </div>
         </div>
       </section>
@@ -1038,15 +1134,25 @@ export default function Home() {
             </Button>
           </div>
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 mt-12">
-            {t.corporate.features.map((feature, index) => (
-              <Card key={index} className="bg-white/10 backdrop-blur-sm border-white/20 text-white">
-                <CardContent className="pt-6">
-                  <CheckCircle className="h-8 w-8 mb-4" />
-                  <h3 className="text-lg font-semibold mb-2">{feature.title}</h3>
-                  <p className="text-sm opacity-90">{feature.description}</p>
-                </CardContent>
-              </Card>
-            ))}
+            {t.corporate.features.map((feature, index) => {
+              const borderColors = [
+                'border-l-4 border-l-[#34A853]',
+                'border-l-4 border-l-[#FBBC04]',
+                'border-l-4 border-l-[#4285F4]',
+                'border-l-4 border-l-white',
+                'border-l-4 border-l-[#EA4335]',
+                'border-l-4 border-l-[#00C6FF]'
+              ]
+              return (
+                <Card key={index} className={`bg-white/10 backdrop-blur-sm border-white/20 text-white hover:bg-white/20 transition-all duration-300 hover:-translate-y-1 ${borderColors[index]}`}>
+                  <CardContent className="pt-6">
+                    <CheckCircle className="h-8 w-8 mb-4" />
+                    <h3 className="text-lg font-semibold mb-2">{feature.title}</h3>
+                    <p className="text-sm opacity-90">{feature.description}</p>
+                  </CardContent>
+                </Card>
+              )
+            })}
           </div>
         </div>
       </section>
@@ -1098,20 +1204,21 @@ export default function Home() {
           </div>
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
             {t.about.features.map((feature, index) => {
-              // Her özellik için farklı ikon
-              const icons = [
-                <BarChart3 key={0} className="h-10 w-10 text-[#4285F4] mb-4" />, // Veri Odaklı
-                <svg key={1} className="h-10 w-10 text-[#EA4335] mb-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 002.573 1.066c1.543-.94 3.31.826 2.37 2.37a1.724 1.724 0 001.065 2.572c1.756.426 1.756 2.924 0 3.35a1.724 1.724 0 00-1.066 2.573c.94 1.543-.826 3.31-2.37 2.37a1.724 1.724 0 00-2.572 1.065c-.426 1.756-2.924 1.756-3.35 0a1.724 1.724 0 00-2.573-1.066c-1.543.94-3.31-.826-2.37-2.37a1.724 1.724 0 00-1.065-2.572c-1.756-.426-1.756-2.924 0-3.35a1.724 1.724 0 001.066-2.573c-.94-1.543.826-3.31 2.37-2.37.996.608 2.296.07 2.572-1.065z" /><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" /></svg>, // Teknik Mükemmellik
-                <Award key={2} className="h-10 w-10 text-[#FBBC04] mb-4" />, // Butik Hizmet
-                <TrendingUp key={3} className="h-10 w-10 text-[#34A853] mb-4" />, // Satış Odaklı
-                <svg key={4} className="h-10 w-10 text-[#4285F4] mb-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 17v-2m3 2v-4m3 4v-6m2 10H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" /></svg>, // Şeffaf Raporlama
-                <Phone key={5} className="h-10 w-10 text-[#34A853] mb-4" /> // 7/24 Destek
+              // Her özellik için farklı ikon ve renk
+              const iconConfigs = [
+                { icon: <BarChart3 key={0} className="h-10 w-10 text-[#4285F4] mb-4" />, border: 'border-l-4 border-l-[#4285F4]', shadow: 'hover:shadow-[#4285F4]/20' },
+                { icon: <svg key={1} className="h-10 w-10 text-[#EA4335] mb-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 002.573 1.066c1.543-.94 3.31.826 2.37 2.37a1.724 1.724 0 001.065 2.572c1.756.426 1.756 2.924 0 3.35a1.724 1.724 0 00-1.066 2.573c.94 1.543-.826 3.31-2.37 2.37a1.724 1.724 0 00-2.572 1.065c-.426 1.756-2.924 1.756-3.35 0a1.724 1.724 0 00-2.573-1.066c-1.543.94-3.31-.826-2.37-2.37a1.724 1.724 0 00-1.065-2.572c-1.756-.426-1.756-2.924 0-3.35a1.724 1.724 0 001.066-2.573c-.94-1.543.826-3.31 2.37-2.37.996.608 2.296.07 2.572-1.065z" /><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" /></svg>, border: 'border-l-4 border-l-[#EA4335]', shadow: 'hover:shadow-[#EA4335]/20' },
+                { icon: <Award key={2} className="h-10 w-10 text-[#FBBC04] mb-4" />, border: 'border-l-4 border-l-[#FBBC04]', shadow: 'hover:shadow-[#FBBC04]/20' },
+                { icon: <TrendingUp key={3} className="h-10 w-10 text-[#34A853] mb-4" />, border: 'border-l-4 border-l-[#34A853]', shadow: 'hover:shadow-[#34A853]/20' },
+                { icon: <svg key={4} className="h-10 w-10 text-[#4285F4] mb-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 17v-2m3 2v-4m3 4v-6m2 10H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" /></svg>, border: 'border-l-4 border-l-[#4285F4]', shadow: 'hover:shadow-[#4285F4]/20' },
+                { icon: <Phone key={5} className="h-10 w-10 text-[#34A853] mb-4" />, border: 'border-l-4 border-l-[#34A853]', shadow: 'hover:shadow-[#34A853]/20' }
               ]
+              const config = iconConfigs[index] || { icon: <CheckCircle className="h-10 w-10 text-[#34A853] mb-4" />, border: 'border-l-4 border-l-[#34A853]', shadow: 'hover:shadow-[#34A853]/20' }
               
               return (
-                <Card key={index} className="hover:shadow-lg transition-shadow">
+                <Card key={index} className={`hover:shadow-xl transition-all duration-300 hover:-translate-y-1 ${config.border} ${config.shadow}`}>
                   <CardContent className="pt-6">
-                    {icons[index] || <CheckCircle className="h-10 w-10 text-[#34A853] mb-4" />}
+                    {config.icon}
                     <h3 className="text-xl font-semibold mb-3">{feature.title}</h3>
                     <p className="text-muted-foreground">{feature.description}</p>
                   </CardContent>
