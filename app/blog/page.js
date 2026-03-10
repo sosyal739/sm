@@ -228,7 +228,7 @@ export default function BlogPage() {
     const images = {
       'google-ads-nedir': 'https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=600&h=300&fit=crop&q=80',
       'meta-ads-basari': 'https://images.unsplash.com/photo-1432888622747-4eb9a8efeb07?w=600&h=300&fit=crop&q=80',
-      'tiktok-ads-rehber': 'https://images.unsplash.com/photo-1611162616305-c69b3fa7fbe0?w=600&h=300&fit=crop&q=80',
+      'tiktok-ads-rehber': 'https://images.unsplash.com/photo-1611605698323-b1e99cfd37ea?w=600&h=300&fit=crop&q=80',
       'seo-stratejileri-2026': 'https://images.unsplash.com/photo-1504868584819-f8e8b4b6d7e3?w=600&h=300&fit=crop&q=80',
       'x-twitter-ads': 'https://images.unsplash.com/photo-1611605698335-8b1569810432?w=600&h=300&fit=crop&q=80',
       'olumsuz-yorum-yonetimi': 'https://images.unsplash.com/photo-1556745757-8d76bdb6984b?w=600&h=300&fit=crop&q=80',
