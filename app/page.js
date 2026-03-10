@@ -898,16 +898,76 @@ export default function Home() {
           
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8">
             {t.why.services.map((service, index) => {
-              // Renk şeması her hizmet için
-              const colors = [
-                { border: 'border-[#4285F4]', bg: 'bg-[#4285F4]', text: 'text-[#4285F4]', shadow: 'hover:shadow-[#4285F4]/25' },
-                { border: 'border-[#1877F2]', bg: 'bg-[#1877F2]', text: 'text-[#1877F2]', shadow: 'hover:shadow-[#1877F2]/25' },
-                { border: 'border-black', bg: 'bg-black', text: 'text-black', shadow: 'hover:shadow-black/25' },
-                { border: 'border-black', bg: 'bg-black', text: 'text-black', shadow: 'hover:shadow-black/25' },
-                { border: 'border-[#34A853]', bg: 'bg-[#34A853]', text: 'text-[#34A853]', shadow: 'hover:shadow-[#34A853]/25' },
-                { border: 'border-[#FBBC04]', bg: 'bg-[#FBBC04]', text: 'text-[#FBBC04]', shadow: 'hover:shadow-[#FBBC04]/25' },
+              // Her hizmet için özel renk şeması
+              const colorSchemes = [
+                { // Google Ads - Mavi/Sarı/Yeşil/Kırmızı
+                  gradient: 'from-[#4285F4]/10 via-[#FBBC04]/5 to-[#34A853]/10',
+                  hoverGradient: 'group-hover:from-[#4285F4]/20 group-hover:via-[#FBBC04]/10 group-hover:to-[#34A853]/20',
+                  border: 'border-[#4285F4]/30',
+                  hoverBorder: 'group-hover:border-[#4285F4]',
+                  shadow: 'shadow-[#4285F4]/10',
+                  hoverShadow: 'hover:shadow-[#4285F4]/30',
+                  accent: 'bg-gradient-to-r from-[#4285F4] via-[#EA4335] to-[#FBBC04]',
+                  text: 'text-[#4285F4]',
+                  glow: 'before:bg-[#4285F4]/20'
+                },
+                { // Meta - Mavi
+                  gradient: 'from-[#1877F2]/10 via-[#1877F2]/5 to-[#00C6FF]/10',
+                  hoverGradient: 'group-hover:from-[#1877F2]/20 group-hover:via-[#1877F2]/10 group-hover:to-[#00C6FF]/20',
+                  border: 'border-[#1877F2]/30',
+                  hoverBorder: 'group-hover:border-[#1877F2]',
+                  shadow: 'shadow-[#1877F2]/10',
+                  hoverShadow: 'hover:shadow-[#1877F2]/30',
+                  accent: 'bg-gradient-to-r from-[#1877F2] to-[#00C6FF]',
+                  text: 'text-[#1877F2]',
+                  glow: 'before:bg-[#1877F2]/20'
+                },
+                { // TikTok - Siyah/Pembe/Cyan
+                  gradient: 'from-[#ff0050]/10 via-black/5 to-[#00f2ea]/10',
+                  hoverGradient: 'group-hover:from-[#ff0050]/20 group-hover:via-black/10 group-hover:to-[#00f2ea]/20',
+                  border: 'border-black/30',
+                  hoverBorder: 'group-hover:border-black',
+                  shadow: 'shadow-black/10',
+                  hoverShadow: 'hover:shadow-black/30',
+                  accent: 'bg-gradient-to-r from-[#ff0050] via-black to-[#00f2ea]',
+                  text: 'text-black',
+                  glow: 'before:bg-black/20'
+                },
+                { // X - Siyah
+                  gradient: 'from-black/10 via-gray-500/5 to-black/10',
+                  hoverGradient: 'group-hover:from-black/15 group-hover:via-gray-500/10 group-hover:to-black/15',
+                  border: 'border-black/30',
+                  hoverBorder: 'group-hover:border-black',
+                  shadow: 'shadow-black/10',
+                  hoverShadow: 'hover:shadow-black/30',
+                  accent: 'bg-gradient-to-r from-gray-800 to-black',
+                  text: 'text-black',
+                  glow: 'before:bg-black/20'
+                },
+                { // SEO - Yeşil
+                  gradient: 'from-[#34A853]/10 via-[#34A853]/5 to-[#0F9D58]/10',
+                  hoverGradient: 'group-hover:from-[#34A853]/20 group-hover:via-[#34A853]/10 group-hover:to-[#0F9D58]/20',
+                  border: 'border-[#34A853]/30',
+                  hoverBorder: 'group-hover:border-[#34A853]',
+                  shadow: 'shadow-[#34A853]/10',
+                  hoverShadow: 'hover:shadow-[#34A853]/30',
+                  accent: 'bg-gradient-to-r from-[#34A853] to-[#0F9D58]',
+                  text: 'text-[#34A853]',
+                  glow: 'before:bg-[#34A853]/20'
+                },
+                { // Reviews - Sarı/Kırmızı
+                  gradient: 'from-[#FBBC04]/10 via-[#EA4335]/5 to-[#FBBC04]/10',
+                  hoverGradient: 'group-hover:from-[#FBBC04]/20 group-hover:via-[#EA4335]/10 group-hover:to-[#FBBC04]/20',
+                  border: 'border-[#FBBC04]/30',
+                  hoverBorder: 'group-hover:border-[#FBBC04]',
+                  shadow: 'shadow-[#FBBC04]/10',
+                  hoverShadow: 'hover:shadow-[#FBBC04]/30',
+                  accent: 'bg-gradient-to-r from-[#FBBC04] via-[#EA4335] to-[#FBBC04]',
+                  text: 'text-[#EA4335]',
+                  glow: 'before:bg-[#FBBC04]/20'
+                },
               ]
-              const color = colors[index]
+              const colors = colorSchemes[index]
               
               return (
                 <a 
@@ -915,50 +975,76 @@ export default function Home() {
                   href={`/${lang}/hizmetler/${service.slug}`}
                   className="block group h-full"
                 >
-                  <Card className={`h-full bg-white border-0 shadow-lg ${color.shadow} hover:shadow-2xl transition-all duration-300 ease-out hover:-translate-y-2 cursor-pointer overflow-hidden`}>
-                    {/* Top accent line */}
-                    <div className={`h-1 ${color.bg} w-full`}></div>
+                  <Card className={`
+                    h-full relative overflow-hidden cursor-pointer
+                    bg-gradient-to-br ${colors.gradient} ${colors.hoverGradient}
+                    border ${colors.border} ${colors.hoverBorder}
+                    shadow-lg ${colors.shadow} ${colors.hoverShadow} hover:shadow-2xl
+                    transition-all duration-500 ease-out
+                    hover:-translate-y-3 hover:scale-[1.02]
+                    before:absolute before:inset-0 before:opacity-0 before:transition-opacity before:duration-500
+                    ${colors.glow} group-hover:before:opacity-100
+                    before:blur-3xl before:-z-10
+                  `}>
+                    {/* Animated accent line */}
+                    <div className={`h-1.5 ${colors.accent} w-full transform origin-left scale-x-100 group-hover:scale-x-100 transition-transform duration-500`}></div>
                     
-                    <CardContent className="p-6 lg:p-8 flex flex-col h-full">
-                      {/* Icon Container - Centered */}
+                    {/* Floating particles effect on hover */}
+                    <div className="absolute top-0 right-0 w-32 h-32 opacity-0 group-hover:opacity-100 transition-opacity duration-700">
+                      <div className={`absolute top-4 right-4 w-2 h-2 rounded-full ${colors.accent} animate-pulse`}></div>
+                      <div className={`absolute top-8 right-12 w-1.5 h-1.5 rounded-full ${colors.accent} animate-pulse delay-100`}></div>
+                      <div className={`absolute top-12 right-6 w-1 h-1 rounded-full ${colors.accent} animate-pulse delay-200`}></div>
+                    </div>
+                    
+                    <CardContent className="p-6 lg:p-8 flex flex-col h-full relative z-10">
+                      {/* Icon Container - Centered with glow effect */}
                       <div className="flex justify-center mb-6">
-                        <div className="p-4 rounded-2xl bg-gray-50 shadow-sm group-hover:shadow-lg group-hover:scale-110 transition-all duration-300 ease-out">
+                        <div className={`
+                          p-4 rounded-2xl bg-white/80 backdrop-blur-sm
+                          shadow-lg group-hover:shadow-xl
+                          transform group-hover:scale-110 group-hover:-rotate-3
+                          transition-all duration-500 ease-out
+                          relative
+                        `}>
+                          {/* Icon glow on hover */}
+                          <div className={`absolute inset-0 rounded-2xl ${colors.accent} opacity-0 group-hover:opacity-20 blur-xl transition-opacity duration-500`}></div>
+                          
                           {service.icon === 'google-ads' && (
                             <img 
                               src="https://upload.wikimedia.org/wikipedia/commons/c/c7/Google_Ads_logo.svg" 
                               alt="Google Ads" 
-                              className="w-14 h-14 object-contain"
+                              className="w-14 h-14 object-contain relative z-10"
                             />
                           )}
                           {service.icon === 'meta' && (
                             <img 
                               src="https://upload.wikimedia.org/wikipedia/commons/7/7b/Meta_Platforms_Inc._logo.svg" 
                               alt="Meta" 
-                              className="w-14 h-10 object-contain"
+                              className="w-14 h-10 object-contain relative z-10"
                             />
                           )}
                           {service.icon === 'tiktok' && (
                             <img 
                               src="https://upload.wikimedia.org/wikipedia/en/a/a9/TikTok_logo.svg" 
                               alt="TikTok" 
-                              className="w-14 h-14 object-contain"
+                              className="w-14 h-14 object-contain relative z-10"
                             />
                           )}
                           {service.icon === 'x' && (
-                            <svg className="w-14 h-14" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <svg className="w-14 h-14 relative z-10" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
                               <rect width="48" height="48" rx="12" fill="black"/>
                               <path d="M30.5 13h4.7l-10.3 11.8L37 35h-9.5l-7.4-9.7L11.7 35H7l11-12.6L7.7 13h9.8l6.7 8.9L30.5 13zm-1.7 19.8h2.6L17.4 15.7h-2.8l13.2 17.1z" fill="white"/>
                             </svg>
                           )}
                           {service.icon === 'seo' && (
-                            <svg className="w-14 h-14" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <svg className="w-14 h-14 relative z-10" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
                               <circle cx="20" cy="20" r="13" stroke="#34A853" strokeWidth="4" fill="none"/>
                               <path d="M29 29L40 40" stroke="#34A853" strokeWidth="4" strokeLinecap="round"/>
                               <path d="M15 20L18 23L25 16" stroke="#34A853" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
                             </svg>
                           )}
                           {service.icon === 'review' && (
-                            <svg className="w-14 h-14" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <svg className="w-14 h-14 relative z-10" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
                               <path d="M24 8L27.5 18.5H38.5L29.5 25.5L33 36L24 29L15 36L18.5 25.5L9.5 18.5H20.5L24 8Z" fill="#FBBC04"/>
                               <path d="M24 8L27.5 18.5H38.5L29.5 25.5L33 36L24 29L15 36L18.5 25.5L9.5 18.5H20.5L24 8Z" stroke="#EA4335" strokeWidth="2"/>
                             </svg>
@@ -967,7 +1053,7 @@ export default function Home() {
                       </div>
                       
                       {/* Title - Centered */}
-                      <h3 className={`text-xl lg:text-2xl font-bold mb-3 text-gray-800 text-center group-hover:${color.text} transition-colors duration-300`}>
+                      <h3 className={`text-xl lg:text-2xl font-bold mb-3 text-gray-800 text-center group-hover:${colors.text} transition-colors duration-300`}>
                         {service.title}
                       </h3>
                       
@@ -976,12 +1062,12 @@ export default function Home() {
                         {service.description}
                       </p>
                       
-                      {/* CTA Button - Bottom */}
-                      <div className="flex items-center justify-center pt-4 border-t border-gray-100">
-                        <span className={`text-sm font-semibold ${color.text} flex items-center gap-2`}>
+                      {/* CTA Button - Bottom with animated arrow */}
+                      <div className="flex items-center justify-center pt-4 border-t border-gray-200/50">
+                        <span className={`text-sm font-semibold ${colors.text} flex items-center gap-2 group-hover:gap-4 transition-all duration-300`}>
                           {lang === 'de' ? 'Mehr erfahren' : lang === 'en' ? 'Learn more' : 'Detayları Gör'}
                           <svg 
-                            className="w-5 h-5 transform group-hover:translate-x-2 transition-transform duration-300 ease-out" 
+                            className="w-5 h-5 transform group-hover:translate-x-1 transition-transform duration-300 ease-out" 
                             fill="none" 
                             stroke="currentColor" 
                             viewBox="0 0 24 24"
