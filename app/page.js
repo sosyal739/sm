@@ -896,16 +896,16 @@ export default function Home() {
             <div className="w-24 h-1 bg-gradient-to-r from-[#4285F4] to-[#34A853] mx-auto mt-4 rounded-full"></div>
           </div>
           
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8">
             {t.why.services.map((service, index) => {
               // Renk şeması her hizmet için
               const colors = [
-                { border: 'border-[#4285F4]', shadow: 'shadow-[#4285F4]/20', gradient: 'from-[#4285F4]/10 to-[#4285F4]/5' }, // Google Ads
-                { border: 'border-[#1877F2]', shadow: 'shadow-[#1877F2]/20', gradient: 'from-[#1877F2]/10 to-[#1877F2]/5' }, // Meta
-                { border: 'border-[#000000]', shadow: 'shadow-black/20', gradient: 'from-black/10 to-black/5' }, // TikTok
-                { border: 'border-[#000000]', shadow: 'shadow-black/20', gradient: 'from-black/10 to-black/5' }, // X
-                { border: 'border-[#34A853]', shadow: 'shadow-[#34A853]/20', gradient: 'from-[#34A853]/10 to-[#34A853]/5' }, // SEO
-                { border: 'border-[#FBBC04]', shadow: 'shadow-[#FBBC04]/20', gradient: 'from-[#FBBC04]/10 to-[#FBBC04]/5' }, // Reviews
+                { border: 'border-[#4285F4]', bg: 'bg-[#4285F4]', text: 'text-[#4285F4]', shadow: 'hover:shadow-[#4285F4]/25' },
+                { border: 'border-[#1877F2]', bg: 'bg-[#1877F2]', text: 'text-[#1877F2]', shadow: 'hover:shadow-[#1877F2]/25' },
+                { border: 'border-black', bg: 'bg-black', text: 'text-black', shadow: 'hover:shadow-black/25' },
+                { border: 'border-black', bg: 'bg-black', text: 'text-black', shadow: 'hover:shadow-black/25' },
+                { border: 'border-[#34A853]', bg: 'bg-[#34A853]', text: 'text-[#34A853]', shadow: 'hover:shadow-[#34A853]/25' },
+                { border: 'border-[#FBBC04]', bg: 'bg-[#FBBC04]', text: 'text-[#FBBC04]', shadow: 'hover:shadow-[#FBBC04]/25' },
               ]
               const color = colors[index]
               
@@ -913,80 +913,82 @@ export default function Home() {
                 <a 
                   key={index} 
                   href={`/${lang}/hizmetler/${service.slug}`}
-                  className="block group"
+                  className="block group h-full"
                 >
-                  <Card className={`h-full hover:shadow-2xl ${color.shadow} transition-all duration-500 hover:-translate-y-3 border-t-4 ${color.border} bg-gradient-to-br ${color.gradient} to-white cursor-pointer relative overflow-hidden`}>
-                    {/* Decorative corner */}
-                    <div className={`absolute top-0 right-0 w-20 h-20 bg-gradient-to-br ${color.gradient} transform rotate-45 translate-x-10 -translate-y-10 group-hover:scale-150 transition-transform duration-500`}></div>
+                  <Card className={`h-full bg-white border-0 shadow-lg ${color.shadow} hover:shadow-2xl transition-all duration-300 ease-out hover:-translate-y-2 cursor-pointer overflow-hidden`}>
+                    {/* Top accent line */}
+                    <div className={`h-1 ${color.bg} w-full`}></div>
                     
-                    <CardContent className="pt-8 pb-6 px-6 relative">
-                      {/* Animated icon container */}
-                      <div className="mb-6 flex items-center justify-center transform group-hover:scale-110 group-hover:rotate-3 transition-all duration-500">
-                        {service.icon === 'google-ads' && (
-                          <div className="p-4 rounded-2xl bg-white shadow-lg group-hover:shadow-2xl transition-shadow">
+                    <CardContent className="p-6 lg:p-8 flex flex-col h-full">
+                      {/* Icon Container - Centered */}
+                      <div className="flex justify-center mb-6">
+                        <div className="p-4 rounded-2xl bg-gray-50 shadow-sm group-hover:shadow-lg group-hover:scale-110 transition-all duration-300 ease-out">
+                          {service.icon === 'google-ads' && (
                             <img 
                               src="https://upload.wikimedia.org/wikipedia/commons/c/c7/Google_Ads_logo.svg" 
                               alt="Google Ads" 
-                              className="w-16 h-16 object-contain"
+                              className="w-14 h-14 object-contain"
                             />
-                          </div>
-                        )}
-                        {service.icon === 'meta' && (
-                          <div className="p-4 rounded-2xl bg-white shadow-lg group-hover:shadow-2xl transition-shadow">
+                          )}
+                          {service.icon === 'meta' && (
                             <img 
                               src="https://upload.wikimedia.org/wikipedia/commons/7/7b/Meta_Platforms_Inc._logo.svg" 
                               alt="Meta" 
-                              className="w-16 h-12 object-contain"
+                              className="w-14 h-10 object-contain"
                             />
-                          </div>
-                        )}
-                        {service.icon === 'tiktok' && (
-                          <div className="p-4 rounded-2xl bg-white shadow-lg group-hover:shadow-2xl transition-shadow">
+                          )}
+                          {service.icon === 'tiktok' && (
                             <img 
                               src="https://upload.wikimedia.org/wikipedia/en/a/a9/TikTok_logo.svg" 
                               alt="TikTok" 
-                              className="w-16 h-16 object-contain"
+                              className="w-14 h-14 object-contain"
                             />
-                          </div>
-                        )}
-                        {service.icon === 'x' && (
-                          <div className="p-4 rounded-2xl bg-white shadow-lg group-hover:shadow-2xl transition-shadow">
-                            <svg className="w-16 h-16" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          )}
+                          {service.icon === 'x' && (
+                            <svg className="w-14 h-14" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
                               <rect width="48" height="48" rx="12" fill="black"/>
                               <path d="M30.5 13h4.7l-10.3 11.8L37 35h-9.5l-7.4-9.7L11.7 35H7l11-12.6L7.7 13h9.8l6.7 8.9L30.5 13zm-1.7 19.8h2.6L17.4 15.7h-2.8l13.2 17.1z" fill="white"/>
                             </svg>
-                          </div>
-                        )}
-                        {service.icon === 'seo' && (
-                          <div className="p-4 rounded-2xl bg-white shadow-lg group-hover:shadow-2xl transition-shadow">
-                            <svg className="w-16 h-16" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          )}
+                          {service.icon === 'seo' && (
+                            <svg className="w-14 h-14" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
                               <circle cx="20" cy="20" r="13" stroke="#34A853" strokeWidth="4" fill="none"/>
                               <path d="M29 29L40 40" stroke="#34A853" strokeWidth="4" strokeLinecap="round"/>
                               <path d="M15 20L18 23L25 16" stroke="#34A853" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
                             </svg>
-                          </div>
-                        )}
-                        {service.icon === 'review' && (
-                          <div className="p-4 rounded-2xl bg-white shadow-lg group-hover:shadow-2xl transition-shadow">
-                            <svg className="w-16 h-16" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          )}
+                          {service.icon === 'review' && (
+                            <svg className="w-14 h-14" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
                               <path d="M24 8L27.5 18.5H38.5L29.5 25.5L33 36L24 29L15 36L18.5 25.5L9.5 18.5H20.5L24 8Z" fill="#FBBC04"/>
                               <path d="M24 8L27.5 18.5H38.5L29.5 25.5L33 36L24 29L15 36L18.5 25.5L9.5 18.5H20.5L24 8Z" stroke="#EA4335" strokeWidth="2"/>
                             </svg>
-                          </div>
-                        )}
+                          )}
+                        </div>
                       </div>
                       
-                      <h3 className="text-2xl font-bold mb-4 text-gray-800 group-hover:text-[#4285F4] transition-colors">{service.title}</h3>
-                      <p className="text-muted-foreground leading-relaxed mb-6">{service.description}</p>
+                      {/* Title - Centered */}
+                      <h3 className={`text-xl lg:text-2xl font-bold mb-3 text-gray-800 text-center group-hover:${color.text} transition-colors duration-300`}>
+                        {service.title}
+                      </h3>
                       
-                      {/* CTA Button */}
-                      <div className="flex items-center justify-between pt-4 border-t border-gray-200">
-                        <span className="text-sm font-semibold text-[#4285F4] group-hover:translate-x-2 transition-transform">
+                      {/* Description - Centered */}
+                      <p className="text-gray-600 text-sm lg:text-base leading-relaxed text-center flex-grow mb-6">
+                        {service.description}
+                      </p>
+                      
+                      {/* CTA Button - Bottom */}
+                      <div className="flex items-center justify-center pt-4 border-t border-gray-100">
+                        <span className={`text-sm font-semibold ${color.text} flex items-center gap-2`}>
                           {lang === 'de' ? 'Mehr erfahren' : lang === 'en' ? 'Learn more' : 'Detayları Gör'}
+                          <svg 
+                            className="w-5 h-5 transform group-hover:translate-x-2 transition-transform duration-300 ease-out" 
+                            fill="none" 
+                            stroke="currentColor" 
+                            viewBox="0 0 24 24"
+                          >
+                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 7l5 5m0 0l-5 5m5-5H6" />
+                          </svg>
                         </span>
-                        <svg className="w-6 h-6 text-[#4285F4] group-hover:translate-x-2 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 7l5 5m0 0l-5 5m5-5H6" />
-                        </svg>
                       </div>
                     </CardContent>
                   </Card>
