@@ -93,7 +93,7 @@ export const metadata = {
     ],
   },
   verification: {
-    google: 'your-google-verification-code',
+    google: 'whtq1HyXz-OCz37bLsqEluKHd_fER1KbDyCT2J2kmj4',
   },
   category: 'Digital Marketing',
 }
@@ -441,6 +441,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="de">
       <head>
+        <meta name="google-site-verification" content="whtq1HyXz-OCz37bLsqEluKHd_fER1KbDyCT2J2kmj4" />
         <link rel="icon" href="/favicon.png" type="image/png" />
         <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
         <meta name="theme-color" content="#4285F4" />
