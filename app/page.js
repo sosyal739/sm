@@ -1364,30 +1364,51 @@ export default function Home() {
             <p className="text-lg text-muted-foreground">{lang === 'de' ? 'Neueste Artikel über digitales Marketing' : lang === 'en' ? 'Latest articles about digital marketing' : 'Dijital pazarlama hakkında güncel makaleler'}</p>
           </div>
           <div className="grid md:grid-cols-3 gap-6">
-            <Card className="hover:shadow-xl transition-shadow">
-              <CardContent className="pt-6">
-                <div className="text-5xl mb-4">🎯</div>
-                <h3 className="text-xl font-bold mb-3">Google Ads {lang === 'de' ? 'Leitfaden' : lang === 'en' ? 'Guide' : 'Rehberi'}</h3>
-                <p className="text-muted-foreground mb-4">{lang === 'de' ? 'Alles über Google Ads Kampagnen' : lang === 'en' ? 'Everything about Google Ads campaigns' : 'Google Ads kampanyaları hakkında her şey'}</p>
-                <Button variant="outline" className="w-full" asChild><a href="/blog">{ lang === 'de' ? 'Lesen' : lang === 'en' ? 'Read' : 'Oku'}</a></Button>
-              </CardContent>
-            </Card>
-            <Card className="hover:shadow-xl transition-shadow">
-              <CardContent className="pt-6">
-                <div className="text-5xl mb-4">📱</div>
-                <h3 className="text-xl font-bold mb-3">Meta Ads {lang === 'de' ? 'Erfolg' : lang === 'en' ? 'Success' : 'Başarısı'}</h3>
-                <p className="text-muted-foreground mb-4">{lang === 'de' ? 'Facebook & Instagram Strategien' : lang === 'en' ? 'Facebook & Instagram strategies' : 'Facebook & Instagram stratejileri'}</p>
-                <Button variant="outline" className="w-full" asChild><a href="/blog">{lang === 'de' ? 'Lesen' : lang === 'en' ? 'Read' : 'Oku'}</a></Button>
-              </CardContent>
-            </Card>
-            <Card className="hover:shadow-xl transition-shadow">
-              <CardContent className="pt-6">
-                <div className="text-5xl mb-4">🔍</div>
-                <h3 className="text-xl font-bold mb-3">SEO {lang === 'de' ? 'Tipps' : lang === 'en' ? 'Tips' : 'İpuçları'} 2026</h3>
-                <p className="text-muted-foreground mb-4">{lang === 'de' ? 'Top Rankings bei Google' : lang === 'en' ? 'Top rankings on Google' : 'Google\'da üst sıralarda'}</p>
-                <Button variant="outline" className="w-full" asChild><a href="/blog">{lang === 'de' ? 'Lesen' : lang === 'en' ? 'Read' : 'Oku'}</a></Button>
-              </CardContent>
-            </Card>
+            <a href="/blog" className="block group">
+              <Card className="hover:shadow-xl transition-all duration-500 hover:-translate-y-2 overflow-hidden">
+                <div className="h-44 relative overflow-hidden">
+                  <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=500&h=250&fit=crop&q=80" alt="Google Ads" className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" />
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent" />
+                  <div className="absolute bottom-3 right-3">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/c/c7/Google_Ads_logo.svg" alt="Google Ads" className="h-6 w-auto drop-shadow-lg" />
+                  </div>
+                </div>
+                <CardContent className="pt-5 pb-6">
+                  <h3 className="text-lg font-bold mb-2 group-hover:text-[#4285F4] transition-colors">Google Ads {lang === 'de' ? 'Leitfaden' : lang === 'en' ? 'Guide' : 'Rehberi'}</h3>
+                  <p className="text-sm text-muted-foreground">{lang === 'de' ? 'Alles über Google Ads Kampagnen' : lang === 'en' ? 'Everything about Google Ads campaigns' : 'Google Ads kampanyaları hakkında her şey'}</p>
+                </CardContent>
+              </Card>
+            </a>
+            <a href="/blog" className="block group">
+              <Card className="hover:shadow-xl transition-all duration-500 hover:-translate-y-2 overflow-hidden">
+                <div className="h-44 relative overflow-hidden">
+                  <img src="https://images.unsplash.com/photo-1432888622747-4eb9a8efeb07?w=500&h=250&fit=crop&q=80" alt="Meta Ads" className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" />
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent" />
+                  <div className="absolute bottom-3 right-3">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/7/7b/Meta_Platforms_Inc._logo.svg" alt="Meta" className="h-4 w-auto drop-shadow-lg brightness-0 invert" />
+                  </div>
+                </div>
+                <CardContent className="pt-5 pb-6">
+                  <h3 className="text-lg font-bold mb-2 group-hover:text-[#1877F2] transition-colors">Meta Ads {lang === 'de' ? 'Erfolg' : lang === 'en' ? 'Success' : 'Başarısı'}</h3>
+                  <p className="text-sm text-muted-foreground">{lang === 'de' ? 'Facebook & Instagram Strategien' : lang === 'en' ? 'Facebook & Instagram strategies' : 'Facebook & Instagram stratejileri'}</p>
+                </CardContent>
+              </Card>
+            </a>
+            <a href="/blog" className="block group">
+              <Card className="hover:shadow-xl transition-all duration-500 hover:-translate-y-2 overflow-hidden">
+                <div className="h-44 relative overflow-hidden">
+                  <img src="https://images.unsplash.com/photo-1504868584819-f8e8b4b6d7e3?w=500&h=250&fit=crop&q=80" alt="SEO" className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" />
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent" />
+                  <div className="absolute bottom-3 right-3">
+                    <svg className="h-7 w-7 drop-shadow-lg" viewBox="0 0 24 24" fill="none" stroke="white" strokeWidth="2"><circle cx="11" cy="11" r="8"/><path d="M21 21l-4.35-4.35"/></svg>
+                  </div>
+                </div>
+                <CardContent className="pt-5 pb-6">
+                  <h3 className="text-lg font-bold mb-2 group-hover:text-[#34A853] transition-colors">SEO {lang === 'de' ? 'Tipps' : lang === 'en' ? 'Tips' : 'İpuçları'} 2026</h3>
+                  <p className="text-sm text-muted-foreground">{lang === 'de' ? 'Top Rankings bei Google' : lang === 'en' ? 'Top rankings on Google' : 'Google\'da üst sıralarda'}</p>
+                </CardContent>
+              </Card>
+            </a>
           </div>
           <div className="text-center mt-8">
             <Button size="lg" variant="outline" asChild>
