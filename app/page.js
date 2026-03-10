@@ -1094,20 +1094,28 @@ export default function Home() {
             <p className="text-lg text-muted-foreground max-w-3xl mx-auto">{t.success.description}</p>
           </div>
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
-            {t.success.metrics.map((metric, index) => (
-              <Card key={index} className="bg-white hover:shadow-xl transition-shadow">
-                <CardContent className="pt-6 text-center">
-                  <div className="mb-4">
-                    {index === 0 && <svg className="h-12 w-12 mx-auto text-[#34A853]" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z" /></svg>}
-                    {index === 1 && <Award className="h-12 w-12 mx-auto text-[#FBBC04]" />}
-                    {index === 2 && <svg className="h-12 w-12 mx-auto text-[#4285F4]" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" /><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z" /></svg>}
-                    {index === 3 && <svg className="h-12 w-12 mx-auto text-[#EA4335]" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 10V3L4 14h7v7l9-11h-7z" /></svg>}
-                  </div>
-                  <p className="text-xs text-muted-foreground mb-2">{metric.subtitle}</p>
-                  <h3 className="text-xl font-bold">{metric.title}</h3>
-                </CardContent>
-              </Card>
-            ))}
+            {t.success.metrics.map((metric, index) => {
+              const borderColors = [
+                'border-t-4 border-t-[#34A853] hover:shadow-[#34A853]/20',
+                'border-t-4 border-t-[#FBBC04] hover:shadow-[#FBBC04]/20',
+                'border-t-4 border-t-[#4285F4] hover:shadow-[#4285F4]/20',
+                'border-t-4 border-t-[#EA4335] hover:shadow-[#EA4335]/20'
+              ]
+              return (
+                <Card key={index} className={`bg-white hover:shadow-xl transition-all duration-300 hover:-translate-y-1 ${borderColors[index]}`}>
+                  <CardContent className="pt-6 text-center">
+                    <div className="mb-4">
+                      {index === 0 && <svg className="h-12 w-12 mx-auto text-[#34A853]" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z" /></svg>}
+                      {index === 1 && <Award className="h-12 w-12 mx-auto text-[#FBBC04]" />}
+                      {index === 2 && <svg className="h-12 w-12 mx-auto text-[#4285F4]" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" /><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z" /></svg>}
+                      {index === 3 && <svg className="h-12 w-12 mx-auto text-[#EA4335]" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 10V3L4 14h7v7l9-11h-7z" /></svg>}
+                    </div>
+                    <p className="text-xs text-muted-foreground mb-2">{metric.subtitle}</p>
+                    <h3 className="text-xl font-bold">{metric.title}</h3>
+                  </CardContent>
+                </Card>
+              )
+            })}
           </div>
         </div>
       </section>
@@ -1126,15 +1134,25 @@ export default function Home() {
             </Button>
           </div>
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 mt-12">
-            {t.corporate.features.map((feature, index) => (
-              <Card key={index} className="bg-white/10 backdrop-blur-sm border-white/20 text-white">
-                <CardContent className="pt-6">
-                  <CheckCircle className="h-8 w-8 mb-4" />
-                  <h3 className="text-lg font-semibold mb-2">{feature.title}</h3>
-                  <p className="text-sm opacity-90">{feature.description}</p>
-                </CardContent>
-              </Card>
-            ))}
+            {t.corporate.features.map((feature, index) => {
+              const borderColors = [
+                'border-l-4 border-l-[#34A853]',
+                'border-l-4 border-l-[#FBBC04]',
+                'border-l-4 border-l-[#4285F4]',
+                'border-l-4 border-l-white',
+                'border-l-4 border-l-[#EA4335]',
+                'border-l-4 border-l-[#00C6FF]'
+              ]
+              return (
+                <Card key={index} className={`bg-white/10 backdrop-blur-sm border-white/20 text-white hover:bg-white/20 transition-all duration-300 hover:-translate-y-1 ${borderColors[index]}`}>
+                  <CardContent className="pt-6">
+                    <CheckCircle className="h-8 w-8 mb-4" />
+                    <h3 className="text-lg font-semibold mb-2">{feature.title}</h3>
+                    <p className="text-sm opacity-90">{feature.description}</p>
+                  </CardContent>
+                </Card>
+              )
+            })}
           </div>
         </div>
       </section>
@@ -1186,20 +1204,21 @@ export default function Home() {
           </div>
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
             {t.about.features.map((feature, index) => {
-              // Her özellik için farklı ikon
-              const icons = [
-                <BarChart3 key={0} className="h-10 w-10 text-[#4285F4] mb-4" />, // Veri Odaklı
-                <svg key={1} className="h-10 w-10 text-[#EA4335] mb-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 002.573 1.066c1.543-.94 3.31.826 2.37 2.37a1.724 1.724 0 001.065 2.572c1.756.426 1.756 2.924 0 3.35a1.724 1.724 0 00-1.066 2.573c.94 1.543-.826 3.31-2.37 2.37a1.724 1.724 0 00-2.572 1.065c-.426 1.756-2.924 1.756-3.35 0a1.724 1.724 0 00-2.573-1.066c-1.543.94-3.31-.826-2.37-2.37a1.724 1.724 0 00-1.065-2.572c-1.756-.426-1.756-2.924 0-3.35a1.724 1.724 0 001.066-2.573c-.94-1.543.826-3.31 2.37-2.37.996.608 2.296.07 2.572-1.065z" /><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" /></svg>, // Teknik Mükemmellik
-                <Award key={2} className="h-10 w-10 text-[#FBBC04] mb-4" />, // Butik Hizmet
-                <TrendingUp key={3} className="h-10 w-10 text-[#34A853] mb-4" />, // Satış Odaklı
-                <svg key={4} className="h-10 w-10 text-[#4285F4] mb-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 17v-2m3 2v-4m3 4v-6m2 10H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" /></svg>, // Şeffaf Raporlama
-                <Phone key={5} className="h-10 w-10 text-[#34A853] mb-4" /> // 7/24 Destek
+              // Her özellik için farklı ikon ve renk
+              const iconConfigs = [
+                { icon: <BarChart3 key={0} className="h-10 w-10 text-[#4285F4] mb-4" />, border: 'border-l-4 border-l-[#4285F4]', shadow: 'hover:shadow-[#4285F4]/20' },
+                { icon: <svg key={1} className="h-10 w-10 text-[#EA4335] mb-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 002.573 1.066c1.543-.94 3.31.826 2.37 2.37a1.724 1.724 0 001.065 2.572c1.756.426 1.756 2.924 0 3.35a1.724 1.724 0 00-1.066 2.573c.94 1.543-.826 3.31-2.37 2.37a1.724 1.724 0 00-2.572 1.065c-.426 1.756-2.924 1.756-3.35 0a1.724 1.724 0 00-2.573-1.066c-1.543.94-3.31-.826-2.37-2.37a1.724 1.724 0 00-1.065-2.572c-1.756-.426-1.756-2.924 0-3.35a1.724 1.724 0 001.066-2.573c-.94-1.543.826-3.31 2.37-2.37.996.608 2.296.07 2.572-1.065z" /><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" /></svg>, border: 'border-l-4 border-l-[#EA4335]', shadow: 'hover:shadow-[#EA4335]/20' },
+                { icon: <Award key={2} className="h-10 w-10 text-[#FBBC04] mb-4" />, border: 'border-l-4 border-l-[#FBBC04]', shadow: 'hover:shadow-[#FBBC04]/20' },
+                { icon: <TrendingUp key={3} className="h-10 w-10 text-[#34A853] mb-4" />, border: 'border-l-4 border-l-[#34A853]', shadow: 'hover:shadow-[#34A853]/20' },
+                { icon: <svg key={4} className="h-10 w-10 text-[#4285F4] mb-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 17v-2m3 2v-4m3 4v-6m2 10H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" /></svg>, border: 'border-l-4 border-l-[#4285F4]', shadow: 'hover:shadow-[#4285F4]/20' },
+                { icon: <Phone key={5} className="h-10 w-10 text-[#34A853] mb-4" />, border: 'border-l-4 border-l-[#34A853]', shadow: 'hover:shadow-[#34A853]/20' }
               ]
+              const config = iconConfigs[index] || { icon: <CheckCircle className="h-10 w-10 text-[#34A853] mb-4" />, border: 'border-l-4 border-l-[#34A853]', shadow: 'hover:shadow-[#34A853]/20' }
               
               return (
-                <Card key={index} className="hover:shadow-lg transition-shadow">
+                <Card key={index} className={`hover:shadow-xl transition-all duration-300 hover:-translate-y-1 ${config.border} ${config.shadow}`}>
                   <CardContent className="pt-6">
-                    {icons[index] || <CheckCircle className="h-10 w-10 text-[#34A853] mb-4" />}
+                    {config.icon}
                     <h3 className="text-xl font-semibold mb-3">{feature.title}</h3>
                     <p className="text-muted-foreground">{feature.description}</p>
                   </CardContent>
