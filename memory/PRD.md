@@ -25,6 +25,7 @@ Salih Maral için modern, üç dilli (Türkçe, Almanca, İngilizce) kişisel po
 - [x] Ana sayfa hizmet kartları: Renkli gradient, border, animasyonlar
 - [x] Ana sayfa "Sıradan Bir Hizmet Değil" ve "Verilerle Büyüyün" bölümleri: Renkli kenarlıklar
 - [x] Hizmet detay sayfaları kutucukları: Renkli kenarlıklar, gradient çubuklar, hover animasyonları (2026-03-10)
+- [x] Blog kartları: Yapay emoji yerine gerçek stok fotoğraflar ve platform logoları (2026-03-11)
 - [x] WhatsApp linkleri dil bazlı dinamik mesajlarla
 - [x] Kişisel bilgiler (telefon/email) genel sayfalardan kaldırıldı (Impressum/Datenschutz hariç)
 - [x] Vercel deployment konfigürasyonu (vercel.json, next.config.js)
