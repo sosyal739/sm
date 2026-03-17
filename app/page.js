@@ -586,6 +586,111 @@ export default function Home({ initialLang = 'de' }) {
         <meta httpEquiv="content-language" content={lang} />
         <meta name="description" content={t.hero.description} />
         <title>{lang === 'de' ? 'Salih Maral - Digital Marketing Experte | Google Ads, Meta Ads & SEO' : lang === 'tr' ? 'Salih Maral - Dijital Pazarlama Uzmanı | Google Ads, Meta Ads & SEO' : 'Salih Maral - Digital Marketing Expert | Google Ads, Meta Ads & SEO'}</title>
+        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({
+          '@context': 'https://schema.org',
+          '@graph': [
+            {
+              '@type': 'WebPage',
+              '@id': `https://salihmaral.de${lang === 'de' ? '/' : `/${lang}`}#webpage`,
+              url: `https://salihmaral.de${lang === 'de' ? '/' : `/${lang}`}`,
+              name: lang === 'de' ? 'Salih Maral - Digital Marketing Experte' : lang === 'tr' ? 'Salih Maral - Dijital Pazarlama Uzmanı' : 'Salih Maral - Digital Marketing Expert',
+              isPartOf: { '@id': 'https://salihmaral.de/#website' },
+              about: { '@id': 'https://salihmaral.de/#organization' },
+              description: t.hero.description,
+              inLanguage: lang === 'de' ? 'de-DE' : lang === 'tr' ? 'tr-TR' : 'en-US'
+            },
+            {
+              '@type': 'SiteNavigationElement',
+              '@id': `https://salihmaral.de${lang === 'de' ? '/' : `/${lang}`}#navigation`,
+              name: lang === 'de' ? 'Hauptnavigation' : lang === 'tr' ? 'Ana Navigasyon' : 'Main Navigation',
+              hasPart: [
+                {
+                  '@type': 'SiteNavigationElement',
+                  name: lang === 'de' ? 'Google Ads Management' : lang === 'tr' ? 'Google Ads Yönetimi' : 'Google Ads Management',
+                  description: lang === 'de' ? 'Maximaler ROI in Such-, Display-, Shopping- und YouTube-Kampagnen' : lang === 'tr' ? 'Arama, Display, Shopping ve YouTube kampanyalarında maksimum ROI' : 'Maximum ROI in Search, Display, Shopping and YouTube campaigns',
+                  url: `https://salihmaral.de/${lang === 'de' ? 'de' : lang}/hizmetler/google-ads`
+                },
+                {
+                  '@type': 'SiteNavigationElement',
+                  name: 'Meta Ads (Facebook & Instagram)',
+                  description: lang === 'de' ? 'Erreichen Sie Ihre Zielgruppe auf Facebook und Instagram' : lang === 'tr' ? 'Facebook ve Instagram\'da hedef kitlenize ulaşın' : 'Reach your target audience on Facebook and Instagram',
+                  url: `https://salihmaral.de/${lang === 'de' ? 'de' : lang}/hizmetler/meta-ads`
+                },
+                {
+                  '@type': 'SiteNavigationElement',
+                  name: 'TikTok Ads',
+                  description: lang === 'de' ? 'Erreichen Sie ein junges, dynamisches Publikum' : lang === 'tr' ? 'Genç ve dinamik kitlelere ulaşın' : 'Reach a young, dynamic audience',
+                  url: `https://salihmaral.de/${lang === 'de' ? 'de' : lang}/hizmetler/tiktok-ads`
+                },
+                {
+                  '@type': 'SiteNavigationElement',
+                  name: 'X (Twitter) Ads',
+                  description: lang === 'de' ? 'Heben Sie sich bei Trendthemen hervor' : lang === 'tr' ? 'Trend konularda öne çıkın' : 'Stand out in trending topics',
+                  url: `https://salihmaral.de/${lang === 'de' ? 'de' : lang}/hizmetler/x-ads`
+                },
+                {
+                  '@type': 'SiteNavigationElement',
+                  name: lang === 'de' ? 'SEO Dienstleistungen' : lang === 'tr' ? 'SEO Hizmetleri' : 'SEO Services',
+                  description: lang === 'de' ? 'Erreichen Sie Top-Rankings bei Google' : lang === 'tr' ? 'Google\'da üst sıralara çıkın' : 'Achieve top rankings on Google',
+                  url: `https://salihmaral.de/${lang === 'de' ? 'de' : lang}/hizmetler/seo`
+                },
+                {
+                  '@type': 'SiteNavigationElement',
+                  name: lang === 'de' ? 'Bewertungsmanagement' : lang === 'tr' ? 'Yorum Yönetimi' : 'Review Management',
+                  description: lang === 'de' ? 'Professionelles Google Bewertungsmanagement' : lang === 'tr' ? 'Profesyonel Google yorum yönetimi' : 'Professional Google review management',
+                  url: `https://salihmaral.de/${lang === 'de' ? 'de' : lang}/hizmetler/yorum-yonetimi`
+                },
+                {
+                  '@type': 'SiteNavigationElement',
+                  name: 'Blog',
+                  description: lang === 'de' ? 'Neueste Artikel über digitales Marketing' : lang === 'tr' ? 'Dijital pazarlama hakkında güncel makaleler' : 'Latest articles about digital marketing',
+                  url: 'https://salihmaral.de/blog'
+                },
+                {
+                  '@type': 'SiteNavigationElement',
+                  name: lang === 'de' ? 'Kontakt' : lang === 'tr' ? 'İletişim' : 'Contact',
+                  description: lang === 'de' ? 'Kostenlose Beratung anfordern' : lang === 'tr' ? 'Ücretsiz danışmanlık talep edin' : 'Request a free consultation',
+                  url: `https://salihmaral.de${lang === 'de' ? '/' : `/${lang}`}#contact`
+                }
+              ]
+            },
+            {
+              '@type': 'ItemList',
+              '@id': `https://salihmaral.de${lang === 'de' ? '/' : `/${lang}`}#services-list`,
+              name: lang === 'de' ? 'Digital Marketing Dienstleistungen' : lang === 'tr' ? 'Dijital Pazarlama Hizmetleri' : 'Digital Marketing Services',
+              numberOfItems: 6,
+              itemListElement: [
+                { '@type': 'ListItem', position: 1, name: lang === 'de' ? 'Google Ads Management' : lang === 'tr' ? 'Google Ads Yönetimi' : 'Google Ads Management', url: `https://salihmaral.de/${lang === 'de' ? 'de' : lang}/hizmetler/google-ads` },
+                { '@type': 'ListItem', position: 2, name: 'Meta Ads (Facebook & Instagram)', url: `https://salihmaral.de/${lang === 'de' ? 'de' : lang}/hizmetler/meta-ads` },
+                { '@type': 'ListItem', position: 3, name: 'TikTok Ads', url: `https://salihmaral.de/${lang === 'de' ? 'de' : lang}/hizmetler/tiktok-ads` },
+                { '@type': 'ListItem', position: 4, name: 'X (Twitter) Ads', url: `https://salihmaral.de/${lang === 'de' ? 'de' : lang}/hizmetler/x-ads` },
+                { '@type': 'ListItem', position: 5, name: lang === 'de' ? 'SEO Dienstleistungen' : lang === 'tr' ? 'SEO Hizmetleri' : 'SEO Services', url: `https://salihmaral.de/${lang === 'de' ? 'de' : lang}/hizmetler/seo` },
+                { '@type': 'ListItem', position: 6, name: lang === 'de' ? 'Bewertungsmanagement' : lang === 'tr' ? 'Yorum Yönetimi' : 'Review Management', url: `https://salihmaral.de/${lang === 'de' ? 'de' : lang}/hizmetler/yorum-yonetimi` }
+              ]
+            },
+            {
+              '@type': 'ProfessionalService',
+              name: 'Salih Maral Digital Marketing',
+              description: lang === 'de' ? 'Professionelle Digital Marketing Dienstleistungen' : lang === 'tr' ? 'Profesyonel Dijital Pazarlama Hizmetleri' : 'Professional Digital Marketing Services',
+              url: `https://salihmaral.de${lang === 'de' ? '/' : `/${lang}`}`,
+              priceRange: '€€',
+              image: 'https://salihmaral.de/logo.png',
+              areaServed: { '@type': 'Country', name: lang === 'de' ? 'Deutschland' : lang === 'tr' ? 'Almanya' : 'Germany' },
+              hasOfferCatalog: {
+                '@type': 'OfferCatalog',
+                name: lang === 'de' ? 'Digital Marketing Services' : lang === 'tr' ? 'Dijital Pazarlama Hizmetleri' : 'Digital Marketing Services',
+                itemListElement: [
+                  { '@type': 'Offer', itemOffered: { '@type': 'Service', name: 'Google Ads', url: `https://salihmaral.de/${lang === 'de' ? 'de' : lang}/hizmetler/google-ads` } },
+                  { '@type': 'Offer', itemOffered: { '@type': 'Service', name: 'Meta Ads', url: `https://salihmaral.de/${lang === 'de' ? 'de' : lang}/hizmetler/meta-ads` } },
+                  { '@type': 'Offer', itemOffered: { '@type': 'Service', name: 'TikTok Ads', url: `https://salihmaral.de/${lang === 'de' ? 'de' : lang}/hizmetler/tiktok-ads` } },
+                  { '@type': 'Offer', itemOffered: { '@type': 'Service', name: 'X Ads', url: `https://salihmaral.de/${lang === 'de' ? 'de' : lang}/hizmetler/x-ads` } },
+                  { '@type': 'Offer', itemOffered: { '@type': 'Service', name: 'SEO', url: `https://salihmaral.de/${lang === 'de' ? 'de' : lang}/hizmetler/seo` } },
+                  { '@type': 'Offer', itemOffered: { '@type': 'Service', name: lang === 'de' ? 'Bewertungsmanagement' : lang === 'tr' ? 'Yorum Yönetimi' : 'Review Management', url: `https://salihmaral.de/${lang === 'de' ? 'de' : lang}/hizmetler/yorum-yonetimi` } }
+                ]
+              }
+            }
+          ]
+        }) }} />
       </head>
       {/* Navigation */}
       <nav className="fixed top-0 left-0 right-0 z-50 bg-white/95 backdrop-blur-sm border-b">

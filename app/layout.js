@@ -91,11 +91,10 @@ export const metadata = {
   category: 'Digital Marketing',
 }
 
-// JSON-LD Structured Data - Optimized for Google Sitelinks
+// JSON-LD Structured Data - Language-neutral only (language-specific in page components)
 const jsonLd = {
   '@context': 'https://schema.org',
   '@graph': [
-    // Organization
     {
       '@type': 'Organization',
       '@id': 'https://salihmaral.de/#organization',
@@ -110,322 +109,25 @@ const jsonLd = {
         caption: 'Salih Maral Digital Marketing'
       },
       image: { '@id': 'https://salihmaral.de/#logo' },
-      sameAs: [
-        'https://wa.me/491724106463'
-      ]
+      sameAs: ['https://wa.me/491724106463']
     },
-    // WebSite with SearchAction for Sitelinks Search Box
     {
       '@type': 'WebSite',
       '@id': 'https://salihmaral.de/#website',
       url: 'https://salihmaral.de',
       name: 'Salih Maral Digital Marketing',
-      description: 'Professionelle Digital Marketing Dienstleistungen - Google Ads, Meta Ads, TikTok Ads, X Ads, SEO',
       publisher: { '@id': 'https://salihmaral.de/#organization' },
-      inLanguage: ['de-DE', 'en-US', 'tr-TR'],
-      potentialAction: {
-        '@type': 'SearchAction',
-        target: {
-          '@type': 'EntryPoint',
-          urlTemplate: 'https://salihmaral.de/?s={search_term_string}'
-        },
-        'query-input': 'required name=search_term_string'
-      }
+      inLanguage: ['de-DE', 'en-US', 'tr-TR']
     },
-    // WebPage - Main page
-    {
-      '@type': 'WebPage',
-      '@id': 'https://salihmaral.de/#webpage',
-      url: 'https://salihmaral.de',
-      name: 'Salih Maral - Digital Marketing Experte',
-      isPartOf: { '@id': 'https://salihmaral.de/#website' },
-      about: { '@id': 'https://salihmaral.de/#organization' },
-      description: 'Professioneller Digital Marketing Experte - Google Ads, Meta Ads, TikTok Ads, X Ads, SEO und Bewertungsmanagement',
-      inLanguage: 'de-DE'
-    },
-    // SiteNavigationElement - For Sitelinks (German)
-    {
-      '@type': 'SiteNavigationElement',
-      '@id': 'https://salihmaral.de/#navigation',
-      name: 'Hauptnavigation',
-      hasPart: [
-        {
-          '@type': 'SiteNavigationElement',
-          name: 'Dienstleistungen',
-          description: 'Unsere Digital Marketing Dienstleistungen',
-          url: 'https://salihmaral.de/#services'
-        },
-        {
-          '@type': 'SiteNavigationElement',
-          name: 'Google Ads Management',
-          description: 'Maximaler ROI in Such-, Display-, Shopping- und YouTube-Kampagnen',
-          url: 'https://salihmaral.de/de/hizmetler/google-ads'
-        },
-        {
-          '@type': 'SiteNavigationElement',
-          name: 'Meta Ads (Facebook & Instagram)',
-          description: 'Erreichen Sie Ihre Zielgruppe auf Facebook und Instagram',
-          url: 'https://salihmaral.de/de/hizmetler/meta-ads'
-        },
-        {
-          '@type': 'SiteNavigationElement',
-          name: 'TikTok Ads',
-          description: 'Erreichen Sie ein junges, dynamisches Publikum',
-          url: 'https://salihmaral.de/de/hizmetler/tiktok-ads'
-        },
-        {
-          '@type': 'SiteNavigationElement',
-          name: 'X (Twitter) Ads',
-          description: 'Heben Sie sich bei Trendthemen hervor',
-          url: 'https://salihmaral.de/de/hizmetler/x-ads'
-        },
-        {
-          '@type': 'SiteNavigationElement',
-          name: 'SEO Dienstleistungen',
-          description: 'Erreichen Sie Top-Rankings bei Google',
-          url: 'https://salihmaral.de/de/hizmetler/seo'
-        },
-        {
-          '@type': 'SiteNavigationElement',
-          name: 'Negative Bewertungen Löschen',
-          description: 'Entfernen Sie ungerechte Bewertungen bei Google Maps',
-          url: 'https://salihmaral.de/de/hizmetler/yorum-yonetimi'
-        },
-        {
-          '@type': 'SiteNavigationElement',
-          name: 'Blog',
-          description: 'Neueste Artikel über digitales Marketing',
-          url: 'https://salihmaral.de/blog'
-        },
-        {
-          '@type': 'SiteNavigationElement',
-          name: 'Kontakt',
-          description: 'Kontaktieren Sie uns für eine kostenlose Beratung',
-          url: 'https://salihmaral.de/#contact'
-        }
-      ]
-    },
-    // ItemList - Services List for Rich Results
-    {
-      '@type': 'ItemList',
-      '@id': 'https://salihmaral.de/#services-list',
-      name: 'Digital Marketing Dienstleistungen',
-      description: 'Unsere professionellen Digital Marketing Services',
-      numberOfItems: 6,
-      itemListElement: [
-        {
-          '@type': 'ListItem',
-          position: 1,
-          name: 'Google Ads Management',
-          description: 'Maximaler ROI in Such-, Display-, Shopping- und YouTube-Kampagnen. Professionelles Google Ads Management.',
-          url: 'https://salihmaral.de/de/hizmetler/google-ads',
-          item: {
-            '@type': 'Service',
-            name: 'Google Ads Management',
-            description: 'Maximaler ROI in Such-, Display-, Shopping- und YouTube-Kampagnen',
-            provider: { '@id': 'https://salihmaral.de/#organization' },
-            serviceType: 'Google Ads Management',
-            areaServed: 'DE'
-          }
-        },
-        {
-          '@type': 'ListItem',
-          position: 2,
-          name: 'Meta Ads (Facebook & Instagram)',
-          description: 'Erreichen Sie Ihre Zielgruppe auf Facebook und Instagram mit gezielten Werbekampagnen.',
-          url: 'https://salihmaral.de/de/hizmetler/meta-ads',
-          item: {
-            '@type': 'Service',
-            name: 'Meta Ads Management',
-            description: 'Facebook und Instagram Werbekampagnen',
-            provider: { '@id': 'https://salihmaral.de/#organization' },
-            serviceType: 'Social Media Advertising',
-            areaServed: 'DE'
-          }
-        },
-        {
-          '@type': 'ListItem',
-          position: 3,
-          name: 'TikTok Ads',
-          description: 'Erreichen Sie ein junges, dynamisches Publikum. Starten Sie erfolgreiche TikTok Kampagnen.',
-          url: 'https://salihmaral.de/de/hizmetler/tiktok-ads',
-          item: {
-            '@type': 'Service',
-            name: 'TikTok Ads Management',
-            description: 'TikTok Werbekampagnen für junge Zielgruppen',
-            provider: { '@id': 'https://salihmaral.de/#organization' },
-            serviceType: 'TikTok Advertising',
-            areaServed: 'DE'
-          }
-        },
-        {
-          '@type': 'ListItem',
-          position: 4,
-          name: 'X (Twitter) Ads',
-          description: 'Heben Sie sich bei Trendthemen hervor. Professionelle X/Twitter Werbekampagnen.',
-          url: 'https://salihmaral.de/de/hizmetler/x-ads',
-          item: {
-            '@type': 'Service',
-            name: 'X Ads Management',
-            description: 'Twitter/X Werbekampagnen',
-            provider: { '@id': 'https://salihmaral.de/#organization' },
-            serviceType: 'Twitter Advertising',
-            areaServed: 'DE'
-          }
-        },
-        {
-          '@type': 'ListItem',
-          position: 5,
-          name: 'SEO Dienstleistungen',
-          description: 'Erreichen Sie Top-Rankings bei Google. On-Page, Off-Page und technische SEO.',
-          url: 'https://salihmaral.de/de/hizmetler/seo',
-          item: {
-            '@type': 'Service',
-            name: 'SEO Services',
-            description: 'Suchmaschinenoptimierung für bessere Rankings',
-            provider: { '@id': 'https://salihmaral.de/#organization' },
-            serviceType: 'Search Engine Optimization',
-            areaServed: 'DE'
-          }
-        },
-        {
-          '@type': 'ListItem',
-          position: 6,
-          name: 'Negative Bewertungen Löschen',
-          description: 'Entfernen Sie ungerechte Bewertungen bei Google Maps und Trustpilot.',
-          url: 'https://salihmaral.de/de/hizmetler/yorum-yonetimi',
-          item: {
-            '@type': 'Service',
-            name: 'Review Management',
-            description: 'Professionelles Bewertungsmanagement',
-            provider: { '@id': 'https://salihmaral.de/#organization' },
-            serviceType: 'Reputation Management',
-            areaServed: 'DE'
-          }
-        }
-      ]
-    },
-    // BreadcrumbList for better navigation understanding
-    {
-      '@type': 'BreadcrumbList',
-      '@id': 'https://salihmaral.de/#breadcrumb',
-      itemListElement: [
-        {
-          '@type': 'ListItem',
-          position: 1,
-          name: 'Home',
-          item: 'https://salihmaral.de'
-        },
-        {
-          '@type': 'ListItem',
-          position: 2,
-          name: 'Dienstleistungen',
-          item: 'https://salihmaral.de/#services'
-        }
-      ]
-    },
-    // Person
     {
       '@type': 'Person',
       '@id': 'https://salihmaral.de/#person',
       name: 'Salih Maral',
       jobTitle: 'Digital Marketing Expert',
-      description: 'Erfahrener Digital Marketing Experte spezialisiert auf Google Ads, Meta Ads und SEO mit über 15 Jahren Branchenerfahrung.',
       url: 'https://salihmaral.de',
       image: 'https://salihmaral.de/logo.png',
       worksFor: { '@id': 'https://salihmaral.de/#organization' },
-      knowsAbout: [
-        'Google Ads',
-        'Meta Ads',
-        'Facebook Advertising',
-        'Instagram Advertising',
-        'TikTok Ads',
-        'SEO',
-        'Search Engine Optimization',
-        'PPC Management',
-        'Digital Marketing Strategy',
-        'Conversion Optimization'
-      ]
-    },
-    // ProfessionalService
-    {
-      '@type': 'ProfessionalService',
-      '@id': 'https://salihmaral.de/#professionalservice',
-      name: 'Salih Maral Digital Marketing',
-      description: 'Professionelle Digital Marketing Dienstleistungen: Google Ads, Meta Ads, TikTok Ads, X Ads, SEO und Bewertungsmanagement',
-      url: 'https://salihmaral.de',
-      priceRange: '€€',
-      image: 'https://salihmaral.de/logo.png',
-      areaServed: {
-        '@type': 'Country',
-        name: 'Germany'
-      },
-      hasOfferCatalog: {
-        '@type': 'OfferCatalog',
-        name: 'Digital Marketing Services',
-        itemListElement: [
-          {
-            '@type': 'OfferCatalog',
-            name: 'Advertising Services',
-            itemListElement: [
-              {
-                '@type': 'Offer',
-                itemOffered: {
-                  '@type': 'Service',
-                  name: 'Google Ads Management',
-                  url: 'https://salihmaral.de/de/hizmetler/google-ads'
-                }
-              },
-              {
-                '@type': 'Offer',
-                itemOffered: {
-                  '@type': 'Service',
-                  name: 'Meta Ads Management',
-                  url: 'https://salihmaral.de/de/hizmetler/meta-ads'
-                }
-              },
-              {
-                '@type': 'Offer',
-                itemOffered: {
-                  '@type': 'Service',
-                  name: 'TikTok Ads',
-                  url: 'https://salihmaral.de/de/hizmetler/tiktok-ads'
-                }
-              },
-              {
-                '@type': 'Offer',
-                itemOffered: {
-                  '@type': 'Service',
-                  name: 'X Ads',
-                  url: 'https://salihmaral.de/de/hizmetler/x-ads'
-                }
-              }
-            ]
-          },
-          {
-            '@type': 'OfferCatalog',
-            name: 'SEO & Reputation',
-            itemListElement: [
-              {
-                '@type': 'Offer',
-                itemOffered: {
-                  '@type': 'Service',
-                  name: 'SEO Services',
-                  url: 'https://salihmaral.de/de/hizmetler/seo'
-                }
-              },
-              {
-                '@type': 'Offer',
-                itemOffered: {
-                  '@type': 'Service',
-                  name: 'Review Management',
-                  url: 'https://salihmaral.de/de/hizmetler/yorum-yonetimi'
-                }
-              }
-            ]
-          }
-        ]
-      }
+      knowsAbout: ['Google Ads', 'Meta Ads', 'TikTok Ads', 'SEO', 'PPC Management', 'Digital Marketing Strategy']
     }
   ]
 }
