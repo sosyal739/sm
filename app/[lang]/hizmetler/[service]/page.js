@@ -655,6 +655,16 @@ export default function ServiceDetailPage() {
 
   return (
     <div className="min-h-screen bg-white">
+      {/* SEO: Canonical + Hreflang for multi-language */}
+      <head>
+        <link rel="canonical" href={`https://salihmaral.de/${lang}/hizmetler/${service}`} />
+        <link rel="alternate" hrefLang="de" href={`https://salihmaral.de/de/hizmetler/${service}`} />
+        <link rel="alternate" hrefLang="en" href={`https://salihmaral.de/en/hizmetler/${service}`} />
+        <link rel="alternate" hrefLang="tr" href={`https://salihmaral.de/tr/hizmetler/${service}`} />
+        <link rel="alternate" hrefLang="x-default" href={`https://salihmaral.de/de/hizmetler/${service}`} />
+        <title>{data.title} | Salih Maral Digital Marketing</title>
+        <meta name="description" content={data.description} />
+      </head>
       {/* Navigation - Same as Homepage */}
       <nav className="fixed top-0 left-0 right-0 z-50 bg-white/95 backdrop-blur-sm border-b">
         <div className="container mx-auto px-4 py-4">

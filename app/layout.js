@@ -41,11 +41,9 @@ export const metadata = {
     telephone: false,
   },
   alternates: {
-    canonical: 'https://salihmaral.de',
     languages: {
       'de-DE': 'https://salihmaral.de',
-      'en-US': 'https://salihmaral.de/en',
-      'tr-TR': 'https://salihmaral.de/tr',
+      'x-default': 'https://salihmaral.de',
     },
   },
   openGraph: {

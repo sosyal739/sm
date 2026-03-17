@@ -259,6 +259,12 @@ export default function BlogPage() {
 
   return (
     <div className="min-h-screen bg-gradient-to-b from-gray-50 to-white">
+      {/* SEO */}
+      <head>
+        <link rel="canonical" href="https://salihmaral.de/blog" />
+        <title>Blog | Salih Maral Digital Marketing</title>
+        <meta name="description" content="Dijital pazarlama, Google Ads, Meta Ads, SEO ve daha fazlası hakkında güncel blog yazıları." />
+      </head>
       {/* Navigation */}
       <nav className="fixed top-0 left-0 right-0 z-50 bg-white/95 backdrop-blur-sm border-b">
         <div className="container mx-auto px-4 py-4">
