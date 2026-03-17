@@ -1,7 +1,6 @@
 'use client'
 
 import { useParams, useRouter } from 'next/navigation'
-import { useState, useEffect } from 'react'
 import { Button } from '@/components/ui/button'
 import { Card, CardContent } from '@/components/ui/card'
 import { CheckCircle, ArrowLeft, ArrowUpRight, TrendingUp, Search, Image, ShoppingCart, Play, Zap, MapPin, Users, Heart, Video, MessageSquare, Share2, Target, BarChart3, Globe, Link, FileText, Shield, Star, ThumbsDown, AlertTriangle, Eye, Award } from 'lucide-react'
@@ -45,26 +44,12 @@ export default function ServiceDetailPage() {
   const router = useRouter()
   const params = useParams()
   const { service, lang: urlLang } = params
-  const [lang, setLang] = useState('de')
+  const lang = urlLang && ['de', 'en', 'tr'].includes(urlLang) ? urlLang : 'de'
 
-  // Load language from URL first, then localStorage
-  useEffect(() => {
-    // Priority: URL param > localStorage > default 'de'
-    if (urlLang && ['de', 'en', 'tr'].includes(urlLang)) {
-      setLang(urlLang)
-      localStorage.setItem('preferredLanguage', urlLang)
-    } else {
-      const savedLang = localStorage.getItem('preferredLanguage')
-      if (savedLang && ['de', 'en', 'tr'].includes(savedLang)) {
-        setLang(savedLang)
-      }
-    }
-  }, [urlLang])
-
-  // Save language to localStorage when changed
+  // Language change navigates to correct URL
   const handleLanguageChange = (newLang) => {
-    setLang(newLang)
     localStorage.setItem('preferredLanguage', newLang)
+    window.location.href = `/${newLang}/hizmetler/${service}`
   }
 
   const navT = navTranslations[lang]

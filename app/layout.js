@@ -6,8 +6,8 @@ const inter = Inter({ subsets: ['latin'] })
 export const metadata = {
   metadataBase: new URL('https://salihmaral.de'),
   title: {
-    default: 'Salih Maral - Digital Marketing Experte | Google Ads, Meta Ads & SEO',
-    template: '%s | Salih Maral Digital Marketing'
+    template: '%s',
+    default: '',
   },
   description: 'Professioneller Digital Marketing Experte mit 15+ Jahren Erfahrung. Spezialisiert auf Google Ads, Meta Ads (Facebook & Instagram), TikTok Ads, X Ads und SEO. Maximieren Sie Ihren ROI mit datengesteuerten Strategien.',
   keywords: [
@@ -40,12 +40,7 @@ export const metadata = {
     address: false,
     telephone: false,
   },
-  alternates: {
-    languages: {
-      'de-DE': 'https://salihmaral.de',
-      'x-default': 'https://salihmaral.de',
-    },
-  },
+  alternates: {},
   openGraph: {
     title: 'Salih Maral - Digital Marketing Experte',
     description: 'Google Ads, Meta Ads & SEO Experte mit 15+ Jahren Erfahrung. Steigern Sie Ihren ROI mit professionellem Digital Marketing.',

@@ -522,25 +522,26 @@ const translations = {
   }
 }
 
-export default function Home() {
-  const [lang, setLang] = useState('de')
+export default function Home({ initialLang = 'de' }) {
+  const [lang, setLang] = useState(initialLang)
   const [formData, setFormData] = useState({ name: '', email: '', phone: '', message: '' })
   const [formStatus, setFormStatus] = useState({ type: '', message: '' })
   const [isSubmitting, setIsSubmitting] = useState(false)
 
-  // Load language from localStorage on mount
-  useEffect(() => {
-    const savedLang = localStorage.getItem('preferredLanguage')
-    if (savedLang && ['de', 'en', 'tr'].includes(savedLang)) {
-      setLang(savedLang)
-    }
-  }, [])
-
-  // Save language to localStorage when changed
+  // Language change navigates to the correct URL
   const handleLanguageChange = (newLang) => {
-    setLang(newLang)
     localStorage.setItem('preferredLanguage', newLang)
+    if (newLang === 'de') {
+      window.location.href = '/'
+    } else {
+      window.location.href = `/${newLang}`
+    }
   }
+
+  // Update html lang attribute for SEO
+  useEffect(() => {
+    document.documentElement.lang = lang
+  }, [lang])
 
   const t = translations[lang]
 
@@ -577,7 +578,14 @@ export default function Home() {
     <div className="min-h-screen bg-background">
       {/* SEO */}
       <head>
-        <link rel="canonical" href="https://salihmaral.de/" />
+        <link rel="canonical" href={lang === 'de' ? 'https://salihmaral.de/' : `https://salihmaral.de/${lang}`} />
+        <link rel="alternate" hrefLang="de" href="https://salihmaral.de/" />
+        <link rel="alternate" hrefLang="tr" href="https://salihmaral.de/tr" />
+        <link rel="alternate" hrefLang="en" href="https://salihmaral.de/en" />
+        <link rel="alternate" hrefLang="x-default" href="https://salihmaral.de/" />
+        <meta httpEquiv="content-language" content={lang} />
+        <meta name="description" content={t.hero.description} />
+        <title>{lang === 'de' ? 'Salih Maral - Digital Marketing Experte | Google Ads, Meta Ads & SEO' : lang === 'tr' ? 'Salih Maral - Dijital Pazarlama Uzmanı | Google Ads, Meta Ads & SEO' : 'Salih Maral - Digital Marketing Expert | Google Ads, Meta Ads & SEO'}</title>
       </head>
       {/* Navigation */}
       <nav className="fixed top-0 left-0 right-0 z-50 bg-white/95 backdrop-blur-sm border-b">

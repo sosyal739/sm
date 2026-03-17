@@ -3,10 +3,12 @@
         xmlns:xhtml="http://www.w3.org/1999/xhtml"
         xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
   
-  <!-- Homepage -->
+  <!-- Homepage - German (Default) -->
   <url>
     <loc>https://salihmaral.de/</loc>
     <xhtml:link rel="alternate" hreflang="de" href="https://salihmaral.de/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://salihmaral.de/tr"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://salihmaral.de/en"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://salihmaral.de/"/>
     <lastmod>2026-03-17</lastmod>
     <changefreq>weekly</changefreq>
@@ -15,6 +17,30 @@
       <image:loc>https://salihmaral.de/logo.png</image:loc>
       <image:title>Salih Maral Digital Marketing</image:title>
     </image:image>
+  </url>
+
+  <!-- Homepage - Turkish -->
+  <url>
+    <loc>https://salihmaral.de/tr</loc>
+    <xhtml:link rel="alternate" hreflang="de" href="https://salihmaral.de/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://salihmaral.de/tr"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://salihmaral.de/en"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://salihmaral.de/"/>
+    <lastmod>2026-03-17</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+  <!-- Homepage - English -->
+  <url>
+    <loc>https://salihmaral.de/en</loc>
+    <xhtml:link rel="alternate" hreflang="de" href="https://salihmaral.de/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://salihmaral.de/tr"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://salihmaral.de/en"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://salihmaral.de/"/>
+    <lastmod>2026-03-17</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
   </url>
   
   <!-- ==================== GOOGLE ADS - All Languages ==================== -->
