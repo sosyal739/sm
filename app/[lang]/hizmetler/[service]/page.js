@@ -46,10 +46,21 @@ export default function ServiceDetailPage() {
   const { service, lang: urlLang } = params
   const lang = urlLang && ['de', 'en', 'tr'].includes(urlLang) ? urlLang : 'de'
 
-  // Language change navigates to correct URL
+  // Helper: get localized URL path for a given language and service slug
+  const getLocalizedServiceUrl = (targetLang, serviceSlug) => {
+    const pathSegment = targetLang === 'de' ? 'dienstleistungen' : targetLang === 'en' ? 'services' : 'hizmetler'
+    // Map yorum-yonetimi to localized slug
+    let localizedSlug = serviceSlug
+    if (serviceSlug === 'yorum-yonetimi') {
+      localizedSlug = targetLang === 'de' ? 'bewertungsmanagement' : targetLang === 'en' ? 'review-management' : 'yorum-yonetimi'
+    }
+    return `/${targetLang}/${pathSegment}/${localizedSlug}`
+  }
+
+  // Language change navigates to correct localized URL
   const handleLanguageChange = (newLang) => {
     localStorage.setItem('preferredLanguage', newLang)
-    window.location.href = `/${newLang}/hizmetler/${service}`
+    window.location.href = getLocalizedServiceUrl(newLang, service)
   }
 
   const navT = navTranslations[lang]
@@ -642,11 +653,11 @@ export default function ServiceDetailPage() {
     <div className="min-h-screen bg-white">
       {/* SEO: Canonical + Hreflang for multi-language */}
       <head>
-        <link rel="canonical" href={`https://salihmaral.de/${lang}/hizmetler/${service}`} />
-        <link rel="alternate" hrefLang="de" href={`https://salihmaral.de/de/hizmetler/${service}`} />
-        <link rel="alternate" hrefLang="en" href={`https://salihmaral.de/en/hizmetler/${service}`} />
-        <link rel="alternate" hrefLang="tr" href={`https://salihmaral.de/tr/hizmetler/${service}`} />
-        <link rel="alternate" hrefLang="x-default" href={`https://salihmaral.de/de/hizmetler/${service}`} />
+        <link rel="canonical" href={`https://salihmaral.de${getLocalizedServiceUrl(lang, service)}`} />
+        <link rel="alternate" hrefLang="de" href={`https://salihmaral.de${getLocalizedServiceUrl('de', service)}`} />
+        <link rel="alternate" hrefLang="en" href={`https://salihmaral.de${getLocalizedServiceUrl('en', service)}`} />
+        <link rel="alternate" hrefLang="tr" href={`https://salihmaral.de${getLocalizedServiceUrl('tr', service)}`} />
+        <link rel="alternate" hrefLang="x-default" href={`https://salihmaral.de${getLocalizedServiceUrl('de', service)}`} />
         <title>{data.title} | Salih Maral Digital Marketing</title>
         <meta name="description" content={data.description} />
       </head>

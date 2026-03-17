@@ -543,6 +543,16 @@ export default function Home({ initialLang = 'de' }) {
     document.documentElement.lang = lang
   }, [lang])
 
+  // Helper: get localized service URL
+  const svcUrl = (targetLang, slug) => {
+    const path = targetLang === 'de' ? 'dienstleistungen' : targetLang === 'en' ? 'services' : 'hizmetler'
+    let s = slug
+    if (slug === 'yorum-yonetimi') {
+      s = targetLang === 'de' ? 'bewertungsmanagement' : targetLang === 'en' ? 'review-management' : 'yorum-yonetimi'
+    }
+    return `/${targetLang}/${path}/${s}`
+  }
+
   const t = translations[lang]
 
   const handleSubmit = async (e) => {
@@ -608,37 +618,37 @@ export default function Home({ initialLang = 'de' }) {
                   '@type': 'SiteNavigationElement',
                   name: lang === 'de' ? 'Google Ads Management' : lang === 'tr' ? 'Google Ads Yönetimi' : 'Google Ads Management',
                   description: lang === 'de' ? 'Maximaler ROI in Such-, Display-, Shopping- und YouTube-Kampagnen' : lang === 'tr' ? 'Arama, Display, Shopping ve YouTube kampanyalarında maksimum ROI' : 'Maximum ROI in Search, Display, Shopping and YouTube campaigns',
-                  url: `https://salihmaral.de/${lang === 'de' ? 'de' : lang}/hizmetler/google-ads`
+                  url: `https://salihmaral.de${svcUrl(lang, 'google-ads')}`
                 },
                 {
                   '@type': 'SiteNavigationElement',
                   name: 'Meta Ads (Facebook & Instagram)',
                   description: lang === 'de' ? 'Erreichen Sie Ihre Zielgruppe auf Facebook und Instagram' : lang === 'tr' ? 'Facebook ve Instagram\'da hedef kitlenize ulaşın' : 'Reach your target audience on Facebook and Instagram',
-                  url: `https://salihmaral.de/${lang === 'de' ? 'de' : lang}/hizmetler/meta-ads`
+                  url: `https://salihmaral.de${svcUrl(lang, 'meta-ads')}`
                 },
                 {
                   '@type': 'SiteNavigationElement',
                   name: 'TikTok Ads',
                   description: lang === 'de' ? 'Erreichen Sie ein junges, dynamisches Publikum' : lang === 'tr' ? 'Genç ve dinamik kitlelere ulaşın' : 'Reach a young, dynamic audience',
-                  url: `https://salihmaral.de/${lang === 'de' ? 'de' : lang}/hizmetler/tiktok-ads`
+                  url: `https://salihmaral.de${svcUrl(lang, 'tiktok-ads')}`
                 },
                 {
                   '@type': 'SiteNavigationElement',
                   name: 'X (Twitter) Ads',
                   description: lang === 'de' ? 'Heben Sie sich bei Trendthemen hervor' : lang === 'tr' ? 'Trend konularda öne çıkın' : 'Stand out in trending topics',
-                  url: `https://salihmaral.de/${lang === 'de' ? 'de' : lang}/hizmetler/x-ads`
+                  url: `https://salihmaral.de${svcUrl(lang, 'x-ads')}`
                 },
                 {
                   '@type': 'SiteNavigationElement',
                   name: lang === 'de' ? 'SEO Dienstleistungen' : lang === 'tr' ? 'SEO Hizmetleri' : 'SEO Services',
                   description: lang === 'de' ? 'Erreichen Sie Top-Rankings bei Google' : lang === 'tr' ? 'Google\'da üst sıralara çıkın' : 'Achieve top rankings on Google',
-                  url: `https://salihmaral.de/${lang === 'de' ? 'de' : lang}/hizmetler/seo`
+                  url: `https://salihmaral.de${svcUrl(lang, 'seo')}`
                 },
                 {
                   '@type': 'SiteNavigationElement',
                   name: lang === 'de' ? 'Bewertungsmanagement' : lang === 'tr' ? 'Yorum Yönetimi' : 'Review Management',
                   description: lang === 'de' ? 'Professionelles Google Bewertungsmanagement' : lang === 'tr' ? 'Profesyonel Google yorum yönetimi' : 'Professional Google review management',
-                  url: `https://salihmaral.de/${lang === 'de' ? 'de' : lang}/hizmetler/yorum-yonetimi`
+                  url: `https://salihmaral.de${svcUrl(lang, 'yorum-yonetimi')}`
                 },
                 {
                   '@type': 'SiteNavigationElement',
@@ -660,12 +670,12 @@ export default function Home({ initialLang = 'de' }) {
               name: lang === 'de' ? 'Digital Marketing Dienstleistungen' : lang === 'tr' ? 'Dijital Pazarlama Hizmetleri' : 'Digital Marketing Services',
               numberOfItems: 6,
               itemListElement: [
-                { '@type': 'ListItem', position: 1, name: lang === 'de' ? 'Google Ads Management' : lang === 'tr' ? 'Google Ads Yönetimi' : 'Google Ads Management', url: `https://salihmaral.de/${lang === 'de' ? 'de' : lang}/hizmetler/google-ads` },
-                { '@type': 'ListItem', position: 2, name: 'Meta Ads (Facebook & Instagram)', url: `https://salihmaral.de/${lang === 'de' ? 'de' : lang}/hizmetler/meta-ads` },
-                { '@type': 'ListItem', position: 3, name: 'TikTok Ads', url: `https://salihmaral.de/${lang === 'de' ? 'de' : lang}/hizmetler/tiktok-ads` },
-                { '@type': 'ListItem', position: 4, name: 'X (Twitter) Ads', url: `https://salihmaral.de/${lang === 'de' ? 'de' : lang}/hizmetler/x-ads` },
-                { '@type': 'ListItem', position: 5, name: lang === 'de' ? 'SEO Dienstleistungen' : lang === 'tr' ? 'SEO Hizmetleri' : 'SEO Services', url: `https://salihmaral.de/${lang === 'de' ? 'de' : lang}/hizmetler/seo` },
-                { '@type': 'ListItem', position: 6, name: lang === 'de' ? 'Bewertungsmanagement' : lang === 'tr' ? 'Yorum Yönetimi' : 'Review Management', url: `https://salihmaral.de/${lang === 'de' ? 'de' : lang}/hizmetler/yorum-yonetimi` }
+                { '@type': 'ListItem', position: 1, name: lang === 'de' ? 'Google Ads Management' : lang === 'tr' ? 'Google Ads Yönetimi' : 'Google Ads Management', url: `https://salihmaral.de${svcUrl(lang, 'google-ads')}` },
+                { '@type': 'ListItem', position: 2, name: 'Meta Ads (Facebook & Instagram)', url: `https://salihmaral.de${svcUrl(lang, 'meta-ads')}` },
+                { '@type': 'ListItem', position: 3, name: 'TikTok Ads', url: `https://salihmaral.de${svcUrl(lang, 'tiktok-ads')}` },
+                { '@type': 'ListItem', position: 4, name: 'X (Twitter) Ads', url: `https://salihmaral.de${svcUrl(lang, 'x-ads')}` },
+                { '@type': 'ListItem', position: 5, name: lang === 'de' ? 'SEO Dienstleistungen' : lang === 'tr' ? 'SEO Hizmetleri' : 'SEO Services', url: `https://salihmaral.de${svcUrl(lang, 'seo')}` },
+                { '@type': 'ListItem', position: 6, name: lang === 'de' ? 'Bewertungsmanagement' : lang === 'tr' ? 'Yorum Yönetimi' : 'Review Management', url: `https://salihmaral.de${svcUrl(lang, 'yorum-yonetimi')}` }
               ]
             },
             {
@@ -680,12 +690,12 @@ export default function Home({ initialLang = 'de' }) {
                 '@type': 'OfferCatalog',
                 name: lang === 'de' ? 'Digital Marketing Services' : lang === 'tr' ? 'Dijital Pazarlama Hizmetleri' : 'Digital Marketing Services',
                 itemListElement: [
-                  { '@type': 'Offer', itemOffered: { '@type': 'Service', name: 'Google Ads', url: `https://salihmaral.de/${lang === 'de' ? 'de' : lang}/hizmetler/google-ads` } },
-                  { '@type': 'Offer', itemOffered: { '@type': 'Service', name: 'Meta Ads', url: `https://salihmaral.de/${lang === 'de' ? 'de' : lang}/hizmetler/meta-ads` } },
-                  { '@type': 'Offer', itemOffered: { '@type': 'Service', name: 'TikTok Ads', url: `https://salihmaral.de/${lang === 'de' ? 'de' : lang}/hizmetler/tiktok-ads` } },
-                  { '@type': 'Offer', itemOffered: { '@type': 'Service', name: 'X Ads', url: `https://salihmaral.de/${lang === 'de' ? 'de' : lang}/hizmetler/x-ads` } },
-                  { '@type': 'Offer', itemOffered: { '@type': 'Service', name: 'SEO', url: `https://salihmaral.de/${lang === 'de' ? 'de' : lang}/hizmetler/seo` } },
-                  { '@type': 'Offer', itemOffered: { '@type': 'Service', name: lang === 'de' ? 'Bewertungsmanagement' : lang === 'tr' ? 'Yorum Yönetimi' : 'Review Management', url: `https://salihmaral.de/${lang === 'de' ? 'de' : lang}/hizmetler/yorum-yonetimi` } }
+                  { '@type': 'Offer', itemOffered: { '@type': 'Service', name: 'Google Ads', url: `https://salihmaral.de${svcUrl(lang, 'google-ads')}` } },
+                  { '@type': 'Offer', itemOffered: { '@type': 'Service', name: 'Meta Ads', url: `https://salihmaral.de${svcUrl(lang, 'meta-ads')}` } },
+                  { '@type': 'Offer', itemOffered: { '@type': 'Service', name: 'TikTok Ads', url: `https://salihmaral.de${svcUrl(lang, 'tiktok-ads')}` } },
+                  { '@type': 'Offer', itemOffered: { '@type': 'Service', name: 'X Ads', url: `https://salihmaral.de${svcUrl(lang, 'x-ads')}` } },
+                  { '@type': 'Offer', itemOffered: { '@type': 'Service', name: 'SEO', url: `https://salihmaral.de${svcUrl(lang, 'seo')}` } },
+                  { '@type': 'Offer', itemOffered: { '@type': 'Service', name: lang === 'de' ? 'Bewertungsmanagement' : lang === 'tr' ? 'Yorum Yönetimi' : 'Review Management', url: `https://salihmaral.de${svcUrl(lang, 'yorum-yonetimi')}` } }
                 ]
               }
             }
@@ -713,7 +723,7 @@ export default function Home({ initialLang = 'de' }) {
                     {t.why.services.map((service, idx) => (
                       <a
                         key={idx}
-                        href={`/${lang}/hizmetler/${service.slug}`}
+                        href={svcUrl(lang, service.slug)}
                         className="block px-4 py-3 text-sm text-gray-700 hover:bg-[#4285F4]/10 hover:text-[#4285F4] transition-colors"
                       >
                         <div className="font-semibold">{service.title}</div>
@@ -1089,7 +1099,7 @@ export default function Home({ initialLang = 'de' }) {
               return (
                 <a 
                   key={index} 
-                  href={`/${lang}/hizmetler/${service.slug}`}
+                  href={svcUrl(lang, service.slug)}
                   className="block group h-full"
                 >
                   <Card className={`
@@ -1555,12 +1565,12 @@ export default function Home({ initialLang = 'de' }) {
             <div>
               <h4 className="font-semibold mb-4">{t.nav.services}</h4>
               <ul className="space-y-2 text-sm text-gray-400">
-                <li><a href={`/${lang}/hizmetler/google-ads`} className="hover:text-white transition-colors">Google Ads</a></li>
-                <li><a href={`/${lang}/hizmetler/meta-ads`} className="hover:text-white transition-colors">Meta Ads</a></li>
-                <li><a href={`/${lang}/hizmetler/tiktok-ads`} className="hover:text-white transition-colors">TikTok Ads</a></li>
-                <li><a href={`/${lang}/hizmetler/x-ads`} className="hover:text-white transition-colors">X Ads</a></li>
-                <li><a href={`/${lang}/hizmetler/seo`} className="hover:text-white transition-colors">SEO</a></li>
-                <li><a href={`/${lang}/hizmetler/yorum-yonetimi`} className="hover:text-white transition-colors">{lang === 'de' ? 'Bewertungen' : lang === 'en' ? 'Reviews' : 'Yorum Yönetimi'}</a></li>
+                <li><a href={svcUrl(lang, 'google-ads')} className="hover:text-white transition-colors">Google Ads</a></li>
+                <li><a href={svcUrl(lang, 'meta-ads')} className="hover:text-white transition-colors">Meta Ads</a></li>
+                <li><a href={svcUrl(lang, 'tiktok-ads')} className="hover:text-white transition-colors">TikTok Ads</a></li>
+                <li><a href={svcUrl(lang, 'x-ads')} className="hover:text-white transition-colors">X Ads</a></li>
+                <li><a href={svcUrl(lang, 'seo')} className="hover:text-white transition-colors">SEO</a></li>
+                <li><a href={svcUrl(lang, 'yorum-yonetimi')} className="hover:text-white transition-colors">{lang === 'de' ? 'Bewertungen' : lang === 'en' ? 'Reviews' : 'Yorum Yönetimi'}</a></li>
               </ul>
             </div>
           </div>
