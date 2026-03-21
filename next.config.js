@@ -16,15 +16,6 @@ const nextConfig = {
       { source: '/en/services/:service', destination: '/en/hizmetler/:service' },
     ];
   },
-  async redirects() {
-    return [
-      // Redirect old Turkish-style URLs for DE and EN to localized versions
-      { source: '/de/hizmetler/yorum-yonetimi', destination: '/de/dienstleistungen/bewertungsmanagement', permanent: true },
-      { source: '/de/hizmetler/:service', destination: '/de/dienstleistungen/:service', permanent: true },
-      { source: '/en/hizmetler/yorum-yonetimi', destination: '/en/services/review-management', permanent: true },
-      { source: '/en/hizmetler/:service', destination: '/en/services/:service', permanent: true },
-    ];
-  },
   async headers() {
     return [
       {
