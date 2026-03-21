@@ -238,10 +238,10 @@ export default function BlogPage() {
 
   const getCategoryLogo = (category) => {
     if (category.includes('Google')) return (
-      <img src="https://upload.wikimedia.org/wikipedia/commons/c/c7/Google_Ads_logo.svg" alt="Google Ads" className="h-8 w-auto drop-shadow-lg" />
+      <img src="https://upload.wikimedia.org/wikipedia/commons/c/c7/Google_Ads_logo.svg" alt="Google Ads" className="h-8 w-auto drop-shadow-lg" width="32" height="32" loading="lazy" />
     )
     if (category.includes('Meta') || category.includes('Facebook')) return (
-      <img src="https://upload.wikimedia.org/wikipedia/commons/7/7b/Meta_Platforms_Inc._logo.svg" alt="Meta" className="h-6 w-auto drop-shadow-lg brightness-0 invert" />
+      <img src="https://upload.wikimedia.org/wikipedia/commons/7/7b/Meta_Platforms_Inc._logo.svg" alt="Meta" className="h-6 w-auto drop-shadow-lg brightness-0 invert" width="80" height="24" loading="lazy" />
     )
     if (category.includes('TikTok')) return (
       <svg className="h-8 w-8 drop-shadow-lg" viewBox="0 0 24 24" fill="white"><path d="M19.59 6.69a4.83 4.83 0 01-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 01-5.2 1.74 2.89 2.89 0 012.31-4.64 2.93 2.93 0 01.88.13V9.4a6.84 6.84 0 00-1-.05A6.33 6.33 0 005 20.1a6.34 6.34 0 0010.86-4.43v-7a8.16 8.16 0 004.77 1.52v-3.4a4.85 4.85 0 01-1-.1z"/></svg>
@@ -274,7 +274,7 @@ export default function BlogPage() {
               <span className="font-semibold text-gray-700">{t.home}</span>
             </button>
             <a href="/">
-              <img src="/logo.png" alt="Salih Maral Logo" className="h-10 w-auto" />
+              <img src="/logo.png" alt="Salih Maral Logo" className="h-10 w-auto" width="40" height="40" />
             </a>
             <div className="flex items-center space-x-2">
               <button 
@@ -326,6 +326,9 @@ export default function BlogPage() {
                       src={getCategoryImage(post.slug)} 
                       alt={post.title}
                       className="absolute inset-0 w-full h-full object-cover group-hover:scale-110 transition-transform duration-700"
+                      width="600"
+                      height="300"
+                      loading="lazy"
                     />
                     <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-black/20 to-transparent" />
                     <div className="absolute bottom-4 right-4 opacity-80 group-hover:opacity-100 transition-opacity">
@@ -363,7 +366,7 @@ export default function BlogPage() {
       <footer className="py-12 bg-gray-900 text-white mt-12">
         <div className="container mx-auto px-4 text-center">
           <a href="/" className="inline-block">
-            <img src="/logo.png" alt="Salih Maral Logo" className="h-12 w-auto mx-auto" />
+            <img src="/logo.png" alt="Salih Maral Logo" className="h-12 w-auto mx-auto" width="48" height="48" loading="lazy" />
           </a>
           <p className="text-sm text-gray-400 mt-4">{t.footer}</p>
         </div>
