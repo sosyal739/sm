@@ -707,7 +707,7 @@ export default function Home({ initialLang = 'de' }) {
         <div className="container mx-auto px-4 py-4">
           <div className="flex items-center justify-between">
             <a href="/" className="flex items-center">
-              <img src="/logo.png" alt="Salih Maral Logo" className="h-10 w-auto" />
+              <img src="/logo.png" alt="Salih Maral Logo" className="h-10 w-auto" width="40" height="40" />
             </a>
             
             <div className="hidden md:flex items-center space-x-6">
@@ -833,6 +833,8 @@ export default function Home({ initialLang = 'de' }) {
                   src="https://customer-assets.emergentagent.com/job_maralpresence/artifacts/cnlyuz94__prompt_create_4k_202601290226%20%281%29.jpeg"
                   alt="Salih Maral - Digital Marketing Expert"
                   className="w-full h-auto"
+                  width="600"
+                  height="400"
                 />
               </div>
               <style jsx>{`
@@ -903,7 +905,7 @@ export default function Home({ initialLang = 'de' }) {
             <div className="flex animate-scroll items-center space-x-16">
               {/* Google */}
               <div className="flex-shrink-0 flex items-center space-x-2 opacity-70 hover:opacity-100 transition-opacity">
-                <img src="https://upload.wikimedia.org/wikipedia/commons/2/2f/Google_2015_logo.svg" alt="Google" className="h-8 w-auto" />
+                <img src="https://upload.wikimedia.org/wikipedia/commons/2/2f/Google_2015_logo.svg" alt="Google" className="h-8 w-auto" width="98" height="32" loading="lazy" />
               </div>
 
               {/* Analytics */}
@@ -917,12 +919,12 @@ export default function Home({ initialLang = 'de' }) {
 
               {/* WordPress */}
               <div className="flex-shrink-0 flex items-center opacity-70 hover:opacity-100 transition-opacity">
-                <img src="https://upload.wikimedia.org/wikipedia/commons/9/98/WordPress_blue_logo.svg" alt="WordPress" className="h-8 w-auto" />
+                <img src="https://upload.wikimedia.org/wikipedia/commons/9/98/WordPress_blue_logo.svg" alt="WordPress" className="h-8 w-auto" width="32" height="32" loading="lazy" />
               </div>
 
               {/* Google Ads */}
               <div className="flex-shrink-0 flex items-center opacity-70 hover:opacity-100 transition-opacity">
-                <img src="https://upload.wikimedia.org/wikipedia/commons/c/c7/Google_Ads_logo.svg" alt="Google Ads" className="h-8 w-auto" />
+                <img src="https://upload.wikimedia.org/wikipedia/commons/c/c7/Google_Ads_logo.svg" alt="Google Ads" className="h-8 w-auto" width="32" height="32" loading="lazy" />
               </div>
 
               {/* Screaming Frog */}
@@ -938,7 +940,7 @@ export default function Home({ initialLang = 'de' }) {
 
               {/* Meta */}
               <div className="flex-shrink-0 flex items-center opacity-70 hover:opacity-100 transition-opacity">
-                <img src="https://upload.wikimedia.org/wikipedia/commons/7/7b/Meta_Platforms_Inc._logo.svg" alt="Meta" className="h-6 w-auto" />
+                <img src="https://upload.wikimedia.org/wikipedia/commons/7/7b/Meta_Platforms_Inc._logo.svg" alt="Meta" className="h-6 w-auto" width="80" height="24" loading="lazy" />
               </div>
 
               {/* Semrush */}
@@ -961,7 +963,7 @@ export default function Home({ initialLang = 'de' }) {
 
               {/* Duplicate for seamless loop */}
               <div className="flex-shrink-0 flex items-center space-x-2 opacity-70 hover:opacity-100 transition-opacity">
-                <img src="https://upload.wikimedia.org/wikipedia/commons/2/2f/Google_2015_logo.svg" alt="Google" className="h-8 w-auto" />
+                <img src="https://upload.wikimedia.org/wikipedia/commons/2/2f/Google_2015_logo.svg" alt="Google" className="h-8 w-auto" width="98" height="32" loading="lazy" />
               </div>
 
               <div className="flex-shrink-0 flex items-center space-x-2 opacity-70 hover:opacity-100 transition-opacity">
@@ -973,11 +975,11 @@ export default function Home({ initialLang = 'de' }) {
               </div>
 
               <div className="flex-shrink-0 flex items-center opacity-70 hover:opacity-100 transition-opacity">
-                <img src="https://upload.wikimedia.org/wikipedia/commons/9/98/WordPress_blue_logo.svg" alt="WordPress" className="h-8 w-auto" />
+                <img src="https://upload.wikimedia.org/wikipedia/commons/9/98/WordPress_blue_logo.svg" alt="WordPress" className="h-8 w-auto" width="32" height="32" loading="lazy" />
               </div>
 
               <div className="flex-shrink-0 flex items-center opacity-70 hover:opacity-100 transition-opacity">
-                <img src="https://upload.wikimedia.org/wikipedia/commons/c/c7/Google_Ads_logo.svg" alt="Google Ads" className="h-8 w-auto" />
+                <img src="https://upload.wikimedia.org/wikipedia/commons/c/c7/Google_Ads_logo.svg" alt="Google Ads" className="h-8 w-auto" width="32" height="32" loading="lazy" />
               </div>
 
               <div className="flex-shrink-0 flex items-center space-x-2 opacity-70 hover:opacity-100 transition-opacity">
@@ -991,7 +993,7 @@ export default function Home({ initialLang = 'de' }) {
               </div>
 
               <div className="flex-shrink-0 flex items-center opacity-70 hover:opacity-100 transition-opacity">
-                <img src="https://upload.wikimedia.org/wikipedia/commons/7/7b/Meta_Platforms_Inc._logo.svg" alt="Meta" className="h-6 w-auto" />
+                <img src="https://upload.wikimedia.org/wikipedia/commons/7/7b/Meta_Platforms_Inc._logo.svg" alt="Meta" className="h-6 w-auto" width="80" height="24" loading="lazy" />
               </div>
             </div>
           </div>
@@ -1141,6 +1143,7 @@ export default function Home({ initialLang = 'de' }) {
                               src="https://upload.wikimedia.org/wikipedia/commons/c/c7/Google_Ads_logo.svg" 
                               alt="Google Ads" 
                               className="w-14 h-14 object-contain relative z-10"
+                              width="56" height="56" loading="lazy"
                             />
                           )}
                           {service.icon === 'meta' && (
@@ -1148,6 +1151,7 @@ export default function Home({ initialLang = 'de' }) {
                               src="https://upload.wikimedia.org/wikipedia/commons/7/7b/Meta_Platforms_Inc._logo.svg" 
                               alt="Meta" 
                               className="w-14 h-10 object-contain relative z-10"
+                              width="56" height="40" loading="lazy"
                             />
                           )}
                           {service.icon === 'tiktok' && (
@@ -1155,6 +1159,7 @@ export default function Home({ initialLang = 'de' }) {
                               src="https://upload.wikimedia.org/wikipedia/en/a/a9/TikTok_logo.svg" 
                               alt="TikTok" 
                               className="w-14 h-14 object-contain relative z-10"
+                              width="56" height="56" loading="lazy"
                             />
                           )}
                           {service.icon === 'x' && (
@@ -1494,10 +1499,10 @@ export default function Home({ initialLang = 'de' }) {
             <a href="/blog" className="block group">
               <Card className="hover:shadow-xl transition-all duration-500 hover:-translate-y-2 overflow-hidden">
                 <div className="h-44 relative overflow-hidden">
-                  <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=500&h=250&fit=crop&q=80" alt="Google Ads" className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" />
+                  <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=500&h=250&fit=crop&q=80" alt="Google Ads" className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" width="500" height="250" loading="lazy" />
                   <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent" />
                   <div className="absolute bottom-3 right-3">
-                    <img src="https://upload.wikimedia.org/wikipedia/commons/c/c7/Google_Ads_logo.svg" alt="Google Ads" className="h-6 w-auto drop-shadow-lg" />
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/c/c7/Google_Ads_logo.svg" alt="Google Ads" className="h-6 w-auto drop-shadow-lg" width="24" height="24" loading="lazy" />
                   </div>
                 </div>
                 <CardContent className="pt-5 pb-6">
@@ -1509,10 +1514,10 @@ export default function Home({ initialLang = 'de' }) {
             <a href="/blog" className="block group">
               <Card className="hover:shadow-xl transition-all duration-500 hover:-translate-y-2 overflow-hidden">
                 <div className="h-44 relative overflow-hidden">
-                  <img src="https://images.unsplash.com/photo-1432888622747-4eb9a8efeb07?w=500&h=250&fit=crop&q=80" alt="Meta Ads" className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" />
+                  <img src="https://images.unsplash.com/photo-1432888622747-4eb9a8efeb07?w=500&h=250&fit=crop&q=80" alt="Meta Ads" className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" width="500" height="250" loading="lazy" />
                   <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent" />
                   <div className="absolute bottom-3 right-3">
-                    <img src="https://upload.wikimedia.org/wikipedia/commons/7/7b/Meta_Platforms_Inc._logo.svg" alt="Meta" className="h-4 w-auto drop-shadow-lg brightness-0 invert" />
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/7/7b/Meta_Platforms_Inc._logo.svg" alt="Meta" className="h-4 w-auto drop-shadow-lg brightness-0 invert" width="53" height="16" loading="lazy" />
                   </div>
                 </div>
                 <CardContent className="pt-5 pb-6">
@@ -1524,7 +1529,7 @@ export default function Home({ initialLang = 'de' }) {
             <a href="/blog" className="block group">
               <Card className="hover:shadow-xl transition-all duration-500 hover:-translate-y-2 overflow-hidden">
                 <div className="h-44 relative overflow-hidden">
-                  <img src="https://images.unsplash.com/photo-1504868584819-f8e8b4b6d7e3?w=500&h=250&fit=crop&q=80" alt="SEO" className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" />
+                  <img src="https://images.unsplash.com/photo-1504868584819-f8e8b4b6d7e3?w=500&h=250&fit=crop&q=80" alt="SEO" className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" width="500" height="250" loading="lazy" />
                   <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent" />
                   <div className="absolute bottom-3 right-3">
                     <svg className="h-7 w-7 drop-shadow-lg" viewBox="0 0 24 24" fill="none" stroke="white" strokeWidth="2"><circle cx="11" cy="11" r="8"/><path d="M21 21l-4.35-4.35"/></svg>
@@ -1550,7 +1555,7 @@ export default function Home({ initialLang = 'de' }) {
         <div className="container mx-auto px-4">
           <div className="grid md:grid-cols-3 gap-8 mb-8">
             <div>
-              <img src="/logo.png" alt="Salih Maral Logo" className="h-12 w-auto mb-4" />
+              <img src="/logo.png" alt="Salih Maral Logo" className="h-12 w-auto mb-4" width="48" height="48" loading="lazy" />
               <p className="text-sm text-gray-400">{t.footer.description}</p>
             </div>
             <div>
