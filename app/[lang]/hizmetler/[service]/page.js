@@ -665,8 +665,8 @@ export default function ServiceDetailPage() {
       <nav className="fixed top-0 left-0 right-0 z-50 bg-white/95 backdrop-blur-sm border-b">
         <div className="container mx-auto px-4 py-4">
           <div className="flex items-center justify-between">
-            <a href="/" className="flex items-center">
-              <img src="/logo.png" alt="Salih Maral Logo" className="h-10 w-auto" />
+            <a href={lang === 'de' ? '/' : `/${lang}`} className="flex items-center">
+              <img src="/logo.png" alt="Salih Maral Logo" className="h-10 w-auto" width="40" height="40" />
             </a>
             
             <div className="hidden md:flex items-center space-x-6">
@@ -682,7 +682,7 @@ export default function ServiceDetailPage() {
                     {services.map((s, idx) => (
                       <a
                         key={idx}
-                        href={`/${lang}/hizmetler/${s.slug}`}
+                        href={getLocalizedServiceUrl(lang, s.slug)}
                         className="block px-4 py-3 text-sm text-gray-700 hover:bg-[#4285F4]/10 hover:text-[#4285F4] transition-colors"
                       >
                         <div className="font-semibold">{s.title}</div>
@@ -691,10 +691,10 @@ export default function ServiceDetailPage() {
                   </div>
                 </div>
               </div>
-              <a href="/#success" className="text-sm font-bold text-gray-900 hover:text-[#4285F4] transition-colors">{navT.success}</a>
-              <a href="/#about" className="text-sm font-bold text-gray-900 hover:text-[#4285F4] transition-colors">{navT.about}</a>
+              <a href={`${lang === 'de' ? '' : `/${lang}`}/#success`} className="text-sm font-bold text-gray-900 hover:text-[#4285F4] transition-colors">{navT.success}</a>
+              <a href={`${lang === 'de' ? '' : `/${lang}`}/#about`} className="text-sm font-bold text-gray-900 hover:text-[#4285F4] transition-colors">{navT.about}</a>
               <a href="/blog" className="text-sm font-bold text-gray-900 hover:text-[#4285F4] transition-colors">Blog</a>
-              <a href="/#contact" className="text-sm font-bold text-gray-900 hover:text-[#4285F4] transition-colors">{navT.contact}</a>
+              <a href={`${lang === 'de' ? '' : `/${lang}`}/#contact`} className="text-sm font-bold text-gray-900 hover:text-[#4285F4] transition-colors">{navT.contact}</a>
             </div>
 
             <div className="flex items-center space-x-2">
@@ -1042,7 +1042,7 @@ export default function ServiceDetailPage() {
             
             <div className="flex flex-wrap justify-center gap-4 mb-8">
               <Button size="lg" className="bg-white hover:bg-gray-100 px-8 shadow-lg transition-all duration-300 hover:scale-105" style={{ color: data.primaryColor }} asChild>
-                <a href="/#contact">
+                <a href={`${lang === 'de' ? '' : `/${lang}`}/#contact`}>
                   {lang === 'de' ? 'Kostenlose Analyse anfordern' : lang === 'en' ? 'Get Free Analysis' : 'Ücretsiz Analiz Al'}
                   <ArrowUpRight className="ml-2 h-5 w-5" />
                 </a>
