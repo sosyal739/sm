@@ -1548,8 +1548,8 @@ export default function BlogDetailPage() {
               <ArrowLeft className="h-5 w-5 text-[#4285F4]" />
               <span className="font-semibold text-gray-700">{t.backToBlog}</span>
             </button>
-            <a href="/">
-              <img src="/logo.png" alt="Salih Maral Logo" className="h-10 w-auto" />
+            <a href={lang === 'de' ? '/' : `/${lang}`}>
+              <img src="/logo.png" alt="Salih Maral Logo" className="h-10 w-auto" width="40" height="40" />
             </a>
             <div className="flex items-center space-x-2">
               <button 
@@ -1611,7 +1611,7 @@ export default function BlogDetailPage() {
             <p className="mb-8 text-white/80 text-lg">{t.cta.subtitle}</p>
             <div className="flex flex-wrap justify-center gap-4">
               <Button size="lg" className="bg-white text-[#4285F4] hover:bg-gray-100 font-semibold px-8" asChild>
-                <a href="/#contact">{t.cta.button1}</a>
+                <a href={`${lang === 'de' ? '' : `/${lang}`}/#contact`}>{t.cta.button1}</a>
               </Button>
               <Button size="lg" className="bg-[#25D366] hover:bg-[#128C7E] font-semibold px-8" asChild>
                 <a href={`https://wa.me/491724106463?text=${lang === 'de' ? 'Hallo,%20ich%20interessiere%20mich%20für%20Ihre%20Digital%20Marketing%20Dienstleistungen.' : lang === 'en' ? 'Hello,%20I%20am%20interested%20in%20your%20digital%20marketing%20services.' : 'Merhaba,%20dijital%20pazarlama%20hizmetleriniz%20hakkında%20bilgi%20almak%20istiyorum.'}`} target="_blank">{t.cta.button2}</a>
@@ -1624,7 +1624,7 @@ export default function BlogDetailPage() {
       {/* Footer */}
       <footer className="py-12 bg-gray-900 text-white mt-12">
         <div className="container mx-auto px-4 text-center">
-          <a href="/" className="inline-block">
+          <a href={lang === 'de' ? '/' : `/${lang}`} className="inline-block">
             <img src="/logo.png" alt="Salih Maral Logo" className="h-12 w-auto mx-auto" />
           </a>
           <p className="text-sm text-gray-400 mt-4">{t.footer}</p>

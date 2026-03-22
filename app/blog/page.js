@@ -273,7 +273,7 @@ export default function BlogPage() {
               <ArrowLeft className="h-5 w-5 text-[#4285F4]" />
               <span className="font-semibold text-gray-700">{t.home}</span>
             </button>
-            <a href="/">
+            <a href={lang === 'de' ? '/' : `/${lang}`}>
               <img src="/logo.png" alt="Salih Maral Logo" className="h-10 w-auto" width="40" height="40" />
             </a>
             <div className="flex items-center space-x-2">
@@ -365,7 +365,7 @@ export default function BlogPage() {
       {/* Footer */}
       <footer className="py-12 bg-gray-900 text-white mt-12">
         <div className="container mx-auto px-4 text-center">
-          <a href="/" className="inline-block">
+          <a href={lang === 'de' ? '/' : `/${lang}`} className="inline-block">
             <img src="/logo.png" alt="Salih Maral Logo" className="h-12 w-auto mx-auto" width="48" height="48" loading="lazy" />
           </a>
           <p className="text-sm text-gray-400 mt-4">{t.footer}</p>
