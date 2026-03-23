@@ -653,11 +653,11 @@ export default function ServiceDetailPage() {
     <div className="min-h-screen bg-white">
       {/* SEO: Canonical + Hreflang for multi-language */}
       <head>
-        <link rel="canonical" href={`https://salihmaral.de${getLocalizedServiceUrl(lang, service)}`} />
-        <link rel="alternate" hrefLang="de" href={`https://salihmaral.de${getLocalizedServiceUrl('de', service)}`} />
-        <link rel="alternate" hrefLang="en" href={`https://salihmaral.de${getLocalizedServiceUrl('en', service)}`} />
-        <link rel="alternate" hrefLang="tr" href={`https://salihmaral.de${getLocalizedServiceUrl('tr', service)}`} />
-        <link rel="alternate" hrefLang="x-default" href={`https://salihmaral.de${getLocalizedServiceUrl('de', service)}`} />
+        <link rel="canonical" href={`https://salihmaral.de/${lang}/hizmetler/${service}`} />
+        <link rel="alternate" hrefLang="de" href={`https://salihmaral.de/de/hizmetler/${service}`} />
+        <link rel="alternate" hrefLang="en" href={`https://salihmaral.de/en/hizmetler/${service}`} />
+        <link rel="alternate" hrefLang="tr" href={`https://salihmaral.de/tr/hizmetler/${service}`} />
+        <link rel="alternate" hrefLang="x-default" href={`https://salihmaral.de/de/hizmetler/${service}`} />
         <title>{data.title} | Salih Maral Digital Marketing</title>
         <meta name="description" content={data.description} />
       </head>
