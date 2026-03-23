@@ -14,6 +14,16 @@ const nextConfig = {
       { source: '/en/services/:service', destination: '/en/hizmetler/:service' },
     ];
   },
+  async redirects() {
+    return [
+      // 301: Eski Türkçe DE URL'ler → Yeni Almanca URL'ler
+      { source: '/de/hizmetler/yorum-yonetimi', destination: '/de/dienstleistungen/bewertungsmanagement', statusCode: 301 },
+      { source: '/de/hizmetler/:service', destination: '/de/dienstleistungen/:service', statusCode: 301 },
+      // 301: Eski Türkçe EN URL'ler → Yeni İngilizce URL'ler
+      { source: '/en/hizmetler/yorum-yonetimi', destination: '/en/services/review-management', statusCode: 301 },
+      { source: '/en/hizmetler/:service', destination: '/en/services/:service', statusCode: 301 },
+    ];
+  },
   async headers() {
     return [
       {
