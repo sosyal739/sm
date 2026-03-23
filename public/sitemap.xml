@@ -3,7 +3,7 @@
         xmlns:xhtml="http://www.w3.org/1999/xhtml"
         xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
   
-  <!-- Homepage German (Default) -->
+  <!-- Homepage -->
   <url>
     <loc>https://salihmaral.de/</loc>
     <xhtml:link rel="alternate" hreflang="de" href="https://salihmaral.de/"/>
@@ -40,181 +40,181 @@
   </url>
 
   <url>
-    <loc>https://salihmaral.de/de/hizmetler/google-ads</loc>
-    <xhtml:link rel="alternate" hreflang="de" href="https://salihmaral.de/de/hizmetler/google-ads"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://salihmaral.de/en/hizmetler/google-ads"/>
+    <loc>https://salihmaral.de/de/dienstleistungen/google-ads</loc>
+    <xhtml:link rel="alternate" hreflang="de" href="https://salihmaral.de/de/dienstleistungen/google-ads"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://salihmaral.de/en/services/google-ads"/>
     <xhtml:link rel="alternate" hreflang="tr" href="https://salihmaral.de/tr/hizmetler/google-ads"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://salihmaral.de/de/hizmetler/google-ads"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://salihmaral.de/de/dienstleistungen/google-ads"/>
     <lastmod>2026-03-22</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://salihmaral.de/en/hizmetler/google-ads</loc>
-    <xhtml:link rel="alternate" hreflang="de" href="https://salihmaral.de/de/hizmetler/google-ads"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://salihmaral.de/en/hizmetler/google-ads"/>
+    <loc>https://salihmaral.de/en/services/google-ads</loc>
+    <xhtml:link rel="alternate" hreflang="de" href="https://salihmaral.de/de/dienstleistungen/google-ads"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://salihmaral.de/en/services/google-ads"/>
     <xhtml:link rel="alternate" hreflang="tr" href="https://salihmaral.de/tr/hizmetler/google-ads"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://salihmaral.de/de/hizmetler/google-ads"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://salihmaral.de/de/dienstleistungen/google-ads"/>
     <lastmod>2026-03-22</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://salihmaral.de/tr/hizmetler/google-ads</loc>
-    <xhtml:link rel="alternate" hreflang="de" href="https://salihmaral.de/de/hizmetler/google-ads"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://salihmaral.de/en/hizmetler/google-ads"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://salihmaral.de/de/dienstleistungen/google-ads"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://salihmaral.de/en/services/google-ads"/>
     <xhtml:link rel="alternate" hreflang="tr" href="https://salihmaral.de/tr/hizmetler/google-ads"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://salihmaral.de/de/hizmetler/google-ads"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://salihmaral.de/de/dienstleistungen/google-ads"/>
     <lastmod>2026-03-22</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://salihmaral.de/de/hizmetler/meta-ads</loc>
-    <xhtml:link rel="alternate" hreflang="de" href="https://salihmaral.de/de/hizmetler/meta-ads"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://salihmaral.de/en/hizmetler/meta-ads"/>
+    <loc>https://salihmaral.de/de/dienstleistungen/meta-ads</loc>
+    <xhtml:link rel="alternate" hreflang="de" href="https://salihmaral.de/de/dienstleistungen/meta-ads"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://salihmaral.de/en/services/meta-ads"/>
     <xhtml:link rel="alternate" hreflang="tr" href="https://salihmaral.de/tr/hizmetler/meta-ads"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://salihmaral.de/de/hizmetler/meta-ads"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://salihmaral.de/de/dienstleistungen/meta-ads"/>
     <lastmod>2026-03-22</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://salihmaral.de/en/hizmetler/meta-ads</loc>
-    <xhtml:link rel="alternate" hreflang="de" href="https://salihmaral.de/de/hizmetler/meta-ads"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://salihmaral.de/en/hizmetler/meta-ads"/>
+    <loc>https://salihmaral.de/en/services/meta-ads</loc>
+    <xhtml:link rel="alternate" hreflang="de" href="https://salihmaral.de/de/dienstleistungen/meta-ads"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://salihmaral.de/en/services/meta-ads"/>
     <xhtml:link rel="alternate" hreflang="tr" href="https://salihmaral.de/tr/hizmetler/meta-ads"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://salihmaral.de/de/hizmetler/meta-ads"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://salihmaral.de/de/dienstleistungen/meta-ads"/>
     <lastmod>2026-03-22</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://salihmaral.de/tr/hizmetler/meta-ads</loc>
-    <xhtml:link rel="alternate" hreflang="de" href="https://salihmaral.de/de/hizmetler/meta-ads"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://salihmaral.de/en/hizmetler/meta-ads"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://salihmaral.de/de/dienstleistungen/meta-ads"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://salihmaral.de/en/services/meta-ads"/>
     <xhtml:link rel="alternate" hreflang="tr" href="https://salihmaral.de/tr/hizmetler/meta-ads"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://salihmaral.de/de/hizmetler/meta-ads"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://salihmaral.de/de/dienstleistungen/meta-ads"/>
     <lastmod>2026-03-22</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://salihmaral.de/de/hizmetler/tiktok-ads</loc>
-    <xhtml:link rel="alternate" hreflang="de" href="https://salihmaral.de/de/hizmetler/tiktok-ads"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://salihmaral.de/en/hizmetler/tiktok-ads"/>
+    <loc>https://salihmaral.de/de/dienstleistungen/tiktok-ads</loc>
+    <xhtml:link rel="alternate" hreflang="de" href="https://salihmaral.de/de/dienstleistungen/tiktok-ads"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://salihmaral.de/en/services/tiktok-ads"/>
     <xhtml:link rel="alternate" hreflang="tr" href="https://salihmaral.de/tr/hizmetler/tiktok-ads"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://salihmaral.de/de/hizmetler/tiktok-ads"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://salihmaral.de/de/dienstleistungen/tiktok-ads"/>
     <lastmod>2026-03-22</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://salihmaral.de/en/hizmetler/tiktok-ads</loc>
-    <xhtml:link rel="alternate" hreflang="de" href="https://salihmaral.de/de/hizmetler/tiktok-ads"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://salihmaral.de/en/hizmetler/tiktok-ads"/>
+    <loc>https://salihmaral.de/en/services/tiktok-ads</loc>
+    <xhtml:link rel="alternate" hreflang="de" href="https://salihmaral.de/de/dienstleistungen/tiktok-ads"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://salihmaral.de/en/services/tiktok-ads"/>
     <xhtml:link rel="alternate" hreflang="tr" href="https://salihmaral.de/tr/hizmetler/tiktok-ads"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://salihmaral.de/de/hizmetler/tiktok-ads"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://salihmaral.de/de/dienstleistungen/tiktok-ads"/>
     <lastmod>2026-03-22</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://salihmaral.de/tr/hizmetler/tiktok-ads</loc>
-    <xhtml:link rel="alternate" hreflang="de" href="https://salihmaral.de/de/hizmetler/tiktok-ads"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://salihmaral.de/en/hizmetler/tiktok-ads"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://salihmaral.de/de/dienstleistungen/tiktok-ads"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://salihmaral.de/en/services/tiktok-ads"/>
     <xhtml:link rel="alternate" hreflang="tr" href="https://salihmaral.de/tr/hizmetler/tiktok-ads"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://salihmaral.de/de/hizmetler/tiktok-ads"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://salihmaral.de/de/dienstleistungen/tiktok-ads"/>
     <lastmod>2026-03-22</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://salihmaral.de/de/hizmetler/x-ads</loc>
-    <xhtml:link rel="alternate" hreflang="de" href="https://salihmaral.de/de/hizmetler/x-ads"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://salihmaral.de/en/hizmetler/x-ads"/>
+    <loc>https://salihmaral.de/de/dienstleistungen/x-ads</loc>
+    <xhtml:link rel="alternate" hreflang="de" href="https://salihmaral.de/de/dienstleistungen/x-ads"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://salihmaral.de/en/services/x-ads"/>
     <xhtml:link rel="alternate" hreflang="tr" href="https://salihmaral.de/tr/hizmetler/x-ads"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://salihmaral.de/de/hizmetler/x-ads"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://salihmaral.de/de/dienstleistungen/x-ads"/>
     <lastmod>2026-03-22</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://salihmaral.de/en/hizmetler/x-ads</loc>
-    <xhtml:link rel="alternate" hreflang="de" href="https://salihmaral.de/de/hizmetler/x-ads"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://salihmaral.de/en/hizmetler/x-ads"/>
+    <loc>https://salihmaral.de/en/services/x-ads</loc>
+    <xhtml:link rel="alternate" hreflang="de" href="https://salihmaral.de/de/dienstleistungen/x-ads"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://salihmaral.de/en/services/x-ads"/>
     <xhtml:link rel="alternate" hreflang="tr" href="https://salihmaral.de/tr/hizmetler/x-ads"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://salihmaral.de/de/hizmetler/x-ads"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://salihmaral.de/de/dienstleistungen/x-ads"/>
     <lastmod>2026-03-22</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://salihmaral.de/tr/hizmetler/x-ads</loc>
-    <xhtml:link rel="alternate" hreflang="de" href="https://salihmaral.de/de/hizmetler/x-ads"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://salihmaral.de/en/hizmetler/x-ads"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://salihmaral.de/de/dienstleistungen/x-ads"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://salihmaral.de/en/services/x-ads"/>
     <xhtml:link rel="alternate" hreflang="tr" href="https://salihmaral.de/tr/hizmetler/x-ads"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://salihmaral.de/de/hizmetler/x-ads"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://salihmaral.de/de/dienstleistungen/x-ads"/>
     <lastmod>2026-03-22</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://salihmaral.de/de/hizmetler/seo</loc>
-    <xhtml:link rel="alternate" hreflang="de" href="https://salihmaral.de/de/hizmetler/seo"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://salihmaral.de/en/hizmetler/seo"/>
+    <loc>https://salihmaral.de/de/dienstleistungen/seo</loc>
+    <xhtml:link rel="alternate" hreflang="de" href="https://salihmaral.de/de/dienstleistungen/seo"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://salihmaral.de/en/services/seo"/>
     <xhtml:link rel="alternate" hreflang="tr" href="https://salihmaral.de/tr/hizmetler/seo"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://salihmaral.de/de/hizmetler/seo"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://salihmaral.de/de/dienstleistungen/seo"/>
     <lastmod>2026-03-22</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://salihmaral.de/en/hizmetler/seo</loc>
-    <xhtml:link rel="alternate" hreflang="de" href="https://salihmaral.de/de/hizmetler/seo"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://salihmaral.de/en/hizmetler/seo"/>
+    <loc>https://salihmaral.de/en/services/seo</loc>
+    <xhtml:link rel="alternate" hreflang="de" href="https://salihmaral.de/de/dienstleistungen/seo"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://salihmaral.de/en/services/seo"/>
     <xhtml:link rel="alternate" hreflang="tr" href="https://salihmaral.de/tr/hizmetler/seo"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://salihmaral.de/de/hizmetler/seo"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://salihmaral.de/de/dienstleistungen/seo"/>
     <lastmod>2026-03-22</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://salihmaral.de/tr/hizmetler/seo</loc>
-    <xhtml:link rel="alternate" hreflang="de" href="https://salihmaral.de/de/hizmetler/seo"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://salihmaral.de/en/hizmetler/seo"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://salihmaral.de/de/dienstleistungen/seo"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://salihmaral.de/en/services/seo"/>
     <xhtml:link rel="alternate" hreflang="tr" href="https://salihmaral.de/tr/hizmetler/seo"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://salihmaral.de/de/hizmetler/seo"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://salihmaral.de/de/dienstleistungen/seo"/>
     <lastmod>2026-03-22</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://salihmaral.de/de/hizmetler/yorum-yonetimi</loc>
-    <xhtml:link rel="alternate" hreflang="de" href="https://salihmaral.de/de/hizmetler/yorum-yonetimi"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://salihmaral.de/en/hizmetler/yorum-yonetimi"/>
+    <loc>https://salihmaral.de/de/dienstleistungen/bewertungsmanagement</loc>
+    <xhtml:link rel="alternate" hreflang="de" href="https://salihmaral.de/de/dienstleistungen/bewertungsmanagement"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://salihmaral.de/en/services/review-management"/>
     <xhtml:link rel="alternate" hreflang="tr" href="https://salihmaral.de/tr/hizmetler/yorum-yonetimi"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://salihmaral.de/de/hizmetler/yorum-yonetimi"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://salihmaral.de/de/dienstleistungen/bewertungsmanagement"/>
     <lastmod>2026-03-22</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://salihmaral.de/en/hizmetler/yorum-yonetimi</loc>
-    <xhtml:link rel="alternate" hreflang="de" href="https://salihmaral.de/de/hizmetler/yorum-yonetimi"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://salihmaral.de/en/hizmetler/yorum-yonetimi"/>
+    <loc>https://salihmaral.de/en/services/review-management</loc>
+    <xhtml:link rel="alternate" hreflang="de" href="https://salihmaral.de/de/dienstleistungen/bewertungsmanagement"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://salihmaral.de/en/services/review-management"/>
     <xhtml:link rel="alternate" hreflang="tr" href="https://salihmaral.de/tr/hizmetler/yorum-yonetimi"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://salihmaral.de/de/hizmetler/yorum-yonetimi"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://salihmaral.de/de/dienstleistungen/bewertungsmanagement"/>
     <lastmod>2026-03-22</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://salihmaral.de/tr/hizmetler/yorum-yonetimi</loc>
-    <xhtml:link rel="alternate" hreflang="de" href="https://salihmaral.de/de/hizmetler/yorum-yonetimi"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://salihmaral.de/en/hizmetler/yorum-yonetimi"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://salihmaral.de/de/dienstleistungen/bewertungsmanagement"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://salihmaral.de/en/services/review-management"/>
     <xhtml:link rel="alternate" hreflang="tr" href="https://salihmaral.de/tr/hizmetler/yorum-yonetimi"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://salihmaral.de/de/hizmetler/yorum-yonetimi"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://salihmaral.de/de/dienstleistungen/bewertungsmanagement"/>
     <lastmod>2026-03-22</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
