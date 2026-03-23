@@ -618,37 +618,37 @@ export default function Home({ initialLang = 'de' }) {
                   '@type': 'SiteNavigationElement',
                   name: lang === 'de' ? 'Google Ads Management' : lang === 'tr' ? 'Google Ads Yönetimi' : 'Google Ads Management',
                   description: lang === 'de' ? 'Maximaler ROI in Such-, Display-, Shopping- und YouTube-Kampagnen' : lang === 'tr' ? 'Arama, Display, Shopping ve YouTube kampanyalarında maksimum ROI' : 'Maximum ROI in Search, Display, Shopping and YouTube campaigns',
-                  url: `https://salihmaral.de${svcUrl(lang, 'google-ads')}`
+                  url: `https://salihmaral.de/${lang}/${lang === 'de' ? 'dienstleistungen' : lang === 'en' ? 'services' : 'hizmetler'}/google-ads`
                 },
                 {
                   '@type': 'SiteNavigationElement',
                   name: 'Meta Ads (Facebook & Instagram)',
                   description: lang === 'de' ? 'Erreichen Sie Ihre Zielgruppe auf Facebook und Instagram' : lang === 'tr' ? 'Facebook ve Instagram\'da hedef kitlenize ulaşın' : 'Reach your target audience on Facebook and Instagram',
-                  url: `https://salihmaral.de${svcUrl(lang, 'meta-ads')}`
+                  url: `https://salihmaral.de/${lang}/${lang === 'de' ? 'dienstleistungen' : lang === 'en' ? 'services' : 'hizmetler'}/meta-ads`
                 },
                 {
                   '@type': 'SiteNavigationElement',
                   name: 'TikTok Ads',
                   description: lang === 'de' ? 'Erreichen Sie ein junges, dynamisches Publikum' : lang === 'tr' ? 'Genç ve dinamik kitlelere ulaşın' : 'Reach a young, dynamic audience',
-                  url: `https://salihmaral.de${svcUrl(lang, 'tiktok-ads')}`
+                  url: `https://salihmaral.de/${lang}/${lang === 'de' ? 'dienstleistungen' : lang === 'en' ? 'services' : 'hizmetler'}/tiktok-ads`
                 },
                 {
                   '@type': 'SiteNavigationElement',
                   name: 'X (Twitter) Ads',
                   description: lang === 'de' ? 'Heben Sie sich bei Trendthemen hervor' : lang === 'tr' ? 'Trend konularda öne çıkın' : 'Stand out in trending topics',
-                  url: `https://salihmaral.de${svcUrl(lang, 'x-ads')}`
+                  url: `https://salihmaral.de/${lang}/${lang === 'de' ? 'dienstleistungen' : lang === 'en' ? 'services' : 'hizmetler'}/x-ads`
                 },
                 {
                   '@type': 'SiteNavigationElement',
                   name: lang === 'de' ? 'SEO Dienstleistungen' : lang === 'tr' ? 'SEO Hizmetleri' : 'SEO Services',
                   description: lang === 'de' ? 'Erreichen Sie Top-Rankings bei Google' : lang === 'tr' ? 'Google\'da üst sıralara çıkın' : 'Achieve top rankings on Google',
-                  url: `https://salihmaral.de${svcUrl(lang, 'seo')}`
+                  url: `https://salihmaral.de/${lang}/${lang === 'de' ? 'dienstleistungen' : lang === 'en' ? 'services' : 'hizmetler'}/seo`
                 },
                 {
                   '@type': 'SiteNavigationElement',
                   name: lang === 'de' ? 'Bewertungsmanagement' : lang === 'tr' ? 'Yorum Yönetimi' : 'Review Management',
                   description: lang === 'de' ? 'Professionelles Google Bewertungsmanagement' : lang === 'tr' ? 'Profesyonel Google yorum yönetimi' : 'Professional Google review management',
-                  url: `https://salihmaral.de${svcUrl(lang, 'yorum-yonetimi')}`
+                  url: `https://salihmaral.de/${lang}/${lang === 'de' ? 'dienstleistungen' : lang === 'en' ? 'services' : 'hizmetler'}/${lang === 'de' ? 'bewertungsmanagement' : lang === 'en' ? 'review-management' : 'yorum-yonetimi'}`
                 },
                 {
                   '@type': 'SiteNavigationElement',
