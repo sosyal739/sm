@@ -19,7 +19,7 @@ export default function ImpressumPage() {
               <span className="font-semibold">Zurück</span>
             </button>
             <a href="/">
-              <img src="/logo.png" alt="Salih Maral Logo" className="h-10 w-auto" />
+              <picture><source srcSet="/logo-sm.webp" type="image/webp" /><img src="/logo.png" alt="Salih Maral Logo" className="h-10 w-auto" width="40" height="40" /></picture>
             </a>
             <div className="w-24"></div>
           </div>
