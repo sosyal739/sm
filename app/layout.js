@@ -154,6 +154,11 @@ export default function RootLayout({ children }) {
         <meta name="msapplication-TileColor" content="#4285F4" />
         <meta name="geo.region" content="DE" />
         <meta name="geo.placename" content="Germany" />
+        
+        {/* Preload critical hero image for faster LCP */}
+        <link rel="preload" as="image" type="image/webp" href="/hero.webp" />
+        <link rel="preload" as="image" type="image/webp" href="/logo-sm.webp" />
+        
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}

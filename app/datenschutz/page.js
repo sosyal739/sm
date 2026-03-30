@@ -19,7 +19,7 @@ export default function DatenschutzPage() {
               <span className="font-semibold text-gray-700">Zurück</span>
             </button>
             <a href="/">
-              <img src="/logo.png" alt="Salih Maral Logo" className="h-10 w-auto" />
+              <picture><source srcSet="/logo-sm.webp" type="image/webp" /><img src="/logo.png" alt="Salih Maral Logo" className="h-10 w-auto" width="40" height="40" /></picture>
             </a>
             <div className="w-24"></div>
           </div>
@@ -420,7 +420,7 @@ export default function DatenschutzPage() {
       <footer className="py-12 bg-gray-900 text-white mt-12">
         <div className="container mx-auto px-4 text-center">
           <a href="/" className="inline-block mb-4">
-            <img src="/logo.png" alt="Salih Maral Logo" className="h-12 w-auto mx-auto" />
+            <picture><source srcSet="/logo-md.webp" type="image/webp" /><img src="/logo.png" alt="Salih Maral Logo" className="h-12 w-auto mx-auto" width="48" height="48" loading="lazy" /></picture>
           </a>
           <p className="text-sm text-gray-400">© 2026 Salih Maral. Alle Rechte vorbehalten.</p>
           <div className="flex justify-center space-x-6 mt-4 text-sm text-gray-400">
