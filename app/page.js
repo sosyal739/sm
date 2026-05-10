@@ -852,9 +852,9 @@ export default function Home({ initialLang = 'de' }) {
                     <img
                       src="https://www.gstatic.com/partners/badge/images/2026/PartnerBadgeClickable.svg"
                       alt="Google Partner"
-                      className="h-20 w-auto transition-transform duration-300 group-hover:scale-105"
-                      width="136"
-                      height="80"
+                      className="h-28 w-auto transition-transform duration-300 group-hover:scale-105"
+                      width="190"
+                      height="112"
                     />
                   </a>
                 </div>
@@ -1615,9 +1615,9 @@ export default function Home({ initialLang = 'de' }) {
                 <img
                   src="https://www.gstatic.com/partners/badge/images/2026/PartnerBadgeClickable.svg"
                   alt="Google Partner"
-                  className="h-12 w-auto"
-                  width="82"
-                  height="48"
+                  className="h-16 w-auto"
+                  width="109"
+                  height="64"
                   loading="lazy"
                 />
               </a>
