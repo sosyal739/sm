@@ -813,6 +813,8 @@ export default function Home({ initialLang = 'de' }) {
                   <p className="text-xs text-muted-foreground">{t.hero.clients}</p>
                 </div>
               </div>
+
+
             </div>
             <div className="relative">
               <div className="relative rounded-2xl overflow-hidden shadow-2xl animate-float">
@@ -829,6 +831,35 @@ export default function Home({ initialLang = 'de' }) {
                   />
                 </picture>
               </div>
+              {/* Google Partners Badge - Below photo */}
+              <div className="flex justify-center mt-6" data-testid="google-partners-badge">
+                <div className="inline-block relative group">
+                  <div className="absolute -inset-3 bg-gradient-to-r from-[#4285F4]/20 via-[#34A853]/20 to-[#FBBC04]/20 rounded-xl blur-lg opacity-0 group-hover:opacity-100 transition-opacity duration-700"></div>
+                  <a
+                    href="https://www.google.com/partners/agency?id=5868261912&_gl=1*18i960o*_ga*MTA1ODA5OTYxNS4xNzU4MDYxMzU4*_ga_V9K47ZG8NP*czE3NzgyODEzNzIkbzI1MyRnMSR0MTc3ODI4MzkyMiRqNjAkbDAkaDA"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="relative block"
+                  >
+                    <img
+                      src="https://www.gstatic.com/partners/badge/images/2026/PartnerBadgeClickable.svg"
+                      alt="Google Partner"
+                      className="h-28 w-auto transition-transform duration-300 group-hover:scale-105"
+                      width="190"
+                      height="112"
+                    />
+                  </a>
+                </div>
+              </div>
+              <style jsx>{`
+                @keyframes float {
+                  0%, 100% { transform: translateY(0px); }
+                  50% { transform: translateY(-20px); }
+                }
+                .animate-float {
+                  animation: float 6s ease-in-out infinite;
+                }
+              `}</style>
             </div>
           </div>
         </div>
@@ -1553,7 +1584,26 @@ export default function Home({ initialLang = 'de' }) {
             </div>
           </div>
           <div className="border-t border-gray-800 pt-8 flex flex-col md:flex-row items-center justify-between text-sm text-gray-400">
-            <p>© 2026 Salih Maral. {t.footer.rights}</p>
+            <div className="flex items-center space-x-6">
+              <p>© 2026 Salih Maral. {t.footer.rights}</p>
+              {/* Google Partners Badge in Footer */}
+              <a
+                href="https://www.google.com/partners/agency?id=5868261912&_gl=1*18i960o*_ga*MTA1ODA5OTYxNS4xNzU4MDYxMzU4*_ga_V9K47ZG8NP*czE3NzgyODEzNzIkbzI1MyRnMSR0MTc3ODI4MzkyMiRqNjAkbDAkaDA"
+                target="_blank"
+                rel="noopener noreferrer"
+                data-testid="google-partners-badge-footer"
+                className="inline-block hover:opacity-80 transition-opacity"
+              >
+                <img
+                  src="https://www.gstatic.com/partners/badge/images/2026/PartnerBadgeClickable.svg"
+                  alt="Google Partner"
+                  className="h-16 w-auto"
+                  width="109"
+                  height="64"
+                  loading="lazy"
+                />
+              </a>
+            </div>
             <div className="flex items-center space-x-6 mt-4 md:mt-0">
               <a href="/impressum" className="hover:text-white transition-colors">Impressum</a>
               <a href="/datenschutz" className="hover:text-white transition-colors">Datenschutzerklärung</a>

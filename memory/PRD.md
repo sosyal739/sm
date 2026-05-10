@@ -33,6 +33,9 @@ Salih Maral için modern, üç dilli (Türkçe, Almanca, İngilizce) kişisel po
 - [x] Kişisel bilgiler (telefon/email) genel sayfalardan kaldırıldı (Impressum/Datenschutz hariç)
 - [x] Vercel deployment konfigürasyonu (vercel.json, next.config.js)
 
+## Son Tamamlanan
+- [x] Google Partners rozeti: Hero bölümüne ve footer'a eklendi, tüm 3 dilde çalışıyor, Google kurallarına uygun (2026-05-10)
+
 ## Bekleyen/Gelecek Görevler
 
 ### P0 - Yüksek Öncelik
