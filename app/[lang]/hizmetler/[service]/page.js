@@ -666,7 +666,7 @@ export default function ServiceDetailPage() {
         <div className="container mx-auto px-4 py-4">
           <div className="flex items-center justify-between">
             <a href={lang === 'de' ? '/' : `/${lang}`} className="flex items-center">
-              <img src="/logo.png" alt="Salih Maral Logo" className="h-10 w-auto" width="40" height="40" />
+              <picture><source srcSet="/logo-sm.webp" type="image/webp" /><img src="/logo.png" alt="Salih Maral Logo" className="h-10 w-auto" width="40" height="40" /></picture>
             </a>
             
             <div className="hidden md:flex items-center space-x-6">

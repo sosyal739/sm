@@ -707,7 +707,10 @@ export default function Home({ initialLang = 'de' }) {
         <div className="container mx-auto px-4 py-4">
           <div className="flex items-center justify-between">
             <a href={lang === 'de' ? '/' : `/${lang}`} className="flex items-center">
-              <img src="/logo.png" alt="Salih Maral Logo" className="h-10 w-auto" width="40" height="40" />
+              <picture>
+                <source srcSet="/logo-sm.webp" type="image/webp" />
+                <img src="/logo.png" alt="Salih Maral Logo" className="h-10 w-auto" width="40" height="40" />
+              </picture>
             </a>
             
             <div className="hidden md:flex items-center space-x-6">
@@ -798,22 +801,6 @@ export default function Home({ initialLang = 'de' }) {
                   {t.hero.cta2}
                 </Button>
               </div>
-              <style jsx>{`
-                @keyframes pulse-slow {
-                  0%, 100% { box-shadow: 0 0 0 0 rgba(52, 168, 83, 0.7); }
-                  50% { box-shadow: 0 0 0 10px rgba(52, 168, 83, 0); }
-                }
-                @keyframes bounce-slow {
-                  0%, 100% { transform: translateY(0); }
-                  50% { transform: translateY(-5px); }
-                }
-                .animate-pulse-slow {
-                  animation: pulse-slow 2s infinite;
-                }
-                .animate-bounce-slow {
-                  animation: bounce-slow 1s infinite;
-                }
-              `}</style>
               <div className="flex items-center space-x-4 pt-4">
                 <div className="flex -space-x-2">
                   {[1, 2, 3].map((i) => (
@@ -831,13 +818,18 @@ export default function Home({ initialLang = 'de' }) {
             </div>
             <div className="relative">
               <div className="relative rounded-2xl overflow-hidden shadow-2xl animate-float">
-                <img
-                  src="https://customer-assets.emergentagent.com/job_maralpresence/artifacts/cnlyuz94__prompt_create_4k_202601290226%20%281%29.jpeg"
-                  alt="Salih Maral - Digital Marketing Expert"
-                  className="w-full h-auto"
-                  width="600"
-                  height="400"
-                />
+                <picture>
+                  <source media="(max-width: 640px)" srcSet="/hero-mobile.webp" type="image/webp" />
+                  <source srcSet="/hero.webp" type="image/webp" />
+                  <img
+                    src="/hero.jpg"
+                    alt="Salih Maral - Digital Marketing Expert"
+                    className="w-full h-auto"
+                    width="800"
+                    height="447"
+                    fetchPriority="high"
+                  />
+                </picture>
               </div>
               {/* Google Partners Badge - Below photo */}
               <div className="flex justify-center mt-6" data-testid="google-partners-badge">
@@ -1020,19 +1012,6 @@ export default function Home({ initialLang = 'de' }) {
             </div>
           </div>
         </div>
-        
-        <style jsx>{`
-          @keyframes scroll {
-            0% { transform: translateX(0); }
-            100% { transform: translateX(-50%); }
-          }
-          .animate-scroll {
-            animation: scroll 25s linear infinite;
-          }
-          .animate-scroll:hover {
-            animation-play-state: paused;
-          }
-        `}</style>
       </section>
 
       {/* Services Section - ENHANCED */}
@@ -1577,7 +1556,10 @@ export default function Home({ initialLang = 'de' }) {
         <div className="container mx-auto px-4">
           <div className="grid md:grid-cols-3 gap-8 mb-8">
             <div>
-              <img src="/logo.png" alt="Salih Maral Logo" className="h-12 w-auto mb-4" width="48" height="48" loading="lazy" />
+              <picture>
+                <source srcSet="/logo-sm.webp" type="image/webp" />
+                <img src="/logo.png" alt="Salih Maral Logo" className="h-12 w-auto mb-4" width="48" height="48" loading="lazy" />
+              </picture>
               <p className="text-sm text-gray-400">{t.footer.description}</p>
             </div>
             <div>
