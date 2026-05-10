@@ -826,6 +826,28 @@ export default function Home({ initialLang = 'de' }) {
                   <p className="text-xs text-muted-foreground">{t.hero.clients}</p>
                 </div>
               </div>
+
+              {/* Google Partners Badge */}
+              <div className="pt-6" data-testid="google-partners-badge">
+                <div className="inline-block relative group">
+                  {/* Subtle glow behind badge */}
+                  <div className="absolute -inset-3 bg-gradient-to-r from-[#4285F4]/20 via-[#34A853]/20 to-[#FBBC04]/20 rounded-xl blur-lg opacity-0 group-hover:opacity-100 transition-opacity duration-700"></div>
+                  <a
+                    href="https://www.google.com/partners/agency?id=5868261912"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="relative block"
+                  >
+                    <img
+                      src="https://www.gstatic.com/partners/badge/images/2026/PartnerBadgeClickable.svg"
+                      alt="Google Partner"
+                      className="h-20 w-auto transition-transform duration-300 group-hover:scale-105"
+                      width="136"
+                      height="80"
+                    />
+                  </a>
+                </div>
+              </div>
             </div>
             <div className="relative">
               <div className="relative rounded-2xl overflow-hidden shadow-2xl animate-float">
@@ -1580,7 +1602,26 @@ export default function Home({ initialLang = 'de' }) {
             </div>
           </div>
           <div className="border-t border-gray-800 pt-8 flex flex-col md:flex-row items-center justify-between text-sm text-gray-400">
-            <p>© 2026 Salih Maral. {t.footer.rights}</p>
+            <div className="flex items-center space-x-6">
+              <p>© 2026 Salih Maral. {t.footer.rights}</p>
+              {/* Google Partners Badge in Footer */}
+              <a
+                href="https://www.google.com/partners/agency?id=5868261912"
+                target="_blank"
+                rel="noopener noreferrer"
+                data-testid="google-partners-badge-footer"
+                className="inline-block hover:opacity-80 transition-opacity"
+              >
+                <img
+                  src="https://www.gstatic.com/partners/badge/images/2026/PartnerBadgeClickable.svg"
+                  alt="Google Partner"
+                  className="h-12 w-auto"
+                  width="82"
+                  height="48"
+                  loading="lazy"
+                />
+              </a>
+            </div>
             <div className="flex items-center space-x-6 mt-4 md:mt-0">
               <a href="/impressum" className="hover:text-white transition-colors">Impressum</a>
               <a href="/datenschutz" className="hover:text-white transition-colors">Datenschutzerklärung</a>
