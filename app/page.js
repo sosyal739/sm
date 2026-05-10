@@ -827,13 +827,24 @@ export default function Home({ initialLang = 'de' }) {
                 </div>
               </div>
 
-              {/* Google Partners Badge */}
-              <div className="pt-6" data-testid="google-partners-badge">
+
+            </div>
+            <div className="relative">
+              <div className="relative rounded-2xl overflow-hidden shadow-2xl animate-float">
+                <img
+                  src="https://customer-assets.emergentagent.com/job_maralpresence/artifacts/cnlyuz94__prompt_create_4k_202601290226%20%281%29.jpeg"
+                  alt="Salih Maral - Digital Marketing Expert"
+                  className="w-full h-auto"
+                  width="600"
+                  height="400"
+                />
+              </div>
+              {/* Google Partners Badge - Below photo */}
+              <div className="flex justify-center mt-6" data-testid="google-partners-badge">
                 <div className="inline-block relative group">
-                  {/* Subtle glow behind badge */}
                   <div className="absolute -inset-3 bg-gradient-to-r from-[#4285F4]/20 via-[#34A853]/20 to-[#FBBC04]/20 rounded-xl blur-lg opacity-0 group-hover:opacity-100 transition-opacity duration-700"></div>
                   <a
-                    href="https://www.google.com/partners/agency?id=5868261912"
+                    href="https://www.google.com/partners/agency?id=5868261912&_gl=1*18i960o*_ga*MTA1ODA5OTYxNS4xNzU4MDYxMzU4*_ga_V9K47ZG8NP*czE3NzgyODEzNzIkbzI1MyRnMSR0MTc3ODI4MzkyMiRqNjAkbDAkaDA"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="relative block"
@@ -847,17 +858,6 @@ export default function Home({ initialLang = 'de' }) {
                     />
                   </a>
                 </div>
-              </div>
-            </div>
-            <div className="relative">
-              <div className="relative rounded-2xl overflow-hidden shadow-2xl animate-float">
-                <img
-                  src="https://customer-assets.emergentagent.com/job_maralpresence/artifacts/cnlyuz94__prompt_create_4k_202601290226%20%281%29.jpeg"
-                  alt="Salih Maral - Digital Marketing Expert"
-                  className="w-full h-auto"
-                  width="600"
-                  height="400"
-                />
               </div>
               <style jsx>{`
                 @keyframes float {
@@ -1606,7 +1606,7 @@ export default function Home({ initialLang = 'de' }) {
               <p>© 2026 Salih Maral. {t.footer.rights}</p>
               {/* Google Partners Badge in Footer */}
               <a
-                href="https://www.google.com/partners/agency?id=5868261912"
+                href="https://www.google.com/partners/agency?id=5868261912&_gl=1*18i960o*_ga*MTA1ODA5OTYxNS4xNzU4MDYxMzU4*_ga_V9K47ZG8NP*czE3NzgyODEzNzIkbzI1MyRnMSR0MTc3ODI4MzkyMiRqNjAkbDAkaDA"
                 target="_blank"
                 rel="noopener noreferrer"
                 data-testid="google-partners-badge-footer"
