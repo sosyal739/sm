@@ -177,7 +177,8 @@ const translations = {
     },
     footer: {
       description: 'Google Ads, Meta Ads ve SEO ile işletmenizi dijital dünyada zirveye taşıyoruz.',
-      rights: 'Tüm hakları saklıdır.'
+      rights: 'Tüm hakları saklıdır.',
+      about: 'Hakkımızda'
     }
   },
   de: {
@@ -347,7 +348,8 @@ const translations = {
     },
     footer: {
       description: 'Wir bringen Ihr Unternehmen mit Google Ads, Meta Ads und SEO an die Spitze der digitalen Welt.',
-      rights: 'Alle Rechte vorbehalten.'
+      rights: 'Alle Rechte vorbehalten.',
+      about: 'Über uns'
     }
   },
   en: {
@@ -517,7 +519,8 @@ const translations = {
     },
     footer: {
       description: 'We take your business to the top of the digital world with Google Ads, Meta Ads and SEO.',
-      rights: 'All rights reserved.'
+      rights: 'All rights reserved.',
+      about: 'About Us'
     }
   }
 }
@@ -1623,6 +1626,7 @@ export default function Home({ initialLang = 'de' }) {
               </a>
             </div>
             <div className="flex items-center space-x-6 mt-4 md:mt-0">
+              <a href="/about" className="hover:text-white transition-colors">{t.footer.about || 'Über uns'}</a>
               <a href="/impressum" className="hover:text-white transition-colors">Impressum</a>
               <a href="/datenschutz" className="hover:text-white transition-colors">Datenschutzerklärung</a>
               <a href="/blog" className="hover:text-white transition-colors">Blog</a>

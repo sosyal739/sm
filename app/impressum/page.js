@@ -37,12 +37,31 @@ export default function ImpressumPage() {
               <p>
                 <strong>Salih Maral</strong><br />
                 Freiberuflicher Digital Marketing Berater<br />
+                Zertifizierter Google Partner
+              </p>
+
+              <h2>Anschrift</h2>
+              <p>
+                Bürgermeister Mahr Straße 36<br />
+                63179 Obertshausen<br />
+                Deutschland
               </p>
 
               <h2>Kontakt</h2>
               <p>
-                Telefon: 01724106463<br />
+                Telefon: +49 172 410 6463<br />
                 E-Mail: kontakt@salihmaral.de
+              </p>
+
+              <h2>Handelsregister</h2>
+              <p>
+                Registernummer: HRB 55857
+              </p>
+
+              <h2>Umsatzsteuer-ID</h2>
+              <p>
+                Umsatzsteuer-Identifikationsnummer gemäß § 27 a Umsatzsteuergesetz:<br />
+                DE361707461
               </p>
 
               <h2>Berufsbezeichnung und berufsrechtliche Regelungen</h2>
