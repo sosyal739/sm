@@ -23,7 +23,7 @@ const translations = {
         { title: 'Zertifizierter Google Partner', desc: 'Offiziell von Google als Partner-Agentur anerkannt. Wir erfüllen die strengen Anforderungen von Google an Kompetenz, Leistung und Kundenzufriedenheit.' },
         { title: '15+ Jahre Erfahrung', desc: 'Seit über 15 Jahren im digitalen Marketing tätig. Hunderte erfolgreiche Kampagnen in verschiedenen Branchen und Märkten.' },
         { title: '300+ Marken betreut', desc: 'Mehr als 300 Unternehmen und Marken haben uns ihr digitales Wachstum anvertraut — von lokalen KMUs bis zu internationalen Unternehmen.' },
-        { title: 'Standort Deutschland', desc: 'Mit Sitz in Obertshausen bei Frankfurt am Main betreuen wir Kunden in ganz Deutschland, Europa und der Türkei.' }
+        { title: 'Standort Deutschland', desc: 'Mit Sitz in Dreieich bei Frankfurt am Main betreuen wir Kunden in ganz Deutschland, Europa und der Türkei.' }
       ]
     },
     services: {
@@ -69,7 +69,7 @@ const translations = {
         { title: 'Sertifikalı Google Partner', desc: 'Google tarafından resmi olarak Partner Ajans olarak tanınmaktayız. Yetkinlik, performans ve müşteri memnuniyeti konusunda Google\'ın katı gereksinimlerini karşılıyoruz.' },
         { title: '15+ Yıl Deneyim', desc: '15 yılı aşkın süredir dijital pazarlama alanında faaliyet gösteriyoruz. Farklı sektör ve pazarlarda yüzlerce başarılı kampanya.' },
         { title: '300+ Marka', desc: '300\'den fazla işletme ve marka dijital büyümelerini bize emanet etti — yerel KOBİ\'lerden uluslararası şirketlere kadar.' },
-        { title: 'Almanya Merkezli', desc: 'Frankfurt am Main yakınlarında Obertshausen\'da bulunan ofisimizden Almanya, Avrupa ve Türkiye genelinde müşterilere hizmet veriyoruz.' }
+        { title: 'Almanya Merkezli', desc: 'Frankfurt am Main yakınlarında Dreieich\'te bulunan ofisimizden Almanya, Avrupa ve Türkiye genelinde müşterilere hizmet veriyoruz.' }
       ]
     },
     services: {

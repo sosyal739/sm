@@ -42,14 +42,13 @@ export default function ImpressumPage() {
 
               <h2>Anschrift</h2>
               <p>
-                Bürgermeister Mahr Straße 36<br />
-                63179 Obertshausen<br />
+                Hegelstr.<br />
+                63303 Dreieich<br />
                 Deutschland
               </p>
 
               <h2>Kontakt</h2>
               <p>
-                Telefon: +49 172 410 6463<br />
                 E-Mail: kontakt@salihmaral.de
               </p>
 

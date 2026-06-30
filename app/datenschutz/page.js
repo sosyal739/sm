@@ -84,8 +84,8 @@ export default function DatenschutzPage() {
                 <p className="text-gray-600 mb-1">Digital Marketing Experte</p>
                 <div className="space-y-2 mt-4">
                   <p className="flex items-center text-gray-600">
-                    <Phone className="h-4 w-4 mr-2 text-[#4285F4]" />
-                    +49 172 410 6463
+                    <MapPin className="h-4 w-4 mr-2 text-[#4285F4]" />
+                    Hegelstr., 63303 Dreieich, Deutschland
                   </p>
                   <p className="flex items-center text-gray-600">
                     <Mail className="h-4 w-4 mr-2 text-[#4285F4]" />
@@ -383,20 +383,12 @@ export default function DatenschutzPage() {
                 Bei Fragen zum Datenschutz oder zur Ausübung Ihrer Rechte können Sie uns jederzeit kontaktieren:
               </p>
               
-              <div className="grid md:grid-cols-2 gap-6">
+              <div className="grid md:grid-cols-1 gap-6">
                 <div className="p-6 bg-gray-50 rounded-xl">
                   <h3 className="font-semibold text-gray-900 mb-4">Per E-Mail</h3>
                   <a href="mailto:kontakt@salihmaral.de" className="flex items-center text-[#4285F4] hover:underline">
                     <Mail className="h-5 w-5 mr-2" />
                     kontakt@salihmaral.de
-                  </a>
-                </div>
-                
-                <div className="p-6 bg-gray-50 rounded-xl">
-                  <h3 className="font-semibold text-gray-900 mb-4">Per Telefon</h3>
-                  <a href="tel:+491724106463" className="flex items-center text-[#4285F4] hover:underline">
-                    <Phone className="h-5 w-5 mr-2" />
-                    +49 172 410 6463
                   </a>
                 </div>
               </div>
