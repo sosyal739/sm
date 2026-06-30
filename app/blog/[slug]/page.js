@@ -1481,8 +1481,9 @@ const blogPosts = {
         <h2>🚀 Conclusion</h2>
         <p>Your online reputation is one of your business's most valuable assets. Fight against unfair reviews and build a positive reputation!</p>
       `
-    },
-    'google-ads-roi-tracking': {
+    }
+  },
+  'google-ads-roi-tracking': {
       tr: {
         title: 'Google Ads Dönüşüm Takibi ve ROI Optimizasyonu',
         category: 'Google Ads',
@@ -2074,7 +2075,6 @@ const blogPosts = {
       }
     }
   }
-}
 
 export default function BlogDetailPage() {
   const params = useParams()
