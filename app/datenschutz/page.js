@@ -89,7 +89,7 @@ export default function DatenschutzPage() {
                   </p>
                   <p className="flex items-center text-gray-600">
                     <Mail className="h-4 w-4 mr-2 text-[#4285F4]" />
-                    kontakt@salihmaral.de
+                    info@salihmaral.de
                   </p>
                 </div>
               </div>
@@ -386,9 +386,9 @@ export default function DatenschutzPage() {
               <div className="grid md:grid-cols-1 gap-6">
                 <div className="p-6 bg-gray-50 rounded-xl">
                   <h3 className="font-semibold text-gray-900 mb-4">Per E-Mail</h3>
-                  <a href="mailto:kontakt@salihmaral.de" className="flex items-center text-[#4285F4] hover:underline">
+                  <a href="mailto:info@salihmaral.de" className="flex items-center text-[#4285F4] hover:underline">
                     <Mail className="h-5 w-5 mr-2" />
-                    kontakt@salihmaral.de
+                    info@salihmaral.de
                   </a>
                 </div>
               </div>

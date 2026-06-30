@@ -49,7 +49,7 @@ export default function ImpressumPage() {
 
               <h2>Kontakt</h2>
               <p>
-                E-Mail: kontakt@salihmaral.de
+                E-Mail: info@salihmaral.de
               </p>
 
               <h2>Handelsregister</h2>
