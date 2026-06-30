@@ -1481,6 +1481,597 @@ const blogPosts = {
         <h2>🚀 Conclusion</h2>
         <p>Your online reputation is one of your business's most valuable assets. Fight against unfair reviews and build a positive reputation!</p>
       `
+    },
+    'google-ads-roi-tracking': {
+      tr: {
+        title: 'Google Ads Dönüşüm Takibi ve ROI Optimizasyonu',
+        category: 'Google Ads',
+        date: '2026-03-01',
+        readTime: '6',
+        content: `
+          <div class="lead">
+            <p>Google Ads bütçenizin başarısı, reklama ne kadar harcadığınızdan ziyade dönüşümleri ne kadar doğru takip ettiğinize bağlıdır. 2026 sektörel çalışmalarına göre, gelişmiş dönüşüm takibini aktif eden işletmeler reklam maliyetlerinde %30'a varan düşüş ve ROI oranlarında %150 artış görmektedir.</p>
+          </div>
+
+          <h2>🎯 Dönüşüm Takibi (Conversion Tracking) Nedir?</h2>
+          <p>Dönüşüm takibi, bir kullanıcının reklamınıza tıkladıktan sonra sitenizde ne yaptığını (satın alma, form doldurma, telefon araması vb.) gösteren ölçümleme sistemidir. Bu veri olmadan Google Ads algoritmaları kampanyalarınızı optimize edemez.</p>
+
+          <blockquote>
+            <p>"Dönüşüm takibi kurmadan Google Ads reklamı vermek, nereye gittiğini bilmeden karanlıkta araba sürmeye benzer. Nereye harcadığınızı görürsünüz ama ne kazandığınızı asla ölçemezsiniz." — Salih Maral, 15+ Yıllık Dijital Pazarlama Uzmanı</p>
+          </blockquote>
+
+          <h2>📊 Dönüşüm Takibinin ROI Üzerindeki Etkisi</h2>
+          <p>Aşağıdaki tabloda doğru dönüşüm takibine sahip olan ve olmayan hesapların ortalama performans karşılaştırmasını görebilirsiniz:</p>
+
+          <table>
+            <thead>
+              <tr>
+                <th>Metrik</th>
+                <th>Dönüşüm Takibi Olmayan</th>
+                <th>Dönüşüm Takibi Olan (Optimize)</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Tıklama Başı Maliyet (CPC)</td>
+                <td>Yüksek (Optimizasyon yok)</td>
+                <td>%20-%30 Daha Düşük</td>
+              </tr>
+              <tr>
+                <td>Elde Edilen ROAS (Reklam Getirisi)</td>
+                <td>Belirsiz / Düşük (1.5x - 2.0x)</td>
+                <td>Yüksek ve Ölçülebilir (4.0x - 6.0x+)</td>
+              </tr>
+              <tr>
+                <td>Bütçe Dağılımı</td>
+                <td>Tüm kelimelere eşit / verimsiz</td>
+                <td>Sadece dönüşüm getiren kelimelere odaklı</td>
+              </tr>
+            </tbody>
+          </table>
+
+          <h2>🛠️ Adım Adım ROI Optimizasyonu Nasıl Yapılır?</h2>
+          
+          <ol>
+            <li><strong>Google Etiket Yöneticisi (GTM) Entegrasyonu:</strong> Dönüşüm kodlarınızı siteye doğrudan eklemek yerine GTM kullanarak temiz ve esnek bir altyapı kurun.</li>
+            <li><strong>Gelişmiş Dönüşümler (Enhanced Conversions) Aktivasyonu:</strong> Kullanıcı verilerini (e-posta, telefon) güvenli şekilde hash'leyerek Google'a gönderin. Bu, iOS 14+ sonrası kaybolan dönüşüm verilerini %15 oranında kurtarır.</li>
+            <li><strong>Değer Odaklı Teklif Verme (Value-Based Bidding):</strong> Kampanyalarınızı sadece "tıklama" veya "dönüşüm sayısı" için değil, "dönüşüm değeri (cila)" odaklı optimize edin (tROAS teklif stratejisi).</li>
+            <li><strong>Negatif Anahtar Kelime Yönetimi:</strong> Dönüşüm getirmeyen ama bütçe tüketen aramaları her hafta düzenli olarak negatif listenize ekleyin.</li>
+          </ol>
+
+          <div class="highlight-box success">
+            <h4>💡 Uzman Tavsiyesi</h4>
+            <p>E-Ticaret sitelerinde sadece "Alışveriş" (Purchase) dönüşümünü değil, huninin adımları olan "Sepete Ekle" ve "Ödeme Başlangıcı" adımlarını da mikro dönüşüm olarak takip edin. Bu sayede algoritmalar çok daha hızlı veri toplayıp öğrenme sürecini tamamlar.</p>
+          </div>
+
+          <h2>🚀 Sonuç</h2>
+          <p>Yüksek ROI elde etmek bütçeyi artırmakla değil, mevcut bütçeyi akıllıca yönetmekle başlar. Doğru bir dönüşüm takibi kurulumu ve sürekli veri analizi ile reklam maliyetlerinizi düşürebilir ve işletmenizi karlı şekilde büyütebilirsiniz.</p>
+        `
+      },
+      de: {
+        title: 'Google Ads Conversion Tracking und ROI-Optimierung',
+        category: 'Google Ads',
+        date: '2026-03-01',
+        readTime: '6',
+        content: `
+          <div class="lead">
+            <p>Der Erfolg Ihres Google Ads-Budgets hängt weniger davon ab, wie viel Sie für Werbung ausgeben, als vielmehr davon, wie genau Sie Conversions erfassen. Laut Branchenstudien von 2026 verzeichnen Unternehmen, die erweitertes Conversion-Tracking aktivieren, eine Reduzierung der Werbekosten um bis zu 30 % und eine Steigerung des ROI um 150 %.</p>
+          </div>
+
+          <h2>🎯 Was ist Conversion-Tracking?</h2>
+          <p>Conversion-Tracking ist das Messsystem, das zeigt, was ein Nutzer tut (Kauf, Formularausfüllung, Anruf usw.), nachdem er auf Ihre Anzeige geklickt hat. Ohne diese Daten können Google Ads-Algorithmen Ihre Kampagnen nicht optimieren.</p>
+
+          <blockquote>
+            <p>"Google Ads ohne Conversion-Tracking zu schalten, ist wie Autofahren im Dunkeln ohne Licht. Sie sehen, was Sie ausgeben, aber Sie können niemals messen, was Sie verdienen." — Salih Maral, Experte für digitales Marketing</p>
+          </blockquote>
+
+          <h2>📊 Der Einfluss des Erfassens auf den ROI</h2>
+          <p>In der folgenden Tabelle sehen Sie den durchschnittlichen Leistungsvergleich von Konten mit und ohne korrektes Conversion-Tracking:</p>
+
+          <table>
+            <thead>
+              <tr>
+                <th>Metrik</th>
+                <th>Ohne Conversion-Tracking</th>
+                <th>Mit Conversion-Tracking (Optimiert)</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Kosten pro Klick (CPC)</td>
+                <td>Hoch (keine Optimierung)</td>
+                <td>20-30 % niedriger</td>
+              </tr>
+              <tr>
+                <td>Erreichter ROAS (Return on Ad Spend)</td>
+                <td>Unklar / Niedrig (1.5x - 2.0x)</td>
+                <td>Hoch und messbar (4.0x - 6.0x+)</td>
+              </tr>
+              <tr>
+                <td>Budgetverteilung</td>
+                <td>Gleichmäßig / Ineffizient</td>
+                <td>Fokus nur auf Keywords, die Conversions bringen</td>
+              </tr>
+            </tbody>
+          </table>
+
+          <h2>🛠️ Schritt-für-Schritt-Anleitung zur ROI-Optimierung</h2>
+          
+          <ol>
+            <li><strong>Google Tag Manager (GTM) Integration:</strong> Verwenden Sie GTM für eine saubere und flexible Infrastruktur, anstatt Conversion-Codes direkt in die Website einzufügen.</li>
+            <li><strong>Aktivierung von erweiterten Conversions (Enhanced Conversions):</strong> Senden Sie Nutzerdaten (E-Mail, Telefon) sicher gehasht an Google. Dies rettet bis zu 15 % der nach iOS 14+ verloren gegangenen Conversion-Daten.</li>
+            <li><strong>Wertbasierte Gebote (Value-Based Bidding):</strong> Optimieren Sie Ihre Kampagnen nicht nur für "Klicks" oder "Conversion-Anzahl", sondern für den "Conversion-Wert (Umsatz)" unter Verwendung der tROAS-Gebotsstrategie.</li>
+            <li><strong>Ausschließende Keywords (Negative Keywords):</strong> Fügen Sie wöchentlich Suchanfragen hinzu, die Budget verbrauchen, aber keine Conversions generieren.</li>
+          </ol>
+
+          <div class="highlight-box success">
+            <h4>💡 Expertentipp</h4>
+            <p>Verfolgen Sie in E-Commerce-Websites nicht nur die Conversion "Kauf" (Purchase), sondern auch die Schritte "In den Einkaufswagen" und "Checkout begonnen" als Mikro-Conversions. Dadurch sammeln die Algorithmen viel schneller Daten und schließen den Lernprozess ab.</p>
+          </div>
+
+          <h2>🚀 Fazit</h2>
+          <p>Die Erzielung eines hohen ROI beginnt nicht mit der Erhöhung des Budgets, sondern mit der intelligenten Verwaltung des vorhandenen Budgets. Durch eine korrekte Einrichtung des Conversion-Trackings und kontinuierliche Datenanalyse können Sie Ihre Werbekosten senken und Ihr Unternehmen profitabel wachsen lassen.</p>
+        `
+      },
+      en: {
+        title: 'Google Ads Conversion Tracking and ROI Optimization',
+        category: 'Google Ads',
+        date: '2026-03-01',
+        readTime: '6',
+        content: `
+          <div class="lead">
+            <p>The success of your Google Ads budget depends less on how much you spend on advertising and more on how accurately you track conversions. According to 2026 industry studies, businesses that enable advanced conversion tracking see up to a 30% reduction in advertising costs and a 150% increase in ROI.</p>
+          </div>
+
+          <h2>🎯 What is Conversion Tracking?</h2>
+          <p>Conversion tracking is the measurement system that shows what a user does (purchase, form fill, phone call, etc.) after clicking your ad. Without this data, Google Ads algorithms cannot optimize your campaigns.</p>
+
+          <blockquote>
+            <p>"Running Google Ads without conversion tracking is like driving in the dark without headlights. You see what you spend, but you can never measure what you earn." — Salih Maral, Digital Marketing Expert</p>
+          </blockquote>
+
+          <h2>📊 The Impact of Conversion Tracking on ROI</h2>
+          <p>In the table below, you can see the average performance comparison of accounts with and without proper conversion tracking:</p>
+
+          <table>
+            <thead>
+              <tr>
+                <th>Metric</th>
+                <th>Without Conversion Tracking</th>
+                <th>With Conversion Tracking (Optimized)</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Cost Per Click (CPC)</td>
+                <td>High (no optimization)</td>
+                <td>20% - 30% Lower</td>
+              </tr>
+              <tr>
+                <td>Achieved ROAS (Return on Ad Spend)</td>
+                <td>Unclear / Low (1.5x - 2.0x)</td>
+                <td>High and Measurable (4.0x - 6.0x+)</td>
+              </tr>
+              <tr>
+                <td>Budget Distribution</td>
+                <td>Even / Inefficient</td>
+                <td>Focused only on keywords that drive conversions</td>
+              </tr>
+            </tbody>
+          </table>
+
+          <h2>🛠️ Step-by-Step Guide to ROI Optimization</h2>
+          
+          <ol>
+            <li><strong>Google Tag Manager (GTM) Integration:</strong> Use GTM for a clean and flexible infrastructure instead of inserting conversion codes directly into the website.</li>
+            <li><strong>Activate Enhanced Conversions:</strong> Send hashed user data (email, phone) securely to Google. This recovers up to 15% of conversion data lost post-iOS 14+.</li>
+            <li><strong>Value-Based Bidding:</strong> Optimize your campaigns not just for "clicks" or "conversion count," but for "conversion value (revenue)" using the tROAS bidding strategy.</li>
+            <li><strong>Negative Keyword Management:</strong> Regularly add search terms that consume budget but generate no conversions to your negative list every week.</li>
+          </ol>
+
+          <div class="highlight-box success">
+            <h4>💡 Expert Tip</h4>
+            <p>On E-Commerce sites, track "Add to Cart" and "Begin Checkout" as micro-conversions, not just "Purchase". This helps the algorithms collect data much faster and complete their learning phase.</p>
+          </div>
+
+          <h2>🚀 Conclusion</h2>
+          <p>Achieving high ROI starts not with increasing the budget, but with managing the existing budget wisely. With correct conversion tracking setup and continuous data analysis, you can lower your ad costs and grow your business profitably.</p>
+        `
+      }
+    },
+    'meta-ads-retargeting-funnels': {
+      tr: {
+        title: 'E-Ticaret İçin Meta Ads Yeniden Hedefleme Hunileri',
+        category: 'Meta Ads',
+        date: '2026-03-05',
+        readTime: '5',
+        content: `
+          <div class="lead">
+            <p>Meta Ads (Facebook & Instagram) reklam bütçenizi en verimli şekilde kullanmanın sırrı yeniden hedeflemede (retargeting) gizlidir. Sitenizi ziyaret edip satın alma yapmadan ayrılan kullanıcıları doğru bir huni (funnel) kurgusuyla tekrar yakalayarak dönüşüm oranlarınızı 3 katına çıkarabilirsiniz.</p>
+          </div>
+
+          <h2>🎯 Yeniden Hedefleme Neden Önemlidir?</h2>
+          <p>Bir e-ticaret sitesine ilk kez gelen ziyaretçilerin ortalama %97'si alışveriş yapmadan ayrılır. Bu kullanıcılar zaten markanızla etkileşime girmiş, ürünlerinizle ilgilenmiş "sıcak" kitlelerdir. Onları huni içinde doğru mesajlarla beslemek, tamamen yeni bir kitleye ulaşmaktan 5 kat daha düşük maliyetlidir.</p>
+
+          <blockquote>
+            <p>"Kullanıcılar sitenizi ilk ziyarette satın almak zorunda değildir, ancak markanızı hatırlamak zorundadırlar. Doğru kurgulanmış bir Meta retargeting hunisi, müşterilerinize doğru zamanda doğru mesajı göstererek satın alma kararını hızlandırır." — Salih Maral</p>
+          </blockquote>
+
+          <h2>📈 Yüksek Dönüşümlü Meta Retargeting Hunisi Tasarımı</h2>
+          <p>Meta reklamlarında başarı getiren 3 aşamalı yeniden hedefleme huni yapısı:</p>
+
+          <div class="feature-list">
+            <div class="feature-item">
+              <span class="feature-icon">🛒</span>
+              <div>
+                <strong>Aşama 1: Sepeti Terk Edenler (Açık İlgi)</strong>
+                <p>Son 14 günde sepete ürün ekleyip satın almayanlar. Bu kitleye dinamik ürün reklamları (DABA/DPA) ile sepette bıraktıkları ürünleri doğrudan gösterin ve sınırlı süreli indirimler sunun.</p>
+              </div>
+            </div>
+            <div class="feature-item">
+              <span class="feature-icon">👀</span>
+              <div>
+                <strong>Aşama 2: Ürün İnceleyenler (Orta İlgi)</strong>
+                <p>Son 30 günde belirli ürün sayfalarını ziyaret eden ama sepete eklemeyenler. Bu kitleye ürünün faydalarını anlatan müşteri yorumları (social proof) veya video incelemeler gösterin.</p>
+              </div>
+            </div>
+            <div class="feature-item">
+              <span class="feature-icon">🏠</span>
+              <div>
+                <strong>Aşama 3: Genel Ziyaretçiler & Sosyal Medya (Düşük İlgi)</strong>
+                <p>Son 60 günde sitenin ana sayfasını gezen veya Instagram/Facebook sayfanızla etkileşime girenler. Bu kitleye markanızın vizyonunu, güvenilirlik unsurlarını (kargo kolaylığı, iade garantisi) gösteren imaj reklamları sunun.</p>
+              </div>
+            </div>
+          </div>
+
+          <h2>🛠️ Meta Retargeting Ayarlarında Dikkat Edilmesi Gerekenler</h2>
+          <ul>
+            <li><strong>Sıklık (Frequency) Kontrolü:</strong> Reklam sıklığının 3-4'ün üzerine çıkmasını engelleyin. Aynı reklamı çok fazla görmek kullanıcıda bıkkınlık (ad fatigue) yaratır.</li>
+            <li><strong>Satın Alanları Hariç Tutma (Exclude Purchases):</strong> Kampanyalarınızda son 30 günde satın alma yapanları mutlaka hedef kitleden hariç tutun. Zaten satın almış kişilere tekrar aynı ürünü göstermek bütçe kaybıdır.</li>
+            <li><strong>Özel Hedef Kitleler (Custom Audiences):</strong> Meta Pixel ve Conversion API entegrasyonunuzun eksiksiz çalıştığından emin olun.</li>
+          </ul>
+
+          <div class="highlight-box success">
+            <h4>💡 En İyi Kreatif Kombinasyonu</h4>
+            <p>Retargeting reklamlarında "Sosyal Kanıt + Katalog Reklamı" kombinasyonunu kullanın. Reklam metninde gerçek bir müşteri yorumuna yer verirken, altında kullanıcının sepetine eklediği ürünlerin dinamik kartlarını gösterin.</p>
+          </div>
+
+          <h2>🚀 Sonuç</h2>
+          <p>Yeniden hedefleme hunileri, e-ticaret sitelerinin ROAS (Reklam Harcaması Getirisi) oranlarını yükselten en güçlü silahtır. Doğru kitle segmentasyonu ve kreatif uyumu ile Meta Ads bütçenizi maksimum ciroya dönüştürebilirsiniz.</p>
+        `
+      },
+      de: {
+        title: 'Meta Ads Retargeting-Funnels für E-Commerce',
+        category: 'Meta Ads',
+        date: '2026-03-05',
+        readTime: '5',
+        content: `
+          <div class="lead">
+            <p>Das Geheimnis für die effizienteste Nutzung Ihres Meta Ads-Budgets (Facebook & Instagram) liegt im Retargeting. Indem Sie Nutzer, die Ihre Website ohne Kauf verlassen haben, über einen gut durchdachten Trichter (Funnel) erneut ansprechen, können Sie Ihre Conversion-Raten verdreifachen.</p>
+          </div>
+
+          <h2>🎯 Warum ist Retargeting wichtig?</h2>
+          <p>Durchschnittlich 97 % der Erstbesucher verlassen einen Online-Shop, ohne etwas zu kaufen. Diese Nutzer sind jedoch bereits mit Ihrer Marke vertraut und haben Interesse an Ihren Produkten gezeigt. Sie im Funnel mit den richtigen Botschaften anzusprechen, ist 5-mal kostengünstiger als die Gewinnung von Neukunden.</p>
+
+          <blockquote>
+            <p>"Kunden müssen beim ersten Besuch nicht kaufen, aber sie müssen sich an Sie erinnern. Ein gut strukturierter Meta-Retargeting-Funnel zeigt Ihren Kunden die richtige Botschaft zur richtigen Zeit, um die Kaufentscheidung zu beschleunigen." — Salih Maral</p>
+          </blockquote>
+
+          <h2>📈 Design eines High-Converting Meta Retargeting Funnels</h2>
+          <p>Die dreistufige Retargeting-Funnel-Struktur für maximalen Erfolg:</p>
+
+          <div class="feature-list">
+            <div class="feature-item">
+              <span class="feature-icon">🛒</span>
+              <div>
+                <strong>Phase 1: Warenkorbabbrecher (Hohes Interesse)</strong>
+                <p>Nutzer, die in den letzten 14 Tagen Produkte in den Warenkorb gelegt, aber nicht gekauft haben. Zeigen Sie ihnen dynamische Produktanzeigen (DPA) mit den genauen Produkten aus dem Warenkorb und bieten Sie einen kleinen Anreiz (z. B. kostenloser Versand oder Rabatt).</p>
+              </div>
+            </div>
+            <div class="feature-item">
+              <span class="feature-icon">👀</span>
+              <div>
+                <strong>Phase 2: Produktbesucher (Mittleres Interesse)</strong>
+                <p>Nutzer, die in den letzten 30 Tagen Produktseiten besucht, aber nichts in den Warenkorb gelegt haben. Zeigen Sie ihnen Kundenbewertungen (Social Proof) oder Produktvorteile und Erklärvideos.</p>
+              </div>
+            </div>
+            <div class="feature-item">
+              <span class="feature-icon">🏠</span>
+              <div>
+                <strong>Phase 3: Allgemeine Besucher (Niedriges Interesse)</strong>
+                <p>Besucher der Homepage oder Nutzer, die mit Ihren Social-Media-Kanälen interagiert haben. Präsentieren Sie ihnen Markenwerte, Vertrauensmerkmale und Ihre Bestseller.</p>
+              </div>
+            </div>
+          </div>
+
+          <h2>🛠️ Wichtige Einstellungen für Meta Retargeting</h2>
+          <ul>
+            <li><strong>Frequenzkontrolle (Frequency):</strong> Vermeiden Sie eine zu hohe Frequenz (Wert über 3-4 pro Woche). Zu viele Wiederholungen führen zu Anzeigenmüdigkeit (Ad Fatigue).</li>
+            <li><strong>Käufer ausschließen (Exclude Purchases):</strong> Schließen Sie Käufer der letzten 30 Tage unbedingt von Ihren Retargeting-Kampagnen aus, um Budgetverschwendung zu vermeiden.</li>
+            <li><strong>Pixel und API:</strong> Stellen Sie sicher, dass Meta Pixel und die Conversions API fehlerfrei implementiert sind.</li>
+          </ul>
+
+          <div class="highlight-box success">
+            <h4>💡 Expertentipp</h4>
+            <p>Nutzen Sie die Kombination aus "Social Proof + Produktkatalog". Zeigen Sie im Anzeigentext ein echtes Kundenzitat und darunter das Produktkarussell mit den vom Nutzer angesehenen Produkten.</p>
+          </div>
+
+          <h2>🚀 Fazit</h2>
+          <p>Retargeting-Funnels sind das mächtigste Werkzeug für E-Commerce-Unternehmen, um den ROAS (Return on Ad Spend) signifikant zu steigern. Mit präziser Zielgruppensegmentierung und maßgeschneiderten Werbemitteln maximieren Sie den Umsatz aus Ihrem Meta Ads-Budget.</p>
+        `
+      },
+      en: {
+        title: 'Meta Ads Retargeting Funnels for E-Commerce',
+        category: 'Meta Ads',
+        date: '2026-03-05',
+        readTime: '5',
+        content: `
+          <div class="lead">
+            <p>The secret to using your Meta Ads (Facebook & Instagram) budget most efficiently lies in retargeting. By capturing users who visited your site but left without purchasing through a well-designed funnel, you can triple your conversion rates.</p>
+          </div>
+
+          <h2>🎯 Why is Retargeting Important?</h2>
+          <p>On average, 97% of first-time visitors leave an e-commerce site without buying. These users are "warm" audiences who have already interacted with your brand and shown interest. Nurturing them with the right messages in a funnel is 5 times cheaper than acquiring a completely new audience.</p>
+
+          <blockquote>
+            <p>"Users don't have to buy on their first visit, but they must remember your brand. A well-designed Meta retargeting funnel shows your customers the right message at the right time to accelerate the purchase decision." — Salih Maral</p>
+          </blockquote>
+
+          <h2>📈 High-Converting Meta Retargeting Funnel Design</h2>
+          <p>The 3-stage retargeting funnel structure for maximum success:</p>
+
+          <div class="feature-list">
+            <div class="feature-item">
+              <span class="feature-icon">🛒</span>
+              <div>
+                <strong>Stage 1: Cart Abandoners (High Intent)</strong>
+                <p>Users who added items to their cart in the last 14 days but did not purchase. Show them Dynamic Product Ads (DPA) displaying the exact items they left behind, and offer a limited-time incentive (e.g., free shipping or discount).</p>
+              </div>
+            </div>
+            <div class="feature-item">
+              <span class="feature-icon">👀</span>
+              <div>
+                <strong>Stage 2: Product Viewers (Medium Intent)</strong>
+                <p>Users who viewed specific product pages in the last 30 days but didn't add to cart. Show them customer reviews (social proof) or video demonstrations of the product's benefits.</p>
+              </div>
+            </div>
+            <div class="feature-item">
+              <span class="feature-icon">🏠</span>
+              <div>
+                <strong>Stage 3: General Visitors & Social Engagers (Low Intent)</strong>
+                <p>Homepage visitors or users who engaged with your social media profiles in the last 60 days. Present them with brand values, authority markers, and best-selling products.</p>
+              </div>
+            </div>
+          </div>
+
+          <h2>🛠️ Key Meta Retargeting Settings</h2>
+          <ul>
+            <li><strong>Frequency Control:</strong> Keep your ad frequency below 3-4 views per week. Seeing the same ad too many times causes ad fatigue.</li>
+            <li><strong>Exclude Past Buyers:</strong> Ensure you exclude users who purchased in the last 30 days from your retargeting campaigns to avoid wasting budget.</li>
+            <li><strong>Pixel & Conversions API:</strong> Verify that Meta Pixel and Conversions API are tracking events correctly without duplication.</li>
+          </ul>
+
+          <div class="highlight-box success">
+            <h4>💡 Best Creative Combination</h4>
+            <p>Use "Social Proof + Product Catalog" carousel ads. Include a real customer quote in the ad copy, and display dynamic catalog cards of the items the user previously browsed below it.</p>
+          </div>
+
+          <h2>🚀 Conclusion</h2>
+          <p>Retargeting funnels are the most powerful tool for e-commerce sites to scale their ROAS (Return on Ad Spend). With proper audience segmentation and creative alignment, you can turn your Meta Ads budget into maximum revenue.</p>
+        `
+      }
+    },
+    'ai-seo-geoptimierung': {
+      tr: {
+        title: 'Yapay Zeka Arama Motorları İçin SEO (GEO) Rehberi 2026',
+        category: 'SEO',
+        date: '2026-03-10',
+        readTime: '7',
+        content: `
+          <div class="lead">
+            <p>Arama dünyası değişiyor. Google AI Overviews, Perplexity ve ChatGPT Search, geleneksel arama motoru sonuçlarının yerini alıyor. Web sitenizin bu yeni ekosistemde alıntılanmasını (citation) ve önerilmesini sağlamak için GEO (Generative Engine Optimization) kurallarını uygulamanız gerekir.</p>
+          </div>
+
+          <h2>🤖 GEO (Generative Engine Optimization) Nedir?</h2>
+          <p>GEO, yapay zeka arama motorları ve sohbet robotlarının kullanıcı sorularına cevap üretirken sizin içeriğinizi kaynak göstermesi (atıf yapması) için uygulanan arama optimizasyonu yöntemidir. Geleneksel SEO sizi ilk sayfaya çıkarırken, GEO sizi yapay zeka cevaplarına dahil eder.</p>
+
+          <blockquote>
+            <p>"Yapay zeka arama motorlarında birinci sıra diye bir şey yoktur; alıntılanan kaynaklar listesinde yer almak vardır. Yapay zekanın sitenizi önermesi için içeriğinizin son derece yapılandırılmış, güvenilir ve doğrudan cevaplar içeriyor olması gerekir." — Salih Maral, SEO & Dijital Pazarlama Danışmanı</p>
+          </blockquote>
+
+          <h2>📊 Princeton Üniversitesi GEO Araştırması Bulguları</h2>
+          <p>KDD 2024 konferansında sunulan Princeton Üniversitesi araştırmasına göre, yapay zeka arama motorlarında görünürlüğü artıran en etkili optimizasyon yöntemleri ve oranları şunlardır:</p>
+
+          <table>
+            <thead>
+              <tr>
+                <th>Yöntem</th>
+                <th>Yapay Zeka Görünürlük Artışı</th>
+                <th>Nasıl Uygulanır?</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><strong>Kaynak Atıfları Ekleme</strong></td>
+                <td>%+40 Artış</td>
+                <td>İçeriklerinizde akademik veya otoriter kaynaklara linkler verin.</td>
+              </tr>
+              <tr>
+                <td><strong>İstatistik ve Sayısal Veri</strong></td>
+                <td>%+37 Artış</td>
+                <td>İddialarınızı güncel sayılar ve veri tablolarıyla destekleyin.</td>
+              </tr>
+              <tr>
+                <td><strong>Uzman Görüşleri & Alıntılar</strong></td>
+                <td>%+30 Artış</td>
+                <td>Konunun uzmanlarının doğrudan tırnak içi ("...") alıntılarına yer verin.</td>
+              </tr>
+              <tr>
+                <td><strong>Akıcı ve Net Dil</strong></td>
+                <td>%+20 Artış</td>
+                <td>Karmaşık terimlerden kaçınıp doğrudan cevap blokları oluşturun.</td>
+              </tr>
+            </tbody>
+          </table>
+
+          <h2>🛠️ Sitenizi Yapay Zekaya Uyumlu Hale Getirmek İçin 4 Adım</h2>
+          
+          <ol>
+            <li><strong>İlk Paragrafta Doğrudan Cevap Verin:</strong> Yapay zeka ajanları bilgiyi hızlıca çekmek ister. Hedeflediğiniz sorunun cevabını makalenin en başında 40-60 kelimelik net bir tanım bloğu olarak verin.</li>
+            <li><strong>Yapılandırılmış Veri (Schema Markup) Kullanın:</strong> \`FAQPage\`, \`Product\`, \`HowTo\` ve \`Article\` schema yapılarını kodunuza ekleyerek botların içeriği anlamlandırmasını kolaylaştırın.</li>
+            <li><strong>Makine-Okunabilir Ajan Dosyaları Ekleyin:</strong> Sitenizin kök dizinine yapay zeka satın alma ajanları için \`/pricing.md\` (yapılandırılmış fiyatlandırma) ve \`/llms.txt\` (site özet bağlamı) dosyaları ekleyin.</li>
+            <li><strong>Yapay Zeka Botlarına İzin Verin:</strong> \`robots.txt\` dosyanızda OpenAI'ın **GPTBot**, Perplexity'nin **PerplexityBot** ve Google'ın **Google-Extended** tarayıcılarını engellemediğinizden emin olun.</li>
+          </ol>
+
+          <div class="highlight-box success">
+            <h4>💡 En Önemli GEO Kuralı</h4>
+            <p>Anahtar kelime doldurma (keyword stuffing) yöntemi geleneksel SEO'da etkisizken, yapay zeka SEO'sunda görünürlüğünüzü %10 oranında düşürür. Yapay zeka doğal, dil bilgisi kurallarına uygun ve bilgi yoğunluğu yüksek metinleri tercih eder.</p>
+          </div>
+
+          <h2>🚀 Sonuç</h2>
+          <p>2026 ve sonrasında arama trafiğinizin düşmesini istemiyorsanız, yapay zeka motorlarının çalışma prensiplerine adapte olmalısınız. GEO uyumlu bir içerik yapısı kurarak, yapay zekanın kullanıcılara önerdiği ve referans gösterdiği öncelikli markalardan biri olabilirsiniz.</p>
+        `
+      },
+      de: {
+        title: 'SEO für KI-Suchmaschinen (GEO) Leitfaden 2026',
+        category: 'SEO',
+        date: '2026-03-10',
+        readTime: '7',
+        content: `
+          <div class="lead">
+            <p>Die Suche verändert sich rasant. Google AI Overviews, Perplexity und ChatGPT Search ersetzen zunehmend traditionelle Suchergebnisse. Um sicherzustellen, dass Ihre Website in diesem neuen Ökosystem zitiert und empfohlen wird, müssen Sie die Regeln der GEO (Generative Engine Optimization) anwenden.</p>
+          </div>
+
+          <h2>🤖 Was ist GEO (Generative Engine Optimization)?</h2>
+          <p>GEO ist die Optimierung von Inhalten für KI-Suchmaschinen und Chatbots, damit Ihre Website als Quelle zitiert wird, wenn KI Antworten generiert. Während traditionelles SEO Sie auf Seite 1 bringt, bringt GEO Sie in die Antworten der KI.</p>
+
+          <blockquote>
+            <p>"Bei der KI-Suche gibt es keinen klassischen Platz 1 mehr; es geht darum, in den zitierten Quellen aufzutauchen. Um von KIs empfohlen zu werden, müssen Ihre Inhalte strukturiert, vertrauenswürdig sein und direkte Antworten enthalten." — Salih Maral</p>
+          </blockquote>
+
+          <h2>📊 Ergebnisse der Princeton-GEO-Studie</h2>
+          <p>Laut einer Studie der Princeton University (vorgestellt auf der KDD 2024) sind dies die effektivsten Optimierungsmethoden für KI-Suchmaschinen:</p>
+
+          <table>
+            <thead>
+              <tr>
+                <th>Methode</th>
+                <th>KI-Sichtbarkeitssteigerung</th>
+                <th>Wie anwenden?</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><strong>Quellen zitieren</strong></td>
+                <td>+40 % Steigerung</td>
+                <td>Verlinken Sie auf autoritative Quellen und Studien.</td>
+              </tr>
+              <tr>
+                <td><strong>Statistiken & Daten</strong></td>
+                <td>+37 % Steigerung</td>
+                <td>Untermauern Sie Thesen mit Zahlen und Tabellen.</td>
+              </tr>
+              <tr>
+                <td><strong>Expertenzitate</strong></td>
+                <td>+30 % Steigerung</td>
+                <td>Integrieren Sie direkte Zitate von Branchenexperten.</td>
+              </tr>
+              <tr>
+                <td><strong>Klare & einfache Sprache</strong></td>
+                <td>+20 % Steigerung</td>
+                <td>Formulieren Sie präzise Antworten am Anfang des Textes.</td>
+              </tr>
+            </tbody>
+          </table>
+
+          <h2>🛠️ 4 Schritte zur KI-Optimierung Ihrer Website</h2>
+          
+          <ol>
+            <li><strong>Direkte Antwort im ersten Absatz:</strong> KI-Agenten möchten Informationen schnell extrahieren. Formulieren Sie die Antwort auf die Kernfrage in einem 40-60 Wörter umfassenden Block direkt am Anfang.</li>
+            <li><strong>Strukturierte Daten (Schema Markup):</strong> Fügen Sie \`FAQPage\`, \`Product\`, \`HowTo\` und \`Article\` Schemas hinzu, um den Bots die Semantik Ihrer Inhalte zu vermitteln.</li>
+            <li><strong>Maschinenlesbare Dokumente bereitstellen:</strong> Fügen Sie im Root-Verzeichnis die Dateien \`/pricing.md\` und \`/llms.txt\` für KI-Einkaufsagenten hinzu.</li>
+            <li><strong>KI-Bots in der robots.txt erlauben:</strong> Stellen Sie sicher, dass Bots wie **GPTBot**, **PerplexityBot** und **Google-Extended** nicht blockiert sind.</li>
+          </ol>
+
+          <div class="highlight-box success">
+            <h4>💡 Der wichtigste GEO-Hinweis</h4>
+            <p>Keyword-Stuffing reduziert die Sichtbarkeit in KI-Antworten um 10 %. KIs bevorzugen natürliche, grammatikalisch korrekte Texte mit hoher Informationsdichte.</p>
+          </div>
+
+          <h2>🚀 Fazit</h2>
+          <p>Wenn Sie auch 2026 organischen Suchtraffic generieren möchten, müssen Sie sich an die Arbeitsweise von KI-Suchmaschinen anpassen. Durch GEO-optimierte Inhalte positionieren Sie Ihre Marke als referenzierte Quelle der Zukunft.</p>
+        `
+      },
+      en: {
+        title: 'SEO for AI Search Engines (GEO) Guide 2026',
+        category: 'SEO',
+        date: '2026-03-10',
+        readTime: '7',
+        content: `
+          <div class="lead">
+            <p>The search landscape is changing. Google AI Overviews, Perplexity, and ChatGPT Search are replacing traditional search engine result pages. To ensure your website gets cited and recommended in this new ecosystem, you must implement GEO (Generative Engine Optimization) rules.</p>
+          </div>
+
+          <h2>🤖 What is GEO (Generative Engine Optimization)?</h2>
+          <p>GEO is the practice of optimizing content for AI search engines and chat assistants so that they cite your website as a source when generating answers. While traditional SEO gets you ranked on page 1, GEO gets you included in the AI's generated response.</p>
+
+          <blockquote>
+            <p>"In AI search, there is no classic rank #1; there is only being in the cited sources list. For an AI to recommend you, your content must be highly structured, authoritative, and provide direct answers." — Salih Maral, SEO Consultant</p>
+          </blockquote>
+
+          <h2>📊 Princeton University GEO Study Findings</h2>
+          <p>According to the Princeton University study (presented at KDD 2024), these are the most effective optimization methods for AI search engines:</p>
+
+          <table>
+            <thead>
+              <tr>
+                <th>Method</th>
+                <th>AI Visibility Boost</th>
+                <th>How to Apply</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><strong>Cite Sources</strong></td>
+                <td>+40% Increase</td>
+                <td>Add external links to academic papers or authoritative sites.</td>
+              </tr>
+              <tr>
+                <td><strong>Add Statistics & Data</strong></td>
+                <td>+37% Increase</td>
+                <td>Support your claims with numbers and data tables.</td>
+              </tr>
+              <tr>
+                <td><strong>Expert Quotations</strong></td>
+                <td>+30% Increase</td>
+                <td>Include direct quotes ("...") from certified domain experts.</td>
+              </tr>
+              <tr>
+                <td><strong>Improve Readability</strong></td>
+                <td>+20% Increase</td>
+                <td>Create clear answer blocks without fluff.</td>
+              </tr>
+            </tbody>
+          </table>
+
+          <h2>🛠️ 4 Steps to Make Your Website AI-Friendly</h2>
+          
+          <ol>
+            <li><strong>Provide Direct Answers Instantly:</strong> AI agents want to extract facts quickly. Give a 40-60 word clear definition block at the very beginning of the post.</li>
+            <li><strong>Use Structured Data (Schema Markup):</strong> Add \`FAQPage\`, \`Product\`, \`HowTo\`, and \`Article\` schemas to help bots parse the page semantically.</li>
+            <li><strong>Include Machine-Readable Files:</strong> Add \`/pricing.md\` and \`/llms.txt\` to the website root for autonomous AI purchasing agents.</li>
+            <li><strong>Allow AI Crawlers in robots.txt:</strong> Double-check that bots like **GPTBot**, **PerplexityBot**, and **Google-Extended** are not blocked.</li>
+          </ol>
+
+          <div class="highlight-box success">
+            <h4>💡 Critical GEO Warning</h4>
+            <p>Unlike traditional SEO where it is just useless, keyword stuffing actively reduces your AI search visibility by 10%. AI systems prefer high-quality, grammatical prose with high information density.</p>
+          </div>
+
+          <h2>🚀 Conclusion</h2>
+          <p>To prevent your search traffic from declining in 2026 and beyond, you must adapt to AI search engines. By structuring your content for GEO, you ensure your brand is cited and recommended as a primary resource by AI agents.</p>
+        `
+      }
     }
   }
 }
@@ -1532,6 +2123,33 @@ export default function BlogDetailPage() {
     )
   }
 
+  const blogPostingSchema = {
+    "@context": "https://schema.org",
+    "@type": "BlogPosting",
+    "mainEntityOfPage": {
+      "@type": "WebPage",
+      "@id": `https://salihmaral.de/blog/${slug}`
+    },
+    "headline": post.title,
+    "description": post.excerpt || post.title,
+    "image": "https://salihmaral.de/logo.png",
+    "author": {
+      "@type": "Person",
+      "name": "Salih Maral",
+      "url": "https://salihmaral.de"
+    },
+    "publisher": {
+      "@type": "Organization",
+      "name": "Salih Maral Digital Marketing",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://salihmaral.de/logo.png"
+      }
+    },
+    "datePublished": post.date,
+    "dateModified": post.date
+  }
+
   return (
     <div className="min-h-screen bg-gradient-to-b from-gray-50 to-white">
       {/* SEO */}
@@ -1539,6 +2157,10 @@ export default function BlogDetailPage() {
         <link rel="canonical" href={`https://salihmaral.de/blog/${slug}`} />
         <title>{post.title} | Salih Maral Blog</title>
         <meta name="description" content={post.excerpt} />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(blogPostingSchema) }}
+        />
       </head>
       {/* Navigation */}
       <nav className="fixed top-0 left-0 right-0 z-50 bg-white/95 backdrop-blur-sm border-b">

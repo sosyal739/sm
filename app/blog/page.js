@@ -89,6 +89,33 @@ const blogPosts = {
       category: 'İtibar Yönetimi',
       date: '2026-01-28',
       readTime: '6'
+    },
+    {
+      id: 7,
+      slug: 'google-ads-roi-tracking',
+      title: 'Google Ads Dönüşüm Takibi ve ROI Optimizasyonu',
+      excerpt: 'Reklam bütçenizi boşa harcamayın. Google Ads\'te doğru dönüşüm takibi kurarak ROI ve ROAS oranlarınızı nasıl katlayacağınızı öğrenin.',
+      category: 'Google Ads',
+      date: '2026-03-01',
+      readTime: '6'
+    },
+    {
+      id: 8,
+      slug: 'meta-ads-retargeting-funnels',
+      title: 'E-Ticaret İçin Meta Ads Yeniden Hedefleme Hunileri',
+      excerpt: 'Sitenizi ziyaret edip satın almayan kullanıcıları kazanın. Yüksek dönüşümlü Meta Ads retargeting reklam stratejileri.',
+      category: 'Meta Ads',
+      date: '2026-03-05',
+      readTime: '5'
+    },
+    {
+      id: 9,
+      slug: 'ai-seo-geoptimierung',
+      title: 'Yapay Zeka Arama Motorları İçin SEO (GEO) Rehberi 2026',
+      excerpt: 'Google AI Overviews, Perplexity ve ChatGPT\'de markanızın nasıl alıntılanacağını ve üst sıralarda çıkacağını öğrenin.',
+      category: 'SEO',
+      date: '2026-03-10',
+      readTime: '7'
     }
   ],
   de: [
@@ -145,6 +172,33 @@ const blogPosts = {
       category: 'Reputation',
       date: '2026-01-28',
       readTime: '6'
+    },
+    {
+      id: 7,
+      slug: 'google-ads-roi-tracking',
+      title: 'Google Ads Conversion Tracking und ROI-Optimierung',
+      excerpt: 'Verschwenden Sie kein Werbebudget. Erfahren Sie, wie Sie durch richtiges Conversion-Tracking in Google Ads Ihre ROI- und ROAS-Raten vervielfachen.',
+      category: 'Google Ads',
+      date: '2026-03-01',
+      readTime: '6'
+    },
+    {
+      id: 8,
+      slug: 'meta-ads-retargeting-funnels',
+      title: 'Meta Ads Retargeting-Funnels für E-Commerce',
+      excerpt: 'Gewinnen Sie Nutzer zurück, die Ihre Website ohne Kauf verlassen haben. Meta Ads Retargeting-Strategien mit hoher Conversion.',
+      category: 'Meta Ads',
+      date: '2026-03-05',
+      readTime: '5'
+    },
+    {
+      id: 9,
+      slug: 'ai-seo-geoptimierung',
+      title: 'SEO für KI-Suchmaschinen (GEO) Leitfaden 2026',
+      excerpt: 'Erfahren Sie, wie Ihre Marke in Google AI Overviews, Perplexity und ChatGPT zitiert und hervorgehoben wird.',
+      category: 'SEO',
+      date: '2026-03-10',
+      readTime: '7'
     }
   ],
   en: [
@@ -201,6 +255,33 @@ const blogPosts = {
       category: 'Reputation',
       date: '2026-01-28',
       readTime: '6'
+    },
+    {
+      id: 7,
+      slug: 'google-ads-roi-tracking',
+      title: 'Google Ads Conversion Tracking and ROI Optimization',
+      excerpt: 'Don\'t waste your ad budget. Learn how to multiply your ROI and ROAS by setting up correct conversion tracking in Google Ads.',
+      category: 'Google Ads',
+      date: '2026-03-01',
+      readTime: '6'
+    },
+    {
+      id: 8,
+      slug: 'meta-ads-retargeting-funnels',
+      title: 'Meta Ads Retargeting Funnels for E-Commerce',
+      excerpt: 'Win back users who visited your site but did not purchase. High-converting Meta Ads retargeting strategy guide.',
+      category: 'Meta Ads',
+      date: '2026-03-05',
+      readTime: '5'
+    },
+    {
+      id: 9,
+      slug: 'ai-seo-geoptimierung',
+      title: 'SEO for AI Search Engines (GEO) Guide 2026',
+      excerpt: 'Learn how to get your brand cited and surfaced in Google AI Overviews, Perplexity, and ChatGPT.',
+      category: 'SEO',
+      date: '2026-03-10',
+      readTime: '7'
     }
   ]
 }
@@ -232,6 +313,9 @@ export default function BlogPage() {
       'seo-stratejileri-2026': 'https://images.unsplash.com/photo-1504868584819-f8e8b4b6d7e3?w=600&h=300&fit=crop&q=80',
       'x-twitter-ads': 'https://images.unsplash.com/photo-1611605698335-8b1569810432?w=600&h=300&fit=crop&q=80',
       'olumsuz-yorum-yonetimi': 'https://images.unsplash.com/photo-1556745757-8d76bdb6984b?w=600&h=300&fit=crop&q=80',
+      'google-ads-roi-tracking': 'https://images.unsplash.com/photo-1551836022-d5d88e9218df?w=600&h=300&fit=crop&q=80',
+      'meta-ads-retargeting-funnels': 'https://images.unsplash.com/photo-1557804506-669a67965ba0?w=600&h=300&fit=crop&q=80',
+      'ai-seo-geoptimierung': 'https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?w=600&h=300&fit=crop&q=80',
     }
     return images[slug] || 'https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=600&h=300&fit=crop&q=80'
   }

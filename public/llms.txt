@@ -1,0 +1,35 @@
+# Salih Maral — Digital Marketing Expert
+
+Salih Maral is a freelance Digital Marketing Specialist with 15+ years of experience specializing in high-ROI pay-per-click (PPC) advertising, search engine optimization (SEO), and online reputation management.
+
+## Contact Information
+- **Email:** info@salihmaral.de
+- **Phone / WhatsApp:** +49 172 4106463
+- **Primary Website:** https://salihmaral.de
+
+## Core Services
+All services are offered in German (DE), Turkish (TR), and English (EN).
+
+- **Google Ads Management:** Search, Display, Shopping, YouTube, Performance Max, and Local campaigns. Maximize ROI/ROAS.
+- **Meta Ads:** Facebook & Instagram advertising, advanced targeting, and creative testing.
+- **TikTok Ads:** High-engagement video campaigns targeting younger demographics.
+- **X (Twitter) Ads:** Real-time marketing and trending topic promotion.
+- **SEO Services:** On-page, off-page, and technical search engine optimization to boost organic traffic.
+- **Review Management:** Removal of unjustified or fake negative reviews on Google Maps and Trustpilot.
+
+## Main Navigation & Pages
+- [Homepage (DE)](https://salihmaral.de/)
+- [Homepage (TR)](https://salihmaral.de/tr)
+- [Homepage (EN)](https://salihmaral.de/en)
+- [Digital Marketing Blog](https://salihmaral.de/blog)
+- [Pricing details for AI Agents](/pricing.md)
+- [Impressum / Legal Disclosure](https://salihmaral.de/impressum)
+- [Datenschutz / Privacy Policy](https://salihmaral.de/datenschutz)
+
+## Specific Service Pages
+- **Google Ads:** [/de/dienstleistungen/google-ads](https://salihmaral.de/de/dienstleistungen/google-ads) | [/tr/hizmetler/google-ads](https://salihmaral.de/tr/hizmetler/google-ads) | [/en/services/google-ads](https://salihmaral.de/en/services/google-ads)
+- **Meta Ads:** [/de/dienstleistungen/meta-ads](https://salihmaral.de/de/dienstleistungen/meta-ads) | [/tr/hizmetler/meta-ads](https://salihmaral.de/tr/hizmetler/meta-ads) | [/en/services/meta-ads](https://salihmaral.de/en/services/meta-ads)
+- **TikTok Ads:** [/de/dienstleistungen/tiktok-ads](https://salihmaral.de/de/dienstleistungen/tiktok-ads) | [/tr/hizmetler/tiktok-ads](https://salihmaral.de/tr/hizmetler/tiktok-ads) | [/en/services/tiktok-ads](https://salihmaral.de/en/services/tiktok-ads)
+- **X Ads:** [/de/dienstleistungen/x-ads](https://salihmaral.de/de/dienstleistungen/x-ads) | [/tr/hizmetler/x-ads](https://salihmaral.de/tr/hizmetler/x-ads) | [/en/services/x-ads](https://salihmaral.de/en/services/x-ads)
+- **SEO:** [/de/dienstleistungen/seo](https://salihmaral.de/de/dienstleistungen/seo) | [/tr/hizmetler/seo](https://salihmaral.de/tr/hizmetler/seo) | [/en/services/seo](https://salihmaral.de/en/services/seo)
+- **Review Management:** [/de/dienstleistungen/bewertungsmanagement](https://salihmaral.de/de/dienstleistungen/bewertungsmanagement) | [/tr/hizmetler/yorum-yonetimi](https://salihmaral.de/tr/hizmetler/yorum-yonetimi) | [/en/services/review-management](https://salihmaral.de/en/services/review-management)

@@ -649,6 +649,36 @@ export default function ServiceDetailPage() {
   // Servis verisini al
   const data = servicesData[service] || servicesData['google-ads']
 
+  const serviceSchema = {
+    "@context": "https://schema.org",
+    "@type": "Service",
+    "name": data.title,
+    "description": data.description,
+    "provider": {
+      "@type": "Person",
+      "name": "Salih Maral",
+      "url": "https://salihmaral.de"
+    },
+    "areaServed": {
+      "@type": "Country",
+      "name": "Germany"
+    },
+    "logo": "https://salihmaral.de/logo.png"
+  }
+
+  const faqSchema = data.faq && data.faq.length > 0 ? {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": data.faq.map(item => ({
+      "@type": "Question",
+      "name": item.q,
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": item.a
+      }
+    }))
+  } : null
+
   return (
     <div className="min-h-screen bg-white">
       {/* SEO: Canonical + Hreflang for multi-language */}
@@ -660,6 +690,16 @@ export default function ServiceDetailPage() {
         <link rel="alternate" hrefLang="x-default" href={`https://salihmaral.de${getLocalizedServiceUrl('de', service)}`} />
         <title>{data.title} | Salih Maral Digital Marketing</title>
         <meta name="description" content={data.description} />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(serviceSchema) }}
+        />
+        {faqSchema && (
+          <script
+            type="application/ld+json"
+            dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
+          />
+        )}
       </head>
       {/* Navigation - Same as Homepage */}
       <nav className="fixed top-0 left-0 right-0 z-50 bg-white/95 backdrop-blur-sm border-b">
