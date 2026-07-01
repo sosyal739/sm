@@ -152,6 +152,24 @@ const blogPosts = {
       category: 'Teknoloji',
       date: '2026-03-30',
       readTime: '7'
+    },
+    {
+      id: 14,
+      slug: 'ai-content-marketing-scale',
+      title: 'Yapay Zeka ile Ölçeklenebilir İçerik Pazarlaması ve Editöryal Kontrol',
+      excerpt: 'Yapay zeka ile kaliteli içerik üretimi, AI içeriğini insanileştirme (humanizing), EEAT kurallarına uyum ve ceza almadan organik trafiği ölçeklendirme.',
+      category: 'SEO',
+      date: '2026-04-05',
+      readTime: '6'
+    },
+    {
+      id: 15,
+      slug: 'pinterest-ads-visual-marketing',
+      title: 'Pinterest Reklamları ve Görsel Arama Pazarlaması',
+      excerpt: 'E-ticaret siteleri için yüksek sepet tutarlı kitleleri hedefleyen Pinterest entegrasyonu, görsel arama stratejileri ve uzun ömürlü trafik.',
+      category: 'SEO',
+      date: '2026-04-10',
+      readTime: '5'
     }
   ],
   de: [
@@ -271,6 +289,24 @@ const blogPosts = {
       category: 'Technologie',
       date: '2026-03-30',
       readTime: '7'
+    },
+    {
+      id: 14,
+      slug: 'ai-content-marketing-scale',
+      title: 'KI-gestütztes Content-Marketing und redaktionelle Kontrolle in großem Stil',
+      excerpt: 'Erfahren Sie, wie Sie mit KI hochwertige Inhalte erstellen, EEAT-Konformität wahren und organischen Traffic skalieren, ohne abgestraft zu werden.',
+      category: 'SEO',
+      date: '2026-04-05',
+      readTime: '6'
+    },
+    {
+      id: 15,
+      slug: 'pinterest-ads-visual-marketing',
+      title: 'Pinterest Ads und visuelles Suchmaschinenmarketing',
+      excerpt: 'Entdecken Sie Pinterest-Werbestrategien für E-Commerce, visuelles SEO und wie Sie kaufkräftige Zielgruppen langfristig anziehen.',
+      category: 'SEO',
+      date: '2026-04-10',
+      readTime: '5'
     }
   ],
   en: [
@@ -390,6 +426,24 @@ const blogPosts = {
       category: 'Technology',
       date: '2026-03-30',
       readTime: '7'
+    },
+    {
+      id: 14,
+      slug: 'ai-content-marketing-scale',
+      title: 'AI-Driven Content Marketing and Editorial Control at Scale',
+      excerpt: 'Scale your organic traffic using AI without sacrificing quality. Master AI text humanization, EEAT guidelines compliance, and search safety.',
+      category: 'SEO',
+      date: '2026-04-05',
+      readTime: '6'
+    },
+    {
+      id: 15,
+      slug: 'pinterest-ads-visual-marketing',
+      title: 'Pinterest Ads and Visual Search Marketing',
+      excerpt: 'Unlock high-basket e-commerce traffic on Pinterest. Master catalog integrations, visual SEO strategies, and long-tail evergreen customer acquisition.',
+      category: 'SEO',
+      date: '2026-04-10',
+      readTime: '5'
     }
   ]
 }
@@ -428,6 +482,8 @@ export default function BlogPage() {
       'tiktok-shop-social-commerce': 'https://images.unsplash.com/photo-1542751371-adc38448a05e?w=600&h=300&fit=crop&q=80',
       'local-seo-google-maps': 'https://images.unsplash.com/photo-1524661135-423995f22d0b?w=600&h=300&fit=crop&q=80',
       'first-party-data-marketing': 'https://images.unsplash.com/photo-1507925921958-8a62f3d1a50d?w=600&h=300&fit=crop&q=80',
+      'ai-content-marketing-scale': 'https://images.unsplash.com/photo-1620712943543-bcc4688e7485?w=600&h=300&fit=crop&q=80',
+      'pinterest-ads-visual-marketing': 'https://images.unsplash.com/photo-1611162617213-7d7a39e9b1d7?w=600&h=300&fit=crop&q=80',
     }
     return images[slug] || 'https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=600&h=300&fit=crop&q=80'
   }
