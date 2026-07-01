@@ -465,10 +465,10 @@ export default function BlogPage() {
       <nav className="fixed top-0 left-0 right-0 z-50 bg-white/95 backdrop-blur-sm border-b">
         <div className="container mx-auto px-4 py-4">
           <div className="flex items-center justify-between">
-            <button onClick={() => router.push(lang === 'de' ? '/' : `/${lang}`)} className="flex items-center space-x-2 hover:opacity-80 transition-opacity">
+            <a href={lang === 'de' ? '/' : `/${lang}`} className="flex items-center space-x-2 hover:opacity-80 transition-opacity">
               <ArrowLeft className="h-5 w-5 text-[#4285F4]" />
               <span className="font-semibold text-gray-700">{t.home}</span>
-            </button>
+            </a>
             <a href={lang === 'de' ? '/' : `/${lang}`}>
               <picture><source srcSet="/logo-sm.webp" type="image/webp" /><img src="/logo.png" alt="Salih Maral Logo" className="h-10 w-auto" width="40" height="40" /></picture>
             </a>
