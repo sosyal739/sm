@@ -523,7 +523,7 @@ export default function BlogPage() {
           <div className="flex items-center justify-between">
             <a href={lang === 'de' ? '/' : `/${lang}`} className="flex items-center space-x-2 hover:opacity-80 transition-opacity">
               <ArrowLeft className="h-5 w-5 text-[#4285F4]" />
-              <span className="font-semibold text-gray-700">{t.home}</span>
+              <span className="font-semibold text-gray-700 hidden sm:inline">{t.home}</span>
             </a>
             <a href={lang === 'de' ? '/' : `/${lang}`}>
               <picture><source srcSet="/logo-sm.webp" type="image/webp" /><img src="/logo.png" alt="Salih Maral Logo" className="h-10 w-auto" width="40" height="40" /></picture>

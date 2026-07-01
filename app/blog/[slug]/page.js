@@ -3351,7 +3351,7 @@ export default function BlogDetailPage() {
           <div className="flex items-center justify-between">
             <a href="/blog" className="flex items-center space-x-2 hover:opacity-80 transition-opacity">
               <ArrowLeft className="h-5 w-5 text-[#4285F4]" />
-              <span className="font-semibold text-gray-700">{t.backToBlog}</span>
+              <span className="font-semibold text-gray-700 hidden sm:inline">{t.backToBlog}</span>
             </a>
             <a href={lang === 'de' ? '/' : `/${lang}`}>
               <picture><source srcSet="/logo-sm.webp" type="image/webp" /><img src="/logo.png" alt="Salih Maral Logo" className="h-10 w-auto" width="40" height="40" /></picture>
@@ -3615,6 +3615,36 @@ export default function BlogDetailPage() {
         .blog-content .highlight-box p:last-child,
         .blog-content .highlight-box ul:last-child {
           margin-bottom: 0;
+        }
+        
+        /* Mobile responsive tables */
+        .blog-content table {
+          width: 100%;
+          border-collapse: collapse;
+          margin: 2rem 0;
+          display: block;
+          overflow-x: auto;
+          -webkit-overflow-scrolling: touch;
+          border: 1px solid #E5E7EB;
+          border-radius: 8px;
+        }
+        
+        .blog-content th {
+          background-color: #F9FAFB;
+          font-weight: 600;
+          color: #111827;
+          border-bottom: 2px solid #E5E7EB;
+        }
+        
+        .blog-content th, .blog-content td {
+          padding: 0.75rem 1rem;
+          border-bottom: 1px solid #E5E7EB;
+          min-width: 140px;
+          font-size: 0.9rem;
+        }
+        
+        .blog-content tr:last-child td {
+          border-bottom: none;
         }
       `}</style>
     </div>
