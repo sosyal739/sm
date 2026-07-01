@@ -116,6 +116,42 @@ const blogPosts = {
       category: 'SEO',
       date: '2026-03-10',
       readTime: '7'
+    },
+    {
+      id: 10,
+      slug: 'google-ads-pmax-optimization',
+      title: 'Google Ads Performance Max (PMax) Kampanya Optimizasyonu',
+      excerpt: 'PMax campaigns reklamlarında bütçe israfını sonlandırın. Doğru asset grupları, negatif kelimeler ve kitle sinyalleri ile maksimum verim.',
+      category: 'Google Ads',
+      date: '2026-03-15',
+      readTime: '6'
+    },
+    {
+      id: 11,
+      slug: 'tiktok-shop-social-commerce',
+      title: 'TikTok Shop ve Sosyal Ticaret Reklam Stratejileri',
+      excerpt: 'Sosyal medya üzerinden doğrudan satış devri. TikTok Shop entegrasyonu, alışveriş reklamları ve dönüşüm artırma yolları.',
+      category: 'TikTok Ads',
+      date: '2026-03-20',
+      readTime: '5'
+    },
+    {
+      id: 12,
+      slug: 'local-seo-google-maps',
+      title: 'Yerel SEO ve Google Haritalar Pazarlaması ile Müşteri Kazanımı',
+      excerpt: 'Bölgenizdeki müşterilerin sizi bulmasını sağlayın. Google Business Profile optimizasyonu ve yerel sıralama faktörleri.',
+      category: 'SEO',
+      date: '2026-03-25',
+      readTime: '6'
+    },
+    {
+      id: 13,
+      slug: 'first-party-data-marketing',
+      title: 'Çerezsiz Dünyada Pazarlama ve Birinci Taraf Veri Stratejileri',
+      excerpt: '3. taraf çerezlerin kalkmasıyla değişen reklamcılık. Consent Mode V2, Server-Side Tracking ve 1. taraf veri gücü.',
+      category: 'Teknoloji',
+      date: '2026-03-30',
+      readTime: '7'
     }
   ],
   de: [
@@ -198,6 +234,42 @@ const blogPosts = {
       excerpt: 'Erfahren Sie, wie Ihre Marke in Google AI Overviews, Perplexity und ChatGPT zitiert und hervorgehoben wird.',
       category: 'SEO',
       date: '2026-03-10',
+      readTime: '7'
+    },
+    {
+      id: 10,
+      slug: 'google-ads-pmax-optimization',
+      title: 'Google Ads Performance Max (PMax) Kampagnenoptimierung',
+      excerpt: 'Beenden Sie die Budgetverschwendung in PMax-Kampagnen. Erreichen Sie maximale Effizienz durch richtige Asset-Gruppen, ausschließende Keywords und Zielgruppensignale.',
+      category: 'Google Ads',
+      date: '2026-03-15',
+      readTime: '6'
+    },
+    {
+      id: 11,
+      slug: 'tiktok-shop-social-commerce',
+      title: 'TikTok Shop und Social Commerce Werbestrategien',
+      excerpt: 'Direktverkauf über Social Media. Erfahren Sie alles über TikTok Shop-Integrationen, Shopping-Ads und Conversion-Optimierung.',
+      category: 'TikTok Ads',
+      date: '2026-03-20',
+      readTime: '5'
+    },
+    {
+      id: 12,
+      slug: 'local-seo-google-maps',
+      title: 'Lokale SEO und Google Maps Marketing zur Kundengewinnung',
+      excerpt: 'Lassen Sie sich von Kunden in Ihrer Region finden. Google Business Profile Optimierung und lokale Rankingfaktoren.',
+      category: 'SEO',
+      date: '2026-03-25',
+      readTime: '6'
+    },
+    {
+      id: 13,
+      slug: 'first-party-data-marketing',
+      title: 'Marketing in einer cookielosen Welt und First-Party-Daten',
+      excerpt: 'Werbung nach dem Wegfall von Third-Party-Cookies. Erfahren Sie mehr über Consent Mode V2, Server-Side Tracking und First-Party-Daten.',
+      category: 'Technologie',
+      date: '2026-03-30',
       readTime: '7'
     }
   ],
@@ -282,6 +354,42 @@ const blogPosts = {
       category: 'SEO',
       date: '2026-03-10',
       readTime: '7'
+    },
+    {
+      id: 10,
+      slug: 'google-ads-pmax-optimization',
+      title: 'Google Ads Performance Max (PMax) Campaign Optimization',
+      excerpt: 'Stop wasting budget in PMax campaigns. Master asset group structures, audience signals, and negative keyword strategies for maximum efficiency.',
+      category: 'Google Ads',
+      date: '2026-03-15',
+      readTime: '6'
+    },
+    {
+      id: 11,
+      slug: 'tiktok-shop-social-commerce',
+      title: 'TikTok Shop and Social Commerce Advertising Strategy',
+      excerpt: 'The era of direct sales via social media. Best practices for TikTok Shop integration, Shopping Ads, and social checkout optimization.',
+      category: 'TikTok Ads',
+      date: '2026-03-20',
+      readTime: '5'
+    },
+    {
+      id: 12,
+      slug: 'local-seo-google-maps',
+      title: 'Local SEO and Google Maps Marketing for Customer Acquisition',
+      excerpt: 'Help local customers find your business. Optimize Google Business Profile, gain local citations, and boost local rankings.',
+      category: 'SEO',
+      date: '2026-03-25',
+      readTime: '6'
+    },
+    {
+      id: 13,
+      slug: 'first-party-data-marketing',
+      title: 'Marketing in a Cookie-less World and First-Party Data Strategies',
+      excerpt: 'Advertising changes after the deprecation of 3rd-party cookies. Learn about Consent Mode V2, Server-Side Tracking, and 1st-party data power.',
+      category: 'Technology',
+      date: '2026-03-30',
+      readTime: '7'
     }
   ]
 }
@@ -316,6 +424,10 @@ export default function BlogPage() {
       'google-ads-roi-tracking': 'https://images.unsplash.com/photo-1551836022-d5d88e9218df?w=600&h=300&fit=crop&q=80',
       'meta-ads-retargeting-funnels': 'https://images.unsplash.com/photo-1557804506-669a67965ba0?w=600&h=300&fit=crop&q=80',
       'ai-seo-geoptimierung': 'https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?w=600&h=300&fit=crop&q=80',
+      'google-ads-pmax-optimization': 'https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=600&h=300&fit=crop&q=80',
+      'tiktok-shop-social-commerce': 'https://images.unsplash.com/photo-1542751371-adc38448a05e?w=600&h=300&fit=crop&q=80',
+      'local-seo-google-maps': 'https://images.unsplash.com/photo-1524661135-423995f22d0b?w=600&h=300&fit=crop&q=80',
+      'first-party-data-marketing': 'https://images.unsplash.com/photo-1507925921958-8a62f3d1a50d?w=600&h=300&fit=crop&q=80',
     }
     return images[slug] || 'https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=600&h=300&fit=crop&q=80'
   }
