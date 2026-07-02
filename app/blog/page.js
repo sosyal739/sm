@@ -1,4 +1,4 @@
-'use client'
+﻿'use client'
 
 import { Card, CardContent } from '@/components/ui/card'
 import { Badge } from '@/components/ui/badge'
@@ -11,18 +11,18 @@ const translations = {
   tr: {
     home: 'Ana Sayfa',
     heroTitle: 'Dijital Pazarlama Blog',
-    heroSubtitle: 'Google Ads, Meta Ads, SEO ve daha fazlası hakkında güncel içerikler',
-    readMore: 'Devamını Oku',
+    heroSubtitle: 'Google Ads, Meta Ads, SEO ve daha fazlasÃ„Â± hakkÃ„Â±nda gÃƒÂ¼ncel iÃƒÂ§erikler',
+    readMore: 'DevamÃ„Â±nÃ„Â± Oku',
     readTime: 'dk okuma',
-    footer: '© 2026 Salih Maral. Tüm hakları saklıdır.'
+    footer: 'Ã‚Â© 2026 Salih Maral. TÃƒÂ¼m haklarÃ„Â± saklÃ„Â±dÃ„Â±r.'
   },
   de: {
     home: 'Startseite',
     heroTitle: 'Digital Marketing Blog',
-    heroSubtitle: 'Aktuelle Inhalte über Google Ads, Meta Ads, SEO und mehr',
+    heroSubtitle: 'Aktuelle Inhalte ÃƒÂ¼ber Google Ads, Meta Ads, SEO und mehr',
     readMore: 'Weiterlesen',
     readTime: 'Min. Lesezeit',
-    footer: '© 2026 Salih Maral. Alle Rechte vorbehalten.'
+    footer: 'Ã‚Â© 2026 Salih Maral. Alle Rechte vorbehalten.'
   },
   en: {
     home: 'Home',
@@ -30,7 +30,7 @@ const translations = {
     heroSubtitle: 'Latest content about Google Ads, Meta Ads, SEO and more',
     readMore: 'Read More',
     readTime: 'min read',
-    footer: '© 2026 Salih Maral. All rights reserved.'
+    footer: 'Ã‚Â© 2026 Salih Maral. All rights reserved.'
   }
 }
 
@@ -39,8 +39,8 @@ const blogPosts = {
     {
       id: 1,
       slug: 'google-ads-nedir',
-      title: 'Google Ads Nedir ve Neden Yapılmalıdır?',
-      excerpt: 'Google Ads, işletmenizin dijital dünyada görünür olmasının en hızlı yoludur. Doğru stratejilerle yatırımınızın karşılığını almanın yollarını keşfedin.',
+      title: 'Google Ads Nedir ve Neden Yapilmalidir?',
+      excerpt: 'Google Ads, isletmenizin dijital dÃ¼nyada gÃ¶rÃ¼nÃ¼r olmasinin en hizli yoludur. Dogru stratejilerle yatiriminizin karsiligini almanin yollarini kesfedin.',
       category: 'Google Ads',
       date: '2026-01-15',
       readTime: '5'
@@ -48,8 +48,8 @@ const blogPosts = {
     {
       id: 2,
       slug: 'meta-ads-basari',
-      title: 'Meta Ads ile Başarı: Facebook ve Instagram Reklamcılığı',
-      excerpt: 'Facebook ve Instagram\'da etkili reklam kampanyaları nasıl oluşturulur? Hedef kitle segmentasyonundan kreatif stratejilere kadar her şey.',
+      title: 'Meta Ads ile Basari: Facebook ve Instagram Reklamciligi',
+      excerpt: 'Facebook ve Instagram\'da etkili reklam kampanyalari nasil olusturulur? Hedef kitle segmentasyonundan kreatif stratejilere kadar her sey.',
       category: 'Meta Ads',
       date: '2026-01-18',
       readTime: '6'
@@ -57,8 +57,8 @@ const blogPosts = {
     {
       id: 3,
       slug: 'tiktok-ads-rehber',
-      title: 'TikTok Ads: Genç Kitleye Ulaşmanın Yeni Yolu',
-      excerpt: 'TikTok\'ta viral olmanın ve genç kitleye etkili şekilde ulaşmanın stratejilerini öğrenin.',
+      title: 'TikTok Ads: GenÃ§ Kitleye Ulasmanin Yeni Yolu',
+      excerpt: 'TikTok\'ta viral olmanin ve genÃ§ kitleye etkili sekilde ulasmanin stratejilerini Ã¶grenin.',
       category: 'TikTok Ads',
       date: '2026-01-20',
       readTime: '4'
@@ -66,8 +66,8 @@ const blogPosts = {
     {
       id: 4,
       slug: 'seo-stratejileri-2026',
-      title: 'SEO Stratejileri 2026: Google\'ın Yeni Algoritması',
-      excerpt: 'Google\'ın sürekli değişen algoritmasında üst sıralarda kalmak için yapmanız gerekenler. Teknik SEO ipuçları.',
+      title: 'SEO Stratejileri 2026: Google\'in Yeni Algoritmasi',
+      excerpt: 'Google\'in sÃ¼rekli degisen algoritmasinda Ã¼st siralarda kalmak iÃ§in yapmaniz gerekenler. Teknik SEO ipuÃ§lari.',
       category: 'SEO',
       date: '2026-01-22',
       readTime: '8'
@@ -75,8 +75,8 @@ const blogPosts = {
     {
       id: 5,
       slug: 'x-twitter-ads',
-      title: 'X (Twitter) Reklamları: Gerçek Zamanlı Pazarlama',
-      excerpt: 'Trend konularda nasıl öne çıkılır? X reklamları ile gerçek zamanlı pazarlama stratejileri.',
+      title: 'X (Twitter) Reklamlari: GerÃ§ek Zamanli Pazarlama',
+      excerpt: 'Trend konularda nasil Ã¶ne Ã§ikilir? X reklamlari ile gerÃ§ek zamanli pazarlama stratejileri.',
       category: 'X Ads',
       date: '2026-01-25',
       readTime: '5'
@@ -84,17 +84,17 @@ const blogPosts = {
     {
       id: 6,
       slug: 'olumsuz-yorum-yonetimi',
-      title: 'Olumsuz Yorum Yönetimi: İtibarınızı Koruyun',
-      excerpt: 'Google Maps ve Trustpilot\'taki haksız yorumlar işletmenize zarar veriyor mu? Yorum silme süreçleri hakkında bilmeniz gerekenler.',
-      category: 'İtibar Yönetimi',
+      title: 'Olumsuz Yorum YÃ¶netimi: Itibarinizi Koruyun',
+      excerpt: 'Google Maps ve Trustpilot\'taki haksiz yorumlar isletmenize zarar veriyor mu? Yorum silme sÃ¼reÃ§leri hakkinda bilmeniz gerekenler.',
+      category: 'Itibar YÃ¶netimi',
       date: '2026-01-28',
       readTime: '6'
     },
     {
       id: 7,
       slug: 'google-ads-roi-tracking',
-      title: 'Google Ads Dönüşüm Takibi ve ROI Optimizasyonu',
-      excerpt: 'Reklam bütçenizi boşa harcamayın. Google Ads\'te doğru dönüşüm takibi kurarak ROI ve ROAS oranlarınızı nasıl katlayacağınızı öğrenin.',
+      title: 'Google Ads DÃ¶nÃ¼sÃ¼m Takibi ve ROI Optimizasyonu',
+      excerpt: 'Reklam bÃ¼tÃ§enizi bosa harcamayin. Google Ads\'te dogru dÃ¶nÃ¼sÃ¼m takibi kurarak ROI ve ROAS oranlarinizi nasil katlayacaginizi Ã¶grenin.',
       category: 'Google Ads',
       date: '2026-03-01',
       readTime: '6'
@@ -102,8 +102,8 @@ const blogPosts = {
     {
       id: 8,
       slug: 'meta-ads-retargeting-funnels',
-      title: 'E-Ticaret İçin Meta Ads Yeniden Hedefleme Hunileri',
-      excerpt: 'Sitenizi ziyaret edip satın almayan kullanıcıları kazanın. Yüksek dönüşümlü Meta Ads retargeting reklam stratejileri.',
+      title: 'E-Ticaret IÃ§in Meta Ads Yeniden Hedefleme Hunileri',
+      excerpt: 'Sitenizi ziyaret edip satin almayan kullanicilari kazanin. YÃ¼ksek dÃ¶nÃ¼sÃ¼mlÃ¼ Meta Ads retargeting reklam stratejileri.',
       category: 'Meta Ads',
       date: '2026-03-05',
       readTime: '5'
@@ -111,8 +111,8 @@ const blogPosts = {
     {
       id: 9,
       slug: 'ai-seo-geoptimierung',
-      title: 'Yapay Zeka Arama Motorları İçin SEO (GEO) Rehberi 2026',
-      excerpt: 'Google AI Overviews, Perplexity ve ChatGPT\'de markanızın nasıl alıntılanacağını ve üst sıralarda çıkacağını öğrenin.',
+      title: 'Yapay Zeka Arama Motorlari IÃ§in SEO (GEO) Rehberi 2026',
+      excerpt: 'Google AI Overviews, Perplexity ve ChatGPT\'de markanizin nasil alintilanacagini ve Ã¼st siralarda Ã§ikacagini Ã¶grenin.',
       category: 'SEO',
       date: '2026-03-10',
       readTime: '7'
@@ -120,8 +120,8 @@ const blogPosts = {
     {
       id: 10,
       slug: 'google-ads-pmax-optimization',
-      title: 'Google Ads Performance Max (PMax) Kampanya Optimizasyonu',
-      excerpt: 'PMax campaigns reklamlarında bütçe israfını sonlandırın. Doğru asset grupları, negatif kelimeler ve kitle sinyalleri ile maksimum verim.',
+      title: 'Google Ads PMax Optimizasyonu ile ROAS\'inizi 3 Katina Ã‡ikarin',
+      excerpt: 'PMax kampanyalarinizdaki bÃ¼tÃ§e israfini nasil durduracaginizi Ã¶grenin. 2026\'nin en etkili Google Ads taktikleriyle asset gruplari ve kitle sinyallerini yapilandirin.',
       category: 'Google Ads',
       date: '2026-03-15',
       readTime: '6'
@@ -129,8 +129,8 @@ const blogPosts = {
     {
       id: 11,
       slug: 'tiktok-shop-social-commerce',
-      title: 'TikTok Shop ve Sosyal Ticaret Reklam Stratejileri',
-      excerpt: 'Sosyal medya üzerinden doğrudan satış devri. TikTok Shop entegrasyonu, alışveriş reklamları ve dönüşüm artırma yolları.',
+      title: 'TikTok Shop Rehberi: Sosyal Medyadan Dogrudan Satis Yapmanin Sirlari',
+      excerpt: 'Sosyal ticaret pazarinda rakiplerinizin Ã¶nÃ¼ne geÃ§in. DÃ¶nÃ¼sÃ¼m oranlarini %40 artiran TikTok Shopping Ads entegrasyonu ve sosyal Ã¶deme optimizasyonu taktikleri.',
       category: 'TikTok Ads',
       date: '2026-03-20',
       readTime: '5'
@@ -138,8 +138,8 @@ const blogPosts = {
     {
       id: 12,
       slug: 'local-seo-google-maps',
-      title: 'Yerel SEO ve Google Haritalar Pazarlaması ile Müşteri Kazanımı',
-      excerpt: 'Bölgenizdeki müşterilerin sizi bulmasını sağlayın. Google Business Profile optimizasyonu ve yerel sıralama faktörleri.',
+      title: 'Yerel SEO ve Google Haritalar: BÃ¶lgesel Satislarinizi %300 Artirin',
+      excerpt: 'Google Business Profile optimizasyonu ile magazaniza gelen trafigi katlayin. 2026 yerel SEO algoritmasi ve Google Maps siralama faktÃ¶rleri rehberi.',
       category: 'SEO',
       date: '2026-03-25',
       readTime: '6'
@@ -147,8 +147,8 @@ const blogPosts = {
     {
       id: 13,
       slug: 'first-party-data-marketing',
-      title: 'Çerezsiz Dünyada Pazarlama ve Birinci Taraf Veri Stratejileri',
-      excerpt: '3. taraf çerezlerin kalkmasıyla değişen reklamcılık. Consent Mode V2, Server-Side Tracking ve 1. taraf veri gücü.',
+      title: 'Ã‡erezsiz Reklamcilik: Birinci Taraf Veri (1st-Party Data) ile Gelecege Hazirlanin',
+      excerpt: 'ÃœÃ§Ã¼ncÃ¼ taraf Ã§erezlerin (3rd-party cookies) kalkmasi kampanyalarinizi vurmasin. Consent Mode V2 ve Server-Side Tracking ile veri kaybini nasil Ã¶nleyeceginizi kesfedin.',
       category: 'Teknoloji',
       date: '2026-03-30',
       readTime: '7'
@@ -156,8 +156,8 @@ const blogPosts = {
     {
       id: 14,
       slug: 'ai-content-marketing-scale',
-      title: 'Yapay Zeka ile Ölçeklenebilir İçerik Pazarlaması ve Editöryal Kontrol',
-      excerpt: 'Yapay zeka ile kaliteli içerik üretimi, AI içeriğini insanileştirme (humanizing), EEAT kurallarına uyum ve ceza almadan organik trafiği ölçeklendirme.',
+      title: 'Yapay Zeka ile IÃ§erik Ãœretimi: Kaliteden Ã–dÃ¼n Vermeden Organik Trafigi Ã–lÃ§eklendirin',
+      excerpt: 'AI kullanarak iÃ§erik Ã¼retirken Google\'dan ceza almayin. EEAT standartlarina uygun, insanilestirilmis (humanized) AI iÃ§erik Ã¼retme rehberi.',
       category: 'SEO',
       date: '2026-04-05',
       readTime: '6'
@@ -165,8 +165,8 @@ const blogPosts = {
     {
       id: 15,
       slug: 'pinterest-ads-visual-marketing',
-      title: 'Pinterest Reklamları ve Görsel Arama Pazarlaması',
-      excerpt: 'E-ticaret siteleri için yüksek sepet tutarlı kitleleri hedefleyen Pinterest entegrasyonu, görsel arama stratejileri ve uzun ömürlü trafik.',
+      title: 'Pinterest Reklamlari ile E-Ticaret Sepet Ortalamasini 2x Katlayin',
+      excerpt: 'GÃ¶rsel arama motoru Pinterest\'te kÃ¢rli kitlelere ulasin. E-ticaret katalog entegrasyonu ve uzun Ã¶mÃ¼rlÃ¼ (evergreen) mÃ¼steri kazanimi stratejileri.',
       category: 'SEO',
       date: '2026-04-10',
       readTime: '5'
@@ -174,11 +174,20 @@ const blogPosts = {
     {
       id: 16,
       slug: 'x-live-studio-streaming-rewards',
-      title: 'X Live Studio ile Canlı Yayın Yaparak 1 Milyon Dolarlık Ödül Havuzundan Payınızı Alın!',
-      excerpt: 'X (Twitter), canlı yayıncılar için devasa "Live Studio" kontrol merkezini tanıttı ve lansmana özel 1 milyon dolarlık nakit havuzu açtı. İşte yayından para kazanmanın tüm detayları!',
+      title: 'X Live Studio Nedir? 1 Milyon Dolarlik Yayinci Ã–dÃ¼lÃ¼nÃ¼ Nasil Kazanirsiniz?',
+      excerpt: 'X (Twitter), Twitch ve YouTube\'a rakip olan Live Studio\'yu duyurdu. 1 milyon dolarlik dev nakit havuzundan pay almak iÃ§in bilmeniz gereken tÃ¼m sartlar.',
       category: 'X Ads',
       date: '2026-07-03',
       readTime: '5'
+    },
+    {
+      id: 17,
+      slug: 'google-gemini-spark',
+      title: 'Google Gemini Spark: Arka Planda 7/24 Ã‡alisan Kisisel Yapay Zeka Ajaniniz',
+      excerpt: 'Google\'in yeni proaktif yapay zeka ajani Gemini Spark ile tanisin. Siz uyurken bile e-postalarinizi yÃ¶neten ve otomatik gÃ¶revler yÃ¼rÃ¼ten bu sistemin Ã¶zelliklerini kesfedin.',
+      category: 'Teknoloji',
+      date: '2026-07-03',
+      readTime: '6'
     }
   ],
   de: [
@@ -213,7 +222,7 @@ const blogPosts = {
       id: 4,
       slug: 'seo-stratejileri-2026',
       title: 'SEO-Strategien 2026: Googles neuer Algorithmus',
-      excerpt: 'Was Sie tun müssen, um bei Googles ständig wechselndem Algorithmus an der Spitze zu bleiben. Technische SEO-Tipps.',
+      excerpt: 'Was Sie tun mÃ¼ssen, um bei Googles stÃ¤ndig wechselndem Algorithmus an der Spitze zu bleiben. Technische SEO-Tipps.',
       category: 'SEO',
       date: '2026-01-22',
       readTime: '8'
@@ -230,8 +239,8 @@ const blogPosts = {
     {
       id: 6,
       slug: 'olumsuz-yorum-yonetimi',
-      title: 'Bewertungsmanagement: Schützen Sie Ihren Ruf',
-      excerpt: 'Schaden unfaire Bewertungen auf Google Maps und Trustpilot Ihrem Unternehmen? Alles über den Löschprozess.',
+      title: 'Bewertungsmanagement: SchÃ¼tzen Sie Ihren Ruf',
+      excerpt: 'Schaden unfaire Bewertungen auf Google Maps und Trustpilot Ihrem Unternehmen? Alles Ã¼ber den LÃ¶schprozess.',
       category: 'Reputation',
       date: '2026-01-28',
       readTime: '6'
@@ -248,8 +257,8 @@ const blogPosts = {
     {
       id: 8,
       slug: 'meta-ads-retargeting-funnels',
-      title: 'Meta Ads Retargeting-Funnels für E-Commerce',
-      excerpt: 'Gewinnen Sie Nutzer zurück, die Ihre Website ohne Kauf verlassen haben. Meta Ads Retargeting-Strategien mit hoher Conversion.',
+      title: 'Meta Ads Retargeting-Funnels fÃ¼r E-Commerce',
+      excerpt: 'Gewinnen Sie Nutzer zurÃ¼ck, die Ihre Website ohne Kauf verlassen haben. Meta Ads Retargeting-Strategien mit hoher Conversion.',
       category: 'Meta Ads',
       date: '2026-03-05',
       readTime: '5'
@@ -257,7 +266,7 @@ const blogPosts = {
     {
       id: 9,
       slug: 'ai-seo-geoptimierung',
-      title: 'SEO für KI-Suchmaschinen (GEO) Leitfaden 2026',
+      title: 'SEO fÃ¼r KI-Suchmaschinen (GEO) Leitfaden 2026',
       excerpt: 'Erfahren Sie, wie Ihre Marke in Google AI Overviews, Perplexity und ChatGPT zitiert und hervorgehoben wird.',
       category: 'SEO',
       date: '2026-03-10',
@@ -266,8 +275,8 @@ const blogPosts = {
     {
       id: 10,
       slug: 'google-ads-pmax-optimization',
-      title: 'Google Ads Performance Max (PMax) Kampagnenoptimierung',
-      excerpt: 'Beenden Sie die Budgetverschwendung in PMax-Kampagnen. Erreichen Sie maximale Effizienz durch richtige Asset-Gruppen, ausschließende Keywords und Zielgruppensignale.',
+      title: 'Verdreifachen Sie Ihren ROAS mit Google Ads PMax-Optimierung',
+      excerpt: 'Erfahren Sie, wie Sie die Budgetverschwendung in Ihren PMax-Kampagnen stoppen. Strukturieren Sie Asset-Gruppen und Zielgruppensignale mit den effektivsten Google Ads-Taktiken fÃ¼r 2026.',
       category: 'Google Ads',
       date: '2026-03-15',
       readTime: '6'
@@ -275,8 +284,8 @@ const blogPosts = {
     {
       id: 11,
       slug: 'tiktok-shop-social-commerce',
-      title: 'TikTok Shop und Social Commerce Werbestrategien',
-      excerpt: 'Direktverkauf über Social Media. Erfahren Sie alles über TikTok Shop-Integrationen, Shopping-Ads und Conversion-Optimierung.',
+      title: 'TikTok Shop Guide: Geheimnisse des Direktverkaufs Ã¼ber Social Media',
+      excerpt: 'Seien Sie Ihren Konkurrenten im Social-Commerce-Markt einen Schritt voraus. Integration von TikTok Shopping Ads und Taktiken zur Optimierung des Social Checkouts, die die Konversionsraten um 40 % steigern.',
       category: 'TikTok Ads',
       date: '2026-03-20',
       readTime: '5'
@@ -284,8 +293,8 @@ const blogPosts = {
     {
       id: 12,
       slug: 'local-seo-google-maps',
-      title: 'Lokale SEO und Google Maps Marketing zur Kundengewinnung',
-      excerpt: 'Lassen Sie sich von Kunden in Ihrer Region finden. Google Business Profile Optimierung und lokale Rankingfaktoren.',
+      title: 'Lokale SEO und Google Maps: Steigern Sie Ihre regionalen VerkÃ¤ufe um 300 %',
+      excerpt: 'Vervielfachen Sie den Traffic zu Ihrem GeschÃ¤ft mit Google Business Profile Optimierung. Der Leitfaden zum lokalen SEO-Algorithmus 2026 und den Rankingfaktoren fÃ¼r Google Maps.',
       category: 'SEO',
       date: '2026-03-25',
       readTime: '6'
@@ -293,8 +302,8 @@ const blogPosts = {
     {
       id: 13,
       slug: 'first-party-data-marketing',
-      title: 'Marketing in einer cookielosen Welt und First-Party-Daten',
-      excerpt: 'Werbung nach dem Wegfall von Third-Party-Cookies. Erfahren Sie mehr über Consent Mode V2, Server-Side Tracking und First-Party-Daten.',
+      title: 'Werbung ohne Cookies: Bereiten Sie sich mit First-Party-Daten auf die Zukunft vor',
+      excerpt: 'Lassen Sie nicht zu, dass das Ende der Third-Party-Cookies Ihre Kampagnen beeintrÃ¤chtigt. Entdecken Sie, wie Sie Datenverluste mit Consent Mode V2 und Server-Side Tracking verhindern kÃ¶nnen.',
       category: 'Technologie',
       date: '2026-03-30',
       readTime: '7'
@@ -302,8 +311,8 @@ const blogPosts = {
     {
       id: 14,
       slug: 'ai-content-marketing-scale',
-      title: 'KI-gestütztes Content-Marketing und redaktionelle Kontrolle in großem Stil',
-      excerpt: 'Erfahren Sie, wie Sie mit KI hochwertige Inhalte erstellen, EEAT-Konformität wahren und organischen Traffic skalieren, ohne abgestraft zu werden.',
+      title: 'Content-Erstellung mit KI: Skalieren Sie organischen Traffic ohne QualitÃ¤tseinbuÃŸen',
+      excerpt: 'Vermeiden Sie Google-Strafen, wenn Sie Inhalte mit KI erstellen. Der Leitfaden zur Erstellung menschlicher KI-Inhalte gemÃ¤ÃŸ den EEAT-Standards.',
       category: 'SEO',
       date: '2026-04-05',
       readTime: '6'
@@ -311,8 +320,8 @@ const blogPosts = {
     {
       id: 15,
       slug: 'pinterest-ads-visual-marketing',
-      title: 'Pinterest Ads und visuelles Suchmaschinenmarketing',
-      excerpt: 'Entdecken Sie Pinterest-Werbestrategien für E-Commerce, visuelles SEO und wie Sie kaufkräftige Zielgruppen langfristig anziehen.',
+      title: 'Verdoppeln Sie Ihren durchschnittlichen E-Commerce-Warenkorb mit Pinterest Ads',
+      excerpt: 'Erreichen Sie profitable Zielgruppen auf der visuellen Suchmaschine Pinterest. E-Commerce-Katalogintegration und Evergreen-Kundenakquisestrategien.',
       category: 'SEO',
       date: '2026-04-10',
       readTime: '5'
@@ -320,11 +329,20 @@ const blogPosts = {
     {
       id: 16,
       slug: 'x-live-studio-streaming-rewards',
-      title: 'Geld verdienen mit X Live Studio: Die neue Kommandozentrale für Streamer inklusive 1 Mio. $ Belohnung',
-      excerpt: 'X (Twitter) fordert Twitch und YouTube heraus: Mit dem neuen Live Studio und einem Belohnungspool von 1 Million US-Dollar werden Live-Streamer direkt bezahlt. So sichern Sie sich Ihren Anteil.',
+      title: 'Was ist X Live Studio? Wie Sie den 1-Million-Dollar-Streamer-Preis gewinnen',
+      excerpt: 'X (Twitter) hat Live Studio angekÃ¼ndigt, einen Konkurrenten fÃ¼r Twitch und YouTube. Alle Bedingungen, die Sie kennen mÃ¼ssen, um einen Anteil an dem riesigen Preispool von 1 Million US-Dollar zu erhalten.',
       category: 'X Ads',
       date: '2026-07-03',
       readTime: '5'
+    },
+    {
+      id: 17,
+      slug: 'google-gemini-spark',
+      title: 'Google Gemini Spark: Ihr persÃ¶nlicher 24/7-Hintergrund-KI-Agent',
+      excerpt: 'Lernen Sie Googles neuen proaktiven KI-Agenten Gemini Spark kennen. Entdecken Sie die Funktionen dieses Systems, das Ihre E-Mails verwaltet und automatisierte Aufgaben ausfÃ¼hrt, sogar wÃ¤hrend Sie schlafen.',
+      category: 'Technologie',
+      date: '2026-07-03',
+      readTime: '6'
     }
   ],
   en: [
@@ -412,8 +430,8 @@ const blogPosts = {
     {
       id: 10,
       slug: 'google-ads-pmax-optimization',
-      title: 'Google Ads Performance Max (PMax) Campaign Optimization',
-      excerpt: 'Stop wasting budget in PMax campaigns. Master asset group structures, audience signals, and negative keyword strategies for maximum efficiency.',
+      title: 'Triple Your ROAS with Google Ads PMax Optimization',
+      excerpt: 'Learn how to stop wasting budget in your PMax campaigns. Structure asset groups and audience signals with the most effective Google Ads tactics of 2026.',
       category: 'Google Ads',
       date: '2026-03-15',
       readTime: '6'
@@ -421,8 +439,8 @@ const blogPosts = {
     {
       id: 11,
       slug: 'tiktok-shop-social-commerce',
-      title: 'TikTok Shop and Social Commerce Advertising Strategy',
-      excerpt: 'The era of direct sales via social media. Best practices for TikTok Shop integration, Shopping Ads, and social checkout optimization.',
+      title: 'TikTok Shop Guide: Secrets to Direct Selling on Social Media',
+      excerpt: 'Get ahead of your competitors in the social commerce market. TikTok Shopping Ads integration and social checkout optimization tactics that increase conversion rates by 40%.',
       category: 'TikTok Ads',
       date: '2026-03-20',
       readTime: '5'
@@ -430,8 +448,8 @@ const blogPosts = {
     {
       id: 12,
       slug: 'local-seo-google-maps',
-      title: 'Local SEO and Google Maps Marketing for Customer Acquisition',
-      excerpt: 'Help local customers find your business. Optimize Google Business Profile, gain local citations, and boost local rankings.',
+      title: 'Local SEO and Google Maps: Boost Your Regional Sales by 300%',
+      excerpt: 'Multiply the traffic to your store with Google Business Profile optimization. The 2026 local SEO algorithm and Google Maps ranking factors guide.',
       category: 'SEO',
       date: '2026-03-25',
       readTime: '6'
@@ -439,8 +457,8 @@ const blogPosts = {
     {
       id: 13,
       slug: 'first-party-data-marketing',
-      title: 'Marketing in a Cookie-less World and First-Party Data Strategies',
-      excerpt: 'Advertising changes after the deprecation of 3rd-party cookies. Learn about Consent Mode V2, Server-Side Tracking, and 1st-party data power.',
+      title: 'Cookie-less Advertising: Prepare for the Future with 1st-Party Data',
+      excerpt: 'Don\'t let the deprecation of 3rd-party cookies hurt your campaigns. Discover how to prevent data loss with Consent Mode V2 and Server-Side Tracking.',
       category: 'Technology',
       date: '2026-03-30',
       readTime: '7'
@@ -448,8 +466,8 @@ const blogPosts = {
     {
       id: 14,
       slug: 'ai-content-marketing-scale',
-      title: 'AI-Driven Content Marketing and Editorial Control at Scale',
-      excerpt: 'Scale your organic traffic using AI without sacrificing quality. Master AI text humanization, EEAT guidelines compliance, and search safety.',
+      title: 'Content Creation with AI: Scale Organic Traffic Without Sacrificing Quality',
+      excerpt: 'Avoid Google penalties when producing content with AI. The guide to creating humanized AI content compliant with EEAT standards.',
       category: 'SEO',
       date: '2026-04-05',
       readTime: '6'
@@ -457,8 +475,8 @@ const blogPosts = {
     {
       id: 15,
       slug: 'pinterest-ads-visual-marketing',
-      title: 'Pinterest Ads and Visual Search Marketing',
-      excerpt: 'Unlock high-basket e-commerce traffic on Pinterest. Master catalog integrations, visual SEO strategies, and long-tail evergreen customer acquisition.',
+      title: 'Double Your E-Commerce Average Order Value with Pinterest Ads',
+      excerpt: 'Reach profitable audiences on the visual search engine Pinterest. E-commerce catalog integration and evergreen customer acquisition strategies.',
       category: 'SEO',
       date: '2026-04-10',
       readTime: '5'
@@ -466,11 +484,20 @@ const blogPosts = {
     {
       id: 16,
       slug: 'x-live-studio-streaming-rewards',
-      title: 'Make Money Streaming on X: Inside the New Live Studio and $1 Million Creator Incentive',
-      excerpt: 'X (Twitter) challenges Twitch and YouTube with the launch of Live Studio, a professional streaming command center, backed by a massive $1 million reward pool. Here is how to qualify.',
+      title: 'What is X Live Studio? How to Win the  Million Streamer Reward',
+      excerpt: 'X (Twitter) announced Live Studio, a competitor to Twitch and YouTube. All the terms you need to know to get a share of the massive  million prize pool.',
       category: 'X Ads',
       date: '2026-07-03',
       readTime: '5'
+    },
+    {
+      id: 17,
+      slug: 'google-gemini-spark',
+      title: 'Google Gemini Spark: Your 24/7 Background Personal AI Agent',
+      excerpt: 'Meet Google\'s new proactive AI agent, Gemini Spark. Discover the features of this system that manages your emails and runs automated tasks even while you sleep.',
+      category: 'Technology',
+      date: '2026-07-03',
+      readTime: '6'
     }
   ]
 }
@@ -511,6 +538,7 @@ export default function BlogPage() {
       'first-party-data-marketing': 'https://images.unsplash.com/photo-1507925921958-8a62f3d1a50d?w=600&h=300&fit=crop&q=80',
       'ai-content-marketing-scale': 'https://images.unsplash.com/photo-1620712943543-bcc4688e7485?w=600&h=300&fit=crop&q=80',
       'pinterest-ads-visual-marketing': 'https://images.unsplash.com/photo-1611162617213-7d7a39e9b1d7?w=600&h=300&fit=crop&q=80',
+      'google-gemini-spark': 'https://images.unsplash.com/photo-1677442136019-21780ecad995?w=600&h=300&fit=crop&q=80',
     }
     return images[slug] || 'https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=600&h=300&fit=crop&q=80'
   }
@@ -542,7 +570,7 @@ export default function BlogPage() {
       <head>
         <link rel="canonical" href="https://salihmaral.de/blog" />
         <title>Blog | Salih Maral Digital Marketing</title>
-        <meta name="description" content="Dijital pazarlama, Google Ads, Meta Ads, SEO ve daha fazlası hakkında güncel blog yazıları." />
+        <meta name="description" content="Dijital pazarlama, Google Ads, Meta Ads, SEO ve daha fazlasÃ„Â± hakkÃ„Â±nda gÃƒÂ¼ncel blog yazÃ„Â±larÃ„Â±." />
       </head>
       {/* Navigation */}
       <nav className="fixed top-0 left-0 right-0 z-50 bg-white/95 backdrop-blur-sm border-b">
@@ -625,7 +653,7 @@ export default function BlogPage() {
                     <div className="flex items-center justify-between">
                       <div className="text-sm text-gray-400">
                         <span>{post.date}</span>
-                        <span className="mx-2">•</span>
+                        <span className="mx-2">Ã¢â‚¬Â¢</span>
                         <span>{post.readTime} {t.readTime}</span>
                       </div>
                       <div className="flex items-center text-[#4285F4] font-medium text-sm group-hover:translate-x-1 transition-transform">
@@ -653,3 +681,5 @@ export default function BlogPage() {
     </div>
   )
 }
+
+
