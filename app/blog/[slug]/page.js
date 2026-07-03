@@ -74,7 +74,8 @@ export default function BlogDetailPage() {
     if (!slug) return
     setLoading(true)
     setPost(null)
-    fetch(`/api/blog/${slug}?lang=${lang}`)
+    const controller = new AbortController()
+    fetch(`/api/blog/${slug}?lang=${lang}`, { signal: controller.signal })
       .then(res => res.ok ? res.json() : null)
       .then(data => {
         setPost(data)
@@ -85,7 +86,10 @@ export default function BlogDetailPage() {
           if (metaDesc) metaDesc.setAttribute('content', (data.excerpt || '').substring(0, 160))
         }
       })
-      .catch(() => setLoading(false))
+      .catch(err => {
+        if (err.name !== 'AbortError') setLoading(false)
+      })
+    return () => controller.abort() // cancel if lang/slug changes before fetch completes
   }, [slug, lang])
 
   const handleLanguageChange = (newLang) => {

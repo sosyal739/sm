@@ -41,22 +41,31 @@ export default function BlogPage() {
   const [posts, setPosts] = useState([])
   const [loading, setLoading] = useState(true)
 
+  // On mount: read saved language ONCE
   useEffect(() => {
     const savedLang = localStorage.getItem('preferredLanguage')
     if (savedLang && ['de', 'en', 'tr'].includes(savedLang)) {
       setLang(savedLang)
+    } else {
+      // No saved lang — trigger first fetch immediately
+      setLoading(true)
     }
   }, [])
 
+  // Fetch posts — AbortController prevents stale results overwriting newer ones
   useEffect(() => {
     setLoading(true)
-    fetch(`/api/blog?lang=${lang}`)
+    const controller = new AbortController()
+    fetch(`/api/blog?lang=${lang}`, { signal: controller.signal })
       .then(res => res.json())
       .then(data => {
         setPosts(Array.isArray(data) ? data : [])
         setLoading(false)
       })
-      .catch(() => setLoading(false))
+      .catch(err => {
+        if (err.name !== 'AbortError') setLoading(false)
+      })
+    return () => controller.abort() // cancel if lang changes before fetch completes
   }, [lang])
 
   const handleLanguageChange = (newLang) => {
