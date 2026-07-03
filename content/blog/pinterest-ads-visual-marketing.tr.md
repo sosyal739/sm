@@ -2,7 +2,7 @@
 slug: "pinterest-ads-visual-marketing"
 lang: "tr"
 title: "Pinterest Reklamları ile E-Ticaret Sepet Ortalamasını 2x Katlayın"
-excerpt: "Gçrsel arama motoru Pinterest'te kçrli kitlelere ulasin. E-ticaret katalog entegrasyonu ve uzun çmçrlç (evergreen) mçsteri kazanimi stratejileri."
+excerpt: "Görsel arama motoru Pinterest'te karlı kitlelere ulaşın. Uzun ömürlü (evergreen) müşteri kazanımı stratejileri."
 category: "SEO"
 date: "2026-04-10"
 readTime: "5"

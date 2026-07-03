@@ -2,7 +2,7 @@
 slug: "local-seo-google-maps"
 lang: "de"
 title: "Lokale SEO und Google Maps: Steigern Sie Ihre regionalen Verkäufe um 300 %"
-excerpt: "Vervielfachen Sie den Traffic zu Ihrem Geschçft mit Google Business Profile Optimierung. Der Leitfaden zum lokalen SEO-Algorithmus 2026 und den Rankingfaktoren fçr Google Maps."
+excerpt: "Erhöhen Sie Ihre lokalen Verkäufe um 300 % mit Google Business Profile. Alle wichtigen Rankingfaktoren für Google Maps."
 category: "SEO"
 date: "2026-03-25"
 readTime: "6"

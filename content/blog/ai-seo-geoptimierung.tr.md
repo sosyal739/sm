@@ -2,7 +2,7 @@
 slug: "ai-seo-geoptimierung"
 lang: "tr"
 title: "Yapay Zeka Arama Motorları İçin SEO (GEO) Rehberi 2026"
-excerpt: "Google AI Overviews, Perplexity ve ChatGPT'de markanizin nasil alintilanacagini ve çst siralarda çikacagini çgrenin."
+excerpt: "Yapay zeka arama motorları için SEO (GEO) rehberi. İçeriğinizin ChatGPT, Perplexity ve Google AI'da üst sıralarda çıkacağını öğrenin."
 category: "SEO"
 date: "2026-03-10"
 readTime: "7"

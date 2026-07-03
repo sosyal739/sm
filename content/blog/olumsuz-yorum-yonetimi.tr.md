@@ -2,7 +2,7 @@
 slug: "olumsuz-yorum-yonetimi"
 lang: "tr"
 title: "Olumsuz Yorum Yönetimi: İtibarınızı Koruyun"
-excerpt: "Google Maps ve Trustpilot'taki haksiz yorumlar isletmenize zarar veriyor mu? Yorum silme sçreçleri hakkinda bilmeniz gerekenler."
+excerpt: "Yorum silme süreçleri hakkında bilmeniz gerekenler. İtibarınızı yönetin."
 category: "İtibar Yönetimi"
 date: "2026-01-28"
 readTime: "6"

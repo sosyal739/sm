@@ -2,7 +2,7 @@
 slug: "google-gemini-spark"
 lang: "de"
 title: "Google Gemini Spark: Ihr persönlicher 24/7-Hintergrund-KI-Agent"
-excerpt: "Lernen Sie Googles neuen proaktiven KI-Agenten Gemini Spark kennen. Entdecken Sie die Funktionen dieses Systems, das Ihre E-Mails verwaltet und automatisierte Aufgaben ausfçhrt, sogar wçhrend Sie schlafen."
+excerpt: "Ihr persönlicher 24/7-Hintergrund-KI-Agent, der Aufgaben ausführt, sogar während Sie schlafen."
 category: "Technologie"
 date: "2026-07-03"
 readTime: "6"

@@ -2,7 +2,7 @@
 slug: "first-party-data-marketing"
 lang: "de"
 title: "Werbung ohne Cookies: Bereiten Sie sich mit First-Party-Daten auf die Zukunft vor"
-excerpt: "Lassen Sie nicht zu, dass das Ende der Third-Party-Cookies Ihre Kampagnen beeintrçchtigt. Entdecken Sie, wie Sie Datenverluste mit Consent Mode V2 und Server-Side Tracking verhindern kçnnen."
+excerpt: "Erfahren Sie, wie Sie verhindern können, dass Ihr Werbe-ROI durch den Wegfall von Drittanbieter-Cookies beeinträchtigt wird."
 category: "Technologie"
 date: "2026-03-30"
 readTime: "7"

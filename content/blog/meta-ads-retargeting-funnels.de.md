@@ -2,7 +2,7 @@
 slug: "meta-ads-retargeting-funnels"
 lang: "de"
 title: "Meta Ads Retargeting-Funnels für E-Commerce"
-excerpt: "Gewinnen Sie Nutzer zurçck, die Ihre Website ohne Kauf verlassen haben. Meta Ads Retargeting-Strategien mit hoher Conversion."
+excerpt: "Nutzer zurück, die Ihre Website besucht haben. Hochkonvertierende Meta Ads Retargeting-Funnels für E-Commerce."
 category: "Meta Ads"
 date: "2026-03-05"
 readTime: "5"

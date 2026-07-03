@@ -2,7 +2,7 @@
 slug: "google-ads-roi-tracking"
 lang: "tr"
 title: "Google Ads Dönüşüm Takibi ve ROI Optimizasyonu"
-excerpt: "Reklam bçtçenizi bosa harcamayin. Google Ads'te dogru dçnçsçm takibi kurarak ROI ve ROAS oranlarinizi nasil katlayacaginizi çgrenin."
+excerpt: "Reklam bütçenizi boşa harcamayın. Doğru dönüşüm takibi kurarak ROI'nızı nasıl artıracağınızı öğrenin."
 category: "Google Ads"
 date: "2026-03-01"
 readTime: "6"

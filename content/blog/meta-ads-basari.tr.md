@@ -2,7 +2,7 @@
 slug: "meta-ads-basari"
 lang: "tr"
 title: "Meta Ads ile Başarı: Facebook ve Instagram Reklamcılığı"
-excerpt: "Facebook ve Instagram'da etkili reklam kampanyalari nasil olusturulur? Hedef kitle segmentasyonundan kreatif stratejilere kadar her sey."
+excerpt: "Meta Ads ile Facebook ve Instagram'da hedef kitlenize ulaşın. Başarılı reklam kampanyaları oluşturmanın sırlarını ve en iyi uygulamaları öğrenin."
 category: "Meta Ads"
 date: "2026-01-18"
 readTime: "6"

@@ -2,7 +2,7 @@
 slug: "ai-content-marketing-scale"
 lang: "tr"
 title: "Yapay Zeka ile İçerik Üretimi: Kaliteden Ödün Vermeden Organik Trafiği Ölçeklendirin"
-excerpt: "AI kullanarak içerik çretirken Google'dan ceza almayin. EEAT standartlarina uygun, insanilestirilmis (humanized) AI içerik çretme rehberi."
+excerpt: "Yapay zeka ile içerik üretirken Google'da sıralanmayı öğrenin. AI içerik üretme rehberi."
 category: "SEO"
 date: "2026-04-05"
 readTime: "6"

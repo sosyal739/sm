@@ -2,7 +2,7 @@
 slug: "first-party-data-marketing"
 lang: "tr"
 title: "Çerezsiz Reklamcılık: Birinci Taraf Veri (1st-Party Data) ile Geleceğe Hazırlanın"
-excerpt: "çççncç taraf çerezlerin (3rd-party cookies) kalkmasi kampanyalarinizi vurmasin. Consent Mode V2 ve Server-Side Tracking ile veri kaybini nasil çnleyeceginizi kesfedin."
+excerpt: "Üçüncü taraf çerezlerin (3rd-party cookies) sona ermesiyle reklam ROI'nızın nasıl etkileneceğini ve bunu nasıl önleyeceğinizi keşfedin."
 category: "Teknoloji"
 date: "2026-03-30"
 readTime: "7"

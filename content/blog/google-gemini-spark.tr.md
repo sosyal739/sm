@@ -2,7 +2,7 @@
 slug: "google-gemini-spark"
 lang: "tr"
 title: "Google Gemini Spark: Arka Planda 7/24 Çalışan Kişisel Yapay Zeka Ajanınız"
-excerpt: "Google'in yeni proaktif yapay zeka ajani Gemini Spark ile tanisin. Siz uyurken bile e-postalarinizi yçneten ve otomatik gçrevler yçrçten bu sistemin çzelliklerini kesfedin."
+excerpt: "Arka planda 7/24 çalışan kişisel yapay zeka ajanınız. Görevleri otomatik olarak yürüten bu sistemin özelliklerini keşfedin."
 category: "Teknoloji"
 date: "2026-07-03"
 readTime: "6"

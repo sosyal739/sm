@@ -2,7 +2,7 @@
 slug: "local-seo-google-maps"
 lang: "tr"
 title: "Yerel SEO ve Google Haritalar: Bölgesel Satışlarınızı %300 Artırın"
-excerpt: "Google Business Profile optimizasyonu ile magazaniza gelen trafigi katlayin. 2026 yerel SEO algoritmasi ve Google Maps siralama faktçrleri rehberi."
+excerpt: "Google Business Profile ile yerel satışlarınızı artırın. Google Maps için önemli sıralama faktörleri."
 category: "SEO"
 date: "2026-03-25"
 readTime: "6"

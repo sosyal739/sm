@@ -2,7 +2,7 @@
 slug: "olumsuz-yorum-yonetimi"
 lang: "de"
 title: "Bewertungsmanagement: Schützen Sie Ihren Ruf"
-excerpt: "Schaden unfaire Bewertungen auf Google Maps und Trustpilot Ihrem Unternehmen? Alles çber den Lçschprozess."
+excerpt: "Wie löscht man eine Google-Bewertung? Alles über den Löschprozess."
 category: "Reputation"
 date: "2026-01-28"
 readTime: "6"

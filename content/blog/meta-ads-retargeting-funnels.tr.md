@@ -2,7 +2,7 @@
 slug: "meta-ads-retargeting-funnels"
 lang: "tr"
 title: "E-Ticaret İçin Meta Ads Yeniden Hedefleme Hunileri"
-excerpt: "Sitenizi ziyaret edip satin almayan kullanicilari kazanin. Yçksek dçnçsçmlç Meta Ads retargeting reklam stratejileri."
+excerpt: "Yüksek dönüşümlü Meta Ads retargeting stratejileriyle kaybettiğiniz müşterileri geri kazanın."
 category: "Meta Ads"
 date: "2026-03-05"
 readTime: "5"

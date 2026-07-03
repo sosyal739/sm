@@ -2,11 +2,11 @@
 slug: "x-live-studio-streaming-rewards"
 lang: "de"
 title: "Was ist X Live Studio? Wie Sie den 1-Million-Dollar-Streamer-Preis gewinnen"
-excerpt: "X (Twitter) hat Live Studio angekçndigt, einen Konkurrenten fçr Twitch und YouTube. Alle Bedingungen, die Sie kennen mçssen, um einen Anteil an dem riesigen Preispool von 1 Million US-Dollar zu erhalten."
+excerpt: "X (Twitter) hat Live Studio angekündigt, einen Konkurrenten für Twitch und YouTube. Alle Bedingungen, die Sie kennen müssen, um einen Anteil an dem riesigen 1-Million-Dollar-Preisgeld zu gewinnen."
 category: "X Ads"
 date: "2026-07-03"
 readTime: "5"
-coverImage: "https://images.unsplash.com/photo-1594038975813-6e0b4c38b9c8?w=600&h=300&fit=crop&q=80"
+coverImage: "https://images.unsplash.com/photo-1611162617213-7d7a39e9b1d7?w=600&h=300&fit=crop&q=80"
 ---
 
         <div class="lead">

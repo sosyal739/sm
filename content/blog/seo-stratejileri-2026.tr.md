@@ -2,7 +2,7 @@
 slug: "seo-stratejileri-2026"
 lang: "tr"
 title: "SEO Stratejileri 2026: Google'ın Yeni Algoritması"
-excerpt: "Google'in sçrekli degisen algoritmasinda çst siralarda kalmak için yapmaniz gerekenler. Teknik SEO ipuçlari."
+excerpt: "Google'ın sürekli değişen algoritmasında üst sıralarda kalmak için yapmanız gereken pratik SEO ipuçları."
 category: "SEO"
 date: "2026-01-22"
 readTime: "8"

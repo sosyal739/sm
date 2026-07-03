@@ -2,7 +2,7 @@
 slug: "tiktok-shop-social-commerce"
 lang: "tr"
 title: "TikTok Shop Rehberi: Sosyal Medyadan Doğrudan Satış Yapmanın Sırları"
-excerpt: "Sosyal ticaret pazarinda rakiplerinizin çnçne geçin. Dçnçsçm oranlarini %40 artiran TikTok Shopping Ads entegrasyonu ve sosyal çdeme optimizasyonu taktikleri."
+excerpt: "TikTok Shop ile sosyal ticaret. Bölgesel satışlarınızı %300 artırın."
 category: "TikTok Ads"
 date: "2026-03-20"
 readTime: "5"

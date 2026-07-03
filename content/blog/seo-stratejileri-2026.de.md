@@ -2,7 +2,7 @@
 slug: "seo-stratejileri-2026"
 lang: "de"
 title: "SEO-Strategien 2026: Googles neuer Algorithmus"
-excerpt: "Was Sie tun mçssen, um bei Googles stçndig wechselndem Algorithmus an der Spitze zu bleiben. Technische SEO-Tipps."
+excerpt: "Was Sie tun müssen, um bei Googles ständig wechselndem Algorithmus oben zu bleiben. Praxisnahe SEO-Tipps für 2026."
 category: "SEO"
 date: "2026-01-22"
 readTime: "8"

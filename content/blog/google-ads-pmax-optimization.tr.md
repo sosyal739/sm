@@ -2,7 +2,7 @@
 slug: "google-ads-pmax-optimization"
 lang: "tr"
 title: "Google Ads PMax Optimizasyonu ile ROAS'ınızı 3 Katına Çıkarın"
-excerpt: "PMax kampanyalarinizdaki bçtçe israfini nasil durduracaginizi çgrenin. 2026'nin en etkili Google Ads taktikleriyle asset gruplari ve kitle sinyallerini yapilandirin."
+excerpt: "Bütçenizdeki israfı nasıl durduracağınızı öğrenin. Dönüşüm oranlarını %40 artırın."
 category: "Google Ads"
 date: "2026-03-15"
 readTime: "6"

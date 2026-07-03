@@ -2,7 +2,7 @@
 slug: "ai-content-marketing-scale"
 lang: "de"
 title: "Content-Erstellung mit KI: Skalieren Sie organischen Traffic ohne Qualitätseinbußen"
-excerpt: "Vermeiden Sie Google-Strafen, wenn Sie Inhalte mit KI erstellen. Der Leitfaden zur Erstellung menschlicher KI-Inhalte gemçç den EEAT-Standards."
+excerpt: "Erstellen Sie AI-Inhalte gemäß den EEAT-Standards ohne Qualitätseinbußen."
 category: "SEO"
 date: "2026-04-05"
 readTime: "6"

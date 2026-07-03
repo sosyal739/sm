@@ -2,11 +2,11 @@
 slug: "x-live-studio-streaming-rewards"
 lang: "tr"
 title: "X Live Studio Nedir? 1 Milyon Dolarlık Yayıncı Ödülünü Nasıl Kazanırsınız?"
-excerpt: "X (Twitter), Twitch ve YouTube'a rakip olan Live Studio'yu duyurdu. 1 milyon dolarlik dev nakit havuzundan pay almak için bilmeniz gereken tçm sartlar."
+excerpt: "X (Twitter), Twitch ve YouTube'a rakip olan Live Studio'yu duyurdu. 1 milyon dolarlık dev nakit havuzundan pay almak için bilmeniz gereken tüm şartlar."
 category: "X Ads"
 date: "2026-07-03"
 readTime: "5"
-coverImage: "https://images.unsplash.com/photo-1594038975813-6e0b4c38b9c8?w=600&h=300&fit=crop&q=80"
+coverImage: "https://images.unsplash.com/photo-1611162617213-7d7a39e9b1d7?w=600&h=300&fit=crop&q=80"
 ---
 
         <div class="lead">

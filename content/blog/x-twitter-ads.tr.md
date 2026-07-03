@@ -2,7 +2,7 @@
 slug: "x-twitter-ads"
 lang: "tr"
 title: "X (Twitter) Reklamları: Gerçek Zamanlı Pazarlama"
-excerpt: "Trend konularda nasil çne çikilir? X reklamlari ile gerçek zamanli pazarlama stratejileri."
+excerpt: "X reklamlarında nasıl öne çıkilir? X reklamları ile gerçek zamanlı pazarlama stratejilerini öğrenin."
 category: "X Ads"
 date: "2026-01-25"
 readTime: "5"

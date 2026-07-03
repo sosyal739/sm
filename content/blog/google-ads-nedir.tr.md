@@ -2,7 +2,7 @@
 slug: "google-ads-nedir"
 lang: "tr"
 title: "Google Ads Nedir ve Neden Yapılmalıdır?"
-excerpt: "Google Ads, isletmenizin dijital dçnyada gçrçnçr olmasinin en hizli yoludur. Dogru stratejilerle yatiriminizin karsiligini almanin yollarini kesfedin."
+excerpt: "Google Ads, işletmenizin dijital dünyada görünür olmasının en hızlı yoludur. Doğru stratejilerle yatırımınızın karşılığını almanın yollarını keşfedin."
 category: "Google Ads"
 date: "2026-01-15"
 readTime: "5"

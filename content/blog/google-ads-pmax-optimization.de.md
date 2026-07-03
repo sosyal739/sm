@@ -2,7 +2,7 @@
 slug: "google-ads-pmax-optimization"
 lang: "de"
 title: "Verdreifachen Sie Ihren ROAS mit Google Ads PMax-Optimierung"
-excerpt: "Erfahren Sie, wie Sie die Budgetverschwendung in Ihren PMax-Kampagnen stoppen. Strukturieren Sie Asset-Gruppen und Zielgruppensignale mit den effektivsten Google Ads-Taktiken fçr 2026."
+excerpt: "Entdecken Sie, wie Sie Ihr Budget um das 3-Fache erhöhen können."
 category: "Google Ads"
 date: "2026-03-15"
 readTime: "6"

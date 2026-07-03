@@ -2,7 +2,7 @@
 slug: "tiktok-ads-rehber"
 lang: "tr"
 title: "TikTok Ads: Genç Kitleye Ulaşmanın Yeni Yolu"
-excerpt: "TikTok'ta viral olmanin ve genç kitleye etkili sekilde ulasmanin stratejilerini çgrenin."
+excerpt: "TikTok'ta viral olmak ve genç kitleye etkili şekilde ulaşmak için TikTok Ads stratejilerini öğrenin. Kampanya kurulumu ve optimizasyon rehberi."
 category: "TikTok Ads"
 date: "2026-01-20"
 readTime: "4"
