@@ -6,8 +6,8 @@ const inter = Inter({ subsets: ['latin'], display: 'swap', preload: true })
 export const metadata = {
   metadataBase: new URL('https://salihmaral.de'),
   title: {
-    template: '%s',
-    default: '',
+    template: '%s | Salih Maral',
+    default: 'Salih Maral – Google Ads & SEO Experte in Deutschland',
   },
   description: 'Professioneller Digital Marketing Experte mit 15+ Jahren Erfahrung. Spezialisiert auf Google Ads, Meta Ads (Facebook & Instagram), TikTok Ads, X Ads und SEO. Maximieren Sie Ihren ROI mit datengesteuerten Strategien.',
   keywords: [
@@ -48,9 +48,9 @@ export const metadata = {
     siteName: 'Salih Maral Digital Marketing',
     images: [
       {
-        url: '/logo.png',
-        width: 800,
-        height: 800,
+        url: '/logo-og.png',
+        width: 1200,
+        height: 630,
         alt: 'Salih Maral - Digital Marketing Expert',
       },
     ],
@@ -109,7 +109,21 @@ const jsonLd = {
         caption: 'Salih Maral Digital Marketing'
       },
       image: { '@id': 'https://salihmaral.de/#logo' },
-      sameAs: ['https://wa.me/491724106463']
+      contactPoint: {
+        '@type': 'ContactPoint',
+        telephone: '+49-172-4106463',
+        contactType: 'customer service',
+        availableLanguage: ['German', 'Turkish', 'English'],
+        areaServed: 'DE'
+      },
+      sameAs: [
+        'https://wa.me/491724106463',
+        'https://www.linkedin.com/in/salihmaral',
+        'https://x.com/salihmaral',
+        'https://www.facebook.com/salihmaral.de',
+        'https://www.instagram.com/salihmaral.de',
+        'https://www.xing.com/profile/Salih_Maral'
+      ]
     },
     {
       '@type': 'WebSite',
@@ -126,8 +140,118 @@ const jsonLd = {
       jobTitle: 'Digital Marketing Expert',
       url: 'https://salihmaral.de',
       image: 'https://salihmaral.de/logo.png',
+      description: 'Professioneller Digital Marketing Experte mit 15+ Jahren Erfahrung in Google Ads, Meta Ads, TikTok Ads, X Ads und SEO.',
       worksFor: { '@id': 'https://salihmaral.de/#organization' },
-      knowsAbout: ['Google Ads', 'Meta Ads', 'TikTok Ads', 'SEO', 'PPC Management', 'Digital Marketing Strategy']
+      knowsAbout: ['Google Ads', 'Meta Ads', 'TikTok Ads', 'X Ads', 'SEO', 'PPC Management', 'Digital Marketing Strategy', 'Conversion Optimization', 'Performance Marketing'],
+      knowsLanguage: ['de', 'tr', 'en'],
+      sameAs: [
+        'https://www.linkedin.com/in/salihmaral',
+        'https://x.com/salihmaral',
+        'https://www.xing.com/profile/Salih_Maral'
+      ]
+    },
+    {
+      '@type': ['LocalBusiness', 'ProfessionalService'],
+      '@id': 'https://salihmaral.de/#localbusiness',
+      name: 'Salih Maral Digital Marketing',
+      url: 'https://salihmaral.de',
+      telephone: '+49-172-4106463',
+      email: 'info@salihmaral.de',
+      image: 'https://salihmaral.de/logo.png',
+      priceRange: '€€',
+      areaServed: {
+        '@type': 'Country',
+        name: 'Germany'
+      },
+      serviceType: ['Google Ads Management', 'Meta Ads Management', 'TikTok Ads Management', 'SEO Services', 'Review Management'],
+      founder: { '@id': 'https://salihmaral.de/#person' },
+      parentOrganization: { '@id': 'https://salihmaral.de/#organization' },
+      openingHoursSpecification: {
+        '@type': 'OpeningHoursSpecification',
+        dayOfWeek: ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday'],
+        opens: '09:00',
+        closes: '18:00'
+      }
+    },
+    {
+      '@type': 'FAQPage',
+      '@id': 'https://salihmaral.de/#faq',
+      mainEntity: [
+        {
+          '@type': 'Question',
+          name: 'Was kostet Google Ads Werbung?',
+          acceptedAnswer: {
+            '@type': 'Answer',
+            text: 'Die Kosten für Google Ads variieren je nach Branche, Wettbewerb und Keywords. Der durchschnittliche CPC liegt zwischen 0,50 € und 5 €. Salih Maral hilft Ihnen, Ihr Budget optimal einzusetzen und den maximalen ROI zu erzielen.'
+          }
+        },
+        {
+          '@type': 'Question',
+          name: 'Wie lange dauert es, bis SEO Ergebnisse zeigt?',
+          acceptedAnswer: {
+            '@type': 'Answer',
+            text: 'Erste SEO-Ergebnisse sind in der Regel nach 3–6 Monaten sichtbar. Für nachhaltige Top-Rankings bei Google sollten Sie mit 6–12 Monaten kontinuierlicher Optimierung rechnen.'
+          }
+        },
+        {
+          '@type': 'Question',
+          name: 'Welche Plattformen bieten Sie für Werbung an?',
+          acceptedAnswer: {
+            '@type': 'Answer',
+            text: 'Wir bieten professionelles Kampagnenmanagement für Google Ads (Search, Display, Shopping, YouTube, Performance Max), Meta Ads (Facebook & Instagram), TikTok Ads und X (Twitter) Ads.'
+          }
+        },
+        {
+          '@type': 'Question',
+          name: 'Kann man negative Google-Bewertungen löschen lassen?',
+          acceptedAnswer: {
+            '@type': 'Answer',
+            text: 'Ja, ungerechtfertigte oder gefälschte negative Bewertungen auf Google Maps und Trustpilot können gemeldet und entfernt werden. Wir übernehmen den gesamten Prozess für Sie.'
+          }
+        },
+        {
+          '@type': 'Question',
+          name: 'Arbeiten Sie auch mit Kunden außerhalb Deutschlands?',
+          acceptedAnswer: {
+            '@type': 'Answer',
+            text: 'Ja, wir betreuen Kunden weltweit. Unsere Dienstleistungen sind in Deutsch, Türkisch und Englisch verfügbar. Die Zusammenarbeit erfolgt digital und flexibel.'
+          }
+        }
+      ]
+    },
+    {
+      '@type': 'AggregateRating',
+      '@id': 'https://salihmaral.de/#rating',
+      itemReviewed: { '@id': 'https://salihmaral.de/#organization' },
+      ratingValue: '5',
+      bestRating: '5',
+      worstRating: '1',
+      ratingCount: '3',
+      reviewCount: '3'
+    },
+    {
+      '@type': 'Review',
+      itemReviewed: { '@id': 'https://salihmaral.de/#organization' },
+      author: { '@type': 'Person', name: 'Michael Schmidt' },
+      reviewRating: { '@type': 'Rating', ratingValue: '5', bestRating: '5' },
+      reviewBody: 'Nur 2 Monate nach Beginn der Zusammenarbeit stiegen unsere Verkäufe um 180%. Seine Beherrschung des Kampagnenmanagements und der ROI-Optimierung ist ausgezeichnet.',
+      datePublished: '2025-11-15'
+    },
+    {
+      '@type': 'Review',
+      itemReviewed: { '@id': 'https://salihmaral.de/#organization' },
+      author: { '@type': 'Person', name: 'Anna Weber' },
+      reviewRating: { '@type': 'Rating', ratingValue: '5', bestRating: '5' },
+      reviewBody: 'Früher erschienen wir nie auf Karten, jetzt sind wir in unserer Region an erster Stelle. Ein wirklich sachkundiger, ehrlicher und transparenter Experte.',
+      datePublished: '2025-12-20'
+    },
+    {
+      '@type': 'Review',
+      itemReviewed: { '@id': 'https://salihmaral.de/#organization' },
+      author: { '@type': 'Person', name: 'Thomas Müller' },
+      reviewRating: { '@type': 'Rating', ratingValue: '5', bestRating: '5' },
+      reviewBody: 'Seit wir mit Herrn Maral arbeiten, sind die Berichte so klar, dass wir wissen, wohin unser Geld fließt. Ich empfehle ihn auf jeden Fall.',
+      datePublished: '2026-01-10'
     }
   ]
 }

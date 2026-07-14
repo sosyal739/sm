@@ -4,4 +4,26 @@ Disallow: /api/
 Disallow: /_next/
 Disallow: /admin/
 
+# AI Search Engine Bots — GEO Optimization
+User-agent: GPTBot
+Allow: /
+
+User-agent: ChatGPT-User
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: anthropic-ai
+Allow: /
+
+User-agent: Google-Extended
+Allow: /
+
+User-agent: Applebot-Extended
+Allow: /
+
 Sitemap: https://salihmaral.de/sitemap.xml
