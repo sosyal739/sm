@@ -679,6 +679,31 @@ export default function ServiceDetailPage() {
     }))
   } : null
 
+  const breadcrumbSchema = {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "name": lang === 'de' ? 'Startseite' : lang === 'en' ? 'Home' : 'Ana Sayfa',
+        "item": `https://salihmaral.de${lang === 'de' ? '' : '/' + lang}`
+      },
+      {
+        "@type": "ListItem",
+        "position": 2,
+        "name": lang === 'de' ? 'Dienstleistungen' : lang === 'en' ? 'Services' : 'Hizmetler',
+        "item": `https://salihmaral.de${lang === 'de' ? '/dienstleistungen' : lang === 'en' ? '/en/services' : '/tr/hizmetler'}`
+      },
+      {
+        "@type": "ListItem",
+        "position": 3,
+        "name": data.title,
+        "item": `https://salihmaral.de${getLocalizedServiceUrl(lang, service)}`
+      }
+    ]
+  }
+
   return (
     <div className="min-h-screen bg-white">
       {/* SEO: Canonical + Hreflang for multi-language */}
@@ -700,6 +725,10 @@ export default function ServiceDetailPage() {
             dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
           />
         )}
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
+        />
       </head>
       {/* Navigation - Same as Homepage */}
       <nav className="fixed top-0 left-0 right-0 z-50 bg-white/95 backdrop-blur-sm border-b">

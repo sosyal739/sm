@@ -10,7 +10,7 @@ coverImage: "https://images.unsplash.com/photo-1551836022-d5d88e9218df?w=600&h=3
 ---
 
           <div class="lead">
-            <p>Google Ads bütçenizin başarısı, reklama ne kadar harcadığınızdan ziyade dönüşümleri ne kadar doğru takip ettiğinize bağlıdır. 2026 sektörel çalışmalarına göre, gelişmiş dönüşüm takibini aktif eden işletmeler reklam maliyetlerinde %30'a varan düşüş ve ROI oranlarında %150 artış görmektedir.</p>
+            <p>Google Ads bütçenizin başarısı, reklama ne kadar harcadığınızdan ziyade dönüşümleri ne kadar doğru takip ettiğinize bağlıdır. 2026 sektörel çalışmalarına göre, gelişmiş dönüşüm takibini aktif eden işletmeler reklam maliyetlerinde %30'a varan düşüş ve ROI oranlarında %150 artış görmektedir. Bu rehberde Salih Maral, dönüşüm takibinizi doğru kurmanız ve ROI'nizi sistematik olarak maksimize etmeniz için adım adım yol gösteriyor.</p>
           </div>
 
           <h2>🎯 Dönüşüm Takibi (Conversion Tracking) Nedir?</h2>
@@ -62,6 +62,17 @@ coverImage: "https://images.unsplash.com/photo-1551836022-d5d88e9218df?w=600&h=3
           <div class="highlight-box success">
             <h4>💡 Uzman Tavsiyesi</h4>
             <p>E-Ticaret sitelerinde sadece "Alışveriş" (Purchase) dönüşümünü değil, huninin adımları olan "Sepete Ekle" ve "Ödeme Başlangıcı" adımlarını da mikro dönüşüm olarak takip edin. Bu sayede algoritmalar çok daha hızlı veri toplayıp öğrenme sürecini tamamlar.</p>
+          </div>
+
+          <div class="highlight-box">
+            <h4>📚 Devamını Okuyun</h4>
+            <ul>
+              <li><a href="/blog/google-ads-nedir">Google Ads Rehberi – Google Ads Nedir?</a></li>
+              <li><a href="/tr/hizmetler/google-ads">Salih Maral Google Ads Hizmetleri</a></li>
+              <li><a href="/blog/google-ads-kosten-2026">Google Ads Maliyetleri 2026</a></li>
+              <li><a href="/blog/google-ads-pmax-optimization">PMax Optimizasyonu – ROAS'ınızı 3 Katına Çıkarın</a></li>
+              <li><a href="/blog/google-ads-fehler-vermeiden">En Sık Yapılan 7 Google Ads Hatası</a></li>
+            </ul>
           </div>
 
           <h2>🚀 Sonuç</h2>
