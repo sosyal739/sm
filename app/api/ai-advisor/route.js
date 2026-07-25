@@ -6,9 +6,24 @@ export async function POST(request) {
     const { message = '', language = 'de' } = body
     const query = message.trim().toLowerCase()
 
-    const posts = getAllPosts(language)
+    // Smart automatic language detection from the input message
+    let activeLang = language
 
-    // Knowledge base responses for typical digital marketing scenarios
+    const turkishIndicators = ['ç', 'ğ', 'ı', 'ö', 'ş', 'ü', 'nasıl', 'nedir', 'merhaba', 'reklam', 'bütçe', 'sıralama', 'artırma', 'satış', 'dönüşüm', 'yapabilirim', 'önerirsin', 'neden', 'ne', 'için', 'veya', 'bana', 'yardım', 'hakkında']
+    const englishIndicators = ['how', 'what', 'why', 'increase', 'boost', 'grow', 'scale', 'my', 'the', 'and', 'should', 'can', 'help', 'best', 'optimization']
+
+    const isTurkish = turkishIndicators.some(term => query.includes(term))
+    const isEnglish = englishIndicators.some(term => query.includes(term))
+
+    if (isTurkish) {
+      activeLang = 'tr'
+    } else if (isEnglish) {
+      activeLang = 'en'
+    }
+
+    const posts = getAllPosts(activeLang)
+
+    // Knowledge base responses for digital marketing scenarios
     const responses = {
       de: {
         ads: "Für Google Ads empfehle ich eine klare Ausrichtung auf kaufbereite Suchbegriffe und die Nutzung von Responsive Search Ads. Kombinieren Sie dies mit automatischen Keyword-Ausschlüssen, um Ihr Budget um bis zu 30% effizienter einzusetzen.",
@@ -30,7 +45,7 @@ export async function POST(request) {
       }
     }
 
-    const langResponses = responses[language] || responses.de
+    const langResponses = responses[activeLang] || responses.de
 
     let answerText = langResponses.default
     let category = 'Allgemein'
@@ -52,7 +67,7 @@ export async function POST(request) {
       let score = 0
       const text = `${post.title} ${post.excerpt} ${post.category}`.toLowerCase()
       searchTerms.forEach(term => {
-        if (text.includes(term)) score += 5
+        if (term.length > 2 && text.includes(term)) score += 5
       })
       return { ...post, score }
     }).filter(p => p.score > 0).sort((a, b) => b.score - a.score).slice(0, 2)
@@ -60,6 +75,7 @@ export async function POST(request) {
     return Response.json({
       answer: answerText,
       category,
+      detectedLang: activeLang,
       recommendedPosts: matchingPosts.length > 0 ? matchingPosts : posts.slice(0, 2)
     })
   } catch (error) {

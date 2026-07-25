@@ -47,21 +47,28 @@ export default function SalihMaralAiAdvisor({ currentLang = 'de' }) {
     }
   }
 
-  const l = labels[currentLang] || labels.de
+  const [activeLang, setActiveLang] = useState(currentLang)
+
+  useEffect(() => {
+    const savedLang = localStorage.getItem('preferredLanguage')
+    if (savedLang && ['de', 'en', 'tr'].includes(savedLang)) {
+      setActiveLang(savedLang)
+    }
+  }, [currentLang])
+
+  const l = labels[activeLang] || labels.de
 
   // Initialize welcome message
   useEffect(() => {
-    if (messages.length === 0) {
-      setMessages([
-        {
-          id: 1,
-          sender: 'ai',
-          text: l.welcome,
-          recommendedPosts: []
-        }
-      ])
-    }
-  }, [currentLang])
+    setMessages([
+      {
+        id: 1,
+        sender: 'ai',
+        text: l.welcome,
+        recommendedPosts: []
+      }
+    ])
+  }, [activeLang])
 
   // Scroll to bottom
   useEffect(() => {
@@ -81,7 +88,7 @@ export default function SalihMaralAiAdvisor({ currentLang = 'de' }) {
       const res = await fetch('/api/ai-advisor', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ message: query, language: currentLang })
+        body: JSON.stringify({ message: query, language: activeLang })
       })
 
       const data = await res.json()

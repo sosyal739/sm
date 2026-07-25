@@ -6,7 +6,7 @@ excerpt: "TikTok Shop ile doğrudan satış kanalı oluşturun. Salih Maral, ür
 category: "TikTok Ads"
 date: "2026-07-16"
 readTime: "10"
-coverImage: "https://images.unsplash.com/photo-1596558450268-9c27524baaf7?w=600&h=300&fit=crop&q=80"
+coverImage: "https://images.unsplash.com/photo-1556742049-0a67daf4005a?w=600&h=300&fit=crop&q=80"
 ---
 
 <div class="lead">
