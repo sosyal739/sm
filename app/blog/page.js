@@ -249,6 +249,7 @@ export default function BlogPage() {
                     src={getCategoryImage(featuredPost)}
                     alt={featuredPost.title}
                     className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
+                    onError={(e) => { e.currentTarget.src = 'https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=600&h=300&fit=crop&q=80' }}
                   />
                   <div className="absolute top-4 left-4">
                     <Badge className="bg-[#4285F4] text-white font-bold px-3.5 py-1.5 shadow-md">
@@ -317,6 +318,7 @@ export default function BlogPage() {
                         alt={post.title}
                         className="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
                         loading="lazy"
+                        onError={(e) => { e.currentTarget.src = 'https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=600&h=300&fit=crop&q=80' }}
                       />
                       <div className="absolute inset-0 bg-gradient-to-t from-gray-900/60 via-transparent to-transparent" />
                       <div className="absolute top-4 left-4 flex gap-2">

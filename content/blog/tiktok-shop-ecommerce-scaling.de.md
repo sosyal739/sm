@@ -6,7 +6,7 @@ excerpt: "Erstellen Sie einen direkten Verkaufskanal mit TikTok Shop. Salih Mara
 category: "TikTok Ads"
 date: "2026-07-16"
 readTime: "10"
-coverImage: "https://images.unsplash.com/photo-1556742049-0a67daf4005a?w=600&h=300&fit=crop&q=80"
+coverImage: "https://images.unsplash.com/photo-1557804506-669a67965ba0?w=600&h=300&fit=crop&q=80"
 ---
 
 <div class="lead">
