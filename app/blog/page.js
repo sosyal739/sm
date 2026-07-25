@@ -5,6 +5,7 @@ import { Badge } from '@/components/ui/badge'
 import { ArrowLeft, Globe, ArrowRight } from 'lucide-react'
 import { useRouter } from 'next/navigation'
 import { useState, useEffect } from 'react'
+import AiSearchWidget from '@/components/AiSearchWidget'
 
 const translations = {
   tr: {
@@ -140,25 +141,28 @@ export default function BlogPage() {
             <a href={lang === 'de' ? '/' : `/${lang}`}>
               <picture><source srcSet="/logo-sm.webp" type="image/webp" /><img src="/logo.png" alt="Salih Maral Logo" className="h-10 w-auto" width="40" height="40" /></picture>
             </a>
-            <div className="flex items-center space-x-2">
-              <button
-                onClick={() => handleLanguageChange('de')}
-                className={`px-3 py-1 text-xs font-medium rounded-md transition-all ${lang === 'de' ? 'bg-[#4285F4] text-white' : 'bg-gray-100 text-gray-600 hover:bg-gray-200'}`}
-              >
-                DE
-              </button>
-              <button
-                onClick={() => handleLanguageChange('en')}
-                className={`px-3 py-1 text-xs font-medium rounded-md transition-all ${lang === 'en' ? 'bg-[#4285F4] text-white' : 'bg-gray-100 text-gray-600 hover:bg-gray-200'}`}
-              >
-                EN
-              </button>
-              <button
-                onClick={() => handleLanguageChange('tr')}
-                className={`px-3 py-1 text-xs font-medium rounded-md transition-all ${lang === 'tr' ? 'bg-[#4285F4] text-white' : 'bg-gray-100 text-gray-600 hover:bg-gray-200'}`}
-              >
-                TR
-              </button>
+            <div className="flex items-center space-x-3">
+              <AiSearchWidget currentLang={lang} />
+              <div className="flex items-center space-x-1">
+                <button
+                  onClick={() => handleLanguageChange('de')}
+                  className={`px-3 py-1 text-xs font-medium rounded-md transition-all ${lang === 'de' ? 'bg-[#4285F4] text-white' : 'bg-gray-100 text-gray-600 hover:bg-gray-200'}`}
+                >
+                  DE
+                </button>
+                <button
+                  onClick={() => handleLanguageChange('en')}
+                  className={`px-3 py-1 text-xs font-medium rounded-md transition-all ${lang === 'en' ? 'bg-[#4285F4] text-white' : 'bg-gray-100 text-gray-600 hover:bg-gray-200'}`}
+                >
+                  EN
+                </button>
+                <button
+                  onClick={() => handleLanguageChange('tr')}
+                  className={`px-3 py-1 text-xs font-medium rounded-md transition-all ${lang === 'tr' ? 'bg-[#4285F4] text-white' : 'bg-gray-100 text-gray-600 hover:bg-gray-200'}`}
+                >
+                  TR
+                </button>
+              </div>
             </div>
           </div>
         </div>
