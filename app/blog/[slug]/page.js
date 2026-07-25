@@ -230,16 +230,42 @@ export default function BlogDetailPage() {
       {/* Hero */}
       <section className="pt-28 pb-8 px-4">
         <div className="container mx-auto max-w-4xl">
-          <Badge className="mb-4 bg-[#4285F4]/10 text-[#4285F4] hover:bg-[#4285F4]/20">{post.category}</Badge>
-          <h1 className="text-4xl md:text-5xl font-bold mb-6 text-gray-900 leading-tight">{post.title}</h1>
-          <div className="flex flex-wrap items-center gap-6 text-gray-500">
-            <div className="flex items-center space-x-2">
-              <Calendar className="h-4 w-4" />
-              <span>{post.date}</span>
+          {/* E-E-A-T Guardian Trust Bar */}
+          <div className="flex flex-wrap items-center gap-3 mb-4">
+            <Badge className="bg-[#4285F4]/10 text-[#4285F4] hover:bg-[#4285F4]/20 border border-[#4285F4]/20 font-semibold px-3 py-1">
+              {post.category}
+            </Badge>
+            <div className="inline-flex items-center gap-1.5 bg-emerald-50 text-emerald-700 border border-emerald-200 px-3 py-1 rounded-full text-xs font-semibold">
+              <span className="w-2 h-2 rounded-full bg-emerald-500 animate-pulse" />
+              <span>{lang === 'tr' ? 'Salih Maral Tarafından İnceledi & Doğrulandı' : lang === 'de' ? 'Von Salih Maral geprüft & verifiziert' : 'Reviewed & Verified by Salih Maral'}</span>
             </div>
-            <div className="flex items-center space-x-2">
-              <Clock className="h-4 w-4" />
-              <span>{post.readTime} {t.readTime}</span>
+          </div>
+
+          <h1 className="text-4xl md:text-5xl font-bold mb-6 text-gray-900 leading-tight">{post.title}</h1>
+          
+          {/* Author Meta Bar */}
+          <div className="flex flex-wrap items-center justify-between gap-4 p-4 rounded-2xl bg-slate-50 border border-slate-200/80 mb-6">
+            <div className="flex items-center gap-3">
+              <img
+                src="/hero.webp"
+                alt="Salih Maral"
+                className="w-10 h-10 rounded-full object-cover border-2 border-[#4285F4]"
+                onError={(e) => { e.target.src = '/logo.png' }}
+              />
+              <div>
+                <p className="text-xs font-bold text-slate-900">Salih Maral</p>
+                <p className="text-[11px] text-slate-500 font-medium">Google Ads & SEO Experte (15+ Jahre Erfahrung)</p>
+              </div>
+            </div>
+            <div className="flex items-center gap-5 text-xs text-slate-500">
+              <div className="flex items-center space-x-1.5">
+                <Calendar className="h-4 w-4 text-[#4285F4]" />
+                <span>{post.date}</span>
+              </div>
+              <div className="flex items-center space-x-1.5">
+                <Clock className="h-4 w-4 text-[#4285F4]" />
+                <span>{post.readTime} {t.readTime}</span>
+              </div>
             </div>
           </div>
         </div>

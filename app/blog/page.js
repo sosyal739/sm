@@ -2,58 +2,64 @@
 
 import { Card, CardContent } from '@/components/ui/card'
 import { Badge } from '@/components/ui/badge'
-import { ArrowLeft, Globe, ArrowRight } from 'lucide-react'
+import { ArrowLeft, Globe, ArrowRight, ShieldCheck, Calendar, Clock, Sparkles, Flame, Cpu, Search, Layers, Zap } from 'lucide-react'
 import { useRouter } from 'next/navigation'
 import { useState, useEffect } from 'react'
 import AiSearchWidget from '@/components/AiSearchWidget'
+import RoasCpaCalculator from '@/components/RoasCpaCalculator'
 
 const translations = {
   tr: {
     home: 'Ana Sayfa',
-    heroTitle: 'Dijital Pazarlama Blog',
-    heroSubtitle: 'Google Ads, Meta Ads, SEO ve daha fazlası hakkında güncel içerikler',
+    heroTitle: 'Dijital Pazarlama & AI Blog',
+    heroSubtitle: 'Google Ads, Meta Ads, SEO, GEO ve Yapay Zeka hakkında güncel uzman rehberler',
     readMore: 'Devamını Oku',
     readTime: 'dk okuma',
+    featured: '🔥 ÖNE ÇIKAN BAŞ MAKALE',
+    verified: 'Salih Maral Tarafından İnceledi & Doğrulandı',
+    topicHubs: 'TOPIC HUBS (KONU MERKEZLERİ)',
     footer: '© 2026 Salih Maral. Tüm hakları saklıdır.'
   },
   de: {
     home: 'Startseite',
-    heroTitle: 'Digital Marketing Blog',
-    heroSubtitle: 'Aktuelle Inhalte über Google Ads, Meta Ads, SEO und mehr',
+    heroTitle: 'Digital Marketing & KI Blog',
+    heroSubtitle: 'Experten-Leitfäden über Google Ads, Meta Ads, SEO, GEO und KI',
     readMore: 'Weiterlesen',
     readTime: 'Min. Lesezeit',
+    featured: '🔥 EMPFOHLENER LEITBEITRAG',
+    verified: 'Von Salih Maral geprüft & verifiziert',
+    topicHubs: 'TOPIC HUBS (THEMEN-ZENTREN)',
     footer: '© 2026 Salih Maral. Alle Rechte vorbehalten.'
   },
   en: {
     home: 'Home',
-    heroTitle: 'Digital Marketing Blog',
-    heroSubtitle: 'Latest content about Google Ads, Meta Ads, SEO and more',
+    heroTitle: 'Digital Marketing & AI Blog',
+    heroSubtitle: 'Expert guides on Google Ads, Meta Ads, SEO, GEO, and AI',
     readMore: 'Read More',
     readTime: 'min read',
+    featured: '🔥 FEATURED LEAD STORY',
+    verified: 'Reviewed & Verified by Salih Maral',
+    topicHubs: 'TOPIC HUBS',
     footer: '© 2026 Salih Maral. All rights reserved.'
   }
 }
-
-// Blog posts are now served from /api/blog?lang=... (reads from content/blog/*.md files)
 
 export default function BlogPage() {
   const router = useRouter()
   const [lang, setLang] = useState('de')
   const [posts, setPosts] = useState([])
+  const [selectedCategory, setSelectedCategory] = useState('all')
   const [loading, setLoading] = useState(true)
 
-  // On mount: read saved language ONCE
   useEffect(() => {
     const savedLang = localStorage.getItem('preferredLanguage')
     if (savedLang && ['de', 'en', 'tr'].includes(savedLang)) {
       setLang(savedLang)
     } else {
-      // No saved lang — trigger first fetch immediately
       setLoading(true)
     }
   }, [])
 
-  // Fetch posts — AbortController prevents stale results overwriting newer ones
   useEffect(() => {
     setLoading(true)
     const controller = new AbortController()
@@ -66,7 +72,7 @@ export default function BlogPage() {
       .catch(err => {
         if (err.name !== 'AbortError') setLoading(false)
       })
-    return () => controller.abort() // cancel if lang changes before fetch completes
+    return () => controller.abort()
   }, [lang])
 
   const handleLanguageChange = (newLang) => {
@@ -76,89 +82,105 @@ export default function BlogPage() {
 
   const t = translations[lang]
 
+  const categories = [
+    {
+      id: 'all',
+      name: lang === 'tr' ? 'Tüm Konular' : lang === 'de' ? 'Alle Themen' : 'All Topics',
+      icon: Layers,
+      gradient: 'from-blue-600 via-indigo-600 to-purple-600',
+      activeShadow: 'shadow-indigo-500/30'
+    },
+    {
+      id: 'google',
+      name: 'Google Ads',
+      icon: Zap,
+      gradient: 'from-blue-500 via-cyan-500 to-emerald-500',
+      activeShadow: 'shadow-cyan-500/30'
+    },
+    {
+      id: 'meta',
+      name: 'Meta Ads',
+      icon: Flame,
+      gradient: 'from-purple-600 via-pink-600 to-rose-500',
+      activeShadow: 'shadow-pink-500/30'
+    },
+    {
+      id: 'seo',
+      name: 'SEO & GEO',
+      icon: Search,
+      gradient: 'from-emerald-500 via-[#4285F4] to-blue-600',
+      activeShadow: 'shadow-emerald-500/30'
+    },
+    {
+      id: 'ai',
+      name: lang === 'tr' ? 'Yapay Zeka' : lang === 'de' ? 'Künstliche Intelligenz' : 'Artificial Intelligence',
+      icon: Cpu,
+      gradient: 'from-amber-500 via-orange-500 to-rose-500',
+      activeShadow: 'shadow-orange-500/30'
+    },
+    {
+      id: 'tracking',
+      name: 'Server-Side Tracking',
+      icon: ShieldCheck,
+      gradient: 'from-slate-700 via-indigo-800 to-blue-900',
+      activeShadow: 'shadow-indigo-800/30'
+    },
+  ]
+
+  const filteredPosts = posts.filter(post => {
+    if (selectedCategory === 'all') return true
+    const catLower = (post.category || '').toLowerCase()
+    const titleLower = (post.title || '').toLowerCase()
+    if (selectedCategory === 'google') return catLower.includes('google') || titleLower.includes('google')
+    if (selectedCategory === 'meta') return catLower.includes('meta') || titleLower.includes('meta')
+    if (selectedCategory === 'seo') return catLower.includes('seo') || catLower.includes('geo') || titleLower.includes('seo')
+    if (selectedCategory === 'ai') return catLower.includes('yapay') || catLower.includes('künstliche') || catLower.includes('artificial') || titleLower.includes('ai') || titleLower.includes('gemini')
+    if (selectedCategory === 'tracking') return catLower.includes('tracking') || titleLower.includes('tracking') || titleLower.includes('capi')
+    return true
+  })
+
+  const featuredPost = filteredPosts.length > 0 ? filteredPosts[0] : null
+  const gridPosts = filteredPosts.length > 1 ? filteredPosts.slice(1) : filteredPosts
+
   const getCategoryImage = (post) => {
     if (post.coverImage) return post.coverImage
-    const fallback = {
-      'google-ads-nedir': 'https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=600&h=300&fit=crop&q=80',
-      'meta-ads-basari': 'https://images.unsplash.com/photo-1432888622747-4eb9a8efeb07?w=600&h=300&fit=crop&q=80',
-      'tiktok-ads-rehber': 'https://images.unsplash.com/photo-1611605698323-b1e99cfd37ea?w=600&h=300&fit=crop&q=80',
-      'seo-stratejileri-2026': 'https://images.unsplash.com/photo-1504868584819-f8e8b4b6d7e3?w=600&h=300&fit=crop&q=80',
-      'x-twitter-ads': 'https://images.unsplash.com/photo-1611605698335-8b1569810432?w=600&h=300&fit=crop&q=80',
-      'olumsuz-yorum-yonetimi': 'https://images.unsplash.com/photo-1556745757-8d76bdb6984b?w=600&h=300&fit=crop&q=80',
-      'google-ads-roi-tracking': 'https://images.unsplash.com/photo-1551836022-d5d88e9218df?w=600&h=300&fit=crop&q=80',
-      'meta-ads-retargeting-funnels': 'https://images.unsplash.com/photo-1557804506-669a67965ba0?w=600&h=300&fit=crop&q=80',
-      'ai-seo-geoptimierung': 'https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?w=600&h=300&fit=crop&q=80',
-      'google-ads-pmax-optimization': 'https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=600&h=300&fit=crop&q=80',
-      'tiktok-shop-social-commerce': 'https://images.unsplash.com/photo-1542751371-adc38448a05e?w=600&h=300&fit=crop&q=80',
-      'local-seo-google-maps': 'https://images.unsplash.com/photo-1524661135-423995f22d0b?w=600&h=300&fit=crop&q=80',
-      'first-party-data-marketing': 'https://images.unsplash.com/photo-1507925921958-8a62f3d1a50d?w=600&h=300&fit=crop&q=80',
-      'ai-content-marketing-scale': 'https://images.unsplash.com/photo-1620712943543-bcc4688e7485?w=600&h=300&fit=crop&q=80',
-      'pinterest-ads-visual-marketing': 'https://images.unsplash.com/photo-1611162617213-7d7a39e9b1d7?w=600&h=300&fit=crop&q=80',
-      'x-live-studio-streaming-rewards': 'https://images.unsplash.com/photo-1594038975813-6e0b4c38b9c8?w=600&h=300&fit=crop&q=80',
-      'google-gemini-spark': 'https://images.unsplash.com/photo-1677442136019-21780ecad995?w=600&h=300&fit=crop&q=80',
-    }
-    return fallback[post.slug] || 'https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=600&h=300&fit=crop&q=80'
-  }
-
-  const getCategoryLogo = (category) => {
-    if (!category) return null
-    if (category.includes('Google')) return (
-      <img src="https://upload.wikimedia.org/wikipedia/commons/c/c7/Google_Ads_logo.svg" alt="Google Ads" className="h-8 w-auto drop-shadow-lg" width="32" height="32" loading="lazy" />
-    )
-    if (category.includes('Meta') || category.includes('Facebook')) return (
-      <img src="https://upload.wikimedia.org/wikipedia/commons/7/7b/Meta_Platforms_Inc._logo.svg" alt="Meta" className="h-6 w-auto drop-shadow-lg brightness-0 invert" width="80" height="24" loading="lazy" />
-    )
-    if (category.includes('TikTok')) return (
-      <svg className="h-8 w-8 drop-shadow-lg" viewBox="0 0 24 24" fill="white"><path d="M19.59 6.69a4.83 4.83 0 01-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 01-5.2 1.74 2.89 2.89 0 012.31-4.64 2.93 2.93 0 01.88.13V9.4a6.84 6.84 0 00-1-.05A6.33 6.33 0 005 20.1a6.34 6.34 0 0010.86-4.43v-7a8.16 8.16 0 004.77 1.52v-3.4a4.85 4.85 0 01-1-.1z"/></svg>
-    )
-    if (category.includes('SEO') || category.includes('Technolog') || category.includes('Teknoloji')) return (
-      <svg className="h-8 w-8 drop-shadow-lg" viewBox="0 0 24 24" fill="none" stroke="white" strokeWidth="2"><circle cx="11" cy="11" r="8"/><path d="M21 21l-4.35-4.35"/></svg>
-    )
-    if (category.includes('X') || category.includes('Twitter')) return (
-      <svg className="h-8 w-8 drop-shadow-lg" viewBox="0 0 24 24" fill="white"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
-    )
-    return (
-      <svg className="h-8 w-8 drop-shadow-lg" viewBox="0 0 24 24" fill="white"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
-    )
+    return 'https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=600&h=300&fit=crop&q=80'
   }
 
   return (
-    <div className="min-h-screen bg-gradient-to-b from-gray-50 to-white">
-      {/* SEO */}
-      <head>
-        <link rel="canonical" href="https://salihmaral.de/blog" />
-        <title>Blog | Salih Maral Digital Marketing</title>
-        <meta name="description" content="Dijital pazarlama, Google Ads, Meta Ads, SEO ve daha fazlası hakkında güncel blog yazıları." />
-      </head>
-      {/* Navigation */}
-      <nav className="fixed top-0 left-0 right-0 z-50 bg-white/95 backdrop-blur-sm border-b">
-        <div className="container mx-auto px-4 py-4">
+    <div className="min-h-screen bg-gradient-to-b from-gray-50 via-white to-gray-50 text-gray-900">
+      {/* Light Clean Navigation */}
+      <nav className="fixed top-0 left-0 right-0 z-50 bg-white/95 backdrop-blur-md border-b border-gray-200/80 shadow-sm">
+        <div className="container mx-auto px-4 py-3.5">
           <div className="flex items-center justify-between">
             <a href={lang === 'de' ? '/' : `/${lang}`} className="flex items-center space-x-2 hover:opacity-80 transition-opacity">
               <ArrowLeft className="h-5 w-5 text-[#4285F4]" />
               <span className="font-semibold text-gray-700 hidden sm:inline">{t.home}</span>
             </a>
             <a href={lang === 'de' ? '/' : `/${lang}`}>
-              <picture><source srcSet="/logo-sm.webp" type="image/webp" /><img src="/logo.png" alt="Salih Maral Logo" className="h-10 w-auto" width="40" height="40" /></picture>
+              <picture>
+                <source srcSet="/logo-sm.webp" type="image/webp" />
+                <img src="/logo.png" alt="Salih Maral Logo" className="h-9 w-auto" width="36" height="36" />
+              </picture>
             </a>
             <div className="flex items-center space-x-3">
               <AiSearchWidget currentLang={lang} />
-              <div className="flex items-center space-x-1">
+              <div className="flex items-center space-x-1 bg-gray-100 p-1 rounded-xl">
                 <button
                   onClick={() => handleLanguageChange('de')}
-                  className={`px-3 py-1 text-xs font-medium rounded-md transition-all ${lang === 'de' ? 'bg-[#4285F4] text-white' : 'bg-gray-100 text-gray-600 hover:bg-gray-200'}`}
+                  className={`px-2.5 py-1 text-xs font-semibold rounded-lg transition-all ${lang === 'de' ? 'bg-[#4285F4] text-white shadow-sm' : 'text-gray-600 hover:text-gray-900'}`}
                 >
                   DE
                 </button>
                 <button
                   onClick={() => handleLanguageChange('en')}
-                  className={`px-3 py-1 text-xs font-medium rounded-md transition-all ${lang === 'en' ? 'bg-[#4285F4] text-white' : 'bg-gray-100 text-gray-600 hover:bg-gray-200'}`}
+                  className={`px-2.5 py-1 text-xs font-semibold rounded-lg transition-all ${lang === 'en' ? 'bg-[#4285F4] text-white shadow-sm' : 'text-gray-600 hover:text-gray-900'}`}
                 >
                   EN
                 </button>
                 <button
                   onClick={() => handleLanguageChange('tr')}
-                  className={`px-3 py-1 text-xs font-medium rounded-md transition-all ${lang === 'tr' ? 'bg-[#4285F4] text-white' : 'bg-gray-100 text-gray-600 hover:bg-gray-200'}`}
+                  className={`px-2.5 py-1 text-xs font-semibold rounded-lg transition-all ${lang === 'tr' ? 'bg-[#4285F4] text-white shadow-sm' : 'text-gray-600 hover:text-gray-900'}`}
                 >
                   TR
                 </button>
@@ -168,86 +190,187 @@ export default function BlogPage() {
         </div>
       </nav>
 
-      {/* Hero */}
-      <section className="pt-32 pb-16 px-4">
-        <div className="container mx-auto text-center">
-          <div className="inline-flex items-center space-x-2 bg-[#4285F4]/10 rounded-full px-4 py-2 mb-6">
-            <Globe className="h-4 w-4 text-[#4285F4]" />
-            <span className="text-sm font-medium text-[#4285F4]">Digital Marketing Insights</span>
+      {/* Light Clean Hero Header */}
+      <section className="pt-32 pb-12 px-4 bg-gradient-to-b from-blue-50/50 via-white to-transparent">
+        <div className="container mx-auto text-center max-w-4xl">
+          <div className="inline-flex items-center space-x-2 bg-[#4285F4]/10 border border-[#4285F4]/20 rounded-full px-4 py-1.5 mb-5 text-[#4285F4]">
+            <Globe className="h-4 w-4" />
+            <span className="text-xs font-semibold uppercase tracking-wider">Digital Marketing Insights</span>
           </div>
-          <h1 className="text-5xl md:text-6xl font-bold mb-4 bg-gradient-to-r from-gray-900 via-gray-800 to-gray-900 bg-clip-text text-transparent">
+          <h1 className="text-4xl sm:text-5xl md:text-6xl font-extrabold mb-4 text-gray-900 tracking-tight">
             {t.heroTitle}
           </h1>
-          <p className="text-xl text-gray-500 max-w-2xl mx-auto">{t.heroSubtitle}</p>
+          <p className="text-lg text-gray-500 max-w-2xl mx-auto font-normal leading-relaxed">{t.heroSubtitle}</p>
         </div>
       </section>
 
-      {/* Blog Grid */}
+      {/* ULTRA VIBRANT & COLORFUL TOPIC HUBS BAR */}
+      <section className="sticky top-[65px] z-40 bg-white/95 backdrop-blur-xl border-y border-gray-200/90 py-4 px-4 shadow-lg">
+        <div className="container mx-auto flex items-center justify-between gap-4 overflow-x-auto custom-scrollbar">
+          <div className="flex items-center gap-2 shrink-0">
+            <span className="relative flex h-3 w-3">
+              <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-blue-400 opacity-75"></span>
+              <span className="relative inline-flex rounded-full h-3 w-3 bg-[#4285F4]"></span>
+            </span>
+            <span className="text-xs font-extrabold text-[#4285F4] uppercase tracking-widest hidden md:inline">
+              {t.topicHubs}
+            </span>
+          </div>
+
+          {/* Ultra-Vibrant Colorful Pills */}
+          <div className="flex items-center gap-2.5 overflow-x-auto custom-scrollbar py-1">
+            {categories.map((cat) => {
+              const IconComp = cat.icon
+              const isActive = selectedCategory === cat.id
+              return (
+                <button
+                  key={cat.id}
+                  onClick={() => setSelectedCategory(cat.id)}
+                  className={`group relative flex items-center gap-2 px-4 py-2.5 rounded-2xl text-xs font-bold whitespace-nowrap transition-all duration-300 transform hover:-translate-y-0.5 ${isActive ? `bg-gradient-to-r ${cat.gradient} text-white shadow-lg ${cat.activeShadow} scale-105 border border-white/30` : 'bg-gray-100/90 text-gray-700 hover:text-gray-900 hover:bg-gray-200 border border-gray-200/80'}`}
+                >
+                  <IconComp className={`w-3.5 h-3.5 transition-transform group-hover:scale-110 ${isActive ? 'text-white' : 'text-[#4285F4]'}`} />
+                  <span>{cat.name}</span>
+                </button>
+              )
+            })}
+          </div>
+        </div>
+      </section>
+
+      {/* Main Content Area (Clean Light Grid) */}
       <section className="py-12 px-4">
-        <div className="container mx-auto">
+        <div className="container mx-auto space-y-12">
+          {/* Guardian Featured Lead Story Banner */}
+          {!loading && featuredPost && selectedCategory === 'all' && (
+            <div className="bg-white rounded-3xl border border-gray-200 shadow-xl overflow-hidden hover:shadow-2xl transition-all duration-300 group">
+              <div className="grid lg:grid-cols-12 gap-0">
+                <div className="lg:col-span-7 relative h-72 lg:h-auto overflow-hidden">
+                  <img
+                    src={getCategoryImage(featuredPost)}
+                    alt={featuredPost.title}
+                    className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
+                  />
+                  <div className="absolute top-4 left-4">
+                    <Badge className="bg-[#4285F4] text-white font-bold px-3.5 py-1.5 shadow-md">
+                      {t.featured}
+                    </Badge>
+                  </div>
+                </div>
+                <div className="lg:col-span-5 p-6 lg:p-10 flex flex-col justify-between space-y-6">
+                  <div>
+                    {/* E-E-A-T Trust Badge */}
+                    <div className="flex items-center gap-2 text-xs font-bold text-emerald-700 bg-emerald-50 border border-emerald-200 px-3.5 py-1.5 rounded-full w-fit mb-4">
+                      <ShieldCheck className="w-4 h-4 text-emerald-600" />
+                      <span>{t.verified}</span>
+                    </div>
+
+                    <h2 className="text-2xl sm:text-3xl font-extrabold text-gray-900 group-hover:text-[#4285F4] transition-colors leading-tight">
+                      <a href={`/blog/${featuredPost.slug}`}>{featuredPost.title}</a>
+                    </h2>
+                    <p className="text-gray-600 text-sm mt-3 line-clamp-3 leading-relaxed font-normal">
+                      {featuredPost.excerpt}
+                    </p>
+                  </div>
+
+                  <div className="pt-4 border-t border-gray-100 flex items-center justify-between text-xs text-gray-500">
+                    <div className="flex items-center gap-3">
+                      <span className="flex items-center gap-1">
+                        <Calendar className="w-3.5 h-3.5 text-gray-400" />
+                        {featuredPost.date}
+                      </span>
+                      <span className="flex items-center gap-1">
+                        <Clock className="w-3.5 h-3.5 text-gray-400" />
+                        {featuredPost.readTime} {t.readTime}
+                      </span>
+                    </div>
+                    <a
+                      href={`/blog/${featuredPost.slug}`}
+                      className="inline-flex items-center gap-1 text-[#4285F4] font-bold text-xs hover:translate-x-1 transition-transform"
+                    >
+                      {t.readMore} <ArrowRight className="w-4 h-4" />
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          )}
+
+          {/* Blog Cards Grid */}
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
             {loading ? (
-              Array.from({length: 6}).map((_, i) => (
-                <div key={i} className="bg-white rounded-2xl shadow-lg overflow-hidden animate-pulse">
+              Array.from({ length: 6 }).map((_, i) => (
+                <div key={i} className="bg-white rounded-3xl border border-gray-200 overflow-hidden animate-pulse">
                   <div className="h-48 bg-gray-200" />
                   <div className="p-6 space-y-3">
                     <div className="h-4 bg-gray-200 rounded w-3/4" />
                     <div className="h-4 bg-gray-200 rounded w-full" />
-                    <div className="h-4 bg-gray-200 rounded w-5/6" />
                   </div>
                 </div>
               ))
-            ) : posts.map((post) => (
+            ) : gridPosts.map((post) => (
               <a key={post.slug} href={`/blog/${post.slug}`} className="block h-full group">
-                <Card className="h-full border-0 shadow-lg hover:shadow-2xl transition-all duration-500 hover:-translate-y-2 overflow-hidden bg-white">
-                  <div className="h-48 relative overflow-hidden">
-                    <img
-                      src={getCategoryImage(post)}
-                      alt={post.title}
-                      className="absolute inset-0 w-full h-full object-cover group-hover:scale-110 transition-transform duration-700"
-                      width="600"
-                      height="300"
-                      loading="lazy"
-                    />
-                    <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-black/20 to-transparent" />
-                    <div className="absolute bottom-4 right-4 opacity-80 group-hover:opacity-100 transition-opacity">
-                      {getCategoryLogo(post.category)}
+                <Card className="h-full border border-gray-200 shadow-md hover:shadow-2xl transition-all duration-300 hover:-translate-y-1.5 overflow-hidden bg-white rounded-3xl flex flex-col justify-between">
+                  <div>
+                    <div className="h-48 relative overflow-hidden">
+                      <img
+                        src={getCategoryImage(post)}
+                        alt={post.title}
+                        className="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                        loading="lazy"
+                      />
+                      <div className="absolute inset-0 bg-gradient-to-t from-gray-900/60 via-transparent to-transparent" />
+                      <div className="absolute top-4 left-4 flex gap-2">
+                        <Badge className="bg-white/90 text-gray-800 font-semibold shadow-sm backdrop-blur-sm">
+                          {post.category || 'Rehber'}
+                        </Badge>
+                      </div>
                     </div>
-                    <div className="absolute top-4 left-4">
-                      <Badge className="bg-white/90 text-gray-800 hover:bg-white">{post.category}</Badge>
-                    </div>
+                    <CardContent className="p-6">
+                      {/* E-E-A-T Verified Small Badge */}
+                      <div className="flex items-center gap-1.5 text-[11px] font-semibold text-emerald-700 mb-2.5">
+                        <ShieldCheck className="w-3.5 h-3.5 text-emerald-600" />
+                        <span>Salih Maral Verifiziert</span>
+                      </div>
+
+                      <h3 className="text-lg font-bold text-gray-900 group-hover:text-[#4285F4] transition-colors line-clamp-2 leading-snug">
+                        {post.title}
+                      </h3>
+                      <p className="text-gray-500 text-xs mt-2.5 line-clamp-3 leading-relaxed font-normal">
+                        {post.excerpt}
+                      </p>
+                    </CardContent>
                   </div>
-                  <CardContent className="pt-6 pb-8">
-                    <h3 className="text-xl font-bold mb-3 text-gray-900 group-hover:text-[#4285F4] transition-colors line-clamp-2">
-                      {post.title}
-                    </h3>
-                    <p className="text-gray-500 mb-6 line-clamp-3 leading-relaxed">{post.excerpt}</p>
-                    <div className="flex items-center justify-between">
-                      <div className="text-sm text-gray-400">
-                        <span>{post.date}</span>
-                        <span className="mx-2">•</span>
-                        <span>{post.readTime} {t.readTime}</span>
-                      </div>
-                      <div className="flex items-center text-[#4285F4] font-medium text-sm group-hover:translate-x-1 transition-transform">
-                        {t.readMore}
-                        <ArrowRight className="h-4 w-4 ml-1" />
-                      </div>
-                    </div>
-                  </CardContent>
+
+                  <div className="p-6 pt-0 flex items-center justify-between border-t border-gray-100 text-xs text-gray-400 mt-auto">
+                    <span className="flex items-center gap-1">
+                      <Clock className="w-3.5 h-3.5 text-gray-400" />
+                      {post.readTime} {t.readTime}
+                    </span>
+                    <span className="inline-flex items-center text-[#4285F4] font-semibold group-hover:translate-x-1 transition-transform">
+                      {t.readMore}
+                      <ArrowRight className="h-3.5 w-3.5 ml-1" />
+                    </span>
+                  </div>
                 </Card>
               </a>
             ))}
           </div>
+
+          {/* Interactive ROAS & CPA ROI Calculator */}
+          <RoasCpaCalculator currentLang={lang} />
         </div>
       </section>
 
       {/* Footer */}
-      <footer className="py-12 bg-gray-900 text-white mt-12">
+      <footer className="py-12 bg-gray-900 text-white mt-16 border-t border-gray-800">
         <div className="container mx-auto px-4 text-center">
-          <a href={lang === 'de' ? '/' : `/${lang}`} className="inline-block">
-            <picture><source srcSet="/logo-md.webp" type="image/webp" /><img src="/logo.png" alt="Salih Maral Logo" className="h-12 w-auto mx-auto" width="48" height="48" loading="lazy" /></picture>
+          <a href={lang === 'de' ? '/' : `/${lang}`} className="inline-block mb-4">
+            <picture>
+              <source srcSet="/logo-md.webp" type="image/webp" />
+              <img src="/logo.png" alt="Salih Maral Logo" className="h-12 w-auto mx-auto" width="48" height="48" loading="lazy" />
+            </picture>
           </a>
-          <p className="text-sm text-gray-400 mt-4">{t.footer}</p>
+          <p className="text-xs text-gray-400">{t.footer}</p>
         </div>
       </footer>
     </div>
