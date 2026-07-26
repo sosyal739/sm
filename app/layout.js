@@ -1,6 +1,5 @@
 import { Inter } from 'next/font/google'
 import './globals.css'
-import SalihMaralAiAdvisor from '@/components/SalihMaralAiAdvisor'
 
 const inter = Inter({ subsets: ['latin'], display: 'swap', preload: true })
 
@@ -289,10 +288,7 @@ export default function RootLayout({ children }) {
           dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
         />
       </head>
-      <body className={inter.className}>
-        {children}
-        <SalihMaralAiAdvisor />
-      </body>
+      <body className={inter.className}>{children}</body>
     </html>
   )
 }
