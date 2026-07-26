@@ -93,19 +93,19 @@ export default function RoasCpaCalculator({ currentLang = 'de' }) {
   }
 
   return (
-    <div className="w-full bg-white rounded-3xl border border-gray-200 shadow-xl overflow-hidden my-12 p-6 sm:p-10">
-      <div className="max-w-4xl mx-auto space-y-8">
-        {/* Header */}
-        <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4 border-b border-gray-100 pb-6">
+    <div className="w-full bg-white rounded-2xl sm:rounded-3xl border border-gray-200 shadow-xl overflow-hidden my-8 sm:my-12 p-4 sm:p-8 md:p-10">
+      <div className="max-w-5xl mx-auto space-y-6 sm:space-y-8">
+        {/* Header Bar */}
+        <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4 pb-6 border-b border-gray-100">
           <div>
             <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-[#4285F4]/10 text-[#4285F4] text-xs font-bold mb-2">
               <Calculator className="w-3.5 h-3.5" />
               <span>ROI & Growth Tool</span>
             </div>
-            <h3 className="text-2xl sm:text-3xl font-extrabold text-gray-900 tracking-tight">{l.title}</h3>
+            <h3 className="text-xl sm:text-3xl font-extrabold text-gray-900 tracking-tight">{l.title}</h3>
             <p className="text-xs sm:text-sm text-gray-500 mt-1">{l.subtitle}</p>
           </div>
-          <div className="flex items-center gap-2 bg-emerald-50 text-emerald-700 border border-emerald-200 px-3.5 py-1.5 rounded-2xl text-xs font-bold w-fit">
+          <div className="flex items-center gap-2 bg-emerald-50 text-emerald-700 border border-emerald-200 px-3 py-1.5 rounded-2xl text-xs font-bold w-fit">
             <ShieldCheck className="w-4 h-4 text-emerald-600" />
             <span>{l.infraBadge}</span>
           </div>
@@ -184,35 +184,35 @@ export default function RoasCpaCalculator({ currentLang = 'de' }) {
           </div>
 
           {/* Dynamic Results Box */}
-          <div className="bg-gradient-to-br from-slate-900 to-indigo-950 text-white rounded-3xl p-6 sm:p-8 flex flex-col justify-between shadow-2xl relative overflow-hidden">
+          <div className="bg-gradient-to-br from-slate-900 to-indigo-950 text-white rounded-2xl sm:rounded-3xl p-4 sm:p-6 md:p-8 flex flex-col justify-between shadow-2xl relative overflow-hidden">
             <div className="absolute -right-8 -bottom-8 w-32 h-32 bg-blue-500/10 rounded-full blur-2xl pointer-events-none" />
 
-            <div className="space-y-6 relative z-10">
-              <div className="grid grid-cols-2 gap-4 pb-4 border-b border-slate-800">
+            <div className="space-y-4 sm:space-y-6 relative z-10">
+              <div className="grid grid-cols-2 gap-3 sm:gap-4 pb-4 border-b border-slate-800">
                 <div>
-                  <p className="text-[11px] text-slate-400 font-semibold">{l.estClicks}</p>
-                  <p className="text-xl font-bold text-white mt-0.5">{clicks.toLocaleString()}</p>
+                  <p className="text-[10px] sm:text-[11px] text-slate-400 font-semibold">{l.estClicks}</p>
+                  <p className="text-lg sm:text-xl font-bold text-white mt-0.5">{clicks.toLocaleString()}</p>
                 </div>
                 <div>
-                  <p className="text-[11px] text-slate-400 font-semibold">{l.estSales}</p>
-                  <p className="text-xl font-bold text-emerald-400 mt-0.5">{conversions.toLocaleString()}</p>
+                  <p className="text-[10px] sm:text-[11px] text-slate-400 font-semibold">{l.estSales}</p>
+                  <p className="text-lg sm:text-xl font-bold text-emerald-400 mt-0.5">{conversions.toLocaleString()}</p>
                 </div>
               </div>
 
-              <div className="grid grid-cols-2 gap-4">
-                <div className="p-3.5 rounded-2xl bg-slate-800/80 border border-slate-700/60">
-                  <p className="text-[11px] text-slate-400 font-semibold">{l.roas}</p>
-                  <p className="text-2xl font-extrabold text-blue-400 mt-1">%{roas.toLocaleString()}</p>
+              <div className="grid grid-cols-2 gap-3 sm:gap-4">
+                <div className="p-3 sm:p-3.5 rounded-2xl bg-slate-800/80 border border-slate-700/60">
+                  <p className="text-[10px] sm:text-[11px] text-slate-400 font-semibold">{l.roas}</p>
+                  <p className="text-xl sm:text-2xl font-extrabold text-blue-400 mt-1">%{roas.toLocaleString()}</p>
                 </div>
-                <div className="p-3.5 rounded-2xl bg-slate-800/80 border border-slate-700/60">
-                  <p className="text-[11px] text-slate-400 font-semibold">{l.cpa}</p>
-                  <p className="text-2xl font-extrabold text-amber-400 mt-1">{cpa}</p>
+                <div className="p-3 sm:p-3.5 rounded-2xl bg-slate-800/80 border border-slate-700/60">
+                  <p className="text-[10px] sm:text-[11px] text-slate-400 font-semibold">{l.cpa}</p>
+                  <p className="text-xl sm:text-2xl font-extrabold text-amber-400 mt-1">{cpa}</p>
                 </div>
               </div>
 
-              <div className="p-4 rounded-2xl bg-emerald-950/60 border border-emerald-500/30">
-                <p className="text-[11px] text-emerald-300 font-semibold">{l.estRevenue}</p>
-                <p className="text-3xl font-black text-emerald-400 mt-1">{revenue.toLocaleString()}</p>
+              <div className="p-3.5 sm:p-4 rounded-2xl bg-emerald-950/60 border border-emerald-500/30">
+                <p className="text-[10px] sm:text-[11px] text-emerald-300 font-semibold">{l.estRevenue}</p>
+                <p className="text-2xl sm:text-3xl font-black text-emerald-400 mt-1">{revenue.toLocaleString()}</p>
               </div>
             </div>
 

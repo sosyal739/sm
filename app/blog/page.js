@@ -197,10 +197,10 @@ export default function BlogPage() {
             <Globe className="h-4 w-4" />
             <span className="text-xs font-semibold uppercase tracking-wider">Digital Marketing Insights</span>
           </div>
-          <h1 className="text-4xl sm:text-5xl md:text-6xl font-extrabold mb-4 text-gray-900 tracking-tight">
+          <h1 className="text-2xl sm:text-4xl md:text-6xl font-extrabold mb-3 text-gray-900 tracking-tight leading-tight">
             {t.heroTitle}
           </h1>
-          <p className="text-lg text-gray-500 max-w-2xl mx-auto font-normal leading-relaxed">{t.heroSubtitle}</p>
+          <p className="text-sm sm:text-lg text-gray-500 max-w-2xl mx-auto font-normal leading-relaxed">{t.heroSubtitle}</p>
         </div>
       </section>
 

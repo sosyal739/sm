@@ -462,6 +462,28 @@ export default function BlogDetailPage() {
           font-size: 0.9rem;
         }
         .blog-content tr:last-child td { border-bottom: none; }
+        @media (max-width: 640px) {
+          .blog-content h1 { font-size: 1.6rem; }
+          .blog-content h2 { font-size: 1.35rem; }
+          .blog-content h3 { font-size: 1.15rem; }
+          .blog-content blockquote {
+            padding: 1rem 1.25rem;
+            font-size: 1.05rem;
+            margin: 1.25rem 0;
+          }
+          .blog-content .highlight-box {
+            padding: 1.25rem;
+            margin: 1.25rem 0;
+          }
+          .blog-content ol > li {
+            padding-left: 2.25rem;
+          }
+          .blog-content ol > li:before {
+            width: 1.6rem;
+            height: 1.6rem;
+            font-size: 0.75rem;
+          }
+        }
       `}</style>
     </div>
   )

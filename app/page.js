@@ -783,17 +783,17 @@ export default function Home({ initialLang = 'de' }) {
               <Badge className="bg-gradient-to-r from-[#4285F4] to-[#34A853] text-white border-0">
                 2026 {lang === 'de' ? 'Strategien Jetzt Bereit!' : lang === 'en' ? 'Strategies Ready Now!' : 'Stratejileri Şimdiden Hazır!'}
               </Badge>
-              <h1 className="text-5xl lg:text-6xl font-bold leading-tight">
+              <h1 className="text-3xl sm:text-5xl lg:text-6xl font-extrabold leading-tight tracking-tight text-gray-900">
                 {t.hero.title}
               </h1>
-              <p className="text-2xl font-semibold text-[#EA4335]">
+              <p className="text-base sm:text-2xl font-semibold text-[#EA4335]">
                 {t.hero.subtitle}
               </p>
-              <p className="text-lg text-muted-foreground">
+              <p className="text-sm sm:text-lg text-muted-foreground leading-relaxed">
                 {t.hero.description}
               </p>
-              <div className="flex flex-wrap gap-4">
-                <Button size="lg" className="bg-[#34A853] hover:bg-[#2d9249] text-white shadow-lg hover:shadow-2xl transform hover:scale-105 transition-all duration-300 animate-pulse-slow" asChild>
+              <div className="flex flex-col sm:flex-row gap-3 sm:gap-4">
+                <Button size="lg" className="w-full sm:w-auto bg-[#34A853] hover:bg-[#2d9249] text-white shadow-lg hover:shadow-2xl transform hover:scale-105 transition-all duration-300 animate-pulse-slow" asChild>
                   <a href={`https://wa.me/491724106463?text=${lang === 'de' ? 'Hallo,%20ich%20interessiere%20mich%20für%20Ihre%20Digital%20Marketing%20Dienstleistungen.' : lang === 'en' ? 'Hello,%20I%20am%20interested%20in%20your%20digital%20marketing%20services.' : 'Merhaba,%20dijital%20pazarlama%20hizmetleriniz%20hakkında%20bilgi%20almak%20istiyorum.'}`} target="_blank" rel="noopener noreferrer">
                     <MessageCircle className="mr-2 h-5 w-5 animate-bounce-slow" />
                     {t.hero.cta1}
