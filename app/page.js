@@ -6,7 +6,7 @@ import { Card, CardContent } from '@/components/ui/card'
 import { Input } from '@/components/ui/input'
 import { Textarea } from '@/components/ui/textarea'
 import { Badge } from '@/components/ui/badge'
-import { Phone, Mail, MessageCircle, CheckCircle, BarChart3, Users, Award, TrendingUp, Globe, Star } from 'lucide-react'
+import { Phone, Mail, MessageCircle, CheckCircle, BarChart3, Users, Award, TrendingUp, Globe, Star, Sparkles, ArrowRight, Clock, Calendar, Flame, Cpu, Zap, Search, ShieldCheck, Layers, BookOpen } from 'lucide-react'
 import CookieConsent from '@/components/CookieConsent'
 
 const translations = {
@@ -530,6 +530,8 @@ export default function Home({ initialLang = 'de' }) {
   const [formData, setFormData] = useState({ name: '', email: '', phone: '', message: '' })
   const [formStatus, setFormStatus] = useState({ type: '', message: '' })
   const [isSubmitting, setIsSubmitting] = useState(false)
+  const [latestPosts, setLatestPosts] = useState([])
+  const [blogCategory, setBlogCategory] = useState('all')
 
   // Language change navigates to the correct URL
   const handleLanguageChange = (newLang) => {
@@ -544,6 +546,20 @@ export default function Home({ initialLang = 'de' }) {
   // Update html lang attribute for SEO
   useEffect(() => {
     document.documentElement.lang = lang
+  }, [lang])
+
+  // Fetch real blog posts dynamically
+  useEffect(() => {
+    const controller = new AbortController()
+    fetch(`/api/blog?lang=${lang}`, { signal: controller.signal })
+      .then(res => res.ok ? res.json() : [])
+      .then(data => {
+        if (Array.isArray(data) && data.length > 0) {
+          setLatestPosts(data)
+        }
+      })
+      .catch(() => {})
+    return () => controller.abort()
   }, [lang])
 
   // Helper: get localized service URL
@@ -1482,63 +1498,193 @@ export default function Home({ initialLang = 'de' }) {
         </div>
       </section>
 
-      {/* Blog Preview Section */}
-      <section className="py-20 bg-white">
-        <div className="container mx-auto px-4">
-          <div className="text-center mb-12">
-            <h2 className="text-4xl font-bold mb-4">{lang === 'de' ? 'Unser Blog' : lang === 'en' ? 'Our Blog' : 'Blog Yazılarımız'}</h2>
-            <p className="text-lg text-muted-foreground">{lang === 'de' ? 'Neueste Artikel über digitales Marketing' : lang === 'en' ? 'Latest articles about digital marketing' : 'Dijital pazarlama hakkında güncel makaleler'}</p>
+      {/* Dynamic & Interactive Blog Showcase Section */}
+      <section className="py-24 bg-gradient-to-b from-white via-slate-50/70 to-white relative overflow-hidden">
+        {/* Background Ambient Glow */}
+        <div className="absolute top-1/3 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[700px] h-[350px] bg-gradient-to-tr from-[#4285F4]/10 via-purple-500/5 to-emerald-500/10 blur-3xl pointer-events-none rounded-full" />
+
+        <div className="container mx-auto px-4 relative z-10">
+          {/* Header */}
+          <div className="text-center max-w-3xl mx-auto mb-10">
+            <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-[#4285F4]/10 text-[#4285F4] border border-[#4285F4]/20 text-xs font-bold mb-4 animate-pulse">
+              <Sparkles className="w-3.5 h-3.5" />
+              <span>{lang === 'de' ? '2026 DIGITAL MARKETING & KI BLOG' : lang === 'en' ? '2026 DIGITAL MARKETING & AI BLOG' : '2026 DİJİTAL PAZARLAMA & AI REHBERLERİ'}</span>
+            </div>
+            <h2 className="text-3xl sm:text-4xl md:text-5xl font-extrabold text-gray-900 tracking-tight mb-4">
+              {lang === 'de' ? 'Aktuelle Experten-Artikel & Trends' : lang === 'en' ? 'Latest Expert Insights & Trends' : 'Güncel Uzman Rehberleri & Trendler'}
+            </h2>
+            <p className="text-base sm:text-lg text-gray-600">
+              {lang === 'de' 
+                ? 'Praxisnahe Leitfäden über Google Ads, Meta Ads, SEO, GEO und KI-Automatisierung von Salih Maral.' 
+                : lang === 'en' 
+                ? 'Actionable guides on Google Ads, Meta Ads, SEO, GEO, and AI automation by Salih Maral.' 
+                : 'Salih Maral tarafından hazırlanan Google Ads, Meta Ads, SEO, GEO ve Yapay Zeka stratejileri.'}
+            </p>
           </div>
-          <div className="grid md:grid-cols-3 gap-6">
-            <a href="/blog" className="block group">
-              <Card className="hover:shadow-xl transition-all duration-500 hover:-translate-y-2 overflow-hidden">
-                <div className="h-44 relative overflow-hidden">
-                  <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=500&h=250&fit=crop&q=80" alt="Google Ads" className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" width="500" height="250" loading="lazy" />
-                  <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent" />
-                  <div className="absolute bottom-3 right-3">
-                    <img src="https://upload.wikimedia.org/wikipedia/commons/c/c7/Google_Ads_logo.svg" alt="Google Ads" className="h-6 w-auto drop-shadow-lg" width="24" height="24" loading="lazy" />
-                  </div>
-                </div>
-                <CardContent className="pt-5 pb-6">
-                  <h3 className="text-lg font-bold mb-2 group-hover:text-[#4285F4] transition-colors">Google Ads {lang === 'de' ? 'Leitfaden' : lang === 'en' ? 'Guide' : 'Rehberi'}</h3>
-                  <p className="text-sm text-muted-foreground">{lang === 'de' ? 'Alles über Google Ads Kampagnen' : lang === 'en' ? 'Everything about Google Ads campaigns' : 'Google Ads kampanyaları hakkında her şey'}</p>
-                </CardContent>
-              </Card>
-            </a>
-            <a href="/blog" className="block group">
-              <Card className="hover:shadow-xl transition-all duration-500 hover:-translate-y-2 overflow-hidden">
-                <div className="h-44 relative overflow-hidden">
-                  <img src="https://images.unsplash.com/photo-1432888622747-4eb9a8efeb07?w=500&h=250&fit=crop&q=80" alt="Meta Ads" className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" width="500" height="250" loading="lazy" />
-                  <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent" />
-                  <div className="absolute bottom-3 right-3">
-                    <img src="https://upload.wikimedia.org/wikipedia/commons/7/7b/Meta_Platforms_Inc._logo.svg" alt="Meta" className="h-4 w-auto drop-shadow-lg brightness-0 invert" width="53" height="16" loading="lazy" />
-                  </div>
-                </div>
-                <CardContent className="pt-5 pb-6">
-                  <h3 className="text-lg font-bold mb-2 group-hover:text-[#1877F2] transition-colors">Meta Ads {lang === 'de' ? 'Erfolg' : lang === 'en' ? 'Success' : 'Başarısı'}</h3>
-                  <p className="text-sm text-muted-foreground">{lang === 'de' ? 'Facebook & Instagram Strategien' : lang === 'en' ? 'Facebook & Instagram strategies' : 'Facebook & Instagram stratejileri'}</p>
-                </CardContent>
-              </Card>
-            </a>
-            <a href="/blog" className="block group">
-              <Card className="hover:shadow-xl transition-all duration-500 hover:-translate-y-2 overflow-hidden">
-                <div className="h-44 relative overflow-hidden">
-                  <img src="https://images.unsplash.com/photo-1504868584819-f8e8b4b6d7e3?w=500&h=250&fit=crop&q=80" alt="SEO" className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" width="500" height="250" loading="lazy" />
-                  <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent" />
-                  <div className="absolute bottom-3 right-3">
-                    <svg className="h-7 w-7 drop-shadow-lg" viewBox="0 0 24 24" fill="none" stroke="white" strokeWidth="2"><circle cx="11" cy="11" r="8"/><path d="M21 21l-4.35-4.35"/></svg>
-                  </div>
-                </div>
-                <CardContent className="pt-5 pb-6">
-                  <h3 className="text-lg font-bold mb-2 group-hover:text-[#34A853] transition-colors">SEO {lang === 'de' ? 'Tipps' : lang === 'en' ? 'Tips' : 'İpuçları'} 2026</h3>
-                  <p className="text-sm text-muted-foreground">{lang === 'de' ? 'Top Rankings bei Google' : lang === 'en' ? 'Top rankings on Google' : 'Google\'da üst sıralarda'}</p>
-                </CardContent>
-              </Card>
-            </a>
+
+          {/* Interactive Category Filter Pills */}
+          <div className="flex flex-wrap items-center justify-center gap-2 mb-10">
+            {[
+              { id: 'all', label: lang === 'de' ? 'Alle Themen' : lang === 'en' ? 'All Topics' : 'Tüm Konular', icon: Layers },
+              { id: 'ai', label: lang === 'de' ? 'Künstliche Intelligenz' : lang === 'en' ? 'AI & Gemini' : 'Yapay Zeka', icon: Cpu },
+              { id: 'google', label: 'Google Ads', icon: Zap },
+              { id: 'meta', label: 'Meta Ads', icon: Flame },
+              { id: 'seo', label: 'SEO & GEO', icon: Search },
+              { id: 'tracking', label: 'Server-Side Tracking', icon: ShieldCheck },
+            ].map(cat => {
+              const IconComponent = cat.icon
+              const isActive = blogCategory === cat.id
+              return (
+                <button
+                  key={cat.id}
+                  onClick={() => setBlogCategory(cat.id)}
+                  className={`inline-flex items-center gap-1.5 px-4 py-2 rounded-xl text-xs sm:text-sm font-semibold transition-all duration-300 ${
+                    isActive
+                      ? 'bg-[#4285F4] text-white shadow-lg shadow-blue-500/25 scale-105 ring-2 ring-[#4285F4]/30'
+                      : 'bg-white text-gray-700 hover:bg-gray-100 hover:text-gray-900 border border-gray-200/80 shadow-sm'
+                  }`}
+                >
+                  <IconComponent className={`w-3.5 h-3.5 ${isActive ? 'text-white' : 'text-[#4285F4]'}`} />
+                  <span>{cat.label}</span>
+                </button>
+              )
+            })}
           </div>
-          <div className="text-center mt-8">
-            <Button size="lg" variant="outline" asChild>
-              <a href="/blog">{lang === 'de' ? 'Alle Artikel ansehen' : lang === 'en' ? 'View all articles' : 'Tüm Yazıları Gör'}</a>
+
+          {/* Dynamic Cards Grid */}
+          <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8">
+            {(latestPosts.length > 0 ? latestPosts : [
+              {
+                slug: 'gemini-3-7-vs-gemini-3-6-ai-marketing-comparison',
+                title: lang === 'de' ? 'Google Gemini 3.7 vs. 3.6: Hybrides Denken im Marketing' : lang === 'en' ? 'Google Gemini 3.7 vs. 3.6: Hybrid Reasoning in Marketing' : 'Google Gemini 3.7 vs. 3.6: Hibrit Muhakeme ve Pazarlama',
+                excerpt: lang === 'de' ? 'Detaillierte Analyse des neuen Gemini 3.7 Thinking Mode für Google Ads & SEO.' : lang === 'en' ? 'In-depth analysis of the new Gemini 3.7 Thinking Mode for Google Ads & SEO.' : 'Google Ads ve SEO otomasyonu için yeni Gemini 3.7 Thinking Mode detaylı analizi.',
+                category: lang === 'de' ? 'Künstliche Intelligenz' : lang === 'en' ? 'Artificial Intelligence' : 'Yapay Zeka',
+                readTime: '14',
+                coverImage: 'https://images.unsplash.com/photo-1677442136019-21780ecad995?w=600&h=300&fit=crop&q=80',
+                date: '2026-08-14'
+              },
+              {
+                slug: 'geo-ai-search-citation-factors-2026',
+                title: lang === 'de' ? 'GEO 2026: Zitations-Leitfaden für ChatGPT & Perplexity' : lang === 'en' ? 'GEO 2026: Citation Guide for ChatGPT & Perplexity' : 'GEO 2026: ChatGPT & Perplexity Kaynak Gösterilme Rehberi',
+                excerpt: lang === 'de' ? 'Princeton KDD 2024 Ranking-Faktoren für maximale Sichtbarkeit in KI-Antworten.' : lang === 'en' ? 'Princeton KDD 2024 ranking factors for maximum visibility in generative AI.' : 'Yapay zeka arama motorlarında birincil kaynak olma stratejileri ve Princeton verileri.',
+                category: 'SEO & GEO',
+                readTime: '15',
+                coverImage: 'https://images.unsplash.com/photo-1504868584819-f8e8b4b6d7e3?w=600&h=300&fit=crop&q=80',
+                date: '2026-08-14'
+              },
+              {
+                slug: 'server-side-gtm-meta-capi-setup-2026',
+                title: lang === 'de' ? 'Server-Side GTM & Meta CAPI: 30% Datenverlust verhindern' : lang === 'en' ? 'Server-Side GTM & Meta CAPI: Prevent 30% Data Loss' : 'Server-Side GTM & Meta CAPI: %30 Veri Kaybını Önleme',
+                excerpt: lang === 'de' ? 'So überwinden Sie Ad-Blocker und iOS-Sperren mit deterministischer Event-Deduplizierung.' : lang === 'en' ? 'Overcome ad-blockers and iOS restrictions with deterministic event deduplication.' : 'Ad-blocker ve iOS engellerini aşarak Meta & Google Ads ROAS oranını artırma.',
+                category: 'Server-Side Tracking',
+                readTime: '16',
+                coverImage: 'https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=600&h=300&fit=crop&q=80',
+                date: '2026-08-14'
+              },
+              {
+                slug: 'meta-advantage-plus-creative-ai-2026',
+                title: lang === 'de' ? 'Meta Advantage+ Creative KI 2026: E-Commerce Skalierung' : lang === 'en' ? 'Meta Advantage+ Creative AI 2026: E-Commerce Scale' : 'Meta Advantage+ Creative AI 2026: E-Ticaret Reklam Ölçekleme',
+                excerpt: lang === 'de' ? 'Creative AI und ASC Kampagnen für niedrigere CPAs und planbar wachsende Shop-Umsätze.' : lang === 'en' ? 'Creative AI and ASC campaigns for lower CPAs and predictable direct revenue scale.' : 'Daha düşük CPA ve yüksek ROAS ile e-ticaret satışlarını katlama rehberi.',
+                category: 'Meta Ads',
+                readTime: '15',
+                coverImage: 'https://images.unsplash.com/photo-1611162617474-5b21e879e113?w=600&h=300&fit=crop&q=80',
+                date: '2026-08-14'
+              },
+              {
+                slug: 'google-ads-pmax-smart-bidding-guide-2026',
+                title: lang === 'de' ? 'Google Ads Performance Max 2026: 7 Schutz-Strategien' : lang === 'en' ? 'Google Ads Performance Max 2026: 7 Scaling Rules' : 'Google Ads Performance Max 2026: 7 İleri Düzey Strateji',
+                excerpt: lang === 'de' ? 'Brand-Ausschlüsse und Margen-Segmentierung für echten Neukunden-ROAS.' : lang === 'en' ? 'Brand exclusions and margin tiering for genuine incremental customer acquisition.' : 'Marka yamyamlığını önleyip gerçek yeni müşteri getirisini katlayan PMax stratejileri.',
+                category: 'Google Ads',
+                readTime: '15',
+                coverImage: 'https://images.unsplash.com/photo-1533750516457-a7f992034fec?w=600&h=300&fit=crop&q=80',
+                date: '2026-08-14'
+              },
+              {
+                slug: 'google-maps-local-seo-ranking-factors-2026',
+                title: lang === 'de' ? 'Google Maps Local SEO 2026: Top 3-Pack Zirvesi' : lang === 'en' ? 'Google Maps Local SEO 2026: Dominate Local 3-Pack' : 'Google Haritalar Local SEO 2026: Maps 3-Pack Zirvesi',
+                excerpt: lang === 'de' ? 'Lokale Rankings dominieren und gefälschte 1-Stern-Bewertungen rechtssicher entfernen.' : lang === 'en' ? 'Dominate regional searches and legally eliminate fake 1-star reviews.' : 'Bölgenizde 1. sıraya çıkma ve sahte 1 yıldızlı yorumları sildirme taktikleri.',
+                category: 'SEO & GEO',
+                readTime: '15',
+                coverImage: 'https://images.unsplash.com/photo-1526778548025-fa2f459cd5c1?w=600&h=300&fit=crop&q=80',
+                date: '2026-08-14'
+              }
+            ])
+            .filter(post => {
+              if (blogCategory === 'all') return true
+              const catLower = (post.category || '').toLowerCase()
+              const titleLower = (post.title || '').toLowerCase()
+              if (blogCategory === 'google') return catLower.includes('google') || titleLower.includes('google')
+              if (blogCategory === 'meta') return catLower.includes('meta') || titleLower.includes('meta')
+              if (blogCategory === 'seo') return catLower.includes('seo') || catLower.includes('geo') || titleLower.includes('seo') || titleLower.includes('maps')
+              if (blogCategory === 'ai') return catLower.includes('yapay') || catLower.includes('künstliche') || catLower.includes('artificial') || titleLower.includes('ai') || titleLower.includes('gemini')
+              if (blogCategory === 'tracking') return catLower.includes('tracking') || titleLower.includes('tracking') || titleLower.includes('capi')
+              return true
+            })
+            .slice(0, 6)
+            .map((post, idx) => (
+              <a
+                key={post.slug || idx}
+                href={`/blog/${post.slug}`}
+                className="group relative flex flex-col bg-white rounded-2xl border border-gray-200/80 overflow-hidden shadow-sm hover:shadow-2xl hover:border-[#4285F4]/40 hover:-translate-y-2 transition-all duration-500"
+              >
+                {/* Image Container with Zoom Effect */}
+                <div className="h-48 sm:h-52 relative overflow-hidden bg-slate-100">
+                  <img
+                    src={post.coverImage || 'https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=600&h=300&fit=crop&q=80'}
+                    alt={post.title}
+                    className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700 ease-out"
+                    loading="lazy"
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-black/20 to-transparent" />
+                  
+                  {/* Floating Category Badge */}
+                  <div className="absolute top-3 left-3">
+                    <span className="inline-flex items-center px-3 py-1 rounded-full text-xs font-bold bg-white/95 text-gray-900 shadow-md backdrop-blur-md">
+                      {post.category || 'Digital Marketing'}
+                    </span>
+                  </div>
+
+                  {/* Read time floating */}
+                  <div className="absolute bottom-3 right-3 text-white/90 text-xs font-medium inline-flex items-center gap-1 drop-shadow-md bg-black/40 backdrop-blur-md px-2.5 py-1 rounded-lg">
+                    <Clock className="w-3.5 h-3.5 text-blue-400" />
+                    <span>{post.readTime || '10'} {lang === 'de' ? 'Min.' : lang === 'en' ? 'min' : 'dk'}</span>
+                  </div>
+                </div>
+
+                {/* Card Content */}
+                <div className="p-5 sm:p-6 flex flex-col flex-grow">
+                  <h3 className="text-lg sm:text-xl font-bold text-gray-900 mb-2.5 line-clamp-2 group-hover:text-[#4285F4] transition-colors leading-snug">
+                    {post.title}
+                  </h3>
+                  <p className="text-sm text-gray-600 line-clamp-2 mb-4 flex-grow leading-relaxed">
+                    {post.excerpt || post.title}
+                  </p>
+
+                  {/* Bottom Action Footer */}
+                  <div className="pt-3 border-t border-gray-100 flex items-center justify-between text-xs font-bold text-[#4285F4] group-hover:text-blue-600">
+                    <span className="inline-flex items-center gap-1">
+                      <span>{lang === 'de' ? 'Rehber İncele' : lang === 'en' ? 'Read Guide' : 'Rehberi Oku'}</span>
+                      <ArrowRight className="w-3.5 h-3.5 transform group-hover:translate-x-1.5 transition-transform duration-300" />
+                    </span>
+                    <span className="text-gray-400 font-normal">Salih Maral</span>
+                  </div>
+                </div>
+              </a>
+            ))}
+          </div>
+
+          {/* Bottom Call to Action Button */}
+          <div className="text-center mt-12">
+            <Button
+              size="lg"
+              className="bg-gradient-to-r from-[#4285F4] to-indigo-600 hover:from-blue-600 hover:to-indigo-700 text-white font-bold px-8 py-6 rounded-2xl shadow-xl shadow-blue-500/20 hover:shadow-blue-500/35 hover:scale-105 transition-all duration-300"
+              asChild
+            >
+              <a href="/blog" className="inline-flex items-center gap-2">
+                <BookOpen className="w-5 h-5" />
+                <span>{lang === 'de' ? 'Alle Fachartikel ansehen (45+ Leitfäden)' : lang === 'en' ? 'Explore All Blog Guides (45+ Articles)' : 'Tüm Blog Rehberlerini İncele (45+ Makale)'}</span>
+                <ArrowRight className="w-5 h-5" />
+              </a>
             </Button>
           </div>
         </div>
