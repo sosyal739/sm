@@ -1,7 +1,7 @@
 ---
 slug: "server-side-gtm-meta-capi-setup-2026"
 lang: "tr"
-title: "Server-Side GTM & Meta Conversions API (CAPI) 2026: Çerezsiz Dünyada %30 Veri Kaybını Önleme ve ROAS Artırma Rehberi"
+title: "Server-Side GTM & Meta CAPI: %30 Veri Kaybını Önleme"
 excerpt: "Sunucu taraflı takip ile kayıp dönüşümleri geri kazanın. iOS engellerini, ad-blocker'ları aşma, Event ID tekilleştirme ve Meta CAPI ile ROAS artırma rehberi."
 category: "Server-Side Tracking"
 date: "2026-08-14"

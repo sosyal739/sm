@@ -1,7 +1,7 @@
 ---
 slug: "geo-ai-search-citation-factors-2026"
 lang: "de"
-title: "GEO (Generative Engine Optimization) 2026: Leitfaden für Top-Zitate in ChatGPT, Perplexity & Google AI Overviews"
+title: "GEO 2026: Zitations-Leitfaden für ChatGPT & Perplexity"
 excerpt: "Wie Sie Ihre Marke in KI-generierten Antworten als primäre Quelle positionieren. Princeton KDD 2024 Ranking-Faktoren und erprobte GEO-Strategien von Salih Maral."
 category: "SEO & GEO"
 date: "2026-08-14"

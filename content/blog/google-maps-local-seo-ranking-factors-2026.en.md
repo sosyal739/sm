@@ -1,7 +1,7 @@
 ---
 slug: "google-maps-local-seo-ranking-factors-2026"
 lang: "en"
-title: "Google Maps Local SEO 2026: 9 Proven Tactics to Dominate the Local 3-Pack Rankings"
+title: "Google Maps SEO 2026: Dominate the Local 3-Pack"
 excerpt: "Dominate local Google Maps search results. Learn how to optimize your Business Profile, legally remove unfair 1-star reviews, and win high-ticket local clients."
 category: "SEO & GEO"
 date: "2026-08-14"

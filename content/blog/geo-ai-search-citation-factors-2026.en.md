@@ -1,7 +1,7 @@
 ---
 slug: "geo-ai-search-citation-factors-2026"
 lang: "en"
-title: "GEO (Generative Engine Optimization) 2026: How to Get Cited in ChatGPT, Perplexity & Google AI Overviews"
+title: "GEO 2026: How to Get Cited in ChatGPT & Perplexity"
 excerpt: "Master the art of Generative Engine Optimization. Proven Princeton KDD 2024 ranking factors and actionable strategies by Salih Maral to dominate AI search engines."
 category: "SEO & GEO"
 date: "2026-08-14"

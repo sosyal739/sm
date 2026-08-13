@@ -1,7 +1,7 @@
 ---
 slug: "google-maps-local-seo-ranking-factors-2026"
 lang: "tr"
-title: "Google Haritalar (Local SEO) 2026: İşletmenizi Google Maps 3-Pack Zirvesine Taşıyacak 9 Kanıtlanmış Taktik"
+title: "Google Haritalar SEO 2026: Local 3-Pack Zirvesi"
 excerpt: "Google Haritalar yerel arama sonuçlarını domine edin. İşletme profilinizi optimize etme, sahte 1 yıldızlı yorumları sildirme ve yerel müşteri kazanma rehberi."
 category: "SEO & GEO"
 date: "2026-08-14"

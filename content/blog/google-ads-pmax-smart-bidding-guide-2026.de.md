@@ -1,7 +1,7 @@
 ---
 slug: "google-ads-pmax-smart-bidding-guide-2026"
 lang: "de"
-title: "Google Ads Performance Max & Smart Bidding 2026: 7 Fortgeschrittene Strategien gegen Budgetverschwendung"
+title: "Google Ads PMax 2026: 7 Strategien gegen Budgetverlust"
 excerpt: "Maximieren Sie Ihren ROAS in Google Ads Performance Max. Wie Sie Marken-Suchanfragen ausschließen, Asset-Gruppen segmentieren und Smart Bidding meistern."
 category: "Google Ads"
 date: "2026-08-14"

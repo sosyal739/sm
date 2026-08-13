@@ -1,7 +1,7 @@
 ---
 slug: "google-ads-pmax-smart-bidding-guide-2026"
 lang: "tr"
-title: "Google Ads Performance Max & Smart Bidding 2026: Bütçe İsrafını Önleyen 7 İleri Düzey Optimizasyon Stratejisi"
+title: "Google Ads PMax 2026: Bütçe İsrafını Önleyen 7 Taktik"
 excerpt: "Google Ads Performance Max (PMax) kampanyalarınızda gerçek ROAS değerini artırın. Marka yamyamlığını önleme, ürün segmentasyonu ve akıllı teklif rehberi."
 category: "Google Ads"
 date: "2026-08-14"

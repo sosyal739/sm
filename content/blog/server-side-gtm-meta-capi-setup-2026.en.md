@@ -1,7 +1,7 @@
 ---
 slug: "server-side-gtm-meta-capi-setup-2026"
 lang: "en"
-title: "Server-Side GTM & Meta Conversions API (CAPI) 2026: How to Prevent 30% Data Loss and Scale ROAS"
+title: "Server-Side GTM & Meta CAPI: Prevent 30% Data Loss"
 excerpt: "Complete practical guide to server-side tracking. Overcome iOS restrictions, ad-blockers, and privacy barriers with deterministic event deduplication."
 category: "Server-Side Tracking"
 date: "2026-08-14"

@@ -1,7 +1,7 @@
 ---
 slug: "gemini-3-7-vs-gemini-3-6-ai-marketing-comparison"
 lang: "tr"
-title: "Google Gemini 3.7 vs. Gemini 3.6: Hibrit Muhakeme (Hybrid Reasoning), SEO ve Dijital Pazarlama Otomasyonu Kıyaslaması"
+title: "Gemini 3.7 vs. 3.6: Pazarlama ve SEO Kıyaslaması"
 excerpt: "Google'ın yeni Gemini 3.7 modelinin hibrit muhakeme yetenekleri ile Gemini 3.6 kıyaslaması. Google Ads, GEO optimizasyonu ve pazarlama otomasyonunda sunduğu devrim niteliğindeki fırsatlar."
 category: "Yapay Zeka"
 date: "2026-08-14"

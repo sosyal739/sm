@@ -1,7 +1,7 @@
 ---
 slug: "geo-ai-search-citation-factors-2026"
 lang: "tr"
-title: "GEO (Generative Engine Optimization) 2026: ChatGPT, Perplexity ve Google AI Overviews'da Kaynak Gösterilme Rehberi"
+title: "GEO 2026: ChatGPT ve Perplexity'de Zirveye Çıkma"
 excerpt: "Yapay zeka arama motorlarında markanızı birincil kaynak yapma stratejileri. Princeton KDD 2024 araştırma bulguları ve Salih Maral'ın kanıtlanmış GEO metodolojisi."
 category: "SEO & GEO"
 date: "2026-08-14"

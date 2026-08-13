@@ -1,7 +1,7 @@
 ---
 slug: "meta-advantage-plus-creative-ai-2026"
 lang: "tr"
-title: "Meta Advantage+ Creative AI 2026: E-Ticaret İçin Düşük CPA ve Yüksek ROAS ile Reklam Ölçekleme Rehberi"
+title: "Meta Advantage+ 2026: E-Ticaret Reklam Ölçekleme"
 excerpt: "Meta Advantage+ Alışveriş Kampanyaları (ASC) ile e-ticaret satışlarınızı katlayın. Üretken yapay zeka ile reklam yorgunluğunu aşma ve kârlı büyüme stratejileri."
 category: "Meta Ads"
 date: "2026-08-14"

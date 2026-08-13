@@ -1556,7 +1556,7 @@ export default function Home({ initialLang = 'de' }) {
             {(latestPosts.length > 0 ? latestPosts : [
               {
                 slug: 'gemini-3-7-vs-gemini-3-6-ai-marketing-comparison',
-                title: lang === 'de' ? 'Google Gemini 3.7 vs. 3.6: Hybrides Denken im Marketing' : lang === 'en' ? 'Google Gemini 3.7 vs. 3.6: Hybrid Reasoning in Marketing' : 'Google Gemini 3.7 vs. 3.6: Hibrit Muhakeme ve Pazarlama',
+                title: lang === 'de' ? 'Gemini 3.7 vs. 3.6: Hybrides Denken im Marketing' : lang === 'en' ? 'Gemini 3.7 vs. 3.6: Hybrid Reasoning for Marketing' : 'Gemini 3.7 vs. 3.6: Pazarlama ve SEO Kıyaslaması',
                 excerpt: lang === 'de' ? 'Detaillierte Analyse des neuen Gemini 3.7 Thinking Mode für Google Ads & SEO.' : lang === 'en' ? 'In-depth analysis of the new Gemini 3.7 Thinking Mode for Google Ads & SEO.' : 'Google Ads ve SEO otomasyonu için yeni Gemini 3.7 Thinking Mode detaylı analizi.',
                 category: lang === 'de' ? 'Künstliche Intelligenz' : lang === 'en' ? 'Artificial Intelligence' : 'Yapay Zeka',
                 readTime: '14',
@@ -1565,7 +1565,7 @@ export default function Home({ initialLang = 'de' }) {
               },
               {
                 slug: 'geo-ai-search-citation-factors-2026',
-                title: lang === 'de' ? 'GEO 2026: Zitations-Leitfaden für ChatGPT & Perplexity' : lang === 'en' ? 'GEO 2026: Citation Guide for ChatGPT & Perplexity' : 'GEO 2026: ChatGPT & Perplexity Kaynak Gösterilme Rehberi',
+                title: lang === 'de' ? 'GEO 2026: Zitations-Leitfaden für ChatGPT & Perplexity' : lang === 'en' ? 'GEO 2026: How to Get Cited in ChatGPT & Perplexity' : 'GEO 2026: ChatGPT ve Perplexity\'de Zirveye Çıkma',
                 excerpt: lang === 'de' ? 'Princeton KDD 2024 Ranking-Faktoren für maximale Sichtbarkeit in KI-Antworten.' : lang === 'en' ? 'Princeton KDD 2024 ranking factors for maximum visibility in generative AI.' : 'Yapay zeka arama motorlarında birincil kaynak olma stratejileri ve Princeton verileri.',
                 category: 'SEO & GEO',
                 readTime: '15',
@@ -1583,7 +1583,7 @@ export default function Home({ initialLang = 'de' }) {
               },
               {
                 slug: 'meta-advantage-plus-creative-ai-2026',
-                title: lang === 'de' ? 'Meta Advantage+ Creative KI 2026: E-Commerce Skalierung' : lang === 'en' ? 'Meta Advantage+ Creative AI 2026: E-Commerce Scale' : 'Meta Advantage+ Creative AI 2026: E-Ticaret Reklam Ölçekleme',
+                title: lang === 'de' ? 'Meta Advantage+ 2026: E-Commerce Skalierung & KI' : lang === 'en' ? 'Meta Advantage+ 2026: Scaling E-Commerce with AI' : 'Meta Advantage+ 2026: E-Ticaret Reklam Ölçekleme',
                 excerpt: lang === 'de' ? 'Creative AI und ASC Kampagnen für niedrigere CPAs und planbar wachsende Shop-Umsätze.' : lang === 'en' ? 'Creative AI and ASC campaigns for lower CPAs and predictable direct revenue scale.' : 'Daha düşük CPA ve yüksek ROAS ile e-ticaret satışlarını katlama rehberi.',
                 category: 'Meta Ads',
                 readTime: '15',
@@ -1592,7 +1592,7 @@ export default function Home({ initialLang = 'de' }) {
               },
               {
                 slug: 'google-ads-pmax-smart-bidding-guide-2026',
-                title: lang === 'de' ? 'Google Ads Performance Max 2026: 7 Schutz-Strategien' : lang === 'en' ? 'Google Ads Performance Max 2026: 7 Scaling Rules' : 'Google Ads Performance Max 2026: 7 İleri Düzey Strateji',
+                title: lang === 'de' ? 'Google Ads PMax 2026: 7 Strategien gegen Budgetverlust' : lang === 'en' ? 'Google Ads PMax 2026: 7 Strategies to Stop Budget Waste' : 'Google Ads PMax 2026: Bütçe İsrafını Önleyen 7 Taktik',
                 excerpt: lang === 'de' ? 'Brand-Ausschlüsse und Margen-Segmentierung für echten Neukunden-ROAS.' : lang === 'en' ? 'Brand exclusions and margin tiering for genuine incremental customer acquisition.' : 'Marka yamyamlığını önleyip gerçek yeni müşteri getirisini katlayan PMax stratejileri.',
                 category: 'Google Ads',
                 readTime: '15',
@@ -1601,7 +1601,7 @@ export default function Home({ initialLang = 'de' }) {
               },
               {
                 slug: 'google-maps-local-seo-ranking-factors-2026',
-                title: lang === 'de' ? 'Google Maps Local SEO 2026: Top 3-Pack Zirvesi' : lang === 'en' ? 'Google Maps Local SEO 2026: Dominate Local 3-Pack' : 'Google Haritalar Local SEO 2026: Maps 3-Pack Zirvesi',
+                title: lang === 'de' ? 'Google Maps SEO 2026: Top-Rankings im Local 3-Pack' : lang === 'en' ? 'Google Maps SEO 2026: Dominate the Local 3-Pack' : 'Google Haritalar SEO 2026: Local 3-Pack Zirvesi',
                 excerpt: lang === 'de' ? 'Lokale Rankings dominieren und gefälschte 1-Stern-Bewertungen rechtssicher entfernen.' : lang === 'en' ? 'Dominate regional searches and legally eliminate fake 1-star reviews.' : 'Bölgenizde 1. sıraya çıkma ve sahte 1 yıldızlı yorumları sildirme taktikleri.',
                 category: 'SEO & GEO',
                 readTime: '15',
