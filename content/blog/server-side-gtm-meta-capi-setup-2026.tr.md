@@ -124,7 +124,7 @@ coverImage: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=600&h=3
 <div class="highlight-box">
   <h3>🚀 Reklam Bütçenizin %30'unu Masada Bırakmayı Bugün Durdurun!</h3>
   <p>Mevcut takip sisteminizi 30 dakikalık ücretsiz bir denetimle inceleyelim. Reklam hesaplarınızın ne kadar ciro verisi kaçırdığını net rakamlarla gösterelim.</p>
-  <p><strong>👉 <a href="/tr/hizmetler/google-ads">Hemen Ücretsiz Tracking Denetimi Randevusu Alın</a></strong> veya doğrudan <strong><a href="https://wa.me/491724106463">WhatsApp ile İletişime Geçin (+49 172 4106463)</a></strong>.</p>
+  <p><strong>👉 <a href="/tr#contact">Ücretsiz Tracking Denetimi Formunu Doldurun</a></strong> veya doğrudan <a href="/tr/hizmetler/google-ads">Google Ads Hizmetlerimizi</a> inceleyin.</p>
 </div>
 
 <div class="highlight-box">

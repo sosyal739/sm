@@ -117,7 +117,7 @@ coverImage: "https://images.unsplash.com/photo-1504868584819-f8e8b4b6d7e3?w=600&
 <div class="highlight-box">
   <h3>🚀 Yapay Zeka Aramalarında 1 Numaralı Önerilen Kaynak Olmaya Hazır mısınız?</h3>
   <p>Mevcut AI görünürlüğünüzü ücretsiz 30 dakikalık bir ön analizle inceleyelim. Rakiplerinizin nerede kaynak gösterildiğini ve zirveyi nasıl devralacağınızı net bir yol haritasıyla sunalım.</p>
-  <p><strong>👉 <a href="/tr/hizmetler/seo">Hemen Ücretsiz Ön Görüşme Randevusu Alın</a></strong> veya doğrudan <strong><a href="https://wa.me/491724106463">WhatsApp Üzerinden İletişime Geçin (+49 172 4106463)</a></strong>.</p>
+  <p><strong>👉 <a href="/tr#contact">Ücretsiz Ön Görüşme Formunu Doldurun</a></strong> veya doğrudan <a href="/tr/hizmetler/seo">SEO ve GEO Hizmetlerimizi</a> inceleyin.</p>
 </div>
 
 <div class="highlight-box">

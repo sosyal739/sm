@@ -111,7 +111,7 @@ coverImage: "https://images.unsplash.com/photo-1526778548025-fa2f459cd5c1?w=600&
 <div class="highlight-box">
   <h3>🚀 İşletmenizi Google Haritalar'da 1 Numaraya Taşımaya Hazır mısınız?</h3>
   <p>İşletmenizin yerel profilini 30 dakikalık ücretsiz bir analizle inceleyelim. Rakiplerinizin önüne geçmenizi sağlayacak adımları net bir planla sunalım.</p>
-  <p><strong>👉 <a href="/tr/hizmetler/yorum-yonetimi">Ücretsiz Local SEO ve İtibar Analizi Randevusu Alın</a></strong> veya doğrudan <strong><a href="https://wa.me/491724106463">WhatsApp ile İletişime Geçin (+49 172 4106463)</a></strong>.</p>
+  <p><strong>👉 <a href="/tr#contact">Ücretsiz Local SEO ve İtibar Analizi Formunu Doldurun</a></strong> veya doğrudan <a href="/tr/hizmetler/yorum-yonetimi">Yorum Yönetimi Hizmetlerimizi</a> inceleyin.</p>
 </div>
 
 <div class="highlight-box">

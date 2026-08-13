@@ -114,7 +114,7 @@ coverImage: "https://images.unsplash.com/photo-1611162617474-5b21e879e113?w=600&
 <div class="highlight-box">
   <h3>🚀 Ready to Scale Your Meta Ads to 6-Figure Monthly Revenue?</h3>
   <p>Book a free 30-minute growth strategy session with Salih Maral. We will review your current ad accounts and highlight immediate levers for profitable scale.</p>
-  <p><strong>👉 <a href="/en/services/meta-ads">Request Your Free Meta Ads Audit</a></strong> or connect via <strong><a href="https://wa.me/491724106463">WhatsApp (+49 172 4106463)</a></strong>.</p>
+  <p><strong>👉 <a href="/en#contact">Request Your Free Meta Ads Audit via Contact Form</a></strong> or explore our <a href="/en/services/meta-ads">Meta Ads Management Services</a>.</p>
 </div>
 
 <div class="highlight-box">

@@ -119,7 +119,7 @@ coverImage: "https://images.unsplash.com/photo-1533750516457-a7f992034fec?w=600&
 <div class="highlight-box">
   <h3>🚀 Google Ads Reklamlarınızdan Maksimum Kâr Elde Edin!</h3>
   <p>Salih Maral ile 30 dakikalık ücretsiz bir Google Ads PMax denetimi planlayın. Hesabınızı canlı inceleyerek nerede bütçe kaçırdığınızı net olarak gösterelim.</p>
-  <p><strong>👉 <a href="/tr/hizmetler/google-ads">Ücretsiz Google Ads Denetimi Randevusu Alın</a></strong> veya doğrudan <strong><a href="https://wa.me/491724106463">WhatsApp ile İletişime Geçin (+49 172 4106463)</a></strong>.</p>
+  <p><strong>👉 <a href="/tr#contact">Ücretsiz Google Ads Denetimi Formunu Doldurun</a></strong> veya doğrudan <a href="/tr/hizmetler/google-ads">Google Ads Hizmetlerimizi</a> inceleyin.</p>
 </div>
 
 <div class="highlight-box">

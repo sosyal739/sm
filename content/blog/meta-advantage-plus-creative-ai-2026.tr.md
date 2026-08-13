@@ -114,7 +114,7 @@ coverImage: "https://images.unsplash.com/photo-1611162617474-5b21e879e113?w=600&
 <div class="highlight-box">
   <h3>🚀 Meta Reklamlarınızla Cironuzu 6-7 Haneli Rakamlara Taşımak İster misiniz?</h3>
   <p>Salih Maral ile 30 dakikalık ücretsiz bir strateji görüşmesi planlayın. Reklam hesabınızdaki bütçe kaçaklarını ve hızlı ciro artışı sağlayacak fırsatları birlikte tespit edelim.</p>
-  <p><strong>👉 <a href="/tr/hizmetler/meta-ads">Hemen Ücretsiz Meta Ads Analizi Randevusu Alın</a></strong> veya doğrudan <strong><a href="https://wa.me/491724106463">WhatsApp ile İletişime Geçin (+49 172 4106463)</a></strong>.</p>
+  <p><strong>👉 <a href="/tr#contact">Ücretsiz Meta Ads Analizi Formunu Doldurun</a></strong> veya doğrudan <a href="/tr/hizmetler/meta-ads">Meta Ads Hizmetlerimizi</a> inceleyin.</p>
 </div>
 
 <div class="highlight-box">

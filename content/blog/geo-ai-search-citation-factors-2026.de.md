@@ -117,7 +117,7 @@ coverImage: "https://images.unsplash.com/photo-1504868584819-f8e8b4b6d7e3?w=600&
 <div class="highlight-box">
   <h3>🚀 Bereit, die Nummer 1 in KI-Suchmaschinen zu werden?</h3>
   <p>Lassen Sie uns Ihre aktuelle KI-Sichtbarkeit in einer unverbindlichen 30-minütigen Erstanalyse prüfen. Wir decken auf, wo Ihre Konkurrenz zitiert wird und wie Sie die Spitzenposition übernehmen.</p>
-  <p><strong>👉 <a href="/de/dienstleistungen/seo">Jetzt kostenlose Erstberatung anfordern</a></strong> oder direkt via <strong><a href="https://wa.me/491724106463">WhatsApp kontaktieren (+49 172 4106463)</a></strong>.</p>
+  <p><strong>👉 <a href="/#contact">Jetzt kostenlose Erstberatung über das Kontaktformular anfordern</a></strong> oder mehr über unsere <a href="/de/dienstleistungen/seo">SEO & GEO Dienstleistungen</a> erfahren.</p>
 </div>
 
 <div class="highlight-box">

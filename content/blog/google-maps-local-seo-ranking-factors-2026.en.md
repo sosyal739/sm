@@ -111,7 +111,7 @@ coverImage: "https://images.unsplash.com/photo-1526778548025-fa2f459cd5c1?w=600&
 <div class="highlight-box">
   <h3>🚀 Ready to Claim the #1 Spot on Google Maps?</h3>
   <p>Schedule a complimentary 30-minute Local SEO audit. We will evaluate your local profile, identify citation discrepancies, and map your path into the Local 3-Pack.</p>
-  <p><strong>👉 <a href="/en/services/review-management">Request Your Free Local SEO Audit</a></strong> or reach out on <strong><a href="https://wa.me/491724106463">WhatsApp (+49 172 4106463)</a></strong>.</p>
+  <p><strong>👉 <a href="/en#contact">Request Your Free Local SEO Audit via Contact Form</a></strong> or explore our <a href="/en/services/review-management">Review Management Services</a>.</p>
 </div>
 
 <div class="highlight-box">

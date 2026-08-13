@@ -119,7 +119,7 @@ coverImage: "https://images.unsplash.com/photo-1533750516457-a7f992034fec?w=600&
 <div class="highlight-box">
   <h3>🚀 Holen Sie das Maximum aus Ihren Google Ads Kampagnen heraus!</h3>
   <p>Fordern Sie ein kostenloses 30-minütiges Google Ads PMax Audit an. Wir prüfen Ihr Konto live und zeigen Ihnen exakt, wo Budget verschwendet wird.</p>
-  <p><strong>👉 <a href="/de/dienstleistungen/google-ads">Jetzt kostenloses Google Ads Audit sichern</a></strong> oder direkt via <strong><a href="https://wa.me/491724106463">WhatsApp anfragen (+49 172 4106463)</a></strong>.</p>
+  <p><strong>👉 <a href="/#contact">Jetzt kostenloses Google Ads Audit über das Kontaktformular anfordern</a></strong> oder mehr über unsere <a href="/de/dienstleistungen/google-ads">Google Ads Betreuung</a> erfahren.</p>
 </div>
 
 <div class="highlight-box">

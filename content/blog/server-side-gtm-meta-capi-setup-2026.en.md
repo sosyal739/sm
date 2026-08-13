@@ -124,7 +124,7 @@ coverImage: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=600&h=3
 <div class="highlight-box">
   <h3>🚀 Stop Losing 30% of Your Conversion Attribution Today!</h3>
   <p>Book a 30-minute complimentary tracking audit. We will analyze your current data pipeline and quantify precisely how many transactions your ad accounts are missing.</p>
-  <p><strong>👉 <a href="/en/services/google-ads">Schedule Your Free Tracking Audit</a></strong> or contact us directly on <strong><a href="https://wa.me/491724106463">WhatsApp (+49 172 4106463)</a></strong>.</p>
+  <p><strong>👉 <a href="/en#contact">Schedule Your Free Tracking Audit via Contact Form</a></strong> or learn more about our <a href="/en/services/google-ads">Google Ads Services</a>.</p>
 </div>
 
 <div class="highlight-box">

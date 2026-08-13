@@ -119,7 +119,7 @@ coverImage: "https://images.unsplash.com/photo-1533750516457-a7f992034fec?w=600&
 <div class="highlight-box">
   <h3>🚀 Maximize Your Google Ads ROAS Today!</h3>
   <p>Request a complimentary 30-minute Google Ads audit with Salih Maral. We will inspect your account live and pinpoint immediate areas of budget waste.</p>
-  <p><strong>👉 <a href="/en/services/google-ads">Claim Your Free Google Ads Audit</a></strong> or connect instantly via <strong><a href="https://wa.me/491724106463">WhatsApp (+49 172 4106463)</a></strong>.</p>
+  <p><strong>👉 <a href="/en#contact">Claim Your Free Google Ads Audit via Contact Form</a></strong> or learn more about our <a href="/en/services/google-ads">Google Ads Services</a>.</p>
 </div>
 
 <div class="highlight-box">

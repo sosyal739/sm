@@ -124,7 +124,7 @@ coverImage: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=600&h=3
 <div class="highlight-box">
   <h3>🚀 Verlieren Sie keine 30% Ihrer Werbe-Umsätze mehr!</h3>
   <p>Lassen Sie uns Ihr Tracking in einem unverbindlichen 30-minütigen Audit überprüfen. Wir zeigen Ihnen schwarz auf weiß, wie viele Conversions Ihnen aktuell entgehen.</p>
-  <p><strong>👉 <a href="/de/dienstleistungen/google-ads">Jetzt unverbindliches Erstgespräch buchen</a></strong> oder direkt via <strong><a href="https://wa.me/491724106463">WhatsApp kontaktieren (+49 172 4106463)</a></strong>.</p>
+  <p><strong>👉 <a href="/#contact">Jetzt unverbindliches Tracking-Audit über das Kontaktformular buchen</a></strong> oder mehr über unsere <a href="/de/dienstleistungen/google-ads">Google Ads & Tracking Services</a> erfahren.</p>
 </div>
 
 <div class="highlight-box">

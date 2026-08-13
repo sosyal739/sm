@@ -117,7 +117,7 @@ coverImage: "https://images.unsplash.com/photo-1504868584819-f8e8b4b6d7e3?w=600&
 <div class="highlight-box">
   <h3>🚀 Ready to Become the #1 Recommended Source in AI Search?</h3>
   <p>Schedule a complimentary 30-minute AI visibility audit. We will analyze where competitors are getting cited and map out your roadmap to market dominance.</p>
-  <p><strong>👉 <a href="/en/services/seo">Book Your Free Initial Consultation</a></strong> or contact us via <strong><a href="https://wa.me/491724106463">WhatsApp (+49 172 4106463)</a></strong>.</p>
+  <p><strong>👉 <a href="/en#contact">Book Your Free Consultation via Contact Form</a></strong> or explore our <a href="/en/services/seo">SEO & GEO Services</a>.</p>
 </div>
 
 <div class="highlight-box">

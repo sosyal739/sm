@@ -111,7 +111,7 @@ coverImage: "https://images.unsplash.com/photo-1526778548025-fa2f459cd5c1?w=600&
 <div class="highlight-box">
   <h3>🚀 Möchten Sie Ihr Unternehmen auf Platz 1 bei Google Maps sehen?</h3>
   <p>Lassen Sie uns Ihr lokales Profil in einer kostenlosen 30-minütigen Analyse prüfen. Wir decken Schwachstellen auf und zeigen Ihnen den direkten Weg ins Local 3-Pack.</p>
-  <p><strong>👉 <a href="/de/dienstleistungen/bewertungsmanagement">Jetzt kostenlose Local-SEO-Analyse anfordern</a></strong> oder direkt via <strong><a href="https://wa.me/491724106463">WhatsApp kontaktieren (+49 172 4106463)</a></strong>.</p>
+  <p><strong>👉 <a href="/#contact">Jetzt kostenlose Local-SEO-Analyse über das Kontaktformular anfordern</a></strong> oder mehr über unser <a href="/de/dienstleistungen/bewertungsmanagement">Bewertungsmanagement</a> erfahren.</p>
 </div>
 
 <div class="highlight-box">

@@ -114,7 +114,7 @@ coverImage: "https://images.unsplash.com/photo-1611162617474-5b21e879e113?w=600&
 <div class="highlight-box">
   <h3>🚀 Möchten Sie Ihre Meta Ads profitabel auf 5- bis 6-stellige Monatsumsätze skalieren?</h3>
   <p>Buchen Sie ein kostenloses 30-minütiges Strategiegespräch mit Salih Maral. Wir analysieren Ihr aktuelles Werbekonto und zeigen ungenutzte Hebel für sofortiges Umsatzwachstum auf.</p>
-  <p><strong>👉 <a href="/de/dienstleistungen/meta-ads">Jetzt kostenlose Meta Ads Analyse anfordern</a></strong> oder direkt via <strong><a href="https://wa.me/491724106463">WhatsApp kontaktieren (+49 172 4106463)</a></strong>.</p>
+  <p><strong>👉 <a href="/#contact">Jetzt kostenlose Meta Ads Analyse über das Kontaktformular anfordern</a></strong> oder mehr über unsere <a href="/de/dienstleistungen/meta-ads">Meta Ads Betreuung</a> erfahren.</p>
 </div>
 
 <div class="highlight-box">
