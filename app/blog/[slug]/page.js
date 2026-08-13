@@ -187,16 +187,11 @@ export default function BlogDetailPage() {
 
   return (
     <div className="min-h-screen bg-gradient-to-b from-gray-50 to-white">
-      {/* SEO */}
-      <head>
-        <link rel="canonical" href={`https://salihmaral.de/blog/${slug}`} />
-        <title>{post.title} | Salih Maral Blog</title>
-        <meta name="description" content={post.excerpt} />
-        <script
-          type="application/ld+json"
-          dangerouslySetInnerHTML={{ __html: JSON.stringify(blogPostingSchema) }}
-        />
-      </head>
+      {/* SEO JSON-LD */}
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(blogPostingSchema) }}
+      />
 
       {/* Navigation */}
       <nav className="fixed top-0 left-0 right-0 z-50 bg-white/95 backdrop-blur-sm border-b">

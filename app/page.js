@@ -589,17 +589,8 @@ export default function Home({ initialLang = 'de' }) {
 
   return (
     <div className="min-h-screen bg-background">
-      {/* SEO */}
-      <head>
-        <link rel="canonical" href={lang === 'de' ? 'https://salihmaral.de/' : `https://salihmaral.de/${lang}`} />
-        <link rel="alternate" hrefLang="de" href="https://salihmaral.de/" />
-        <link rel="alternate" hrefLang="tr" href="https://salihmaral.de/tr" />
-        <link rel="alternate" hrefLang="en" href="https://salihmaral.de/en" />
-        <link rel="alternate" hrefLang="x-default" href="https://salihmaral.de/" />
-        <meta httpEquiv="content-language" content={lang} />
-        <meta name="description" content={t.hero.description} />
-        <title>{lang === 'de' ? 'Salih Maral - Digital Marketing Experte | Google Ads, Meta Ads & SEO' : lang === 'tr' ? 'Salih Maral - Dijital Pazarlama Uzmanı | Google Ads, Meta Ads & SEO' : 'Salih Maral - Digital Marketing Expert | Google Ads, Meta Ads & SEO'}</title>
-        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({
+      {/* SEO JSON-LD & Metadata */}
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({
           '@context': 'https://schema.org',
           '@graph': [
             {
@@ -704,7 +695,6 @@ export default function Home({ initialLang = 'de' }) {
             }
           ]
         }) }} />
-      </head>
       {/* Navigation */}
       <nav className="fixed top-0 left-0 right-0 z-50 bg-white/95 backdrop-blur-sm border-b">
         <div className="container mx-auto px-4 py-4">

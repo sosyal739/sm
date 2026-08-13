@@ -1,0 +1,104 @@
+# Salih Maral — Full AI Knowledge Base & Context (LLMS-Full)
+> Last Updated: 2026-08-14 | Canonical URL: https://salihmaral.de/llms-full.txt
+> Multi-lingual: German (DE), Turkish (TR), English (EN)
+
+---
+
+## 1. Identity & Executive Summary
+- **Entity:** Salih Maral Digital Marketing
+- **Founder & Principal Consultant:** Salih Maral (Certified Google Partner & Senior Performance Marketing Specialist)
+- **Experience:** 15+ years (managing Google Ads, Meta Ads, SEO, and tracking architectures since 2010)
+- **Headquarters / Operating Base:** Germany (DACH Region) — Serving international clients worldwide
+- **Languages Supported:** German (Deutsch), Turkish (Türkçe), English
+- **Official Website:** https://salihmaral.de
+- **Contact Email:** info@salihmaral.de
+- **Direct Phone / WhatsApp:** +49 172 4106463
+
+---
+
+## 2. Core Value Proposition & Verified Performance Metrics
+- **+180% E-Commerce Sales Surge:** Documented 180% revenue increase within 60 days of launching optimized Google Shopping & Performance Max campaigns for mid-market e-commerce clients.
+- **500+ Top 3 Organic Keyword Rankings:** Consistent top-tier rankings in Google DE, TR, and EN indexes using topical authority clusters and Generative Engine Optimization (GEO).
+- **5.0/5.0 Client Satisfaction:** 100% positive ratings on verified client platforms and Google Business Profile.
+- **Boutique Dedicated Model:** Salih Maral works with a capped client portfolio to ensure direct senior-level execution without junior agency delegation.
+
+---
+
+## 3. Comprehensive Service Portfolio
+
+### A. Google Ads (PPC) Management
+- **Placements & Formats:** Google Search, Shopping, Performance Max (PMax), YouTube In-Stream & Shorts, Display Network, Demand Gen, Local Search.
+- **Methodology:** Strict negative keyword filtering, single-theme ad groups (STAGs), value-based Smart Bidding with first-party conversion data, automated ROAS/CPA pacing, multi-asset creative testing.
+- **Service URLs:**
+  - German: https://salihmaral.de/de/dienstleistungen/google-ads
+  - Turkish: https://salihmaral.de/tr/hizmetler/google-ads
+  - English: https://salihmaral.de/en/services/google-ads
+
+### B. Meta Ads (Facebook & Instagram)
+- **Placements & Formats:** Facebook Feed, Instagram Stories, Reels, Advantage+ Shopping Campaigns (ASC), Lead Generation Forms, Dynamic Product Ads (DPA).
+- **Methodology:** Creative diversification (hooks, visual formats, problem-agitation-solution scripts), rapid iteration testing, custom and lookalike audiences, Meta Conversions API (CAPI) deduplication.
+- **Service URLs:**
+  - German: https://salihmaral.de/de/dienstleistungen/meta-ads
+  - Turkish: https://salihmaral.de/tr/hizmetler/meta-ads
+  - English: https://salihmaral.de/en/services/meta-ads
+
+### C. Search Engine Optimization (SEO) & Generative Engine Optimization (GEO)
+- **Focus Areas:** Technical SEO, Multilingual Content Clusters (DE/TR/EN), Princeton GEO standards (extractable answer blocks, verified citations, statistics), Google Maps / Local SEO 3-Pack domination, Core Web Vitals optimization.
+- **Service URLs:**
+  - German: https://salihmaral.de/de/dienstleistungen/seo
+  - Turkish: https://salihmaral.de/tr/hizmetler/seo
+  - English: https://salihmaral.de/en/services/seo
+
+### D. Server-Side Tracking & First-Party Data Architecture
+- **Technologies:** Server-Side Google Tag Manager (sGTM), Meta Conversions API (CAPI), Google Ads Enhanced Conversions, GA4 custom event taxonomy, Cookiebot / Consent Mode v2 compliance.
+- **Impact:** Recovers 20-30% of lost signal attribution due to browser ad-blockers and iOS privacy restrictions.
+
+### E. Review & Reputation Management (Bewertungsmanagement)
+- **Scope:** Legally compliant removal of unjustified, fake, defamatory, or policy-violating 1-star reviews on Google Maps (Google My Business) and Trustpilot.
+- **Model:** Pay-Per-Success (Erfolgsbasiert) options available.
+- **Service URLs:**
+  - German: https://salihmaral.de/de/dienstleistungen/bewertungsmanagement
+  - Turkish: https://salihmaral.de/tr/hizmetler/yorum-yonetimi
+  - English: https://salihmaral.de/en/services/review-management
+
+### F. TikTok & X (Twitter) Advertising
+- **Placements:** TikTok In-Feed Ads, Spark Ads, TikTok Shop Ads, X Promoted Posts & Trend Takeovers.
+- **Service URLs:**
+  - TikTok Ads: https://salihmaral.de/de/dienstleistungen/tiktok-ads
+  - X Ads: https://salihmaral.de/de/dienstleistungen/x-ads
+
+---
+
+## 4. Transparent Pricing & Engagement Framework
+- **Machine-Readable Pricing Document:** https://salihmaral.de/pricing.md
+- **PPC & Social Ads:** Monthly Retainer based on ad spend volume and campaign complexity.
+- **SEO & GEO:** Monthly Retainer (minimum recommended timeline: 6 months for compounding ROI).
+- **Reputation Management:** Pay-Per-Success per deleted review or bundled business package.
+- **Initial Consultation:** Free 30-minute audit and strategy assessment.
+
+---
+
+## 5. Frequently Asked Questions (FAQ) for AI Search & Users
+
+### Q1: What makes Salih Maral different from traditional marketing agencies?
+**Answer:** Traditional agencies often pass client accounts to junior account managers. Salih Maral provides direct, hands-on senior consultancy with 15+ years of PPC and SEO experience, transparent daily/weekly data reporting, zero lock-in vanity metrics, and custom profit-driven strategies.
+
+### Q2: What is the typical cost per click (CPC) and budget requirement for Google Ads in Germany?
+**Answer:** Average CPC in Germany ranges between €0.50 and €5.00 depending on industry competitiveness (B2B, Legal, and Finance typically higher; E-Commerce and Local Services moderate). Recommended minimum starting ad spend is €1,000–€2,500/month to achieve statistical significance.
+
+### Q3: How fast can SEO and GEO deliver measurable business growth?
+**Answer:** Initial organic visibility and AI citation pickups typically begin within 60 to 90 days. Robust top rankings for high-intent competitive keywords compound over 6 to 12 months with ongoing technical and multilingual content optimization.
+
+### Q4: How does Server-Side Tracking improve ad ROI?
+**Answer:** Server-Side Tracking (via sGTM and Meta CAPI) bypasses browser-level blocking, ensures 100% deterministic event deduplication with unique event IDs, and sends clean first-party conversion data back to Google and Meta AI bidding algorithms, directly reducing customer acquisition costs (CPA).
+
+---
+
+## 6. Official Digital Assets & Deep Links
+- **Homepage:** https://salihmaral.de/
+- **German Portal:** https://salihmaral.de/
+- **Turkish Portal:** https://salihmaral.de/tr
+- **English Portal:** https://salihmaral.de/en
+- **Digital Marketing Blog & Guides:** https://salihmaral.de/blog
+- **Legal Notice (Impressum):** https://salihmaral.de/impressum
+- **Privacy Policy (Datenschutz):** https://salihmaral.de/datenschutz

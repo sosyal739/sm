@@ -30,7 +30,12 @@ export const metadata = {
     'Trustpilot Bewertungen',
     'ROI Optimierung',
     'Conversion Optimierung',
-    'Performance Marketing'
+    'Performance Marketing',
+    'Generative Engine Optimization',
+    'GEO Experte',
+    'AI SEO',
+    'Server-Side Tracking',
+    'Meta CAPI'
   ],
   authors: [{ name: 'Salih Maral', url: 'https://salihmaral.de' }],
   creator: 'Salih Maral',
@@ -140,9 +145,24 @@ const jsonLd = {
       jobTitle: 'Digital Marketing Expert',
       url: 'https://salihmaral.de',
       image: 'https://salihmaral.de/logo.png',
-      description: 'Professioneller Digital Marketing Experte mit 15+ Jahren Erfahrung in Google Ads, Meta Ads, TikTok Ads, X Ads und SEO.',
+      description: 'Professioneller Digital Marketing Experte mit 15+ Jahren Erfahrung in Google Ads, Meta Ads, TikTok Ads, X Ads, SEO und Generative Engine Optimization (GEO).',
       worksFor: { '@id': 'https://salihmaral.de/#organization' },
-      knowsAbout: ['Google Ads', 'Meta Ads', 'TikTok Ads', 'X Ads', 'SEO', 'PPC Management', 'Digital Marketing Strategy', 'Conversion Optimization', 'Performance Marketing'],
+      knowsAbout: [
+        'Google Ads',
+        'Meta Ads',
+        'TikTok Ads',
+        'X Ads',
+        'SEO',
+        'Generative Engine Optimization (GEO)',
+        'AI Search Visibility (AEO)',
+        'Server-Side Tracking (sGTM & Meta CAPI)',
+        'First-Party Data Attribution',
+        'Performance Max Optimization',
+        'PPC Management',
+        'Digital Marketing Strategy',
+        'Conversion Optimization',
+        'Performance Marketing'
+      ],
       knowsLanguage: ['de', 'tr', 'en'],
       sameAs: [
         'https://www.linkedin.com/in/salihmaral',
@@ -163,7 +183,15 @@ const jsonLd = {
         '@type': 'Country',
         name: 'Germany'
       },
-      serviceType: ['Google Ads Management', 'Meta Ads Management', 'TikTok Ads Management', 'SEO Services', 'Review Management'],
+      serviceType: [
+        'Google Ads Management',
+        'Meta Ads Management',
+        'TikTok Ads Management',
+        'SEO Services',
+        'Generative Engine Optimization (GEO)',
+        'Server-Side Tracking',
+        'Review Management'
+      ],
       founder: { '@id': 'https://salihmaral.de/#person' },
       parentOrganization: { '@id': 'https://salihmaral.de/#organization' },
       openingHoursSpecification: {
