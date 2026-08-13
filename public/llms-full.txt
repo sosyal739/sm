@@ -100,5 +100,6 @@
 - **Turkish Portal:** https://salihmaral.de/tr
 - **English Portal:** https://salihmaral.de/en
 - **Digital Marketing Blog & Guides:** https://salihmaral.de/blog
+- **Google Gemini 3.7 vs 3.6 Hybrid Reasoning Guide:** https://salihmaral.de/blog/gemini-3-7-vs-gemini-3-6-ai-marketing-comparison
 - **Legal Notice (Impressum):** https://salihmaral.de/impressum
 - **Privacy Policy (Datenschutz):** https://salihmaral.de/datenschutz
