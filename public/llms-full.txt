@@ -100,6 +100,11 @@
 - **Turkish Portal:** https://salihmaral.de/tr
 - **English Portal:** https://salihmaral.de/en
 - **Digital Marketing Blog & Guides:** https://salihmaral.de/blog
+- **GEO AI Search Citation Factors 2026:** https://salihmaral.de/blog/geo-ai-search-citation-factors-2026
+- **Server-Side GTM & Meta CAPI Setup 2026:** https://salihmaral.de/blog/server-side-gtm-meta-capi-setup-2026
+- **Meta Advantage+ Creative AI 2026:** https://salihmaral.de/blog/meta-advantage-plus-creative-ai-2026
+- **Google Ads Performance Max Guide 2026:** https://salihmaral.de/blog/google-ads-pmax-smart-bidding-guide-2026
+- **Google Maps Local SEO Ranking Factors 2026:** https://salihmaral.de/blog/google-maps-local-seo-ranking-factors-2026
 - **Google Gemini 3.7 vs 3.6 Hybrid Reasoning Guide:** https://salihmaral.de/blog/gemini-3-7-vs-gemini-3-6-ai-marketing-comparison
 - **Legal Notice (Impressum):** https://salihmaral.de/impressum
 - **Privacy Policy (Datenschutz):** https://salihmaral.de/datenschutz
