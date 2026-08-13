@@ -7,27 +7,24 @@ export const metadata = {
   metadataBase: new URL('https://salihmaral.de'),
   title: {
     template: '%s | Salih Maral',
-    default: 'Salih Maral – Google Ads & SEO Experte in Deutschland',
+    default: 'Salih Maral – Google Ads, Meta Ads & SEO Experte (17+ Jahre Erfahrung)',
   },
-  description: 'Professioneller Digital Marketing Experte mit 15+ Jahren Erfahrung. Spezialisiert auf Google Ads, Meta Ads (Facebook & Instagram), TikTok Ads, X Ads und SEO. Maximieren Sie Ihren ROI mit datengesteuerten Strategien.',
+  description: 'Professioneller Digital Marketing Experte & Google Partner mit 17+ Jahren Erfahrung. Spezialisiert auf Google Ads, Meta Ads (Facebook & Instagram), TikTok Ads, SEO & GEO. Maximieren Sie Ihren ROI mit datengesteuerten Strategien.',
   keywords: [
     'Google Ads Agentur',
     'Google Ads Experte',
+    'Google Partner',
     'Meta Ads',
     'Facebook Ads',
     'Instagram Ads',
     'TikTok Ads',
     'X Ads',
-    'Twitter Ads',
     'SEO Optimierung',
     'SEO Agentur',
     'Digital Marketing',
     'Online Marketing',
     'PPC Management',
     'Social Media Marketing',
-    'Bewertungsmanagement',
-    'Google Maps Bewertungen',
-    'Trustpilot Bewertungen',
     'ROI Optimierung',
     'Conversion Optimierung',
     'Performance Marketing',
@@ -47,8 +44,8 @@ export const metadata = {
   },
   alternates: {},
   openGraph: {
-    title: 'Salih Maral - Digital Marketing Experte',
-    description: 'Google Ads, Meta Ads & SEO Experte mit 15+ Jahren Erfahrung. Steigern Sie Ihren ROI mit professionellem Digital Marketing.',
+    title: 'Salih Maral - Digital Marketing Experte & Google Partner',
+    description: 'Google Ads, Meta Ads & SEO Experte mit 17+ Jahren Erfahrung. Steigern Sie Ihren ROI mit professionellem Digital Marketing.',
     url: 'https://salihmaral.de',
     siteName: 'Salih Maral Digital Marketing',
     images: [
@@ -64,8 +61,8 @@ export const metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Salih Maral - Digital Marketing Experte',
-    description: 'Google Ads, Meta Ads & SEO Experte mit 15+ Jahren Erfahrung',
+    title: 'Salih Maral - Digital Marketing Experte & Google Partner',
+    description: 'Google Ads, Meta Ads & SEO Experte mit 17+ Jahren Erfahrung',
     images: ['/logo.png'],
     creator: '@salihmaral',
   },
@@ -122,12 +119,10 @@ const jsonLd = {
         areaServed: 'DE'
       },
       sameAs: [
-        'https://wa.me/491724106463',
-        'https://www.linkedin.com/in/salihmaral',
+        'https://www.linkedin.com/in/salih-maral-78159a22a/',
         'https://x.com/salihmaral',
         'https://www.facebook.com/salihmaral.de',
-        'https://www.instagram.com/salihmaral.de',
-        'https://www.xing.com/profile/Salih_Maral'
+        'https://www.instagram.com/salihmaral.de'
       ]
     },
     {
@@ -142,10 +137,10 @@ const jsonLd = {
       '@type': 'Person',
       '@id': 'https://salihmaral.de/#person',
       name: 'Salih Maral',
-      jobTitle: 'Digital Marketing Expert',
+      jobTitle: 'Digital Marketing Expert & Google Partner',
       url: 'https://salihmaral.de',
       image: 'https://salihmaral.de/logo.png',
-      description: 'Professioneller Digital Marketing Experte mit 15+ Jahren Erfahrung in Google Ads, Meta Ads, TikTok Ads, X Ads, SEO und Generative Engine Optimization (GEO).',
+      description: 'Professioneller Digital Marketing Experte & Google Partner mit 17+ Jahren Erfahrung in Google Ads, Meta Ads, TikTok Ads, SEO, Generative Engine Optimization (GEO) und Server-Side Tracking.',
       worksFor: { '@id': 'https://salihmaral.de/#organization' },
       knowsAbout: [
         'Google Ads',
@@ -165,9 +160,8 @@ const jsonLd = {
       ],
       knowsLanguage: ['de', 'tr', 'en'],
       sameAs: [
-        'https://www.linkedin.com/in/salihmaral',
-        'https://x.com/salihmaral',
-        'https://www.xing.com/profile/Salih_Maral'
+        'https://www.linkedin.com/in/salih-maral-78159a22a/',
+        'https://x.com/salihmaral'
       ]
     },
     {

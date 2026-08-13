@@ -249,7 +249,7 @@ export default function BlogDetailPage() {
               />
               <div>
                 <p className="text-xs font-bold text-slate-900">Salih Maral</p>
-                <p className="text-[11px] text-slate-500 font-medium">Google Ads & SEO Experte (15+ Jahre Erfahrung)</p>
+                <p className="text-[11px] text-slate-500 font-medium">Google Ads & SEO Experte (17+ Jahre Erfahrung)</p>
               </div>
             </div>
             <div className="flex items-center gap-5 text-xs text-slate-500">

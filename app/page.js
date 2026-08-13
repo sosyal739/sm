@@ -880,7 +880,7 @@ export default function Home({ initialLang = 'de' }) {
           <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-6">
             <Card className="border-2 border-[#4285F4]/20">
               <CardContent className="pt-6 text-center">
-                <p className="text-4xl font-bold text-[#4285F4]">15+</p>
+                <p className="text-4xl font-bold text-[#4285F4]">17+</p>
                 <p className="text-sm text-muted-foreground mt-2">{t.stats.experience}</p>
               </CardContent>
             </Card>

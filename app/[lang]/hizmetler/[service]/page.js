@@ -75,7 +75,7 @@ export default function ServiceDetailPage() {
     'google-ads': {
       title: lang === 'de' ? 'Google Ads Management' : lang === 'en' ? 'Google Ads Management' : 'Google Ads Yönetimi',
       subtitle: lang === 'de' ? 'Mit datengesteuerten Strategien Ihr Unternehmen wachsen lassen' : lang === 'en' ? 'Grow your business with data-driven strategies' : 'Veri odaklı stratejilerle işletmenizi büyütün',
-      description: lang === 'de' ? 'Mit 15 Jahren Erfahrung auf Googles Werbeplattform nutzen wir Ihr Werbebudget am effizientesten und erzielen messbare Ergebnisse.' : lang === 'en' ? 'With 15 years of experience on Google\'s advertising platform, we use your ad budget most efficiently and achieve measurable results.' : 'Google\'ın reklam platformunda 15 yıllık deneyimimizle, reklam bütçenizi en verimli şekilde kullanıyor ve ölçülebilir sonuçlar elde ediyoruz.',
+      description: lang === 'de' ? 'Mit 17 Jahren Erfahrung auf Googles Werbeplattform nutzen wir Ihr Werbebudget am effizientesten und erzielen messbare Ergebnisse.' : lang === 'en' ? 'With 17 years of experience on Google\'s advertising platform, we use your ad budget most efficiently and achieve measurable results.' : 'Google\'ın reklam platformunda 17 yıllık deneyimimizle, reklam bütçenizi en verimli şekilde kullanıyor ve ölçülebilir sonuçlar elde ediyoruz.',
       badge: lang === 'de' ? 'Google Partner Zertifiziert' : lang === 'en' ? 'Google Partner Certified' : 'Google Partner Sertifikalı',
       primaryColor: '#4285F4',
       secondaryColor: '#34A853',
@@ -93,7 +93,7 @@ export default function ServiceDetailPage() {
         { value: '+250%', label: lang === 'de' ? 'Durchschn. ROI-Steigerung' : lang === 'en' ? 'Average ROI Increase' : 'Ortalama ROI Artışı', trend: lang === 'de' ? '+32% ggü. Vormonat' : lang === 'en' ? '+32% vs last month' : '+32% geçen aya göre' },
         { value: '500+', label: lang === 'de' ? 'Erfolgreiche Kampagnen' : lang === 'en' ? 'Successful Campaigns' : 'Başarılı Kampanya', trend: lang === 'de' ? 'Aktives Management' : lang === 'en' ? 'Active management' : 'Aktif yönetim' },
         { value: '%98', label: lang === 'de' ? 'Kundenzufriedenheit' : lang === 'en' ? 'Customer Satisfaction' : 'Müşteri Memnuniyeti', trend: lang === 'de' ? 'Letzte 12 Monate' : lang === 'en' ? 'Last 12 months' : 'Son 12 ay' },
-        { value: '15+', label: lang === 'de' ? 'Jahre Erfahrung' : lang === 'en' ? 'Years Experience' : 'Yıllık Deneyim', trend: lang === 'de' ? 'Zertifizierter Experte' : lang === 'en' ? 'Certified expert' : 'Sertifikalı uzman' }
+        { value: '17+', label: lang === 'de' ? 'Jahre Erfahrung' : lang === 'en' ? 'Years Experience' : 'Yıllık Deneyim', trend: lang === 'de' ? 'Zertifizierter Experte' : lang === 'en' ? 'Certified expert' : 'Sertifikalı uzman' }
       ],
       features: [
         {
@@ -454,7 +454,7 @@ export default function ServiceDetailPage() {
       title: lang === 'de' ? 'SEO Dienstleistungen' : lang === 'en' ? 'SEO Services' : 'SEO Hizmetleri',
       subtitle: lang === 'de' ? 'Organisch auf Seite 1 bei Google erscheinen' : lang === 'en' ? 'Appear organically on page 1 of Google' : 'Google\'da organik olarak 1. sayfada yer alın',
       description: lang === 'de' ? 'Mit Suchmaschinenoptimierung bringen wir Ihre Website auf die erste Seite von Google. Professionelle SEO-Lösungen für nachhaltigen organischen Traffic und langfristige digitale Präsenz.' : lang === 'en' ? 'With search engine optimization, we bring your website to Google\'s first page. Professional SEO solutions for sustainable organic traffic and long-term digital presence.' : 'Arama motoru optimizasyonu ile web sitenizi Google\'ın ilk sayfasına taşıyoruz. Sürdürülebilir organik trafik ve uzun vadeli dijital varlık için profesyonel SEO çözümleri.',
-      badge: lang === 'de' ? 'SEO Experte - 15 Jahre' : lang === 'en' ? 'SEO Expert - 15 Years' : 'SEO Uzmanı - 15 Yıl',
+      badge: lang === 'de' ? 'SEO Experte - 17 Jahre' : lang === 'en' ? 'SEO Expert - 17 Years' : 'SEO Uzmanı - 17 Yıl',
       primaryColor: '#0F9D58',
       secondaryColor: '#4285F4',
       accentColor: '#F4B400',
