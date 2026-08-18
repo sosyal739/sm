@@ -871,85 +871,152 @@ export default function ServiceDetailPage() {
         </div>
       </section>
 
-      {/* Services Grid */}
-      <section className="py-20 px-4" style={{ background: `linear-gradient(135deg, ${data.gradientFrom}05 0%, white 50%, ${data.gradientTo}05 100%)` }}>
-        <div className="container mx-auto">
+      {/* Services Grid (Redesigned Modern Glass & Badge UI) */}
+      <section className="py-24 px-4 bg-gradient-to-b from-white via-slate-50/50 to-white relative overflow-hidden">
+        {/* Subtle background glow */}
+        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[500px] bg-blue-100/30 rounded-full blur-3xl pointer-events-none -z-10"></div>
+
+        <div className="container mx-auto max-w-7xl">
           <div className="text-center mb-16">
-            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
-              {lang === 'de' ? 'Servicedetails' : lang === 'en' ? 'Service Details' : 'Hizmet Detayları'}
+            <div className="inline-flex items-center space-x-2 bg-blue-50 border border-blue-200/80 rounded-full px-4 py-1.5 mb-4 shadow-sm">
+              <span className="w-2 h-2 rounded-full bg-[#4285F4]"></span>
+              <span className="text-xs font-bold uppercase tracking-wider text-[#4285F4]">
+                {lang === 'de' ? 'Umfassendes Leistungsportfolio' : lang === 'en' ? 'Comprehensive Service Portfolio' : 'Kapsamlı Hizmet Portföyü'}
+              </span>
+            </div>
+            <h2 className="text-3xl md:text-5xl font-black text-gray-900 mb-4 tracking-tight">
+              {lang === 'de' ? (
+                <>Spezialisierte <span className="text-[#4285F4]">Google Ads</span> Kampagnenarten</>
+              ) : lang === 'en' ? (
+                <>Specialized <span className="text-[#4285F4]">Google Ads</span> Campaign Types</>
+              ) : (
+                <>Uzmanlaşmış <span className="text-[#4285F4]">Google Ads</span> Kampanya Modelleri</>
+              )}
             </h2>
-            <p className="text-lg text-gray-500 max-w-2xl mx-auto">
-              {lang === 'de' ? 'Wir bieten umfassende Lösungen nach den Bedürfnissen Ihres Unternehmens' : lang === 'en' ? 'We offer comprehensive solutions based on your business needs' : 'İşletmenizin ihtiyaçlarına göre kapsamlı çözümler sunuyoruz'}
+            <p className="text-base md:text-lg text-gray-600 max-w-2xl mx-auto leading-relaxed">
+              {lang === 'de'
+                ? 'Jedes Kampagnenformat wird präzise auf Ihre Zielgruppe, Branche und Wachstumsziele abgestimmt.'
+                : lang === 'en'
+                ? 'Every campaign format is precisely calibrated to your target audience, industry, and revenue goals.'
+                : 'Her kampanya formatı hedef kitlenize, sektörünüze ve büyüme hedeflerinize göre hassas şekilde kurgulanır.'}
             </p>
           </div>
           
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
             {data.features.map((f, i) => {
               const IconComponent = f.icon
-              const cardColors = [
-                { border: '#4285F4', bg: 'rgba(66,133,244,0.06)', hoverBg: 'rgba(66,133,244,0.12)', glow: 'rgba(66,133,244,0.15)', accent: 'linear-gradient(135deg, #4285F4, #34A853)' },
-                { border: '#EA4335', bg: 'rgba(234,67,53,0.06)', hoverBg: 'rgba(234,67,53,0.12)', glow: 'rgba(234,67,53,0.15)', accent: 'linear-gradient(135deg, #EA4335, #FBBC04)' },
-                { border: '#FBBC04', bg: 'rgba(251,188,4,0.06)', hoverBg: 'rgba(251,188,4,0.12)', glow: 'rgba(251,188,4,0.15)', accent: 'linear-gradient(135deg, #FBBC04, #34A853)' },
-                { border: '#34A853', bg: 'rgba(52,168,83,0.06)', hoverBg: 'rgba(52,168,83,0.12)', glow: 'rgba(52,168,83,0.15)', accent: 'linear-gradient(135deg, #34A853, #4285F4)' },
-                { border: '#1877F2', bg: 'rgba(24,119,242,0.06)', hoverBg: 'rgba(24,119,242,0.12)', glow: 'rgba(24,119,242,0.15)', accent: 'linear-gradient(135deg, #1877F2, #00C6FF)' },
-                { border: '#FF6D00', bg: 'rgba(255,109,0,0.06)', hoverBg: 'rgba(255,109,0,0.12)', glow: 'rgba(255,109,0,0.15)', accent: 'linear-gradient(135deg, #FF6D00, #EA4335)' },
+              const cardThemes = [
+                {
+                  color: '#4285F4',
+                  gradient: 'from-[#4285F4] to-[#2b75f0]',
+                  bgHover: 'hover:border-blue-300 hover:shadow-blue-500/10',
+                  badgeBg: 'bg-blue-50 text-[#4285F4] border-blue-200/60',
+                  pillBg: 'bg-blue-50/50 hover:bg-blue-50 text-slate-800 border-blue-100/80',
+                  focusTag: lang === 'de' ? '🎯 Hohe Kaufabsicht' : lang === 'en' ? '🎯 High Purchase Intent' : '🎯 Yüksek Satın Alma Niyeti'
+                },
+                {
+                  color: '#EA4335',
+                  gradient: 'from-[#EA4335] to-[#d93025]',
+                  bgHover: 'hover:border-red-300 hover:shadow-red-500/10',
+                  badgeBg: 'bg-red-50 text-[#EA4335] border-red-200/60',
+                  pillBg: 'bg-red-50/50 hover:bg-red-50 text-slate-800 border-red-100/80',
+                  focusTag: lang === 'de' ? '🌐 2M+ Websites Reichweite' : lang === 'en' ? '🌐 2M+ Sites Reach' : '🌐 2M+ Sitede Görünürlük'
+                },
+                {
+                  color: '#FBBC04',
+                  gradient: 'from-[#FBBC04] to-[#f59e0b]',
+                  bgHover: 'hover:border-amber-300 hover:shadow-amber-500/10',
+                  badgeBg: 'bg-amber-50 text-amber-700 border-amber-200/60',
+                  pillBg: 'bg-amber-50/50 hover:bg-amber-50 text-slate-800 border-amber-100/80',
+                  focusTag: lang === 'de' ? '🛍️ ROAS & E-Commerce Fokus' : lang === 'en' ? '🛍️ ROAS & E-Commerce' : '🛍️ E-Ticaret & Maksimum ROAS'
+                },
+                {
+                  color: '#34A853',
+                  gradient: 'from-[#34A853] to-[#1e8e3e]',
+                  bgHover: 'hover:border-emerald-300 hover:shadow-emerald-500/10',
+                  badgeBg: 'bg-emerald-50 text-[#34A853] border-emerald-200/60',
+                  pillBg: 'bg-emerald-50/50 hover:bg-emerald-50 text-slate-800 border-emerald-100/80',
+                  focusTag: lang === 'de' ? '🎬 Storytelling & Branding' : lang === 'en' ? '🎬 Storytelling & Reach' : '🎬 Hikaye Anlatımı & Marka'
+                },
+                {
+                  color: '#4285F4',
+                  gradient: 'from-[#4285F4] via-[#EA4335] to-[#FBBC04]',
+                  bgHover: 'hover:border-indigo-300 hover:shadow-indigo-500/10',
+                  badgeBg: 'bg-indigo-50 text-indigo-600 border-indigo-200/60',
+                  pillBg: 'bg-indigo-50/50 hover:bg-indigo-50 text-slate-800 border-indigo-100/80',
+                  focusTag: lang === 'de' ? '⚡ Google AI & Smart Bidding' : lang === 'en' ? '⚡ Google AI & Multi-Channel' : '⚡ Google Yapay Zekası & Otomasyon'
+                },
+                {
+                  color: '#FF6D00',
+                  gradient: 'from-[#FF6D00] to-[#e65100]',
+                  bgHover: 'hover:border-orange-300 hover:shadow-orange-500/10',
+                  badgeBg: 'bg-orange-50 text-orange-600 border-orange-200/60',
+                  pillBg: 'bg-orange-50/50 hover:bg-orange-50 text-slate-800 border-orange-100/80',
+                  focusTag: lang === 'de' ? '📍 Google Maps & Regionale Kunden' : lang === 'en' ? '📍 Google Maps & Local Calls' : '📍 Google Haritalar & Yerel Müşteri'
+                },
               ]
-              const cc = cardColors[i % cardColors.length]
+              const theme = cardThemes[i % cardThemes.length]
+
               return (
                 <div
                   key={i}
                   data-testid={`feature-card-${i}`}
-                  className="group relative rounded-xl overflow-hidden transition-all duration-500 ease-out hover:-translate-y-2 hover:scale-[1.02]"
-                  style={{
-                    background: cc.bg,
-                    boxShadow: `0 4px 20px ${cc.glow}`,
-                  }}
-                  onMouseEnter={(e) => {
-                    e.currentTarget.style.background = cc.hoverBg
-                    e.currentTarget.style.boxShadow = `0 12px 40px ${cc.glow}, 0 0 0 1px ${cc.border}`
-                  }}
-                  onMouseLeave={(e) => {
-                    e.currentTarget.style.background = cc.bg
-                    e.currentTarget.style.boxShadow = `0 4px 20px ${cc.glow}`
-                  }}
+                  className={`group relative bg-white rounded-3xl p-7 md:p-8 border border-slate-200/80 shadow-lg hover:shadow-2xl transition-all duration-300 ease-out hover:-translate-y-2 flex flex-col justify-between overflow-hidden ${theme.bgHover}`}
                 >
-                  {/* Top gradient accent bar */}
-                  <div className="h-1.5 w-full" style={{ background: cc.accent }}></div>
-                  
-                  {/* Left colored border */}
-                  <div className="absolute left-0 top-0 bottom-0 w-1 transition-all duration-500 group-hover:w-1.5" style={{ background: cc.accent }}></div>
+                  {/* Top Subtle Color Accent Line */}
+                  <div className={`absolute top-0 left-0 right-0 h-1.5 bg-gradient-to-r ${theme.gradient}`}></div>
 
-                  <Card className="bg-transparent border-0 shadow-none rounded-none">
-                    <CardContent className="p-8 pl-6">
+                  <div>
+                    {/* Header Row: Icon + Badge */}
+                    <div className="flex items-center justify-between mb-6">
                       <div
-                        className="w-14 h-14 rounded-xl flex items-center justify-center mb-6 transition-all duration-500 group-hover:scale-110 group-hover:rotate-[-6deg]"
-                        style={{ backgroundColor: `${cc.border}18`, boxShadow: `0 4px 15px ${cc.glow}` }}
+                        className={`w-14 h-14 rounded-2xl flex items-center justify-center shadow-md bg-gradient-to-br ${theme.gradient} text-white transition-all duration-300 group-hover:scale-110 group-hover:rotate-[-4deg]`}
                       >
-                        <IconComponent className="h-7 w-7 transition-colors duration-300" style={{ color: cc.border }} />
+                        <IconComponent className="h-7 w-7 text-white" />
                       </div>
-                      
-                      <div className="mb-4">
-                        <p className="text-xs font-medium uppercase tracking-wider mb-1 transition-colors duration-300" style={{ color: cc.border }}>{f.subtitle}</p>
-                        <h3 className="text-xl font-bold text-gray-900 group-hover:text-gray-800 transition-colors duration-300">{f.title}</h3>
-                      </div>
-                      
-                      <p className="text-gray-500 text-sm mb-6 leading-relaxed">{f.desc}</p>
 
-                      <div className="space-y-2.5">
-                        {f.items.map((item, idx) => (
-                          <div key={idx} className="flex items-center space-x-2.5 group/item">
-                            <div className="w-5 h-5 rounded-full flex items-center justify-center flex-shrink-0 transition-all duration-300 group-hover/item:scale-110" style={{ backgroundColor: `${cc.border}15` }}>
-                              <CheckCircle className="h-3.5 w-3.5 flex-shrink-0" style={{ color: cc.border }} />
-                            </div>
-                            <span className="text-sm text-gray-600 group-hover/item:text-gray-800 transition-colors duration-200">{item}</span>
+                      <span className={`text-[11px] font-bold uppercase tracking-wider px-3 py-1 rounded-full border shadow-2xs ${theme.badgeBg}`}>
+                        {f.subtitle}
+                      </span>
+                    </div>
+
+                    {/* Title & Description */}
+                    <h3 className="text-xl md:text-2xl font-bold text-gray-900 mb-3 group-hover:text-[#4285F4] transition-colors duration-200">
+                      {f.title}
+                    </h3>
+                    <p className="text-gray-600 text-sm leading-relaxed mb-6">
+                      {f.desc}
+                    </p>
+
+                    {/* Feature Items as Clean Pills */}
+                    <div className="space-y-2.5 mb-6">
+                      {f.items.map((item, idx) => (
+                        <div
+                          key={idx}
+                          className={`flex items-center space-x-3 px-3.5 py-2 rounded-xl border text-xs md:text-sm font-medium transition-colors ${theme.pillBg}`}
+                        >
+                          <div
+                            className="w-4 h-4 rounded-full flex items-center justify-center flex-shrink-0 text-white"
+                            style={{ backgroundColor: theme.color }}
+                          >
+                            <svg className="w-2.5 h-2.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="3">
+                              <path strokeLinecap="round" strokeLinejoin="round" d="M5 13l4 4L19 7" />
+                            </svg>
                           </div>
-                        ))}
-                      </div>
-                    </CardContent>
-                  </Card>
-                  
-                  {/* Hover glow effect */}
-                  <div className="absolute -bottom-4 -right-4 w-24 h-24 rounded-full opacity-0 group-hover:opacity-30 transition-opacity duration-700 blur-2xl" style={{ background: cc.border }}></div>
+                          <span>{item}</span>
+                        </div>
+                      ))}
+                    </div>
+                  </div>
+
+                  {/* Bottom Goal / Strategic Focus Tag */}
+                  <div className="pt-4 border-t border-slate-100 flex items-center justify-between text-xs text-gray-500 font-medium">
+                    <span className="font-semibold text-slate-700">{theme.focusTag}</span>
+                    <span className="text-[#4285F4] font-bold flex items-center gap-1 group-hover:translate-x-1 transition-transform">
+                      {lang === 'de' ? 'Details' : lang === 'en' ? 'Details' : 'İncele'} ➔
+                    </span>
+                  </div>
+
                 </div>
               )
             })}
