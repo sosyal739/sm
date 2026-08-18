@@ -74,8 +74,16 @@ export default function ServiceDetailPage() {
   const servicesData = {
     'google-ads': {
       title: lang === 'de' ? 'Google Ads Management' : lang === 'en' ? 'Google Ads Management' : 'Google Ads Yönetimi',
-      subtitle: lang === 'de' ? 'Mit datengesteuerten Strategien Ihr Unternehmen wachsen lassen' : lang === 'en' ? 'Grow your business with data-driven strategies' : 'Veri odaklı stratejilerle işletmenizi büyütün',
-      description: lang === 'de' ? 'Mit 17 Jahren Erfahrung auf Googles Werbeplattform nutzen wir Ihr Werbebudget am effizientesten und erzielen messbare Ergebnisse.' : lang === 'en' ? 'With 17 years of experience on Google\'s advertising platform, we use your ad budget most efficiently and achieve measurable results.' : 'Google\'ın reklam platformunda 17 yıllık deneyimimizle, reklam bütçenizi en verimli şekilde kullanıyor ve ölçülebilir sonuçlar elde ediyoruz.',
+      subtitle: lang === 'de'
+        ? 'Google Ads, der wirklich funktioniert — messbare Ergebnisse, kein Streuverlust.'
+        : lang === 'en'
+        ? 'Google Ads that actually works — measurable results, zero wasted budget.'
+        : 'Gerçekten işe yarayan Google Ads — ölçülebilir sonuçlar, sıfır boşa harcama.',
+      description: lang === 'de'
+        ? 'Als zertifizierter Google Partner mit über 17 Jahren Erfahrung verwalten wir mehr als 720 Kampagnen — und jeder investierte Euro arbeitet für Ihre Umsatzziele. Sie sehen, was wir tun. Sie messen, was es bringt.'
+        : lang === 'en'
+        ? 'As a certified Google Partner with 17+ years of experience managing 720+ campaigns, every euro you invest works toward your revenue goals. You see what we do. You measure what it delivers.'
+        : 'Google Partner sertifikalı, 17+ yıllık deneyimle 720\'den fazla kampanya yönetiyoruz. Yatırımınızın her eurosu gelir hedefleriniz için çalışır. Ne yaptığımızı görürsünüz. Ne getirdiğini ölçersiniz.',
       badge: lang === 'de' ? 'Google Partner Zertifiziert' : lang === 'en' ? 'Google Partner Certified' : 'Google Partner Sertifikalı',
       primaryColor: '#4285F4',
       secondaryColor: '#34A853',
@@ -90,10 +98,26 @@ export default function ServiceDetailPage() {
         </svg>
       ),
       stats: [
-        { value: '+250%', label: lang === 'de' ? 'Durchschn. ROI-Steigerung' : lang === 'en' ? 'Average ROI Increase' : 'Ortalama ROI Artışı', trend: lang === 'de' ? '+32% ggü. Vormonat' : lang === 'en' ? '+32% vs last month' : '+32% geçen aya göre' },
-        { value: '500+', label: lang === 'de' ? 'Erfolgreiche Kampagnen' : lang === 'en' ? 'Successful Campaigns' : 'Başarılı Kampanya', trend: lang === 'de' ? 'Aktives Management' : lang === 'en' ? 'Active management' : 'Aktif yönetim' },
-        { value: '%98', label: lang === 'de' ? 'Kundenzufriedenheit' : lang === 'en' ? 'Customer Satisfaction' : 'Müşteri Memnuniyeti', trend: lang === 'de' ? 'Letzte 12 Monate' : lang === 'en' ? 'Last 12 months' : 'Son 12 ay' },
-        { value: '17+', label: lang === 'de' ? 'Jahre Erfahrung' : lang === 'en' ? 'Years Experience' : 'Yıllık Deneyim', trend: lang === 'de' ? 'Zertifizierter Experte' : lang === 'en' ? 'Certified expert' : 'Sertifikalı uzman' }
+        {
+          value: '1,74M',
+          label: lang === 'de' ? 'Klicks generiert' : lang === 'en' ? 'Clicks generated' : 'Üretilen tıklama',
+          trend: lang === 'de' ? 'Seit 2016 · alle Kampagnen' : lang === 'en' ? 'Since 2016 · all campaigns' : '2016\'dan bu yana · tüm kampanyalar'
+        },
+        {
+          value: '150M',
+          label: lang === 'de' ? 'Anzeigen-Impressionen' : lang === 'en' ? 'Ad impressions' : 'Reklam gösterimi',
+          trend: lang === 'de' ? 'Gesamte Reichweite' : lang === 'en' ? 'Total reach built' : 'Toplam erişim'
+        },
+        {
+          value: '208K',
+          label: lang === 'de' ? 'Conversions erzielt' : lang === 'en' ? 'Conversions achieved' : 'Elde edilen dönüşüm',
+          trend: lang === 'de' ? 'Echte Kundenaktionen' : lang === 'en' ? 'Real customer actions' : 'Gerçek müşteri eylemleri'
+        },
+        {
+          value: '€1,13M',
+          label: lang === 'de' ? 'Werbebudget verwaltet' : lang === 'en' ? 'Ad budget managed' : 'Yönetilen reklam bütçesi',
+          trend: lang === 'de' ? 'Effizient für Kunden' : lang === 'en' ? 'Efficiently for clients' : 'Müşteriler için verimli'
+        }
       ],
       features: [
         {
@@ -1078,21 +1102,43 @@ export default function ServiceDetailPage() {
                 ))}
               </div>
 
-              {/* Stats Row */}
-              <div className="grid grid-cols-3 gap-6 mt-12 max-w-3xl mx-auto">
-                <div className="text-center p-6 bg-gray-50 rounded-xl">
-                  <p className="text-3xl font-bold" style={{ color: data.primaryColor }}>%98</p>
-                  <p className="text-sm text-gray-500">{lang === 'de' ? 'Kundenzufriedenheit' : lang === 'en' ? 'Customer Satisfaction' : 'Müşteri Memnuniyeti'}</p>
+              {/* Real Results — Metrics from real Google Ads account */}
+              <div className="mt-16 rounded-2xl overflow-hidden" style={{ background: 'linear-gradient(135deg, #4285F410 0%, #34A85308 50%, #FBBC0508 100%)', border: '1px solid #4285F420' }}>
+                <div className="px-8 pt-8 pb-2 text-center">
+                  <p className="text-xs font-semibold uppercase tracking-widest mb-1" style={{ color: '#4285F4' }}>
+                    {lang === 'de' ? 'ECHTE DATEN AUS UNSEREM GOOGLE ADS KONTO' : lang === 'en' ? 'REAL DATA FROM OUR GOOGLE ADS ACCOUNT' : 'GERÇEK GOOGLE ADS HESAP VERİLERİMİZ'}
+                  </p>
+                  <p className="text-sm text-gray-400 mb-6">
+                    {lang === 'de' ? 'Mai 2016 – Aug 2026 · 720+ verwaltete Kampagnen' : lang === 'en' ? 'May 2016 – Aug 2026 · 720+ managed campaigns' : 'Mayıs 2016 – Ağustos 2026 · 720\'den fazla yönetilen kampanya'}
+                  </p>
                 </div>
-                <div className="text-center p-6 bg-gray-50 rounded-xl">
-                  <p className="text-3xl font-bold" style={{ color: data.secondaryColor }}>4.5x</p>
-                  <p className="text-sm text-gray-500">{lang === 'de' ? 'Durchschnittlicher ROAS' : lang === 'en' ? 'Average ROAS' : 'Ortalama ROAS'}</p>
+                <div className="grid grid-cols-2 md:grid-cols-3 gap-px bg-gray-100">
+                  {[
+                    { value: '1,74M', icon: '🖱️', label: lang === 'de' ? 'Klicks generiert' : lang === 'en' ? 'Clicks generated' : 'Üretilen tıklama', color: '#4285F4' },
+                    { value: '150M', icon: '👁️', label: lang === 'de' ? 'Impressionen' : lang === 'en' ? 'Impressions' : 'Gösterim', color: '#EA4335' },
+                    { value: '208K', icon: '✅', label: lang === 'de' ? 'Conversions' : lang === 'en' ? 'Conversions' : 'Dönüşüm', color: '#34A853' },
+                    { value: '€1,13M', icon: '💰', label: lang === 'de' ? 'Budget verwaltet' : lang === 'en' ? 'Budget managed' : 'Yönetilen bütçe', color: '#FBBC05' },
+                    { value: '720+', icon: '🚀', label: lang === 'de' ? 'Kampagnen' : lang === 'en' ? 'Campaigns' : 'Kampanya', color: '#4285F4' },
+                    { value: '26%', icon: '⚡', label: lang === 'de' ? 'Ø Interaktionsrate' : lang === 'en' ? 'Avg. interaction rate' : 'Ort. etkileşim oranı', color: '#34A853' },
+                  ].map((m, i) => (
+                    <div key={i} className="bg-white px-6 py-5 flex flex-col items-center text-center hover:bg-gray-50 transition-colors">
+                      <span className="text-2xl mb-1">{m.icon}</span>
+                      <p className="text-2xl md:text-3xl font-bold mb-0.5" style={{ color: m.color }}>{m.value}</p>
+                      <p className="text-xs text-gray-500 font-medium">{m.label}</p>
+                    </div>
+                  ))}
                 </div>
-                <div className="text-center p-6 bg-gray-50 rounded-xl">
-                  <p className="text-3xl font-bold" style={{ color: data.accentColor }}>7/24</p>
-                  <p className="text-sm text-gray-500">{lang === 'de' ? 'Kontoüberwachung' : lang === 'en' ? 'Account Monitoring' : 'Hesap Takibi'}</p>
+                <div className="px-8 py-4 text-center">
+                  <p className="text-xs text-gray-400 italic">
+                    {lang === 'de'
+                      ? 'Daten aus dem eigenen Google Ads & Analytics Konto von Salih Maral — keine fiktiven Zahlen.'
+                      : lang === 'en'
+                      ? "Data from Salih Maral's own Google Ads & Analytics account — no fictional numbers."
+                      : 'Salih Maral\'ın kendi Google Ads & Analytics hesabından alınan gerçek veriler — kurgusal rakamlar değil.'}
+                  </p>
                 </div>
               </div>
+
             </div>
           </div>
         </section>
@@ -1103,11 +1149,24 @@ export default function ServiceDetailPage() {
         <div className="container mx-auto">
           <div className="max-w-3xl mx-auto text-center">
             <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">
-              {lang === 'de' ? 'Starten Sie mit einer kostenlosen Analyse' : lang === 'en' ? 'Start with a Free Analysis' : 'Ücretsiz Analiz ile Başlayın'}
+              {service === 'google-ads'
+                ? (lang === 'de'
+                    ? 'Kostenlose Google Ads Analyse — in 30 Minuten.'
+                    : lang === 'en'
+                    ? 'Free Google Ads Analysis — in 30 Minutes.'
+                    : 'Ücretsiz Google Ads Analizi — 30 Dakikada.')
+                : (lang === 'de' ? 'Starten Sie mit einer kostenlosen Analyse' : lang === 'en' ? 'Start with a Free Analysis' : 'Ücretsiz Analiz ile Başlayın')}
             </h2>
             <p className="text-lg text-white/80 mb-8">
-              {lang === 'de' ? 'Wir analysieren Ihre aktuelle Situation und bieten Ihnen maßgeschneiderte Strategieempfehlungen. Keine Kosten, keine Verpflichtungen.' : lang === 'en' ? 'We analyze your current situation and offer you customized strategy recommendations. No costs, no commitments.' : 'Mevcut durumunuzu analiz ediyor, size özel strateji önerileri sunuyoruz. Hiçbir ücret veya taahhüt yok.'}
+              {service === 'google-ads'
+                ? (lang === 'de'
+                    ? 'Wir prüfen Ihre Kampagnen kostenlos und zeigen Ihnen genau, wo Ihr Budget verloren geht — und wie Sie es zurückgewinnen. Kein Fachjargon. Keine Verkaufsgespräche. Nur echte Handlungsempfehlungen.'
+                    : lang === 'en'
+                    ? 'We review your campaigns for free and show you exactly where your budget is being wasted — and how to win it back. No jargon. No sales pitch. Just real, actionable insights.'
+                    : 'Kampanyalarınızı ücretsiz inceliyor ve bütçenizin tam olarak nerede heba olduğunu gösteriyoruz — ve bunu nasıl geri kazanabileceğinizi. Teknik jargon yok. Satış konuşması yok. Yalnızca somut öneriler.')
+                : (lang === 'de' ? 'Wir analysieren Ihre aktuelle Situation und bieten Ihnen maßgeschneiderte Strategieempfehlungen. Keine Kosten, keine Verpflichtungen.' : lang === 'en' ? 'We analyze your current situation and offer you customized strategy recommendations. No costs, no commitments.' : 'Mevcut durumunuzu analiz ediyor, size özel strateji önerileri sunuyoruz. Hiçbir ücret veya taahhüt yok.')}
             </p>
+
             
             <div className="flex flex-wrap justify-center gap-4 mb-8">
               <Button size="lg" className="bg-white hover:bg-gray-100 px-8 shadow-lg transition-all duration-300 hover:scale-105" style={{ color: data.primaryColor }} asChild>
