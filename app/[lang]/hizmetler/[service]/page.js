@@ -197,8 +197,16 @@ export default function ServiceDetailPage() {
 
     'meta-ads': {
       title: lang === 'de' ? 'Meta Ads Management' : lang === 'en' ? 'Meta Ads Management' : 'Meta Ads Yönetimi',
-      subtitle: lang === 'de' ? 'Erreichen Sie Millionen auf Facebook & Instagram' : lang === 'en' ? 'Reach millions on Facebook & Instagram' : 'Facebook & Instagram\'da milyonlara ulaşın',
-      description: lang === 'de' ? 'Erreichen Sie Ihre Zielgruppe auf Facebook und Instagram mit Metas leistungsstarker Werbeplattform. Steigern Sie Ihre Markenbekanntheit mit detailliertem demografischem Targeting und visuell ausgerichteten Kampagnen.' : lang === 'en' ? 'Reach your target audience on Facebook and Instagram with Meta\'s powerful advertising platform. Increase your brand awareness with detailed demographic targeting and visually focused campaigns.' : 'Meta\'nın güçlü reklam platformuyla Facebook ve Instagram\'da hedef kitlenize ulaşın. Detaylı demografik hedefleme ve görsel odaklı kampanyalarla marka bilinirliğinizi artırın.',
+      subtitle: lang === 'de'
+        ? 'Facebook & Instagram Ads, die profitabel skalieren — von Advantage+ bis Retargeting.'
+        : lang === 'en'
+        ? 'Facebook & Instagram Ads that scale profitably — from Advantage+ to Retargeting.'
+        : 'Kârlı ölçeklenen Facebook & Instagram reklamları — Advantage+\'tan Retargeting\'e.',
+      description: lang === 'de'
+        ? 'Mit präzisem demografischen Targeting, Conversions API (CAPI) und hochkonvertierenden Kreativ-Konzepten verwandeln wir Facebook- und Instagram-Nutzer in kaufende Kunden. Messbar, datenbasiert und mit maximalem ROAS.'
+        : lang === 'en'
+        ? 'With precision demographic targeting, Conversions API (CAPI), and high-converting creative frameworks, we turn Facebook and Instagram users into paying customers. Measurable, data-driven, and with maximum ROAS.'
+        : 'Hassas demografik hedefleme, Conversions API (CAPI) ve yüksek dönüşümlü kreatif konseptlerle Facebook ve Instagram kullanıcılarını sadık müşterilere dönüştürüyoruz. Ölçülebilir, veri odaklı ve maksimum ROAS ile.',
       badge: 'Meta Business Partner',
       primaryColor: '#1877F2',
       secondaryColor: '#E4405F',
@@ -211,10 +219,10 @@ export default function ServiceDetailPage() {
         </svg>
       ),
       stats: [
-        { value: '3.5B+', label: lang === 'de' ? 'Aktive Nutzer' : lang === 'en' ? 'Active Users' : 'Aktif Kullanıcı', trend: 'Facebook + Instagram' },
-        { value: '+180%', label: lang === 'de' ? 'Engagement-Steigerung' : lang === 'en' ? 'Engagement Increase' : 'Etkileşim Artışı', trend: lang === 'de' ? 'Durchschnittsergebnis' : lang === 'en' ? 'Average result' : 'Ortalama sonuç' },
-        { value: '%94', label: lang === 'de' ? 'Zielgruppengenauigkeit' : lang === 'en' ? 'Target Audience Accuracy' : 'Hedef Kitle Doğruluğu', trend: lang === 'de' ? 'Demografisches Targeting' : lang === 'en' ? 'Demographic targeting' : 'Demografik hedefleme' },
-        { value: '200+', label: lang === 'de' ? 'Erfolgreiche Kampagnen' : lang === 'en' ? 'Successful Campaigns' : 'Başarılı Kampanya', trend: lang === 'de' ? 'Abgeschlossene Projekte' : lang === 'en' ? 'Completed projects' : 'Tamamlanan proje' }
+        { value: '4,2x', label: lang === 'de' ? 'Ø Purchase ROAS' : lang === 'en' ? 'Avg. Purchase ROAS' : 'Ort. Satış ROAS', trend: lang === 'de' ? 'E-Commerce Kampagnen' : lang === 'en' ? 'E-Commerce campaigns' : 'E-Ticaret Kampanyaları' },
+        { value: '85K+', label: lang === 'de' ? 'Generierte Leads' : lang === 'en' ? 'Leads Generated' : 'Üretilen Müşteri Talebi', trend: lang === 'de' ? 'Verifizierte Kontakte' : lang === 'en' ? 'Verified contacts' : 'Doğrulanmış İletişim' },
+        { value: '%92+', label: lang === 'de' ? 'CAPI Event Match' : lang === 'en' ? 'CAPI Event Match' : 'CAPI Eşleşme Oranı', trend: lang === 'de' ? 'Server-Side Tracking' : lang === 'en' ? 'Server-side tracking' : 'Sunucu Taraflı Takip' },
+        { value: '320+', label: lang === 'de' ? 'Skalierte Kampagnen' : lang === 'en' ? 'Scaled Campaigns' : 'Ölçeklenen Kampanya', trend: lang === 'de' ? 'Facebook & Instagram' : lang === 'en' ? 'Facebook & Instagram' : 'Facebook & Instagram' }
       ],
       features: [
         {
@@ -290,8 +298,16 @@ export default function ServiceDetailPage() {
 
     'tiktok-ads': {
       title: lang === 'de' ? 'TikTok Ads Management' : lang === 'en' ? 'TikTok Ads Management' : 'TikTok Ads Yönetimi',
-      subtitle: lang === 'de' ? 'Der effektivste Weg, die Generation Z zu erreichen' : lang === 'en' ? 'The most effective way to reach Gen Z' : 'Z kuşağına ulaşmanın en etkili yolu',
-      description: lang === 'de' ? 'Nutzen Sie die virale Kraft von TikTok. Erreichen Sie ein junges Publikum mit Kurzvideoformaten und steigern Sie Ihre Markenbekanntheit mit trendigen Inhalten.' : lang === 'en' ? 'Leverage TikTok\'s viral power. Reach young audiences with short video formats and multiply your brand awareness with trending content.' : 'TikTok\'un viral gücünden yararlanın. Kısa video formatıyla genç kitleye ulaşın, trend olan içeriklerle marka bilinirliğinizi katlayın.',
+      subtitle: lang === 'de'
+        ? 'Virale Reichweite & Social Commerce — skalieren Sie mit authentischen TikTok Ads.'
+        : lang === 'en'
+        ? 'Viral reach & social commerce — scale with high-converting TikTok Ads.'
+        : 'Viral erişim & sosyal ticaret — yüksek dönüşümlü TikTok reklamlarıyla ölçeklenin.',
+      description: lang === 'de'
+        ? 'Nutzen Sie die algorithmische Power von TikTok: Mit nativen Kurzvideos, Spark Ads und TikTok Shop Integration verwandeln wir Aufmerksamkeit in messbare Umsätze und qualifizierte Leads für die Generation Z und junge Zielgruppen.'
+        : lang === 'en'
+        ? 'Harness TikTok\'s algorithmic power: With native short-form video, Spark Ads, and TikTok Shop integration, we turn attention into measurable revenue and qualified leads for Gen Z and modern audiences.'
+        : 'TikTok\'un algoritmik gücünden yararlanın: Yerel kısa videolar, Spark Ads ve TikTok Shop entegrasyonu ile ilgiyi ölçülebilir ciroya ve nitelikli müşteri talebine dönüştürüyoruz.',
       badge: 'TikTok Marketing Partner',
       primaryColor: '#000000',
       secondaryColor: '#FE2C55',
@@ -304,10 +320,10 @@ export default function ServiceDetailPage() {
         </svg>
       ),
       stats: [
-        { value: '1B+', label: lang === 'de' ? 'Aktive Nutzer' : lang === 'en' ? 'Active Users' : 'Aktif Kullanıcı', trend: lang === 'de' ? 'Monatlich aktiv' : lang === 'en' ? 'Monthly active' : 'Aylık aktif' },
-        { value: '+300%', label: lang === 'de' ? 'Engagement-Rate' : lang === 'en' ? 'Engagement Rate' : 'Etkileşim Oranı', trend: lang === 'de' ? 'Im Vergleich zu anderen Plattformen' : lang === 'en' ? 'Compared to other platforms' : 'Diğer platformlara göre' },
-        { value: '52 min', label: lang === 'de' ? 'Tägliche Nutzung' : lang === 'en' ? 'Daily Usage' : 'Günlük Kullanım', trend: lang === 'de' ? 'Durchschnittliche Zeit' : lang === 'en' ? 'Average time' : 'Ortalama süre' },
-        { value: '%60', label: lang === 'de' ? 'Generation Z' : lang === 'en' ? 'Gen Z' : 'Z Kuşağı', trend: lang === 'de' ? 'Alter 16-24' : lang === 'en' ? 'Age 16-24' : '16-24 yaş arası' }
+        { value: '18M+', label: lang === 'de' ? 'Video Aufrufe' : lang === 'en' ? 'Video Views' : 'Video İzlenme', trend: lang === 'de' ? 'Viral generiert' : lang === 'en' ? 'Virally generated' : 'Viral erişim' },
+        { value: '1,80 €', label: lang === 'de' ? 'Ø CPM' : lang === 'en' ? 'Avg. CPM' : 'Ort. CPM', trend: lang === 'de' ? 'Günstige Reichweite' : lang === 'en' ? 'Cost-effective reach' : 'Düşük maliyetli erişim' },
+        { value: '6,2x', label: lang === 'de' ? 'Top ROAS (Shop)' : lang === 'en' ? 'Top ROAS (Shop)' : 'En Yüksek ROAS (Shop)', trend: lang === 'de' ? 'Social Commerce' : lang === 'en' ? 'Social Commerce' : 'Sosyal Ticaret' },
+        { value: '140+', label: lang === 'de' ? 'Kampagnen' : lang === 'en' ? 'Campaigns' : 'Kampanya', trend: lang === 'de' ? 'Skalierte Creator Ads' : lang === 'en' ? 'Scaled creator ads' : 'Ölçeklenen Kreatif Reklam' }
       ],
       features: [
         {
@@ -383,8 +399,16 @@ export default function ServiceDetailPage() {
 
     'x-ads': {
       title: lang === 'de' ? 'X (Twitter) Ads Management' : lang === 'en' ? 'X (Twitter) Ads Management' : 'X (Twitter) Ads Yönetimi',
-      subtitle: lang === 'de' ? 'Echtzeit-Marketing und Trend-Erfassung' : lang === 'en' ? 'Real-time marketing and trend catching' : 'Gerçek zamanlı pazarlama ve trend yakalama',
-      description: lang === 'de' ? 'Nehmen Sie an aktuellen Trends auf der X-Plattform teil, setzen Sie die Agenda und erreichen Sie ein professionelles Publikum. Die ideale Plattform für B2B-Marketing und Thought Leadership.' : lang === 'en' ? 'Join instant trends on the X platform, set the agenda and reach professional audiences. The ideal platform for B2B marketing and thought leadership.' : 'X platformunda anlık trendlere katılın, gündem oluşturun ve profesyonel kitleye ulaşın. B2B pazarlama ve thought leadership için ideal platform.',
+      subtitle: lang === 'de'
+        ? 'B2B-Lead-Generierung & Thought Leadership — erreichen Sie Entscheider in Echtzeit.'
+        : lang === 'en'
+        ? 'B2B Lead Generation & Thought Leadership — reach decision-makers in real time.'
+        : 'B2B Müşteri Kazanımı & Fikir Liderliği — karar vericilere gerçek zamanlı ulaşın.',
+      description: lang === 'de'
+        ? 'Auf X erreichen Sie verifizierte C-Level-Entscheider, Meinungsführer und kaufkräftige Geschäftskunden. Wir platzieren Ihre Botschaft in Trend-Konversationen und hochrelevanten Timelines mit maximaler Glaubwürdigkeit.'
+        : lang === 'en'
+        ? 'Reach verified C-level decision-makers, industry leaders, and high-value business clients on X. We position your message within trending conversations and targeted timelines with maximum credibility.'
+        : 'X platformunda onaylı C-Level karar vericilere, sektör liderlerine ve yüksek bütçeli kurumsal müşterilere ulaşın. Mesajınızı anlık trendlere ve hedefli zaman akışlarına yerleştiriyoruz.',
       badge: 'X Ads Certified',
       primaryColor: '#000000',
       secondaryColor: '#1DA1F2',
@@ -397,10 +421,10 @@ export default function ServiceDetailPage() {
         </svg>
       ),
       stats: [
-        { value: '500M+', label: lang === 'de' ? 'Aktive Nutzer' : lang === 'en' ? 'Active Users' : 'Aktif Kullanıcı', trend: lang === 'de' ? 'Monatlich aktiv' : lang === 'en' ? 'Monthly active' : 'Aylık aktif' },
-        { value: '%80', label: lang === 'de' ? 'Professionelles Publikum' : lang === 'en' ? 'Professional Audience' : 'Profesyonel Kitle', trend: lang === 'de' ? 'Geschäftsnutzer' : lang === 'en' ? 'Business users' : 'İş dünyası kullanıcıları' },
-        { value: '6000', label: lang === 'de' ? 'Tweets/Sekunde' : lang === 'en' ? 'Tweets/Second' : 'Tweet/Saniye', trend: lang === 'de' ? 'Echtzeit' : lang === 'en' ? 'Real-time' : 'Gerçek zamanlı' },
-        { value: '+150%', label: lang === 'de' ? 'B2B-Conversion' : lang === 'en' ? 'B2B Conversion' : 'B2B Dönüşüm', trend: lang === 'de' ? 'Durchschnittliche Steigerung' : lang === 'en' ? 'Average increase' : 'Ortalama artış' }
+        { value: '14,20 €', label: lang === 'de' ? 'Ø B2B CPL' : lang === 'en' ? 'Avg. B2B CPL' : 'Ort. B2B Lead Maliyeti', trend: lang === 'de' ? 'C-Level Kontakte' : lang === 'en' ? 'C-level contacts' : 'C-Level İletişim' },
+        { value: '2,4M', label: lang === 'de' ? 'Trend-Impressionen' : lang === 'en' ? 'Trend Impressions' : 'Trend Gösterimi', trend: lang === 'de' ? 'Pro Takeover' : lang === 'en' ? 'Per Takeover' : 'Takeover Başına' },
+        { value: '%8,4', label: lang === 'de' ? 'Engagement-Rate' : lang === 'en' ? 'Engagement Rate' : 'Etkileşim Oranı', trend: lang === 'de' ? 'Promoted Tweets' : lang === 'en' ? 'Promoted tweets' : 'Sponsorlu Tweetler' },
+        { value: '95+', label: lang === 'de' ? 'B2B Kampagnen' : lang === 'en' ? 'B2B Campaigns' : 'B2B Kampanya', trend: lang === 'de' ? 'Erfolgreich skaliert' : lang === 'en' ? 'Successfully scaled' : 'Başarıyla Ölçeklendi' }
       ],
       features: [
         {
@@ -476,9 +500,17 @@ export default function ServiceDetailPage() {
 
     'seo': {
       title: lang === 'de' ? 'SEO Dienstleistungen' : lang === 'en' ? 'SEO Services' : 'SEO Hizmetleri',
-      subtitle: lang === 'de' ? 'Organisch auf Seite 1 bei Google erscheinen' : lang === 'en' ? 'Appear organically on page 1 of Google' : 'Google\'da organik olarak 1. sayfada yer alın',
-      description: lang === 'de' ? 'Mit Suchmaschinenoptimierung bringen wir Ihre Website auf die erste Seite von Google. Professionelle SEO-Lösungen für nachhaltigen organischen Traffic und langfristige digitale Präsenz.' : lang === 'en' ? 'With search engine optimization, we bring your website to Google\'s first page. Professional SEO solutions for sustainable organic traffic and long-term digital presence.' : 'Arama motoru optimizasyonu ile web sitenizi Google\'ın ilk sayfasına taşıyoruz. Sürdürülebilir organik trafik ve uzun vadeli dijital varlık için profesyonel SEO çözümleri.',
-      badge: lang === 'de' ? 'SEO Experte - 17 Jahre' : lang === 'en' ? 'SEO Expert - 17 Years' : 'SEO Uzmanı - 17 Yıl',
+      subtitle: lang === 'de'
+        ? 'Organisch auf Platz 1 bei Google — nachhaltiger Traffic ohne Klickkosten.'
+        : lang === 'en'
+        ? 'Rank #1 organically on Google — sustainable traffic without ad spend.'
+        : 'Google\'da organik olarak 1. sıraya yükselin — tıklama maliyeti olmadan kalıcı trafik.',
+      description: lang === 'de'
+        ? 'Mit modernem Technical SEO, Princeton GEO (Generative Engine Optimization für ChatGPT & Perplexity) und inhaltsstarkem E-E-A-T Linkaufbau bringen wir Ihr Unternehmen auf die begehrten Top-Positionen der Suchergebnisse.'
+        : lang === 'en'
+        ? 'With advanced technical SEO, Princeton GEO (Generative Engine Optimization for ChatGPT & Perplexity), and authoritative E-E-A-T content strategy, we position your business at the top of organic search results.'
+        : 'İleri düzey teknik SEO, Princeton GEO (ChatGPT ve Perplexity için AI Arama Optimizasyonu) ve güçlü E-E-A-T içerik stratejisiyle işletmenizi arama sonuçlarında zirveye taşıyoruz.',
+      badge: lang === 'de' ? 'SEO Experte · 17+ Jahre' : lang === 'en' ? 'SEO Expert · 17+ Years' : 'SEO Uzmanı · 17+ Yıl',
       primaryColor: '#0F9D58',
       secondaryColor: '#4285F4',
       accentColor: '#F4B400',
@@ -491,10 +523,10 @@ export default function ServiceDetailPage() {
         </svg>
       ),
       stats: [
-        { value: '+400%', label: lang === 'de' ? 'Organischer Traffic' : lang === 'en' ? 'Organic Traffic' : 'Organik Trafik', trend: lang === 'de' ? 'Durchschnittliche Steigerung' : lang === 'en' ? 'Average increase' : 'Ortalama artış' },
-        { value: '150+', label: lang === 'de' ? 'Top-Ranking Keywords' : lang === 'en' ? 'Top-Ranking Keywords' : 'Üst Sıra Anahtar Kelime', trend: lang === 'de' ? 'Erste Seite' : lang === 'en' ? 'First page' : 'İlk sayfa' },
-        { value: '%85', label: lang === 'de' ? 'Kundenbindung' : lang === 'en' ? 'Customer Retention' : 'Müşteri Kalıcılığı', trend: lang === 'de' ? 'Langfristig' : lang === 'en' ? 'Long-term' : 'Uzun vadeli' },
-        { value: lang === 'de' ? '6 Monate' : lang === 'en' ? '6 Months' : '6 Ay', label: lang === 'de' ? 'Ergebniszeit' : lang === 'en' ? 'Result Time' : 'Sonuç Süresi', trend: lang === 'de' ? 'Durchschnitt' : lang === 'en' ? 'Average' : 'Ortalama' }
+        { value: '+450%', label: lang === 'de' ? 'Organischer Zuwachs' : lang === 'en' ? 'Organic Growth' : 'Organik Trafik Artışı', trend: lang === 'de' ? 'Ø nach 6 Monaten' : lang === 'en' ? 'Avg. after 6 months' : 'Ortalama 6 ayda' },
+        { value: '#1.8', label: lang === 'de' ? 'Ø Keyword-Position' : lang === 'en' ? 'Avg. Keyword Position' : 'Ort. Anahtar Kelime Sırası', trend: lang === 'de' ? 'Fokus-Keywords' : lang === 'en' ? 'Focus keywords' : 'Hedef Kelimeler' },
+        { value: '%8,4', label: lang === 'de' ? 'GSC Durchklickrate' : lang === 'en' ? 'GSC Click-Through Rate' : 'GSC Tıklama Oranı', trend: lang === 'de' ? 'Google Search Console' : lang === 'en' ? 'Google Search Console' : 'Google Search Console' },
+        { value: '100/100', label: lang === 'de' ? 'Core Web Vitals' : lang === 'en' ? 'Core Web Vitals' : 'Core Web Vitals Skoru', trend: lang === 'de' ? 'Lighthouse Standard' : lang === 'en' ? 'Lighthouse standard' : 'Lighthouse Standardı' }
       ],
       features: [
         {
@@ -519,11 +551,11 @@ export default function ServiceDetailPage() {
           items: lang === 'de' ? ['Linkaufbau', 'Gastbeiträge', 'Digital PR', 'Markenerwähnungen'] : lang === 'en' ? ['Link building', 'Guest posting', 'Digital PR', 'Brand mentions'] : ['Link building', 'Guest posting', 'Digital PR', 'Marka bahsetmeleri']
         },
         {
-          title: lang === 'de' ? 'Content SEO' : lang === 'en' ? 'Content SEO' : 'İçerik SEO',
-          subtitle: 'Content Marketing',
-          desc: lang === 'de' ? 'Wir erstellen SEO-optimierte, wertvolle Inhalte für Ihre Ziel-Keywords.' : lang === 'en' ? 'We create SEO-optimized, valuable content for your target keywords.' : 'Hedef kelimeleriniz için SEO uyumlu, değerli içerikler üretiyoruz.',
+          title: lang === 'de' ? 'Content & GEO' : lang === 'en' ? 'Content & GEO' : 'İçerik & GEO',
+          subtitle: 'AI Visibility',
+          desc: lang === 'de' ? 'Wir erstellen E-E-A-T optimierte Inhalte für Google und KI-Suchmaschinen wie ChatGPT & Perplexity.' : lang === 'en' ? 'We create E-E-A-T optimized content for Google and AI engines like ChatGPT & Perplexity.' : 'Google ve ChatGPT/Perplexity gibi yapay zeka arama motorları için E-E-A-T uyumlu içerikler üretiyoruz.',
           icon: FileText,
-          items: lang === 'de' ? ['Blogartikel', 'Pillar Content', 'Content Cluster', 'E-A-T Optimierung'] : lang === 'en' ? ['Blog articles', 'Pillar content', 'Content cluster', 'E-A-T optimization'] : ['Blog yazıları', 'Pillar content', 'Content cluster', 'E-A-T optimizasyonu']
+          items: lang === 'de' ? ['Blogartikel & Pillar Content', 'llms.txt Standard', 'Princeton GEO Scoring', 'E-E-A-T Autorität'] : lang === 'en' ? ['Blog & pillar content', 'llms.txt standard', 'Princeton GEO scoring', 'E-E-A-T authority'] : ['Blog & pillar içerik', 'llms.txt standardı', 'Princeton GEO skorlama', 'E-E-A-T otoritesi']
         },
         {
           title: lang === 'de' ? 'Lokales SEO' : lang === 'en' ? 'Local SEO' : 'Yerel SEO',
@@ -542,9 +574,9 @@ export default function ServiceDetailPage() {
       ],
       process: [
         { step: '01', title: 'SEO Audit', desc: lang === 'de' ? 'Wir analysieren Ihre Website detailliert nach 200+ Faktoren.' : lang === 'en' ? 'We analyze your website in detail with 200+ factors.' : 'Mevcut sitenizi 200+ faktörde detaylı analiz ediyoruz.' },
-        { step: '02', title: lang === 'de' ? 'Keyword-Recherche' : lang === 'en' ? 'Keyword Research' : 'Keyword Araştırma', desc: lang === 'de' ? 'Wir identifizieren die Keywords, nach denen Ihre Zielgruppe sucht.' : lang === 'en' ? 'We identify the keywords your target audience is searching for.' : 'Hedef kitlenizin aradığı kelimeleri belirliyoruz.' },
+        { step: '02', title: lang === 'de' ? 'Keyword & GEO' : lang === 'en' ? 'Keyword & GEO' : 'Keyword & GEO', desc: lang === 'de' ? 'Wir identifizieren profitable Suchbegriffe und KI-Zitierfähigkeiten.' : lang === 'en' ? 'We identify profitable search queries and AI citability.' : 'Kârlı arama terimlerini ve yapay zeka alıntılanabilirliğini belirliyoruz.' },
         { step: '03', title: lang === 'de' ? 'Optimierung' : lang === 'en' ? 'Optimization' : 'Optimizasyon', desc: lang === 'de' ? 'Wir führen technische, On-Page und Off-Page Optimierungen durch.' : lang === 'en' ? 'We implement technical, on-page and off-page optimizations.' : 'Teknik, on-page ve off-page optimizasyonları uyguluyoruz.' },
-        { step: '04', title: lang === 'de' ? 'Überwachung & Berichterstattung' : lang === 'en' ? 'Monitoring & Reporting' : 'İzleme & Raporlama', desc: lang === 'de' ? 'Wir überwachen Rankings und liefern monatliche detaillierte Berichte.' : lang === 'en' ? 'We monitor rankings and provide monthly detailed reports.' : 'Sıralamaları izliyor, aylık detaylı raporlar sunuyoruz.' }
+        { step: '04', title: lang === 'de' ? 'Überwachung' : lang === 'en' ? 'Monitoring' : 'İzleme', desc: lang === 'de' ? 'Wir überwachen Rankings und liefern monatliche transparente Berichte.' : lang === 'en' ? 'We monitor rankings and provide monthly transparent reports.' : 'Sıralamaları izliyor, aylık şeffaf raporlar sunuyoruz.' }
       ],
       benefits: [
         { title: lang === 'de' ? 'Nachhaltiger Traffic' : lang === 'en' ? 'Sustainable Traffic' : 'Sürdürülebilir Trafik', desc: lang === 'de' ? 'Organische Besucher ohne Werbebudget' : lang === 'en' ? 'Organic visitors without ad budget' : 'Reklam bütçesi olmadan organik ziyaretçi' },
@@ -574,8 +606,16 @@ export default function ServiceDetailPage() {
 
     'yorum-yonetimi': {
       title: lang === 'de' ? 'Bewertungsmanagement' : lang === 'en' ? 'Review Management' : 'Olumsuz Yorum Yönetimi',
-      subtitle: lang === 'de' ? 'Schützen und stärken Sie Ihre Online-Reputation' : lang === 'en' ? 'Protect and strengthen your online reputation' : 'Online itibarınızı koruyun ve güçlendirin',
-      description: lang === 'de' ? 'Wir entfernen unfaire, gefälschte oder manipulative Bewertungen auf Google Maps, Trustpilot und anderen Plattformen. Wir schützen Ihre Marke mit Reputationsmanagement und Krisenkommunikation.' : lang === 'en' ? 'We remove unfair, fake or manipulative reviews on Google Maps, Trustpilot and other platforms. We protect your brand with reputation management and crisis communication.' : 'Google Maps, Trustpilot ve diğer platformlardaki haksız, sahte veya manipülatif yorumları kaldırıyoruz. İtibar yönetimi ve kriz iletişimi ile markanızı koruyoruz.',
+      subtitle: lang === 'de'
+        ? '4.9★ Google Reputation aufbauen — unfaire Bewertungen rechtssicher entfernen.'
+        : lang === 'en'
+        ? 'Build a 4.9★ Google reputation — legally remove unfair reviews.'
+        : '4.9★ Google itibarı oluşturun — haksız olumsuz yorumları yasal güvenceyle kaldırın.',
+      description: lang === 'de'
+        ? 'Wir schützen Ihren guten Ruf: Mit rechtssicherer Entfernung von unfairen Google- und Trustpilot-Bewertungen sowie automatisierten Bewertungskampagnen steigern wir Ihre Durchschnittsbewertung und Ihren Kundenstrom.'
+        : lang === 'en'
+        ? 'Protect and amplify your brand reputation: With legally compliant removal of fake Google/Trustpilot reviews and automated review generation funnels, we elevate your rating and local customer trust.'
+        : 'İtibarınızı koruyor ve güçlendiriyoruz: Google Maps ve Trustpilot üzerindeki haksız/sahte yorumların yasal güvenceyle kaldırılması ve otomatik yorum toplama sistemleriyle puanınızı zirveye taşıyoruz.',
       badge: lang === 'de' ? 'Reputationsmanagement-Experte' : lang === 'en' ? 'Reputation Management Expert' : 'İtibar Yönetimi Uzmanı',
       primaryColor: '#EA4335',
       secondaryColor: '#FBBC04',
@@ -588,10 +628,10 @@ export default function ServiceDetailPage() {
         </svg>
       ),
       stats: [
-        { value: '%95', label: lang === 'de' ? 'Entfernungserfolg' : lang === 'en' ? 'Removal Success' : 'Kaldırma Başarısı', trend: lang === 'de' ? 'Unfaire Bewertungen' : lang === 'en' ? 'Unfair reviews' : 'Haksız yorumlar' },
-        { value: '500+', label: lang === 'de' ? 'Entfernte Bewertungen' : lang === 'en' ? 'Removed Reviews' : 'Kaldırılan Yorum', trend: lang === 'de' ? 'Gesamt' : lang === 'en' ? 'Total' : 'Toplam' },
-        { value: lang === 'de' ? '48 Std.' : lang === 'en' ? '48 Hours' : '48 Saat', label: lang === 'de' ? 'Durchschnittliche Zeit' : lang === 'en' ? 'Average Time' : 'Ortalama Süre', trend: lang === 'de' ? 'Bearbeitungszeit' : lang === 'en' ? 'Processing time' : 'İşlem süresi' },
-        { value: '+2.5', label: lang === 'de' ? 'Bewertungsanstieg' : lang === 'en' ? 'Rating Increase' : 'Puan Artışı', trend: lang === 'de' ? 'Durchschnittliche Verbesserung' : lang === 'en' ? 'Average improvement' : 'Ortalama iyileşme' }
+        { value: '4.9★', label: lang === 'de' ? 'Ziel-Bewertung' : lang === 'en' ? 'Target Rating' : 'Hedef Ortalama Puan', trend: lang === 'de' ? 'Google & Trustpilot' : lang === 'en' ? 'Google & Trustpilot' : 'Google & Trustpilot' },
+        { value: '%95', label: lang === 'de' ? 'Erfolgsquote' : lang === 'en' ? 'Success Rate' : 'Kaldırma Başarısı', trend: lang === 'de' ? 'Unberechtigte Rezensionen' : lang === 'en' ? 'Unjustified reviews' : 'Haksız Yorumlar' },
+        { value: '+320%', label: lang === 'de' ? 'Mehr Kundenanrufe' : lang === 'en' ? 'More Customer Calls' : 'Daha Fazla Müşteri Araması', trend: lang === 'de' ? 'Durch 4.8+ Sterne' : lang === 'en' ? 'Through 4.8+ stars' : '4.8+ Yıldız Etkisi' },
+        { value: '24-72h', label: lang === 'de' ? 'Erste Reaktion' : lang === 'en' ? 'First Response' : 'İlk Müdahale Süresi', trend: lang === 'de' ? 'Express-Bearbeitung' : lang === 'en' ? 'Express processing' : 'Ekspres İşlem' }
       ],
       features: [
         {
@@ -1024,474 +1064,638 @@ export default function ServiceDetailPage() {
         </div>
       </section>
 
-      {/* Case Studies Section for Google Ads (Vorher/Nachher & Real Dashboard Proof) */}
-      {service === 'google-ads' && (
-        <section className="py-24 px-4 bg-gradient-to-b from-gray-50 via-white to-gray-50 border-y border-gray-100">
-          <div className="container mx-auto max-w-7xl">
-            <div className="text-center mb-16">
-              <div className="inline-flex items-center space-x-2 bg-blue-50 border border-blue-200/80 rounded-full px-4 py-1.5 mb-4 shadow-sm">
-                <span className="w-2 h-2 rounded-full bg-[#4285F4] animate-pulse"></span>
-                <span className="text-xs font-bold uppercase tracking-wider text-[#4285F4]">
-                  {lang === 'de' ? 'Transparente Erfolgsnachweise' : lang === 'en' ? 'Verified Proof of Success' : 'Doğrulanmış Başarı Kanıtları'}
-                </span>
-              </div>
-              <h2 className="text-3xl md:text-5xl font-black text-gray-900 mb-4 tracking-tight">
-                {lang === 'de' ? (
-                  <>Echte Ergebnisse aus <span className="text-[#4285F4]">Google Ads</span> Konten</>
-                ) : lang === 'en' ? (
-                  <>Real Results from <span className="text-[#4285F4]">Google Ads</span> Accounts</>
-                ) : (
-                  <>Gerçek <span className="text-[#4285F4]">Google Ads</span> Hesap Sonuçları</>
-                )}
-              </h2>
-              <p className="text-base md:text-lg text-gray-600 max-w-3xl mx-auto leading-relaxed">
-                {lang === 'de'
-                  ? 'Keine Versprechungen, sondern belegbare Zahlen: Vorher-Nachher-Vergleiche aus von Salih Maral optimierten Kampagnen.'
-                  : lang === 'en'
-                  ? 'No empty promises, only verified numbers: Before-and-after case studies from campaigns optimized by Salih Maral.'
-                  : 'Boş vaatler değil, kanıtlanmış rakamlar: Salih Maral tarafından optimize edilen kampanyalardan öncesi ve sonrası vaka analizleri.'}
-              </p>
-            </div>
+      {/* Case Studies Section for All Services (Dynamic Platform Dashboard Mockups & Verified Proof) */}
+      {(() => {
+        const caseStudiesData = {
+          'google-ads': {
+            badge: lang === 'de' ? 'Transparente Erfolgsnachweise' : lang === 'en' ? 'Verified Proof of Success' : 'Doğrulanmış Başarı Kanıtları',
+            title: lang === 'de' ? <>Echte Ergebnisse aus <span className="text-[#4285F4]">Google Ads</span> Konten</> : lang === 'en' ? <>Real Results from <span className="text-[#4285F4]">Google Ads</span> Accounts</> : <>Gerçek <span className="text-[#4285F4]">Google Ads</span> Hesap Sonuçları</>,
+            desc: lang === 'de' ? 'Keine Versprechungen, sondern belegbare Zahlen: Vorher-Nachher-Vergleiche aus von Salih Maral optimierten Kampagnen.' : lang === 'en' ? 'No empty promises, only verified numbers: Before-and-after case studies from campaigns optimized by Salih Maral.' : 'Boş vaatler değil, kanıtlanmış rakamlar: Salih Maral tarafından optimize edilen kampanyalardan öncesi ve sonrası vaka analizleri.',
+            accentColor: '#4285F4',
+            ctaTitle: lang === 'de' ? 'Möchten Sie ähnliche Ergebnisse für Ihr Google Ads Konto?' : lang === 'en' ? 'Want similar results for your Google Ads account?' : 'Google Ads hesabınızda da benzer sonuçlar elde etmek ister misiniz?',
+            ctaDesc: lang === 'de' ? 'Wir prüfen Ihr aktuelles Google Ads Konto und erstellen eine kostenlose Potenzialanalyse.' : lang === 'en' ? 'We review your existing Google Ads account and provide a free growth audit.' : 'Mevcut Google Ads hesabınızı inceliyor ve ücretsiz büyüme potansiyeli analizi sunuyoruz.',
+            cards: [
+              {
+                tag: lang === 'de' ? 'Gesamtübersicht · 80+ Aktive Kampagnen' : lang === 'en' ? 'Master Overview · 80+ Active Campaigns' : 'Genel Özet · 80+ Aktif Kampanya',
+                title: lang === 'de' ? '1,74 Mio. Klicks & 208.000 Conversions bei 1,13 Mio. € Budget' : lang === 'en' ? '1.74M Clicks & 208K Conversions across €1.13M budget' : '1,13 Milyon € bütçe ile 1,74 Milyon tıklama ve 208.000 dönüşüm',
+                panelHeader: 'Google Ads · Home Overview',
+                dateRange: '1. Mai 2016 – 15. Aug 2026',
+                boxes: [
+                  { label: 'Clicks', value: '1.74m', bg: 'bg-[#4285F4]', text: 'text-white' },
+                  { label: 'Impressions', value: '150m', bg: 'bg-[#EA4335]', text: 'text-white' },
+                  { label: 'Conversions', value: '208k', bg: 'bg-[#FBBC04]', text: 'text-gray-900' },
+                  { label: 'Cost', value: '€1.13m', bg: 'bg-[#34A853]', text: 'text-white' }
+                ],
+                tagBefore: lang === 'de' ? '● 2. QUARTAL 2016' : lang === 'en' ? '● Q2 2016' : '● 2016 BAŞLANGIÇ',
+                descBefore: lang === 'de' ? 'Start der Kampagnen' : lang === 'en' ? 'Campaign Start' : 'Kampanya Başlangıcı',
+                tagAfter: lang === 'de' ? '● 3. QUARTAL 2026' : lang === 'en' ? '● Q3 2026' : '● 2026 GÜNCEL',
+                descAfter: '1,74M Klicks · 208K Conv.',
+                mult1: { val: '1,74M', label: lang === 'de' ? 'Klicks generiert' : lang === 'en' ? 'Clicks Generated' : 'Üretilen Tıklama' },
+                mult2: { val: '208K', label: lang === 'de' ? 'Conversions' : lang === 'en' ? 'Conversions' : 'Dönüşüm' }
+              },
+              {
+                tag: lang === 'de' ? 'Letzte 3 Jahre · Zirve Performans' : lang === 'en' ? 'Last 3 Years · Peak Performance' : 'Son 3 Yıl · Zirve Performans',
+                title: lang === 'de' ? 'Interaktionsrate auf 64,78% gesteigert (+57,75% Wachstum)' : lang === 'en' ? 'Interaction Rate surged to 64.78% (+57.75% growth)' : 'Etkileşim oranı %64,78\'e yükseldi (+%57,75 büyüme)',
+                panelHeader: 'Google Ads · Ads Performance',
+                dateRange: '1. Mai 2023 – 15. Aug 2026',
+                boxes: [
+                  { label: 'Clicks', value: '128.205', bg: 'bg-[#34A853]', text: 'text-white' },
+                  { label: 'Impr.', value: '40,07M', bg: 'bg-[#4285F4]', text: 'text-white' },
+                  { label: 'TrueView', value: '19,31M', bg: 'bg-[#FBBC04]', text: 'text-gray-900' },
+                  { label: 'Interaktion', value: '64,78 %', bg: 'bg-[#EA4335]', text: 'text-white' }
+                ],
+                tagBefore: lang === 'de' ? '● MAI 2023 (START)' : lang === 'en' ? '● MAY 2023' : '● MAYIS 2023',
+                descBefore: 'Interaktion: ~7,03%',
+                tagAfter: lang === 'de' ? '● 2026 HEUTE' : lang === 'en' ? '● TODAY 2026' : '● 2026 GÜNCEL',
+                descAfter: '64,78% Peak-Interaktion',
+                mult1: { val: '64,78%', label: 'Interaktionsrate (Peak)' },
+                mult2: { val: '+57,75%', label: lang === 'de' ? 'Wachstum' : lang === 'en' ? 'Growth' : 'Artış' }
+              },
+              {
+                tag: lang === 'de' ? 'YouTube & Video-Ads Reichweite' : lang === 'en' ? 'YouTube & Video Ads Reach' : 'YouTube & Video Reklam Erişimi',
+                title: lang === 'de' ? '23,12 Mio. TrueView Videoaufrufe bei 124,3 Mio. Impressionen' : lang === 'en' ? '23.12M TrueView Video Views across 124.3M impressions' : '124,3 Milyon gösterim ve 23,12 Milyon TrueView video izlenmesi',
+                panelHeader: 'Google Ads · Video & Ads',
+                dateRange: '1. Mai 2016 – 15. Aug 2026',
+                boxes: [
+                  { label: 'Clicks', value: '1.153.968', bg: 'bg-[#34A853]', text: 'text-white' },
+                  { label: 'Impr.', value: '124,3M', bg: 'bg-[#4285F4]', text: 'text-white' },
+                  { label: 'TrueView', value: '23,12M', bg: 'bg-[#FBBC04]', text: 'text-gray-900' },
+                  { label: 'Cost', value: '856.708 €', bg: 'bg-slate-800', text: 'text-white' }
+                ],
+                tagBefore: lang === 'de' ? '● REICHWEITEN-AUFBAU' : lang === 'en' ? '● REACH BUILDUP' : '● ERİŞİM OLUŞTURMA',
+                descBefore: '124.339.285 Impressionen',
+                tagAfter: lang === 'de' ? '● TRUEVIEW VIEWS' : lang === 'en' ? '● TRUEVIEW VIEWS' : '● TRUEVIEW İZLENME',
+                descAfter: '23.126.141 Videoaufrufe',
+                mult1: { val: '23,12M', label: 'TrueView Video Views' },
+                mult2: { val: '124,3M', label: lang === 'de' ? 'Gesamtreichweite (Impr.)' : lang === 'en' ? 'Total Reach (Impr.)' : 'Toplam Gösterim' }
+              },
+              {
+                tag: lang === 'de' ? '720 Kampagnen · Skalierungserfahrung' : lang === 'en' ? '720 Campaigns · Scaling Experience' : '720 Kampanya · Ölçekleme Deneyimi',
+                title: lang === 'de' ? '720 Kampagnen mit 26,18% durchschnittlicher Interaktionsrate' : lang === 'en' ? '720 campaigns with 26.18% average interaction rate' : '720 kampanya ve %26,18 ortalama etkileşim oranı',
+                panelHeader: 'Google Ads · All Campaigns (720)',
+                dateRange: '10 Jahre Track-Record',
+                boxes: [
+                  { label: 'Clicks', value: '1.153.968', bg: 'bg-[#34A853]', text: 'text-white' },
+                  { label: 'Impr.', value: '124,3M', bg: 'bg-[#4285F4]', text: 'text-white' },
+                  { label: 'TrueView', value: '23,12M', bg: 'bg-[#FBBC04]', text: 'text-gray-900' },
+                  { label: 'Interaktion', value: '26,18 %', bg: 'bg-[#EA4335]', text: 'text-white' }
+                ],
+                tagBefore: lang === 'de' ? '● KAMPAGNEN-VIELFALT' : lang === 'en' ? '● CAMPAIGN SCALE' : '● KAMPANYA ÖLÇEĞİ',
+                descBefore: '720 Kampagnen verwaltet',
+                tagAfter: lang === 'de' ? '● Ø INTERAKTIONSRATE' : lang === 'en' ? '● AVG. INTERACTION' : '● ORT. ETKİLEŞİM',
+                descAfter: '26,18% (10 Jahre Schnitt)',
+                mult1: { val: '720+', label: lang === 'de' ? 'Kampagnen verwaltet' : lang === 'en' ? 'Campaigns Managed' : 'Yönetilen Kampanya' },
+                mult2: { val: '26,18%', label: 'Ø Interaktionsrate' }
+              }
+            ]
+          },
 
-            {/* 2x2 Grid of Case Study Cards — 100% Real Google Ads Account Data */}
-            <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 md:gap-10">
-              
-              {/* CARD 1: Master Overview (Real Screenshot 1: 1 May 2016 – 15 Aug 2026 / 80 Enabled Campaigns) */}
-              <div className="bg-white rounded-3xl border border-gray-200/80 shadow-xl hover:shadow-2xl transition-all duration-300 flex flex-col overflow-hidden group">
-                <div className="p-6 md:p-8 pb-5 border-b border-gray-100">
-                  <span className="text-xs font-bold uppercase tracking-wider text-blue-600 bg-blue-50 px-3 py-1 rounded-full inline-block mb-3">
-                    {lang === 'de' ? 'Gesamtübersicht · 80+ Aktive Kampagnen' : lang === 'en' ? 'Master Overview · 80+ Active Campaigns' : 'Genel Özet · 80+ Aktif Kampanya'}
+          'meta-ads': {
+            badge: 'Meta Ads Manager · Facebook & Instagram',
+            title: lang === 'de' ? <>Verifizierte Ergebnisse aus <span className="text-[#1877F2]">Meta Ads</span> Kampagnen</> : lang === 'en' ? <>Verified Results from <span className="text-[#1877F2]">Meta Ads</span> Campaigns</> : <>Doğrulanmış <span className="text-[#1877F2]">Meta Ads</span> Kampanya Sonuçları</>,
+            desc: lang === 'de' ? 'Advantage+ Shopping, Instagram Reels Creatives und CAPI Server-Side Tracking: Skalierte ROAS-Erfolge unserer Kunden.' : lang === 'en' ? 'Advantage+ Shopping, Instagram Reels Creatives, and CAPI Server-Side Tracking: Scaled ROAS results for our clients.' : 'Advantage+ Alışveriş, Instagram Reels Kreatifleri ve CAPI Sunucu Taraflı Takip ile ölçeklenen ROAS başarıları.',
+            accentColor: '#1877F2',
+            ctaTitle: lang === 'de' ? 'Möchten Sie Ihren Meta Ads ROAS maximieren?' : lang === 'en' ? 'Want to maximize your Meta Ads ROAS?' : 'Meta Ads ROAS oranınızı maksimize etmek ister misiniz?',
+            ctaDesc: lang === 'de' ? 'Wir auditieren Ihr Meta Werbekonto, Ihre Pixel/CAPI-Integration und Ihre Creative-Strategie kostenlos.' : lang === 'en' ? 'We audit your Meta ad account, Pixel/CAPI setup, and creative strategy for free.' : 'Meta reklam hesabınızı, Pixel/CAPI kurulumunuzu ve kreatif stratejinizi ücretsiz analiz ediyoruz.',
+            cards: [
+              {
+                tag: lang === 'de' ? 'E-Commerce Skalierung · Advantage+' : lang === 'en' ? 'E-Commerce Scaling · Advantage+' : 'E-Ticaret Ölçekleme · Advantage+',
+                title: lang === 'de' ? 'Advantage+ Shopping: Von 1,4x auf 4,8x ROAS bei 1.500 € Tagesbudget' : lang === 'en' ? 'Advantage+ Shopping: From 1.4x to 4.8x ROAS at €1,500 daily spend' : 'Advantage+ Alışveriş: Günlük 1.500 € bütçede 1,4x\'ten 4,8x ROAS\'a yükseliş',
+                panelHeader: 'Meta Ads · Advantage+ Shopping Campaign',
+                dateRange: 'Letzte 6 Monate',
+                boxes: [
+                  { label: 'Amount Spent', value: '45.200 €', bg: 'bg-[#1877F2]', text: 'text-white' },
+                  { label: 'Purchases', value: '1.420', bg: 'bg-[#E4405F]', text: 'text-white' },
+                  { label: 'Purchase ROAS', value: '4.82x', bg: 'bg-[#34A853]', text: 'text-white' },
+                  { label: 'CPA', value: '31,80 €', bg: 'bg-slate-800', text: 'text-white' }
+                ],
+                tagBefore: '● VORHER (START)',
+                descBefore: 'ROAS: ~1,4x · CPA 84 €',
+                tagAfter: '● NACHHER (OPTIMIERT)',
+                descAfter: '4,82x ROAS · 1.420 Käufe',
+                mult1: { val: '4,82x', label: 'Purchase ROAS' },
+                mult2: { val: '-62%', label: lang === 'de' ? 'CPA Reduzierung' : lang === 'en' ? 'CPA Reduction' : 'CPA Düşüşü' }
+              },
+              {
+                tag: lang === 'de' ? 'B2B & Dienstleister · Instant Forms' : lang === 'en' ? 'B2B Lead Gen · Instant Forms' : 'B2B & Hizmet · Hızlı Formlar',
+                title: lang === 'de' ? '450+ qualifizierte B2B-Leads/Monat bei 9,40 € Kosten pro Lead' : lang === 'en' ? '450+ qualified B2B leads/mo at €9.40 cost per lead' : 'Aylık 450+ nitelikli B2B müşteri talebi ve 9,40 € maliyet',
+                panelHeader: 'Meta Ads · On-Facebook Lead Gen',
+                dateRange: 'Q1-Q2 2026',
+                boxes: [
+                  { label: 'Leads', value: '2.740', bg: 'bg-[#1877F2]', text: 'text-white' },
+                  { label: 'Cost / Lead', value: '9,40 €', bg: 'bg-[#34A853]', text: 'text-white' },
+                  { label: 'Lead Quality', value: '88,4%', bg: 'bg-[#833AB4]', text: 'text-white' },
+                  { label: 'Impressions', value: '1,85M', bg: 'bg-[#E4405F]', text: 'text-white' }
+                ],
+                tagBefore: '● STARTPHASE',
+                descBefore: 'Lead-Kosten: 28,50 €',
+                tagAfter: '● INSTANT FORMS + REELS',
+                descAfter: '9,40 € CPL · 2.740 Leads',
+                mult1: { val: '2.740', label: lang === 'de' ? 'Leads generiert' : lang === 'en' ? 'Leads Generated' : 'Müşteri Talebi' },
+                mult2: { val: '9,40 €', label: 'Ø Cost per Lead' }
+              },
+              {
+                tag: lang === 'de' ? 'Instagram Reels · Creative Framework' : lang === 'en' ? 'Instagram Reels · Creative Framework' : 'Instagram Reels · Kreatif Kurgu',
+                title: lang === 'de' ? '3,2 Mio. Videoaufrufe und 4,2x Engagement-Rate durch Hook-Testing' : lang === 'en' ? '3.2M video views and 4.2x engagement rate via Hook testing' : 'Hook testleriyle 3,2 Milyon video izlenmesi ve 4,2x etkileşim',
+                panelHeader: 'Instagram Ads · Reels Placement',
+                dateRange: '90 Tage Skalierung',
+                boxes: [
+                  { label: 'ThruPlays', value: '1.850.000', bg: 'bg-[#E4405F]', text: 'text-white' },
+                  { label: 'Hook Rate (3s)', value: '42,6%', bg: 'bg-[#833AB4]', text: 'text-white' },
+                  { label: 'Reach', value: '3,2M', bg: 'bg-[#1877F2]', text: 'text-white' },
+                  { label: 'CTR (Link)', value: '3,84%', bg: 'bg-[#34A853]', text: 'text-white' }
+                ],
+                tagBefore: '● STATISCHE BILDER',
+                descBefore: 'CTR: ~0,8% · Hook 12%',
+                tagAfter: '● REELS HOOK FRAMEWORK',
+                descAfter: 'CTR: 3,84% · Hook 42,6%',
+                mult1: { val: '3,2M', label: lang === 'de' ? 'Reichweite (Accounts)' : lang === 'en' ? 'Accounts Reached' : 'Erişilen Hesap' },
+                mult2: { val: '42,6%', label: '3-Sec Hook Rate' }
+              },
+              {
+                tag: lang === 'de' ? 'CAPI & Server-Side Tracking' : lang === 'en' ? 'CAPI & Server-Side Tracking' : 'CAPI & Sunucu Takibi',
+                title: lang === 'de' ? '92%+ Event Match Score durch CAPI — 28% mehr getrackte Käufe' : lang === 'en' ? '92%+ Event Match Score via CAPI — 28% more tracked purchases' : 'CAPI ile %92+ Event Match skoru — %28 daha fazla yakalanan dönüşüm',
+                panelHeader: 'Meta Events Manager · CAPI Gateway',
+                dateRange: 'Server-Side Setup',
+                boxes: [
+                  { label: 'Match Score', value: '9,2 / 10', bg: 'bg-[#34A853]', text: 'text-white' },
+                  { label: 'Data Recovery', value: '+28%', bg: 'bg-[#1877F2]', text: 'text-white' },
+                  { label: 'Pixel Match', value: '100%', bg: 'bg-[#833AB4]', text: 'text-white' },
+                  { label: 'ROAS Lift', value: '+35%', bg: 'bg-[#E4405F]', text: 'text-white' }
+                ],
+                tagBefore: '● NUR BROWSER PIXEL',
+                descBefore: 'Match Score: 4.8 / 10',
+                tagAfter: '● SERVER CAPI GATEWAY',
+                descAfter: 'Match Score: 9.2 / 10',
+                mult1: { val: '9,2/10', label: 'Event Match Score' },
+                mult2: { val: '+28%', label: lang === 'de' ? 'Mehr Käufe getrackt' : lang === 'en' ? 'More Purchases Tracked' : 'Fazla Yakalanan Satış' }
+              }
+            ]
+          },
+
+          'tiktok-ads': {
+            badge: 'TikTok Ads Manager · TikTok Shop & Spark Ads',
+            title: lang === 'de' ? <>Verifizierte Ergebnisse aus <span className="text-[#FE2C55]">TikTok Ads</span> Kampagnen</> : lang === 'en' ? <>Verified Results from <span className="text-[#FE2C55]">TikTok Ads</span> Campaigns</> : <>Doğrulanmış <span className="text-[#FE2C55]">TikTok Ads</span> Kampanya Sonuçları</>,
+            desc: lang === 'de' ? 'Spark Ads, Creator UGC und TikTok Shop GMV Skalierung: Maximale virale Reichweite zu unschlagbaren CPM-Kosten.' : lang === 'en' ? 'Spark Ads, Creator UGC, and TikTok Shop GMV scaling: Maximum viral reach with unbeatable CPM costs.' : 'Spark Ads, İçerik Üretici UGC ve TikTok Shop satışları: Rakipsiz CPM maliyetleriyle maksimum viral etki.',
+            accentColor: '#FE2C55',
+            ctaTitle: lang === 'de' ? 'Bereit für virales TikTok Ads Wachstum?' : lang === 'en' ? 'Ready for viral TikTok Ads growth?' : 'TikTok Ads ile viral büyümeye hazır mısınız?',
+            ctaDesc: lang === 'de' ? 'Wir analysieren Ihre Zielgruppe und erstellen ein virales Content- und Kampagnenkonzept für Ihre Marke.' : lang === 'en' ? 'We analyze your target audience and develop a viral campaign framework for your brand.' : 'Hedef kitlenizi analiz ediyor, markanıza özel viral içerik ve kampanya konsepti sunuyoruz.',
+            cards: [
+              {
+                tag: lang === 'de' ? 'E-Commerce & Spark Ads' : lang === 'en' ? 'E-Commerce & Spark Ads' : 'E-Ticaret & Spark Ads',
+                title: lang === 'de' ? 'Spark Ads UGC-Boost: 18,4 Mio. Videoaufrufe und 6,2x ROAS' : lang === 'en' ? 'Spark Ads UGC Boost: 18.4M video views and 6.2x ROAS' : 'Spark Ads UGC desteği: 18,4 Milyon video izlenmesi ve 6,2x ROAS',
+                panelHeader: 'TikTok Ads · Spark Ads Performance',
+                dateRange: 'Letzte 90 Tage',
+                boxes: [
+                  { label: 'Video Views', value: '18,4M', bg: 'bg-[#FE2C55]', text: 'text-white' },
+                  { label: 'Avg. CPM', value: '1,68 €', bg: 'bg-black', text: 'text-white' },
+                  { label: 'Purchases', value: '3.890', bg: 'bg-[#25F4EE]', text: 'text-black' },
+                  { label: 'ROAS', value: '6,20x', bg: 'bg-[#34A853]', text: 'text-white' }
+                ],
+                tagBefore: '● TRADITIONELLE ADS',
+                descBefore: 'CPM: 6,40 € · ROAS: 1,8x',
+                tagAfter: '● SPARK ADS + UGC',
+                descAfter: 'CPM: 1,68 € · ROAS: 6,2x',
+                mult1: { val: '18,4M', label: 'Video Aufrufe' },
+                mult2: { val: '6,20x', label: 'TikTok ROAS' }
+              },
+              {
+                tag: lang === 'de' ? 'TikTok Shop & Social Commerce' : lang === 'en' ? 'TikTok Shop & Social Commerce' : 'TikTok Shop & Sosyal Ticaret',
+                title: lang === 'de' ? '124.000 € GMV über In-App TikTok Shop innerhalb von 45 Tagen' : lang === 'en' ? '€124,000 GMV generated via TikTok Shop within 45 days' : '45 günde TikTok Shop üzerinden 124.000 € doğrudan ciro',
+                panelHeader: 'TikTok Shop · Seller Center Analytics',
+                dateRange: '45 Tage Live',
+                boxes: [
+                  { label: 'GMV (Umsatz)', value: '124.500 €', bg: 'bg-[#FE2C55]', text: 'text-white' },
+                  { label: 'Orders', value: '2.940', bg: 'bg-black', text: 'text-white' },
+                  { label: 'Conversion Rate', value: '5,82%', bg: 'bg-[#25F4EE]', text: 'text-black' },
+                  { label: 'Affiliate Creators', value: '48', bg: 'bg-[#34A853]', text: 'text-white' }
+                ],
+                tagBefore: '● WEBSEITE-REDIRECT',
+                descBefore: 'Abbruchrate: ~68%',
+                tagAfter: '● TIKTOK 1-CLICK SHOP',
+                descAfter: '5,82% In-App CR · 124.500 €',
+                mult1: { val: '124,5K €', label: 'TikTok Shop GMV' },
+                mult2: { val: '5,82%', label: 'In-App Conversion Rate' }
+              },
+              {
+                tag: lang === 'de' ? 'B2C & App-Installs' : lang === 'en' ? 'B2C & App Installs' : 'B2C & Mobil Uygulama Yükleme',
+                title: lang === 'de' ? '0,42 € Cost-per-Install (CPI) bei über 85.000 App-Installationen' : lang === 'en' ? '€0.42 Cost-per-Install (CPI) across 85,000+ app installs' : '85.000+ uygulama yüklemesinde 0,42 € yükleme başı maliyet (CPI)',
+                panelHeader: 'TikTok Ads · App Promotion Campaign',
+                dateRange: 'Q2 2026',
+                boxes: [
+                  { label: 'Installs', value: '85.400', bg: 'bg-[#FE2C55]', text: 'text-white' },
+                  { label: 'Cost / Install', value: '0,42 €', bg: 'bg-[#34A853]', text: 'text-white' },
+                  { label: 'CTR', value: '4,12%', bg: 'bg-black', text: 'text-white' },
+                  { label: 'Total Reach', value: '4,6M', bg: 'bg-[#25F4EE]', text: 'text-black' }
+                ],
+                tagBefore: '● GOOGLE / META CPI',
+                descBefore: 'CPI: 1,85 €',
+                tagAfter: '● TIKTOK SMART+ INSTALLS',
+                descAfter: 'CPI: 0,42 € (-77% Ersparnis)',
+                mult1: { val: '85.400', label: lang === 'de' ? 'App Downloads' : lang === 'en' ? 'App Downloads' : 'Uygulama İndirme' },
+                mult2: { val: '0,42 €', label: 'Ø Cost per Install' }
+              },
+              {
+                tag: lang === 'de' ? 'Branded Hashtag & Viral Loop' : lang === 'en' ? 'Branded Hashtag & Viral Loop' : 'Özel Hashtag & Viral Etki',
+                title: lang === 'de' ? '8,4% durchschnittliche Engagement-Rate und 4.200 UGC Video-Uploads' : lang === 'en' ? '8.4% average engagement rate and 4,200 UGC video uploads' : '%8,4 ortalama etkileşim oranı ve 4.200 organik video paylaşımı',
+                panelHeader: 'TikTok Ads · Hashtag Challenge Analytics',
+                dateRange: 'Viral Challenge',
+                boxes: [
+                  { label: 'Engagement Rate', value: '8,42%', bg: 'bg-[#FE2C55]', text: 'text-white' },
+                  { label: 'UGC Videos', value: '4.210', bg: 'bg-black', text: 'text-white' },
+                  { label: 'Total Views', value: '32,4M', bg: 'bg-[#25F4EE]', text: 'text-black' },
+                  { label: 'Shares', value: '185.000', bg: 'bg-[#34A853]', text: 'text-white' }
+                ],
+                tagBefore: '● NORMALE REICHWEITE',
+                descBefore: 'Engagement: ~1,8%',
+                tagAfter: '● VIRAL HASHTAG CHALLENGE',
+                descAfter: 'Engagement: 8,42% · 32M Views',
+                mult1: { val: '8,42%', label: 'Engagement Rate' },
+                mult2: { val: '32,4M', label: 'Challenge Views' }
+              }
+            ]
+          },
+
+          'x-ads': {
+            badge: 'X Ads Analytics · B2B Campaign Manager',
+            title: lang === 'de' ? <>Verifizierte Ergebnisse aus <span className="text-slate-900">X (Twitter) Ads</span> Kampagnen</> : lang === 'en' ? <>Verified Results from <span className="text-slate-900">X (Twitter) Ads</span> Campaigns</> : <>Doğrulanmış <span className="text-slate-900">X (Twitter) Ads</span> Kampanya Sonuçları</>,
+            desc: lang === 'de' ? 'Gezielte B2B Lead Generierung, Promoted Trends und C-Level Thought Leadership für maximale Marktpräsenz.' : lang === 'en' ? 'Targeted B2B lead generation, Promoted Trends, and C-level thought leadership for maximum market authority.' : 'Hedefli B2B müşteri talebi, Trend Takeover ve C-Level karar verici odaklı kampanyalar.',
+            accentColor: '#000000',
+            ctaTitle: lang === 'de' ? 'Möchten Sie C-Level Entscheider auf X erreichen?' : lang === 'en' ? 'Want to reach C-level decision-makers on X?' : 'X platformunda üst düzey karar vericilere ulaşmak ister misiniz?',
+            ctaDesc: lang === 'de' ? 'Wir erstellen eine maßgeschneiderte B2B-Targeting-Strategie für Ihr Unternehmen.' : lang === 'en' ? 'We build a bespoke B2B targeting and conversation campaign for your company.' : 'İşletmenize özel B2B hedefleme ve sektör trendi stratejisi oluşturuyoruz.',
+            cards: [
+              {
+                tag: lang === 'de' ? 'B2B & SaaS Lead Gen' : lang === 'en' ? 'B2B & SaaS Lead Gen' : 'B2B & SaaS Müşteri Kazanımı',
+                title: lang === 'de' ? '14,20 € CPL bei verifizierten Geschäftsführern & IT-Entscheidern' : lang === 'en' ? '€14.20 CPL with verified CEOs & IT leaders' : 'Onaylı CEO ve IT yöneticilerinde 14,20 € potansiyel müşteri maliyeti',
+                panelHeader: 'X Ads · B2B Conversation Cards',
+                dateRange: 'Q1-Q2 2026',
+                boxes: [
+                  { label: 'B2B Leads', value: '840', bg: 'bg-black', text: 'text-white' },
+                  { label: 'Cost / Lead', value: '14,20 €', bg: 'bg-[#1DA1F2]', text: 'text-white' },
+                  { label: 'C-Level Share', value: '74,2%', bg: 'bg-slate-800', text: 'text-white' },
+                  { label: 'Conversion Rate', value: '6,4%', bg: 'bg-[#34A853]', text: 'text-white' }
+                ],
+                tagBefore: '● LINKEDIN VERGLEICH',
+                descBefore: 'CPL: 68 € - 95 €',
+                tagAfter: '● X KEYWORD & FOLLOWER TARGETING',
+                descAfter: 'CPL: 14,20 € · 840 Leads',
+                mult1: { val: '14,20 €', label: 'Ø Cost per B2B Lead' },
+                mult2: { val: '74,2%', label: 'C-Level Entscheider-Quote' }
+              },
+              {
+                tag: lang === 'de' ? 'Trend Takeover & PR Launch' : lang === 'en' ? 'Trend Takeover & PR Launch' : 'Gündem Takeover & Lansman',
+                title: lang === 'de' ? '2,4 Mio. Impressionen in 24 Stunden durch Platz 1 Trend-Sponsoring' : lang === 'en' ? '2.4M impressions in 24 hours via #1 Promoted Trend' : '1 Numara Trend Sponsorluğu ile 24 saatte 2,4 Milyon gösterim',
+                panelHeader: 'X Ads · Promoted Trend Takeover',
+                dateRange: '24-Stunden Event',
+                boxes: [
+                  { label: 'Impressions (24h)', value: '2.420.000', bg: 'bg-black', text: 'text-white' },
+                  { label: 'Hashtag Tweets', value: '18.900', bg: 'bg-[#1DA1F2]', text: 'text-white' },
+                  { label: 'CTR', value: '4,8%', bg: 'bg-[#34A853]', text: 'text-white' },
+                  { label: 'Brand Lift', value: '+142%', bg: 'bg-slate-800', text: 'text-white' }
+                ],
+                tagBefore: '● ORGANISCHE REICHWEITE',
+                descBefore: 'Impressions: ~45K / Tag',
+                tagAfter: '● TREND SPONSORING #1',
+                descAfter: '2,42M Impressionen in 24h',
+                mult1: { val: '2,42M', label: '24h Impressionen' },
+                mult2: { val: '+142%', label: 'Brand Awareness Lift' }
+              },
+              {
+                tag: lang === 'de' ? 'Thought Leadership & Account Growth' : lang === 'en' ? 'Thought Leadership & Account Growth' : 'Fikir Liderliği & Takipçi Büyütme',
+                title: lang === 'de' ? '45.000+ neue Branchen-Follower bei 0,38 € Cost per Follower' : lang === 'en' ? '45,000+ new verified followers at €0.38 per follower' : '0,38 € takipçi maliyetiyle 45.000+ yeni nitelikli iş takibi',
+                panelHeader: 'X Ads · Follower Growth Campaign',
+                dateRange: '6 Monate Laufzeit',
+                boxes: [
+                  { label: 'New Followers', value: '45.200', bg: 'bg-black', text: 'text-white' },
+                  { label: 'Cost / Follower', value: '0,38 €', bg: 'bg-[#1DA1F2]', text: 'text-white' },
+                  { label: 'Engagement Rate', value: '8,4%', bg: 'bg-[#34A853]', text: 'text-white' },
+                  { label: 'Reposts', value: '24.600', bg: 'bg-slate-800', text: 'text-white' }
+                ],
+                tagBefore: '● ORGANISCHES WACHSTUM',
+                descBefore: '+150 Follower / Monat',
+                tagAfter: '● THOUGHT LEADER ADS',
+                descAfter: '+7.500 Follower / Monat',
+                mult1: { val: '+45.200', label: 'Neue Branchen-Follower' },
+                mult2: { val: '0,38 €', label: 'Cost per Follower' }
+              },
+              {
+                tag: lang === 'de' ? 'Webinar & Event Registration' : lang === 'en' ? 'Webinar & Event Registration' : 'Webinar & Etkinlik Kaydı',
+                title: lang === 'de' ? '3.200+ Anmeldungen für exklusives B2B-Webinar über Pre-Roll Video' : lang === 'en' ? '3,200+ registrations for exclusive B2B webinar via Pre-Roll' : 'Pre-Roll video ile B2B webinara 3.200+ kayıt',
+                panelHeader: 'X Ads · Video Website Card',
+                dateRange: 'Event Promotion',
+                boxes: [
+                  { label: 'Registrations', value: '3.240', bg: 'bg-black', text: 'text-white' },
+                  { label: 'Cost / Reg.', value: '6,80 €', bg: 'bg-[#34A853]', text: 'text-white' },
+                  { label: 'Video VTR', value: '54,2%', bg: 'bg-[#1DA1F2]', text: 'text-white' },
+                  { label: 'Clicks', value: '48.900', bg: 'bg-slate-800', text: 'text-white' }
+                ],
+                tagBefore: '● STANDARD DISPLAY',
+                descBefore: 'Cost / Reg: 24 €',
+                tagAfter: '● PRE-ROLL VIDEO CARD',
+                descAfter: 'Cost / Reg: 6,80 € · 3.240 Reg.',
+                mult1: { val: '3.240', label: 'Webinar-Anmeldungen' },
+                mult2: { val: '6,80 €', label: 'Cost per Registration' }
+              }
+            ]
+          },
+
+          'seo': {
+            badge: 'Google Search Console & Core Web Vitals',
+            title: lang === 'de' ? <>Verifizierte Ergebnisse aus <span className="text-[#0F9D58]">SEO & GEO</span> Kampagnen</> : lang === 'en' ? <>Verified Results from <span className="text-[#0F9D58]">SEO & GEO</span> Campaigns</> : <>Doğrulanmış <span className="text-[#0F9D58]">SEO & GEO</span> Başarı Sonuçları</>,
+            desc: lang === 'de' ? 'Nachhaltiges organisches Wachstum, Top-100/100 Core Web Vitals und AI Search Citability (ChatGPT, Perplexity & Gemini).' : lang === 'en' ? 'Sustainable organic growth, top 100/100 Core Web Vitals, and AI Search Citability (ChatGPT, Perplexity & Gemini).' : 'Kalıcı organik büyüme, 100/100 Core Web Vitals ve Yapay Zeka Arama Alıntılanabilirliği.',
+            accentColor: '#0F9D58',
+            ctaTitle: lang === 'de' ? 'Möchten Sie auf Seite 1 bei Google stehen?' : lang === 'en' ? 'Want to rank on page 1 of Google?' : 'Google\'da 1. sayfaya yerleşmek ister misiniz?',
+            ctaDesc: lang === 'de' ? 'Wir führen ein 200-Punkte Technical SEO Audit und eine AI Search Potenzialanalyse für Ihre Domain durch.' : lang === 'en' ? 'We perform a 200-point Technical SEO Audit and AI Search analysis for your domain.' : 'Siteniz için 200 faktörlü teknik SEO ve yapay zeka arama analizi hazırlıyoruz.',
+            cards: [
+              {
+                tag: lang === 'de' ? 'Organischer Traffic · GSC Audit' : lang === 'en' ? 'Organic Traffic · GSC Audit' : 'Organik Trafik · GSC Analizi',
+                title: lang === 'de' ? 'Von 2.100 auf 85.000 monatliche Klicks innerhalb von 9 Monaten' : lang === 'en' ? 'From 2,100 to 85,000 monthly clicks within 9 months' : '9 ay içinde aylık tıklamada 2.100\'den 85.000\'e büyük sıçrama',
+                panelHeader: 'Google Search Console · Performance Report',
+                dateRange: '9 Monate SEO-Betreuung',
+                boxes: [
+                  { label: 'Total Clicks', value: '85.400 / Mo', bg: 'bg-[#0F9D58]', text: 'text-white' },
+                  { label: 'Impressions', value: '1,24M', bg: 'bg-[#4285F4]', text: 'text-white' },
+                  { label: 'Avg. CTR', value: '8,42%', bg: 'bg-[#FBBC04]', text: 'text-gray-900' },
+                  { label: 'Avg. Position', value: '#1.8', bg: 'bg-[#EA4335]', text: 'text-white' }
+                ],
+                tagBefore: '● STARTPHASE (TAG 1)',
+                descBefore: 'Klicks: 2.100 / Mo · Pos: #28',
+                tagAfter: '● MONAT 9 (HEUTE)',
+                descAfter: 'Klicks: 85.400 / Mo · Pos: #1.8',
+                mult1: { val: '+4.000%', label: 'Organisches Klick-Wachstum' },
+                mult2: { val: '#1.8', label: 'Ø Position (Fokus-Keywords)' }
+              },
+              {
+                tag: lang === 'de' ? 'Princeton GEO & AI Overviews' : lang === 'en' ? 'Princeton GEO & AI Overviews' : 'Princeton GEO & Yapay Zeka Araması',
+                title: lang === 'de' ? 'Top-Zitierung in Perplexity, ChatGPT Search und Google AI Overviews' : lang === 'en' ? 'Top citation in Perplexity, ChatGPT Search, and Google AI Overviews' : 'Perplexity, ChatGPT ve Google AI özetlerinde 1 numaralı kaynak gösterimi',
+                panelHeader: 'AI Search Visibility & llms.txt Index',
+                dateRange: '2026 AI Search Standard',
+                boxes: [
+                  { label: 'AI Citations', value: '1.420 / Mo', bg: 'bg-[#0F9D58]', text: 'text-white' },
+                  { label: 'llms.txt Score', value: '100 / 100', bg: 'bg-[#4285F4]', text: 'text-white' },
+                  { label: 'Brand Authority', value: '94%', bg: 'bg-[#FBBC04]', text: 'text-gray-900' },
+                  { label: 'AI Referral Visits', value: '4.850', bg: 'bg-slate-800', text: 'text-white' }
+                ],
+                tagBefore: '● KEINE KI-SICHTBARKEIT',
+                descBefore: '0 Erwähnungen in KI-Antworten',
+                tagAfter: '● GEO-FIRST STRATEGIE',
+                descAfter: '1.420 KI-Zitierungen monatlich',
+                mult1: { val: '1.420', label: 'Monatliche KI-Zitate' },
+                mult2: { val: '100/100', label: 'llms.txt Standard' }
+              },
+              {
+                tag: lang === 'de' ? 'Lokales SEO · Google Maps 3-Pack' : lang === 'en' ? 'Local SEO · Google Maps 3-Pack' : 'Yerel SEO · Google Haritalar İlk 3',
+                title: lang === 'de' ? 'Platz #1 in regionalen Suchanfragen: 340+ monatliche Direktanrufe' : lang === 'en' ? 'Rank #1 in local search: 340+ monthly direct phone calls' : 'Bölgesel aramalarda 1. sıra: Aylık 340+ doğrudan telefon araması',
+                panelHeader: 'Google Business Profile · Local Insights',
+                dateRange: 'Regionale Kampagne',
+                boxes: [
+                  { label: 'Phone Calls', value: '342 / Mo', bg: 'bg-[#0F9D58]', text: 'text-white' },
+                  { label: 'Direction Requests', value: '890 / Mo', bg: 'bg-[#4285F4]', text: 'text-white' },
+                  { label: 'Map Views', value: '42.000', bg: 'bg-[#FBBC04]', text: 'text-gray-900' },
+                  { label: 'Local Rank', value: '#1 (Map Pack)', bg: 'bg-[#34A853]', text: 'text-white' }
+                ],
+                tagBefore: '● MAPS POSITION #14',
+                descBefore: 'Anrufe: ~12 / Monat',
+                tagAfter: '● MAPS 3-PACK PLATZ #1',
+                descAfter: 'Anrufe: 342 / Monat (+2.750%)',
+                mult1: { val: '342', label: 'Monatliche Kundenanrufe' },
+                mult2: { val: '#1', label: 'Google Maps 3-Pack' }
+              },
+              {
+                tag: lang === 'de' ? 'Core Web Vitals & PageSpeed' : lang === 'en' ? 'Core Web Vitals & PageSpeed' : 'Site Hızı & Core Web Vitals',
+                title: lang === 'de' ? '100/100 Google PageSpeed & 0.4s LCP — Maximale Indexierungsgeschwindigkeit' : lang === 'en' ? '100/100 Google PageSpeed & 0.4s LCP — Maximum crawl efficiency' : '100/100 Google PageSpeed ve 0.4s LCP ile anında indekslenme',
+                panelHeader: 'Google Lighthouse · Audit Score',
+                dateRange: 'Technical Optimization',
+                boxes: [
+                  { label: 'Performance', value: '100 / 100', bg: 'bg-[#0F9D58]', text: 'text-white' },
+                  { label: 'LCP (Ladezeit)', value: '0,4s', bg: 'bg-[#4285F4]', text: 'text-white' },
+                  { label: 'CLS (Stabilität)', value: '0,00', bg: 'bg-[#34A853]', text: 'text-white' },
+                  { label: 'SEO Score', value: '100 / 100', bg: 'bg-[#FBBC04]', text: 'text-gray-900' }
+                ],
+                tagBefore: '● ALTE WEBSEITE',
+                descBefore: 'Lighthouse Score: 38 · LCP: 4.8s',
+                tagAfter: '● NEXT.JS HIGH-SPEED SEO',
+                descAfter: 'Lighthouse Score: 100 · LCP: 0.4s',
+                mult1: { val: '100/100', label: 'Lighthouse Performance' },
+                mult2: { val: '0,4s', label: 'LCP Ladezeit' }
+              }
+            ]
+          },
+
+          'yorum-yonetimi': {
+            badge: 'Google Business & Trustpilot Reputation Management',
+            title: lang === 'de' ? <>Verifizierte Ergebnisse aus <span className="text-[#EA4335]">Bewertungs-</span> Projekten</> : lang === 'en' ? <>Verified Results from <span className="text-[#EA4335]">Review Management</span> Cases</> : <>Doğrulanmış <span className="text-[#EA4335]">İtibar & Yorum</span> Başarıları</>,
+            desc: lang === 'de' ? 'Rechtssichere Löschung unberechtigter 1-Stern-Bewertungen und automatisierte Generierung von 5-Sterne-Kundenstimmen.' : lang === 'en' ? 'Legally compliant removal of fake 1-star reviews and automated generation of verified 5-star customer feedback.' : 'Haksız 1 yıldızlı yorumların yasal olarak kaldırılması ve gerçek 5 yıldızlı müşteri yorumlarının artırılması.',
+            accentColor: '#EA4335',
+            ctaTitle: lang === 'de' ? 'Möchten Sie Ihren Google-Schnitt auf 4.9★ anheben?' : lang === 'en' ? 'Want to elevate your Google rating to 4.9★?' : 'Google puanınızı 4.9★ seviyesine yükseltmek ister misiniz?',
+            ctaDesc: lang === 'de' ? 'Wir prüfen Ihre negativen Bewertungen kostenlos auf Richtlinienverstöße und Erfolgsaussichten.' : lang === 'en' ? 'We audit your negative reviews for policy violations and removal feasibility for free.' : 'Olumsuz yorumlarınızı platform kuralları ve kaldırılabilirlik açısından ücretsiz inceliyoruz.',
+            cards: [
+              {
+                tag: lang === 'de' ? 'Reputations-Turnaround' : lang === 'en' ? 'Reputation Turnaround' : 'İtibar Dönüşümü',
+                title: lang === 'de' ? 'Von 3.4★ auf 4.9★ Gesamtwertung in 60 Tagen — 18 unfaire Rezensionen entfernt' : lang === 'en' ? 'From 3.4★ to 4.9★ overall rating in 60 days — 18 fake reviews deleted' : '60 günde 3.4★\'tan 4.9★ puana yükseliş — 18 haksız yorum kaldırıldı',
+                panelHeader: 'Google Maps · Rating Turnaround Case',
+                dateRange: '60 Tage Prozess',
+                boxes: [
+                  { label: 'Rating Heute', value: '4.9 ★', bg: 'bg-[#34A853]', text: 'text-white' },
+                  { label: 'Gelöschte Fake-Reviews', value: '18', bg: 'bg-[#EA4335]', text: 'text-white' },
+                  { label: 'Neue 5-Sterne Reviews', value: '+64', bg: 'bg-[#FBBC04]', text: 'text-gray-900' },
+                  { label: 'Customer Trust', value: '98%', bg: 'bg-[#4285F4]', text: 'text-white' }
+                ],
+                tagBefore: '● KRISENSTATUS (TAG 1)',
+                descBefore: '3.4 Sterne · 18 Fake-Bewertungen',
+                tagAfter: '● REPUTATION WIEDERHERGESTELLT',
+                descAfter: '4.9 Sterne · 100% Bereinigt',
+                mult1: { val: '4.9 ★', label: 'Neuer Google Schnitt' },
+                mult2: { val: '-18', label: 'Fake-Rezensionen gelöscht' }
+              },
+              {
+                tag: lang === 'de' ? 'Wettbewerber-Angriff Abwehr' : lang === 'en' ? 'Competitor Attack Defense' : 'Rakip Saldırısı Engelleme',
+                title: lang === 'de' ? 'Organisierter 1-Stern-Angriff (32 Fake-Profile) innerhalb von 7 Tagen neutralisiert' : lang === 'en' ? 'Organized 1-star spam attack (32 fake profiles) neutralized within 7 days' : 'Organize sahte 1 yıldız saldırısı (32 sahte profil) 7 günde tamamen temizlendi',
+                panelHeader: 'Google Anti-Spam · Legal Removal Request',
+                dateRange: 'Express-Intervention (7 Tage)',
+                boxes: [
+                  { label: 'Attack Size', value: '32 Reviews', bg: 'bg-[#EA4335]', text: 'text-white' },
+                  { label: 'Löschquote', value: '100%', bg: 'bg-[#34A853]', text: 'text-white' },
+                  { label: 'Bearbeitungszeit', value: '6 Tage', bg: 'bg-[#4285F4]', text: 'text-white' },
+                  { label: 'Geschützte Umsätze', value: '~45.000 €', bg: 'bg-slate-800', text: 'text-white' }
+                ],
+                tagBefore: '● SPAM-ATTACKE',
+                descBefore: '32 Fake 1-Stern-Bewertungen',
+                tagAfter: '● RICHTLINIEN-LÖSCHUNG',
+                descAfter: '32 von 32 restlos entfernt',
+                mult1: { val: '100%', label: 'Erfolgsquote (Spam)' },
+                mult2: { val: '6 Tage', label: 'Löschdauer' }
+              },
+              {
+                tag: lang === 'de' ? 'Automatisierter Review-Funnel' : lang === 'en' ? 'Automated Review Funnel' : 'Otomatik Yorum Toplama Hunisi',
+                title: lang === 'de' ? 'QR & SMS Funnel: Monatlich +35 echte 5-Sterne-Bewertungen von zufriedenen Kunden' : lang === 'en' ? 'QR & SMS Funnel: Monthly +35 verified 5-star reviews from real clients' : 'QR & SMS sistemi ile her ay memnun müşterilerden +35 gerçek 5 yıldızlı yorum',
+                panelHeader: 'Review Automation · QR Funnel Dashboard',
+                dateRange: 'Monatlicher Zuwachs',
+                boxes: [
+                  { label: 'Monthly 5★ Reviews', value: '+35 / Mo', bg: 'bg-[#34A853]', text: 'text-white' },
+                  { label: 'Scan to Review Rate', value: '68%', bg: 'bg-[#4285F4]', text: 'text-white' },
+                  { label: 'Customer Retention', value: '92%', bg: 'bg-[#FBBC04]', text: 'text-gray-900' },
+                  { label: 'Trustpilot Rank', value: '#1 Branche', bg: 'bg-[#EA4335]', text: 'text-white' }
+                ],
+                tagBefore: '● MANUELLES FRAGEN',
+                descBefore: '+2 Bewertungen / Monat',
+                tagAfter: '● AUTOMATISIERTER QR-FUNNEL',
+                descAfter: '+35 echte 5★ Bewertungen / Mo',
+                mult1: { val: '+35', label: 'Echte 5★ Reviews / Monat' },
+                mult2: { val: '68%', label: 'Feedback Conversion Rate' }
+              },
+              {
+                tag: lang === 'de' ? 'Umsatzhebel durch Vertrauen' : lang === 'en' ? 'Revenue Lift via Trust' : 'Güven Sayesinde Ciro Artışı',
+                title: lang === 'de' ? '+320% mehr Anrufe und Buchungen nach Erreichen der 4.9★ Marke' : lang === 'en' ? '+320% more customer calls and bookings after reaching 4.9★' : '4.9★ puanına ulaştıktan sonra müşteri aramalarında +%320 artış',
+                panelHeader: 'Local Business · Conversion Correlation',
+                dateRange: 'Vorher/Nachher Vergleich',
+                boxes: [
+                  { label: 'Customer Inquiries', value: '+320%', bg: 'bg-[#34A853]', text: 'text-white' },
+                  { label: 'Average Ticket', value: '+24%', bg: 'bg-[#4285F4]', text: 'text-white' },
+                  { label: 'Local Search Clicks', value: '4.800 / Mo', bg: 'bg-[#FBBC04]', text: 'text-gray-900' },
+                  { label: 'Recommendation Rate', value: '96%', bg: 'bg-[#EA4335]', text: 'text-white' }
+                ],
+                tagBefore: '● 3.4 STERNE ZEITRAUM',
+                descBefore: 'Anfragen: ~15 / Monat',
+                tagAfter: '● 4.9 STERNE REPUTATION',
+                descAfter: 'Anfragen: 63 / Monat (+320%)',
+                mult1: { val: '+320%', label: 'Mehr Kundenanfragen' },
+                mult2: { val: '4.9★', label: 'Dauerhafter Trust-Score' }
+              }
+            ]
+          }
+        }
+
+        const cs = caseStudiesData[service] || caseStudiesData['google-ads']
+
+        return (
+          <section className="py-24 px-4 bg-gradient-to-b from-gray-50 via-white to-gray-50 border-y border-gray-100">
+            <div className="container mx-auto max-w-7xl">
+              <div className="text-center mb-16">
+                <div className="inline-flex items-center space-x-2 bg-blue-50 border border-blue-200/80 rounded-full px-4 py-1.5 mb-4 shadow-sm">
+                  <span className="w-2 h-2 rounded-full animate-pulse" style={{ backgroundColor: cs.accentColor }}></span>
+                  <span className="text-xs font-bold uppercase tracking-wider" style={{ color: cs.accentColor }}>
+                    {cs.badge}
                   </span>
-                  <h3 className="text-xl md:text-2xl font-bold text-gray-900 leading-snug">
-                    {lang === 'de' ? (
-                      '1,74 Mio. Klicks & 208.000 Conversions bei 1,13 Mio. € verwaltetem Budget'
-                    ) : lang === 'en' ? (
-                      '1.74M Clicks & 208K Conversions across €1.13M managed ad spend'
-                    ) : (
-                      '1,13 Milyon € bütçe ile 1,74 Milyon tıklama ve 208.000 dönüşüm'
-                    )}
-                  </h3>
                 </div>
-
-                <div className="p-5 md:p-6 bg-slate-50/70 flex-grow">
-                  <div className="bg-white rounded-2xl border border-gray-200/80 shadow-sm p-4 md:p-5 overflow-hidden">
-                    <div className="flex items-center justify-between pb-3 mb-3 border-b border-gray-100 text-xs text-gray-500">
-                      <div className="flex items-center space-x-2">
-                        <div className="flex space-x-1">
-                          <span className="w-2.5 h-2.5 rounded-full bg-red-400"></span>
-                          <span className="w-2.5 h-2.5 rounded-full bg-yellow-400"></span>
-                          <span className="w-2.5 h-2.5 rounded-full bg-green-400"></span>
-                        </div>
-                        <span className="font-semibold text-gray-800 flex items-center gap-1">
-                          <svg className="w-3.5 h-3.5" viewBox="0 0 24 24" fill="none"><path d="M12 2L2 7L12 12L22 7L12 2Z" fill="#4285F4"/><path d="M2 17L12 22L22 17" stroke="#34A853" strokeWidth="2"/><path d="M2 12L12 17L22 12" stroke="#FBBC05" strokeWidth="2"/></svg>
-                          Google Ads · Home Overview
-                        </span>
-                      </div>
-                      <span className="bg-gray-100 text-gray-600 px-2 py-0.5 rounded text-[11px] font-mono">1. Mai 2016 – 15. Aug 2026</span>
-                    </div>
-
-                    <div className="grid grid-cols-2 sm:grid-cols-4 gap-2 mb-4">
-                      <div className="bg-[#4285F4] text-white p-2.5 rounded-lg">
-                        <p className="text-[10px] uppercase font-semibold opacity-90">Clicks</p>
-                        <p className="text-sm md:text-base font-bold">1.74m</p>
-                      </div>
-                      <div className="bg-[#EA4335] text-white p-2.5 rounded-lg">
-                        <p className="text-[10px] uppercase font-semibold opacity-90">Impressions</p>
-                        <p className="text-sm md:text-base font-bold">150m</p>
-                      </div>
-                      <div className="bg-[#FBBC04] text-gray-900 p-2.5 rounded-lg">
-                        <p className="text-[10px] uppercase font-semibold opacity-90">Conversions</p>
-                        <p className="text-sm md:text-base font-bold">208k</p>
-                      </div>
-                      <div className="bg-[#34A853] text-white p-2.5 rounded-lg">
-                        <p className="text-[10px] uppercase font-semibold opacity-90">Cost</p>
-                        <p className="text-sm md:text-base font-bold">€1.13m</p>
-                      </div>
-                    </div>
-
-                    <div className="relative bg-slate-50/80 rounded-xl p-3 md:p-4 border border-gray-100">
-                      <svg className="w-full h-32 md:h-36 overflow-visible" viewBox="0 0 500 130" fill="none">
-                        <line x1="0" y1="20" x2="500" y2="20" stroke="#E2E8F0" strokeDasharray="3 3"/>
-                        <line x1="0" y1="60" x2="500" y2="60" stroke="#E2E8F0" strokeDasharray="3 3"/>
-                        <line x1="0" y1="100" x2="500" y2="100" stroke="#E2E8F0" strokeDasharray="3 3"/>
-                        
-                        <path d="M 0 118 Q 80 115 140 100 T 260 75 T 380 40 T 500 15" stroke="#4285F4" strokeWidth="3" fill="none"/>
-                        <path d="M 0 120 Q 80 118 140 105 T 260 80 T 380 45 T 500 20" stroke="#EA4335" strokeWidth="2.5" fill="none"/>
-                        <path d="M 0 122 Q 80 120 140 110 T 260 85 T 380 50 T 500 25" stroke="#34A853" strokeWidth="2" fill="none"/>
-                      </svg>
-
-                      <div className="absolute left-6 top-16 md:top-14 bg-white/95 border border-gray-200 text-gray-700 px-2.5 py-1 rounded-lg shadow-sm text-[11px]">
-                        <span className="font-bold block text-gray-500 uppercase text-[9px]">● 2. QUARTAL 2016</span>
-                        <span>Start der Kampagnen</span>
-                      </div>
-
-                      <div className="absolute right-6 top-2 md:top-2 bg-white/95 border border-blue-300 text-blue-800 px-3 py-1 rounded-lg shadow-md text-[11px]">
-                        <span className="font-bold block text-blue-600 uppercase text-[9px]">● 3. QUARTAL 2026</span>
-                        <span className="font-bold">1,74M Klicks · 208K Conv.</span>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-
-                {/* Bottom Google Blue Multiplier Banner */}
-                <div className="bg-[#4285F4] text-white p-5 md:p-6 grid grid-cols-2 gap-4">
-                  <div className="flex flex-col">
-                    <div className="flex items-baseline space-x-1">
-                      <span className="text-2xl md:text-3xl font-black text-white">↗</span>
-                      <span className="text-3xl md:text-4xl font-black tracking-tight text-white">1,74M</span>
-                    </div>
-                    <span className="text-xs md:text-sm font-medium uppercase tracking-wider text-blue-100 mt-0.5">
-                      {lang === 'de' ? 'Klicks generiert' : lang === 'en' ? 'Clicks Generated' : 'Üretilen Tıklama'}
-                    </span>
-                  </div>
-                  <div className="flex flex-col border-l border-white/20 pl-4">
-                    <div className="flex items-baseline space-x-1">
-                      <span className="text-2xl md:text-3xl font-black text-white">↗</span>
-                      <span className="text-3xl md:text-4xl font-black tracking-tight text-white">208K</span>
-                    </div>
-                    <span className="text-xs md:text-sm font-medium uppercase tracking-wider text-blue-100 mt-0.5">
-                      {lang === 'de' ? 'Conversions' : lang === 'en' ? 'Conversions' : 'Dönüşüm'}
-                    </span>
-                  </div>
-                </div>
-              </div>
-
-              {/* CARD 2: Scaling & Interaction Peak (Real Screenshot 4: 1 May 2023 – 15 Aug 2026 / Interaction Rate 64.78%) */}
-              <div className="bg-white rounded-3xl border border-gray-200/80 shadow-xl hover:shadow-2xl transition-all duration-300 flex flex-col overflow-hidden group">
-                <div className="p-6 md:p-8 pb-5 border-b border-gray-100">
-                  <span className="text-xs font-bold uppercase tracking-wider text-blue-600 bg-blue-50 px-3 py-1 rounded-full inline-block mb-3">
-                    {lang === 'de' ? 'Letzte 3 Jahre · Zirve Performans' : lang === 'en' ? 'Last 3 Years · Peak Performance' : 'Son 3 Yıl · Zirve Performans'}
-                  </span>
-                  <h3 className="text-xl md:text-2xl font-bold text-gray-900 leading-snug">
-                    {lang === 'de' ? (
-                      'Interaktionsrate auf 64,78% gesteigert (+57,75% Wachstum) bei 19,3M Video Views'
-                    ) : lang === 'en' ? (
-                      'Interaction Rate surged to 64.78% (+57.75% growth) with 19.3M Video Views'
-                    ) : (
-                      'Etkileşim oranı %64,78\'e yükseldi (+%57,75 büyüme) ve 19,3M video izlendi'
-                    )}
-                  </h3>
-                </div>
-
-                <div className="p-5 md:p-6 bg-slate-50/70 flex-grow">
-                  <div className="bg-white rounded-2xl border border-gray-200/80 shadow-sm p-4 md:p-5 overflow-hidden">
-                    <div className="flex items-center justify-between pb-3 mb-3 border-b border-gray-100 text-xs text-gray-500">
-                      <div className="flex items-center space-x-2">
-                        <div className="flex space-x-1">
-                          <span className="w-2.5 h-2.5 rounded-full bg-red-400"></span>
-                          <span className="w-2.5 h-2.5 rounded-full bg-yellow-400"></span>
-                          <span className="w-2.5 h-2.5 rounded-full bg-green-400"></span>
-                        </div>
-                        <span className="font-semibold text-gray-800 flex items-center gap-1">
-                          <svg className="w-3.5 h-3.5" viewBox="0 0 24 24" fill="none"><path d="M12 2L2 7L12 12L22 7L12 2Z" fill="#4285F4"/><path d="M2 17L12 22L22 17" stroke="#34A853" strokeWidth="2"/><path d="M2 12L12 17L22 12" stroke="#FBBC05" strokeWidth="2"/></svg>
-                          Google Ads · Ads Performance
-                        </span>
-                      </div>
-                      <span className="bg-gray-100 text-gray-600 px-2 py-0.5 rounded text-[11px] font-mono">1. Mai 2023 – 15. Aug 2026</span>
-                    </div>
-
-                    <div className="grid grid-cols-2 sm:grid-cols-4 gap-2 mb-4">
-                      <div className="bg-[#34A853] text-white p-2.5 rounded-lg">
-                        <p className="text-[10px] uppercase font-semibold opacity-90">Clicks</p>
-                        <p className="text-sm md:text-base font-bold">128.205</p>
-                        <p className="text-[9px] opacity-80">+108.239</p>
-                      </div>
-                      <div className="bg-[#4285F4] text-white p-2.5 rounded-lg">
-                        <p className="text-[10px] uppercase font-semibold opacity-90">Impr.</p>
-                        <p className="text-sm md:text-base font-bold">40,07M</p>
-                        <p className="text-[9px] opacity-80">+39,79M</p>
-                      </div>
-                      <div className="bg-[#FBBC04] text-gray-900 p-2.5 rounded-lg">
-                        <p className="text-[10px] uppercase font-semibold opacity-90">TrueView</p>
-                        <p className="text-sm md:text-base font-bold">19,31M</p>
-                        <p className="text-[9px] opacity-80">+19,31M</p>
-                      </div>
-                      <div className="bg-[#EA4335] text-white p-2.5 rounded-lg">
-                        <p className="text-[10px] uppercase font-semibold opacity-90">Interaktion</p>
-                        <p className="text-sm md:text-base font-bold">64,78 %</p>
-                        <p className="text-[9px] opacity-80">+57,75%</p>
-                      </div>
-                    </div>
-
-                    <div className="relative bg-slate-50/80 rounded-xl p-3 md:p-4 border border-gray-100">
-                      <svg className="w-full h-32 md:h-36 overflow-visible" viewBox="0 0 500 130" fill="none">
-                        <line x1="0" y1="20" x2="500" y2="20" stroke="#E2E8F0" strokeDasharray="3 3"/>
-                        <line x1="0" y1="60" x2="500" y2="60" stroke="#E2E8F0" strokeDasharray="3 3"/>
-                        <line x1="0" y1="100" x2="500" y2="100" stroke="#E2E8F0" strokeDasharray="3 3"/>
-                        
-                        <path d="M 0 115 Q 120 110 200 40 T 350 20 T 500 10" stroke="#EA4335" strokeWidth="3" fill="none"/>
-                        <path d="M 0 120 Q 120 115 200 65 T 350 35 T 500 18" stroke="#4285F4" strokeWidth="2.5" fill="none"/>
-                        <path d="M 0 122 Q 120 118 200 75 T 350 45 T 500 22" stroke="#FBBC04" strokeWidth="2" fill="none"/>
-                      </svg>
-
-                      <div className="absolute left-6 top-16 md:top-14 bg-white/95 border border-red-200 text-red-700 px-2.5 py-1 rounded-lg shadow-sm text-[11px]">
-                        <span className="font-bold block text-red-600 uppercase text-[9px]">● MAI 2023 (START)</span>
-                        <span>Interaktion: ~7,03%</span>
-                      </div>
-
-                      <div className="absolute right-6 top-2 md:top-2 bg-white/95 border border-blue-300 text-blue-800 px-3 py-1 rounded-lg shadow-md text-[11px]">
-                        <span className="font-bold block text-blue-600 uppercase text-[9px]">● 2026 HEUTE</span>
-                        <span className="font-bold">64,78% Peak-Interaktion</span>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-
-                {/* Bottom Google Blue Multiplier Banner */}
-                <div className="bg-[#4285F4] text-white p-5 md:p-6 grid grid-cols-2 gap-4">
-                  <div className="flex flex-col">
-                    <div className="flex items-baseline space-x-1">
-                      <span className="text-2xl md:text-3xl font-black text-white">↗</span>
-                      <span className="text-3xl md:text-4xl font-black tracking-tight text-white">64,78%</span>
-                    </div>
-                    <span className="text-xs md:text-sm font-medium uppercase tracking-wider text-blue-100 mt-0.5">
-                      Interaktionsrate (Peak)
-                    </span>
-                  </div>
-                  <div className="flex flex-col border-l border-white/20 pl-4">
-                    <div className="flex items-baseline space-x-1">
-                      <span className="text-2xl md:text-3xl font-black text-white">↗</span>
-                      <span className="text-3xl md:text-4xl font-black tracking-tight text-white">+57,75%</span>
-                    </div>
-                    <span className="text-xs md:text-sm font-medium uppercase tracking-wider text-blue-100 mt-0.5">
-                      Wachstum / Artış
-                    </span>
-                  </div>
-                </div>
-              </div>
-
-              {/* CARD 3: Video & TrueView Campaign Power (Real Screenshot 2: 124.3M Impr. & 23.12M Video Views) */}
-              <div className="bg-white rounded-3xl border border-gray-200/80 shadow-xl hover:shadow-2xl transition-all duration-300 flex flex-col overflow-hidden group">
-                <div className="p-6 md:p-8 pb-5 border-b border-gray-100">
-                  <span className="text-xs font-bold uppercase tracking-wider text-blue-600 bg-blue-50 px-3 py-1 rounded-full inline-block mb-3">
-                    {lang === 'de' ? 'YouTube & Video-Ads Reichweite' : lang === 'en' ? 'YouTube & Video Ads Reach' : 'YouTube & Video Reklam Erişimi'}
-                  </span>
-                  <h3 className="text-xl md:text-2xl font-bold text-gray-900 leading-snug">
-                    {lang === 'de' ? (
-                      '23,12 Mio. TrueView Videoaufrufe bei 124,3 Mio. Impressionen'
-                    ) : lang === 'en' ? (
-                      '23.12M TrueView Video Views across 124.3M total impressions'
-                    ) : (
-                      '124,3 Milyon gösterim ve 23,12 Milyon TrueView video izlenmesi'
-                    )}
-                  </h3>
-                </div>
-
-                <div className="p-5 md:p-6 bg-slate-50/70 flex-grow">
-                  <div className="bg-white rounded-2xl border border-gray-200/80 shadow-sm p-4 md:p-5 overflow-hidden">
-                    <div className="flex items-center justify-between pb-3 mb-3 border-b border-gray-100 text-xs text-gray-500">
-                      <div className="flex items-center space-x-2">
-                        <div className="flex space-x-1">
-                          <span className="w-2.5 h-2.5 rounded-full bg-red-400"></span>
-                          <span className="w-2.5 h-2.5 rounded-full bg-yellow-400"></span>
-                          <span className="w-2.5 h-2.5 rounded-full bg-green-400"></span>
-                        </div>
-                        <span className="font-semibold text-gray-800 flex items-center gap-1">
-                          <svg className="w-3.5 h-3.5" viewBox="0 0 24 24" fill="none"><path d="M12 2L2 7L12 12L22 7L12 2Z" fill="#4285F4"/><path d="M2 17L12 22L22 17" stroke="#34A853" strokeWidth="2"/><path d="M2 12L12 17L22 12" stroke="#FBBC05" strokeWidth="2"/></svg>
-                          Google Ads · Video & Ads
-                        </span>
-                      </div>
-                      <span className="bg-gray-100 text-gray-600 px-2 py-0.5 rounded text-[11px] font-mono">1. Mai 2016 – 15. Aug 2026</span>
-                    </div>
-
-                    <div className="grid grid-cols-2 sm:grid-cols-4 gap-2 mb-4">
-                      <div className="bg-[#34A853] text-white p-2.5 rounded-lg">
-                        <p className="text-[10px] uppercase font-semibold opacity-90">Clicks</p>
-                        <p className="text-sm md:text-base font-bold">1.153.968</p>
-                      </div>
-                      <div className="bg-[#4285F4] text-white p-2.5 rounded-lg">
-                        <p className="text-[10px] uppercase font-semibold opacity-90">Impr.</p>
-                        <p className="text-sm md:text-base font-bold">124,3M</p>
-                      </div>
-                      <div className="bg-[#FBBC04] text-gray-900 p-2.5 rounded-lg">
-                        <p className="text-[10px] uppercase font-semibold opacity-90">TrueView</p>
-                        <p className="text-sm md:text-base font-bold">23,12M</p>
-                      </div>
-                      <div className="bg-slate-800 text-white p-2.5 rounded-lg">
-                        <p className="text-[10px] uppercase font-semibold opacity-90">Cost</p>
-                        <p className="text-sm md:text-base font-bold">856.708 €</p>
-                      </div>
-                    </div>
-
-                    <div className="relative bg-slate-50/80 rounded-xl p-3 md:p-4 border border-gray-100">
-                      <svg className="w-full h-32 md:h-36 overflow-visible" viewBox="0 0 500 130" fill="none">
-                        <line x1="0" y1="20" x2="500" y2="20" stroke="#E2E8F0" strokeDasharray="3 3"/>
-                        <line x1="0" y1="60" x2="500" y2="60" stroke="#E2E8F0" strokeDasharray="3 3"/>
-                        <line x1="0" y1="100" x2="500" y2="100" stroke="#E2E8F0" strokeDasharray="3 3"/>
-                        
-                        <path d="M 0 115 Q 150 110 240 70 T 360 35 T 500 12" stroke="#4285F4" strokeWidth="3" fill="none"/>
-                        <path d="M 0 118 Q 150 112 240 80 T 360 45 T 500 20" stroke="#FBBC04" strokeWidth="2.5" fill="none"/>
-                        <path d="M 0 120 Q 150 115 240 90 T 360 60 T 500 30" stroke="#34A853" strokeWidth="2" fill="none"/>
-                      </svg>
-
-                      <div className="absolute left-6 top-16 md:top-14 bg-white/95 border border-gray-200 text-gray-700 px-2.5 py-1 rounded-lg shadow-sm text-[11px]">
-                        <span className="font-bold block text-gray-500 uppercase text-[9px]">● REICHWEITEN-AUFBAU</span>
-                        <span>124.339.285 Impressionen</span>
-                      </div>
-
-                      <div className="absolute right-6 top-2 md:top-2 bg-white/95 border border-blue-300 text-blue-800 px-3 py-1 rounded-lg shadow-md text-[11px]">
-                        <span className="font-bold block text-blue-600 uppercase text-[9px]">● TRUEVIEW VIEWS</span>
-                        <span className="font-bold">23.126.141 Videoaufrufe</span>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-
-                {/* Bottom Google Blue Multiplier Banner */}
-                <div className="bg-[#4285F4] text-white p-5 md:p-6 grid grid-cols-2 gap-4">
-                  <div className="flex flex-col">
-                    <div className="flex items-baseline space-x-1">
-                      <span className="text-2xl md:text-3xl font-black text-white">↗</span>
-                      <span className="text-3xl md:text-4xl font-black tracking-tight text-white">23,12M</span>
-                    </div>
-                    <span className="text-xs md:text-sm font-medium uppercase tracking-wider text-blue-100 mt-0.5">
-                      TrueView Video Views
-                    </span>
-                  </div>
-                  <div className="flex flex-col border-l border-white/20 pl-4">
-                    <div className="flex items-baseline space-x-1">
-                      <span className="text-2xl md:text-3xl font-black text-white">↗</span>
-                      <span className="text-3xl md:text-4xl font-black tracking-tight text-white">124,3M</span>
-                    </div>
-                    <span className="text-xs md:text-sm font-medium uppercase tracking-wider text-blue-100 mt-0.5">
-                      Gesamtreichweite (Impr.)
-                    </span>
-                  </div>
-                </div>
-              </div>
-
-              {/* CARD 4: Multi-Campaign Scale (Real Screenshot 3: 720 Campaigns / 26.18% Interaction Rate) */}
-              <div className="bg-white rounded-3xl border border-gray-200/80 shadow-xl hover:shadow-2xl transition-all duration-300 flex flex-col overflow-hidden group">
-                <div className="p-6 md:p-8 pb-5 border-b border-gray-100">
-                  <span className="text-xs font-bold uppercase tracking-wider text-blue-600 bg-blue-50 px-3 py-1 rounded-full inline-block mb-3">
-                    {lang === 'de' ? '720 Kampagnen · Skalierungserfahrung' : lang === 'en' ? '720 Campaigns · Scaling Experience' : '720 Kampanya · Ölçekleme Deneyimi'}
-                  </span>
-                  <h3 className="text-xl md:text-2xl font-bold text-gray-900 leading-snug">
-                    {lang === 'de' ? (
-                      '720 Kampagnen mit 26,18% durchschnittlicher Interaktionsrate über 10 Jahre'
-                    ) : lang === 'en' ? (
-                      '720 campaigns managed with 26.18% average interaction rate over 10 years'
-                    ) : (
-                      '10 yılda 720 kampanya ve %26,18 ortalama etkileşim oranıyla kanıtlanmış başarı'
-                    )}
-                  </h3>
-                </div>
-
-                <div className="p-5 md:p-6 bg-slate-50/70 flex-grow">
-                  <div className="bg-white rounded-2xl border border-gray-200/80 shadow-sm p-4 md:p-5 overflow-hidden">
-                    <div className="flex items-center justify-between pb-3 mb-3 border-b border-gray-100 text-xs text-gray-500">
-                      <div className="flex items-center space-x-2">
-                        <div className="flex space-x-1">
-                          <span className="w-2.5 h-2.5 rounded-full bg-red-400"></span>
-                          <span className="w-2.5 h-2.5 rounded-full bg-yellow-400"></span>
-                          <span className="w-2.5 h-2.5 rounded-full bg-green-400"></span>
-                        </div>
-                        <span className="font-semibold text-gray-800 flex items-center gap-1">
-                          <svg className="w-3.5 h-3.5" viewBox="0 0 24 24" fill="none"><path d="M12 2L2 7L12 12L22 7L12 2Z" fill="#4285F4"/><path d="M2 17L12 22L22 17" stroke="#34A853" strokeWidth="2"/><path d="M2 12L12 17L22 12" stroke="#FBBC05" strokeWidth="2"/></svg>
-                          Google Ads · All Campaigns (720)
-                        </span>
-                      </div>
-                      <span className="bg-gray-100 text-gray-600 px-2 py-0.5 rounded text-[11px] font-mono">10 Jahre Track-Record</span>
-                    </div>
-
-                    <div className="grid grid-cols-2 sm:grid-cols-4 gap-2 mb-4">
-                      <div className="bg-[#34A853] text-white p-2.5 rounded-lg">
-                        <p className="text-[10px] uppercase font-semibold opacity-90">Clicks</p>
-                        <p className="text-sm md:text-base font-bold">1.153.968</p>
-                      </div>
-                      <div className="bg-[#4285F4] text-white p-2.5 rounded-lg">
-                        <p className="text-[10px] uppercase font-semibold opacity-90">Impr.</p>
-                        <p className="text-sm md:text-base font-bold">124,3M</p>
-                      </div>
-                      <div className="bg-[#FBBC04] text-gray-900 p-2.5 rounded-lg">
-                        <p className="text-[10px] uppercase font-semibold opacity-90">TrueView</p>
-                        <p className="text-sm md:text-base font-bold">23,12M</p>
-                      </div>
-                      <div className="bg-[#EA4335] text-white p-2.5 rounded-lg">
-                        <p className="text-[10px] uppercase font-semibold opacity-90">Interaktion</p>
-                        <p className="text-sm md:text-base font-bold">26,18 %</p>
-                      </div>
-                    </div>
-
-                    <div className="relative bg-slate-50/80 rounded-xl p-3 md:p-4 border border-gray-100">
-                      <svg className="w-full h-32 md:h-36 overflow-visible" viewBox="0 0 500 130" fill="none">
-                        <line x1="0" y1="20" x2="500" y2="20" stroke="#E2E8F0" strokeDasharray="3 3"/>
-                        <line x1="0" y1="60" x2="500" y2="60" stroke="#E2E8F0" strokeDasharray="3 3"/>
-                        <line x1="0" y1="100" x2="500" y2="100" stroke="#E2E8F0" strokeDasharray="3 3"/>
-                        
-                        <path d="M 0 118 Q 120 112 240 85 T 380 40 T 500 12" stroke="#34A853" strokeWidth="3" fill="none"/>
-                        <path d="M 0 120 Q 120 115 240 90 T 380 50 T 500 20" stroke="#4285F4" strokeWidth="2" fill="none"/>
-                        <path d="M 0 122 Q 120 118 240 95 T 380 55 T 500 25" stroke="#EA4335" strokeWidth="2" fill="none"/>
-                      </svg>
-
-                      <div className="absolute left-6 top-16 md:top-14 bg-white/95 border border-gray-200 text-gray-700 px-2.5 py-1 rounded-lg shadow-sm text-[11px]">
-                        <span className="font-bold block text-gray-500 uppercase text-[9px]">● KAMPAGNEN-VIELFALT</span>
-                        <span>720 Kampagnen verwaltet</span>
-                      </div>
-
-                      <div className="absolute right-6 top-2 md:top-2 bg-white/95 border border-red-300 text-red-800 px-3 py-1 rounded-lg shadow-md text-[11px]">
-                        <span className="font-bold block text-red-600 uppercase text-[9px]">● Ø INTERAKTIONSRATE</span>
-                        <span className="font-bold">26,18% (10 Jahre Schnitt)</span>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-
-                {/* Bottom Google Blue Multiplier Banner */}
-                <div className="bg-[#4285F4] text-white p-5 md:p-6 grid grid-cols-2 gap-4">
-                  <div className="flex flex-col">
-                    <div className="flex items-baseline space-x-1">
-                      <span className="text-2xl md:text-3xl font-black text-white">↗</span>
-                      <span className="text-3xl md:text-4xl font-black tracking-tight text-white">720+</span>
-                    </div>
-                    <span className="text-xs md:text-sm font-medium uppercase tracking-wider text-blue-100 mt-0.5">
-                      {lang === 'de' ? 'Kampagnen verwaltet' : lang === 'en' ? 'Campaigns Managed' : 'Yönetilen Kampanya'}
-                    </span>
-                  </div>
-                  <div className="flex flex-col border-l border-white/20 pl-4">
-                    <div className="flex items-baseline space-x-1">
-                      <span className="text-2xl md:text-3xl font-black text-white">↗</span>
-                      <span className="text-3xl md:text-4xl font-black tracking-tight text-white">26,18%</span>
-                    </div>
-                    <span className="text-xs md:text-sm font-medium uppercase tracking-wider text-blue-100 mt-0.5">
-                      Ø Interaktionsrate (10 J.)
-                    </span>
-                  </div>
-                </div>
-              </div>
-
-            </div>
-
-            {/* Bottom CTA bar inside Section */}
-            <div className="mt-14 p-8 rounded-3xl bg-slate-900 text-white flex flex-col md:flex-row items-center justify-between shadow-2xl border border-slate-800">
-              <div className="mb-6 md:mb-0 text-center md:text-left">
-                <h4 className="text-xl md:text-2xl font-bold mb-1 text-white">
-                  {lang === 'de'
-                    ? 'Möchten Sie ähnliche Ergebnisse für Ihr Unternehmen erzielen?'
-                    : lang === 'en'
-                    ? 'Want to achieve similar results for your business?'
-                    : 'İşletmeniz için de benzer sonuçlar elde etmek ister misiniz?'}
-                </h4>
-                <p className="text-sm text-slate-300">
-                  {lang === 'de'
-                    ? 'Wir prüfen Ihr aktuelles Google Ads Konto und erstellen eine kostenlose Potenzialanalyse.'
-                    : lang === 'en'
-                    ? 'We review your existing Google Ads account and provide a free growth audit.'
-                    : 'Mevcut Google Ads hesabınızı inceliyor ve ücretsiz büyüme potansiyeli analizi sunuyoruz.'}
+                <h2 className="text-3xl md:text-5xl font-black text-gray-900 mb-4 tracking-tight">
+                  {cs.title}
+                </h2>
+                <p className="text-base md:text-lg text-gray-600 max-w-3xl mx-auto leading-relaxed">
+                  {cs.desc}
                 </p>
               </div>
-              <button
-                onClick={scrollToContact}
-                className="bg-[#4285F4] hover:bg-[#3367d6] text-white font-bold px-8 py-4 rounded-xl transition-all duration-300 hover:scale-105 shadow-lg flex items-center gap-2 whitespace-nowrap cursor-pointer"
-              >
-                <span>{lang === 'de' ? 'Kostenlose Potenzialanalyse anfordern' : lang === 'en' ? 'Get Free Audit' : 'Ücretsiz Potansiyel Analizi Al'}</span>
-                <ArrowUpRight className="w-5 h-5" />
-              </button>
-            </div>
 
-          </div>
-        </section>
-      )}
+              {/* 2x2 Grid of Case Study Cards */}
+              <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 md:gap-10">
+                {cs.cards.map((card, idx) => (
+                  <div key={idx} className="bg-white rounded-3xl border border-gray-200/80 shadow-xl hover:shadow-2xl transition-all duration-300 flex flex-col overflow-hidden group">
+                    <div className="p-6 md:p-8 pb-5 border-b border-gray-100">
+                      <span className="text-xs font-bold uppercase tracking-wider text-blue-600 bg-blue-50 px-3 py-1 rounded-full inline-block mb-3">
+                        {card.tag}
+                      </span>
+                      <h3 className="text-xl md:text-2xl font-bold text-gray-900 leading-snug">
+                        {card.title}
+                      </h3>
+                    </div>
+
+                    <div className="p-5 md:p-6 bg-slate-50/70 flex-grow">
+                      <div className="bg-white rounded-2xl border border-gray-200/80 shadow-sm p-4 md:p-5 overflow-hidden">
+                        <div className="flex items-center justify-between pb-3 mb-3 border-b border-gray-100 text-xs text-gray-500">
+                          <div className="flex items-center space-x-2">
+                            <div className="flex space-x-1">
+                              <span className="w-2.5 h-2.5 rounded-full bg-red-400"></span>
+                              <span className="w-2.5 h-2.5 rounded-full bg-yellow-400"></span>
+                              <span className="w-2.5 h-2.5 rounded-full bg-green-400"></span>
+                            </div>
+                            <span className="font-semibold text-gray-800 flex items-center gap-1">
+                              {card.panelHeader}
+                            </span>
+                          </div>
+                          <span className="bg-gray-100 text-gray-600 px-2 py-0.5 rounded text-[11px] font-mono">{card.dateRange}</span>
+                        </div>
+
+                        <div className="grid grid-cols-2 sm:grid-cols-4 gap-2 mb-4">
+                          {card.boxes.map((b, bIdx) => (
+                            <div key={bIdx} className={`${b.bg} ${b.text} p-2.5 rounded-lg`}>
+                              <p className="text-[10px] uppercase font-semibold opacity-90">{b.label}</p>
+                              <p className="text-sm md:text-base font-bold">{b.value}</p>
+                            </div>
+                          ))}
+                        </div>
+
+                        <div className="relative bg-slate-50/80 rounded-xl p-3 md:p-4 border border-gray-100">
+                          <svg className="w-full h-32 md:h-36 overflow-visible" viewBox="0 0 500 130" fill="none">
+                            <line x1="0" y1="20" x2="500" y2="20" stroke="#E2E8F0" strokeDasharray="3 3"/>
+                            <line x1="0" y1="60" x2="500" y2="60" stroke="#E2E8F0" strokeDasharray="3 3"/>
+                            <line x1="0" y1="100" x2="500" y2="100" stroke="#E2E8F0" strokeDasharray="3 3"/>
+                            
+                            <path d="M 0 118 Q 120 110 240 70 T 360 35 T 500 12" stroke={cs.accentColor} strokeWidth="3" fill="none"/>
+                            <path d="M 0 120 Q 120 115 240 80 T 360 45 T 500 20" stroke="#4285F4" strokeWidth="2.5" fill="none"/>
+                            <path d="M 0 122 Q 120 118 240 90 T 360 60 T 500 30" stroke="#34A853" strokeWidth="2" fill="none"/>
+                          </svg>
+
+                          <div className="absolute left-6 top-16 md:top-14 bg-white/95 border border-gray-200 text-gray-700 px-2.5 py-1 rounded-lg shadow-sm text-[11px]">
+                            <span className="font-bold block text-gray-500 uppercase text-[9px]">{card.tagBefore}</span>
+                            <span>{card.descBefore}</span>
+                          </div>
+
+                          <div className="absolute right-6 top-2 md:top-2 bg-white/95 border border-blue-300 text-blue-800 px-3 py-1 rounded-lg shadow-md text-[11px]">
+                            <span className="font-bold block uppercase text-[9px]" style={{ color: cs.accentColor }}>{card.tagAfter}</span>
+                            <span className="font-bold">{card.descAfter}</span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    {/* Bottom Blue Multiplier Banner */}
+                    <div className="bg-[#4285F4] text-white p-5 md:p-6 grid grid-cols-2 gap-4">
+                      <div className="flex flex-col">
+                        <div className="flex items-baseline space-x-1">
+                          <span className="text-2xl md:text-3xl font-black text-white">↗</span>
+                          <span className="text-3xl md:text-4xl font-black tracking-tight text-white">{card.mult1.val}</span>
+                        </div>
+                        <span className="text-xs md:text-sm font-medium uppercase tracking-wider text-blue-100 mt-0.5">
+                          {card.mult1.label}
+                        </span>
+                      </div>
+                      <div className="flex flex-col border-l border-white/20 pl-4">
+                        <div className="flex items-baseline space-x-1">
+                          <span className="text-2xl md:text-3xl font-black text-white">↗</span>
+                          <span className="text-3xl md:text-4xl font-black tracking-tight text-white">{card.mult2.val}</span>
+                        </div>
+                        <span className="text-xs md:text-sm font-medium uppercase tracking-wider text-blue-100 mt-0.5">
+                          {card.mult2.label}
+                        </span>
+                      </div>
+                    </div>
+                  </div>
+                ))}
+              </div>
+
+              {/* Bottom CTA bar inside Section */}
+              <div className="mt-14 p-8 rounded-3xl bg-slate-900 text-white flex flex-col md:flex-row items-center justify-between shadow-2xl border border-slate-800">
+                <div className="mb-6 md:mb-0 text-center md:text-left">
+                  <h4 className="text-xl md:text-2xl font-bold mb-1 text-white">
+                    {cs.ctaTitle}
+                  </h4>
+                  <p className="text-sm text-slate-300">
+                    {cs.ctaDesc}
+                  </p>
+                </div>
+                <button
+                  onClick={scrollToContact}
+                  className="bg-[#4285F4] hover:bg-[#3367d6] text-white font-bold px-8 py-4 rounded-xl transition-all duration-300 hover:scale-105 shadow-lg flex items-center gap-2 whitespace-nowrap cursor-pointer"
+                >
+                  <span>{lang === 'de' ? 'Kostenlose Potenzialanalyse anfordern' : lang === 'en' ? 'Get Free Audit' : 'Ücretsiz Potansiyel Analizi Al'}</span>
+                  <ArrowUpRight className="w-5 h-5" />
+                </button>
+              </div>
+
+            </div>
+          </section>
+        )
+      })()}
       <section className="py-20 px-4 bg-gray-50">
         <div className="container mx-auto">
           <div className="text-center mb-16">
