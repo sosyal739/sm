@@ -957,7 +957,514 @@ export default function ServiceDetailPage() {
         </div>
       </section>
 
-      {/* Process Section */}
+      {/* Case Studies Section for Google Ads (Vorher/Nachher & Real Dashboard Proof) */}
+      {service === 'google-ads' && (
+        <section className="py-24 px-4 bg-gradient-to-b from-gray-50 via-white to-gray-50 border-y border-gray-100">
+          <div className="container mx-auto max-w-7xl">
+            <div className="text-center mb-16">
+              <div className="inline-flex items-center space-x-2 bg-blue-50 border border-blue-200/80 rounded-full px-4 py-1.5 mb-4 shadow-sm">
+                <span className="w-2 h-2 rounded-full bg-[#4285F4] animate-pulse"></span>
+                <span className="text-xs font-bold uppercase tracking-wider text-[#4285F4]">
+                  {lang === 'de' ? 'Transparente Erfolgsnachweise' : lang === 'en' ? 'Verified Proof of Success' : 'Doğrulanmış Başarı Kanıtları'}
+                </span>
+              </div>
+              <h2 className="text-3xl md:text-5xl font-black text-gray-900 mb-4 tracking-tight">
+                {lang === 'de' ? (
+                  <>Echte Ergebnisse aus <span className="text-[#4285F4]">Google Ads</span> Konten</>
+                ) : lang === 'en' ? (
+                  <>Real Results from <span className="text-[#4285F4]">Google Ads</span> Accounts</>
+                ) : (
+                  <>Gerçek <span className="text-[#4285F4]">Google Ads</span> Hesap Sonuçları</>
+                )}
+              </h2>
+              <p className="text-base md:text-lg text-gray-600 max-w-3xl mx-auto leading-relaxed">
+                {lang === 'de'
+                  ? 'Keine Versprechungen, sondern belegbare Zahlen: Vorher-Nachher-Vergleiche aus von Salih Maral optimierten Kampagnen.'
+                  : lang === 'en'
+                  ? 'No empty promises, only verified numbers: Before-and-after case studies from campaigns optimized by Salih Maral.'
+                  : 'Boş vaatler değil, kanıtlanmış rakamlar: Salih Maral tarafından optimize edilen kampanyalardan öncesi ve sonrası vaka analizleri.'}
+              </p>
+            </div>
+
+            {/* 2x2 Grid of Case Study Cards */}
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 md:gap-10">
+              
+              {/* CARD 1: E-Commerce Case */}
+              <div className="bg-white rounded-3xl border border-gray-200/80 shadow-xl hover:shadow-2xl transition-all duration-300 flex flex-col overflow-hidden group">
+                {/* Top Headline */}
+                <div className="p-6 md:p-8 pb-5 border-b border-gray-100">
+                  <span className="text-xs font-bold uppercase tracking-wider text-emerald-600 bg-emerald-50 px-3 py-1 rounded-full inline-block mb-3">
+                    {lang === 'de' ? 'E-Commerce / Online-Shop' : lang === 'en' ? 'E-Commerce / Online Store' : 'E-Ticaret / Online Mağaza'}
+                  </span>
+                  <h3 className="text-xl md:text-2xl font-bold text-gray-900 leading-snug">
+                    {lang === 'de' ? (
+                      'Von 60.000 € / Monat Umsatz zu 357.000 € / Monat in nur 12 Monaten'
+                    ) : lang === 'en' ? (
+                      'From €60,000 / month revenue to €357,000 / month in just 12 months'
+                    ) : (
+                      'Aylık 60.000 € cirodan sadece 12 ayda 357.000 € aylık ciroya'
+                    )}
+                  </h3>
+                </div>
+
+                {/* Google Ads Mockup Container */}
+                <div className="p-5 md:p-6 bg-slate-50/70 flex-grow">
+                  <div className="bg-white rounded-2xl border border-gray-200/80 shadow-sm p-4 md:p-5 overflow-hidden">
+                    {/* Mockup Header */}
+                    <div className="flex items-center justify-between pb-3 mb-3 border-b border-gray-100 text-xs text-gray-500">
+                      <div className="flex items-center space-x-2">
+                        <div className="flex space-x-1">
+                          <span className="w-2.5 h-2.5 rounded-full bg-red-400"></span>
+                          <span className="w-2.5 h-2.5 rounded-full bg-yellow-400"></span>
+                          <span className="w-2.5 h-2.5 rounded-full bg-green-400"></span>
+                        </div>
+                        <span className="font-semibold text-gray-800 flex items-center gap-1">
+                          <svg className="w-3.5 h-3.5" viewBox="0 0 24 24" fill="none"><path d="M12 2L2 7L12 12L22 7L12 2Z" fill="#4285F4"/><path d="M2 17L12 22L22 17" stroke="#34A853" strokeWidth="2"/><path d="M2 12L12 17L22 12" stroke="#FBBC05" strokeWidth="2"/></svg>
+                          Google Ads
+                        </span>
+                        <span className="hidden sm:inline text-gray-300">|</span>
+                        <span className="hidden sm:inline text-gray-600 font-medium">Übersicht · Alle Kampagnen</span>
+                      </div>
+                      <span className="bg-gray-100 text-gray-600 px-2 py-0.5 rounded text-[11px] font-mono">12 Monate · Vorher vs. Nachher</span>
+                    </div>
+
+                    {/* 4 Color Metric Boxes */}
+                    <div className="grid grid-cols-2 sm:grid-cols-4 gap-2 mb-4">
+                      <div className="bg-[#4285F4] text-white p-2.5 rounded-lg">
+                        <p className="text-[10px] uppercase font-semibold opacity-90">Kosten</p>
+                        <p className="text-sm md:text-base font-bold">301.377 €</p>
+                      </div>
+                      <div className="bg-[#EA4335] text-white p-2.5 rounded-lg">
+                        <p className="text-[10px] uppercase font-semibold opacity-90">Conv.-Wert</p>
+                        <p className="text-sm md:text-base font-bold">3,6 Mio. €</p>
+                      </div>
+                      <div className="bg-[#FBBC04] text-gray-900 p-2.5 rounded-lg">
+                        <p className="text-[10px] uppercase font-semibold opacity-90">Tats. ROAS</p>
+                        <p className="text-sm md:text-base font-bold">1.194,79 %</p>
+                      </div>
+                      <div className="bg-[#34A853] text-white p-2.5 rounded-lg">
+                        <p className="text-[10px] uppercase font-semibold opacity-90">Conversions</p>
+                        <p className="text-sm md:text-base font-bold">25.853</p>
+                      </div>
+                    </div>
+
+                    {/* Performance Graph Visual */}
+                    <div className="relative bg-slate-50/80 rounded-xl p-3 md:p-4 border border-gray-100">
+                      <svg className="w-full h-32 md:h-36 overflow-visible" viewBox="0 0 500 130" fill="none">
+                        {/* Grid lines */}
+                        <line x1="0" y1="20" x2="500" y2="20" stroke="#E2E8F0" strokeDasharray="3 3"/>
+                        <line x1="0" y1="60" x2="500" y2="60" stroke="#E2E8F0" strokeDasharray="3 3"/>
+                        <line x1="0" y1="100" x2="500" y2="100" stroke="#E2E8F0" strokeDasharray="3 3"/>
+                        
+                        {/* Blue Curve (Cost) */}
+                        <path d="M 0 110 Q 120 100 200 95 T 350 70 T 500 65" stroke="#4285F4" strokeWidth="2.5" fill="none"/>
+                        {/* Red/Green Revenue Curve */}
+                        <path d="M 0 115 Q 120 110 200 85 T 350 40 T 500 15" stroke="#34A853" strokeWidth="3" fill="none"/>
+                        {/* Yellow ROAS Curve */}
+                        <path d="M 0 120 Q 120 115 200 90 T 350 30 T 500 10" stroke="#FBBC04" strokeWidth="2" strokeDasharray="4 2" fill="none"/>
+                      </svg>
+
+                      {/* Vorher Badge */}
+                      <div className="absolute left-6 top-16 md:top-14 bg-white/95 border border-red-200 text-red-700 px-2.5 py-1 rounded-lg shadow-sm text-[11px]">
+                        <span className="font-bold block text-red-600 uppercase text-[9px]">● {lang === 'de' ? 'VORHER' : lang === 'en' ? 'BEFORE' : 'ÖNCESİ'}</span>
+                        <span>ROAS: 442% · 179K €</span>
+                      </div>
+
+                      {/* Nachher Badge */}
+                      <div className="absolute right-6 top-2 md:top-2 bg-white/95 border border-emerald-300 text-emerald-800 px-3 py-1 rounded-lg shadow-md text-[11px]">
+                        <span className="font-bold block text-emerald-600 uppercase text-[9px]">● {lang === 'de' ? 'NACHHER' : lang === 'en' ? 'AFTER' : 'SONRASI'}</span>
+                        <span className="font-bold">ROAS: 1.593% · 1,07M €</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                {/* Bottom Green Multiplier Banner */}
+                <div className="bg-[#40DE83] text-gray-950 p-5 md:p-6 grid grid-cols-2 gap-4">
+                  <div className="flex flex-col">
+                    <div className="flex items-baseline space-x-1">
+                      <span className="text-2xl md:text-3xl font-black">↗</span>
+                      <span className="text-3xl md:text-4xl font-black tracking-tight">5,9x</span>
+                    </div>
+                    <span className="text-xs md:text-sm font-semibold uppercase tracking-wider text-gray-900 mt-0.5">
+                      {lang === 'de' ? 'Umsatz / Ciro' : lang === 'en' ? 'Revenue' : 'Ciro Artışı'}
+                    </span>
+                  </div>
+                  <div className="flex flex-col border-l border-emerald-700/20 pl-4">
+                    <div className="flex items-baseline space-x-1">
+                      <span className="text-2xl md:text-3xl font-black">↗</span>
+                      <span className="text-3xl md:text-4xl font-black tracking-tight">3,6x</span>
+                    </div>
+                    <span className="text-xs md:text-sm font-semibold uppercase tracking-wider text-gray-900 mt-0.5">
+                      ROAS Steigerung
+                    </span>
+                  </div>
+                </div>
+              </div>
+
+              {/* CARD 2: B2B & Lead Generation Case */}
+              <div className="bg-white rounded-3xl border border-gray-200/80 shadow-xl hover:shadow-2xl transition-all duration-300 flex flex-col overflow-hidden group">
+                {/* Top Headline */}
+                <div className="p-6 md:p-8 pb-5 border-b border-gray-100">
+                  <span className="text-xs font-bold uppercase tracking-wider text-blue-600 bg-blue-50 px-3 py-1 rounded-full inline-block mb-3">
+                    {lang === 'de' ? 'B2B & Lead Generation' : lang === 'en' ? 'B2B & Lead Generation' : 'B2B & Müşteri Talebi (Leads)'}
+                  </span>
+                  <h3 className="text-xl md:text-2xl font-bold text-gray-900 leading-snug">
+                    {lang === 'de' ? (
+                      'Von 0 auf 500 qualifizierte Leads pro Monat'
+                    ) : lang === 'en' ? (
+                      'From 0 to 500 qualified leads per month'
+                    ) : (
+                      'Sıfırdan ayda 500+ nitelikli müşteri talebine (Leads)'
+                    )}
+                  </h3>
+                </div>
+
+                {/* Google Ads Mockup Container */}
+                <div className="p-5 md:p-6 bg-slate-50/70 flex-grow">
+                  <div className="bg-white rounded-2xl border border-gray-200/80 shadow-sm p-4 md:p-5 overflow-hidden">
+                    {/* Mockup Header */}
+                    <div className="flex items-center justify-between pb-3 mb-3 border-b border-gray-100 text-xs text-gray-500">
+                      <div className="flex items-center space-x-2">
+                        <div className="flex space-x-1">
+                          <span className="w-2.5 h-2.5 rounded-full bg-red-400"></span>
+                          <span className="w-2.5 h-2.5 rounded-full bg-yellow-400"></span>
+                          <span className="w-2.5 h-2.5 rounded-full bg-green-400"></span>
+                        </div>
+                        <span className="font-semibold text-gray-800 flex items-center gap-1">
+                          <svg className="w-3.5 h-3.5" viewBox="0 0 24 24" fill="none"><path d="M12 2L2 7L12 12L22 7L12 2Z" fill="#4285F4"/><path d="M2 17L12 22L22 17" stroke="#34A853" strokeWidth="2"/><path d="M2 12L12 17L22 12" stroke="#FBBC05" strokeWidth="2"/></svg>
+                          Google Ads
+                        </span>
+                        <span className="hidden sm:inline text-gray-300">|</span>
+                        <span className="hidden sm:inline text-gray-600 font-medium">B2B Such- & Performance Max</span>
+                      </div>
+                      <span className="bg-gray-100 text-gray-600 px-2 py-0.5 rounded text-[11px] font-mono">Qualifizierte Anfragen</span>
+                    </div>
+
+                    {/* 4 Color Metric Boxes */}
+                    <div className="grid grid-cols-2 sm:grid-cols-4 gap-2 mb-4">
+                      <div className="bg-[#4285F4] text-white p-2.5 rounded-lg">
+                        <p className="text-[10px] uppercase font-semibold opacity-90">Kosten</p>
+                        <p className="text-sm md:text-base font-bold">98.330 €</p>
+                      </div>
+                      <div className="bg-[#FBBC04] text-gray-900 p-2.5 rounded-lg">
+                        <p className="text-[10px] uppercase font-semibold opacity-90">Conv.-Rate</p>
+                        <p className="text-sm md:text-base font-bold">5,69 %</p>
+                      </div>
+                      <div className="bg-[#EA4335] text-white p-2.5 rounded-lg">
+                        <p className="text-[10px] uppercase font-semibold opacity-90">Conversions</p>
+                        <p className="text-sm md:text-base font-bold">4.797</p>
+                      </div>
+                      <div className="bg-[#34A853] text-white p-2.5 rounded-lg">
+                        <p className="text-[10px] uppercase font-semibold opacity-90">Kosten / Conv.</p>
+                        <p className="text-sm md:text-base font-bold">20,50 €</p>
+                      </div>
+                    </div>
+
+                    {/* Performance Graph Visual */}
+                    <div className="relative bg-slate-50/80 rounded-xl p-3 md:p-4 border border-gray-100">
+                      <svg className="w-full h-32 md:h-36 overflow-visible" viewBox="0 0 500 130" fill="none">
+                        <line x1="0" y1="20" x2="500" y2="20" stroke="#E2E8F0" strokeDasharray="3 3"/>
+                        <line x1="0" y1="60" x2="500" y2="60" stroke="#E2E8F0" strokeDasharray="3 3"/>
+                        <line x1="0" y1="100" x2="500" y2="100" stroke="#E2E8F0" strokeDasharray="3 3"/>
+                        
+                        {/* Cost Line */}
+                        <path d="M 0 115 Q 150 110 250 90 T 400 70 T 500 60" stroke="#4285F4" strokeWidth="2.5" fill="none"/>
+                        {/* Leads Line */}
+                        <path d="M 0 120 Q 150 115 250 65 T 380 30 T 500 10" stroke="#EA4335" strokeWidth="3" fill="none"/>
+                        {/* CPL Line dropping */}
+                        <path d="M 0 35 Q 150 50 250 80 T 400 95 T 500 105" stroke="#34A853" strokeWidth="2" strokeDasharray="4 2" fill="none"/>
+                      </svg>
+
+                      {/* Vorher Badge */}
+                      <div className="absolute left-6 top-16 md:top-14 bg-white/95 border border-red-200 text-red-700 px-2.5 py-1 rounded-lg shadow-sm text-[11px]">
+                        <span className="font-bold block text-red-600 uppercase text-[9px]">● {lang === 'de' ? 'VORHER' : lang === 'en' ? 'BEFORE' : 'ÖNCESİ'}</span>
+                        <span>0 - 15 Leads / Mo</span>
+                      </div>
+
+                      {/* Nachher Badge */}
+                      <div className="absolute right-6 top-2 md:top-2 bg-white/95 border border-emerald-300 text-emerald-800 px-3 py-1 rounded-lg shadow-md text-[11px]">
+                        <span className="font-bold block text-emerald-600 uppercase text-[9px]">● {lang === 'de' ? 'NACHHER' : lang === 'en' ? 'AFTER' : 'SONRASI'}</span>
+                        <span className="font-bold">500+ Leads · 20,50 € CPL</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                {/* Bottom Green Multiplier Banner */}
+                <div className="bg-[#40DE83] text-gray-950 p-5 md:p-6 grid grid-cols-2 gap-4">
+                  <div className="flex flex-col">
+                    <div className="flex items-baseline space-x-1">
+                      <span className="text-2xl md:text-3xl font-black">↗</span>
+                      <span className="text-3xl md:text-4xl font-black tracking-tight">500+</span>
+                    </div>
+                    <span className="text-xs md:text-sm font-semibold uppercase tracking-wider text-gray-900 mt-0.5">
+                      {lang === 'de' ? 'Leads / Monat' : lang === 'en' ? 'Leads / Month' : 'Aylık Müşteri Talebi'}
+                    </span>
+                  </div>
+                  <div className="flex flex-col border-l border-emerald-700/20 pl-4">
+                    <div className="flex items-baseline space-x-1">
+                      <span className="text-3xl md:text-4xl font-black tracking-tight">20,50 €</span>
+                    </div>
+                    <span className="text-xs md:text-sm font-semibold uppercase tracking-wider text-gray-900 mt-0.5">
+                      Kosten pro Lead (CPL)
+                    </span>
+                  </div>
+                </div>
+              </div>
+
+              {/* CARD 3: Scaling & ROAS Maximization */}
+              <div className="bg-white rounded-3xl border border-gray-200/80 shadow-xl hover:shadow-2xl transition-all duration-300 flex flex-col overflow-hidden group">
+                {/* Top Headline */}
+                <div className="p-6 md:p-8 pb-5 border-b border-gray-100">
+                  <span className="text-xs font-bold uppercase tracking-wider text-purple-600 bg-purple-50 px-3 py-1 rounded-full inline-block mb-3">
+                    {lang === 'de' ? 'Skalierung & Profitabilität' : lang === 'en' ? 'Scaling & Profitability' : 'Ölçekleme & Kârlılık'}
+                  </span>
+                  <h3 className="text-xl md:text-2xl font-bold text-gray-900 leading-snug">
+                    {lang === 'de' ? (
+                      'Von 97.000 € / Monat Umsatz zu 187.000 € / Monat in 12 Monaten'
+                    ) : lang === 'en' ? (
+                      'From €97,000 / month revenue to €187,000 / month in 12 months'
+                    ) : (
+                      'Aylık 97.000 € cirodan 12 ayda 187.000 € aylık ciroya'
+                    )}
+                  </h3>
+                </div>
+
+                {/* Google Ads Mockup Container */}
+                <div className="p-5 md:p-6 bg-slate-50/70 flex-grow">
+                  <div className="bg-white rounded-2xl border border-gray-200/80 shadow-sm p-4 md:p-5 overflow-hidden">
+                    {/* Mockup Header */}
+                    <div className="flex items-center justify-between pb-3 mb-3 border-b border-gray-100 text-xs text-gray-500">
+                      <div className="flex items-center space-x-2">
+                        <div className="flex space-x-1">
+                          <span className="w-2.5 h-2.5 rounded-full bg-red-400"></span>
+                          <span className="w-2.5 h-2.5 rounded-full bg-yellow-400"></span>
+                          <span className="w-2.5 h-2.5 rounded-full bg-green-400"></span>
+                        </div>
+                        <span className="font-semibold text-gray-800 flex items-center gap-1">
+                          <svg className="w-3.5 h-3.5" viewBox="0 0 24 24" fill="none"><path d="M12 2L2 7L12 12L22 7L12 2Z" fill="#4285F4"/><path d="M2 17L12 22L22 17" stroke="#34A853" strokeWidth="2"/><path d="M2 12L12 17L22 12" stroke="#FBBC05" strokeWidth="2"/></svg>
+                          Google Ads
+                        </span>
+                        <span className="hidden sm:inline text-gray-300">|</span>
+                        <span className="hidden sm:inline text-gray-600 font-medium">ROAS Skalierung</span>
+                      </div>
+                      <span className="bg-gray-100 text-gray-600 px-2 py-0.5 rounded text-[11px] font-mono">2,56 Mio. € Conv.-Wert</span>
+                    </div>
+
+                    {/* 4 Color Metric Boxes */}
+                    <div className="grid grid-cols-2 sm:grid-cols-4 gap-2 mb-4">
+                      <div className="bg-[#4285F4] text-white p-2.5 rounded-lg">
+                        <p className="text-[10px] uppercase font-semibold opacity-90">Conv.-Wert</p>
+                        <p className="text-sm md:text-base font-bold">2,56 Mio. €</p>
+                      </div>
+                      <div className="bg-[#34A853] text-white p-2.5 rounded-lg">
+                        <p className="text-[10px] uppercase font-semibold opacity-90">Tats. ROAS</p>
+                        <p className="text-sm md:text-base font-bold">2.032,22 %</p>
+                      </div>
+                      <div className="bg-[#EA4335] text-white p-2.5 rounded-lg">
+                        <p className="text-[10px] uppercase font-semibold opacity-90">Kosten</p>
+                        <p className="text-sm md:text-base font-bold">125.972 €</p>
+                      </div>
+                      <div className="bg-[#FBBC04] text-gray-900 p-2.5 rounded-lg">
+                        <p className="text-[10px] uppercase font-semibold opacity-90">Kosten / Conv.</p>
+                        <p className="text-sm md:text-base font-bold">68,46 €</p>
+                      </div>
+                    </div>
+
+                    {/* Performance Graph Visual */}
+                    <div className="relative bg-slate-50/80 rounded-xl p-3 md:p-4 border border-gray-100">
+                      <svg className="w-full h-32 md:h-36 overflow-visible" viewBox="0 0 500 130" fill="none">
+                        <line x1="0" y1="20" x2="500" y2="20" stroke="#E2E8F0" strokeDasharray="3 3"/>
+                        <line x1="0" y1="60" x2="500" y2="60" stroke="#E2E8F0" strokeDasharray="3 3"/>
+                        <line x1="0" y1="100" x2="500" y2="100" stroke="#E2E8F0" strokeDasharray="3 3"/>
+                        
+                        {/* Smooth Growth Line */}
+                        <path d="M 0 110 Q 150 100 240 85 T 380 45 T 500 18" stroke="#4285F4" strokeWidth="3" fill="none"/>
+                        {/* ROAS Peak Line */}
+                        <path d="M 0 120 Q 150 90 240 70 T 380 30 T 500 10" stroke="#34A853" strokeWidth="2.5" fill="none"/>
+                      </svg>
+
+                      {/* Vorher Badge */}
+                      <div className="absolute left-6 top-16 md:top-14 bg-white/95 border border-red-200 text-red-700 px-2.5 py-1 rounded-lg shadow-sm text-[11px]">
+                        <span className="font-bold block text-red-600 uppercase text-[9px]">● {lang === 'de' ? 'VORHER' : lang === 'en' ? 'BEFORE' : 'ÖNCESİ'}</span>
+                        <span>Conv.-Wert: 292.098 €</span>
+                      </div>
+
+                      {/* Nachher Badge */}
+                      <div className="absolute right-6 top-2 md:top-2 bg-white/95 border border-emerald-300 text-emerald-800 px-3 py-1 rounded-lg shadow-md text-[11px]">
+                        <span className="font-bold block text-emerald-600 uppercase text-[9px]">● {lang === 'de' ? 'NACHHER' : lang === 'en' ? 'AFTER' : 'SONRASI'}</span>
+                        <span className="font-bold">Conv.-Wert: 566.308 €</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                {/* Bottom Green Multiplier Banner */}
+                <div className="bg-[#40DE83] text-gray-950 p-5 md:p-6 grid grid-cols-2 gap-4">
+                  <div className="flex flex-col">
+                    <div className="flex items-baseline space-x-1">
+                      <span className="text-2xl md:text-3xl font-black">↗</span>
+                      <span className="text-3xl md:text-4xl font-black tracking-tight">1,93x</span>
+                    </div>
+                    <span className="text-xs md:text-sm font-semibold uppercase tracking-wider text-gray-900 mt-0.5">
+                      {lang === 'de' ? 'Umsatz / Ciro' : lang === 'en' ? 'Revenue' : 'Ciro Artışı'}
+                    </span>
+                  </div>
+                  <div className="flex flex-col border-l border-emerald-700/20 pl-4">
+                    <div className="flex items-baseline space-x-1">
+                      <span className="text-2xl md:text-3xl font-black">↗</span>
+                      <span className="text-3xl md:text-4xl font-black tracking-tight">20,3x</span>
+                    </div>
+                    <span className="text-xs md:text-sm font-semibold uppercase tracking-wider text-gray-900 mt-0.5">
+                      Tatsächlicher ROAS
+                    </span>
+                  </div>
+                </div>
+              </div>
+
+              {/* CARD 4: Salih Maral Master Portfolio Case (Real Account Totals) */}
+              <div className="bg-white rounded-3xl border border-gray-200/80 shadow-xl hover:shadow-2xl transition-all duration-300 flex flex-col overflow-hidden group">
+                {/* Top Headline */}
+                <div className="p-6 md:p-8 pb-5 border-b border-gray-100">
+                  <span className="text-xs font-bold uppercase tracking-wider text-amber-700 bg-amber-50 px-3 py-1 rounded-full inline-block mb-3">
+                    {lang === 'de' ? 'Salih Maral Gesamtportfolio' : lang === 'en' ? 'Salih Maral Master Portfolio' : 'Salih Maral Genel Portföy'}
+                  </span>
+                  <h3 className="text-xl md:text-2xl font-bold text-gray-900 leading-snug">
+                    {lang === 'de' ? (
+                      '150M Impressionen & 208K Conversions bei 1,13M € Werbebudget'
+                    ) : lang === 'en' ? (
+                      '150M impressions & 208K conversions across €1.13M managed budget'
+                    ) : (
+                      '1.13M € yönetilen bütçe ile 150M gösterim ve 208K dönüşüm'
+                    )}
+                  </h3>
+                </div>
+
+                {/* Google Ads Mockup Container */}
+                <div className="p-5 md:p-6 bg-slate-50/70 flex-grow">
+                  <div className="bg-white rounded-2xl border border-gray-200/80 shadow-sm p-4 md:p-5 overflow-hidden">
+                    {/* Mockup Header */}
+                    <div className="flex items-center justify-between pb-3 mb-3 border-b border-gray-100 text-xs text-gray-500">
+                      <div className="flex items-center space-x-2">
+                        <div className="flex space-x-1">
+                          <span className="w-2.5 h-2.5 rounded-full bg-red-400"></span>
+                          <span className="w-2.5 h-2.5 rounded-full bg-yellow-400"></span>
+                          <span className="w-2.5 h-2.5 rounded-full bg-green-400"></span>
+                        </div>
+                        <span className="font-semibold text-gray-800 flex items-center gap-1">
+                          <svg className="w-3.5 h-3.5" viewBox="0 0 24 24" fill="none"><path d="M12 2L2 7L12 12L22 7L12 2Z" fill="#4285F4"/><path d="M2 17L12 22L22 17" stroke="#34A853" strokeWidth="2"/><path d="M2 12L12 17L22 12" stroke="#FBBC05" strokeWidth="2"/></svg>
+                          Google Ads
+                        </span>
+                        <span className="hidden sm:inline text-gray-300">|</span>
+                        <span className="hidden sm:inline text-gray-600 font-medium">Gesamtübersicht (2016 – 2026)</span>
+                      </div>
+                      <span className="bg-gray-100 text-gray-600 px-2 py-0.5 rounded text-[11px] font-mono">720+ Kampagnen</span>
+                    </div>
+
+                    {/* 4 Color Metric Boxes */}
+                    <div className="grid grid-cols-2 sm:grid-cols-4 gap-2 mb-4">
+                      <div className="bg-[#4285F4] text-white p-2.5 rounded-lg">
+                        <p className="text-[10px] uppercase font-semibold opacity-90">Klicks</p>
+                        <p className="text-sm md:text-base font-bold">1.740.000</p>
+                      </div>
+                      <div className="bg-[#EA4335] text-white p-2.5 rounded-lg">
+                        <p className="text-[10px] uppercase font-semibold opacity-90">Impressionen</p>
+                        <p className="text-sm md:text-base font-bold">150.000.000</p>
+                      </div>
+                      <div className="bg-[#FBBC04] text-gray-900 p-2.5 rounded-lg">
+                        <p className="text-[10px] uppercase font-semibold opacity-90">Conversions</p>
+                        <p className="text-sm md:text-base font-bold">208.000</p>
+                      </div>
+                      <div className="bg-[#34A853] text-white p-2.5 rounded-lg">
+                        <p className="text-[10px] uppercase font-semibold opacity-90">Cost</p>
+                        <p className="text-sm md:text-base font-bold">1.130.000 €</p>
+                      </div>
+                    </div>
+
+                    {/* Performance Graph Visual */}
+                    <div className="relative bg-slate-50/80 rounded-xl p-3 md:p-4 border border-gray-100">
+                      <svg className="w-full h-32 md:h-36 overflow-visible" viewBox="0 0 500 130" fill="none">
+                        <line x1="0" y1="20" x2="500" y2="20" stroke="#E2E8F0" strokeDasharray="3 3"/>
+                        <line x1="0" y1="60" x2="500" y2="60" stroke="#E2E8F0" strokeDasharray="3 3"/>
+                        <line x1="0" y1="100" x2="500" y2="100" stroke="#E2E8F0" strokeDasharray="3 3"/>
+                        
+                        {/* Stable High Growth Curves */}
+                        <path d="M 0 118 Q 80 115 140 100 T 260 80 T 380 40 T 500 12" stroke="#4285F4" strokeWidth="3" fill="none"/>
+                        <path d="M 0 120 Q 80 118 140 105 T 260 85 T 380 50 T 500 20" stroke="#34A853" strokeWidth="2.5" fill="none"/>
+                        <path d="M 0 122 Q 80 120 140 110 T 260 90 T 380 55 T 500 30" stroke="#EA4335" strokeWidth="2" fill="none"/>
+                      </svg>
+
+                      {/* Start Badge */}
+                      <div className="absolute left-6 top-16 md:top-14 bg-white/95 border border-gray-200 text-gray-700 px-2.5 py-1 rounded-lg shadow-sm text-[11px]">
+                        <span className="font-bold block text-gray-500 uppercase text-[9px]">● 2016</span>
+                        <span>Start & Skalierung</span>
+                      </div>
+
+                      {/* Heute Badge */}
+                      <div className="absolute right-6 top-2 md:top-2 bg-white/95 border border-blue-300 text-blue-800 px-3 py-1 rounded-lg shadow-md text-[11px]">
+                        <span className="font-bold block text-blue-600 uppercase text-[9px]">● 2026 HEUTE</span>
+                        <span className="font-bold">1,74M Klicks · 720+ Kampagnen</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                {/* Bottom Green Multiplier Banner */}
+                <div className="bg-[#40DE83] text-gray-950 p-5 md:p-6 grid grid-cols-2 gap-4">
+                  <div className="flex flex-col">
+                    <div className="flex items-baseline space-x-1">
+                      <span className="text-2xl md:text-3xl font-black">↗</span>
+                      <span className="text-3xl md:text-4xl font-black tracking-tight">1,74M</span>
+                    </div>
+                    <span className="text-xs md:text-sm font-semibold uppercase tracking-wider text-gray-900 mt-0.5">
+                      {lang === 'de' ? 'Klicks generiert' : lang === 'en' ? 'Clicks Generated' : 'Üretilen Tıklama'}
+                    </span>
+                  </div>
+                  <div className="flex flex-col border-l border-emerald-700/20 pl-4">
+                    <div className="flex items-baseline space-x-1">
+                      <span className="text-2xl md:text-3xl font-black">↗</span>
+                      <span className="text-3xl md:text-4xl font-black tracking-tight">64,8%</span>
+                    </div>
+                    <span className="text-xs md:text-sm font-semibold uppercase tracking-wider text-gray-900 mt-0.5">
+                      Interaktionsrate (Peak)
+                    </span>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+
+            {/* Bottom CTA bar inside Section */}
+            <div className="mt-14 p-8 rounded-3xl bg-slate-900 text-white flex flex-col md:flex-row items-center justify-between shadow-2xl border border-slate-800">
+              <div className="mb-6 md:mb-0 text-center md:text-left">
+                <h4 className="text-xl md:text-2xl font-bold mb-1 text-white">
+                  {lang === 'de'
+                    ? 'Möchten Sie ähnliche Ergebnisse für Ihr Unternehmen erzielen?'
+                    : lang === 'en'
+                    ? 'Want to achieve similar results for your business?'
+                    : 'İşletmeniz için de benzer sonuçlar elde etmek ister misiniz?'}
+                </h4>
+                <p className="text-sm text-slate-300">
+                  {lang === 'de'
+                    ? 'Wir prüfen Ihr aktuelles Google Ads Konto und erstellen eine kostenlose Potenzialanalyse.'
+                    : lang === 'en'
+                    ? 'We review your existing Google Ads account and provide a free growth audit.'
+                    : 'Mevcut Google Ads hesabınızı inceliyor ve ücretsiz büyüme potansiyeli analizi sunuyoruz.'}
+                </p>
+              </div>
+              <button
+                onClick={scrollToContact}
+                className="bg-[#40DE83] hover:bg-[#34c772] text-slate-950 font-bold px-8 py-4 rounded-xl transition-all duration-300 hover:scale-105 shadow-lg flex items-center gap-2 whitespace-nowrap cursor-pointer"
+              >
+                <span>{lang === 'de' ? 'Kostenlose Potenzialanalyse anfordern' : lang === 'en' ? 'Get Free Audit' : 'Ücretsiz Potansiyel Analizi Al'}</span>
+                <ArrowUpRight className="w-5 h-5" />
+              </button>
+            </div>
+
+          </div>
+        </section>
+      )}
       <section className="py-20 px-4 bg-gray-50">
         <div className="container mx-auto">
           <div className="text-center mb-16">
