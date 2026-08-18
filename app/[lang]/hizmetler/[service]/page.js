@@ -1066,22 +1066,23 @@ export default function ServiceDetailPage() {
                   </div>
                 </div>
 
-                <div className="bg-[#40DE83] text-gray-950 p-5 md:p-6 grid grid-cols-2 gap-4">
+                {/* Bottom Google Blue Multiplier Banner */}
+                <div className="bg-[#4285F4] text-white p-5 md:p-6 grid grid-cols-2 gap-4">
                   <div className="flex flex-col">
                     <div className="flex items-baseline space-x-1">
-                      <span className="text-2xl md:text-3xl font-black">↗</span>
-                      <span className="text-3xl md:text-4xl font-black tracking-tight">1,74M</span>
+                      <span className="text-2xl md:text-3xl font-black text-white">↗</span>
+                      <span className="text-3xl md:text-4xl font-black tracking-tight text-white">1,74M</span>
                     </div>
-                    <span className="text-xs md:text-sm font-semibold uppercase tracking-wider text-gray-900 mt-0.5">
+                    <span className="text-xs md:text-sm font-medium uppercase tracking-wider text-blue-100 mt-0.5">
                       {lang === 'de' ? 'Klicks generiert' : lang === 'en' ? 'Clicks Generated' : 'Üretilen Tıklama'}
                     </span>
                   </div>
-                  <div className="flex flex-col border-l border-emerald-700/20 pl-4">
+                  <div className="flex flex-col border-l border-white/20 pl-4">
                     <div className="flex items-baseline space-x-1">
-                      <span className="text-2xl md:text-3xl font-black">↗</span>
-                      <span className="text-3xl md:text-4xl font-black tracking-tight">208K</span>
+                      <span className="text-2xl md:text-3xl font-black text-white">↗</span>
+                      <span className="text-3xl md:text-4xl font-black tracking-tight text-white">208K</span>
                     </div>
-                    <span className="text-xs md:text-sm font-semibold uppercase tracking-wider text-gray-900 mt-0.5">
+                    <span className="text-xs md:text-sm font-medium uppercase tracking-wider text-blue-100 mt-0.5">
                       {lang === 'de' ? 'Conversions' : lang === 'en' ? 'Conversions' : 'Dönüşüm'}
                     </span>
                   </div>
@@ -1091,7 +1092,7 @@ export default function ServiceDetailPage() {
               {/* CARD 2: Scaling & Interaction Peak (Real Screenshot 4: 1 May 2023 – 15 Aug 2026 / Interaction Rate 64.78%) */}
               <div className="bg-white rounded-3xl border border-gray-200/80 shadow-xl hover:shadow-2xl transition-all duration-300 flex flex-col overflow-hidden group">
                 <div className="p-6 md:p-8 pb-5 border-b border-gray-100">
-                  <span className="text-xs font-bold uppercase tracking-wider text-emerald-600 bg-emerald-50 px-3 py-1 rounded-full inline-block mb-3">
+                  <span className="text-xs font-bold uppercase tracking-wider text-blue-600 bg-blue-50 px-3 py-1 rounded-full inline-block mb-3">
                     {lang === 'de' ? 'Letzte 3 Jahre · Zirve Performans' : lang === 'en' ? 'Last 3 Years · Peak Performance' : 'Son 3 Yıl · Zirve Performans'}
                   </span>
                   <h3 className="text-xl md:text-2xl font-bold text-gray-900 leading-snug">
@@ -1151,11 +1152,8 @@ export default function ServiceDetailPage() {
                         <line x1="0" y1="60" x2="500" y2="60" stroke="#E2E8F0" strokeDasharray="3 3"/>
                         <line x1="0" y1="100" x2="500" y2="100" stroke="#E2E8F0" strokeDasharray="3 3"/>
                         
-                        {/* Dramatic Red Interaction Curve */}
                         <path d="M 0 115 Q 120 110 200 40 T 350 20 T 500 10" stroke="#EA4335" strokeWidth="3" fill="none"/>
-                        {/* Blue Impression Curve */}
                         <path d="M 0 120 Q 120 115 200 65 T 350 35 T 500 18" stroke="#4285F4" strokeWidth="2.5" fill="none"/>
-                        {/* Yellow TrueView Curve */}
                         <path d="M 0 122 Q 120 118 200 75 T 350 45 T 500 22" stroke="#FBBC04" strokeWidth="2" fill="none"/>
                       </svg>
 
@@ -1164,30 +1162,31 @@ export default function ServiceDetailPage() {
                         <span>Interaktion: ~7,03%</span>
                       </div>
 
-                      <div className="absolute right-6 top-2 md:top-2 bg-white/95 border border-emerald-300 text-emerald-800 px-3 py-1 rounded-lg shadow-md text-[11px]">
-                        <span className="font-bold block text-emerald-600 uppercase text-[9px]">● 2026 HEUTE</span>
+                      <div className="absolute right-6 top-2 md:top-2 bg-white/95 border border-blue-300 text-blue-800 px-3 py-1 rounded-lg shadow-md text-[11px]">
+                        <span className="font-bold block text-blue-600 uppercase text-[9px]">● 2026 HEUTE</span>
                         <span className="font-bold">64,78% Peak-Interaktion</span>
                       </div>
                     </div>
                   </div>
                 </div>
 
-                <div className="bg-[#40DE83] text-gray-950 p-5 md:p-6 grid grid-cols-2 gap-4">
+                {/* Bottom Google Blue Multiplier Banner */}
+                <div className="bg-[#4285F4] text-white p-5 md:p-6 grid grid-cols-2 gap-4">
                   <div className="flex flex-col">
                     <div className="flex items-baseline space-x-1">
-                      <span className="text-2xl md:text-3xl font-black">↗</span>
-                      <span className="text-3xl md:text-4xl font-black tracking-tight">64,78%</span>
+                      <span className="text-2xl md:text-3xl font-black text-white">↗</span>
+                      <span className="text-3xl md:text-4xl font-black tracking-tight text-white">64,78%</span>
                     </div>
-                    <span className="text-xs md:text-sm font-semibold uppercase tracking-wider text-gray-900 mt-0.5">
+                    <span className="text-xs md:text-sm font-medium uppercase tracking-wider text-blue-100 mt-0.5">
                       Interaktionsrate (Peak)
                     </span>
                   </div>
-                  <div className="flex flex-col border-l border-emerald-700/20 pl-4">
+                  <div className="flex flex-col border-l border-white/20 pl-4">
                     <div className="flex items-baseline space-x-1">
-                      <span className="text-2xl md:text-3xl font-black">↗</span>
-                      <span className="text-3xl md:text-4xl font-black tracking-tight">+57,75%</span>
+                      <span className="text-2xl md:text-3xl font-black text-white">↗</span>
+                      <span className="text-3xl md:text-4xl font-black tracking-tight text-white">+57,75%</span>
                     </div>
-                    <span className="text-xs md:text-sm font-semibold uppercase tracking-wider text-gray-900 mt-0.5">
+                    <span className="text-xs md:text-sm font-medium uppercase tracking-wider text-blue-100 mt-0.5">
                       Wachstum / Artış
                     </span>
                   </div>
@@ -1197,7 +1196,7 @@ export default function ServiceDetailPage() {
               {/* CARD 3: Video & TrueView Campaign Power (Real Screenshot 2: 124.3M Impr. & 23.12M Video Views) */}
               <div className="bg-white rounded-3xl border border-gray-200/80 shadow-xl hover:shadow-2xl transition-all duration-300 flex flex-col overflow-hidden group">
                 <div className="p-6 md:p-8 pb-5 border-b border-gray-100">
-                  <span className="text-xs font-bold uppercase tracking-wider text-purple-600 bg-purple-50 px-3 py-1 rounded-full inline-block mb-3">
+                  <span className="text-xs font-bold uppercase tracking-wider text-blue-600 bg-blue-50 px-3 py-1 rounded-full inline-block mb-3">
                     {lang === 'de' ? 'YouTube & Video-Ads Reichweite' : lang === 'en' ? 'YouTube & Video Ads Reach' : 'YouTube & Video Reklam Erişimi'}
                   </span>
                   <h3 className="text-xl md:text-2xl font-bold text-gray-900 leading-snug">
@@ -1263,30 +1262,31 @@ export default function ServiceDetailPage() {
                         <span>124.339.285 Impressionen</span>
                       </div>
 
-                      <div className="absolute right-6 top-2 md:top-2 bg-white/95 border border-yellow-300 text-yellow-900 px-3 py-1 rounded-lg shadow-md text-[11px]">
-                        <span className="font-bold block text-yellow-700 uppercase text-[9px]">● TRUEVIEW VIEWS</span>
+                      <div className="absolute right-6 top-2 md:top-2 bg-white/95 border border-blue-300 text-blue-800 px-3 py-1 rounded-lg shadow-md text-[11px]">
+                        <span className="font-bold block text-blue-600 uppercase text-[9px]">● TRUEVIEW VIEWS</span>
                         <span className="font-bold">23.126.141 Videoaufrufe</span>
                       </div>
                     </div>
                   </div>
                 </div>
 
-                <div className="bg-[#40DE83] text-gray-950 p-5 md:p-6 grid grid-cols-2 gap-4">
+                {/* Bottom Google Blue Multiplier Banner */}
+                <div className="bg-[#4285F4] text-white p-5 md:p-6 grid grid-cols-2 gap-4">
                   <div className="flex flex-col">
                     <div className="flex items-baseline space-x-1">
-                      <span className="text-2xl md:text-3xl font-black">↗</span>
-                      <span className="text-3xl md:text-4xl font-black tracking-tight">23,12M</span>
+                      <span className="text-2xl md:text-3xl font-black text-white">↗</span>
+                      <span className="text-3xl md:text-4xl font-black tracking-tight text-white">23,12M</span>
                     </div>
-                    <span className="text-xs md:text-sm font-semibold uppercase tracking-wider text-gray-900 mt-0.5">
+                    <span className="text-xs md:text-sm font-medium uppercase tracking-wider text-blue-100 mt-0.5">
                       TrueView Video Views
                     </span>
                   </div>
-                  <div className="flex flex-col border-l border-emerald-700/20 pl-4">
+                  <div className="flex flex-col border-l border-white/20 pl-4">
                     <div className="flex items-baseline space-x-1">
-                      <span className="text-2xl md:text-3xl font-black">↗</span>
-                      <span className="text-3xl md:text-4xl font-black tracking-tight">124,3M</span>
+                      <span className="text-2xl md:text-3xl font-black text-white">↗</span>
+                      <span className="text-3xl md:text-4xl font-black tracking-tight text-white">124,3M</span>
                     </div>
-                    <span className="text-xs md:text-sm font-semibold uppercase tracking-wider text-gray-900 mt-0.5">
+                    <span className="text-xs md:text-sm font-medium uppercase tracking-wider text-blue-100 mt-0.5">
                       Gesamtreichweite (Impr.)
                     </span>
                   </div>
@@ -1296,7 +1296,7 @@ export default function ServiceDetailPage() {
               {/* CARD 4: Multi-Campaign Scale (Real Screenshot 3: 720 Campaigns / 26.18% Interaction Rate) */}
               <div className="bg-white rounded-3xl border border-gray-200/80 shadow-xl hover:shadow-2xl transition-all duration-300 flex flex-col overflow-hidden group">
                 <div className="p-6 md:p-8 pb-5 border-b border-gray-100">
-                  <span className="text-xs font-bold uppercase tracking-wider text-amber-700 bg-amber-50 px-3 py-1 rounded-full inline-block mb-3">
+                  <span className="text-xs font-bold uppercase tracking-wider text-blue-600 bg-blue-50 px-3 py-1 rounded-full inline-block mb-3">
                     {lang === 'de' ? '720 Kampagnen · Skalierungserfahrung' : lang === 'en' ? '720 Campaigns · Scaling Experience' : '720 Kampanya · Ölçekleme Deneyimi'}
                   </span>
                   <h3 className="text-xl md:text-2xl font-bold text-gray-900 leading-snug">
@@ -1370,22 +1370,23 @@ export default function ServiceDetailPage() {
                   </div>
                 </div>
 
-                <div className="bg-[#40DE83] text-gray-950 p-5 md:p-6 grid grid-cols-2 gap-4">
+                {/* Bottom Google Blue Multiplier Banner */}
+                <div className="bg-[#4285F4] text-white p-5 md:p-6 grid grid-cols-2 gap-4">
                   <div className="flex flex-col">
                     <div className="flex items-baseline space-x-1">
-                      <span className="text-2xl md:text-3xl font-black">↗</span>
-                      <span className="text-3xl md:text-4xl font-black tracking-tight">720+</span>
+                      <span className="text-2xl md:text-3xl font-black text-white">↗</span>
+                      <span className="text-3xl md:text-4xl font-black tracking-tight text-white">720+</span>
                     </div>
-                    <span className="text-xs md:text-sm font-semibold uppercase tracking-wider text-gray-900 mt-0.5">
+                    <span className="text-xs md:text-sm font-medium uppercase tracking-wider text-blue-100 mt-0.5">
                       {lang === 'de' ? 'Kampagnen verwaltet' : lang === 'en' ? 'Campaigns Managed' : 'Yönetilen Kampanya'}
                     </span>
                   </div>
-                  <div className="flex flex-col border-l border-emerald-700/20 pl-4">
+                  <div className="flex flex-col border-l border-white/20 pl-4">
                     <div className="flex items-baseline space-x-1">
-                      <span className="text-2xl md:text-3xl font-black">↗</span>
-                      <span className="text-3xl md:text-4xl font-black tracking-tight">26,18%</span>
+                      <span className="text-2xl md:text-3xl font-black text-white">↗</span>
+                      <span className="text-3xl md:text-4xl font-black tracking-tight text-white">26,18%</span>
                     </div>
-                    <span className="text-xs md:text-sm font-semibold uppercase tracking-wider text-gray-900 mt-0.5">
+                    <span className="text-xs md:text-sm font-medium uppercase tracking-wider text-blue-100 mt-0.5">
                       Ø Interaktionsrate (10 J.)
                     </span>
                   </div>
@@ -1414,7 +1415,7 @@ export default function ServiceDetailPage() {
               </div>
               <button
                 onClick={scrollToContact}
-                className="bg-[#40DE83] hover:bg-[#34c772] text-slate-950 font-bold px-8 py-4 rounded-xl transition-all duration-300 hover:scale-105 shadow-lg flex items-center gap-2 whitespace-nowrap cursor-pointer"
+                className="bg-[#4285F4] hover:bg-[#3367d6] text-white font-bold px-8 py-4 rounded-xl transition-all duration-300 hover:scale-105 shadow-lg flex items-center gap-2 whitespace-nowrap cursor-pointer"
               >
                 <span>{lang === 'de' ? 'Kostenlose Potenzialanalyse anfordern' : lang === 'en' ? 'Get Free Audit' : 'Ücretsiz Potansiyel Analizi Al'}</span>
                 <ArrowUpRight className="w-5 h-5" />
