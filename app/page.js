@@ -1113,8 +1113,8 @@ export default function Home({ initialLang = 'de' }) {
         </div>
       </section>
 
-      {/* Services Section (Ultra-Modern 6-Card Grid with Live Highlights) */}
-      <section id="services" className="py-24 bg-gradient-to-b from-white via-slate-50/50 to-white relative overflow-hidden">
+      {/* Services Section (Ultra-Prestigious 6-Card Grid with High Readability & 3D Accents) */}
+      <section id="services" className="py-24 bg-gradient-to-b from-white via-slate-50/60 to-white relative overflow-hidden">
         <div className="container mx-auto px-4 max-w-7xl relative z-10">
           <div className="text-center mb-16">
             <div className="inline-flex items-center space-x-2 bg-blue-50 border border-blue-200/80 rounded-full px-4 py-1.5 mb-4 shadow-sm">
@@ -1132,7 +1132,7 @@ export default function Home({ initialLang = 'de' }) {
                 <>Kapsamlı <span className="text-[#4285F4]">Dijital Pazarlama</span> Hizmetlerimiz</>
               )}
             </h2>
-            <p className="text-base md:text-lg text-gray-600 max-w-2xl mx-auto leading-relaxed">
+            <p className="text-base md:text-lg text-slate-600 max-w-2xl mx-auto leading-relaxed">
               {lang === 'de'
                 ? 'Maßgeschneiderte Strategien für planbaren ROI, Marktführerschaft und nachhaltiges Umsatzwachstum.'
                 : lang === 'en'
@@ -1143,48 +1143,60 @@ export default function Home({ initialLang = 'de' }) {
           
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8">
             {t.why.services.map((service, index) => {
-              const serviceMeta = [
+              const localizedMeta = [
                 {
                   accent: '#4285F4',
                   tag: lang === 'de' ? 'Search & Shopping' : lang === 'en' ? 'Search & Shopping' : 'Arama & Alışveriş',
-                  metricPill: 'ROAS & CPA Odaklı',
-                  descExtra: '1,74M+ Klicks & 208K Conversions Kanıtı',
-                  gradient: 'from-blue-500/10 to-indigo-500/10',
+                  pills: lang === 'de'
+                    ? ['1,74M+ Klicks generiert', 'Search, Shopping & PMax', 'ROAS & CPA Optimierung']
+                    : lang === 'en'
+                    ? ['1.74M+ Clicks Generated', 'Search, Shopping & PMax', 'ROAS & CPA Optimization']
+                    : ['1,74M+ Üretilen Tıklama', 'Search, Shopping & PMax', 'Maksimum ROAS & Kârlılık']
                 },
                 {
                   accent: '#1877F2',
-                  tag: 'Instagram & Facebook',
-                  metricPill: 'CAPI %92+ Match',
-                  descExtra: 'Advantage+ Shopping & B2B Instant Leads',
-                  gradient: 'from-blue-600/10 to-cyan-500/10',
+                  tag: lang === 'de' ? 'Instagram & Facebook' : lang === 'en' ? 'Instagram & Facebook' : 'Instagram & Facebook',
+                  pills: lang === 'de'
+                    ? ['Advantage+ Shopping & Reels', 'CAPI %92+ Match Score', 'B2B & B2C Instant Leads']
+                    : lang === 'en'
+                    ? ['Advantage+ Shopping & Reels', 'CAPI %92+ Match Score', 'B2B & B2C Instant Leads']
+                    : ['Advantage+ Shopping & Reels', 'CAPI %92+ Eşleşme Oranı', 'B2B & B2C Müşteri Talebi']
                 },
                 {
                   accent: '#000000',
-                  tag: 'Viral Video & Shop',
-                  metricPill: '18,4M+ Views',
-                  descExtra: 'Spark Ads & In-App TikTok Shop GMV',
-                  gradient: 'from-pink-500/10 to-slate-900/10',
+                  tag: lang === 'de' ? 'Viral Video & Shop' : lang === 'en' ? 'Viral Video & Shop' : 'Viral Video & TikTok Shop',
+                  pills: lang === 'de'
+                    ? ['Spark Ads & UGC Kampagnen', 'TikTok Shop Seller Center', '18,4M+ Videoaufrufe']
+                    : lang === 'en'
+                    ? ['Spark Ads & Viral UGC', 'TikTok Shop Seller Center', '18.4M+ Video Views']
+                    : ['Spark Ads & Viral UGC', 'TikTok Shop Satıcı Yönetimi', '18,4M+ Video İzlenme']
                 },
                 {
                   accent: '#1DA1F2',
-                  tag: 'B2B & Karar Verici',
-                  metricPill: '14,20 € CPL',
-                  descExtra: 'Trend Takeover & Sektörel Otorite',
-                  gradient: 'from-slate-800/10 to-cyan-500/10',
+                  tag: lang === 'de' ? 'B2B & Entscheider' : lang === 'en' ? 'B2B Decision Makers' : 'B2B & Karar Vericiler',
+                  pills: lang === 'de'
+                    ? ['B2B Entscheider-Targeting', 'Trend Takeover Kampagnen', '14,20 € CPL Skalierung']
+                    : lang === 'en'
+                    ? ['B2B Decision Maker Ads', 'Trend Takeover Campaigns', '€14.20 CPL Scalability']
+                    : ['B2B Karar Verici Hedefleme', 'Gündem & Trend Reklamları', '14,20 € CPL Ölçekleme']
                 },
                 {
                   accent: '#0F9D58',
-                  tag: 'Princeton GEO & AI',
-                  metricPill: '85K+ Klicks/Ay',
-                  descExtra: 'Google Maps #1 & Core Web Vitals 100/100',
-                  gradient: 'from-emerald-500/10 to-green-600/10',
+                  tag: lang === 'de' ? 'Princeton GEO & KI-Suche' : lang === 'en' ? 'Princeton GEO & AI Search' : 'Princeton GEO & Yapay Zeka',
+                  pills: lang === 'de'
+                    ? ['Google Maps #1 Rankings', 'ChatGPT & Perplexity (GEO)', '100/100 Core Web Vitals']
+                    : lang === 'en'
+                    ? ['Google Maps #1 Rankings', 'ChatGPT & Perplexity (GEO)', '100/100 Core Web Vitals']
+                    : ['Google Haritalar #1. Sıra', 'ChatGPT & Perplexity (GEO)', '100/100 Core Web Vitals']
                 },
                 {
                   accent: '#EA4335',
-                  tag: 'İtibar & Güvenlik',
-                  metricPill: '4.9★ Puan',
-                  descExtra: 'Sahte Yorum Temizliği & 5★ QR Hunisi',
-                  gradient: 'from-red-500/10 to-amber-500/10',
+                  tag: lang === 'de' ? 'Reputation & Rechtsschutz' : lang === 'en' ? 'Reputation & Defense' : 'İtibar & Yasal Savunma',
+                  pills: lang === 'de'
+                    ? ['4.9★ Google & Trustpilot', '100% DSGVO & Fake-Schutz', 'Automatischer QR-Trichter']
+                    : lang === 'en'
+                    ? ['4.9★ Google & Trustpilot', '100% Fake Review Defense', 'Automated QR Review Funnel']
+                    : ['4.9★ Google & Trustpilot', '%100 Sahte Yorum Savunması', 'Otomatik QR Yorum Hunisi']
                 },
               ][index]
 
@@ -1194,67 +1206,77 @@ export default function Home({ initialLang = 'de' }) {
                   href={svcUrl(lang, service.slug)}
                   className="block group h-full"
                 >
-                  <div className="h-full bg-white rounded-3xl p-8 border border-slate-200/90 shadow-lg hover:shadow-2xl transition-all duration-300 hover:-translate-y-2 flex flex-col justify-between relative overflow-hidden">
+                  <div className="h-full bg-white rounded-3xl p-8 md:p-9 border border-slate-200/90 shadow-lg hover:shadow-2xl transition-all duration-300 hover:-translate-y-2 flex flex-col justify-between relative overflow-hidden group">
                     {/* Top Accent Line */}
                     <div
-                      className="absolute top-0 left-0 right-0 h-1.5 transition-all duration-300 group-hover:h-2"
-                      style={{ backgroundColor: serviceMeta.accent }}
+                      className="absolute top-0 left-0 right-0 h-1.5 transition-all duration-300 group-hover:h-2.5"
+                      style={{ backgroundColor: localizedMeta.accent }}
                     ></div>
 
                     <div>
                       {/* Header: Icon + Category Badge */}
-                      <div className="flex items-center justify-between mb-6">
+                      <div className="flex items-center justify-between mb-7">
                         <div
-                          className="w-14 h-14 rounded-2xl flex items-center justify-center p-3 shadow-md group-hover:scale-110 transition-transform duration-200"
-                          style={{ backgroundColor: `${serviceMeta.accent}15` }}
+                          className="w-16 h-16 rounded-2xl flex items-center justify-center p-3.5 shadow-md group-hover:scale-110 group-hover:rotate-1 transition-all duration-300"
+                          style={{ backgroundColor: `${localizedMeta.accent}14` }}
                         >
                           {service.icon === 'google-ads' && (
-                            <img src="https://upload.wikimedia.org/wikipedia/commons/c/c7/Google_Ads_logo.svg" alt="Google Ads" className="w-8 h-8 object-contain" width="32" height="32" loading="lazy" />
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/c/c7/Google_Ads_logo.svg" alt="Google Ads" className="w-9 h-9 object-contain" width="36" height="36" loading="lazy" />
                           )}
                           {service.icon === 'meta' && (
-                            <img src="https://upload.wikimedia.org/wikipedia/commons/7/7b/Meta_Platforms_Inc._logo.svg" alt="Meta" className="w-8 h-6 object-contain" width="32" height="24" loading="lazy" />
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/7/7b/Meta_Platforms_Inc._logo.svg" alt="Meta" className="w-9 h-7 object-contain" width="36" height="28" loading="lazy" />
                           )}
                           {service.icon === 'tiktok' && (
-                            <img src="https://upload.wikimedia.org/wikipedia/en/a/a9/TikTok_logo.svg" alt="TikTok" className="w-8 h-8 object-contain" width="32" height="32" loading="lazy" />
+                            <img src="https://upload.wikimedia.org/wikipedia/en/a/a9/TikTok_logo.svg" alt="TikTok" className="w-9 h-9 object-contain" width="36" height="36" loading="lazy" />
                           )}
                           {service.icon === 'x' && (
-                            <svg className="w-8 h-8" viewBox="0 0 24 24" fill="currentColor"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+                            <svg className="w-9 h-9" viewBox="0 0 24 24" fill="currentColor"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
                           )}
                           {service.icon === 'seo' && (
-                            <svg className="w-8 h-8" viewBox="0 0 24 24" fill="none" stroke="#0F9D58" strokeWidth="2.5"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.3-4.3"/></svg>
+                            <svg className="w-9 h-9" viewBox="0 0 24 24" fill="none" stroke="#0F9D58" strokeWidth="2.5"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.3-4.3"/></svg>
                           )}
                           {service.icon === 'review' && (
-                            <svg className="w-8 h-8" viewBox="0 0 24 24" fill="#FBBC04" stroke="#EA4335" strokeWidth="1.5"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                            <svg className="w-9 h-9" viewBox="0 0 24 24" fill="#FBBC04" stroke="#EA4335" strokeWidth="1.5"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
                           )}
                         </div>
 
-                        <span className="text-xs font-bold px-3 py-1 rounded-full bg-slate-50 border border-slate-200/70 text-slate-700">
-                          {serviceMeta.tag}
+                        <span className="text-xs font-bold px-3.5 py-1.5 rounded-full bg-slate-50 border border-slate-200/80 text-slate-800 tracking-wide">
+                          {localizedMeta.tag}
                         </span>
                       </div>
 
                       {/* Service Title */}
-                      <h3 className="text-xl lg:text-2xl font-bold text-gray-900 mb-3 group-hover:text-[#4285F4] transition-colors">
+                      <h3 className="text-2xl font-black text-gray-900 mb-3 tracking-tight group-hover:text-[#4285F4] transition-colors leading-snug">
                         {service.title}
                       </h3>
 
-                      {/* Description */}
-                      <p className="text-sm text-slate-600 leading-relaxed mb-6">
+                      {/* Description - High Readability & Contrast */}
+                      <p className="text-sm sm:text-base text-slate-700 leading-relaxed mb-6 font-normal">
                         {service.description}
                       </p>
 
-                      {/* Highlight pill */}
-                      <div className="flex items-center space-x-2 bg-slate-50 rounded-xl p-2.5 border border-slate-100 mb-6">
-                        <span className="w-2 h-2 rounded-full" style={{ backgroundColor: serviceMeta.accent }}></span>
-                        <span className="text-xs font-bold text-slate-800">{serviceMeta.metricPill}</span>
-                        <span className="text-xs text-slate-400 font-medium ml-auto">{serviceMeta.descExtra}</span>
+                      {/* 3 High-Impact Localized Benefit Pills */}
+                      <div className="space-y-2 mb-8">
+                        {localizedMeta.pills.map((pill, pIdx) => (
+                          <div
+                            key={pIdx}
+                            className="flex items-center space-x-2.5 bg-slate-50/90 rounded-xl px-3.5 py-2 border border-slate-100 group-hover:border-slate-200/70 transition-colors"
+                          >
+                            <span className="w-1.5 h-1.5 rounded-full flex-shrink-0" style={{ backgroundColor: localizedMeta.accent }}></span>
+                            <span className="text-xs sm:text-sm font-semibold text-slate-800 tracking-tight">{pill}</span>
+                          </div>
+                        ))}
                       </div>
                     </div>
 
-                    {/* Bottom Action */}
-                    <div className="pt-4 border-t border-slate-100 flex items-center justify-between text-sm font-bold text-slate-700 group-hover:text-[#4285F4] transition-colors">
-                      <span>{lang === 'de' ? 'Details & Vorgehen' : lang === 'en' ? 'Details & Process' : 'Detayları İncele'}</span>
-                      <span className="transform group-hover:translate-x-1 transition-transform">➔</span>
+                    {/* Bottom Action Pill Button */}
+                    <div className="pt-5 border-t border-slate-100 flex items-center justify-between text-xs sm:text-sm font-bold text-slate-800 group-hover:text-[#4285F4] transition-colors">
+                      <span className="flex items-center gap-1.5">
+                        {lang === 'de' ? 'Leistungsdetails & Strategie' : lang === 'en' ? 'Service Details & Strategy' : 'Hizmet Detayları & Strateji'}
+                      </span>
+                      <span className="w-8 h-8 rounded-full bg-slate-100 group-hover:bg-[#4285F4] group-hover:text-white flex items-center justify-center transition-all duration-300">
+                        ➔
+                      </span>
                     </div>
                   </div>
                 </a>
