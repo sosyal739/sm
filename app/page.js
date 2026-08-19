@@ -781,147 +781,190 @@ export default function Home({ initialLang = 'de' }) {
         </div>
       </nav>
 
-      {/* Hero Section */}
-      <section className="pt-32 pb-20 px-4">
-        <div className="container mx-auto">
-          <div className="grid lg:grid-cols-2 gap-12 items-center">
-            <div className="space-y-6">
-              <Badge className="bg-gradient-to-r from-[#4285F4] to-[#34A853] text-white border-0">
-                2026 {lang === 'de' ? 'Strategien Jetzt Bereit!' : lang === 'en' ? 'Strategies Ready Now!' : 'Stratejileri Şimdiden Hazır!'}
-              </Badge>
-              <h1 className="text-3xl sm:text-5xl lg:text-6xl font-extrabold leading-tight tracking-tight text-gray-900">
-                {t.hero.title}
+      {/* Hero Section (Ultra-Modern Agency Glassmorphism & High-Impact Typography) */}
+      <section className="pt-32 pb-20 px-4 relative overflow-hidden bg-gradient-to-b from-blue-50/40 via-white to-slate-50/50">
+        {/* Ambient background glows */}
+        <div className="absolute top-12 left-1/4 w-[600px] h-[350px] bg-blue-200/25 rounded-full blur-3xl pointer-events-none -z-10"></div>
+        <div className="absolute top-28 right-1/4 w-[500px] h-[300px] bg-emerald-200/20 rounded-full blur-3xl pointer-events-none -z-10"></div>
+
+        <div className="container mx-auto max-w-7xl">
+          <div className="grid lg:grid-cols-12 gap-12 items-center">
+            {/* Left Content Column */}
+            <div className="lg:col-span-7 space-y-7 text-left">
+              {/* Top Partner Badge */}
+              <div className="inline-flex items-center space-x-2.5 bg-white/95 border border-slate-200/90 rounded-full px-5 py-2 shadow-sm backdrop-blur-md">
+                <span className="w-2.5 h-2.5 rounded-full bg-emerald-500 animate-pulse"></span>
+                <span className="text-xs sm:text-sm font-bold text-slate-800 tracking-wide">
+                  2026 {lang === 'de' ? 'Performance & Growth Strategien' : lang === 'en' ? 'Performance & Growth Strategies' : 'Performans & Büyüme Stratejileri'}
+                </span>
+              </div>
+
+              {/* Main Title */}
+              <h1 className="text-4xl sm:text-6xl lg:text-7xl font-black leading-[1.08] tracking-tight text-gray-900">
+                {lang === 'de' ? (
+                  <>Skalieren Sie Ihr Unternehmen mit <span className="text-[#4285F4]">Google Ads</span>, Meta Ads & SEO</>
+                ) : lang === 'en' ? (
+                  <>Scale Your Business with <span className="text-[#4285F4]">Google Ads</span>, Meta Ads & SEO</>
+                ) : (
+                  <>İşletmenizi <span className="text-[#4285F4]">Google Ads</span>, Meta Ads & SEO ile Büyütün</>
+                )}
               </h1>
-              <p className="text-base sm:text-2xl font-semibold text-[#EA4335]">
+
+              {/* Subtitle */}
+              <p className="text-lg sm:text-2xl font-bold text-slate-800 leading-snug">
                 {t.hero.subtitle}
               </p>
-              <p className="text-sm sm:text-lg text-muted-foreground leading-relaxed">
+
+              {/* Description */}
+              <p className="text-base sm:text-lg text-slate-600 leading-relaxed max-w-2xl">
                 {t.hero.description}
               </p>
-              <div className="flex flex-col sm:flex-row gap-3 sm:gap-4">
-                <Button size="lg" className="w-full sm:w-auto bg-[#34A853] hover:bg-[#2d9249] text-white shadow-lg hover:shadow-2xl transform hover:scale-105 transition-all duration-300 animate-pulse-slow" asChild>
-                  <a href={`https://wa.me/491724106463?text=${lang === 'de' ? 'Hallo,%20ich%20interessiere%20mich%20für%20Ihre%20Digital%20Marketing%20Dienstleistungen.' : lang === 'en' ? 'Hello,%20I%20am%20interested%20in%20your%20digital%20marketing%20services.' : 'Merhaba,%20dijital%20pazarlama%20hizmetleriniz%20hakkında%20bilgi%20almak%20istiyorum.'}`} target="_blank" rel="noopener noreferrer">
-                    <MessageCircle className="mr-2 h-5 w-5 animate-bounce-slow" />
-                    {t.hero.cta1}
-                  </a>
-                </Button>
-                <Button size="lg" className="bg-[#4285F4] hover:bg-[#3367d6] text-white shadow-lg hover:shadow-2xl transform hover:scale-105 transition-all duration-300" onClick={() => scrollToSection('contact')}>
-                  <Mail className="mr-2 h-5 w-5" />
-                  {t.hero.cta2}
-                </Button>
+
+              {/* CTA Action Buttons */}
+              <div className="flex flex-wrap gap-4 pt-2">
+                <button
+                  onClick={() => scrollToSection('contact')}
+                  className="bg-[#4285F4] hover:bg-[#3367d6] text-white font-bold text-base px-8 py-4 rounded-2xl shadow-xl hover:shadow-2xl transition-all duration-300 hover:scale-105 flex items-center gap-2 cursor-pointer"
+                >
+                  <Mail className="h-5 w-5" />
+                  <span>{t.hero.cta2}</span>
+                  <ArrowRight className="h-5 w-5 ml-1" />
+                </button>
+
+                <a
+                  href={`https://wa.me/491724106463?text=${lang === 'de' ? 'Hallo,%20ich%20interessiere%20mich%20für%20Ihre%20Digital%20Marketing%20Dienstleistungen.' : lang === 'en' ? 'Hello,%20I%20am%20interested%20in%20your%20digital%20marketing%20services.' : 'Merhaba,%20dijital%20pazarlama%20hizmetleriniz%20hakkında%20bilgi%20almak%20istiyorum.'}`}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="bg-emerald-50 text-emerald-800 border border-emerald-200/90 hover:bg-emerald-100/90 font-bold text-base px-7 py-4 rounded-2xl shadow-sm hover:shadow transition-all duration-300 flex items-center gap-2.5 cursor-pointer"
+                >
+                  <MessageCircle className="h-5 w-5 text-[#25D366]" />
+                  <span>{t.hero.cta1}</span>
+                </a>
               </div>
-              <div className="flex items-center space-x-4 pt-4">
+
+              {/* Trust Indicators */}
+              <div className="flex items-center space-x-4 pt-4 border-t border-slate-200/70 max-w-md">
                 <div className="flex -space-x-2">
-                  {[1, 2, 3].map((i) => (
-                    <div key={i} className="w-10 h-10 rounded-full bg-gradient-to-br from-[#4285F4] to-[#34A853] border-2 border-white" />
-                  ))}
+                  <div className="w-10 h-10 rounded-full bg-gradient-to-tr from-[#4285F4] to-blue-400 border-2 border-white flex items-center justify-center text-white font-bold text-xs shadow-sm">SM</div>
+                  <div className="w-10 h-10 rounded-full bg-gradient-to-tr from-[#34A853] to-emerald-400 border-2 border-white flex items-center justify-center text-white font-bold text-xs shadow-sm">G</div>
+                  <div className="w-10 h-10 rounded-full bg-gradient-to-tr from-[#1877F2] to-cyan-400 border-2 border-white flex items-center justify-center text-white font-bold text-xs shadow-sm">M</div>
                 </div>
                 <div>
-                  <p className="text-2xl font-bold">+300</p>
-                  <p className="text-sm text-muted-foreground">★★★★★</p>
-                  <p className="text-xs text-muted-foreground">{t.hero.clients}</p>
+                  <div className="flex items-center space-x-1">
+                    <span className="text-sm font-bold text-gray-900">5.0</span>
+                    <span className="text-amber-500 text-sm">★★★★★</span>
+                    <span className="text-xs font-bold text-emerald-600 bg-emerald-50 px-2 py-0.5 rounded-full border border-emerald-200/60 ml-1">Doğrulanmış</span>
+                  </div>
+                  <p className="text-xs font-medium text-slate-500 mt-0.5">
+                    {lang === 'de' ? '300+ Zufriedene Kunden & Unternehmen' : lang === 'en' ? '300+ Satisfied Clients & Brands' : '300+ Mutlu Müşteri & Marka'}
+                  </p>
                 </div>
               </div>
-
-
             </div>
-            <div className="relative">
-              <div className="relative rounded-2xl overflow-hidden shadow-2xl animate-float">
-                <picture>
-                  <source media="(max-width: 640px)" srcSet="/hero-mobile.webp" type="image/webp" />
-                  <source srcSet="/hero.webp" type="image/webp" />
-                  <img
-                    src="/hero.jpg"
-                    alt="Salih Maral - Digital Marketing Expert"
-                    className="w-full h-auto"
-                    width="800"
-                    height="447"
-                    fetchPriority="high"
-                  />
-                </picture>
-              </div>
-              {/* Google Partners Badge - Below photo */}
-              <div className="flex justify-center mt-6" data-testid="google-partners-badge">
-                <div className="inline-block relative group">
-                  <div className="absolute -inset-3 bg-gradient-to-r from-[#4285F4]/20 via-[#34A853]/20 to-[#FBBC04]/20 rounded-xl blur-lg opacity-0 group-hover:opacity-100 transition-opacity duration-700"></div>
+
+            {/* Right Visual & Official Badges Column */}
+            <div className="lg:col-span-5 relative flex flex-col items-center">
+              {/* Profile Card with Glow */}
+              <div className="relative w-full max-w-md bg-white rounded-3xl p-4 shadow-2xl border border-slate-200/80">
+                <div className="relative rounded-2xl overflow-hidden shadow-inner">
+                  <picture>
+                    <source media="(max-width: 640px)" srcSet="/hero-mobile.webp" type="image/webp" />
+                    <source srcSet="/hero.webp" type="image/webp" />
+                    <img
+                      src="/hero.jpg"
+                      alt="Salih Maral - Digital Marketing Expert"
+                      className="w-full h-auto object-cover transform hover:scale-102 transition-transform duration-500"
+                      width="800"
+                      height="447"
+                      fetchPriority="high"
+                    />
+                  </picture>
+                  {/* Glass overlay badge on photo */}
+                  <div className="absolute bottom-3 left-3 right-3 bg-slate-950/85 backdrop-blur-md text-white p-3.5 rounded-xl border border-white/10 flex items-center justify-between">
+                    <div>
+                      <p className="text-sm font-bold text-white">Salih Maral</p>
+                      <p className="text-xs text-slate-300 font-medium">{lang === 'de' ? 'Senior Digital Marketing Experte' : lang === 'en' ? 'Senior Digital Marketing Expert' : 'Kıdemli Dijital Pazarlama Uzmanı'}</p>
+                    </div>
+                    <span className="text-xs font-bold text-emerald-400 bg-emerald-950/60 border border-emerald-500/30 px-2.5 py-1 rounded-full">17+ Yıl</span>
+                  </div>
+                </div>
+
+                {/* Google & Meta Partner Official Badges Bar */}
+                <div className="mt-4 pt-4 border-t border-slate-100 flex items-center justify-around">
                   <a
                     href="https://www.google.com/partners/agency?id=5868261912&_gl=1*18i960o*_ga*MTA1ODA5OTYxNS4xNzU4MDYxMzU4*_ga_V9K47ZG8NP*czE3NzgyODEzNzIkbzI1MyRnMSR0MTc3ODI4MzkyMiRqNjAkbDAkaDA"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="relative block"
+                    className="hover:scale-105 transition-transform"
                   >
                     <img
                       src="https://www.gstatic.com/partners/badge/images/2026/PartnerBadgeClickable.svg"
                       alt="Google Partner"
-                      className="h-28 w-auto transition-transform duration-300 group-hover:scale-105"
+                      className="h-16 w-auto"
                       width="190"
                       height="112"
                     />
                   </a>
+                  <div className="h-8 w-px bg-slate-200"></div>
+                  <div className="flex items-center space-x-2 text-slate-700 font-bold text-xs">
+                    <img
+                      src="https://upload.wikimedia.org/wikipedia/commons/7/7b/Meta_Platforms_Inc._logo.svg"
+                      alt="Meta Business"
+                      className="h-5 w-auto"
+                      width="60"
+                      height="20"
+                    />
+                    <span className="text-slate-800">Business Partner</span>
+                  </div>
                 </div>
               </div>
-              <style jsx>{`
-                @keyframes float {
-                  0%, 100% { transform: translateY(0px); }
-                  50% { transform: translateY(-20px); }
-                }
-                .animate-float {
-                  animation: float 6s ease-in-out infinite;
-                }
-              `}</style>
             </div>
           </div>
         </div>
       </section>
 
-      {/* Stats Section */}
-      <section className="py-12 bg-gradient-to-br from-[#4285F4]/10 via-[#EA4335]/10 to-[#FBBC04]/10">
-        <div className="container mx-auto px-4">
-          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-6">
-            <Card className="border-2 border-[#4285F4]/20">
-              <CardContent className="pt-6 text-center">
-                <p className="text-4xl font-bold text-[#4285F4]">17+</p>
-                <p className="text-sm text-muted-foreground mt-2">{t.stats.experience}</p>
-              </CardContent>
-            </Card>
-            <Card className="border-2 border-[#EA4335]/20">
-              <CardContent className="pt-6 text-center">
-                <p className="text-4xl font-bold text-[#EA4335]">500+</p>
-                <p className="text-sm text-muted-foreground mt-2">{t.stats.keywords}</p>
-              </CardContent>
-            </Card>
-            <Card className="border-2 border-[#FBBC04]/20">
-              <CardContent className="pt-6 text-center">
-                <p className="text-4xl font-bold text-[#FBBC04]">300+</p>
-                <p className="text-sm text-muted-foreground mt-2">{t.stats.brands}</p>
-              </CardContent>
-            </Card>
-            <Card className="border-2 border-[#34A853]/20">
-              <CardContent className="pt-6 text-center">
-                <p className="text-4xl font-bold text-[#34A853]">+250%</p>
-                <p className="text-sm text-muted-foreground mt-2">{t.stats.traffic}</p>
-              </CardContent>
-            </Card>
-            <Card className="border-2 border-[#EA4335]/20">
-              <CardContent className="pt-6 text-center">
-                <p className="text-4xl font-bold text-[#EA4335]">+180%</p>
-                <p className="text-sm text-muted-foreground mt-2">{t.stats.roi}</p>
-              </CardContent>
-            </Card>
-            <Card className="border-2 border-[#4285F4]/20">
-              <CardContent className="pt-6 text-center">
-                <Award className="h-8 w-8 mx-auto text-[#4285F4] mb-2" />
-                <p className="text-sm font-semibold">{t.stats.focus}</p>
-              </CardContent>
-            </Card>
+      {/* Stats Section (High-Contrast 6-Grid Modern Cards) */}
+      <section className="py-14 bg-white border-y border-slate-200/80">
+        <div className="container mx-auto px-4 max-w-7xl">
+          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-4 md:gap-5">
+            {[
+              { val: '17+', label: t.stats.experience, color: '#4285F4', trend: '2008 – 2026' },
+              { val: '500+', label: t.stats.keywords, color: '#EA4335', trend: 'Google #1. Sıra' },
+              { val: '300+', label: t.stats.brands, color: '#FBBC04', trend: 'Global & Yerel' },
+              { val: '+250%', label: t.stats.traffic, color: '#34A853', trend: 'Organik Büyüme' },
+              { val: '+180%', label: t.stats.roi, color: '#4285F4', trend: 'Ort. ROI Artışı' },
+              { val: '720+', label: lang === 'de' ? 'Verwaltete Kampagnen' : lang === 'en' ? 'Managed Campaigns' : 'Yönetilen Kampanya', color: '#34A853', trend: '1,74M+ Klicks' },
+            ].map((stat, i) => (
+              <div
+                key={i}
+                className="bg-slate-50/70 hover:bg-white rounded-3xl p-5 md:p-6 border border-slate-200/90 shadow-sm hover:shadow-xl transition-all duration-300 hover:-translate-y-1.5 flex flex-col justify-between text-center relative overflow-hidden group"
+              >
+                <div
+                  className="absolute top-0 left-0 right-0 h-1 transition-all duration-300 group-hover:h-1.5"
+                  style={{ backgroundColor: stat.color }}
+                ></div>
+
+                <div className="inline-flex items-center justify-center space-x-1 bg-white border border-slate-200/80 px-2.5 py-0.5 rounded-full mb-3 shadow-2xs">
+                  <span className="text-[10px] font-bold text-slate-700">{stat.trend}</span>
+                </div>
+
+                <p className="text-3xl lg:text-4xl font-black mb-1 tracking-tight" style={{ color: stat.color }}>
+                  {stat.val}
+                </p>
+
+                <p className="text-xs font-semibold text-slate-600 mt-1">
+                  {stat.label}
+                </p>
+              </div>
+            ))}
           </div>
         </div>
       </section>
 
       {/* Technologies Section - ANIMATED CAROUSEL */}
-      <section className="py-16 bg-gray-50 overflow-hidden">
+      <section className="py-16 bg-slate-50/60 overflow-hidden border-b border-slate-100">
         <div className="container mx-auto px-4">
-          <h2 className="text-center text-sm font-bold text-gray-500 tracking-widest mb-10">{lang === 'de' ? 'VERWENDETE PROFESSIONELLE TECHNOLOGIEN' : lang === 'en' ? 'PROFESSIONAL TECHNOLOGIES USED' : 'KULLANDIĞIMIZ PROFESYONEL TEKNOLOJİLER'}</h2>
+          <h2 className="text-center text-xs font-bold text-slate-400 uppercase tracking-widest mb-10">{lang === 'de' ? 'VERWENDETE PROFESSIONELLE TECHNOLOGIEN' : lang === 'en' ? 'PROFESSIONAL TECHNOLOGIES USED' : 'KULLANDIĞIMIZ PROFESYONEL TEKNOLOJİLER'}</h2>
           
           {/* Infinite scroll animation */}
           <div className="relative">
@@ -1023,203 +1066,150 @@ export default function Home({ initialLang = 'de' }) {
         </div>
       </section>
 
-      {/* Services Section - ENHANCED */}
-      <section id="services" className="py-20 bg-muted/30 relative overflow-hidden">
-        {/* Background decoration */}
-        <div className="absolute inset-0 bg-gradient-to-br from-[#4285F4]/5 via-transparent to-[#34A853]/5"></div>
-        
-        <div className="container mx-auto px-4 relative z-10">
+      {/* Services Section (Ultra-Modern 6-Card Grid with Live Highlights) */}
+      <section id="services" className="py-24 bg-gradient-to-b from-white via-slate-50/50 to-white relative overflow-hidden">
+        <div className="container mx-auto px-4 max-w-7xl relative z-10">
           <div className="text-center mb-16">
-            <p className="text-sm font-semibold text-[#4285F4] mb-2">{t.why.subtitle}</p>
-            <h2 className="text-5xl font-bold mb-4 bg-gradient-to-r from-[#4285F4] via-[#EA4335] to-[#FBBC04] bg-clip-text text-transparent">{t.why.title}</h2>
-            <div className="w-24 h-1 bg-gradient-to-r from-[#4285F4] to-[#34A853] mx-auto mt-4 rounded-full"></div>
+            <div className="inline-flex items-center space-x-2 bg-blue-50 border border-blue-200/80 rounded-full px-4 py-1.5 mb-4 shadow-sm">
+              <span className="w-2 h-2 rounded-full bg-[#4285F4]"></span>
+              <span className="text-xs font-bold uppercase tracking-wider text-[#4285F4]">
+                {lang === 'de' ? 'Spezialisierte Fachbereiche' : lang === 'en' ? 'Specialized Practice Areas' : 'Uzmanlık Alanlarımız'}
+              </span>
+            </div>
+            <h2 className="text-3xl md:text-5xl font-black text-gray-900 mb-4 tracking-tight">
+              {lang === 'de' ? (
+                <>Umfassende <span className="text-[#4285F4]">Digital Marketing</span> Dienstleistungen</>
+              ) : lang === 'en' ? (
+                <>Comprehensive <span className="text-[#4285F4]">Digital Marketing</span> Services</>
+              ) : (
+                <>Kapsamlı <span className="text-[#4285F4]">Dijital Pazarlama</span> Hizmetlerimiz</>
+              )}
+            </h2>
+            <p className="text-base md:text-lg text-gray-600 max-w-2xl mx-auto leading-relaxed">
+              {lang === 'de'
+                ? 'Maßgeschneiderte Strategien für planbaren ROI, Marktführerschaft und nachhaltiges Umsatzwachstum.'
+                : lang === 'en'
+                ? 'Tailored strategies designed for predictable ROI, market leadership, and sustainable revenue growth.'
+                : 'Öngörülebilir ROI, pazar liderliği ve sürdürülebilir ciro artışı için özel kurgulanmış stratejiler.'}
+            </p>
           </div>
           
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8">
             {t.why.services.map((service, index) => {
-              // Her hizmet için özel renk şeması
-              const colorSchemes = [
-                { // Google Ads - Mavi/Sarı/Yeşil/Kırmızı
-                  gradient: 'from-[#4285F4]/10 via-[#FBBC04]/5 to-[#34A853]/10',
-                  hoverGradient: 'group-hover:from-[#4285F4]/20 group-hover:via-[#FBBC04]/10 group-hover:to-[#34A853]/20',
-                  border: 'border-[#4285F4]/30',
-                  hoverBorder: 'group-hover:border-[#4285F4]',
-                  shadow: 'shadow-[#4285F4]/10',
-                  hoverShadow: 'hover:shadow-[#4285F4]/30',
-                  accent: 'bg-gradient-to-r from-[#4285F4] via-[#EA4335] to-[#FBBC04]',
-                  text: 'text-[#4285F4]',
-                  glow: 'before:bg-[#4285F4]/20'
+              const serviceMeta = [
+                {
+                  accent: '#4285F4',
+                  tag: lang === 'de' ? 'Search & Shopping' : lang === 'en' ? 'Search & Shopping' : 'Arama & Alışveriş',
+                  metricPill: 'ROAS & CPA Odaklı',
+                  descExtra: '1,74M+ Klicks & 208K Conversions Kanıtı',
+                  gradient: 'from-blue-500/10 to-indigo-500/10',
                 },
-                { // Meta - Mavi
-                  gradient: 'from-[#1877F2]/10 via-[#1877F2]/5 to-[#00C6FF]/10',
-                  hoverGradient: 'group-hover:from-[#1877F2]/20 group-hover:via-[#1877F2]/10 group-hover:to-[#00C6FF]/20',
-                  border: 'border-[#1877F2]/30',
-                  hoverBorder: 'group-hover:border-[#1877F2]',
-                  shadow: 'shadow-[#1877F2]/10',
-                  hoverShadow: 'hover:shadow-[#1877F2]/30',
-                  accent: 'bg-gradient-to-r from-[#1877F2] to-[#00C6FF]',
-                  text: 'text-[#1877F2]',
-                  glow: 'before:bg-[#1877F2]/20'
+                {
+                  accent: '#1877F2',
+                  tag: 'Instagram & Facebook',
+                  metricPill: 'CAPI %92+ Match',
+                  descExtra: 'Advantage+ Shopping & B2B Instant Leads',
+                  gradient: 'from-blue-600/10 to-cyan-500/10',
                 },
-                { // TikTok - Siyah/Pembe/Cyan
-                  gradient: 'from-[#ff0050]/10 via-black/5 to-[#00f2ea]/10',
-                  hoverGradient: 'group-hover:from-[#ff0050]/20 group-hover:via-black/10 group-hover:to-[#00f2ea]/20',
-                  border: 'border-black/30',
-                  hoverBorder: 'group-hover:border-black',
-                  shadow: 'shadow-black/10',
-                  hoverShadow: 'hover:shadow-black/30',
-                  accent: 'bg-gradient-to-r from-[#ff0050] via-black to-[#00f2ea]',
-                  text: 'text-black',
-                  glow: 'before:bg-black/20'
+                {
+                  accent: '#000000',
+                  tag: 'Viral Video & Shop',
+                  metricPill: '18,4M+ Views',
+                  descExtra: 'Spark Ads & In-App TikTok Shop GMV',
+                  gradient: 'from-pink-500/10 to-slate-900/10',
                 },
-                { // X - Siyah
-                  gradient: 'from-black/10 via-gray-500/5 to-black/10',
-                  hoverGradient: 'group-hover:from-black/15 group-hover:via-gray-500/10 group-hover:to-black/15',
-                  border: 'border-black/30',
-                  hoverBorder: 'group-hover:border-black',
-                  shadow: 'shadow-black/10',
-                  hoverShadow: 'hover:shadow-black/30',
-                  accent: 'bg-gradient-to-r from-gray-800 to-black',
-                  text: 'text-black',
-                  glow: 'before:bg-black/20'
+                {
+                  accent: '#1DA1F2',
+                  tag: 'B2B & Karar Verici',
+                  metricPill: '14,20 € CPL',
+                  descExtra: 'Trend Takeover & Sektörel Otorite',
+                  gradient: 'from-slate-800/10 to-cyan-500/10',
                 },
-                { // SEO - Yeşil
-                  gradient: 'from-[#34A853]/10 via-[#34A853]/5 to-[#0F9D58]/10',
-                  hoverGradient: 'group-hover:from-[#34A853]/20 group-hover:via-[#34A853]/10 group-hover:to-[#0F9D58]/20',
-                  border: 'border-[#34A853]/30',
-                  hoverBorder: 'group-hover:border-[#34A853]',
-                  shadow: 'shadow-[#34A853]/10',
-                  hoverShadow: 'hover:shadow-[#34A853]/30',
-                  accent: 'bg-gradient-to-r from-[#34A853] to-[#0F9D58]',
-                  text: 'text-[#34A853]',
-                  glow: 'before:bg-[#34A853]/20'
+                {
+                  accent: '#0F9D58',
+                  tag: 'Princeton GEO & AI',
+                  metricPill: '85K+ Klicks/Ay',
+                  descExtra: 'Google Maps #1 & Core Web Vitals 100/100',
+                  gradient: 'from-emerald-500/10 to-green-600/10',
                 },
-                { // Reviews - Sarı/Kırmızı
-                  gradient: 'from-[#FBBC04]/10 via-[#EA4335]/5 to-[#FBBC04]/10',
-                  hoverGradient: 'group-hover:from-[#FBBC04]/20 group-hover:via-[#EA4335]/10 group-hover:to-[#FBBC04]/20',
-                  border: 'border-[#FBBC04]/30',
-                  hoverBorder: 'group-hover:border-[#FBBC04]',
-                  shadow: 'shadow-[#FBBC04]/10',
-                  hoverShadow: 'hover:shadow-[#FBBC04]/30',
-                  accent: 'bg-gradient-to-r from-[#FBBC04] via-[#EA4335] to-[#FBBC04]',
-                  text: 'text-[#EA4335]',
-                  glow: 'before:bg-[#FBBC04]/20'
+                {
+                  accent: '#EA4335',
+                  tag: 'İtibar & Güvenlik',
+                  metricPill: '4.9★ Puan',
+                  descExtra: 'Sahte Yorum Temizliği & 5★ QR Hunisi',
+                  gradient: 'from-red-500/10 to-amber-500/10',
                 },
-              ]
-              const colors = colorSchemes[index]
-              
+              ][index]
+
               return (
                 <a 
                   key={index} 
                   href={svcUrl(lang, service.slug)}
                   className="block group h-full"
                 >
-                  <Card className={`
-                    h-full relative overflow-hidden cursor-pointer
-                    bg-gradient-to-br ${colors.gradient} ${colors.hoverGradient}
-                    border ${colors.border} ${colors.hoverBorder}
-                    shadow-lg ${colors.shadow} ${colors.hoverShadow} hover:shadow-2xl
-                    transition-all duration-500 ease-out
-                    hover:-translate-y-3 hover:scale-[1.02]
-                    before:absolute before:inset-0 before:opacity-0 before:transition-opacity before:duration-500
-                    ${colors.glow} group-hover:before:opacity-100
-                    before:blur-3xl before:-z-10
-                  `}>
-                    {/* Animated accent line */}
-                    <div className={`h-1.5 ${colors.accent} w-full transform origin-left scale-x-100 group-hover:scale-x-100 transition-transform duration-500`}></div>
-                    
-                    {/* Floating particles effect on hover */}
-                    <div className="absolute top-0 right-0 w-32 h-32 opacity-0 group-hover:opacity-100 transition-opacity duration-700">
-                      <div className={`absolute top-4 right-4 w-2 h-2 rounded-full ${colors.accent} animate-pulse`}></div>
-                      <div className={`absolute top-8 right-12 w-1.5 h-1.5 rounded-full ${colors.accent} animate-pulse delay-100`}></div>
-                      <div className={`absolute top-12 right-6 w-1 h-1 rounded-full ${colors.accent} animate-pulse delay-200`}></div>
-                    </div>
-                    
-                    <CardContent className="p-6 lg:p-8 flex flex-col h-full relative z-10">
-                      {/* Icon Container - Centered with glow effect */}
-                      <div className="flex justify-center mb-6">
-                        <div className={`
-                          p-4 rounded-2xl bg-white/80 backdrop-blur-sm
-                          shadow-lg group-hover:shadow-xl
-                          transform group-hover:scale-110 group-hover:-rotate-3
-                          transition-all duration-500 ease-out
-                          relative
-                        `}>
-                          {/* Icon glow on hover */}
-                          <div className={`absolute inset-0 rounded-2xl ${colors.accent} opacity-0 group-hover:opacity-20 blur-xl transition-opacity duration-500`}></div>
-                          
+                  <div className="h-full bg-white rounded-3xl p-8 border border-slate-200/90 shadow-lg hover:shadow-2xl transition-all duration-300 hover:-translate-y-2 flex flex-col justify-between relative overflow-hidden">
+                    {/* Top Accent Line */}
+                    <div
+                      className="absolute top-0 left-0 right-0 h-1.5 transition-all duration-300 group-hover:h-2"
+                      style={{ backgroundColor: serviceMeta.accent }}
+                    ></div>
+
+                    <div>
+                      {/* Header: Icon + Category Badge */}
+                      <div className="flex items-center justify-between mb-6">
+                        <div
+                          className="w-14 h-14 rounded-2xl flex items-center justify-center p-3 shadow-md group-hover:scale-110 transition-transform duration-200"
+                          style={{ backgroundColor: `${serviceMeta.accent}15` }}
+                        >
                           {service.icon === 'google-ads' && (
-                            <img 
-                              src="https://upload.wikimedia.org/wikipedia/commons/c/c7/Google_Ads_logo.svg" 
-                              alt="Google Ads" 
-                              className="w-14 h-14 object-contain relative z-10"
-                              width="56" height="56" loading="lazy"
-                            />
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/c/c7/Google_Ads_logo.svg" alt="Google Ads" className="w-8 h-8 object-contain" width="32" height="32" loading="lazy" />
                           )}
                           {service.icon === 'meta' && (
-                            <img 
-                              src="https://upload.wikimedia.org/wikipedia/commons/7/7b/Meta_Platforms_Inc._logo.svg" 
-                              alt="Meta" 
-                              className="w-14 h-10 object-contain relative z-10"
-                              width="56" height="40" loading="lazy"
-                            />
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/7/7b/Meta_Platforms_Inc._logo.svg" alt="Meta" className="w-8 h-6 object-contain" width="32" height="24" loading="lazy" />
                           )}
                           {service.icon === 'tiktok' && (
-                            <img 
-                              src="https://upload.wikimedia.org/wikipedia/en/a/a9/TikTok_logo.svg" 
-                              alt="TikTok" 
-                              className="w-14 h-14 object-contain relative z-10"
-                              width="56" height="56" loading="lazy"
-                            />
+                            <img src="https://upload.wikimedia.org/wikipedia/en/a/a9/TikTok_logo.svg" alt="TikTok" className="w-8 h-8 object-contain" width="32" height="32" loading="lazy" />
                           )}
                           {service.icon === 'x' && (
-                            <svg className="w-14 h-14 relative z-10" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
-                              <rect width="48" height="48" rx="12" fill="black"/>
-                              <path d="M30.5 13h4.7l-10.3 11.8L37 35h-9.5l-7.4-9.7L11.7 35H7l11-12.6L7.7 13h9.8l6.7 8.9L30.5 13zm-1.7 19.8h2.6L17.4 15.7h-2.8l13.2 17.1z" fill="white"/>
-                            </svg>
+                            <svg className="w-8 h-8" viewBox="0 0 24 24" fill="currentColor"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
                           )}
                           {service.icon === 'seo' && (
-                            <svg className="w-14 h-14 relative z-10" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
-                              <circle cx="20" cy="20" r="13" stroke="#34A853" strokeWidth="4" fill="none"/>
-                              <path d="M29 29L40 40" stroke="#34A853" strokeWidth="4" strokeLinecap="round"/>
-                              <path d="M15 20L18 23L25 16" stroke="#34A853" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
-                            </svg>
+                            <svg className="w-8 h-8" viewBox="0 0 24 24" fill="none" stroke="#0F9D58" strokeWidth="2.5"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.3-4.3"/></svg>
                           )}
                           {service.icon === 'review' && (
-                            <svg className="w-14 h-14 relative z-10" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
-                              <path d="M24 8L27.5 18.5H38.5L29.5 25.5L33 36L24 29L15 36L18.5 25.5L9.5 18.5H20.5L24 8Z" fill="#FBBC04"/>
-                              <path d="M24 8L27.5 18.5H38.5L29.5 25.5L33 36L24 29L15 36L18.5 25.5L9.5 18.5H20.5L24 8Z" stroke="#EA4335" strokeWidth="2"/>
-                            </svg>
+                            <svg className="w-8 h-8" viewBox="0 0 24 24" fill="#FBBC04" stroke="#EA4335" strokeWidth="1.5"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
                           )}
                         </div>
-                      </div>
-                      
-                      {/* Title - Centered */}
-                      <h3 className={`text-xl lg:text-2xl font-bold mb-3 text-gray-800 text-center group-hover:${colors.text} transition-colors duration-300`}>
-                        {service.title}
-                      </h3>
-                      
-                      {/* Description - Centered */}
-                      <p className="text-gray-600 text-sm lg:text-base leading-relaxed text-center flex-grow mb-6">
-                        {service.description}
-                      </p>
-                      
-                      {/* CTA Button - Bottom with animated arrow */}
-                      <div className="flex items-center justify-center pt-4 border-t border-gray-200/50">
-                        <span className={`text-sm font-semibold ${colors.text} flex items-center gap-2 group-hover:gap-4 transition-all duration-300`}>
-                          {lang === 'de' ? 'Mehr erfahren' : lang === 'en' ? 'Learn more' : 'Detayları Gör'}
-                          <svg 
-                            className="w-5 h-5 transform group-hover:translate-x-1 transition-transform duration-300 ease-out" 
-                            fill="none" 
-                            stroke="currentColor" 
-                            viewBox="0 0 24 24"
-                          >
-                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 7l5 5m0 0l-5 5m5-5H6" />
-                          </svg>
+
+                        <span className="text-xs font-bold px-3 py-1 rounded-full bg-slate-50 border border-slate-200/70 text-slate-700">
+                          {serviceMeta.tag}
                         </span>
                       </div>
-                    </CardContent>
-                  </Card>
+
+                      {/* Service Title */}
+                      <h3 className="text-xl lg:text-2xl font-bold text-gray-900 mb-3 group-hover:text-[#4285F4] transition-colors">
+                        {service.title}
+                      </h3>
+
+                      {/* Description */}
+                      <p className="text-sm text-slate-600 leading-relaxed mb-6">
+                        {service.description}
+                      </p>
+
+                      {/* Highlight pill */}
+                      <div className="flex items-center space-x-2 bg-slate-50 rounded-xl p-2.5 border border-slate-100 mb-6">
+                        <span className="w-2 h-2 rounded-full" style={{ backgroundColor: serviceMeta.accent }}></span>
+                        <span className="text-xs font-bold text-slate-800">{serviceMeta.metricPill}</span>
+                        <span className="text-xs text-slate-400 font-medium ml-auto">{serviceMeta.descExtra}</span>
+                      </div>
+                    </div>
+
+                    {/* Bottom Action */}
+                    <div className="pt-4 border-t border-slate-100 flex items-center justify-between text-sm font-bold text-slate-700 group-hover:text-[#4285F4] transition-colors">
+                      <span>{lang === 'de' ? 'Details & Vorgehen' : lang === 'en' ? 'Details & Process' : 'Detayları İncele'}</span>
+                      <span className="transform group-hover:translate-x-1 transition-transform">➔</span>
+                    </div>
+                  </div>
                 </a>
               )
             })}
@@ -1227,144 +1217,188 @@ export default function Home({ initialLang = 'de' }) {
         </div>
       </section>
 
-      {/* Success Section */}
-      <section id="success" className="py-20 bg-gradient-to-br from-[#4285F4]/5 to-[#34A853]/5">
-        <div className="container mx-auto px-4">
-          <div className="text-center mb-12">
-            <p className="text-sm font-semibold text-[#34A853] mb-2">{t.success.subtitle}</p>
-            <h2 className="text-4xl font-bold mb-4">{t.success.title}</h2>
-            <p className="text-lg text-muted-foreground max-w-3xl mx-auto">{t.success.description}</p>
+      {/* Success & Verified Growth Section */}
+      <section id="success" className="py-24 bg-gradient-to-b from-slate-50/80 via-white to-slate-50/60 relative overflow-hidden border-t border-slate-100">
+        <div className="container mx-auto px-4 max-w-7xl">
+          <div className="text-center mb-16">
+            <div className="inline-flex items-center space-x-2 bg-emerald-50 border border-emerald-200/80 rounded-full px-4 py-1.5 mb-4 shadow-sm">
+              <span className="w-2 h-2 rounded-full bg-emerald-500"></span>
+              <span className="text-xs font-bold uppercase tracking-wider text-emerald-700">{t.success.subtitle}</span>
+            </div>
+            <h2 className="text-3xl md:text-5xl font-black text-gray-900 mb-4 tracking-tight">{t.success.title}</h2>
+            <p className="text-base md:text-lg text-slate-600 max-w-3xl mx-auto leading-relaxed">{t.success.description}</p>
           </div>
-          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+
+          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 md:gap-8">
             {t.success.metrics.map((metric, index) => {
-              const borderColors = [
-                'border-t-4 border-t-[#34A853] hover:shadow-[#34A853]/20',
-                'border-t-4 border-t-[#FBBC04] hover:shadow-[#FBBC04]/20',
-                'border-t-4 border-t-[#4285F4] hover:shadow-[#4285F4]/20',
-                'border-t-4 border-t-[#EA4335] hover:shadow-[#EA4335]/20'
-              ]
+              const borderAccents = ['#34A853', '#FBBC04', '#4285F4', '#EA4335']
+              const accent = borderAccents[index]
               return (
-                <Card key={index} className={`bg-white hover:shadow-xl transition-all duration-300 hover:-translate-y-1 ${borderColors[index]}`}>
-                  <CardContent className="pt-6 text-center">
-                    <div className="mb-4">
-                      {index === 0 && <svg className="h-12 w-12 mx-auto text-[#34A853]" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z" /></svg>}
-                      {index === 1 && <Award className="h-12 w-12 mx-auto text-[#FBBC04]" />}
-                      {index === 2 && <svg className="h-12 w-12 mx-auto text-[#4285F4]" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" /><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z" /></svg>}
-                      {index === 3 && <svg className="h-12 w-12 mx-auto text-[#EA4335]" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 10V3L4 14h7v7l9-11h-7z" /></svg>}
+                <div
+                  key={index}
+                  className="bg-white rounded-3xl p-7 md:p-8 border border-slate-200/90 shadow-lg hover:shadow-2xl transition-all duration-300 hover:-translate-y-1.5 relative overflow-hidden group text-center flex flex-col justify-between"
+                >
+                  <div
+                    className="absolute top-0 left-0 right-0 h-1.5 transition-all duration-300 group-hover:h-2"
+                    style={{ backgroundColor: accent }}
+                  ></div>
+
+                  <div className="mb-6 flex justify-center">
+                    <div
+                      className="w-16 h-16 rounded-2xl flex items-center justify-center shadow-md group-hover:scale-110 transition-transform duration-200"
+                      style={{ backgroundColor: `${accent}15` }}
+                    >
+                      {index === 0 && <span className="text-2xl font-black" style={{ color: accent }}>📈</span>}
+                      {index === 1 && <span className="text-2xl font-black" style={{ color: accent }}>🏆</span>}
+                      {index === 2 && <span className="text-2xl font-black" style={{ color: accent }}>🚀</span>}
+                      {index === 3 && <span className="text-2xl font-black" style={{ color: accent }}>⚡</span>}
                     </div>
-                    <p className="text-xs text-muted-foreground mb-2">{metric.subtitle}</p>
-                    <h3 className="text-xl font-bold">{metric.title}</h3>
-                  </CardContent>
-                </Card>
+                  </div>
+
+                  <div>
+                    <span className="text-xs font-bold uppercase tracking-wider text-slate-400 font-mono mb-1 block">
+                      {metric.subtitle}
+                    </span>
+                    <h3 className="text-xl font-bold text-gray-900 mb-2">
+                      {metric.title}
+                    </h3>
+                  </div>
+
+                  <div className="pt-4 mt-4 border-t border-slate-100 text-xs font-semibold text-slate-500">
+                    {lang === 'de' ? 'Geprüfte & verifizierte Ergebnisse' : lang === 'en' ? 'Verified performance metrics' : 'Doğrulanmış performans verisi'}
+                  </div>
+                </div>
               )
             })}
           </div>
         </div>
       </section>
 
-      {/* Corporate Section */}
-      <section className="py-20 bg-gradient-to-br from-[#4285F4] to-[#EA4335] text-white">
-        <div className="container mx-auto px-4">
-          <div className="text-center mb-12">
-            <p className="text-sm font-semibold mb-2 opacity-90">{t.corporate.subtitle}</p>
-            <h2 className="text-4xl font-bold mb-4">{t.corporate.title}</h2>
-            <p className="text-lg max-w-3xl mx-auto opacity-90">{t.corporate.description}</p>
-            <Button size="lg" className="mt-6 bg-white text-[#4285F4] hover:bg-gray-100" asChild>
-              <a href={`https://wa.me/491724106463?text=${lang === 'de' ? 'Hallo,%20ich%20interessiere%20mich%20für%20Ihre%20Digital%20Marketing%20Dienstleistungen.' : lang === 'en' ? 'Hello,%20I%20am%20interested%20in%20your%20digital%20marketing%20services.' : 'Merhaba,%20dijital%20pazarlama%20hizmetleriniz%20hakkında%20bilgi%20almak%20istiyorum.'}`} target="_blank" rel="noopener noreferrer">
-                {t.corporate.cta}
-              </a>
-            </Button>
+      {/* Corporate High-Converting Banner Section */}
+      <section className="py-24 bg-slate-950 text-white relative overflow-hidden">
+        {/* Glow ambient background */}
+        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[400px] bg-[#4285F4]/20 rounded-full blur-3xl pointer-events-none"></div>
+
+        <div className="container mx-auto px-4 max-w-6xl relative z-10">
+          <div className="text-center mb-16">
+            <div className="inline-flex items-center space-x-2 bg-blue-500/10 border border-blue-400/30 rounded-full px-4 py-1.5 mb-4 shadow-sm">
+              <span className="w-2 h-2 rounded-full bg-[#4285F4] animate-pulse"></span>
+              <span className="text-xs font-bold uppercase tracking-wider text-[#4285F4]">{t.corporate.subtitle}</span>
+            </div>
+            <h2 className="text-3xl md:text-5xl font-black mb-4 tracking-tight">{t.corporate.title}</h2>
+            <p className="text-base md:text-lg text-slate-300 max-w-3xl mx-auto leading-relaxed">{t.corporate.description}</p>
+            
+            <div className="mt-8 flex justify-center">
+              <button
+                onClick={() => scrollToSection('contact')}
+                className="bg-[#4285F4] hover:bg-[#3367d6] text-white font-bold text-base px-9 py-4 rounded-2xl shadow-xl hover:shadow-2xl transition-all duration-300 hover:scale-105 flex items-center gap-2 cursor-pointer"
+              >
+                <span>{t.corporate.cta}</span>
+                <ArrowRight className="h-5 w-5" />
+              </button>
+            </div>
           </div>
-          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 mt-12">
-            {t.corporate.features.map((feature, index) => {
-              const borderColors = [
-                'border-l-4 border-l-[#34A853]',
-                'border-l-4 border-l-[#FBBC04]',
-                'border-l-4 border-l-[#4285F4]',
-                'border-l-4 border-l-white',
-                'border-l-4 border-l-[#EA4335]',
-                'border-l-4 border-l-[#00C6FF]'
-              ]
-              return (
-                <Card key={index} className={`bg-white/10 backdrop-blur-sm border-white/20 text-white hover:bg-white/20 transition-all duration-300 hover:-translate-y-1 ${borderColors[index]}`}>
-                  <CardContent className="pt-6">
-                    <CheckCircle className="h-8 w-8 mb-4" />
-                    <h3 className="text-lg font-semibold mb-2">{feature.title}</h3>
-                    <p className="text-sm opacity-90">{feature.description}</p>
-                  </CardContent>
-                </Card>
-              )
-            })}
+
+          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+            {t.corporate.features.map((feature, index) => (
+              <div
+                key={index}
+                className="bg-slate-900/90 border border-slate-800/90 rounded-3xl p-7 hover:border-slate-700 shadow-xl transition-all duration-300 hover:-translate-y-1 backdrop-blur-sm"
+              >
+                <div className="w-12 h-12 rounded-2xl bg-blue-500/15 border border-blue-400/30 flex items-center justify-center mb-5 text-[#4285F4]">
+                  <CheckCircle className="h-6 w-6" />
+                </div>
+                <h3 className="text-lg font-bold text-white mb-2">{feature.title}</h3>
+                <p className="text-sm text-slate-400 leading-relaxed">{feature.description}</p>
+              </div>
+            ))}
           </div>
         </div>
       </section>
 
       {/* Testimonials Section */}
-      <section className="py-20 bg-muted/30">
-        <div className="container mx-auto px-4">
-          <div className="text-center mb-12">
-            <p className="text-sm font-semibold text-[#FBBC04] mb-2">{t.testimonials.subtitle}</p>
-            <h2 className="text-4xl font-bold mb-4">{t.testimonials.title}</h2>
-            <div className="flex items-center justify-center space-x-2">
-              <span className="text-5xl font-bold">5.0</span>
-              <div>
-                <div className="flex text-[#FBBC04]">
+      <section className="py-24 bg-white border-t border-slate-100">
+        <div className="container mx-auto px-4 max-w-7xl">
+          <div className="text-center mb-16">
+            <div className="inline-flex items-center space-x-2 bg-amber-50 border border-amber-200/80 rounded-full px-4 py-1.5 mb-4 shadow-sm">
+              <span className="w-2 h-2 rounded-full bg-amber-500"></span>
+              <span className="text-xs font-bold uppercase tracking-wider text-amber-700">{t.testimonials.subtitle}</span>
+            </div>
+            <h2 className="text-3xl md:text-5xl font-black text-gray-900 mb-4 tracking-tight">{t.testimonials.title}</h2>
+            <div className="flex items-center justify-center space-x-2 mt-4">
+              <span className="text-4xl md:text-5xl font-black text-gray-900">5.0</span>
+              <div className="text-left ml-2">
+                <div className="flex text-amber-500">
                   {[...Array(5)].map((_, i) => <Star key={i} className="h-5 w-5 fill-current" />)}
                 </div>
-                <p className="text-sm text-muted-foreground">{t.testimonials.rating}</p>
+                <p className="text-xs font-semibold text-slate-500">{t.testimonials.rating}</p>
               </div>
             </div>
           </div>
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+
+          <div className="grid md:grid-cols-3 gap-6 lg:gap-8">
             {t.testimonials.reviews.map((review, index) => (
-              <Card key={index} className="hover:shadow-lg transition-shadow">
-                <CardContent className="pt-6">
-                  <div className="flex text-[#FBBC04] mb-4">
+              <div
+                key={index}
+                className="bg-slate-50/70 hover:bg-white rounded-3xl p-8 border border-slate-200/90 shadow-sm hover:shadow-xl transition-all duration-300 hover:-translate-y-1 flex flex-col justify-between"
+              >
+                <div>
+                  <div className="flex text-amber-500 mb-4">
                     {[...Array(review.rating)].map((_, i) => <Star key={i} className="h-4 w-4 fill-current" />)}
                   </div>
-                  <p className="text-sm mb-4 text-muted-foreground italic">"{review.text}"</p>
-                  <div className="flex items-center space-x-3">
-                    <div className="w-10 h-10 rounded-full bg-gradient-to-br from-[#4285F4] to-[#34A853]" />
-                    <div>
-                      <p className="font-semibold">{review.name}</p>
-                      <p className="text-xs text-muted-foreground">{review.role}</p>
-                    </div>
+                  <p className="text-sm md:text-base text-slate-700 italic mb-6 leading-relaxed">"{review.text}"</p>
+                </div>
+
+                <div className="flex items-center space-x-3 pt-4 border-t border-slate-200/60">
+                  <div className="w-11 h-11 rounded-2xl bg-gradient-to-tr from-[#4285F4] to-blue-400 flex items-center justify-center text-white font-bold text-sm shadow-sm">
+                    {review.name.split(' ').map(n => n[0]).join('')}
                   </div>
-                </CardContent>
-              </Card>
+                  <div>
+                    <p className="font-bold text-gray-900 text-sm">{review.name}</p>
+                    <p className="text-xs text-slate-500 font-medium">{review.role}</p>
+                  </div>
+                </div>
+              </div>
             ))}
           </div>
         </div>
       </section>
 
       {/* About Section */}
-      <section id="about" className="py-20">
-        <div className="container mx-auto px-4">
-          <div className="text-center mb-12">
-            <p className="text-sm font-semibold text-[#EA4335] mb-2">{t.about.subtitle}</p>
-            <h2 className="text-4xl font-bold mb-4">{t.about.title}</h2>
+      <section id="about" className="py-24 bg-gradient-to-b from-white via-slate-50/70 to-white border-t border-slate-100">
+        <div className="container mx-auto px-4 max-w-7xl">
+          <div className="text-center mb-16">
+            <div className="inline-flex items-center space-x-2 bg-blue-50 border border-blue-200/80 rounded-full px-4 py-1.5 mb-4 shadow-sm">
+              <span className="w-2 h-2 rounded-full bg-[#4285F4]"></span>
+              <span className="text-xs font-bold uppercase tracking-wider text-[#4285F4]">{t.about.subtitle}</span>
+            </div>
+            <h2 className="text-3xl md:text-5xl font-black text-gray-900 mb-4 tracking-tight">{t.about.title}</h2>
           </div>
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8">
             {t.about.features.map((feature, index) => {
-              // Her özellik için farklı ikon ve renk
-              const iconConfigs = [
-                { icon: <BarChart3 key={0} className="h-10 w-10 text-[#4285F4] mb-4" />, border: 'border-l-4 border-l-[#4285F4]', shadow: 'hover:shadow-[#4285F4]/20' },
-                { icon: <svg key={1} className="h-10 w-10 text-[#EA4335] mb-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 002.573 1.066c1.543-.94 3.31.826 2.37 2.37a1.724 1.724 0 001.065 2.572c1.756.426 1.756 2.924 0 3.35a1.724 1.724 0 00-1.066 2.573c.94 1.543-.826 3.31-2.37 2.37a1.724 1.724 0 00-2.572 1.065c-.426 1.756-2.924 1.756-3.35 0a1.724 1.724 0 00-2.573-1.066c-1.543.94-3.31-.826-2.37-2.37a1.724 1.724 0 00-1.065-2.572c-1.756-.426-1.756-2.924 0-3.35a1.724 1.724 0 001.066-2.573c-.94-1.543.826-3.31 2.37-2.37.996.608 2.296.07 2.572-1.065z" /><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" /></svg>, border: 'border-l-4 border-l-[#EA4335]', shadow: 'hover:shadow-[#EA4335]/20' },
-                { icon: <Award key={2} className="h-10 w-10 text-[#FBBC04] mb-4" />, border: 'border-l-4 border-l-[#FBBC04]', shadow: 'hover:shadow-[#FBBC04]/20' },
-                { icon: <TrendingUp key={3} className="h-10 w-10 text-[#34A853] mb-4" />, border: 'border-l-4 border-l-[#34A853]', shadow: 'hover:shadow-[#34A853]/20' },
-                { icon: <svg key={4} className="h-10 w-10 text-[#4285F4] mb-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 17v-2m3 2v-4m3 4v-6m2 10H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" /></svg>, border: 'border-l-4 border-l-[#4285F4]', shadow: 'hover:shadow-[#4285F4]/20' },
-                { icon: <Phone key={5} className="h-10 w-10 text-[#34A853] mb-4" />, border: 'border-l-4 border-l-[#34A853]', shadow: 'hover:shadow-[#34A853]/20' }
-              ]
-              const config = iconConfigs[index] || { icon: <CheckCircle className="h-10 w-10 text-[#34A853] mb-4" />, border: 'border-l-4 border-l-[#34A853]', shadow: 'hover:shadow-[#34A853]/20' }
-              
+              const colors = ['#4285F4', '#EA4335', '#FBBC04', '#34A853', '#4285F4', '#34A853']
+              const color = colors[index] || '#4285F4'
               return (
-                <Card key={index} className={`hover:shadow-xl transition-all duration-300 hover:-translate-y-1 ${config.border} ${config.shadow}`}>
-                  <CardContent className="pt-6">
-                    {config.icon}
-                    <h3 className="text-xl font-semibold mb-3">{feature.title}</h3>
-                    <p className="text-muted-foreground">{feature.description}</p>
-                  </CardContent>
-                </Card>
+                <div
+                  key={index}
+                  className="bg-white rounded-3xl p-8 border border-slate-200/90 shadow-md hover:shadow-2xl transition-all duration-300 hover:-translate-y-1.5 relative overflow-hidden group"
+                >
+                  <div
+                    className="absolute top-0 left-0 right-0 h-1.5 transition-all duration-300 group-hover:h-2"
+                    style={{ backgroundColor: color }}
+                  ></div>
+
+                  <div
+                    className="w-12 h-12 rounded-2xl flex items-center justify-center mb-6 shadow-sm group-hover:scale-110 transition-transform duration-200"
+                    style={{ backgroundColor: `${color}15`, color: color }}
+                  >
+                    <CheckCircle className="h-6 w-6" />
+                  </div>
+
+                  <h3 className="text-xl font-bold text-gray-900 mb-3 group-hover:text-[#4285F4] transition-colors">{feature.title}</h3>
+                  <p className="text-sm text-slate-600 leading-relaxed">{feature.description}</p>
+                </div>
               )
             })}
           </div>
