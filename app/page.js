@@ -902,20 +902,6 @@ export default function Home({ initialLang = 'de' }) {
                         fetchPriority="high"
                       />
                     </picture>
-
-                    {/* Integrated Bottom Nameplate */}
-                    <div className="absolute bottom-3 left-3 right-3 bg-slate-950/80 backdrop-blur-md text-white px-4 py-3 rounded-xl border border-white/10 flex items-center justify-between shadow-lg">
-                      <div>
-                        <p className="text-sm font-bold text-white tracking-wide">Salih Maral</p>
-                        <p className="text-xs text-slate-300 font-medium">
-                          {lang === 'de' ? 'Google Ads & Digital Marketing Experte' : lang === 'en' ? 'Google Ads & Digital Marketing Expert' : 'Google Ads & Dijital Pazarlama Uzmanı'}
-                        </p>
-                      </div>
-                      <div className="flex items-center space-x-1.5 bg-emerald-500/20 border border-emerald-400/30 px-3 py-1 rounded-full">
-                        <span className="w-1.5 h-1.5 rounded-full bg-emerald-400 animate-pulse"></span>
-                        <span className="text-[11px] font-bold text-emerald-300">Aktif Yönetim</span>
-                      </div>
-                    </div>
                   </div>
 
                   {/* Google Ads Full-Width Official Partner Trust Strip */}
