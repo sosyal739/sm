@@ -862,61 +862,108 @@ export default function Home({ initialLang = 'de' }) {
               </div>
             </div>
 
-            {/* Right Visual & Official Badges Column */}
+            {/* Right Visual & Official Badges Showcase Column (Apple/Stripe Style Depth) */}
             <div className="lg:col-span-5 relative flex flex-col items-center">
-              {/* Profile Card with Glow */}
-              <div className="relative w-full max-w-md bg-white rounded-3xl p-4 shadow-2xl border border-slate-200/80">
-                <div className="relative rounded-2xl overflow-hidden shadow-inner">
-                  <picture>
-                    <source media="(max-width: 640px)" srcSet="/hero-mobile.webp" type="image/webp" />
-                    <source srcSet="/hero.webp" type="image/webp" />
-                    <img
-                      src="/hero.jpg"
-                      alt="Salih Maral - Digital Marketing Expert"
-                      className="w-full h-auto object-cover transform hover:scale-102 transition-transform duration-500"
-                      width="800"
-                      height="447"
-                      fetchPriority="high"
-                    />
-                  </picture>
-                  {/* Glass overlay badge on photo */}
-                  <div className="absolute bottom-3 left-3 right-3 bg-slate-950/85 backdrop-blur-md text-white p-3.5 rounded-xl border border-white/10 flex items-center justify-between">
-                    <div>
-                      <p className="text-sm font-bold text-white">Salih Maral</p>
-                      <p className="text-xs text-slate-300 font-medium">{lang === 'de' ? 'Senior Digital Marketing Experte' : lang === 'en' ? 'Senior Digital Marketing Expert' : 'Kıdemli Dijital Pazarlama Uzmanı'}</p>
+              {/* Multi-layered ambient lighting behind photo */}
+              <div className="absolute -top-6 -left-6 w-72 h-72 bg-blue-400/20 rounded-full blur-3xl pointer-events-none -z-10"></div>
+              <div className="absolute -bottom-6 -right-6 w-72 h-72 bg-emerald-400/20 rounded-full blur-3xl pointer-events-none -z-10"></div>
+
+              {/* Main Showcase Container */}
+              <div className="relative w-full max-w-lg">
+                
+                {/* Floating Top-Left Badge (Google Certified) */}
+                <div className="hidden sm:flex absolute -top-4 -left-4 z-20 bg-white/95 backdrop-blur-md border border-slate-200/90 rounded-2xl px-4 py-2.5 shadow-xl items-center gap-2.5 hover:scale-105 transition-transform duration-300">
+                  <div className="w-8 h-8 rounded-xl bg-blue-50 border border-blue-100 flex items-center justify-center p-1.5 shadow-xs">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/c/c7/Google_Ads_logo.svg" alt="Google" className="w-full h-full object-contain" width="24" height="24" loading="lazy" />
+                  </div>
+                  <div>
+                    <div className="flex items-center gap-1">
+                      <span className="text-xs font-black text-gray-900">Google Partner</span>
+                      <span className="w-1.5 h-1.5 rounded-full bg-emerald-500 animate-pulse"></span>
                     </div>
-                    <span className="text-xs font-bold text-emerald-400 bg-emerald-950/60 border border-emerald-500/30 px-2.5 py-1 rounded-full">17+ Yıl</span>
+                    <p className="text-[10px] font-semibold text-slate-500">Resmi Sertifikalı Uzman</p>
                   </div>
                 </div>
 
-                {/* Google & Meta Partner Official Badges Bar */}
-                <div className="mt-4 pt-4 border-t border-slate-100 flex items-center justify-around">
-                  <a
-                    href="https://www.google.com/partners/agency?id=5868261912&_gl=1*18i960o*_ga*MTA1ODA5OTYxNS4xNzU4MDYxMzU4*_ga_V9K47ZG8NP*czE3NzgyODEzNzIkbzI1MyRnMSR0MTc3ODI4MzkyMiRqNjAkbDAkaDA"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="hover:scale-105 transition-transform"
-                  >
-                    <img
-                      src="https://www.gstatic.com/partners/badge/images/2026/PartnerBadgeClickable.svg"
-                      alt="Google Partner"
-                      className="h-16 w-auto"
-                      width="190"
-                      height="112"
-                    />
-                  </a>
-                  <div className="h-8 w-px bg-slate-200"></div>
-                  <div className="flex items-center space-x-2 text-slate-700 font-bold text-xs">
-                    <img
-                      src="https://upload.wikimedia.org/wikipedia/commons/7/7b/Meta_Platforms_Inc._logo.svg"
-                      alt="Meta Business"
-                      className="h-5 w-auto"
-                      width="60"
-                      height="20"
-                    />
-                    <span className="text-slate-800">Business Partner</span>
+                {/* Floating Bottom-Right Badge (Experience & Campaign Count) */}
+                <div className="hidden sm:flex absolute -bottom-4 -right-4 z-20 bg-slate-950/90 backdrop-blur-md border border-white/15 rounded-2xl px-4 py-3 shadow-2xl text-white items-center gap-3 hover:scale-105 transition-transform duration-300">
+                  <div className="w-9 h-9 rounded-xl bg-blue-500/20 border border-blue-400/30 flex items-center justify-center text-base font-black text-[#4285F4]">
+                    17+
+                  </div>
+                  <div>
+                    <p className="text-xs font-bold text-white leading-tight">Yıllık Tecrübe</p>
+                    <p className="text-[10px] font-medium text-slate-400">720+ Yönetilen Kampanya</p>
                   </div>
                 </div>
+
+                {/* Hero Frame */}
+                <div className="bg-white rounded-3xl p-3 sm:p-3.5 shadow-2xl border border-slate-200/90 overflow-hidden relative group">
+                  <div className="relative rounded-2xl overflow-hidden shadow-inner bg-slate-100">
+                    <picture>
+                      <source media="(max-width: 640px)" srcSet="/hero-mobile.webp" type="image/webp" />
+                      <source srcSet="/hero.webp" type="image/webp" />
+                      <img
+                        src="/hero.jpg"
+                        alt="Salih Maral - Digital Marketing Expert"
+                        className="w-full h-auto object-cover transform group-hover:scale-103 transition-transform duration-700 ease-out"
+                        width="800"
+                        height="447"
+                        fetchPriority="high"
+                      />
+                    </picture>
+
+                    {/* Integrated Bottom Nameplate */}
+                    <div className="absolute bottom-3 left-3 right-3 bg-slate-950/80 backdrop-blur-md text-white px-4 py-3 rounded-xl border border-white/10 flex items-center justify-between shadow-lg">
+                      <div>
+                        <p className="text-sm font-bold text-white tracking-wide">Salih Maral</p>
+                        <p className="text-xs text-slate-300 font-medium">
+                          {lang === 'de' ? 'Digital Marketing Experte' : lang === 'en' ? 'Digital Marketing Expert' : 'Dijital Pazarlama Uzmanı'}
+                        </p>
+                      </div>
+                      <div className="flex items-center space-x-1.5 bg-emerald-500/20 border border-emerald-400/30 px-3 py-1 rounded-full">
+                        <span className="w-1.5 h-1.5 rounded-full bg-emerald-400 animate-pulse"></span>
+                        <span className="text-[11px] font-bold text-emerald-300">Aktif Yönetim</span>
+                      </div>
+                    </div>
+                  </div>
+
+                  {/* Refined Official Partner Trust Strip */}
+                  <div className="mt-3 bg-slate-50/90 border border-slate-200/70 rounded-2xl px-5 py-3.5 flex items-center justify-around">
+                    <a
+                      href="https://www.google.com/partners/agency?id=5868261912&_gl=1*18i960o*_ga*MTA1ODA5OTYxNS4xNzU4MDYxMzU4*_ga_V9K47ZG8NP*czE3NzgyODEzNzIkbzI1MyRnMSR0MTc3ODI4MzkyMiRqNjAkbDAkaDA"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="flex items-center space-x-2.5 group/g hover:opacity-90 transition-opacity"
+                    >
+                      <img
+                        src="https://upload.wikimedia.org/wikipedia/commons/2/2f/Google_2015_logo.svg"
+                        alt="Google"
+                        className="h-4 sm:h-5 w-auto"
+                        width="60"
+                        height="20"
+                      />
+                      <span className="text-xs sm:text-sm font-bold text-slate-800 border-l border-slate-300 pl-2">
+                        Partner
+                      </span>
+                    </a>
+
+                    <div className="h-6 w-px bg-slate-200"></div>
+
+                    <div className="flex items-center space-x-2.5">
+                      <img
+                        src="https://upload.wikimedia.org/wikipedia/commons/7/7b/Meta_Platforms_Inc._logo.svg"
+                        alt="Meta"
+                        className="h-3.5 sm:h-4 w-auto"
+                        width="50"
+                        height="16"
+                      />
+                      <span className="text-xs sm:text-sm font-bold text-slate-800 border-l border-slate-300 pl-2">
+                        Business Partner
+                      </span>
+                    </div>
+                  </div>
+                </div>
+
               </div>
             </div>
           </div>
