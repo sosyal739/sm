@@ -868,11 +868,11 @@ export default function Home({ initialLang = 'de' }) {
               <div className="absolute -top-6 -left-6 w-72 h-72 bg-blue-400/20 rounded-full blur-3xl pointer-events-none -z-10"></div>
               <div className="absolute -bottom-6 -right-6 w-72 h-72 bg-emerald-400/20 rounded-full blur-3xl pointer-events-none -z-10"></div>
 
-              {/* Main Showcase Container */}
-              <div className="relative w-full max-w-lg">
+              {/* Main Showcase Container (Smooth 3D Floating Animation) */}
+              <div className="relative w-full max-w-lg animate-hero-float">
                 
                 {/* Floating Top-Left Badge (Google Certified) */}
-                <div className="hidden sm:flex absolute -top-4 -left-4 z-20 bg-white/95 backdrop-blur-md border border-slate-200/90 rounded-2xl px-4 py-2.5 shadow-xl items-center gap-2.5 hover:scale-105 transition-transform duration-300">
+                <div className="hidden sm:flex absolute -top-4 -left-4 z-20 bg-white/95 backdrop-blur-md border border-slate-200/90 rounded-2xl px-4 py-2.5 shadow-xl items-center gap-2.5 hover:scale-105 transition-transform duration-300 animate-badge-float1">
                   <div className="w-8 h-8 rounded-xl bg-blue-50 border border-blue-100 flex items-center justify-center p-1.5 shadow-xs">
                     <img src="https://upload.wikimedia.org/wikipedia/commons/c/c7/Google_Ads_logo.svg" alt="Google" className="w-full h-full object-contain" width="24" height="24" loading="lazy" />
                   </div>
@@ -886,7 +886,7 @@ export default function Home({ initialLang = 'de' }) {
                 </div>
 
                 {/* Floating Bottom-Right Badge (Experience & Campaign Count) */}
-                <div className="hidden sm:flex absolute -bottom-4 -right-4 z-20 bg-slate-950/90 backdrop-blur-md border border-white/15 rounded-2xl px-4 py-3 shadow-2xl text-white items-center gap-3 hover:scale-105 transition-transform duration-300">
+                <div className="hidden sm:flex absolute -bottom-4 -right-4 z-20 bg-slate-950/90 backdrop-blur-md border border-white/15 rounded-2xl px-4 py-3 shadow-2xl text-white items-center gap-3 hover:scale-105 transition-transform duration-300 animate-badge-float2">
                   <div className="w-9 h-9 rounded-xl bg-blue-500/20 border border-blue-400/30 flex items-center justify-center text-base font-black text-[#4285F4]">
                     17+
                   </div>
@@ -964,6 +964,42 @@ export default function Home({ initialLang = 'de' }) {
                   </div>
                 </div>
 
+                {/* Floating Animation Styles */}
+                <style jsx>{`
+                  @keyframes heroFloat {
+                    0%, 100% {
+                      transform: translateY(0px) rotate(0deg);
+                    }
+                    50% {
+                      transform: translateY(-15px) rotate(0.5deg);
+                    }
+                  }
+                  @keyframes badgeFloat1 {
+                    0%, 100% {
+                      transform: translateY(0px) translateX(0px);
+                    }
+                    50% {
+                      transform: translateY(-8px) translateX(5px);
+                    }
+                  }
+                  @keyframes badgeFloat2 {
+                    0%, 100% {
+                      transform: translateY(0px) translateX(0px);
+                    }
+                    50% {
+                      transform: translateY(8px) translateX(-5px);
+                    }
+                  }
+                  .animate-hero-float {
+                    animation: heroFloat 6s ease-in-out infinite;
+                  }
+                  .animate-badge-float1 {
+                    animation: badgeFloat1 4.5s ease-in-out infinite;
+                  }
+                  .animate-badge-float2 {
+                    animation: badgeFloat2 5s ease-in-out infinite 0.5s;
+                  }
+                `}</style>
               </div>
             </div>
           </div>
