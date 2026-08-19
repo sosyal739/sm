@@ -1206,16 +1206,16 @@ export default function Home({ initialLang = 'de' }) {
                   href={svcUrl(lang, service.slug)}
                   className="block group h-full"
                 >
-                  <div className="h-full bg-white rounded-3xl p-8 md:p-9 border border-slate-200/90 shadow-lg hover:shadow-2xl transition-all duration-300 hover:-translate-y-2 flex flex-col justify-between relative overflow-hidden group">
+                  <div className="h-full bg-white rounded-3xl p-7 sm:p-8 md:p-9 border border-slate-200/90 shadow-lg hover:shadow-2xl transition-all duration-300 hover:-translate-y-2 flex flex-col justify-between relative overflow-hidden group">
                     {/* Top Accent Line */}
                     <div
                       className="absolute top-0 left-0 right-0 h-1.5 transition-all duration-300 group-hover:h-2.5"
                       style={{ backgroundColor: localizedMeta.accent }}
                     ></div>
 
-                    <div>
+                    <div className="flex flex-col flex-grow">
                       {/* Header: Icon + Category Badge */}
-                      <div className="flex items-center justify-between mb-7">
+                      <div className="flex items-center justify-between mb-6">
                         <div
                           className="w-16 h-16 rounded-2xl flex items-center justify-center p-3.5 shadow-md group-hover:scale-110 group-hover:rotate-1 transition-all duration-300"
                           style={{ backgroundColor: `${localizedMeta.accent}14` }}
@@ -1245,22 +1245,22 @@ export default function Home({ initialLang = 'de' }) {
                         </span>
                       </div>
 
-                      {/* Service Title */}
-                      <h3 className="text-2xl font-black text-gray-900 mb-3 tracking-tight group-hover:text-[#4285F4] transition-colors leading-snug">
+                      {/* Service Title with Fixed Min-Height for Strict Geometric Alignment */}
+                      <h3 className="text-xl sm:text-2xl font-black text-gray-900 mb-3 tracking-tight group-hover:text-[#4285F4] transition-colors leading-snug min-h-[58px] flex items-start">
                         {service.title}
                       </h3>
 
-                      {/* Description - High Readability & Contrast */}
-                      <p className="text-sm sm:text-base text-slate-700 leading-relaxed mb-6 font-normal">
+                      {/* Description with Fixed Min-Height for Harmonized Vertical Flow */}
+                      <p className="text-sm text-slate-600 leading-relaxed mb-6 font-normal min-h-[72px]">
                         {service.description}
                       </p>
 
                       {/* 3 High-Impact Localized Benefit Pills */}
-                      <div className="space-y-2 mb-8">
+                      <div className="space-y-2.5 mb-6 mt-auto">
                         {localizedMeta.pills.map((pill, pIdx) => (
                           <div
                             key={pIdx}
-                            className="flex items-center space-x-2.5 bg-slate-50/90 rounded-xl px-3.5 py-2 border border-slate-100 group-hover:border-slate-200/70 transition-colors"
+                            className="flex items-center space-x-2.5 bg-slate-50/90 rounded-xl px-3.5 py-2 border border-slate-100/90 group-hover:border-slate-200/70 transition-colors"
                           >
                             <span className="w-1.5 h-1.5 rounded-full flex-shrink-0" style={{ backgroundColor: localizedMeta.accent }}></span>
                             <span className="text-xs sm:text-sm font-semibold text-slate-800 tracking-tight">{pill}</span>
@@ -1269,8 +1269,8 @@ export default function Home({ initialLang = 'de' }) {
                       </div>
                     </div>
 
-                    {/* Bottom Action Pill Button */}
-                    <div className="pt-5 border-t border-slate-100 flex items-center justify-between text-xs sm:text-sm font-bold text-slate-800 group-hover:text-[#4285F4] transition-colors">
+                    {/* Bottom Action Pill Button - Strictly Pin-Aligned at Bottom */}
+                    <div className="pt-5 border-t border-slate-100 flex items-center justify-between text-xs sm:text-sm font-bold text-slate-800 group-hover:text-[#4285F4] transition-colors mt-2">
                       <span className="flex items-center gap-1.5">
                         {lang === 'de' ? 'Leistungsdetails & Strategie' : lang === 'en' ? 'Service Details & Strategy' : 'Hizmet Detayları & Strateji'}
                       </span>
