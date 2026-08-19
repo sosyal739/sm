@@ -874,25 +874,16 @@ export default function Home({ initialLang = 'de' }) {
                 {/* Floating Top-Left Badge (Google Certified) */}
                 <div className="hidden sm:flex absolute -top-4 -left-4 z-20 bg-white/95 backdrop-blur-md border border-slate-200/90 rounded-2xl px-4 py-2.5 shadow-xl items-center gap-2.5 hover:scale-105 transition-transform duration-300 animate-badge-float1">
                   <div className="w-8 h-8 rounded-xl bg-blue-50 border border-blue-100 flex items-center justify-center p-1.5 shadow-xs">
-                    <img src="https://upload.wikimedia.org/wikipedia/commons/c/c7/Google_Ads_logo.svg" alt="Google" className="w-full h-full object-contain" width="24" height="24" loading="lazy" />
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/c/c7/Google_Ads_logo.svg" alt="Google Ads" className="w-full h-full object-contain" width="24" height="24" loading="lazy" />
                   </div>
                   <div>
                     <div className="flex items-center gap-1">
-                      <span className="text-xs font-black text-gray-900">Google Partner</span>
+                      <span className="text-xs font-black text-gray-900">Google Ads Partner</span>
                       <span className="w-1.5 h-1.5 rounded-full bg-emerald-500 animate-pulse"></span>
                     </div>
-                    <p className="text-[10px] font-semibold text-slate-500">Resmi Sertifikalı Uzman</p>
-                  </div>
-                </div>
-
-                {/* Floating Bottom-Right Badge (Experience & Campaign Count) */}
-                <div className="hidden sm:flex absolute -bottom-4 -right-4 z-20 bg-slate-950/90 backdrop-blur-md border border-white/15 rounded-2xl px-4 py-3 shadow-2xl text-white items-center gap-3 hover:scale-105 transition-transform duration-300 animate-badge-float2">
-                  <div className="w-9 h-9 rounded-xl bg-blue-500/20 border border-blue-400/30 flex items-center justify-center text-base font-black text-[#4285F4]">
-                    17+
-                  </div>
-                  <div>
-                    <p className="text-xs font-bold text-white leading-tight">Yıllık Tecrübe</p>
-                    <p className="text-[10px] font-medium text-slate-400">720+ Yönetilen Kampanya</p>
+                    <p className="text-[10px] font-semibold text-slate-500">
+                      {lang === 'de' ? 'Offiziell Zertifizierte Agentur' : lang === 'en' ? 'Officially Certified Agency' : 'Resmi Sertifikalı Ajans'}
+                    </p>
                   </div>
                 </div>
 
@@ -904,7 +895,7 @@ export default function Home({ initialLang = 'de' }) {
                       <source srcSet="/hero.webp" type="image/webp" />
                       <img
                         src="/hero.jpg"
-                        alt="Salih Maral - Digital Marketing Expert"
+                        alt="Salih Maral - Google Ads & Digital Marketing Expert"
                         className="w-full h-auto object-cover transform group-hover:scale-103 transition-transform duration-700 ease-out"
                         width="800"
                         height="447"
@@ -917,7 +908,7 @@ export default function Home({ initialLang = 'de' }) {
                       <div>
                         <p className="text-sm font-bold text-white tracking-wide">Salih Maral</p>
                         <p className="text-xs text-slate-300 font-medium">
-                          {lang === 'de' ? 'Digital Marketing Experte' : lang === 'en' ? 'Digital Marketing Expert' : 'Dijital Pazarlama Uzmanı'}
+                          {lang === 'de' ? 'Google Ads & Digital Marketing Experte' : lang === 'en' ? 'Google Ads & Digital Marketing Expert' : 'Google Ads & Dijital Pazarlama Uzmanı'}
                         </p>
                       </div>
                       <div className="flex items-center space-x-1.5 bg-emerald-500/20 border border-emerald-400/30 px-3 py-1 rounded-full">
@@ -927,40 +918,38 @@ export default function Home({ initialLang = 'de' }) {
                     </div>
                   </div>
 
-                  {/* Refined Official Partner Trust Strip */}
-                  <div className="mt-3 bg-slate-50/90 border border-slate-200/70 rounded-2xl px-5 py-3.5 flex items-center justify-around">
+                  {/* Google Ads Full-Width Official Partner Trust Strip */}
+                  <div className="mt-3 bg-slate-50/90 border border-slate-200/70 rounded-2xl px-5 py-3.5">
                     <a
                       href="https://www.google.com/partners/agency?id=5868261912&_gl=1*18i960o*_ga*MTA1ODA5OTYxNS4xNzU4MDYxMzU4*_ga_V9K47ZG8NP*czE3NzgyODEzNzIkbzI1MyRnMSR0MTc3ODI4MzkyMiRqNjAkbDAkaDA"
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="flex items-center space-x-2.5 group/g hover:opacity-90 transition-opacity"
+                      className="flex items-center justify-between group/g hover:opacity-95 transition-opacity"
                     >
-                      <img
-                        src="https://upload.wikimedia.org/wikipedia/commons/2/2f/Google_2015_logo.svg"
-                        alt="Google"
-                        className="h-4 sm:h-5 w-auto"
-                        width="60"
-                        height="20"
-                      />
-                      <span className="text-xs sm:text-sm font-bold text-slate-800 border-l border-slate-300 pl-2">
-                        Partner
-                      </span>
+                      <div className="flex items-center space-x-3">
+                        <img
+                          src="https://upload.wikimedia.org/wikipedia/commons/2/2f/Google_2015_logo.svg"
+                          alt="Google"
+                          className="h-5 w-auto"
+                          width="64"
+                          height="22"
+                        />
+                        <div className="border-l border-slate-300 pl-3">
+                          <p className="text-xs sm:text-sm font-black text-slate-900 tracking-tight flex items-center gap-1.5">
+                            <span>Partner</span>
+                            <span className="text-[10px] font-bold text-[#4285F4] bg-blue-50 border border-blue-200/60 px-2 py-0.5 rounded-full">Google Ads</span>
+                          </p>
+                          <p className="text-[10px] text-slate-500 font-medium">
+                            {lang === 'de' ? 'Offizieller Google Partner Status' : lang === 'en' ? 'Official Google Partner Status' : 'Resmi Google Partner Durumu'}
+                          </p>
+                        </div>
+                      </div>
+
+                      <div className="flex items-center text-xs font-bold text-[#4285F4] group-hover/g:translate-x-0.5 transition-transform">
+                        <span>{lang === 'de' ? 'Verifizieren' : lang === 'en' ? 'Verify' : 'Doğrula'}</span>
+                        <span className="ml-1 text-sm">↗</span>
+                      </div>
                     </a>
-
-                    <div className="h-6 w-px bg-slate-200"></div>
-
-                    <div className="flex items-center space-x-2.5">
-                      <img
-                        src="https://upload.wikimedia.org/wikipedia/commons/7/7b/Meta_Platforms_Inc._logo.svg"
-                        alt="Meta"
-                        className="h-3.5 sm:h-4 w-auto"
-                        width="50"
-                        height="16"
-                      />
-                      <span className="text-xs sm:text-sm font-bold text-slate-800 border-l border-slate-300 pl-2">
-                        Business Partner
-                      </span>
-                    </div>
                   </div>
                 </div>
 
@@ -982,22 +971,11 @@ export default function Home({ initialLang = 'de' }) {
                       transform: translateY(-8px) translateX(5px);
                     }
                   }
-                  @keyframes badgeFloat2 {
-                    0%, 100% {
-                      transform: translateY(0px) translateX(0px);
-                    }
-                    50% {
-                      transform: translateY(8px) translateX(-5px);
-                    }
-                  }
                   .animate-hero-float {
                     animation: heroFloat 6s ease-in-out infinite;
                   }
                   .animate-badge-float1 {
                     animation: badgeFloat1 4.5s ease-in-out infinite;
-                  }
-                  .animate-badge-float2 {
-                    animation: badgeFloat2 5s ease-in-out infinite 0.5s;
                   }
                 `}</style>
               </div>
