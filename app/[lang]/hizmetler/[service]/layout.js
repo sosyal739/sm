@@ -86,57 +86,72 @@ const serviceMeta = {
 }
 
 export async function generateMetadata({ params }) {
-  const { lang, service } = await params
-  const currentLang = lang || 'de'
-  
-  // Normalize service key
-  let key = service
-  if (service === 'bewertungsmanagement' || service === 'review-management') {
-    key = 'yorum-yonetimi'
-  }
+  try {
+    const resolvedParams = params && typeof params.then === 'function' ? await params : params
+    const { lang, service } = resolvedParams || {}
+    const currentLang = lang || 'de'
+    
+    // Normalize service key
+    let key = service || ''
+    if (service === 'bewertungsmanagement' || service === 'review-management') {
+      key = 'yorum-yonetimi'
+    }
 
-  const metaData = serviceMeta[key]?.[currentLang] || {
-    title: `${service} | Salih Maral`,
-    description: 'Professionelle Digital Marketing Dienstleistungen von Salih Maral.',
-  }
+    const metaData = serviceMeta[key]?.[currentLang] || {
+      title: `${service || 'Dienstleistungen'} | Salih Maral`,
+      description: 'Professionelle Digital Marketing Dienstleistungen von Salih Maral.',
+    }
 
-  const pathPrefix = currentLang === 'de' ? 'de/dienstleistungen' : currentLang === 'en' ? 'en/services' : 'tr/hizmetler'
-  const serviceSlug = key === 'yorum-yonetimi' 
-    ? (currentLang === 'de' ? 'bewertungsmanagement' : currentLang === 'en' ? 'review-management' : 'yorum-yonetimi')
-    : key
-  const canonicalUrl = `https://salihmaral.de/${pathPrefix}/${serviceSlug}`
+    const pathPrefix = currentLang === 'de' ? 'de/dienstleistungen' : currentLang === 'en' ? 'en/services' : 'tr/hizmetler'
+    const serviceSlug = key === 'yorum-yonetimi' 
+      ? (currentLang === 'de' ? 'bewertungsmanagement' : currentLang === 'en' ? 'review-management' : 'yorum-yonetimi')
+      : key
+    const canonicalUrl = `https://salihmaral.de/${pathPrefix}/${serviceSlug}`
 
-  return {
-    title: metaData.title,
-    description: metaData.description,
-    alternates: {
-      canonical: canonicalUrl,
-      languages: {
-        de: `https://salihmaral.de/de/dienstleistungen/${key === 'yorum-yonetimi' ? 'bewertungsmanagement' : key}`,
-        en: `https://salihmaral.de/en/services/${key === 'yorum-yonetimi' ? 'review-management' : key}`,
-        tr: `https://salihmaral.de/tr/hizmetler/${key === 'yorum-yonetimi' ? 'yorum-yonetimi' : key}`,
-      }
-    },
-    openGraph: {
-      title: metaData.title,
+    console.log(`[SEO generateMetadata] Resolving for lang: ${currentLang}, service: ${service}, resolved key: ${key}, title: ${metaData.title}`)
+
+    return {
+      title: {
+        absolute: metaData.title,
+      },
       description: metaData.description,
-      url: canonicalUrl,
-      images: [
-        {
-          url: 'https://salihmaral.de/logo-og.png',
-          width: 1200,
-          height: 630,
-          alt: metaData.title,
-        },
-      ],
-    },
-    twitter: {
-      card: 'summary_large_image',
-      title: metaData.title,
-      description: metaData.description,
-      images: ['https://salihmaral.de/logo.png'],
-      creator: '@salihmaral',
-    },
+      alternates: {
+        canonical: canonicalUrl,
+        languages: {
+          de: `https://salihmaral.de/de/dienstleistungen/${key === 'yorum-yonetimi' ? 'bewertungsmanagement' : key}`,
+          en: `https://salihmaral.de/en/services/${key === 'yorum-yonetimi' ? 'review-management' : key}`,
+          tr: `https://salihmaral.de/tr/hizmetler/${key === 'yorum-yonetimi' ? 'yorum-yonetimi' : key}`,
+        }
+      },
+      openGraph: {
+        title: metaData.title,
+        description: metaData.description,
+        url: canonicalUrl,
+        images: [
+          {
+            url: 'https://salihmaral.de/logo-og.png',
+            width: 1200,
+            height: 630,
+            alt: metaData.title,
+          },
+        ],
+      },
+      twitter: {
+        card: 'summary_large_image',
+        title: metaData.title,
+        description: metaData.description,
+        images: ['https://salihmaral.de/logo.png'],
+        creator: '@salihmaral',
+      },
+    }
+  } catch (error) {
+    console.error('[SEO generateMetadata] Error resolving metadata:', error)
+    return {
+      title: {
+        absolute: 'Digital Marketing Dienstleistungen | Salih Maral',
+      },
+      description: 'Professionelle Google Ads, Meta Ads & SEO Dienstleistungen von Salih Maral.',
+    }
   }
 }
 
