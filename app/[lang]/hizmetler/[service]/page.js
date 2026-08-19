@@ -860,50 +860,92 @@ export default function ServiceDetailPage() {
         </div>
       </nav>
 
-      {/* Hero Section */}
-      <section className="pt-28 pb-20 px-4" style={{ background: `linear-gradient(135deg, ${data.gradientFrom}15 0%, ${data.accentColor}10 50%, ${data.gradientTo}15 100%)` }}>
-        <div className="container mx-auto">
+      {/* Hero Section (Ultra-Modern Agency Glassmorphism & High-Impact Typography) */}
+      <section
+        className="pt-32 pb-24 px-4 relative overflow-hidden"
+        style={{
+          background: `radial-gradient(circle at 50% 0%, ${data.gradientFrom}18 0%, white 70%, ${data.gradientTo}10 100%)`
+        }}
+      >
+        {/* Subtle Ambient Glow Spheres */}
+        <div
+          className="absolute top-10 left-1/2 -translate-x-1/2 w-[700px] h-[350px] rounded-full blur-3xl pointer-events-none -z-10 opacity-60"
+          style={{ background: `linear-gradient(135deg, ${data.gradientFrom}25, ${data.gradientTo}25)` }}
+        ></div>
+
+        <div className="container mx-auto max-w-6xl">
           <div className="max-w-4xl mx-auto text-center">
-            {/* Badge */}
-            <div className="inline-flex items-center space-x-2 bg-white border border-gray-200 rounded-full px-4 py-2 mb-8 shadow-sm">
-              {data.icon}
-              <span className="text-sm font-medium text-gray-700">{data.badge}</span>
+            {/* Top Partner Badge */}
+            <div className="inline-flex items-center space-x-2.5 bg-white/90 border border-slate-200/90 rounded-full px-5 py-2 mb-8 shadow-sm backdrop-blur-md hover:border-slate-300 transition-colors">
+              <span className="flex-shrink-0">{data.icon}</span>
+              <span className="text-xs md:text-sm font-bold text-slate-800 tracking-wide">{data.badge}</span>
+              <span className="w-1.5 h-1.5 rounded-full bg-emerald-500 animate-pulse"></span>
             </div>
 
-            <h1 className="text-5xl md:text-6xl font-bold text-gray-900 mb-6 leading-tight">
+            {/* Main Title */}
+            <h1 className="text-4xl sm:text-6xl md:text-7xl font-black text-gray-900 mb-6 leading-[1.1] tracking-tight">
               {data.title}
             </h1>
-            <p className="text-xl text-gray-600 mb-4">
+
+            {/* Subtitle */}
+            <p className="text-lg sm:text-2xl font-semibold text-slate-800 mb-5 max-w-3xl mx-auto leading-snug">
               {data.subtitle}
             </p>
-            <p className="text-lg text-gray-500 max-w-2xl mx-auto mb-10">
+
+            {/* Detailed Description */}
+            <p className="text-base sm:text-lg text-slate-600 max-w-2xl mx-auto mb-10 leading-relaxed">
               {data.description}
             </p>
 
-            {/* CTA Buttons */}
-            <div className="flex flex-wrap justify-center gap-4 mb-16">
-              <Button size="lg" style={{ backgroundColor: data.primaryColor }} className="text-white px-8 shadow-lg transition-all duration-300 hover:opacity-90 hover:scale-105" onClick={scrollToContact}>
-                {lang === 'de' ? 'Kostenlose Analyse anfordern' : lang === 'en' ? 'Get Free Analysis' : 'Ücretsiz Analiz Al'}
-                <ArrowUpRight className="ml-2 h-5 w-5" />
-              </Button>
-              <Button size="lg" variant="outline" className="border-gray-300 text-gray-700 hover:bg-gray-50 px-8" asChild>
-                <a href={`https://wa.me/491724106463?text=${lang === 'de' ? 'Hallo,%20ich%20möchte%20Informationen%20über%20Ihre%20Dienstleistungen.' : lang === 'en' ? 'Hello,%20I%20would%20like%20information%20about%20your%20services.' : 'Merhaba,%20hizmetleriniz%20hakkında%20bilgi%20almak%20istiyorum.'}`} target="_blank" rel="noopener noreferrer">
-                  <svg className="mr-2 h-5 w-5 text-[#25D366]" fill="currentColor" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
-                  WhatsApp
-                </a>
-              </Button>
+            {/* CTA Action Buttons */}
+            <div className="flex flex-wrap justify-center items-center gap-4 mb-16">
+              <button
+                onClick={scrollToContact}
+                style={{ backgroundColor: data.primaryColor }}
+                className="text-white font-bold text-base px-8 py-4 rounded-2xl shadow-xl hover:shadow-2xl transition-all duration-300 hover:scale-105 hover:opacity-95 flex items-center gap-2 cursor-pointer"
+              >
+                <span>{lang === 'de' ? 'Kostenlose Potenzialanalyse anfordern' : lang === 'en' ? 'Get Free Growth Audit' : 'Ücretsiz Analiz Al'}</span>
+                <ArrowUpRight className="h-5 w-5" />
+              </button>
+
+              <a
+                href={`https://wa.me/491724106463?text=${lang === 'de' ? 'Hallo,%20ich%20möchte%20Informationen%20über%20Ihre%20Dienstleistungen.' : lang === 'en' ? 'Hello,%20I%20would%20like%20information%20about%20your%20services.' : 'Merhaba,%20hizmetleriniz%20hakkında%20bilgi%20almak%20istiyorum.'}`}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="bg-emerald-50 text-emerald-800 border border-emerald-200/90 hover:bg-emerald-100/90 font-bold text-base px-7 py-4 rounded-2xl shadow-sm hover:shadow transition-all duration-300 flex items-center gap-2.5 cursor-pointer"
+              >
+                <svg className="h-5 w-5 text-[#25D366]" fill="currentColor" viewBox="0 0 24 24">
+                  <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+                </svg>
+                <span>WhatsApp</span>
+              </a>
             </div>
 
-            {/* Stats Grid */}
-            <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
+            {/* High-Contrast Stats Grid */}
+            <div className="grid grid-cols-2 lg:grid-cols-4 gap-4 md:gap-6">
               {data.stats.map((stat, i) => (
-                <div key={i} className="bg-white rounded-2xl p-6 border border-gray-100 shadow-sm">
-                  <div className="flex items-center justify-center mb-2">
-                    <TrendingUp className="h-4 w-4 mr-1" style={{ color: data.secondaryColor }} />
-                    <span className="text-xs font-medium" style={{ color: data.secondaryColor }}>{stat.trend}</span>
+                <div
+                  key={i}
+                  className="bg-white rounded-3xl p-6 md:p-7 border border-slate-200/90 shadow-md hover:shadow-xl transition-all duration-300 hover:-translate-y-1.5 flex flex-col items-center justify-between text-center relative overflow-hidden group"
+                >
+                  {/* Subtle top accent */}
+                  <div
+                    className="absolute top-0 left-0 right-0 h-1 transition-all duration-300 group-hover:h-1.5"
+                    style={{ backgroundColor: data.primaryColor }}
+                  ></div>
+
+                  <div className="inline-flex items-center space-x-1.5 bg-slate-50 border border-slate-200/70 px-3 py-1 rounded-full mb-3 shadow-2xs">
+                    <TrendingUp className="h-3.5 w-3.5" style={{ color: data.primaryColor }} />
+                    <span className="text-[11px] font-bold text-slate-700">{stat.trend}</span>
                   </div>
-                  <p className="text-3xl font-bold text-gray-900 mb-1">{stat.value}</p>
-                  <p className="text-sm text-gray-500">{stat.label}</p>
+
+                  <p className="text-3xl md:text-4xl font-black text-gray-900 mb-1.5 tracking-tight group-hover:scale-105 transition-transform duration-200">
+                    {stat.value}
+                  </p>
+
+                  <p className="text-xs md:text-sm font-semibold text-slate-500">
+                    {stat.label}
+                  </p>
                 </div>
               ))}
             </div>
@@ -1672,115 +1714,173 @@ export default function ServiceDetailPage() {
                   </div>
                 ))}
               </div>
-
-              {/* Bottom CTA bar inside Section */}
-              <div className="mt-14 p-8 rounded-3xl bg-slate-900 text-white flex flex-col md:flex-row items-center justify-between shadow-2xl border border-slate-800">
-                <div className="mb-6 md:mb-0 text-center md:text-left">
-                  <h4 className="text-xl md:text-2xl font-bold mb-1 text-white">
-                    {cs.ctaTitle}
-                  </h4>
-                  <p className="text-sm text-slate-300">
-                    {cs.ctaDesc}
-                  </p>
-                </div>
-                <button
-                  onClick={scrollToContact}
-                  className="bg-[#4285F4] hover:bg-[#3367d6] text-white font-bold px-8 py-4 rounded-xl transition-all duration-300 hover:scale-105 shadow-lg flex items-center gap-2 whitespace-nowrap cursor-pointer"
-                >
-                  <span>{lang === 'de' ? 'Kostenlose Potenzialanalyse anfordern' : lang === 'en' ? 'Get Free Audit' : 'Ücretsiz Potansiyel Analizi Al'}</span>
-                  <ArrowUpRight className="w-5 h-5" />
-                </button>
-              </div>
-
             </div>
           </section>
         )
       })()}
-      <section className="py-20 px-4 bg-gray-50">
-        <div className="container mx-auto">
+
+      {/* Process Section (Connected Modern Step Cards) */}
+      <section className="py-24 px-4 bg-gradient-to-b from-white via-slate-50/60 to-white relative overflow-hidden">
+        <div className="container mx-auto max-w-7xl">
           <div className="text-center mb-16">
-            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
-              {lang === 'de' ? 'Wie arbeiten wir?' : lang === 'en' ? 'How do we work?' : 'Nasıl Çalışıyoruz?'}
+            <div className="inline-flex items-center space-x-2 bg-blue-50 border border-blue-200/80 rounded-full px-4 py-1.5 mb-4 shadow-sm">
+              <span className="w-2 h-2 rounded-full" style={{ backgroundColor: data.primaryColor }}></span>
+              <span className="text-xs font-bold uppercase tracking-wider" style={{ color: data.primaryColor }}>
+                {lang === 'de' ? 'Strukturierter Prozess' : lang === 'en' ? 'Structured Workflow' : 'Yapılandırılmış Süreç'}
+              </span>
+            </div>
+            <h2 className="text-3xl md:text-5xl font-black text-gray-900 mb-4 tracking-tight">
+              {lang === 'de' ? (
+                <>In 4 Schritten zu <span style={{ color: data.primaryColor }}>messbarem Erfolg</span></>
+              ) : lang === 'en' ? (
+                <>In 4 Steps to <span style={{ color: data.primaryColor }}>Measurable Success</span></>
+              ) : (
+                <>4 Adımda <span style={{ color: data.primaryColor }}>Ölçülebilir Başarı</span></>
+              )}
             </h2>
-            <p className="text-lg text-gray-500 max-w-2xl mx-auto">
-              {lang === 'de' ? 'Erreichen Sie Erfolg mit unseren transparenten und systematischen Prozessen' : lang === 'en' ? 'Achieve success with our transparent and systematic processes' : 'Şeffaf ve sistematik süreçlerimizle başarıya ulaşın'}
+            <p className="text-base md:text-lg text-gray-600 max-w-2xl mx-auto leading-relaxed">
+              {lang === 'de'
+                ? 'Transparente, datengesteuerte und erprobte Prozesse für planbares Wachstum.'
+                : lang === 'en'
+                ? 'Transparent, data-driven, and proven processes designed for predictable revenue growth.'
+                : 'Öngörülebilir büyüme için şeffaf, veri odaklı ve kanıtlanmış süreçler.'}
             </p>
           </div>
           
-          <div className="grid md:grid-cols-4 gap-8 max-w-5xl mx-auto">
+          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 md:gap-8">
             {data.process.map((step, i) => (
-              <div key={i} className="text-center">
-                <div className="w-16 h-16 mx-auto mb-6 rounded-full bg-white border-2 flex items-center justify-center shadow-sm" style={{ borderColor: data.primaryColor }}>
-                  <span className="text-lg font-bold" style={{ color: data.primaryColor }}>{step.step}</span>
+              <div
+                key={i}
+                className="group relative bg-white rounded-3xl p-7 md:p-8 border border-slate-200/90 shadow-lg hover:shadow-2xl transition-all duration-300 hover:-translate-y-2 flex flex-col justify-between overflow-hidden"
+              >
+                {/* Top Subtle Border Glow */}
+                <div
+                  className="absolute top-0 left-0 right-0 h-1.5 transition-all duration-300 group-hover:h-2"
+                  style={{ backgroundColor: data.primaryColor }}
+                ></div>
+
+                <div>
+                  {/* Step Number Badge */}
+                  <div className="flex items-center justify-between mb-6">
+                    <div
+                      className="w-12 h-12 rounded-2xl flex items-center justify-center font-black text-lg text-white shadow-md group-hover:scale-110 transition-transform duration-200"
+                      style={{ backgroundColor: data.primaryColor }}
+                    >
+                      {step.step}
+                    </div>
+                    <span className="text-xs font-bold uppercase tracking-widest text-slate-400 font-mono">
+                      PHASE {i + 1}
+                    </span>
+                  </div>
+
+                  <h3 className="text-xl font-bold text-gray-900 mb-3 group-hover:text-[#4285F4] transition-colors">
+                    {step.title}
+                  </h3>
+                  <p className="text-sm text-slate-600 leading-relaxed">
+                    {step.desc}
+                  </p>
                 </div>
-                <h3 className="text-lg font-bold text-gray-900 mb-2">{step.title}</h3>
-                <p className="text-sm text-gray-500 leading-relaxed">{step.desc}</p>
+
+                <div className="pt-6 mt-6 border-t border-slate-100 flex items-center text-xs font-bold text-slate-400 group-hover:text-slate-700 transition-colors">
+                  <span>{lang === 'de' ? 'Schritt ' + (i + 1) + ' von 4' : lang === 'en' ? 'Step ' + (i + 1) + ' of 4' : 'Adım ' + (i + 1) + ' / 4'}</span>
+                  <span className="ml-auto">➔</span>
+                </div>
               </div>
             ))}
           </div>
         </div>
       </section>
 
-      {/* Benefits Section */}
-      <section className="py-20 px-4 bg-white">
-        <div className="container mx-auto">
-          <div className="max-w-4xl mx-auto">
-            <div className="text-center mb-12">
-              <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
-                {lang === 'de' ? 'Warum uns wählen?' : lang === 'en' ? 'Why Choose Us?' : 'Neden Bizi Tercih Etmelisiniz?'}
-              </h2>
+      {/* Benefits Section (Refined 3D Agency Tiles) */}
+      <section className="py-24 px-4 bg-white relative overflow-hidden border-t border-slate-100">
+        <div className="container mx-auto max-w-6xl">
+          <div className="text-center mb-16">
+            <div className="inline-flex items-center space-x-2 bg-emerald-50 border border-emerald-200/80 rounded-full px-4 py-1.5 mb-4 shadow-sm">
+              <span className="w-2 h-2 rounded-full bg-emerald-500"></span>
+              <span className="text-xs font-bold uppercase tracking-wider text-emerald-700">
+                {lang === 'de' ? 'Ihre Wettbewerbsvorteile' : lang === 'en' ? 'Your Competitive Advantages' : 'Rekabet Avantajlarınız'}
+              </span>
             </div>
-            
-            <div className="grid md:grid-cols-2 gap-6">
-              {data.benefits.map((item, i) => (
-                <div key={i} className="flex items-start space-x-4 p-6 bg-gray-50 rounded-xl">
-                  <div className="w-10 h-10 rounded-lg flex items-center justify-center flex-shrink-0" style={{ backgroundColor: `${data.secondaryColor}15` }}>
-                    <CheckCircle className="h-5 w-5" style={{ color: data.secondaryColor }} />
-                  </div>
-                  <div>
-                    <h4 className="font-bold text-gray-900 mb-1">{item.title}</h4>
-                    <p className="text-sm text-gray-500">{item.desc}</p>
-                  </div>
+            <h2 className="text-3xl md:text-5xl font-black text-gray-900 mb-4 tracking-tight">
+              {lang === 'de' ? (
+                <>Warum führende Unternehmen <span className="text-slate-900">uns wählen</span></>
+              ) : lang === 'en' ? (
+                <>Why Leading Brands <span className="text-slate-900">Choose Us</span></>
+              ) : (
+                <>Neden Lider Markalar <span className="text-slate-900">Bizi Seçiyor?</span></>
+              )}
+            </h2>
+          </div>
+          
+          <div className="grid md:grid-cols-2 gap-6 md:gap-8">
+            {data.benefits.map((item, i) => (
+              <div
+                key={i}
+                className="flex items-start space-x-5 p-7 md:p-8 bg-slate-50/70 hover:bg-white rounded-3xl border border-slate-200/80 hover:border-slate-300 shadow-sm hover:shadow-xl transition-all duration-300 hover:-translate-y-1 group"
+              >
+                <div
+                  className="w-14 h-14 rounded-2xl flex items-center justify-center flex-shrink-0 shadow-md group-hover:scale-110 transition-transform duration-200"
+                  style={{ backgroundColor: `${data.secondaryColor}18` }}
+                >
+                  <CheckCircle className="h-7 w-7 flex-shrink-0" style={{ color: data.secondaryColor }} />
                 </div>
-              ))}
-            </div>
+                <div>
+                  <h4 className="text-lg md:text-xl font-bold text-gray-900 mb-2 group-hover:text-slate-800">
+                    {item.title}
+                  </h4>
+                  <p className="text-sm md:text-base text-slate-600 leading-relaxed">
+                    {item.desc}
+                  </p>
+                </div>
+              </div>
+            ))}
           </div>
         </div>
       </section>
 
-      {/* FAQ Section */}
+      {/* FAQ Section (High-Contrast Clean Accordion) */}
       {data.faq && data.faq.length > 0 && (
-        <section className="py-20 px-4 bg-gray-50">
-          <div className="container mx-auto">
-            <div className="max-w-4xl mx-auto">
-              <div className="text-center mb-12">
-                <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
-                  {lang === 'de' ? 'Häufig gestellte Fragen' : lang === 'en' ? 'Frequently Asked Questions' : 'Sıkça Sorulan Sorular'}
-                </h2>
-                <p className="text-lg text-gray-500">
-                  {lang === 'de' ? 'Ihre Fragen, unsere Antworten' : lang === 'en' ? 'Your questions, our answers' : 'Merak ettiklerinizi yanıtlıyoruz'}
-                </p>
+        <section className="py-24 px-4 bg-gradient-to-b from-white via-slate-50/70 to-white border-t border-slate-100">
+          <div className="container mx-auto max-w-5xl">
+            <div className="text-center mb-16">
+              <div className="inline-flex items-center space-x-2 bg-blue-50 border border-blue-200/80 rounded-full px-4 py-1.5 mb-4 shadow-sm">
+                <span className="w-2 h-2 rounded-full bg-[#4285F4]"></span>
+                <span className="text-xs font-bold uppercase tracking-wider text-[#4285F4]">
+                  {lang === 'de' ? 'Transparenz & Klarheit' : lang === 'en' ? 'Transparency & Clarity' : 'Şeffaflık & Netlik'}
+                </span>
               </div>
-              
-              <div className="space-y-4">
-                {data.faq.map((item, i) => (
-                  <div key={i} className="bg-white rounded-xl border border-gray-200 overflow-hidden">
-                    <details className="group">
-                      <summary className="flex items-center justify-between p-6 cursor-pointer list-none">
-                        <h3 className="text-lg font-semibold text-gray-900 pr-4">{item.q}</h3>
-                        <div className="w-8 h-8 rounded-full flex items-center justify-center flex-shrink-0 transition-colors" style={{ backgroundColor: `${data.primaryColor}15` }}>
-                          <svg className="w-5 h-5 transition-transform group-open:rotate-180" style={{ color: data.primaryColor }} fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
-                          </svg>
-                        </div>
-                      </summary>
-                      <div className="px-6 pb-6 pt-0">
-                        <p className="text-gray-600 leading-relaxed">{item.a}</p>
+              <h2 className="text-3xl md:text-5xl font-black text-gray-900 mb-4 tracking-tight">
+                {lang === 'de' ? 'Häufig gestellte Fragen' : lang === 'en' ? 'Frequently Asked Questions' : 'Sıkça Sorulan Sorular'}
+              </h2>
+              <p className="text-base md:text-lg text-gray-600 max-w-2xl mx-auto">
+                {lang === 'de' ? 'Alles, was Sie über unsere Zusammenarbeit, Kosten und Ergebnisse wissen müssen.' : lang === 'en' ? 'Everything you need to know about our collaboration, costs, and timeline.' : 'İş birliğimiz, bütçeler ve süreç hakkında bilmeniz gereken her şey.'}
+              </p>
+            </div>
+            
+            <div className="space-y-4 md:space-y-5">
+              {data.faq.map((item, i) => (
+                <div key={i} className="bg-white rounded-2xl md:rounded-3xl border border-slate-200/90 shadow-sm hover:shadow-md transition-all overflow-hidden">
+                  <details className="group">
+                    <summary className="flex items-center justify-between p-6 md:p-7 cursor-pointer list-none select-none">
+                      <h3 className="text-base md:text-lg font-bold text-gray-900 pr-4 group-hover:text-[#4285F4] transition-colors">
+                        {item.q}
+                      </h3>
+                      <div
+                        className="w-9 h-9 rounded-xl flex items-center justify-center flex-shrink-0 bg-slate-100 group-open:bg-blue-50 transition-colors"
+                      >
+                        <svg className="w-5 h-5 text-slate-700 group-open:text-[#4285F4] transition-transform duration-300 group-open:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M19 9l-7 7-7-7" />
+                        </svg>
                       </div>
-                    </details>
-                  </div>
-                ))}
-              </div>
+                    </summary>
+                    <div className="px-6 md:px-7 pb-7 pt-2 border-t border-slate-100">
+                      <p className="text-sm md:text-base text-slate-600 leading-relaxed font-normal">
+                        {item.a}
+                      </p>
+                    </div>
+                  </details>
+                </div>
+              ))}
             </div>
           </div>
         </section>
@@ -1788,114 +1888,128 @@ export default function ServiceDetailPage() {
 
       {/* Optimization Section for Google Ads */}
       {service === 'google-ads' && (
-        <section className="py-20 px-4 bg-white">
-          <div className="container mx-auto">
-            <div className="max-w-5xl mx-auto">
-              <div className="text-center mb-16">
-                <p className="text-sm font-semibold uppercase tracking-wider mb-2" style={{ color: data.primaryColor }}>
-                  {lang === 'de' ? 'KONTINUIERLICHE VERBESSERUNG' : lang === 'en' ? 'CONTINUOUS IMPROVEMENT' : 'SÜREKLİ İYİLEŞTİRME'}
-                </p>
-                <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
-                  {lang === 'de' ? 'Wir schalten nicht nur Werbung,' : lang === 'en' ? "We Don't Just Run Ads," : 'Reklamı Açıp Bırakmıyoruz,'}
-                  <br />
-                  <span style={{ color: data.primaryColor }}>
-                    {lang === 'de' ? 'Wir optimieren die Rentabilität.' : lang === 'en' ? 'We Optimize Profitability.' : 'Kârlılığı Optimize Ediyoruz.'}
-                  </span>
-                </h2>
-                <p className="text-lg text-gray-500 max-w-2xl mx-auto">
-                  {lang === 'de' ? 'Der Unterschied, mit einem erfahrenen Experten zu arbeiten, zeigt sich nicht in der Kampagneneinrichtung, sondern im anschließenden Optimierungs- und Krisenmanagementprozess.' : lang === 'en' ? 'The difference of working with an experienced expert is not in campaign setup, but in the subsequent optimization and crisis management process.' : 'Deneyimli bir uzmanla çalışmanın farkı, kampanya kurulumunda değil, sonrasındaki optimizasyon ve kriz yönetimi sürecinde ortaya çıkar.'}
-                </p>
-              </div>
-              
-              <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
-                {[
-                  {
-                    step: '01',
-                    title: lang === 'de' ? 'Analyse & Setup' : lang === 'en' ? 'Analysis & Setup' : 'Analiz & Kurulum',
-                    desc: lang === 'de' ? 'Wir analysieren die Kosten pro Klick in Ihrer Branche und erstellen von Anfang an negative Keyword-Listen.' : lang === 'en' ? 'We analyze the cost per click in your industry and create negative keyword lists from the start.' : 'Sektörünüzün tıklama başı maliyet analizini yapar, negatif anahtar kelime listelerini baştan oluşturarak bütçenizin boşa gitmesini engelliyoruz.'
-                  },
-                  {
-                    step: '02',
-                    title: lang === 'de' ? 'A/B Tests' : lang === 'en' ? 'A/B Tests' : 'A/B Testleri',
-                    desc: lang === 'de' ? 'Wir begnügen uns nicht mit einer einzigen Anzeige. Mit verschiedenen Titeln und Bildern finden wir die beste Kombination.' : lang === 'en' ? 'We don\'t settle for a single ad. With different titles and images, we find the best combination.' : 'Tek bir reklam metniyle yetinmiyoruz. Farklı başlıklar ve görseller deneyerek kazanan kombinasyonu buluyoruz.'
-                  },
-                  {
-                    step: '03',
-                    title: lang === 'de' ? 'Qualitätsfaktor' : lang === 'en' ? 'Quality Score' : 'Kalite Puanı',
-                    desc: lang === 'de' ? 'Durch die Erhöhung der Anzeigen- und Landingpage-Harmonie zahlen Sie weniger als Ihre Konkurrenten und erscheinen höher.' : lang === 'en' ? 'By increasing ad and landing page harmony, you pay less than competitors and appear higher.' : 'Reklam ve açılış sayfası uyumunu artırarak, rakiplerinizden daha az ödeyip daha üst sırada çıkmanızı sağlıyoruz.'
-                  },
-                  {
-                    step: '04',
-                    title: lang === 'de' ? 'Skalierung' : lang === 'en' ? 'Scaling' : 'Ölçekleme',
-                    desc: lang === 'de' ? 'Nachdem wir profitable Kampagnen identifiziert haben, erhöhen wir das Budget kontrolliert und stoppen Verlustkampagnen.' : lang === 'en' ? 'After identifying profitable campaigns, we increase budget in a controlled manner and stop losing campaigns.' : 'Kâr getiren kampanyaları tespit edip bütçeyi kontrollü artırıyor, zarar edenleri anında durduruyoruz.'
-                  }
-                ].map((item, i) => (
-                  <div key={i} className="bg-gray-50 rounded-2xl p-6 hover:shadow-lg transition-shadow">
-                    <div className="w-12 h-12 rounded-xl mb-4 flex items-center justify-center" style={{ backgroundColor: data.primaryColor }}>
-                      <span className="text-white font-bold">{item.step}</span>
+        <section className="py-24 px-4 bg-white border-t border-slate-100">
+          <div className="container mx-auto max-w-6xl">
+            <div className="text-center mb-16">
+              <p className="text-xs font-bold uppercase tracking-widest mb-3 text-[#4285F4]">
+                {lang === 'de' ? 'KONTINUIERLICHE VERBESSERUNG' : lang === 'en' ? 'CONTINUOUS IMPROVEMENT' : 'SÜREKLİ İYİLEŞTİRME'}
+              </p>
+              <h2 className="text-3xl md:text-5xl font-black text-gray-900 mb-4 tracking-tight">
+                {lang === 'de' ? 'Wir schalten nicht nur Werbung,' : lang === 'en' ? "We Don't Just Run Ads," : 'Reklamı Açıp Bırakmıyoruz,'}
+                <br />
+                <span className="text-[#4285F4]">
+                  {lang === 'de' ? 'Wir optimieren die Rentabilität.' : lang === 'en' ? 'We Optimize Profitability.' : 'Kârlılığı Optimize Ediyoruz.'}
+                </span>
+              </h2>
+              <p className="text-base md:text-lg text-gray-600 max-w-2xl mx-auto leading-relaxed">
+                {lang === 'de' ? 'Der Unterschied, mit einem erfahrenen Experten zu arbeiten, zeigt sich nicht in der Kampagneneinrichtung, sondern im anschließenden Optimierungs- und Krisenmanagementprozess.' : lang === 'en' ? 'The difference of working with an experienced expert is not in campaign setup, but in the subsequent optimization and crisis management process.' : 'Deneyimli bir uzmanla çalışmanın farkı, kampanya kurulumunda değil, sonrasındaki optimizasyon ve kriz yönetimi sürecinde ortaya çıkar.'}
+              </p>
+            </div>
+            
+            <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+              {[
+                {
+                  step: '01',
+                  title: lang === 'de' ? 'Analyse & Setup' : lang === 'en' ? 'Analysis & Setup' : 'Analiz & Kurulum',
+                  desc: lang === 'de' ? 'Wir analysieren die Kosten pro Klick in Ihrer Branche und erstellen von Anfang an negative Keyword-Listen.' : lang === 'en' ? 'We analyze the cost per click in your industry and create negative keyword lists from the start.' : 'Sektörünüzün tıklama başı maliyet analizini yapar, negatif anahtar kelime listelerini baştan oluşturarak bütçenizin boşa gitmesini engelliyoruz.'
+                },
+                {
+                  step: '02',
+                  title: lang === 'de' ? 'A/B Tests' : lang === 'en' ? 'A/B Tests' : 'A/B Testleri',
+                  desc: lang === 'de' ? 'Wir begnügen uns nicht mit einer einzigen Anzeige. Mit verschiedenen Titeln und Bildern finden wir die beste Kombination.' : lang === 'en' ? 'We don\'t settle for a single ad. With different titles and images, we find the best combination.' : 'Tek bir reklam metniyle yetinmiyoruz. Farklı başlıklar ve görseller deneyerek kazanan kombinasyonu buluyoruz.'
+                },
+                {
+                  step: '03',
+                  title: lang === 'de' ? 'Qualitätsfaktor' : lang === 'en' ? 'Quality Score' : 'Kalite Puanı',
+                  desc: lang === 'de' ? 'Durch die Erhöhung der Anzeigen- und Landingpage-Harmonie zahlen Sie weniger als Ihre Konkurrenten und erscheinen höher.' : lang === 'en' ? 'By increasing ad and landing page harmony, you pay less than competitors and appear higher.' : 'Reklam ve açılış sayfası uyumunu artırarak, rakiplerinizden daha az ödeyip daha üst sırada çıkmanızı sağlıyoruz.'
+                },
+                {
+                  step: '04',
+                  title: lang === 'de' ? 'Skalierung' : lang === 'en' ? 'Scaling' : 'Ölçekleme',
+                  desc: lang === 'de' ? 'Nachdem wir profitable Kampagnen identifiziert haben, erhöhen wir das Budget kontrolliert und stoppen Verlustkampagnen.' : lang === 'en' ? 'After identifying profitable campaigns, we increase budget in a controlled manner and stop losing campaigns.' : 'Kâr getiren kampanyaları tespit edip bütçeyi kontrollü artırıyor, zarar edenleri anında durduruyoruz.'
+                }
+              ].map((item, i) => (
+                <div key={i} className="bg-slate-50 rounded-3xl p-7 border border-slate-200/80 hover:shadow-xl transition-all duration-300 hover:-translate-y-1 flex flex-col justify-between">
+                  <div>
+                    <div className="w-12 h-12 rounded-2xl mb-5 flex items-center justify-center font-bold text-white bg-[#4285F4] shadow-md">
+                      <span>{item.step}</span>
                     </div>
                     <h3 className="text-lg font-bold text-gray-900 mb-2">{item.title}</h3>
-                    <p className="text-sm text-gray-500 leading-relaxed">{item.desc}</p>
+                    <p className="text-sm text-slate-600 leading-relaxed">{item.desc}</p>
+                  </div>
+                </div>
+              ))}
+            </div>
+
+            {/* Real Results — Metrics from real Google Ads account */}
+            <div className="mt-16 rounded-3xl overflow-hidden bg-slate-900 text-white shadow-2xl border border-slate-800">
+              <div className="px-8 pt-8 pb-4 text-center">
+                <p className="text-xs font-bold uppercase tracking-widest mb-1 text-[#4285F4]">
+                  {lang === 'de' ? 'ECHTE DATEN AUS UNSEREM GOOGLE ADS KONTO' : lang === 'en' ? 'REAL DATA FROM OUR GOOGLE ADS ACCOUNT' : 'GERÇEK GOOGLE ADS HESAP VERİLERİMİZ'}
+                </p>
+                <p className="text-xs md:text-sm text-slate-400 mb-6">
+                  {lang === 'de' ? 'Mai 2016 – Aug 2026 · 720+ verwaltete Kampagnen' : lang === 'en' ? 'May 2016 – Aug 2026 · 720+ managed campaigns' : 'Mayıs 2016 – Ağustos 2026 · 720\'den fazla yönetilen kampanya'}
+                </p>
+              </div>
+              <div className="grid grid-cols-2 md:grid-cols-3 gap-px bg-slate-800">
+                {[
+                  { value: '1,74M', icon: '🖱️', label: lang === 'de' ? 'Klicks generiert' : lang === 'en' ? 'Clicks generated' : 'Üretilen tıklama', color: '#4285F4' },
+                  { value: '150M', icon: '👁️', label: lang === 'de' ? 'Impressionen' : lang === 'en' ? 'Impressions' : 'Gösterim', color: '#EA4335' },
+                  { value: '208K', icon: '✅', label: lang === 'de' ? 'Conversions' : lang === 'en' ? 'Conversions' : 'Dönüşüm', color: '#34A853' },
+                  { value: '€1,13M', icon: '💰', label: lang === 'de' ? 'Budget verwaltet' : lang === 'en' ? 'Budget managed' : 'Yönetilen bütçe', color: '#FBBC05' },
+                  { value: '720+', icon: '🚀', label: lang === 'de' ? 'Kampagnen' : lang === 'en' ? 'Campaigns' : 'Kampanya', color: '#4285F4' },
+                  { value: '26%', icon: '⚡', label: lang === 'de' ? 'Ø Interaktionsrate' : lang === 'en' ? 'Avg. interaction rate' : 'Ort. etkileşim oranı', color: '#34A853' },
+                ].map((m, i) => (
+                  <div key={i} className="bg-slate-900 px-6 py-6 flex flex-col items-center text-center hover:bg-slate-800/80 transition-colors">
+                    <span className="text-2xl mb-1">{m.icon}</span>
+                    <p className="text-2xl md:text-3xl font-black mb-1" style={{ color: m.color }}>{m.value}</p>
+                    <p className="text-xs text-slate-400 font-medium">{m.label}</p>
                   </div>
                 ))}
               </div>
-
-              {/* Real Results — Metrics from real Google Ads account */}
-              <div className="mt-16 rounded-2xl overflow-hidden" style={{ background: 'linear-gradient(135deg, #4285F410 0%, #34A85308 50%, #FBBC0508 100%)', border: '1px solid #4285F420' }}>
-                <div className="px-8 pt-8 pb-2 text-center">
-                  <p className="text-xs font-semibold uppercase tracking-widest mb-1" style={{ color: '#4285F4' }}>
-                    {lang === 'de' ? 'ECHTE DATEN AUS UNSEREM GOOGLE ADS KONTO' : lang === 'en' ? 'REAL DATA FROM OUR GOOGLE ADS ACCOUNT' : 'GERÇEK GOOGLE ADS HESAP VERİLERİMİZ'}
-                  </p>
-                  <p className="text-sm text-gray-400 mb-6">
-                    {lang === 'de' ? 'Mai 2016 – Aug 2026 · 720+ verwaltete Kampagnen' : lang === 'en' ? 'May 2016 – Aug 2026 · 720+ managed campaigns' : 'Mayıs 2016 – Ağustos 2026 · 720\'den fazla yönetilen kampanya'}
-                  </p>
-                </div>
-                <div className="grid grid-cols-2 md:grid-cols-3 gap-px bg-gray-100">
-                  {[
-                    { value: '1,74M', icon: '🖱️', label: lang === 'de' ? 'Klicks generiert' : lang === 'en' ? 'Clicks generated' : 'Üretilen tıklama', color: '#4285F4' },
-                    { value: '150M', icon: '👁️', label: lang === 'de' ? 'Impressionen' : lang === 'en' ? 'Impressions' : 'Gösterim', color: '#EA4335' },
-                    { value: '208K', icon: '✅', label: lang === 'de' ? 'Conversions' : lang === 'en' ? 'Conversions' : 'Dönüşüm', color: '#34A853' },
-                    { value: '€1,13M', icon: '💰', label: lang === 'de' ? 'Budget verwaltet' : lang === 'en' ? 'Budget managed' : 'Yönetilen bütçe', color: '#FBBC05' },
-                    { value: '720+', icon: '🚀', label: lang === 'de' ? 'Kampagnen' : lang === 'en' ? 'Campaigns' : 'Kampanya', color: '#4285F4' },
-                    { value: '26%', icon: '⚡', label: lang === 'de' ? 'Ø Interaktionsrate' : lang === 'en' ? 'Avg. interaction rate' : 'Ort. etkileşim oranı', color: '#34A853' },
-                  ].map((m, i) => (
-                    <div key={i} className="bg-white px-6 py-5 flex flex-col items-center text-center hover:bg-gray-50 transition-colors">
-                      <span className="text-2xl mb-1">{m.icon}</span>
-                      <p className="text-2xl md:text-3xl font-bold mb-0.5" style={{ color: m.color }}>{m.value}</p>
-                      <p className="text-xs text-gray-500 font-medium">{m.label}</p>
-                    </div>
-                  ))}
-                </div>
-                <div className="px-8 py-4 text-center">
-                  <p className="text-xs text-gray-400 italic">
-                    {lang === 'de'
-                      ? 'Daten aus dem eigenen Google Ads & Analytics Konto von Salih Maral — keine fiktiven Zahlen.'
-                      : lang === 'en'
-                      ? "Data from Salih Maral's own Google Ads & Analytics account — no fictional numbers."
-                      : 'Salih Maral\'ın kendi Google Ads & Analytics hesabından alınan gerçek veriler — kurgusal rakamlar değil.'}
-                  </p>
-                </div>
+              <div className="px-8 py-4 text-center border-t border-slate-800">
+                <p className="text-xs text-slate-400 italic">
+                  {lang === 'de'
+                    ? 'Daten aus dem eigenen Google Ads & Analytics Konto von Salih Maral — keine fiktiven Zahlen.'
+                    : lang === 'en'
+                    ? "Data from Salih Maral's own Google Ads & Analytics account — no fictional numbers."
+                    : 'Salih Maral\'ın kendi Google Ads & Analytics hesabından alınan gerçek veriler — kurgusal rakamlar değil.'}
+                </p>
               </div>
-
             </div>
+
           </div>
         </section>
       )}
 
-      {/* CTA Section */}
-      <section id="contact-section" className="py-20 px-4" style={{ backgroundColor: data.primaryColor }}>
-        <div className="container mx-auto">
-          <div className="max-w-3xl mx-auto text-center">
-            <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">
+      {/* Global Final CTA Section (Dark Luxury High-Converting Agency Banner) */}
+      <section id="contact-section" className="py-24 px-4 bg-slate-950 text-white relative overflow-hidden">
+        {/* Glow ambient background */}
+        <div
+          className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[400px] rounded-full blur-3xl opacity-20 pointer-events-none"
+          style={{ backgroundColor: data.primaryColor }}
+        ></div>
+
+        <div className="container mx-auto max-w-5xl relative z-10">
+          <div className="bg-slate-900/90 border border-slate-800/90 rounded-3xl md:rounded-4xl p-8 md:p-14 text-center shadow-2xl backdrop-blur-xl">
+            <div className="inline-flex items-center space-x-2 bg-blue-500/10 border border-blue-400/30 rounded-full px-4 py-1.5 mb-6 shadow-sm">
+              <span className="w-2 h-2 rounded-full bg-[#4285F4] animate-pulse"></span>
+              <span className="text-xs font-bold uppercase tracking-wider text-[#4285F4]">
+                {lang === 'de' ? 'Unverbindlich & Kostenlos' : lang === 'en' ? 'No Obligation & 100% Free' : 'Ücretsiz & Taahhütsüz'}
+              </span>
+            </div>
+
+            <h2 className="text-3xl md:text-5xl font-black text-white mb-5 tracking-tight leading-tight">
               {service === 'google-ads'
                 ? (lang === 'de'
                     ? 'Kostenlose Google Ads Analyse — in 30 Minuten.'
                     : lang === 'en'
                     ? 'Free Google Ads Analysis — in 30 Minutes.'
                     : 'Ücretsiz Google Ads Analizi — 30 Dakikada.')
-                : (lang === 'de' ? 'Starten Sie mit einer kostenlosen Analyse' : lang === 'en' ? 'Start with a Free Analysis' : 'Ücretsiz Analiz ile Başlayın')}
+                : (lang === 'de' ? 'Bereit für planbares, profitables Wachstum?' : lang === 'en' ? 'Ready for Predictable, Profitable Growth?' : 'Planlı ve Kârlı Büyümeye Hazır mısınız?')}
             </h2>
-            <p className="text-lg text-white/80 mb-8">
+
+            <p className="text-base md:text-lg text-slate-300 max-w-2xl mx-auto mb-10 leading-relaxed">
               {service === 'google-ads'
                 ? (lang === 'de'
                     ? 'Wir prüfen Ihre Kampagnen kostenlos und zeigen Ihnen genau, wo Ihr Budget verloren geht — und wie Sie es zurückgewinnen. Kein Fachjargon. Keine Verkaufsgespräche. Nur echte Handlungsempfehlungen.'
@@ -1905,20 +2019,27 @@ export default function ServiceDetailPage() {
                 : (lang === 'de' ? 'Wir analysieren Ihre aktuelle Situation und bieten Ihnen maßgeschneiderte Strategieempfehlungen. Keine Kosten, keine Verpflichtungen.' : lang === 'en' ? 'We analyze your current situation and offer you customized strategy recommendations. No costs, no commitments.' : 'Mevcut durumunuzu analiz ediyor, size özel strateji önerileri sunuyoruz. Hiçbir ücret veya taahhüt yok.')}
             </p>
 
-            
-            <div className="flex flex-wrap justify-center gap-4 mb-8">
-              <Button size="lg" className="bg-white hover:bg-gray-100 px-8 shadow-lg transition-all duration-300 hover:scale-105" style={{ color: data.primaryColor }} asChild>
-                <a href={`${lang === 'de' ? '' : `/${lang}`}/#contact`}>
-                  {lang === 'de' ? 'Kostenlose Analyse anfordern' : lang === 'en' ? 'Get Free Analysis' : 'Ücretsiz Analiz Al'}
-                  <ArrowUpRight className="ml-2 h-5 w-5" />
-                </a>
-              </Button>
-              <Button size="lg" className="bg-[#25D366] hover:bg-[#128C7E] text-white px-8 shadow-lg transition-all duration-300 hover:scale-105" asChild>
-                <a href={`https://wa.me/491724106463?text=${lang === 'de' ? 'Hallo,%20ich%20interessiere%20mich%20für%20' + encodeURIComponent(data.title) + '%20Dienstleistungen.' : lang === 'en' ? 'Hello,%20I%20am%20interested%20in%20' + encodeURIComponent(data.title) + '%20services.' : 'Merhaba,%20' + encodeURIComponent(data.title) + '%20hizmeti%20hakkında%20bilgi%20almak%20istiyorum.'}`} target="_blank" rel="noopener noreferrer">
-                  <svg className="mr-2 h-5 w-5" fill="currentColor" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
-                  WhatsApp
-                </a>
-              </Button>
+            <div className="flex flex-wrap justify-center items-center gap-4">
+              <button
+                onClick={scrollToContact}
+                style={{ backgroundColor: data.primaryColor }}
+                className="text-white font-bold text-base px-9 py-4 rounded-2xl shadow-xl hover:shadow-2xl transition-all duration-300 hover:scale-105 hover:opacity-95 flex items-center gap-2 cursor-pointer"
+              >
+                <span>{lang === 'de' ? 'Kostenlose Analyse anfordern' : lang === 'en' ? 'Get Free Analysis' : 'Ücretsiz Analiz Al'}</span>
+                <ArrowUpRight className="h-5 w-5" />
+              </button>
+
+              <a
+                href={`https://wa.me/491724106463?text=${lang === 'de' ? 'Hallo,%20ich%20interessiere%20mich%20für%20' + encodeURIComponent(data.title) + '%20Dienstleistungen.' : lang === 'en' ? 'Hello,%20I%20am%20interested%20in%20' + encodeURIComponent(data.title) + '%20services.' : 'Merhaba,%20' + encodeURIComponent(data.title) + '%20hizmeti%20hakkında%20bilgi%20almak%20istiyorum.'}`}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="bg-emerald-500 hover:bg-emerald-600 text-white font-bold text-base px-8 py-4 rounded-2xl shadow-lg transition-all duration-300 hover:scale-105 flex items-center gap-2.5 cursor-pointer"
+              >
+                <svg className="h-5 w-5 fill-current" viewBox="0 0 24 24">
+                  <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+                </svg>
+                <span>WhatsApp</span>
+              </a>
             </div>
           </div>
         </div>
