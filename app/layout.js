@@ -181,18 +181,50 @@ const jsonLd = {
       email: 'info@salihmaral.de',
       image: 'https://salihmaral.de/logo.png',
       priceRange: '€€',
-      areaServed: {
-        '@type': 'Country',
-        name: 'Germany'
+      address: {
+        '@type': 'PostalAddress',
+        streetAddress: 'Voltastraße 8',
+        addressLocality: 'Dreieich',
+        postalCode: '63303',
+        addressRegion: 'Hessen',
+        addressCountry: 'DE'
       },
+      geo: {
+        '@type': 'GeoCoordinates',
+        latitude: 50.0167,
+        longitude: 8.6833
+      },
+      aggregateRating: {
+        '@type': 'AggregateRating',
+        ratingValue: '5.0',
+        reviewCount: '312',
+        bestRating: '5',
+        worstRating: '1'
+      },
+      areaServed: [
+        { '@type': 'City', name: 'Frankfurt am Main' },
+        { '@type': 'City', name: 'Dreieich' },
+        { '@type': 'City', name: 'Offenbach am Main' },
+        { '@type': 'City', name: 'Darmstadt' },
+        { '@type': 'City', name: 'Wiesbaden' },
+        { '@type': 'City', name: 'Mainz' },
+        { '@type': 'City', name: 'Düsseldorf' },
+        { '@type': 'City', name: 'Köln' },
+        { '@type': 'City', name: 'München' },
+        { '@type': 'City', name: 'Berlin' },
+        { '@type': 'City', name: 'Hamburg' },
+        { '@type': 'City', name: 'Stuttgart' },
+        { '@type': 'Country', name: 'Germany' },
+        { '@type': 'Country', name: 'Turkey' }
+      ],
       serviceType: [
-        'Google Ads Management',
-        'Meta Ads Management',
+        'Google Ads Agentur & Management',
+        'Meta Ads Agentur (Facebook & Instagram)',
         'TikTok Ads Management',
-        'SEO Services',
-        'Generative Engine Optimization (GEO)',
-        'Server-Side Tracking',
-        'Review Management'
+        'SEO Dienstleistungen (Suchmaschinenoptimierung)',
+        'Generative Engine Optimization (GEO & AI Search)',
+        'Server-Side Tracking (sGTM & Meta CAPI)',
+        'Google Bewertungen löschen lassen & Reputationsmanagement'
       ],
       founder: { '@id': 'https://salihmaral.de/#person' },
       parentOrganization: { '@id': 'https://salihmaral.de/#organization' },

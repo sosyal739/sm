@@ -18,12 +18,12 @@ const translations = {
       contact: 'İletişim'
     },
     hero: {
-      title: 'Dijital Pazarlama Uzmanı',
-      subtitle: 'Google Ads, Meta Ads & SEO ile İşletmenizi Büyütün',
-      description: 'Dijital dünyadaki kaosun içinde kaybolmayın. İşletmeniz için değişime dirençli, ölçülebilir ve ticari dönüşüm odaklı bir başarı sistemi inşa ediyoruz.',
+      title: 'Dijital Pazarlama & Google Ads Uzmanı',
+      subtitle: 'Almanya & Avrupa Genelinde Google Ads, Meta Ads ve SEO ile Cironuzu Katlayın',
+      description: 'Dijital dünyada kaybolmayın. 17+ yıllık tecrübe ve Resmi Google Partner güvencesiyle işletmeniz için ölçülebilir, yüksek ROAS sağlayan ve dönüşüm odaklı performans sistemleri kuruyoruz.',
       cta1: 'WhatsApp',
-      cta2: 'Teklif Alın',
-      clients: 'Mutlu Müşteri & Firma'
+      cta2: 'Hemen Teklif Alın',
+      clients: 'Mutlu Müşteri & Şirket'
     },
     stats: {
       experience: 'Yıllık Tecrübe',
@@ -189,11 +189,11 @@ const translations = {
       contact: 'Kontakt'
     },
     hero: {
-      title: 'Digital Marketing Experte',
-      subtitle: 'Lassen Sie Ihr Unternehmen mit Google Ads, Meta Ads & SEO wachsen',
-      description: 'Verlieren Sie sich nicht im Chaos der digitalen Welt. Wir bauen ein veränderungsresistentes, messbares und konversionsorientiertes Erfolgssystem für Ihr Unternehmen auf.',
+      title: 'Google Ads & Digital Marketing Experte',
+      subtitle: 'Google Ads Agentur, Meta Ads & SEO für planbaren ROI in Deutschland',
+      description: 'Verlieren Sie sich nicht im Chaos. Als offizieller Google Partner mit 17+ Jahren Erfahrung in Frankfurt & bundesweit bauen wir datengesteuerte, hochprofitable Performance-Systeme für Ihr Unternehmen auf.',
       cta1: 'WhatsApp',
-      cta2: 'Angebot Erhalten',
+      cta2: 'Kostenloses Angebot',
       clients: 'Zufriedene Kunden & Firmen'
     },
     stats: {
@@ -360,12 +360,12 @@ const translations = {
       contact: 'Contact'
     },
     hero: {
-      title: 'Digital Marketing Expert',
-      subtitle: 'Grow Your Business with Google Ads, Meta Ads & SEO',
-      description: "Don't get lost in the chaos of the digital world. We build a change-resistant, measurable and conversion-focused success system for your business.",
+      title: 'Google Ads & Digital Marketing Specialist',
+      subtitle: 'Scale Your Business in Germany & Europe with Google Ads, Meta Ads & SEO',
+      description: 'Stop guessing your marketing spend. As an official Google Partner with 17+ years of experience, we build high-ROAS, data-driven customer acquisition systems that consistently grow your revenue.',
       cta1: 'WhatsApp',
-      cta2: 'Get Quote',
-      clients: 'Happy Clients & Companies'
+      cta2: 'Get Free Proposal',
+      clients: 'Happy Clients & Brands'
     },
     stats: {
       experience: 'Years of Experience',
