@@ -1,8 +1,8 @@
 ﻿'use client'
 
-import React, { use } from 'react'
+import React, { use, useState } from 'react'
 import Link from 'next/link'
-import { CheckCircle2, TrendingUp, ShieldCheck, ArrowRight, Star, Phone, MessageCircle, MapPin, Award } from 'lucide-react'
+import { CheckCircle2, TrendingUp, ShieldCheck, ArrowRight, Star, Phone, Mail, MapPin, Send, Loader2 } from 'lucide-react'
 
 const cityDetails = {
   frankfurt: {
@@ -16,7 +16,7 @@ const cityDetails = {
       heroTitle: 'Google Ads & SEO Agentur Frankfurt am Main',
       heroSub: 'Zertifizierter Google Partner für Frankfurt & Hessen',
       intro: 'In einer hart umkämpften Wirtschaftsregion wie Frankfurt am Main reicht Standard-Werbung nicht aus. Als offizieller Google Partner und Performance Marketing Experte mit 17+ Jahren Erfahrung optimieren wir Ihre Google Ads, Meta Ads und SEO-Strategie für messbar höhere Verkaufsabschlüsse.',
-      cta: 'Kostenloses Angebot für Frankfurt anfordern',
+      cta: 'Jetzt unverbindliches Angebot anfordern',
     },
     tr: {
       heroTitle: 'Frankfurt Google Ads & Dijital Pazarlama Ajansı',
@@ -42,7 +42,7 @@ const cityDetails = {
       heroTitle: 'Google Ads & Meta Ads Agentur Düsseldorf',
       heroSub: 'Performance Marketing & SEO für Düsseldorf & NRW',
       intro: 'Düsseldorf ist ein pulsierender Handels- und E-Commerce-Hub. Mit maßgeschneiderten Google Search, Performance Max und Instagram Reels Ads sorgen wir dafür, dass Ihre Marke in Düsseldorf die Marktführerschaft übernimmt.',
-      cta: 'Kostenloses Angebot für Düsseldorf anfordern',
+      cta: 'Jetzt unverbindliches Angebot anfordern',
     },
     tr: {
       heroTitle: 'Düsseldorf Google Ads & SEO Ajansı',
@@ -68,7 +68,7 @@ const cityDetails = {
       heroTitle: 'Google Ads & Performance Agentur Köln',
       heroSub: 'Ihr Google Partner für Köln & das Rheinland',
       intro: 'Von der Kölner Innenstadt bis ins gesamte Umland: Wir machen Ihre Dienstleistungen und Produkte bei Google und Social Media sichtbar und wandeln Klicks in treue Kunden um.',
-      cta: 'Kostenloses Angebot für Köln anfordern',
+      cta: 'Jetzt unverbindliches Angebot anfordern',
     },
     tr: {
       heroTitle: 'Köln Google Ads & Dijital Pazarlama Danışmanlığı',
@@ -94,7 +94,7 @@ const cityDetails = {
       heroTitle: 'Google Ads Agentur München',
       heroSub: 'Premium Performance Marketing & SEO für München & Bayern',
       intro: 'Münchens Premium-Markt verlangt erstklassige Werbestrategien. Als offizieller Google Partner bieten wir mathematisch präzise Kampagnensteuerung für maximalen Gewinn und planbare Skalierung.',
-      cta: 'Kostenloses Angebot für München anfordern',
+      cta: 'Jetzt unverbindliches Angebot anfordern',
     },
     tr: {
       heroTitle: 'Münih Google Ads & SEO Danışmanlığı',
@@ -120,7 +120,7 @@ const cityDetails = {
       heroTitle: 'Google Ads & B2B Agentur Stuttgart',
       heroSub: 'Performance Marketing & SEO für Stuttgart & den Mittelstand',
       intro: 'Der baden-württembergische Mittelstand braucht messbare Ergebnisse statt leerer Versprechen. Wir entwickeln passgenaue Google Ads und SEO-Funnels für die Industrie- und Handelsregion Stuttgart.',
-      cta: 'Kostenloses Angebot für Stuttgart anfordern',
+      cta: 'Jetzt unverbindliches Angebot anfordern',
     },
     tr: {
       heroTitle: 'Stuttgart Google Ads & B2B Pazarlama Ajansı',
@@ -146,7 +146,7 @@ const cityDetails = {
       heroTitle: 'Google Ads & Growth Agentur Berlin',
       heroSub: 'Offizieller Google Partner für Start-ups & Unternehmen in Berlin',
       intro: 'In der dynamischen Berliner Wirtschaftswelt entscheiden Daten und Agilität. Wir optimieren Ihre Google Search, PMax und Meta Ads Kampagnen für rasanten und profitablen Markterfolg.',
-      cta: 'Kostenloses Angebot für Berlin anfordern',
+      cta: 'Jetzt unverbindliches Angebot anfordern',
     },
     tr: {
       heroTitle: 'Berlin Google Ads & Dijital Büyüme Ajansı',
@@ -171,6 +171,64 @@ export default function CityPage({ params }) {
   const currentLang = ['de', 'tr', 'en'].includes(lang) ? lang : 'de'
   const cityData = cityDetails[city] || cityDetails.frankfurt
   const content = cityData[currentLang] || cityData.de
+
+  // Form State
+  const [formData, setFormData] = useState({
+    name: '',
+    email: '',
+    phone: '',
+    company: '',
+    message: ''
+  })
+  const [loading, setLoading] = useState(false)
+  const [status, setStatus] = useState({ type: '', message: '' })
+
+  const handleSubmit = async (e) => {
+    e.preventDefault()
+    setLoading(true)
+    setStatus({ type: '', message: '' })
+
+    try {
+      const res = await fetch('/api/contact', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({
+          name: formData.name,
+          email: formData.email,
+          phone: formData.phone,
+          message: `[Standort: ${cityData.name}] Firma: ${formData.company || 'N/A'} - Nachricht: ${formData.message}`,
+          language: currentLang
+        })
+      })
+
+      const data = await res.json()
+      if (res.ok) {
+        setStatus({
+          type: 'success',
+          message: currentLang === 'tr'
+            ? 'Talebiniz başarıyla alındı! En kısa sürede sizinle e-posta/telefon üzerinden iletişime geçeceğiz.'
+            : currentLang === 'en'
+            ? 'Thank you! Your request has been received. We will contact you via email shortly.'
+            : 'Vielen Dank! Ihre Anfrage wurde erfolgreich übermittelt. Wir melden uns umgehend per E-Mail bei Ihnen.'
+        })
+        setFormData({ name: '', email: '', phone: '', company: '', message: '' })
+      } else {
+        setStatus({ type: 'error', message: data.error || 'Fehler beim Senden.' })
+      }
+    } catch (err) {
+      setStatus({ type: 'error', message: 'Verbindungsfehler. Bitte versuchen Sie es erneut.' })
+    } finally {
+      setLoading(false)
+    }
+  }
+
+  const scrollToForm = (e) => {
+    e.preventDefault()
+    const formElement = document.getElementById('anfrage-form')
+    if (formElement) {
+      formElement.scrollIntoView({ behavior: 'smooth' })
+    }
+  }
 
   const schemaJsonLd = {
     '@context': 'https://schema.org',
@@ -238,23 +296,21 @@ export default function CityPage({ params }) {
             </div>
           </div>
 
-          {/* CTAs */}
+          {/* Hero Action Buttons */}
           <div className="flex flex-wrap items-center gap-4">
-            <a
-              href="https://wa.me/491724106463"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="inline-flex items-center gap-2 px-7 py-4 rounded-xl bg-blue-600 hover:bg-blue-500 text-white font-bold text-base shadow-lg shadow-blue-500/25 transition-all transform hover:-translate-y-0.5"
+            <button
+              onClick={scrollToForm}
+              className="inline-flex items-center gap-2 px-7 py-4 rounded-xl bg-blue-600 hover:bg-blue-500 text-white font-bold text-base shadow-lg shadow-blue-500/25 transition-all transform hover:-translate-y-0.5 cursor-pointer"
             >
-              <MessageCircle className="w-5 h-5" />
+              <Mail className="w-5 h-5" />
               <span>{content.cta}</span>
-            </a>
+            </button>
             <a
-              href="tel:+491724106463"
+              href="mailto:info@salihmaral.de"
               className="inline-flex items-center gap-2 px-6 py-4 rounded-xl bg-slate-900 hover:bg-slate-800 border border-slate-700 text-slate-200 font-semibold text-base transition-all"
             >
-              <Phone className="w-4 h-4 text-emerald-400" />
-              <span>+49 172 4106463</span>
+              <Mail className="w-4 h-4 text-blue-400" />
+              <span>info@salihmaral.de</span>
             </a>
           </div>
         </div>
@@ -331,28 +387,133 @@ export default function CityPage({ params }) {
         </div>
       </section>
 
-      {/* Trust & CTA Box */}
-      <section className="py-16 max-w-4xl mx-auto px-4 text-center">
-        <div className="p-8 sm:p-12 rounded-3xl bg-gradient-to-b from-blue-950/40 to-slate-900 border border-blue-500/30">
-          <div className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-amber-500/10 text-amber-300 text-xs font-bold mb-4">
-            <Star className="w-3.5 h-3.5 fill-amber-400 text-amber-400" />
-            <span>5.0 / 5.0 Google Bewertung (312+ Rezensionen)</span>
+      {/* Dedicated Email Proposal Form Section */}
+      <section id="anfrage-form" className="py-16 max-w-4xl mx-auto px-4">
+        <div className="p-8 sm:p-12 rounded-3xl bg-gradient-to-b from-slate-900 to-slate-950 border border-blue-500/30 shadow-2xl">
+          <div className="text-center mb-8">
+            <div className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-amber-500/10 text-amber-300 text-xs font-bold mb-4">
+              <Star className="w-3.5 h-3.5 fill-amber-400 text-amber-400" />
+              <span>5.0 / 5.0 Google Bewertung (312+ Rezensionen)</span>
+            </div>
+            <h2 className="text-3xl sm:text-4xl font-extrabold text-white mb-3">
+              {currentLang === 'tr'
+                ? `${cityData.name} İçin Ücretsiz Teklif & Analiz Alın`
+                : currentLang === 'en'
+                ? `Get Your Free Proposal for ${cityData.name}`
+                : `Kostenlose Analyse & Angebot für ${cityData.name}`}
+            </h2>
+            <p className="text-slate-300 text-sm sm:text-base max-w-xl mx-auto">
+              {currentLang === 'tr'
+                ? 'Formu doldurun, işletmenizin reklam potansiyeli ve kâr planı hakkında size e-posta ile detaylı analiz sunalım.'
+                : currentLang === 'en'
+                ? 'Fill out the form below. We will send you a tailored growth strategy directly to your inbox.'
+                : 'Füllen Sie das Formular aus. Wir analysieren Ihre Potenziale und senden Ihnen ein maßgeschneidertes Angebot direkt per E-Mail zu.'}
+            </p>
           </div>
-          <h2 className="text-3xl sm:text-4xl font-extrabold text-white mb-4">
-            Bereit, den Markt in {cityData.name} anzuführen?
-          </h2>
-          <p className="text-slate-300 text-base max-w-xl mx-auto mb-8">
-            Lassen Sie uns Ihre aktuellen Werbekampagnen und Potenziale unverbindlich analysieren.
-          </p>
-          <a
-            href="https://wa.me/491724106463"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="inline-flex items-center gap-2 px-8 py-4 rounded-xl bg-blue-600 hover:bg-blue-500 text-white font-bold text-lg shadow-xl shadow-blue-500/30 transition-all"
-          >
-            <span>Jetzt kostenlose Beratung anfordern</span>
-            <ArrowRight className="w-5 h-5" />
-          </a>
+
+          {status.message && (
+            <div className={`p-4 rounded-xl mb-6 text-sm font-semibold text-center ${status.type === 'success' ? 'bg-emerald-500/10 text-emerald-300 border border-emerald-500/30' : 'bg-rose-500/10 text-rose-300 border border-rose-500/30'}`}>
+              {status.message}
+            </div>
+          )}
+
+          <form onSubmit={handleSubmit} className="space-y-4 text-left">
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+              <div>
+                <label className="block text-xs font-medium text-slate-300 mb-1.5">
+                  {currentLang === 'tr' ? 'Adınız Soyadınız *' : currentLang === 'en' ? 'Full Name *' : 'Ihr Name / Ansprechpartner *'}
+                </label>
+                <input
+                  type="text"
+                  required
+                  value={formData.name}
+                  onChange={(e) => setFormData({ ...formData, name: e.target.value })}
+                  placeholder="Max Mustermann"
+                  className="w-full px-4 py-3 rounded-xl bg-slate-900/90 border border-slate-700 text-white placeholder-slate-500 focus:outline-none focus:border-blue-500 text-sm transition-colors"
+                />
+              </div>
+
+              <div>
+                <label className="block text-xs font-medium text-slate-300 mb-1.5">
+                  {currentLang === 'tr' ? 'E-Posta Adresiniz *' : currentLang === 'en' ? 'Email Address *' : 'Ihre E-Mail-Adresse *'}
+                </label>
+                <input
+                  type="email"
+                  required
+                  value={formData.email}
+                  onChange={(e) => setFormData({ ...formData, email: e.target.value })}
+                  placeholder="name@unternehmen.de"
+                  className="w-full px-4 py-3 rounded-xl bg-slate-900/90 border border-slate-700 text-white placeholder-slate-500 focus:outline-none focus:border-blue-500 text-sm transition-colors"
+                />
+              </div>
+            </div>
+
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+              <div>
+                <label className="block text-xs font-medium text-slate-300 mb-1.5">
+                  {currentLang === 'tr' ? 'Telefon Numaranız' : currentLang === 'en' ? 'Phone Number' : 'Telefonnummer (optional)'}
+                </label>
+                <input
+                  type="tel"
+                  value={formData.phone}
+                  onChange={(e) => setFormData({ ...formData, phone: e.target.value })}
+                  placeholder="+49 ..."
+                  className="w-full px-4 py-3 rounded-xl bg-slate-900/90 border border-slate-700 text-white placeholder-slate-500 focus:outline-none focus:border-blue-500 text-sm transition-colors"
+                />
+              </div>
+
+              <div>
+                <label className="block text-xs font-medium text-slate-300 mb-1.5">
+                  {currentLang === 'tr' ? 'Firma Adı / Web Siteniz' : currentLang === 'en' ? 'Company / Website URL' : 'Firma / Website-URL (optional)'}
+                </label>
+                <input
+                  type="text"
+                  value={formData.company}
+                  onChange={(e) => setFormData({ ...formData, company: e.target.value })}
+                  placeholder="www.ihre-website.de"
+                  className="w-full px-4 py-3 rounded-xl bg-slate-900/90 border border-slate-700 text-white placeholder-slate-500 focus:outline-none focus:border-blue-500 text-sm transition-colors"
+                />
+              </div>
+            </div>
+
+            <div>
+              <label className="block text-xs font-medium text-slate-300 mb-1.5">
+                {currentLang === 'tr' ? 'Mesajınız / Hedefleriniz *' : currentLang === 'en' ? 'Your Message / Goals *' : 'Ihre Nachricht / Werbeziele *'}
+              </label>
+              <textarea
+                required
+                rows={4}
+                value={formData.message}
+                onChange={(e) => setFormData({ ...formData, message: e.target.value })}
+                placeholder={currentLang === 'tr' ? 'Örn: Google Ads ve Meta Ads ile satışlarımızı artırmak istiyoruz...' : 'Z.B. Wir möchten unsere Google Ads Kampagnen in dieser Region optimieren und den ROAS steigern...'}
+                className="w-full px-4 py-3 rounded-xl bg-slate-900/90 border border-slate-700 text-white placeholder-slate-500 focus:outline-none focus:border-blue-500 text-sm transition-colors resize-none"
+              />
+            </div>
+
+            <button
+              type="submit"
+              disabled={loading}
+              className="w-full py-4 rounded-xl bg-blue-600 hover:bg-blue-500 text-white font-bold text-base shadow-xl shadow-blue-500/25 transition-all flex items-center justify-center gap-2 cursor-pointer disabled:opacity-50"
+            >
+              {loading ? (
+                <>
+                  <Loader2 className="w-5 h-5 animate-spin" />
+                  <span>Wird gesendet...</span>
+                </>
+              ) : (
+                <>
+                  <Send className="w-5 h-5" />
+                  <span>
+                    {currentLang === 'tr'
+                      ? 'Ücretsiz Teklif Talebini Gönder ➔'
+                      : currentLang === 'en'
+                      ? 'Submit Free Proposal Request ➔'
+                      : 'Kostenlose Anfrage absenden ➔'}
+                  </span>
+                </>
+              )}
+            </button>
+          </form>
         </div>
       </section>
     </main>
