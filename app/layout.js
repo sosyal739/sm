@@ -7,9 +7,9 @@ export const metadata = {
   metadataBase: new URL('https://salihmaral.de'),
   title: {
     template: '%s | Salih Maral',
-    default: 'Salih Maral – Google Ads, Meta Ads & SEO Experte (17+ Jahre Erfahrung)',
+    default: 'Salih Maral – Google Ads, Meta Ads & SEO Experte',
   },
-  description: 'Professioneller Digital Marketing Experte & Google Partner mit 17+ Jahren Erfahrung. Spezialisiert auf Google Ads, Meta Ads (Facebook & Instagram), TikTok Ads, SEO & GEO. Maximieren Sie Ihren ROI mit datengesteuerten Strategien.',
+  description: 'Offizieller Google Partner & Digital Marketing Experte mit 17+ Jahren Erfahrung. Spezialisiert auf Google Ads, Meta Ads, SEO & messbaren ROI-Zuwachs.',
   keywords: [
     'Google Ads Agentur',
     'Google Ads Experte',
@@ -42,7 +42,15 @@ export const metadata = {
     address: false,
     telephone: false,
   },
-  alternates: {},
+  alternates: {
+    canonical: 'https://salihmaral.de',
+    languages: {
+      'de': 'https://salihmaral.de/de',
+      'tr': 'https://salihmaral.de/tr',
+      'en': 'https://salihmaral.de/en',
+      'x-default': 'https://salihmaral.de'
+    }
+  },
   openGraph: {
     title: 'Salih Maral - Digital Marketing Experte & Google Partner',
     description: 'Google Ads, Meta Ads & SEO Experte mit 17+ Jahren Erfahrung. Steigern Sie Ihren ROI mit professionellem Digital Marketing.',
