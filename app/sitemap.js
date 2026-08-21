@@ -1,4 +1,4 @@
-﻿import fs from 'fs'
+import fs from 'fs'
 import path from 'path'
 import matter from 'gray-matter'
 
@@ -55,7 +55,22 @@ export default async function sitemap() {
     })
   })
 
-  // 3. Dynamic Blog Posts
+  // 3. Germany Metropol Location Pages (Standorte - 3 Languages)
+  const cities = ['frankfurt', 'duesseldorf', 'koeln', 'muenchen', 'stuttgart', 'berlin']
+  const locationEntries = []
+
+  cities.forEach((city) => {
+    ['de', 'tr', 'en'].forEach((lang) => {
+      locationEntries.push({
+        url: `${baseUrl}/${lang}/standorte/${city}`,
+        lastModified: currentDate,
+        changeFrequency: 'weekly',
+        priority: 0.9,
+      })
+    })
+  })
+
+  // 4. Dynamic Blog Posts
   const blogEntries = []
   const postsDir = path.join(process.cwd(), 'content', 'blog')
 
@@ -81,5 +96,5 @@ export default async function sitemap() {
     })
   }
 
-  return [...staticEntries, ...serviceEntries, ...blogEntries]
+  return [...staticEntries, ...serviceEntries, ...locationEntries, ...blogEntries]
 }
