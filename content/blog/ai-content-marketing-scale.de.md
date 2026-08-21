@@ -1,4 +1,4 @@
----
+﻿---
 slug: "ai-content-marketing-scale"
 lang: "de"
 title: "Content-Erstellung mit KI: Skalieren Sie organischen Traffic ohne Qualitätseinbußen"

@@ -1,4 +1,4 @@
----
+﻿---
 slug: "tiktok-shop-ecommerce-scaling"
 lang: "tr"
 title: "TikTok Shop E-Ticaret Entegrasyonu ve Satış Artırma Stratejileri"
@@ -168,3 +168,4 @@ coverImage: "https://images.unsplash.com/photo-1557804506-669a67965ba0?w=600&h=3
     <li><a href="/blog/server-side-tracking-capi-guide">Dönüşüm Kayıplarını Önlemek İçin Server-Side Tracking Kurulumu</a></li>
   </ul>
 </div>
+

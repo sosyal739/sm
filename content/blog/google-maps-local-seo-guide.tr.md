@@ -1,4 +1,4 @@
----
+﻿---
 slug: "google-maps-local-seo-guide"
 lang: "tr"
 title: "Google Haritalar Yerel SEO (Local Maps SEO) ile Görünürlük Kazanma"
@@ -250,3 +250,4 @@ coverImage: "https://images.unsplash.com/photo-1524661135-423995f22d0b?w=600&h=3
     <li><a href="/blog/olumsuz-yorum-yonetimi">Olumsuz Yorum Yönetimi: İtibarınızı Koruyun</a></li>
   </ul>
 </div>
+

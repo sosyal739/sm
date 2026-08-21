@@ -1,4 +1,4 @@
----
+﻿---
 slug: "pinterest-ads-visual-marketing"
 lang: "de"
 title: "Verdoppeln Sie Ihren durchschnittlichen E-Commerce-Warenkorb mit Pinterest Ads"

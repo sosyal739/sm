@@ -1,4 +1,4 @@
----
+﻿---
 slug: "pinterest-ads-visual-marketing"
 lang: "en"
 title: "Double Your E-Commerce Average Order Value with Pinterest Ads"

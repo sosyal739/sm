@@ -1,4 +1,4 @@
----
+﻿---
 slug: "google-ads-pmax-smart-bidding-guide-2026"
 lang: "tr"
 title: "Google Ads PMax 2026: Bütçe İsrafını Önleyen 7 Taktik"
@@ -131,3 +131,4 @@ coverImage: "https://images.unsplash.com/photo-1533750516457-a7f992034fec?w=600&
     <li><a href="/blog/google-ads-fehler-vermeiden">En Sık Yapılan 10 Google Ads Hatası ve Çözümü</a></li>
   </ul>
 </div>
+

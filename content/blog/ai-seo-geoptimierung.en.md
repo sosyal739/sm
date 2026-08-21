@@ -1,4 +1,4 @@
----
+﻿---
 slug: "ai-seo-geoptimierung"
 lang: "en"
 title: "SEO for AI Search Engines (GEO) Guide 2026"

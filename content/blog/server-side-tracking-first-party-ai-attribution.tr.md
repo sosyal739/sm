@@ -1,4 +1,4 @@
----
+﻿---
 slug: "server-side-tracking-first-party-ai-attribution"
 lang: "tr"
 title: "Sunucu Taraflı Takip (Server-Side Tracking / CAPI) ve Yapay Zeka Atıf Modelleri Rehberi"
@@ -110,3 +110,4 @@ coverImage: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=600&h=3
     <li><a href="/blog/google-gemini-3-6-seo-ads-automation">Google Gemini 3.6 ile Kampanya Otomasyonu</a></li>
   </ul>
 </div>
+

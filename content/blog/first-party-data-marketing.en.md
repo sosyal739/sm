@@ -1,4 +1,4 @@
----
+﻿---
 slug: "first-party-data-marketing"
 lang: "en"
 title: "Cookie-less Advertising: Prepare for the Future with 1st-Party Data"

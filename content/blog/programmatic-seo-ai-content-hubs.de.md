@@ -1,4 +1,4 @@
----
+﻿---
 slug: "programmatic-seo-ai-content-hubs"
 lang: "de"
 title: "Programmatic SEO & KI-Content Hubs: Skalierung des organischen Traffics"
@@ -110,3 +110,4 @@ coverImage: "https://images.unsplash.com/photo-1504868584819-f8e8b4b6d7e3?w=600&
     <li><a href="/blog/deepseek-r1-vs-openai-o3-seo-copywriting">DeepSeek-R1 & o3 KI-Modelle im SEO-Einsatz</a></li>
   </ul>
 </div>
+

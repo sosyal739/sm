@@ -1,4 +1,4 @@
----
+﻿---
 slug: "server-side-tracking-capi-guide"
 lang: "en"
 title: "Server-Side Tracking and Conversions API (CAPI) Ultimate Guide"
@@ -291,3 +291,4 @@ coverImage: "https://images.unsplash.com/photo-1558494949-ef010cbdcc31?w=600&h=3
     <li><a href="/en/services/seo">Professional SEO and Generative Engine Optimization Services</a></li>
   </ul>
 </div>
+

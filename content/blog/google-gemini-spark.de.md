@@ -1,4 +1,4 @@
----
+﻿---
 slug: "google-gemini-spark"
 lang: "de"
 title: "Google Gemini Spark: Ihr persönlicher 24/7-Hintergrund-KI-Agent"

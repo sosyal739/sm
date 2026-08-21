@@ -1,4 +1,4 @@
----
+﻿---
 slug: "ai-agentic-workflow-digital-marketing-2026"
 lang: "en"
 title: "Agentic AI Workflows: Scaling Digital Marketing Automation with Autonomous AI Agents"
@@ -110,3 +110,4 @@ coverImage: "https://images.unsplash.com/photo-1507925921958-8a62f3d1a50d?w=600&
     <li><a href="/blog/server-side-tracking-first-party-ai-attribution">Server-Side Tracking & AI Attribution Models</a></li>
   </ul>
 </div>
+

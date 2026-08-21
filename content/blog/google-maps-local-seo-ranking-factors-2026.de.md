@@ -1,4 +1,4 @@
----
+﻿---
 slug: "google-maps-local-seo-ranking-factors-2026"
 lang: "de"
 title: "Google Maps SEO 2026: Top-Rankings im Local 3-Pack"
@@ -123,3 +123,4 @@ coverImage: "https://images.unsplash.com/photo-1526778548025-fa2f459cd5c1?w=600&
     <li><a href="/blog/google-maps-local-seo-guide">Der vollständige Google Maps Local SEO Leitfaden</a></li>
   </ul>
 </div>
+

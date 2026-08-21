@@ -1,4 +1,4 @@
----
+﻿---
 slug: "google-seo-ranking-factors-2026"
 lang: "en"
 title: "Google SEO and E-E-A-T in the AI Era: 2026 Ranking Factors"
@@ -177,3 +177,4 @@ coverImage: "https://images.unsplash.com/photo-1572021335469-31706a17aaef?w=600&
               <li><a href="/blog/google-ads-roi-tracking">Google Ads Conversion Tracking and ROI Optimization</a></li>
             </ul>
           </div>
+

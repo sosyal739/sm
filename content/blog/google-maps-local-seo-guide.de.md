@@ -1,4 +1,4 @@
----
+﻿---
 slug: "google-maps-local-seo-guide"
 lang: "de"
 title: "Local Maps SEO: Sichtbarkeit bei Google Maps erhöhen"
@@ -209,3 +209,4 @@ coverImage: "https://images.unsplash.com/photo-1524661135-423995f22d0b?w=600&h=3
             <li><a href="/de/dienstleistungen/google-ads">Google Ads Management von Salih Maral</a></li>
           </ul>
         </div>
+

@@ -1,4 +1,4 @@
----
+﻿---
 slug: "tiktok-shop-social-commerce"
 lang: "de"
 title: "TikTok Shop Guide: Geheimnisse des Direktverkaufs über Social Media"

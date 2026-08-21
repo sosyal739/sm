@@ -1,4 +1,4 @@
----
+﻿---
 slug: "pinterest-ads-ecommerce-scaling"
 lang: "en"
 title: "Pinterest Ads for E-Commerce: Advanced Scaling and Conversion Guide"
@@ -243,3 +243,4 @@ coverImage: "https://images.unsplash.com/photo-1611162617213-7d7a39e9b1d7?w=600&
     <li><a href="/en/services/seo">Professional SEO Services by Salih Maral</a></li>
   </ul>
 </div>
+

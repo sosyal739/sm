@@ -1,4 +1,4 @@
----
+﻿---
 slug: "meta-advantage-plus-creative-ai-2026"
 lang: "tr"
 title: "Meta Advantage+ 2026: E-Ticaret Reklam Ölçekleme"
@@ -126,3 +126,4 @@ coverImage: "https://images.unsplash.com/photo-1611162617474-5b21e879e113?w=600&
     <li><a href="/blog/conversion-rate-optimization-ai-personalization">Dönüşüm Oranı Optimizasyonu (CRO) ve Açılış Sayfası Tasarımı</a></li>
   </ul>
 </div>
+

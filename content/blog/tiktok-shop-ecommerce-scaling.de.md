@@ -1,4 +1,4 @@
----
+﻿---
 slug: "tiktok-shop-ecommerce-scaling"
 lang: "de"
 title: "TikTok Shop im E-Commerce: Integration und Verkaufsstrategien"
@@ -181,3 +181,4 @@ coverImage: "https://images.unsplash.com/photo-1557804506-669a67965ba0?w=600&h=3
     <li><a href="/de/dienstleistungen/meta-ads">Unsere Meta Ads Dienstleistungen im Überblick</a></li>
   </ul>
 </div>
+

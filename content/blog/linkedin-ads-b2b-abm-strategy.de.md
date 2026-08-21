@@ -1,4 +1,4 @@
----
+﻿---
 slug: "linkedin-ads-b2b-abm-strategy"
 lang: "de"
 title: "B2B Account-Based Marketing (ABM) mit LinkedIn Ads"
@@ -210,3 +210,4 @@ coverImage: "https://images.unsplash.com/photo-1579389083078-4e7018379f7e?w=600&
     <li><a href="/de/dienstleistungen/seo">SEO Dienstleistungen für nachhaltiges Wachstum</a></li>
   </ul>
 </div>
+

@@ -116,5 +116,6 @@ python .agents/skills/maral-seo/scripts/maral_audit.py https://salihmaral.de</co
 <div class="cta-box" style="background: #f8fafc; border: 2px solid #e2e8f0; border-radius: 1.5rem; padding: 2rem; margin-top: 2.5rem; text-align: center;">
   <h3 style="font-size: 1.5rem; font-weight: 800; color: #0f172a; margin-bottom: 0.75rem;">Web Sitenizin SEO & GEO Potansiyelini Birlikte Açığa Çıkaralım</h3>
   <p style="color: #475569; font-size: 1rem; max-width: 600px; margin: 0 auto 1.5rem auto;">Google aramalarında 1. sıra hakimiyeti ve yapay zeka arama motorlarında lider otorite olmak için Salih Maral ile iletişime geçin.</p>
-  <a href="https://wa.me/491724106463" target="_blank" style="display: inline-block; background: #4285F4; color: white; font-weight: 700; padding: 0.85rem 2rem; border-radius: 1rem; text-decoration: none; box-shadow: 0 10px 25px -5px rgba(66, 133, 244, 0.4);">Ücretsiz SEO & Büyüme Analizi Alın ➔</a>
+  <a href="https://salihmaral.de/tr#contact" target="_blank" style="display: inline-block; background: #4285F4; color: white; font-weight: 700; padding: 0.85rem 2rem; border-radius: 1rem; text-decoration: none; box-shadow: 0 10px 25px -5px rgba(66, 133, 244, 0.4);">Ücretsiz SEO & Büyüme Analizi Alın ➔</a>
 </div>
+

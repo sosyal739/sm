@@ -1,4 +1,4 @@
----
+﻿---
 slug: "ga4-custom-events-funnels"
 lang: "de"
 title: "GA4 benutzerdefinierte Ereignisse und Conversion-Funnel"
@@ -237,3 +237,4 @@ coverImage: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=600&h=3
     <li><a href="/de/dienstleistungen/seo">SEO Dienstleistungen für nachhaltiges Wachstum</a></li>
   </ul>
 </div>
+

@@ -1,4 +1,4 @@
----
+﻿---
 slug: "first-party-data-marketing"
 lang: "de"
 title: "Werbung ohne Cookies: Bereiten Sie sich mit First-Party-Daten auf die Zukunft vor"

@@ -1,4 +1,4 @@
----
+﻿---
 slug: "google-ai-overviews-geo-ranking-strategy"
 lang: "tr"
 title: "Google AI Overviews (SGE) ve Princeton GEO Algoritmalarında 1. Sıraya Çıkma Stratejisi"
@@ -110,3 +110,4 @@ coverImage: "https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?w=600&
     <li><a href="/blog/google-seo-ranking-factors-2026">2026 Google SEO Sıralama Faktörleri Rehberi</a></li>
   </ul>
 </div>
+

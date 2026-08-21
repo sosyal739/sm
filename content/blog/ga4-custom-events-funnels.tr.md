@@ -1,4 +1,4 @@
----
+﻿---
 slug: "ga4-custom-events-funnels"
 lang: "tr"
 title: "GA4 Özel Etkinlikler ve Gelişmiş Dönüşüm Hunileri Optimizasyonu"
@@ -244,3 +244,4 @@ window.dataLayer.push({
               <li><a href="/tr/hizmetler/seo">Salih Maral Arama Motoru Optimizasyonu (SEO) Hizmetleri</a></li>
             </ul>
           </div>
+

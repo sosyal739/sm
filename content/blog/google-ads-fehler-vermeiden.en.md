@@ -1,4 +1,4 @@
----
+﻿---
 slug: "google-ads-fehler-vermeiden"
 lang: "en"
 title: "10 Most Common Google Ads Mistakes and How to Avoid Them"
@@ -185,3 +185,4 @@ coverImage: "https://images.unsplash.com/photo-1450101499163-c8848c66ca85?w=600&
 <div class="lead">
   <p>Avoiding these 10 most common Google Ads mistakes is the crucial step to making your advertising budget profitable. Do you need assistance analyzing and optimizing your account? Contact <strong>Salih Maral</strong> for a professional audit, and let's unlock the full potential of your campaigns together.</p>
 </div>
+

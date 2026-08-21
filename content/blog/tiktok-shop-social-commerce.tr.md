@@ -1,4 +1,4 @@
----
+﻿---
 slug: "tiktok-shop-social-commerce"
 lang: "tr"
 title: "TikTok Shop Rehberi: Sosyal Medyadan Doğrudan Satış Yapmanın Sırları"

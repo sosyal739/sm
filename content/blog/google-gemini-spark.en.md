@@ -1,4 +1,4 @@
----
+﻿---
 slug: "google-gemini-spark"
 lang: "en"
 title: "Google Gemini Spark: Your 24/7 Background Personal AI Agent"

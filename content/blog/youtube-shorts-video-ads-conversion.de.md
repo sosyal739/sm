@@ -1,4 +1,4 @@
----
+﻿---
 slug: "youtube-shorts-video-ads-conversion"
 lang: "de"
 title: "YouTube Shorts und Video Ads: Performance-orientierte Conversion-Kampagnen"
@@ -213,3 +213,4 @@ coverImage: "https://images.unsplash.com/photo-1611162618071-b39a2ec055fb?w=600&
             <li><a href="/blog/ga4-custom-events-funnels">GA4 Custom Events & Conversion Funnels einrichten</a></li>
           </ul>
         </div>
+

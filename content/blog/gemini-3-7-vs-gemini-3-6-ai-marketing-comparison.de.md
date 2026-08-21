@@ -1,4 +1,4 @@
----
+﻿---
 slug: "gemini-3-7-vs-gemini-3-6-ai-marketing-comparison"
 lang: "de"
 title: "Gemini 3.7 vs. 3.6: Hybrides Denken im Marketing & SEO"
@@ -155,3 +155,4 @@ coverImage: "https://images.unsplash.com/photo-1677442136019-21780ecad995?w=600&
     <li><a href="/blog/server-side-tracking-first-party-ai-attribution">Server-Side Tracking & First-Party Data für AI-Attribution</a></li>
   </ul>
 </div>
+

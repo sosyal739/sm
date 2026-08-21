@@ -1,4 +1,4 @@
----
+﻿---
 slug: "google-ads-pmax-optimization"
 lang: "tr"
 title: "Google Ads PMax Optimizasyonu ile ROAS'ınızı 3 Katına Çıkarın"

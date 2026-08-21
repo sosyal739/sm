@@ -1,4 +1,4 @@
----
+﻿---
 slug: "tiktok-shop-ecommerce-scaling"
 lang: "en"
 title: "TikTok Shop E-Commerce Integration and Sales Scaling Guide"
@@ -196,3 +196,4 @@ coverImage: "https://images.unsplash.com/photo-1557804506-669a67965ba0?w=600&h=3
             <li><a href="/blog/google-ads-pmax-optimization">Triple Your ROAS with Google Ads PMax Optimization</a></li>
           </ul>
         </div>
+

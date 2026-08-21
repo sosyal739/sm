@@ -1,4 +1,4 @@
----
+﻿---
 slug: "ai-content-marketing-scale"
 lang: "tr"
 title: "Yapay Zeka ile İçerik Üretimi: Kaliteden Ödün Vermeden Organik Trafiği Ölçeklendirin"

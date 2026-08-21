@@ -1,4 +1,4 @@
----
+﻿---
 slug: "google-gemini-spark"
 lang: "tr"
 title: "Google Gemini Spark: Arka Planda 7/24 Çalışan Kişisel Yapay Zeka Ajanınız"

@@ -1,4 +1,4 @@
----
+﻿---
 slug: "conversion-rate-optimization-ai-personalization"
 lang: "tr"
 title: "Yapay Zeka Destekli Kişiselleştirme ve A/B Testleri ile Dönüşüm Oranı Optimizasyonu (CRO)"
@@ -110,3 +110,4 @@ coverImage: "https://images.unsplash.com/photo-1551836022-d5d88e9218df?w=600&h=3
     <li><a href="/blog/google-gemini-3-6-seo-ads-automation">Google Gemini 3.6 ile Ads Otomasyonu</a></li>
   </ul>
 </div>
+

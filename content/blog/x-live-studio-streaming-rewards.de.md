@@ -1,4 +1,4 @@
----
+﻿---
 slug: "x-live-studio-streaming-rewards"
 lang: "de"
 title: "Was ist X Live Studio? Wie Sie den 1-Million-Dollar-Streamer-Preis gewinnen"

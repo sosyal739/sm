@@ -1,4 +1,4 @@
----
+﻿---
 slug: "b2b-lead-generation-linkedin-ai-agents"
 lang: "tr"
 title: "LinkedIn Ads ve Otonom AI Ajanları ile B2B Müşteri Kazanımı ve ABM Stratejileri"
@@ -110,3 +110,4 @@ coverImage: "https://images.unsplash.com/photo-1557804506-669a67965ba0?w=600&h=3
     <li><a href="/blog/gemini-3-6-vs-claude-chatgpt-ai-comparison">Gemini 3.6, Claude 3.7 ve ChatGPT 4.5 Kıyaslaması</a></li>
   </ul>
 </div>
+

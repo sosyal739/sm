@@ -1,4 +1,4 @@
----
+﻿---
 slug: "gemini-3-7-vs-gemini-3-6-ai-marketing-comparison"
 lang: "tr"
 title: "Gemini 3.7 vs. 3.6: Pazarlama ve SEO Kıyaslaması"
@@ -155,3 +155,4 @@ coverImage: "https://images.unsplash.com/photo-1677442136019-21780ecad995?w=600&
     <li><a href="/blog/server-side-tracking-first-party-ai-attribution">Server-Side Tracking ve Birinci Taraf Veri İle AI İlişkilendirme</a></li>
   </ul>
 </div>
+

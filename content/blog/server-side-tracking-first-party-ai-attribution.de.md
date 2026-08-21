@@ -1,4 +1,4 @@
----
+﻿---
 slug: "server-side-tracking-first-party-ai-attribution"
 lang: "de"
 title: "Server-Side Tracking (sGTM & CAPI) & KI-Attributionsmodelle: Die Anleitung"
@@ -110,3 +110,4 @@ coverImage: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=600&h=3
     <li><a href="/blog/google-gemini-3-6-seo-ads-automation">Google Gemini 3.6 Kampagnenautomatisierung</a></li>
   </ul>
 </div>
+

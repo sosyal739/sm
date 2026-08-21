@@ -1,4 +1,4 @@
----
+﻿---
 slug: "google-sge-search-ads-strategy"
 lang: "de"
 title: "Google Search Generative Experience (SGE) und Suchanzeigen-Strategie"
@@ -181,3 +181,4 @@ coverImage: "https://images.unsplash.com/photo-1531297484001-80022131f5a1?w=600&
     <li><a href="/blog/google-ads-kosten-2026">Google Ads Kosten 2026 – Was kostet Google Ads?</a></li>
   </ul>
 </div>
+

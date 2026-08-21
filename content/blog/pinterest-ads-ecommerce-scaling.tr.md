@@ -1,4 +1,4 @@
----
+﻿---
 slug: "pinterest-ads-ecommerce-scaling"
 lang: "tr"
 title: "Pinterest Reklamları (Pinterest Ads) ile E-Ticaret Dönüşüm Optimizasyonu"
@@ -203,3 +203,4 @@ coverImage: "https://images.unsplash.com/photo-1611162617213-7d7a39e9b1d7?w=600&
     <li><a href="/blog/google-ads-roi-tracking">Google Ads ROI Tracking: Reklam Getirinizi Doğru Ölçümleme Yolları</a></li>
   </ul>
 </div>
+

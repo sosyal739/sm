@@ -1,4 +1,4 @@
----
+﻿---
 slug: "server-side-tracking-capi-guide"
 lang: "tr"
 title: "Sunucu Tarafı İzleme (Server-Side Tracking) ve Conversions API (CAPI) Rehberi"
@@ -173,3 +173,4 @@ coverImage: "https://images.unsplash.com/photo-1558494949-ef010cbdcc31?w=600&h=3
               <li><a href="/tr/hizmetler/seo">Salih Maral Profesyonel SEO Hizmetleri</a></li>
             </ul>
           </div>
+

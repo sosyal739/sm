@@ -1,4 +1,4 @@
----
+﻿---
 slug: "youtube-shorts-video-ads-conversion"
 lang: "en"
 title: "YouTube Shorts and Video Ads: Performance-Driven Conversion Campaigns"
@@ -198,3 +198,4 @@ coverImage: "https://images.unsplash.com/photo-1611162618071-b39a2ec055fb?w=600&
             <li><a href="/blog/google-ads-fehler-vermeiden">The 7 Most Common Google Ads Mistakes</a></li>
           </ul>
         </div>
+

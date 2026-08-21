@@ -1,4 +1,4 @@
----
+﻿---
 slug: "meta-advantage-plus-ai-creative-scaling"
 lang: "en"
 title: "Meta Advantage+ & AI Creative Scaling for E-Commerce Facebook & Instagram Ads"
@@ -110,3 +110,4 @@ coverImage: "https://images.unsplash.com/photo-1432888622747-4eb9a8efeb07?w=600&
     <li><a href="/blog/server-side-tracking-first-party-ai-attribution">Meta Conversions API (CAPI) & Server-Side Tracking Guide</a></li>
   </ul>
 </div>
+

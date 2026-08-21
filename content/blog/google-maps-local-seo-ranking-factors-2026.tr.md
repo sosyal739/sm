@@ -1,4 +1,4 @@
----
+﻿---
 slug: "google-maps-local-seo-ranking-factors-2026"
 lang: "tr"
 title: "Google Haritalar SEO 2026: Local 3-Pack Zirvesi"
@@ -123,3 +123,4 @@ coverImage: "https://images.unsplash.com/photo-1526778548025-fa2f459cd5c1?w=600&
     <li><a href="/blog/google-maps-local-seo-guide">Google Haritalar Kapsamlı Yerel SEO Rehberi</a></li>
   </ul>
 </div>
+

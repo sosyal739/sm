@@ -1,4 +1,4 @@
----
+﻿---
 slug: "deepseek-r1-vs-openai-o3-seo-copywriting"
 lang: "en"
 title: "DeepSeek-R1 vs OpenAI o3: Impact of Reasoning AI Models on SEO & Copywriting"
@@ -107,3 +107,4 @@ coverImage: "https://images.unsplash.com/photo-1620712943543-bcc4688e7485?w=600&
     <li><a href="/blog/ai-agentic-workflow-digital-marketing-2026">Agentic AI Workflows in Digital Marketing</a></li>
   </ul>
 </div>
+

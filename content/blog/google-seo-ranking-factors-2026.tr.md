@@ -1,4 +1,4 @@
----
+﻿---
 slug: "google-seo-ranking-factors-2026"
 lang: "tr"
 title: "Yapay Zeka Çağında Google SEO ve E-E-A-T Faktörleri"
@@ -263,3 +263,4 @@ Arama motorlarında sürdürülebilir başarı elde etmek ve markanızı gelece�
     <li><a href="/blog/local-seo-google-maps">Yerel SEO ve Google Haritalar Optimizasyonu ile Trafiğinizi Artırın</a></li>
   </ul>
 </div>
+

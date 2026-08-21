@@ -1,4 +1,4 @@
----
+﻿---
 slug: "x-twitter-ads"
 lang: "tr"
 title: "X (Twitter) Reklamları: Gerçek Zamanlı Pazarlama"

@@ -1,4 +1,4 @@
----
+﻿---
 slug: "server-side-gtm-meta-capi-setup-2026"
 lang: "en"
 title: "Server-Side GTM & Meta CAPI: Prevent 30% Data Loss"
@@ -136,3 +136,4 @@ coverImage: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=600&h=3
     <li><a href="/blog/geo-ai-search-citation-factors-2026">GEO & AI Search Citation Factors 2026</a></li>
   </ul>
 </div>
+

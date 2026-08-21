@@ -1,4 +1,4 @@
----
+﻿---
 slug: "google-seo-ranking-factors-2026"
 lang: "de"
 title: "Google SEO und E-E-A-T im KI-Zeitalter: Ranking-Faktoren 2026"
@@ -205,3 +205,4 @@ coverImage: "https://images.unsplash.com/photo-1572021335469-31706a17aaef?w=600&
     <li><a href=\"/blog/server-side-tracking-capi-guide\">Der ultimative Guide für Server-Side Tracking & Conversions API</a></li>
   </ul>
 </div>
+

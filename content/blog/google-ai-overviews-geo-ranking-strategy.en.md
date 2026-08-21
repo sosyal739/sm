@@ -1,4 +1,4 @@
----
+﻿---
 slug: "google-ai-overviews-geo-ranking-strategy"
 lang: "en"
 title: "Google AI Overviews (SGE) & Princeton GEO: Strategy for #1 Ranking in AI Search Engines"
@@ -110,3 +110,4 @@ coverImage: "https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?w=600&
     <li><a href="/blog/google-seo-ranking-factors-2026">2026 Google SEO Ranking Factors Guide</a></li>
   </ul>
 </div>
+

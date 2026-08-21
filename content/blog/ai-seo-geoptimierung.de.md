@@ -1,4 +1,4 @@
----
+﻿---
 slug: "ai-seo-geoptimierung"
 lang: "de"
 title: "SEO für KI-Suchmaschinen (GEO) Leitfaden 2026"

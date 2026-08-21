@@ -1,4 +1,4 @@
----
+﻿---
 slug: "first-party-data-marketing"
 lang: "tr"
 title: "Çerezsiz Reklamcılık: Birinci Taraf Veri (1st-Party Data) ile Geleceğe Hazırlanın"

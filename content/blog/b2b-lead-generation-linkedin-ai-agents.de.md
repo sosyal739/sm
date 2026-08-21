@@ -1,4 +1,4 @@
----
+﻿---
 slug: "b2b-lead-generation-linkedin-ai-agents"
 lang: "de"
 title: "LinkedIn Ads & KI-Agenten: B2B Lead-Generierung & ABM-Strategien"
@@ -110,3 +110,4 @@ coverImage: "https://images.unsplash.com/photo-1557804506-669a67965ba0?w=600&h=3
     <li><a href="/blog/gemini-3-6-vs-claude-chatgpt-ai-comparison">Gemini 3.6 vs Claude 3.7 vs ChatGPT 4.5 Vergleich</a></li>
   </ul>
 </div>
+

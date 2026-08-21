@@ -1,4 +1,4 @@
----
+﻿---
 slug: "google-ads-pmax-smart-bidding-guide-2026"
 lang: "de"
 title: "Google Ads PMax 2026: 7 Strategien gegen Budgetverlust"
@@ -131,3 +131,4 @@ coverImage: "https://images.unsplash.com/photo-1533750516457-a7f992034fec?w=600&
     <li><a href="/blog/google-ads-fehler-vermeiden">Die 10 häufigsten Google Ads Fehler vermeiden</a></li>
   </ul>
 </div>
+

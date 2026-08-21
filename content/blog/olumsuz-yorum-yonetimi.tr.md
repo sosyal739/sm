@@ -1,4 +1,4 @@
----
+﻿---
 slug: "olumsuz-yorum-yonetimi"
 lang: "tr"
 title: "Olumsuz Yorum Yönetimi: İtibarınızı Koruyun"

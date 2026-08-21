@@ -1,4 +1,4 @@
----
+﻿---
 slug: "meta-advantage-plus-shopping-optimization"
 lang: "tr"
 title: "Meta Advantage+ Alışveriş Kampanyaları (ASC) Optimizasyon Rehberi"
@@ -210,3 +210,4 @@ coverImage: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=600&
     <li><a href="/blog/google-ads-nedir">Google Ads Nedir? Reklam Bütçenizi Doğru Yönetme Yolları</a></li>
   </ul>
 </div>
+

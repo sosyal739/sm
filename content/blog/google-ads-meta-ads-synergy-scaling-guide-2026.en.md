@@ -92,5 +92,6 @@ coverImage: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=600&
 <div class="cta-box" style="background: #f8fafc; border: 2px solid #e2e8f0; border-radius: 1.5rem; padding: 2rem; margin-top: 2.5rem; text-align: center;">
   <h3 style="font-size: 1.5rem; font-weight: 800; color: #0f172a; margin-bottom: 0.75rem;">Scale Your Sales with Meta Ads & Google Ads Synergy</h3>
   <p style="color: #475569; font-size: 1rem; max-width: 600px; margin: 0 auto 1.5rem auto;">Get your advertising accounts audited by Salih Maral and receive a tailored, high-ROAS multi-channel growth blueprint.</p>
-  <a href="https://wa.me/491724106463" target="_blank" style="display: inline-block; background: #1877F2; color: white; font-weight: 700; padding: 0.85rem 2rem; border-radius: 1rem; text-decoration: none; box-shadow: 0 10px 25px -5px rgba(24, 119, 242, 0.4);">Request Free Multi-Channel ROAS Audit ➔</a>
+  <a href="https://salihmaral.de/en#contact" target="_blank" style="display: inline-block; background: #1877F2; color: white; font-weight: 700; padding: 0.85rem 2rem; border-radius: 1rem; text-decoration: none; box-shadow: 0 10px 25px -5px rgba(24, 119, 242, 0.4);">Request Free Multi-Channel ROAS Audit ➔</a>
 </div>
+

@@ -1,4 +1,4 @@
----
+﻿---
 slug: "meta-ads-beratung-skalierung"
 lang: "en"
 title: "Meta Ads Beratung: Professional Campaign Scaling and Audit Guide"
@@ -153,3 +153,4 @@ Expand your performance marketing knowledge with our in-depth guides:
 - [How to Build High-Converting Meta Retargeting Funnels](/en/blog/meta-ads-retargeting-funnels)
 - [Meta Advantage+ Shopping Campaigns Optimization Guide](/en/blog/meta-advantage-plus-shopping-optimization)
 - [Unifying First-Party Data for Performance Marketing](/en/blog/first-party-data-marketing)
+

@@ -1,4 +1,4 @@
----
+﻿---
 slug: "google-sge-search-ads-strategy"
 lang: "tr"
 title: "Google Arama Üretken Deneyimi (SGE) ve Arama Ağı Reklam Stratejileri"
@@ -180,3 +180,4 @@ coverImage: "https://images.unsplash.com/photo-1531297484001-80022131f5a1?w=600&
             <li><a href="/tr/blog/seo-stratejileri-2026">SEO Stratejileri 2026: Google'ın Yeni Algoritması</a></li>
           </ul>
         </div>
+

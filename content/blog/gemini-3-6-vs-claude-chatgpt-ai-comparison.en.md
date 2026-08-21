@@ -1,4 +1,4 @@
----
+﻿---
 slug: "gemini-3-6-vs-claude-chatgpt-ai-comparison"
 lang: "en"
 title: "Gemini 3.6 vs Claude 3.7 vs ChatGPT 4.5: Which AI Model is Best for SEO & Digital Marketing?"
@@ -131,3 +131,4 @@ coverImage: "https://images.unsplash.com/photo-1677442136019-21780ecad995?w=600&
     <li><a href="/blog/google-ai-overviews-geo-ranking-strategy">Google AI Overviews & Princeton GEO Ranking Strategies</a></li>
   </ul>
 </div>
+

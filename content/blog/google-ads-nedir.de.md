@@ -1,4 +1,4 @@
----
+﻿---
 slug: "google-ads-nedir"
 lang: "de"
 title: "Was ist Google Ads? Der ultimative Leitfaden 2026 — Salih Maral"

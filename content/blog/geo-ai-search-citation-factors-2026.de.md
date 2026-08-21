@@ -1,4 +1,4 @@
----
+﻿---
 slug: "geo-ai-search-citation-factors-2026"
 lang: "de"
 title: "GEO 2026: Zitations-Leitfaden für ChatGPT & Perplexity"
@@ -129,3 +129,4 @@ coverImage: "https://images.unsplash.com/photo-1504868584819-f8e8b4b6d7e3?w=600&
     <li><a href="/blog/server-side-tracking-first-party-ai-attribution">Server-Side Tracking & First-Party Data Attribution</a></li>
   </ul>
 </div>
+

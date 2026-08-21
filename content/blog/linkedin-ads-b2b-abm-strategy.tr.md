@@ -1,4 +1,4 @@
----
+﻿---
 slug: "linkedin-ads-b2b-abm-strategy"
 lang: "tr"
 title: "LinkedIn Ads ile B2B Hesap Tabanlı Pazarlama (ABM) Stratejileri"
@@ -236,3 +236,4 @@ coverImage: "https://images.unsplash.com/photo-1579389083078-4e7018379f7e?w=600&
               <li><a href="/tr/hizmetler/seo">Salih Maral Profesyonel SEO ve GEO Hizmetleri</a></li>
             </ul>
           </div>
+

@@ -1,4 +1,4 @@
----
+﻿---
 slug: "seo-stratejileri-2026"
 lang: "de"
 title: "SEO-Strategien 2026: Googles neuer Algorithmus"

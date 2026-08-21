@@ -1,4 +1,4 @@
----
+﻿---
 slug: "youtube-shorts-video-ads-conversion"
 lang: "tr"
 title: "YouTube Shorts ve Video Ads ile Performans Odaklı Dönüşüm Kampanyaları"
@@ -196,3 +196,4 @@ Kanca Şablonu 4: "Neden tüm başarılı Google Ads hesapları bu gizli stratej
     <li><a href="/tr/hizmetler/google-ads">Salih Maral Google Ads Reklam Yönetimi ve Danışmanlığı</a></li>
   </ul>
 </div>
+

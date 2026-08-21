@@ -1,4 +1,4 @@
----
+﻿---
 slug: "deepseek-r1-vs-openai-o3-seo-copywriting"
 lang: "tr"
 title: "DeepSeek-R1 ve OpenAI o3: Yapay Zeka Akıl Yürütme Modellerinin SEO ve İçerik Yazarlığına Etkisi"
@@ -107,3 +107,4 @@ coverImage: "https://images.unsplash.com/photo-1620712943543-bcc4688e7485?w=600&
     <li><a href="/blog/ai-agentic-workflow-digital-marketing-2026">Agentic AI İş Akışları ile Pazarlama Otomasyonu</a></li>
   </ul>
 </div>
+

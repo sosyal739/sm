@@ -1,4 +1,4 @@
----
+﻿---
 slug: "meta-advantage-plus-ai-creative-scaling"
 lang: "tr"
 title: "Meta Advantage+ Kampanyaları ve Yapay Zeka Görsel Üretimi ile E-Ticarette Ölçeklenme"
@@ -110,3 +110,4 @@ coverImage: "https://images.unsplash.com/photo-1432888622747-4eb9a8efeb07?w=600&
     <li><a href="/blog/server-side-tracking-first-party-ai-attribution">Meta Conversions API (CAPI) ve Sunucu Taraflı Takip Guide</a></li>
   </ul>
 </div>
+

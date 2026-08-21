@@ -1,4 +1,4 @@
----
+﻿---
 slug: "pinterest-ads-visual-marketing"
 lang: "tr"
 title: "Pinterest Reklamları ile E-Ticaret Sepet Ortalamasını 2x Katlayın"

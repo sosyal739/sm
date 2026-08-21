@@ -1,4 +1,4 @@
----
+﻿---
 slug: "google-ads-nedir"
 lang: "tr"
 title: "Google Ads Nedir? 2026 Kapsamlı Rehber — Salih Maral"

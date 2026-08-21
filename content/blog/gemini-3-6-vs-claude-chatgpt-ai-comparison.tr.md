@@ -1,4 +1,4 @@
----
+﻿---
 slug: "gemini-3-6-vs-claude-chatgpt-ai-comparison"
 lang: "tr"
 title: "Gemini 3.6, Claude 3.7 ve ChatGPT 4.5 Kıyaslaması: Dijital Pazarlama ve SEO için En İyi Yapay Zeka Hangisi?"
@@ -131,3 +131,4 @@ coverImage: "https://images.unsplash.com/photo-1677442136019-21780ecad995?w=600&
     <li><a href="/blog/google-ai-overviews-geo-ranking-strategy">Google AI Overviews ve Princeton GEO Stratejileri</a></li>
   </ul>
 </div>
+

@@ -1,4 +1,4 @@
----
+﻿---
 slug: "seo-stratejileri-2026"
 lang: "tr"
 title: "SEO Stratejileri 2026: Google'ın Yeni Algoritması"

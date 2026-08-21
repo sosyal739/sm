@@ -1,4 +1,4 @@
----
+﻿---
 slug: "local-seo-google-maps"
 lang: "de"
 title: "Lokale SEO und Google Maps: Steigern Sie Ihre regionalen Verkäufe um 300 %"

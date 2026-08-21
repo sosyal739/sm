@@ -1,4 +1,4 @@
----
+﻿---
 slug: "google-ads-pmax-optimization"
 lang: "en"
 title: "Triple Your ROAS with Google Ads PMax Optimization"

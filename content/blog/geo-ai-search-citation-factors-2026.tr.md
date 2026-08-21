@@ -1,4 +1,4 @@
----
+﻿---
 slug: "geo-ai-search-citation-factors-2026"
 lang: "tr"
 title: "GEO 2026: ChatGPT ve Perplexity'de Zirveye Çıkma"
@@ -129,3 +129,4 @@ coverImage: "https://images.unsplash.com/photo-1504868584819-f8e8b4b6d7e3?w=600&
     <li><a href="/blog/server-side-tracking-first-party-ai-attribution">Server-Side Tracking ve Birinci Taraf Veri Stratejisi</a></li>
   </ul>
 </div>
+

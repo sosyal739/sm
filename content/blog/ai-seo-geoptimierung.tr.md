@@ -1,4 +1,4 @@
----
+﻿---
 slug: "ai-seo-geoptimierung"
 lang: "tr"
 title: "Yapay Zeka Arama Motorları İçin SEO (GEO) Rehberi 2026"

@@ -1,4 +1,4 @@
----
+﻿---
 slug: "meta-advantage-plus-shopping-optimization"
 lang: "de"
 title: "Meta Advantage+ Shopping Campaigns (ASC) optimieren"
@@ -197,3 +197,4 @@ coverImage: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=600&
             <li><a href="/blog/meta-ads-retargeting-funnels">Meta Ads Retargeting Funnels: Bestandskunden reaktivieren</a></li>
           </ul>
         </div>
+

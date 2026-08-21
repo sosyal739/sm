@@ -1,4 +1,4 @@
----
+﻿---
 slug: "meta-ads-beratung-skalierung"
 lang: "tr"
 title: "Meta Ads Danışmanlığı (Beratung) ve Kampanya Ölçekleme Stratejileri"
@@ -179,3 +179,4 @@ coverImage: "https://images.unsplash.com/photo-1551836022-d5d88e9218df?w=600&h=3
     <li><a href="/blog/ga4-custom-events-funnels">Google Analytics 4 (GA4) Özel Olaylar ve Dönüşüm Hunileri Analizi</a></li>
   </ul>
 </div>
+

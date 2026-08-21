@@ -1,4 +1,4 @@
----
+﻿---
 slug: "pinterest-ads-ecommerce-scaling"
 lang: "de"
 title: "Pinterest Ads im E-Commerce: Skalierung und Conversion-Optimierung"
@@ -223,3 +223,4 @@ coverImage: "https://images.unsplash.com/photo-1611162617213-7d7a39e9b1d7?w=600&
     <li><a href="/blog/ga4-custom-events-funnels">GA4 Custom Events & Funnels: So analysieren Sie Ihr Nutzerverhalten richtig</a></li>
   </ul>
 </div>
+

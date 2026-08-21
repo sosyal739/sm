@@ -1,4 +1,4 @@
----
+﻿---
 slug: "x-live-studio-streaming-rewards"
 lang: "tr"
 title: "X Live Studio Nedir? 1 Milyon Dolarlık Yayıncı Ödülünü Nasıl Kazanırsınız?"

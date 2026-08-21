@@ -1,4 +1,4 @@
----
+﻿---
 slug: "google-gemini-3-6-seo-ads-automation"
 lang: "de"
 title: "Google Gemini 3.6 für Google Ads Kampagnenmanagement & SEO Automatisierung"
@@ -111,3 +111,4 @@ coverImage: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=600&h=3
     <li><a href="/blog/google-seo-ranking-factors-2026">Google SEO Ranking Faktoren 2026</a></li>
   </ul>
 </div>
+

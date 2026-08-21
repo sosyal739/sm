@@ -1,4 +1,4 @@
----
+﻿---
 slug: "olumsuz-yorum-yonetimi"
 lang: "de"
 title: "Bewertungsmanagement: Schützen Sie Ihren Ruf"
