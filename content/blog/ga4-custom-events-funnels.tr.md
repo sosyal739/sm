@@ -1,7 +1,7 @@
 ﻿---
 slug: "ga4-custom-events-funnels"
 lang: "tr"
-title: "GA4 Özel Etkinlikler ve Gelişmiş Dönüşüm Hunileri Optimizasyonu"
+title: "GA4'te Özel Dönüşüm Hunileri (Funnels) Nasıl Kurulur? (Rehber)"
 excerpt: "Google Analytics 4'te standart dışı kullanıcı hareketlerini izleyin. Salih Maral, gelişmiş huni analiziyle veriyi kazanca dönüştürme yollarını paylaşıyor."
 category: "Tracking"
 date: "2026-07-16"
@@ -244,4 +244,5 @@ window.dataLayer.push({
               <li><a href="/tr/hizmetler/seo">Salih Maral Arama Motoru Optimizasyonu (SEO) Hizmetleri</a></li>
             </ul>
           </div>
+
 

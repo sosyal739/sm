@@ -1,7 +1,7 @@
 ﻿---
 slug: "server-side-gtm-meta-capi-setup-2026"
 lang: "en"
-title: "Server-Side GTM & Meta CAPI: Prevent 30% Data Loss"
+title: "How to Set Up Server-Side GTM & Meta CAPI Step-by-Step in 2026"
 excerpt: "Complete practical guide to server-side tracking. Overcome iOS restrictions, ad-blockers, and privacy barriers with deterministic event deduplication."
 category: "Server-Side Tracking"
 date: "2026-08-14"
@@ -136,4 +136,5 @@ coverImage: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=600&h=3
     <li><a href="/blog/geo-ai-search-citation-factors-2026">GEO & AI Search Citation Factors 2026</a></li>
   </ul>
 </div>
+
 

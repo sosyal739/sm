@@ -1,7 +1,7 @@
 ﻿---
 slug: "geo-ai-search-citation-factors-2026"
 lang: "de"
-title: "GEO 2026: Zitations-Leitfaden für ChatGPT & Perplexity"
+title: "Wie wird man die primäre Quelle in ChatGPT Search & Perplexity? (GEO 2026)"
 excerpt: "Wie Sie Ihre Marke in KI-generierten Antworten als primäre Quelle positionieren. Princeton KDD 2024 Ranking-Faktoren und erprobte GEO-Strategien von Salih Maral."
 category: "SEO & GEO"
 date: "2026-08-14"
@@ -129,4 +129,5 @@ coverImage: "https://images.unsplash.com/photo-1504868584819-f8e8b4b6d7e3?w=600&
     <li><a href="/blog/server-side-tracking-first-party-ai-attribution">Server-Side Tracking & First-Party Data Attribution</a></li>
   </ul>
 </div>
+
 

@@ -1,7 +1,7 @@
 ﻿---
 slug: "olumsuz-yorum-yonetimi"
 lang: "tr"
-title: "Olumsuz Yorum Yönetimi: İtibarınızı Koruyun"
+title: "Google Haritalar ve Trustpilot'ta Olumsuz Yorumlar Nasıl Silinir? (Kesin Çözüm)"
 excerpt: "Yorum silme süreçleri hakkında bilmeniz gerekenler. İtibarınızı yönetin."
 category: "İtibar Yönetimi"
 date: "2026-01-28"
@@ -80,3 +80,4 @@ coverImage: "https://images.unsplash.com/photo-1556745757-8d76bdb6984b?w=600&h=3
         <h2>🚀 Sonuç</h2>
         <p>Online itibarınız işletmenizin en değerli varlıklarından biri. Haksız yorumlarla mücadele edin ve pozitif itibar oluşturun!</p>
       
+

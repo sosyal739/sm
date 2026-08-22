@@ -1,7 +1,7 @@
 ﻿---
 slug: "server-side-gtm-meta-capi-setup-2026"
 lang: "tr"
-title: "Server-Side GTM & Meta CAPI: %30 Veri Kaybını Önleme"
+title: "Server-Side GTM ve Meta CAPI Kurulumu Nasıl Yapılır? (Adım Adım)"
 excerpt: "Sunucu taraflı takip ile kayıp dönüşümleri geri kazanın. iOS engellerini, ad-blocker'ları aşma, Event ID tekilleştirme ve Meta CAPI ile ROAS artırma rehberi."
 category: "Server-Side Tracking"
 date: "2026-08-14"
@@ -136,4 +136,5 @@ coverImage: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=600&h=3
     <li><a href="/blog/geo-ai-search-citation-factors-2026">GEO ve AI Arama Sıralama Faktörleri 2026</a></li>
   </ul>
 </div>
+
 

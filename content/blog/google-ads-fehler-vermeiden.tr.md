@@ -1,7 +1,7 @@
 ﻿---
 slug: "google-ads-fehler-vermeiden"
 lang: "tr"
-title: "En Sık Yapılan 10 Google Ads Hatası ve Nasıl Önlersiniz"
+title: "Google Ads'te Paranızı Çöpe Atan 7 Büyük Hata ve Çözümleri"
 excerpt: "Google Ads'de pahalı hatalardan kaçının. Salih Maral, reklam bütçenizi boşa harcayan en yaygın 10 hatayı ve bunları nasıl anında düzeltebileceğinizi gösteriyor."
 category: "Google Ads"
 date: "2026-07-14"
@@ -185,4 +185,5 @@ coverImage: "https://images.unsplash.com/photo-1450101499163-c8848c66ca85?w=600&
 <div class="lead">
   <p>En sık yapılan bu 10 Google Ads hatasından kaçınmak, reklam bütçenizi kârlı hale getirmenin en önemli adımıdır. Hesabınızı analiz etmek ve optimize etmek için yardıma mı ihtiyacınız var? Profesyonel bir denetim için <strong>Salih Maral</strong> ile iletişime geçin ve kampanyalarınızın tüm potansiyelini birlikte ortaya çıkaralım.</p>
 </div>
+
 

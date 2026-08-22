@@ -1,7 +1,7 @@
 ﻿---
 slug: "google-ads-pmax-optimization"
 lang: "de"
-title: "Verdreifachen Sie Ihren ROAS mit Google Ads PMax-Optimierung"
+title: "Wie optimiert man Google Ads Performance Max (PMax) Kampagnen 2026?"
 excerpt: "Entdecken Sie, wie Sie Ihr Budget um das 3-Fache erhöhen können."
 category: "Google Ads"
 date: "2026-03-15"
@@ -76,3 +76,4 @@ coverImage: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=600&h=3
         <h2>🚀 Fazit</h2>
         <p>PMax ist keine "Set-and-Forget"-Kampagne. Durch kontinuierliche Asset-Gruppen-Tests, Datenfeeds und strategische Segmentierung können Sie PMax in ein Conversion-Monster verwandeln.</p>
       
+

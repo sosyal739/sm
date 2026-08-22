@@ -1,7 +1,7 @@
 ﻿---
 slug: "server-side-tracking-capi-guide"
 lang: "tr"
-title: "Sunucu Tarafı İzleme (Server-Side Tracking) ve Conversions API (CAPI) Rehberi"
+title: "Meta Pixel Neden Satışları Eksik Sayıyor? Server-Side CAPI ile Veri Kaybını Sıfırlayın"
 excerpt: "Çerezsiz 2026 dünyasında veri kaybını durdurun. Salih Maral, GTM Server-Side ve Meta CAPI ile ölçümleme kalitesini artırma yollarını paylaşıyor."
 category: "Tracking"
 date: "2026-07-16"
@@ -173,4 +173,5 @@ coverImage: "https://images.unsplash.com/photo-1558494949-ef010cbdcc31?w=600&h=3
               <li><a href="/tr/hizmetler/seo">Salih Maral Profesyonel SEO Hizmetleri</a></li>
             </ul>
           </div>
+
 

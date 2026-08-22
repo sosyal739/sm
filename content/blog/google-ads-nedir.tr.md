@@ -1,7 +1,7 @@
 ﻿---
 slug: "google-ads-nedir"
 lang: "tr"
-title: "Google Ads Nedir? 2026 Kapsamlı Rehber — Salih Maral"
+title: "Google Ads Nedir ve Nasıl Çalışır? 2026 Başlangıç Rehberi"
 excerpt: "Google Ads, dünyanın en güçlü reklam platformudur. Salih Maral, 7 kampanya türünü, 2026 benchmark verilerini, maliyetleri ve adım adım kampanya oluşturma rehberini açıklıyor."
 category: "Google Ads"
 date: "2026-07-14"
@@ -161,3 +161,4 @@ coverImage: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=600&
 <div class="lead">
   <p>Google Ads, doğru yönetildiğinde işletmenizin büyüme motoruna dönüşen, ancak hatalı yapılandırıldığında bütçenizi hızla eritebilen karmaşık bir yapıdır. Rekabetin her geçen gün arttığı 2026 yılında yatırımlarınızı şansa bırakmayın. Reklam bütçenizi en yüksek kârlılığa dönüştürecek profesyonel stratejiler kurgulamak için bugün benimle iletişime geçin.</p>
 </div>
+

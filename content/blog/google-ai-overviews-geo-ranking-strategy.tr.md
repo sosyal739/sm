@@ -1,7 +1,7 @@
 ﻿---
 slug: "google-ai-overviews-geo-ranking-strategy"
 lang: "tr"
-title: "Google AI Overviews (SGE) ve Princeton GEO Algoritmalarında 1. Sıraya Çıkma Stratejisi"
+title: "Google AI Overviews'ta 1. Sırada Görünme Stratejisi (GEO Kılavuzu)"
 excerpt: "Google AI Overviews, Perplexity ve ChatGPT arama motorlarında markanızı öne çıkarmak için Princeton GEO (Generative Engine Optimization) tekniklerini uygulayın."
 category: "SEO"
 date: "2026-07-26"
@@ -110,4 +110,5 @@ coverImage: "https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?w=600&
     <li><a href="/blog/google-seo-ranking-factors-2026">2026 Google SEO Sıralama Faktörleri Rehberi</a></li>
   </ul>
 </div>
+
 

@@ -1,7 +1,7 @@
 ﻿---
 slug: "tiktok-shop-social-commerce"
 lang: "tr"
-title: "TikTok Shop Rehberi: Sosyal Medyadan Doğrudan Satış Yapmanın Sırları"
+title: "Sosyal Ticaretin Geleceği: TikTok Shop ile Ürün Satışı Rehberi"
 excerpt: "TikTok Shop ile sosyal ticaret. Bölgesel satışlarınızı %300 artırın."
 category: "TikTok Ads"
 date: "2026-03-20"
@@ -62,3 +62,4 @@ coverImage: "https://images.unsplash.com/photo-1542751371-adc38448a05e?w=600&h=3
         <h2>🚀 Sonuç</h2>
         <p>Sosyal medya artık sadece marka bilinirliği için değil, doğrudan satış için de kullanılıyor. TikTok Shop entegrasyonu ile Gen Z ve Y kuşağının cüzdanına en kısa yoldan ulaşın.</p>
       
+

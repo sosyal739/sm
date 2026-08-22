@@ -1,7 +1,7 @@
 ﻿---
 slug: "meta-advantage-plus-shopping-optimization"
 lang: "de"
-title: "Meta Advantage+ Shopping Campaigns (ASC) optimieren"
+title: "CPA senken in Meta Advantage+ Shopping Kampagnen: Praxis-Leitfaden"
 excerpt: "Vermeiden Sie Budgetverschwendung bei den KI-gestützten Meta ASC-Kampagnen. Salih Maral zeigt die besten Setups für maximalen ROAS."
 category: "Meta Ads"
 date: "2026-07-16"
@@ -197,4 +197,5 @@ coverImage: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=600&
             <li><a href="/blog/meta-ads-retargeting-funnels">Meta Ads Retargeting Funnels: Bestandskunden reaktivieren</a></li>
           </ul>
         </div>
+
 

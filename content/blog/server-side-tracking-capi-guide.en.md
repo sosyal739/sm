@@ -1,7 +1,7 @@
 ﻿---
 slug: "server-side-tracking-capi-guide"
 lang: "en"
-title: "Server-Side Tracking and Conversions API (CAPI) Ultimate Guide"
+title: "Why is Meta Pixel Missing Sales? Fix Tracking Loss with Server-Side CAPI"
 excerpt: "Stop data loss in a cookie-less world. Salih Maral shares how to configure GTM Server-Side and Meta CAPI to improve measurement quality."
 category: "Tracking"
 date: "2026-07-16"
@@ -291,4 +291,5 @@ coverImage: "https://images.unsplash.com/photo-1558494949-ef010cbdcc31?w=600&h=3
     <li><a href="/en/services/seo">Professional SEO and Generative Engine Optimization Services</a></li>
   </ul>
 </div>
+
 

@@ -1,7 +1,7 @@
 ﻿---
 slug: "server-side-tracking-capi-guide"
 lang: "de"
-title: "Server-Side Tracking und Conversions API (CAPI) Leitfaden"
+title: "Warum zählt das Meta Pixel falsch? Server-Side Tracking & CAPI Leitfaden"
 excerpt: "Stoppen Sie Datenverluste in einer cookie-freien Welt. Salih Maral erklärt GTM Server-Side und Meta CAPI für maximale Tracking-Qualität."
 category: "Tracking"
 date: "2026-07-16"
@@ -215,4 +215,5 @@ coverImage: "https://images.unsplash.com/photo-1558494949-ef010cbdcc31?w=600&h=3
     <li><a href="/de/dienstleistungen/seo">SEO Dienstleistungen für nachhaltiges Wachstum</a></li>
   </ul>
 </div>
+
 

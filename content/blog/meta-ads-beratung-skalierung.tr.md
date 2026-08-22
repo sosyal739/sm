@@ -1,7 +1,7 @@
 ﻿---
 slug: "meta-ads-beratung-skalierung"
 lang: "tr"
-title: "Meta Ads Danışmanlığı (Beratung) ve Kampanya Ölçekleme Stratejileri"
+title: "Meta Ads ile E-Ticarette Ciro Nasıl Ölçeklenir? (Advantage+ Taktikleri)"
 excerpt: "Reklam bütçelerinizi karlı bir şekilde ölçekleyin. Salih Maral, profesyonel Meta Ads danışmanlığı, hesap denetimi ve test kurgularını paylaşıyor."
 category: "Meta Ads"
 date: "2026-07-16"
@@ -179,4 +179,5 @@ coverImage: "https://images.unsplash.com/photo-1551836022-d5d88e9218df?w=600&h=3
     <li><a href="/blog/ga4-custom-events-funnels">Google Analytics 4 (GA4) Özel Olaylar ve Dönüşüm Hunileri Analizi</a></li>
   </ul>
 </div>
+
 

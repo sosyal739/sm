@@ -1,7 +1,7 @@
 ﻿---
 slug: "tiktok-shop-ecommerce-scaling"
 lang: "tr"
-title: "TikTok Shop E-Ticaret Entegrasyonu ve Satış Artırma Stratejileri"
+title: "TikTok Shop ile E-Ticarette Viral Satışlar Nasıl Yapılır?"
 excerpt: "TikTok Shop ile doğrudan satış kanalı oluşturun. Salih Maral, ürün entegrasyonu, içerik üretici iş birlikleri ve reklam kurgularını açıklıyor."
 category: "TikTok Ads"
 date: "2026-07-16"
@@ -168,4 +168,5 @@ coverImage: "https://images.unsplash.com/photo-1557804506-669a67965ba0?w=600&h=3
     <li><a href="/blog/server-side-tracking-capi-guide">Dönüşüm Kayıplarını Önlemek İçin Server-Side Tracking Kurulumu</a></li>
   </ul>
 </div>
+
 

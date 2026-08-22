@@ -1,7 +1,7 @@
 ﻿---
 slug: "olumsuz-yorum-yonetimi"
 lang: "en"
-title: "Review Management: Protect Your Reputation"
+title: "How to Remove Negative Google & Trustpilot Reviews (Definitive Guide)"
 excerpt: "Are unfair reviews on Google Maps and Trustpilot hurting your business? Everything about the removal process."
 category: "Reputation"
 date: "2026-01-28"
@@ -80,3 +80,4 @@ coverImage: "https://images.unsplash.com/photo-1556745757-8d76bdb6984b?w=600&h=3
         <h2>🚀 Conclusion</h2>
         <p>Your online reputation is one of your business's most valuable assets. Fight against unfair reviews and build a positive reputation!</p>
       
+

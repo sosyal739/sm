@@ -1,7 +1,7 @@
 ﻿---
 slug: "google-seo-ranking-factors-2026"
 lang: "de"
-title: "Google SEO und E-E-A-T im KI-Zeitalter: Ranking-Faktoren 2026"
+title: "Die 9 wichtigsten Google Ranking-Faktoren 2026 (Live-Fallstudie)"
 excerpt: "Die neuesten Google-Algorithmus-Updates und E-E-A-T. Salih Maral zeigt, wie Sie Autorität aufbauen und Top-Rankings erzielen."
 category: "SEO"
 date: "2026-07-16"
@@ -205,4 +205,5 @@ coverImage: "https://images.unsplash.com/photo-1572021335469-31706a17aaef?w=600&
     <li><a href=\"/blog/server-side-tracking-capi-guide\">Der ultimative Guide für Server-Side Tracking & Conversions API</a></li>
   </ul>
 </div>
+
 

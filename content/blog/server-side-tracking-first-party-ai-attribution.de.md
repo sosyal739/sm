@@ -1,7 +1,7 @@
 ﻿---
 slug: "server-side-tracking-first-party-ai-attribution"
 lang: "de"
-title: "Server-Side Tracking (sGTM & CAPI) & KI-Attributionsmodelle: Die Anleitung"
+title: "First-Party Data Tracking: Wie KI-Algorithmen nach iOS 14+ profitabel bleiben"
 excerpt: "Vermeiden Sie Datenverluste im Marketing 2026: Einrichtungs-Leitfaden für Server-Side Tracking, Conversions API (CAPI) und KI-gestützte Attribution."
 category: "Server-Side Tracking"
 date: "2026-07-26"
@@ -110,4 +110,5 @@ coverImage: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=600&h=3
     <li><a href="/blog/google-gemini-3-6-seo-ads-automation">Google Gemini 3.6 Kampagnenautomatisierung</a></li>
   </ul>
 </div>
+
 

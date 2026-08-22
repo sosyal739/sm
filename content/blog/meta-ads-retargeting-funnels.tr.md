@@ -1,7 +1,7 @@
 ﻿---
 slug: "meta-ads-retargeting-funnels"
 lang: "tr"
-title: "E-Ticaret İçin Meta Ads Yeniden Hedefleme Hunileri"
+title: "Sitenizi Terk Eden Müşteriyi Geri Kazanma: Meta Yeniden Pazarlama Rehberi"
 excerpt: "Yüksek dönüşümlü Meta Ads retargeting stratejileriyle kaybettiğiniz müşterileri geri kazanın."
 category: "Meta Ads"
 date: "2026-03-05"
@@ -62,3 +62,4 @@ coverImage: "https://images.unsplash.com/photo-1557804506-669a67965ba0?w=600&h=3
           <h2>🚀 Sonuç</h2>
           <p>Yeniden hedefleme hunileri, e-ticaret sitelerinin ROAS (Reklam Harcaması Getirisi) oranlarını yükselten en güçlü silahtır. Doğru kitle segmentasyonu ve kreatif uyumu ile Meta Ads bütçenizi maksimum ciroya dönüştürebilirsiniz.</p>
         
+

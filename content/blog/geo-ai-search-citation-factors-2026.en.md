@@ -1,7 +1,7 @@
 ﻿---
 slug: "geo-ai-search-citation-factors-2026"
 lang: "en"
-title: "GEO 2026: How to Get Cited in ChatGPT & Perplexity"
+title: "How to Become the Primary Citation in ChatGPT Search & Perplexity (GEO 2026)"
 excerpt: "Master the art of Generative Engine Optimization. Proven Princeton KDD 2024 ranking factors and actionable strategies by Salih Maral to dominate AI search engines."
 category: "SEO & GEO"
 date: "2026-08-14"
@@ -129,4 +129,5 @@ coverImage: "https://images.unsplash.com/photo-1504868584819-f8e8b4b6d7e3?w=600&
     <li><a href="/blog/server-side-tracking-first-party-ai-attribution">Server-Side Tracking & First-Party Data Attribution</a></li>
   </ul>
 </div>
+
 

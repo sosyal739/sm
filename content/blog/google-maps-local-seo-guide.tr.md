@@ -1,7 +1,7 @@
 ﻿---
 slug: "google-maps-local-seo-guide"
 lang: "tr"
-title: "Google Haritalar Yerel SEO (Local Maps SEO) ile Görünürlük Kazanma"
+title: "Google Haritalarda 1. Sıraya Nasıl Çıkılır? Yerel Müşteri Çekme Rehberi"
 excerpt: "Yerel aramaları domine edin. Salih Maral, Google Haritalar'da üst sıralara çıkmanın 2026 sıralama faktörlerini ve GBP optimizasyonunu paylaşıyor."
 category: "SEO"
 date: "2026-07-16"
@@ -250,4 +250,5 @@ coverImage: "https://images.unsplash.com/photo-1524661135-423995f22d0b?w=600&h=3
     <li><a href="/blog/olumsuz-yorum-yonetimi">Olumsuz Yorum Yönetimi: İtibarınızı Koruyun</a></li>
   </ul>
 </div>
+
 

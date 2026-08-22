@@ -1,7 +1,7 @@
 ﻿---
 slug: "server-side-tracking-first-party-ai-attribution"
 lang: "tr"
-title: "Sunucu Taraflı Takip (Server-Side Tracking / CAPI) ve Yapay Zeka Atıf Modelleri Rehberi"
+title: "iOS 14+ Sonrası First-Party Veri ile Reklam Algoritmalarını Güçlendirme"
 excerpt: "Üçüncü taraf çerezlerin olmadığı 2026 reklam ortamında Server-Side Tracking, Conversions API (CAPI) ve AI tabanlı atıf (attribution) modelleri ile veri kaybını önleyin."
 category: "Server-Side Tracking"
 date: "2026-07-26"
@@ -110,4 +110,5 @@ coverImage: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=600&h=3
     <li><a href="/blog/google-gemini-3-6-seo-ads-automation">Google Gemini 3.6 ile Kampanya Otomasyonu</a></li>
   </ul>
 </div>
+
 

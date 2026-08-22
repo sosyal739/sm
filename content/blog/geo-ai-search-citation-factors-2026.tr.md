@@ -1,7 +1,7 @@
 ﻿---
 slug: "geo-ai-search-citation-factors-2026"
 lang: "tr"
-title: "GEO 2026: ChatGPT ve Perplexity'de Zirveye Çıkma"
+title: "ChatGPT ve Perplexity'de Birincil Kaynak Olarak Zirveye Çıkma Rehberi (GEO 2026)"
 excerpt: "Yapay zeka arama motorlarında markanızı birincil kaynak yapma stratejileri. Princeton KDD 2024 araştırma bulguları ve Salih Maral'ın kanıtlanmış GEO metodolojisi."
 category: "SEO & GEO"
 date: "2026-08-14"
@@ -129,4 +129,5 @@ coverImage: "https://images.unsplash.com/photo-1504868584819-f8e8b4b6d7e3?w=600&
     <li><a href="/blog/server-side-tracking-first-party-ai-attribution">Server-Side Tracking ve Birinci Taraf Veri Stratejisi</a></li>
   </ul>
 </div>
+
 

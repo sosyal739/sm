@@ -1,7 +1,7 @@
 ﻿---
 slug: "google-ads-roi-tracking"
 lang: "tr"
-title: "Google Ads Dönüşüm Takibi ve ROI Optimizasyonu"
+title: "Google Ads'te Harcadığınız Paranın Geri Dönüşü (ROI) Nasıl Hesaplanır?"
 excerpt: "Reklam bütçenizi boşa harcamayın. Doğru dönüşüm takibi kurarak ROI'nızı nasıl artıracağınızı öğrenin."
 category: "Google Ads"
 date: "2026-03-01"
@@ -78,3 +78,4 @@ coverImage: "https://images.unsplash.com/photo-1551836022-d5d88e9218df?w=600&h=3
           <h2>🚀 Sonuç</h2>
           <p>Yüksek ROI elde etmek bütçeyi artırmakla değil, mevcut bütçeyi akıllıca yönetmekle başlar. Doğru bir dönüşüm takibi kurulumu ve sürekli veri analizi ile reklam maliyetlerinizi düşürebilir ve işletmenizi karlı şekilde büyütebilirsiniz.</p>
         
+

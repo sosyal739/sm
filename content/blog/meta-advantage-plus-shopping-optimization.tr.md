@@ -1,7 +1,7 @@
 ﻿---
 slug: "meta-advantage-plus-shopping-optimization"
 lang: "tr"
-title: "Meta Advantage+ Alışveriş Kampanyaları (ASC) Optimizasyon Rehberi"
+title: "Advantage+ Shopping Kampanyalarında Satış Başı Maliyet (CPA) Nasıl Düşürülür?"
 excerpt: "Meta'nın yapay zeka destekli ASC kampanyalarında bütçe israfını önleyin ve ROAS'ınızı katlayın. Salih Maral en iyi kurguları açıklıyor."
 category: "Meta Ads"
 date: "2026-07-16"
@@ -210,4 +210,5 @@ coverImage: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=600&
     <li><a href="/blog/google-ads-nedir">Google Ads Nedir? Reklam Bütçenizi Doğru Yönetme Yolları</a></li>
   </ul>
 </div>
+
 

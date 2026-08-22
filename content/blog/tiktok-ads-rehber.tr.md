@@ -1,7 +1,7 @@
 ﻿---
 slug: "tiktok-ads-rehber"
 lang: "tr"
-title: "TikTok Ads: Genç Kitleye Ulaşmanın Yeni Yolu"
+title: "TikTok'ta Reklam Vererek Satış Yapma Rehberi: Düşük Bütçeyle Milyonlara Ulaşın"
 excerpt: "TikTok'ta viral olmak ve genç kitleye etkili şekilde ulaşmak için TikTok Ads stratejilerini öğrenin. Kampanya kurulumu ve optimizasyon rehberi."
 category: "TikTok Ads"
 date: "2026-01-20"
@@ -77,3 +77,4 @@ coverImage: "https://images.unsplash.com/photo-1611605698323-b1e99cfd37ea?w=600&
         <h2>🚀 Sonuç</h2>
         <p>TikTok Ads, genç kitleye ulaşmak ve viral olmak isteyenler için muazzam bir fırsat. Ancak platformun dilini konuşmak çok önemli!</p>
       
+

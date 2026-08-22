@@ -1,7 +1,7 @@
 ﻿---
 slug: "google-seo-ranking-factors-2026"
 lang: "en"
-title: "Google SEO and E-E-A-T in the AI Era: 2026 Ranking Factors"
+title: "The 9 Most Critical Google SEO Ranking Factors in 2026"
 excerpt: "Latest Google algorithm updates and E-E-A-T guidelines. Salih Maral explains how to build authority and dominate search results."
 category: "SEO"
 date: "2026-07-16"
@@ -177,4 +177,5 @@ coverImage: "https://images.unsplash.com/photo-1572021335469-31706a17aaef?w=600&
               <li><a href="/blog/google-ads-roi-tracking">Google Ads Conversion Tracking and ROI Optimization</a></li>
             </ul>
           </div>
+
 

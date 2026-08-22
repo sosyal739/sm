@@ -1,7 +1,7 @@
 ﻿---
 slug: "local-seo-google-maps"
 lang: "tr"
-title: "Yerel SEO ve Google Haritalar: Bölgesel Satışlarınızı %300 Artırın"
+title: "Yerel İşletmeler İçin Google Harita ve SEO Optimizasyonu Kılavuzu"
 excerpt: "Google Business Profile ile yerel satışlarınızı artırın. Google Maps için önemli sıralama faktörleri."
 category: "SEO"
 date: "2026-03-25"
@@ -65,3 +65,4 @@ coverImage: "https://images.unsplash.com/photo-1524661135-423995f22d0b?w=600&h=3
         <h2>🚀 Sonuç</h2>
         <p>Yerel SEO, küçük ve orta ölçekli işletmelerin dev markalarla rekabet edebileceği en adil savaş alanıdır. Profilinizi bugün optimize edin ve kapıdan giren müşteri sayınızı artırın.</p>
       
+

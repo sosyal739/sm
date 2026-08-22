@@ -1,7 +1,7 @@
 ﻿---
 slug: "local-seo-google-maps"
 lang: "de"
-title: "Lokale SEO und Google Maps: Steigern Sie Ihre regionalen Verkäufe um 300 %"
+title: "Local SEO für lokale Unternehmen: Mehr Kunden über Google Maps"
 excerpt: "Erhöhen Sie Ihre lokalen Verkäufe um 300 % mit Google Business Profile. Alle wichtigen Rankingfaktoren für Google Maps."
 category: "SEO"
 date: "2026-03-25"
@@ -65,3 +65,4 @@ coverImage: "https://images.unsplash.com/photo-1524661135-423995f22d0b?w=600&h=3
         <h2>🚀 Fazit</h2>
         <p>Lokale SEO ist das fairste Schlachtfeld, auf dem kleine und mittlere Unternehmen mit Riesenmarken konkurrieren können. Optimieren Sie Ihr Profil noch heute und steigern Sie die Anzahl der Kunden, die zur Tür hereinkommen.</p>
       
+

@@ -1,7 +1,7 @@
 ﻿---
 slug: "google-ads-nedir"
 lang: "en"
-title: "What is Google Ads? The Ultimate Guide 2026 — Salih Maral"
+title: "What is Google Ads & How Does it Work? Complete 2026 Beginner's Guide"
 excerpt: "Google Ads is the world's most powerful advertising platform. Learn everything about the 7 campaign types, 2026 benchmarks, costs, and step-by-step setup."
 category: "Google Ads"
 date: "2026-07-14"
@@ -161,3 +161,4 @@ coverImage: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=600&
 <div class="lead">
   <p>The Google Ads ecosystem is vast, complex, and constantly evolving. If you are ready to eliminate wasted ad spend, outmaneuver your competitors, and scale your revenue predictably in 2026, you need a specialized partner. Contact me today, and let's engineer a bespoke digital growth strategy for your business.</p>
 </div>
+

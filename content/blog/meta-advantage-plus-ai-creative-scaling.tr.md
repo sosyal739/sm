@@ -1,7 +1,7 @@
 ﻿---
 slug: "meta-advantage-plus-ai-creative-scaling"
 lang: "tr"
-title: "Meta Advantage+ Kampanyaları ve Yapay Zeka Görsel Üretimi ile E-Ticarette Ölçeklenme"
+title: "Meta Advantage+ ile Yapay Zeka Destekli Kreatif Testleri Nasıl Yapılır?"
 excerpt: "Meta Advantage+ Shopping ve AI tabanlı görsel üretim araçları ile Facebook & Instagram reklamlarının dönüşüm oranlarını ve ROAS değerini artırın."
 category: "Meta Ads"
 date: "2026-07-26"
@@ -110,4 +110,5 @@ coverImage: "https://images.unsplash.com/photo-1432888622747-4eb9a8efeb07?w=600&
     <li><a href="/blog/server-side-tracking-first-party-ai-attribution">Meta Conversions API (CAPI) ve Sunucu Taraflı Takip Guide</a></li>
   </ul>
 </div>
+
 

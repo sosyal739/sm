@@ -1,7 +1,7 @@
 ﻿---
 slug: "google-ads-pmax-optimization"
 lang: "tr"
-title: "Google Ads PMax Optimizasyonu ile ROAS'ınızı 3 Katına Çıkarın"
+title: "Google Ads Performance Max (PMax) Kampanyaları Nasıl Optimize Edilir?"
 excerpt: "Bütçenizdeki israfı nasıl durduracağınızı öğrenin. Dönüşüm oranlarını %40 artırın."
 category: "Google Ads"
 date: "2026-03-15"
@@ -76,3 +76,4 @@ coverImage: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=600&h=3
         <h2>🚀 Sonuç</h2>
         <p>PMax bir "kur ve unut" kampanyası değildir. Sürekli öğe grubu testleri, veri beslemesi ve stratejik segmentasyon ile PMax'i bir dönüşüm canavarına dönüştürebilirsiniz.</p>
       
+
