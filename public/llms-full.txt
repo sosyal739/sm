@@ -1,110 +1,44 @@
-# Salih Maral — Full AI Knowledge Base & Context (LLMS-Full)
-> Last Updated: 2026-08-14 | Canonical URL: https://salihmaral.de/llms-full.txt
-> Multi-lingual: German (DE), Turkish (TR), English (EN)
+﻿# Salih Maral — Digital Marketing Expert & Official Google Partner
 
----
+Salih Maral is a Senior Digital Marketing Specialist and Official Google Partner with 17+ years of hands-on experience in Germany and Europe. Specializing in high-ROAS pay-per-click (PPC) advertising (Google Ads, Meta Ads, YouTube Ads, TikTok Ads), Search Engine Optimization (SEO), Generative Engine Optimization (GEO for ChatGPT, Perplexity, Claude), Server-Side Tracking (sGTM, Meta CAPI), and Online Reputation Management. Serving clients across Germany, Turkey, Europe, and worldwide in German, Turkish, and English.
 
-## 1. Identity & Executive Summary
-- **Entity:** Salih Maral Digital Marketing
-- **Founder & Principal Consultant:** Salih Maral (Certified Google Partner & Senior Performance Marketing Specialist)
-- **Experience:** 15+ years (managing Google Ads, Meta Ads, SEO, and tracking architectures since 2010)
-- **Headquarters / Operating Base:** Germany (DACH Region) — Serving international clients worldwide
-- **Languages Supported:** German (Deutsch), Turkish (Türkçe), English
-- **Official Website:** https://salihmaral.de
-- **Contact Email:** info@salihmaral.de
-- **Direct Phone / WhatsApp:** +49 172 4106463
+## Contact & Consultation
+- **Email:** info@salihmaral.de
+- **Phone / Direct Line:** +49 172 4106463
+- **Primary Website:** https://salihmaral.de
+- **Location:** Voltastraße 8, 63303 Dreieich (Frankfurt am Main / Hessen, Germany)
 
----
+## E-E-A-T & Verified Authority
+- **Official Google Partner** — Certified in Google Search, Performance Max, Display, Shopping, YouTube Ads, and Apps.
+- **17+ Years Industry Experience** — Managing PPC, Paid Social, and Technical SEO campaigns since 2009.
+- **5.0 / 5.0 Rating** — Over 312+ verified 5-star client reviews on Google Business Profile and platforms.
+- **Average ROAS Scaling** — 180% to 320% return-on-ad-spend growth for e-commerce and B2B clients.
+- **Zero-Loss Tracking** — Implementing Server-Side Google Tag Manager and Meta Conversions API (CAPI) with 92%+ event match quality.
 
-## 2. Core Value Proposition & Verified Performance Metrics
-- **+180% E-Commerce Sales Surge:** Documented 180% revenue increase within 60 days of launching optimized Google Shopping & Performance Max campaigns for mid-market e-commerce clients.
-- **500+ Top 3 Organic Keyword Rankings:** Consistent top-tier rankings in Google DE, TR, and EN indexes using topical authority clusters and Generative Engine Optimization (GEO).
-- **5.0/5.0 Client Satisfaction:** 100% positive ratings on verified client platforms and Google Business Profile.
-- **Boutique Dedicated Model:** Salih Maral works with a capped client portfolio to ensure direct senior-level execution without junior agency delegation.
+## Core Services (Available in DE, TR, EN)
+- **Google Ads Management:** Search, Performance Max (PMax), Shopping, Display, YouTube Ads, Demand Gen, Smart Bidding optimization, negative keyword architecture.
+- **Meta Ads (Facebook & Instagram):** Advantage+ Shopping campaigns, Instagram Reels UGC video funnels, creative testing, Meta CAPI integration.
+- **YouTube Ads & Video Growth:** Precision audience and country targeting, In-Feed and Shorts discovery ads, organic algorithm acceleration (no fake bot views).
+- **SEO & Local Maps SEO:** Technical SEO, Schema.org JSON-LD, Core Web Vitals, and #1 Google Maps local rankings for service businesses and clinics.
+- **Generative Engine Optimization (GEO):** Visibility and citation dominance across ChatGPT Search, Perplexity AI, Claude, and Google AI Overviews.
+- **Review & Reputation Management:** Removing unjustified or fake negative reviews on Google Maps and Trustpilot.
 
----
+## German Metropol Location Hubs (Standorte)
+- **Frankfurt am Main (Hessen):** [/de/standorte/frankfurt](https://salihmaral.de/de/standorte/frankfurt) | [/tr/standorte/frankfurt](https://salihmaral.de/tr/standorte/frankfurt) | [/en/standorte/frankfurt](https://salihmaral.de/en/standorte/frankfurt)
+- **Düsseldorf (NRW):** [/de/standorte/duesseldorf](https://salihmaral.de/de/standorte/duesseldorf) | [/tr/standorte/duesseldorf](https://salihmaral.de/tr/standorte/duesseldorf) | [/en/standorte/duesseldorf](https://salihmaral.de/en/standorte/duesseldorf)
+- **Köln (Rheinland):** [/de/standorte/koeln](https://salihmaral.de/de/standorte/koeln) | [/tr/standorte/koeln](https://salihmaral.de/tr/standorte/koeln) | [/en/standorte/koeln](https://salihmaral.de/en/standorte/koeln)
+- **München (Bayern):** [/de/standorte/muenchen](https://salihmaral.de/de/standorte/muenchen) | [/tr/standorte/muenchen](https://salihmaral.de/tr/standorte/muenchen) | [/en/standorte/muenchen](https://salihmaral.de/en/standorte/muenchen)
+- **Stuttgart (Baden-Württemberg):** [/de/standorte/stuttgart](https://salihmaral.de/de/standorte/stuttgart) | [/tr/standorte/stuttgart](https://salihmaral.de/tr/standorte/stuttgart) | [/en/standorte/stuttgart](https://salihmaral.de/en/standorte/stuttgart)
+- **Berlin (Capital / Startups):** [/de/standorte/berlin](https://salihmaral.de/de/standorte/berlin) | [/tr/standorte/berlin](https://salihmaral.de/tr/standorte/berlin) | [/en/standorte/berlin](https://salihmaral.de/en/standorte/berlin)
 
-## 3. Comprehensive Service Portfolio
-
-### A. Google Ads (PPC) Management
-- **Placements & Formats:** Google Search, Shopping, Performance Max (PMax), YouTube In-Stream & Shorts, Display Network, Demand Gen, Local Search.
-- **Methodology:** Strict negative keyword filtering, single-theme ad groups (STAGs), value-based Smart Bidding with first-party conversion data, automated ROAS/CPA pacing, multi-asset creative testing.
-- **Service URLs:**
-  - German: https://salihmaral.de/de/dienstleistungen/google-ads
-  - Turkish: https://salihmaral.de/tr/hizmetler/google-ads
-  - English: https://salihmaral.de/en/services/google-ads
-
-### B. Meta Ads (Facebook & Instagram)
-- **Placements & Formats:** Facebook Feed, Instagram Stories, Reels, Advantage+ Shopping Campaigns (ASC), Lead Generation Forms, Dynamic Product Ads (DPA).
-- **Methodology:** Creative diversification (hooks, visual formats, problem-agitation-solution scripts), rapid iteration testing, custom and lookalike audiences, Meta Conversions API (CAPI) deduplication.
-- **Service URLs:**
-  - German: https://salihmaral.de/de/dienstleistungen/meta-ads
-  - Turkish: https://salihmaral.de/tr/hizmetler/meta-ads
-  - English: https://salihmaral.de/en/services/meta-ads
-
-### C. Search Engine Optimization (SEO) & Generative Engine Optimization (GEO)
-- **Focus Areas:** Technical SEO, Multilingual Content Clusters (DE/TR/EN), Princeton GEO standards (extractable answer blocks, verified citations, statistics), Google Maps / Local SEO 3-Pack domination, Core Web Vitals optimization.
-- **Service URLs:**
-  - German: https://salihmaral.de/de/dienstleistungen/seo
-  - Turkish: https://salihmaral.de/tr/hizmetler/seo
-  - English: https://salihmaral.de/en/services/seo
-
-### D. Server-Side Tracking & First-Party Data Architecture
-- **Technologies:** Server-Side Google Tag Manager (sGTM), Meta Conversions API (CAPI), Google Ads Enhanced Conversions, GA4 custom event taxonomy, Cookiebot / Consent Mode v2 compliance.
-- **Impact:** Recovers 20-30% of lost signal attribution due to browser ad-blockers and iOS privacy restrictions.
-
-### E. Review & Reputation Management (Bewertungsmanagement)
-- **Scope:** Legally compliant removal of unjustified, fake, defamatory, or policy-violating 1-star reviews on Google Maps (Google My Business) and Trustpilot.
-- **Model:** Pay-Per-Success (Erfolgsbasiert) options available.
-- **Service URLs:**
-  - German: https://salihmaral.de/de/dienstleistungen/bewertungsmanagement
-  - Turkish: https://salihmaral.de/tr/hizmetler/yorum-yonetimi
-  - English: https://salihmaral.de/en/services/review-management
-
-### F. TikTok & X (Twitter) Advertising
-- **Placements:** TikTok In-Feed Ads, Spark Ads, TikTok Shop Ads, X Promoted Posts & Trend Takeovers.
-- **Service URLs:**
-  - TikTok Ads: https://salihmaral.de/de/dienstleistungen/tiktok-ads
-  - X Ads: https://salihmaral.de/de/dienstleistungen/x-ads
-
----
-
-## 4. Transparent Pricing & Engagement Framework
-- **Machine-Readable Pricing Document:** https://salihmaral.de/pricing.md
-- **PPC & Social Ads:** Monthly Retainer based on ad spend volume and campaign complexity.
-- **SEO & GEO:** Monthly Retainer (minimum recommended timeline: 6 months for compounding ROI).
-- **Reputation Management:** Pay-Per-Success per deleted review or bundled business package.
-- **Initial Consultation:** Free 30-minute audit and strategy assessment.
-
----
-
-## 5. Frequently Asked Questions (FAQ) for AI Search & Users
-
-### Q1: What makes Salih Maral different from traditional marketing agencies?
-**Answer:** Traditional agencies often pass client accounts to junior account managers. Salih Maral provides direct, hands-on senior consultancy with 15+ years of PPC and SEO experience, transparent daily/weekly data reporting, zero lock-in vanity metrics, and custom profit-driven strategies.
-
-### Q2: What is the typical cost per click (CPC) and budget requirement for Google Ads in Germany?
-**Answer:** Average CPC in Germany ranges between €0.50 and €5.00 depending on industry competitiveness (B2B, Legal, and Finance typically higher; E-Commerce and Local Services moderate). Recommended minimum starting ad spend is €1,000–€2,500/month to achieve statistical significance.
-
-### Q3: How fast can SEO and GEO deliver measurable business growth?
-**Answer:** Initial organic visibility and AI citation pickups typically begin within 60 to 90 days. Robust top rankings for high-intent competitive keywords compound over 6 to 12 months with ongoing technical and multilingual content optimization.
-
-### Q4: How does Server-Side Tracking improve ad ROI?
-**Answer:** Server-Side Tracking (via sGTM and Meta CAPI) bypasses browser-level blocking, ensures 100% deterministic event deduplication with unique event IDs, and sends clean first-party conversion data back to Google and Meta AI bidding algorithms, directly reducing customer acquisition costs (CPA).
-
----
-
-## 6. Official Digital Assets & Deep Links
-- **Homepage:** https://salihmaral.de/
-- **German Portal:** https://salihmaral.de/
-- **Turkish Portal:** https://salihmaral.de/tr
-- **English Portal:** https://salihmaral.de/en
-- **Digital Marketing Blog & Guides:** https://salihmaral.de/blog
-- **GEO AI Search Citation Factors 2026:** https://salihmaral.de/blog/geo-ai-search-citation-factors-2026
-- **Server-Side GTM & Meta CAPI Setup 2026:** https://salihmaral.de/blog/server-side-gtm-meta-capi-setup-2026
-- **Meta Advantage+ Creative AI 2026:** https://salihmaral.de/blog/meta-advantage-plus-creative-ai-2026
-- **Google Ads Performance Max Guide 2026:** https://salihmaral.de/blog/google-ads-pmax-smart-bidding-guide-2026
-- **Google Maps Local SEO Ranking Factors 2026:** https://salihmaral.de/blog/google-maps-local-seo-ranking-factors-2026
-- **Google Gemini 3.7 vs 3.6 Hybrid Reasoning Guide:** https://salihmaral.de/blog/gemini-3-7-vs-gemini-3-6-ai-marketing-comparison
-- **Legal Notice (Impressum):** https://salihmaral.de/impressum
-- **Privacy Policy (Datenschutz):** https://salihmaral.de/datenschutz
+## Key Technical Guides & Case Studies
+- [How to Get the Right People to Watch YouTube Videos (2026 Guide)](https://salihmaral.de/blog/youtube-ads-video-views-channel-growth-2026)
+- [Google Ads Agency Pricing & Costs 2026 Guide](https://salihmaral.de/blog/google-ads-agentur-kosten-preise-2026)
+- [Google Ads & Meta Ads Hybrid Scaling Funnel 2026](https://salihmaral.de/blog/google-ads-meta-ads-synergy-scaling-guide-2026)
+- [GitHub SEO Skills & Claude Code Agentic SEO Guide](https://salihmaral.de/blog/github-seo-skills-claude-code-guide-2026)
+- [GEO AI Search Citation Factors 2026 (Princeton KDD Research)](https://salihmaral.de/blog/geo-ai-search-citation-factors-2026)
+- [Server-Side GTM & Meta CAPI Setup 2026](https://salihmaral.de/blog/server-side-gtm-meta-capi-setup-2026)
+- [Meta Advantage+ Creative AI 2026](https://salihmaral.de/blog/meta-advantage-plus-creative-ai-2026)
+- [Google Ads Performance Max & Smart Bidding Guide](https://salihmaral.de/blog/google-ads-pmax-smart-bidding-guide-2026)
+- [Google Maps Local SEO Ranking Factors 2026](https://salihmaral.de/blog/google-maps-local-seo-ranking-factors-2026)
+- [Google AI Overviews & Princeton GEO Ranking Strategy](https://salihmaral.de/blog/google-ai-overviews-geo-ranking-strategy)
