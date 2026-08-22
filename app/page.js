@@ -8,6 +8,7 @@ import { Textarea } from '@/components/ui/textarea'
 import { Badge } from '@/components/ui/badge'
 import { Phone, Mail, MessageCircle, CheckCircle, BarChart3, Users, Award, TrendingUp, Globe, Star, Sparkles, ArrowRight, Clock, Calendar, Flame, Cpu, Zap, Search, ShieldCheck, Layers, BookOpen } from 'lucide-react'
 import CookieConsent from '@/components/CookieConsent'
+import RoasCalculatorWidget from '@/components/RoasCalculatorWidget'
 
 const translations = {
   tr: {
@@ -1343,8 +1344,15 @@ export default function Home({ initialLang = 'de' }) {
         </div>
       </section>
 
+      {/* Interactive ROAS & ROI Calculator Lead Magnet */}
+      <section className="py-12 bg-slate-950 text-white relative">
+        <div className="container mx-auto px-4">
+          <RoasCalculatorWidget lang={lang} />
+        </div>
+      </section>
+
       {/* Corporate High-Converting Banner Section */}
-      <section className="py-24 bg-slate-950 text-white relative overflow-hidden">
+      <section className="py-24 bg-slate-950 text-white relative overflow-hidden border-t border-slate-900">
         {/* Glow ambient background */}
         <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[400px] bg-[#4285F4]/20 rounded-full blur-3xl pointer-events-none"></div>
 

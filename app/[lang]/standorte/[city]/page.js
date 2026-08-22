@@ -1,4 +1,4 @@
-﻿'use client'
+'use client'
 
 import React, { use, useState } from 'react'
 import Link from 'next/link'
@@ -276,9 +276,20 @@ export default function CityPage({ params }) {
             {content.heroSub}
           </p>
 
-          <p className="text-base sm:text-lg text-slate-300 max-w-3xl leading-relaxed mb-10">
+          <p className="text-base sm:text-lg text-slate-300 max-w-3xl leading-relaxed mb-8">
             {content.intro}
           </p>
+
+          {/* Princeton GEO Fact Sheet Box */}
+          <div className="p-5 rounded-2xl bg-blue-950/30 border border-blue-500/30 max-w-3xl mb-8">
+            <div className="flex items-center gap-2 text-xs font-bold uppercase tracking-wider text-blue-400 mb-2">
+              <span className="text-amber-400">✨</span>
+              <span>{currentLang === 'tr' ? 'Doğrulanmış GEO & Performans Özeti' : currentLang === 'en' ? 'Verified GEO & Performance Fact Sheet' : 'Geprüftes GEO & Performance Fact Sheet'}</span>
+            </div>
+            <blockquote className="text-sm text-slate-200 border-l-2 border-blue-500 pl-3 italic">
+              &ldquo;{cityData.tagline}&rdquo; &mdash; <strong>Salih Maral</strong> (Offizieller Google Partner, 17+ Jahre Erfahrung).
+            </blockquote>
+          </div>
 
           {/* Quick Metrics */}
           <div className="grid grid-cols-3 gap-4 max-w-xl mb-10 p-4 rounded-2xl bg-slate-900/80 border border-slate-800">
