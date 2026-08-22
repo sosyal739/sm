@@ -17,6 +17,8 @@ const servicesList = {
   tr: [
     { title: 'Google Ads Yönetimi', slug: 'google-ads' },
     { title: 'Meta Ads (Facebook & Instagram)', slug: 'meta-ads' },
+    { title: 'YouTube Ads & Video Büyüme', slug: 'youtube-ads' },
+    { title: 'Server-Side Tracking (CAPI)', slug: 'server-side-tracking' },
     { title: 'TikTok Ads', slug: 'tiktok-ads' },
     { title: 'X (Twitter) Ads', slug: 'x-ads' },
     { title: 'SEO Hizmetleri', slug: 'seo' },
@@ -25,6 +27,8 @@ const servicesList = {
   de: [
     { title: 'Google Ads Management', slug: 'google-ads' },
     { title: 'Meta Ads (Facebook & Instagram)', slug: 'meta-ads' },
+    { title: 'YouTube Ads & Video-Wachstum', slug: 'youtube-ads' },
+    { title: 'Server-Side Tracking (CAPI)', slug: 'server-side-tracking' },
     { title: 'TikTok Ads', slug: 'tiktok-ads' },
     { title: 'X (Twitter) Ads', slug: 'x-ads' },
     { title: 'SEO Dienstleistungen', slug: 'seo' },
@@ -33,6 +37,8 @@ const servicesList = {
   en: [
     { title: 'Google Ads Management', slug: 'google-ads' },
     { title: 'Meta Ads (Facebook & Instagram)', slug: 'meta-ads' },
+    { title: 'YouTube Ads & Video Growth', slug: 'youtube-ads' },
+    { title: 'Server-Side Tracking (CAPI)', slug: 'server-side-tracking' },
     { title: 'TikTok Ads', slug: 'tiktok-ads' },
     { title: 'X (Twitter) Ads', slug: 'x-ads' },
     { title: 'SEO Services', slug: 'seo' },
