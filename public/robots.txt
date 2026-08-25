@@ -3,6 +3,9 @@ Allow: /
 Disallow: /api/
 Disallow: /_next/
 Disallow: /admin/
+Disallow: /*?*
+Disallow: /*?lang=*
+Disallow: /*?s=*
 
 # AI Search Engine Bots — GEO Optimization
 User-agent: GPTBot
