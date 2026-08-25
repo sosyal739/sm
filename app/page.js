@@ -1988,7 +1988,7 @@ export default function Home({ initialLang = 'de' }) {
       {/* Footer */}
       <footer className="py-12 bg-gray-900 text-white">
         <div className="container mx-auto px-4">
-          <div className="grid md:grid-cols-3 gap-8 mb-8">
+          <div className="grid md:grid-cols-4 gap-8 mb-8">
             <div>
               <picture>
                 <source srcSet="/logo-sm.webp" type="image/webp" />
@@ -2003,6 +2003,7 @@ export default function Home({ initialLang = 'de' }) {
                   <MessageCircle className="h-4 w-4" />
                   <a href={`https://wa.me/491724106463?text=${lang === 'de' ? 'Hallo,%20ich%20interessiere%20mich%20für%20Ihre%20Digital%20Marketing%20Dienstleistungen.' : lang === 'en' ? 'Hello,%20I%20am%20interested%20in%20your%20digital%20marketing%20services.' : 'Merhaba,%20dijital%20pazarlama%20hizmetleriniz%20hakkında%20bilgi%20almak%20istiyorum.'}`} target="_blank" className="hover:text-white transition-colors">WhatsApp</a>
                 </p>
+                <p className="text-xs text-gray-500 pt-2">Voltastraße 8, 63303 Dreieich (Hessen / Frankfurt)</p>
               </div>
             </div>
             <div>
@@ -2010,10 +2011,23 @@ export default function Home({ initialLang = 'de' }) {
               <ul className="space-y-2 text-sm text-gray-400">
                 <li><a href={svcUrl(lang, 'google-ads')} className="hover:text-white transition-colors">Google Ads</a></li>
                 <li><a href={svcUrl(lang, 'meta-ads')} className="hover:text-white transition-colors">Meta Ads</a></li>
+                <li><a href={svcUrl(lang, 'youtube-ads')} className="hover:text-white transition-colors">YouTube Ads</a></li>
+                <li><a href={svcUrl(lang, 'server-side-tracking')} className="hover:text-white transition-colors">Server-Side Tracking</a></li>
                 <li><a href={svcUrl(lang, 'tiktok-ads')} className="hover:text-white transition-colors">TikTok Ads</a></li>
-                <li><a href={svcUrl(lang, 'x-ads')} className="hover:text-white transition-colors">X Ads</a></li>
-                <li><a href={svcUrl(lang, 'seo')} className="hover:text-white transition-colors">SEO</a></li>
-                <li><a href={svcUrl(lang, 'yorum-yonetimi')} className="hover:text-white transition-colors">{lang === 'de' ? 'Bewertungen' : lang === 'en' ? 'Reviews' : 'Yorum Yönetimi'}</a></li>
+                <li><a href={svcUrl(lang, 'seo')} className="hover:text-white transition-colors">SEO & GEO</a></li>
+              </ul>
+            </div>
+            <div>
+              <h4 className="font-semibold mb-4">{lang === 'de' ? 'Standorte in Deutschland' : lang === 'en' ? 'Locations in Germany' : 'Almanya Lokasyonları'}</h4>
+              <ul className="space-y-1.5 text-xs text-gray-400">
+                <li><a href={`/${lang}/standorte/frankfurt`} className="hover:text-[#4285F4] transition-colors">Frankfurt am Main</a></li>
+                <li><a href={`/${lang}/standorte/muenchen`} className="hover:text-[#4285F4] transition-colors">München</a></li>
+                <li><a href={`/${lang}/standorte/berlin`} className="hover:text-[#4285F4] transition-colors">Berlin</a></li>
+                <li><a href={`/${lang}/standorte/hamburg`} className="hover:text-[#4285F4] transition-colors">Hamburg</a></li>
+                <li><a href={`/${lang}/standorte/koeln`} className="hover:text-[#4285F4] transition-colors">Köln & Bonn</a></li>
+                <li><a href={`/${lang}/standorte/duesseldorf`} className="hover:text-[#4285F4] transition-colors">Düsseldorf</a></li>
+                <li><a href={`/${lang}/standorte/stuttgart`} className="hover:text-[#4285F4] transition-colors">Stuttgart</a></li>
+                <li><a href={`/${lang}/standorte`} className="text-[#4285F4] font-bold hover:underline block pt-1">{lang === 'de' ? 'Alle Standorte anzeigen →' : lang === 'en' ? 'View all locations →' : 'Tüm Şehirleri Gör →'}</a></li>
               </ul>
             </div>
           </div>

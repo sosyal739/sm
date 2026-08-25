@@ -160,6 +160,110 @@ const cityDetails = {
       intro: 'Scale faster in Berlin with precision Google Ads, Meta Ads, and SEO. Data-driven customer acquisition built by a senior 17+ year specialist.',
       cta: 'Request Free Berlin Proposal',
     }
+  },
+  hamburg: {
+    name: 'Hamburg',
+    region: 'Hamburg',
+    tagline: 'Umsatzstarke Google Ads & E-Commerce Betreuung für Hamburg und Norddeutschland',
+    description: 'Generieren Sie messbar mehr Kunden und Shop-Bestellungen in Hamburg mit zertifiziertem Google Ads und Meta Ads Management.',
+    stats: { clients: '75+', roas: '4.4x', experience: '17+ Jahre' },
+    industries: ['Handel & E-Commerce', 'Logistik & B2B', 'Agenturen & Kanzleien', 'Gastronomie & Praxen'],
+    de: {
+      heroTitle: 'Google Ads Agentur Hamburg',
+      heroSub: 'Zertifizierter Google Partner für Hamburg & Norddeutschland',
+      intro: 'Hamburgs Handelsmetropole verlangt erstklassige Online-Präsenz. Als zertifizierter Google Partner mit 17+ Jahren Erfahrung steuern wir Ihre Google Ads und SEO-Kampagnen für maximale Profitabilität.',
+      cta: 'Jetzt unverbindliches Angebot anfordern',
+    },
+    tr: {
+      heroTitle: 'Hamburg Google Ads & Dijital Pazarlama Ajansı',
+      heroSub: 'Hamburg ve Kuzey Almanya İçin Resmi Google Partneri',
+      intro: 'Hamburg ve çevresindeki işletmeler için Google Ads, Meta Ads ve SEO danışmanlığı ile satışlarınızı ve organik görünürlüğünüzü katlıyoruz.',
+      cta: 'Hamburg İçin Ücretsiz Teklif Alın',
+    },
+    en: {
+      heroTitle: 'Google Ads Agency Hamburg',
+      heroSub: 'Certified Google Partner for Hamburg & Northern Germany',
+      intro: 'Scale your business in Hamburg with high-converting Google Ads and Meta Ads management from a certified 17+ year senior expert.',
+      cta: 'Request Free Hamburg Proposal',
+    }
+  },
+  nuernberg: {
+    name: 'Nürnberg',
+    region: 'Bayern / Franken',
+    tagline: 'Performance Marketing & Google Ads für Nürnberg, Fürth, Erlangen & Franken',
+    description: 'Gewinnen Sie qualifizierte B2B-Leads und Kunden in der Metropolregion Nürnberg mit datengestützten Google Ads und SEO Kampagnen.',
+    stats: { clients: '55+', roas: '4.2x', experience: '17+ Jahre' },
+    industries: ['Mittelstand & B2B', 'Tech & IT-Dienstleister', 'Handwerk & Industrie', 'Kliniken & Praxen'],
+    de: {
+      heroTitle: 'Google Ads Agentur Nürnberg',
+      heroSub: 'Ihr Google Partner für Nürnberg, Fürth & Erlangen',
+      intro: 'In der Metropolregion Nürnberg optimieren wir Ihre Google Ads, Meta Ads und SEO-Funnels für messbare Kundenanfragen und planbare Neukundengewinnung.',
+      cta: 'Jetzt unverbindliches Angebot anfordern',
+    },
+    tr: {
+      heroTitle: 'Nürnberg Google Ads & SEO Danışmanlığı',
+      heroSub: 'Nürnberg ve Franken Bölgesi İçin Resmi Google Partneri',
+      intro: 'Nürnberg, Fürth ve Erlangen bölgesindeki işletmeler için Google Ads ve Meta Ads yönetimi ile müşteri trafiğinizi katlıyoruz.',
+      cta: 'Nürnberg İçin Ücretsiz Teklif Alın',
+    },
+    en: {
+      heroTitle: 'Google Ads Agency Nuremberg',
+      heroSub: 'Your Certified Google Partner for Nuremberg & Franconia',
+      intro: 'Drive predictable B2B leads and e-commerce revenue in Nuremberg with precision Google Ads and SEO management.',
+      cta: 'Request Free Nuremberg Proposal',
+    }
+  },
+  dortmund: {
+    name: 'Dortmund / Ruhrgebiet',
+    region: 'Nordrhein-Westfalen (Ruhrgebiet)',
+    tagline: 'Google Ads & B2B Performance für Dortmund, Essen, Bochum & das Ruhrgebiet',
+    description: 'Erzielen Sie maximale Sichtbarkeit im Ruhrgebiet mit maßgeschneiderten Google Ads, Meta Ads und Handwerk-Kampagnen.',
+    stats: { clients: '65+', roas: '4.3x', experience: '17+ Jahre' },
+    industries: ['Handwerk & Sanierung', 'B2B & Logistik', 'E-Commerce & Handel', 'Lokale Dienstleister'],
+    de: {
+      heroTitle: 'Google Ads Agentur Dortmund & Ruhrgebiet',
+      heroSub: 'Performance Marketing für Dortmund, Essen & das Ruhrgebiet',
+      intro: 'Das Ruhrgebiet ist der größte Ballungsraum Deutschlands. Wir positionieren Ihr Unternehmen bei Google ganz oben und sichern Ihnen wertvolle Direktaufträge.',
+      cta: 'Jetzt unverbindliches Angebot anfordern',
+    },
+    tr: {
+      heroTitle: 'Dortmund & Ruhr Bölgesi Google Ads Ajansı',
+      heroSub: 'Dortmund, Essen ve Ruhr Bölgesi İçin Kârlı Reklam Yönetimi',
+      intro: 'Dortmund ve Ruhr bölgesindeki inşaat, ticaret ve hizmet firmaları için Google Ads ve yerel SEO ile cironuzu katlıyoruz.',
+      cta: 'Dortmund İçin Ücretsiz Teklif Alın',
+    },
+    en: {
+      heroTitle: 'Google Ads Agency Dortmund & Ruhr Area',
+      heroSub: 'Performance Marketing for Dortmund, Essen & Ruhr Region',
+      intro: 'Dominate the Ruhr metropolitan area with high-ROI Google Ads and Meta Ads management from a certified Google Partner.',
+      cta: 'Request Free Dortmund Proposal',
+    }
+  },
+  leipzig: {
+    name: 'Leipzig & Dresden',
+    region: 'Sachsen / Mitteldeutschland',
+    tagline: 'Google Ads & SEO für den dynamischen Wachstumsstandort Leipzig',
+    description: 'Skalieren Sie Ihr Unternehmen in Leipzig, Dresden und ganz Mitteldeutschland mit datengetriebenen Google Ads und Performance-Kampagnen.',
+    stats: { clients: '50+', roas: '4.2x', experience: '17+ Jahre' },
+    industries: ['E-Commerce & Logistik', 'Start-ups & Tech', 'Immobilien & B2B', 'Praxen & Kanzleien'],
+    de: {
+      heroTitle: 'Google Ads Agentur Leipzig & Sachsen',
+      heroSub: 'Zertifizierter Google Partner für Leipzig & Dresden',
+      intro: 'Leipzig wächst rasant. Mit zielgerichteten Google Ads und SEO-Strategien sichern wir Ihrer Marke den entscheidenden Vorsprung im mitteldeutschen Wirtschaftsraum.',
+      cta: 'Jetzt unverbindliches Angebot anfordern',
+    },
+    tr: {
+      heroTitle: 'Leipzig & Saksonya Google Ads Ajansı',
+      heroSub: 'Leipzig ve Dresden İçin Resmi Google Partneri',
+      intro: 'Leipzig ve Saksonya bölgesindeki işletmeler için Google Ads ve Meta Ads yönetimi ile müşteri trafiğinizi katlıyoruz.',
+      cta: 'Leipzig İçin Ücretsiz Teklif Alın',
+    },
+    en: {
+      heroTitle: 'Google Ads Agency Leipzig & Saxony',
+      heroSub: 'Certified Google Partner for Leipzig & Dresden',
+      intro: 'Accelerate your growth in Leipzig and Central Germany with precision Google Ads and SEO campaigns.',
+      cta: 'Request Free Leipzig Proposal',
+    }
   }
 }
 
