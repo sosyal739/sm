@@ -2,7 +2,7 @@
 
 import { Card, CardContent } from '@/components/ui/card'
 import { Badge } from '@/components/ui/badge'
-import { ArrowLeft, Globe, ArrowRight, ShieldCheck, Calendar, Clock, Sparkles, Flame, Cpu, Search, Layers, Zap } from 'lucide-react'
+import { ArrowLeft, Globe, Heart, ArrowRight, ShieldCheck, Calendar, Clock, Sparkles, Flame, Cpu, Search, Layers, Zap } from 'lucide-react'
 import { useRouter } from 'next/navigation'
 import { useState, useEffect } from 'react'
 import AiSearchWidget from '@/components/AiSearchWidget'
@@ -91,6 +91,13 @@ export default function BlogPage() {
       activeShadow: 'shadow-indigo-500/30'
     },
     {
+      id: 'ngo-grants',
+      name: lang === 'tr' ? 'İslami STK & Ad Grants' : lang === 'de' ? 'NGO & Hilfsorganisationen' : 'NGO & Charities',
+      icon: Heart,
+      gradient: 'from-emerald-600 via-teal-600 to-cyan-600',
+      activeShadow: 'shadow-emerald-500/30'
+    },
+    {
       id: 'de-business',
       name: lang === 'tr' ? 'Almanya Türk İşletmeleri' : lang === 'de' ? 'Türkische Unternehmen in DE' : 'Turkish Businesses in DE',
       icon: Globe,
@@ -148,12 +155,34 @@ export default function BlogPage() {
     )
   }
 
+  const isNgoGrantsPost = (post) => {
+    const catLower = (post.category || '').toLowerCase()
+    const titleLower = (post.title || '').toLowerCase()
+    const slugLower = (post.slug || '').toLowerCase()
+    return (
+      catLower.includes('stk') ||
+      catLower.includes('ngo') ||
+      catLower.includes('charit') ||
+      catLower.includes('hilfsorganisation') ||
+      slugLower.includes('ad-grants') ||
+      slugLower.includes('ramazan') ||
+      slugLower.includes('su-kuyusu') ||
+      titleLower.includes('ad grants') ||
+      titleLower.includes('ramazan') ||
+      titleLower.includes('qurbani') ||
+      titleLower.includes('su kuyusu') ||
+      titleLower.includes('spenden') ||
+      titleLower.includes('waisen')
+    )
+  }
+
   const filteredPosts = posts.filter(post => {
     const isDeBiz = isDeBusinessPost(post)
+    const isNgo = isNgoGrantsPost(post)
     
-    // When 'all' is selected, show general marketing, Google Ads, Meta, SEO, AI guides (exclude niche Germany Turkish posts)
+    // When 'all' is selected, show general marketing guides (exclude niche Germany Turkish and NGO posts)
     if (selectedCategory === 'all') {
-      return !isDeBiz
+      return !isDeBiz && !isNgo
     }
     
     // Show Germany Turkish posts ONLY when its dedicated category tab is clicked
@@ -161,13 +190,18 @@ export default function BlogPage() {
       return isDeBiz
     }
 
+    // Show NGO & Islamic Charity posts ONLY when its dedicated category tab is clicked
+    if (selectedCategory === 'ngo-grants') {
+      return isNgo
+    }
+
     const catLower = (post.category || '').toLowerCase()
     const titleLower = (post.title || '').toLowerCase()
-    if (selectedCategory === 'google') return catLower.includes('google') || titleLower.includes('google')
-    if (selectedCategory === 'meta') return catLower.includes('meta') || titleLower.includes('meta')
-    if (selectedCategory === 'seo') return catLower.includes('seo') || catLower.includes('geo') || titleLower.includes('seo')
-    if (selectedCategory === 'ai') return catLower.includes('yapay') || catLower.includes('künstliche') || catLower.includes('artificial') || titleLower.includes('ai') || titleLower.includes('gemini')
-    if (selectedCategory === 'tracking') return catLower.includes('tracking') || titleLower.includes('tracking') || titleLower.includes('capi')
+    if (selectedCategory === 'google') return (catLower.includes('google') || titleLower.includes('google')) && !isNgo && !isDeBiz
+    if (selectedCategory === 'meta') return (catLower.includes('meta') || titleLower.includes('meta')) && !isNgo && !isDeBiz
+    if (selectedCategory === 'seo') return (catLower.includes('seo') || catLower.includes('geo') || titleLower.includes('seo')) && !isNgo && !isDeBiz
+    if (selectedCategory === 'ai') return (catLower.includes('yapay') || catLower.includes('künstliche') || catLower.includes('artificial') || titleLower.includes('ai') || titleLower.includes('gemini')) && !isNgo && !isDeBiz
+    if (selectedCategory === 'tracking') return (catLower.includes('tracking') || titleLower.includes('tracking') || titleLower.includes('capi')) && !isNgo && !isDeBiz
     return true
   })
 
