@@ -90,6 +90,45 @@ const translations = {
         { title: 'Trafik Patlaması', subtitle: 'Organik' }
       ]
     },
+    proofGallery: {
+      badge: 'GERÇEK GOOGLE ADS PANEL VERİLERİ',
+      title: 'Tahminlerle Değil, 1.13M€+ Yönetilen Canlı Panel Verileriyle Konuşuyoruz',
+      description: 'Yapay zeka şablonları veya süslü vaatler değil; bizzat yönettiğimiz Google Ads ve YouTube hesaplarından alınan doğrulanmış canlı sonuçlar.',
+      cards: [
+        {
+          title: '1.13M€+ Yönetilen Bütçe & 208.000+ Dönüşüm',
+          subtitle: 'Google Ads Arama & Alışveriş',
+          stat: '1.74M Tıklama / 150M Gösterim',
+          desc: '10 yıllık doğrulanmış kampanya verisi: 1.13 Milyon € yönetilen bütçe ile 208.000 adet onaylanmış sipariş ve müşteri dönüşümü.',
+          image: '/proof/google-ads-1-13m-spend-208k-conv.png',
+          badge: '1.13M€ SPEND'
+        },
+        {
+          title: '%1.104,05 (11.04x) E-Ticaret Rekor ROAS',
+          subtitle: 'Performans & Satış Zirvesi',
+          stat: '119.000 Dönüşüm / 204K Tıklama',
+          desc: 'Google Ads e-ticaret kampanyalarında %1.104 ROAS getiri oranı. Harcanan her 100€ için 1.104€ net ciro üretimi.',
+          image: '/proof/google-ads-roas-1104.png',
+          badge: '11.04x ROAS'
+        },
+        {
+          title: '23.1 Milyon+ YouTube TrueView İzlenme & 720 Kampanya',
+          subtitle: 'Sanatçılar & Prodüksiyon Şirketleri',
+          stat: '124M Gösterim / 23.1M İzlenme',
+          desc: 'Tanınmış sanatçıların ve müzik kliplerinin milyonlarca gerçek kitleye ulaşmasını sağlayan 720+ başarılı YouTube Ads kampanyası.',
+          image: '/proof/youtube-ads-23m-views-720-campaigns.png',
+          badge: '23.1M VIEWS'
+        },
+        {
+          title: '%64.78 Video Etkileşim Oranı & 19.3M İzlenme',
+          subtitle: 'YouTube Ads Hedef Kitle Hakimiyeti',
+          stat: '40M Gösterim / 19.3M İzlenme',
+          desc: 'Müzik ve kurumsal video tanıtımlarında %64.78 etkileşim oranıyla organik algoritmayı tetikleyen placement kurgusu.',
+          image: '/proof/youtube-ads-19m-views.png',
+          badge: '%64.78 INTERACTION'
+        }
+      ]
+    },
     corporate: {
       title: 'Size Özel Büyüme Planı Hazırlayalım',
       subtitle: 'Standart Paketler Size Göre Değil mi?',
@@ -261,6 +300,45 @@ const translations = {
         { title: 'Traffic-Explosion', subtitle: 'Organisch' }
       ]
     },
+    proofGallery: {
+      badge: 'VERIFIZIERTE GOOGLE ADS DASHBOARDS',
+      title: 'Keine Spekulationen: 1,13 Mio. €+ verwaltetes Werbebudget & Live-Dashboards',
+      description: 'Keine KI-Versprechungen oder leere Worte: Verifizierte Live-Ergebnisse aus unseren direkt betreuten Google Ads- und YouTube-Konten.',
+      cards: [
+        {
+          title: '1,13 Mio. € Budget & 208.000+ Conversions',
+          subtitle: 'Google Ads Search & Shopping',
+          stat: '1,74M Klicks / 150M Impressionen',
+          desc: '10 Jahre verifizierte Kampagnenhistorie: Mit 1,13 Mio. € Budget wurden über 208.000 bestätigte Kundenanfragen und Verkäufe generiert.',
+          image: '/proof/google-ads-1-13m-spend-208k-conv.png',
+          badge: '1.13M€ BUDGET'
+        },
+        {
+          title: '1.104,05 % (11,04x) E-Commerce Rekord-ROAS',
+          subtitle: 'Performance & Umsatz-Skalierung',
+          stat: '119.000 Conversions / 204K Klicks',
+          desc: 'Google Ads E-Commerce Kampagne mit 1.104 % ROAS. Für jeden eingesetzten Euro Werbebudget wurden 11,04 € Netto-Umsatz erzielt.',
+          image: '/proof/google-ads-roas-1104.png',
+          badge: '11.04x ROAS'
+        },
+        {
+          title: '23,1 Mio.+ YouTube TrueView Views & 720 Kampagnen',
+          subtitle: 'Künstler, Musikvideos & Brands',
+          stat: '124M Impressionen / 23,1M Views',
+          desc: 'Über 720 erfolgreiche YouTube Ads Kampagnen für Musikkünstler und Unternehmen zur nachhaltigen organischen Skalierung.',
+          image: '/proof/youtube-ads-23m-views-720-campaigns.png',
+          badge: '23.1M VIEWS'
+        },
+        {
+          title: '64,78 % Interaktionsrate & 19,3M Views',
+          subtitle: 'YouTube Ads Zielgruppen-Präzision',
+          stat: '40M Impressionen / 19,3M Views',
+          desc: 'Extrem hohe Video-Engagement-Raten zur Aktivierung des YouTube-Empfehlungsalgorithmus.',
+          image: '/proof/youtube-ads-19m-views.png',
+          badge: '64.78% INTERACTION'
+        }
+      ]
+    },
     corporate: {
       title: 'Lassen Sie uns einen maßgeschneiderten Wachstumsplan für Sie erstellen',
       subtitle: 'Passen Standard-Pakete nicht zu Ihnen?',
@@ -430,6 +508,45 @@ const translations = {
         { title: '1st Place Dominance', subtitle: 'Google' },
         { title: 'Visibility Record', subtitle: 'Brand' },
         { title: 'Traffic Explosion', subtitle: 'Organic' }
+      ]
+    },
+    proofGallery: {
+      badge: 'VERIFIED GOOGLE ADS DASHBOARDS',
+      title: 'Proven Evidence: Over €1.13M+ Managed Ad Spend & Live Dashboards',
+      description: 'No AI fluff or empty guarantees: Verified real-world campaign dashboards directly managed by Salih Maral (Google Partner).',
+      cards: [
+        {
+          title: '€1.13M+ Managed Ad Spend & 208,000+ Conversions',
+          subtitle: 'Google Ads Search & Shopping',
+          stat: '1.74M Clicks / 150M Impressions',
+          desc: '10-year verified track record: €1.13M in managed ad spend producing 208,000+ confirmed sales and qualified client inquiries.',
+          image: '/proof/google-ads-1-13m-spend-208k-conv.png',
+          badge: '€1.13M SPEND'
+        },
+        {
+          title: '1,104.05% (11.04x) E-Commerce Record ROAS',
+          subtitle: 'Performance & Revenue Peak',
+          stat: '119,000 Conversions / 204K Clicks',
+          desc: 'Google Ads e-commerce campaigns achieving 1,104% ROAS—generating €11.04 in revenue for every single Euro spent.',
+          image: '/proof/google-ads-roas-1104.png',
+          badge: '11.04x ROAS'
+        },
+        {
+          title: '23.1M+ YouTube TrueView Views & 720 Campaigns',
+          subtitle: 'Music Artists & Production Companies',
+          stat: '124M Impressions / 23.1M Views',
+          desc: '720+ campaigns scaling music video releases and brand spots to millions of engaged organic viewers.',
+          image: '/proof/youtube-ads-23m-views-720-campaigns.png',
+          badge: '23.1M VIEWS'
+        },
+        {
+          title: '64.78% Video Interaction Rate & 19.3M Views',
+          subtitle: 'YouTube Audience Precision',
+          stat: '40M Impressions / 19.3M Views',
+          desc: 'High-retention TrueView targeting designed to trigger YouTube algorithmic recommendations.',
+          image: '/proof/youtube-ads-19m-views.png',
+          badge: '64.78% INTERACTION'
+        }
       ]
     },
     corporate: {
@@ -1341,6 +1458,73 @@ export default function Home({ initialLang = 'de' }) {
               )
             })}
           </div>
+
+          {/* Verified Google Ads Live Dashboards Gallery */}
+          {t.proofGallery && (
+            <div className="mt-20 pt-16 border-t border-slate-200/80">
+              <div className="text-center mb-12">
+                <div className="inline-flex items-center space-x-2 bg-blue-50 border border-blue-200/80 rounded-full px-4 py-1.5 mb-3 shadow-sm">
+                  <span className="w-2 h-2 rounded-full bg-[#4285F4] animate-pulse"></span>
+                  <span className="text-xs font-bold uppercase tracking-wider text-[#4285F4]">{t.proofGallery.badge}</span>
+                </div>
+                <h3 className="text-2xl md:text-4xl font-black text-gray-900 mb-3 tracking-tight">
+                  {t.proofGallery.title}
+                </h3>
+                <p className="text-sm md:text-base text-slate-600 max-w-2xl mx-auto leading-relaxed">
+                  {t.proofGallery.description}
+                </p>
+              </div>
+
+              <div className="grid md:grid-cols-2 gap-8">
+                {t.proofGallery.cards.map((card, idx) => (
+                  <div
+                    key={idx}
+                    className="bg-white rounded-3xl p-6 border border-slate-200 shadow-xl hover:shadow-2xl transition-all duration-300 group overflow-hidden flex flex-col justify-between"
+                  >
+                    <div>
+                      <div className="flex items-center justify-between mb-4">
+                        <span className="text-xs font-bold px-3 py-1 bg-slate-900 text-white rounded-full">
+                          {card.badge}
+                        </span>
+                        <span className="text-xs font-bold text-emerald-600 bg-emerald-50 px-2.5 py-1 rounded-full border border-emerald-200 flex items-center gap-1">
+                          ✓ {lang === 'de' ? 'Offizielles Google Dashboard' : lang === 'en' ? 'Verified Google Dashboard' : 'Doğrulanmış Google Paneli'}
+                        </span>
+                      </div>
+
+                      {/* Dashboard Image with Zoom on Hover */}
+                      <div className="rounded-2xl overflow-hidden border border-slate-100 mb-5 bg-slate-50 relative group-hover:border-blue-200 transition-colors shadow-inner">
+                        <img
+                          src={card.image}
+                          alt={card.title}
+                          className="w-full h-auto object-cover transform group-hover:scale-105 transition-transform duration-500"
+                          loading="lazy"
+                        />
+                      </div>
+
+                      <div className="text-xs font-bold uppercase tracking-wider text-[#4285F4] mb-1 font-mono">
+                        {card.subtitle}
+                      </div>
+                      <h4 className="text-lg font-black text-gray-900 mb-2 group-hover:text-[#4285F4] transition-colors">
+                        {card.title}
+                      </h4>
+                      <p className="text-xs sm:text-sm text-slate-600 leading-relaxed mb-4">
+                        {card.desc}
+                      </p>
+                    </div>
+
+                    <div className="pt-3 border-t border-slate-100 flex items-center justify-between text-xs font-bold text-slate-700">
+                      <span className="flex items-center gap-1.5 text-slate-900 font-mono">
+                        📊 {card.stat}
+                      </span>
+                      <span className="text-emerald-600 font-bold">
+                        {lang === 'de' ? 'Live Verifiziert' : lang === 'en' ? 'Live Verified' : 'Canlı Doğrulandı'}
+                      </span>
+                    </div>
+                  </div>
+                ))}
+              </div>
+            </div>
+          )}
         </div>
       </section>
 
