@@ -295,6 +295,57 @@ export default function BlogDetailClient({ initialPost, initialLang }) {
               </Button>
             </div>
           </div>
+
+          {/* SEO Internal Linking Mesh: Services & Standorte & Guides */}
+          <div className="mt-14 pt-10 border-t border-gray-200">
+            <div className="grid md:grid-cols-3 gap-6 text-sm">
+              {/* Pillar 1: Services */}
+              <div className="bg-white p-6 rounded-2xl border border-gray-200/80 shadow-sm">
+                <h4 className="font-bold text-gray-900 mb-3 flex items-center gap-2">
+                  <span className="w-2 h-2 rounded-full bg-[#4285F4]"></span>
+                  <span>{lang === 'de' ? 'Dienstleistungen' : lang === 'tr' ? 'Hizmetlerimiz' : 'Our Services'}</span>
+                </h4>
+                <ul className="space-y-2 text-gray-600">
+                  <li><a href={`/${lang === 'de' ? 'de/dienstleistungen' : lang === 'tr' ? 'tr/hizmetler' : 'en/services'}/google-ads`} className="hover:text-[#4285F4] hover:underline">Google Ads Management</a></li>
+                  <li><a href={`/${lang === 'de' ? 'de/dienstleistungen' : lang === 'tr' ? 'tr/hizmetler' : 'en/services'}/meta-ads`} className="hover:text-[#4285F4] hover:underline">Meta Ads (Facebook & Instagram)</a></li>
+                  <li><a href={`/${lang === 'de' ? 'de/dienstleistungen' : lang === 'tr' ? 'tr/hizmetler' : 'en/services'}/youtube-ads`} className="hover:text-[#4285F4] hover:underline">YouTube Ads & Video Growth</a></li>
+                  <li><a href={`/${lang === 'de' ? 'de/dienstleistungen' : lang === 'tr' ? 'tr/hizmetler' : 'en/services'}/server-side-tracking`} className="hover:text-[#4285F4] hover:underline">Server-Side Tracking (CAPI)</a></li>
+                  <li><a href={`/${lang === 'de' ? 'de/dienstleistungen' : lang === 'tr' ? 'tr/hizmetler' : 'en/services'}/seo`} className="hover:text-[#4285F4] hover:underline">SEO & GEO Optimization</a></li>
+                </ul>
+              </div>
+
+              {/* Pillar 2: German Metropoles */}
+              <div className="bg-white p-6 rounded-2xl border border-gray-200/80 shadow-sm">
+                <h4 className="font-bold text-gray-900 mb-3 flex items-center gap-2">
+                  <span className="w-2 h-2 rounded-full bg-emerald-500"></span>
+                  <span>{lang === 'de' ? 'Standorte in Deutschland' : lang === 'tr' ? 'Almanya Lokasyonları' : 'Locations in Germany'}</span>
+                </h4>
+                <ul className="space-y-2 text-gray-600">
+                  <li><a href={`/${lang}/standorte/frankfurt`} className="hover:text-[#4285F4] hover:underline">Frankfurt am Main (Hessen)</a></li>
+                  <li><a href={`/${lang}/standorte/muenchen`} className="hover:text-[#4285F4] hover:underline">München (Bayern)</a></li>
+                  <li><a href={`/${lang}/standorte/berlin`} className="hover:text-[#4285F4] hover:underline">Berlin (Hauptstadt)</a></li>
+                  <li><a href={`/${lang}/standorte/koeln`} className="hover:text-[#4285F4] hover:underline">Köln & Bonn (Rheinland)</a></li>
+                  <li><a href={`/${lang}/standorte/duesseldorf`} className="hover:text-[#4285F4] hover:underline">Düsseldorf (NRW)</a></li>
+                  <li><a href={`/${lang}/standorte`} className="text-[#4285F4] font-semibold hover:underline block pt-1">{lang === 'de' ? 'Alle Standorte anzeigen →' : lang === 'tr' ? 'Tüm Şehirleri Gör →' : 'View all locations →'}</a></li>
+                </ul>
+              </div>
+
+              {/* Pillar 3: High-Converting Conversion Guides */}
+              <div className="bg-white p-6 rounded-2xl border border-gray-200/80 shadow-sm">
+                <h4 className="font-bold text-gray-900 mb-3 flex items-center gap-2">
+                  <span className="w-2 h-2 rounded-full bg-amber-500"></span>
+                  <span>{lang === 'de' ? 'Empfohlene Leitfäden' : lang === 'tr' ? 'Popüler Rehberler' : 'Top Strategy Guides'}</span>
+                </h4>
+                <ul className="space-y-2 text-gray-600">
+                  <li><a href="/blog/google-ads-fixpreis-vs-prozent-agentur-modell-2026" className="hover:text-[#4285F4] hover:underline">Google Ads Fixpreis vs. Provision</a></li>
+                  <li><a href="/blog/meta-reklamlarinda-para-kaybetmeyi-durdurun-2026" className="hover:text-[#4285F4] hover:underline">Meta Ads ROAS Skalierung</a></li>
+                  <li><a href="/blog/sanatcilar-muzisyenler-youtube-ads-klip-tanitimi-2026" className="hover:text-[#4285F4] hover:underline">YouTube Ads Klip Tanıtımı</a></li>
+                  <li><a href="/blog/server-side-gtm-meta-capi-setup-2026" className="hover:text-[#4285F4] hover:underline">Server-Side Tracking Kurulumu</a></li>
+                  <li><a href="/blog" className="text-[#4285F4] font-semibold hover:underline block pt-1">{lang === 'de' ? 'Zum Blog-Archiv →' : lang === 'tr' ? 'Tüm Blog Yazıları →' : 'Explore all articles →'}</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
         </div>
       </section>
 
