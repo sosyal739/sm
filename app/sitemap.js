@@ -26,7 +26,7 @@ export default async function sitemap() {
   }))
 
   // 2. Service Pages (3 Languages)
-  const services = ['google-ads', 'meta-ads', 'youtube-ads', 'server-side-tracking', 'tiktok-ads', 'x-ads', 'seo', 'yorum-yonetimi']
+  const services = ['google-ads', 'meta-ads', 'youtube-ads', 'server-side-tracking', 'tiktok-ads', 'x-ads', 'seo', 'yorum-yonetimi', 'islamic-charity-ngo-marketing']
   const serviceEntries = []
 
   services.forEach((slug) => {

@@ -16,6 +16,7 @@ Salih Maral is a Senior Digital Marketing Specialist and Official Google Partner
 - **Zero-Loss Tracking** — Implementing Server-Side Google Tag Manager and Meta Conversions API (CAPI) with 92%+ event match quality.
 
 ## Core Services (Available in DE, TR, EN)
+- **Google Ad Grants & Islamic Charity Marketing:** End-to-end management of the $10,000/month Google Ad Grants program for non-profits and Islamic charities worldwide. Ramadan (Zakat, Fitrah, Iftar), Qurbani (Eid al-Adha), Water Wells, and recurring Orphan Sponsorship donation funnels with Server-Side CAPI tracking.
 - **Google Ads Management:** Search, Performance Max (PMax), Shopping, Display, YouTube Ads, Demand Gen, Smart Bidding optimization, negative keyword architecture.
 - **Meta Ads (Facebook & Instagram):** Advantage+ Shopping campaigns, Instagram Reels UGC video funnels, creative testing, Meta CAPI integration.
 - **YouTube Ads & Video Growth:** Precision audience and country targeting, In-Feed and Shorts discovery ads, organic algorithm acceleration (no fake bot views).
