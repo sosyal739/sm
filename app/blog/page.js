@@ -91,6 +91,13 @@ export default function BlogPage() {
       activeShadow: 'shadow-indigo-500/30'
     },
     {
+      id: 'de-business',
+      name: lang === 'tr' ? 'Almanya Türk İşletmeleri' : lang === 'de' ? 'Türkische Unternehmen in DE' : 'Turkish Businesses in DE',
+      icon: Globe,
+      gradient: 'from-red-600 via-rose-600 to-amber-600',
+      activeShadow: 'shadow-red-500/30'
+    },
+    {
       id: 'google',
       name: 'Google Ads',
       icon: Zap,
@@ -131,6 +138,7 @@ export default function BlogPage() {
     if (selectedCategory === 'all') return true
     const catLower = (post.category || '').toLowerCase()
     const titleLower = (post.title || '').toLowerCase()
+    if (selectedCategory === 'de-business') return catLower.includes('türk') || catLower.includes('almanya') || catLower.includes('turkish') || titleLower.includes('almanya') || titleLower.includes('deutschland') || titleLower.includes('türk')
     if (selectedCategory === 'google') return catLower.includes('google') || titleLower.includes('google')
     if (selectedCategory === 'meta') return catLower.includes('meta') || titleLower.includes('meta')
     if (selectedCategory === 'seo') return catLower.includes('seo') || catLower.includes('geo') || titleLower.includes('seo')
