@@ -134,11 +134,35 @@ export default function BlogPage() {
     },
   ]
 
-  const filteredPosts = posts.filter(post => {
-    if (selectedCategory === 'all') return true
+  const isDeBusinessPost = (post) => {
     const catLower = (post.category || '').toLowerCase()
     const titleLower = (post.title || '').toLowerCase()
-    if (selectedCategory === 'de-business') return catLower.includes('türk') || catLower.includes('almanya') || catLower.includes('turkish') || titleLower.includes('almanya') || titleLower.includes('deutschland') || titleLower.includes('türk')
+    const slugLower = (post.slug || '').toLowerCase()
+    return (
+      catLower.includes('türk') ||
+      catLower.includes('almanya') ||
+      catLower.includes('turkish') ||
+      slugLower.includes('almanya') ||
+      titleLower.includes('almanya') ||
+      titleLower.includes('deutschland')
+    )
+  }
+
+  const filteredPosts = posts.filter(post => {
+    const isDeBiz = isDeBusinessPost(post)
+    
+    // When 'all' is selected, show general marketing, Google Ads, Meta, SEO, AI guides (exclude niche Germany Turkish posts)
+    if (selectedCategory === 'all') {
+      return !isDeBiz
+    }
+    
+    // Show Germany Turkish posts ONLY when its dedicated category tab is clicked
+    if (selectedCategory === 'de-business') {
+      return isDeBiz
+    }
+
+    const catLower = (post.category || '').toLowerCase()
+    const titleLower = (post.title || '').toLowerCase()
     if (selectedCategory === 'google') return catLower.includes('google') || titleLower.includes('google')
     if (selectedCategory === 'meta') return catLower.includes('meta') || titleLower.includes('meta')
     if (selectedCategory === 'seo') return catLower.includes('seo') || catLower.includes('geo') || titleLower.includes('seo')
