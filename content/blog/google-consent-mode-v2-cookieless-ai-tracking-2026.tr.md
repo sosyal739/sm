@@ -1,8 +1,8 @@
 ---
 slug: "google-consent-mode-v2-cookieless-ai-tracking-2026"
 lang: "tr"
-title: "Google Consent Mode v2 Nedir? Reklam Verilerinizin %40'ını Kurtarma Rehberi"
-excerpt: "Avrupa Birliği GDPR ve KVKK uyumlu Consent Mode v2 kurulumu. Çerez reddeden ziyaretçilerden yapay zeka ile kayıp satış verilerini geri kazanın."
+title: "Google Consent Mode v2 Nedir ve Nasıl Kurulur? (2026 Zorunlu Rehber)"
+excerpt: "Google Consent Mode v2 zorunlu mu? Çerez reddeden kullanıcılardan yapay zeka ile kayıp %40 satış verisini kurtarma rehberi."
 category: "Server-Side Tracking & Veri"
 date: "2026-08-22"
 readTime: "14"
@@ -10,48 +10,23 @@ coverImage: "https://images.unsplash.com/photo-1504868584819-f8e8b4b6d7e3?w=600&
 ---
 
 <div class="lead">
-<p><strong>Doğrudan Cevap:</strong> Google Consent Mode v2; Avrupa Birliği Dijital Pazarlar Yasası (DMA) ve KVKK gereğince, web sitelerindeki çerez onay durumunu Google Ads ve GA4'e ileten zorunlu ölçüm mimarisidir. Consent Mode v2 kurulu olmayan sitelerde <strong>Google Ads yeniden pazarlama (Remarketing) ve Smart Bidding yapay zekası durdurulur.</strong> Doğru yapılandırılmış Gelişmiş Consent Mode v2 (Advanced Mode), çerezleri reddeden kullanıcıların dönüştürme eylemlerini kişisel veri saklamadan şifreli sinyallerle modeller ve kaybolan <strong>%35-40'lık satış verisini geri kazandırır.</strong></p>
+<p><strong>Doğrudan Cevap (Consent Mode v2 Nedir):</strong> Google Consent Mode v2; Avrupa Birliği Dijital Pazarlar Yasası (DMA) ve KVKK kapsamında, web sitenizdeki çerez onay durumunu Google Ads ve GA4'e ileten zorunlu izin altyapısıdır. Consent Mode v2 entegre edilmeyen hesaplarda <strong>Google Ads yeniden pazarlama (Remarketing) kitleleri durdurulur ve Smart Bidding teklif yapay zekası bozulur.</strong> <strong>Salih Maral (Server-Side Tracking & Performans Uzmanı)</strong> olarak kurduğumuz Gelişmiş Consent Mode v2 (Advanced Mode) sayesinde, çerez reddeden ziyaretçilerden dahi şifreli sinyaller toplanarak <strong>kaybolan %35-40'lık satış verisi yapay zeka ile modellenip geri kazanılır.</strong></p>
 </div>
 
-<h2>📊 Temel (Basic) vs. Gelişmiş (Advanced) Consent Mode v2</h2>
-<table>
-  <thead>
-    <tr>
-      <th>Özellik</th>
-      <th>Basic Consent Mode v2</th>
-      <th>Advanced Consent Mode v2 (Önerilen)</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><strong>Çerez Reddedildiğinde</strong></td>
-      <td>Tüm etiketler tamamen bloke edilir, 0 veri iletilir.</td>
-      <td>Çerezsiz şifreli sinyaller (Pings) gönderilir.</td>
-    </tr>
-    <tr>
-      <td><strong>Yapay Zeka Dönüşüm Modellemesi</strong></td>
-      <td>Çalışmaz (Kayıp veri %40).</td>
-      <td><strong>%100 Aktif (Kayıp dönüşümler kurtarılır).</strong></td>
-    </tr>
-    <tr>
-      <td><strong>Smart Bidding / tROAS Performansı</strong></td>
-      <td>Zayıf algoritma beslemesi, yüksek CPA.</td>
-      <td><strong>Maksimum teklif hassasiyeti, düşük CPA.</strong></td>
-    </tr>
-    <tr>
-      <td><strong>GDPR / DMA Yasal Uyumu</strong></td>
-      <td>Uyumlu</td>
-      <td><strong>Tam Uyumlu & Google Sertifikalı CMP</strong></td>
-    </tr>
-  </tbody>
-</table>
+<h2>🔍 İnsanların En Çok Aradığı Sorular & Birebir Çözümleri (Consent Mode v2)</h2>
 
-<h2>🛠️ 4 Zorunlu İzin Parametresi</h2>
+<h3>1. "Google Consent Mode v2 kurmazsam ne olur?"</h3>
 <ul>
-  <li><code>ad_storage</code>: Reklam amaçlı çerezlerin kaydedilmesi.</li>
-  <li><code>analytics_storage</code>: Analitik ve kullanım istatistiği çerezleri.</li>
-  <li><code>ad_user_data</code> (v2 Yeni): Kullanıcı verilerinin reklam amacıyla Google'a aktarılması onayı.</li>
-  <li><code>ad_personalization</code> (v2 Yeni): Yeniden pazarlama ve kişiselleştirilmiş reklam hedefleme izni.</li>
+  <li>Google Ads yeniden pazarlama (Remarketing) listeleri yeni kullanıcı toplamayı durdurur.</li>
+  <li>Dönüşüm izleme verileriniz %40'a varan oranda eksik yansır, kampanya ROAS'ınız düşük görünür.</li>
+  <li>Maksimum Performans (PMax) ve Hedef EROAS (tROAS) algoritmaları kime reklam göstereceğini bilemez, maliyetler fırlar.</li>
+  <li>Avrupa Birliği ve KVKK denetimlerinde yasal uyarı ve ceza riski doğar.</li>
 </ul>
 
-<p>Kusursuz Consent Mode v2 ve sGTM entegrasyonu için <a href="/tr/hizmetler/server-side-tracking">Server-Side Tracking Kurulumu</a> sayfamızı inceleyin.</p>
+<h3>2. "Basic (Temel) ile Advanced (Gelişmiş) Consent Mode v2 farkı nedir?"</h3>
+<p>Basic modda kullanıcı çerezi reddederse Google etiketleri tamamen engellenir ve %0 veri iletilir. <strong>Advanced modda ise;</strong> kişisel veri kaydedilmeden çerezsiz pingler (Cookieless Pings) Google sunucularına iletilir. Google yapay zekası bu sinyalleri makine öğrenimiyle birleştirerek kayıp satışları raporlar ve reklam tekliflerini optimize eder.</p>
+
+<h3>3. "ad_user_data ve ad_personalization parametreleri nasıl eklenir?"</h3>
+<p>Consent Mode v2 ile gelen bu iki yeni parametre, kullanıcının verilerinin Google reklam paneline aktarılmasına ve kişiselleştirilmiş reklam gösterimine izin verip vermediğini belirler. Google Sertifikalı bir CMP (Cookiebot, Usercentrics vb.) veya Google Tag Manager (GTM) şablonu üzerinden tetiklenmelidir.</p>
+
+<p>Kusursuz Consent Mode v2 ve Server-Side GTM kurulumu için <a href="/tr/hizmetler/server-side-tracking">Server-Side Tracking Kurulumu</a> sayfamızdan destek alın.</p>
