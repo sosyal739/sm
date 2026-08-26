@@ -356,6 +356,13 @@ export default function ServiceDetailPage() {
           desc: lang === 'de' ? 'Google Cloud ve Stape üzerinde 1. taraf çerez (first-party) altyapısı ve Google Consent Mode v2.' : lang === 'en' ? 'First-party server tracking deployed on Google Cloud/Stape and Google Consent Mode v2.' : 'Google Cloud ve Stape üzerinde 1. taraf çerez altyapısı ve Google Consent Mode v2 entegrasyonu.',
           icon: Cpu,
           items: lang === 'de' ? ['Server-Side sGTM', 'Consent Mode v2', 'Enhanced Conversions', 'Offline Conversion Tracking'] : lang === 'en' ? ['Server-Side sGTM', 'Consent Mode v2', 'Enhanced Conversions', 'Offline Conversion Tracking'] : ['Server-Side sGTM', 'Consent Mode v2', 'Gelişmiş Dönüşümler', 'Offline Dönüşüm Takibi']
+        },
+        {
+          title: lang === 'de' ? 'Google Business & Maps Setup' : lang === 'en' ? 'Google Business & Maps Setup' : 'Google Business Profile & Haritalar',
+          subtitle: 'Google Maps & Local Ads',
+          desc: lang === 'de' ? 'Google Unternehmensprofil-Erstellung, Maps PIN-Verifizierung, Standort-Erweiterungen und 3-Pack Optimierung.' : lang === 'en' ? 'Google Business Profile creation, Maps PIN verification, Location Extensions, and Local 3-Pack ranking.' : 'Google İşletme Profili açılışı, Haritalar video/PIN doğrulaması, Google Ads yer uzantısı bağlantısı ve yerel sıralama.',
+          icon: MapPin,
+          items: lang === 'de' ? ['Unternehmensprofil Neuanlage', 'Google Maps Verifizierung', 'Google Ads Standorterweiterung', '3-Pack Local Ranking'] : lang === 'en' ? ['Business Profile setup', 'Google Maps verification', 'Google Ads location extension', '3-Pack local ranking'] : ['İşletme profili sıfırdan kurulum', 'Haritalar PIN/Video doğrulama', 'Google Ads yer uzantısı bağlama', 'Harita 3-Pack yerel sıralama']
         }
       ],
       process: [

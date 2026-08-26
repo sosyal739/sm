@@ -5,19 +5,21 @@ import {
   ChevronDown, Sparkles, ArrowRight, Zap, MapPin, Cpu, ShoppingCart, 
   Search, Play, Flame, Video, Layers, Radio, RefreshCw, Newspaper, 
   PhoneCall, Smartphone, UserCheck, ShieldCheck, DollarSign, Award, 
-  ShieldAlert, CheckCircle2, TrendingUp, Target, Sliders, Globe, Clock, Users, BarChart3, Star, Heart, Lock, Database, Code, Activity
+  ShieldAlert, CheckCircle2, TrendingUp, Target, Sliders, Globe, Clock, Users, BarChart3, Star, Heart, Lock, Database, Code, Activity, Building2, CheckSquare, FileCheck
 } from 'lucide-react'
 
 // Icon mapping helper
 const getModuleIcon = (title = '') => {
   const t = title.toLowerCase()
+  if (t.includes('business profile') || t.includes('işletme profili') || t.includes('unternehmensprofil')) return Building2
+  if (t.includes('harita') || t.includes('maps') || t.includes('standort') || t.includes('pin')) return MapPin
+  if (t.includes('doğrulama') || t.includes('verifizierung') || t.includes('verification') || t.includes('kimlik') || t.includes('identität')) return FileCheck
   if (t.includes('search console') || t.includes('console')) return Search
   if (t.includes('analytics') || t.includes('ga4') || t.includes('analitik')) return BarChart3
   if (t.includes('tag manager') || t.includes('gtm') || t.includes('sgtm')) return Code
   if (t.includes('merchant') || t.includes('feed') || t.includes('alışveriş') || t.includes('shopping')) return ShoppingCart
   if (t.includes('consent') || t.includes('gdpr') || t.includes('izin') || t.includes('çerez')) return Lock
   if (t.includes('search') || t.includes('suche')) return Search
-  if (t.includes('harita') || t.includes('maps')) return MapPin
   if (t.includes('pmax') || t.includes('performance max')) return Sparkles
   if (t.includes('shorts') || t.includes('reels')) return Flame
   if (t.includes('video') || t.includes('youtube')) return Play
@@ -48,27 +50,50 @@ const getModuleIcon = (title = '') => {
 
 export default function ServiceDetailModules({ serviceSlug, lang = 'de', primaryColor = '#4285F4' }) {
   const modulesCatalog = {
-    // REKLAM & TRACKING KURULUM HİZMETLERİ (Google Ads, GA4, Console, GMC, Meta CAPI, sGTM)
+    // REKLAM & TRACKING KURULUM HİZMETLERİ
     'server-side-tracking': {
       tr: [
         {
           id: 'google-setup',
-          title: 'Google Reklam & Analitik Altyapı Kurulumu',
-          subtitle: 'Google Ads / GA4 E-Ticaret / Search Console / Merchant Center',
-          count: 6,
+          title: 'Google Reklam, Hesap Açılışı & Doğrulama Altyapısı',
+          subtitle: 'Google Ads Açılışı / Reklamveren Doğrulaması / GA4 / Console / GMC',
+          count: 8,
           themeGradient: 'from-blue-600 via-indigo-600 to-blue-800',
           badgeColor: 'bg-blue-500',
           groups: [
             {
-              categoryName: 'GOOGLE ALTYAPI & ÖLÇÜM KURULUMU',
+              categoryName: 'HESAP AÇILIŞI, DOĞRULAMA & GOOGLE ALTYAPISI',
               accentColor: '#4285F4',
               items: [
-                { badge: 'GOOGLE ADS', title: 'Sıfırdan Google Ads Hesap Kurulumu', desc: 'Doğru para birimi, faturalandırma, kampanya yapısı ve negatif anahtar kelime mimarisi' },
+                { badge: 'ADS AÇILIŞI', title: 'Sıfırdan Google Ads Hesap Kurulumu', desc: 'Doğru para birimi, faturalandırma, kampanya yapısı ve negatif anahtar kelime mimarisi' },
+                { badge: 'DOĞRULAMA', title: 'Google Reklamveren Kimlik Doğrulaması (Advertiser Verification)', desc: 'Şirket evrakları ve kimlik onayı ile reklamveren şeffaflık rozeti kazanımı ve askıya alınmayı önleme' },
                 { badge: 'GA4 SETUP', title: 'Google Analytics 4 (GA4) E-Ticaret Kurulumu', desc: 'Sepete ekleme, ödeme adımları ve satın alma etkinliklerinin eksiksiz yapılandırılması' },
                 { badge: 'SEARCH CONSOLE', title: 'Google Search Console Doğrulama & Sitemap', desc: 'Mülk doğrulama, site haritası gönderimi ve teknik indeksleme kontrolleri' },
                 { badge: 'GMC FEED', title: 'Google Merchant Center & Ürün Feed Entegrasyonu', desc: 'Alışveriş reklamları için ürün kataloğu onaylatma ve otomatik feed senkronizasyonu' },
                 { badge: 'TAG MANAGER', title: 'Google Tag Manager (GTM) Veri Katmanı', desc: 'Web sitesi koduna dokunmadan esnek etiket ve olay takibi altyapısı' },
-                { badge: 'CONSENT MODE', title: 'Google Consent Mode v2 (AB Çerez Uyumu)', desc: 'Avrupa GDPR mevzuatına uygun gelişmiş çerez izin modu ve modelleme' }
+                { badge: 'CONSENT MODE', title: 'Google Consent Mode v2 (AB Çerez Uyumu)', desc: 'Avrupa GDPR mevzuatına uygun gelişmiş çerez izin modu ve modelleme' },
+                { badge: 'ÖDEME & GÜVENLİK', title: 'Google Ads Ödeme & 3D Secure Yapılandırması', desc: 'Otomatik fatura limitleri, kurumsal vergi numarası ve kesintisiz reklam yayını güvencesi' }
+              ]
+            }
+          ]
+        },
+        {
+          id: 'business-maps-setup',
+          title: 'Google Business Profile & Haritalar Kurulumu',
+          subtitle: 'İşletme Profili / Harita PIN Doğrulama / Yerel Reklam Entegrasyonu',
+          count: 5,
+          themeGradient: 'from-amber-600 via-orange-600 to-amber-800',
+          badgeColor: 'bg-amber-500',
+          groups: [
+            {
+              categoryName: 'GOOGLE HARİTALAR & YEREL İŞLETME ALTYAPISI',
+              accentColor: '#F59E0B',
+              items: [
+                { badge: 'GBP AÇILIŞI', title: 'Google İşletme Profili (GBP) Sıfırdan Kurulumu', desc: 'Resmi işletme adı, ana ve alt kategoriler, çalışma saatleri ve hizmet bölgeleri yapılandırması' },
+                { badge: 'PIN & DOĞRULAMA', title: 'Google Haritalar Konum & Video/Posta Doğrulaması', desc: 'Google tarafından talep edilen video kaydı, resmi evrak veya posta kodu ile profil doğrulama' },
+                { badge: 'ADS ENTEGRASYONU', title: 'Google Ads Yer Uzantısı & Harita Reklam Bağlantısı', desc: 'İşletme profilini Google Ads hesabına bağlayarak harita aramalarında 1. sırada çıkma' },
+                { badge: 'ASKI ÇÖZÜMÜ', title: 'Askıya Alınan / Kapatılan İşletme Profili Kurtarma', desc: 'Google politikalarına uygun itiraz dosyası hazırlayarak askıya alınan profili yeniden açtırma' },
+                { badge: 'YEREL SEO', title: 'Google Haritalar Yerel Sıralama (Local Pack) Optimizasyonu', desc: 'Bölgesel aramalarda Google Haritalar 3\'lü vitrininde (3-Pack) en üstte yer alma' }
               ]
             }
           ]
@@ -119,22 +144,45 @@ export default function ServiceDetailModules({ serviceSlug, lang = 'de', primary
       de: [
         {
           id: 'google-setup',
-          title: 'Google Ads & Analytics Infrastruktur-Setup',
-          subtitle: 'Google Ads / GA4 E-Commerce / Search Console / Merchant Center',
-          count: 6,
+          title: 'Google Ads Konto-Setup & Werbetreibenden-Verifizierung',
+          subtitle: 'Google Ads Eröffnung / Identitätsprüfung / GA4 / Search Console / GMC',
+          count: 8,
           themeGradient: 'from-blue-600 via-indigo-600 to-blue-800',
           badgeColor: 'bg-blue-500',
           groups: [
             {
-              categoryName: 'GOOGLE SETUP & MESS-INFRASTRUKTUR',
+              categoryName: 'KONTOEINRICHTUNG, VERIFIZIERUNG & GOOGLE INFRASTRUKTUR',
               accentColor: '#4285F4',
               items: [
-                { badge: 'GOOGLE ADS', title: 'Neuanlage & Strukturierung des Google Ads Kontos', desc: 'Optimale Kontenarchitektur, Abrechnungseinrichtung und Master-Ausschlusslisten' },
+                { badge: 'ADS SETUP', title: 'Neuanlage & Strukturierung des Google Ads Kontos', desc: 'Optimale Kontenarchitektur, Währungseinrichtung und Master-Ausschlusslisten' },
+                { badge: 'VERIFIZIERUNG', title: 'Google Werbetreibenden-Verifizierung (Advertiser Identity)', desc: 'Einreichung offizieller Unternehmensdokumente zur Freischaltung des Transparenz-Badges' },
                 { badge: 'GA4 SETUP', title: 'Google Analytics 4 (GA4) E-Commerce Tracking', desc: 'Vollständige Erfassung von Warenkorb-, Checkout- und Transaktions-Events' },
                 { badge: 'SEARCH CONSOLE', title: 'Google Search Console Verifizierung & Sitemap', desc: 'Inhaberschaftsbestätigung, XML-Sitemap-Einreichung und Indexierungsüberwachung' },
                 { badge: 'GMC FEED', title: 'Google Merchant Center & Produkt-Feed Integration', desc: 'Freischaltung von Shopping-Anzeigen und automatischer Produktdatenabgleich' },
                 { badge: 'TAG MANAGER', title: 'Google Tag Manager (GTM) DataLayer Setup', desc: 'Saubere Ereigniserfassung ohne manuelle Eingriffe in den Quellcode' },
-                { badge: 'CONSENT MODE', title: 'Google Consent Mode v2 (DSGVO & EU-Konform)', desc: 'Rechtssichere Einwilligungserfassung und KI-gestützte Conversion-Modellierung' }
+                { badge: 'CONSENT MODE', title: 'Google Consent Mode v2 (DSGVO & EU-Konform)', desc: 'Rechtssichere Einwilligungserfassung und KI-gestützte Conversion-Modellierung' },
+                { badge: 'ZAHLUNG & SICHERHEIT', title: 'Zahlungs- & 3D-Secure-Einrichtung', desc: 'Hinterlegung von Abrechnungsdaten, USt-IdNr. und Absicherung gegen Kontosperren' }
+              ]
+            }
+          ]
+        },
+        {
+          id: 'business-maps-setup',
+          title: 'Google Unternehmensprofil & Google Maps Setup',
+          subtitle: 'Brancheneintrag / Maps-Verifizierung / Standorterweiterungen',
+          count: 5,
+          themeGradient: 'from-amber-600 via-orange-600 to-amber-800',
+          badgeColor: 'bg-amber-500',
+          groups: [
+            {
+              categoryName: 'GOOGLE MAPS & LOKALE UNTERNEHMENS-PRÄSENZ',
+              accentColor: '#F59E0B',
+              items: [
+                { badge: 'GBP SETUP', title: 'Google Unternehmensprofil (GBP) Neuanlage', desc: 'Kategorien, Öffnungszeiten, Leistungsbereiche und professionelle Unternehmenspräsentation' },
+                { badge: 'MAPS PIN', title: 'Google Maps Standort- & Videoverifizierung', desc: 'Offizielle Bestätigung der Inhaberschaft via Video, Dokument oder Postkarte' },
+                { badge: 'ADS LINK', title: 'Google Ads Standorterweiterung & Maps-Anzeigen', desc: 'Verknüpfung mit Google Ads für Spitzenplatzierungen in lokalen Google Maps Suchen' },
+                { badge: 'REAKTIVIERUNG', title: 'Wiederherstellung gesperrter Unternehmensprofile', desc: 'Einspruchsverfahren und Richtlinienbereinigung bei fälschlichen Suspendierungen' },
+                { badge: 'LOCAL SEO', title: 'Google Maps 3-Pack Lokale Ranking-Optimierung', desc: 'Top-Platzierung im Google Maps 3-Pack für maximale Kundenanrufe vor Ort' }
               ]
             }
           ]
@@ -185,22 +233,45 @@ export default function ServiceDetailModules({ serviceSlug, lang = 'de', primary
       en: [
         {
           id: 'google-setup',
-          title: 'Google Ads & Analytics Infrastructure Setup',
-          subtitle: 'Google Ads / GA4 E-Commerce / Search Console / Merchant Center',
-          count: 6,
+          title: 'Google Ads Account Setup & Advertiser Verification',
+          subtitle: 'Account Opening / Identity Verification / GA4 / Console / GMC',
+          count: 8,
           themeGradient: 'from-blue-600 via-indigo-600 to-blue-800',
           badgeColor: 'bg-blue-500',
           groups: [
             {
-              categoryName: 'GOOGLE SETUP & MEASUREMENT STACK',
+              categoryName: 'ACCOUNT OPENING, VERIFICATION & GOOGLE STACK',
               accentColor: '#4285F4',
               items: [
-                { badge: 'GOOGLE ADS', title: 'Zero-to-Hero Google Ads Account Setup', desc: 'Proper currency, billing, best-practice structure, and master negative keyword lists' },
+                { badge: 'ADS SETUP', title: 'Zero-to-Hero Google Ads Account Setup', desc: 'Proper currency, billing, best-practice structure, and master negative keyword lists' },
+                { badge: 'VERIFICATION', title: 'Google Advertiser Identity Verification', desc: 'Official documentation and ID validation for verified advertiser transparency badges' },
                 { badge: 'GA4 SETUP', title: 'Google Analytics 4 (GA4) E-Commerce Tracking', desc: 'Complete tracking for add_to_cart, begin_checkout, and purchase transactions' },
                 { badge: 'SEARCH CONSOLE', title: 'Google Search Console Verification & Sitemap', desc: 'Domain ownership validation, XML sitemap indexing, and coverage monitoring' },
                 { badge: 'GMC FEED', title: 'Google Merchant Center & Product Feed Integration', desc: 'Product catalog approval for Shopping ads with automated sync' },
                 { badge: 'TAG MANAGER', title: 'Google Tag Manager (GTM) DataLayer Setup', desc: 'Agile tag management without constant source code modifications' },
-                { badge: 'CONSENT MODE', title: 'Google Consent Mode v2 (GDPR Compliant)', desc: 'Compliant consent handling with machine-learning conversion modeling' }
+                { badge: 'CONSENT MODE', title: 'Google Consent Mode v2 (GDPR Compliant)', desc: 'Compliant consent handling with machine-learning conversion modeling' },
+                { badge: 'BILLING & 3D SECURE', title: 'Billing & 3D Secure Configuration', desc: 'Tax ID registration, payment thresholds, and account suspension protection' }
+              ]
+            }
+          ]
+        },
+        {
+          id: 'business-maps-setup',
+          title: 'Google Business Profile & Google Maps Setup',
+          subtitle: 'Profile Creation / Maps Verification / Location Extensions',
+          count: 5,
+          themeGradient: 'from-amber-600 via-orange-600 to-amber-800',
+          badgeColor: 'bg-amber-500',
+          groups: [
+            {
+              categoryName: 'GOOGLE MAPS & LOCAL BUSINESS INFRASTRUCTURE',
+              accentColor: '#F59E0B',
+              items: [
+                { badge: 'GBP SETUP', title: 'Google Business Profile (GBP) Setup from Scratch', desc: 'Primary categories, operational hours, service areas, and company branding' },
+                { badge: 'MAPS PIN', title: 'Google Maps Video & Postal PIN Verification', desc: 'Official ownership verification through video recording, business docs, or PIN' },
+                { badge: 'ADS LINK', title: 'Google Ads Location Extension & Maps Ads Integration', desc: 'Connect your business profile to Google Ads to rank #1 on Google Maps searches' },
+                { badge: 'RECOVERY', title: 'Suspended Business Profile Reinstatement', desc: 'Professional appeals and policy fixes to restore disabled profiles quickly' },
+                { badge: 'LOCAL SEO', title: 'Google Maps 3-Pack Ranking Optimization', desc: 'Achieve top 3-pack visibility for high-intent local customer calls and foot traffic' }
               ]
             }
           ]
@@ -890,6 +961,7 @@ export default function ServiceDetailModules({ serviceSlug, lang = 'de', primary
 
   const [openSections, setOpenSections] = useState({
     'google-setup': true,
+    'business-maps-setup': true,
     'meta-setup': true,
     'advanced-tracking': true,
     'campaign-types': true,
@@ -930,7 +1002,7 @@ export default function ServiceDetailModules({ serviceSlug, lang = 'de', primary
       />
       <div 
         className="absolute bottom-1/4 -left-40 w-[600px] h-[600px] rounded-full blur-[140px] opacity-20 pointer-events-none animate-pulse"
-        style={{ backgroundColor: '#8B5CF6' }}
+        style={{ backgroundColor: '#F59E0B' }}
       />
 
       <div className="container mx-auto max-w-7xl relative z-10">
@@ -938,27 +1010,27 @@ export default function ServiceDetailModules({ serviceSlug, lang = 'de', primary
         <div className="text-center mb-16">
           <div className="inline-flex items-center space-x-2 px-5 py-2 rounded-full text-xs font-black uppercase tracking-wider mb-5 bg-white/10 backdrop-blur-md border border-white/20 shadow-xl shadow-blue-500/10 text-white">
             <Sparkles className="w-4 h-4 text-amber-400 animate-spin" />
-            <span className="bg-gradient-to-r from-blue-400 via-purple-300 to-emerald-400 bg-clip-text text-transparent">
-              {lang === 'de' ? 'Interaktives Leistungs- & Setup-Verzeichnis 2026' : lang === 'tr' ? 'İnteraktif Reklam, Setup & Modül Kataloğu' : '2026 Interactive Setup & Module Directory'}
+            <span className="bg-gradient-to-r from-blue-400 via-amber-300 to-emerald-400 bg-clip-text text-transparent">
+              {lang === 'de' ? 'Interaktives Setup- & Leistungsverzeichnis 2026' : lang === 'tr' ? 'İnteraktif Reklam, Harita & Setup Kataloğu' : '2026 Interactive Setup & Module Directory'}
             </span>
           </div>
 
           <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-black text-white mb-6 tracking-tight leading-tight">
             {lang === 'de' ? (
-              <>Modulare Kampagnen & <span className="bg-gradient-to-r from-blue-400 via-cyan-300 to-emerald-400 bg-clip-text text-transparent">Setup-Leistungen</span></>
+              <>Google Ads, Maps & <span className="bg-gradient-to-r from-blue-400 via-amber-300 to-emerald-400 bg-clip-text text-transparent">Setup-Leistungen</span></>
             ) : lang === 'tr' ? (
-              <>Tüm Reklam Altyapı & <span className="bg-gradient-to-r from-blue-400 via-cyan-300 to-emerald-400 bg-clip-text text-transparent">Kurulum Modülleri</span></>
+              <>Google Ads, Haritalar & <span className="bg-gradient-to-r from-blue-400 via-amber-300 to-emerald-400 bg-clip-text text-transparent">Kurulum Modülleri</span></>
             ) : (
-              <>Ad Infrastructure & <span className="bg-gradient-to-r from-blue-400 via-cyan-300 to-emerald-400 bg-clip-text text-transparent">Setup Modules</span></>
+              <>Google Ads, Maps & <span className="bg-gradient-to-r from-blue-400 via-amber-300 to-emerald-400 bg-clip-text text-transparent">Setup Modules</span></>
             )}
           </h2>
 
           <p className="text-base sm:text-lg text-slate-300 max-w-3xl mx-auto leading-relaxed">
             {lang === 'de'
-              ? 'Klicken Sie auf die Kategorien, um alle spezialisierten Setup-Bausteine, Tracking-Systeme und Kampagnenformate im Detail zu erkunden.'
+              ? 'Klicken Sie auf die Kategorien, um alle spezialisierten Setup-Bausteine, Google Unternehmensprofile, Verifizierungen und Tracking-Systeme zu erkunden.'
               : lang === 'tr'
-              ? 'Aşağıdaki renkli bölümlere tıklayarak tüm reklam hesabı, GA4, Search Console, CAPI ve sunucu takip kurulum detaylarını inceleyin.'
-              : 'Click on each category to explore detailed ad account setups, GA4 tracking, CAPI integrations, and advanced optimization workflows.'}
+              ? 'Aşağıdaki renkli bölümlere tıklayarak tüm Google Ads açılış ve doğrulaması, Google İşletme Profili & Haritalar, CAPI ve analitik kurulumlarını inceleyin.'
+              : 'Click on each category to explore detailed ad account setups, Google Business Profile & Maps verifications, CAPI integrations, and analytics stacks.'}
           </p>
         </div>
 
@@ -986,7 +1058,7 @@ export default function ServiceDetailModules({ serviceSlug, lang = 'de', primary
                     </div>
                     <div>
                       <div className="flex flex-wrap items-center gap-3">
-                        <h3 className="text-xl sm:text-2xl md:text-3xl font-black text-white group-hover:text-cyan-300 transition-colors">
+                        <h3 className="text-xl sm:text-2xl md:text-3xl font-black text-white group-hover:text-amber-300 transition-colors">
                           {section.title}
                         </h3>
                         <span className={"px-3 py-1 rounded-full text-xs font-black font-mono text-white shadow-lg " + (section.badgeColor || 'bg-blue-500')}>
@@ -1040,7 +1112,7 @@ export default function ServiceDetailModules({ serviceSlug, lang = 'de', primary
                                 <div
                                   key={iIdx}
                                   onClick={() => scrollToContact(item.title)}
-                                  className="group/item relative bg-gradient-to-b from-slate-800/90 via-slate-900/90 to-slate-950/90 hover:from-slate-800 hover:to-slate-900 p-6 rounded-3xl border border-slate-700/70 hover:border-cyan-400/80 shadow-lg hover:shadow-2xl hover:shadow-cyan-500/20 hover:-translate-y-2 transition-all duration-300 flex flex-col justify-between cursor-pointer overflow-hidden"
+                                  className="group/item relative bg-gradient-to-b from-slate-800/90 via-slate-900/90 to-slate-950/90 hover:from-slate-800 hover:to-slate-900 p-6 rounded-3xl border border-slate-700/70 hover:border-amber-400/80 shadow-lg hover:shadow-2xl hover:shadow-amber-500/20 hover:-translate-y-2 transition-all duration-300 flex flex-col justify-between cursor-pointer overflow-hidden"
                                 >
                                   {/* Top Ambient Glow Line */}
                                   <div 
@@ -1071,7 +1143,7 @@ export default function ServiceDetailModules({ serviceSlug, lang = 'de', primary
                                     </div>
 
                                     {/* Title */}
-                                    <h5 className="text-base sm:text-lg font-bold text-white group-hover/item:text-cyan-300 transition-colors leading-snug mb-2">
+                                    <h5 className="text-base sm:text-lg font-bold text-white group-hover/item:text-amber-300 transition-colors leading-snug mb-2">
                                       {item.title}
                                     </h5>
 
@@ -1082,12 +1154,12 @@ export default function ServiceDetailModules({ serviceSlug, lang = 'de', primary
                                   </div>
 
                                   {/* Bottom Action Link */}
-                                  <div className="mt-5 pt-4 border-t border-slate-800 flex items-center justify-between text-xs font-bold text-slate-400 group-hover/item:text-cyan-400 transition-colors">
+                                  <div className="mt-5 pt-4 border-t border-slate-800 flex items-center justify-between text-xs font-bold text-slate-400 group-hover/item:text-amber-400 transition-colors">
                                     <span className="flex items-center gap-1.5">
                                       <CheckCircle2 className="w-3.5 h-3.5 text-emerald-400" />
                                       <span>{lang === 'de' ? 'Setup anfragen' : lang === 'tr' ? 'Kurulum İste' : 'Inquire Setup'}</span>
                                     </span>
-                                    <div className="w-7 h-7 rounded-lg bg-white/5 group-hover/item:bg-cyan-500 group-hover/item:text-slate-950 flex items-center justify-center transition-all duration-200">
+                                    <div className="w-7 h-7 rounded-lg bg-white/5 group-hover/item:bg-amber-500 group-hover/item:text-slate-950 flex items-center justify-center transition-all duration-200">
                                       <ArrowRight className="w-3.5 h-3.5 transform group-hover/item:translate-x-0.5 transition-transform" />
                                     </div>
                                   </div>
