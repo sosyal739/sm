@@ -380,6 +380,12 @@ export default function ServiceDetailPage() {
           desc: lang === 'de' ? 'Live-Test aller Transaktionen, Event Match Quality Prüfung (9.0+) und schlüsselfertige Übergabe.' : lang === 'en' ? 'Live testing of all transactions, Event Match Quality verification (9.0+), and turnkey handover.' : 'Canlı test siparişleri, Event Match Quality (9.0+) skor doğrulaması ve anahtar teslim raporlama.'
         }
       ],
+      benefits: [
+        { title: lang === 'de' ? '100% Messgenauigkeit' : lang === 'en' ? '100% Data Accuracy' : '%100 Veri Doğruluğu', desc: lang === 'de' ? 'Beseitigung von bis zu 40% Datenverlust durch Ad-Blocker' : lang === 'en' ? 'Eliminate up to 40% data loss from ad blockers' : 'Reklam engelleyicilerden kaynaklanan %40 veri kaybını önleme' },
+        { title: lang === 'de' ? 'Bessere KI-Gebote' : lang === 'en' ? 'Smarter AI Bidding' : 'Daha Güçlü Yapay Zeka', desc: lang === 'de' ? 'Höherer ROAS durch perfekte Algorithmus-Fütterung' : lang === 'en' ? 'Higher ROAS through perfect algorithm training' : 'Eksiksiz veri ile Meta ve Google yapay zekasından maksimum ROAS' },
+        { title: lang === 'de' ? 'DSGVO & EU-Konform' : lang === 'en' ? 'GDPR & EU Compliant' : 'KVKK & GDPR Uyumu', desc: lang === 'de' ? 'Rechtssichere Consent Mode v2 Integration' : lang === 'en' ? 'Fully compliant Consent Mode v2 setup' : 'Avrupa ve KVKK standartlarında Consent Mode v2 altyapısı' },
+        { title: lang === 'de' ? '24h Express-Lieferung' : lang === 'en' ? '24h Express Turnkey' : '24 Saatte Teslim', desc: lang === 'de' ? 'Schnelle und schlüsselfertige Integration' : lang === 'en' ? 'Fast and turnkey deployment' : 'Hızlı, test edilmiş ve anahtar teslim kurulum' }
+      ],
       faq: [
         {
           q: lang === 'de' ? 'Warum brauche ich Server-Side Tracking?' : lang === 'en' ? 'Why do I need Server-Side Tracking?' : 'Neden Server-Side Tracking ve CAPI Kurulumu Gereklidir?',
@@ -1916,7 +1922,7 @@ export default function ServiceDetailPage() {
           </div>
           
           <div className="grid md:grid-cols-2 gap-6 md:gap-8">
-            {data.benefits.map((item, i) => (
+            {(data.benefits || []).map((item, i) => (
               <div
                 key={i}
                 className="flex items-start space-x-5 p-7 md:p-8 bg-slate-50/70 hover:bg-white rounded-3xl border border-slate-200/80 hover:border-slate-300 shadow-sm hover:shadow-xl transition-all duration-300 hover:-translate-y-1 group"
