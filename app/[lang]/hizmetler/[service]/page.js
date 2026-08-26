@@ -1093,7 +1093,15 @@ export default function ServiceDetailPage() {
             </p>
           </div>
           
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <div className={`grid gap-6 md:gap-8 ${
+            data.features.length === 4 
+              ? 'grid-cols-1 sm:grid-cols-2 lg:grid-cols-4' 
+              : data.features.length === 3 || data.features.length === 6 
+              ? 'grid-cols-1 md:grid-cols-2 lg:grid-cols-3' 
+              : data.features.length === 2 
+              ? 'grid-cols-1 md:grid-cols-2 max-w-4xl mx-auto' 
+              : 'grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4'
+          }`}>
             {data.features.map((f, i) => {
               const IconComponent = f.icon
               const cardThemes = [
