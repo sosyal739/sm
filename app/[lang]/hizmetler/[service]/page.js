@@ -18,8 +18,8 @@ const servicesList = {
   tr: [
     { title: 'Google Ads Yönetimi', slug: 'google-ads' },
     { title: 'Meta Ads (Facebook & Instagram)', slug: 'meta-ads' },
+    { title: 'Reklam & Tracking Kurulumu (Setup & CAPI)', slug: 'server-side-tracking' },
     { title: 'YouTube Ads & Video Büyüme', slug: 'youtube-ads' },
-    { title: 'Server-Side Tracking (CAPI)', slug: 'server-side-tracking' },
     { title: 'TikTok Ads', slug: 'tiktok-ads' },
     { title: 'X (Twitter) Ads', slug: 'x-ads' },
     { title: 'SEO Hizmetleri', slug: 'seo' },
@@ -28,8 +28,8 @@ const servicesList = {
   de: [
     { title: 'Google Ads Management', slug: 'google-ads' },
     { title: 'Meta Ads (Facebook & Instagram)', slug: 'meta-ads' },
+    { title: 'Werbekonto- & Tracking-Setup (Google & CAPI)', slug: 'server-side-tracking' },
     { title: 'YouTube Ads & Video-Wachstum', slug: 'youtube-ads' },
-    { title: 'Server-Side Tracking (CAPI)', slug: 'server-side-tracking' },
     { title: 'TikTok Ads', slug: 'tiktok-ads' },
     { title: 'X (Twitter) Ads', slug: 'x-ads' },
     { title: 'SEO Dienstleistungen', slug: 'seo' },
@@ -38,8 +38,8 @@ const servicesList = {
   en: [
     { title: 'Google Ads Management', slug: 'google-ads' },
     { title: 'Meta Ads (Facebook & Instagram)', slug: 'meta-ads' },
+    { title: 'Ad Account & Tracking Setup (Google & CAPI)', slug: 'server-side-tracking' },
     { title: 'YouTube Ads & Video Growth', slug: 'youtube-ads' },
-    { title: 'Server-Side Tracking (CAPI)', slug: 'server-side-tracking' },
     { title: 'TikTok Ads', slug: 'tiktok-ads' },
     { title: 'X (Twitter) Ads', slug: 'x-ads' },
     { title: 'SEO Services', slug: 'seo' },
@@ -299,6 +299,95 @@ export default function ServiceDetailPage() {
         { 
           q: lang === 'de' ? 'Ist die Erstellung von Inhalten in Ihrem Service enthalten?' : lang === 'en' ? 'Is content creation included in your service?' : 'İçerik üretimi hizmetinize dahil mi?',
           a: lang === 'de' ? 'Ja, unser kreatives Team erstellt professionelle Grafiken und Videoinhalte. Wir können auch mit Ihren vorhandenen Inhalten arbeiten und diese für Werbezwecke optimieren.' : lang === 'en' ? 'Yes, our creative team produces professional graphics and video content. We can also work with your existing content and optimize it for advertising purposes.' : 'Evet, kreatif ekibimiz profesyonel grafik ve video içerikler üretiyor. Mevcut içeriklerinizi de kullanarak reklam için optimize edebiliyoruz.'
+        }
+      ]
+    },
+
+    'server-side-tracking': {
+      title: lang === 'de' ? 'Werbekonto- & Tracking-Setup' : lang === 'en' ? 'Ad Account & Tracking Setup' : 'Reklam & Tracking Kurulum Hizmetleri',
+      subtitle: lang === 'de'
+        ? 'Google Ads, GA4, Search Console, GMC, Meta Pixel & CAPI — 100% lückenloses Setup.'
+        : lang === 'en'
+        ? 'Google Ads, GA4, Search Console, GMC, Meta Pixel & CAPI — 100% loss-free infrastructure setup.'
+        : 'Google Ads, GA4, Search Console, GMC, Meta Pixel & CAPI — %100 eksiksiz altyapı kurulumu.',
+      description: lang === 'de'
+        ? 'Schluss mit Datenverlusten durch iOS- und Cookie-Blocker. Wir richten Ihre gesamte Werbe- und Tracking-Infrastruktur professionell ein: Von Google Ads, GA4 E-Commerce und Search Console über Merchant Center bis hin zu Meta Business Manager, Conversions API (CAPI) und Server-Side GTM.'
+        : lang === 'en'
+        ? 'Stop losing conversion data to iOS updates and ad blockers. We build and verify your entire advertising and measurement stack: From Google Ads, GA4 E-Commerce, and Search Console to Merchant Center, Meta Business Manager, CAPI, and Server-Side GTM.'
+        : 'iOS güncellemeleri ve reklam engelleyiciler yüzünden veri kaybetmeye son. Tüm reklam ve ölçüm altyapınızı sıfırdan anahtar teslim kuruyoruz: Google Ads, GA4 E-Ticaret ve Search Console\'dan Merchant Center, Meta Business Manager, CAPI ve Server-Side GTM\'e kadar.',
+      badge: lang === 'de' ? 'Server-Side & CAPI Spezialist' : lang === 'en' ? 'Server-Side & CAPI Specialist' : 'Server-Side & CAPI Uzmanı',
+      primaryColor: '#0F9D58',
+      secondaryColor: '#4285F4',
+      accentColor: '#10B981',
+      gradientFrom: '#0F9D58',
+      gradientTo: '#4285F4',
+      icon: (
+        <svg className="w-6 h-6" viewBox="0 0 24 24" fill="none" stroke="#0F9D58" strokeWidth="2">
+          <rect x="2" y="2" width="20" height="8" rx="2" ry="2"/>
+          <rect x="2" y="14" width="20" height="8" rx="2" ry="2"/>
+          <line x1="6" y1="6" x2="6.01" y2="6"/>
+          <line x1="6" y1="18" x2="6.01" y2="18"/>
+        </svg>
+      ),
+      stats: [
+        { value: '%100', label: lang === 'de' ? 'Messgenauigkeit' : lang === 'en' ? 'Data Accuracy' : 'Ölçüm Doğruluğu', trend: lang === 'de' ? 'Server-Side sGTM' : lang === 'en' ? 'Server-side sGTM' : 'Sunucu Taraflı sGTM' },
+        { value: '9.0+', label: lang === 'de' ? 'EMQ Match Quality' : lang === 'en' ? 'EMQ Match Quality' : 'Olay Eşleşme Skoru', trend: lang === 'de' ? 'Meta CAPI Score' : lang === 'en' ? 'Meta CAPI Score' : 'Meta CAPI Skoru' },
+        { value: '24h', label: lang === 'de' ? 'Express-Setup' : lang === 'en' ? 'Express Setup' : 'Hızlı Kurulum', trend: lang === 'de' ? 'Schlüsselfertig' : lang === 'en' ? 'Turnkey integration' : 'Anahtar Teslim' },
+        { value: '720+', label: lang === 'de' ? 'Integrierte Konten' : lang === 'en' ? 'Accounts Deployed' : 'Entegre Hesap', trend: lang === 'de' ? 'Google & Meta' : lang === 'en' ? 'Google & Meta' : 'Google & Meta' }
+      ],
+      features: [
+        {
+          title: lang === 'de' ? 'Google Altyapı & Analitik' : lang === 'en' ? 'Google Analytics & Ads Stack' : 'Google Reklam & Analitik Kurulumu',
+          subtitle: 'Google Ads, GA4 & Console',
+          desc: lang === 'de' ? 'Google Ads, GA4 E-Commerce, Search Console ve Merchant Center ürün besleme entegrasyonu.' : lang === 'en' ? 'Google Ads, GA4 E-Commerce, Search Console, and Merchant Center feed integration.' : 'Google Ads, GA4 E-Ticaret, Search Console ve Merchant Center ürün besleme entegrasyonu.',
+          icon: BarChart3,
+          items: lang === 'de' ? ['Google Ads Kontoeinrichtung', 'GA4 E-Commerce Setup', 'Search Console Verifizierung', 'Merchant Center Feed Sync'] : lang === 'en' ? ['Google Ads account setup', 'GA4 E-Commerce setup', 'Search Console verification', 'Merchant Center feed sync'] : ['Google Ads hesap kurulumu', 'GA4 E-Ticaret kurulumu', 'Search Console doğrulama', 'Merchant Center feed senkronizasyonu']
+        },
+        {
+          title: lang === 'de' ? 'Meta Business & CAPI' : lang === 'en' ? 'Meta Business & CAPI Stack' : 'Meta Pixel & CAPI Kurulum Paketi',
+          subtitle: 'Business Manager & CAPI',
+          desc: lang === 'de' ? 'Meta Business Manager, 2FA güvenlik, Meta Pixel, Conversions API (CAPI) ve domain doğrulama.' : lang === 'en' ? 'Meta Business Manager, 2FA security, Meta Pixel, Conversions API (CAPI), and domain verification.' : 'Meta Business Manager, 2FA güvenlik, Meta Pixel, Conversions API (CAPI) ve domain doğrulama.',
+          icon: ShieldCheck,
+          items: lang === 'de' ? ['Business Manager Setup', 'Meta Pixel & CAPI', 'Domain-Verifizierung', 'Aggregated Event Config'] : lang === 'en' ? ['Business Manager setup', 'Meta Pixel & CAPI', 'Domain verification', 'Aggregated event config'] : ['Business Manager kurulumu', 'Meta Pixel & CAPI', 'Domain doğrulama', 'Öncelikli olay yapılandırması']
+        },
+        {
+          title: lang === 'de' ? 'Server-Side GTM & sGTM' : lang === 'en' ? 'Server-Side GTM & Cloud' : 'İleri Seviye Server-Side Tracking',
+          subtitle: 'Cloud Server & Privacy',
+          desc: lang === 'de' ? 'Google Cloud ve Stape üzerinde 1. taraf çerez (first-party) altyapısı ve Google Consent Mode v2.' : lang === 'en' ? 'First-party server tracking deployed on Google Cloud/Stape and Google Consent Mode v2.' : 'Google Cloud ve Stape üzerinde 1. taraf çerez altyapısı ve Google Consent Mode v2 entegrasyonu.',
+          icon: Cpu,
+          items: lang === 'de' ? ['Server-Side sGTM', 'Consent Mode v2', 'Enhanced Conversions', 'Offline Conversion Tracking'] : lang === 'en' ? ['Server-Side sGTM', 'Consent Mode v2', 'Enhanced Conversions', 'Offline Conversion Tracking'] : ['Server-Side sGTM', 'Consent Mode v2', 'Gelişmiş Dönüşümler', 'Offline Dönüşüm Takibi']
+        }
+      ],
+      process: [
+        {
+          step: '01',
+          title: lang === 'de' ? 'Audit & Anforderungsanalyse' : lang === 'en' ? 'Audit & Requirements Analysis' : 'Denetim & İhtiyaç Analizi',
+          desc: lang === 'de' ? 'Wir prüfen bestehende Konten, Website-Plattform (Shopify, WooCommerce, Custom) und Tracking-Lücken.' : lang === 'en' ? 'We audit existing accounts, website platforms (Shopify, WooCommerce, Custom), and tracking loss.' : 'Mevcut hesaplarınızı, web sitesi altyapınızı (Shopify, WooCommerce, Özel Yazılım) ve veri kayıplarını inceliyoruz.'
+        },
+        {
+          step: '02',
+          title: lang === 'de' ? 'Konten- & DataLayer-Setup' : lang === 'en' ? 'Account & DataLayer Setup' : 'Hesap & Veri Katmanı Kurulumu',
+          desc: lang === 'de' ? 'Einrichtung aller Werbekonten, Google Tag Manager DataLayer und E-Commerce Ereignisse.' : lang === 'en' ? 'Configuration of all ad accounts, Google Tag Manager DataLayer, and e-commerce events.' : 'Tüm reklam hesaplarının açılması, Google Tag Manager DataLayer ve e-ticaret olaylarının yapılandırılması.'
+        },
+        {
+          step: '03',
+          title: lang === 'de' ? 'CAPI & Server-Side Deployment' : lang === 'en' ? 'CAPI & Server-Side Deployment' : 'CAPI & Sunucu Entegrasyonu',
+          desc: lang === 'de' ? 'Bereitstellung des Server-GTM Containers auf Google Cloud/Stape und Verknüpfung der Conversions API.' : lang === 'en' ? 'Deployment of Server GTM container on Google Cloud/Stape and Conversions API connection.' : 'Google Cloud/Stape üzerinde Server GTM konteynerinin kurulması ve Conversions API entegrasyonu.'
+        },
+        {
+          step: '04',
+          title: lang === 'de' ? 'QA-Testing & Übergabe' : lang === 'en' ? 'QA Testing & Handover' : 'Test, Doğrulama & Teslimat',
+          desc: lang === 'de' ? 'Live-Test aller Transaktionen, Event Match Quality Prüfung (9.0+) und schlüsselfertige Übergabe.' : lang === 'en' ? 'Live testing of all transactions, Event Match Quality verification (9.0+), and turnkey handover.' : 'Canlı test siparişleri, Event Match Quality (9.0+) skor doğrulaması ve anahtar teslim raporlama.'
+        }
+      ],
+      faq: [
+        {
+          q: lang === 'de' ? 'Warum brauche ich Server-Side Tracking?' : lang === 'en' ? 'Why do I need Server-Side Tracking?' : 'Neden Server-Side Tracking ve CAPI Kurulumu Gereklidir?',
+          a: lang === 'de' ? 'Klassische Browser-Pixel verlieren durch Ad-Blocker und iOS-Restriktionen bis zu 30-40% der Kaufdaten. Mit Server-Side Tracking werden Daten direkt vom Server an Werbenetzwerke gesendet — ohne Datenverlust.' : lang === 'en' ? 'Standard browser pixels lose up to 30-40% of conversion data due to ad-blockers and iOS privacy restrictions. Server-Side Tracking sends data directly from your server to ad networks with zero loss.' : 'Geleneksel tarayıcı pikselleri, reklam engelleyiciler ve iOS gizlilik kısıtlamaları nedeniyle satış verilerinin %30-40\'ını kaçırır. Server-Side Tracking ile veriler doğrudan sunucudan reklam paneline iletilir, yapay zeka en doğru alıcıyı hedefler.'
+        },
+        {
+          q: lang === 'de' ? 'Welche Plattformen werden unterstützt?' : lang === 'en' ? 'Which platforms are supported?' : 'Hangi e-ticaret ve web altyapıları destekleniyor?',
+          a: lang === 'de' ? 'Wir richten Tracking für Shopify, WooCommerce, Magento, Shopware, Next.js, Laravel und individuelle Webapplikationen ein.' : lang === 'en' ? 'We deploy tracking setups for Shopify, WooCommerce, Magento, Shopware, Next.js, Laravel, and custom architectures.' : 'Shopify, WooCommerce, Magento, Shopware, Next.js, React, Laravel ve tüm özel e-ticaret yazılımları için kusursuz kurulum yapıyoruz.'
         }
       ]
     },

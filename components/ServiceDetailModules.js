@@ -5,17 +5,21 @@ import {
   ChevronDown, Sparkles, ArrowRight, Zap, MapPin, Cpu, ShoppingCart, 
   Search, Play, Flame, Video, Layers, Radio, RefreshCw, Newspaper, 
   PhoneCall, Smartphone, UserCheck, ShieldCheck, DollarSign, Award, 
-  ShieldAlert, CheckCircle2, TrendingUp, Target, Sliders, Globe, Clock, Users, BarChart3, Star, Heart
+  ShieldAlert, CheckCircle2, TrendingUp, Target, Sliders, Globe, Clock, Users, BarChart3, Star, Heart, Lock, Database, Code, Activity
 } from 'lucide-react'
 
 // Icon mapping helper
 const getModuleIcon = (title = '') => {
   const t = title.toLowerCase()
+  if (t.includes('search console') || t.includes('console')) return Search
+  if (t.includes('analytics') || t.includes('ga4') || t.includes('analitik')) return BarChart3
+  if (t.includes('tag manager') || t.includes('gtm') || t.includes('sgtm')) return Code
+  if (t.includes('merchant') || t.includes('feed') || t.includes('alışveriş') || t.includes('shopping')) return ShoppingCart
+  if (t.includes('consent') || t.includes('gdpr') || t.includes('izin') || t.includes('çerez')) return Lock
   if (t.includes('search') || t.includes('suche')) return Search
   if (t.includes('harita') || t.includes('maps')) return MapPin
   if (t.includes('pmax') || t.includes('performance max')) return Sparkles
-  if (t.includes('alışveriş') || t.includes('shopping')) return ShoppingCart
-  if (t.includes('shorts')) return Flame
+  if (t.includes('shorts') || t.includes('reels')) return Flame
   if (t.includes('video') || t.includes('youtube')) return Play
   if (t.includes('demand gen')) return Radio
   if (t.includes('görüntülü') || t.includes('display')) return Layers
@@ -24,20 +28,19 @@ const getModuleIcon = (title = '') => {
   if (t.includes('çağrı') || t.includes('call') || t.includes('anruf')) return PhoneCall
   if (t.includes('mobil') || t.includes('app')) return Smartphone
   if (t.includes('lead') || t.includes('form') || t.includes('sofort')) return UserCheck
-  if (t.includes('audit') || t.includes('denetim')) return Search
-  if (t.includes('fixpreis') || t.includes('sabit') || t.includes('pauschale')) return ShieldCheck
+  if (t.includes('audit') || t.includes('denetim')) return Activity
+  if (t.includes('fixpreis') || t.includes('sabit') || t.includes('pauschale') || t.includes('business manager')) return ShieldCheck
   if (t.includes('maliyet') || t.includes('cpc') || t.includes('preis') || t.includes('kosten')) return DollarSign
   if (t.includes('kalite') || t.includes('quality') || t.includes('score')) return Award
-  if (t.includes('fraud') || t.includes('sahtekarlık') || t.includes('betrug')) return ShieldAlert
-  if (t.includes('roas') || t.includes('türleri') || t.includes('growth')) return TrendingUp
-  if (t.includes('cpa') || t.includes('hedef')) return Target
+  if (t.includes('fraud') || t.includes('sahtekarlık') || t.includes('betrug') || t.includes('domain')) return ShieldAlert
+  if (t.includes('roas') || t.includes('growth')) return TrendingUp
+  if (t.includes('cpa') || t.includes('hedef') || t.includes('pixel')) return Target
   if (t.includes('radius') || t.includes('coğrafi') || t.includes('geo')) return Globe
   if (t.includes('saat') || t.includes('zaman') || t.includes('schedule')) return Clock
   if (t.includes('kitle') || t.includes('segment') || t.includes('audience')) return Users
-  if (t.includes('reels')) return Flame
   if (t.includes('ugc')) return Star
   if (t.includes('whatsapp') || t.includes('dm')) return PhoneCall
-  if (t.includes('capi') || t.includes('tracking')) return Cpu
+  if (t.includes('capi') || t.includes('server') || t.includes('tracking') || t.includes('offline') || t.includes('crm')) return Database
   if (t.includes('hook')) return Zap
   if (t.includes('stk') || t.includes('ngo') || t.includes('charity')) return Heart
   return Zap
@@ -45,6 +48,209 @@ const getModuleIcon = (title = '') => {
 
 export default function ServiceDetailModules({ serviceSlug, lang = 'de', primaryColor = '#4285F4' }) {
   const modulesCatalog = {
+    // REKLAM & TRACKING KURULUM HİZMETLERİ (Google Ads, GA4, Console, GMC, Meta CAPI, sGTM)
+    'server-side-tracking': {
+      tr: [
+        {
+          id: 'google-setup',
+          title: 'Google Reklam & Analitik Altyapı Kurulumu',
+          subtitle: 'Google Ads / GA4 E-Ticaret / Search Console / Merchant Center',
+          count: 6,
+          themeGradient: 'from-blue-600 via-indigo-600 to-blue-800',
+          badgeColor: 'bg-blue-500',
+          groups: [
+            {
+              categoryName: 'GOOGLE ALTYAPI & ÖLÇÜM KURULUMU',
+              accentColor: '#4285F4',
+              items: [
+                { badge: 'GOOGLE ADS', title: 'Sıfırdan Google Ads Hesap Kurulumu', desc: 'Doğru para birimi, faturalandırma, kampanya yapısı ve negatif anahtar kelime mimarisi' },
+                { badge: 'GA4 SETUP', title: 'Google Analytics 4 (GA4) E-Ticaret Kurulumu', desc: 'Sepete ekleme, ödeme adımları ve satın alma etkinliklerinin eksiksiz yapılandırılması' },
+                { badge: 'SEARCH CONSOLE', title: 'Google Search Console Doğrulama & Sitemap', desc: 'Mülk doğrulama, site haritası gönderimi ve teknik indeksleme kontrolleri' },
+                { badge: 'GMC FEED', title: 'Google Merchant Center & Ürün Feed Entegrasyonu', desc: 'Alışveriş reklamları için ürün kataloğu onaylatma ve otomatik feed senkronizasyonu' },
+                { badge: 'TAG MANAGER', title: 'Google Tag Manager (GTM) Veri Katmanı', desc: 'Web sitesi koduna dokunmadan esnek etiket ve olay takibi altyapısı' },
+                { badge: 'CONSENT MODE', title: 'Google Consent Mode v2 (AB Çerez Uyumu)', desc: 'Avrupa GDPR mevzuatına uygun gelişmiş çerez izin modu ve modelleme' }
+              ]
+            }
+          ]
+        },
+        {
+          id: 'meta-setup',
+          title: 'Meta (Facebook & Instagram) Kurulum Paketi',
+          subtitle: 'Business Manager / Meta Pixel / CAPI / WhatsApp / Domain',
+          count: 5,
+          themeGradient: 'from-pink-600 via-rose-600 to-purple-700',
+          badgeColor: 'bg-pink-500',
+          groups: [
+            {
+              categoryName: 'META REKLAM & DÖNÜŞÜM ALTYAPISI',
+              accentColor: '#EC4899',
+              items: [
+                { badge: 'BUSINESS MANAGER', title: 'Meta Business Manager & Güvenlik Kurulumu', desc: '2 faktörlü doğrulama, varlık paylaşımı, sayfa ve reklam hesabı mimarisi' },
+                { badge: 'META PIXEL', title: 'Meta Pixel & Standart Olay Kurulumu', desc: 'ViewContent, AddToCart, InitiateCheckout ve Purchase olaylarının entegrasyonu' },
+                { badge: 'META CAPI', title: 'Meta Conversions API (CAPI) Sunucu Kurulumu', desc: 'iOS reklam engelleyicilerini aşarak %100 kayıpsız sunucu taraflı satış takibi' },
+                { badge: 'DOMAIN & AEM', title: 'Domain Doğrulama & Toplu Olay Yapılandırması', desc: 'DNS TXT kaydı ile alan adı onayı ve 8 öncelikli dönüşüm olayının tanımlanması' },
+                { badge: 'WHATSAPP & DM', title: 'WhatsApp Business & Instagram DM Satış Hunisi', desc: 'Tıklayan müşteriyi anında WhatsApp ve DM sohbetine bağlayan hızlı dönüşüm altyapısı' }
+              ]
+            }
+          ]
+        },
+        {
+          id: 'advanced-tracking',
+          title: 'İleri Seviye Server-Side Tracking & sGTM',
+          subtitle: 'Cloud Server / Gelişmiş Eşleme / Çerezsiz Ölçüm',
+          count: 5,
+          themeGradient: 'from-emerald-600 via-teal-600 to-emerald-800',
+          badgeColor: 'bg-emerald-500',
+          groups: [
+            {
+              categoryName: 'SUNUCU TARAFLI ÖLÇÜM & BÜYÜK VERİ',
+              accentColor: '#10B981',
+              items: [
+                { badge: 'SERVER GTM', title: 'Server-Side Google Tag Manager (sGTM) Kurulumu', desc: 'Google Cloud / Stape sunucuları üzerinde 1. taraf çerez (first-party data) altyapısı' },
+                { badge: 'ENHANCED CONV.', title: 'Google Gelişmiş Dönüşümler (Enhanced Conversions)', desc: 'Şifreli müşteri verisi (SHA256) ile Google Ads teklif yapay zekasını maksimuma çıkarma' },
+                { badge: 'OFFLINE TRACKING', title: 'Offline Dönüşüm (OCT) & CRM Entegrasyonu', desc: 'Telefonla veya mağazada gerçekleşen satışların reklam paneline otomatik aktarılması' },
+                { badge: 'EVENT MATCH', title: 'Olay Eşleşme Kalitesi (EMQ 9.0+) Optimizasyonu', desc: 'Meta ve Google panellerinde 9.0+ kalite puanı ile en doğru alıcıyı hedefleme' },
+                { badge: 'TIKTOK & PINTEREST', title: 'TikTok Events API & Pinterest CAPI Kurulumu', desc: 'Tüm sosyal medya kanalları için eksiksiz sunucu taraflı dönüşüm beslemesi' }
+              ]
+            }
+          ]
+        }
+      ],
+      de: [
+        {
+          id: 'google-setup',
+          title: 'Google Ads & Analytics Infrastruktur-Setup',
+          subtitle: 'Google Ads / GA4 E-Commerce / Search Console / Merchant Center',
+          count: 6,
+          themeGradient: 'from-blue-600 via-indigo-600 to-blue-800',
+          badgeColor: 'bg-blue-500',
+          groups: [
+            {
+              categoryName: 'GOOGLE SETUP & MESS-INFRASTRUKTUR',
+              accentColor: '#4285F4',
+              items: [
+                { badge: 'GOOGLE ADS', title: 'Neuanlage & Strukturierung des Google Ads Kontos', desc: 'Optimale Kontenarchitektur, Abrechnungseinrichtung und Master-Ausschlusslisten' },
+                { badge: 'GA4 SETUP', title: 'Google Analytics 4 (GA4) E-Commerce Tracking', desc: 'Vollständige Erfassung von Warenkorb-, Checkout- und Transaktions-Events' },
+                { badge: 'SEARCH CONSOLE', title: 'Google Search Console Verifizierung & Sitemap', desc: 'Inhaberschaftsbestätigung, XML-Sitemap-Einreichung und Indexierungsüberwachung' },
+                { badge: 'GMC FEED', title: 'Google Merchant Center & Produkt-Feed Integration', desc: 'Freischaltung von Shopping-Anzeigen und automatischer Produktdatenabgleich' },
+                { badge: 'TAG MANAGER', title: 'Google Tag Manager (GTM) DataLayer Setup', desc: 'Saubere Ereigniserfassung ohne manuelle Eingriffe in den Quellcode' },
+                { badge: 'CONSENT MODE', title: 'Google Consent Mode v2 (DSGVO & EU-Konform)', desc: 'Rechtssichere Einwilligungserfassung und KI-gestützte Conversion-Modellierung' }
+              ]
+            }
+          ]
+        },
+        {
+          id: 'meta-setup',
+          title: 'Meta (Facebook & Instagram) Setup-Paket',
+          subtitle: 'Business Manager / Meta Pixel / CAPI / WhatsApp / Domain',
+          count: 5,
+          themeGradient: 'from-pink-600 via-rose-600 to-purple-700',
+          badgeColor: 'bg-pink-500',
+          groups: [
+            {
+              categoryName: 'META SETUP & CONVERSION-INFRASTRUKTUR',
+              accentColor: '#EC4899',
+              items: [
+                { badge: 'BUSINESS MANAGER', title: 'Meta Business Manager & Sicherheits-Setup', desc: '2-Faktor-Authentifizierung, Rechtestruktur, Seiten- und Kontoverknüpfungen' },
+                { badge: 'META PIXEL', title: 'Meta Pixel & Standard-Event-Implementierung', desc: 'Lückenlose Integration von ViewContent, AddToCart, Lead und Purchase' },
+                { badge: 'META CAPI', title: 'Meta Conversions API (CAPI) Server-Side Tracking', desc: '100% verlässliche Messung zur Überwindung von iOS-Werbeblockern' },
+                { badge: 'DOMAIN & AEM', title: 'Domain-Verifizierung & Event-Konfiguration', desc: 'DNS-Verifizierung und Priorisierung der 8 wichtigsten Conversion-Ereignisse' },
+                { badge: 'WHATSAPP & DM', title: 'WhatsApp Business & Instagram DM Funnel-Setup', desc: 'Direkter Chat-Einstieg für schnelle Kundenberatung und Lead-Abschlüsse' }
+              ]
+            }
+          ]
+        },
+        {
+          id: 'advanced-tracking',
+          title: 'Advanced Server-Side Tracking & sGTM',
+          subtitle: 'Cloud Server / Enhanced Conversions / CRM Tracking',
+          count: 5,
+          themeGradient: 'from-emerald-600 via-teal-600 to-emerald-800',
+          badgeColor: 'bg-emerald-500',
+          groups: [
+            {
+              categoryName: 'SERVER-SIDE MESSUNG & DATENQUALITÄT',
+              accentColor: '#10B981',
+              items: [
+                { badge: 'SERVER GTM', title: 'Server-Side Google Tag Manager (sGTM) Setup', desc: 'First-Party Server-Infrastruktur auf Google Cloud oder Stape' },
+                { badge: 'ENHANCED CONV.', title: 'Google Enhanced Conversions (Erweiterte Conversions)', desc: 'Verschlüsselte Kundendaten (SHA256) für maximale Smart-Bidding-Präzision' },
+                { badge: 'OFFLINE TRACKING', title: 'Offline Conversion Tracking (OCT) & CRM-Anbindung', desc: 'Rückführung von Offline- und Telefonverkäufen in die Werbekonten' },
+                { badge: 'EVENT MATCH', title: 'Event Match Quality (EMQ 9.0+) Optimierung', desc: 'Erreichen von Spitzenwerten (9.0+) für optimale Algorithmus-Fütterung' },
+                { badge: 'TIKTOK & PINTEREST', title: 'TikTok Events API & Pinterest CAPI Setup', desc: 'Ganzheitliche Server-Side Abdeckung für alle aktiven Social-Kanäle' }
+              ]
+            }
+          ]
+        }
+      ],
+      en: [
+        {
+          id: 'google-setup',
+          title: 'Google Ads & Analytics Infrastructure Setup',
+          subtitle: 'Google Ads / GA4 E-Commerce / Search Console / Merchant Center',
+          count: 6,
+          themeGradient: 'from-blue-600 via-indigo-600 to-blue-800',
+          badgeColor: 'bg-blue-500',
+          groups: [
+            {
+              categoryName: 'GOOGLE SETUP & MEASUREMENT STACK',
+              accentColor: '#4285F4',
+              items: [
+                { badge: 'GOOGLE ADS', title: 'Zero-to-Hero Google Ads Account Setup', desc: 'Proper currency, billing, best-practice structure, and master negative keyword lists' },
+                { badge: 'GA4 SETUP', title: 'Google Analytics 4 (GA4) E-Commerce Tracking', desc: 'Complete tracking for add_to_cart, begin_checkout, and purchase transactions' },
+                { badge: 'SEARCH CONSOLE', title: 'Google Search Console Verification & Sitemap', desc: 'Domain ownership validation, XML sitemap indexing, and coverage monitoring' },
+                { badge: 'GMC FEED', title: 'Google Merchant Center & Product Feed Integration', desc: 'Product catalog approval for Shopping ads with automated sync' },
+                { badge: 'TAG MANAGER', title: 'Google Tag Manager (GTM) DataLayer Setup', desc: 'Agile tag management without constant source code modifications' },
+                { badge: 'CONSENT MODE', title: 'Google Consent Mode v2 (GDPR Compliant)', desc: 'Compliant consent handling with machine-learning conversion modeling' }
+              ]
+            }
+          ]
+        },
+        {
+          id: 'meta-setup',
+          title: 'Meta (Facebook & Instagram) Setup Package',
+          subtitle: 'Business Manager / Meta Pixel / CAPI / WhatsApp / Domain',
+          count: 5,
+          themeGradient: 'from-pink-600 via-rose-600 to-purple-700',
+          badgeColor: 'bg-pink-500',
+          groups: [
+            {
+              categoryName: 'META ADVERTISING & CONVERSION STACK',
+              accentColor: '#EC4899',
+              items: [
+                { badge: 'BUSINESS MANAGER', title: 'Meta Business Manager & Security Setup', desc: '2FA security, asset permissions, page, and ad account architecture' },
+                { badge: 'META PIXEL', title: 'Meta Pixel & Standard Event Deployment', desc: 'Full event tracking for ViewContent, AddToCart, Lead, and Purchase' },
+                { badge: 'META CAPI', title: 'Meta Conversions API (CAPI) Server-Side Setup', desc: '100% loss-free server-side conversion tracking bypassing iOS blockers' },
+                { badge: 'DOMAIN & AEM', title: 'Domain Verification & Event Configuration', desc: 'DNS TXT record validation and prioritization of 8 primary events' },
+                { badge: 'WHATSAPP & DM', title: 'WhatsApp Business & Instagram DM Sales Funnel', desc: 'Direct-to-chat messaging funnels for immediate consultation and sales' }
+              ]
+            }
+          ]
+        },
+        {
+          id: 'advanced-tracking',
+          title: 'Advanced Server-Side Tracking & sGTM',
+          subtitle: 'Cloud Server / Enhanced Conversions / CRM Tracking',
+          count: 5,
+          themeGradient: 'from-emerald-600 via-teal-600 to-emerald-800',
+          badgeColor: 'bg-emerald-500',
+          groups: [
+            {
+              categoryName: 'SERVER-SIDE MEASUREMENT & DATA QUALITY',
+              accentColor: '#10B981',
+              items: [
+                { badge: 'SERVER GTM', title: 'Server-Side Google Tag Manager (sGTM) Setup', desc: 'First-party server tracking infrastructure deployed on Google Cloud or Stape' },
+                { badge: 'ENHANCED CONV.', title: 'Google Enhanced Conversions Configuration', desc: 'Hashed customer data (SHA256) maximizing AI Smart Bidding profitability' },
+                { badge: 'OFFLINE TRACKING', title: 'Offline Conversion Tracking (OCT) & CRM Sync', desc: 'Feed phone and CRM offline sales back into ad auction bidding engines' },
+                { badge: 'EVENT MATCH', title: 'Event Match Quality (EMQ 9.0+) Optimization', desc: 'Achieve 9.0+ match scores for optimal machine learning algorithms' },
+                { badge: 'TIKTOK & PINTEREST', title: 'TikTok Events API & Pinterest CAPI Setup', desc: 'Complete server-side tracking coverage across all active ad networks' }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+
+    // GOOGLE ADS
     'google-ads': {
       tr: [
         {
@@ -683,6 +889,9 @@ export default function ServiceDetailModules({ serviceSlug, lang = 'de', primary
   const serviceCatalog = modulesCatalog[serviceSlug] ? modulesCatalog[serviceSlug][lang] || modulesCatalog[serviceSlug]['de'] : null
 
   const [openSections, setOpenSections] = useState({
+    'google-setup': true,
+    'meta-setup': true,
+    'advanced-tracking': true,
     'campaign-types': true,
     'management-strategy': true,
     'optimization-services': true,
@@ -707,7 +916,7 @@ export default function ServiceDetailModules({ serviceSlug, lang = 'de', primary
       contactEl.scrollIntoView({ behavior: 'smooth' })
       const msgInput = document.querySelector('textarea[name="message"]')
       if (msgInput) {
-        msgInput.value = (lang === 'de' ? 'Hallo, ich interessiere mich für folgendes Modul: ' : lang === 'tr' ? 'Merhaba, şu hizmet modülü hakkında bilgi almak istiyorum: ' : 'Hello, I am interested in this service module: ') + title
+        msgInput.value = (lang === 'de' ? 'Hallo, ich interessiere mich für folgendes Modul: ' : lang === 'tr' ? 'Merhaba, şu kurulum / hizmet modülü hakkında bilgi almak istiyorum: ' : 'Hello, I am interested in this setup / service module: ') + title
       }
     }
   }
@@ -730,26 +939,26 @@ export default function ServiceDetailModules({ serviceSlug, lang = 'de', primary
           <div className="inline-flex items-center space-x-2 px-5 py-2 rounded-full text-xs font-black uppercase tracking-wider mb-5 bg-white/10 backdrop-blur-md border border-white/20 shadow-xl shadow-blue-500/10 text-white">
             <Sparkles className="w-4 h-4 text-amber-400 animate-spin" />
             <span className="bg-gradient-to-r from-blue-400 via-purple-300 to-emerald-400 bg-clip-text text-transparent">
-              {lang === 'de' ? 'Interaktives Leistungsverzeichnis 2026' : lang === 'tr' ? 'İnteraktif Hizmet & Optimizasyon Kataloğu' : '2026 Interactive Service & Module Directory'}
+              {lang === 'de' ? 'Interaktives Leistungs- & Setup-Verzeichnis 2026' : lang === 'tr' ? 'İnteraktif Reklam, Setup & Modül Kataloğu' : '2026 Interactive Setup & Module Directory'}
             </span>
           </div>
 
           <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-black text-white mb-6 tracking-tight leading-tight">
             {lang === 'de' ? (
-              <>Modulare Kampagnen & <span className="bg-gradient-to-r from-blue-400 via-cyan-300 to-emerald-400 bg-clip-text text-transparent">Spezial-Leistungen</span></>
+              <>Modulare Kampagnen & <span className="bg-gradient-to-r from-blue-400 via-cyan-300 to-emerald-400 bg-clip-text text-transparent">Setup-Leistungen</span></>
             ) : lang === 'tr' ? (
-              <>Tüm Kampanya Türleri & <span className="bg-gradient-to-r from-blue-400 via-cyan-300 to-emerald-400 bg-clip-text text-transparent">İleri Seviye Modüller</span></>
+              <>Tüm Reklam Altyapı & <span className="bg-gradient-to-r from-blue-400 via-cyan-300 to-emerald-400 bg-clip-text text-transparent">Kurulum Modülleri</span></>
             ) : (
-              <>Campaign Architectures & <span className="bg-gradient-to-r from-blue-400 via-cyan-300 to-emerald-400 bg-clip-text text-transparent">Specialized Modules</span></>
+              <>Ad Infrastructure & <span className="bg-gradient-to-r from-blue-400 via-cyan-300 to-emerald-400 bg-clip-text text-transparent">Setup Modules</span></>
             )}
           </h2>
 
           <p className="text-base sm:text-lg text-slate-300 max-w-3xl mx-auto leading-relaxed">
             {lang === 'de'
-              ? 'Klicken Sie auf die Kategorien, um alle spezialisierten Leistungsbausteine, Kampagnenformate und Optimierungsmethoden im Detail zu erkunden.'
+              ? 'Klicken Sie auf die Kategorien, um alle spezialisierten Setup-Bausteine, Tracking-Systeme und Kampagnenformate im Detail zu erkunden.'
               : lang === 'tr'
-              ? 'Aşağıdaki renkli bölümlere tıklayarak tüm kampanya formatlarını, optimizasyon araçlarını ve profesyonel hizmet detaylarını inceleyin.'
-              : 'Click on each category to explore detailed campaign formats, testing frameworks, and advanced optimization workflows.'}
+              ? 'Aşağıdaki renkli bölümlere tıklayarak tüm reklam hesabı, GA4, Search Console, CAPI ve sunucu takip kurulum detaylarını inceleyin.'
+              : 'Click on each category to explore detailed ad account setups, GA4 tracking, CAPI integrations, and advanced optimization workflows.'}
           </p>
         </div>
 
@@ -781,7 +990,7 @@ export default function ServiceDetailModules({ serviceSlug, lang = 'de', primary
                           {section.title}
                         </h3>
                         <span className={"px-3 py-1 rounded-full text-xs font-black font-mono text-white shadow-lg " + (section.badgeColor || 'bg-blue-500')}>
-                          {section.count} {lang === 'de' ? 'Module' : lang === 'tr' ? 'Hizmet' : 'Modules'}
+                          {section.count} {lang === 'de' ? 'Module' : lang === 'tr' ? 'Modül' : 'Modules'}
                         </span>
                       </div>
                       <p className="text-xs sm:text-sm text-slate-300 mt-1 font-medium">
@@ -876,7 +1085,7 @@ export default function ServiceDetailModules({ serviceSlug, lang = 'de', primary
                                   <div className="mt-5 pt-4 border-t border-slate-800 flex items-center justify-between text-xs font-bold text-slate-400 group-hover/item:text-cyan-400 transition-colors">
                                     <span className="flex items-center gap-1.5">
                                       <CheckCircle2 className="w-3.5 h-3.5 text-emerald-400" />
-                                      <span>{lang === 'de' ? 'Modul anfragen' : lang === 'tr' ? 'Teklif İste' : 'Inquire Module'}</span>
+                                      <span>{lang === 'de' ? 'Setup anfragen' : lang === 'tr' ? 'Kurulum İste' : 'Inquire Setup'}</span>
                                     </span>
                                     <div className="w-7 h-7 rounded-lg bg-white/5 group-hover/item:bg-cyan-500 group-hover/item:text-slate-950 flex items-center justify-center transition-all duration-200">
                                       <ArrowRight className="w-3.5 h-3.5 transform group-hover/item:translate-x-0.5 transition-transform" />

@@ -43,16 +43,16 @@ const serviceMeta = {
   },
   'server-side-tracking': {
     de: {
-      title: 'Server-Side Tracking & Meta CAPI Setup | Salih Maral',
-      description: 'Verlustfreies First-Party Tracking mit Server-Side GTM & Meta CAPI. 92%+ Match Quality für maximale Ad-Performance nach iOS 14+.',
+      title: 'Werbekonto- & Tracking-Setup (Google Ads, GA4, CAPI) | Salih Maral',
+      description: 'Lückenloses Werbe- und Tracking-Setup: Google Ads, GA4 E-Commerce, Search Console, Merchant Center, Meta Pixel, Conversions API (CAPI) & Server-Side GTM.',
     },
     en: {
-      title: 'Server-Side Tracking & Meta CAPI Setup | Salih Maral',
-      description: 'Zero-data-loss First-Party tracking with Server-Side GTM & Meta CAPI. 92%+ match quality for optimal post-iOS 14 ad scaling.',
+      title: 'Ad Account & Tracking Setup (Google Ads, GA4, CAPI) | Salih Maral',
+      description: 'Full-funnel ad and tracking setup: Google Ads, GA4 E-Commerce, Search Console, Merchant Center, Meta Pixel, Conversions API (CAPI), and Server-Side GTM.',
     },
     tr: {
-      title: 'Server-Side Tracking ve Meta CAPI Kurulumu | Salih Maral',
-      description: 'iOS 14+ sonrası kaybolan satışları kurtarın. Server-Side GTM ve Meta CAPI ile %92+ eşleşme kalitesi ve sıfır veri kaybı.',
+      title: 'Reklam & Tracking Kurulum Hizmetleri (Google Ads, GA4, CAPI) | Salih Maral',
+      description: 'Anahtar teslim reklam ve ölçüm altyapı kurulumu: Google Ads, GA4 E-Ticaret, Search Console, Merchant Center, Meta Pixel, CAPI ve Server-Side GTM.',
     },
   },
   'tiktok-ads': {
