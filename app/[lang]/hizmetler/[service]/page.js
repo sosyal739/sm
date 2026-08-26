@@ -4,6 +4,7 @@ import { useParams, useRouter } from 'next/navigation'
 import { Button } from '@/components/ui/button'
 import { Card, CardContent } from '@/components/ui/card'
 import { CheckCircle, ArrowLeft, ArrowUpRight, TrendingUp, Search, Image, ShoppingCart, Play, Zap, MapPin, Users, Heart, Video, MessageSquare, Share2, Target, BarChart3, Globe, Link, FileText, Shield, Star, ThumbsDown, AlertTriangle, Eye, Award } from 'lucide-react'
+import ServiceDetailModules from '@/components/ServiceDetailModules'
 
 // Translations for navbar
 const navTranslations = {
@@ -1724,6 +1725,13 @@ export default function ServiceDetailPage() {
           </section>
         )
       })()}
+
+      {/* Comprehensive Service & Module Catalog (Oğuz Erol Style Interactive Accordion) */}
+      <ServiceDetailModules 
+        serviceSlug={service} 
+        lang={lang} 
+        primaryColor={data.primaryColor || '#4285F4'} 
+      />
 
       {/* Process Section (Connected Modern Step Cards) */}
       <section className="py-24 px-4 bg-gradient-to-b from-white via-slate-50/60 to-white relative overflow-hidden">
