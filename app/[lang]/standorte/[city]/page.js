@@ -264,7 +264,215 @@ const cityDetails = {
       intro: 'Accelerate your growth in Leipzig and Central Germany with precision Google Ads and SEO campaigns.',
       cta: 'Request Free Leipzig Proposal',
     }
-  }
+  },
+  bonn: {
+    name: 'Bonn',
+    region: 'Nordrhein-Westfalen (NRW)',
+    tagline: 'Google Ads & Performance Marketing für Bonn und den Rhein-Sieg-Kreis',
+    description: 'Generieren Sie kaufbereite Neukunden und B2B-Anfragen in Bonn, Sankt Augustin, Siegburg, Troisdorf und der gesamten Region.',
+    stats: { clients: '45+', roas: '4.3x', experience: '17+ Jahre' },
+    industries: ['B2B & Dienstleister', 'Kanzleien & Beratung', 'Gesundheitswesen & Kliniken', 'E-Commerce & Handel'],
+    de: {
+      heroTitle: 'Google Ads & Meta Ads Agentur Bonn',
+      heroSub: 'Performance Marketing & SEO für Bonn & Rhein-Sieg',
+      intro: 'Bonn ist ein bedeutender Standort für Konzerne, Mittelstand und qualifizierte Dienstleister. Als offizieller Google Partner maximieren wir Ihre Sichtbarkeit in der Google-Suche und auf Social Media für planbaren Kundenzuwachs.',
+      cta: 'Jetzt unverbindliches Angebot für Bonn anfordern',
+    },
+    tr: {
+      heroTitle: 'Bonn Google Ads & Dijital Pazarlama Danışmanlığı',
+      heroSub: 'Bonn ve Rhein-Sieg Bölgesi İçin Resmi Google Partneri',
+      intro: 'Bonn ve çevresindeki işletmeler için Google Ads, Instagram/Facebook reklamları ve yerel SEO ile müşteri trafiğinizi zirveye taşıyoruz.',
+      cta: 'Bonn İçin Ücretsiz Teklif Alın',
+    },
+    en: {
+      heroTitle: 'Google Ads & Performance Marketing Agency Bonn',
+      heroSub: 'Google Ads, Meta Ads & SEO in Bonn & Rhine-Sieg',
+      intro: 'Scale customer acquisition in Bonn with high-converting Google Ads, Meta Ads, and local SEO backed by 17+ years of track record.',
+      cta: 'Request Free Bonn Proposal',
+    }
+  },
+  essen: {
+    name: 'Essen',
+    region: 'Nordrhein-Westfalen (Ruhrgebiet)',
+    tagline: 'Google Ads Agentur Essen & Performance Marketing im Ruhrgebiet',
+    description: 'Erreichen Sie Top-Rankings und planbare Neukunden in Essen, Mülheim an der Ruhr, Oberhausen und dem gesamten Ruhrgebiet.',
+    stats: { clients: '55+', roas: '4.2x', experience: '17+ Jahre' },
+    industries: ['Industrie & Energie', 'Handwerk & Sanierung', 'B2B & Dienstleister', 'E-Commerce & Handel'],
+    de: {
+      heroTitle: 'Google Ads Agentur Essen',
+      heroSub: 'Performance Marketing & SEO für Essen & das Ruhrgebiet',
+      intro: 'Als Wirtschaftszentrum des Ruhrgebiets bietet Essen riesige Marktchancen. Wir positionieren Ihr Unternehmen bei Google und Social Media direkt vor kaufbereiten Kunden.',
+      cta: 'Jetzt Angebot für Essen anfordern',
+    },
+    tr: {
+      heroTitle: 'Essen Google Ads & SEO Ajansı',
+      heroSub: 'Essen ve Ruhr Bölgesi İçin Kârlı Reklam Yönetimi',
+      intro: 'Essen ve Ruhr bölgesinde faaliyet gösteren sanayi, e-ticaret ve yerel hizmet firmaları için Google Ads ve Meta Ads danışmanlığı sunuyoruz.',
+      cta: 'Essen İçin Ücretsiz Teklif Alın',
+    },
+    en: {
+      heroTitle: 'Google Ads Agency Essen',
+      heroSub: 'Performance Marketing & SEO for Essen & Ruhr Area',
+      intro: 'Capture high-intent search demand and scale revenue in Essen with proven Google Ads, Meta Ads, and SEO strategies.',
+      cta: 'Request Free Essen Proposal',
+    }
+  },
+  duisburg: {
+    name: 'Duisburg',
+    region: 'Nordrhein-Westfalen (Niederrhein)',
+    tagline: 'Google Ads & Online-Marketing für Duisburg und den Niederrhein',
+    description: 'Steigern Sie Aufträge und Umsatz in Duisburg, Moers, Dinslaken und Krefeld mit messbarem Performance Marketing.',
+    stats: { clients: '40+', roas: '4.1x', experience: '17+ Jahre' },
+    industries: ['Logistik & Transport', 'Handwerk & Baugewerbe', 'Groß- & Einzelhandel', 'Dienstleistungen & Praxen'],
+    de: {
+      heroTitle: 'Google Ads & Performance Agentur Duisburg',
+      heroSub: 'Google Ads, Meta Ads & SEO für Duisburg & Niederrhein',
+      intro: 'Nutzen Sie die Wirtschaftskraft des Logistik-Hubs Duisburg. Mit gezielten Google Ads und regionalem Social Media Marketing gewinnen Sie kontinuierlich lukrative Aufträge.',
+      cta: 'Jetzt Angebot für Duisburg anfordern',
+    },
+    tr: {
+      heroTitle: 'Duisburg Google Ads & Reklam Yönetimi',
+      heroSub: 'Duisburg ve Niederrhein Bölgesi Resmi Google Partneri',
+      intro: 'Duisburg ve çevresindeki işletmeler için Google arama reklamları, harita optimizasyonu ve sosyal medya reklamları ile cironuzu katlıyoruz.',
+      cta: 'Duisburg İçin Ücretsiz Teklif Alın',
+    },
+    en: {
+      heroTitle: 'Google Ads & Performance Marketing Duisburg',
+      heroSub: 'Google Ads, Meta Ads & SEO in Duisburg',
+      intro: 'Grow your business in Duisburg with data-driven PPC campaigns and conversion-optimized performance funnels.',
+      cta: 'Request Free Duisburg Proposal',
+    }
+  },
+  hannover: {
+    name: 'Hannover',
+    region: 'Niedersachsen',
+    tagline: 'Google Ads & B2B Performance Marketing für Hannover und Niedersachsen',
+    description: 'Gewinnen Sie kaufbereite Kunden und B2B-Aufträge in Hannover, Garbsen, Langenhagen und ganz Niedersachsen.',
+    stats: { clients: '50+', roas: '4.3x', experience: '17+ Jahre' },
+    industries: ['Messen & B2B-Services', 'Handwerk & Sanierung', 'E-Commerce & Handel', 'Kanzleien & Ärzte'],
+    de: {
+      heroTitle: 'Google Ads Agentur Hannover',
+      heroSub: 'Zertifizierter Google Partner für Hannover & Niedersachsen',
+      intro: 'Hannover als bedeutende Messe- und Handelsstadt verlangt präzises Zielgruppen-Targeting. Wir optimieren Ihre Google Ads und Meta Ads Kampagnen für maximalen Return on Ad Spend.',
+      cta: 'Jetzt Angebot für Hannover anfordern',
+    },
+    tr: {
+      heroTitle: 'Hannover Google Ads & Dijital Pazarlama Danışmanlığı',
+      heroSub: 'Hannover ve Aşağı Saksonya İçin Resmi Google Partneri',
+      intro: 'Hannover pazarında Google aramalarında ve sosyal medyada 1. sıraya çıkmanız için profesyonel reklam ve SEO yönetimi sunuyoruz.',
+      cta: 'Hannover İçin Ücretsiz Teklif Alın',
+    },
+    en: {
+      heroTitle: 'Google Ads Agency Hanover (Hannover)',
+      heroSub: 'Performance Marketing & SEO in Hanover & Lower Saxony',
+      intro: 'Scale qualified B2B leads and e-commerce transactions in Hanover with high-converting Google Ads and Meta Ads.',
+      cta: 'Request Free Hanover Proposal',
+    }
+  },
+  mannheim: {
+    name: 'Mannheim',
+    region: 'Baden-Württemberg (Rhein-Neckar)',
+    tagline: 'Google Ads & Performance Marketing für Mannheim, Heidelberg und Ludwigshafen',
+    description: 'Dominieren Sie die Google-Suche in der Metropolregion Rhein-Neckar mit datengetriebenen Google Ads und Meta Ads Kampagnen.',
+    stats: { clients: '45+', roas: '4.2x', experience: '17+ Jahre' },
+    industries: ['Industrie & Pharma', 'Mittelstand & Handel', 'Gastronomie & Praxen', 'B2B & IT'],
+    de: {
+      heroTitle: 'Google Ads Agentur Mannheim',
+      heroSub: 'Performance Marketing für Mannheim & Rhein-Neckar',
+      intro: 'In der dynamischen Wirtschaftsregion Rhein-Neckar sorgen wir dafür, dass Ihre Produkte und Dienstleistungen bei Google und Instagram herausragen und planbare Neukunden generieren.',
+      cta: 'Jetzt Angebot für Mannheim anfordern',
+    },
+    tr: {
+      heroTitle: 'Mannheim Google Ads & SEO Ajansı',
+      heroSub: 'Mannheim, Heidelberg ve Rhein-Neckar Bölgesi İçin Reklam Yönetimi',
+      intro: 'Mannheim ve çevresindeki işletmeler için Google Ads, Instagram/Facebook reklamları ve harita yönetimi ile müşteri akışını artırıyoruz.',
+      cta: 'Mannheim İçin Ücretsiz Teklif Alın',
+    },
+    en: {
+      heroTitle: 'Google Ads Agency Mannheim',
+      heroSub: 'Performance Marketing & SEO in Mannheim & Rhine-Neckar',
+      intro: 'Capture local and B2B market demand across Mannheim, Heidelberg, and Ludwigshafen with expert Google Ads management.',
+      cta: 'Request Free Mannheim Proposal',
+    }
+  },
+  wiesbaden: {
+    name: 'Wiesbaden',
+    region: 'Hessen (Rhein-Main)',
+    tagline: 'High-End Google Ads & Lead-Generierung für Wiesbaden und Mainz',
+    description: 'Gewinnen Sie anspruchsvolle Kunden und B2B-Mandanten in Wiesbaden, Mainz, Taunusstein und dem Rheingau.',
+    stats: { clients: '50+', roas: '4.4x', experience: '17+ Jahre' },
+    industries: ['Kanzleien & Wirtschaftsprüfung', 'Privatkliniken & Ärzte', 'Immobilien & Finanzen', 'Boutique E-Commerce'],
+    de: {
+      heroTitle: 'Google Ads & Performance Agentur Wiesbaden',
+      heroSub: 'Ihr Google Partner für Wiesbaden, Mainz & Rhein-Main',
+      intro: 'Wiesbadens kaufkräftige Zielgruppen und Kanzleien erfordern exzellente Werbestrategien. Als offizieller Google Partner mit 17+ Jahren Erfahrung optimieren wir Ihre Kampagnen für messbaren Erfolg.',
+      cta: 'Jetzt Angebot für Wiesbaden anfordern',
+    },
+    tr: {
+      heroTitle: 'Wiesbaden Google Ads & Dijital Danışmanlık',
+      heroSub: 'Wiesbaden, Mainz ve Rhein-Main İçin Resmi Google Partneri',
+      intro: 'Wiesbaden ve Mainz bölgesindeki klinikler, hukuk büroları ve işletmeler için yüksek getirili Google Ads ve yerel SEO hizmetleri.',
+      cta: 'Wiesbaden İçin Ücretsiz Teklif Alın',
+    },
+    en: {
+      heroTitle: 'Google Ads Agency Wiesbaden',
+      heroSub: 'Performance Marketing for Wiesbaden & Mainz',
+      intro: 'Reach high-value clients and drive predictable customer growth in Wiesbaden with premium Google Ads and Meta Ads management.',
+      cta: 'Request Free Wiesbaden Proposal',
+    }
+  },
+  karlsruhe: {
+    name: 'Karlsruhe',
+    region: 'Baden-Württemberg',
+    tagline: 'Google Ads & B2B Tech Lead-Generierung für Karlsruhe und Baden',
+    description: 'Generieren Sie qualifizierte B2B-Leads und E-Commerce-Umsätze in Karlsruhe, Ettlingen, Rastatt und Pforzheim.',
+    stats: { clients: '40+', roas: '4.3x', experience: '17+ Jahre' },
+    industries: ['IT & Software / SaaS', 'B2B & Technologie', 'Handwerk & Sanierung', 'Kanzleien & Praxen'],
+    de: {
+      heroTitle: 'Google Ads & B2B Agentur Karlsruhe',
+      heroSub: 'Performance Marketing & SEO für Karlsruhe & Baden',
+      intro: 'Karlsruhe ist Deutschlands IT- und Innovationszentrum. Wir entwickeln hochperformante Google Search, YouTube und LinkedIn/Meta Ads Kampagnen zur gezielten B2B-Leadgenerierung.',
+      cta: 'Jetzt Angebot für Karlsruhe anfordern',
+    },
+    tr: {
+      heroTitle: 'Karlsruhe Google Ads & B2B Pazarlama Ajansı',
+      heroSub: 'Karlsruhe ve Baden Bölgesi İçin Resmi Google Partneri',
+      intro: "Karlsruhe'deki teknoloji, yazılım, e-ticaret ve yerel hizmet firmaları için kârlı Google Ads ve dijital pazarlama stratejileri.",
+      cta: 'Karlsruhe İçin Ücretsiz Teklif Alın',
+    },
+    en: {
+      heroTitle: 'Google Ads & B2B Agency Karlsruhe',
+      heroSub: 'Performance Marketing & SEO for Karlsruhe & Baden',
+      intro: 'Generate high-intent B2B leads and e-commerce conversions in Karlsruhe with certified Google Ads and Meta Ads expertise.',
+      cta: 'Request Free Karlsruhe Proposal',
+    }
+  },
+  muenster: {
+    name: 'Münster',
+    region: 'Nordrhein-Westfalen (Münsterland)',
+    tagline: 'Google Ads & SEO Betreuung für Münster und das Münsterland',
+    description: 'Erreichen Sie Top-Rankings und kaufbereite Kunden in Münster, Greven, Warendorf und ganz Westfalen.',
+    stats: { clients: '35+', roas: '4.2x', experience: '17+ Jahre' },
+    industries: ['Gesundheitswesen & Kliniken', 'E-Commerce & D2C', 'Dienstleistungen & Beratung', 'Handwerk & Handel'],
+    de: {
+      heroTitle: 'Google Ads Agentur Münster',
+      heroSub: 'Performance Marketing & SEO für Münster & Westfalen',
+      intro: 'Münster verbindet starke Wissenschaft, erstklassige Medizin und florierenden Mittelstand. Wir helfen Kanzleien, Praxen und Unternehmen, online als klare Nummer 1 wahrgenommen zu werden.',
+      cta: 'Jetzt Angebot für Münster anfordern',
+    },
+    tr: {
+      heroTitle: 'Münster Google Ads & SEO Danışmanlığı',
+      heroSub: 'Münster ve Münsterland Bölgesi İçin Resmi Google Partneri',
+      intro: 'Münster ve çevresindeki işletmeler için Google Ads, Instagram reklamları ve yerel SEO ile müşteri sayınızı katlıyoruz.',
+      cta: 'Münster İçin Ücretsiz Teklif Alın',
+    },
+    en: {
+      heroTitle: 'Google Ads Agency Münster',
+      heroSub: 'Performance Marketing & SEO for Münster & Westphalia',
+      intro: 'Elevate your online presence and acquire high-intent customers in Münster with data-driven Google Ads and local SEO.',
+      cta: 'Request Free Münster Proposal',
+    }
+  },
 }
 
 export default function CityPage({ params }) {

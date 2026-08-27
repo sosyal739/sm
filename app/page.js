@@ -9,6 +9,7 @@ import { Badge } from '@/components/ui/badge'
 import { Phone, Mail, MessageCircle, CheckCircle, BarChart3, Users, Award, TrendingUp, Globe, Star, Sparkles, ArrowRight, Clock, Calendar, Flame, Cpu, Zap, Search, ShieldCheck, Layers, BookOpen } from 'lucide-react'
 import CookieConsent from '@/components/CookieConsent'
 import RoasCalculatorWidget from '@/components/RoasCalculatorWidget'
+import LeadFunnelWizard from '@/components/LeadFunnelWizard'
 
 const translations = {
   tr: {
@@ -1694,6 +1695,13 @@ export default function Home({ initialLang = 'de' }) {
               )
             })}
           </div>
+        </div>
+      </section>
+
+      {/* Interactive Strategy & Lead Funnel Wizard */}
+      <section className="py-8 bg-slate-50/50">
+        <div className="container mx-auto px-4">
+          <LeadFunnelWizard lang={lang} />
         </div>
       </section>
 

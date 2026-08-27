@@ -15,6 +15,14 @@ const cities = [
   { id: 'nuernberg', name: 'Nürnberg', region: 'Bayern / Franken', clients: '55+', roas: '4.2x', focus: 'Tech, B2B & Handwerk' },
   { id: 'dortmund', name: 'Dortmund & Ruhrgebiet', region: 'Nordrhein-Westfalen', clients: '65+', roas: '4.3x', focus: 'Handwerk, Sanierung & B2B' },
   { id: 'leipzig', name: 'Leipzig & Dresden', region: 'Sachsen', clients: '50+', roas: '4.2x', focus: 'E-Commerce & Scale-ups' },
+  { id: 'bonn', name: 'Bonn', region: 'Nordrhein-Westfalen', clients: '45+', roas: '4.3x', focus: 'B2B, Dienstleister & Praxen' },
+  { id: 'essen', name: 'Essen & Ruhrgebiet', region: 'Nordrhein-Westfalen', clients: '55+', roas: '4.2x', focus: 'Industrie, Energie & Handwerk' },
+  { id: 'duisburg', name: 'Duisburg & Niederrhein', region: 'Nordrhein-Westfalen', clients: '40+', roas: '4.1x', focus: 'Logistik, Handel & Gewerbe' },
+  { id: 'hannover', name: 'Hannover', region: 'Niedersachsen', clients: '50+', roas: '4.3x', focus: 'B2B, Messen & E-Commerce' },
+  { id: 'mannheim', name: 'Mannheim & Rhein-Neckar', region: 'Baden-Württemberg', clients: '45+', roas: '4.2x', focus: 'Mittelstand, Pharma & Handel' },
+  { id: 'wiesbaden', name: 'Wiesbaden', region: 'Hessen', clients: '50+', roas: '4.4x', focus: 'Kanzleien, Ärzte & Beratung' },
+  { id: 'karlsruhe', name: 'Karlsruhe', region: 'Baden-Württemberg', clients: '40+', roas: '4.3x', focus: 'IT, Software & B2B Leads' },
+  { id: 'muenster', name: 'Münster', region: 'Nordrhein-Westfalen', clients: '35+', roas: '4.2x', focus: 'Kliniken, E-Commerce & Bildung' },
 ]
 
 export default function StandorteHubPage({ params }) {

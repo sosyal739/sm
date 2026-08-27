@@ -56,7 +56,7 @@ export default async function sitemap() {
   })
 
   // 3. Germany Metropol Location Pages (Standorte - 3 Languages)
-  const cities = ['frankfurt', 'duesseldorf', 'koeln', 'muenchen', 'stuttgart', 'berlin', 'hamburg', 'nuernberg', 'dortmund', 'leipzig']
+  const cities = ['frankfurt', 'duesseldorf', 'koeln', 'muenchen', 'stuttgart', 'berlin', 'hamburg', 'nuernberg', 'dortmund', 'leipzig', 'bonn', 'essen', 'duisburg', 'hannover', 'mannheim', 'wiesbaden', 'karlsruhe', 'muenster']
   const locationEntries = []
 
   // Add standorte hub pages
