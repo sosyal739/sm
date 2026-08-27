@@ -76,6 +76,12 @@ const translations = {
           description: 'Google Maps ve Trustpilot\'taki haksız yorumları silin. İtibarınızı koruyun, güveninizi geri kazanın.',
           slug: 'yorum-yonetimi',
           icon: 'review'
+        },
+        {
+          title: 'Reklam & Tracking Kurulumu',
+          description: 'Google Ads, GA4 E-Ticaret, Search Console, GMC, Meta Pixel, CAPI, sGTM ve Google Haritalar anahtar teslim kurulumu.',
+          slug: 'server-side-tracking',
+          icon: 'tracking'
         }
       ]
     },
@@ -286,6 +292,12 @@ const translations = {
           description: 'Entfernen Sie ungerechte Bewertungen bei Google Maps und Trustpilot. Schützen Sie Ihren Ruf.',
           slug: 'yorum-yonetimi',
           icon: 'review'
+        },
+        {
+          title: 'Werbekonto- & Tracking-Setup',
+          description: 'Google Ads Eröffnung, Verifizierung, GA4, Search Console, GMC, Meta Pixel, CAPI, sGTM und Google Maps schlüsselfertig.',
+          slug: 'server-side-tracking',
+          icon: 'tracking'
         }
       ]
     },
@@ -496,6 +508,12 @@ const translations = {
           description: 'Remove unfair reviews on Google Maps and Trustpilot. Protect your reputation and restore trust.',
           slug: 'yorum-yonetimi',
           icon: 'review'
+        },
+        {
+          title: 'Ad Account & Tracking Setup',
+          description: 'Turnkey setup for Google Ads, advertiser verification, GA4 E-commerce, Search Console, GMC, Meta CAPI, sGTM and Google Maps.',
+          slug: 'server-side-tracking',
+          icon: 'tracking'
         }
       ]
     },
@@ -1259,10 +1277,10 @@ export default function Home({ initialLang = 'de' }) {
             </p>
           </div>
           
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8">
+          <div className="grid sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6 lg:gap-8">
             {t.why.services.map((service, index) => {
-              const localizedMeta = [
-                {
+              const metaBySlug = {
+                'google-ads': {
                   accent: '#4285F4',
                   tag: lang === 'de' ? 'Search & Shopping' : lang === 'en' ? 'Search & Shopping' : 'Arama & Alışveriş',
                   pills: lang === 'de'
@@ -1271,7 +1289,7 @@ export default function Home({ initialLang = 'de' }) {
                     ? ['1.74M+ Clicks Generated', 'Search, Shopping & PMax', 'ROAS & CPA Optimization']
                     : ['1,74M+ Üretilen Tıklama', 'Search, Shopping & PMax', 'Maksimum ROAS & Kârlılık']
                 },
-                {
+                'meta-ads': {
                   accent: '#1877F2',
                   tag: lang === 'de' ? 'Instagram & Facebook' : lang === 'en' ? 'Instagram & Facebook' : 'Instagram & Facebook',
                   pills: lang === 'de'
@@ -1280,7 +1298,7 @@ export default function Home({ initialLang = 'de' }) {
                     ? ['Advantage+ Shopping & Reels', 'CAPI %92+ Match Score', 'B2B & B2C Instant Leads']
                     : ['Advantage+ Shopping & Reels', 'CAPI %92+ Eşleşme Oranı', 'B2B & B2C Müşteri Talebi']
                 },
-                {
+                'tiktok-ads': {
                   accent: '#000000',
                   tag: lang === 'de' ? 'Viral Video & Shop' : lang === 'en' ? 'Viral Video & Shop' : 'Viral Video & TikTok Shop',
                   pills: lang === 'de'
@@ -1289,7 +1307,7 @@ export default function Home({ initialLang = 'de' }) {
                     ? ['Spark Ads & Viral UGC', 'TikTok Shop Seller Center', '18.4M+ Video Views']
                     : ['Spark Ads & Viral UGC', 'TikTok Shop Satıcı Yönetimi', '18,4M+ Video İzlenme']
                 },
-                {
+                'x-ads': {
                   accent: '#1DA1F2',
                   tag: lang === 'de' ? 'B2B & Entscheider' : lang === 'en' ? 'B2B Decision Makers' : 'B2B & Karar Vericiler',
                   pills: lang === 'de'
@@ -1298,7 +1316,7 @@ export default function Home({ initialLang = 'de' }) {
                     ? ['B2B Decision Maker Ads', 'Trend Takeover Campaigns', '€14.20 CPL Scalability']
                     : ['B2B Karar Verici Hedefleme', 'Gündem & Trend Reklamları', '14,20 € CPL Ölçekleme']
                 },
-                {
+                'seo': {
                   accent: '#0F9D58',
                   tag: lang === 'de' ? 'Princeton GEO & KI-Suche' : lang === 'en' ? 'Princeton GEO & AI Search' : 'Princeton GEO & Yapay Zeka',
                   pills: lang === 'de'
@@ -1307,7 +1325,7 @@ export default function Home({ initialLang = 'de' }) {
                     ? ['Google Maps #1 Rankings', 'ChatGPT & Perplexity (GEO)', '100/100 Core Web Vitals']
                     : ['Google Haritalar #1. Sıra', 'ChatGPT & Perplexity (GEO)', '100/100 Core Web Vitals']
                 },
-                {
+                'yorum-yonetimi': {
                   accent: '#EA4335',
                   tag: lang === 'de' ? 'Reputation & Rechtsschutz' : lang === 'en' ? 'Reputation & Defense' : 'İtibar & Yasal Savunma',
                   pills: lang === 'de'
@@ -1316,7 +1334,17 @@ export default function Home({ initialLang = 'de' }) {
                     ? ['4.9★ Google & Trustpilot', '100% Fake Review Defense', 'Automated QR Review Funnel']
                     : ['4.9★ Google & Trustpilot', '%100 Sahte Yorum Savunması', 'Otomatik QR Yorum Hunisi']
                 },
-              ][index]
+                'server-side-tracking': {
+                  accent: '#0F9D58',
+                  tag: lang === 'de' ? 'Setup & CAPI' : lang === 'en' ? 'Setup & CAPI' : 'Kurulum & CAPI',
+                  pills: lang === 'de'
+                    ? ['Google Ads & Maps Setup', 'GA4, GMC & Search Console', 'Meta CAPI & Server-GTM']
+                    : lang === 'en'
+                    ? ['Google Ads & Maps Setup', 'GA4, GMC & Search Console', 'Meta CAPI & Server-GTM']
+                    : ['Google Ads & Harita Kurulumu', 'GA4, GMC & Search Console', 'Meta CAPI & Server-GTM']
+                }
+              }
+              const localizedMeta = metaBySlug[service.slug] || metaBySlug['google-ads']
 
               return (
                 <a 
@@ -1349,6 +1377,9 @@ export default function Home({ initialLang = 'de' }) {
                           )}
                           {service.icon === 'x' && (
                             <svg className="w-9 h-9" viewBox="0 0 24 24" fill="currentColor"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+                          )}
+                          {service.icon === 'tracking' && (
+                            <svg className="w-9 h-9 text-[#0F9D58]" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><rect x="2" y="2" width="20" height="8" rx="2" ry="2"/><rect x="2" y="14" width="20" height="8" rx="2" ry="2"/><line x1="6" y1="6" x2="6.01" y2="6"/><line x1="6" y1="18" x2="6.01" y2="18"/></svg>
                           )}
                           {service.icon === 'seo' && (
                             <svg className="w-9 h-9" viewBox="0 0 24 24" fill="none" stroke="#0F9D58" strokeWidth="2.5"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.3-4.3"/></svg>
@@ -1636,7 +1667,7 @@ export default function Home({ initialLang = 'de' }) {
             <h2 className="text-3xl md:text-5xl font-black text-gray-900 mb-4 tracking-tight">{t.about.title}</h2>
           </div>
 
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8">
+          <div className="grid sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6 lg:gap-8">
             {t.about.features.map((feature, index) => {
               const colors = ['#4285F4', '#EA4335', '#FBBC04', '#34A853', '#4285F4', '#34A853']
               const color = colors[index] || '#4285F4'
