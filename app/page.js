@@ -83,6 +83,12 @@ const translations = {
           description: 'Google Ads, GA4 E-Ticaret, Search Console, GMC, Meta Pixel, CAPI, sGTM ve Google Haritalar anahtar teslim kurulumu.',
           slug: 'server-side-tracking',
           icon: 'tracking'
+        },
+        {
+          title: 'YouTube Ads & Video Pazarlama',
+          description: 'Sanatçılar, e-ticaret ve markalar için 23.1M+ izlenme tecrübesiyle YouTube Shorts, In-Stream ve Bumper reklam stratejileri.',
+          slug: 'youtube-ads',
+          icon: 'youtube'
         }
       ]
     },
@@ -1343,6 +1349,15 @@ export default function Home({ initialLang = 'de' }) {
                     : lang === 'en'
                     ? ['Google Ads & Maps Setup', 'GA4, GMC & Search Console', 'Meta CAPI & Server-GTM']
                     : ['Google Ads & Harita Kurulumu', 'GA4, GMC & Search Console', 'Meta CAPI & Server-GTM']
+                },
+                'youtube-ads': {
+                  accent: '#FF0000',
+                  tag: lang === 'de' ? 'YouTube & Shorts Ads' : lang === 'en' ? 'YouTube & Shorts Ads' : 'YouTube & Shorts Reklamları',
+                  pills: lang === 'de'
+                    ? ['23,1M+ TrueView Aufrufe', '720+ Erfolgreiche Kampagnen', 'Shorts & In-Stream Ads']
+                    : lang === 'en'
+                    ? ['23.1M+ TrueView Views', '720+ Successful Campaigns', 'Shorts & In-Stream Ads']
+                    : ['23,1M+ TrueView İzlenme', '720+ Başarılı Kampanya', 'Shorts & In-Stream Reklamı']
                 }
               }
               const localizedMeta = metaBySlug[service.slug] || metaBySlug['google-ads']
@@ -1387,6 +1402,9 @@ export default function Home({ initialLang = 'de' }) {
                           )}
                           {service.icon === 'review' && (
                             <svg className="w-9 h-9" viewBox="0 0 24 24" fill="#FBBC04" stroke="#EA4335" strokeWidth="1.5"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                          )}
+                          {service.icon === 'youtube' && (
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/0/09/YouTube_full-color_icon_%282017%29.svg" alt="YouTube" className="w-9 h-9 object-contain" width="36" height="36" loading="lazy" />
                           )}
                         </div>
 
