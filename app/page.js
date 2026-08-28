@@ -687,6 +687,33 @@ export default function Home({ initialLang = 'de' }) {
     }
   }
 
+  // Automatic Country & Browser Language Detection on First Visit
+  useEffect(() => {
+    try {
+      if (typeof window !== 'undefined') {
+        const savedLang = localStorage.getItem('preferredLanguage')
+        // Only run auto-detection if user hasn't explicitly chosen a language
+        if (!savedLang) {
+          const timeZone = (Intl && Intl.DateTimeFormat().resolvedOptions().timeZone) || ''
+          const navLangs = navigator.languages ? Array.from(navigator.languages) : [navigator.language || '']
+          const primaryNavLang = (navLangs[0] || '').toLowerCase()
+          
+          const isTurkish = primaryNavLang.startsWith('tr') || timeZone.toLowerCase().includes('istanbul')
+          const isGerman = primaryNavLang.startsWith('de') || timeZone.toLowerCase().includes('berlin') || timeZone.toLowerCase().includes('vienna') || timeZone.toLowerCase().includes('zurich')
+          const isEnglish = primaryNavLang.startsWith('en')
+
+          if (isTurkish && initialLang !== 'tr') {
+            window.location.replace('/tr')
+          } else if (isGerman && initialLang !== 'de') {
+            window.location.replace('/')
+          } else if (isEnglish && initialLang !== 'en' && !isTurkish && !isGerman) {
+            window.location.replace('/en')
+          }
+        }
+      }
+    } catch (e) {}
+  }, [initialLang])
+
   // Update html lang attribute for SEO
   useEffect(() => {
     document.documentElement.lang = lang
