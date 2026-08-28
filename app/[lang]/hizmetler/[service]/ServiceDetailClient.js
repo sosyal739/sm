@@ -203,6 +203,126 @@ export default function ServiceDetailClient({ initialService, initialLang }) {
       ]
     },
 
+    'youtube-ads': {
+      title: lang === 'de' ? 'YouTube Ads & Video-Wachstum' : lang === 'en' ? 'YouTube Ads & Video Growth' : 'YouTube Ads & Video Büyüme',
+      subtitle: lang === 'de'
+        ? '23,1M+ verifizierte Aufrufe & 720+ Kampagnen — Maximale Video-Reichweite und echte Abonnenten.'
+        : lang === 'en'
+        ? '23.1M+ verified views & 720+ campaigns — Maximum video reach and real subscriber growth.'
+        : '23.1M+ doğrulanmış izlenme & 720+ kampanya — Maksimum video erişimi ve gerçek kanal büyümesi.',
+      description: lang === 'de'
+        ? 'Als zertifizierter Google & YouTube Ads Partner mit über 23,1 Millionen verwalteten TrueView-Aufrufen und 720+ erfolgreichen Kampagnen bringen wir Ihre Videos, Musikclips und Produkte vor kaufbereite und engagierte Zuschauer. Keine Bots, sondern 100% echte Zielgruppen.'
+        : lang === 'en'
+        ? 'As a certified Google & YouTube Ads Partner managing over 23.1 million TrueView views across 720+ campaigns, we put your music videos, brand stories, and products in front of engaged audiences. Zero bots, 100% genuine viewers.'
+        : '23.1 Milyon+ yönetilen YouTube TrueView izlenmesi ve 720+ başarılı kampanya ile müzik kliplerinizi, marka hikayelerinizi ve ürünlerinizi doğru kitleyle buluşturuyoruz. Sahte botlar değil; %100 gerçek, etkileşime geçen ve abone olan izleyiciler.',
+      badge: lang === 'de' ? '23.1M+ YouTube Aufrufe & Google Partner' : lang === 'en' ? '23.1M+ YouTube Views & Google Partner' : '23.1M+ YouTube İzlenmesi & Google Partner',
+      primaryColor: '#FF0000',
+      secondaryColor: '#282828',
+      accentColor: '#CC0000',
+      gradientFrom: '#FF0000',
+      gradientTo: '#282828',
+      icon: (
+        <svg className="w-6 h-6" viewBox="0 0 24 24" fill="#FF0000">
+          <path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/>
+        </svg>
+      ),
+      stats: [
+        {
+          value: '23,1M+',
+          label: lang === 'de' ? 'TrueView Aufrufe erzielt' : lang === 'en' ? 'TrueView views generated' : 'Üretilen TrueView izlenme',
+          trend: lang === 'de' ? '720+ verifizierte Kampagnen' : lang === 'en' ? '720+ verified campaigns' : '720+ doğrulanmış kampanya'
+        },
+        {
+          value: '%64,78',
+          label: lang === 'de' ? 'Ø View-Through-Rate' : lang === 'en' ? 'Avg. View-Through Rate' : 'Ort. Video İzleme Oranı',
+          trend: lang === 'de' ? 'Hohe Interaktionsrate' : lang === 'en' ? 'High engagement retention' : 'Yüksek izleyici bağlılığı'
+        },
+        {
+          value: '0,01 €',
+          label: lang === 'de' ? 'Optimale Kosten pro View (CPV)' : lang === 'en' ? 'Optimal Cost Per View (CPV)' : 'Optimum İzleme Başı Maliyet (CPV)',
+          trend: lang === 'de' ? 'Maximale Budget-Effizienz' : lang === 'en' ? 'Maximum budget efficiency' : 'Maksimum bütçe verimi'
+        },
+        {
+          value: '124M+',
+          label: lang === 'de' ? 'Video-Impressionen' : lang === 'en' ? 'Video Impressions' : 'Video Gösterimi',
+          trend: lang === 'de' ? 'Weltweite Zielgruppen-Präsenz' : lang === 'en' ? 'Global audience reach' : 'Küresel hedef kitle erişimi'
+        }
+      ],
+      features: [
+        {
+          title: lang === 'de' ? 'YouTube Shorts Ads (Vertikal)' : lang === 'en' ? 'YouTube Shorts Ads (Vertical)' : 'YouTube Shorts Reklamları',
+          subtitle: 'Shorts & 0. Sekunde',
+          desc: lang === 'de' ? 'Nutzen Sie das rasante Wachstum von YouTube Shorts mit dynamischen Vollbild-Videoanzeigen und Sofort-Aufruf-Tracking ab der 1. Sekunde.' : lang === 'en' ? 'Harness the explosive growth of YouTube Shorts with immersive full-screen video ads and instant view counting from second 0.' : "YouTube Shorts\'un patlayıcı büyümesini dikey tam ekran video reklamları ve 24 Ağustos anında izlenme sayma kuralı ile avantaja çevirin.",
+          icon: Flame,
+          items: lang === 'de' ? ['Shorts Feed Platzierung', 'Dynamischer Call-to-Action', 'Viral Hook Optimierung', 'Reichweiten-Skalierung'] : lang === 'en' ? ['Shorts feed placement', 'Dynamic Call-to-Action', 'Viral hook optimization', 'Reach scaling'] : ['Shorts akışı yerleşimi', 'Dinamik Eylem Butonu', 'Viral kanca (hook) kurgusu', 'Erişim ölçekleme']
+        },
+        {
+          title: lang === 'de' ? 'TrueView In-Stream Anzeigen' : lang === 'en' ? 'TrueView In-Stream Ads' : 'TrueView In-Stream Reklamları',
+          subtitle: 'Überspringbar / Skippable',
+          desc: lang === 'de' ? 'Zahlen Sie nur, wenn Nutzer Ihr Video mindestens 30 Sekunden lang ansehen oder mit der Anzeige interagieren. Maximale Budgetkontrolle.' : lang === 'en' ? 'Pay only when viewers watch at least 30 seconds or interact with your video. Maximum budget efficiency.' : 'İzleyiciler videonuzu en az 30 saniye izlediğinde veya tıkladığında ödeme yapın. Sıfır boşa harcama, maksimum bütçe kontrolü.',
+          icon: Play,
+          items: lang === 'de' ? ['30-Sekunden CPV Modell', 'Überspringbare Platzierung', 'Zielgruppen-Ausschlüsse', 'Frequenz-Deckelung'] : lang === 'en' ? ['30-second CPV model', 'Skippable placement', 'Audience exclusions', 'Frequency capping'] : ['30 saniye CPV modeli', 'Atlanabilir yerleşim', 'Negatif kitle filtreleme', 'Frekans sınırlama']
+        },
+        {
+          title: lang === 'de' ? 'In-Feed Video Discovery Ads' : lang === 'en' ? 'In-Feed Video Discovery Ads' : 'In-Feed Keşfet Video Reklamları',
+          subtitle: 'Suchergebnisse & Startseite',
+          desc: lang === 'de' ? 'Platzieren Sie Ihre Videos ganz oben in den YouTube-Suchergebnissen und neben verwandten Videos für echte, kaufbereite Abonnenten.' : lang === 'en' ? 'Place your videos at the top of YouTube search results and alongside related videos to acquire genuine subscribers.' : 'YouTube arama sonuçlarının en başında ve ilgili videoların yanında yer alarak kanalınıza sadık aboneler kazandırın.',
+          icon: Search,
+          items: lang === 'de' ? ['YouTube Keyword-Suche', 'Ähnliche Video-Platzierung', 'Abonnenten-Gewinnung', 'Thumbnail A/B Testing'] : lang === 'en' ? ['YouTube search keywords', 'Related video placement', 'Subscriber acquisition', 'Thumbnail A/B testing'] : ['YouTube arama kelimeleri', 'Benzer video yerleşimi', 'Abone kazanımı', 'Küçük resim A/B testleri']
+        },
+        {
+          title: lang === 'de' ? 'Musikclip & Künstler Promotion' : lang === 'en' ? 'Music Video & Artist Promotion' : 'Sanatçı & Klip Tanıtımı',
+          subtitle: 'Musiker & Labels',
+          desc: lang === 'de' ? '720+ erfolgreiche Musikclip-Kampagnen. Bringen Sie Ihren neuen Song in Trend-Listen und erreichen Sie Musikliebhaber in Deutschland, der Türkei und weltweit.' : lang === 'en' ? '720+ successful music video campaigns. Propel your new track onto trending charts across Germany, Turkey, and globally.' : 'Sanatçılar ve müzik yapım şirketleri için 720+ başarılı klip lansmanı. Şarkınızı trendlere taşıyın, gerçek dinleyicilere ulaşın.',
+          icon: Award,
+          items: lang === 'de' ? ['Musikgenre & Künstler-Targeting', 'Länder- & Regionen-Fokus', 'Trend-Charts Hebelwirkung', 'Spotify & Apple Music Traffic'] : lang === 'en' ? ['Genre & artist targeting', 'Country & regional targeting', 'Trending charts leverage', 'Spotify/Apple Music push'] : ['Müzik türü & sanatçı hedefleme', 'Ülke ve şehir filtreleme', 'Trend listelerine giriş desteği', 'Spotify & dijital platform yönlendirme']
+        },
+        {
+          title: lang === 'de' ? 'Bumper Ads (6 Sekunden)' : lang === 'en' ? 'Bumper Ads (6 Seconds)' : 'Bumper Ads (6 Saniye)',
+          subtitle: 'Nicht überspringbar',
+          desc: lang === 'de' ? '6-sekündige, unüberspringbare Kurzanzeigen für maximale Markenbekanntheit und unvergessliche Botschaften zu geringen CPM-Kosten.' : lang === 'en' ? '6-second non-skippable bumper ads engineered for maximum brand recall and cost-effective CPM reach.' : 'Atlanamayan 6 saniyelik vurucu reklamlarla marka bilinirliğinizi zihinlere kazıyın. Düşük CPM ile devasa erişim.',
+          icon: Zap,
+          items: lang === 'de' ? ['Nicht überspringbar', 'Hohe Werbeerinnerung', 'Kosteneffizienter CPM', 'Cross-Device Reichweite'] : lang === 'en' ? ['Non-skippable impact', 'High brand recall', 'Cost-effective CPM', 'Cross-device reach'] : ['Atlanamaz format', 'Yüksek marka hatırlanırlığı', 'Maliyet odaklı CPM', 'Tüm cihazlarda yayın']
+        },
+        {
+          title: lang === 'de' ? 'Video Remarketing & Funnel' : lang === 'en' ? 'Video Remarketing & Funnel' : 'Video Yeniden Pazarlama (Remarketing)',
+          subtitle: 'Lead & Sale Funnel',
+          desc: lang === 'de' ? 'Sprechen Sie Nutzer erneut an, die Ihre Videos bereits gesehen haben. Verwandeln Sie YouTube-Zuschauer in Kunden auf Ihrer Website.' : lang === 'en' ? 'Retarget viewers who previously watched your videos to drive high-intent website conversions and purchases.' : 'Videolarınızı izleyen veya kanalınızla etkileşime geçen kitleye özel teklifler sunarak web sitenizden satış yaptırın.',
+          icon: TrendingUp,
+          items: lang === 'de' ? ['Kanal-Abonnenten Retargeting', 'Video-Viewer Listen', 'Web-Conversion Verknüpfung', 'Google Ads GA4 Sync'] : lang === 'en' ? ['Channel subscriber retargeting', 'Video viewer audience lists', 'Website conversion sync', 'GA4 & Google Ads integration'] : ['Kanal abone yeniden hedefleme', 'Video izleyici kitle listeleri', 'Web satış entegrasyonu', 'GA4 ve Google Ads senkronizasyonu']
+        }
+      ],
+      process: [
+        { step: '01', title: lang === 'de' ? 'Zielgruppen- & Länderanalyse' : lang === 'en' ? 'Audience & Geo Analysis' : 'Hedef Kitle & Ülke Analizi', desc: lang === 'de' ? 'Wir definieren die exakte Zielgruppe, Musikinteressen, Alter, Demografie und Zielländer (DACH, TR, Global).' : lang === 'en' ? 'We define exact audience personas, music preferences, demographics, and target territories (DACH, TR, Global).' : 'Müzik türü, yaş, ilgi alanı ve yayınlanacak hedef ülkeleri (Almanya, Türkiye, Avrupa veya Dünya) netleştiriyoruz.' },
+        { step: '02', title: lang === 'de' ? 'Kreativ- & Hook-Optimierung' : lang === 'en' ? 'Creative & Hook Optimization' : 'Kanca (Hook) & Kreatif Kurgusu', desc: lang === 'de' ? 'Wir optimieren Thumbnail, Titel und die ersten 5 Sekunden des Videos für maximale Wiedergabedauer und niedrigen CPV.' : lang === 'en' ? 'We optimize thumbnail, title, and the first 5 seconds of the video for high retention and low CPV.' : 'Kullanıcının videodan çıkmasını önlemek için ilk 5 saniyeyi, küçük resmi (thumbnail) ve başlığı optimize ediyoruz.' },
+        { step: '03', title: lang === 'de' ? 'Kampagnen-Setup & Platzierungsfilter' : lang === 'en' ? 'Campaign Setup & Placement Filters' : 'Kampanya Kurulumu & Filtreleme', desc: lang === 'de' ? 'Einrichtung in Google Ads mit präzisen Ausschlüssen (keine Kinder-Kanäle, keine Fake-Traffic-Seiten) für 100% echte Menschen.' : lang === 'en' ? 'Google Ads setup with strict placement exclusions (blocking kids channels and low-quality placements) for 100% human traffic.' : 'Çocuk kanallarını ve kalitesiz içerikleri filtreleyerek bütçenizin sadece gerçek izleyicilere harcanmasını sağlıyoruz.' },
+        { step: '04', title: lang === 'de' ? 'Skalierung & Kanalwachstum' : lang === 'en' ? 'Scaling & Channel Growth' : 'Ölçekleme & Abone Büyümesi', desc: lang === 'de' ? 'Kontinuierliche Gebotsoptimierung, Ausbau von Abonnenten und Auswertung der YouTube Analytics Kennzahlen.' : lang === 'en' ? 'Continuous bid optimization, subscriber acquisition growth, and deep YouTube Analytics reporting.' : 'İzleme başı maliyetleri düşürerek abone artışını ve organik keşfete düşme oranını en üst seviyeye çıkarıyoruz.' }
+      ],
+      benefits: [
+        { title: lang === 'de' ? '23.1M+ Verifizierte Erfahrung' : lang === 'en' ? '23.1M+ Verified Track Record' : '23.1M+ Doğrulanmış Canlı Panel Verisi', desc: lang === 'de' ? '720+ başarıyla yönetilen kampanya ve resmi Google Partner güvencesi.' : lang === 'en' ? '720+ successfully executed campaigns backed by certified Google Partner expertise.' : '720+ yönetilen kampanya ve resmi Google Partner uzmanlığı.' },
+        { title: lang === 'de' ? '100% Echte & Organische Zuschauer' : lang === 'en' ? '100% Real & Organic Viewers' : '%100 Gerçek İzleyici (Sıfır Bot)', desc: lang === 'de' ? 'Keine gekauften Fake-Klicks. Reale Menschen, die kommentieren, liken und abonnieren.' : lang === 'en' ? 'Zero purchased bot views. Real human viewers who engage, like, and subscribe.' : 'Kanalınızı riske atan sahte botlar değil; beğenen, yorum yapan ve abone olan gerçek kitle.' },
+        { title: lang === 'de' ? 'Optimale Kosten pro View (CPV)' : lang === 'en' ? 'Optimal Cost Per View (CPV)' : 'Düşük İzleme Başı Maliyet (CPV)', desc: lang === 'de' ? '0,01 € bis 0,03 € CPV durch mathematisch präzise Gebotsstrategien.' : lang === 'en' ? '€0.01 to €0.03 CPV achieved through algorithmic bidding precision.' : '0.01€ seviyelerine kadar optimize edilmiş maliyetle bütçenizden maksimum izlenme çıkarma.' },
+        { title: lang === 'de' ? 'Trend-Charts & Algorithmus-Push' : lang === 'en' ? 'Trending Charts & Algorithm Push' : 'Trendler & Önerilen Video Desteği', desc: lang === 'de' ? 'Schneller Start-Traffic signalisiert YouTube hohe Relevanz für organische Empfehlungen.' : lang === 'en' ? 'Rapid initial momentum signals high relevance to YouTube\'s recommendation engine.' : 'İlk günlerde sağlanan yüksek izlenme ivmesi ile YouTube organik önerilen videolara girme avantajı.' }
+      ],
+      faq: [
+        {
+          q: lang === 'de' ? 'Wie zählt YouTube Videoaufrufe ab dem 24. August 2026?' : lang === 'en' ? 'How does YouTube count views starting August 24, 2026?' : 'YouTube 24 Ağustos 2026 güncellemesi ile izlenmeleri nasıl sayacak?',
+          a: lang === 'de' ? 'Ab dem 24. August 2026 zählt YouTube jeden Start eines Videos (Shorts, VOD, Livestreams) ab der ersten Sekunde als Aufruf. Dies erhöht die sichtbaren Aufrufzahlen, während die Monetarisierungsregeln (YPP) weiterhin an die echte Wiedergabezeit gebunden bleiben.' : lang === 'en' ? 'Starting August 24, 2026, YouTube registers views immediately upon video playback across Shorts, VOD, and Live formats. Public view counts increase rapidly while YPP monetization rules remain anchored to valid watch hours.' : '24 Ağustos 2026 itibarıyla Shorts, normal videolar ve canlı yayınlarda oynatma başladığı an (0. saniyede) görüntüleme sayılmaktadır. Bu sayaçtaki izlenme sayısını hızla yükseltirken, para kazanma hak edişi gerçek izlenme süresine göre hesaplanmaya devam eder.'
+        },
+        {
+          q: lang === 'de' ? 'Kann YouTube-Werbung meinem Kanal oder Song schaden?' : lang === 'en' ? 'Can YouTube advertising harm my channel or music video?' : 'YouTube reklamları kanalıma veya klibime zarar verir mi?',
+          a: lang === 'de' ? 'Nein, absolut nicht. Da wir ausschließlich die offizielle Google Ads Werbeplattform nutzen und Kinder- sowie minderwertige Kanäle strikt ausschließen, erhält Ihr Video nur authentische, interessierte Zielgruppen.' : lang === 'en' ? 'No, absolutely not. Because we advertise strictly through the official Google Ads network with stringent placement filters, your channel only gains authentic, high-relevance viewers.' : 'Kesinlikle hayır. Tamamen resmi Google Ads platformu üzerinden reklam verdiğimiz ve çocuk kanalları gibi verimsiz yerleşimleri elediğimiz için kanalınız %100 güvenli şekilde büyür.'
+        },
+        {
+          q: lang === 'de' ? 'Wie viele Aufrufe kann ich mit meinem Budget erwarten?' : lang === 'en' ? 'How many views can I expect with my budget?' : 'Bütçem ile yaklaşık kaç izlenme elde edebilirim?',
+          a: lang === 'de' ? 'Je nach Zielland und Musikgenre liegt der CPV (Cost-per-View) zwischen 0,01 € und 0,03 €. Mit einem Budget von 300 € lassen sich oft 15.000 bis 30.000+ echte Aufrufe erzielen. Wir berechnen Ihnen vorab eine exakte Reichweitenprognose.' : lang === 'en' ? 'Depending on target geography and genre, CPV ranges from €0.01 to €0.03. A €300 budget typically delivers 15,000 to 30,000+ genuine views. We provide a precise reach forecast before launch.' : 'Hedeflenen ülke ve müzik/sektör türüne göre izleme başı maliyet 0.01€ ile 0.03€ arasında değişir. Örneğin 300€ bütçe ile ortalama 15.000 - 30.000+ gerçek izlenme elde edilebilir.'
+        },
+        {
+          q: lang === 'de' ? 'Schalten Sie auch YouTube Shorts Werbekampagnen?' : lang === 'en' ? 'Do you run YouTube Shorts ad campaigns?' : 'YouTube Shorts reklamları da yönetiyor musunuz?',
+          a: lang === 'de' ? 'Ja, wir sind spezialisiert auf vertikale YouTube Shorts Ads und Demand Gen Video-Kampagnen, die besonders bei jungen Zielgruppen maximale Reichweite zu extrem niedrigen Klickpreisen erzielen.' : lang === 'en' ? 'Yes, we specialize in vertical YouTube Shorts ads and Demand Gen campaigns designed to capture massive Gen Z & millennial attention at ultra-low CPVs.' : 'Evet, dikey YouTube Shorts reklamları ve Demand Gen video kampanyalarında uzmanız. Özellikle mobil izleyicilerden rekor etkileşim ve abone dönüşümü sağlıyoruz.'
+        }
+      ]
+    },
     'meta-ads': {
       title: lang === 'de' ? 'Meta Ads Management' : lang === 'en' ? 'Meta Ads Management' : 'Meta Ads Yönetimi',
       subtitle: lang === 'de'
@@ -1310,7 +1430,127 @@ export default function ServiceDetailClient({ initialService, initialLang }) {
             ]
           },
 
-          'meta-ads': {
+          'youtube-ads': {
+      title: lang === 'de' ? 'YouTube Ads & Video-Wachstum' : lang === 'en' ? 'YouTube Ads & Video Growth' : 'YouTube Ads & Video Büyüme',
+      subtitle: lang === 'de'
+        ? '23,1M+ verifizierte Aufrufe & 720+ Kampagnen — Maximale Video-Reichweite und echte Abonnenten.'
+        : lang === 'en'
+        ? '23.1M+ verified views & 720+ campaigns — Maximum video reach and real subscriber growth.'
+        : '23.1M+ doğrulanmış izlenme & 720+ kampanya — Maksimum video erişimi ve gerçek kanal büyümesi.',
+      description: lang === 'de'
+        ? 'Als zertifizierter Google & YouTube Ads Partner mit über 23,1 Millionen verwalteten TrueView-Aufrufen und 720+ erfolgreichen Kampagnen bringen wir Ihre Videos, Musikclips und Produkte vor kaufbereite und engagierte Zuschauer. Keine Bots, sondern 100% echte Zielgruppen.'
+        : lang === 'en'
+        ? 'As a certified Google & YouTube Ads Partner managing over 23.1 million TrueView views across 720+ campaigns, we put your music videos, brand stories, and products in front of engaged audiences. Zero bots, 100% genuine viewers.'
+        : '23.1 Milyon+ yönetilen YouTube TrueView izlenmesi ve 720+ başarılı kampanya ile müzik kliplerinizi, marka hikayelerinizi ve ürünlerinizi doğru kitleyle buluşturuyoruz. Sahte botlar değil; %100 gerçek, etkileşime geçen ve abone olan izleyiciler.',
+      badge: lang === 'de' ? '23.1M+ YouTube Aufrufe & Google Partner' : lang === 'en' ? '23.1M+ YouTube Views & Google Partner' : '23.1M+ YouTube İzlenmesi & Google Partner',
+      primaryColor: '#FF0000',
+      secondaryColor: '#282828',
+      accentColor: '#CC0000',
+      gradientFrom: '#FF0000',
+      gradientTo: '#282828',
+      icon: (
+        <svg className="w-6 h-6" viewBox="0 0 24 24" fill="#FF0000">
+          <path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/>
+        </svg>
+      ),
+      stats: [
+        {
+          value: '23,1M+',
+          label: lang === 'de' ? 'TrueView Aufrufe erzielt' : lang === 'en' ? 'TrueView views generated' : 'Üretilen TrueView izlenme',
+          trend: lang === 'de' ? '720+ verifizierte Kampagnen' : lang === 'en' ? '720+ verified campaigns' : '720+ doğrulanmış kampanya'
+        },
+        {
+          value: '%64,78',
+          label: lang === 'de' ? 'Ø View-Through-Rate' : lang === 'en' ? 'Avg. View-Through Rate' : 'Ort. Video İzleme Oranı',
+          trend: lang === 'de' ? 'Hohe Interaktionsrate' : lang === 'en' ? 'High engagement retention' : 'Yüksek izleyici bağlılığı'
+        },
+        {
+          value: '0,01 €',
+          label: lang === 'de' ? 'Optimale Kosten pro View (CPV)' : lang === 'en' ? 'Optimal Cost Per View (CPV)' : 'Optimum İzleme Başı Maliyet (CPV)',
+          trend: lang === 'de' ? 'Maximale Budget-Effizienz' : lang === 'en' ? 'Maximum budget efficiency' : 'Maksimum bütçe verimi'
+        },
+        {
+          value: '124M+',
+          label: lang === 'de' ? 'Video-Impressionen' : lang === 'en' ? 'Video Impressions' : 'Video Gösterimi',
+          trend: lang === 'de' ? 'Weltweite Zielgruppen-Präsenz' : lang === 'en' ? 'Global audience reach' : 'Küresel hedef kitle erişimi'
+        }
+      ],
+      features: [
+        {
+          title: lang === 'de' ? 'YouTube Shorts Ads (Vertikal)' : lang === 'en' ? 'YouTube Shorts Ads (Vertical)' : 'YouTube Shorts Reklamları',
+          subtitle: 'Shorts & 0. Sekunde',
+          desc: lang === 'de' ? 'Nutzen Sie das rasante Wachstum von YouTube Shorts mit dynamischen Vollbild-Videoanzeigen und Sofort-Aufruf-Tracking ab der 1. Sekunde.' : lang === 'en' ? 'Harness the explosive growth of YouTube Shorts with immersive full-screen video ads and instant view counting from second 0.' : 'YouTube Shorts\'un patlayıcı büyümesini dikey tam ekran video reklamları ve 24 Ağustos anında izlenme sayma kuralı ile avantaja çevirin.',
+          icon: Flame,
+          items: lang === 'de' ? ['Shorts Feed Platzierung', 'Dynamischer Call-to-Action', 'Viral Hook Optimierung', 'Reichweiten-Skalierung'] : lang === 'en' ? ['Shorts feed placement', 'Dynamic Call-to-Action', 'Viral hook optimization', 'Reach scaling'] : ['Shorts akışı yerleşimi', 'Dinamik Eylem Butonu', 'Viral kanca (hook) kurgusu', 'Erişim ölçekleme']
+        },
+        {
+          title: lang === 'de' ? 'TrueView In-Stream Anzeigen' : lang === 'en' ? 'TrueView In-Stream Ads' : 'TrueView In-Stream Reklamları',
+          subtitle: 'Überspringbar / Skippable',
+          desc: lang === 'de' ? 'Zahlen Sie nur, wenn Nutzer Ihr Video mindestens 30 Sekunden lang ansehen oder mit der Anzeige interagieren. Maximale Budgetkontrolle.' : lang === 'en' ? 'Pay only when viewers watch at least 30 seconds or interact with your video. Maximum budget efficiency.' : 'İzleyiciler videonuzu en az 30 saniye izlediğinde veya tıkladığında ödeme yapın. Sıfır boşa harcama, maksimum bütçe kontrolü.',
+          icon: Play,
+          items: lang === 'de' ? ['30-Sekunden CPV Modell', 'Überspringbare Platzierung', 'Zielgruppen-Ausschlüsse', 'Frequenz-Deckelung'] : lang === 'en' ? ['30-second CPV model', 'Skippable placement', 'Audience exclusions', 'Frequency capping'] : ['30 saniye CPV modeli', 'Atlanabilir yerleşim', 'Negatif kitle filtreleme', 'Frekans sınırlama']
+        },
+        {
+          title: lang === 'de' ? 'In-Feed Video Discovery Ads' : lang === 'en' ? 'In-Feed Video Discovery Ads' : 'In-Feed Keşfet Video Reklamları',
+          subtitle: 'Suchergebnisse & Startseite',
+          desc: lang === 'de' ? 'Platzieren Sie Ihre Videos ganz oben in den YouTube-Suchergebnissen und neben verwandten Videos für echte, kaufbereite Abonnenten.' : lang === 'en' ? 'Place your videos at the top of YouTube search results and alongside related videos to acquire genuine subscribers.' : 'YouTube arama sonuçlarının en başında ve ilgili videoların yanında yer alarak kanalınıza sadık aboneler kazandırın.',
+          icon: Search,
+          items: lang === 'de' ? ['YouTube Keyword-Suche', 'Ähnliche Video-Platzierung', 'Abonnenten-Gewinnung', 'Thumbnail A/B Testing'] : lang === 'en' ? ['YouTube search keywords', 'Related video placement', 'Subscriber acquisition', 'Thumbnail A/B testing'] : ['YouTube arama kelimeleri', 'Benzer video yerleşimi', 'Abone kazanımı', 'Küçük resim A/B testleri']
+        },
+        {
+          title: lang === 'de' ? 'Musikclip & Künstler Promotion' : lang === 'en' ? 'Music Video & Artist Promotion' : 'Sanatçı & Klip Tanıtımı',
+          subtitle: 'Musiker & Labels',
+          desc: lang === 'de' ? '720+ erfolgreiche Musikclip-Kampagnen. Bringen Sie Ihren neuen Song in Trend-Listen und erreichen Sie Musikliebhaber in Deutschland, der Türkei und weltweit.' : lang === 'en' ? '720+ successful music video campaigns. Propel your new track onto trending charts across Germany, Turkey, and globally.' : 'Sanatçılar ve müzik yapım şirketleri için 720+ başarılı klip lansmanı. Şarkınızı trendlere taşıyın, gerçek dinleyicilere ulaşın.',
+          icon: Award,
+          items: lang === 'de' ? ['Musikgenre & Künstler-Targeting', 'Länder- & Regionen-Fokus', 'Trend-Charts Hebelwirkung', 'Spotify & Apple Music Traffic'] : lang === 'en' ? ['Genre & artist targeting', 'Country & regional targeting', 'Trending charts leverage', 'Spotify/Apple Music push'] : ['Müzik türü & sanatçı hedefleme', 'Ülke ve şehir filtreleme', 'Trend listelerine giriş desteği', 'Spotify & dijital platform yönlendirme']
+        },
+        {
+          title: lang === 'de' ? 'Bumper Ads (6 Sekunden)' : lang === 'en' ? 'Bumper Ads (6 Seconds)' : 'Bumper Ads (6 Saniye)',
+          subtitle: 'Nicht überspringbar',
+          desc: lang === 'de' ? '6-sekündige, unüberspringbare Kurzanzeigen für maximale Markenbekanntheit und unvergessliche Botschaften zu geringen CPM-Kosten.' : lang === 'en' ? '6-second non-skippable bumper ads engineered for maximum brand recall and cost-effective CPM reach.' : 'Atlanamayan 6 saniyelik vurucu reklamlarla marka bilinirliğinizi zihinlere kazıyın. Düşük CPM ile devasa erişim.',
+          icon: Zap,
+          items: lang === 'de' ? ['Nicht überspringbar', 'Hohe Werbeerinnerung', 'Kosteneffizienter CPM', 'Cross-Device Reichweite'] : lang === 'en' ? ['Non-skippable impact', 'High brand recall', 'Cost-effective CPM', 'Cross-device reach'] : ['Atlanamaz format', 'Yüksek marka hatırlanırlığı', 'Maliyet odaklı CPM', 'Tüm cihazlarda yayın']
+        },
+        {
+          title: lang === 'de' ? 'Video Remarketing & Funnel' : lang === 'en' ? 'Video Remarketing & Funnel' : 'Video Yeniden Pazarlama (Remarketing)',
+          subtitle: 'Lead & Sale Funnel',
+          desc: lang === 'de' ? 'Sprechen Sie Nutzer erneut an, die Ihre Videos bereits gesehen haben. Verwandeln Sie YouTube-Zuschauer in Kunden auf Ihrer Website.' : lang === 'en' ? 'Retarget viewers who previously watched your videos to drive high-intent website conversions and purchases.' : 'Videolarınızı izleyen veya kanalınızla etkileşime geçen kitleye özel teklifler sunarak web sitenizden satış yaptırın.',
+          icon: TrendingUp,
+          items: lang === 'de' ? ['Kanal-Abonnenten Retargeting', 'Video-Viewer Listen', 'Web-Conversion Verknüpfung', 'Google Ads GA4 Sync'] : lang === 'en' ? ['Channel subscriber retargeting', 'Video viewer audience lists', 'Website conversion sync', 'GA4 & Google Ads integration'] : ['Kanal abone yeniden hedefleme', 'Video izleyici kitle listeleri', 'Web satış entegrasyonu', 'GA4 ve Google Ads senkronizasyonu']
+        }
+      ],
+      process: [
+        { step: '01', title: lang === 'de' ? 'Zielgruppen- & Länderanalyse' : lang === 'en' ? 'Audience & Geo Analysis' : 'Hedef Kitle & Ülke Analizi', desc: lang === 'de' ? 'Wir definieren die exakte Zielgruppe, Musikinteressen, Alter, Demografie und Zielländer (DACH, TR, Global).' : lang === 'en' ? 'We define exact audience personas, music preferences, demographics, and target territories (DACH, TR, Global).' : 'Müzik türü, yaş, ilgi alanı ve yayınlanacak hedef ülkeleri (Almanya, Türkiye, Avrupa veya Dünya) netleştiriyoruz.' },
+        { step: '02', title: lang === 'de' ? 'Kreativ- & Hook-Optimierung' : lang === 'en' ? 'Creative & Hook Optimization' : 'Kanca (Hook) & Kreatif Kurgusu', desc: lang === 'de' ? 'Wir optimieren Thumbnail, Titel und die ersten 5 Sekunden des Videos für maximale Wiedergabedauer und niedrigen CPV.' : lang === 'en' ? 'We optimize thumbnail, title, and the first 5 seconds of the video for high retention and low CPV.' : 'Kullanıcının videodan çıkmasını önlemek için ilk 5 saniyeyi, küçük resmi (thumbnail) ve başlığı optimize ediyoruz.' },
+        { step: '03', title: lang === 'de' ? 'Kampagnen-Setup & Platzierungsfilter' : lang === 'en' ? 'Campaign Setup & Placement Filters' : 'Kampanya Kurulumu & Filtreleme', desc: lang === 'de' ? 'Einrichtung in Google Ads mit präzisen Ausschlüssen (keine Kinder-Kanäle, keine Fake-Traffic-Seiten) für 100% echte Menschen.' : lang === 'en' ? 'Google Ads setup with strict placement exclusions (blocking kids channels and low-quality placements) for 100% human traffic.' : 'Çocuk kanallarını ve kalitesiz içerikleri filtreleyerek bütçenizin sadece gerçek izleyicilere harcanmasını sağlıyoruz.' },
+        { step: '04', title: lang === 'de' ? 'Skalierung & Kanalwachstum' : lang === 'en' ? 'Scaling & Channel Growth' : 'Ölçekleme & Abone Büyümesi', desc: lang === 'de' ? 'Kontinuierliche Gebotsoptimierung, Ausbau von Abonnenten und Auswertung der YouTube Analytics Kennzahlen.' : lang === 'en' ? 'Continuous bid optimization, subscriber acquisition growth, and deep YouTube Analytics reporting.' : 'İzleme başı maliyetleri düşürerek abone artışını ve organik keşfete düşme oranını en üst seviyeye çıkarıyoruz.' }
+      ],
+      benefits: [
+        { title: lang === 'de' ? '23.1M+ Verifizierte Erfahrung' : lang === 'en' ? '23.1M+ Verified Track Record' : '23.1M+ Doğrulanmış Canlı Panel Verisi', desc: lang === 'de' ? '720+ başarıyla yönetilen kampanya ve resmi Google Partner güvencesi.' : lang === 'en' ? '720+ successfully executed campaigns backed by certified Google Partner expertise.' : '720+ yönetilen kampanya ve resmi Google Partner uzmanlığı.' },
+        { title: lang === 'de' ? '100% Echte & Organische Zuschauer' : lang === 'en' ? '100% Real & Organic Viewers' : '%100 Gerçek İzleyici (Sıfır Bot)', desc: lang === 'de' ? 'Keine gekauften Fake-Klicks. Reale Menschen, die kommentieren, liken und abonnieren.' : lang === 'en' ? 'Zero purchased bot views. Real human viewers who engage, like, and subscribe.' : 'Kanalınızı riske atan sahte botlar değil; beğenen, yorum yapan ve abone olan gerçek kitle.' },
+        { title: lang === 'de' ? 'Optimale Kosten pro View (CPV)' : lang === 'en' ? 'Optimal Cost Per View (CPV)' : 'Düşük İzleme Başı Maliyet (CPV)', desc: lang === 'de' ? '0,01 € bis 0,03 € CPV durch mathematisch präzise Gebotsstrategien.' : lang === 'en' ? '€0.01 to €0.03 CPV achieved through algorithmic bidding precision.' : '0.01€ seviyelerine kadar optimize edilmiş maliyetle bütçenizden maksimum izlenme çıkarma.' },
+        { title: lang === 'de' ? 'Trend-Charts & Algorithmus-Push' : lang === 'en' ? 'Trending Charts & Algorithm Push' : 'Trendler & Önerilen Video Desteği', desc: lang === 'de' ? 'Schneller Start-Traffic signalisiert YouTube hohe Relevanz für organische Empfehlungen.' : lang === 'en' ? 'Rapid initial momentum signals high relevance to YouTube\'s recommendation engine.' : 'İlk günlerde sağlanan yüksek izlenme ivmesi ile YouTube organik önerilen videolara girme avantajı.' }
+      ],
+      faq: [
+        {
+          q: lang === 'de' ? 'Wie zählt YouTube Videoaufrufe ab dem 24. August 2026?' : lang === 'en' ? 'How does YouTube count views starting August 24, 2026?' : 'YouTube 24 Ağustos 2026 güncellemesi ile izlenmeleri nasıl sayacak?',
+          a: lang === 'de' ? 'Ab dem 24. August 2026 zählt YouTube jeden Start eines Videos (Shorts, VOD, Livestreams) ab der ersten Sekunde als Aufruf. Dies erhöht die sichtbaren Aufrufzahlen, während die Monetarisierungsregeln (YPP) weiterhin an die echte Wiedergabezeit gebunden bleiben.' : lang === 'en' ? 'Starting August 24, 2026, YouTube registers views immediately upon video playback across Shorts, VOD, and Live formats. Public view counts increase rapidly while YPP monetization rules remain anchored to valid watch hours.' : '24 Ağustos 2026 itibarıyla Shorts, normal videolar ve canlı yayınlarda oynatma başladığı an (0. saniyede) görüntüleme sayılmaktadır. Bu sayaçtaki izlenme sayısını hızla yükseltirken, para kazanma hak edişi gerçek izlenme süresine göre hesaplanmaya devam eder.'
+        },
+        {
+          q: lang === 'de' ? 'Kann YouTube-Werbung meinem Kanal oder Song schaden?' : lang === 'en' ? 'Can YouTube advertising harm my channel or music video?' : 'YouTube reklamları kanalıma veya klibime zarar verir mi?',
+          a: lang === 'de' ? 'Nein, absolut nicht. Da wir ausschließlich die offizielle Google Ads Werbeplattform nutzen und Kinder- sowie minderwertige Kanäle strikt ausschließen, erhält Ihr Video nur authentische, interessierte Zielgruppen.' : lang === 'en' ? 'No, absolutely not. Because we advertise strictly through the official Google Ads network with stringent placement filters, your channel only gains authentic, high-relevance viewers.' : 'Kesinlikle hayır. Tamamen resmi Google Ads platformu üzerinden reklam verdiğimiz ve çocuk kanalları gibi verimsiz yerleşimleri elediğimiz için kanalınız %100 güvenli şekilde büyür.'
+        },
+        {
+          q: lang === 'de' ? 'Wie viele Aufrufe kann ich mit meinem Budget erwarten?' : lang === 'en' ? 'How many views can I expect with my budget?' : 'Bütçem ile yaklaşık kaç izlenme elde edebilirim?',
+          a: lang === 'de' ? 'Je nach Zielland und Musikgenre liegt der CPV (Cost-per-View) zwischen 0,01 € und 0,03 €. Mit einem Budget von 300 € lassen sich oft 15.000 bis 30.000+ echte Aufrufe erzielen. Wir berechnen Ihnen vorab eine exakte Reichweitenprognose.' : lang === 'en' ? 'Depending on target geography and genre, CPV ranges from €0.01 to €0.03. A €300 budget typically delivers 15,000 to 30,000+ genuine views. We provide a precise reach forecast before launch.' : 'Hedeflenen ülke ve müzik/sektör türüne göre izleme başı maliyet 0.01€ ile 0.03€ arasında değişir. Örneğin 300€ bütçe ile ortalama 15.000 - 30.000+ gerçek izlenme elde edilebilir.'
+        },
+        {
+          q: lang === 'de' ? 'Schalten Sie auch YouTube Shorts Werbekampagnen?' : lang === 'en' ? 'Do you run YouTube Shorts ad campaigns?' : 'YouTube Shorts reklamları da yönetiyor musunuz?',
+          a: lang === 'de' ? 'Ja, wir sind spezialisiert auf vertikale YouTube Shorts Ads und Demand Gen Video-Kampagnen, die besonders bei jungen Zielgruppen maximale Reichweite zu extrem niedrigen Klickpreisen erzielen.' : lang === 'en' ? 'Yes, we specialize in vertical YouTube Shorts ads and Demand Gen campaigns designed to capture massive Gen Z & millennial attention at ultra-low CPVs.' : 'Evet, dikey YouTube Shorts reklamları ve Demand Gen video kampanyalarında uzmanız. Özellikle mobil izleyicilerden rekor etkileşim ve abone dönüşümü sağlıyoruz.'
+        }
+      ]
+    },
+    'meta-ads': {
             badge: 'Meta Ads Manager · Facebook & Instagram',
             title: lang === 'de' ? <>Verifizierte Ergebnisse aus <span className="text-[#1877F2]">Meta Ads</span> Kampagnen</> : lang === 'en' ? <>Verified Results from <span className="text-[#1877F2]">Meta Ads</span> Campaigns</> : <>Doğrulanmış <span className="text-[#1877F2]">Meta Ads</span> Kampanya Sonuçları</>,
             desc: lang === 'de' ? 'Advantage+ Shopping, Instagram Reels Creatives und CAPI Server-Side Tracking: Skalierte ROAS-Erfolge unserer Kunden.' : lang === 'en' ? 'Advantage+ Shopping, Instagram Reels Creatives, and CAPI Server-Side Tracking: Scaled ROAS results for our clients.' : 'Advantage+ Alışveriş, Instagram Reels Kreatifleri ve CAPI Sunucu Taraflı Takip ile ölçeklenen ROAS başarıları.',

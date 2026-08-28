@@ -53,6 +53,160 @@ const getModuleIcon = (title = '') => {
 
 export default function ServiceDetailModules({ serviceSlug, lang = 'de', primaryColor = '#4285F4' }) {
   const modulesCatalog = {
+    // YOUTUBE ADS & VIDEO MARKETING HİZMETLERİ
+    'youtube-ads': {
+      tr: [
+        {
+          id: 'youtube-formats',
+          title: 'YouTube Reklam Formatları & Shorts Mimarisi',
+          subtitle: 'Shorts Ads / TrueView In-Stream / In-Feed Discovery / Bumper Ads (6s)',
+          count: 8,
+          themeGradient: 'from-red-600 via-rose-600 to-red-800',
+          badgeColor: 'bg-red-500',
+          groups: [
+            {
+              categoryName: 'YOUTUBE REKLAM FORMATLARI & YAYIN MODELİ',
+              accentColor: '#FF0000',
+              items: [
+                { badge: 'SHORTS ADS', title: 'YouTube Shorts Dikey Video Reklamları', desc: 'Tam ekran dikey video deneyimi ve 24 Ağustos anında görüntüleme algoritması ile maksimum mobil etkileşim' },
+                { badge: 'IN-STREAM', title: 'TrueView Atlanabilir Video Reklamları (Skippable)', desc: '30 saniye izleme veya tıklama başına ücretlendirme modeliyle sıfır bütçe israfı' },
+                { badge: 'DISCOVERY', title: 'In-Feed Keşfet Video Reklamları', desc: 'YouTube arama sonuçları ve ilgili video önerilerinde en üstte yer alarak gerçek abone kazanımı' },
+                { badge: 'BUMPER ADS', title: '6 Saniyelik Atlanamayan Bumper Reklamlar', desc: 'Marka hatırlanırlığını zirveye taşıyan düşük maliyetli yüksek erişim formatı' },
+                { badge: 'DEMAND GEN', title: 'YouTube Demand Gen Yapay Zeka Video Kampanyaları', desc: 'Shorts, Gmail ve Keşfet alanlarında yapay zeka ile en doğru müşterilere video gösterimi' },
+                { badge: 'YERLEŞİM FİLTRESİ', title: 'Negatif Kanal & Çocuk Kanalı Filtreleme', desc: 'Çocuk kanalları ve kalitesiz siteleri hariç tutarak bütçeyi sadece gerçek izleyicilere harcama' },
+                { badge: 'KANCA KURGUSU', title: 'İlk 5 Saniye Kanca (Hook) Optimizasyonu', desc: 'Atla butonuna basılmasını önleyen, izleyiciyi videoda tutan kreatif senaryo kurgusu' },
+                { badge: 'CPV OPTİMİZASYON', title: '0.01€ Hedefli İzleme Başı Maliyet (CPV) Yönetimi', desc: 'Teklif algoritmalarını optimize ederek minimum bütçe ile maksimum gerçek izlenme üretimi' }
+              ]
+            }
+          ]
+        },
+        {
+          id: 'youtube-artist-brand',
+          title: 'Sanatçı, Klip Tanıtımı & E-Ticaret Video Büyümesi',
+          subtitle: 'Müzik Klipleri / Şarkı Lansmanı / Trendler / Video Remarketing / Abone Kazanımı',
+          count: 8,
+          themeGradient: 'from-amber-600 via-red-600 to-amber-800',
+          badgeColor: 'bg-amber-500',
+          groups: [
+            {
+              categoryName: 'SANATÇI, KLİP TANITIMI & DÖNÜŞÜM HUNİSİ',
+              accentColor: '#F59E0B',
+              items: [
+                { badge: 'KLİP LANSMANI', title: 'Yeni Şarkı & Müzik Klibi Lansman Kampanyası', desc: 'Klibin ilk 48 saatinde yüksek izlenme ivmesi yaratarak YouTube trendlerine girme desteği' },
+                { badge: 'TÜR HEDEFLEME', title: 'Müzik Türü & Benzer Sanatçı Hedeflemesi', desc: 'Pop, Rap, Rock, Arabesk veya Etnik müzik dinleyicilerini nokta atışı hedefleme' },
+                { badge: 'ÜLKE VE ŞEHİR', title: 'Almanya, Türkiye & Global Bölgesel Yayın', desc: 'Hedeflenen gurbetçi kitleye, Türkiye geneline veya Avrupa metropollerine özel video yayını' },
+                { badge: 'SPOTIFY PUSH', title: 'Spotify & Apple Music Dinlenme Yönlendirmesi', desc: 'YouTube video izleyicilerini dijital müzik platformlarındaki şarkıya yönlendiren CTA kurgusu' },
+                { badge: 'ABONE HUNİSİ', title: 'Kanal Abone Sayısını Organik Katlama', desc: 'Videoyu beğenen ve sonuna kadar izleyen kullanıcıları kanal abonesine dönüştürme' },
+                { badge: 'REMARKETING', title: 'Video İzleyicilerini Web Sitesine Çekme (Remarketing)', desc: 'Videoları izleyen sıcak kitleye web sitenizden ürün veya hizmet satışı yaptırma' },
+                { badge: 'CANLI YAYIN', title: 'YouTube Canlı Yayın & Prömiyer Reklamları', desc: 'Yeni video prömiyerlerine ve canlı konserlere anlık binlerce izleyici toplama' },
+                { badge: 'ANALİTİK RAPOR', title: 'YouTube Studio & Google Ads Şeffaf Raporlama', desc: 'İzleyici tutma grafikleri, kitle demografisi ve gerçek etkileşim raporları' }
+              ]
+            }
+          ]
+        }
+      ],
+      de: [
+        {
+          id: 'youtube-formats',
+          title: 'YouTube Werbeformate & Shorts Architektur',
+          subtitle: 'Shorts Ads / TrueView In-Stream / In-Feed Discovery / Bumper Ads (6s)',
+          count: 8,
+          themeGradient: 'from-red-600 via-rose-600 to-red-800',
+          badgeColor: 'bg-red-500',
+          groups: [
+            {
+              categoryName: 'YOUTUBE WERBEFORMATE & REICHWEITEN-MODELLE',
+              accentColor: '#FF0000',
+              items: [
+                { badge: 'SHORTS ADS', title: 'YouTube Shorts Vertikale Videoanzeigen', desc: 'Vollbild-Storytelling mit sofortiger Aufrufzählung ab Sekunde 0 für maximale mobile Interaktion' },
+                { badge: 'IN-STREAM', title: 'TrueView Überspringbare In-Stream Anzeigen', desc: 'Abrechnung erst ab 30 Sekunden Wiedergabedauer — 100% Budgetkontrolle und null Streuverlust' },
+                { badge: 'DISCOVERY', title: 'In-Feed Video Discovery Anzeigen', desc: 'Top-Platzierungen in der YouTube-Suche und neben ähnlichen Videos für loyale Abonnenten' },
+                { badge: 'BUMPER ADS', title: '6-Sekunden Bumper Ads (Unüberspringbar)', desc: 'Maximale Werbeerinnerung und extrem niedrige CPM-Kosten für breite Markenbekanntheit' },
+                { badge: 'DEMAND GEN', title: 'YouTube Demand Gen KI-Videokampagnen', desc: 'Automatische KI-Ausspielung über Shorts, Gmail und Discover an kaufbereite Nutzer' },
+                { badge: 'FILTERUNG', title: 'Strikter Ausschluss von Kinder- & Spamkanälen', desc: 'Schutz Ihres Budgets durch gezieltes Sperren irrelevanter Platzierungen' },
+                { badge: 'HOOK-DESIGN', title: 'Erste-5-Sekunden Hook-Optimierung', desc: 'Kreativkonzepte, die den Skip-Button verhindern und Zuschauer fesseln' },
+                { badge: 'CPV OPTIMIERUNG', title: 'Kostengünstige Aufrufe ab 0,01 € CPV', desc: 'Präzise Gebotssteuerung für maximale Reichweite bei minimalem Budgeteinsatz' }
+              ]
+            }
+          ]
+        },
+        {
+          id: 'youtube-artist-brand',
+          title: 'Künstler, Musikclips & E-Commerce Video-Wachstum',
+          subtitle: 'Musikvideos / Song-Release / Trend-Charts / Video-Remarketing / Abonnenten',
+          count: 8,
+          themeGradient: 'from-amber-600 via-red-600 to-amber-800',
+          badgeColor: 'bg-amber-500',
+          groups: [
+            {
+              categoryName: 'KÜNSTLER-PROMOTION & CONVERSION-FUNNEL',
+              accentColor: '#F59E0B',
+              items: [
+                { badge: 'SONG-RELEASE', title: 'Musikclip Launch & Trend-Push', desc: 'Initialer Aufruf-Schub in den ersten 48 Stunden zur Unterstützung von Chart-Rankings' },
+                { badge: 'GENRE-TARGETING', title: 'Genre- & Künstler-Affinitäts-Targeting', desc: 'Treffsicheres Ausspielen an Fans ähnlicher Musiker und Stilrichtungen' },
+                { badge: 'GEO-FOKUS', title: 'Gezielte Länder- & Regionenauswahl', desc: 'Ausstrahlung in Deutschland, Österreich, Schweiz, Türkei oder weltweit' },
+                { badge: 'STREAMING PUSH', title: 'Weiterleitung zu Spotify & Apple Music', desc: 'Interaktive Call-to-Actions leiten YouTube-Zuschauer direkt zu Streaming-Plattformen' },
+                { badge: 'ABONNENTEN', title: 'Nachhaltiges Kanal-Abonnentenwachstum', desc: 'Gezielte Ansprache zur Verwandlung von Einmal-Zuschauern in treue Abonnenten' },
+                { badge: 'REMARKETING', title: 'Video-Viewer Remarketing auf der Website', desc: 'Verkauf von Produkten, Tickets oder Dienstleistungen an bestehende Videozuschauer' },
+                { badge: 'LIVESTREAMS', title: 'Livestream & Premieren-Bewerbung', desc: 'Tausende Live-Zuschauer für neue Veröffentlichungen und Online-Events gewinnen' },
+                { badge: 'REPORTING', title: 'Transparente YouTube Studio & Ads Analysen', desc: 'Einsicht in Zuschauerbindung, Demografie und tatsächliche Interaktionswerte' }
+              ]
+            }
+          ]
+        }
+      ],
+      en: [
+        {
+          id: 'youtube-formats',
+          title: 'YouTube Ad Formats & Shorts Architecture',
+          subtitle: 'Shorts Ads / TrueView In-Stream / In-Feed Discovery / Bumper Ads (6s)',
+          count: 8,
+          themeGradient: 'from-red-600 via-rose-600 to-red-800',
+          badgeColor: 'bg-red-500',
+          groups: [
+            {
+              categoryName: 'YOUTUBE AD FORMATS & DELIVERY MODELS',
+              accentColor: '#FF0000',
+              items: [
+                { badge: 'SHORTS ADS', title: 'YouTube Shorts Vertical Video Ads', desc: 'Full-screen vertical immersive video storytelling with instant view counting from second 0' },
+                { badge: 'IN-STREAM', title: 'TrueView Skippable In-Stream Ads', desc: 'Pay only after 30 seconds of watch time or viewer interaction — zero wasted spend' },
+                { badge: 'DISCOVERY', title: 'In-Feed Video Discovery Ads', desc: 'Top placement in YouTube search results and related video feeds for organic subscriber growth' },
+                { badge: 'BUMPER ADS', title: '6-Second Non-Skippable Bumper Ads', desc: 'High-impact brand recall and cost-effective CPM reach across all smart devices' },
+                { badge: 'DEMAND GEN', title: 'YouTube Demand Gen AI Video Campaigns', desc: 'Multi-surface AI optimization spanning Shorts, Gmail, and Discover feeds' },
+                { badge: 'EXCLUSIONS', title: 'Placement Filters & Kids Channel Blocking', desc: 'Strict negative filtering ensuring 100% human, relevant, and brand-safe audiences' },
+                { badge: 'HOOK DESIGN', title: 'First 5-Second Hook Optimization', desc: 'Creative frameworks crafted to stop the skip button and maximize retention' },
+                { badge: 'CPV BIDDING', title: 'Low Cost-Per-View from €0.01 CPV', desc: 'Algorithmic bid management maximizing real audience volume per euro spent' }
+              ]
+            }
+          ]
+        },
+        {
+          id: 'youtube-artist-brand',
+          title: 'Artist Promotion, Music Videos & E-Commerce Scale',
+          subtitle: 'Music Releases / Trending Charts / Video Retargeting / Subscriber Growth',
+          count: 8,
+          themeGradient: 'from-amber-600 via-red-600 to-amber-800',
+          badgeColor: 'bg-amber-500',
+          groups: [
+            {
+              categoryName: 'ARTIST PROMOTION & VIDEO CONVERSION FUNNELS',
+              accentColor: '#F59E0B',
+              items: [
+                { badge: 'MUSIC RELEASE', title: 'Music Video Launch & Trending Momentum', desc: 'High-velocity initial launch momentum supporting trending charts recognition' },
+                { badge: 'GENRE TARGETING', title: 'Genre & Similar Artist Audience Affinity', desc: 'Pinpoint targeting aimed at fans of comparable artists and music genres' },
+                { badge: 'GEO FOCUS', title: 'Territorial Targeting (DACH, TR & Global)', desc: 'Custom geographic delivery across Germany, diaspora communities, or worldwide' },
+                { badge: 'STREAMING PUSH', title: 'Spotify & Apple Music Traffic Funnels', desc: 'Seamless interactive CTAs directing YouTube viewers straight to streaming platforms' },
+                { badge: 'SUBSCRIBERS', title: 'Long-Term Organic Channel Subscriber Scale', desc: 'Converting casual viewers into dedicated subscribers and loyal fans' },
+                { badge: 'REMARKETING', title: 'Video Viewer Retargeting & Website Sales', desc: 'Retarget engaged viewers to drive e-commerce sales, tickets, or qualified leads' },
+                { badge: 'LIVESTREAMS', title: 'Livestream & Premiere Audience Gathering', desc: 'Driving thousands of live viewers to premieres and scheduled online events' },
+                { badge: 'REPORTING', title: 'Transparent YouTube Studio & Ads Analytics', desc: 'Comprehensive reporting covering retention curves, demographics, and true ROI' }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+
     // REKLAM & TRACKING KURULUM HİZMETLERİ
     'server-side-tracking': {
       tr: [
