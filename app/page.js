@@ -6,7 +6,7 @@ import { Card, CardContent } from '@/components/ui/card'
 import { Input } from '@/components/ui/input'
 import { Textarea } from '@/components/ui/textarea'
 import { Badge } from '@/components/ui/badge'
-import { Phone, Mail, MessageCircle, CheckCircle, BarChart3, Users, Award, TrendingUp, Globe, Star, Sparkles, ArrowRight, Clock, Calendar, Flame, Cpu, Zap, Search, ShieldCheck, Layers, BookOpen } from 'lucide-react'
+import { Phone, Mail, MessageCircle, CheckCircle, BarChart3, Users, Award, TrendingUp, Globe, Star, Sparkles, ArrowRight, Clock, Calendar, Flame, Cpu, Zap, Search, ShieldCheck, Layers, BookOpen, Menu, X, ChevronRight, MessageSquare } from 'lucide-react'
 import CookieConsent from '@/components/CookieConsent'
 import RoasCalculatorWidget from '@/components/RoasCalculatorWidget'
 import LeadFunnelWizard from '@/components/LeadFunnelWizard'
@@ -675,6 +675,7 @@ export default function Home({ initialLang = 'de' }) {
   const [isSubmitting, setIsSubmitting] = useState(false)
   const [latestPosts, setLatestPosts] = useState([])
   const [blogCategory, setBlogCategory] = useState('all')
+  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false)
 
   // Language change navigates to the correct URL
   const handleLanguageChange = (newLang) => {
@@ -855,73 +856,186 @@ export default function Home({ initialLang = 'de' }) {
           ]
         }) }} />
       {/* Navigation */}
-      <nav className="fixed top-0 left-0 right-0 z-50 bg-white/95 backdrop-blur-sm border-b">
-        <div className="container mx-auto px-4 py-4">
+      <nav className="fixed top-0 left-0 right-0 z-50 bg-white/95 backdrop-blur-md border-b border-slate-200/80 shadow-xs">
+        <div className="container mx-auto px-4 py-3 sm:py-4">
           <div className="flex items-center justify-between">
             <a href={lang === 'de' ? '/' : `/${lang}`} className="flex items-center">
               <picture>
                 <source srcSet="/logo-sm.webp" type="image/webp" />
-                <img src="/logo.png" alt="Salih Maral Logo" className="h-10 w-auto" width="40" height="40" />
+                <img src="/logo.png" alt="Salih Maral Logo" className="h-9 sm:h-10 w-auto" width="40" height="40" />
               </picture>
             </a>
             
+            {/* Desktop Navigation Links */}
             <div className="hidden md:flex items-center space-x-6">
               <div className="relative group">
-                <button className="text-sm font-bold text-gray-900 hover:text-[#4285F4] transition-colors flex items-center">
+                <button className="text-sm font-bold text-gray-900 hover:text-[#4285F4] transition-colors flex items-center cursor-pointer">
                   {t.nav.services}
                   <svg className="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
                   </svg>
                 </button>
-                <div className="absolute left-0 mt-2 w-64 bg-white rounded-lg shadow-2xl opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 z-50 border border-gray-100">
-                  <div className="py-2">
+                <div className="absolute left-0 mt-2 w-72 bg-white rounded-2xl shadow-2xl opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 z-50 border border-slate-100 p-2">
+                  <div className="space-y-1">
                     {t.why.services.map((service, idx) => (
                       <a
                         key={idx}
                         href={svcUrl(lang, service.slug)}
-                        className="block px-4 py-3 text-sm text-gray-700 hover:bg-[#4285F4]/10 hover:text-[#4285F4] transition-colors"
+                        className="block px-3.5 py-2.5 rounded-xl text-sm text-gray-700 hover:bg-[#4285F4]/10 hover:text-[#4285F4] transition-colors"
                       >
-                        <div className="font-semibold">{service.title}</div>
-                        <div className="text-xs text-gray-500 mt-1">{service.description.substring(0, 50)}...</div>
+                        <div className="font-bold text-gray-900">{service.title}</div>
+                        <div className="text-xs text-gray-500 line-clamp-1">{service.description}</div>
                       </a>
                     ))}
                   </div>
                 </div>
               </div>
-              <button onClick={() => scrollToSection('success')} className="text-sm font-bold text-gray-900 hover:text-[#4285F4] transition-colors">{t.nav.success}</button>
-              <button onClick={() => scrollToSection('about')} className="text-sm font-bold text-gray-900 hover:text-[#4285F4] transition-colors">{t.nav.about}</button>
+              <a href={lang === 'de' ? '/de/standorte' : lang === 'tr' ? '/tr/standorte' : '/en/standorte'} className="text-sm font-bold text-gray-900 hover:text-[#4285F4] transition-colors">
+                {lang === 'de' ? 'Standorte' : lang === 'tr' ? 'Şehirler' : 'Locations'}
+              </a>
+              <button onClick={() => scrollToSection('success')} className="text-sm font-bold text-gray-900 hover:text-[#4285F4] transition-colors cursor-pointer">{t.nav.success}</button>
+              <button onClick={() => scrollToSection('about')} className="text-sm font-bold text-gray-900 hover:text-[#4285F4] transition-colors cursor-pointer">{t.nav.about}</button>
               <a href="/blog" className="text-sm font-bold text-gray-900 hover:text-[#4285F4] transition-colors">Blog</a>
-              <button onClick={() => scrollToSection('contact')} className="text-sm font-bold text-gray-900 hover:text-[#4285F4] transition-colors">{t.nav.contact}</button>
+              <button onClick={() => scrollToSection('contact')} className="text-sm font-bold text-gray-900 hover:text-[#4285F4] transition-colors cursor-pointer">{t.nav.contact}</button>
             </div>
 
+            {/* Right Side: Language Switcher + Mobile Hamburger Button */}
             <div className="flex items-center space-x-2">
-              <Button
-                variant={lang === 'de' ? 'default' : 'outline'}
-                size="sm"
-                onClick={() => handleLanguageChange('de')}
-                className={lang === 'de' ? 'bg-[#4285F4]' : ''}
+              {/* Desktop Language Switcher */}
+              <div className="hidden sm:flex items-center space-x-1.5 bg-slate-100/80 p-1 rounded-xl border border-slate-200/60">
+                <button
+                  onClick={() => handleLanguageChange('de')}
+                  className={`px-2.5 py-1 text-xs font-bold rounded-lg transition-all cursor-pointer ${lang === 'de' ? 'bg-[#4285F4] text-white shadow-xs' : 'text-slate-600 hover:text-gray-900'}`}
+                >
+                  DE
+                </button>
+                <button
+                  onClick={() => handleLanguageChange('en')}
+                  className={`px-2.5 py-1 text-xs font-bold rounded-lg transition-all cursor-pointer ${lang === 'en' ? 'bg-[#4285F4] text-white shadow-xs' : 'text-slate-600 hover:text-gray-900'}`}
+                >
+                  EN
+                </button>
+                <button
+                  onClick={() => handleLanguageChange('tr')}
+                  className={`px-2.5 py-1 text-xs font-bold rounded-lg transition-all cursor-pointer ${lang === 'tr' ? 'bg-[#4285F4] text-white shadow-xs' : 'text-slate-600 hover:text-gray-900'}`}
+                >
+                  TR
+                </button>
+              </div>
+
+              {/* Mobile Hamburger / Close Toggle Button */}
+              <button
+                onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
+                className="md:hidden p-2.5 rounded-xl bg-slate-100 text-gray-900 hover:bg-slate-200 transition-colors cursor-pointer"
+                aria-label="Toggle Mobile Navigation"
               >
-                DE
-              </Button>
-              <Button
-                variant={lang === 'en' ? 'default' : 'outline'}
-                size="sm"
-                onClick={() => handleLanguageChange('en')}
-                className={lang === 'en' ? 'bg-[#4285F4]' : ''}
-              >
-                EN
-              </Button>
-              <Button
-                variant={lang === 'tr' ? 'default' : 'outline'}
-                size="sm"
-                onClick={() => handleLanguageChange('tr')}
-                className={lang === 'tr' ? 'bg-[#4285F4]' : ''}
-              >
-                TR
-              </Button>
+                {isMobileMenuOpen ? <X className="w-6 h-6 text-gray-900" /> : <Menu className="w-6 h-6 text-gray-900" />}
+              </button>
             </div>
           </div>
         </div>
+
+        {/* Fullscreen Mobile Drawer Menu (Ultra-Smooth Slide & Blur) */}
+        {isMobileMenuOpen && (
+          <div className="md:hidden fixed inset-x-0 top-[60px] bottom-0 bg-white/98 backdrop-blur-xl z-50 overflow-y-auto border-t border-slate-100 p-5 space-y-6 animate-in slide-in-from-top-4 duration-300 pb-28">
+            {/* Mobile Language Switcher Tabs */}
+            <div className="flex items-center justify-between bg-slate-100 p-1.5 rounded-2xl">
+              <button
+                onClick={() => { handleLanguageChange('de'); setIsMobileMenuOpen(false); }}
+                className={`flex-1 py-2.5 text-xs font-bold rounded-xl text-center transition-all ${lang === 'de' ? 'bg-white text-[#4285F4] shadow-md' : 'text-slate-600'}`}
+              >
+                🇩🇪 Deutsch
+              </button>
+              <button
+                onClick={() => { handleLanguageChange('en'); setIsMobileMenuOpen(false); }}
+                className={`flex-1 py-2.5 text-xs font-bold rounded-xl text-center transition-all ${lang === 'en' ? 'bg-white text-[#4285F4] shadow-md' : 'text-slate-600'}`}
+              >
+                🇬🇧 English
+              </button>
+              <button
+                onClick={() => { handleLanguageChange('tr'); setIsMobileMenuOpen(false); }}
+                className={`flex-1 py-2.5 text-xs font-bold rounded-xl text-center transition-all ${lang === 'tr' ? 'bg-white text-[#4285F4] shadow-md' : 'text-slate-600'}`}
+              >
+                🇹🇷 Türkçe
+              </button>
+            </div>
+
+            {/* Mobile Navigation Links */}
+            <div className="space-y-2">
+              <div className="text-[11px] font-black uppercase tracking-wider text-slate-400 px-3">
+                {lang === 'de' ? 'Dienstleistungen' : lang === 'tr' ? 'Hizmetlerimiz' : 'Services'}
+              </div>
+              <div className="grid grid-cols-1 gap-1.5">
+                {t.why.services.map((service, idx) => (
+                  <a
+                    key={idx}
+                    href={svcUrl(lang, service.slug)}
+                    onClick={() => setIsMobileMenuOpen(false)}
+                    className="flex items-center justify-between p-3 rounded-xl bg-slate-50/70 hover:bg-blue-50 border border-slate-100 hover:border-blue-200 transition-colors"
+                  >
+                    <span className="font-bold text-sm text-gray-900">{service.title}</span>
+                    <ChevronRight className="w-4 h-4 text-slate-400" />
+                  </a>
+                ))}
+              </div>
+            </div>
+
+            {/* Secondary Links */}
+            <div className="space-y-2 pt-2 border-t border-slate-100">
+              <div className="text-[11px] font-black uppercase tracking-wider text-slate-400 px-3">
+                {lang === 'de' ? 'Navigation & Info' : lang === 'tr' ? 'Hızlı Erişim' : 'Quick Access'}
+              </div>
+              <div className="grid grid-cols-2 gap-2">
+                <a
+                  href={lang === 'de' ? '/de/standorte' : lang === 'tr' ? '/tr/standorte' : '/en/standorte'}
+                  onClick={() => setIsMobileMenuOpen(false)}
+                  className="p-3 rounded-xl bg-slate-50 text-center font-bold text-sm text-gray-900 border border-slate-100"
+                >
+                  📍 {lang === 'de' ? '18 Standorte' : lang === 'tr' ? '18 Şehir' : '18 Locations'}
+                </a>
+                <a
+                  href="/blog"
+                  onClick={() => setIsMobileMenuOpen(false)}
+                  className="p-3 rounded-xl bg-slate-50 text-center font-bold text-sm text-gray-900 border border-slate-100"
+                >
+                  📚 Blog & News
+                </a>
+                <button
+                  onClick={() => { scrollToSection('success'); setIsMobileMenuOpen(false); }}
+                  className="p-3 rounded-xl bg-slate-50 text-center font-bold text-sm text-gray-900 border border-slate-100"
+                >
+                  🏆 {t.nav.success}
+                </button>
+                <button
+                  onClick={() => { scrollToSection('about'); setIsMobileMenuOpen(false); }}
+                  className="p-3 rounded-xl bg-slate-50 text-center font-bold text-sm text-gray-900 border border-slate-100"
+                >
+                  ℹ️ {t.nav.about}
+                </button>
+              </div>
+            </div>
+
+            {/* Quick Action CTA inside Drawer */}
+            <div className="pt-2 space-y-2.5">
+              <button
+                onClick={() => { scrollToSection('contact'); setIsMobileMenuOpen(false); }}
+                className="w-full bg-[#4285F4] text-white font-black py-3.5 rounded-2xl shadow-lg flex items-center justify-center space-x-2 text-sm"
+              >
+                <Mail className="w-4 h-4" />
+                <span>{t.hero.cta2}</span>
+              </button>
+              <a
+                href={`https://wa.me/491724106463?text=${lang === 'de' ? 'Hallo,%20ich%20interessiere%20mich%20für%20Ihre%20Digital%20Marketing%20Dienstleistungen.' : lang === 'en' ? 'Hello,%20I%20am%20interested%20in%20your%20digital%20marketing%20services.' : 'Merhaba,%20dijital%20pazarlama%20hizmetleriniz%20hakkında%20bilgi%20almak%20istiyorum.'}`}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="w-full bg-[#25D366] text-white font-black py-3.5 rounded-2xl shadow-lg flex items-center justify-center space-x-2 text-sm"
+              >
+                <MessageSquare className="w-4 h-4" />
+                <span>WhatsApp ({t.hero.cta1})</span>
+              </a>
+            </div>
+          </div>
+        )}
       </nav>
 
       {/* Hero Section (Ultra-Modern Agency Glassmorphism & High-Impact Typography) */}
@@ -2042,8 +2156,28 @@ export default function Home({ initialLang = 'de' }) {
         </div>
       </section>
 
+      {/* Sticky Mobile Floating Action Bar (High-Converting Thumb-Friendly Glassmorphism) */}
+      <div className="md:hidden fixed bottom-0 left-0 right-0 z-40 bg-white/95 backdrop-blur-xl border-t border-slate-200/90 shadow-2xl p-2.5 px-4 flex items-center gap-3">
+        <a
+          href={`https://wa.me/491724106463?text=${lang === 'de' ? 'Hallo,%20ich%20interessiere%20mich%20für%20Ihre%20Digital%20Marketing%20Dienstleistungen.' : lang === 'en' ? 'Hello,%20I%20am%20interested%20in%20your%20digital%20marketing%20services.' : 'Merhaba,%20dijital%20pazarlama%20hizmetleriniz%20hakkında%20bilgi%20almak%20istiyorum.'}`}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="flex-1 bg-[#25D366] hover:bg-[#20bd5a] active:scale-95 text-white font-black py-3 px-3 rounded-xl shadow-md flex items-center justify-center space-x-2 text-sm transition-all"
+        >
+          <MessageSquare className="w-4 h-4 flex-shrink-0" />
+          <span className="truncate">WhatsApp</span>
+        </a>
+        <button
+          onClick={() => scrollToSection('contact')}
+          className="flex-1 bg-[#4285F4] hover:bg-[#3367d6] active:scale-95 text-white font-black py-3 px-3 rounded-xl shadow-md flex items-center justify-center space-x-2 text-sm transition-all cursor-pointer"
+        >
+          <Mail className="w-4 h-4 flex-shrink-0" />
+          <span className="truncate">{lang === 'de' ? 'Angebot' : lang === 'en' ? 'Get Quote' : 'Teklif Al'}</span>
+        </button>
+      </div>
+
       {/* Footer */}
-      <footer className="py-12 bg-gray-900 text-white">
+      <footer className="py-12 pb-24 md:pb-12 bg-gray-900 text-white">
         <div className="container mx-auto px-4">
           <div className="grid md:grid-cols-4 gap-8 mb-8">
             <div>
