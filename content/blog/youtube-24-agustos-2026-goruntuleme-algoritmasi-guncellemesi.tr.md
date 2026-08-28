@@ -1,7 +1,7 @@
 ---
 slug: "youtube-24-agustos-2026-goruntuleme-algoritmasi-guncellemesi"
 lang: "tr"
-title: "YouTube 24 Ağustos 2026 Görüntüleme Güncellemesi: Anında İzlenme Kuralı ve YPP Etkisi"
+title: "YouTube'dan Radikal 24 Ağustos Kararı: İzlenme Sayıları Uçuyor mu, Para Kazanma Düşüyor mu?"
 excerpt: "YouTube 24 Ağustos 2026'dan itibaren Shorts, uzun video ve canlı yayınlarda oynatıldığı an görüntüleme sayacak. YPP para kazanma, avantajlar ve uzman analizi."
 category: "YouTube Ads & Algoritma"
 date: "2026-08-28"

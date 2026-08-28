@@ -1,7 +1,7 @@
 ---
 slug: "youtube-24-agustos-2026-goruntuleme-algoritmasi-guncellemesi"
 lang: "de"
-title: "YouTube Update ab 24. August 2026: Neue Aufruf-Zählung & YPP Auswirkung"
+title: "YouTube Radikal-Update ab 24. August: Aufrufe explodieren – Was passiert mit Ihren Einnahmen?"
 excerpt: "Ab dem 24. August 2026 zählt YouTube Videoaufrufe ab der 1. Sekunde für Shorts, VOD & Livestreams. Auswirkung auf YPP Einnahmen, Vor- und Nachteile im Experten-Check."
 category: "YouTube Ads & Algorithmus"
 date: "2026-08-28"

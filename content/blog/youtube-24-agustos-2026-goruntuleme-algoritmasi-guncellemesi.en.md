@@ -1,7 +1,7 @@
 ---
 slug: "youtube-24-agustos-2026-goruntuleme-algoritmasi-guncellemesi"
 lang: "en"
-title: "YouTube August 24, 2026 View Counting Update: Instant Views & YPP Impact"
+title: "YouTube's Game-Changing August 24 Update: Views Skyrocket, But What Happens to Your Payouts?"
 excerpt: "Starting August 24, 2026, YouTube counts views as soon as video playback starts across Shorts, VOD, and Live streams. YPP monetization impact & expert analysis."
 category: "YouTube Ads & Algorithm"
 date: "2026-08-28"
