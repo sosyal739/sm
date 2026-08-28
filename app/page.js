@@ -856,7 +856,7 @@ export default function Home({ initialLang = 'de' }) {
           ]
         }) }} />
       {/* Navigation */}
-      <nav className="fixed top-0 left-0 right-0 z-50 bg-white/95 backdrop-blur-md border-b border-slate-200/80 shadow-xs">
+      <nav className="fixed top-0 left-0 right-0 z-40 bg-white/95 backdrop-blur-md border-b border-slate-200/80 shadow-xs">
         <div className="container mx-auto px-4 py-3 sm:py-4">
           <div className="flex items-center justify-between">
             <a href={lang === 'de' ? '/' : `/${lang}`} className="flex items-center">
@@ -923,55 +923,72 @@ export default function Home({ initialLang = 'de' }) {
                 </button>
               </div>
 
-              {/* Mobile Hamburger / Close Toggle Button */}
+              {/* Mobile Hamburger Button */}
               <button
-                onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
-                className="md:hidden p-2.5 rounded-xl bg-slate-100 text-gray-900 hover:bg-slate-200 transition-colors cursor-pointer"
-                aria-label="Toggle Mobile Navigation"
+                onClick={() => setIsMobileMenuOpen(true)}
+                className="md:hidden p-2 rounded-xl bg-slate-100 text-gray-900 hover:bg-slate-200 transition-colors cursor-pointer"
+                aria-label="Open Mobile Navigation"
               >
-                {isMobileMenuOpen ? <X className="w-6 h-6 text-gray-900" /> : <Menu className="w-6 h-6 text-gray-900" />}
+                <Menu className="w-6 h-6 text-gray-900" />
               </button>
             </div>
           </div>
         </div>
+      </nav>
 
-        {/* Fullscreen Mobile Drawer Menu (Ultra-Smooth Slide & Blur) */}
-        {isMobileMenuOpen && (
-          <div className="md:hidden fixed inset-x-0 top-[60px] bottom-0 bg-white/98 backdrop-blur-xl z-50 overflow-y-auto border-t border-slate-100 p-5 space-y-6 animate-in slide-in-from-top-4 duration-300 pb-28">
-            {/* Mobile Language Switcher Tabs */}
+      {/* Clean Solid Fullscreen Mobile Modal Menu (Zero Background Bleed) */}
+      {isMobileMenuOpen && (
+        <div className="md:hidden fixed inset-0 z-[999] bg-white flex flex-col animate-in fade-in duration-200">
+          {/* Top Bar inside Menu */}
+          <div className="flex items-center justify-between px-5 py-4 border-b border-slate-100 bg-white">
+            <a href={lang === 'de' ? '/' : `/${lang}`} onClick={() => setIsMobileMenuOpen(false)} className="flex items-center">
+              <img src="/logo.png" alt="Salih Maral Logo" className="h-9 w-auto" width="36" height="36" />
+            </a>
+            <button
+              onClick={() => setIsMobileMenuOpen(false)}
+              className="p-2 rounded-full bg-slate-100 text-gray-900 hover:bg-slate-200 transition-colors cursor-pointer"
+              aria-label="Close Menu"
+            >
+              <X className="w-6 h-6 text-gray-900" />
+            </button>
+          </div>
+
+          {/* Scrollable Content inside Menu */}
+          <div className="flex-1 overflow-y-auto px-5 py-6 space-y-6 bg-white">
+            {/* Language Segmented Control */}
             <div className="flex items-center justify-between bg-slate-100 p-1.5 rounded-2xl">
               <button
                 onClick={() => { handleLanguageChange('de'); setIsMobileMenuOpen(false); }}
-                className={`flex-1 py-2.5 text-xs font-bold rounded-xl text-center transition-all ${lang === 'de' ? 'bg-white text-[#4285F4] shadow-md' : 'text-slate-600'}`}
+                className={`flex-1 py-2 text-xs font-bold rounded-xl text-center transition-all ${lang === 'de' ? 'bg-[#4285F4] text-white shadow-sm' : 'text-slate-700'}`}
               >
                 🇩🇪 Deutsch
               </button>
               <button
                 onClick={() => { handleLanguageChange('en'); setIsMobileMenuOpen(false); }}
-                className={`flex-1 py-2.5 text-xs font-bold rounded-xl text-center transition-all ${lang === 'en' ? 'bg-white text-[#4285F4] shadow-md' : 'text-slate-600'}`}
+                className={`flex-1 py-2 text-xs font-bold rounded-xl text-center transition-all ${lang === 'en' ? 'bg-[#4285F4] text-white shadow-sm' : 'text-slate-700'}`}
               >
                 🇬🇧 English
               </button>
               <button
                 onClick={() => { handleLanguageChange('tr'); setIsMobileMenuOpen(false); }}
-                className={`flex-1 py-2.5 text-xs font-bold rounded-xl text-center transition-all ${lang === 'tr' ? 'bg-white text-[#4285F4] shadow-md' : 'text-slate-600'}`}
+                className={`flex-1 py-2 text-xs font-bold rounded-xl text-center transition-all ${lang === 'tr' ? 'bg-[#4285F4] text-white shadow-sm' : 'text-slate-700'}`}
               >
                 🇹🇷 Türkçe
               </button>
             </div>
 
-            {/* Mobile Navigation Links */}
+            {/* Services List */}
             <div className="space-y-2">
-              <div className="text-[11px] font-black uppercase tracking-wider text-slate-400 px-3">
+              <div className="text-xs font-black uppercase tracking-wider text-slate-400 px-2">
                 {lang === 'de' ? 'Dienstleistungen' : lang === 'tr' ? 'Hizmetlerimiz' : 'Services'}
               </div>
-              <div className="grid grid-cols-1 gap-1.5">
+              <div className="space-y-1.5">
                 {t.why.services.map((service, idx) => (
                   <a
                     key={idx}
                     href={svcUrl(lang, service.slug)}
                     onClick={() => setIsMobileMenuOpen(false)}
-                    className="flex items-center justify-between p-3 rounded-xl bg-slate-50/70 hover:bg-blue-50 border border-slate-100 hover:border-blue-200 transition-colors"
+                    className="flex items-center justify-between p-3.5 rounded-2xl bg-slate-50 hover:bg-blue-50 border border-slate-100 transition-colors"
                   >
                     <span className="font-bold text-sm text-gray-900">{service.title}</span>
                     <ChevronRight className="w-4 h-4 text-slate-400" />
@@ -980,63 +997,54 @@ export default function Home({ initialLang = 'de' }) {
               </div>
             </div>
 
-            {/* Secondary Links */}
+            {/* Quick Links */}
             <div className="space-y-2 pt-2 border-t border-slate-100">
-              <div className="text-[11px] font-black uppercase tracking-wider text-slate-400 px-3">
-                {lang === 'de' ? 'Navigation & Info' : lang === 'tr' ? 'Hızlı Erişim' : 'Quick Access'}
+              <div className="text-xs font-black uppercase tracking-wider text-slate-400 px-2">
+                {lang === 'de' ? 'Seiten & Infos' : lang === 'tr' ? 'Sayfalar & Bilgi' : 'Pages & Info'}
               </div>
               <div className="grid grid-cols-2 gap-2">
                 <a
                   href={lang === 'de' ? '/de/standorte' : lang === 'tr' ? '/tr/standorte' : '/en/standorte'}
                   onClick={() => setIsMobileMenuOpen(false)}
-                  className="p-3 rounded-xl bg-slate-50 text-center font-bold text-sm text-gray-900 border border-slate-100"
+                  className="p-3 rounded-xl bg-slate-50 text-center font-bold text-xs text-gray-900 border border-slate-100"
                 >
                   📍 {lang === 'de' ? '18 Standorte' : lang === 'tr' ? '18 Şehir' : '18 Locations'}
                 </a>
                 <a
                   href="/blog"
                   onClick={() => setIsMobileMenuOpen(false)}
-                  className="p-3 rounded-xl bg-slate-50 text-center font-bold text-sm text-gray-900 border border-slate-100"
+                  className="p-3 rounded-xl bg-slate-50 text-center font-bold text-xs text-gray-900 border border-slate-100"
                 >
                   📚 Blog & News
                 </a>
                 <button
                   onClick={() => { scrollToSection('success'); setIsMobileMenuOpen(false); }}
-                  className="p-3 rounded-xl bg-slate-50 text-center font-bold text-sm text-gray-900 border border-slate-100"
+                  className="p-3 rounded-xl bg-slate-50 text-center font-bold text-xs text-gray-900 border border-slate-100 cursor-pointer"
                 >
                   🏆 {t.nav.success}
                 </button>
                 <button
                   onClick={() => { scrollToSection('about'); setIsMobileMenuOpen(false); }}
-                  className="p-3 rounded-xl bg-slate-50 text-center font-bold text-sm text-gray-900 border border-slate-100"
+                  className="p-3 rounded-xl bg-slate-50 text-center font-bold text-xs text-gray-900 border border-slate-100 cursor-pointer"
                 >
                   ℹ️ {t.nav.about}
                 </button>
               </div>
             </div>
 
-            {/* Quick Action CTA inside Drawer */}
-            <div className="pt-2 space-y-2.5">
+            {/* CTA Button in Drawer */}
+            <div className="pt-2">
               <button
                 onClick={() => { scrollToSection('contact'); setIsMobileMenuOpen(false); }}
-                className="w-full bg-[#4285F4] text-white font-black py-3.5 rounded-2xl shadow-lg flex items-center justify-center space-x-2 text-sm"
+                className="w-full bg-[#4285F4] hover:bg-[#3367d6] text-white font-black py-4 rounded-2xl shadow-lg flex items-center justify-center space-x-2 text-sm cursor-pointer"
               >
                 <Mail className="w-4 h-4" />
                 <span>{t.hero.cta2}</span>
               </button>
-              <a
-                href={`https://wa.me/491724106463?text=${lang === 'de' ? 'Hallo,%20ich%20interessiere%20mich%20für%20Ihre%20Digital%20Marketing%20Dienstleistungen.' : lang === 'en' ? 'Hello,%20I%20am%20interested%20in%20your%20digital%20marketing%20services.' : 'Merhaba,%20dijital%20pazarlama%20hizmetleriniz%20hakkında%20bilgi%20almak%20istiyorum.'}`}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="w-full bg-[#25D366] text-white font-black py-3.5 rounded-2xl shadow-lg flex items-center justify-center space-x-2 text-sm"
-              >
-                <MessageSquare className="w-4 h-4" />
-                <span>WhatsApp ({t.hero.cta1})</span>
-              </a>
             </div>
           </div>
-        )}
-      </nav>
+        </div>
+      )}
 
       {/* Hero Section (Ultra-Modern Agency Glassmorphism & High-Impact Typography) */}
       <section className="pt-32 pb-20 px-4 relative overflow-hidden bg-gradient-to-b from-blue-50/40 via-white to-slate-50/50">
@@ -2156,28 +2164,8 @@ export default function Home({ initialLang = 'de' }) {
         </div>
       </section>
 
-      {/* Sticky Mobile Floating Action Bar (High-Converting Thumb-Friendly Glassmorphism) */}
-      <div className="md:hidden fixed bottom-0 left-0 right-0 z-40 bg-white/95 backdrop-blur-xl border-t border-slate-200/90 shadow-2xl p-2.5 px-4 flex items-center gap-3">
-        <a
-          href={`https://wa.me/491724106463?text=${lang === 'de' ? 'Hallo,%20ich%20interessiere%20mich%20für%20Ihre%20Digital%20Marketing%20Dienstleistungen.' : lang === 'en' ? 'Hello,%20I%20am%20interested%20in%20your%20digital%20marketing%20services.' : 'Merhaba,%20dijital%20pazarlama%20hizmetleriniz%20hakkında%20bilgi%20almak%20istiyorum.'}`}
-          target="_blank"
-          rel="noopener noreferrer"
-          className="flex-1 bg-[#25D366] hover:bg-[#20bd5a] active:scale-95 text-white font-black py-3 px-3 rounded-xl shadow-md flex items-center justify-center space-x-2 text-sm transition-all"
-        >
-          <MessageSquare className="w-4 h-4 flex-shrink-0" />
-          <span className="truncate">WhatsApp</span>
-        </a>
-        <button
-          onClick={() => scrollToSection('contact')}
-          className="flex-1 bg-[#4285F4] hover:bg-[#3367d6] active:scale-95 text-white font-black py-3 px-3 rounded-xl shadow-md flex items-center justify-center space-x-2 text-sm transition-all cursor-pointer"
-        >
-          <Mail className="w-4 h-4 flex-shrink-0" />
-          <span className="truncate">{lang === 'de' ? 'Angebot' : lang === 'en' ? 'Get Quote' : 'Teklif Al'}</span>
-        </button>
-      </div>
-
       {/* Footer */}
-      <footer className="py-12 pb-24 md:pb-12 bg-gray-900 text-white">
+      <footer className="py-12 bg-gray-900 text-white">
         <div className="container mx-auto px-4">
           <div className="grid md:grid-cols-4 gap-8 mb-8">
             <div>
