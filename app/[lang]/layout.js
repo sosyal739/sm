@@ -22,7 +22,9 @@ export async function generateMetadata({ params }) {
   const meta = langMeta[currentLang] || langMeta.de
 
   return {
-    title: meta.title,
+    title: {
+      absolute: meta.title,
+    },
     description: meta.description,
     alternates: {
       canonical: meta.canonical,
