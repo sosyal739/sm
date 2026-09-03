@@ -20,9 +20,9 @@ const translations = {
       contact: 'İletişim'
     },
     hero: {
-      title: 'Dijital Pazarlama & Google Ads Uzmanı',
-      subtitle: 'Almanya & Avrupa Genelinde Google Ads, Meta Ads ve SEO ile Cironuzu Katlayın',
-      description: 'Dijital dünyada kaybolmayın. 17+ yıllık tecrübe ve Resmi Google Partner güvencesiyle işletmeniz için ölçülebilir, yüksek ROAS sağlayan ve dönüşüm odaklı performans sistemleri kuruyoruz.',
+      title: 'Almanya Google Ads Ajansı & Türk Dijital Pazarlama Uzmanı',
+      subtitle: 'Almanya & Avrupa Genelinde Sabit Fiyatlı Google Ads, Meta Ads ve SEO ile Cironuzu Katlayın',
+      description: 'Almanya ve Avrupa pazarında satışlarınızı katlayın. 17+ yıllık tecrübe ve Resmi Google Partner güvencesiyle Türk işletmeleri ve ihracatçı markalar için şeffaf, sabit fiyatlı (Fixpreis) reklam sistemleri kuruyoruz.',
       cta1: 'WhatsApp',
       cta2: 'Hemen Teklif Alın',
       clients: 'Mutlu Müşteri & Şirket'

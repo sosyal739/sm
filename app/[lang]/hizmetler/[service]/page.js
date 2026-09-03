@@ -8,12 +8,12 @@ const serviceMeta = {
       description: 'Zertifizierte Google Ads Betreuung zum fairen Fixpreis: 17+ Jahre Senior-Expertise, Performance Max & Search für maximalen ROAS ohne Streuverlust.',
     },
     en: {
-      title: 'Google Ads Management & Flat Fee Agency | Salih Maral',
-      description: 'Certified Google Partner with 17+ years experience. Flat-fee Google Ads management, Search, PMax & Shopping campaigns for maximum ROAS.',
+      title: 'Google Ads Agency Germany | Flat Fee PPC Management | Salih Maral',
+      description: 'Scale in Germany with certified flat-fee Google Ads management. Search, Performance Max & Shopping campaigns optimized for maximum ROAS by a 17+ yr partner.',
     },
     tr: {
-      title: 'Google Ads Yönetimi & Sabit Fiyatlı Danışmanlık | Salih Maral',
-      description: 'Resmi Google Partneri ile sabit fiyatlı Google Ads yönetimi: Arama, PMax ve Alışveriş reklamlarında maksimum ciro, kâr ve ROAS artışı.',
+      title: 'Almanya Google Ads Ajansı & Sabit Fiyatlı Danışmanlık | Salih Maral',
+      description: 'Almanya ve Avrupa pazarı için Resmi Google Partneri ile sabit fiyatlı Google Ads yönetimi: Arama, PMax ve Alışveriş reklamları ile yüksek kârlılık ve satış.',
     },
   },
   'meta-ads': {
