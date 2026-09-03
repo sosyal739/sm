@@ -8,15 +8,15 @@ const cityDetails = {
   frankfurt: {
     name: 'Frankfurt am Main',
     region: 'Hessen / Rhein-Main',
-    tagline: 'Google Ads & Performance Marketing für die führende Finanz- und Wirtschaftsmetropole',
-    description: 'Steigern Sie Ihren Umsatz in Frankfurt, Dreieich, Offenbach und dem gesamten Rhein-Main-Gebiet mit datengestützten Google Ads und Meta Ads Kampagnen.',
+    tagline: 'Google Ads & AdWords Agentur Frankfurt am Main — Performance Marketing für Hessen',
+    description: 'Zertifizierte Google Ads Betreuung & Performance Marketing für Frankfurt am Main, Dreieich, Offenbach und die Rhein-Main-Metropolregion.',
     stats: { clients: '85+', roas: '4.4x', experience: '17+ Jahre' },
     industries: ['B2B & Finanzdienstleister', 'E-Commerce & Handel', 'Kliniken & Praxen', 'Immobilien & Kanzleien'],
     de: {
-      heroTitle: 'Google Ads & SEO Agentur Frankfurt am Main',
-      heroSub: 'Zertifizierter Google Partner für Frankfurt & Hessen',
-      intro: 'In einer hart umkämpften Wirtschaftsregion wie Frankfurt am Main reicht Standard-Werbung nicht aus. Als offizieller Google Partner und Performance Marketing Experte mit 17+ Jahren Erfahrung optimieren wir Ihre Google Ads, Meta Ads und SEO-Strategie für messbar höhere Verkaufsabschlüsse.',
-      cta: 'Jetzt unverbindliches Angebot anfordern',
+      heroTitle: 'Google Ads & AdWords Agentur Frankfurt am Main',
+      heroSub: 'Zertifizierter Google Partner & Performance Marketing für Frankfurt, Dreieich & Rhein-Main',
+      intro: 'Als führende Google Ads & AdWords Agentur in Frankfurt am Main unterstützen wir Unternehmen, Finanzdienstleister, Kanzleien und E-Commerce-Brands mit datengestütztem Performance Marketing. Ob Google Search, Google Ads Betreuung zum fairen Fixpreis, Performance Max oder B2B Lead-Generierung: Mit 17+ Jahren Praxiserfahrung als offizieller Google Partner verwandeln wir jeden investierten Werbeeuro in messbaren Unternehmensgewinn ohne Streuverlust.',
+      cta: 'Jetzt unverbindliches Angebot für Frankfurt anfordern',
     },
     tr: {
       heroTitle: 'Frankfurt Google Ads & Dijital Pazarlama Ajansı',
@@ -60,14 +60,14 @@ const cityDetails = {
   koeln: {
     name: 'Köln',
     region: 'Nordrhein-Westfalen (NRW)',
-    tagline: 'Google Ads Agentur Köln, Meta Ads & Performance Marketing für NRW',
-    description: 'Erreichen Sie Top-Rankings bei Google, profitable Google Ads und konvertierende Instagram Werbeanzeigen mit Ihrer Performance Marketing Agentur in Köln.',
+    tagline: 'Google Ads Agentur Köln, Meta Ads (Facebook & Instagram) & Performance Marketing',
+    description: 'Erreichen Sie Top-Rankings bei Google, profitable Google Ads Betreuung und konvertierende Facebook & Instagram Ads mit Ihrer Performance Marketing Agentur in Köln.',
     stats: { clients: '60+', roas: '4.3x', experience: '17+ Jahre' },
     industries: ['Medien & Kreativwirtschaft', 'E-Commerce & Startups', 'Gesundheitswesen & Ärzte', 'Handwerk, Kanzleien & B2B'],
     de: {
-      heroTitle: 'Google Ads & Performance Marketing Agentur Köln',
-      heroSub: 'Google Ads, Meta Ads (Instagram & Facebook) & SEO für Köln & das Rheinland',
-      intro: 'Als offizieller Google Partner mit 17+ Jahren Erfahrung verbinden wir hochprofitables Suchmaschinenmarketing (Google Ads & AdWords Köln) mit zielgenauen Social Ads (Instagram & Facebook Werbeanzeigen Köln) für planbare Kundenanfragen und maximalen ROI.',
+      heroTitle: 'Google Ads, Meta & Performance Marketing Agentur Köln',
+      heroSub: 'Zertifizierte Google Ads Betreuung & Social Ads (Facebook & Instagram) für Köln & Rheinland',
+      intro: 'Als spezialisierte Performance Marketing Agentur in Köln verbinden wir profitables Suchmaschinenmarketing (Google Ads & AdWords Köln) mit hochkonvertierenden Social Media Kampagnen (Facebook Ads Agentur Köln & Instagram Ads Köln). Mit 17+ Jahren Erfahrung als offizieller Google Partner bieten wir Kölner Unternehmen transparente Betreuung zum Fixpreis, modernes Server-Side Tracking und maximale ROAS-Steigerung.',
       cta: 'Jetzt unverbindliches Angebot für Köln anfordern',
     },
     tr: {
@@ -112,15 +112,15 @@ const cityDetails = {
   stuttgart: {
     name: 'Stuttgart',
     region: 'Baden-Württemberg',
-    tagline: 'B2B & E-Commerce Google Ads Spezialist für Stuttgart & Baden-Württemberg',
-    description: 'Generieren Sie qualifizierte B2B-Leads und E-Commerce-Umsätze in Stuttgart, Esslingen, Ludwigsburg und ganz Baden-Württemberg.',
+    tagline: 'Google Ads Agentur Stuttgart — B2B & E-Commerce Spezialist für Baden-Württemberg',
+    description: 'Zertifizierte Google Ads Betreuung & B2B Performance Marketing für Stuttgart, Esslingen, Ludwigsburg und ganz Baden-Württemberg.',
     stats: { clients: '65+', roas: '4.2x', experience: '17+ Jahre' },
     industries: ['Maschinenbau & Industrie', 'B2B & IT-Dienstleister', 'E-Commerce & D2C', 'Handwerk & Gewerbe'],
     de: {
-      heroTitle: 'Google Ads & B2B Agentur Stuttgart',
-      heroSub: 'Performance Marketing & SEO für Stuttgart & den Mittelstand',
-      intro: 'Der baden-württembergische Mittelstand braucht messbare Ergebnisse statt leerer Versprechen. Wir entwickeln passgenaue Google Ads und SEO-Funnels für die Industrie- und Handelsregion Stuttgart.',
-      cta: 'Jetzt unverbindliches Angebot anfordern',
+      heroTitle: 'Google Ads Agentur Stuttgart & B2B Performance',
+      heroSub: 'Zertifizierte Google Ads Betreuung für Stuttgart, Esslingen & Baden-Württemberg',
+      intro: 'Als offizielle Google Ads Agentur in Stuttgart entwickeln wir hochrentable Werbestrategien für den baden-württembergischen Mittelstand, Industrie, Maschinenbau und E-Commerce. Messbare B2B-Leads, planbare Kosten durch faire Fixpreis-Modelle und 17+ Jahre Praxiserfahrung direkt vom Senior Google Partner.',
+      cta: 'Jetzt unverbindliches Angebot für Stuttgart anfordern',
     },
     tr: {
       heroTitle: 'Stuttgart Google Ads & B2B Pazarlama Ajansı',

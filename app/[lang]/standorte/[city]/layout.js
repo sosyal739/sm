@@ -5,8 +5,8 @@
     lat: 50.1109,
     lng: 8.6821,
     de: {
-      title: 'Google Ads & SEO Agentur Frankfurt am Main | Salih Maral',
-      description: 'Zertifizierter Google Partner für Frankfurt & Rhein-Main. Performance Marketing mit Google Ads, Meta Ads & SEO für messbares Unternehmenswachstum.',
+      title: 'Google Ads & AdWords Agentur Frankfurt am Main | Salih Maral',
+      description: 'Google Ads & AdWords Agentur Frankfurt am Main: Zertifizierte Google Ads Betreuung, Performance Marketing & SEO für Frankfurt, Dreieich & Rhein-Main.',
     },
     en: {
       title: 'Google Ads & SEO Agency Frankfurt am Main | Salih Maral',
@@ -41,8 +41,8 @@
     lat: 50.9375,
     lng: 6.9603,
     de: {
-      title: 'Google Ads & Performance Marketing Agentur Köln | Salih Maral',
-      description: 'Professionelles Kampagnenmanagement für Köln & das Rheinland. Google Ads, Meta Ads & SEO mit 17+ Jahren Erfahrung.',
+      title: 'Google Ads, Meta & Performance Marketing Agentur Köln | Salih Maral',
+      description: 'Performance Marketing & Google Ads Agentur Köln: Facebook Ads, Instagram Ads & Google Ads Betreuung für Köln, Bonn und das Rheinland mit 17+ Jahren Expertise.',
     },
     en: {
       title: 'Google Ads & Performance Marketing Agency Cologne | Salih Maral',
@@ -77,8 +77,8 @@
     lat: 48.7758,
     lng: 9.1829,
     de: {
-      title: 'Google Ads & B2B Performance Agentur Stuttgart | Salih Maral',
-      description: 'Zertifizierte Google Ads & SEO Betreuung für Stuttgart & Baden-Württemberg. Spezialisiert auf B2B, Industrie & E-Commerce.',
+      title: 'Google Ads Agentur Stuttgart | B2B & Performance Marketing | Salih Maral',
+      description: 'Zertifizierte Google Ads Agentur Stuttgart: Professionelle Google Ads Betreuung & B2B Performance Marketing für Stuttgart, Esslingen und Baden-Württemberg.',
     },
     en: {
       title: 'Google Ads & B2B Performance Agency Stuttgart | Salih Maral',
