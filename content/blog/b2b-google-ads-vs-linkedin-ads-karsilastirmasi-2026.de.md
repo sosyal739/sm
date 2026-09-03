@@ -1,7 +1,7 @@
 ---
 slug: "b2b-google-ads-vs-linkedin-ads-karsilastirmasi-2026"
 lang: "de"
-title: "B2B Lead-Generierung: Google Ads vs. LinkedIn Ads im Vergleich 2026"
+title: "B2B Lead-Gen: Google Ads vs. LinkedIn Ads im Vergleich"
 excerpt: "Welcher Kanal bringt B2B-Unternehmen mehr qualifizierte Leads? Kosten, CPL und optimale Budgetallokation."
 category: "B2B Pazarlama & Strateji"
 date: "2026-08-26"

@@ -1,7 +1,7 @@
 ﻿---
 slug: "google-ad-grants-islamic-charity-rehberi-2026"
 lang: "tr"
-title: "İslami Yardım Kuruluşları İçin Google Ad Grants: Ayda 10.000$ Ücretsiz Reklam Hibesi"
+title: "İslami Kuruluşlar İçin Google Ad Grants (10.000$/Ay)"
 excerpt: "Vakfınız veya derneğiniz için Google'dan ayda 10.000 Dolar ücretsiz reklam hibesi nasıl alınır? Ad Grants başvuru, onay ve sürdürülebilir yönetim rehberi."
 category: "STK & Ad Grants"
 date: "2026-08-26"

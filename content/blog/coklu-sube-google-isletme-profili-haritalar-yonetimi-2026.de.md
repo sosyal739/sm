@@ -1,7 +1,7 @@
 ---
 slug: "coklu-sube-google-isletme-profili-haritalar-yonetimi-2026"
 lang: "de"
-title: "Multi-Location Google Maps Management für Filialisten & Ketten 2026"
+title: "Multi-Location Google Maps Management für Filialen 2026"
 excerpt: "Standort-Management und Bulk-Verifizierung für Unternehmen mit mehreren Filialen. Lokale SEO & Google Ads Standorterweiterungen."
 category: "Google Haritalar & Yerel SEO"
 date: "2026-08-25"

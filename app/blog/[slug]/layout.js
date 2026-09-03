@@ -26,13 +26,14 @@ export async function generateMetadata({ params }) {
       }
     }
 
-    const title = post.title
-    const description = post.excerpt || `${post.title} - Salih Maral Digital Marketing Blog`
+    const cleanTitle = post.title.replace(/\s*\|\s*Salih Maral.*$/i, '').trim()
+    const fullTitle = `${cleanTitle} | Salih Maral`
+    const description = post.excerpt || `${cleanTitle} - Salih Maral Digital Marketing Blog`
     const canonicalUrl = `https://salihmaral.de/blog/${slug}`
 
     return {
       title: {
-        absolute: title,
+        absolute: fullTitle,
       },
       description: description,
       alternates: {

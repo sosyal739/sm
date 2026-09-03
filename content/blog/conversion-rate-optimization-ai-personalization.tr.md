@@ -1,7 +1,7 @@
 ﻿---
 slug: "conversion-rate-optimization-ai-personalization"
 lang: "tr"
-title: "Yapay Zeka Destekli Kişiselleştirme ve A/B Testleri ile Dönüşüm Oranı Optimizasyonu (CRO)"
+title: "Yapay Zeka ile Dönüşüm Oranı Optimizasyonu (CRO)"
 excerpt: "Web sitenize gelen trafiği satışa dönüştürmek için yapay zeka destekli kişiselleştirme, dinamik içerik sunumu ve CRO A/B test stratejilerini uygulayın."
 category: "Dönüşüm Optimizasyonu"
 date: "2026-07-26"

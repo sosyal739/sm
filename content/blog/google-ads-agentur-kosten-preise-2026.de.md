@@ -1,7 +1,7 @@
 ---
 slug: "google-ads-agentur-kosten-preise-2026"
 lang: "de"
-title: "Google Ads Agentur Kosten & Preise 2026: Was kostet professionelle Betreuung?"
+title: "Google Ads Agentur Kosten & Preise 2026 im Überblick"
 excerpt: "Was kostet eine Google Ads Agentur im Monat? Fixpreis vs. % Ad Spend, Mindestbudget-Empfehlungen und transparente Preismodelle für 2026."
 category: "Preise & Ratgeber"
 date: "2026-08-28"

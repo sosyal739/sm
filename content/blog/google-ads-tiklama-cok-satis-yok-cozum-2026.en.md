@@ -1,7 +1,7 @@
 ﻿---
 slug: "google-ads-tiklama-cok-satis-yok-cozum-2026"
 lang: "en"
-title: "Lots of Clicks but No Sales on Google Ads? How to Stop Wasting Budget in 2026"
+title: "Clicks but No Sales on Google Ads? Stop Budget Waste"
 excerpt: "Spending daily on Google Ads but your phone won't ring? Discover the 4 hidden budget leaks and how a certified Google Partner restores your ROI."
 category: "Google Ads & PPC"
 date: "2026-08-25"

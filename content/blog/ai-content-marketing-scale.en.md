@@ -1,7 +1,7 @@
 ﻿---
 slug: "ai-content-marketing-scale"
 lang: "en"
-title: "Content Creation with AI: Scale Organic Traffic Without Sacrificing Quality"
+title: "AI Content Creation: Scale Traffic Without Quality Loss"
 excerpt: "Avoid Google penalties when producing content with AI. The guide to creating humanized AI content compliant with EEAT standards."
 category: "SEO"
 date: "2026-04-05"

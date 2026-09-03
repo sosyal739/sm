@@ -1,7 +1,7 @@
 ﻿---
 slug: "almanyada-handwerk-sanierung-musteri-bulma-rehberi-2026"
 lang: "de"
-title: "Mehr Aufträge für Handwerk & Sanierungsbetriebe in Deutschland über Google Ads"
+title: "Google Ads für Handwerk & Sanierung in Deutschland"
 excerpt: "Unabhängig von teuren Vermittlungsportalen: So gewinnen Handwerker, Sanierungs- und Bauunternehmen lukrative Direktaufträge von Immobilieneigentümern."
 category: "Türkische Unternehmen in DE"
 date: "2026-08-25"

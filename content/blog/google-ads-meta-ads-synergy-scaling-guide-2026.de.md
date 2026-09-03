@@ -1,7 +1,7 @@
 ﻿---
 slug: "google-ads-meta-ads-synergy-scaling-guide-2026"
 lang: "de"
-title: "Google Ads & Meta Ads Synergie 2026: Leitfaden für 4x ROAS im E-Commerce"
+title: "Google Ads & Meta Ads Synergie: 4x ROAS im E-Commerce"
 excerpt: "Wie Sie Meta Ads (Facebook & Instagram) und Google Ads gemeinsam nutzen: Advantage+ Shopping, Meta CAPI und Performance Max für planbare Umsatzskalierung."
 category: "Meta Ads & Google Ads"
 date: "2026-08-21"

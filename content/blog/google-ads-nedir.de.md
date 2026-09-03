@@ -1,7 +1,7 @@
 ﻿---
 slug: "google-ads-nedir"
 lang: "de"
-title: "Was ist Google Ads und wie funktioniert es? Einsteiger-Leitfaden 2026"
+title: "Was ist Google Ads & wie funktioniert es? Leitfaden"
 excerpt: "Google Ads ist die leistungsstärkste Werbeplattform der Welt. Salih Maral erklärt die 7 Kampagnenarten, 2026 Benchmarks, Kosten und liefert eine Schritt-für-Schritt Anleitung."
 category: "Google Ads"
 date: "2026-07-14"

@@ -1,7 +1,7 @@
 ﻿---
 slug: "google-ads-kosten-2026"
 lang: "de"
-title: "Was kostet Werbung bei Google Ads 2026? Klickpreise & Budgetplanung"
+title: "Was kostet Werbung bei Google Ads 2026? Klickpreise"
 excerpt: "Erfahren Sie, was Google Ads 2026 wirklich kostet. Salih Maral erklärt CPC nach Branche, Budget-Empfehlungen und wie Sie Ihre Werbekosten optimieren."
 category: "Google Ads"
 date: "2026-07-14"

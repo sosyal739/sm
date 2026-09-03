@@ -1,7 +1,7 @@
 ﻿---
 slug: "ga4-custom-events-funnels"
 lang: "de"
-title: "GA4 Custom Events & Conversion Funnels professionell einrichten"
+title: "GA4 Custom Events & Conversion Funnels einrichten"
 excerpt: "Messen Sie das Benutzerverhalten in Google Analytics 4 präzise. Salih Maral zeigt benutzerdefinierte Ereignisse und Trichteranalysen."
 category: "Tracking"
 date: "2026-07-16"

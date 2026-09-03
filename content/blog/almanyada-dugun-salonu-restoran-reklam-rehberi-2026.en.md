@@ -1,7 +1,7 @@
 ﻿---
 slug: "almanyada-dugun-salonu-restoran-reklam-rehberi-2026"
 lang: "en"
-title: "Marketing for Wedding Venues & Event Halls in Germany: Book Out Your Calendar"
+title: "Marketing for Wedding Venues in Germany: Fully Book Out"
 excerpt: "Venue & Restaurant Marketing: How event locations secure bookings months in advance using Meta & Google Ads targeted campaigns."
 category: "Turkish Businesses in Germany"
 date: "2026-08-25"

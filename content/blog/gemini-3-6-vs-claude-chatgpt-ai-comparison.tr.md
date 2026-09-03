@@ -1,7 +1,7 @@
 ﻿---
 slug: "gemini-3-6-vs-claude-chatgpt-ai-comparison"
 lang: "tr"
-title: "Gemini 3.6, Claude 3.7 ve ChatGPT 4.5 Kıyaslaması: Dijital Pazarlama ve SEO için En İyi Yapay Zeka Hangisi?"
+title: "Gemini vs Claude vs ChatGPT: En İyi Pazarlama AI"
 excerpt: "Google Gemini 3.6, Anthropic Claude 3.7 Sonnet ve OpenAI ChatGPT 4.5 modellerinin performans, SEO, Google Ads otomasyonu ve içerik üretimi kriterlerine göre detaylı karşılaştırması."
 category: "Yapay Zeka"
 date: "2026-07-26"

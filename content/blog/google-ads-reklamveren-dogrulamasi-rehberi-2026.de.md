@@ -1,7 +1,7 @@
 ---
 slug: "google-ads-reklamveren-dogrulamasi-rehberi-2026"
 lang: "de"
-title: "Google Ads Werbetreibenden-Verifizierung: Anleitung & Best Practices 2026"
+title: "Google Ads Werbetreibenden-Verifizierung 2026"
 excerpt: "Vermeiden Sie Kontosperren bei Google Ads. Schritt-für-Schritt-Anleitung zur Identitäts- und Unternehmensverifizierung mit Google Partner Expertise."
 category: "Google Ads Kurulum & Doğrulama"
 date: "2026-08-20"

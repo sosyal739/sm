@@ -1,7 +1,7 @@
 ﻿---
 slug: "su-kuyusu-yetim-bagis-hunisi-donation-funnel-2026"
 lang: "de"
-title: "Spenden-Funnel für Hilfsorganisationen: Brunnenbau & Waisenpatenschaften"
+title: "Spenden-Funnel: Brunnenbau & Waisenpatenschaften"
 excerpt: "Optimierte Checkout-Prozesse, Apple Pay / PayPal Integration und CAPI-Tracking: So konvertieren Hilfsorganisationen Website-Besucher in treue Dauerspender."
 category: "NGO & Ad Grants"
 date: "2026-08-26"

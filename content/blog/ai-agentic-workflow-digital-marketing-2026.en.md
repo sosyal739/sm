@@ -1,7 +1,7 @@
 ﻿---
 slug: "ai-agentic-workflow-digital-marketing-2026"
 lang: "en"
-title: "Agentic AI Workflows: Scaling Digital Marketing Automation with Autonomous AI Agents"
+title: "Agentic AI Workflows: Autonomous Marketing in 2026"
 excerpt: "Scale performance marketing operations in 2026 by integrating autonomous AI agents (Agentic AI) for Google Ads, Meta Ads, and SEO."
 category: "Artificial Intelligence"
 date: "2026-07-26"

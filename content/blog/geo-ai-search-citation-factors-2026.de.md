@@ -1,7 +1,7 @@
 ﻿---
 slug: "geo-ai-search-citation-factors-2026"
 lang: "de"
-title: "Wie wird man die primäre Quelle in ChatGPT Search & Perplexity? (GEO 2026)"
+title: "Primäre Quelle in ChatGPT & Perplexity werden (GEO)"
 excerpt: "Wie Sie Ihre Marke in KI-generierten Antworten als primäre Quelle positionieren. Princeton KDD 2024 Ranking-Faktoren und erprobte GEO-Strategien von Salih Maral."
 category: "SEO & GEO"
 date: "2026-08-14"

@@ -1,7 +1,7 @@
 ﻿---
 slug: "seo-stratejileri-2026"
 lang: "de"
-title: "Wie komme ich 2026 bei Google auf Platz 1? Die ultimative SEO-Strategie"
+title: "Bei Google 2026 auf Platz 1: Die ultimative SEO-Strategie"
 excerpt: "Was Sie tun müssen, um bei Googles ständig wechselndem Algorithmus oben zu bleiben. Praxisnahe SEO-Tipps für 2026."
 category: "SEO"
 date: "2026-01-22"

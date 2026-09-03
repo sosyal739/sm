@@ -1,7 +1,7 @@
 ---
 slug: "google-consent-mode-v2-cookieless-ai-tracking-2026"
 lang: "de"
-title: "Google Consent Mode v2: Pflicht-Setup für maximale Conversion-Daten 2026"
+title: "Google Consent Mode v2: Pflicht-Setup für Conversions"
 excerpt: "DSGVO-konforme Integration des Google Consent Mode v2. Retten Sie bis zu 40% verlorene Conversion-Signale durch KI-Modellierung."
 category: "Server-Side Tracking & Veri"
 date: "2026-08-22"

@@ -1,7 +1,7 @@
 ﻿---
 slug: "almanyada-handwerk-sanierung-musteri-bulma-rehberi-2026"
 lang: "tr"
-title: "Almanya'da Handwerk ve Sanierung Firmaları İnternetten Nasıl Müşteri Bulur?"
+title: "Almanya Handwerk & Sanierung Müşteri Bulma Rehberi"
 excerpt: "Almanya'da inşaat, tadilat, boya ve nakliyat sektöründe misiniz? MyHammer'a komisyon ödemeden Google Ads ile Alman ev sahiplerinden iş alma rehberi."
 category: "Almanya Türk İşletmeleri"
 date: "2026-08-25"

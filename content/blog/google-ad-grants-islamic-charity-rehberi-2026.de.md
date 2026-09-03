@@ -1,7 +1,7 @@
 ﻿---
 slug: "google-ad-grants-islamic-charity-rehberi-2026"
 lang: "de"
-title: "Google Ad Grants für islamische Hilfsorganisationen: 10.000 $/Monat Gratis-Werbebudget"
+title: "Google Ad Grants für Hilfsorganisationen: 10.000 $/Monat"
 excerpt: "Wie gemeinnützige Vereine und Stiftungen monatlich 10.000 Dollar kostenloses Google Ads Werbebudget erhalten. Leitfaden für Beantragung, Richtlinien & Spenden-Skalierung."
 category: "NGO & Ad Grants"
 date: "2026-08-26"

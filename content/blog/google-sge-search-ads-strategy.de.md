@@ -1,7 +1,7 @@
 ﻿---
 slug: "google-sge-search-ads-strategy"
 lang: "de"
-title: "Google Search Generative Experience (SGE) und Suchanzeigen-Strategie"
+title: "Google SGE & AI Search: Suchanzeigen-Strategie 2026"
 excerpt: "Dominieren Sie die KI-gestützten Google-Suchergebnisse. Salih Maral zeigt neue Strategien für SGE und AI Overviews."
 category: "Google Ads"
 date: "2026-07-16"

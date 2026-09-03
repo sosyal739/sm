@@ -1,7 +1,7 @@
 ---
 slug: "geo-ai-seo-generative-engine-optimization-guide-2026"
 lang: "de"
-title: "GEO AI SEO: Generative Engine Optimization für ChatGPT, Perplexity & Google AI Overviews"
+title: "GEO AI SEO: Optimierung für ChatGPT & Perplexity"
 excerpt: "Was ist GEO AI SEO? Wie optimiert man Websites für KI-Suchmaschinen 2026? Citation-Faktoren, llms.txt, Schema.org und E-E-A-T Leitfaden."
 category: "SEO & KI-Zukunft"
 date: "2026-08-28"

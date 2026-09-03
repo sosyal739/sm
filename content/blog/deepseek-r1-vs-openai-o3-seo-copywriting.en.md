@@ -1,7 +1,7 @@
 ﻿---
 slug: "deepseek-r1-vs-openai-o3-seo-copywriting"
 lang: "en"
-title: "DeepSeek-R1 vs OpenAI o3: Impact of Reasoning AI Models on SEO & Copywriting"
+title: "DeepSeek-R1 vs OpenAI o3: Reasoning Models in SEO"
 excerpt: "A performance breakdown of reasoning AI models DeepSeek-R1 and OpenAI o3-mini for search engine optimization, technical SEO audits, and conversion copywriting."
 category: "Artificial Intelligence"
 date: "2026-07-26"

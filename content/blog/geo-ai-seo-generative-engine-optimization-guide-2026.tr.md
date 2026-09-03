@@ -1,7 +1,7 @@
 ---
 slug: "geo-ai-seo-generative-engine-optimization-guide-2026"
 lang: "tr"
-title: "GEO AI SEO: ChatGPT, Perplexity ve Google AI Overviews İçin Arama Optimizasyonu"
+title: "GEO AI SEO: ChatGPT & AI Arama Optimizasyonu 2026"
 excerpt: "GEO AI SEO nedir? Web sitenizi yapay zeka arama motorlarına nasıl uyarlarsınız? llms.txt, Schema.org ve E-E-A-T rehberi."
 category: "SEO & Yapay Zeka"
 date: "2026-08-28"

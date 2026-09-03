@@ -1,7 +1,7 @@
 ﻿---
 slug: "google-ads-fixpreis-vs-prozent-agentur-modell-2026"
 lang: "tr"
-title: "Google Ads'te Sabit Fiyat (Fixpreis) mı, Komisyon mu? En Kârlı Ajans Modeli"
+title: "Google Ads Sabit Fiyat mı, Komisyon mu? 2026"
 excerpt: "Google Ads ajansınız reklam bütçenizden %15 komisyon mu alıyor? Neden sabit fiyatlı (Fixpreis) şeffaf yönetim modelinin şirketiniz için çok daha kârlı olduğunu keşfedin."
 category: "Google Ads & PPC"
 date: "2026-08-25"

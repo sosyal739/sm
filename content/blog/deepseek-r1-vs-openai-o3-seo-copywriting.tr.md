@@ -1,7 +1,7 @@
 ﻿---
 slug: "deepseek-r1-vs-openai-o3-seo-copywriting"
 lang: "tr"
-title: "DeepSeek-R1 ve OpenAI o3: Yapay Zeka Akıl Yürütme Modellerinin SEO ve İçerik Yazarlığına Etkisi"
+title: "DeepSeek-R1 vs OpenAI o3: Akıl Yürütme ve SEO 2026"
 excerpt: "DeepSeek-R1 ve OpenAI o3-mini akıl yürütme (reasoning) modellerinin arama motoru optimizasyonu, teknik SEO analizi ve dönüşüm odaklı metin yazarlığındaki performans kıyaslaması."
 category: "Yapay Zeka"
 date: "2026-07-26"

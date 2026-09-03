@@ -1,7 +1,7 @@
 ﻿---
 slug: "klinikler-doktorlar-google-ads-saglik-pazarlamasi-2026"
 lang: "de"
-title: "Google Ads für Ärzte & Kliniken: Leitfaden für planbare Patientengewinnung 2026"
+title: "Google Ads für Ärzte & Kliniken: Patientengewinnung 2026"
 excerpt: "Privatkliniken, Zahnärzte & Fachärzte: Wie Sie mit Google Ads und Local SEO qualifizierte Privatpatienten und Behandlungstermine gewinnen."
 category: "Gesundheit & Local SEO"
 date: "2026-08-25"

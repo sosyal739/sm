@@ -1,7 +1,7 @@
 ﻿---
 slug: "almanyadaki-turk-isletmeleri-icin-google-ads-rehberi-2026"
 lang: "en"
-title: "Google Ads for Turkish Businesses in Germany: High-ROI Multi-Language Marketing"
+title: "Google Ads for Turkish Businesses in Germany (ROI Guide)"
 excerpt: "Scale your business across Germany. Bilingual consultation in Turkish & German, official Google Partner expertise, and transparent ROI management."
 category: "Turkish Businesses in Germany"
 date: "2026-08-25"

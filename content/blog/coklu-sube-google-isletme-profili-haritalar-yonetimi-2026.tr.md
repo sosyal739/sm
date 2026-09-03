@@ -1,7 +1,7 @@
 ---
 slug: "coklu-sube-google-isletme-profili-haritalar-yonetimi-2026"
 lang: "tr"
-title: "Çoklu Şube ve Zincir İşletmeler İçin Google Haritalar (Multi-Location GBP) Yönetimi"
+title: "Zincir İşletmeler İçin Çoklu Google Haritalar Yönetimi"
 excerpt: "Birden fazla mağazası, restoranı veya şubesi olan markalar için toplu harita doğrulama, yerel SEO ve bölgesel reklam stratejileri."
 category: "Google Haritalar & Yerel SEO"
 date: "2026-08-25"

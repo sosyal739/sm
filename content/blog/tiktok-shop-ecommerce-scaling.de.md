@@ -1,7 +1,7 @@
 ﻿---
 slug: "tiktok-shop-ecommerce-scaling"
 lang: "de"
-title: "TikTok Shop E-Commerce Skalierung: Von viralen Videos zu Rekordumsätzen"
+title: "TikTok Shop Skalierung: Von viralen Videos zum Umsatz"
 excerpt: "Erstellen Sie einen direkten Verkaufskanal mit TikTok Shop. Salih Maral erklärt die Shop-Einrichtung, Creator-Marketing und Werbeformate."
 category: "TikTok Ads"
 date: "2026-07-16"

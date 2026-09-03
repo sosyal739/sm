@@ -1,7 +1,7 @@
 ---
 slug: "google-ads-fixpreis-vs-prozent-agentur-modell-2026"
 lang: "de"
-title: "Google Ads Betreuung zum Fixpreis oder Prozent-Modell? Der Vergleich 2026"
+title: "Google Ads Fixpreis vs. Prozent-Modell im Vergleich"
 excerpt: "Zahlen Sie 15% Provision auf Ihr Google Ads Werbebudget? Warum eine transparente Fixpreis-Betreuung für Unternehmen und E-Commerce deutlich profitabler ist."
 category: "Google Ads & PPC"
 date: "2026-08-25"

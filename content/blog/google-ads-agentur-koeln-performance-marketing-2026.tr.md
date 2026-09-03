@@ -1,7 +1,7 @@
 ---
 slug: "google-ads-agentur-koeln-performance-marketing-2026"
 lang: "tr"
-title: "Köln Google Ads & Performans Pazarlama Ajansı: Meta, Instagram ve Google Ads"
+title: "Köln Google Ads & Performans Pazarlama Ajansı"
 excerpt: "Köln ve NRW bölgesinde Google Ads, Meta Ads (Instagram & Facebook) ve Performans Pazarlama ile cironuzu katlayın. Resmi Google Partner güvencesi."
 category: "Şehirler & Performans"
 date: "2026-08-28"

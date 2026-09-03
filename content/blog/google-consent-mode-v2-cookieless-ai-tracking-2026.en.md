@@ -1,7 +1,7 @@
 ---
 slug: "google-consent-mode-v2-cookieless-ai-tracking-2026"
 lang: "en"
-title: "Google Consent Mode v2 Guide: Recover Up to 40% Lost Conversion Signals"
+title: "Google Consent Mode v2 Guide: Recover Lost Signals"
 excerpt: "GDPR and DMA compliant Consent Mode v2 architecture. Harness machine-learning conversion modeling for Google Ads and GA4."
 category: "Server-Side Tracking & Veri"
 date: "2026-08-22"

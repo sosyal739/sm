@@ -1,7 +1,7 @@
 ---
 slug: "google-ads-agentur-koeln-performance-marketing-2026"
 lang: "en"
-title: "Google Ads & Performance Marketing Agency Cologne: Meta, Instagram & Google Ads"
+title: "Google Ads & Performance Marketing Cologne | SM"
 excerpt: "Premier Google Ads Agency Cologne & Performance Marketing in NRW. Google Search, Meta Ads (Instagram & Facebook), and local SEO for maximum ROI."
 category: "Locations & Performance"
 date: "2026-08-28"

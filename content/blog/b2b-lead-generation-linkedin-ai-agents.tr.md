@@ -1,7 +1,7 @@
 ﻿---
 slug: "b2b-lead-generation-linkedin-ai-agents"
 lang: "tr"
-title: "LinkedIn Ads ve Otonom AI Ajanları ile B2B Müşteri Kazanımı ve ABM Stratejileri"
+title: "LinkedIn Ads & AI ile B2B Müşteri Kazanımı (ABM)"
 excerpt: "B2B şirketleri için LinkedIn Campaign Manager, Hesap Tabanlı Pazarlama (ABM) ve otonom AI ajanları ile nitelikli müşteri adayı (Lead) toplama rehberi."
 category: "LinkedIn Ads"
 date: "2026-07-26"

@@ -1,7 +1,7 @@
 ﻿---
 slug: "b2b-lead-generation-linkedin-ai-agents"
 lang: "de"
-title: "LinkedIn Ads & KI-Agenten: B2B Lead-Generierung & ABM-Strategien"
+title: "LinkedIn Ads & KI-Agenten: B2B Lead-Gen & ABM 2026"
 excerpt: "Leitfaden für B2B-Unternehmen zur qualifizierten Lead-Generierung mit LinkedIn Campaign Manager, Account-Based Marketing (ABM) und autonomen KI-Agenten."
 category: "LinkedIn Ads"
 date: "2026-07-26"

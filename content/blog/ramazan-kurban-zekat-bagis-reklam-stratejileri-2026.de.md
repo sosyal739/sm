@@ -1,7 +1,7 @@
 ﻿---
 slug: "ramazan-kurban-zekat-bagis-reklam-stratejileri-2026"
 lang: "de"
-title: "Ramadan & Kurban Spendenkampagnen für Hilfsorganisationen: Der 2026 Leitfaden"
+title: "Ramadan & Kurban Spendenkampagnen für Hilfsorganisationen"
 excerpt: "Zakat-, Fitra- und Qurbani-Spenden vervielfachen: Wie islamische Hilfsorganisationen über Google, Meta und YouTube Ads Millionen an Spendengeldern generieren."
 category: "NGO & Ad Grants"
 date: "2026-08-26"

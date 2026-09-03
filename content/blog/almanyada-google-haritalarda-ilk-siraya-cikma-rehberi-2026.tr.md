@@ -1,7 +1,7 @@
 ﻿---
 slug: "almanyada-google-haritalarda-ilk-siraya-cikma-rehberi-2026"
 lang: "tr"
-title: "Almanya'da Google Haritalarda 1. Sıraya Nasıl Çıkılır? Türk Esnaf ve Şirket Rehberi"
+title: "Almanya Google Haritalarda 1. Sıraya Çıkma Rehberi"
 excerpt: "Almanya'da restoranınız, kliniğiniz veya atölyeniz haritada görünmüyor mu? Google Haritalar'da ilk 3 sıraya (Local 3-Pack) girerek yerel müşteri çekme rehberi."
 category: "Almanya Türk İşletmeleri"
 date: "2026-08-25"

@@ -1,7 +1,7 @@
 ---
 slug: "google-merchant-center-urun-feed-aski-cozum-2026"
 lang: "de"
-title: "Google Merchant Center Sperre aufheben: Fehldarstellung (Misrepresentation) lösen 2026"
+title: "Merchant Center Sperre aufheben: Fehldarstellung lösen"
 excerpt: "Schritt-für-Schritt-Leitfaden zur Behebung von Google Merchant Center Richtlinienverstößen und Produkt-Feed Fehlern."
 category: "E-Ticaret & Google Shopping"
 date: "2026-08-24"

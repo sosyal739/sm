@@ -1,7 +1,7 @@
 ﻿---
 slug: "youtube-shorts-video-ads-conversion"
 lang: "de"
-title: "YouTube Shorts und Video Ads: Performance-orientierte Conversion-Kampagnen"
+title: "YouTube Shorts & Video Ads: Performance-Conversions"
 excerpt: "Gewinnen Sie profitable Kunden mit YouTube Shorts und Videoanzeigen. Salih Maral zeigt kreative Strategien und Kampagnen-Setups."
 category: "Google Ads"
 date: "2026-07-16"

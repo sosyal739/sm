@@ -1,7 +1,7 @@
 ---
 slug: "e-ticaret-reklam-var-satis-yok-donusum-optimizasyonu-2026"
 lang: "en"
-title: "High Clicks But No Sales? How to Fix E-Commerce Conversion Leaks in 2026"
+title: "High Clicks But No Sales? Fix E-Commerce Leaks 2026"
 excerpt: "Diagnose and fix landing page friction, negative keyword waste, and checkout drop-offs to scale your ad ROAS past 4.0x."
 category: "Optimizasyon & ROAS Artırma"
 date: "2026-08-27"

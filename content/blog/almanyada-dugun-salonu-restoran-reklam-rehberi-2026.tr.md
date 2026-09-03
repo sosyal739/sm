@@ -1,7 +1,7 @@
 ﻿---
 slug: "almanyada-dugun-salonu-restoran-reklam-rehberi-2026"
 lang: "tr"
-title: "Almanya'da Düğün Salonları ve Restoranlar İçin Reklam Rehberi: Rezervasyonları Doldurun"
+title: "Almanya Düğün Salonu ve Restoran Reklam Rehberi"
 excerpt: "Almanya'da Festsaal, düğün salonu veya restoran mı işletiyorsunuz? Sezonluk düğün tarihlerini ve haftalık masa rezervasyonlarını aylar öncesinden doldurma stratejileri."
 category: "Almanya Türk İşletmeleri"
 date: "2026-08-25"

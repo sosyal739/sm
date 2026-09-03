@@ -1,7 +1,7 @@
 ---
 slug: "e-ticaret-reklam-var-satis-yok-donusum-optimizasyonu-2026"
 lang: "de"
-title: "Klicks aber keine Verkäufe? So stoppen Sie Budgetverlust bei Google & Meta Ads"
+title: "Klicks aber keine Verkäufe? Budgetverlust stoppen"
 excerpt: "Warum Website-Besucher nicht konvertieren. 5 kritische Conversion-Killer im E-Commerce und deren datengestützte Lösung."
 category: "Optimizasyon & ROAS Artırma"
 date: "2026-08-27"

@@ -1,7 +1,7 @@
 ﻿---
 slug: "almanyadaki-turk-isletmeleri-icin-google-ads-rehberi-2026"
 lang: "tr"
-title: "Almanya'daki Türk İşletmeleri İçin Google Ads Rehberi: Alman Ajanslara Mahkum Değilsiniz"
+title: "Almanya'daki Türk İşletmeleri İçin Google Ads Rehberi"
 excerpt: "Almanya'da esnaf veya şirket sahibi misiniz? Alman ajanslarla iletişim krizi yaşamadan, Türkçe iletişim ve Almanya pazarında uzman Google Ads yönetimi."
 category: "Almanya Türk İşletmeleri"
 date: "2026-08-25"

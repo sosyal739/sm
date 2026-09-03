@@ -1,7 +1,7 @@
 ﻿---
 slug: "google-ads-meta-ads-synergy-scaling-guide-2026"
 lang: "tr"
-title: "Google Ads ve Meta Ads Sinerjisi 2026: ROAS'ı 4X Katlayan Hibrit Reklam Rehberi"
+title: "Google Ads & Meta Ads Sinerjisi: 4X ROAS Rehberi"
 excerpt: "Meta Ads (Facebook & Instagram) ve Google Ads'i birlikte kullanarak e-ticarette satışları ölçekleme. Advantage+ Shopping, Meta CAPI ve PMax entegrasyonu."
 category: "Meta Ads & Google Ads"
 date: "2026-08-21"

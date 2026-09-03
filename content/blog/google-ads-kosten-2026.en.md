@@ -1,7 +1,7 @@
 ﻿---
 slug: "google-ads-kosten-2026"
 lang: "en"
-title: "Google Ads Costs in 2026: How Much Does Google Advertising Actually Cost?"
+title: "Google Ads Costs in 2026: Actual Click Prices Guide"
 excerpt: "Find out what Google Ads really costs in 2026. Salih Maral explains CPC by industry, budget recommendations, and how to optimize your advertising costs."
 category: "Google Ads"
 date: "2026-07-14"

@@ -1,7 +1,7 @@
 ﻿---
 slug: "geo-ai-search-citation-factors-2026"
 lang: "tr"
-title: "ChatGPT ve Perplexity'de Birincil Kaynak Olarak Zirveye Çıkma Rehberi (GEO 2026)"
+title: "ChatGPT & Perplexity'de Birincil Kaynak Olma (GEO)"
 excerpt: "Yapay zeka arama motorlarında markanızı birincil kaynak yapma stratejileri. Princeton KDD 2024 araştırma bulguları ve Salih Maral'ın kanıtlanmış GEO metodolojisi."
 category: "SEO & GEO"
 date: "2026-08-14"

@@ -1,7 +1,7 @@
 ---
 slug: "google-ads-reklamveren-dogrulamasi-rehberi-2026"
 lang: "en"
-title: "Google Ads Advertiser Identity Verification Guide 2026: Avoid Account Suspension"
+title: "Google Ads Advertiser Verification Guide 2026"
 excerpt: "Step-by-step guide to verifying your Google Ads business identity, tax documents, and achieving the Verified Advertiser trust badge."
 category: "Google Ads Kurulum & Doğrulama"
 date: "2026-08-20"

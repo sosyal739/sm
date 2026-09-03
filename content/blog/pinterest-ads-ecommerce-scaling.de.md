@@ -1,7 +1,7 @@
 ﻿---
 slug: "pinterest-ads-ecommerce-scaling"
 lang: "de"
-title: "Pinterest Ads für E-Commerce: Wie Sie Ihren Shop-Umsatz verdreifachen"
+title: "Pinterest Ads für E-Commerce: Shop-Umsatz verdreifachen"
 excerpt: "Erreichen Sie kaufbereite Zielgruppen auf Pinterest. Salih Maral erklärt Pinterest Performance+ Kampagnen und Trichter-Konzepte."
 category: "Pinterest Ads"
 date: "2026-07-16"

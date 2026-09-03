@@ -1,7 +1,7 @@
 ---
 slug: "e-ticaret-reklam-var-satis-yok-donusum-optimizasyonu-2026"
 lang: "tr"
-title: "Reklamlara Tıklıyorlar Ama Satın Almıyorlar: E-Ticarette Dönüşüm Kaçaklarını Kapatma Rehberi"
+title: "Tıklama Var Satış Yok: E-Ticaret Dönüşüm Çözümleri"
 excerpt: "Google ve Meta reklamlarından trafik gelip satış olmama nedenleri. 8 kritik hata ve ROAS'ı 4 katına çıkaran optimizasyon adımları."
 category: "Optimizasyon & ROAS Artırma"
 date: "2026-08-27"

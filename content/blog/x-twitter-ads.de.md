@@ -1,7 +1,7 @@
 ﻿---
 slug: "x-twitter-ads"
 lang: "de"
-title: "Mit X (Twitter) Ads kaufkräftige B2B-Entscheider gewinnen: Der Leitfaden"
+title: "Mit X (Twitter) Ads kaufkräftige B2B-Entscheider gewinnen"
 excerpt: "Wie hebt man sich bei Trendthemen ab? Echtzeit-Marketingstrategien mit X Ads."
 category: "X Ads"
 date: "2026-01-25"

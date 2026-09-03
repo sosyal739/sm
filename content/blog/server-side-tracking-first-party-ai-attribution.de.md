@@ -1,7 +1,7 @@
 ﻿---
 slug: "server-side-tracking-first-party-ai-attribution"
 lang: "de"
-title: "First-Party Data Tracking: Wie KI-Algorithmen nach iOS 14+ profitabel bleiben"
+title: "First-Party Data Tracking: KI-Algorithmen nach iOS 14+"
 excerpt: "Vermeiden Sie Datenverluste im Marketing 2026: Einrichtungs-Leitfaden für Server-Side Tracking, Conversions API (CAPI) und KI-gestützte Attribution."
 category: "Server-Side Tracking"
 date: "2026-07-26"

@@ -1,7 +1,7 @@
 ﻿---
 slug: "google-ads-pmax-smart-bidding-guide-2026"
 lang: "de"
-title: "Google Ads Smart Bidding & PMax: Der Leitfaden für maximale Conversions"
+title: "Google Ads Smart Bidding & PMax für Top-Conversions"
 excerpt: "Maximieren Sie Ihren ROAS in Google Ads Performance Max. Wie Sie Marken-Suchanfragen ausschließen, Asset-Gruppen segmentieren und Smart Bidding meistern."
 category: "Google Ads"
 date: "2026-08-14"

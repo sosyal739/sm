@@ -1,7 +1,7 @@
 ---
 slug: "google-ads-agentur-koeln-performance-marketing-2026"
 lang: "de"
-title: "Google Ads & Performance Marketing Agentur Köln: Meta, Instagram & Google Ads"
+title: "Google Ads & Performance Marketing Agentur Köln"
 excerpt: "Führende Google Ads Agentur Köln & Performance Marketing für NRW. Google Search, Meta Ads (Instagram & Facebook) und Social Ads für maximalen ROI."
 category: "Standorte & Performance"
 date: "2026-08-28"

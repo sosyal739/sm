@@ -1,7 +1,7 @@
 ﻿---
 slug: "ai-content-marketing-scale"
 lang: "tr"
-title: "Yapay Zeka ile İçerik Üretimi: Kaliteden Ödün Vermeden Organik Trafiği Ölçeklendirin"
+title: "Yapay Zeka ile İçerik Üretimi: Trafiği Katlayın"
 excerpt: "Yapay zeka ile içerik üretirken Google'da sıralanmayı öğrenin. AI içerik üretme rehberi."
 category: "SEO"
 date: "2026-04-05"

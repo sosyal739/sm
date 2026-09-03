@@ -1,7 +1,7 @@
 ﻿---
 slug: "google-ad-grants-islamic-charity-rehberi-2026"
 lang: "en"
-title: "Google Ad Grants for Islamic Charities: Unlock $10,000/Month in Free Ads"
+title: "Google Ad Grants for Charities: $10,000/Mo Free Ads"
 excerpt: "How Islamic non-profits and charities secure and maximize $10,000 monthly in free Google Search advertising. The complete 2026 compliance & donation scaling guide."
 category: "NGO & Ad Grants"
 date: "2026-08-26"

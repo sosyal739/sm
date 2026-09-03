@@ -1,7 +1,7 @@
 ﻿---
 slug: "github-seo-skills-claude-code-guide-2026"
 lang: "de"
-title: "GitHub SEO Skills & Claude Code Leitfaden 2026: Agentenbasierte SEO & GEO"
+title: "GitHub SEO Skills & Claude Code: Agentenbasierte SEO"
 excerpt: "Wie Sie GitHub SEO Skills in Claude Code und KI-Editoren nutzen: Open-Source-Plugins für 100/100 technisches SEO, automatisches Schema Markup und GEO."
 category: "SEO & GEO"
 date: "2026-08-21"

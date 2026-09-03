@@ -1,7 +1,7 @@
 ﻿---
 slug: "gemini-3-6-vs-claude-chatgpt-ai-comparison"
 lang: "de"
-title: "Gemini 3.6 vs. Claude 3.7 vs. ChatGPT 4.5: Welche KI eignet sich am besten für SEO und digitales Marketing?"
+title: "Gemini vs. Claude vs. ChatGPT: Beste KI für Marketing"
 excerpt: "Ein umfassender Vergleich von Google Gemini 3.6, Anthropic Claude 3.7 Sonnet und OpenAI ChatGPT 4.5 bezüglich SEO, Google Ads Automatisierung und Content-Erstellung."
 category: "Künstliche Intelligenz"
 date: "2026-07-26"

@@ -1,7 +1,7 @@
 ﻿---
 slug: "server-side-gtm-meta-capi-setup-2026"
 lang: "de"
-title: "Server-Side GTM & Meta CAPI Setup Schritt für Schritt einrichten 2026"
+title: "Server-Side GTM & Meta CAPI Setup Schritt für Schritt"
 excerpt: "Vollständiger Praxisleitfaden für serverseitiges Tracking. Wie Sie iOS-Restriktionen und Ad-Blocker überwinden, Event-Deduplizierung meistern und Werbekosten senken."
 category: "Server-Side Tracking"
 date: "2026-08-14"

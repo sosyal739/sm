@@ -1,7 +1,7 @@
 ---
 slug: "coklu-sube-google-isletme-profili-haritalar-yonetimi-2026"
 lang: "en"
-title: "Multi-Location Google Business Profile Management Guide for Enterprise Brands"
+title: "Multi-Location Google Business Profile (GBP) Guide"
 excerpt: "Scale multi-location local SEO, bulk verification, and hyper-local Google Ads extensions across multiple retail branches."
 category: "Google Haritalar & Yerel SEO"
 date: "2026-08-25"

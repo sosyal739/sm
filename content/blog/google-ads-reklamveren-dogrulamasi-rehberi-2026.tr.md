@@ -1,7 +1,7 @@
 ---
 slug: "google-ads-reklamveren-dogrulamasi-rehberi-2026"
 lang: "tr"
-title: "Google Ads Reklamveren Doğrulaması (Advertiser Verification) Nasıl Yapılır? 2026 Rehberi"
+title: "Google Ads Reklamveren Doğrulaması 2026 Rehberi"
 excerpt: "Google Ads hesabınızın askıya alınmasını önleyin. Şirket evrakları, kimlik doğrulama adımları ve Şeffaflık Rozeti kazanımı rehberi."
 category: "Google Ads Kurulum & Doğrulama"
 date: "2026-08-20"

@@ -1,7 +1,7 @@
 ﻿---
 slug: "tiktok-ads-rehber"
 lang: "de"
-title: "Mit TikTok Ads profitabel Neukunden gewinnen: Der Praxis-Leitfaden 2026"
+title: "Mit TikTok Ads profitabel Neukunden gewinnen: 2026 Guide"
 excerpt: "Lernen Sie Strategien, um auf TikTok viral zu werden und junge Zielgruppen effektiv zu erreichen."
 category: "TikTok Ads"
 date: "2026-01-20"

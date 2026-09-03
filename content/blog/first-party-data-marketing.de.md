@@ -1,7 +1,7 @@
 ﻿---
 slug: "first-party-data-marketing"
 lang: "de"
-title: "Werbung ohne Cookies: Bereiten Sie sich mit First-Party-Daten auf die Zukunft vor"
+title: "Werbung ohne Cookies: First-Party-Daten Leitfaden"
 excerpt: "Erfahren Sie, wie Sie verhindern können, dass Ihr Werbe-ROI durch den Wegfall von Drittanbieter-Cookies beeinträchtigt wird."
 category: "Technologie"
 date: "2026-03-30"

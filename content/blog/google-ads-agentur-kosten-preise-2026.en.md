@@ -1,7 +1,7 @@
 ---
 slug: "google-ads-agentur-kosten-preise-2026"
 lang: "en"
-title: "Google Ads Agency Pricing & Costs 2026: How Much Does Professional Management Cost?"
+title: "Google Ads Agency Pricing & Costs 2026 Guide"
 excerpt: "How much does a Google Ads agency cost per month? Fixed retainer vs. % of ad spend, minimum budget thresholds, and transparent 2026 pricing models."
 category: "Pricing & Guide"
 date: "2026-08-28"

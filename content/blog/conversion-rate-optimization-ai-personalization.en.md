@@ -1,7 +1,7 @@
 ﻿---
 slug: "conversion-rate-optimization-ai-personalization"
 lang: "en"
-title: "Conversion Rate Optimization (CRO) & AI Personalization: Turn Traffic into Revenue"
+title: "CRO & AI Personalization: Turn Traffic into Revenue"
 excerpt: "Transform website visitors into paying customers using AI personalization, dynamic content matching, and CRO A/B testing frameworks."
 category: "Conversion Optimization"
 date: "2026-07-26"

@@ -1,7 +1,7 @@
 ﻿---
 slug: "google-maps-local-seo-guide"
 lang: "de"
-title: "Wie kommt mein Unternehmen bei Google Maps auf Platz 1? Local SEO Leitfaden"
+title: "Google Maps Platz 1 für Unternehmen: Local SEO Leitfaden"
 excerpt: "Dominieren Sie die lokale Suche. Salih Maral erklärt Rankingfaktoren für Google Maps und Google Business Profile Optimierung."
 category: "SEO"
 date: "2026-07-16"

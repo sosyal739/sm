@@ -1,7 +1,7 @@
 ---
 slug: "google-ads-agentur-kosten-preise-2026"
 lang: "tr"
-title: "Google Ads Ajans Ücretleri ve Fiyatları 2026: Reklam Yönetimi Ne Kadar Tutar?"
+title: "Google Ads Ajans Ücretleri ve Fiyatları 2026"
 excerpt: "Google Ads ajansı aylık ne kadar tutar? Sabit fiyat (Fixpreis) vs. bütçe yüzdesi (% Ad Spend) modelleri, minimum bütçe rehberi ve 2026 fiyat tablosu."
 category: "Fiyatlar & Rehber"
 date: "2026-08-28"

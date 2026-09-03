@@ -1,7 +1,7 @@
 ﻿---
 slug: "meta-ads-retargeting-funnels"
 lang: "de"
-title: "Verlorene Shop-Besucher zurückholen: Der ultimative Meta Retargeting Funnel"
+title: "Shop-Besucher zurückholen: Der Meta Retargeting Funnel"
 excerpt: "Nutzer zurück, die Ihre Website besucht haben. Hochkonvertierende Meta Ads Retargeting-Funnels für E-Commerce."
 category: "Meta Ads"
 date: "2026-03-05"

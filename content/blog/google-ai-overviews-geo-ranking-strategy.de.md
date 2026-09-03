@@ -1,7 +1,7 @@
 ﻿---
 slug: "google-ai-overviews-geo-ranking-strategy"
 lang: "de"
-title: "Google AI Overviews Dominanz: Die ultimative GEO-Ranking-Strategie 2026"
+title: "Google AI Overviews Dominanz: GEO-Ranking-Strategie"
 excerpt: "Wenden Sie Princeton GEO (Generative Engine Optimization) Techniken an, um in Google AI Overviews, Perplexity und ChatGPT ganz oben zu ranken."
 category: "SEO"
 date: "2026-07-26"

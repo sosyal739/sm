@@ -1,7 +1,7 @@
 ﻿---
 slug: "ai-agentic-workflow-digital-marketing-2026"
 lang: "tr"
-title: "Ajan Tabanlı Yapay Zeka (Agentic AI) İş Akışları ile Dijital Pazarlama Otomasyonu"
+title: "Agentic AI İş Akışları ile Pazarlama Otomasyonu 2026"
 excerpt: "Otonom yapay zeka ajanları (Agentic AI) ile Google Ads, Meta Ads ve SEO yönetimini entegre ederek pazarlama operasyonlarını 2026 standartlarında ölçekleyin."
 category: "Yapay Zeka"
 date: "2026-07-26"

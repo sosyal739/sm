@@ -1,7 +1,7 @@
 ﻿---
 slug: "conversion-rate-optimization-ai-personalization"
 lang: "de"
-title: "Conversion-Rate-Optimierung (CRO) & KI-Personalisierung: Mehr Verkäufe erzielen"
+title: "CRO & KI-Personalisierung: Mehr Verkäufe erzielen 2026"
 excerpt: "Verwandeln Sie Website-Besucher in Käufer: Strategien für KI-gestützte Personalisierung, dynamischen Content und A/B-Testing."
 category: "Conversion Optimierung"
 date: "2026-07-26"

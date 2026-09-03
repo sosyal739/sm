@@ -1,7 +1,7 @@
 ﻿---
 slug: "google-ads-pmax-optimization"
 lang: "de"
-title: "Wie optimiert man Google Ads Performance Max (PMax) Kampagnen 2026?"
+title: "Google Ads Performance Max (PMax) optimieren 2026"
 excerpt: "Entdecken Sie, wie Sie Ihr Budget um das 3-Fache erhöhen können."
 category: "Google Ads"
 date: "2026-03-15"

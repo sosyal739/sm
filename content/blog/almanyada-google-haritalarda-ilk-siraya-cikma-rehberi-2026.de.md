@@ -1,7 +1,7 @@
 ﻿---
 slug: "almanyada-google-haritalarda-ilk-siraya-cikma-rehberi-2026"
 lang: "de"
-title: "Google Maps Platz 1 in Deutschland: Mehr lokale Kunden für Handwerk & Gastro"
+title: "Google Maps Platz 1 in Deutschland: Mehr lokale Kunden"
 excerpt: "Werden Sie in Ihrer Region bei Google Maps nicht gefunden? So dominieren Sie das Local 3-Pack und gewinnen täglich neue Anrufe und Laufkundschaft."
 category: "Türkische Unternehmen in DE"
 date: "2026-08-25"

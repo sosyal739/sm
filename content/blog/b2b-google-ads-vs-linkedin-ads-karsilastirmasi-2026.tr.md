@@ -1,7 +1,7 @@
 ---
 slug: "b2b-google-ads-vs-linkedin-ads-karsilastirmasi-2026"
 lang: "tr"
-title: "B2B Şirketler İçin Google Ads vs. LinkedIn Ads Karşılaştırması ve Bütçe Dağılımı 2026"
+title: "B2B Google Ads vs. LinkedIn Ads Karşılaştırması 2026"
 excerpt: "B2B müşteri kazanımında hangi platform daha kârlı? Arama niyeti ile unvan hedeflemesinin maliyet, CPL ve kapanış oranı karşılaştırması."
 category: "B2B Pazarlama & Strateji"
 date: "2026-08-26"

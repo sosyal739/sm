@@ -1,7 +1,7 @@
 ﻿---
 slug: "programmatic-seo-ai-content-hubs"
 lang: "de"
-title: "Programmatic SEO & KI-Content Hubs: Skalierung des organischen Traffics"
+title: "Programmatic SEO & KI-Content Hubs: Traffic skalieren"
 excerpt: "Erstellen Sie mit Programmatic SEO und KI-Modellen hunderte zielgerichtete Landingpages für Long-Tail-Keywords, um organischen Traffic zu vervielfachen."
 category: "SEO"
 date: "2026-07-26"

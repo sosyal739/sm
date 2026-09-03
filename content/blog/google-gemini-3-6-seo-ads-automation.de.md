@@ -1,7 +1,7 @@
 ﻿---
 slug: "google-gemini-3-6-seo-ads-automation"
 lang: "de"
-title: "Google Gemini 3.6 für Google Ads Kampagnenmanagement & SEO Automatisierung"
+title: "Google Gemini für Google Ads Management & SEO Automation"
 excerpt: "Nutzen Sie das KI-Modell Google Gemini 3.6 zur Beschleunigung von Google Ads Optimierung, automatischen Gebotsstrategien und technischen SEO-Audits."
 category: "Google Ads"
 date: "2026-07-26"
