@@ -1370,8 +1370,13 @@ export default function ServiceDetailClient({ initialService, initialLang }) {
 
             {/* Responsive Structured Table (GEO High Citability - Multilingual) */}
             <div className="bg-white rounded-3xl border border-slate-200 shadow-xl overflow-hidden">
-              <div className="overflow-x-auto">
-                <table className="w-full text-left border-collapse">
+              {/* Mobile Scroll Indicator Hint */}
+              <div className="md:hidden flex items-center justify-between px-4 py-2 bg-blue-50/80 border-b border-blue-100 text-[11px] font-semibold text-blue-700">
+                <span>📊 {lang === 'de' ? 'Tippe & wische zum Vergleichen' : lang === 'en' ? 'Swipe horizontally to view full table' : 'Tabloyu kaydırarak karşılaştırın'}</span>
+                <span>👉</span>
+              </div>
+              <div className="overflow-x-auto -webkit-overflow-scrolling-touch">
+                <table className="w-full text-left border-collapse min-w-[640px]">
                   <thead>
                     <tr className="border-b border-slate-200 bg-slate-100/70 text-xs md:text-sm font-black text-slate-800">
                       <th className="p-4 md:p-5">
