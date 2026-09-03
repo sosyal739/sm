@@ -4,16 +4,16 @@ import { notFound } from 'next/navigation'
 const serviceMeta = {
   'google-ads': {
     de: {
-      title: 'Google Ads Betreuung & Management | Salih Maral',
-      description: 'Zertifizierter Google Partner mit 17+ Jahren Erfahrung. Performance Max, Search & Shopping Kampagnen für maximalen ROAS und Neukunden.',
+      title: 'Google Ads Betreuung & Management zum Fixpreis | Salih Maral',
+      description: 'Zertifizierte Google Ads Betreuung zum fairen Fixpreis: 17+ Jahre Senior-Expertise, Performance Max & Search für maximalen ROAS ohne Streuverlust.',
     },
     en: {
-      title: 'Google Ads Management Services | Salih Maral',
-      description: 'Certified Google Partner with 17+ years experience. Search, Performance Max, and Shopping campaigns for maximum ROAS and customer growth.',
+      title: 'Google Ads Management & Flat Fee Agency | Salih Maral',
+      description: 'Certified Google Partner with 17+ years experience. Flat-fee Google Ads management, Search, PMax & Shopping campaigns for maximum ROAS.',
     },
     tr: {
-      title: 'Google Ads Yönetimi ve Danışmanlığı | Salih Maral',
-      description: 'Resmi Google Partneri ve 17+ yıllık tecrübe. Arama, PMax ve Alışveriş reklamlarında maksimum ciro, kâr ve ROAS artışı.',
+      title: 'Google Ads Yönetimi & Sabit Fiyatlı Danışmanlık | Salih Maral',
+      description: 'Resmi Google Partneri ile sabit fiyatlı Google Ads yönetimi: Arama, PMax ve Alışveriş reklamlarında maksimum ciro, kâr ve ROAS artışı.',
     },
   },
   'meta-ads': {

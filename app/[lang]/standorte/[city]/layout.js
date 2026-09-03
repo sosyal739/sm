@@ -23,8 +23,8 @@
     lat: 51.2277,
     lng: 6.7735,
     de: {
-      title: 'Google Ads & Meta Ads Agentur Düsseldorf | Salih Maral',
-      description: 'Offizieller Google Partner für Düsseldorf & NRW. Performance Marketing für E-Commerce, Dienstleister & B2B für maximalen ROI.',
+      title: 'Google Ads & Performance Marketing Agentur Düsseldorf | Salih Maral',
+      description: 'Google Ads & Meta Ads Agentur Düsseldorf: Professionelle Google Ads Betreuung, Instagram Ads & SEO für Düsseldorf & ganz NRW mit 17+ Jahren Erfahrung.',
     },
     en: {
       title: 'Google Ads & Meta Ads Agency Düsseldorf | Salih Maral',
@@ -59,8 +59,8 @@
     lat: 48.1351,
     lng: 11.5820,
     de: {
-      title: 'Google Ads Agentur München | Performance & SEO | Salih Maral',
-      description: 'Zertifizierter Google Partner für München & Bayern. Hochprofitable Google Ads, Meta Ads & E-Commerce Skalierung mit 17+ Jahren Expertise.',
+      title: 'Google Ads & Performance Marketing Agentur München | Salih Maral',
+      description: 'Google Ads Agentur München: Zertifizierte Google Ads Betreuung zum Fixpreis, E-Commerce Performance & SEO für München & Bayern mit 17+ Jahren Expertise.',
     },
     en: {
       title: 'Google Ads Agency Munich | Performance & SEO | Salih Maral',
@@ -95,8 +95,8 @@
     lat: 52.5200,
     lng: 13.4050,
     de: {
-      title: 'Google Ads & Growth Marketing Agentur Berlin | Salih Maral',
-      description: 'Offizieller Google Partner für Berlin. Skalierbare Google Ads, Meta Ads & SEO Strategien für Start-ups, E-Commerce & KMUs.',
+      title: 'Google Ads & Performance Marketing Agentur Berlin | Salih Maral',
+      description: 'Google Ads Agentur Berlin: Zertifizierte Google Ads Betreuung zum fairen Fixpreis, Meta Ads & SEO für Start-ups, E-Commerce und KMUs in Berlin.',
     },
     en: {
       title: 'Google Ads & Growth Marketing Agency Berlin | Salih Maral',

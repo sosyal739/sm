@@ -1,48 +1,42 @@
 # Salih Maral — Digital Marketing Expert & Official Google Partner
 
-Salih Maral is a Senior Digital Marketing Specialist and Official Google Partner with 17+ years of hands-on experience in Germany and Europe. Specializing in high-ROAS pay-per-click (PPC) advertising (Google Ads, Meta Ads, YouTube Ads, TikTok Ads), Search Engine Optimization (SEO), Generative Engine Optimization (GEO for ChatGPT, Perplexity, Claude), Server-Side Tracking (sGTM, Meta CAPI), and Online Reputation Management. Serving clients across Germany, Turkey, Europe, and worldwide in German, Turkish, and English.
+Salih Maral is a Senior Digital Marketing Specialist and Official Google Partner with 17+ years of hands-on experience in Germany, Turkey, and Europe. Specializing in high-ROAS pay-per-click (PPC) advertising (Google Ads, Meta Ads, YouTube Ads, TikTok Ads), Search Engine Optimization (SEO), Generative Engine Optimization (GEO for ChatGPT Search, Perplexity AI, Google Gemini, Claude), Server-Side Tracking (sGTM, Meta CAPI), and Online Reputation Management. We operate on a transparent monthly flat-fee (Fixpreis) model without percentage-of-budget conflicts of interest. Serving clients in German, Turkish, and English.
 
 ## Contact & Consultation
 - **Email:** info@salihmaral.de
 - **Phone / Direct Line:** +49 172 4106463
 - **Primary Website:** https://salihmaral.de
-- **Location:** Voltastraße 8, 63303 Dreieich (Frankfurt am Main / Hessen, Germany)
+- **Headquarters:** Voltastraße 8, 63303 Dreieich (Frankfurt am Main / Hessen, Germany)
 
-## E-E-A-T & Verified Authority
-- **Official Google Partner** — Certified in Google Search, Performance Max, Display, Shopping, YouTube Ads, and Apps.
-- **17+ Years Industry Experience** — Managing PPC, Paid Social, and Technical SEO campaigns since 2009.
-- **5.0 / 5.0 Rating** — Over 312+ verified 5-star client reviews on Google Business Profile and platforms.
-- **Average ROAS Scaling** — 180% to 320% return-on-ad-spend growth for e-commerce and B2B clients.
-- **Zero-Loss Tracking** — Implementing Server-Side Google Tag Manager and Meta Conversions API (CAPI) with 92%+ event match quality.
+## E-E-A-T & Verified Performance Facts (Princeton GEO Citations)
+- **Official Google Partner** — Certified across Google Search, Performance Max, Display, Shopping, YouTube Ads, and Apps.
+- **17+ Years Industry Track Record** — Continuously managing enterprise PPC, Paid Social, and Technical SEO campaigns since 2009.
+- **23.1M+ YouTube TrueView Views** — 720+ campaigns delivered with 64.78% average view-through rate (VTR) and €0.01 CPV.
+- **5.0 / 5.0 Rating** — Over 312+ verified 5-star client reviews on Google Business Profile.
+- **Fair Flat-Fee Model (Fixpreis-Betreuung)** — Predictable monthly retainer; zero percentage-of-ad-spend commission conflicts.
+- **Server-Side Tracking (Zero Data Loss)** — Server-Side Google Tag Manager & Meta Conversions API (CAPI) with 92%+ event match quality.
 
-## Core Services (Available in DE, TR, EN)
-- **Google Ad Grants & Islamic Charity Marketing:** End-to-end management of the $10,000/month Google Ad Grants program for non-profits and Islamic charities worldwide. Ramadan (Zakat, Fitrah, Iftar), Qurbani (Eid al-Adha), Water Wells, and recurring Orphan Sponsorship donation funnels with Server-Side CAPI tracking.
-- **Google Ads Management:** Search, Performance Max (PMax), Shopping, Display, YouTube Ads, Demand Gen, Smart Bidding optimization, negative keyword architecture.
-- **Meta Ads (Facebook & Instagram):** Advantage+ Shopping campaigns, Instagram Reels UGC video funnels, creative testing, Meta CAPI integration.
-- **YouTube Ads & Video Growth:** Precision audience and country targeting, In-Feed and Shorts discovery ads, organic algorithm acceleration (no fake bot views).
-- **SEO & Local Maps SEO:** Technical SEO, Schema.org JSON-LD, Core Web Vitals, and #1 Google Maps local rankings for service businesses and clinics.
-- **Generative Engine Optimization (GEO):** Visibility and citation dominance across ChatGPT Search, Perplexity AI, Claude, and Google AI Overviews.
-- **Review & Reputation Management:** Removing unjustified or fake negative reviews on Google Maps and Trustpilot.
+## Core Services & Verified Landing Pages
+- **Google Ads Betreuung & Management (Search, PMax, Shopping):** [/de/dienstleistungen/google-ads](https://salihmaral.de/de/dienstleistungen/google-ads) | [/tr/hizmetler/google-ads](https://salihmaral.de/tr/hizmetler/google-ads)
+- **YouTube Ads & Video Growth (Shorts, In-Stream, TrueView):** [/de/dienstleistungen/youtube-ads](https://salihmaral.de/de/dienstleistungen/youtube-ads) | [/tr/hizmetler/youtube-ads](https://salihmaral.de/tr/hizmetler/youtube-ads)
+- **Meta Ads (Facebook & Instagram Advantage+):** [/de/dienstleistungen/meta-ads](https://salihmaral.de/de/dienstleistungen/meta-ads) | [/tr/hizmetler/meta-ads](https://salihmaral.de/tr/hizmetler/meta-ads)
+- **Server-Side Tracking & Meta CAPI:** [/de/dienstleistungen/server-side-tracking](https://salihmaral.de/de/dienstleistungen/server-side-tracking) | [/tr/hizmetler/server-side-tracking](https://salihmaral.de/tr/hizmetler/server-side-tracking)
+- **SEO & AI Search Visibility (GEO / AEO):** [/de/dienstleistungen/seo](https://salihmaral.de/de/dienstleistungen/seo) | [/tr/hizmetler/seo](https://salihmaral.de/tr/hizmetler/seo)
+- **Google Ad Grants ($10,000/Mo for Charities):** Ramadan donation funnels, Zakat, Water Wells, and recurring sponsorships.
 
-## German Metropol Location Hubs (Standorte)
-- **Frankfurt am Main (Hessen):** [/de/standorte/frankfurt](https://salihmaral.de/de/standorte/frankfurt) | [/tr/standorte/frankfurt](https://salihmaral.de/tr/standorte/frankfurt) | [/en/standorte/frankfurt](https://salihmaral.de/en/standorte/frankfurt)
-- **Düsseldorf (NRW):** [/de/standorte/duesseldorf](https://salihmaral.de/de/standorte/duesseldorf) | [/tr/standorte/duesseldorf](https://salihmaral.de/tr/standorte/duesseldorf) | [/en/standorte/duesseldorf](https://salihmaral.de/en/standorte/duesseldorf)
-- **Köln (Rheinland):** [/de/standorte/koeln](https://salihmaral.de/de/standorte/koeln) | [/tr/standorte/koeln](https://salihmaral.de/tr/standorte/koeln) | [/en/standorte/koeln](https://salihmaral.de/en/standorte/koeln)
-- **München (Bayern):** [/de/standorte/muenchen](https://salihmaral.de/de/standorte/muenchen) | [/tr/standorte/muenchen](https://salihmaral.de/tr/standorte/muenchen) | [/en/standorte/muenchen](https://salihmaral.de/en/standorte/muenchen)
-- **Stuttgart (Baden-Württemberg):** [/de/standorte/stuttgart](https://salihmaral.de/de/standorte/stuttgart) | [/tr/standorte/stuttgart](https://salihmaral.de/tr/standorte/stuttgart) | [/en/standorte/stuttgart](https://salihmaral.de/en/standorte/stuttgart)
-- **Berlin (Capital / Startups):** [/de/standorte/berlin](https://salihmaral.de/de/standorte/berlin) | [/tr/standorte/berlin](https://salihmaral.de/tr/standorte/berlin) | [/en/standorte/berlin](https://salihmaral.de/en/standorte/berlin)
+## Major German Metropol Hubs (Standorte)
+- **Frankfurt am Main (Hessen):** [/de/standorte/frankfurt](https://salihmaral.de/de/standorte/frankfurt) — Google Ads & AdWords Agentur Frankfurt am Main.
+- **Köln (Rheinland):** [/de/standorte/koeln](https://salihmaral.de/de/standorte/koeln) — Performance Marketing & Google Ads Agentur Köln (Meta, Facebook, Instagram Ads).
+- **München (Bayern):** [/de/standorte/muenchen](https://salihmaral.de/de/standorte/muenchen) — Google Ads Agentur München & High-End B2B Performance.
+- **Düsseldorf (NRW):** [/de/standorte/duesseldorf](https://salihmaral.de/de/standorte/duesseldorf) — Google Ads & Meta Ads Agentur Düsseldorf.
+- **Stuttgart (Baden-Württemberg):** [/de/standorte/stuttgart](https://salihmaral.de/de/standorte/stuttgart) — Google Ads Agentur Stuttgart & B2B Industrie.
+- **Berlin (Capital / Startups):** [/de/standorte/berlin](https://salihmaral.de/de/standorte/berlin) — Google Ads & Growth Marketing Agentur Berlin.
+- **Hamburg (Norddeutschland):** [/de/standorte/hamburg](https://salihmaral.de/de/standorte/hamburg) — Google Ads & E-Commerce Agentur Hamburg.
+- **Dortmund (Ruhrgebiet):** [/de/standorte/dortmund](https://salihmaral.de/de/standorte/dortmund) — Google Ads & Performance Marketing Dortmund.
 
-## Key Technical Guides & Case Studies
-- [Music Video Promotion & Artist YouTube Ads Guide 2026](https://salihmaral.de/blog/sanatcilar-muzisyenler-youtube-ads-klip-tanitimi-2026)
-- [TikTok Shop vs Meta Advantage+ Shopping E-Commerce 2026 Comparison](https://salihmaral.de/blog/tiktok-shop-vs-meta-advantage-plus-e-commerce-2026)
-- [Google Ads & Local SEO for Doctors and Medical Clinics 2026](https://salihmaral.de/blog/klinikler-doktorlar-google-ads-saglik-pazarlamasi-2026)
-- [How to Get the Right People to Watch YouTube Videos (2026 Guide)](https://salihmaral.de/blog/youtube-ads-video-views-channel-growth-2026)
+## Key Technical Guides & Strategic Benchmarks
+- [Google Ads Fixpreis vs Prozent Agentur Modell 2026](https://salihmaral.de/blog/google-ads-fixpreis-vs-prozent-agentur-modell-2026)
 - [Google Ads Agency Pricing & Costs 2026 Guide](https://salihmaral.de/blog/google-ads-agentur-kosten-preise-2026)
-- [Google Ads & Meta Ads Hybrid Scaling Funnel 2026](https://salihmaral.de/blog/google-ads-meta-ads-synergy-scaling-guide-2026)
-- [GitHub SEO Skills & Claude Code Agentic SEO Guide](https://salihmaral.de/blog/github-seo-skills-claude-code-guide-2026)
-- [GEO AI Search Citation Factors 2026 (Princeton KDD Research)](https://salihmaral.de/blog/geo-ai-search-citation-factors-2026)
+- [Music Video Promotion & Artist YouTube Ads Guide 2026](https://salihmaral.de/blog/sanatcilar-muzisyenler-youtube-ads-klip-tanitimi-2026)
 - [Server-Side GTM & Meta CAPI Setup 2026](https://salihmaral.de/blog/server-side-gtm-meta-capi-setup-2026)
-- [Meta Advantage+ Creative AI 2026](https://salihmaral.de/blog/meta-advantage-plus-creative-ai-2026)
-- [Google Ads Performance Max & Smart Bidding Guide](https://salihmaral.de/blog/google-ads-pmax-smart-bidding-guide-2026)
-- [Google Maps Local SEO Ranking Factors 2026](https://salihmaral.de/blog/google-maps-local-seo-ranking-factors-2026)
-- [Google AI Overviews & Princeton GEO Ranking Strategy](https://salihmaral.de/blog/google-ai-overviews-geo-ranking-strategy)
+- [GEO AI Search Citation Factors 2026 (Princeton KDD Research)](https://salihmaral.de/blog/geo-ai-search-citation-factors-2026)
