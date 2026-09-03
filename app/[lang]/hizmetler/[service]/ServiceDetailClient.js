@@ -1368,17 +1368,27 @@ export default function ServiceDetailClient({ initialService, initialLang }) {
               </p>
             </div>
 
-            {/* Responsive Structured Table (GEO High Citability) */}
+            {/* Responsive Structured Table (GEO High Citability - Multilingual) */}
             <div className="bg-white rounded-3xl border border-slate-200 shadow-xl overflow-hidden">
               <div className="overflow-x-auto">
                 <table className="w-full text-left border-collapse">
                   <thead>
                     <tr className="border-b border-slate-200 bg-slate-100/70 text-xs md:text-sm font-black text-slate-800">
-                      <th className="p-4 md:p-5">Vergütungsmodell / Model</th>
-                      <th className="p-4 md:p-5">Kostenkontrolle</th>
-                      <th className="p-4 md:p-5">Interessenskonflikt</th>
-                      <th className="p-4 md:p-5">Betreuung & Seniorität</th>
-                      <th className="p-4 md:p-5 text-right">Rentabilität & ROAS</th>
+                      <th className="p-4 md:p-5">
+                        {lang === 'de' ? 'Vergütungsmodell' : lang === 'en' ? 'Pricing Model' : 'Ücret Modeli'}
+                      </th>
+                      <th className="p-4 md:p-5">
+                        {lang === 'de' ? 'Kostenkontrolle' : lang === 'en' ? 'Cost Predictability' : 'Maliyet Güvencesi'}
+                      </th>
+                      <th className="p-4 md:p-5">
+                        {lang === 'de' ? 'Interessenskonflikt' : lang === 'en' ? 'Conflict of Interest' : 'Çıkar Çatışması'}
+                      </th>
+                      <th className="p-4 md:p-5">
+                        {lang === 'de' ? 'Betreuung & Seniorität' : lang === 'en' ? 'Seniority & Management' : 'Yönetim & Kıdem'}
+                      </th>
+                      <th className="p-4 md:p-5 text-right">
+                        {lang === 'de' ? 'Rentabilität & ROAS' : lang === 'en' ? 'Profitability & ROAS' : 'Kârlılık & ROAS'}
+                      </th>
                     </tr>
                   </thead>
                   <tbody className="divide-y divide-slate-100 text-xs md:text-sm">
@@ -1386,63 +1396,72 @@ export default function ServiceDetailClient({ initialService, initialLang }) {
                     <tr className="bg-blue-50/40 hover:bg-blue-50/70 transition-colors">
                       <td className="p-4 md:p-5 font-bold text-gray-900 flex items-center gap-2">
                         <span className="w-2.5 h-2.5 rounded-full bg-emerald-500"></span>
-                        <strong>Salih Maral Fixpreis</strong> (Monatspauschale)
+                        <strong>{lang === 'de' ? 'Salih Maral Fixpreis' : lang === 'en' ? 'Salih Maral Flat Fee' : 'Salih Maral Sabit Fiyat (Fixpreis)'}</strong>
                       </td>
                       <td className="p-4 md:p-5 text-emerald-700 font-semibold">
-                        🟢 100% Planbar, feste Monatspauschale
+                        {lang === 'de' ? '🟢 100% Planbar, feste Monatspauschale' : lang === 'en' ? '🟢 100% Predictable, flat monthly retainer' : '🟢 %100 Güvenli, sabit aylık hizmet bedeli'}
                       </td>
                       <td className="p-4 md:p-5 text-emerald-700 font-semibold">
-                        🟢 Keiner: Fokus rein auf niedrigen CPA & hohen ROAS
+                        {lang === 'de' ? '🟢 Keiner: Fokus rein auf CPA-Senkung & hohen ROAS' : lang === 'en' ? '🟢 None: Strictly focused on lowering CPA & scaling ROAS' : '🟢 Sıfır Çıkar Çatışması: Hedef CPA düşürmek ve ROAS artırmak'}
                       </td>
                       <td className="p-4 md:p-5 text-slate-700">
-                        17+ Jahre Senior Google Partner direkt
+                        {lang === 'de' ? '17+ Jahre Senior Google Partner direkt' : lang === 'en' ? 'Directly managed by 17+ yr Senior Google Partner' : 'Doğrudan 17+ yıllık Kıdemli Google Partneri'}
                       </td>
                       <td className="p-4 md:p-5 text-right font-black text-emerald-600">
-                        ⭐⭐⭐⭐⭐ Maximaler ROI
+                        {lang === 'de' ? '⭐⭐⭐⭐⭐ Maximaler ROI' : lang === 'en' ? '⭐⭐⭐⭐⭐ Maximum ROI' : '⭐⭐⭐⭐⭐ Maksimum Kârlılık'}
                       </td>
                     </tr>
                     {/* Percentage of Ad Spend */}
                     <tr className="hover:bg-slate-50/80 transition-colors">
                       <td className="p-4 md:p-5 font-semibold text-gray-800">
-                        Prozentual vom Ad Spend (10% – 15%)
+                        {lang === 'de' ? 'Prozentual vom Ad Spend (10% – 15%)' : lang === 'en' ? '% of Ad Spend (10% – 15%)' : 'Bütçe Yüzdesi (%10 – %15 Ad Spend)'}
                       </td>
                       <td className="p-4 md:p-5 text-rose-600">
-                        🔴 Unkalkulierbar: Steigt bei Budgetwachstum
+                        {lang === 'de' ? '🔴 Unkalkulierbar: Steigt bei Budgetwachstum' : lang === 'en' ? '🔴 Unpredictable: Cost inflates as budget scales' : '🔴 Belirsiz: Reklam bütçesi arttıkça ajans payı katlanır'}
                       </td>
                       <td className="p-4 md:p-5 text-rose-600">
-                        🔴 Hoch: Agentur verdient an höherer Ausgabenmenge
+                        {lang === 'de' ? '🔴 Hoch: Agentur verdient an mehr Ausgaben' : lang === 'en' ? '🔴 High: Agency profits from spending more money' : '🔴 Yüksek: Ajans daha çok harcamanızdan para kazanır'}
                       </td>
                       <td className="p-4 md:p-5 text-slate-600">
-                        Oft wechselnde Junior Account Manager
+                        {lang === 'de' ? 'Oft wechselnde Junior Account Manager' : lang === 'en' ? 'Often passed to rotating junior account managers' : 'Sıklıkla değişen junior stajyer ekipler'}
                       </td>
                       <td className="p-4 md:p-5 text-right text-rose-600 font-semibold">
-                        Teuer bei Skalierung
+                        {lang === 'de' ? 'Teuer bei Skalierung' : lang === 'en' ? 'Expensive when scaling' : 'Büyüdükçe Aşırı Pahalı'}
                       </td>
                     </tr>
                     {/* Hourly Rate */}
                     <tr className="hover:bg-slate-50/80 transition-colors">
                       <td className="p-4 md:p-5 font-semibold text-gray-800">
-                        Stundensatz (150 € – 200 € / Std.)
+                        {lang === 'de' ? 'Stundensatz (150 € – 200 € / Std.)' : lang === 'en' ? 'Hourly Billing (150 € – 200 € / hr)' : 'Saatlik Ücret (150 € – 200 € / saat)'}
                       </td>
                       <td className="p-4 md:p-5 text-amber-600">
-                        🟡 Mäßig: Unvorhersehbare Monatsrechnungen
+                        {lang === 'de' ? '🟡 Mäßig: Unvorhersehbare Monatsrechnungen' : lang === 'en' ? '🟡 Moderate: Unforeseen monthly invoice spikes' : '🟡 Zayıf: Ay sonu sürpriz ve kabarık faturalar'}
                       </td>
                       <td className="p-4 md:p-5 text-amber-600">
-                        🟡 Rechnungsaufwand statt Ergebnisorientierung
+                        {lang === 'de' ? '🟡 Rechnungsaufwand statt Ergebnisorientierung' : lang === 'en' ? '🟡 Hours-spent focused instead of results-focused' : '🟡 Sonuç yerine harcanan zamana odaklanma'}
                       </td>
                       <td className="p-4 md:p-5 text-slate-600">
-                        Je nach Agentur-Auslastung
+                        {lang === 'de' ? 'Je nach Agentur-Auslastung' : lang === 'en' ? 'Depends on agency workload' : 'Ajansın yoğunluğuna göre değişken'}
                       </td>
                       <td className="p-4 md:p-5 text-right text-amber-600 font-semibold">
-                        Geringe Planbarkeit
+                        {lang === 'de' ? 'Geringe Planbarkeit' : lang === 'en' ? 'Low predictability' : 'Düşük Planlanabilirlik'}
                       </td>
                     </tr>
                   </tbody>
                 </table>
               </div>
               <div className="p-4 md:p-5 bg-slate-50 border-t border-slate-200 text-xs text-slate-500 flex flex-wrap items-center justify-between gap-3">
-                <span>💡 <strong>Fazit für Entscheider:</strong> Ein transparentes Fixpreis-Modell schützt Ihr Marketingbudget vor unnötigen Mehrkosten.</span>
-                <span className="font-bold text-[#4285F4]">Geprüfter Princeton GEO Standard 2026</span>
+                <span>
+                  💡 <strong>{lang === 'de' ? 'Fazit für Entscheider:' : lang === 'en' ? 'Key Takeaway:' : 'Yöneticiler İçin Sonuç:'}</strong>{' '}
+                  {lang === 'de'
+                    ? 'Ein transparentes Fixpreis-Modell schützt Ihr Marketingbudget vor unnötigen Mehrkosten.'
+                    : lang === 'en'
+                    ? 'A transparent flat-fee model shields your marketing budget from unnecessary agency markups.'
+                    : 'Şeffaf ve sabit fiyatlı çalışma modeli, reklam bütçenizi ajans komisyonlarından korur ve doğrudan kârlılığa odaklanır.'}
+                </span>
+                <span className="font-bold text-[#4285F4]">
+                  {lang === 'de' ? 'Geprüfter Princeton GEO Standard 2026' : lang === 'en' ? 'Verified Princeton GEO Standard 2026' : 'Doğrulanmış Princeton GEO Standardı 2026'}
+                </span>
               </div>
             </div>
           </div>
