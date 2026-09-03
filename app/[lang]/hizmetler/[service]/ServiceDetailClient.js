@@ -1004,30 +1004,21 @@ export default function ServiceDetailClient({ initialService, initialLang }) {
 
   return (
     <div className="min-h-screen bg-white">
-      {/* SEO: Canonical + Hreflang for multi-language */}
-      <head>
-        <link rel="canonical" href={`https://salihmaral.de${getLocalizedServiceUrl(lang, service)}`} />
-        <link rel="alternate" hrefLang="de" href={`https://salihmaral.de${getLocalizedServiceUrl('de', service)}`} />
-        <link rel="alternate" hrefLang="en" href={`https://salihmaral.de${getLocalizedServiceUrl('en', service)}`} />
-        <link rel="alternate" hrefLang="tr" href={`https://salihmaral.de${getLocalizedServiceUrl('tr', service)}`} />
-        <link rel="alternate" hrefLang="x-default" href={`https://salihmaral.de${getLocalizedServiceUrl('de', service)}`} />
-        <title>{data.title} | Salih Maral Digital Marketing</title>
-        <meta name="description" content={data.description} />
+      {/* Structured Data (JSON-LD) */}
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(serviceSchema) }}
+      />
+      {faqSchema && (
         <script
           type="application/ld+json"
-          dangerouslySetInnerHTML={{ __html: JSON.stringify(serviceSchema) }}
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
         />
-        {faqSchema && (
-          <script
-            type="application/ld+json"
-            dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
-          />
-        )}
-        <script
-          type="application/ld+json"
-          dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
-        />
-      </head>
+      )}
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
+      />
       {/* Navigation - Same as Homepage */}
       <nav className="fixed top-0 left-0 right-0 z-50 bg-white/95 backdrop-blur-sm border-b">
         <div className="container mx-auto px-4 py-4">
