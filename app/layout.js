@@ -45,7 +45,7 @@ export const metadata = {
   alternates: {
     canonical: 'https://salihmaral.de',
     languages: {
-      'de': 'https://salihmaral.de/de',
+      'de': 'https://salihmaral.de',
       'tr': 'https://salihmaral.de/tr',
       'en': 'https://salihmaral.de/en',
       'x-default': 'https://salihmaral.de'

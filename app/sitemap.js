@@ -6,10 +6,9 @@ export default async function sitemap() {
   const baseUrl = 'https://salihmaral.de'
   const currentDate = new Date().toISOString().split('T')[0]
 
-  // 1. Static Core Pages
+  // 1. Static Core Pages (Root / is German; /tr and /en are localized)
   const staticRoutes = [
     '',
-    '/de',
     '/tr',
     '/en',
     '/about',

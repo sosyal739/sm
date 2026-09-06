@@ -16,6 +16,8 @@ const nextConfig = {
   },
   async redirects() {
     return [
+      // 301: /de → / (Almanca ana sayfa kök dizindir; kopya sayfa ve GSC kanonik uyarısını önler)
+      { source: '/de', destination: '/', statusCode: 301 },
       // 301: Eski Türkçe DE URL'ler → Yeni Almanca URL'ler
       { source: '/de/hizmetler/yorum-yonetimi', destination: '/de/dienstleistungen/bewertungsmanagement', statusCode: 301 },
       { source: '/de/hizmetler/:service', destination: '/de/dienstleistungen/:service', statusCode: 301 },

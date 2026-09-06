@@ -2194,7 +2194,7 @@ export default function Home({ initialLang = 'de' }) {
       {/* Footer */}
       <footer className="py-12 bg-gray-900 text-white">
         <div className="container mx-auto px-4">
-          <div className="grid md:grid-cols-4 gap-8 mb-8">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-8 mb-8">
             <div>
               <picture>
                 <source srcSet="/logo-sm.webp" type="image/webp" />
@@ -2234,6 +2234,17 @@ export default function Home({ initialLang = 'de' }) {
                 <li><a href={`/${lang}/standorte/duesseldorf`} className="hover:text-[#4285F4] transition-colors">Düsseldorf</a></li>
                 <li><a href={`/${lang}/standorte/stuttgart`} className="hover:text-[#4285F4] transition-colors">Stuttgart</a></li>
                 <li><a href={`/${lang}/standorte`} className="text-[#4285F4] font-bold hover:underline block pt-1">{lang === 'de' ? 'Alle Standorte anzeigen →' : lang === 'en' ? 'View all locations →' : 'Tüm Şehirleri Gör →'}</a></li>
+              </ul>
+            </div>
+            <div>
+              <h4 className="font-semibold mb-4">{lang === 'de' ? 'Aktuelle Fachartikel' : lang === 'en' ? 'Strategy Guides' : 'Uzman Rehberleri'}</h4>
+              <ul className="space-y-1.5 text-xs text-gray-400">
+                <li><a href="/blog/google-ads-fixpreis-vs-prozent-agentur-modell-2026" className="hover:text-[#4285F4] transition-colors">{lang === 'de' ? 'Google Ads Fixpreis vs. %' : lang === 'en' ? 'Flat Fee vs. Commission' : 'Google Ads Sabit Fiyat vs Komisyon'}</a></li>
+                <li><a href="/blog/meta-reklamlarinda-para-kaybetmeyi-durdurun-2026" className="hover:text-[#4285F4] transition-colors">{lang === 'de' ? 'Meta Ads ROAS Skalierung' : lang === 'en' ? 'Meta Ads ROAS Scaling' : 'Meta Ads ROAS Skalalama'}</a></li>
+                <li><a href="/blog/server-side-gtm-meta-capi-setup-2026" className="hover:text-[#4285F4] transition-colors">{lang === 'de' ? 'Server-Side GTM & CAPI' : lang === 'en' ? 'Server-Side GTM Setup' : 'Server-Side GTM & CAPI'}</a></li>
+                <li><a href="/blog/google-ai-overviews-geo-ranking-strategy" className="hover:text-[#4285F4] transition-colors">{lang === 'de' ? 'Google AI Overviews & GEO' : lang === 'en' ? 'AI Overviews & GEO Strategy' : 'AI Overviews ve GEO Stratejisi'}</a></li>
+                <li><a href="/blog/google-consent-mode-v2-cookieless-ai-tracking-2026" className="hover:text-[#4285F4] transition-colors">Consent Mode v2 Setup</a></li>
+                <li><a href="/blog" className="text-[#4285F4] font-bold hover:underline block pt-1">{lang === 'de' ? 'Zum Blog-Archiv →' : lang === 'en' ? 'All Strategy Guides →' : 'Tüm Blog Rehberleri →'}</a></li>
               </ul>
             </div>
           </div>

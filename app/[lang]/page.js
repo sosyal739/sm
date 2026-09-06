@@ -12,10 +12,7 @@ export default function LangHomePage() {
   }
   
   if (lang === 'de') {
-    if (typeof window !== 'undefined') {
-      window.location.href = '/'
-      return null
-    }
+    redirect('/')
   }
 
   return <Home initialLang={lang} />

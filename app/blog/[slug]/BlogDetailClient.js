@@ -54,7 +54,7 @@ const translations = {
   }
 }
 
-export default function BlogDetailClient({ initialPost, initialLang }) {
+export default function BlogDetailClient({ initialPost, initialLang, relatedPosts = [] }) {
   const params = useParams()
   const { slug } = params
   const [lang, setLang] = useState(initialLang || 'de')
@@ -349,8 +349,61 @@ export default function BlogDetailClient({ initialPost, initialLang }) {
         </div>
       </section>
 
+      {/* Related Posts Section for Internal Linking & Topical Mesh */}
+      {relatedPosts && relatedPosts.length > 0 && (
+        <section className="py-12 bg-slate-50 border-t border-slate-200 mt-12">
+          <div className="container mx-auto px-4 max-w-6xl">
+            <div className="flex items-center justify-between mb-8">
+              <div>
+                <span className="text-xs font-bold uppercase tracking-wider text-[#4285F4] block mb-1">
+                  {lang === 'de' ? 'Weiterführende Fachartikel' : lang === 'tr' ? 'İlgili Uzman Rehberleri' : 'Related Strategy Guides'}
+                </span>
+                <h3 className="text-xl md:text-2xl font-black text-gray-900">
+                  {lang === 'de' ? 'Das könnte Sie auch interessieren' : lang === 'tr' ? 'İlginizi Çekebilecek Diğer Rehberler' : 'Recommended Reading'}
+                </h3>
+              </div>
+              <a
+                href="/blog"
+                className="hidden sm:inline-flex items-center gap-1 text-sm font-bold text-[#4285F4] hover:underline"
+              >
+                {lang === 'de' ? 'Alle Artikel ansehen' : lang === 'tr' ? 'Tüm Rehberleri Gör' : 'View All Guides'} →
+              </a>
+            </div>
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+              {relatedPosts.map((rel) => (
+                <a
+                  key={rel.slug}
+                  href={`/blog/${rel.slug}`}
+                  className="bg-white rounded-2xl p-6 border border-slate-200/80 shadow-xs hover:shadow-lg hover:border-[#4285F4]/40 hover:-translate-y-1 transition-all flex flex-col justify-between group"
+                >
+                  <div>
+                    {rel.category && (
+                      <span className="inline-block text-[11px] font-bold text-[#4285F4] bg-blue-50 px-2.5 py-1 rounded-full mb-3">
+                        {rel.category}
+                      </span>
+                    )}
+                    <h4 className="font-bold text-gray-900 group-hover:text-[#4285F4] transition-colors line-clamp-2 mb-2 text-base leading-snug">
+                      {rel.title}
+                    </h4>
+                    <p className="text-xs text-gray-600 line-clamp-3 mb-4 leading-relaxed">
+                      {rel.excerpt}
+                    </p>
+                  </div>
+                  <div className="flex items-center justify-between pt-3 border-t border-slate-100 text-xs text-gray-500 mt-auto">
+                    <span>⏱ {rel.readTime || 5} {lang === 'de' ? 'Min. Lesezeit' : lang === 'tr' ? 'dk okuma' : 'min read'}</span>
+                    <span className="font-bold text-[#4285F4] flex items-center gap-0.5 group-hover:translate-x-1 transition-transform">
+                      {lang === 'de' ? 'Lesen' : lang === 'tr' ? 'Oku' : 'Read'} →
+                    </span>
+                  </div>
+                </a>
+              ))}
+            </div>
+          </div>
+        </section>
+      )}
+
       {/* Footer */}
-      <footer className="py-12 bg-gray-900 text-white mt-12">
+      <footer className="py-12 bg-gray-900 text-white mt-0">
         <div className="container mx-auto px-4 text-center">
           <a href={lang === 'de' ? '/' : `/${lang}`} className="inline-block">
             <picture><source srcSet="/logo-md.webp" type="image/webp" /><img src="/logo.png" alt="Salih Maral Logo" className="h-12 w-auto mx-auto" width="48" height="48" loading="lazy" /></picture>

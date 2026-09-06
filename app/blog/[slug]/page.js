@@ -1,4 +1,4 @@
-import { getPostBySlug } from '@/lib/blog.server'
+import { getPostBySlug, getAllPosts } from '@/lib/blog.server'
 import BlogDetailClient from './BlogDetailClient'
 import { notFound } from 'next/navigation'
 
@@ -93,7 +93,13 @@ export default async function BlogDetailPage({ params }) {
     notFound()
   }
 
+  // Calculate internal related posts for strong SEO mesh
+  const allPosts = getAllPosts(initialLang) || []
+  const sameCategory = allPosts.filter(p => p.slug !== slug && p.category === post.category)
+  const otherPosts = allPosts.filter(p => p.slug !== slug && p.category !== post.category)
+  const relatedPosts = [...sameCategory, ...otherPosts].slice(0, 3)
+
   return (
-    <BlogDetailClient initialPost={post} initialLang={initialLang} />
+    <BlogDetailClient initialPost={post} initialLang={initialLang} relatedPosts={relatedPosts} />
   )
 }

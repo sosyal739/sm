@@ -2,7 +2,7 @@ const langMeta = {
   de: {
     title: 'Salih Maral – Google Ads, Meta Ads & SEO Experte',
     description: 'Zertifizierter Google Partner mit 17+ Jahren Erfahrung. Performance Marketing mit Google Ads, Meta Ads, TikTok Ads & SEO.',
-    canonical: 'https://salihmaral.de/de',
+    canonical: 'https://salihmaral.de',
   },
   en: {
     title: 'Google Ads Agency Germany | Certified PPC & Meta Partner Frankfurt | Salih Maral',
@@ -29,7 +29,7 @@ export async function generateMetadata({ params }) {
     alternates: {
       canonical: meta.canonical,
       languages: {
-        de: 'https://salihmaral.de/de',
+        de: 'https://salihmaral.de',
         en: 'https://salihmaral.de/en',
         tr: 'https://salihmaral.de/tr',
         'x-default': 'https://salihmaral.de',
