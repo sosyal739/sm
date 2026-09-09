@@ -1,5 +1,7 @@
 'use client'
 
+import { trackLead, trackWhatsAppClick, trackPhoneClick } from '@/lib/analytics'
+
 import { useState, useEffect } from 'react'
 import { Button } from '@/components/ui/button'
 import { Card, CardContent } from '@/components/ui/card'
@@ -758,6 +760,7 @@ export default function Home({ initialLang = 'de' }) {
       })
 
       if (response.ok) {
+        trackLead({ formName: 'homepage_contact', method: 'contact_form' })
         setFormStatus({ type: 'success', message: t.contact.form.success })
         setFormData({ name: '', email: '', phone: '', message: '' })
       } else {
@@ -1126,6 +1129,7 @@ export default function Home({ initialLang = 'de' }) {
                 <a
                   href={`https://wa.me/491724106463?text=${lang === 'de' ? 'Hallo,%20ich%20interessiere%20mich%20für%20Ihre%20Digital%20Marketing%20Dienstleistungen.' : lang === 'en' ? 'Hello,%20I%20am%20interested%20in%20your%20digital%20marketing%20services.' : 'Merhaba,%20dijital%20pazarlama%20hizmetleriniz%20hakkında%20bilgi%20almak%20istiyorum.'}`}
                   target="_blank"
+                  onClick={() => trackWhatsAppClick({ location: 'page' })}
                   rel="noopener noreferrer"
                   className="bg-emerald-50 text-emerald-800 border border-emerald-200/90 hover:bg-emerald-100/90 font-bold text-base px-7 py-4 rounded-2xl shadow-sm hover:shadow transition-all duration-300 flex items-center gap-2.5 cursor-pointer"
                 >
@@ -1903,7 +1907,8 @@ export default function Home({ initialLang = 'de' }) {
                       </div>
                       <div>
                         <p className="text-sm opacity-80">WhatsApp</p>
-                        <a href={`https://wa.me/491724106463?text=${lang === 'de' ? 'Hallo,%20ich%20interessiere%20mich%20für%20Ihre%20Digital%20Marketing%20Dienstleistungen.' : lang === 'en' ? 'Hello,%20I%20am%20interested%20in%20your%20digital%20marketing%20services.' : 'Merhaba,%20dijital%20pazarlama%20hizmetleriniz%20hakkında%20bilgi%20almak%20istiyorum.'}`} target="_blank" className="font-semibold hover:underline">{lang === 'de' ? 'Jetzt schreiben' : lang === 'en' ? 'Message Now' : 'Hemen Yaz'}</a>
+                        <a href={`https://wa.me/491724106463?text=${lang === 'de' ? 'Hallo,%20ich%20interessiere%20mich%20für%20Ihre%20Digital%20Marketing%20Dienstleistungen.' : lang === 'en' ? 'Hello,%20I%20am%20interested%20in%20your%20digital%20marketing%20services.' : 'Merhaba,%20dijital%20pazarlama%20hizmetleriniz%20hakkında%20bilgi%20almak%20istiyorum.'}`} target="_blank"
+                  onClick={() => trackWhatsAppClick({ location: 'page' })} className="font-semibold hover:underline">{lang === 'de' ? 'Jetzt schreiben' : lang === 'en' ? 'Message Now' : 'Hemen Yaz'}</a>
                       </div>
                     </div>
                   </div>
@@ -1990,7 +1995,8 @@ export default function Home({ initialLang = 'de' }) {
               {lang === 'de' ? 'Kostenloses Angebot' : lang === 'en' ? 'Free Quote' : 'Ücretsiz Teklif Alın'}
             </Button>
             <Button size="lg" className="bg-[#34A853] hover:bg-[#2d9249] text-white" asChild>
-              <a href={`https://wa.me/491724106463?text=${lang === 'de' ? 'Hallo,%20ich%20interessiere%20mich%20für%20Ihre%20Digital%20Marketing%20Dienstleistungen.' : lang === 'en' ? 'Hello,%20I%20am%20interested%20in%20your%20digital%20marketing%20services.' : 'Merhaba,%20dijital%20pazarlama%20hizmetleriniz%20hakkında%20bilgi%20almak%20istiyorum.'}`} target="_blank" rel="noopener noreferrer">
+              <a href={`https://wa.me/491724106463?text=${lang === 'de' ? 'Hallo,%20ich%20interessiere%20mich%20für%20Ihre%20Digital%20Marketing%20Dienstleistungen.' : lang === 'en' ? 'Hello,%20I%20am%20interested%20in%20your%20digital%20marketing%20services.' : 'Merhaba,%20dijital%20pazarlama%20hizmetleriniz%20hakkında%20bilgi%20almak%20istiyorum.'}`} target="_blank"
+                  onClick={() => trackWhatsAppClick({ location: 'page' })} rel="noopener noreferrer">
                 <MessageCircle className="mr-2 h-5 w-5" />
                 {t.contact.cta.whatsapp}
               </a>
@@ -2207,7 +2213,8 @@ export default function Home({ initialLang = 'de' }) {
               <div className="space-y-2 text-sm text-gray-400">
                 <p className="flex items-center space-x-2">
                   <MessageCircle className="h-4 w-4" />
-                  <a href={`https://wa.me/491724106463?text=${lang === 'de' ? 'Hallo,%20ich%20interessiere%20mich%20für%20Ihre%20Digital%20Marketing%20Dienstleistungen.' : lang === 'en' ? 'Hello,%20I%20am%20interested%20in%20your%20digital%20marketing%20services.' : 'Merhaba,%20dijital%20pazarlama%20hizmetleriniz%20hakkında%20bilgi%20almak%20istiyorum.'}`} target="_blank" className="hover:text-white transition-colors">WhatsApp</a>
+                  <a href={`https://wa.me/491724106463?text=${lang === 'de' ? 'Hallo,%20ich%20interessiere%20mich%20für%20Ihre%20Digital%20Marketing%20Dienstleistungen.' : lang === 'en' ? 'Hello,%20I%20am%20interested%20in%20your%20digital%20marketing%20services.' : 'Merhaba,%20dijital%20pazarlama%20hizmetleriniz%20hakkında%20bilgi%20almak%20istiyorum.'}`} target="_blank"
+                  onClick={() => trackWhatsAppClick({ location: 'page' })} className="hover:text-white transition-colors">WhatsApp</a>
                 </p>
                 <p className="text-xs text-gray-500 pt-2">Voltastraße 8, 63303 Dreieich (Hessen / Frankfurt)</p>
               </div>

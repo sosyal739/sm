@@ -1,5 +1,7 @@
 'use client'
 
+import { trackLead } from '@/lib/analytics'
+
 import React, { useState } from 'react'
 import { CheckCircle, ArrowRight, ArrowLeft, Phone, ShoppingCart, Target, MapPin, Sparkles, Send, MessageSquare, Loader2 } from 'lucide-react'
 
@@ -161,6 +163,7 @@ export default function LeadFunnelWizard({ lang = 'de' }) {
       })
 
       if (res.ok) {
+        trackLead({ formName: 'lead_funnel_wizard', service: goal, method: 'funnel_wizard' })
         setSubmitted(true)
       } else {
         setSubmitted(true)

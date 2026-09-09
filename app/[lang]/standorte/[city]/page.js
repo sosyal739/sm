@@ -1,5 +1,7 @@
 'use client'
 
+import { trackLead, trackWhatsAppClick, trackPhoneClick } from '@/lib/analytics'
+
 import React, { use, useState } from 'react'
 import Link from 'next/link'
 import { CheckCircle2, TrendingUp, ShieldCheck, ArrowRight, Star, Phone, Mail, MapPin, Send, Loader2 } from 'lucide-react'
@@ -515,6 +517,7 @@ export default function CityPage({ params }) {
 
       const data = await res.json()
       if (res.ok) {
+        trackLead({ formName: 'city_contact_form', city: cityData.name, method: 'standorte_form' })
         setStatus({
           type: 'success',
           message: currentLang === 'tr'
