@@ -545,26 +545,87 @@ export default function CityPage({ params }) {
     }
   }
 
-  const schemaJsonLd = {
-    '@context': 'https://schema.org',
-    '@type': 'LocalBusiness',
-    name: `Salih Maral Digital Marketing - ${cityData.name}`,
-    url: `https://salihmaral.de/${currentLang}/standorte/${city}`,
-    telephone: '+49-172-4106463',
-    email: 'info@salihmaral.de',
-    image: 'https://salihmaral.de/logo.png',
-    priceRange: '€€',
-    areaServed: {
-      '@type': 'City',
-      name: cityData.name
+  const schemaJsonLd = [
+    {
+      '@context': 'https://schema.org',
+      '@type': 'ProfessionalService',
+      name: `Salih Maral Google Ads & Performance Marketing - ${cityData.name}`,
+      url: `https://salihmaral.de/${currentLang}/standorte/${city}`,
+      telephone: '+49-172-4106463',
+      email: 'info@salihmaral.de',
+      image: 'https://salihmaral.de/logo.png',
+      priceRange: '€€',
+      founder: {
+        '@type': 'Person',
+        name: 'Salih Maral',
+        jobTitle: 'Official Google Partner & Senior Digital Marketing Expert'
+      },
+      areaServed: {
+        '@type': 'City',
+        name: cityData.name
+      },
+      aggregateRating: {
+        '@type': 'AggregateRating',
+        ratingValue: '5.0',
+        reviewCount: '312',
+        bestRating: '5'
+      }
     },
-    aggregateRating: {
-      '@type': 'AggregateRating',
-      ratingValue: '5.0',
-      reviewCount: '312',
-      bestRating: '5'
+    {
+      '@context': 'https://schema.org',
+      '@type': 'FAQPage',
+      mainEntity: [
+        {
+          '@type': 'Question',
+          name: currentLang === 'tr'
+            ? `${cityData.name} Google Ads ajansı yönetim ücreti ne kadardır?`
+            : currentLang === 'en'
+            ? `How much does Google Ads management cost in ${cityData.name}?`
+            : `Was kostet eine professionelle Google Ads Betreuung in ${cityData.name}?`,
+          acceptedAnswer: {
+            '@type': 'Answer',
+            text: currentLang === 'tr'
+              ? `${cityData.name} ve çevresindeki işletmeler için Google Ads yönetimini bütçeden komisyon almadan, aylık şeffaf sabit fiyat (Fixpreis) modeliyle yürütüyoruz. Sürpriz ek maliyet yoktur.`
+              : currentLang === 'en'
+              ? `We manage Google Ads for businesses in ${cityData.name} on a predictable flat-fee retainer with zero percentage-of-ad-spend conflicts.`
+              : `Wir betreuen Google Ads für Unternehmen in ${cityData.name} zum fairen und planbaren monatlichen Fixpreis (Pauschale) statt unberechenbarer Prozent-Provisionen auf Ihr Werbebudget.`
+          }
+        },
+        {
+          '@type': 'Question',
+          name: currentLang === 'tr'
+            ? `${cityData.name} pazarında Google Ads sonuçlarını ne zaman görürüm?`
+            : currentLang === 'en'
+            ? `How quickly can I see results in ${cityData.name}?`
+            : `Wie schnell sind messbare Ergebnisse bei Google Ads in ${cityData.name} sichtbar?`,
+          acceptedAnswer: {
+            '@type': 'Answer',
+            text: currentLang === 'tr'
+              ? 'Kampanyalar yayına girdikten sonra ilk 24-48 saat içinde hedef kitlenizden gerçek tıklamalar ve müşteri talepleri gelmeye başlar. Algoritmik Smart Bidding optimizasyonu ile 14-30 gün içinde en yüksek kârlılığa (ROAS) ulaşılır.'
+              : currentLang === 'en'
+              ? 'First qualified leads start coming within 24 to 48 hours of campaign launch. Full Smart Bidding efficiency is typically unlocked within 14 to 30 days.'
+              : 'Erste Klicks und qualifizierte Anfragen treffen bereits in den ersten 24 bis 48 Stunden nach Kampagnenstart ein. Nach 14 bis 30 Tagen Smart-Bidding-Lernphase erreicht die Kampagne ihren vollen ROAS.'
+          }
+        },
+        {
+          '@type': 'Question',
+          name: currentLang === 'tr'
+            ? `${cityData.name} için uzun süreli sözleşme zorunluluğu var mı?`
+            : currentLang === 'en'
+            ? `Are there long-term lock-in contracts?`
+            : `Gibt es langfristige Knebelverträge?`,
+          acceptedAnswer: {
+            '@type': 'Answer',
+            text: currentLang === 'tr'
+              ? 'Hayır. Müşterilerimizi 12 aylık bağlayıcı sözleşmelerle değil, her ay ürettiğimiz kârlılık ve ciro artışı ile yanımızda tutuyoruz.'
+              : currentLang === 'en'
+              ? 'No. We work on flexible terms without 12-month lock-ins. You stay because of measurable results.'
+              : 'Nein. Wir verzichten auf starre 12-Monats-Verträge. Unsere Kunden bleiben durch nachweisbaren ROAS und kontinuierliche Neukundengewinnung.'
+          }
+        }
+      ]
     }
-  }
+  ]
 
   return (
     <main className="min-h-screen bg-slate-950 text-slate-100 pt-28 pb-20 selection:bg-blue-500 selection:text-white">
@@ -709,6 +770,120 @@ export default function CityPage({ params }) {
                 <span>{ind}</span>
               </div>
             ))}
+          </div>
+        </div>
+      </section>
+
+
+      {/* Local Case Study Section */}
+      <section className="py-14 bg-slate-900 border-b border-slate-800">
+        <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="p-8 rounded-3xl bg-slate-950 border border-blue-500/30">
+            <div className="flex flex-col md:flex-row md:items-center justify-between gap-6">
+              <div className="space-y-3">
+                <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-emerald-500/10 text-emerald-400 text-xs font-bold uppercase tracking-wider">
+                  <span>🏆 {currentLang === 'tr' ? 'Bölgesel Başarı Analizi' : currentLang === 'en' ? 'Local Case Study' : 'Regionale Fallstudie'}</span>
+                </div>
+                <h3 className="text-2xl font-bold text-white">
+                  {currentLang === 'tr'
+                    ? `${cityData.name} Bölgesinde Müşteri Edinme Maliyeti (CPA) %38 Düşürüldü`
+                    : currentLang === 'en'
+                    ? `Cost-Per-Lead (CPA) Slashed by 38% for ${cityData.name} Business`
+                    : `CPA um 38% gesenkt: Mehr qualifizierte Leads für Unternehmen in ${cityData.name}`}
+                </h3>
+                <p className="text-sm text-slate-300 max-w-2xl leading-relaxed">
+                  {currentLang === 'tr'
+                    ? `${cityData.name} pazarında faaliyet gösteren bir şirket için negatif anahtar kelime filtrelemesi ve sunucu taraflı dönüşüm takibi (CAPI) kurarak ortalama ${cityData.stats.roas} ROAS elde ettik.`
+                    : currentLang === 'en'
+                    ? `By implementing negative keyword pruning and Server-Side CAPI tracking, we generated an average ${cityData.stats.roas} ROAS for a ${cityData.name}-based business.`
+                    : `Durch präzises Negative-Keyword-Management, Server-Side CAPI Tracking und zielgerichtete Suchanzeigen erzielten wir für einen Kunden in ${cityData.name} einen Durchschnitts-ROAS von ${cityData.stats.roas}.`}
+                </p>
+              </div>
+              <div className="grid grid-cols-2 gap-4 text-center shrink-0">
+                <div className="p-4 rounded-2xl bg-slate-900 border border-slate-800">
+                  <span className="block text-2xl font-black text-blue-400">{cityData.stats.roas}</span>
+                  <span className="text-xs text-slate-400 uppercase font-semibold">ROAS</span>
+                </div>
+                <div className="p-4 rounded-2xl bg-slate-900 border border-slate-800">
+                  <span className="block text-2xl font-black text-emerald-400">-38%</span>
+                  <span className="text-xs text-slate-400 uppercase font-semibold">CPA</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Local FAQ Section with Direct SERP Answers */}
+      <section className="py-16 bg-slate-950 border-b border-slate-800">
+        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-12">
+            <span className="text-xs font-bold uppercase tracking-wider text-blue-400 block mb-2">
+              FAQ & Transparenz
+            </span>
+            <h2 className="text-3xl font-extrabold text-white">
+              {currentLang === 'tr'
+                ? `${cityData.name} Google Ads Hakkında Sıkça Sorulan Sorular`
+                : currentLang === 'en'
+                ? `Frequently Asked Questions in ${cityData.name}`
+                : `Häufige Fragen zu Google Ads in ${cityData.name}`}
+            </h2>
+          </div>
+
+          <div className="space-y-4">
+            <div className="p-6 rounded-2xl bg-slate-900 border border-slate-800">
+              <h3 className="font-bold text-lg text-white mb-2">
+                {currentLang === 'tr'
+                  ? `${cityData.name} Google Ads ajansı yönetim ücreti ne kadardır?`
+                  : currentLang === 'en'
+                  ? `How much does Google Ads management cost in ${cityData.name}?`
+                  : `Was kostet eine professionelle Google Ads Betreuung in ${cityData.name}?`}
+              </h3>
+              <p className="text-sm text-slate-300 leading-relaxed">
+                {currentLang === 'tr'
+                  ? `${cityData.name} ve çevresindeki işletmeler için Google Ads yönetimini bütçeden komisyon almadan, aylık şeffaf sabit fiyat (Fixpreis) modeliyle yürütüyoruz. Detaylı piyasa analizi için `
+                  : currentLang === 'en'
+                  ? `We manage Google Ads for businesses in ${cityData.name} on a predictable flat-fee retainer. For a detailed breakdown, read our `
+                  : `Wir betreuen Google Ads für Unternehmen in ${cityData.name} zum fairen und planbaren monatlichen Fixpreis statt unberechenbarer Prozent-Provisionen. Lesen Sie dazu unseren `}
+                <a href="/blog/google-ads-agentur-preise-kosten-deutschland-2026" className="text-blue-400 underline hover:text-blue-300">
+                  {currentLang === 'tr' ? 'Almanya Google Ads Fiyat Rehberi 2026' : currentLang === 'en' ? 'Germany Pricing Guide 2026' : 'Google Ads Agentur Kosten & Preise Leitfaden 2026'}
+                </a>.
+              </p>
+            </div>
+
+            <div className="p-6 rounded-2xl bg-slate-900 border border-slate-800">
+              <h3 className="font-bold text-lg text-white mb-2">
+                {currentLang === 'tr'
+                  ? `${cityData.name} pazarında Google Ads sonuçlarını ne zaman görürüm?`
+                  : currentLang === 'en'
+                  ? `How quickly can I see results in ${cityData.name}?`
+                  : `Wie schnell sind messbare Ergebnisse bei Google Ads in ${cityData.name} sichtbar?`}
+              </h3>
+              <p className="text-sm text-slate-300 leading-relaxed">
+                {currentLang === 'tr'
+                  ? 'Kampanyalar yayına girdikten sonra ilk 24-48 saat içinde hedef kitlenizden gerçek tıklamalar ve müşteri talepleri gelmeye başlar. Algoritmik Smart Bidding optimizasyonu ile 14-30 gün içinde en yüksek kârlılığa (ROAS) ulaşılır.'
+                  : currentLang === 'en'
+                  ? 'First qualified leads start coming within 24 to 48 hours of campaign launch. Full Smart Bidding efficiency is typically unlocked within 14 to 30 days.'
+                  : 'Erste Klicks und qualifizierte Anfragen treffen bereits in den ersten 24 bis 48 Stunden nach Kampagnenstart ein. Nach 14 bis 30 Tagen Smart-Bidding-Lernphase erreicht die Kampagne ihren vollen ROAS.'}
+              </p>
+            </div>
+
+            <div className="p-6 rounded-2xl bg-slate-900 border border-slate-800">
+              <h3 className="font-bold text-lg text-white mb-2">
+                {currentLang === 'tr'
+                  ? `${cityData.name} için uzun süreli sözleşme zorunluluğu var mı?`
+                  : currentLang === 'en'
+                  ? `Are there long-term lock-in contracts?`
+                  : `Gibt es langfristige Knebelverträge?`}
+              </h3>
+              <p className="text-sm text-slate-300 leading-relaxed">
+                {currentLang === 'tr'
+                  ? 'Hayır. Müşterilerimizi 12 aylık bağlayıcı sözleşmelerle değil, her ay ürettiğimiz kârlılık ve ciro artışı ile yanımızda tutuyoruz.'
+                  : currentLang === 'en'
+                  ? 'No. We work on flexible terms without 12-month lock-ins. You stay because of measurable results.'
+                  : 'Nein. Wir verzichten auf starre 12-Monats-Verträge. Unsere Kunden bleiben durch nachweisbaren ROAS und kontinuierliche Neukundengewinnung.'}
+              </p>
+            </div>
           </div>
         </div>
       </section>
