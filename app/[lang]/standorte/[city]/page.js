@@ -226,13 +226,13 @@ const cityDetails = {
     de: {
       heroTitle: 'Google Ads Agentur Dortmund & Ruhrgebiet',
       heroSub: 'Performance Marketing für Dortmund, Essen & das Ruhrgebiet',
-      intro: 'Das Ruhrgebiet ist der größte Ballungsraum Deutschlands. Wir positionieren Ihr Unternehmen bei Google ganz oben und sichern Ihnen wertvolle Direktaufträge.',
+      intro: 'Das Ruhrgebiet (Dortmund, Essen, Bochum, Marl und Kreis Recklinghausen) ist der dynamischste Ballungsraum in NRW. Wir positionieren Ihr Unternehmen bei Google ganz oben und sichern Ihnen planbare Direktaufträge.',
       cta: 'Jetzt unverbindliches Angebot anfordern',
     },
     tr: {
       heroTitle: 'Dortmund & Ruhr Bölgesi Google Ads Ajansı',
       heroSub: 'Dortmund, Essen ve Ruhr Bölgesi İçin Kârlı Reklam Yönetimi',
-      intro: 'Dortmund ve Ruhr bölgesindeki inşaat, ticaret ve hizmet firmaları için Google Ads ve yerel SEO ile cironuzu katlıyoruz.',
+      intro: 'Dortmund, Essen, Marl ve Ruhr bölgesindeki sanayi, inşaat ve hizmet firmaları için Google Ads ve bölgesel SEO ile cironuzu katlıyoruz.',
       cta: 'Dortmund İçin Ücretsiz Teklif Alın',
     },
     en: {

@@ -5,7 +5,7 @@ const cityData = {
     lat: 50.1109,
     lng: 8.6821,
     de: {
-      title: 'Google Ads & AdWords Agentur Frankfurt am Main | Salih Maral',
+      title: 'Google Ads & AdWords Agentur Frankfurt | Salih Maral',
       description: 'Google Ads & AdWords Agentur Frankfurt am Main: Zertifizierte AdWords Beratung, Google Ads Betreuung zum Fixpreis & Performance Marketing für Hessen.',
     },
     en: {
@@ -59,7 +59,7 @@ const cityData = {
     lat: 48.1351,
     lng: 11.5820,
     de: {
-      title: 'Google Ads (AdWords) & Performance Agentur München | Salih Maral',
+      title: 'Google Ads & AdWords Agentur München | Salih Maral',
       description: 'Google Ads Agentur München: Zertifizierte Google Ads & AdWords Betreuung zum Fixpreis, B2B & E-Commerce für München & Bayern mit 17+ Jahren Expertise.',
     },
     en: {
@@ -95,7 +95,7 @@ const cityData = {
     lat: 52.5200,
     lng: 13.4050,
     de: {
-      title: 'Google Ads & Performance Marketing Agentur Berlin | Salih Maral',
+      title: 'Google Ads & Performance Agentur Berlin | Salih Maral',
       description: 'Google Ads Agentur Berlin: Zertifizierte Google Ads Betreuung zum fairen Fixpreis, Meta Ads & SEO für Start-ups, E-Commerce und KMUs in Berlin.',
     },
     en: {
@@ -131,7 +131,7 @@ const cityData = {
     lat: 51.5136,
     lng: 7.4653,
     de: {
-      title: 'Google Ads & AdWords Agentur Dortmund (Ruhrgebiet) | Salih Maral',
+      title: 'Google Ads & AdWords Agentur Dortmund | Salih Maral',
       description: 'Google Ads & AdWords Agentur Dortmund: Zertifizierte Betreuung, Facebook Ads & lokales Performance Marketing im Ruhrgebiet zum transparenten Fixpreis.',
     },
     en: {
