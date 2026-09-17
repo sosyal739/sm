@@ -8,10 +8,11 @@ import { Card, CardContent } from '@/components/ui/card'
 import { Input } from '@/components/ui/input'
 import { Textarea } from '@/components/ui/textarea'
 import { Badge } from '@/components/ui/badge'
-import { Phone, Mail, MessageCircle, CheckCircle, BarChart3, Users, Award, TrendingUp, Globe, Star, Sparkles, ArrowRight, Clock, Calendar, Flame, Cpu, Zap, Search, ShieldCheck, Layers, BookOpen, Menu, X, ChevronRight, MessageSquare } from 'lucide-react'
+import { Phone, Mail, MessageCircle, CheckCircle, BarChart3, Users, Award, TrendingUp, Globe, Star, Sparkles, ArrowRight, Clock, Calendar, Flame, Cpu, Zap, Search, ShieldCheck, Layers, BookOpen, Menu, X, ChevronRight, MessageSquare, ChevronDown, HelpCircle } from 'lucide-react'
 import CookieConsent from '@/components/CookieConsent'
 import RoasCalculatorWidget from '@/components/RoasCalculatorWidget'
 import LeadFunnelWizard from '@/components/LeadFunnelWizard'
+import GoogleAdsBudgetCalculator from '@/components/GoogleAdsBudgetCalculator'
 
 const translations = {
   tr: {
@@ -230,6 +231,37 @@ const translations = {
         whatsapp: 'WhatsApp\'tan Yazın'
       }
     },
+    faq: {
+      badge: 'Sıkça Sorulan Sorular',
+      title: 'Almanya Google Ads & Dijital Büyüme Rehberi',
+      subtitle: 'Almanya ve Avrupa\'da reklam yönetimi, ajans maliyetleri, vergilendirme ve yerel büyüme hakkında en çok merak edilenler.',
+      items: [
+        {
+          q: 'Almanya\'da Google Ads Yönetimi ve Danışmanlık Ücretleri Ne Kadardır?',
+          a: 'Geleneksel ajanslar reklam bütçeniz üzerinden %15-%20 komisyon alarak maliyetinizi artırır. Biz Salih Maral olarak şeffaf, sürprizsiz ve aylık sabit fiyat (Fixpreis ab 590€ - 790€/ay) modeliyle çalışıyoruz. Bütçeniz kesintiye uğramadan doğrudan satış getirecek aramalara harcanır.'
+        },
+        {
+          q: 'Frankfurt, Köln ve Stuttgart\'taki Şirketler Neden Hâlâ "AdWords Ajansı" Olarak Arıyor?',
+          a: 'Google, reklam platformunun adını 2018\'de "Google Ads" olarak değiştirmiş olsa da, Almanya\'daki sanayi, makine ve B2B satın alma yöneticileri alışkanlık gereği hâlâ "AdWords Agentur" terimini kullanmaktadır. Frankfurt finans/B2B, Köln e-ticaret ve Stuttgart makine sektörüne özel çift odaklı stratejiler kuruyoruz.'
+        },
+        {
+          q: 'Almanya\'da Google ve Meta Ads Faturaları Nasıl Muhasebeleştirilir? (§13b UStG)',
+          a: 'Google ve Meta Avrupa faturalarını Dublin/İrlanda merkezinden düzenler. Almanya\'daki şirketiniz için KDV Numarası (USt-IdNr.) girildiğinde faturalar %0 KDV (Ters İbraz / Reverse-Charge §13b UStG) ile kesilir. KDV ön beyannamenizde 84 ve 67. hanelere girilerek vergi sıfırlanır.'
+        },
+        {
+          q: 'Almanya\'da Yeni Dükkan & İşletme Açanlar İçin Google Ads ve Haritalar Nasıl Çalışır?',
+          a: 'Restoran, market, oto servis, klinik ve inşaat (Handwerk) işletmelerinin ilk 30 günde müşteri çekmesi için Google Haritalar (Google İşletme Profili) 3-Pack zirvesine optimize edilir ve 5-15 km çevreye hedeflenen yerel Google Ads ile doğrudan telefon araması ve yol tarifi toplanır.'
+        },
+        {
+          q: 'Performance Max (PMax) Kampanyalarında Negatif Anahtar Kelimeler Neden Zorunludur?',
+          a: 'Filtresiz PMax yapay zekası reklam bütçesinin %35\'e kadar olan kısmını kendi marka adınıza, kariyer/staj arayanlara veya kalitesiz mobil oyunlara harcar. Kampanya düzeyinde negatif listeler ve marka hariç tutma uygulayarak bütçeyi sadece kârlı yeni müşterilere yönlendiriyoruz.'
+        },
+        {
+          q: 'Ruhr Bölgesi ve NRW SEO: Dortmund, Essen ve Marl İşletmeleri Google\'da Nasıl Zirveye Çıkar?',
+          a: 'Dortmund, Essen, Bochum ve Marl gibi sanayi ve nüfus yoğunluğu yüksek Ruhr metropollerinde, yerel schema (LocalBusiness), bölgesel servis siloları ve yüksek otorite sinyalleri ile ilk 3 organik sırayı elde ediyoruz.'
+        }
+      ]
+    },
     footer: {
       description: 'Google Ads, Meta Ads ve SEO ile işletmenizi dijital dünyada zirveye taşıyoruz.',
       rights: 'Tüm hakları saklıdır.',
@@ -445,6 +477,37 @@ const translations = {
         call: 'Rufen Sie uns an',
         whatsapp: 'Schreiben Sie über WhatsApp'
       }
+    },
+    faq: {
+      badge: 'Häufig gestellte Fragen',
+      title: 'Google Ads & Performance Marketing FAQ Deutschland',
+      subtitle: 'Transparente Antworten zu Agenturkosten, Google Ads Betreuung, § 13b UStG Rechnungen und lokaler Neukundengewinnung.',
+      items: [
+        {
+          q: 'Was kostet eine professionelle Google Ads Betreuung in Deutschland?',
+          a: 'Während traditionelle Agenturen 15% bis 20% Provision auf Ihr Werbebudget aufschlagen, setzen wir bei Salih Maral auf transparente monatliche Fixpreise (ab 590 € bis 790 € / Monat). Ihr Budget fließt zu 100% in profitable Klicks und Neukunden, ohne versteckte Zusatzkosten.'
+        },
+        {
+          q: 'Warum suchen Entscheider in Frankfurt, Köln & Stuttgart nach „AdWords Agentur“?',
+          a: 'Obwohl Google 2018 die Umbenennung zu Google Ads vollzog, ist der Begriff „AdWords Agentur“ im deutschen Mittelstand und bei B2B-Einkäufern tief verankert. In Frankfurt liegt der Fokus auf B2B-Leads, in Köln auf Meta & Performance Ads und in Stuttgart auf Maschinenbau und Industrie.'
+        },
+        {
+          q: 'Wie werden Google Ads Rechnungen aus Irland steuerlich verbucht (§ 13b UStG)?',
+          a: 'Rechnungen der Google Ireland Limited unterliegen dem Reverse-Charge-Verfahren nach § 13b UStG und werden mit 0% USt ausgestellt. Bei vorliegender USt-IdNr. deklarieren Sie die 19% Umsatzsteuer in der UStVA (Kennziffer 84) und ziehen sie zeitgleich als Vorsteuer (Kennziffer 67) ab.'
+        },
+        {
+          q: 'Wie gewinnen lokale Betriebe & Neugründer Kunden über Google Maps & Ads?',
+          a: 'Für Handwerker, Kanzleien, Ärzte und Gastronomie optimieren wir das Google Unternehmensprofil für die Top 3 der lokalen Google-Map-Ergebnisse. Ergänzt durch hyperlokale Google Suchanzeigen im Umkreis von 10–25 km generieren Betriebe ab Woche 1 direkte Anrufe und Aufträge.'
+        },
+        {
+          q: 'Warum sind kampagnenweite Negative Keywords in PMax Kampagnen unverzichtbar?',
+          a: 'Ungefilterte PMax Kampagnen verschwenden bis zu 35% des Klickbudgets für unproduktive App-Placements oder eigene Brand-Keywords. Durch Kampagnen-Negativlisten und Brand Exclusions stellen wir sicher, dass Ihr Budget ausschließlich in kaufbereite Neukunden investiert wird.'
+        },
+        {
+          q: 'Suchmaschinenoptimierung für das Ruhrgebiet: Wie dominieren Firmen in Dortmund, Essen & Marl?',
+          a: 'Das Ruhrgebiet ist der größte Ballungsraum Deutschlands. Durch standortspezifische Landingpages, LocalBusiness Schema und regionalen Themenaufbau erzielen Kunden in Dortmund, Essen, Bochum und Marl dauerhaft Top-Rankings auf Seite 1.'
+        }
+      ]
     },
     footer: {
       description: 'Wir bringen Ihr Unternehmen mit Google Ads, Meta Ads und SEO an die Spitze der digitalen Welt.',
@@ -662,6 +725,37 @@ const translations = {
         whatsapp: 'Message on WhatsApp'
       }
     },
+    faq: {
+      badge: 'Frequently Asked Questions',
+      title: 'Google Ads & Performance Marketing FAQ Germany',
+      subtitle: 'Transparent answers regarding agency management fees, § 13b UStG invoicing, PMax optimization, and local growth.',
+      items: [
+        {
+          q: 'How Much Does Professional Google Ads Management Cost in Germany?',
+          a: 'Unlike traditional agencies charging 15% to 20% commission on ad spend, Salih Maral operates on transparent monthly flat fees (from €590 to €790/month). 100% of your advertising capital works directly for revenue generation without hidden costs.'
+        },
+        {
+          q: 'Why Do Businesses in Frankfurt, Cologne & Stuttgart Search for "AdWords Agency"?',
+          a: 'German Mittelstand and B2B buyers still widely use the legacy term "AdWords Agentur". We deploy dual-targeted campaigns tailored to Frankfurt financial/B2B leads, Cologne e-commerce & Meta Ads, and Stuttgart manufacturing industries.'
+        },
+        {
+          q: 'How Are Google Ads Invoices from Ireland Booked Under German Tax Law (§ 13b UStG)?',
+          a: 'Invoices from Google Ireland Limited fall under Section 13b of the German VAT Act (Reverse Charge) with 0% VAT. With a valid German VAT ID, 19% VAT is reported and simultaneously deducted as input tax in the advance return (UStVA), remaining cash-neutral.'
+        },
+        {
+          q: 'How Do Local Businesses and Startups Win Customers via Google Maps & Ads?',
+          a: 'We optimize Google Business Profiles for the Maps 3-Pack and combine it with geo-targeted search campaigns (radius 10–25 km) to deliver phone calls, store visits, and inquiries from week one.'
+        },
+        {
+          q: 'Why Are Campaign-Level Negative Keywords Mandatory in Performance Max?',
+          a: 'Unconstrained PMax campaigns waste up to 35% of ad spend on junk mobile app placements and brand cannibalization. Adding campaign-level exclusions ensures media spend drives net-new qualified customers.'
+        },
+        {
+          q: 'Ruhr Area SEO: How Can Companies in Dortmund, Essen & Marl Dominate Local Rankings?',
+          a: 'Through localized structured schema markup, regional keyword silos, and high-authority E-E-A-T signals, businesses in Dortmund, Essen, Bochum, and Marl achieve top positions on Page 1.'
+        }
+      ]
+    },
     footer: {
       description: 'We take your business to the top of the digital world with Google Ads, Meta Ads and SEO.',
       rights: 'All rights reserved.',
@@ -678,6 +772,7 @@ export default function Home({ initialLang = 'de' }) {
   const [latestPosts, setLatestPosts] = useState([])
   const [blogCategory, setBlogCategory] = useState('all')
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false)
+  const [openFaq, setOpenFaq] = useState(null)
 
   // Language change navigates to the correct URL
   const handleLanguageChange = (newLang) => {
@@ -882,6 +977,18 @@ export default function Home({ initialLang = 'de' }) {
                   { '@type': 'Offer', itemOffered: { '@type': 'Service', name: lang === 'de' ? 'Bewertungsmanagement' : lang === 'tr' ? 'Yorum Yönetimi' : 'Review Management', url: `https://salihmaral.de${svcUrl(lang, 'yorum-yonetimi')}` } }
                 ]
               }
+            },
+            {
+              '@type': 'FAQPage',
+              '@id': `https://salihmaral.de${lang === 'de' ? '/' : `/${lang}`}#faq`,
+              mainEntity: (t.faq && t.faq.items ? t.faq.items : []).map(item => ({
+                '@type': 'Question',
+                name: item.q,
+                acceptedAnswer: {
+                  '@type': 'Answer',
+                  text: item.a
+                }
+              }))
             }
           ]
         }) }} />
@@ -2193,6 +2300,85 @@ export default function Home({ initialLang = 'de' }) {
                 <ArrowRight className="w-5 h-5" />
               </a>
             </Button>
+          </div>
+        </div>
+      </section>
+
+      {/* Interactive Google Ads Budget & Cost Calculator Section */}
+      <section className="py-20 bg-slate-950 text-white relative overflow-hidden border-t border-slate-800">
+        <div className="container mx-auto px-4 max-w-5xl relative z-10">
+          <GoogleAdsBudgetCalculator lang={lang} />
+        </div>
+      </section>
+
+      {/* High-Authority Interactive FAQ Section (Targeting GSC & Telemetry Search Queries) */}
+      <section id="faq" className="py-20 bg-gradient-to-b from-slate-50 to-white relative overflow-hidden border-t border-slate-200/80">
+        <div className="container mx-auto px-4 max-w-4xl relative z-10">
+          <div className="text-center mb-12">
+            <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-blue-50 text-[#4285F4] border border-blue-200/60 text-xs font-bold mb-3 shadow-xs">
+              <HelpCircle className="w-4 h-4" />
+              <span>{t.faq?.badge || 'FAQ'}</span>
+            </div>
+            <h2 className="text-3xl sm:text-4xl font-extrabold text-gray-900 tracking-tight mb-4">
+              {t.faq?.title}
+            </h2>
+            <p className="text-base text-gray-600 max-w-2xl mx-auto">
+              {t.faq?.subtitle}
+            </p>
+          </div>
+
+          <div className="space-y-4">
+            {t.faq?.items?.map((item, idx) => {
+              const isOpen = openFaq === idx
+              return (
+                <div
+                  key={idx}
+                  className="rounded-2xl border border-slate-200 bg-white overflow-hidden shadow-xs hover:border-blue-300 transition-all duration-200"
+                >
+                  <button
+                    type="button"
+                    onClick={() => setOpenFaq(isOpen ? null : idx)}
+                    className="w-full text-left px-6 py-5 flex items-center justify-between gap-4 font-bold text-base text-gray-900 hover:text-[#4285F4] transition-colors cursor-pointer"
+                  >
+                    <span>{item.q}</span>
+                    <ChevronDown
+                      className={`w-5 h-5 text-gray-400 flex-shrink-0 transition-transform duration-300 ${
+                        isOpen ? 'rotate-180 text-[#4285F4]' : ''
+                      }`}
+                    />
+                  </button>
+                  {isOpen && (
+                    <div className="px-6 pb-6 text-sm text-gray-600 leading-relaxed border-t border-slate-100 pt-4 bg-slate-50/50">
+                      {item.a}
+                    </div>
+                  )}
+                </div>
+              )
+            })}
+          </div>
+
+          {/* Quick Consultation Callout */}
+          <div className="mt-12 p-6 rounded-2xl bg-blue-50 border border-blue-200/80 text-center sm:flex sm:items-center sm:justify-between sm:text-left">
+            <div>
+              <h3 className="font-bold text-gray-900 text-base">
+                {lang === 'de' ? 'Haben Sie spezifische Fragen zu Ihrem Werbebudget?' : lang === 'tr' ? 'Reklam bütçeniz veya Google Ads hakkında sorunuz mu var?' : 'Do you have specific questions about your advertising budget?'}
+              </h3>
+              <p className="text-xs text-gray-600 mt-0.5">
+                {lang === 'de' ? 'Kostenlose 30-minütige Potenzialanalyse mit Salih Maral buchen.' : lang === 'tr' ? 'Salih Maral ile 30 dakikalık ücretsiz büyüme analizi planlayın.' : 'Book a free 30-minute growth analysis with Salih Maral.'}
+              </p>
+            </div>
+            <div className="mt-4 sm:mt-0 flex-shrink-0">
+              <a
+                href={`https://wa.me/491724106463?text=${lang === 'de' ? 'Hallo,%20ich%20habe%20eine%20spezifische%20Frage%20zu%20Google%20Ads.' : lang === 'en' ? 'Hello,%20I%20have%20a%20specific%20question%20about%20Google%20Ads.' : 'Merhaba,%20Google%20Ads%20hesabımla%20ilgili%20danışmak%20istiyorum.'}`}
+                target="_blank"
+                rel="noopener noreferrer"
+                onClick={() => trackWhatsAppClick({ location: 'homepage_faq' })}
+                className="inline-flex items-center gap-2 bg-[#25D366] hover:bg-[#128C7E] text-white font-bold text-xs px-5 py-3 rounded-xl shadow-sm transition-all"
+              >
+                <MessageCircle className="w-4 h-4" />
+                <span>WhatsApp</span>
+              </a>
+            </div>
           </div>
         </div>
       </section>
