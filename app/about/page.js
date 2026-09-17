@@ -5,6 +5,7 @@ import { Card, CardContent } from '@/components/ui/card'
 import { ArrowLeft, Award, BarChart3, Globe, Users, Target, TrendingUp, CheckCircle, MessageCircle } from 'lucide-react'
 import { useRouter } from 'next/navigation'
 import { useState, useEffect } from 'react'
+import { trackWhatsAppClick } from '@/lib/analytics'
 
 const translations = {
   de: {
@@ -293,7 +294,7 @@ export default function AboutPage() {
               {t.cta.btn1}
             </Button>
             <Button size="lg" className="bg-[#25D366] hover:bg-[#1da851] text-white" asChild>
-              <a href={whatsappUrl} target="_blank" rel="noopener noreferrer">
+              <a href={whatsappUrl} target="_blank" rel="noopener noreferrer" onClick={() => trackWhatsAppClick({ location: 'about' })}>
                 <MessageCircle className="mr-2 h-5 w-5" />
                 {t.cta.btn2}
               </a>

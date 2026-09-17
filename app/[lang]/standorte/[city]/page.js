@@ -1,6 +1,7 @@
 'use client'
 
 import { trackLead, trackWhatsAppClick, trackPhoneClick } from '@/lib/analytics'
+import GoogleAdsBudgetCalculator from '@/components/GoogleAdsBudgetCalculator'
 
 import React, { use, useState } from 'react'
 import Link from 'next/link'
@@ -165,27 +166,27 @@ const cityDetails = {
   },
   hamburg: {
     name: 'Hamburg',
-    region: 'Hamburg',
-    tagline: 'Umsatzstarke Google Ads & E-Commerce Betreuung für Hamburg und Norddeutschland',
-    description: 'Generieren Sie messbar mehr Kunden und Shop-Bestellungen in Hamburg mit zertifiziertem Google Ads und Meta Ads Management.',
+    region: 'Hamburg / Norddeutschland',
+    tagline: 'Google Ads & E-Commerce Agentur Hamburg — Performance Marketing für Norddeutschland',
+    description: 'Zertifizierte Google Ads Betreuung, Google Shopping PMax & Meta Ads zum transparenten Fixpreis für Hamburg, Altona, HafenCity und ganz Norddeutschland.',
     stats: { clients: '75+', roas: '4.4x', experience: '17+ Jahre' },
-    industries: ['Handel & E-Commerce', 'Logistik & B2B', 'Agenturen & Kanzleien', 'Gastronomie & Praxen'],
+    industries: ['Handel & E-Commerce', 'Logistik & Transport', 'Kanzleien & Beratung', 'Medizin & Kliniken'],
     de: {
-      heroTitle: 'Google Ads Agentur Hamburg',
-      heroSub: 'Zertifizierter Google Partner für Hamburg & Norddeutschland',
-      intro: 'Hamburgs Handelsmetropole verlangt erstklassige Online-Präsenz. Als zertifizierter Google Partner mit 17+ Jahren Erfahrung steuern wir Ihre Google Ads und SEO-Kampagnen für maximale Profitabilität.',
-      cta: 'Jetzt unverbindliches Angebot anfordern',
+      heroTitle: 'Google Ads & E-Commerce Agentur Hamburg',
+      heroSub: 'Zertifizierter Google Partner für Hamburg, HafenCity & Norddeutschland',
+      intro: 'Hamburgs dynamische Handels- und Logistikmetropole verlangt kompromisslose Performance. Als zertifizierter Google Partner mit 17+ Jahren Senior-Erfahrung steuern wir Ihre Google Search, Google Shopping (PMax) und Social Ads für maximale Kaufabschlüsse und B2B-Leads. Wir setzen auf transparente monatliche Fixpreise ohne prozentuale Budgetaufschläge, modernes Server-Side CAPI Tracking und kontinuierliche ROAS-Optimierung für Hamburger Unternehmen.',
+      cta: 'Jetzt unverbindliches Angebot für Hamburg anfordern',
     },
     tr: {
-      heroTitle: 'Hamburg Google Ads & Dijital Pazarlama Ajansı',
-      heroSub: 'Hamburg ve Kuzey Almanya İçin Resmi Google Partneri',
-      intro: 'Hamburg ve çevresindeki işletmeler için Google Ads, Meta Ads ve SEO danışmanlığı ile satışlarınızı ve organik görünürlüğünüzü katlıyoruz.',
+      heroTitle: 'Hamburg Google Ads & E-Ticaret Reklam Ajansı',
+      heroSub: 'Hamburg, HafenCity ve Kuzey Almanya Resmi Google Partneri',
+      intro: 'Hamburg ve çevresindeki e-ticaret markaları, lojistik ve yerel işletmeler için Google Arama, Alışveriş ve Meta reklamlarını sabit fiyatlı (Fixpreis) şeffaf modelle yönetiyoruz. 17+ yıllık uzmanlıkla bütçenizi israf etmeden yüksek kârlılıkla cironuzu katlıyoruz.',
       cta: 'Hamburg İçin Ücretsiz Teklif Alın',
     },
     en: {
-      heroTitle: 'Google Ads Agency Hamburg',
+      heroTitle: 'Google Ads & E-Commerce Agency Hamburg',
       heroSub: 'Certified Google Partner for Hamburg & Northern Germany',
-      intro: 'Scale your business in Hamburg with high-converting Google Ads and Meta Ads management from a certified 17+ year senior expert.',
+      intro: 'Dominate search results and scale profitable Google Shopping and Meta Ads in Hamburg. Official Google Partner with 17+ years of track record delivering high ROAS and predictable customer acquisition with zero percentage-of-ad-spend conflicts.',
       cta: 'Request Free Hamburg Proposal',
     }
   },
@@ -242,28 +243,28 @@ const cityDetails = {
     }
   },
   leipzig: {
-    name: 'Leipzig & Dresden',
+    name: 'Leipzig & Mitteldeutschland',
     region: 'Sachsen / Mitteldeutschland',
-    tagline: 'Google Ads & SEO für den dynamischen Wachstumsstandort Leipzig',
+    tagline: 'Google Ads & Performance Marketing für Leipzig, Dresden & Mitteldeutschland',
     description: 'Skalieren Sie Ihr Unternehmen in Leipzig, Dresden und ganz Mitteldeutschland mit datengetriebenen Google Ads und Performance-Kampagnen.',
     stats: { clients: '50+', roas: '4.2x', experience: '17+ Jahre' },
     industries: ['E-Commerce & Logistik', 'Start-ups & Tech', 'Immobilien & B2B', 'Praxen & Kanzleien'],
     de: {
       heroTitle: 'Google Ads Agentur Leipzig & Sachsen',
-      heroSub: 'Zertifizierter Google Partner für Leipzig & Dresden',
-      intro: 'Leipzig wächst rasant. Mit zielgerichteten Google Ads und SEO-Strategien sichern wir Ihrer Marke den entscheidenden Vorsprung im mitteldeutschen Wirtschaftsraum.',
-      cta: 'Jetzt unverbindliches Angebot anfordern',
+      heroSub: 'Zertifizierter Google Partner für Leipzig, Halle & Dresden',
+      intro: 'Leipzig wächst als mitteldeutsches Wirtschafts- und Logistikzentrum rasant. Als offizieller Google Partner mit 17+ Jahren Praxiserfahrung unterstützen wir Start-ups, E-Commerce-Brands und mittelständische Unternehmen mit datenbasiertem Performance Marketing. Mit planbaren monatlichen Fixpreisen, exakter Conversion-Messung und strategischer Suchmaschinenoptimierung sichern wir Ihnen Top-Rankings und planbare Neukundengewinnung.',
+      cta: 'Jetzt unverbindliches Angebot für Leipzig anfordern',
     },
     tr: {
-      heroTitle: 'Leipzig & Saksonya Google Ads Ajansı',
-      heroSub: 'Leipzig ve Dresden İçin Resmi Google Partneri',
-      intro: 'Leipzig ve Saksonya bölgesindeki işletmeler için Google Ads ve Meta Ads yönetimi ile müşteri trafiğinizi katlıyoruz.',
+      heroTitle: 'Leipzig & Saksonya Google Ads Reklam Ajansı',
+      heroSub: 'Leipzig, Halle ve Dresden İçin Resmi Google Partneri',
+      intro: 'Leipzig ve Mitteldeutschland bölgesindeki e-ticaret, teknoloji ve yerel hizmet firmaları için sabit fiyatlı Google Ads ve Meta reklam yönetimi ile kârlı büyüme sağlıyoruz.',
       cta: 'Leipzig İçin Ücretsiz Teklif Alın',
     },
     en: {
-      heroTitle: 'Google Ads Agency Leipzig & Saxony',
-      heroSub: 'Certified Google Partner for Leipzig & Dresden',
-      intro: 'Accelerate your growth in Leipzig and Central Germany with precision Google Ads and SEO campaigns.',
+      heroTitle: 'Google Ads Agency Leipzig & Central Germany',
+      heroSub: 'Certified Google Partner for Leipzig, Halle & Dresden',
+      intro: 'Accelerate your growth in Leipzig and Central Germany with precision Google Ads and SEO campaigns. 17+ years experience delivering scalable ROAS with transparent flat-fee retainers.',
       cta: 'Request Free Leipzig Proposal',
     }
   },
@@ -594,6 +595,38 @@ export default function CityPage({ params }) {
         {
           '@type': 'Question',
           name: currentLang === 'tr'
+            ? 'Bir Google Ads ajansı ile çalışmak için hangi bütçeden başlamak mantıklıdır?'
+            : currentLang === 'en'
+            ? 'From what budget does a Google Ads agency make sense?'
+            : 'Ab welchem Budget lohnt sich eine professionelle Google Ads & AdWords Agentur?',
+          acceptedAnswer: {
+            '@type': 'Answer',
+            text: currentLang === 'tr'
+              ? 'Aylık 1.000 € ile 1.500 € reklam bütçesinden itibaren profesyonel ajans yönetimi kendini hızlıca amorti eder. Sabit fiyatlı modelimizle harcanan her euronun kâra dönüşmesini sağlıyoruz.'
+              : currentLang === 'en'
+              ? 'Starting from a monthly ad spend of 1,000 € to 1,500 €, hiring a certified Google Ads agency yields a strong positive ROI with our transparent flat-fee model.'
+              : 'Bereits ab einem monatlichen Werbebudget von 1.000 € bis 1.500 € rechnet sich eine professionelle Google Ads Agentur für KMUs und Dienstleister. Durch unser transparentes Fixpreis-Modell fließt Ihr Budget zu 100% in kaufbereite Kundenkontakte statt teure Agenturprovisionen.'
+          }
+        },
+        {
+          '@type': 'Question',
+          name: currentLang === 'tr'
+            ? 'Bir işletme ne zaman Google Ads ajansı tutmalıdır?'
+            : currentLang === 'en'
+            ? 'When should a business hire a Google Ads agency?'
+            : 'Ab wann sollte ein Unternehmen eine Google Ads & AdWords Agentur beauftragen?',
+          acceptedAnswer: {
+            '@type': 'Answer',
+            text: currentLang === 'tr'
+              ? 'Mevcut reklam maliyetleriniz (CPA) yükseldiğinde, şirket içi zaman yetersiz kaldığında veya profesyonel Server-Side dönüşüm takibi ile ölçeklenmek istediğinizde ajans desteği şarttır.'
+              : currentLang === 'en'
+              ? 'You should hire an agency when internal time is constrained, CPA is too high, or you require expert Smart Bidding and Server-Side tracking to scale.'
+              : 'Unternehmen sollten eine Agentur beauftragen, sobald interne Ressourcen an Grenzen stoßen, Klickpreise ohne ausreichende Leads steigen oder Conversion-Tracking (Consent Mode v2 & Server-Side CAPI) professionell eingerichtet werden muss, um Streuverluste zu stoppen.'
+          }
+        },
+        {
+          '@type': 'Question',
+          name: currentLang === 'tr'
             ? `${cityData.name} pazarında Google Ads sonuçlarını ne zaman görürüm?`
             : currentLang === 'en'
             ? `How quickly can I see results in ${cityData.name}?`
@@ -814,6 +847,13 @@ export default function CityPage({ params }) {
         </div>
       </section>
 
+      {/* Interactive Budget & Cost Calculator Section */}
+      <section className="py-14 bg-slate-900/60 border-b border-slate-800">
+        <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+          <GoogleAdsBudgetCalculator lang={currentLang} defaultCity={cityData.name} />
+        </div>
+      </section>
+
       {/* Local FAQ Section with Direct SERP Answers */}
       <section className="py-16 bg-slate-950 border-b border-slate-800">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -848,6 +888,40 @@ export default function CityPage({ params }) {
                 <a href="/blog/google-ads-agentur-preise-kosten-deutschland-2026" className="text-blue-400 underline hover:text-blue-300">
                   {currentLang === 'tr' ? 'Almanya Google Ads Fiyat Rehberi 2026' : currentLang === 'en' ? 'Germany Pricing Guide 2026' : 'Google Ads Agentur Kosten & Preise Leitfaden 2026'}
                 </a>.
+              </p>
+            </div>
+
+            <div className="p-6 rounded-2xl bg-slate-900 border border-slate-800">
+              <h3 className="font-bold text-lg text-white mb-2">
+                {currentLang === 'tr'
+                  ? 'Bir Google Ads ajansı ile çalışmak için hangi bütçeden başlamak mantıklıdır?'
+                  : currentLang === 'en'
+                  ? 'From what budget does a Google Ads agency make sense?'
+                  : 'Ab welchem Budget lohnt sich eine Google Ads & AdWords Agentur?'}
+              </h3>
+              <p className="text-sm text-slate-300 leading-relaxed">
+                {currentLang === 'tr'
+                  ? 'Aylık 1.000 € ile 1.500 € reklam bütçesinden itibaren profesyonel ajans yönetimi kendini hızlıca amorti eder. Sabit fiyatlı modelimizle harcanan her euronun doğrudan ciroya dönüşmesini sağlıyoruz.'
+                  : currentLang === 'en'
+                  ? 'Starting from a monthly budget of 1,000 € to 1,500 €, hiring an agency generates positive ROI. Our flat fee ensures 100% of your ad spend directly targets buying customers.'
+                  : 'Bereits ab einem monatlichen Werbebudget von 1.000 € bis 1.500 € rechnet sich eine professionelle Google Ads Agentur für die meisten Unternehmen und Kanzleien. Durch unser transparentes Fixpreis-Modell fließt Ihr Werbeetat zu 100% in Kundenklicks statt prozentuale Agenturprovisionen.'}
+              </p>
+            </div>
+
+            <div className="p-6 rounded-2xl bg-slate-900 border border-slate-800">
+              <h3 className="font-bold text-lg text-white mb-2">
+                {currentLang === 'tr'
+                  ? 'Bir işletme ne zaman Google Ads ajansı tutmalıdır?'
+                  : currentLang === 'en'
+                  ? 'When should a business hire a Google Ads agency?'
+                  : 'Ab wann sollte ein Unternehmen eine Google Ads & AdWords Agentur beauftragen?'}
+              </h3>
+              <p className="text-sm text-slate-300 leading-relaxed">
+                {currentLang === 'tr'
+                  ? 'Mevcut reklam maliyetleriniz (CPA) yükseldiğinde, şirket içi zaman yetersiz kaldığında veya profesyonel Server-Side dönüşüm takibi ile ölçeklenmek istediğinizde ajans desteği şarttır.'
+                  : currentLang === 'en'
+                  ? 'Hire an agency when internal time is constrained, CPA is too high, or you require expert Smart Bidding and Server-Side tracking to scale.'
+                  : 'Unternehmen sollten eine Agentur beauftragen, sobald interne Ressourcen an Grenzen stoßen, Klickpreise ohne ausreichende Leads steigen oder Conversion-Tracking (Consent Mode v2 & Server-Side CAPI) professionell eingerichtet werden muss, um Streuverluste zu stoppen.'}
               </p>
             </div>
 

@@ -5,6 +5,7 @@ import { Button } from '@/components/ui/button'
 import { Card, CardContent } from '@/components/ui/card'
 import { CheckCircle, ArrowLeft, ArrowUpRight, TrendingUp, Search, Image, ShoppingCart, Play, Zap, MapPin, Users, Heart, Video, MessageSquare, Share2, Target, BarChart3, Globe, Link, FileText, Shield, ShieldCheck, Cpu, Database, Lock, Code, Activity, Star, ThumbsDown, AlertTriangle, Eye, Award, Flame } from 'lucide-react'
 import ServiceDetailModules from '@/components/ServiceDetailModules'
+import { trackWhatsAppClick } from '@/lib/analytics'
 
 // Translations for navbar
 const navTranslations = {
@@ -1137,6 +1138,7 @@ export default function ServiceDetailClient({ initialService, initialLang }) {
                 href={`https://wa.me/491724106463?text=${lang === 'de' ? 'Hallo,%20ich%20möchte%20Informationen%20über%20Ihre%20Dienstleistungen.' : lang === 'en' ? 'Hello,%20I%20would%20like%20information%20about%20your%20services.' : 'Merhaba,%20hizmetleriniz%20hakkında%20bilgi%20almak%20istiyorum.'}`}
                 target="_blank"
                 rel="noopener noreferrer"
+                onClick={() => trackWhatsAppClick({ location: 'service_detail' })}
                 className="bg-emerald-50 text-emerald-800 border border-emerald-200/90 hover:bg-emerald-100/90 font-bold text-base px-7 py-4 rounded-2xl shadow-sm hover:shadow transition-all duration-300 flex items-center gap-2.5 cursor-pointer"
               >
                 <svg className="h-5 w-5 text-[#25D366]" fill="currentColor" viewBox="0 0 24 24">
@@ -2754,6 +2756,7 @@ export default function ServiceDetailClient({ initialService, initialLang }) {
                 href={`https://wa.me/491724106463?text=${lang === 'de' ? 'Hallo,%20ich%20interessiere%20mich%20für%20' + encodeURIComponent(data.title) + '%20Dienstleistungen.' : lang === 'en' ? 'Hello,%20I%20am%20interested%20in%20' + encodeURIComponent(data.title) + '%20services.' : 'Merhaba,%20' + encodeURIComponent(data.title) + '%20hizmeti%20hakkında%20bilgi%20almak%20istiyorum.'}`}
                 target="_blank"
                 rel="noopener noreferrer"
+                onClick={() => trackWhatsAppClick({ location: 'service_detail_bottom' })}
                 className="bg-emerald-500 hover:bg-emerald-600 text-white font-bold text-base px-8 py-4 rounded-2xl shadow-lg transition-all duration-300 hover:scale-105 flex items-center gap-2.5 cursor-pointer"
               >
                 <svg className="h-5 w-5 fill-current" viewBox="0 0 24 24">
