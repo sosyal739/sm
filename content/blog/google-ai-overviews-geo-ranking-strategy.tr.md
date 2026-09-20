@@ -1,7 +1,7 @@
-﻿---
+---
 slug: "google-ai-overviews-geo-ranking-strategy"
 lang: "tr"
-title: "Google AI Overviews'ta 1. Sırada Görünme Stratejisi (GEO Kılavuzu)"
+title: "Google AI Overviews: GEO Sıralama Stratejisi 2026"
 excerpt: "Google AI Overviews, Perplexity ve ChatGPT arama motorlarında markanızı öne çıkarmak için Princeton GEO (Generative Engine Optimization) tekniklerini uygulayın."
 category: "SEO"
 date: "2026-07-26"
