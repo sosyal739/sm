@@ -23,8 +23,16 @@ export async function generateMetadata({ params }) {
     }
 
     const cleanTitle = post.title.replace(/\s*\|\s*Salih Maral.*$/i, '').trim()
-    const fullTitle = `${cleanTitle} | Salih Maral`
-    const description = post.excerpt || `${cleanTitle} - Salih Maral Digital Marketing Blog`
+    const fullTitle = cleanTitle.length + 14 <= 60
+      ? `${cleanTitle} | Salih Maral`
+      : cleanTitle.length <= 60
+      ? cleanTitle
+      : cleanTitle.slice(0, 57).replace(/\s+\S*$/, '') + '...'
+
+    let description = post.excerpt || `${cleanTitle} - Salih Maral Digital Marketing Blog`
+    if (description.length > 158) {
+      description = description.slice(0, 155).replace(/\s+\S*$/, '') + '...'
+    }
     const canonicalUrl = `https://salihmaral.de/blog/${slug}`
 
     return {
