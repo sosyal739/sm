@@ -1,8 +1,8 @@
-﻿---
+---
 slug: "olumsuz-yorum-yonetimi"
 lang: "en"
-title: "How to Remove Negative Google & Trustpilot Reviews (Definitive Guide)"
-excerpt: "Are unfair reviews on Google Maps and Trustpilot hurting your business? Everything about the removal process."
+title: "How to Remove Negative Google & Trustpilot Reviews"
+excerpt: "Learn how to remove fake, defamatory, and unfair 1-star reviews from Google Maps and Trustpilot legally to protect your business reputation in 2026."
 category: "Reputation"
 date: "2026-01-28"
 readTime: "6"

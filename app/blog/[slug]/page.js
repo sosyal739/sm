@@ -30,6 +30,14 @@ export async function generateMetadata({ params }) {
       : cleanTitle.slice(0, 57).replace(/\s+\S*$/, '') + '...'
 
     let description = post.excerpt || `${cleanTitle} - Salih Maral Digital Marketing Blog`
+    if (description.length < 120) {
+      const suffix = post.lang === 'tr' 
+        ? ' Detaylı rehber ve stratejik analiz Salih Maral ile.'
+        : post.lang === 'en'
+        ? ' In-depth guide and strategic insights by Salih Maral.'
+        : ' Umfassender Leitfaden und strategische Best Practices von Salih Maral.'
+      description = (description + suffix).trim()
+    }
     if (description.length > 158) {
       description = description.slice(0, 155).replace(/\s+\S*$/, '') + '...'
     }

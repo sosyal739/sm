@@ -1,7 +1,7 @@
-﻿---
+---
 slug: "google-ads-pmax-optimization"
 lang: "en"
-title: "How to Optimize Google Ads Performance Max (PMax) Campaigns in 2026"
+title: "Google Ads Performance Max (PMax) Optimization 2026"
 excerpt: "Learn how to stop wasting budget in your PMax campaigns. Structure asset groups and audience signals with the most effective Google Ads tactics of 2026."
 category: "Google Ads"
 date: "2026-03-15"

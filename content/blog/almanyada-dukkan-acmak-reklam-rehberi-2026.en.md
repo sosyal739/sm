@@ -78,4 +78,13 @@ coverImage: "https://images.unsplash.com/photo-1555396273-367ea4eb4db5?w=600&h=3
 
 <p>Protect startup capital from agency commissions. With Salih Maral's <strong>transparent monthly flat-fee model (Fixpreis from €590/month)</strong>, every euro works toward real revenue.</p>
 
-<p>Estimate your growth with our <a href="/en/standorte/frankfurt">Google Ads Budget Calculator</a> or read our guide on <a href="/blog/almanyada-google-haritalarda-ilk-siraya-cikma-rehberi-2026">Google Maps Top Ranking</a>.</p>
+<div class="cta-box" style="background: linear-gradient(135deg, rgba(66, 133, 244, 0.08) 0%, rgba(52, 168, 83, 0.08) 100%); border: 1px solid rgba(66, 133, 244, 0.25); padding: 1.5rem; border-radius: 1rem; margin-top: 1.5rem; margin-bottom: 2rem;">
+  <h3 style="margin-top: 0; color: #1e293b;">Our Solutions for Your Business Launch in Germany:</h3>
+  <ul>
+    <li><strong><a href="/en/services/google-ads">Google Ads Management:</a></strong> Geo-targeted Search and Maps ads designed to drive customer phone calls and visits from day one.</li>
+    <li><strong><a href="/en/services/seo">Local SEO &amp; Maps Optimization:</a></strong> Sustainable top rankings in the Google Local 3-Pack for your target area.</li>
+    <li><strong><a href="/en/services/review-management">Review &amp; Reputation Management:</a></strong> Compliant removal of unfair 1-star reviews and systematic 5-star customer review collection.</li>
+    <li><strong><a href="/en/services/server-side-tracking">Tracking &amp; Ad Setup:</a></strong> Turnkey setup for Google Ads, GA4 E-Commerce, and Meta Conversions API (CAPI).</li>
+  </ul>
+  <p style="margin-bottom: 0;">Explore answers to common questions in our <a href="/en#faq"><strong>Germany Business FAQ Section</strong></a> or book a complimentary 30-minute growth session directly with Salih Maral.</p>
+</div>

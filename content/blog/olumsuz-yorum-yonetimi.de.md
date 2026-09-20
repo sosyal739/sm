@@ -1,8 +1,8 @@
-﻿---
+---
 slug: "olumsuz-yorum-yonetimi"
 lang: "de"
-title: "Negative Google & Trustpilot Bewertungen löschen lassen"
-excerpt: "Wie löscht man eine Google-Bewertung? Alles über den Löschprozess."
+title: "Negative Google & Trustpilot Bewertungen löschen 2026"
+excerpt: "Google Maps und Trustpilot: So lassen Sie unberechtigte, gefälschte und geschäftsschädigende 1-Stern-Bewertungen 2026 rechtssicher und schnell löschen."
 category: "Reputation"
 date: "2026-01-28"
 readTime: "6"

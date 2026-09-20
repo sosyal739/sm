@@ -78,4 +78,13 @@ coverImage: "https://images.unsplash.com/photo-1555396273-367ea4eb4db5?w=600&h=3
 
 <p>Yeni açtığınız dükkan için bütçenizi ajans komisyonlarına kaptırmayın. <strong>Salih Maral sabit fiyatlı (Fixpreis)</strong> yönetim modeliyle dükkanınızı Almanya genelinde ilk haftadan itibaren müşterilerle doldurun.</p>
 
-<p>Bütçenizi planlamak için <a href="/tr/standorte/frankfurt">Google Ads Bütçe Hesaplayıcımızı</a> kullanabilir veya <a href="/blog/almanyada-google-haritalarda-ilk-siraya-cikma-rehberi-2026">Google Haritalarda Zirveye Çıkma Rehberimizi</a> inceleyebilirsiniz.</p>
+<div class="cta-box" style="background: linear-gradient(135deg, rgba(66, 133, 244, 0.08) 0%, rgba(52, 168, 83, 0.08) 100%); border: 1px solid rgba(66, 133, 244, 0.25); padding: 1.5rem; border-radius: 1rem; margin-top: 1.5rem; margin-bottom: 2rem;">
+  <h3 style="margin-top: 0; color: #1e293b;">Dükkanınızı İlk 30 Günde Kâra Geçirecek Hizmetlerimiz:</h3>
+  <ul>
+    <li><strong><a href="/tr/hizmetler/google-ads">Almanya Google Ads Yönetimi:</a></strong> Yarıçap hedefli yerel arama ve harita reklamları ile doğrudan telefon ve sipariş akışı.</li>
+    <li><strong><a href="/tr/hizmetler/seo">Yerel SEO &amp; Harita Optimizasyonu:</a></strong> Google Maps 3-Pack paketinde kalıcı ilk sıra sıralaması.</li>
+    <li><strong><a href="/tr/hizmetler/yorum-yonetimi">Google Yorum &amp; İtibar Yönetimi:</a></strong> Dükkanınız için sahte/haksız 1 yıldızlı yorumları temizleme ve 5 yıldızlı müşteri yorumu toplama altyapısı.</li>
+    <li><strong><a href="/tr/hizmetler/server-side-tracking">Ölçüm &amp; Kurulum Altyapısı:</a></strong> Google Ads, GA4 ve Meta CAPI sistemlerinin eksiksiz anahtar teslim kurulumu.</li>
+  </ul>
+  <p style="margin-bottom: 0;">Şehrinizdeki rekabet durumunu öğrenmek ve aylık bütçenizi hesaplamak için <a href="/tr#faq"><strong>Almanya İşletme SSS Rehberimizi</strong></a> inceleyebilir veya doğrudan Salih Maral ile 30 dakikalık ücretsiz büyüme analizi planlayabilirsiniz.</p>
+</div>

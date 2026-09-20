@@ -41,7 +41,7 @@ const cityData = {
     lat: 50.9375,
     lng: 6.9603,
     de: {
-      title: 'Google Ads (AdWords) & Meta Ads Agentur Köln | Salih Maral',
+      title: 'Google Ads & Meta Ads Agentur Köln | Salih Maral',
       description: 'Google Ads & AdWords Agentur Köln sowie Meta Ads (Facebook & Instagram): Zertifizierte Betreuung zum fairen Fixpreis für Köln, Bonn & Rheinland.',
     },
     en: {
@@ -77,7 +77,7 @@ const cityData = {
     lat: 48.7758,
     lng: 9.1829,
     de: {
-      title: 'Google Ads (AdWords) & B2B Agentur Stuttgart | Salih Maral',
+      title: 'Google Ads & B2B Agentur Stuttgart | Salih Maral',
       description: 'Google Ads & AdWords Agentur Stuttgart: B2B Marketing, Lead-Generierung & zertifizierte Betreuung für den Stuttgarter Mittelstand & Maschinenbau zum Fixpreis.',
     },
     en: {

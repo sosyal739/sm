@@ -561,10 +561,19 @@ export default function CityPage({ params }) {
         name: 'Salih Maral',
         jobTitle: 'Official Google Partner & Senior Digital Marketing Expert'
       },
-      areaServed: {
-        '@type': 'City',
-        name: cityData.name
-      },
+      areaServed: city === 'dortmund'
+        ? [
+            { '@type': 'City', name: 'Dortmund' },
+            { '@type': 'City', name: 'Essen' },
+            { '@type': 'City', name: 'Bochum' },
+            { '@type': 'City', name: 'Marl' },
+            { '@type': 'AdministrativeArea', name: 'Kreis Recklinghausen' },
+            { '@type': 'AdministrativeArea', name: 'Ruhrgebiet' }
+          ]
+        : {
+            '@type': 'City',
+            name: cityData.name
+          },
       aggregateRating: {
         '@type': 'AggregateRating',
         ratingValue: '5.0',

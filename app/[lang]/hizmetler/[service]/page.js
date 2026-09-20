@@ -4,15 +4,15 @@ import { notFound } from 'next/navigation'
 const serviceMeta = {
   'google-ads': {
     de: {
-      title: 'Google Ads Betreuung & Management zum Fixpreis | Salih Maral',
+      title: 'Google Ads Betreuung zum Fixpreis | Salih Maral',
       description: 'Zertifizierte Google Ads Betreuung zum fairen Fixpreis: 17+ Jahre Senior-Expertise, Performance Max & Search für maximalen ROAS ohne Streuverlust.',
     },
     en: {
-      title: 'Google Ads Agency Germany | Flat Fee PPC Management | Salih Maral',
+      title: 'Google Ads Agency Germany | Flat Fee PPC | Salih Maral',
       description: 'Scale in Germany with certified flat-fee Google Ads management. Search, Performance Max & Shopping campaigns optimized for maximum ROAS by a 17+ yr partner.',
     },
     tr: {
-      title: 'Almanya Google Ads Ajansı & Sabit Fiyatlı Danışmanlık | Salih Maral',
+      title: 'Almanya Google Ads Ajansı & Danışmanlığı | Salih Maral',
       description: 'Almanya ve Avrupa pazarı için Resmi Google Partneri ile sabit fiyatlı Google Ads yönetimi: Arama, PMax ve Alışveriş reklamları ile yüksek kârlılık ve satış.',
     },
   },
@@ -46,15 +46,15 @@ const serviceMeta = {
   },
   'server-side-tracking': {
     de: {
-      title: 'Werbekonto- & Tracking-Setup (Google Ads, GA4, CAPI) | Salih Maral',
+      title: 'Tracking Setup & CAPI (Google Ads, GA4) | Salih Maral',
       description: 'Lückenloses Werbe- und Tracking-Setup: Google Ads, GA4 E-Commerce, Search Console, Merchant Center, Meta Pixel, Conversions API (CAPI) & Server-Side GTM.',
     },
     en: {
-      title: 'Ad Account & Tracking Setup (Google Ads, GA4, CAPI) | Salih Maral',
+      title: 'Ad & Tracking Setup (Google Ads, GA4, CAPI) | Salih Maral',
       description: 'Full-funnel ad and tracking setup: Google Ads, GA4 E-Commerce, Search Console, Merchant Center, Meta Pixel, Conversions API (CAPI), and Server-Side GTM.',
     },
     tr: {
-      title: 'Reklam & Tracking Kurulum Hizmetleri (Google Ads, GA4, CAPI) | Salih Maral',
+      title: 'Tracking & Reklam Kurulumu (GA4, CAPI) | Salih Maral',
       description: 'Anahtar teslim reklam ve ölçüm altyapı kurulumu: Google Ads, GA4 E-Ticaret, Search Console, Merchant Center, Meta Pixel, CAPI ve Server-Side GTM.',
     },
   },
@@ -110,7 +110,7 @@ const serviceMeta = {
       description: 'Scale donations for water wells, orphan sponsorships, and Ramadan appeals. Up to $10,000/month in free Google Ad Grants.',
     },
     tr: {
-      title: 'İnsani Yardım Dernekleri İçin Dijital Pazarlama | Salih Maral',
+      title: 'STK & Dernekler İçin Dijital Pazarlama | Salih Maral',
       description: 'Su kuyusu, yetim ve Ramazan/Kurban bağış hunileri. $10.000/aylık ücretsiz Google Ad Grants hibe reklam yönetimi.',
     },
   },

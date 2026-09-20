@@ -1,8 +1,8 @@
-﻿---
+---
 slug: "google-ads-pmax-optimization"
 lang: "tr"
-title: "Google Ads Performance Max (PMax) Kampanyaları Nasıl Optimize Edilir?"
-excerpt: "Bütçenizdeki israfı nasıl durduracağınızı öğrenin. Dönüşüm oranlarını %40 artırın."
+title: "Google Ads Performance Max (PMax) Optimizasyonu 2026"
+excerpt: "Google Ads Performance Max (PMax) kampanyalarında bütçe israfını durdurun, negatif kelimeleri yönetin ve dönüşüm oranlarınızı %40 artırın."
 category: "Google Ads"
 date: "2026-03-15"
 readTime: "6"
