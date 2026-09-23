@@ -1245,6 +1245,26 @@ export default function Home({ initialLang = 'de' }) {
                 </a>
               </div>
 
+              {/* Multilingual Cultural Bridge Badge */}
+              {lang === 'de' && (
+                <div className="inline-flex items-center gap-2 bg-gradient-to-r from-amber-50/90 via-white to-emerald-50/90 border border-emerald-200/80 rounded-xl px-4 py-2 text-xs sm:text-sm text-slate-700 shadow-sm">
+                  <span className="text-base">🇹🇷</span>
+                  <span><strong>Sprechen Sie Türkisch?</strong> Gerne beraten wir Sie auch auf Türkisch — <a href="/tr" className="text-[#4285F4] font-bold underline hover:text-blue-700">Bizimle Türkçe görüşebilirsiniz</a></span>
+                </div>
+              )}
+              {lang === 'en' && (
+                <div className="inline-flex items-center gap-2 bg-gradient-to-r from-blue-50/90 via-white to-indigo-50/90 border border-blue-200/80 rounded-xl px-4 py-2 text-xs sm:text-sm text-slate-700 shadow-sm">
+                  <span className="text-base">🇪🇺</span>
+                  <span><strong>Expanding to Germany?</strong> Official German Google Partner managing localized campaigns in English, German & Turkish.</span>
+                </div>
+              )}
+              {lang === 'tr' && (
+                <div className="inline-flex items-center gap-2 bg-gradient-to-r from-emerald-50/90 via-white to-blue-50/90 border border-emerald-200/80 rounded-xl px-4 py-2 text-xs sm:text-sm text-slate-700 shadow-sm">
+                  <span className="text-base">🇩🇪 🇹🇷</span>
+                  <span><strong>Almanya & Avrupa Pazarı:</strong> Almanya'daki Türk işletmeler ve Türkiye'den Avrupa'ya açılan ihracatçılar için Resmi Google Partner güvencesi.</span>
+                </div>
+              )}
+
               {/* Trust Indicators */}
               <div className="flex items-center space-x-4 pt-4 border-t border-slate-200/70 max-w-md">
                 <div className="flex -space-x-2">
