@@ -94,13 +94,11 @@ coverImage: "https://images.unsplash.com/photo-1589829545856-d10d557cf95f?w=1200
 
 <p>Büronuzun ajanda defterini nitelikli kurumsal müvekkiller ve yüksek bütçeli davalarla doldurun. <strong>Salih Maral resmi Google Partneri güvencesi ve sabit fiyatlı (Fixpreis)</strong> yönetim modeliyle bölgenizin lider avukatlık veya mali müşavirlik bürosu olun.</p>
 
-<div class="cta-box" style="background: linear-gradient(135deg, rgba(66, 133, 244, 0.08) 0%, rgba(52, 168, 83, 0.08) 100%); border: 1px solid rgba(66, 133, 244, 0.25); padding: 1.5rem; border-radius: 1rem; margin-top: 1.5rem; margin-bottom: 2rem;">
-  <h3 style="margin-top: 0; color: #1e293b;">Avukatlar ve Steuerberater İçin Özel Hizmetlerimiz:</h3>
-  <ul>
-    <li><strong><a href="/tr/hizmetler/google-ads">Google Arama Ağı &amp; Telefon Çağrısı Reklamları:</a></strong> İş hukuku, ceza hukuku, vergi ve şirket kuruluşu aramalarında ilk sırada çıkma.</li>
-    <li><strong><a href="/tr/hizmetler/seo">Google Haritalar Yerel SEO &amp; 3-Pack:</a></strong> Şehrinizde "Anwalt in der Nähe" ve "Türkischer Steuerberater" aramalarında zirveye yerleşme.</li>
-    <li><strong><a href="/tr/hizmetler/server-side-tracking">Gizlilik Uyumlu Dönüşüm Ölçümü:</a></strong> Randevu formlarının ve telefon aramalarının GDPR uyumlu hassas takibi.</li>
-    <li><strong><a href="/tr/standorte">Bölgesel Şehir Sayfalarımız:</a></strong> Frankfurt, Köln, Düsseldorf, Stuttgart, Berlin ve Dortmund gibi metropollerde yerel rekabet stratejileri.</li>
-  </ul>
-  <p style="margin-bottom: 0;">Büronuzun bulunduğu bölgedeki arama potansiyelini öğrenmek ve aylık sabit yönetim planını konuşmak için <a href="/tr#contact"><strong>ücretsiz Kanzlei büyüme analizi</strong></a> talep edebilir, Salih Maral ile doğrudan görüşebilirsiniz.</p>
+<div class="cta-box" style="background: linear-gradient(135deg, #0f172a 0%, #1e1b4b 100%); border: 2px solid #4285F4; border-radius: 1.5rem; padding: 2.5rem; margin-top: 3rem; text-align: center; color: white; box-shadow: 0 20px 40px -15px rgba(66, 133, 244, 0.4);">
+  <h3 style="font-size: 1.8rem; font-weight: 900; color: white; margin-bottom: 0.75rem;">Büronuzun Ajandasını Nitelikli Dosyalarla Doldurun</h3>
+  <p style="color: #cbd5e1; font-size: 1.05rem; max-width: 680px; margin: 0 auto 1.75rem auto; line-height: 1.6;">Almanya'da avukatlık veya mali müşavirlik büronuz için gereksiz arayanları eleyin, yüksek vekalet ücretli davaları ve kurumsal şirketleri çekin.</p>
+  <div style="display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap;">
+    <a href="https://wa.me/491724106463?text=Merhaba%20Salih%20Bey,%20Almanya'da%20avukatl%C4%B1k%20/%20mali%20m%C3%BC%C5%9Favirlik%20b%C3%BCromuz%20i%C3%A7in%20Google%20m%C3%BCvekkil%20kazan%C4%B1m%C4%B1%20hakk%C4%B1nda%20bilgi%20almak%20istiyorum." target="_blank" rel="noopener noreferrer" style="display: inline-block; background: #25D366; color: white; font-weight: 800; padding: 1.1rem 2.2rem; border-radius: 1rem; text-decoration: none; font-size: 1.05rem; box-shadow: 0 10px 25px -5px rgba(37, 211, 102, 0.5); transition: all 0.3s ease;">WhatsApp ile Hızlı İletişim ➔</a>
+    <a href="https://salihmaral.de/tr#contact" style="display: inline-block; background: #4285F4; color: white; font-weight: 800; padding: 1.1rem 2.2rem; border-radius: 1rem; text-decoration: none; font-size: 1.05rem; box-shadow: 0 10px 25px -5px rgba(66, 133, 244, 0.6); transition: all 0.3s ease;">Teklif Formunu Doldurun ➔</a>
+  </div>
 </div>

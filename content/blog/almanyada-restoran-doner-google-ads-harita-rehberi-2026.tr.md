@@ -86,13 +86,11 @@ coverImage: "https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?w=1200
 
 <p>Gastronomi sektöründe her kuruş kâr marjı değerlidir. <strong>Salih Maral resmi Google Partneri güvencesi ve sabit fiyatlı (Fixpreis)</strong> yönetim modeliyle restoranınızı Almanya'da kendi bölgesinin 1 numaralı lezzet durağı yapın.</p>
 
-<div class="cta-box" style="background: linear-gradient(135deg, rgba(66, 133, 244, 0.08) 0%, rgba(52, 168, 83, 0.08) 100%); border: 1px solid rgba(66, 133, 244, 0.25); padding: 1.5rem; border-radius: 1rem; margin-top: 1.5rem; margin-bottom: 2rem;">
-  <h3 style="margin-top: 0; color: #1e293b;">Gastronomi İşletmelerine Özel Hizmetlerimiz:</h3>
-  <ul>
-    <li><strong><a href="/tr/hizmetler/google-ads">Google Ads Restoran Yönetimi:</a></strong> Öğle ve akşam saatlerinde çevrenizdeki acıkan insanları doğrudan dükkanınıza çeken yerel aramalar.</li>
-    <li><strong><a href="/tr/hizmetler/seo">Google Haritalar Yerel SEO:</a></strong> "Bester Döner in der Nähe" ve bölgesel gastronomi aramalarında ilk 3 sıra hakimiyeti.</li>
-    <li><strong><a href="/tr/hizmetler/meta-ads">Instagram & Facebook Tanıtımları:</a></strong> İştah kabartan video ve reels reklamlarıyla yerel kitleye ulaşma.</li>
-    <li><strong><a href="/tr/standorte">Almanya Şehir Çözümleri:</a></strong> Frankfurt, Köln, Düsseldorf, Stuttgart ve Berlin'deki rekabet durumuna özel yerel stratejiler.</li>
-  </ul>
-  <p style="margin-bottom: 0;">Restoranınızın paket servis komisyonlarından kurtulması ve masalarını doldurması için <a href="/tr#faq"><strong>Almanya İşletme Rehberimizi</strong></a> inceleyebilir veya Salih Maral ile hemen ücretsiz bir strateji görüşmesi başlatabilirsiniz.</p>
+<div class="cta-box" style="background: linear-gradient(135deg, #0f172a 0%, #1e1b4b 100%); border: 2px solid #4285F4; border-radius: 1.5rem; padding: 2.5rem; margin-top: 3rem; text-align: center; color: white; box-shadow: 0 20px 40px -15px rgba(66, 133, 244, 0.4);">
+  <h3 style="font-size: 1.8rem; font-weight: 900; color: white; margin-bottom: 0.75rem;">Lieferando Komisyonlarına Son Verin, Masaları Doldurun</h3>
+  <p style="color: #cbd5e1; font-size: 1.05rem; max-width: 680px; margin: 0 auto 1.75rem auto; line-height: 1.6;">Almanya'da restoranınız veya döner salonunuz için Google Haritalar'da 1. sıraya çıkın, komisyonsuz doğrudan masa rezervasyonu ve sipariş alın.</p>
+  <div style="display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap;">
+    <a href="https://wa.me/491724106463?text=Merhaba%20Salih%20Bey,%20Almanya'da%20restoran%20/%20d%C3%B6ner%20i%C5%9Fletmecisiyim,%20Google%20Harita%20ve%20yerel%20reklamlar%20i%C3%A7in%20bilgi%20almak%20istiyorum." target="_blank" rel="noopener noreferrer" style="display: inline-block; background: #25D366; color: white; font-weight: 800; padding: 1.1rem 2.2rem; border-radius: 1rem; text-decoration: none; font-size: 1.05rem; box-shadow: 0 10px 25px -5px rgba(37, 211, 102, 0.5); transition: all 0.3s ease;">WhatsApp ile Hızlı İletişim ➔</a>
+    <a href="https://salihmaral.de/tr#contact" style="display: inline-block; background: #4285F4; color: white; font-weight: 800; padding: 1.1rem 2.2rem; border-radius: 1rem; text-decoration: none; font-size: 1.05rem; box-shadow: 0 10px 25px -5px rgba(66, 133, 244, 0.6); transition: all 0.3s ease;">Teklif Formunu Doldurun ➔</a>
+  </div>
 </div>

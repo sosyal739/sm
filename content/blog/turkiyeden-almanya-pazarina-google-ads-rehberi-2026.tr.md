@@ -86,13 +86,11 @@ coverImage: "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?w=1200
 
 <p>Almanya pazarında yerel bir Alman ajansıyla çalıştığınızda yüksek komisyonlar ve kültürel iletişim kopuklukları yaşarsınız. <strong>Salih Maral ile hem Frankfurt merkezli bir Google Partneriyle çalışır hem de tüm stratejinizi Türkçe yürüterek</strong> bütçenizi tam verimle Euro kazancına dönüştürürsünüz.</p>
 
-<div class="cta-box" style="background: linear-gradient(135deg, rgba(66, 133, 244, 0.08) 0%, rgba(52, 168, 83, 0.08) 100%); border: 1px solid rgba(66, 133, 244, 0.25); padding: 1.5rem; border-radius: 1rem; margin-top: 1.5rem; margin-bottom: 2rem;">
-  <h3 style="margin-top: 0; color: #1e293b;">Almanya Pazarına Açılan İhracatçılara Özel Hizmetlerimiz:</h3>
-  <ul>
-    <li><strong><a href="/tr/hizmetler/google-ads">Google Shopping &amp; Search Yönetimi:</a></strong> Almanya genelinde yüksek alım gücüne sahip Alman tüketicilere doğrudan satış getiren kampanyalar.</li>
-    <li><strong><a href="/tr/hizmetler/server-side-tracking">Server-Side Tracking &amp; CAPI Kurulumu:</a></strong> Almanya çerez kanunlarına (Cookie Consent) tam uyumlu, %0 veri kaybıyla çalışan GA4 ve Meta dönüşüm altyapısı.</li>
-    <li><strong><a href="/tr/hizmetler/meta-ads">Meta Ads (Instagram &amp; Facebook) Ölçekleme:</a></strong> Almanya'daki potansiyel müşterilere yönelik yüksek dönüşümlü video ve kreatif reklamları.</li>
-    <li><strong><a href="/tr/standorte">Bölgesel Şehir Dağılımı:</a></strong> B2B sanayi için Stuttgart ve Frankfurt, e-ticaret ve moda için Köln, Berlin ve Düsseldorf odaklı yerel stratejiler.</li>
-  </ul>
-  <p style="margin-bottom: 0;">Ürünlerinizi veya hizmetlerinizi Almanya pazarına başarıyla taşımak için <a href="/tr#contact"><strong>ücretsiz Almanya ihracat analizi</strong></a> talep edebilir, doğrudan Salih Maral ile WhatsApp üzerinden görüşebilirsiniz.</p>
+<div class="cta-box" style="background: linear-gradient(135deg, #0f172a 0%, #1e1b4b 100%); border: 2px solid #4285F4; border-radius: 1.5rem; padding: 2.5rem; margin-top: 3rem; text-align: center; color: white; box-shadow: 0 20px 40px -15px rgba(66, 133, 244, 0.4);">
+  <h3 style="font-size: 1.8rem; font-weight: 900; color: white; margin-bottom: 0.75rem;">Türkiye'den Almanya'ya Euro Gelirinizi Büyütün</h3>
+  <p style="color: #cbd5e1; font-size: 1.05rem; max-width: 680px; margin: 0 auto 1.75rem auto; line-height: 1.6;">Almanya e-ticaret ve B2B ihracat pazarına girerken reklam bütçenizi koruyun, resmi Google Partneri güvencesiyle doğrudan satış yapın.</p>
+  <div style="display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap;">
+    <a href="https://wa.me/491724106463?text=Merhaba%20Salih%20Bey,%20T%C3%BCrkiye'den%20Almanya%20pazar%C4%B1na%20a%C3%A7%C4%B1lmak%20istiyoruz,%20Google%20Ads%20ve%20e-ihracat%20reklam%20y%C3%B6netimi%20hakk%C4%B1nda%20g%C3%B6r%C3%BC%C5%9Fmek%20istiyorum." target="_blank" rel="noopener noreferrer" style="display: inline-block; background: #25D366; color: white; font-weight: 800; padding: 1.1rem 2.2rem; border-radius: 1rem; text-decoration: none; font-size: 1.05rem; box-shadow: 0 10px 25px -5px rgba(37, 211, 102, 0.5); transition: all 0.3s ease;">WhatsApp ile Hızlı İletişim ➔</a>
+    <a href="https://salihmaral.de/tr#contact" style="display: inline-block; background: #4285F4; color: white; font-weight: 800; padding: 1.1rem 2.2rem; border-radius: 1rem; text-decoration: none; font-size: 1.05rem; box-shadow: 0 10px 25px -5px rgba(66, 133, 244, 0.6); transition: all 0.3s ease;">Teklif Formunu Doldurun ➔</a>
+  </div>
 </div>
