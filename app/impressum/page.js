@@ -33,7 +33,7 @@ export default function ImpressumPage() {
           
           <Card>
             <CardContent className="pt-6 prose prose-lg max-w-none">
-              <h2>Angaben gemäß § 5 TMG</h2>
+              <h2>Angaben gemäß § 5 DDG (Digitale-Dienste-Gesetz)</h2>
               <p>
                 <strong>Salih Maral</strong><br />
                 Freiberuflicher Digital Marketing Berater<br />
@@ -42,13 +42,14 @@ export default function ImpressumPage() {
 
               <h2>Anschrift</h2>
               <p>
-                Hegelstr.<br />
+                Hegelstr. 32<br />
                 63303 Dreieich<br />
                 Deutschland
               </p>
 
               <h2>Kontakt</h2>
               <p>
+                Telefon: +49 172 4106463<br />
                 E-Mail: info@salihmaral.de
               </p>
 
@@ -83,8 +84,8 @@ export default function ImpressumPage() {
 
               <h2>Haftung für Inhalte</h2>
               <p>
-                Als Diensteanbieter sind wir gemäß § 7 Abs.1 TMG für eigene Inhalte auf diesen Seiten nach den allgemeinen Gesetzen verantwortlich. 
-                Nach §§ 8 bis 10 TMG sind wir als Diensteanbieter jedoch nicht verpflichtet, übermittelte oder gespeicherte fremde Informationen zu 
+                Als Diensteanbieter sind wir gemäß § 7 Abs. 1 DDG für eigene Inhalte auf diesen Seiten nach den allgemeinen Gesetzen verantwortlich. 
+                Nach §§ 8 bis 10 DDG sind wir als Diensteanbieter jedoch nicht verpflichtet, übermittelte oder gespeicherte fremde Informationen zu 
                 überwachen oder nach Umständen zu forschen, die auf eine rechtswidrige Tätigkeit hinweisen.
               </p>
 
