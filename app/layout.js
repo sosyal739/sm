@@ -130,7 +130,8 @@ const jsonLd = {
         'https://www.linkedin.com/in/salih-maral-78159a22a/',
         'https://x.com/salihmaral',
         'https://www.facebook.com/salihmaral.de',
-        'https://www.instagram.com/salihmaral.de'
+        'https://www.instagram.com/salihmaral.de',
+        'https://github.com/sosyal739'
       ]
     },
     {
@@ -169,7 +170,8 @@ const jsonLd = {
       knowsLanguage: ['de', 'tr', 'en'],
       sameAs: [
         'https://www.linkedin.com/in/salih-maral-78159a22a/',
-        'https://x.com/salihmaral'
+        'https://x.com/salihmaral',
+        'https://github.com/sosyal739'
       ]
     },
     {
