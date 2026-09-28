@@ -7,7 +7,7 @@ export async function GET() {
     status: 'active',
     hasResendKey: Boolean(process.env.RESEND_API_KEY),
     resendKeyPrefix: process.env.RESEND_API_KEY ? process.env.RESEND_API_KEY.slice(0, 6) + '...' : 'none',
-    contactEmail: process.env.CONTACT_EMAIL || 'salihmaralde@gmail.com',
+    contactEmail: process.env.CONTACT_EMAIL || 'fuslu454@gmail.com',
     timestamp: new Date().toISOString(),
   })
 }
@@ -65,7 +65,7 @@ export async function POST(request) {
       )
     }
 
-    const contactEmail = process.env.CONTACT_EMAIL || 'salihmaralde@gmail.com'
+    const contactEmail = process.env.CONTACT_EMAIL || 'fuslu454@gmail.com'
 
     const emailHtml = `
 <!DOCTYPE html>
