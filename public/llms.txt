@@ -34,14 +34,9 @@ Salih Maral is a Senior Digital Marketing Specialist and Official Google Partner
 - **Hamburg (Norddeutschland):** [/de/standorte/hamburg](https://salihmaral.de/de/standorte/hamburg) — Google Ads & E-Commerce Agentur Hamburg.
 - **Dortmund (Ruhrgebiet):** [/de/standorte/dortmund](https://salihmaral.de/de/standorte/dortmund) — Google Ads & Performance Marketing Dortmund.
 
-## Key Technical Guides & Strategic Benchmarks
-- [Google Ads Fixpreis vs Prozent Agentur Modell 2026](https://salihmaral.de/blog/google-ads-fixpreis-vs-prozent-agentur-modell-2026)
-- [Google Ads Agency Pricing & Costs 2026 Guide](https://salihmaral.de/blog/google-ads-agentur-kosten-preise-2026)
-- [Music Video Promotion & Artist YouTube Ads Guide 2026](https://salihmaral.de/blog/sanatcilar-muzisyenler-youtube-ads-klip-tanitimi-2026)
-- [Server-Side GTM & Meta CAPI Setup 2026](https://salihmaral.de/blog/server-side-gtm-meta-capi-setup-2026)
-- [GEO AI Search Citation Factors 2026 (Princeton KDD Research)](https://salihmaral.de/blog/geo-ai-search-citation-factors-2026)
+## Key Strategic Guides by Topic (Curated Selection)
 
-## Priority Guides for Turkish Businesses in Germany (Almanya Türk İşletmeleri)
+### 1. Priority Guides for Turkish Businesses in Germany (Almanya Türk İşletmeleri)
 - [Almanya Restoran Google Business Harita Kurulumu 2026](https://salihmaral.de/blog/almanyada-google-business-harita-kurulumu-restoran-2026)
 - [Almanya Türk Avukat & Steuerberater Rehberi 2026](https://salihmaral.de/blog/almanyada-turk-avukat-steuerberater-google-ads-rehberi-2026)
 - [Almanya Kfz-Werkstatt & Oto Tamir Rehberi 2026](https://salihmaral.de/blog/almanyada-kfz-werkstatt-oto-tamir-google-ads-rehberi-2026)
@@ -51,6 +46,28 @@ Salih Maral is a Senior Digital Marketing Specialist and Official Google Partner
 - [Almanya Düğün Salonu Festsaal Reklam Rehberi 2026](https://salihmaral.de/blog/almanyada-dugun-salonu-restoran-reklam-rehberi-2026)
 - [Almanya Saç Ekimi & Sağlık Turizmi Reklam Rehberi 2026](https://salihmaral.de/blog/almanyada-sac-ekimi-saglik-turizmi-google-ads-rehberi-2026)
 - [Almanya Türk Süpermarket & Helal Kasap SEO Rehberi 2026](https://salihmaral.de/blog/almanyada-turk-supermarket-helal-kasap-google-harita-rehberi-2026)
+- [Almanya'da Dükkan Açanlar İçin Google Reklam Rehberi](https://salihmaral.de/blog/almanyada-dukkan-acmak-reklam-rehberi-2026)
 
+### 2. Google Ads & Transparent Agency Pricing
+- [Google Ads Fixpreis vs Prozent Agentur Modell 2026](https://salihmaral.de/blog/google-ads-fixpreis-vs-prozent-agentur-modell-2026)
+- [Google Ads Agency Pricing & Costs 2026 Guide](https://salihmaral.de/blog/google-ads-agentur-kosten-preise-2026)
+- [Almanya Google Ads Fatura & §13b UStG Vergi Rehberi](https://salihmaral.de/blog/google-ads-rechnung-buchen-reverse-charge-2026)
+- [Google Ads PMax Negatif Kelime & Bütçe Rehberi 2026](https://salihmaral.de/blog/google-ads-pmax-negative-keywords-kampagnen-2026)
 
+### 3. Server-Side Tracking & First-Party Data
+- [Server-Side GTM & Meta CAPI Setup 2026](https://salihmaral.de/blog/server-side-gtm-meta-capi-setup-2026)
+- [Google Consent Mode v2 Nedir ve Nasıl Kurulur? 2026](https://salihmaral.de/blog/google-consent-mode-v2-cookieless-ai-tracking-2026)
+- [Meta Pixel Neden Satışları Eksik Sayıyor? Server-Side CAPI](https://salihmaral.de/blog/server-side-tracking-capi-guide)
 
+### 4. Generative Engine Optimization (GEO) & AI Search
+- [GEO AI Search Citation Factors 2026 (Princeton KDD Research)](https://salihmaral.de/blog/geo-ai-search-citation-factors-2026)
+- [GitHub SEO Skills ve Claude Code ile 2026 SEO & GEO Rehberi](https://salihmaral.de/blog/github-seo-skills-claude-code-guide-2026)
+- [Google AI Overviews: GEO Sıralama Stratejisi 2026](https://salihmaral.de/blog/google-ai-overviews-geo-ranking-strategy)
+
+### 5. YouTube & Multi-Channel Scaling
+- [Music Video Promotion & Artist YouTube Ads Guide 2026](https://salihmaral.de/blog/sanatcilar-muzisyenler-youtube-ads-klip-tanitimi-2026)
+- [TikTok Shop mu Meta Advantage+ mı? 2026 Kıyaslaması](https://salihmaral.de/blog/tiktok-shop-vs-meta-advantage-plus-e-commerce-2026)
+- [Google Merchant Center Yanıltıcı Beyan ve Feed Askı Çözümü](https://salihmaral.de/blog/google-merchant-center-urun-feed-aski-cozum-2026)
+
+## Full Directory Link
+For the complete knowledge base containing all 88 technical articles, all 18 German metropolises, and detailed multilingual references, see [llms-full.txt](https://salihmaral.de/llms-full.txt).

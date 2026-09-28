@@ -128,76 +128,8 @@ export default function BlogDetailClient({ initialPost, initialLang, relatedPost
     )
   }
 
-  const blogPostingSchema = {
-    "@context": "https://schema.org",
-    "@graph": [
-      {
-        "@type": "BlogPosting",
-        "@id": `https://salihmaral.de/blog/${slug}#article`,
-        "url": `https://salihmaral.de/blog/${slug}`,
-        "mainEntityOfPage": {
-          "@type": "WebPage",
-          "@id": `https://salihmaral.de/blog/${slug}`
-        },
-        "headline": post.title,
-        "description": post.excerpt || post.title,
-        "image": post.coverImage || "https://salihmaral.de/logo.png",
-        "author": {
-          "@type": "Person",
-          "@id": "https://salihmaral.de/#person",
-          "name": "Salih Maral",
-          "url": "https://salihmaral.de"
-        },
-        "publisher": {
-          "@type": "Organization",
-          "@id": "https://salihmaral.de/#organization",
-          "name": "Salih Maral Digital Marketing",
-          "logo": {
-            "@type": "ImageObject",
-            "url": "https://salihmaral.de/logo.png"
-          }
-        },
-        "datePublished": post.date,
-        "dateModified": post.date,
-        "inLanguage": lang === 'de' ? 'de-DE' : lang === 'tr' ? 'tr-TR' : 'en-US',
-        "articleSection": post.category || "Digital Marketing",
-        "keywords": post.category ? `${post.category}, Digital Marketing, Salih Maral` : "Digital Marketing, Salih Maral",
-        "isPartOf": { "@id": "https://salihmaral.de/#website" }
-      },
-      {
-        "@type": "BreadcrumbList",
-        "@id": `https://salihmaral.de/blog/${slug}#breadcrumb`,
-        "itemListElement": [
-          {
-            "@type": "ListItem",
-            "position": 1,
-            "name": lang === 'de' ? 'Startseite' : lang === 'tr' ? 'Ana Sayfa' : 'Home',
-            "item": `https://salihmaral.de${lang === 'de' ? '/' : `/${lang}`}`
-          },
-          {
-            "@type": "ListItem",
-            "position": 2,
-            "name": "Blog",
-            "item": "https://salihmaral.de/blog"
-          },
-          {
-            "@type": "ListItem",
-            "position": 3,
-            "name": post.title
-          }
-        ]
-      }
-    ]
-  }
-
   return (
     <div className="min-h-screen bg-gradient-to-b from-gray-50 to-white">
-      {/* SEO JSON-LD */}
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(blogPostingSchema) }}
-      />
-
       {/* Navigation */}
       <nav className="fixed top-0 left-0 right-0 z-50 bg-white/95 backdrop-blur-sm border-b">
         <div className="container mx-auto px-4 py-4">

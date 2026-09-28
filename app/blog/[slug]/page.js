@@ -115,7 +115,84 @@ export default async function BlogDetailPage({ params }) {
   const otherPosts = allPosts.filter(p => p.slug !== slug && p.category !== post.category)
   const relatedPosts = [...sameCategory, ...otherPosts].slice(0, 3)
 
+  const cleanTitle = post.title.replace(/\s*\|\s*Salih Maral.*$/i, '').trim()
+  const canonicalUrl = `https://salihmaral.de/blog/${slug}`
+  const homeUrl = initialLang === 'de' ? 'https://salihmaral.de' : `https://salihmaral.de/${initialLang}`
+  const homeName = initialLang === 'de' ? 'Startseite' : initialLang === 'tr' ? 'Ana Sayfa' : 'Home'
+  const inLang = initialLang === 'de' ? 'de-DE' : initialLang === 'tr' ? 'tr-TR' : 'en-US'
+
+  const blogPostingSchema = {
+    '@context': 'https://schema.org',
+    '@graph': [
+      {
+        '@type': 'BlogPosting',
+        '@id': `${canonicalUrl}#article`,
+        url: canonicalUrl,
+        mainEntityOfPage: {
+          '@type': 'WebPage',
+          '@id': canonicalUrl,
+        },
+        headline: cleanTitle,
+        description: post.excerpt || cleanTitle,
+        image: post.coverImage || 'https://salihmaral.de/logo.png',
+        author: {
+          '@type': 'Person',
+          '@id': 'https://salihmaral.de/#person',
+          name: 'Salih Maral',
+          jobTitle: 'Offizieller Google Partner & Senior Digital Marketing Experte',
+          url: 'https://salihmaral.de',
+        },
+        publisher: {
+          '@type': 'Organization',
+          '@id': 'https://salihmaral.de/#organization',
+          name: 'Salih Maral Digital Marketing',
+          url: 'https://salihmaral.de',
+          logo: {
+            '@type': 'ImageObject',
+            url: 'https://salihmaral.de/logo.png',
+          },
+        },
+        datePublished: post.date,
+        dateModified: post.date,
+        inLanguage: inLang,
+        articleSection: post.category || 'Digital Marketing',
+        keywords: post.category ? `${post.category}, Digital Marketing, Salih Maral` : 'Digital Marketing, Salih Maral',
+        isPartOf: { '@id': 'https://salihmaral.de/#website' },
+      },
+      {
+        '@type': 'BreadcrumbList',
+        '@id': `${canonicalUrl}#breadcrumb`,
+        itemListElement: [
+          {
+            '@type': 'ListItem',
+            position: 1,
+            name: homeName,
+            item: homeUrl,
+          },
+          {
+            '@type': 'ListItem',
+            position: 2,
+            name: 'Blog',
+            item: 'https://salihmaral.de/blog',
+          },
+          {
+            '@type': 'ListItem',
+            position: 3,
+            name: cleanTitle,
+            item: canonicalUrl,
+          },
+        ],
+      },
+    ],
+  }
+
   return (
-    <BlogDetailClient initialPost={post} initialLang={initialLang} relatedPosts={relatedPosts} />
+    <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(blogPostingSchema) }}
+      />
+      <BlogDetailClient initialPost={post} initialLang={initialLang} relatedPosts={relatedPosts} />
+    </>
   )
 }
