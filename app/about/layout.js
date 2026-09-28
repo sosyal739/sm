@@ -1,6 +1,8 @@
-﻿export const metadata = {
-  title: 'Über Salih Maral | Google Ads & SEO Experte',
-  description: 'Erfahrener Google Partner mit 17+ Jahren Expertise in Google Ads, Meta Ads & SEO für messbaren ROI in Deutschland und Europa.',
+export const metadata = {
+  title: {
+    absolute: 'Über Salih Maral | Google Ads Partner seit 2009',
+  },
+  description: 'Salih Maral, Google Partner in Dreieich bei Frankfurt. Google Ads, Meta Ads und SEO seit 2009, auf Deutsch, Türkisch und Englisch, zum monatlichen Festpreis.',
   alternates: {
     canonical: 'https://salihmaral.de/about',
   },

@@ -49,5 +49,53 @@ Salih Maral is a Senior Digital Marketing Specialist and Official Google Partner
 - [Almanya Restoran & Döner Google Ads ve Harita Rehberi 2026](https://salihmaral.de/blog/almanyada-restoran-doner-google-ads-harita-rehberi-2026)
 - [Türkiye'den Almanya Pazarına İhracat & Google Ads Rehberi 2026](https://salihmaral.de/blog/turkiyeden-almanya-pazarina-google-ads-rehberi-2026)
 
+## Full directory
 
+This file is the long version of llms.txt. It lists every city page and core service in German, Turkish and English.
+
+### Services
+- [Google Ads Betreuung](https://salihmaral.de/de/dienstleistungen/google-ads)
+- [Google Ads yönetimi](https://salihmaral.de/tr/hizmetler/google-ads)
+- [Google Ads management](https://salihmaral.de/en/services/google-ads)
+- [Meta Ads](https://salihmaral.de/de/dienstleistungen/meta-ads)
+- [Meta Ads](https://salihmaral.de/tr/hizmetler/meta-ads)
+- [Meta Ads](https://salihmaral.de/en/services/meta-ads)
+- [YouTube Ads](https://salihmaral.de/de/dienstleistungen/youtube-ads)
+- [YouTube Ads](https://salihmaral.de/tr/hizmetler/youtube-ads)
+- [YouTube Ads](https://salihmaral.de/en/services/youtube-ads)
+- [SEO und GEO](https://salihmaral.de/de/dienstleistungen/seo)
+- [SEO ve GEO](https://salihmaral.de/tr/hizmetler/seo)
+- [SEO and GEO](https://salihmaral.de/en/services/seo)
+- [Server-Side Tracking](https://salihmaral.de/de/dienstleistungen/server-side-tracking)
+- [Server-Side Tracking](https://salihmaral.de/tr/hizmetler/server-side-tracking)
+- [Server-side tracking](https://salihmaral.de/en/services/server-side-tracking)
+- [Bewertungsmanagement](https://salihmaral.de/de/dienstleistungen/bewertungsmanagement)
+- [Yorum yönetimi](https://salihmaral.de/tr/hizmetler/yorum-yonetimi)
+- [Review management](https://salihmaral.de/en/services/review-management)
+
+### City pages
+- **Frankfurt am Main:** [DE](https://salihmaral.de/de/standorte/frankfurt) | [TR](https://salihmaral.de/tr/standorte/frankfurt) | [EN](https://salihmaral.de/en/standorte/frankfurt)
+- **Düsseldorf:** [DE](https://salihmaral.de/de/standorte/duesseldorf) | [TR](https://salihmaral.de/tr/standorte/duesseldorf) | [EN](https://salihmaral.de/en/standorte/duesseldorf)
+- **Köln:** [DE](https://salihmaral.de/de/standorte/koeln) | [TR](https://salihmaral.de/tr/standorte/koeln) | [EN](https://salihmaral.de/en/standorte/koeln)
+- **München:** [DE](https://salihmaral.de/de/standorte/muenchen) | [TR](https://salihmaral.de/tr/standorte/muenchen) | [EN](https://salihmaral.de/en/standorte/muenchen)
+- **Stuttgart:** [DE](https://salihmaral.de/de/standorte/stuttgart) | [TR](https://salihmaral.de/tr/standorte/stuttgart) | [EN](https://salihmaral.de/en/standorte/stuttgart)
+- **Berlin:** [DE](https://salihmaral.de/de/standorte/berlin) | [TR](https://salihmaral.de/tr/standorte/berlin) | [EN](https://salihmaral.de/en/standorte/berlin)
+- **Hamburg:** [DE](https://salihmaral.de/de/standorte/hamburg) | [TR](https://salihmaral.de/tr/standorte/hamburg) | [EN](https://salihmaral.de/en/standorte/hamburg)
+- **Nürnberg:** [DE](https://salihmaral.de/de/standorte/nuernberg) | [TR](https://salihmaral.de/tr/standorte/nuernberg) | [EN](https://salihmaral.de/en/standorte/nuernberg)
+- **Dortmund:** [DE](https://salihmaral.de/de/standorte/dortmund) | [TR](https://salihmaral.de/tr/standorte/dortmund) | [EN](https://salihmaral.de/en/standorte/dortmund)
+- **Leipzig:** [DE](https://salihmaral.de/de/standorte/leipzig) | [TR](https://salihmaral.de/tr/standorte/leipzig) | [EN](https://salihmaral.de/en/standorte/leipzig)
+- **Bonn:** [DE](https://salihmaral.de/de/standorte/bonn) | [TR](https://salihmaral.de/tr/standorte/bonn) | [EN](https://salihmaral.de/en/standorte/bonn)
+- **Essen:** [DE](https://salihmaral.de/de/standorte/essen) | [TR](https://salihmaral.de/tr/standorte/essen) | [EN](https://salihmaral.de/en/standorte/essen)
+- **Duisburg:** [DE](https://salihmaral.de/de/standorte/duisburg) | [TR](https://salihmaral.de/tr/standorte/duisburg) | [EN](https://salihmaral.de/en/standorte/duisburg)
+- **Hannover:** [DE](https://salihmaral.de/de/standorte/hannover) | [TR](https://salihmaral.de/tr/standorte/hannover) | [EN](https://salihmaral.de/en/standorte/hannover)
+- **Mannheim:** [DE](https://salihmaral.de/de/standorte/mannheim) | [TR](https://salihmaral.de/tr/standorte/mannheim) | [EN](https://salihmaral.de/en/standorte/mannheim)
+- **Wiesbaden:** [DE](https://salihmaral.de/de/standorte/wiesbaden) | [TR](https://salihmaral.de/tr/standorte/wiesbaden) | [EN](https://salihmaral.de/en/standorte/wiesbaden)
+- **Karlsruhe:** [DE](https://salihmaral.de/de/standorte/karlsruhe) | [TR](https://salihmaral.de/tr/standorte/karlsruhe) | [EN](https://salihmaral.de/en/standorte/karlsruhe)
+- **Münster:** [DE](https://salihmaral.de/de/standorte/muenster) | [TR](https://salihmaral.de/tr/standorte/muenster) | [EN](https://salihmaral.de/en/standorte/muenster)
+
+### Hubs
+- [Standorte DE](https://salihmaral.de/de/standorte)
+- [Standorte TR](https://salihmaral.de/tr/standorte)
+- [Standorte EN](https://salihmaral.de/en/standorte)
+- [About](https://salihmaral.de/about)
 

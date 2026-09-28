@@ -2,6 +2,7 @@
 
 import { trackLead, trackWhatsAppClick, trackPhoneClick } from '@/lib/analytics'
 import GoogleAdsBudgetCalculator from '@/components/GoogleAdsBudgetCalculator'
+import { getCityGrowth } from '@/lib/cityGrowth'
 
 import React, { use, useState } from 'react'
 import Link from 'next/link'
@@ -486,6 +487,7 @@ export default function CityPage({ params }) {
   const currentLang = ['de', 'tr', 'en'].includes(lang) ? lang : 'de'
   const cityData = cityDetails[city] || cityDetails.frankfurt
   const content = cityData[currentLang] || cityData.de
+  const growth = getCityGrowth(city, currentLang)
 
   // Form State
   const [formData, setFormData] = useState({
@@ -816,6 +818,49 @@ export default function CityPage({ params }) {
         </div>
       </section>
 
+      <section className="py-16 max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+        <h2 className="text-3xl font-bold text-white mb-4">{growth.catchmentTitle}</h2>
+        <p className="text-slate-300 leading-relaxed max-w-3xl mb-12">{growth.catchment}</p>
+
+        <h2 className="text-3xl font-bold text-white mb-6">{growth.sectorsTitle}</h2>
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-14">
+          {growth.sectors.map((sector) => (
+            <div key={sector.name} className="p-6 rounded-2xl bg-slate-900 border border-slate-800">
+              <h3 className="text-lg font-bold text-white mb-3">{sector.name}</h3>
+              <p className="text-sm text-slate-300 leading-relaxed">{sector.body}</p>
+            </div>
+          ))}
+        </div>
+
+        <h2 className="text-3xl font-bold text-white mb-6">{growth.campaignTitle}</h2>
+        <ol className="space-y-4 mb-14">
+          {growth.steps.map((step, index) => (
+            <li key={step.title} className="p-5 rounded-2xl bg-slate-900 border border-slate-800">
+              <h3 className="text-lg font-bold text-white mb-2">{index + 1}. {step.title}</h3>
+              <p className="text-sm text-slate-300 leading-relaxed">{step.body}</p>
+            </li>
+          ))}
+        </ol>
+
+        <h2 className="text-3xl font-bold text-white mb-4">{growth.mapsTitle}</h2>
+        <p className="text-slate-300 leading-relaxed max-w-3xl mb-12">{growth.maps}</p>
+
+        <h2 className="text-3xl font-bold text-white mb-4">{growth.budgetTitle}</h2>
+        <p className="text-slate-300 leading-relaxed max-w-3xl mb-6">{growth.budget}</p>
+        <p className="text-slate-300 leading-relaxed max-w-3xl mb-12">{growth.firstMonth}</p>
+
+        <h2 className="text-2xl font-bold text-white mb-4">{growth.linksTitle}</h2>
+        <div className="flex flex-wrap gap-3">
+          {growth.links.map((link) => (
+            <Link key={link.href} href={link.href} className="px-4 py-2 rounded-full bg-slate-900 border border-slate-700 text-sm text-slate-200 hover:border-blue-500 hover:text-white">
+              {link.label}
+            </Link>
+          ))}
+          <Link href={`/${currentLang}/standorte`} className="px-4 py-2 rounded-full bg-blue-600/20 border border-blue-500/40 text-sm text-blue-200 hover:bg-blue-600/30">
+            {currentLang === 'tr' ? 'Tüm şehirler' : currentLang === 'en' ? 'All cities' : 'Alle Städte'}
+          </Link>
+        </div>
+      </section>
 
       {/* Local Case Study Section */}
       <section className="py-14 bg-slate-900 border-b border-slate-800">
