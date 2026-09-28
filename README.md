@@ -7,7 +7,7 @@
 Offizielle Web-Plattform und Digital-Marketing-Infrastruktur von **Salih Maral** — Senior Performance Marketing Spezialist und zertifizierter Google Partner mit über **17+ Jahren Erfahrung** in Deutschland, der Türkei und Europa.
 
 - 🌐 **Offizielle Website:** [https://salihmaral.de](https://salihmaral.de)
-- 📍 **Hauptsitz:** Voltastraße 8, 63303 Dreieich (Frankfurt am Main / Hessen, Deutschland)
+- 📍 **Standort / Region:** Dreieich / Frankfurt am Main (Hessen, Deutschland) — Bundesweite & Internationale Betreuung (Remote / Hybrid)
 - 📞 **Direktkontakt / WhatsApp:** [+49 172 4106463](https://wa.me/491724106463)
 - ✉️ **E-Mail:** [info@salihmaral.de](mailto:info@salihmaral.de)
 

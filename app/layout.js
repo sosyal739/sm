@@ -183,8 +183,7 @@ const jsonLd = {
       priceRange: '€€',
       address: {
         '@type': 'PostalAddress',
-        streetAddress: 'Voltastraße 8',
-        addressLocality: 'Dreieich',
+        addressLocality: 'Dreieich / Frankfurt am Main',
         postalCode: '63303',
         addressRegion: 'Hessen',
         addressCountry: 'DE'

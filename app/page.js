@@ -2422,7 +2422,7 @@ export default function Home({ initialLang = 'de' }) {
                   <a href={`https://wa.me/491724106463?text=${lang === 'de' ? 'Hallo,%20ich%20interessiere%20mich%20für%20Ihre%20Digital%20Marketing%20Dienstleistungen.' : lang === 'en' ? 'Hello,%20I%20am%20interested%20in%20your%20digital%20marketing%20services.' : 'Merhaba,%20dijital%20pazarlama%20hizmetleriniz%20hakkında%20bilgi%20almak%20istiyorum.'}`} target="_blank"
                   onClick={() => trackWhatsAppClick({ location: 'page' })} className="hover:text-white transition-colors">WhatsApp</a>
                 </p>
-                <p className="text-xs text-gray-500 pt-2">Voltastraße 8, 63303 Dreieich (Hessen / Frankfurt)</p>
+                <p className="text-xs text-gray-500 pt-2">Dreieich / Frankfurt am Main (Hessen) • Remote & Hybrid</p>
               </div>
             </div>
             <div>
