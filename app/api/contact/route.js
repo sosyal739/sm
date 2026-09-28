@@ -2,6 +2,16 @@ import { Resend } from 'resend'
 
 const resend = process.env.RESEND_API_KEY ? new Resend(process.env.RESEND_API_KEY) : null
 
+export async function GET() {
+  return Response.json({
+    status: 'active',
+    hasResendKey: Boolean(process.env.RESEND_API_KEY),
+    resendKeyPrefix: process.env.RESEND_API_KEY ? process.env.RESEND_API_KEY.slice(0, 6) + '...' : 'none',
+    contactEmail: process.env.CONTACT_EMAIL || 'salihmaralde@gmail.com',
+    timestamp: new Date().toISOString(),
+  })
+}
+
 export async function POST(request) {
   try {
     const body = await request.json()
@@ -43,12 +53,21 @@ export async function POST(request) {
       language: language || 'de',
     })
 
-    // Send email notification via Resend
-    if (resend) {
-      try {
-        const contactEmail = process.env.CONTACT_EMAIL || 'salihmaralde@gmail.com'
+    if (!resend) {
+      console.error('[Contact Form] RESEND_API_KEY is missing from environment variables!')
+      return Response.json(
+        { 
+          success: false, 
+          error: 'E-posta servisi API anahtarı (RESEND_API_KEY) sunucu ortamında tanımlı değil.',
+          details: 'RESEND_API_KEY is not defined in environment variables.'
+        },
+        { status: 500 }
+      )
+    }
 
-        const emailHtml = `
+    const contactEmail = process.env.CONTACT_EMAIL || 'salihmaralde@gmail.com'
+
+    const emailHtml = `
 <!DOCTYPE html>
 <html>
 <head>
@@ -106,23 +125,29 @@ export async function POST(request) {
   </div>
 </body>
 </html>
-        `
+    `
 
-        const emailResult = await resend.emails.send({
-          from: 'Salih Maral Website <onboarding@resend.dev>',
-          to: contactEmail,
-          replyTo: email,
-          subject: `📬 Yeni Teklif Talebi: ${name} (${company || 'Bireysel'}) - salihmaral.de`,
-          html: emailHtml,
-        })
+    const { data: emailData, error: emailError } = await resend.emails.send({
+      from: 'Salih Maral Website <onboarding@resend.dev>',
+      to: contactEmail,
+      replyTo: email,
+      subject: `📬 Yeni Teklif Talebi: ${name} (${company || 'Bireysel'}) - salihmaral.de`,
+      html: emailHtml,
+    })
 
-        console.log('[Contact Form] Email sent successfully via Resend:', emailResult)
-      } catch (emailError) {
-        console.error('[Contact Form] Resend email dispatch failed:', emailError)
-      }
-    } else {
-      console.warn('[Contact Form] RESEND_API_KEY is not defined in environment variables. Email was skipped.')
+    if (emailError) {
+      console.error('[Contact Form] Resend API error:', emailError)
+      return Response.json(
+        { 
+          success: false, 
+          error: `Resend e-posta gönderim hatası: ${emailError.message}`,
+          details: emailError
+        },
+        { status: 502 }
+      )
     }
+
+    console.log('[Contact Form] Email sent successfully via Resend:', emailData)
 
     const successMessages = {
       de: 'Ihre Nachricht wurde erfolgreich gesendet!',
@@ -131,7 +156,11 @@ export async function POST(request) {
     }
 
     return Response.json(
-      { success: true, message: successMessages[language] || successMessages.de },
+      { 
+        success: true, 
+        message: successMessages[language] || successMessages.de,
+        emailId: emailData?.id
+      },
       {
         status: 200,
         headers: {
@@ -143,7 +172,7 @@ export async function POST(request) {
   } catch (error) {
     console.error('[Contact Form Error]', error)
     return Response.json(
-      { error: 'Internal Server Error' },
+      { error: error.message || 'Internal Server Error' },
       { status: 500 }
     )
   }
