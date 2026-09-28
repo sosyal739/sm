@@ -75,6 +75,12 @@ coverImage: "https://images.unsplash.com/photo-1554224155-8d04cb21cd6c?w=600&h=3
   <li><strong>Bütçeyi Komisyonlu Ajanslara Kaptırmak:</strong> Birçok ajans reklam harcamanızın üzerinden %15-%20 komisyon alarak maliyetinizi artırır. Biz Salih Maral olarak <strong>şeffaf ve sabit fiyatlı (Fixpreis ab 590 €/ay)</strong> çalışarak bütçenizin doğrudan müşteriye dönüşmesini sağlıyoruz.</li>
 </ol>
 
+<div class="cta-box" style="background: linear-gradient(135deg, #1e3a8a 0%, #064e3b 100%); border: 2px solid #10b981; border-radius: 1.25rem; padding: 2rem; margin: 2.5rem 0; text-align: center; color: white;">
+  <h3 style="font-size: 1.5rem; font-weight: 800; color: white; margin-bottom: 0.5rem;">Google Ads Faturalarınız ve Reklam Bütçeniz Güvende mi?</h3>
+  <p style="color: #cbd5e1; font-size: 0.95rem; max-width: 600px; margin: 0 auto 1.5rem auto; line-height: 1.5;">Yanlış vergi ayarları ve kontrolsüz harcamalarla bütçenizi tüketmeyin. 17+ yıllık resmi Google Partneri Salih Maral ile hesabınızı ücretsiz inceleyelim.</p>
+  <a href="https://wa.me/491724106463?text=Merhaba%20Salih%20Bey,%20Google%20Ads%20fatura%20ve%20reklam%20hesap%20denetimi%20i%C3%A7in%20yaz%C4%B1yorum." target="_blank" rel="noopener noreferrer" style="display: inline-block; background: #25D366; color: white; font-weight: 800; padding: 0.85rem 2rem; border-radius: 0.75rem; text-decoration: none; font-size: 1rem;">WhatsApp İle Ücretsiz Hesap İncelemesi Alın ➔</a>
+</div>
+
 <h2>💡 Bütçenizi Canlı Hesaplayın</h2>
 
 <p>Almanya genelinde en karlı reklam bütçesini planlamak için <a href="/tr/standorte/frankfurt">Google Ads Bütçe Hesaplayıcı</a> aracımızı kullanabilir veya Almanya geneli piyasa fiyatlarını öğrenmek için <a href="/blog/google-ads-agentur-preise-kosten-deutschland-2026">Google Ads Ajans Ücretleri Rehberimizi</a> inceleyebilirsiniz.</p>

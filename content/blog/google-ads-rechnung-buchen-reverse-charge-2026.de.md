@@ -77,6 +77,12 @@ coverImage: "https://images.unsplash.com/photo-1554224155-8d04cb21cd6c?w=600&h=3
   <li><strong>Fehlende ZM-Prüfung bei innergemeinschaftlichen Leistungen:</strong> Für empfangene Dienstleistungen muss der deutsche Unternehmer keine Zusammenfassende Meldung (ZM) abgeben, muss jedoch die USt-IdNr. von Google Ireland Limited (IE6388047V) in den Buchhaltungsunterlagen dokumentieren.</li>
 </ol>
 
+<div class="cta-box" style="background: linear-gradient(135deg, #0f172a 0%, #1e3a8a 100%); border: 2px solid #3b82f6; border-radius: 1.25rem; padding: 2rem; margin: 2.5rem 0; text-align: center; color: white;">
+  <h3 style="font-size: 1.5rem; font-weight: 800; color: white; margin-bottom: 0.5rem;">Vermeiden Sie unnötige Werbeausgaben & Steuerrisiken</h3>
+  <p style="color: #cbd5e1; font-size: 0.95rem; max-width: 600px; margin: 0 auto 1.5rem auto; line-height: 1.5;">Lassen Sie Ihr Google Ads Konto vom zertifizierten Google Partner (17+ Jahre Erfahrung) unverbindlich prüfen. Faire Festpreis-Betreuung ohne prozentuale Budget-Provision.</p>
+  <a href="https://wa.me/491724106463?text=Hallo%20Herr%20Maral,%20ich%20interessiere%20mich%20f%C3%BCr%20einen%20kostenlosen%20Google%20Ads%20Konto-Check." target="_blank" rel="noopener noreferrer" style="display: inline-block; background: #25D366; color: white; font-weight: 800; padding: 0.85rem 2rem; border-radius: 0.75rem; text-decoration: none; font-size: 1rem;">Kostenlosen Konto-Check via WhatsApp anfordern ➔</a>
+</div>
+
 <h2>💡 Fazit & Professionelle Google Ads Betreuung</h2>
 
 <p>Die steuerliche Erfassung von Google Ads Werbekosten ist dank § 13b UStG für vorsteuerabzugsberechtigte Unternehmen kostenneutral. Entscheidend ist jedoch, dass das Werbebudget nicht durch ineffiziente Kampagneneinstellungen verpufft. Mit unserem <strong>transparenten Monats-Fixpreis (ab 590 €/Monat)</strong> erhalten Sie maximale Rentabilität ohne prozentuale Provisionsaufschläge.</p>
