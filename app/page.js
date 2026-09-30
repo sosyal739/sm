@@ -2004,6 +2004,7 @@ export default function Home({ initialLang = 'de' }) {
       </section>
 
       {/* Contact Section */}
+      <div id="kontakt" className="relative -top-24 pointer-events-none" />
       <section id="contact" className="py-20 bg-gradient-to-br from-gray-50 via-white to-gray-50 relative overflow-hidden">
         {/* Background decorations */}
         <div className="absolute top-0 left-0 w-96 h-96 bg-[#4285F4]/5 rounded-full blur-3xl -translate-x-1/2 -translate-y-1/2"></div>
