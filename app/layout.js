@@ -290,8 +290,8 @@ const jsonLd = {
       ratingValue: '5',
       bestRating: '5',
       worstRating: '1',
-      ratingCount: '3',
-      reviewCount: '3'
+      ratingCount: '5',
+      reviewCount: '5'
     },
     {
       '@type': 'Review',
@@ -316,6 +316,22 @@ const jsonLd = {
       reviewRating: { '@type': 'Rating', ratingValue: '5', bestRating: '5' },
       reviewBody: 'Seit wir mit Herrn Maral arbeiten, sind die Berichte so klar, dass wir wissen, wohin unser Geld fließt. Ich empfehle ihn auf jeden Fall.',
       datePublished: '2026-01-10'
+    },
+    {
+      '@type': 'Review',
+      itemReviewed: { '@id': 'https://salihmaral.de/#organization' },
+      author: { '@type': 'Person', name: 'Ali Yılmaz' },
+      reviewRating: { '@type': 'Rating', ratingValue: '5', bestRating: '5' },
+      reviewBody: 'Restoranımız için Lieferando komisyonlarından kurtulduk. Doğrudan Google Haritalar ve Ads üzerinden her gün onlarca sipariş alıyoruz. Sabit fiyatlı çalışma modeli mükemmel.',
+      datePublished: '2026-02-14'
+    },
+    {
+      '@type': 'Review',
+      itemReviewed: { '@id': 'https://salihmaral.de/#organization' },
+      author: { '@type': 'Person', name: 'Serkan Kaya' },
+      reviewRating: { '@type': 'Rating', ratingValue: '5', bestRating: '5' },
+      reviewBody: 'Frankfurt ve Hessen bölgesinde tadilat ve inşaat işlerimiz için Salih Bey ile çalışıyoruz. Alman müşterilerden doğrudan kaliteli teklif talepleri geliyor. Kesinlikle tavsiye ederim.',
+      datePublished: '2026-03-01'
     }
   ]
 }
