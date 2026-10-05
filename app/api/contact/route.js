@@ -1,13 +1,27 @@
+import nodemailer from 'nodemailer'
 import { Resend } from 'resend'
 
 const resend = process.env.RESEND_API_KEY ? new Resend(process.env.RESEND_API_KEY) : null
 
+// Primary: Official IONOS SMTP via info@salihmaral.de
+const smtpConfig = {
+  host: process.env.SMTP_HOST || 'smtp.ionos.de',
+  port: parseInt(process.env.SMTP_PORT || '587'),
+  secure: false, // TLS on port 587
+  auth: {
+    user: process.env.SMTP_USER || 'info@salihmaral.de',
+    pass: process.env.SMTP_PASS || 'Maral.06!2026',
+  },
+}
+
+const primaryTransporter = nodemailer.createTransport(smtpConfig)
+
 export async function GET() {
   return Response.json({
     status: 'active',
-    hasResendKey: Boolean(process.env.RESEND_API_KEY),
-    resendKeyPrefix: process.env.RESEND_API_KEY ? process.env.RESEND_API_KEY.slice(0, 6) + '...' : 'none',
-    contactEmail: process.env.CONTACT_EMAIL || 'fuslu454@gmail.com',
+    primaryProvider: 'IONOS SMTP (info@salihmaral.de)',
+    contactEmail: process.env.CONTACT_EMAIL || 'salihmaralde@gmail.com',
+    hasResendFallback: Boolean(process.env.RESEND_API_KEY),
     timestamp: new Date().toISOString(),
   })
 }
@@ -53,19 +67,7 @@ export async function POST(request) {
       language: language || 'de',
     })
 
-    if (!resend) {
-      console.error('[Contact Form] RESEND_API_KEY is missing from environment variables!')
-      return Response.json(
-        { 
-          success: false, 
-          error: 'E-posta servisi API anahtarı (RESEND_API_KEY) sunucu ortamında tanımlı değil.',
-          details: 'RESEND_API_KEY is not defined in environment variables.'
-        },
-        { status: 500 }
-      )
-    }
-
-    const contactEmail = process.env.CONTACT_EMAIL || 'fuslu454@gmail.com'
+    const contactEmail = process.env.CONTACT_EMAIL || 'salihmaralde@gmail.com'
 
     const emailHtml = `
 <!DOCTYPE html>
@@ -127,27 +129,35 @@ export async function POST(request) {
 </html>
     `
 
-    const { data: emailData, error: emailError } = await resend.emails.send({
-      from: 'Salih Maral Website <onboarding@resend.dev>',
-      to: contactEmail,
-      replyTo: email,
-      subject: `📬 Yeni Teklif Talebi: ${name} (${company || 'Bireysel'}) - salihmaral.de`,
-      html: emailHtml,
-    })
+    let sentVia = 'ionos_smtp'
+    let emailId = null
 
-    if (emailError) {
-      console.error('[Contact Form] Resend API error:', emailError)
-      return Response.json(
-        { 
-          success: false, 
-          error: `Resend e-posta gönderim hatası: ${emailError.message}`,
-          details: emailError
-        },
-        { status: 502 }
-      )
+    try {
+      const smtpRes = await primaryTransporter.sendMail({
+        from: '"Salih Maral Web Sitesi" <info@salihmaral.de>',
+        to: contactEmail,
+        replyTo: email,
+        subject: `📬 Yeni Teklif Talebi: ${name} (${company || 'Bireysel'}) - salihmaral.de`,
+        html: emailHtml,
+      })
+      emailId = smtpRes.messageId
+      console.log('[Contact Form] Delivered via IONOS SMTP:', emailId)
+    } catch (smtpErr) {
+      console.error('[Contact Form] IONOS SMTP error, trying fallback:', smtpErr)
+      if (resend) {
+        const fallbackRes = await resend.emails.send({
+          from: 'Salih Maral Website <onboarding@resend.dev>',
+          to: process.env.RESEND_FALLBACK_EMAIL || 'fuslu454@gmail.com',
+          replyTo: email,
+          subject: `📬 [Yedek Kanal] Yeni Teklif Talebi: ${name} (${company || 'Bireysel'})`,
+          html: emailHtml,
+        })
+        sentVia = 'resend_fallback'
+        emailId = fallbackRes?.data?.id
+      } else {
+        throw smtpErr
+      }
     }
-
-    console.log('[Contact Form] Email sent successfully via Resend:', emailData)
 
     const successMessages = {
       de: 'Ihre Nachricht wurde erfolgreich gesendet!',
@@ -159,7 +169,8 @@ export async function POST(request) {
       { 
         success: true, 
         message: successMessages[language] || successMessages.de,
-        emailId: emailData?.id
+        emailId: emailId,
+        provider: sentVia,
       },
       {
         status: 200,
