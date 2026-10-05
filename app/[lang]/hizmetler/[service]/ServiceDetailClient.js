@@ -1,17 +1,18 @@
 'use client'
 
+import { useState } from 'react'
 import { useParams, useRouter } from 'next/navigation'
 import { Button } from '@/components/ui/button'
 import { Card, CardContent } from '@/components/ui/card'
-import { CheckCircle, ArrowLeft, ArrowUpRight, TrendingUp, Search, Image, ShoppingCart, Play, Zap, MapPin, Users, Heart, Video, MessageSquare, Share2, Target, BarChart3, Globe, Link, FileText, Shield, ShieldCheck, Cpu, Database, Lock, Code, Activity, Star, ThumbsDown, AlertTriangle, Eye, Award, Flame } from 'lucide-react'
+import { CheckCircle, ArrowLeft, ArrowUpRight, TrendingUp, Search, Image, ShoppingCart, Play, Zap, MapPin, Users, Heart, Video, MessageSquare, Share2, Target, BarChart3, Globe, Link, FileText, Shield, ShieldCheck, Cpu, Database, Lock, Code, Activity, Star, ThumbsDown, AlertTriangle, Eye, Award, Flame, Menu, X, ChevronDown, ChevronRight, Phone, Mail } from 'lucide-react'
 import ServiceDetailModules from '@/components/ServiceDetailModules'
 import { trackWhatsAppClick } from '@/lib/analytics'
 
 // Translations for navbar
 const navTranslations = {
-  tr: { services: 'Hizmetler', success: 'Başarılar', about: 'Hakkımda', contact: 'İletişim', home: 'Ana Sayfa' },
-  de: { services: 'Dienstleistungen', success: 'Erfolge', about: 'Über mich', contact: 'Kontakt', home: 'Startseite' },
-  en: { services: 'Services', success: 'Success', about: 'About', contact: 'Contact', home: 'Home' }
+  tr: { services: 'Hizmetler', success: 'Başarılar', about: 'Hakkımda', contact: 'İletişim', home: 'Ana Sayfa', standorte: 'Şehirler' },
+  de: { services: 'Dienstleistungen', success: 'Erfolge', about: 'Über mich', contact: 'Kontakt', home: 'Startseite', standorte: 'Standorte' },
+  en: { services: 'Services', success: 'Success', about: 'About', contact: 'Contact', home: 'Home', standorte: 'Locations' }
 }
 
 // Service slugs for dropdown
@@ -54,6 +55,8 @@ export default function ServiceDetailClient({ initialService, initialLang }) {
   const service = params?.service || initialService
   const urlLang = params?.lang || initialLang
   const lang = urlLang && ['de', 'en', 'tr'].includes(urlLang) ? urlLang : 'de'
+  const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
+  const [servicesDropdownOpen, setServicesDropdownOpen] = useState(false)
 
   // Helper: get localized URL path for a given language and service slug
   const getLocalizedServiceUrl = (targetLang, serviceSlug) => {
@@ -1020,48 +1023,77 @@ export default function ServiceDetailClient({ initialService, initialLang }) {
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
       />
-      {/* Navigation - Same as Homepage */}
-      <nav className="fixed top-0 left-0 right-0 z-50 bg-white/95 backdrop-blur-sm border-b">
-        <div className="container mx-auto px-4 py-4">
+      {/* Navigation */}
+      <nav className="fixed top-0 left-0 right-0 z-50 bg-white/95 backdrop-blur-md border-b border-gray-200/80 shadow-xs">
+        <div className="container mx-auto px-4 py-3.5">
           <div className="flex items-center justify-between">
-            <a href={lang === 'de' ? '/' : `/${lang}`} className="flex items-center">
-              <picture><source srcSet="/logo-sm.webp" type="image/webp" /><img src="/logo.png" alt="Salih Maral Logo" className="h-10 w-auto" width="40" height="40" /></picture>
-            </a>
+            {/* Logo & Partner Badge */}
+            <div className="flex items-center gap-3">
+              <a href={lang === 'de' ? '/' : `/${lang}`} className="flex items-center gap-2 group">
+                <picture>
+                  <source srcSet="/logo-sm.webp" type="image/webp" />
+                  <img src="/logo.png" alt="Salih Maral Logo" className="h-9 w-auto" width="36" height="36" />
+                </picture>
+                <span className="text-xl font-black text-gray-900 tracking-tight group-hover:text-[#4285F4] transition-colors">
+                  Salih Maral<span className="text-[#4285F4]">.</span>
+                </span>
+              </a>
+              <span className="hidden lg:inline-flex items-center gap-1.5 px-2.5 py-0.5 rounded-full bg-blue-50 border border-blue-200/70 text-[11px] font-semibold text-blue-700">
+                <span className="w-1.5 h-1.5 rounded-full bg-blue-600 animate-pulse"></span>
+                Offizieller Google Partner
+              </span>
+            </div>
             
+            {/* Desktop Navigation Links */}
             <div className="hidden md:flex items-center space-x-6">
-              <div className="relative group">
-                <button className="text-sm font-bold text-gray-900 hover:text-[#4285F4] transition-colors flex items-center">
+              <div 
+                className="relative group"
+                onMouseEnter={() => setServicesDropdownOpen(true)}
+                onMouseLeave={() => setServicesDropdownOpen(false)}
+              >
+                <button className="text-sm font-bold text-gray-900 hover:text-[#4285F4] transition-colors flex items-center py-2 cursor-pointer">
                   {navT.services}
-                  <svg className="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <svg className="w-4 h-4 ml-1 transition-transform group-hover:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
                   </svg>
                 </button>
-                <div className="absolute left-0 mt-2 w-64 bg-white rounded-lg shadow-2xl opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 z-50 border border-gray-100">
-                  <div className="py-2">
-                    {services.map((s, idx) => (
-                      <a
-                        key={idx}
-                        href={getLocalizedServiceUrl(lang, s.slug)}
-                        className="block px-4 py-3 text-sm text-gray-700 hover:bg-[#4285F4]/10 hover:text-[#4285F4] transition-colors"
-                      >
-                        <div className="font-semibold">{s.title}</div>
-                      </a>
-                    ))}
+                {servicesDropdownOpen && (
+                  <div className="absolute left-0 mt-0 w-72 bg-white rounded-xl shadow-2xl p-2 z-50 border border-gray-100 animate-in fade-in slide-in-from-top-1 duration-150">
+                    <div className="py-1">
+                      {services.map((s, idx) => (
+                        <a
+                          key={idx}
+                          href={getLocalizedServiceUrl(lang, s.slug)}
+                          className="block px-3 py-2 text-xs font-semibold text-gray-800 rounded-lg hover:bg-blue-50 hover:text-[#4285F4] transition-colors"
+                        >
+                          {s.title}
+                        </a>
+                      ))}
+                    </div>
                   </div>
-                </div>
+                )}
               </div>
-              <a href={`${lang === 'de' ? '' : `/${lang}`}/#success`} className="text-sm font-bold text-gray-900 hover:text-[#4285F4] transition-colors">{navT.success}</a>
-              <a href={`${lang === 'de' ? '' : `/${lang}`}/#about`} className="text-sm font-bold text-gray-900 hover:text-[#4285F4] transition-colors">{navT.about}</a>
-              <a href="/blog" className="text-sm font-bold text-gray-900 hover:text-[#4285F4] transition-colors">Blog</a>
-              <a href={`${lang === 'de' ? '' : `/${lang}`}/#contact`} className="text-sm font-bold text-gray-900 hover:text-[#4285F4] transition-colors">{navT.contact}</a>
+              <a href={`/${lang}/standorte`} className="text-sm font-bold text-gray-900 hover:text-[#4285F4] transition-colors">
+                {navT.standorte}
+              </a>
+              <a href="/blog" className="text-sm font-bold text-gray-900 hover:text-[#4285F4] transition-colors">
+                Blog
+              </a>
+              <a href={`${lang === 'de' ? '' : `/${lang}`}/#about`} className="text-sm font-bold text-gray-900 hover:text-[#4285F4] transition-colors">
+                {navT.about}
+              </a>
+              <a href={`${lang === 'de' ? '' : `/${lang}`}/#contact`} className="text-sm font-bold text-gray-900 hover:text-[#4285F4] transition-colors">
+                {navT.contact}
+              </a>
             </div>
 
+            {/* Right: Languages & Mobile Hamburger */}
             <div className="flex items-center space-x-2">
               <Button
                 variant={lang === 'de' ? 'default' : 'outline'}
                 size="sm"
                 onClick={() => handleLanguageChange('de')}
-                className={lang === 'de' ? 'bg-[#4285F4]' : ''}
+                className={lang === 'de' ? 'bg-[#4285F4] text-white hover:bg-blue-600' : 'text-gray-700'}
               >
                 DE
               </Button>
@@ -1069,7 +1101,7 @@ export default function ServiceDetailClient({ initialService, initialLang }) {
                 variant={lang === 'en' ? 'default' : 'outline'}
                 size="sm"
                 onClick={() => handleLanguageChange('en')}
-                className={lang === 'en' ? 'bg-[#4285F4]' : ''}
+                className={lang === 'en' ? 'bg-[#4285F4] text-white hover:bg-blue-600' : 'text-gray-700'}
               >
                 EN
               </Button>
@@ -1077,18 +1109,83 @@ export default function ServiceDetailClient({ initialService, initialLang }) {
                 variant={lang === 'tr' ? 'default' : 'outline'}
                 size="sm"
                 onClick={() => handleLanguageChange('tr')}
-                className={lang === 'tr' ? 'bg-[#4285F4]' : ''}
+                className={lang === 'tr' ? 'bg-[#4285F4] text-white hover:bg-blue-600' : 'text-gray-700'}
               >
                 TR
               </Button>
+
+              {/* Mobile menu toggle */}
+              <button
+                onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
+                className="md:hidden p-2 rounded-lg bg-gray-100 hover:bg-gray-200 text-gray-700 transition-colors ml-1 cursor-pointer"
+                aria-label="Menü"
+              >
+                {mobileMenuOpen ? (
+                  <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" /></svg>
+                ) : (
+                  <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6h16M4 12h16M4 18h16" /></svg>
+                )}
+              </button>
             </div>
           </div>
         </div>
+
+        {/* Mobile Navigation Drawer */}
+        {mobileMenuOpen && (
+          <div className="md:hidden border-t border-gray-100 bg-white px-4 py-4 space-y-3 shadow-lg animate-in fade-in">
+            <div className="font-bold text-xs uppercase tracking-wider text-gray-400">
+              {navT.services}
+            </div>
+            <div className="grid grid-cols-1 gap-1 pl-2 border-l-2 border-[#4285F4]">
+              {services.map((s, idx) => (
+                <a
+                  key={idx}
+                  href={getLocalizedServiceUrl(lang, s.slug)}
+                  className="text-xs font-semibold text-gray-700 hover:text-[#4285F4] py-1 block"
+                  onClick={() => setMobileMenuOpen(false)}
+                >
+                  {s.title}
+                </a>
+              ))}
+            </div>
+            <div className="pt-2 border-t border-gray-100 flex flex-col space-y-2 text-sm font-semibold">
+              <a href={`/${lang}/standorte`} className="text-[#4285F4] hover:underline" onClick={() => setMobileMenuOpen(false)}>
+                📍 {navT.standorte} (18 Metropolen)
+              </a>
+              <a href="/blog" className="text-gray-800 hover:text-[#4285F4]" onClick={() => setMobileMenuOpen(false)}>
+                📚 Blog & Ratgeber
+              </a>
+              <a href={`${lang === 'de' ? '' : `/${lang}`}/#about`} className="text-gray-800 hover:text-[#4285F4]" onClick={() => setMobileMenuOpen(false)}>
+                👤 {navT.about}
+              </a>
+              <a href={`${lang === 'de' ? '' : `/${lang}`}/#contact`} className="text-gray-800 hover:text-[#4285F4]" onClick={() => setMobileMenuOpen(false)}>
+                ✉️ {navT.contact}
+              </a>
+            </div>
+          </div>
+        )}
       </nav>
+
+      {/* Visual Breadcrumb Bar */}
+      <div className="pt-20 bg-slate-50/80 border-b border-gray-200/60">
+        <div className="container mx-auto px-4 py-2.5">
+          <nav className="flex items-center space-x-2 text-xs text-gray-500 overflow-x-auto whitespace-nowrap">
+            <a href={lang === 'de' ? '/' : `/${lang}`} className="hover:text-[#4285F4] font-medium transition-colors">
+              {lang === 'de' ? 'Startseite' : lang === 'en' ? 'Home' : 'Ana Sayfa'}
+            </a>
+            <span>/</span>
+            <a href={`/${lang}/standorte`} className="hover:text-[#4285F4] font-medium transition-colors">
+              {lang === 'de' ? 'Standorte & Regionen' : lang === 'en' ? 'Locations & Regions' : 'Şehirler & Bölgeler'}
+            </a>
+            <span>/</span>
+            <span className="text-gray-900 font-semibold">{data.title}</span>
+          </nav>
+        </div>
+      </div>
 
       {/* Hero Section (Ultra-Modern Agency Glassmorphism & High-Impact Typography) */}
       <section
-        className="pt-32 pb-24 px-4 relative overflow-hidden"
+        className="pt-12 pb-24 px-4 relative overflow-hidden"
         style={{
           background: `radial-gradient(circle at 50% 0%, ${data.gradientFrom}18 0%, white 70%, ${data.gradientTo}10 100%)`
         }}
@@ -2705,6 +2802,72 @@ export default function ServiceDetailClient({ initialService, initialLang }) {
         </section>
       )}
 
+      {/* Regional German Metropolises & Standorte Hub Cross-Link */}
+      <section className="py-16 px-4 bg-slate-50 border-t border-slate-200/70">
+        <div className="container mx-auto max-w-6xl">
+          <div className="text-center max-w-3xl mx-auto mb-10">
+            <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-blue-50 border border-blue-200 text-xs font-bold text-blue-700 mb-3">
+              <MapPin className="w-3.5 h-3.5" />
+              <span>{lang === 'tr' ? 'Almanya Çapında Hizmet Ağı' : lang === 'en' ? 'Nationwide Coverage Across Germany' : 'Deutschlandweite Betreuung'}</span>
+            </div>
+            <h2 className="text-2xl md:text-3xl font-black text-gray-900 mb-3">
+              {lang === 'tr'
+                ? `Almanya'nın 18 Metropolünde ${data.title}`
+                : lang === 'en'
+                ? `${data.title} Across Germany's 18 Metropolises`
+                : `${data.title} in den Top-Metropolen Deutschlands`}
+            </h2>
+            <p className="text-sm md:text-base text-gray-600">
+              {lang === 'tr'
+                ? 'Frankfurt merkezli ajansımız, Almanya genelindeki KOBİ ve kurumsal markalara yerel hedeflemeli, yüksek dönüşümlü kampanyalar yönetir.'
+                : lang === 'en'
+                ? 'Based near Frankfurt, we manage high-converting local campaigns for SMEs and enterprises across all major German business hubs.'
+                : 'Von unserem Standort bei Frankfurt betreuen wir Unternehmen und Mittelständler in allen deutschen Metropolregionen mit maßgeschneiderten Performance-Strategien.'}
+            </p>
+          </div>
+
+          <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-3 mb-8">
+            {[
+              { name: 'Frankfurt am Main', slug: 'frankfurt' },
+              { name: 'München', slug: 'muenchen' },
+              { name: 'Düsseldorf', slug: 'duesseldorf' },
+              { name: 'Köln', slug: 'koeln' },
+              { name: 'Berlin', slug: 'berlin' },
+              { name: 'Hamburg', slug: 'hamburg' },
+              { name: 'Stuttgart', slug: 'stuttgart' },
+              { name: 'Nürnberg', slug: 'nuernberg' },
+              { name: 'Dortmund', slug: 'dortmund' },
+              { name: 'Bonn', slug: 'bonn' },
+              { name: 'Hannover', slug: 'hannover' },
+              { name: 'Leipzig', slug: 'leipzig' }
+            ].map((city) => (
+              <a
+                key={city.slug}
+                href={`/${lang}/standorte/${city.slug}`}
+                className="p-3 bg-white rounded-xl border border-gray-200/80 hover:border-[#4285F4] hover:shadow-md transition-all text-center group"
+              >
+                <div className="text-xs font-bold text-gray-900 group-hover:text-[#4285F4] transition-colors">
+                  {city.name}
+                </div>
+                <div className="text-[10px] text-gray-400 mt-0.5">
+                  {lang === 'tr' ? 'Bölgesel Ajans' : lang === 'en' ? 'Regional Agency' : 'Regionale Betreuung'}
+                </div>
+              </a>
+            ))}
+          </div>
+
+          <div className="text-center">
+            <a
+              href={`/${lang}/standorte`}
+              className="inline-flex items-center gap-2 text-sm font-bold text-[#4285F4] hover:text-blue-700 bg-white border border-blue-200 px-5 py-2.5 rounded-xl shadow-xs hover:shadow transition-all"
+            >
+              <span>{lang === 'tr' ? 'Tüm 18 Şehir ve Bölge Rehberini Gör' : lang === 'en' ? 'Explore All 18 German Locations' : 'Alle 18 Standorte in Deutschland entdecken'}</span>
+              <ArrowUpRight className="w-4 h-4" />
+            </a>
+          </div>
+        </div>
+      </section>
+
       {/* Global Final CTA Section (Dark Luxury High-Converting Agency Banner) */}
       <section id="contact-section" className="py-24 px-4 bg-slate-950 text-white relative overflow-hidden">
         {/* Glow ambient background */}
@@ -2769,13 +2932,165 @@ export default function ServiceDetailClient({ initialService, initialLang }) {
         </div>
       </section>
 
-      {/* Footer */}
-      <footer className="py-8 bg-gray-900 text-center">
-        <div className="container mx-auto px-4">
-          <p className="text-sm text-gray-400">© 2026 Salih Maral. {lang === 'de' ? 'Alle Rechte vorbehalten.' : lang === 'en' ? 'All rights reserved.' : 'Tüm hakları saklıdır.'}</p>
-          <div className="flex justify-center space-x-4 mt-4">
-            <a href="/impressum" className="text-xs text-gray-500 hover:text-gray-300">Impressum</a>
-            <a href="/datenschutz" className="text-xs text-gray-500 hover:text-gray-300">Datenschutz</a>
+      {/* Rich Agency Footer */}
+      <footer className="bg-slate-950 text-white border-t border-slate-800 pt-16 pb-12">
+        <div className="container mx-auto px-4 max-w-7xl">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10 mb-12">
+            {/* Col 1: Brand & E-E-A-T */}
+            <div className="space-y-4">
+              <a href={lang === 'de' ? '/' : `/${lang}`} className="inline-block group">
+                <span className="text-2xl font-black tracking-tight text-white group-hover:text-blue-400 transition-colors">
+                  Salih Maral<span className="text-blue-500">.</span>
+                </span>
+              </a>
+              <p className="text-xs text-slate-400 leading-relaxed">
+                {lang === 'tr'
+                  ? 'Resmi Google Partner sertifikalı Salih Maral, 17+ yıllık tecrübesiyle Almanya ve Avrupa genelinde Google Ads, Meta Ads, SEO ve Server-Side Tracking ile kârlı büyüme sağlar.'
+                  : lang === 'en'
+                  ? 'Official Google Partner Salih Maral delivers scalable revenue growth across Germany & Europe through Google Ads, Meta Ads, SEO and Server-Side Tracking with 17+ years experience.'
+                  : 'Offizieller Google Partner Salih Maral liefert planbares Umsatzwachstum in Deutschland und Europa durch Google Ads, Meta Ads, SEO und Server-Side Tracking mit über 17 Jahren Erfahrung.'}
+              </p>
+
+              {/* Turkish Entrepreneur Badge */}
+              <div className="p-3 rounded-xl bg-blue-950/40 border border-blue-800/50 text-[11px] text-blue-200">
+                <div className="font-bold text-white flex items-center gap-1.5 mb-1">
+                  <span>🇩🇪 🇹🇷</span>
+                  <span>Sprechen Sie Türkisch?</span>
+                </div>
+                <div>Bizimle Türkçe görüşebilirsiniz. Almanya'daki Türk işletmelerine ve ihracatçılara ana dilde stratejik danışmanlık sunuyoruz.</div>
+              </div>
+
+              <div className="text-xs text-slate-400 space-y-1.5 pt-1">
+                <div>Dreieich / Frankfurt am Main &bull; Deutschland</div>
+                <div>
+                  <a href="mailto:info@salihmaral.de" className="hover:text-blue-400 transition-colors">
+                    ✉️ info@salihmaral.de
+                  </a>
+                </div>
+                <div>
+                  <a href="tel:+491724106463" className="hover:text-blue-400 transition-colors">
+                    📞 +49 (0) 172 4106463
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            {/* Col 2: Services */}
+            <div>
+              <div className="text-sm font-bold text-white uppercase tracking-wider mb-4">
+                {lang === 'tr' ? 'Hizmetlerimiz' : lang === 'en' ? 'Core Services' : 'Dienstleistungen'}
+              </div>
+              <ul className="space-y-2 text-xs">
+                {services.map((srv, idx) => (
+                  <li key={idx}>
+                    <a
+                      href={getLocalizedServiceUrl(lang, srv.slug)}
+                      className="text-slate-400 hover:text-blue-400 transition-colors block"
+                    >
+                      {srv.title}
+                    </a>
+                  </li>
+                ))}
+              </ul>
+            </div>
+
+            {/* Col 3: German Cities */}
+            <div>
+              <div className="text-sm font-bold text-white uppercase tracking-wider mb-4">
+                {lang === 'tr' ? 'Almanya Şehirleri' : lang === 'en' ? 'Locations in Germany' : 'Standorte Deutschland'}
+              </div>
+              <div className="grid grid-cols-2 gap-x-2 gap-y-2 text-xs">
+                {[
+                  { name: 'Frankfurt', slug: 'frankfurt' },
+                  { name: 'München', slug: 'muenchen' },
+                  { name: 'Düsseldorf', slug: 'duesseldorf' },
+                  { name: 'Köln', slug: 'koeln' },
+                  { name: 'Berlin', slug: 'berlin' },
+                  { name: 'Hamburg', slug: 'hamburg' },
+                  { name: 'Stuttgart', slug: 'stuttgart' },
+                  { name: 'Nürnberg', slug: 'nuernberg' },
+                  { name: 'Dortmund', slug: 'dortmund' },
+                  { name: 'Bonn', slug: 'bonn' },
+                  { name: 'Hannover', slug: 'hannover' },
+                  { name: 'Leipzig', slug: 'leipzig' }
+                ].map((c) => (
+                  <a
+                    key={c.slug}
+                    href={`/${lang}/standorte/${c.slug}`}
+                    className="text-slate-400 hover:text-blue-400 transition-colors"
+                  >
+                    {c.name}
+                  </a>
+                ))}
+              </div>
+              <div className="mt-4 pt-3 border-t border-slate-800">
+                <a
+                  href={`/${lang}/standorte`}
+                  className="text-xs font-bold text-blue-400 hover:text-blue-300"
+                >
+                  {lang === 'tr' ? 'Tüm 18 Şehri İncele ➔' : lang === 'en' ? 'View All 18 Locations ➔' : 'Alle 18 Standorte ansehen ➔'}
+                </a>
+              </div>
+            </div>
+
+            {/* Col 4: Quick Links & Legal */}
+            <div>
+              <div className="text-sm font-bold text-white uppercase tracking-wider mb-4">
+                {lang === 'tr' ? 'Rehber & Şirket' : lang === 'en' ? 'Guides & Company' : 'Ratgeber & Unternehmen'}
+              </div>
+              <ul className="space-y-2.5 text-xs mb-6 text-slate-400">
+                <li>
+                  <a href={lang === 'de' ? '/' : `/${lang}`} className="hover:text-white transition-colors">
+                    {lang === 'tr' ? 'Ana Sayfa' : lang === 'en' ? 'Home' : 'Startseite'}
+                  </a>
+                </li>
+                <li>
+                  <a href={`${lang === 'de' ? '' : `/${lang}`}/#about`} className="hover:text-white transition-colors">
+                    {lang === 'tr' ? 'Hakkımda & Deneyim' : lang === 'en' ? 'About Salih Maral' : 'Über Salih Maral'}
+                  </a>
+                </li>
+                <li>
+                  <a href="/blog" className="hover:text-white transition-colors">
+                    {lang === 'tr' ? 'Blog & Stratejik Rehberler' : lang === 'en' ? 'Guides & Articles' : 'Ratgeber & Blog'}
+                  </a>
+                </li>
+                <li>
+                  <a href="/blog/google-ads-agentur-preise-kosten-deutschland-2026" className="hover:text-white transition-colors">
+                    {lang === 'tr' ? 'Google Ads Maliyet & Fiyatlar' : lang === 'en' ? 'Google Ads Pricing 2026' : 'Google Ads Agentur Preise 2026'}
+                  </a>
+                </li>
+                <li>
+                  <a href={`${lang === 'de' ? '' : `/${lang}`}/#contact`} className="text-blue-400 hover:underline">
+                    {lang === 'tr' ? 'Ücretsiz Analiz Talebi' : lang === 'en' ? 'Request Free Analysis' : 'Kostenlose Analyse anfordern'}
+                  </a>
+                </li>
+              </ul>
+
+              <div className="pt-4 border-t border-slate-800 space-y-2 text-xs">
+                <div>
+                  <a href="/impressum" className="text-slate-400 hover:text-white transition-colors">
+                    Impressum
+                  </a>
+                </div>
+                <div>
+                  <a href="/datenschutz" className="text-slate-400 hover:text-white transition-colors">
+                    Datenschutz
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          {/* Bottom Copyright Bar */}
+          <div className="pt-8 border-t border-slate-800 text-xs text-slate-400 flex flex-col sm:flex-row items-center justify-between gap-4">
+            <div>
+              &copy; 2026 Salih Maral &mdash; Offizieller Google Partner. {lang === 'tr' ? 'Tüm hakları saklıdır.' : lang === 'en' ? 'All rights reserved.' : 'Alle Rechte vorbehalten.'}
+            </div>
+            <div className="flex items-center gap-4 text-[11px]">
+              <span>Frankfurt am Main &bull; Dreieich &bull; Deutschland</span>
+              <span>&bull;</span>
+              <span className="text-slate-400">100% DSGVO-konform</span>
+            </div>
           </div>
         </div>
       </footer>
