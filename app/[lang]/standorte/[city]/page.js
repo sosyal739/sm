@@ -744,7 +744,8 @@ export default function CityPage({ params }) {
           email: formData.email,
           phone: formData.phone,
           message: `[Standort: ${cityData.name}] Firma: ${formData.company || 'N/A'} - Nachricht: ${formData.message}`,
-          language: currentLang
+          language: currentLang,
+          b_check: formData.b_check || ''
         })
       })
 
@@ -1562,6 +1563,19 @@ export default function CityPage({ params }) {
           )}
 
           <form onSubmit={handleSubmit} className="space-y-4 text-left">
+            {/* Anti-bot Honeypot trap - invisible to humans, traps automated spam bots */}
+            <div className="hidden" aria-hidden="true" style={{ display: 'none', position: 'absolute', left: '-9999px' }}>
+              <label htmlFor="b_check_city">Do not fill this</label>
+              <input
+                type="text"
+                id="b_check_city"
+                name="b_check"
+                value={formData.b_check || ''}
+                onChange={(e) => setFormData({ ...formData, b_check: e.target.value })}
+                tabIndex={-1}
+                autoComplete="off"
+              />
+            </div>
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
               <div>
                 <label className="block text-xs font-medium text-slate-300 mb-1.5">

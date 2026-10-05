@@ -1,4 +1,4 @@
-﻿'use client'
+'use client'
 
 import React, { useState } from 'react'
 import { Calculator, TrendingUp, DollarSign, ArrowRight, CheckCircle2, Sparkles, Send, Loader2 } from 'lucide-react'
@@ -103,7 +103,8 @@ export default function RoasCalculatorWidget({ lang = 'de' }) {
           name: formData.name,
           email: formData.email,
           message: `[ROAS Hesaplayıcı] Bütçe: ${budget}€, Mevcut ROAS: ${currentRoas}x, Hedef ROAS: ${targetRoas}x, Ek Ciro: ${additionalRevenue}€, Web: ${formData.website || 'N/A'}`,
-          language: lang
+          language: lang,
+          b_check: formData.b_check || ''
         })
       })
       setSubmitted(true)
@@ -236,6 +237,19 @@ export default function RoasCalculatorWidget({ lang = 'de' }) {
             </div>
           ) : (
             <form onSubmit={handleLeadSubmit} className="space-y-3 mt-4 text-left">
+              {/* Anti-bot Honeypot trap - invisible to humans, traps automated spam bots */}
+              <div className="hidden" aria-hidden="true" style={{ display: 'none', position: 'absolute', left: '-9999px' }}>
+                <label htmlFor="b_check_roas">Do not fill this</label>
+                <input
+                  type="text"
+                  id="b_check_roas"
+                  name="b_check"
+                  value={formData.b_check || ''}
+                  onChange={(e) => setFormData({ ...formData, b_check: e.target.value })}
+                  tabIndex={-1}
+                  autoComplete="off"
+                />
+              </div>
               <input
                 type="text"
                 required

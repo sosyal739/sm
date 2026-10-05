@@ -2050,6 +2050,19 @@ export default function Home({ initialLang = 'de' }) {
                 <div className="md:col-span-3 p-8">
                   <h3 className="text-xl font-bold mb-6 text-gray-800">{lang === 'de' ? 'Nachricht senden' : lang === 'en' ? 'Send Message' : 'Mesaj Gönder'}</h3>
                   <form onSubmit={handleSubmit} className="space-y-4">
+                    {/* Anti-bot Honeypot trap - invisible to humans, traps automated spam bots */}
+                    <div className="hidden" aria-hidden="true" style={{ display: 'none', position: 'absolute', left: '-9999px' }}>
+                      <label htmlFor="b_check_main">Do not fill this</label>
+                      <input
+                        type="text"
+                        id="b_check_main"
+                        name="b_check"
+                        value={formData.b_check || ''}
+                        onChange={(e) => setFormData({ ...formData, b_check: e.target.value })}
+                        tabIndex={-1}
+                        autoComplete="off"
+                      />
+                    </div>
                     <div className="grid md:grid-cols-2 gap-4">
                       <div>
                         <Input
