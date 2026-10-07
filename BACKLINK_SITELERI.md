@@ -30,13 +30,14 @@ Dünyanın en prestijli kurumsal iş ve B2B ağıdır. Google'ın en yüksek gü
 Dünyanın en büyük ve Google tarafından en hızlı indekslenen blog ağıdır.
 - **Giriş Yolu:** [https://medium.com](https://medium.com) ➔ *Sign In* ➔ *Sign in with email* (`adsreklam2507@gmail.com` ➔ Gmail'e gelen kod ile girilir).
 - **Profil:** [@adsreklam2507](https://medium.com/@adsreklam2507)
-- **Canlı Yayınlanan Makale:**
-  - 🔗 [Why German Businesses Lose 30% of Google Ads Conversions (And How to Fix It)](https://medium.com/@adsreklam2507/why-german-businesses-lose-30-of-google-ads-conversions-and-how-to-fix-it-691bad71cdea)
-  - *Hedef:* Server-Side Tracking, Google Ads Ajansı ve B2B fiyat rehberimiz.
+- **Canlı Yayınlanan Makaleler:**
+  1. 🔗 [Why German Businesses Lose 30% of Google Ads Conversions (And How to Fix It)](https://medium.com/@adsreklam2507/why-german-businesses-lose-30-of-google-ads-conversions-and-how-to-fix-it-691bad71cdea)
+  2. 🔗 [Google Ads + Meta Ads Full-Funnel Synergy: Why Isolated Ad Channels Spike CPA by 35% in Germany (2026)](https://medium.com/@adsreklam2507/google-ads-meta-ads-full-funnel-synergy-why-isolated-ad-channels-spike-cpa-by-35-in-germany-fe7651c2e87b)
+  - *Hedef:* Server-Side Tracking, Google Ads Ajansı, Meta Ads, Frankfurt ve B2B fiyat rehberimiz.
 
 ---
 
-### 2. Substack (Domain Authority: 92)
+### 3. Substack (Domain Authority: 92)
 Google'ın son algoritma güncellemelerinde en çok öne çıkardığı profesyonel bülten ve makale ağıdır.
 - **Giriş Yolu:** [https://substack.com/sign-in](https://substack.com/sign-in) ➔ *Sign in with email* (`adsreklam2507@gmail.com` ➔ Gmail doğrulama linki).
 - **Resmi Yayınımız:** [https://salihmaral.substack.com](https://salihmaral.substack.com)
