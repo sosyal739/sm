@@ -1067,7 +1067,7 @@ export default function Home({ initialLang = 'de' }) {
                 >
                   <div
                     style={{ backgroundColor: '#ffffff' }}
-                    className="bg-white rounded-xl shadow-[0_20px_60px_rgba(10,0,69,0.12),0_1px_3px_rgba(0,0,0,0.05)] border border-slate-100 ring-1 ring-slate-900/5 p-6"
+                    className="bg-white rounded-3xl shadow-[0_20px_60px_rgba(10,0,69,0.12),0_1px_3px_rgba(0,0,0,0.05)] border border-slate-100 ring-1 ring-slate-900/5 p-6"
                   >
                     <div className="grid grid-cols-2 gap-3.5">
                       {t.why.services.map((service, idx) => {
@@ -1078,9 +1078,9 @@ export default function Home({ initialLang = 'de' }) {
                             key={idx}
                             href={svcUrl(lang, service.slug)}
                             onClick={() => setIsServicesOpen(false)}
-                            className="group/item flex items-start gap-4 p-3.5 rounded-lg hover:bg-[#F9FAFB] transition-all border border-transparent hover:border-slate-100"
+                            className="group/item flex items-start gap-4 p-3.5 rounded-2xl hover:bg-[#F9FAFB] transition-all border border-transparent hover:border-slate-100"
                           >
-                            <div className={`w-11 h-11 rounded-lg flex items-center justify-center shrink-0 border ${iconData.color}`}>
+                            <div className={`w-11 h-11 rounded-2xl flex items-center justify-center shrink-0 border ${iconData.color}`}>
                               <IconComponent className="w-5 h-5" />
                             </div>
                             <div className="flex-1 min-w-0">
@@ -1132,22 +1132,22 @@ export default function Home({ initialLang = 'de' }) {
             {/* Right Side: Language Switcher + Mobile Hamburger Button */}
             <div className="flex items-center space-x-2">
               {/* Desktop Language Switcher */}
-              <div className="hidden sm:flex items-center space-x-1.5 bg-slate-100/80 p-1 rounded-lg border border-slate-200/60">
+              <div className="hidden sm:flex items-center space-x-1.5 bg-slate-100/80 p-1 rounded-xl border border-slate-200/60">
                 <button
                   onClick={() => handleLanguageChange('de')}
-                  className={`px-2.5 py-1 text-xs font-bold rounded-md transition-all cursor-pointer ${lang === 'de' ? 'bg-[#4285F4] text-white shadow-xs' : 'text-slate-600 hover:text-gray-900'}`}
+                  className={`px-2.5 py-1 text-xs font-bold rounded-lg transition-all cursor-pointer ${lang === 'de' ? 'bg-[#4285F4] text-white shadow-xs' : 'text-slate-600 hover:text-gray-900'}`}
                 >
                   DE
                 </button>
                 <button
                   onClick={() => handleLanguageChange('en')}
-                  className={`px-2.5 py-1 text-xs font-bold rounded-md transition-all cursor-pointer ${lang === 'en' ? 'bg-[#4285F4] text-white shadow-xs' : 'text-slate-600 hover:text-gray-900'}`}
+                  className={`px-2.5 py-1 text-xs font-bold rounded-lg transition-all cursor-pointer ${lang === 'en' ? 'bg-[#4285F4] text-white shadow-xs' : 'text-slate-600 hover:text-gray-900'}`}
                 >
                   EN
                 </button>
                 <button
                   onClick={() => handleLanguageChange('tr')}
-                  className={`px-2.5 py-1 text-xs font-bold rounded-md transition-all cursor-pointer ${lang === 'tr' ? 'bg-[#4285F4] text-white shadow-xs' : 'text-slate-600 hover:text-gray-900'}`}
+                  className={`px-2.5 py-1 text-xs font-bold rounded-lg transition-all cursor-pointer ${lang === 'tr' ? 'bg-[#4285F4] text-white shadow-xs' : 'text-slate-600 hover:text-gray-900'}`}
                 >
                   TR
                 </button>
@@ -1156,7 +1156,7 @@ export default function Home({ initialLang = 'de' }) {
               {/* Mobile Hamburger Button */}
               <button
                 onClick={() => setIsMobileMenuOpen(true)}
-                className="md:hidden p-2 rounded-lg bg-slate-100 text-gray-900 hover:bg-slate-200 transition-colors cursor-pointer"
+                className="md:hidden p-2 rounded-xl bg-slate-100 text-gray-900 hover:bg-slate-200 transition-colors cursor-pointer"
                 aria-label="Open Mobile Navigation"
               >
                 <Menu className="w-6 h-6 text-gray-900" />
@@ -1176,7 +1176,7 @@ export default function Home({ initialLang = 'de' }) {
             </a>
             <button
               onClick={() => setIsMobileMenuOpen(false)}
-              className="p-2 rounded-lg bg-slate-100 text-gray-900 hover:bg-slate-200 transition-colors cursor-pointer"
+              className="p-2 rounded-full bg-slate-100 text-gray-900 hover:bg-slate-200 transition-colors cursor-pointer"
               aria-label="Close Menu"
             >
               <X className="w-6 h-6 text-gray-900" />
@@ -1186,22 +1186,22 @@ export default function Home({ initialLang = 'de' }) {
           {/* Scrollable Content inside Menu */}
           <div className="flex-1 overflow-y-auto px-5 py-6 space-y-6 bg-white">
             {/* Language Segmented Control */}
-            <div className="flex items-center justify-between bg-slate-100 p-1.5 rounded-lg">
+            <div className="flex items-center justify-between bg-slate-100 p-1.5 rounded-2xl">
               <button
                 onClick={() => { handleLanguageChange('de'); setIsMobileMenuOpen(false); }}
-                className={`flex-1 py-2 text-xs font-bold rounded-md text-center transition-all ${lang === 'de' ? 'bg-[#4285F4] text-white shadow-sm' : 'text-slate-700'}`}
+                className={`flex-1 py-2 text-xs font-bold rounded-xl text-center transition-all ${lang === 'de' ? 'bg-[#4285F4] text-white shadow-sm' : 'text-slate-700'}`}
               >
                 🇩🇪 Deutsch
               </button>
               <button
                 onClick={() => { handleLanguageChange('en'); setIsMobileMenuOpen(false); }}
-                className={`flex-1 py-2 text-xs font-bold rounded-md text-center transition-all ${lang === 'en' ? 'bg-[#4285F4] text-white shadow-sm' : 'text-slate-700'}`}
+                className={`flex-1 py-2 text-xs font-bold rounded-xl text-center transition-all ${lang === 'en' ? 'bg-[#4285F4] text-white shadow-sm' : 'text-slate-700'}`}
               >
                 🇬🇧 English
               </button>
               <button
                 onClick={() => { handleLanguageChange('tr'); setIsMobileMenuOpen(false); }}
-                className={`flex-1 py-2 text-xs font-bold rounded-md text-center transition-all ${lang === 'tr' ? 'bg-[#4285F4] text-white shadow-sm' : 'text-slate-700'}`}
+                className={`flex-1 py-2 text-xs font-bold rounded-xl text-center transition-all ${lang === 'tr' ? 'bg-[#4285F4] text-white shadow-sm' : 'text-slate-700'}`}
               >
                 🇹🇷 Türkçe
               </button>
@@ -1218,7 +1218,7 @@ export default function Home({ initialLang = 'de' }) {
                     key={idx}
                     href={svcUrl(lang, service.slug)}
                     onClick={() => setIsMobileMenuOpen(false)}
-                    className="flex items-center justify-between p-3.5 rounded-lg bg-slate-50 hover:bg-blue-50 border border-slate-100 transition-colors"
+                    className="flex items-center justify-between p-3.5 rounded-2xl bg-slate-50 hover:bg-blue-50 border border-slate-100 transition-colors"
                   >
                     <span className="font-bold text-sm text-gray-900">{service.title}</span>
                     <ChevronRight className="w-4 h-4 text-slate-400" />
@@ -1236,26 +1236,26 @@ export default function Home({ initialLang = 'de' }) {
                 <a
                   href={lang === 'de' ? '/de/standorte' : lang === 'tr' ? '/tr/standorte' : '/en/standorte'}
                   onClick={() => setIsMobileMenuOpen(false)}
-                  className="p-3 rounded-lg bg-slate-50 text-center font-bold text-xs text-gray-900 border border-slate-100"
+                  className="p-3 rounded-xl bg-slate-50 text-center font-bold text-xs text-gray-900 border border-slate-100"
                 >
                   📍 {lang === 'de' ? '18 Standorte' : lang === 'tr' ? '18 Şehir' : '18 Locations'}
                 </a>
                 <a
                   href="/blog"
                   onClick={() => setIsMobileMenuOpen(false)}
-                  className="p-3 rounded-lg bg-slate-50 text-center font-bold text-xs text-gray-900 border border-slate-100"
+                  className="p-3 rounded-xl bg-slate-50 text-center font-bold text-xs text-gray-900 border border-slate-100"
                 >
                   📚 Blog & News
                 </a>
                 <button
                   onClick={() => { scrollToSection('success'); setIsMobileMenuOpen(false); }}
-                  className="p-3 rounded-lg bg-slate-50 text-center font-bold text-xs text-gray-900 border border-slate-100 cursor-pointer"
+                  className="p-3 rounded-xl bg-slate-50 text-center font-bold text-xs text-gray-900 border border-slate-100 cursor-pointer"
                 >
                   🏆 {t.nav.success}
                 </button>
                 <button
                   onClick={() => { scrollToSection('about'); setIsMobileMenuOpen(false); }}
-                  className="p-3 rounded-lg bg-slate-50 text-center font-bold text-xs text-gray-900 border border-slate-100 cursor-pointer"
+                  className="p-3 rounded-xl bg-slate-50 text-center font-bold text-xs text-gray-900 border border-slate-100 cursor-pointer"
                 >
                   ℹ️ {t.nav.about}
                 </button>
@@ -1266,7 +1266,7 @@ export default function Home({ initialLang = 'de' }) {
             <div className="pt-2">
               <button
                 onClick={() => { scrollToSection('contact'); setIsMobileMenuOpen(false); }}
-                className="w-full bg-[#4285F4] hover:bg-[#3367d6] text-white font-black py-4 rounded-lg shadow-lg flex items-center justify-center space-x-2 text-sm cursor-pointer"
+                className="w-full bg-[#4285F4] hover:bg-[#3367d6] text-white font-black py-4 rounded-2xl shadow-lg flex items-center justify-center space-x-2 text-sm cursor-pointer"
               >
                 <Mail className="w-4 h-4" />
                 <span>{t.hero.cta2}</span>
@@ -1291,7 +1291,7 @@ export default function Home({ initialLang = 'de' }) {
             {/* Left Content Column */}
             <div className="lg:col-span-7 space-y-7 text-left">
               {/* Top Partner Badge */}
-              <div className="inline-flex items-center space-x-2.5 bg-white/95 border border-slate-200/90 rounded-md px-4 py-1.5 shadow-sm backdrop-blur-md">
+              <div className="inline-flex items-center space-x-2.5 bg-white/95 border border-slate-200/90 rounded-full px-5 py-2 shadow-sm backdrop-blur-md">
                 <span className="w-2.5 h-2.5 rounded-full bg-emerald-500 animate-pulse"></span>
                 <span className="text-xs sm:text-sm font-bold text-slate-800 tracking-wide">
                   2026 {lang === 'de' ? 'Performance & Growth Strategien' : lang === 'en' ? 'Performance & Growth Strategies' : 'Performans & Büyüme Stratejileri'}
@@ -1323,7 +1323,7 @@ export default function Home({ initialLang = 'de' }) {
               <div className="flex flex-wrap gap-4 pt-2">
                 <button
                   onClick={() => scrollToSection('contact')}
-                  className="bg-[#4285F4] hover:bg-[#3367d6] text-white font-bold text-base px-8 py-3.5 rounded-lg shadow-xl hover:shadow-2xl transition-all duration-300 hover:scale-105 flex items-center gap-2 cursor-pointer"
+                  className="bg-[#4285F4] hover:bg-[#3367d6] text-white font-bold text-base px-8 py-4 rounded-2xl shadow-xl hover:shadow-2xl transition-all duration-300 hover:scale-105 flex items-center gap-2 cursor-pointer"
                 >
                   <Mail className="h-5 w-5" />
                   <span>{t.hero.cta2}</span>
@@ -1335,7 +1335,7 @@ export default function Home({ initialLang = 'de' }) {
                   target="_blank"
                   onClick={() => trackWhatsAppClick({ location: 'page' })}
                   rel="noopener noreferrer"
-                  className="bg-emerald-50 text-emerald-800 border border-emerald-200/90 hover:bg-emerald-100/90 font-bold text-base px-7 py-3.5 rounded-lg shadow-sm hover:shadow transition-all duration-300 flex items-center gap-2.5 cursor-pointer"
+                  className="bg-emerald-50 text-emerald-800 border border-emerald-200/90 hover:bg-emerald-100/90 font-bold text-base px-7 py-4 rounded-2xl shadow-sm hover:shadow transition-all duration-300 flex items-center gap-2.5 cursor-pointer"
                 >
                   <MessageCircle className="h-5 w-5 text-[#25D366]" />
                   <span>{t.hero.cta1}</span>
@@ -1344,19 +1344,19 @@ export default function Home({ initialLang = 'de' }) {
 
               {/* Multilingual Cultural Bridge Badge */}
               {lang === 'de' && (
-                <div className="inline-flex items-center gap-2 bg-gradient-to-r from-amber-50/90 via-white to-emerald-50/90 border border-emerald-200/80 rounded-lg px-4 py-2 text-xs sm:text-sm text-slate-700 shadow-sm">
+                <div className="inline-flex items-center gap-2 bg-gradient-to-r from-amber-50/90 via-white to-emerald-50/90 border border-emerald-200/80 rounded-xl px-4 py-2 text-xs sm:text-sm text-slate-700 shadow-sm">
                   <span className="text-base">🇹🇷</span>
                   <span><strong>Sprechen Sie Türkisch?</strong> Gerne beraten wir Sie auch auf Türkisch — <a href="/tr" className="text-[#4285F4] font-bold underline hover:text-blue-700">Bizimle Türkçe görüşebilirsiniz</a></span>
                 </div>
               )}
               {lang === 'en' && (
-                <div className="inline-flex items-center gap-2 bg-gradient-to-r from-blue-50/90 via-white to-indigo-50/90 border border-blue-200/80 rounded-lg px-4 py-2 text-xs sm:text-sm text-slate-700 shadow-sm">
+                <div className="inline-flex items-center gap-2 bg-gradient-to-r from-blue-50/90 via-white to-indigo-50/90 border border-blue-200/80 rounded-xl px-4 py-2 text-xs sm:text-sm text-slate-700 shadow-sm">
                   <span className="text-base">🇪🇺</span>
                   <span><strong>Expanding to Germany?</strong> Official German Google Partner managing localized campaigns in English, German & Turkish.</span>
                 </div>
               )}
               {lang === 'tr' && (
-                <div className="inline-flex items-center gap-2 bg-gradient-to-r from-emerald-50/90 via-white to-blue-50/90 border border-emerald-200/80 rounded-lg px-4 py-2 text-xs sm:text-sm text-slate-700 shadow-sm">
+                <div className="inline-flex items-center gap-2 bg-gradient-to-r from-emerald-50/90 via-white to-blue-50/90 border border-emerald-200/80 rounded-xl px-4 py-2 text-xs sm:text-sm text-slate-700 shadow-sm">
                   <span className="text-base">🇩🇪 🇹🇷</span>
                   <span><strong>Almanya & Avrupa Pazarı:</strong> Almanya'daki Türk işletmeler ve Türkiye'den Avrupa'ya açılan ihracatçılar için Resmi Google Partner güvencesi.</span>
                 </div>
@@ -1373,7 +1373,7 @@ export default function Home({ initialLang = 'de' }) {
                   <div className="flex items-center space-x-1">
                     <span className="text-sm font-bold text-gray-900">5.0</span>
                     <span className="text-amber-500 text-sm">★★★★★</span>
-                    <span className="text-xs font-bold text-emerald-600 bg-emerald-50 px-2 py-0.5 rounded-md border border-emerald-200/60 ml-1">Doğrulanmış</span>
+                    <span className="text-xs font-bold text-emerald-600 bg-emerald-50 px-2 py-0.5 rounded-full border border-emerald-200/60 ml-1">Doğrulanmış</span>
                   </div>
                   <p className="text-xs font-medium text-slate-500 mt-0.5">
                     {lang === 'de' ? '300+ Zufriedene Kunden & Unternehmen' : lang === 'en' ? '300+ Satisfied Clients & Brands' : '300+ Mutlu Müşteri & Marka'}
@@ -1392,8 +1392,8 @@ export default function Home({ initialLang = 'de' }) {
               <div className="relative w-full max-w-lg animate-hero-float">
                 
                 {/* Floating Top-Left Badge (Google Certified) */}
-                <div className="hidden sm:flex absolute -top-4 -left-4 z-20 bg-white/95 backdrop-blur-md border border-slate-200/90 rounded-lg px-4 py-2.5 shadow-xl items-center gap-2.5 hover:scale-105 transition-transform duration-300 animate-badge-float1">
-                  <div className="w-8 h-8 rounded-md bg-blue-50 border border-blue-100 flex items-center justify-center p-1.5 shadow-xs">
+                <div className="hidden sm:flex absolute -top-4 -left-4 z-20 bg-white/95 backdrop-blur-md border border-slate-200/90 rounded-2xl px-4 py-2.5 shadow-xl items-center gap-2.5 hover:scale-105 transition-transform duration-300 animate-badge-float1">
+                  <div className="w-8 h-8 rounded-xl bg-blue-50 border border-blue-100 flex items-center justify-center p-1.5 shadow-xs">
                     <img src="https://upload.wikimedia.org/wikipedia/commons/c/c7/Google_Ads_logo.svg" alt="Google Ads" className="w-full h-full object-contain" width="24" height="24" loading="lazy" />
                   </div>
                   <div>
@@ -1408,8 +1408,8 @@ export default function Home({ initialLang = 'de' }) {
                 </div>
 
                 {/* Hero Frame */}
-                <div className="bg-white rounded-xl p-3 sm:p-3.5 shadow-2xl border border-slate-200/90 overflow-hidden relative group">
-                  <div className="relative rounded-lg overflow-hidden shadow-inner bg-slate-100">
+                <div className="bg-white rounded-3xl p-3 sm:p-3.5 shadow-2xl border border-slate-200/90 overflow-hidden relative group">
+                  <div className="relative rounded-2xl overflow-hidden shadow-inner bg-slate-100">
                     <picture>
                       <source media="(max-width: 640px)" srcSet="/hero-mobile.webp" type="image/webp" />
                       <source srcSet="/hero.webp" type="image/webp" />
@@ -1425,7 +1425,7 @@ export default function Home({ initialLang = 'de' }) {
                   </div>
 
                   {/* Google Ads Full-Width Official Partner Trust Strip */}
-                  <div className="mt-3 bg-slate-50/90 border border-slate-200/70 rounded-lg px-5 py-3.5">
+                  <div className="mt-3 bg-slate-50/90 border border-slate-200/70 rounded-2xl px-5 py-3.5">
                     <a
                       href="https://www.google.com/partners/agency?id=5868261912&_gl=1*18i960o*_ga*MTA1ODA5OTYxNS4xNzU4MDYxMzU4*_ga_V9K47ZG8NP*czE3NzgyODEzNzIkbzI1MyRnMSR0MTc3ODI4MzkyMiRqNjAkbDAkaDA"
                       target="_blank"
@@ -1443,7 +1443,7 @@ export default function Home({ initialLang = 'de' }) {
                         <div className="border-l border-slate-300 pl-3">
                           <p className="text-xs sm:text-sm font-black text-slate-900 tracking-tight flex items-center gap-1.5">
                             <span>Partner</span>
-                            <span className="text-[10px] font-bold text-[#4285F4] bg-blue-50 border border-blue-200/60 px-2 py-0.5 rounded-md">Google Ads</span>
+                            <span className="text-[10px] font-bold text-[#4285F4] bg-blue-50 border border-blue-200/60 px-2 py-0.5 rounded-full">Google Ads</span>
                           </p>
                           <p className="text-[10px] text-slate-500 font-medium">
                             {lang === 'de' ? 'Offizieller Google Partner Status' : lang === 'en' ? 'Official Google Partner Status' : 'Resmi Google Partner Durumu'}
@@ -1507,14 +1507,14 @@ export default function Home({ initialLang = 'de' }) {
             ].map((stat, i) => (
               <div
                 key={i}
-                className="bg-white rounded-xl p-5 md:p-6 border border-slate-100 shadow-[0_4px_20px_rgba(0,0,0,0.03)] hover:shadow-[0_12px_30px_rgba(81,56,238,0.08)] transition-all duration-300 hover:-translate-y-1.5 flex flex-col justify-between text-center relative overflow-hidden group"
+                className="bg-white rounded-3xl p-5 md:p-6 border border-slate-100 shadow-[0_4px_20px_rgba(0,0,0,0.03)] hover:shadow-[0_12px_30px_rgba(81,56,238,0.08)] transition-all duration-300 hover:-translate-y-1.5 flex flex-col justify-between text-center relative overflow-hidden group"
               >
                 <div
                   className="absolute top-0 left-0 right-0 h-1 transition-all duration-300 group-hover:h-1.5"
                   style={{ backgroundColor: stat.color }}
                 ></div>
 
-                <div className="inline-flex items-center justify-center space-x-1 bg-slate-50 border border-slate-100 px-2.5 py-0.5 rounded-md mb-3 shadow-[0_1px_3px_rgba(0,0,0,0.02)]">
+                <div className="inline-flex items-center justify-center space-x-1 bg-slate-50 border border-slate-100 px-2.5 py-0.5 rounded-full mb-3 shadow-[0_1px_3px_rgba(0,0,0,0.02)]">
                   <span className="text-[10px] font-bold text-slate-700">{stat.trend}</span>
                 </div>
 
@@ -1535,7 +1535,7 @@ export default function Home({ initialLang = 'de' }) {
       <section id="services" className="py-24 bg-white relative overflow-hidden">
         <div className="container mx-auto px-4 max-w-7xl relative z-10">
           <div className="text-center mb-16">
-            <div className="inline-flex items-center space-x-2 bg-blue-50 border border-blue-200/80 rounded-md px-3.5 py-1.5 mb-4 shadow-sm">
+            <div className="inline-flex items-center space-x-2 bg-blue-50 border border-blue-200/80 rounded-full px-4 py-1.5 mb-4 shadow-sm">
               <span className="w-2 h-2 rounded-full bg-[#4285F4]"></span>
               <span className="text-xs font-bold uppercase tracking-wider text-[#4285F4]">
                 {lang === 'de' ? 'Spezialisierte Fachbereiche' : lang === 'en' ? 'Specialized Practice Areas' : 'Uzmanlık Alanlarımız'}
@@ -1643,7 +1643,7 @@ export default function Home({ initialLang = 'de' }) {
                   href={svcUrl(lang, service.slug)}
                   className="block group h-full"
                 >
-                  <div className="h-full bg-white rounded-xl p-7 sm:p-8 md:p-9 border border-slate-100 shadow-[0_4px_24px_rgba(0,0,0,0.03)] hover:shadow-[0_20px_50px_rgba(81,56,238,0.09)] hover:border-[#5138EE]/20 transition-all duration-300 hover:-translate-y-2 flex flex-col justify-between relative overflow-hidden group">
+                  <div className="h-full bg-white rounded-3xl p-7 sm:p-8 md:p-9 border border-slate-100 shadow-[0_4px_24px_rgba(0,0,0,0.03)] hover:shadow-[0_20px_50px_rgba(81,56,238,0.09)] hover:border-[#5138EE]/20 transition-all duration-300 hover:-translate-y-2 flex flex-col justify-between relative overflow-hidden group">
                     {/* Top Accent Line */}
                     <div
                       className="absolute top-0 left-0 right-0 h-1.5 transition-all duration-300 group-hover:h-2.5"
@@ -1654,7 +1654,7 @@ export default function Home({ initialLang = 'de' }) {
                       {/* Header: Icon + Category Badge */}
                       <div className="flex items-center justify-between mb-6">
                         <div
-                          className="w-16 h-16 rounded-lg flex items-center justify-center p-3.5 shadow-md group-hover:scale-110 group-hover:rotate-1 transition-all duration-300"
+                          className="w-16 h-16 rounded-2xl flex items-center justify-center p-3.5 shadow-md group-hover:scale-110 group-hover:rotate-1 transition-all duration-300"
                           style={{ backgroundColor: `${localizedMeta.accent}14` }}
                         >
                           {service.icon === 'google-ads' && (
@@ -1683,7 +1683,7 @@ export default function Home({ initialLang = 'de' }) {
                           )}
                         </div>
 
-                        <span className="text-xs font-bold px-3 py-1 rounded-md bg-slate-50 border border-slate-200/80 text-slate-800 tracking-wide">
+                        <span className="text-xs font-bold px-3.5 py-1.5 rounded-full bg-slate-50 border border-slate-200/80 text-slate-800 tracking-wide">
                           {localizedMeta.tag}
                         </span>
                       </div>
@@ -1703,7 +1703,7 @@ export default function Home({ initialLang = 'de' }) {
                         {localizedMeta.pills.map((pill, pIdx) => (
                           <div
                             key={pIdx}
-                            className="flex items-center space-x-2.5 bg-slate-50/90 rounded-lg px-3.5 py-2 border border-slate-100/90 group-hover:border-slate-200/70 transition-colors"
+                            className="flex items-center space-x-2.5 bg-slate-50/90 rounded-xl px-3.5 py-2 border border-slate-100/90 group-hover:border-slate-200/70 transition-colors"
                           >
                             <span className="w-1.5 h-1.5 rounded-full flex-shrink-0" style={{ backgroundColor: localizedMeta.accent }}></span>
                             <span className="text-xs sm:text-sm font-semibold text-slate-800 tracking-tight">{pill}</span>
@@ -1717,7 +1717,7 @@ export default function Home({ initialLang = 'de' }) {
                       <span className="flex items-center gap-1.5">
                         {lang === 'de' ? 'Leistungsdetails & Strategie' : lang === 'en' ? 'Service Details & Strategy' : 'Hizmet Detayları & Strateji'}
                       </span>
-                      <span className="w-8 h-8 rounded-lg bg-slate-100 group-hover:bg-[#4285F4] group-hover:text-white flex items-center justify-center transition-all duration-300">
+                      <span className="w-8 h-8 rounded-full bg-slate-100 group-hover:bg-[#4285F4] group-hover:text-white flex items-center justify-center transition-all duration-300">
                         ➔
                       </span>
                     </div>
@@ -1733,7 +1733,7 @@ export default function Home({ initialLang = 'de' }) {
       <section id="success" className="py-24 bg-white relative overflow-hidden border-t border-slate-100">
         <div className="container mx-auto px-4 max-w-7xl">
           <div className="text-center mb-16">
-            <div className="inline-flex items-center space-x-2 bg-emerald-50 border border-emerald-200/80 rounded-md px-3.5 py-1.5 mb-4 shadow-sm">
+            <div className="inline-flex items-center space-x-2 bg-emerald-50 border border-emerald-200/80 rounded-full px-4 py-1.5 mb-4 shadow-sm">
               <span className="w-2 h-2 rounded-full bg-emerald-500"></span>
               <span className="text-xs font-bold uppercase tracking-wider text-emerald-700">{t.success.subtitle}</span>
             </div>
@@ -1748,7 +1748,7 @@ export default function Home({ initialLang = 'de' }) {
               return (
                 <div
                   key={index}
-                  className="bg-white rounded-xl p-7 md:p-8 border border-slate-100 shadow-[0_4px_24px_rgba(0,0,0,0.03)] hover:shadow-[0_20px_45px_rgba(81,56,238,0.08)] transition-all duration-300 hover:-translate-y-1.5 relative overflow-hidden group text-center flex flex-col justify-between"
+                  className="bg-white rounded-3xl p-7 md:p-8 border border-slate-100 shadow-[0_4px_24px_rgba(0,0,0,0.03)] hover:shadow-[0_20px_45px_rgba(81,56,238,0.08)] transition-all duration-300 hover:-translate-y-1.5 relative overflow-hidden group text-center flex flex-col justify-between"
                 >
                   <div
                     className="absolute top-0 left-0 right-0 h-1.5 transition-all duration-300 group-hover:h-2"
@@ -1757,7 +1757,7 @@ export default function Home({ initialLang = 'de' }) {
 
                   <div className="mb-6 flex justify-center">
                     <div
-                      className="w-16 h-16 rounded-lg flex items-center justify-center shadow-md group-hover:scale-110 transition-transform duration-200"
+                      className="w-16 h-16 rounded-2xl flex items-center justify-center shadow-md group-hover:scale-110 transition-transform duration-200"
                       style={{ backgroundColor: `${accent}15` }}
                     >
                       {index === 0 && <span className="text-2xl font-black" style={{ color: accent }}>📈</span>}
@@ -1788,7 +1788,7 @@ export default function Home({ initialLang = 'de' }) {
           {t.proofGallery && (
             <div className="mt-20 pt-16 border-t border-slate-200/80">
               <div className="text-center mb-12">
-                <div className="inline-flex items-center space-x-2 bg-blue-50 border border-blue-200/80 rounded-md px-3.5 py-1.5 mb-3 shadow-sm">
+                <div className="inline-flex items-center space-x-2 bg-blue-50 border border-blue-200/80 rounded-full px-4 py-1.5 mb-3 shadow-sm">
                   <span className="w-2 h-2 rounded-full bg-[#4285F4] animate-pulse"></span>
                   <span className="text-xs font-bold uppercase tracking-wider text-[#4285F4]">{t.proofGallery.badge}</span>
                 </div>
@@ -1804,20 +1804,20 @@ export default function Home({ initialLang = 'de' }) {
                 {t.proofGallery.cards.map((card, idx) => (
                   <div
                     key={idx}
-                    className="bg-white rounded-xl p-6 border border-slate-100 shadow-[0_4px_24px_rgba(0,0,0,0.03)] hover:shadow-[0_20px_50px_rgba(81,56,238,0.09)] transition-all duration-300 group overflow-hidden flex flex-col justify-between"
+                    className="bg-white rounded-3xl p-6 border border-slate-100 shadow-[0_4px_24px_rgba(0,0,0,0.03)] hover:shadow-[0_20px_50px_rgba(81,56,238,0.09)] transition-all duration-300 group overflow-hidden flex flex-col justify-between"
                   >
                     <div>
                       <div className="flex items-center justify-between mb-4">
-                        <span className="text-xs font-bold px-3 py-1 bg-slate-900 text-white rounded-md">
+                        <span className="text-xs font-bold px-3 py-1 bg-slate-900 text-white rounded-full">
                           {card.badge}
                         </span>
-                        <span className="text-xs font-bold text-emerald-600 bg-emerald-50 px-2.5 py-1 rounded-md border border-emerald-200 flex items-center gap-1">
+                        <span className="text-xs font-bold text-emerald-600 bg-emerald-50 px-2.5 py-1 rounded-full border border-emerald-200 flex items-center gap-1">
                           ✓ {lang === 'de' ? 'Offizielles Google Dashboard' : lang === 'en' ? 'Verified Google Dashboard' : 'Doğrulanmış Google Paneli'}
                         </span>
                       </div>
 
                       {/* Dashboard Image with Zoom on Hover */}
-                      <div className="rounded-lg overflow-hidden border border-slate-100 mb-5 bg-slate-50 relative group-hover:border-blue-200 transition-colors shadow-inner">
+                      <div className="rounded-2xl overflow-hidden border border-slate-100 mb-5 bg-slate-50 relative group-hover:border-blue-200 transition-colors shadow-inner">
                         <img
                           src={card.image}
                           alt={card.title}
@@ -1867,7 +1867,7 @@ export default function Home({ initialLang = 'de' }) {
 
         <div className="container mx-auto px-4 max-w-6xl relative z-10">
           <div className="text-center mb-16">
-            <div className="inline-flex items-center space-x-2 bg-blue-500/10 border border-blue-400/30 rounded-md px-3.5 py-1.5 mb-4 shadow-sm">
+            <div className="inline-flex items-center space-x-2 bg-blue-500/10 border border-blue-400/30 rounded-full px-4 py-1.5 mb-4 shadow-sm">
               <span className="w-2 h-2 rounded-full bg-[#4285F4] animate-pulse"></span>
               <span className="text-xs font-bold uppercase tracking-wider text-[#4285F4]">{t.corporate.subtitle}</span>
             </div>
@@ -1877,7 +1877,7 @@ export default function Home({ initialLang = 'de' }) {
             <div className="mt-8 flex justify-center">
               <button
                 onClick={() => scrollToSection('contact')}
-                className="bg-[#4285F4] hover:bg-[#3367d6] text-white font-bold text-base px-8 py-3.5 rounded-lg shadow-xl hover:shadow-2xl transition-all duration-300 hover:scale-105 flex items-center gap-2 cursor-pointer"
+                className="bg-[#4285F4] hover:bg-[#3367d6] text-white font-bold text-base px-9 py-4 rounded-2xl shadow-xl hover:shadow-2xl transition-all duration-300 hover:scale-105 flex items-center gap-2 cursor-pointer"
               >
                 <span>{t.corporate.cta}</span>
                 <ArrowRight className="h-5 w-5" />
@@ -1889,9 +1889,9 @@ export default function Home({ initialLang = 'de' }) {
             {t.corporate.features.map((feature, index) => (
               <div
                 key={index}
-                className="bg-slate-900/90 border border-slate-800/90 rounded-xl p-7 hover:border-slate-700 shadow-xl transition-all duration-300 hover:-translate-y-1 backdrop-blur-sm"
+                className="bg-slate-900/90 border border-slate-800/90 rounded-3xl p-7 hover:border-slate-700 shadow-xl transition-all duration-300 hover:-translate-y-1 backdrop-blur-sm"
               >
-                <div className="w-12 h-12 rounded-lg bg-blue-500/15 border border-blue-400/30 flex items-center justify-center mb-5 text-[#4285F4]">
+                <div className="w-12 h-12 rounded-2xl bg-blue-500/15 border border-blue-400/30 flex items-center justify-center mb-5 text-[#4285F4]">
                   <CheckCircle className="h-6 w-6" />
                 </div>
                 <h3 className="text-lg font-bold text-white mb-2">{feature.title}</h3>
@@ -1906,7 +1906,7 @@ export default function Home({ initialLang = 'de' }) {
       <section className="py-24 bg-white border-t border-slate-100">
         <div className="container mx-auto px-4 max-w-7xl">
           <div className="text-center mb-16">
-            <div className="inline-flex items-center space-x-2 bg-amber-50 border border-amber-200/80 rounded-md px-3.5 py-1.5 mb-4 shadow-sm">
+            <div className="inline-flex items-center space-x-2 bg-amber-50 border border-amber-200/80 rounded-full px-4 py-1.5 mb-4 shadow-sm">
               <span className="w-2 h-2 rounded-full bg-amber-500"></span>
               <span className="text-xs font-bold uppercase tracking-wider text-amber-700">{t.testimonials.subtitle}</span>
             </div>
@@ -1926,7 +1926,7 @@ export default function Home({ initialLang = 'de' }) {
             {t.testimonials.reviews.map((review, index) => (
               <div
                 key={index}
-                className="bg-white rounded-xl p-8 border border-slate-100 shadow-[0_4px_24px_rgba(0,0,0,0.03)] hover:shadow-[0_16px_36px_rgba(81,56,238,0.08)] transition-all duration-300 hover:-translate-y-1 flex flex-col justify-between"
+                className="bg-white rounded-3xl p-8 border border-slate-100 shadow-[0_4px_24px_rgba(0,0,0,0.03)] hover:shadow-[0_16px_36px_rgba(81,56,238,0.08)] transition-all duration-300 hover:-translate-y-1 flex flex-col justify-between"
               >
                 <div>
                   <div className="flex text-amber-500 mb-4">
@@ -1936,7 +1936,7 @@ export default function Home({ initialLang = 'de' }) {
                 </div>
 
                 <div className="flex items-center space-x-3 pt-4 border-t border-slate-100">
-                  <div className="w-11 h-11 rounded-lg bg-gradient-to-tr from-[#4285F4] to-blue-400 flex items-center justify-center text-white font-bold text-sm shadow-sm">
+                  <div className="w-11 h-11 rounded-2xl bg-gradient-to-tr from-[#4285F4] to-blue-400 flex items-center justify-center text-white font-bold text-sm shadow-sm">
                     {review.name.split(' ').map(n => n[0]).join('')}
                   </div>
                   <div>
@@ -1954,7 +1954,7 @@ export default function Home({ initialLang = 'de' }) {
       <section id="about" className="py-24 bg-white border-t border-slate-100">
         <div className="container mx-auto px-4 max-w-7xl">
           <div className="text-center mb-16">
-            <div className="inline-flex items-center space-x-2 bg-blue-50 border border-blue-200/80 rounded-md px-3.5 py-1.5 mb-4 shadow-sm">
+            <div className="inline-flex items-center space-x-2 bg-blue-50 border border-blue-200/80 rounded-full px-4 py-1.5 mb-4 shadow-sm">
               <span className="w-2 h-2 rounded-full bg-[#4285F4]"></span>
               <span className="text-xs font-bold uppercase tracking-wider text-[#4285F4]">{t.about.subtitle}</span>
             </div>
@@ -1968,7 +1968,7 @@ export default function Home({ initialLang = 'de' }) {
               return (
                 <div
                   key={index}
-                  className="bg-white rounded-xl p-8 border border-slate-100 shadow-[0_4px_24px_rgba(0,0,0,0.03)] hover:shadow-[0_16px_36px_rgba(81,56,238,0.08)] transition-all duration-300 hover:-translate-y-1.5 relative overflow-hidden group"
+                  className="bg-white rounded-3xl p-8 border border-slate-100 shadow-[0_4px_24px_rgba(0,0,0,0.03)] hover:shadow-[0_16px_36px_rgba(81,56,238,0.08)] transition-all duration-300 hover:-translate-y-1.5 relative overflow-hidden group"
                 >
                   <div
                     className="absolute top-0 left-0 right-0 h-1.5 transition-all duration-300 group-hover:h-2"
@@ -1976,7 +1976,7 @@ export default function Home({ initialLang = 'de' }) {
                   ></div>
 
                   <div
-                    className="w-12 h-12 rounded-lg flex items-center justify-center mb-6 shadow-sm group-hover:scale-110 transition-transform duration-200"
+                    className="w-12 h-12 rounded-2xl flex items-center justify-center mb-6 shadow-sm group-hover:scale-110 transition-transform duration-200"
                     style={{ backgroundColor: `${color}15`, color: color }}
                   >
                     <CheckCircle className="h-6 w-6" />
@@ -2009,7 +2009,7 @@ export default function Home({ initialLang = 'de' }) {
           <div className="max-w-4xl mx-auto">
             {/* Header with icon */}
             <div className="text-center mb-12">
-              <div className="inline-flex items-center justify-center w-20 h-20 bg-gradient-to-br from-[#4285F4] to-[#34A853] rounded-lg mb-6 shadow-xl">
+              <div className="inline-flex items-center justify-center w-20 h-20 bg-gradient-to-br from-[#4285F4] to-[#34A853] rounded-2xl mb-6 shadow-xl">
                 <Mail className="h-10 w-10 text-white" />
               </div>
               <h2 className="text-4xl font-bold mb-4 bg-gradient-to-r from-[#4285F4] via-[#EA4335] to-[#FBBC04] bg-clip-text text-transparent">{t.contact.title}</h2>
@@ -2017,7 +2017,7 @@ export default function Home({ initialLang = 'de' }) {
             </div>
             
             {/* Main contact card with border */}
-            <Card className="border-2 border-[#4285F4]/20 shadow-2xl bg-white/80 backdrop-blur-sm rounded-xl overflow-hidden">
+            <Card className="border-2 border-[#4285F4]/20 shadow-2xl bg-white/80 backdrop-blur-sm rounded-3xl overflow-hidden">
               <div className="grid md:grid-cols-5 gap-0">
                 {/* Left side - Contact info */}
                 <div className="md:col-span-2 bg-gradient-to-br from-[#4285F4] to-[#34A853] p-8 text-white flex flex-col justify-center">
@@ -2025,7 +2025,7 @@ export default function Home({ initialLang = 'de' }) {
                   
                   <div className="space-y-6">
                     <div className="flex items-center space-x-4">
-                      <div className="w-12 h-12 bg-[#25D366] rounded-lg flex items-center justify-center">
+                      <div className="w-12 h-12 bg-[#25D366] rounded-xl flex items-center justify-center">
                         <MessageCircle className="h-6 w-6" />
                       </div>
                       <div>
@@ -2149,7 +2149,7 @@ export default function Home({ initialLang = 'de' }) {
         <div className="container mx-auto px-4 relative z-10">
           {/* Header */}
           <div className="text-center max-w-3xl mx-auto mb-10">
-            <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-md bg-[#4285F4]/10 text-[#4285F4] border border-[#4285F4]/20 text-xs font-bold mb-4 animate-pulse">
+            <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-[#4285F4]/10 text-[#4285F4] border border-[#4285F4]/20 text-xs font-bold mb-4 animate-pulse">
               <Sparkles className="w-3.5 h-3.5" />
               <span>{lang === 'de' ? '2026 DIGITAL MARKETING & KI BLOG' : lang === 'en' ? '2026 DIGITAL MARKETING & AI BLOG' : '2026 DİJİTAL PAZARLAMA & AI REHBERLERİ'}</span>
             </div>
@@ -2181,7 +2181,7 @@ export default function Home({ initialLang = 'de' }) {
                 <button
                   key={cat.id}
                   onClick={() => setBlogCategory(cat.id)}
-                  className={`inline-flex items-center gap-1.5 px-4 py-2 rounded-lg text-xs sm:text-sm font-semibold transition-all duration-300 ${
+                  className={`inline-flex items-center gap-1.5 px-4 py-2 rounded-xl text-xs sm:text-sm font-semibold transition-all duration-300 ${
                     isActive
                       ? 'bg-[#4285F4] text-white shadow-lg shadow-blue-500/25 scale-105 ring-2 ring-[#4285F4]/30'
                       : 'bg-white text-gray-700 hover:bg-gray-100 hover:text-gray-900 border border-gray-200/80 shadow-sm'
@@ -2268,7 +2268,7 @@ export default function Home({ initialLang = 'de' }) {
               <a
                 key={post.slug || idx}
                 href={`/blog/${post.slug}`}
-                className="group relative flex flex-col bg-white rounded-xl border border-slate-100 overflow-hidden shadow-[0_4px_24px_rgba(0,0,0,0.03)] hover:shadow-[0_20px_50px_rgba(81,56,238,0.09)] hover:border-[#5138EE]/20 hover:-translate-y-1.5 transition-all duration-300"
+                className="group relative flex flex-col bg-white rounded-3xl border border-slate-100 overflow-hidden shadow-[0_4px_24px_rgba(0,0,0,0.03)] hover:shadow-[0_20px_50px_rgba(81,56,238,0.09)] hover:border-[#5138EE]/20 hover:-translate-y-1.5 transition-all duration-300"
               >
                 {/* Image Container with Zoom Effect */}
                 <div className="h-48 sm:h-52 relative overflow-hidden bg-slate-100">
@@ -2286,13 +2286,13 @@ export default function Home({ initialLang = 'de' }) {
                   
                   {/* Floating Category Badge */}
                   <div className="absolute top-3 left-3">
-                    <span className="inline-flex items-center px-3 py-1 rounded-md text-xs font-bold bg-white/95 text-gray-900 shadow-md backdrop-blur-md">
+                    <span className="inline-flex items-center px-3 py-1 rounded-full text-xs font-bold bg-white/95 text-gray-900 shadow-md backdrop-blur-md">
                       {post.category || 'Digital Marketing'}
                     </span>
                   </div>
 
                   {/* Read time floating */}
-                  <div className="absolute bottom-3 right-3 text-white/90 text-xs font-medium inline-flex items-center gap-1 drop-shadow-md bg-black/40 backdrop-blur-md px-2.5 py-1 rounded-md">
+                  <div className="absolute bottom-3 right-3 text-white/90 text-xs font-medium inline-flex items-center gap-1 drop-shadow-md bg-black/40 backdrop-blur-md px-2.5 py-1 rounded-lg">
                     <Clock className="w-3.5 h-3.5 text-blue-400" />
                     <span>{post.readTime || '10'} {lang === 'de' ? 'Min.' : lang === 'en' ? 'min' : 'dk'}</span>
                   </div>
@@ -2324,7 +2324,7 @@ export default function Home({ initialLang = 'de' }) {
           <div className="text-center mt-12">
             <Button
               size="lg"
-              className="bg-gradient-to-r from-[#4285F4] to-indigo-600 hover:from-blue-600 hover:to-indigo-700 text-white font-bold px-8 py-4 rounded-lg shadow-xl shadow-blue-500/20 hover:shadow-blue-500/35 hover:scale-105 transition-all duration-300"
+              className="bg-gradient-to-r from-[#4285F4] to-indigo-600 hover:from-blue-600 hover:to-indigo-700 text-white font-bold px-8 py-6 rounded-2xl shadow-xl shadow-blue-500/20 hover:shadow-blue-500/35 hover:scale-105 transition-all duration-300"
               asChild
             >
               <a href="/blog" className="inline-flex items-center gap-2">
@@ -2348,7 +2348,7 @@ export default function Home({ initialLang = 'de' }) {
       <section id="faq" className="py-20 bg-white relative overflow-hidden border-t border-slate-100">
         <div className="container mx-auto px-4 max-w-4xl relative z-10">
           <div className="text-center mb-12">
-            <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-md bg-blue-50 text-[#4285F4] border border-blue-200/60 text-xs font-bold mb-3 shadow-xs">
+            <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-blue-50 text-[#4285F4] border border-blue-200/60 text-xs font-bold mb-3 shadow-xs">
               <HelpCircle className="w-4 h-4" />
               <span>{t.faq?.badge || 'FAQ'}</span>
             </div>
@@ -2366,7 +2366,7 @@ export default function Home({ initialLang = 'de' }) {
               return (
                 <div
                   key={idx}
-                  className="rounded-lg border border-slate-100 bg-white overflow-hidden shadow-[0_2px_12px_rgba(0,0,0,0.02)] hover:shadow-[0_6px_20px_rgba(81,56,238,0.06)] hover:border-[#5138EE]/30 transition-all duration-200"
+                  className="rounded-2xl border border-slate-100 bg-white overflow-hidden shadow-[0_2px_12px_rgba(0,0,0,0.02)] hover:shadow-[0_6px_20px_rgba(81,56,238,0.06)] hover:border-[#5138EE]/30 transition-all duration-200"
                 >
                   <button
                     type="button"
@@ -2391,7 +2391,7 @@ export default function Home({ initialLang = 'de' }) {
           </div>
 
           {/* Quick Consultation Callout */}
-          <div className="mt-12 p-6 rounded-xl bg-blue-50 border border-blue-200/80 text-center sm:flex sm:items-center sm:justify-between sm:text-left">
+          <div className="mt-12 p-6 rounded-2xl bg-blue-50 border border-blue-200/80 text-center sm:flex sm:items-center sm:justify-between sm:text-left">
             <div>
               <h3 className="font-bold text-gray-900 text-base">
                 {lang === 'de' ? 'Haben Sie spezifische Fragen zu Ihrem Werbebudget?' : lang === 'tr' ? 'Reklam bütçeniz veya Google Ads hakkında sorunuz mu var?' : 'Do you have specific questions about your advertising budget?'}
@@ -2406,7 +2406,7 @@ export default function Home({ initialLang = 'de' }) {
                 target="_blank"
                 rel="noopener noreferrer"
                 onClick={() => trackWhatsAppClick({ location: 'homepage_faq' })}
-                className="inline-flex items-center gap-2 bg-[#25D366] hover:bg-[#128C7E] text-white font-bold text-xs px-5 py-3 rounded-lg shadow-sm transition-all"
+                className="inline-flex items-center gap-2 bg-[#25D366] hover:bg-[#128C7E] text-white font-bold text-xs px-5 py-3 rounded-xl shadow-sm transition-all"
               >
                 <MessageCircle className="w-4 h-4" />
                 <span>WhatsApp</span>

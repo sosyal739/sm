@@ -482,7 +482,7 @@ export default function BlogPageClient({ initialPosts = [] }) {
         <div className="container mx-auto space-y-12">
           {/* Guardian Featured Lead Story Banner */}
           {!loading && featuredPost && selectedCategory === 'all' && (
-            <div className="bg-white rounded-xl border border-gray-200 shadow-xl overflow-hidden hover:shadow-2xl transition-all duration-300 group">
+            <div className="bg-white rounded-3xl border border-gray-200 shadow-xl overflow-hidden hover:shadow-2xl transition-all duration-300 group">
               <div className="grid lg:grid-cols-12 gap-0">
                 <div className="lg:col-span-7 relative h-72 lg:h-auto overflow-hidden">
                   <img
@@ -500,7 +500,7 @@ export default function BlogPageClient({ initialPosts = [] }) {
                 <div className="lg:col-span-5 p-6 lg:p-10 flex flex-col justify-between space-y-6">
                   <div>
                     {/* E-E-A-T Trust Badge */}
-                    <div className="flex items-center gap-2 text-xs font-bold text-emerald-700 bg-emerald-50 border border-emerald-200 px-3.5 py-1.5 rounded-md w-fit mb-4">
+                    <div className="flex items-center gap-2 text-xs font-bold text-emerald-700 bg-emerald-50 border border-emerald-200 px-3.5 py-1.5 rounded-full w-fit mb-4">
                       <ShieldCheck className="w-4 h-4 text-emerald-600" />
                       <span>{t.verified}</span>
                     </div>
@@ -540,7 +540,7 @@ export default function BlogPageClient({ initialPosts = [] }) {
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
             {loading ? (
               Array.from({ length: 6 }).map((_, i) => (
-                <div key={i} className="bg-white rounded-xl border border-gray-200 overflow-hidden animate-pulse">
+                <div key={i} className="bg-white rounded-3xl border border-gray-200 overflow-hidden animate-pulse">
                   <div className="h-48 bg-gray-200" />
                   <div className="p-6 space-y-3">
                     <div className="h-4 bg-gray-200 rounded w-3/4" />
@@ -550,7 +550,7 @@ export default function BlogPageClient({ initialPosts = [] }) {
               ))
             ) : gridPosts.map((post) => (
               <a key={post.slug} href={`/blog/${post.slug}`} className="block h-full group">
-                <Card className="h-full border border-gray-200 shadow-md hover:shadow-2xl transition-all duration-300 hover:-translate-y-1.5 overflow-hidden bg-white rounded-xl flex flex-col justify-between">
+                <Card className="h-full border border-gray-200 shadow-md hover:shadow-2xl transition-all duration-300 hover:-translate-y-1.5 overflow-hidden bg-white rounded-3xl flex flex-col justify-between">
                   <div>
                     <div className="h-48 relative overflow-hidden">
                       <img

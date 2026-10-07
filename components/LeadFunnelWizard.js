@@ -181,12 +181,12 @@ export default function LeadFunnelWizard({ lang = 'de' }) {
   )
 
   return (
-    <div className="bg-white rounded-xl border-2 border-blue-100 shadow-2xl p-6 sm:p-10 max-w-4xl mx-auto my-12 relative overflow-hidden">
+    <div className="bg-white rounded-3xl border-2 border-blue-100 shadow-2xl p-6 sm:p-10 max-w-4xl mx-auto my-12 relative overflow-hidden">
       <div className="absolute -top-24 -right-24 w-72 h-72 bg-blue-100/60 rounded-full blur-3xl pointer-events-none"></div>
       <div className="absolute -bottom-24 -left-24 w-72 h-72 bg-emerald-100/50 rounded-full blur-3xl pointer-events-none"></div>
 
       <div className="text-center mb-8 relative z-10">
-        <div className="inline-flex items-center space-x-2 bg-blue-50 border border-blue-200/80 rounded-md px-3.5 py-1.5 mb-3 shadow-sm">
+        <div className="inline-flex items-center space-x-2 bg-blue-50 border border-blue-200/80 rounded-full px-4 py-1.5 mb-3 shadow-sm">
           <Sparkles className="w-4 h-4 text-[#4285F4]" />
           <span className="text-xs font-bold uppercase tracking-wider text-[#4285F4]">
             {content.badge}
@@ -219,9 +219,9 @@ export default function LeadFunnelWizard({ lang = 'de' }) {
                   key={item.id}
                   type="button"
                   onClick={() => handleGoalSelect(item.title)}
-                  className="flex items-start p-5 rounded-lg border-2 border-slate-100 hover:border-[#4285F4] hover:bg-blue-50/40 text-left transition-all duration-200 group shadow-sm hover:shadow-md cursor-pointer"
+                  className="flex items-start p-5 rounded-2xl border-2 border-slate-100 hover:border-[#4285F4] hover:bg-blue-50/40 text-left transition-all duration-200 group shadow-sm hover:shadow-md cursor-pointer"
                 >
-                  <div className="w-12 h-12 rounded-lg bg-blue-100/70 text-[#4285F4] flex items-center justify-center mr-4 flex-shrink-0 group-hover:scale-110 transition-transform">
+                  <div className="w-12 h-12 rounded-xl bg-blue-100/70 text-[#4285F4] flex items-center justify-center mr-4 flex-shrink-0 group-hover:scale-110 transition-transform">
                     <IconComp className="w-6 h-6" />
                   </div>
                   <div>
@@ -255,7 +255,7 @@ export default function LeadFunnelWizard({ lang = 'de' }) {
                 key={item.id}
                 type="button"
                 onClick={() => handleBudgetSelect(item.title)}
-                className="flex flex-col p-5 rounded-lg border-2 border-slate-100 hover:border-[#34A853] hover:bg-emerald-50/40 text-left transition-all duration-200 group shadow-sm hover:shadow-md cursor-pointer"
+                className="flex flex-col p-5 rounded-2xl border-2 border-slate-100 hover:border-[#34A853] hover:bg-emerald-50/40 text-left transition-all duration-200 group shadow-sm hover:shadow-md cursor-pointer"
               >
                 <div className="font-black text-lg text-gray-900 group-hover:text-[#34A853] transition-colors">{item.title}</div>
                 <div className="text-xs text-gray-500 mt-1">{item.desc}</div>
@@ -300,7 +300,7 @@ export default function LeadFunnelWizard({ lang = 'de' }) {
                 required
                 value={formData.name}
                 onChange={(e) => setFormData({ ...formData, name: e.target.value })}
-                className="w-full px-4 py-3 rounded-lg border border-gray-200 focus:border-[#4285F4] focus:ring-2 focus:ring-blue-100 outline-none text-sm"
+                className="w-full px-4 py-3 rounded-xl border border-gray-200 focus:border-[#4285F4] focus:ring-2 focus:ring-blue-100 outline-none text-sm"
               />
             </div>
             <div>
@@ -310,7 +310,7 @@ export default function LeadFunnelWizard({ lang = 'de' }) {
                 placeholder={content.labels.websitePlaceholder}
                 value={formData.website}
                 onChange={(e) => setFormData({ ...formData, website: e.target.value })}
-                className="w-full px-4 py-3 rounded-lg border border-gray-200 focus:border-[#4285F4] focus:ring-2 focus:ring-blue-100 outline-none text-sm"
+                className="w-full px-4 py-3 rounded-xl border border-gray-200 focus:border-[#4285F4] focus:ring-2 focus:ring-blue-100 outline-none text-sm"
               />
             </div>
             <div>
@@ -320,7 +320,7 @@ export default function LeadFunnelWizard({ lang = 'de' }) {
                 required
                 value={formData.phone}
                 onChange={(e) => setFormData({ ...formData, phone: e.target.value })}
-                className="w-full px-4 py-3 rounded-lg border border-gray-200 focus:border-[#4285F4] focus:ring-2 focus:ring-blue-100 outline-none text-sm"
+                className="w-full px-4 py-3 rounded-xl border border-gray-200 focus:border-[#4285F4] focus:ring-2 focus:ring-blue-100 outline-none text-sm"
               />
             </div>
             <div>
@@ -330,7 +330,7 @@ export default function LeadFunnelWizard({ lang = 'de' }) {
                 required
                 value={formData.email}
                 onChange={(e) => setFormData({ ...formData, email: e.target.value })}
-                className="w-full px-4 py-3 rounded-lg border border-gray-200 focus:border-[#4285F4] focus:ring-2 focus:ring-blue-100 outline-none text-sm"
+                className="w-full px-4 py-3 rounded-xl border border-gray-200 focus:border-[#4285F4] focus:ring-2 focus:ring-blue-100 outline-none text-sm"
               />
             </div>
           </div>
@@ -341,7 +341,7 @@ export default function LeadFunnelWizard({ lang = 'de' }) {
               type="text"
               value={formData.note}
               onChange={(e) => setFormData({ ...formData, note: e.target.value })}
-              className="w-full px-4 py-3 rounded-lg border border-gray-200 focus:border-[#4285F4] focus:ring-2 focus:ring-blue-100 outline-none text-sm"
+              className="w-full px-4 py-3 rounded-xl border border-gray-200 focus:border-[#4285F4] focus:ring-2 focus:ring-blue-100 outline-none text-sm"
             />
           </div>
 
@@ -350,7 +350,7 @@ export default function LeadFunnelWizard({ lang = 'de' }) {
           <button
             type="submit"
             disabled={loading}
-            className="w-full bg-[#4285F4] hover:bg-[#3367d6] text-white font-black py-4 rounded-lg shadow-lg hover:shadow-xl transition-all duration-200 flex items-center justify-center space-x-2 text-base mt-4 cursor-pointer"
+            className="w-full bg-[#4285F4] hover:bg-[#3367d6] text-white font-black py-4 rounded-xl shadow-lg hover:shadow-xl transition-all duration-200 flex items-center justify-center space-x-2 text-base mt-4 cursor-pointer"
           >
             {loading ? (
               <Loader2 className="w-5 h-5 animate-spin" />
@@ -379,7 +379,7 @@ export default function LeadFunnelWizard({ lang = 'de' }) {
               href={`https://wa.me/491724106463?text=${whatsappMessage}`}
               target="_blank"
               rel="noopener noreferrer"
-              className="w-full sm:w-auto inline-flex items-center justify-center space-x-2 bg-[#25D366] hover:bg-[#20bd5a] text-white font-bold px-6 py-3.5 rounded-lg shadow-lg transition-all"
+              className="w-full sm:w-auto inline-flex items-center justify-center space-x-2 bg-[#25D366] hover:bg-[#20bd5a] text-white font-bold px-6 py-3.5 rounded-xl shadow-lg transition-all"
             >
               <MessageSquare className="w-5 h-5" />
               <span>{content.labels.whatsappBtn}</span>
