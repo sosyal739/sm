@@ -3,7 +3,7 @@
 import { trackLead } from '@/lib/analytics'
 
 import React, { useState } from 'react'
-import { CheckCircle, ArrowRight, ArrowLeft, Phone, ShoppingCart, Target, MapPin, Sparkles, Send, MessageSquare, Loader2 } from 'lucide-react'
+import { CheckCircle, ArrowRight, ArrowLeft, Phone, ShoppingCart, Target, MapPin, Sparkles, Send, Loader2 } from 'lucide-react'
 
 export default function LeadFunnelWizard({ lang = 'de' }) {
   const [step, setStep] = useState(1)
@@ -44,7 +44,7 @@ export default function LeadFunnelWizard({ lang = 'de' }) {
         website: 'Ihre Website / Shop-URL',
         websitePlaceholder: 'https://ihre-website.de',
         name: 'Ihr Name / Ansprechpartner',
-        phone: 'Telefon / WhatsApp (für schnelle Rückfragen)',
+        phone: 'Telefonnummer (für Rückfragen)',
         email: 'E-Mail-Adresse für das Angebot',
         note: 'Haben Sie bereits aktive Werbekonten? (Optional)',
         submitBtn: 'Kostenlose Strategie & Angebot anfordern',
@@ -52,7 +52,6 @@ export default function LeadFunnelWizard({ lang = 'de' }) {
         nextBtn: 'Weiter',
         successTitle: 'Vielen Dank! Ihre Anfrage ist eingegangen.',
         successSub: 'Salih Maral analysiert Ihre Angaben und meldet sich innerhalb von 2–4 Stunden mit einem maßgeschneiderten Konzept.',
-        whatsappBtn: 'Direkt per WhatsApp kontaktieren',
       }
     },
     tr: {
@@ -78,7 +77,7 @@ export default function LeadFunnelWizard({ lang = 'de' }) {
         website: 'Web Siteniz / Mağaza URL',
         websitePlaceholder: 'https://site-adresiniz.com',
         name: 'Adınız Soyadınız / Yetkili',
-        phone: 'Telefon / WhatsApp Numarası',
+        phone: 'Telefon Numaranız',
         email: 'E-posta Adresiniz',
         note: 'Mevcut reklam hesabınız var mı? (İsteğe bağlı)',
         submitBtn: 'Ücretsiz Strateji & Teklif Alın',
@@ -86,7 +85,6 @@ export default function LeadFunnelWizard({ lang = 'de' }) {
         nextBtn: 'Devam Et',
         successTitle: 'Talebiniz Başarıyla Alındı!',
         successSub: 'Salih Maral verilerinizi inceleyecek ve 2-4 saat içinde işletmenize özel ciro büyüme planını iletecektir.',
-        whatsappBtn: 'WhatsApp ile Hemen Görüşün',
       }
     },
     en: {
@@ -112,7 +110,7 @@ export default function LeadFunnelWizard({ lang = 'de' }) {
         website: 'Website / Store URL',
         websitePlaceholder: 'https://your-website.com',
         name: 'Full Name / Contact Person',
-        phone: 'Phone / WhatsApp Number',
+        phone: 'Phone Number',
         email: 'Business Email Address',
         note: 'Do you have existing ad accounts? (Optional)',
         submitBtn: 'Get Free Strategy & Quote',
@@ -120,7 +118,6 @@ export default function LeadFunnelWizard({ lang = 'de' }) {
         nextBtn: 'Continue',
         successTitle: 'Thank You! Your Request is Received.',
         successSub: 'Salih Maral will review your business data and respond within 2–4 hours with a custom strategy.',
-        whatsappBtn: 'Chat Directly on WhatsApp',
       }
     }
   }
@@ -175,10 +172,6 @@ export default function LeadFunnelWizard({ lang = 'de' }) {
       setLoading(false)
     }
   }
-
-  const whatsappMessage = encodeURIComponent(
-    `Hallo Salih Maral, ich habe den Strategie-Finder auf Ihrer Website ausgefüllt:\n- Ziel: ${goal}\n- Budget: ${budget}\n- Website: ${formData.website || 'Noch keine'}\n- Name: ${formData.name || ''}\nIch bitte um ein unverbindliches Angebot.`
-  )
 
   return (
     <div className="bg-white rounded-3xl border-2 border-blue-100 shadow-2xl p-6 sm:p-10 max-w-4xl mx-auto my-12 relative overflow-hidden">
@@ -376,13 +369,11 @@ export default function LeadFunnelWizard({ lang = 'de' }) {
 
           <div className="pt-4 flex flex-col sm:flex-row items-center justify-center gap-3">
             <a
-              href={`https://wa.me/491724106463?text=${whatsappMessage}`}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="w-full sm:w-auto inline-flex items-center justify-center space-x-2 bg-[#25D366] hover:bg-[#20bd5a] text-white font-bold px-6 py-3.5 rounded-xl shadow-lg transition-all"
+              href="tel:+491724106463"
+              className="w-full sm:w-auto inline-flex items-center justify-center space-x-2 bg-[#4285F4] hover:bg-blue-600 text-white font-bold px-6 py-3.5 rounded-xl shadow-lg transition-all"
             >
-              <MessageSquare className="w-5 h-5" />
-              <span>{content.labels.whatsappBtn}</span>
+              <Phone className="w-5 h-5" />
+              <span>{lang === 'tr' ? 'Acil Sorularınız İçin Doğrudan Arayın' : lang === 'en' ? 'Call Directly for Immediate Questions' : 'Direkt anrufen für dringende Fragen'}</span>
             </a>
           </div>
         </div>

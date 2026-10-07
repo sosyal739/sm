@@ -78,7 +78,7 @@ coverImage: "https://images.unsplash.com/photo-1554224155-8d04cb21cd6c?w=600&h=3
 <div class="cta-box" style="background: linear-gradient(135deg, #1e3a8a 0%, #064e3b 100%); border: 2px solid #10b981; border-radius: 1.25rem; padding: 2rem; margin: 2.5rem 0; text-align: center; color: white;">
   <h3 style="font-size: 1.5rem; font-weight: 800; color: white; margin-bottom: 0.5rem;">Google Ads Faturalarınız ve Reklam Bütçeniz Güvende mi?</h3>
   <p style="color: #cbd5e1; font-size: 0.95rem; max-width: 600px; margin: 0 auto 1.5rem auto; line-height: 1.5;">Yanlış vergi ayarları ve kontrolsüz harcamalarla bütçenizi tüketmeyin. 17+ yıllık resmi Google Partneri Salih Maral ile hesabınızı ücretsiz inceleyelim.</p>
-  <a href="https://wa.me/491724106463?text=Merhaba%20Salih%20Bey,%20Google%20Ads%20fatura%20ve%20reklam%20hesap%20denetimi%20i%C3%A7in%20yaz%C4%B1yorum." target="_blank" rel="noopener noreferrer" style="display: inline-block; background: #25D366; color: white; font-weight: 800; padding: 0.85rem 2rem; border-radius: 0.75rem; text-decoration: none; font-size: 1rem;">WhatsApp İle Ücretsiz Hesap İncelemesi Alın ➔</a>
+  <a href="/#contact" style="display: inline-block; background: #4285F4; color: white; font-weight: 800; padding: 0.85rem 2rem; border-radius: 0.75rem; text-decoration: none; font-size: 1rem;">Ücretsiz Teklif Alın ➔</a>
 </div>
 
 <h2>💡 Bütçenizi Canlı Hesaplayın</h2>

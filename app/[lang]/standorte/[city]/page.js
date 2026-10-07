@@ -1,6 +1,6 @@
 'use client'
 
-import { trackLead, trackWhatsAppClick, trackPhoneClick } from '@/lib/analytics'
+import { trackLead, trackPhoneClick } from '@/lib/analytics'
 import GoogleAdsBudgetCalculator from '@/components/GoogleAdsBudgetCalculator'
 import { getCityGrowth } from '@/lib/cityGrowth'
 
@@ -1029,7 +1029,7 @@ export default function CityPage({ params }) {
               onClick={scrollToForm}
               className="hidden sm:inline-flex items-center gap-2 px-4 py-2 rounded-xl bg-blue-600 hover:bg-blue-500 text-white font-bold text-xs shadow-md shadow-blue-500/20 transition-all cursor-pointer"
             >
-              <span>{currentLang === 'tr' ? 'Teklif Al' : currentLang === 'en' ? 'Get Proposal' : 'Angebot anfordern'}</span>
+              <span>{currentLang === 'tr' ? 'Ücretsiz Teklif Alın' : currentLang === 'en' ? 'Free Proposal' : 'Kostenloses Angebot'}</span>
             </button>
 
             {/* Mobile Toggle Button */}

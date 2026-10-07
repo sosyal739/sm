@@ -1,8 +1,8 @@
 'use client'
 
 import React, { useState, useEffect } from 'react'
-import { MessageCircle, Phone, ArrowUpRight } from 'lucide-react'
-import { trackWhatsAppClick, trackPhoneClick } from '@/lib/analytics'
+import { Phone, ArrowUpRight, Mail } from 'lucide-react'
+import { trackPhoneClick } from '@/lib/analytics'
 
 export default function MobileStickyBar({ lang: propLang }) {
   const [lang, setLang] = useState(propLang || 'de')
@@ -31,22 +31,6 @@ export default function MobileStickyBar({ lang: propLang }) {
   const isTr = lang === 'tr'
   const isEn = lang === 'en'
 
-  const waText = isTr
-    ? encodeURIComponent('Merhaba Salih Bey, Google Ads ve dijital pazarlama konusunda bilgi ve teklif almak istiyorum.')
-    : isEn
-    ? encodeURIComponent('Hello Salih, I would like to get an audit and proposal for Google Ads management.')
-    : encodeURIComponent('Hallo Herr Maral, ich interessiere mich für eine Google Ads Betreuung und ein unverbindliches Erstgespräch.')
-
-  const waUrl = `https://wa.me/491724106463?text=${waText}`
-
-  const handleWhatsApp = () => {
-    try {
-      trackWhatsAppClick()
-    } catch (e) {
-      // analytics fail-safe
-    }
-  }
-
   const handlePhone = () => {
     try {
       trackPhoneClick()
@@ -61,34 +45,22 @@ export default function MobileStickyBar({ lang: propLang }) {
       <a
         href="tel:+491724106463"
         onClick={handlePhone}
-        className="flex-1 inline-flex items-center justify-center space-x-1.5 bg-slate-100 hover:bg-slate-200 text-slate-800 text-xs font-semibold py-2.5 px-2 rounded-xl transition-colors border border-slate-300/70"
+        className="flex-1 inline-flex items-center justify-center space-x-1.5 bg-slate-100 hover:bg-slate-200 text-slate-800 text-xs font-semibold py-3 px-3 rounded-xl transition-colors border border-slate-300/70 cursor-pointer"
         aria-label={isTr ? 'Doğrudan Ara' : isEn ? 'Call directly' : 'Direkt anrufen'}
       >
-        <Phone className="w-3.5 h-3.5 text-blue-600" />
+        <Phone className="w-3.5 h-3.5 text-[#4285F4]" />
         <span>{isTr ? 'Hemen Ara' : isEn ? 'Call Now' : 'Anrufen'}</span>
       </a>
 
-      {/* WhatsApp Hızlı Danışma */}
-      <a
-        href={waUrl}
-        target="_blank"
-        rel="noopener noreferrer"
-        onClick={handleWhatsApp}
-        className="flex-1 inline-flex items-center justify-center space-x-1.5 bg-[#25D366] hover:bg-[#20bd5a] text-white text-xs font-bold py-2.5 px-2 rounded-xl shadow-md transition-all"
-        aria-label="WhatsApp Nachricht senden"
-      >
-        <MessageCircle className="w-4 h-4 fill-white" />
-        <span>WhatsApp</span>
-      </a>
-
-      {/* Teklif / Erstgespräch */}
+      {/* Ücretsiz Teklif Alın */}
       <a
         href={contactHref}
-        className="flex-1 inline-flex items-center justify-center space-x-1 bg-blue-600 hover:bg-blue-700 text-white text-xs font-bold py-2.5 px-2 rounded-xl shadow-md transition-all"
-        aria-label={isTr ? 'Ücretsiz Teklif Al' : isEn ? 'Request Free Audit' : 'Kostenloses Erstgespräch anfragen'}
+        className="flex-1 inline-flex items-center justify-center space-x-1.5 bg-[#4285F4] hover:bg-blue-700 text-white text-xs font-bold py-3 px-3 rounded-xl shadow-md transition-all cursor-pointer"
+        aria-label={isTr ? 'Ücretsiz Teklif Alın' : isEn ? 'Get Free Proposal' : 'Kostenloses Angebot anfordern'}
       >
-        <span>{isTr ? 'Teklif Al' : isEn ? 'Audit' : 'Angebot'}</span>
-        <ArrowUpRight className="w-3.5 h-3.5" />
+        <Mail className="w-3.5 h-3.5" />
+        <span>{isTr ? 'Ücretsiz Teklif Alın' : isEn ? 'Free Proposal' : 'Kostenloses Angebot'}</span>
+        <ArrowUpRight className="w-3.5 h-3.5 ml-0.5" />
       </a>
     </div>
   )

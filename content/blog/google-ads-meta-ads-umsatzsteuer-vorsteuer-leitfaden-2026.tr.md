@@ -78,7 +78,7 @@ coverImage: "https://images.unsplash.com/photo-1554224155-6726b3ff858f?w=600&h=3
 <div class="cta-box" style="background: linear-gradient(135deg, #1e3a8a 0%, #064e3b 100%); border: 2px solid #10b981; border-radius: 1.25rem; padding: 2rem; margin: 2.5rem 0; text-align: center; color: white;">
   <h3 style="font-size: 1.5rem; font-weight: 800; color: white; margin-bottom: 0.5rem;">Reklam Bütçenizi ve Verginizi Güvenceye Alın</h3>
   <p style="color: #cbd5e1; font-size: 0.95rem; max-width: 600px; margin: 0 auto 1.5rem auto; line-height: 1.5;">Hatalı vergi ayarları ve komisyoncu ajanslarla paranızı kaybetmeyin. 17+ yıllık resmi Google Partneri Salih Maral ile hesabınızı ücretsiz inceleyelim.</p>
-  <a href="https://wa.me/491724106463?text=Merhaba%20Salih%20Bey,%20Google%20ve%20Meta%20Ads%20fatura/hesap%20yap%C4%B1land%C4%B1rmas%C4%B1%20hakk%C4%B1nda%20dan%C4%B1%C5%9Fmak%20istiyorum." target="_blank" rel="noopener noreferrer" style="display: inline-block; background: #25D366; color: white; font-weight: 800; padding: 0.85rem 2rem; border-radius: 0.75rem; text-decoration: none; font-size: 1rem;">WhatsApp İle Ücretsiz Hesap İncelemesi Alın ➔</a>
+  <a href="/#contact" style="display: inline-block; background: #4285F4; color: white; font-weight: 800; padding: 0.85rem 2rem; border-radius: 0.75rem; text-decoration: none; font-size: 1rem;">Ücretsiz Teklif Alın ➔</a>
 </div>
 
 <h2>📍 İlgili Detaylı Rehberlerimiz</h2>

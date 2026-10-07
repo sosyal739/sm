@@ -75,7 +75,7 @@ coverImage: "https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?w=600&
 <div class="cta-box" style="background: linear-gradient(135deg, #0f172a 0%, #1e3a8a 100%); border: 2px solid #3b82f6; border-radius: 1.25rem; padding: 2rem; margin: 2.5rem 0; text-align: center; color: white;">
   <h3 style="font-size: 1.5rem; font-weight: 800; color: white; margin-bottom: 0.5rem;">Sichern Sie sich ein unverbindliches Zweitgutachten</h3>
   <p style="color: #cbd5e1; font-size: 0.95rem; max-width: 600px; margin: 0 auto 1.5rem auto; line-height: 1.5;">Lassen Sie Ihr bestehendes Google Ads Konto neutral vom zertifizierten Google Partner prüfen. Wir decken Einsparpotenziale und versteckte Streuverluste auf.</p>
-  <a href="https://wa.me/491724106463?text=Hallo%20Herr%20Maral,%20ich%20interessiere%20mich%20f%C3%BCr%20eine%20neutrale%20Pr%C3%BCfung%20unserer%20Google%20Ads%20Betreuung." target="_blank" rel="noopener noreferrer" style="display: inline-block; background: #25D366; color: white; font-weight: 800; padding: 0.85rem 2rem; border-radius: 0.75rem; text-decoration: none; font-size: 1rem;">Unverbindliches Erstgespräch via WhatsApp vereinbaren ➔</a>
+  <a href="/#contact" style="display: inline-block; background: #4285F4; color: white; font-weight: 800; padding: 0.85rem 2rem; border-radius: 0.75rem; text-decoration: none; font-size: 1rem;">Kostenloses Angebot anfordern ➔</a>
 </div>
 
 <h2>📍 Vertiefende Leitfäden für den deutschen Mittelstand</h2>

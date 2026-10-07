@@ -1,8 +1,8 @@
 'use client'
 
 import React, { useState } from 'react'
-import { Calculator, TrendingUp, CheckCircle2, ArrowRight, Sparkles, MessageSquare, ShieldCheck } from 'lucide-react'
-import { trackLead, trackWhatsAppClick } from '@/lib/analytics'
+import { Calculator, TrendingUp, CheckCircle2, ArrowRight, Sparkles, ShieldCheck } from 'lucide-react'
+import { trackLead } from '@/lib/analytics'
 
 export default function GoogleAdsBudgetCalculator({ lang = 'de', defaultCity = '' }) {
   const [monthlyBudget, setMonthlyBudget] = useState(2500)
@@ -66,8 +66,7 @@ export default function GoogleAdsBudgetCalculator({ lang = 'de', defaultCity = '
       compFixpreis: 'Salih Maral (Transparenter Fixpreis):',
       savingsBadge: `Sie sparen ca. ${monthlySavings} € monatlich an Betreuungsaufwand!`,
       noCommissionBadge: '100% Ihres Klickbudgets fließt direkt in messbare Neukundenanfragen!',
-      whatsappCta: 'Potenzial jetzt direkt via WhatsApp besprechen',
-      formCta: 'Unverbindliche Budget-Analyse anfordern',
+      formCta: 'Kostenloses Angebot & Budget-Analyse anfordern',
       guarantee: 'Offizieller Google Partner • 17+ Jahre Erfahrung • Keine 12-Monats-Knebelverträge'
     },
     tr: {
@@ -84,7 +83,6 @@ export default function GoogleAdsBudgetCalculator({ lang = 'de', defaultCity = '
       compFixpreis: 'Salih Maral (Şeffaf Sabit Yönetim Ücreti):',
       savingsBadge: `Ayda yaklaşık ${monthlySavings} € yönetim maliyeti avantajı sağlarsınız!`,
       noCommissionBadge: 'Reklam bütçenizin tamamı doğrudan nitelikli müşteri dönüşümlerine harcanır!',
-      whatsappCta: 'Bu Bütçeyi WhatsApp\'tan Danışın',
       formCta: 'Ücretsiz Teklif & Bütçe Analizi İsteyin',
       guarantee: 'Resmi Google Partneri • 17+ Yıllık Tecrübe • Şeffaf ve Güvenilir Yönetim'
     },
@@ -102,31 +100,16 @@ export default function GoogleAdsBudgetCalculator({ lang = 'de', defaultCity = '
       compFixpreis: 'Salih Maral (Predictable Flat-Fee):',
       savingsBadge: `You save approx. ${monthlySavings} €/month in management fees!`,
       noCommissionBadge: '100% of your advertising budget is focused directly on qualified conversions!',
-      whatsappCta: 'Discuss This Budget on WhatsApp',
-      formCta: 'Request Free Budget Strategy',
+      formCta: 'Request Free Proposal & Budget Strategy',
       guarantee: 'Official Google Partner • 17+ Years Expertise • No 12-Month Lock-in'
     }
   }
 
   const currentT = t[lang] || t.de
 
-  const handleWhatsAppClick = () => {
-    trackWhatsAppClick({ location: 'budget_calculator', label: `Budget: ${monthlyBudget} EUR (${modelType})` })
-    trackLead({ formName: 'budget_calculator_whatsapp', method: 'whatsapp', value: monthlyBudget })
-    
-    const message = lang === 'tr'
-      ? `Merhaba Salih Bey, aylık ${monthlyBudget}€ bütçeyle ${selected.labelTr} sektöründe Google Ads reklamları başlatmak istiyorum. Detayları görüşebilir miyiz?`
-      : lang === 'en'
-      ? `Hello Salih, I have an ad budget of ${monthlyBudget}€ for ${selected.labelEn} and would like to scale my Google Ads campaigns. Can we discuss?`
-      : `Hallo Salih, ich interessiere mich für eine Google Ads Betreuung mit einem Monatsbudget von ${monthlyBudget} € im Bereich ${selected.labelDe}. Können wir mein Potenzial besprechen?`
-
-    const url = `https://wa.me/491724106463?text=${encodeURIComponent(message)}`
-    window.open(url, '_blank', 'noopener,noreferrer')
-  }
-
   const handleScrollToForm = () => {
     trackLead({ formName: 'budget_calculator_cta', method: 'scroll_to_form', value: monthlyBudget })
-    const el = document.getElementById('anfrage-form')
+    const el = document.getElementById('contact') || document.getElementById('anfrage-form')
     if (el) {
       el.scrollIntoView({ behavior: 'smooth' })
     }
@@ -276,20 +259,11 @@ export default function GoogleAdsBudgetCalculator({ lang = 'de', defaultCity = '
           <div className="space-y-2.5 pt-2">
             <button
               type="button"
-              onClick={handleWhatsAppClick}
-              className="w-full py-3.5 px-4 rounded-xl bg-emerald-600 hover:bg-emerald-500 text-white font-bold text-xs sm:text-sm flex items-center justify-center gap-2 transition-all shadow-lg shadow-emerald-900/30 cursor-pointer"
-            >
-              <MessageSquare className="w-4 h-4" />
-              <span>{currentT.whatsappCta}</span>
-            </button>
-
-            <button
-              type="button"
               onClick={handleScrollToForm}
-              className="w-full py-3 px-4 rounded-xl bg-slate-800 hover:bg-slate-700 text-slate-200 hover:text-white font-semibold text-xs flex items-center justify-center gap-1.5 transition-all cursor-pointer"
+              className="w-full py-4 px-4 rounded-xl bg-blue-600 hover:bg-blue-500 text-white font-bold text-xs sm:text-sm flex items-center justify-center gap-2 transition-all shadow-lg shadow-blue-900/30 cursor-pointer"
             >
-              <span>{currentT.formCta}</span>
-              <ArrowRight className="w-3.5 h-3.5" />
+              <span>{lang === 'de' ? 'Kostenloses Angebot & Budget-Analyse anfordern' : lang === 'en' ? 'Request Free Proposal & Budget Strategy' : 'Ücretsiz Teklif & Bütçe Analizi İsteyin'}</span>
+              <ArrowRight className="w-4 h-4" />
             </button>
           </div>
 

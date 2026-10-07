@@ -2,7 +2,7 @@
 
 Pricing for digital marketing services is custom-tailored based on your industry, monthly ad budget, business goals, and the scope of work. We do not use generic, cookie-cutter packages.
 
-Please contact **info@salihmaral.de** or WhatsApp **+49 172 4106463** for a free initial consultation and a custom quote.
+Please contact **info@salihmaral.de** or call **+49 172 4106463** for a free initial consultation and a custom quote.
 
 ---
 

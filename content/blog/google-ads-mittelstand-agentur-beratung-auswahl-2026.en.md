@@ -71,7 +71,7 @@ coverImage: "https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?w=600&
 <div class="cta-box" style="background: linear-gradient(135deg, #0f172a 0%, #1e3a8a 100%); border: 2px solid #3b82f6; border-radius: 1.25rem; padding: 2rem; margin: 2.5rem 0; text-align: center; color: white;">
   <h3 style="font-size: 1.5rem; font-weight: 800; color: white; margin-bottom: 0.5rem;">Request a Neutral Second-Opinion Audit</h3>
   <p style="color: #cbd5e1; font-size: 0.95rem; max-width: 600px; margin: 0 auto 1.5rem auto; line-height: 1.5;">Identify wasted ad spend and uncover quick pipeline wins with an Official Google Partner (17+ years experience).</p>
-  <a href="https://wa.me/491724106463?text=Hello%20Salih,%20we%20would%20like%20a%20neutral%20Google%20Ads%20account%20audit." target="_blank" rel="noopener noreferrer" style="display: inline-block; background: #25D366; color: white; font-weight: 800; padding: 0.85rem 2rem; border-radius: 0.75rem; text-decoration: none; font-size: 1rem;">Book Free Strategy Call via WhatsApp ➔</a>
+  <a href="/en#contact" style="display: inline-block; background: #4285F4; color: white; font-weight: 800; padding: 0.85rem 2rem; border-radius: 0.75rem; text-decoration: none; font-size: 1rem;">Get Free Proposal ➔</a>
 </div>
 
 <h2>📍 Related Strategic Guides</h2>

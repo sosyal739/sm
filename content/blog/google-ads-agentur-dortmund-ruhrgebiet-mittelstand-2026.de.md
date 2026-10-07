@@ -76,7 +76,7 @@ coverImage: "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?w=1200
   <h3 style="font-size: 1.6rem; font-weight: 800; color: white; margin-bottom: 0.6rem;">Möchten Sie Dortmunds lukrativste Suchbegriffe dominieren?</h3>
   <p style="color: #cbd5e1; font-size: 1rem; max-width: 620px; margin: 0 auto 1.6rem auto; line-height: 1.6;">Lassen Sie Ihr bestehendes Google Ads Konto oder Ihr Potenzial in Dortmund und Umgebung kostenlos analysieren. 17+ Jahre Erfahrung, direkte Partner-Betreuung.</p>
   <div style="display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap;">
-    <a href="https://wa.me/491724106463?text=Hallo%20Herr%20Maral,%20ich%20interessiere%20mich%20f%C3%BCr%20Google%20Ads%20Betreuung%20in%20Dortmund%20und%20dem%20Ruhrgebiet." target="_blank" rel="noopener noreferrer" style="display: inline-block; background: #25D366; color: white; font-weight: 800; padding: 1rem 2rem; border-radius: 0.85rem; text-decoration: none; font-size: 1.05rem; box-shadow: 0 10px 20px -5px rgba(37, 211, 102, 0.5);">WhatsApp Direkt-Kontakt ➔</a>
+    <a href="tel:+491724106463" style="display: inline-block; background: #0f172a; color: white; font-weight: 700; padding: 1rem 2.2rem; border-radius: 0.75rem; text-decoration: none; border: 1px solid rgba(255,255,255,0.2);">Direkt anrufen: +49 172 4106463 📞</a>
     <a href="/de/standorte/dortmund" style="display: inline-block; background: #3b82f6; color: white; font-weight: 800; padding: 1rem 2rem; border-radius: 0.85rem; text-decoration: none; font-size: 1.05rem; box-shadow: 0 10px 20px -5px rgba(59, 130, 246, 0.5);">Standort Dortmund Details ➔</a>
   </div>
 </div>

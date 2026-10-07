@@ -22,13 +22,13 @@ export async function POST(request) {
 
     // Dedicated Intent Handlers (Handles exact questions, typos, and direct needs)
     
-    // INTENT 1: Contact / Communication (İletişim, Ulaşım, Form, WhatsApp, Typos like 'iletişm')
+    // INTENT 1: Contact / Communication (İletişim, Ulaşım, Form, Telefon, Typos like 'iletişm')
     const contactKeys = ['iletişim', 'iletişm', 'iletisim', 'ulaş', 'ulas', 'görüş', 'gorus', 'konuş', 'konus', 'yaz', 'mesaj', 'form', 'contact', 'reach', 'kontakt', 'nachricht']
     if (contactKeys.some(k => queryLower.includes(k))) {
       const contactAnswer = {
-        tr: "Salih Maral ile iletişime geçmek için sitemizdeki **İletişim Formunu** doldurabilir veya doğrudan **WhatsApp** hattımızdan mesaj atabilirsiniz. Projenizi inceleyip en kısa sürede size geri dönüş sağlıyoruz.",
-        de: "Um Salih Maral zu kontaktieren, füllen Sie bitte das **Kontaktformular** auf unserer Website aus oder schreiben Sie uns direkt per **WhatsApp**. Wir melden uns umgehend bei Ihnen.",
-        en: "To contact Salih Maral, please fill out the **Contact Form** on our website or message us directly via **WhatsApp**. We will get back to you promptly."
+        tr: "Salih Maral ile iletişime geçmek için sitemizdeki **İletişim Formunu** doldurabilir veya **+49 172 4106463** numarasından doğrudan arayabilirsiniz. Projenizi inceleyip en kısa sürede size geri dönüş sağlıyoruz.",
+        de: "Um Salih Maral zu kontaktieren, füllen Sie bitte das **Kontaktformular** auf unserer Website aus oder rufen Sie uns direkt unter **+49 172 4106463** an. Wir melden uns umgehend bei Ihnen.",
+        en: "To contact Salih Maral, please fill out the **Contact Form** on our website or call us directly at **+49 172 4106463**. We will get back to you promptly."
       }
       return Response.json({
         answer: contactAnswer[activeLang] || contactAnswer.de,

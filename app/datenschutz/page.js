@@ -431,9 +431,9 @@ export default function DatenschutzPage() {
                 </p>
               </div>
 
-              <h3 className="text-lg font-semibold text-gray-900 mb-3">Anfrage per E-Mail, Telefon oder WhatsApp</h3>
+              <h3 className="text-lg font-semibold text-gray-900 mb-3">Anfrage per E-Mail oder Telefon</h3>
               <p className="text-gray-600 mb-4">
-                Wenn Sie uns per E-Mail, Telefon oder WhatsApp kontaktieren, wird Ihre Anfrage inklusive 
+                Wenn Sie uns per E-Mail oder Telefon kontaktieren, wird Ihre Anfrage inklusive 
                 aller daraus hervorgehenden personenbezogenen Daten zum Zwecke der Bearbeitung Ihres 
                 Anliegens bei uns gespeichert und verarbeitet.
               </p>

@@ -98,7 +98,7 @@ coverImage: "https://images.unsplash.com/photo-1619642751034-765dfdf7c58e?w=1200
   <h3 style="font-size: 1.8rem; font-weight: 900; color: white; margin-bottom: 0.75rem;">Liftlerinizi Boş Bırakmayın, Servis Randevularını Doldurun</h3>
   <p style="color: #cbd5e1; font-size: 1.05rem; max-width: 680px; margin: 0 auto 1.75rem auto; line-height: 1.6;">Almanya'da oto tamir atölyeniz veya ekspertiz servisiniz için Google Haritalar ve Arama reklamlarıyla doğrudan telefon ve servis randevusu alın.</p>
   <div style="display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap;">
-    <a href="https://wa.me/491724106463?text=Merhaba%20Salih%20Bey,%20Almanya'da%20oto%20tamir%20/%20Kfz-Werkstatt%20i%C5%9Fletmecisiyim,%20Google%20Ads%20servis%20randevu%20reklamlar%C4%B1%20hakk%C4%B1nda%20bilgi%20almak%20istiyorum." target="_blank" rel="noopener noreferrer" style="display: inline-block; background: #25D366; color: white; font-weight: 800; padding: 1.1rem 2.2rem; border-radius: 1rem; text-decoration: none; font-size: 1.05rem; box-shadow: 0 10px 25px -5px rgba(37, 211, 102, 0.5); transition: all 0.3s ease;">WhatsApp ile Hızlı İletişim ➔</a>
+    <a href="tel:+491724106463" style="display: inline-block; background: #0f172a; color: white; font-weight: 700; padding: 1rem 2.2rem; border-radius: 0.75rem; text-decoration: none; border: 1px solid rgba(255,255,255,0.2);">Doğrudan Arayın: +49 172 4106463 📞</a>
     <a href="https://salihmaral.de/tr#contact" style="display: inline-block; background: #4285F4; color: white; font-weight: 800; padding: 1.1rem 2.2rem; border-radius: 1rem; text-decoration: none; font-size: 1.05rem; box-shadow: 0 10px 25px -5px rgba(66, 133, 244, 0.6); transition: all 0.3s ease;">Teklif Formunu Doldurun ➔</a>
   </div>
 </div>

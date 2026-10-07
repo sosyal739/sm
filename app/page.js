@@ -1,6 +1,6 @@
 'use client'
 
-import { trackLead, trackWhatsAppClick, trackPhoneClick } from '@/lib/analytics'
+import { trackLead, trackPhoneClick } from '@/lib/analytics'
 
 import { useState, useEffect } from 'react'
 import { Button } from '@/components/ui/button'
@@ -8,7 +8,7 @@ import { Card, CardContent } from '@/components/ui/card'
 import { Input } from '@/components/ui/input'
 import { Textarea } from '@/components/ui/textarea'
 import { Badge } from '@/components/ui/badge'
-import { Phone, Mail, MessageCircle, CheckCircle, BarChart3, Users, Award, TrendingUp, Globe, Star, Sparkles, ArrowRight, Clock, Calendar, Flame, Cpu, Zap, Search, ShieldCheck, Layers, BookOpen, Menu, X, ChevronRight, MessageSquare, ChevronDown, HelpCircle } from 'lucide-react'
+import { Phone, Mail, CheckCircle, BarChart3, Users, Award, TrendingUp, Globe, Star, Sparkles, ArrowRight, Clock, Calendar, Flame, Cpu, Zap, Search, ShieldCheck, Layers, BookOpen, Menu, X, ChevronRight, MessageSquare, ChevronDown, HelpCircle } from 'lucide-react'
 import CookieConsent from '@/components/CookieConsent'
 import RoasCalculatorWidget from '@/components/RoasCalculatorWidget'
 import LeadFunnelWizard from '@/components/LeadFunnelWizard'
@@ -27,8 +27,8 @@ const translations = {
       title: 'Almanya Google Ads Ajansı & Türk Dijital Pazarlama Uzmanı',
       subtitle: 'Almanya ve Avrupa Genelinde Sabit Fiyatlı (Fixpreis) Google Ads, Meta Ads ve SEO Danışmanlığı',
       description: 'Ben Salih Maral. 2008 yılından bu yana Resmi Google Partner olarak Almanya\'daki Türk işletmeler ve Avrupa\'ya açılan ihracatçılar için kurumsal standartlarda, şeffaf ve yüksek performanslı reklam sistemleri kurup yönetiyorum.',
-      cta1: 'WhatsApp',
-      cta2: 'Hemen Teklif Alın',
+      cta1: 'Hizmetleri Keşfedin',
+      cta2: 'Ücretsiz Teklif Alın',
       clients: 'Mutlu Müşteri & Şirket'
     },
     stats: {
@@ -150,7 +150,7 @@ const translations = {
       title: 'Size Özel Büyüme Planı Hazırlayalım',
       subtitle: 'İşletmenizin İhtiyaçlarına Özel Strateji',
       description: 'Her işletmenin dinamikleri farklıdır. Hedeflerinize, bütçenize ve sektörünüze uygun; tamamen işletmenize özel kurgulanmış bir dijital pazarlama stratejisi belirleyelim.',
-      cta: 'Hemen Teklif Alın',
+      cta: 'Ücretsiz Teklif Alın',
       features: [
         { title: 'Sektörel Rekabet Analizi', description: 'Rakiplerinizin önüne geçmeniz için derinlemesine pazar araştırması.' },
         { title: 'Birebir Uzman Desteği', description: 'Sorularınız ve güncellemeler için doğrudan benimle iletişimde kalırsınız.' },
@@ -228,8 +228,7 @@ const translations = {
       cta: {
         title: 'Bir Dijital Pazarlama Uzmanıyla Konuşmaya Hazır Mısınız?',
         description: 'Dijital dünyada kaybolmak yerine, doğru stratejilerle öne çıkın. Sorularınızı yanıtlamak ve size özel çözümler üretmek için buradayım.',
-        call: 'Beni Arayın',
-        whatsapp: 'WhatsApp\'tan Yazın'
+        call: 'Beni Arayın'
       }
     },
     faq: {
@@ -280,7 +279,7 @@ const translations = {
       title: 'Google Ads & Digital Marketing Experte',
       subtitle: 'Google Ads Agentur, Meta Ads & SEO für planbaren ROI in Deutschland',
       description: 'Ich bin Salih Maral. Als offizieller Google Partner mit 17+ Jahren Erfahrung entwickle und steuere ich hochperformante, transparente Marketing-Systeme für Unternehmen in Deutschland und Europa nach höchsten Qualitätsstandards.',
-      cta1: 'WhatsApp',
+      cta1: 'Leistungen entdecken',
       cta2: 'Kostenloses Angebot',
       clients: 'Zufriedene Kunden & Firmen'
     },
@@ -481,8 +480,7 @@ const translations = {
       cta: {
         title: 'Sind Sie bereit, mit einem Digital Marketing Experten zu sprechen?',
         description: 'Anstatt in der digitalen Welt verloren zu gehen, heben Sie sich mit den richtigen Strategien ab. Ich bin hier, um Ihre Fragen zu beantworten und maßgeschneiderte Lösungen für Sie zu entwickeln.',
-        call: 'Rufen Sie mich an',
-        whatsapp: 'Schreiben Sie über WhatsApp'
+        call: 'Rufen Sie mich an'
       }
     },
     faq: {
@@ -533,7 +531,7 @@ const translations = {
       title: 'Google Ads & Digital Marketing Specialist',
       subtitle: 'Fixed-Price Google Ads, Meta Ads & SEO Consulting in Germany & Europe',
       description: 'I am Salih Maral. As an official Google Partner with 17+ years of experience, I build and manage high-performance, transparent advertising systems for businesses in Germany and Europe with proven corporate expertise.',
-      cta1: 'WhatsApp',
+      cta1: 'Explore Services',
       cta2: 'Get Free Proposal',
       clients: 'Happy Clients & Brands'
     },
@@ -734,8 +732,7 @@ const translations = {
       cta: {
         title: 'Ready to Talk to a Digital Marketing Expert?',
         description: 'Instead of getting lost in the digital world, stand out with the right strategies. I am here to answer your questions and create customized solutions for you.',
-        call: 'Call Me Directly',
-        whatsapp: 'Message on WhatsApp'
+        call: 'Call Me Directly'
       }
     },
     faq: {
@@ -1115,7 +1112,7 @@ export default function Home({ initialLang = 'de' }) {
                         onClick={() => { scrollToSection('contact'); setIsServicesOpen(false); }}
                         className="font-bold text-[#4285F4] hover:text-blue-700 flex items-center gap-1 cursor-pointer transition-colors"
                       >
-                        <span>{lang === 'de' ? 'Angebot anfordern' : lang === 'en' ? 'Get Proposal' : 'Hemen Teklif Alın'}</span>
+                        <span>{lang === 'de' ? 'Kostenloses Angebot' : lang === 'en' ? 'Free Proposal' : 'Ücretsiz Teklif Alın'}</span>
                         <ArrowRight className="w-3.5 h-3.5" />
                       </button>
                     </div>
@@ -1346,16 +1343,13 @@ export default function Home({ initialLang = 'de' }) {
                   <ArrowRight className="h-5 w-5 ml-1" />
                 </button>
 
-                <a
-                  href={`https://wa.me/491724106463?text=${lang === 'de' ? 'Hallo,%20ich%20interessiere%20mich%20für%20Ihre%20Digital%20Marketing%20Dienstleistungen.' : lang === 'en' ? 'Hello,%20I%20am%20interested%20in%20your%20digital%20marketing%20services.' : 'Merhaba,%20dijital%20pazarlama%20hizmetleriniz%20hakkında%20bilgi%20almak%20istiyorum.'}`}
-                  target="_blank"
-                  onClick={() => trackWhatsAppClick({ location: 'page' })}
-                  rel="noopener noreferrer"
-                  className="bg-emerald-50 text-emerald-800 border border-emerald-200/90 hover:bg-emerald-100/90 font-bold text-base px-7 py-4 rounded-2xl shadow-sm hover:shadow transition-all duration-300 flex items-center gap-2.5 cursor-pointer"
+                <button
+                  onClick={() => scrollToSection('services')}
+                  className="bg-white hover:bg-slate-50 text-slate-800 border border-slate-200/90 font-bold text-base px-7 py-4 rounded-2xl shadow-2xs hover:shadow transition-all duration-300 flex items-center gap-2.5 cursor-pointer"
                 >
-                  <MessageCircle className="h-5 w-5 text-[#25D366]" />
                   <span>{t.hero.cta1}</span>
-                </a>
+                  <ArrowRight className="h-4 w-4 text-slate-400" />
+                </button>
               </div>
 
               {/* Multilingual Cultural Bridge Badge */}
@@ -2182,18 +2176,29 @@ export default function Home({ initialLang = 'de' }) {
                   
                   <div className="space-y-4">
                     <a 
-                      href={`https://wa.me/491724106463?text=${lang === 'de' ? 'Hallo,%20ich%20interessiere%20mich%20für%20Ihre%20Digital%20Marketing%20Dienstleistungen.' : lang === 'en' ? 'Hello,%20I%20am%20interested%20in%20your%20digital%20marketing%20services.' : 'Merhaba,%20dijital%20pazarlama%20hizmetleriniz%20hakkında%20bilgi%20almak%20istiyorum.'}`} 
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      onClick={() => trackWhatsAppClick({ location: 'page' })}
+                      href="mailto:info@salihmaral.de" 
                       className="flex items-center space-x-3.5 p-3.5 rounded-2xl bg-white/5 hover:bg-white/10 border border-white/10 transition-colors group cursor-pointer"
                     >
-                      <div className="w-10 h-10 bg-[#25D366] rounded-xl flex items-center justify-center shrink-0 shadow-sm group-hover:scale-105 transition-transform">
-                        <MessageCircle className="h-5 w-5 text-white" />
+                      <div className="w-10 h-10 bg-blue-500/20 rounded-xl flex items-center justify-center shrink-0 shadow-sm group-hover:scale-105 transition-transform text-[#4285F4]">
+                        <Mail className="h-5 w-5 text-blue-400" />
                       </div>
                       <div>
-                        <p className="text-[11px] font-bold uppercase tracking-wider text-slate-400">WhatsApp</p>
-                        <p className="font-bold text-sm text-white">{lang === 'de' ? 'Jetzt schreiben' : lang === 'en' ? 'Message Now' : 'Hemen Yazın'}</p>
+                        <p className="text-[11px] font-bold uppercase tracking-wider text-slate-400">E-Mail</p>
+                        <p className="font-bold text-sm text-white">info@salihmaral.de</p>
+                      </div>
+                    </a>
+
+                    <a 
+                      href="tel:+491724106463" 
+                      onClick={() => trackPhoneClick()}
+                      className="flex items-center space-x-3.5 p-3.5 rounded-2xl bg-white/5 hover:bg-white/10 border border-white/10 transition-colors group cursor-pointer"
+                    >
+                      <div className="w-10 h-10 bg-emerald-500/20 rounded-xl flex items-center justify-center shrink-0 shadow-sm group-hover:scale-105 transition-transform text-emerald-400">
+                        <Phone className="h-5 w-5 text-emerald-400" />
+                      </div>
+                      <div>
+                        <p className="text-[11px] font-bold uppercase tracking-wider text-slate-400">{lang === 'de' ? 'Telefon' : lang === 'en' ? 'Phone' : 'Telefon'}</p>
+                        <p className="font-bold text-sm text-white">+49 172 4106463</p>
                       </div>
                     </a>
 
@@ -2314,20 +2319,19 @@ export default function Home({ initialLang = 'de' }) {
               <div className="flex flex-wrap justify-center gap-4">
                 <button
                   onClick={() => scrollToSection('contact')}
-                  className="bg-[#4285F4] hover:bg-[#3367d6] text-white font-bold px-7 py-3.5 rounded-2xl shadow-xl shadow-blue-500/25 transition-all duration-200 hover:scale-105 flex items-center gap-2 cursor-pointer text-sm"
+                  className="bg-[#4285F4] hover:bg-[#3367d6] text-white font-bold px-8 py-4 rounded-2xl shadow-xl shadow-blue-500/25 transition-all duration-200 hover:scale-105 flex items-center gap-2 cursor-pointer text-sm sm:text-base"
                 >
-                  <Mail className="h-4 w-4" />
-                  <span>{lang === 'de' ? 'Kostenloses Angebot' : lang === 'en' ? 'Free Quote' : 'Ücretsiz Teklif Alın'}</span>
+                  <Mail className="h-5 w-5" />
+                  <span>{lang === 'de' ? 'Kostenloses Angebot anfordern' : lang === 'en' ? 'Get Free Proposal' : 'Ücretsiz Teklif Alın'}</span>
+                  <ArrowRight className="h-5 w-5 ml-1" />
                 </button>
                 <a
-                  href={`https://wa.me/491724106463?text=${lang === 'de' ? 'Hallo,%20ich%20interessiere%20mich%20für%20Ihre%20Digital%20Marketing%20Dienstleistungen.' : lang === 'en' ? 'Hello,%20I%20am%20interested%20in%20your%20digital%20marketing%20services.' : 'Merhaba,%20dijital%20pazarlama%20hizmetleriniz%20hakkında%20bilgi%20almak%20istiyorum.'}`}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  onClick={() => trackWhatsAppClick({ location: 'page' })}
-                  className="bg-[#25D366] hover:bg-[#128C7E] text-white font-bold px-7 py-3.5 rounded-2xl shadow-xl shadow-emerald-500/25 transition-all duration-200 hover:scale-105 flex items-center gap-2 text-sm"
+                  href="tel:+491724106463"
+                  onClick={() => trackPhoneClick()}
+                  className="bg-white/10 hover:bg-white/15 text-white border border-white/20 font-bold px-7 py-4 rounded-2xl transition-all duration-200 hover:scale-105 flex items-center gap-2 text-sm sm:text-base cursor-pointer"
                 >
-                  <MessageCircle className="h-4 w-4" />
-                  <span>{t.contact.cta.whatsapp}</span>
+                  <Phone className="h-4 w-4 text-emerald-400" />
+                  <span>+49 172 4106463</span>
                 </a>
               </div>
             </div>
@@ -2600,16 +2604,13 @@ export default function Home({ initialLang = 'de' }) {
               </p>
             </div>
             <div className="mt-5 sm:mt-0 flex-shrink-0">
-              <a
-                href={`https://wa.me/491724106463?text=${lang === 'de' ? 'Hallo,%20ich%20habe%20eine%20spezifische%20Frage%20zu%20Google%20Ads.' : lang === 'en' ? 'Hello,%20I%20have%20a%20specific%20question%20about%20Google%20Ads.' : 'Merhaba,%20Google%20Ads%20hesabımla%20ilgili%20danışmak%20istiyorum.'}`}
-                target="_blank"
-                rel="noopener noreferrer"
-                onClick={() => trackWhatsAppClick({ location: 'homepage_faq' })}
-                className="inline-flex items-center gap-2 bg-[#25D366] hover:bg-[#128C7E] text-white font-bold text-xs px-6 py-3.5 rounded-2xl shadow-md shadow-emerald-500/20 hover:scale-105 transition-all"
+              <button
+                onClick={() => scrollToSection('contact')}
+                className="inline-flex items-center gap-2 bg-[#4285F4] hover:bg-[#3367d6] text-white font-bold text-xs px-6 py-3.5 rounded-2xl shadow-md shadow-blue-500/20 hover:scale-105 transition-all cursor-pointer"
               >
-                <MessageCircle className="w-4 h-4" />
-                <span>WhatsApp</span>
-              </a>
+                <Mail className="w-4 h-4" />
+                <span>{lang === 'de' ? 'Kostenloses Angebot anfordern' : lang === 'en' ? 'Get Free Proposal' : 'Ücretsiz Teklif Alın'}</span>
+              </button>
             </div>
           </div>
         </div>
@@ -2630,9 +2631,12 @@ export default function Home({ initialLang = 'de' }) {
               <h4 className="font-semibold mb-4">{t.nav.contact}</h4>
               <div className="space-y-2 text-sm text-gray-400">
                 <p className="flex items-center space-x-2">
-                  <MessageCircle className="h-4 w-4" />
-                  <a href={`https://wa.me/491724106463?text=${lang === 'de' ? 'Hallo,%20ich%20interessiere%20mich%20für%20Ihre%20Digital%20Marketing%20Dienstleistungen.' : lang === 'en' ? 'Hello,%20I%20am%20interested%20in%20your%20digital%20marketing%20services.' : 'Merhaba,%20dijital%20pazarlama%20hizmetleriniz%20hakkında%20bilgi%20almak%20istiyorum.'}`} target="_blank"
-                  onClick={() => trackWhatsAppClick({ location: 'page' })} className="hover:text-white transition-colors">WhatsApp</a>
+                  <Mail className="h-4 w-4 text-[#4285F4]" />
+                  <a href="mailto:info@salihmaral.de" className="hover:text-white transition-colors">info@salihmaral.de</a>
+                </p>
+                <p className="flex items-center space-x-2">
+                  <Phone className="h-4 w-4 text-emerald-400" />
+                  <a href="tel:+491724106463" onClick={() => trackPhoneClick()} className="hover:text-white transition-colors">+49 172 4106463</a>
                 </p>
                 <p className="text-xs text-gray-500 pt-2">Dreieich / Frankfurt am Main (Hessen) • Remote & Hybrid</p>
               </div>

@@ -84,7 +84,7 @@ coverImage: "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?w=600&
 <div class="cta-box" style="background: linear-gradient(135deg, #0f172a 0%, #1e3a8a 100%); border: 2px solid #3b82f6; border-radius: 1.25rem; padding: 2rem; margin: 2.5rem 0; text-align: center; color: white;">
   <h3 style="font-size: 1.5rem; font-weight: 800; color: white; margin-bottom: 0.5rem;">Scale Your Regional Pipeline in Nuremberg</h3>
   <p style="color: #cbd5e1; font-size: 0.95rem; max-width: 600px; margin: 0 auto 1.5rem auto; line-height: 1.5;">Audit your Google Ads account with an Official Google Partner (17+ years experience) under a predictable flat-fee model.</p>
-  <a href="https://wa.me/491724106463?text=Hello%20Salih,%20we%20are%20interested%20in%20Google%20Ads%20management%20in%20Nuremberg." target="_blank" rel="noopener noreferrer" style="display: inline-block; background: #25D366; color: white; font-weight: 800; padding: 0.85rem 2rem; border-radius: 0.75rem; text-decoration: none; font-size: 1rem;">Request Free Account Audit via WhatsApp ➔</a>
+  <a href="/en#contact" style="display: inline-block; background: #4285F4; color: white; font-weight: 800; padding: 0.85rem 2rem; border-radius: 0.75rem; text-decoration: none; font-size: 1rem;">Get Free Proposal ➔</a>
 </div>
 
 <h2>📍 Related Location Hubs & Guides</h2>

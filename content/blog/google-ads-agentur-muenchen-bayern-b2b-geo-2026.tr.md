@@ -103,7 +103,7 @@ coverImage: "https://images.unsplash.com/photo-1595867818082-083862f3d630?w=1200
   <h3 style="font-size: 1.8rem; font-weight: 800; color: #ffffff; margin-bottom: 0.75rem;">Münih ve Bavyera Pazarında Liderliğe Oynayın</h3>
   <p style="color: #cbd5e1; font-size: 1.1rem; max-width: 680px; margin: 0 auto 1.75rem auto;">Yüksek bütçeli B2B müşterilerini ve yapay zeka arama motoru görünürlüğünü sabit fiyatlı ajans güvencesiyle kazanın.</p>
   <div style="display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap;">
-    <a href="https://salihmaral.de/tr/contact" style="display: inline-block; background: #4285F4; color: white; font-weight: 700; padding: 1rem 2.2rem; border-radius: 0.75rem; text-decoration: none; box-shadow: 0 10px 20px -5px rgba(66, 133, 244, 0.4);">Ücretsiz Münih B2B Analizi Alın ➔</a>
-    <a href="https://wa.me/4917631602931" style="display: inline-block; background: #25D366; color: white; font-weight: 700; padding: 1rem 2.2rem; border-radius: 0.75rem; text-decoration: none;">WhatsApp ile Doğrudan İletişim 💬</a>
+    <a href="/#contact" style="display: inline-block; background: #4285F4; color: white; font-weight: 700; padding: 1rem 2.2rem; border-radius: 0.75rem; text-decoration: none; box-shadow: 0 10px 20px -5px rgba(66, 133, 244, 0.4);">Ücretsiz Teklif Alın ➔</a>
+    <a href="tel:+491724106463" style="display: inline-block; background: #0f172a; color: white; font-weight: 700; padding: 1rem 2.2rem; border-radius: 0.75rem; text-decoration: none; border: 1px solid rgba(255,255,255,0.2);">Doğrudan Arayın: +49 172 4106463 📞</a>
   </div>
 </div>

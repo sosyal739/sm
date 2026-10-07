@@ -2,10 +2,10 @@
 
 import { Button } from '@/components/ui/button'
 import { Card, CardContent } from '@/components/ui/card'
-import { ArrowLeft, Award, BarChart3, Globe, Users, Target, TrendingUp, CheckCircle, MessageCircle, Menu, X, ChevronDown, MapPin, ArrowUpRight } from 'lucide-react'
+import { ArrowLeft, Award, BarChart3, Globe, Users, Target, TrendingUp, CheckCircle, Phone, Menu, X, ChevronDown, MapPin, ArrowUpRight } from 'lucide-react'
 import { useRouter } from 'next/navigation'
 import { useState, useEffect } from 'react'
-import { trackWhatsAppClick } from '@/lib/analytics'
+import { trackPhoneClick } from '@/lib/analytics'
 
 const servicesList = {
   de: [
@@ -101,7 +101,7 @@ const translations = {
       title: 'Bereit für digitales Wachstum?',
       desc: 'Kontaktieren Sie uns für eine kostenlose Erstberatung.',
       btn1: 'Kostenloses Angebot',
-      btn2: 'WhatsApp'
+      btn2: 'Direkt anrufen'
     },
     footer: { rights: 'Alle Rechte vorbehalten.' },
     nav: {
@@ -164,7 +164,7 @@ const translations = {
       title: 'Dijital büyümeye hazır mısınız?',
       desc: 'Ücretsiz ilk danışmanlık için bizimle iletişime geçin.',
       btn1: 'Ücretsiz Teklif Alın',
-      btn2: 'WhatsApp'
+      btn2: 'Hemen Arayın'
     },
     footer: { rights: 'Tüm hakları saklıdır.' },
     nav: {
@@ -226,8 +226,8 @@ const translations = {
     cta: {
       title: 'Ready for digital growth?',
       desc: 'Contact us for a free initial consultation.',
-      btn1: 'Free Quote',
-      btn2: 'WhatsApp'
+      btn1: 'Get Free Proposal',
+      btn2: 'Call Directly'
     },
     footer: { rights: 'All rights reserved.' },
     nav: {
@@ -266,8 +266,6 @@ export default function AboutPage() {
     <TrendingUp key={1} className="h-8 w-8 text-[#34A853]" />,
     <Users key={2} className="h-8 w-8 text-[#FBBC04]" />,
   ]
-
-  const whatsappUrl = `https://wa.me/491724106463?text=${lang === 'de' ? 'Hallo,%20ich%20interessiere%20mich%20für%20Ihre%20Digital%20Marketing%20Dienstleistungen.' : lang === 'en' ? 'Hello,%20I%20am%20interested%20in%20your%20digital%20marketing%20services.' : 'Merhaba,%20dijital%20pazarlama%20hizmetleriniz%20hakkında%20bilgi%20almak%20istiyorum.'}`
 
   return (
     <div className="min-h-screen bg-gradient-to-b from-gray-50 to-white">
@@ -540,9 +538,9 @@ export default function AboutPage() {
             <Button size="lg" className="bg-white text-[#4285F4] hover:bg-gray-100" onClick={() => router.push(lang === 'de' ? '/#contact' : `/${lang}#contact`)}>
               {t.cta.btn1}
             </Button>
-            <Button size="lg" className="bg-[#25D366] hover:bg-[#1da851] text-white" asChild>
-              <a href={whatsappUrl} target="_blank" rel="noopener noreferrer" onClick={() => trackWhatsAppClick({ location: 'about' })}>
-                <MessageCircle className="mr-2 h-5 w-5" />
+            <Button size="lg" className="bg-slate-900 hover:bg-slate-800 text-white font-bold" asChild>
+              <a href="tel:+491724106463" onClick={() => trackPhoneClick()}>
+                <Phone className="mr-2 h-5 w-5 text-emerald-400" />
                 {t.cta.btn2}
               </a>
             </Button>

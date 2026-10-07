@@ -68,7 +68,7 @@ coverImage: "https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?w=600&
 <div class="cta-box" style="background: linear-gradient(135deg, #0f172a 0%, #1e3a8a 100%); border: 2px solid #3b82f6; border-radius: 1.25rem; padding: 2rem; margin: 2.5rem 0; text-align: center; color: white;">
   <h3 style="font-size: 1.5rem; font-weight: 800; color: white; margin-bottom: 0.5rem;">Stop Paying Heavy Aggregator Commissions</h3>
   <p style="color: #cbd5e1; font-size: 0.95rem; max-width: 600px; margin: 0 auto 1.5rem auto; line-height: 1.5;">Put your restaurant at the top of Google Maps and Search under a transparent flat fee with Official Google Partner Salih Maral.</p>
-  <a href="https://wa.me/491724106463?text=Hello%20Salih,%20we%20run%20a%20restaurant/delivery%20service%20and%20want%20direct%20Google%20orders." target="_blank" rel="noopener noreferrer" style="display: inline-block; background: #25D366; color: white; font-weight: 800; padding: 0.85rem 2rem; border-radius: 0.75rem; text-decoration: none; font-size: 1rem;">Start Free Consultation via WhatsApp ➔</a>
+  <a href="/en#contact" style="display: inline-block; background: #4285F4; color: white; font-weight: 800; padding: 0.85rem 2rem; border-radius: 0.75rem; text-decoration: none; font-size: 1rem;">Get Free Proposal ➔</a>
 </div>
 
 <h2>📍 Related Local Marketing Guides</h2>

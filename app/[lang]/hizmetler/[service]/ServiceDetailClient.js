@@ -6,7 +6,7 @@ import { Button } from '@/components/ui/button'
 import { Card, CardContent } from '@/components/ui/card'
 import { CheckCircle, ArrowLeft, ArrowUpRight, TrendingUp, Search, Image, ShoppingCart, Play, Zap, MapPin, Users, Heart, Video, MessageSquare, Share2, Target, BarChart3, Globe, Link, FileText, Shield, ShieldCheck, Cpu, Database, Lock, Code, Activity, Star, ThumbsDown, AlertTriangle, Eye, Award, Flame, Menu, X, ChevronDown, ChevronRight, Phone, Mail } from 'lucide-react'
 import ServiceDetailModules from '@/components/ServiceDetailModules'
-import { trackWhatsAppClick } from '@/lib/analytics'
+import { trackPhoneClick } from '@/lib/analytics'
 
 // Translations for navbar
 const navTranslations = {
@@ -1230,21 +1230,17 @@ export default function ServiceDetailClient({ initialService, initialLang }) {
                 style={{ backgroundColor: data.primaryColor }}
                 className="text-white font-bold text-base px-8 py-4 rounded-2xl shadow-xl hover:shadow-2xl transition-all duration-300 hover:scale-105 hover:opacity-95 flex items-center gap-2 cursor-pointer"
               >
-                <span>{lang === 'de' ? 'Kostenlose Potenzialanalyse anfordern' : lang === 'en' ? 'Get Free Growth Audit' : 'Ücretsiz Analiz Al'}</span>
+                <span>{lang === 'de' ? 'Kostenloses Angebot anfordern' : lang === 'en' ? 'Get Free Proposal' : 'Ücretsiz Teklif Alın'}</span>
                 <ArrowUpRight className="h-5 w-5" />
               </button>
 
               <a
-                href={`https://wa.me/491724106463?text=${lang === 'de' ? 'Hallo,%20ich%20möchte%20Informationen%20über%20Ihre%20Dienstleistungen.' : lang === 'en' ? 'Hello,%20I%20would%20like%20information%20about%20your%20services.' : 'Merhaba,%20hizmetleriniz%20hakkında%20bilgi%20almak%20istiyorum.'}`}
-                target="_blank"
-                rel="noopener noreferrer"
-                onClick={() => trackWhatsAppClick({ location: 'service_detail' })}
-                className="bg-emerald-50 text-emerald-800 border border-emerald-200/90 hover:bg-emerald-100/90 font-bold text-base px-7 py-4 rounded-2xl shadow-sm hover:shadow transition-all duration-300 flex items-center gap-2.5 cursor-pointer"
+                href="tel:+491724106463"
+                onClick={() => trackPhoneClick()}
+                className="bg-slate-100 text-slate-900 border border-slate-300 hover:bg-slate-200 font-bold text-base px-7 py-4 rounded-2xl shadow-sm hover:shadow transition-all duration-300 flex items-center gap-2.5 cursor-pointer"
               >
-                <svg className="h-5 w-5 text-[#25D366]" fill="currentColor" viewBox="0 0 24 24">
-                  <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
-                </svg>
-                <span>WhatsApp</span>
+                <Phone className="h-5 w-5 text-[#4285F4]" />
+                <span>{lang === 'de' ? '+49 172 4106463' : lang === 'en' ? 'Call Directly' : 'Hemen Arayın'}</span>
               </a>
             </div>
 
@@ -2914,21 +2910,17 @@ export default function ServiceDetailClient({ initialService, initialLang }) {
                 style={{ backgroundColor: data.primaryColor }}
                 className="text-white font-bold text-base px-9 py-4 rounded-2xl shadow-xl hover:shadow-2xl transition-all duration-300 hover:scale-105 hover:opacity-95 flex items-center gap-2 cursor-pointer"
               >
-                <span>{lang === 'de' ? 'Kostenlose Analyse anfordern' : lang === 'en' ? 'Get Free Analysis' : 'Ücretsiz Analiz Al'}</span>
+                <span>{lang === 'de' ? 'Kostenloses Angebot anfordern' : lang === 'en' ? 'Get Free Proposal' : 'Ücretsiz Teklif Alın'}</span>
                 <ArrowUpRight className="h-5 w-5" />
               </button>
 
               <a
-                href={`https://wa.me/491724106463?text=${lang === 'de' ? 'Hallo,%20ich%20interessiere%20mich%20für%20' + encodeURIComponent(data.title) + '%20Dienstleistungen.' : lang === 'en' ? 'Hello,%20I%20am%20interested%20in%20' + encodeURIComponent(data.title) + '%20services.' : 'Merhaba,%20' + encodeURIComponent(data.title) + '%20hizmeti%20hakkında%20bilgi%20almak%20istiyorum.'}`}
-                target="_blank"
-                rel="noopener noreferrer"
-                onClick={() => trackWhatsAppClick({ location: 'service_detail_bottom' })}
-                className="bg-emerald-500 hover:bg-emerald-600 text-white font-bold text-base px-8 py-4 rounded-2xl shadow-lg transition-all duration-300 hover:scale-105 flex items-center gap-2.5 cursor-pointer"
+                href="tel:+491724106463"
+                onClick={() => trackPhoneClick()}
+                className="bg-slate-900 hover:bg-slate-800 text-white font-bold text-base px-8 py-4 rounded-2xl shadow-lg transition-all duration-300 hover:scale-105 flex items-center gap-2.5 cursor-pointer border border-white/20"
               >
-                <svg className="h-5 w-5 fill-current" viewBox="0 0 24 24">
-                  <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
-                </svg>
-                <span>WhatsApp</span>
+                <Phone className="h-5 w-5 text-emerald-400" />
+                <span>{lang === 'de' ? '+49 172 4106463' : lang === 'en' ? 'Call Directly' : 'Hemen Arayın (+49 172 4106463)'}</span>
               </a>
             </div>
           </div>
