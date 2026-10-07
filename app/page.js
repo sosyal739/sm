@@ -13,7 +13,7 @@ import CookieConsent from '@/components/CookieConsent'
 import RoasCalculatorWidget from '@/components/RoasCalculatorWidget'
 import LeadFunnelWizard from '@/components/LeadFunnelWizard'
 import GoogleAdsBudgetCalculator from '@/components/GoogleAdsBudgetCalculator'
-import OrphexInspiredShowcase from '@/components/OrphexInspiredShowcase'
+import EcosystemMarquee from '@/components/EcosystemMarquee'
 
 const translations = {
   tr: {
@@ -340,6 +340,12 @@ const translations = {
           description: 'Google Ads Eröffnung, Verifizierung, GA4, Search Console, GMC, Meta Pixel, CAPI, sGTM und Google Maps schlüsselfertig.',
           slug: 'server-side-tracking',
           icon: 'tracking'
+        },
+        {
+          title: 'YouTube Ads & Videomarketing',
+          description: 'Shorts, In-Stream und Bumper Ads Strategien mit 23,1 Mio.+ View-Erfahrung für maximale Markenbekanntheit.',
+          slug: 'youtube-ads',
+          icon: 'youtube'
         }
       ]
     },
@@ -587,6 +593,12 @@ const translations = {
           description: 'Turnkey setup for Google Ads, advertiser verification, GA4 E-commerce, Search Console, GMC, Meta CAPI, sGTM and Google Maps.',
           slug: 'server-side-tracking',
           icon: 'tracking'
+        },
+        {
+          title: 'YouTube Ads & Video Marketing',
+          description: 'Shorts, In-Stream and Bumper ad frameworks backed by 23.1M+ verified views for scalable brand reach.',
+          slug: 'youtube-ads',
+          icon: 'youtube'
         }
       ]
     },
@@ -762,6 +774,29 @@ const translations = {
       rights: 'All rights reserved.',
       about: 'About Us'
     }
+  }
+}
+
+const getServiceIcon = (iconType) => {
+  switch (iconType) {
+    case 'google-ads':
+      return { icon: TrendingUp, color: 'bg-blue-50 text-[#4285F4] border-blue-100' }
+    case 'meta':
+      return { icon: Zap, color: 'bg-indigo-50 text-indigo-600 border-indigo-100' }
+    case 'tiktok':
+      return { icon: Sparkles, color: 'bg-rose-50 text-rose-600 border-rose-100' }
+    case 'x':
+      return { icon: MessageSquare, color: 'bg-slate-100 text-slate-800 border-slate-200' }
+    case 'seo':
+      return { icon: Search, color: 'bg-emerald-50 text-emerald-600 border-emerald-100' }
+    case 'review':
+      return { icon: ShieldCheck, color: 'bg-amber-50 text-amber-600 border-amber-100' }
+    case 'tracking':
+      return { icon: Layers, color: 'bg-cyan-50 text-cyan-600 border-cyan-100' }
+    case 'youtube':
+      return { icon: Flame, color: 'bg-red-50 text-red-600 border-red-100' }
+    default:
+      return { icon: Globe, color: 'bg-blue-50 text-[#4285F4] border-blue-100' }
   }
 }
 
@@ -1007,24 +1042,61 @@ export default function Home({ initialLang = 'de' }) {
             {/* Desktop Navigation Links */}
             <div className="hidden md:flex items-center space-x-6">
               <div className="relative group">
-                <button className="text-sm font-bold text-gray-900 hover:text-[#4285F4] transition-colors flex items-center cursor-pointer">
-                  {t.nav.services}
-                  <svg className="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
-                  </svg>
+                <button className="text-sm font-bold text-gray-900 hover:text-[#4285F4] transition-colors flex items-center gap-1.5 py-2 cursor-pointer">
+                  <span>{t.nav.services}</span>
+                  <ChevronDown className="w-4 h-4 transition-transform duration-200 group-hover:rotate-180 text-slate-500 group-hover:text-[#4285F4]" />
                 </button>
-                <div className="absolute left-0 mt-2 w-72 bg-white rounded-2xl shadow-2xl opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 z-50 border border-slate-100 p-2">
-                  <div className="space-y-1">
-                    {t.why.services.map((service, idx) => (
-                      <a
-                        key={idx}
-                        href={svcUrl(lang, service.slug)}
-                        className="block px-3.5 py-2.5 rounded-xl text-sm text-gray-700 hover:bg-[#4285F4]/10 hover:text-[#4285F4] transition-colors"
+                
+                {/* Mega Menu Dropdown (Orphex 2-Column Grid with Service Icons) */}
+                <div className="absolute -left-12 top-full pt-2 w-[740px] max-w-[90vw] opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 z-50">
+                  <div className="bg-white/98 backdrop-blur-xl rounded-3xl shadow-2xl border border-slate-200/90 p-5 sm:p-6">
+                    <div className="grid grid-cols-2 gap-3">
+                      {t.why.services.map((service, idx) => {
+                        const iconData = getServiceIcon(service.icon)
+                        const IconComponent = iconData.icon
+                        return (
+                          <a
+                            key={idx}
+                            href={svcUrl(lang, service.slug)}
+                            className="group/item flex items-start gap-3.5 p-3 rounded-2xl hover:bg-slate-50/90 transition-all border border-transparent hover:border-slate-200/60"
+                          >
+                            <div className={`w-10 h-10 rounded-xl flex items-center justify-center shrink-0 border shadow-2xs ${iconData.color}`}>
+                              <IconComponent className="w-5 h-5" />
+                            </div>
+                            <div className="flex-1 min-w-0">
+                              <div className="font-extrabold text-sm text-gray-900 group-hover/item:text-[#4285F4] transition-colors flex items-center justify-between">
+                                <span className="truncate">{service.title}</span>
+                                <ChevronRight className="w-3.5 h-3.5 opacity-0 -translate-x-1 group-hover/item:opacity-100 group-hover/item:translate-x-0 transition-all text-[#4285F4] shrink-0 ml-1" />
+                              </div>
+                              <p className="text-xs text-slate-500 line-clamp-2 leading-relaxed mt-0.5">
+                                {service.description}
+                              </p>
+                            </div>
+                          </a>
+                        )
+                      })}
+                    </div>
+
+                    {/* Mega Menu Bottom Bar */}
+                    <div className="mt-4 pt-3.5 border-t border-slate-100 flex items-center justify-between px-2 text-xs">
+                      <div className="flex items-center gap-2 text-slate-500 font-semibold">
+                        <span className="w-2 h-2 rounded-full bg-emerald-500"></span>
+                        <span>
+                          {lang === 'de'
+                            ? 'Monatliche Fixpreise ohne prozentuale Provision • § 13b UStG'
+                            : lang === 'en'
+                            ? 'Transparent monthly flat-fees • Zero commission'
+                            : 'Aylık şeffaf Fixpreis (sabit fiyat) • Sürpriz komisyonsuz'}
+                        </span>
+                      </div>
+                      <button
+                        onClick={() => scrollToSection('contact')}
+                        className="font-bold text-[#4285F4] hover:text-blue-700 flex items-center gap-1 cursor-pointer transition-colors"
                       >
-                        <div className="font-bold text-gray-900">{service.title}</div>
-                        <div className="text-xs text-gray-500 line-clamp-1">{service.description}</div>
-                      </a>
-                    ))}
+                        <span>{lang === 'de' ? 'Angebot anfordern' : lang === 'en' ? 'Get Proposal' : 'Hemen Teklif Alın'}</span>
+                        <ArrowRight className="w-3.5 h-3.5" />
+                      </button>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -1194,24 +1266,13 @@ export default function Home({ initialLang = 'de' }) {
           <div className="grid lg:grid-cols-12 gap-12 items-center">
             {/* Left Content Column */}
             <div className="lg:col-span-7 space-y-7 text-left">
-              {/* Top Partner Badge (Orphex Live Pill Style) */}
-              <button
-                onClick={() => scrollToSection('solutions')}
-                className="group inline-flex items-center gap-2.5 bg-white/95 border border-slate-200/90 hover:border-blue-400 rounded-full px-4 sm:px-5 py-2 shadow-xs hover:shadow-md transition-all duration-300 backdrop-blur-md text-left cursor-pointer"
-              >
-                <span className="flex h-2 w-2 relative">
-                  <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-emerald-400 opacity-75"></span>
-                  <span className="relative inline-flex rounded-full h-2 w-2 bg-emerald-500"></span>
+              {/* Top Partner Badge */}
+              <div className="inline-flex items-center space-x-2.5 bg-white/95 border border-slate-200/90 rounded-full px-5 py-2 shadow-sm backdrop-blur-md">
+                <span className="w-2.5 h-2.5 rounded-full bg-emerald-500 animate-pulse"></span>
+                <span className="text-xs sm:text-sm font-bold text-slate-800 tracking-wide">
+                  2026 {lang === 'de' ? 'Performance & Growth Strategien' : lang === 'en' ? 'Performance & Growth Strategies' : 'Performans & Büyüme Stratejileri'}
                 </span>
-                <span className="text-xs sm:text-sm font-bold text-slate-800 tracking-wide group-hover:text-[#4285F4] transition-colors">
-                  {lang === 'de'
-                    ? '✨ 2026 KI-Google Ads & Fixpreis-Systeme'
-                    : lang === 'en'
-                    ? '✨ 2026 AI Google Ads & Flat-Fee Growth'
-                    : '✨ 2026 AI Destekli Google Ads & Fixpreis Yönetim'}
-                </span>
-                <ChevronRight className="w-4 h-4 text-slate-400 group-hover:text-[#4285F4] group-hover:translate-x-0.5 transition-all" />
-              </button>
+              </div>
 
               {/* Main Title */}
               <h1 className="text-4xl sm:text-6xl lg:text-7xl font-black leading-[1.08] tracking-tight text-gray-900">
@@ -1443,8 +1504,8 @@ export default function Home({ initialLang = 'de' }) {
         </div>
       </section>
 
-      {/* Orphex-Style Interactive Solutions, Multi-Row Ecosystem & AI Intelligence Showcase */}
-      <OrphexInspiredShowcase lang={lang} onContactClick={() => scrollToSection('contact')} />
+      {/* Almanya Pazarlama Ekosistemi - Multi-Row Flowing Marquee (Orphex Style) */}
+      <EcosystemMarquee lang={lang} />
 
       {/* Services Section (Ultra-Prestigious 6-Card Grid with High Readability & 3D Accents) */}
       <section id="services" className="py-24 bg-gradient-to-b from-white via-slate-50/60 to-white relative overflow-hidden">
