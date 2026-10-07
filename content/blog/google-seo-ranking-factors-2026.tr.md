@@ -1,4 +1,4 @@
-﻿---
+---
 slug: "google-seo-ranking-factors-2026"
 lang: "tr"
 title: "Google'ın 2026'da En Çok Önem Verdiği 9 Sıralama Kriteri (Canlı Vaka Analizi)"
@@ -175,7 +175,7 @@ Yapay zeka modelleri metinlerinizi okuyabilir ancak onları yapılandırılmış
 2. **FAQPage Schema:** Sıkça Sorulan Sorular bölümündeki Q&A (Soru-Cevap) bloklarını yapılandırarak arama sonuçlarında doğrudan zengin snippet (rich snippet) olarak görünmesini sağlar.
 3. **Service Schema:** Sunduğunuz hizmetlerin detaylarını, fiyat aralıklarını ve hizmet bölgelerini arama motorlarına yapısal olarak sunar.
 
-Sitenizin teknik SEO altyapısını güçlendirmek ve Core Web Vitals metriklerinizi iyileştirmek için güncel analizlerimizi içeren [SEO Stratejileri 2026](/blog/seo-stratejileri-2026) başlıklı blog yazımızı da inceleyebilirsiniz.
+Sitenizin teknik SEO altyapısını güçlendirmek ve Core Web Vitals metriklerinizi iyileştirmek için [SEO ve GEO Hizmetleri](/tr/hizmetler/seo) sayfamızdan uzman desteği alabilirsiniz.
 
 ---
 
@@ -258,7 +258,7 @@ Arama motorlarında sürdürülebilir başarı elde etmek ve markanızı gelece�
   <h3>📚 Devamını Okuyun</h3>
   <p>SEO ve dijital pazarlama stratejilerinizi geliştirmek için aşağıdaki rehberlerimizi de inceleyebilirsiniz:</p>
   <ul>
-    <li><a href="/blog/seo-stratejileri-2026">SEO Stratejileri 2026: Google'ın Yeni Algoritması ve Öncelikler</a></li>
+    <li><a href="/blog/programmatic-seo-ai-content-hubs">Programmatic SEO ve AI Destekli İçerik Merkezleri</a></li>
     <li><a href="/blog/ai-seo-geoptimierung">Yapay Zeka Arama Motorları İçin SEO (GEO) Rehberi 2026</a></li>
     <li><a href="/blog/local-seo-google-maps">Yerel SEO ve Google Haritalar Optimizasyonu ile Trafiğinizi Artırın</a></li>
   </ul>

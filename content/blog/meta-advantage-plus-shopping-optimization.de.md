@@ -1,4 +1,4 @@
-﻿---
+---
 slug: "meta-advantage-plus-shopping-optimization"
 lang: "de"
 title: "CPA senken in Meta Advantage+ Shopping Kampagnen: Praxis-Leitfaden"
@@ -138,7 +138,7 @@ coverImage: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=600&
         <ul>
           <li>Aktivieren Sie die <strong>Meta Conversions API (CAPI)</strong> per Server-Side-Tracking, um Signalverluste durch Browser-Blocker und iOS-Restriktionen zu minimieren.</li>
           <li>Streben Sie einen <strong>Event Match Quality Score von mindestens 7.0 oder höher</strong> für das "Purchase"-Event an. Je mehr Nutzerparameter (verschlüsselte E-Mail, Telefonnummer, Ort) übermittelt werden, desto präziser kann der Algorithmus optimieren.</li>
-          <li>Ein fehlerfreies Tracking bildet die Basis, um nachhaltigen <a href="/blog/meta-ads-basari">Erfolg mit Meta Ads</a> zu feiern.</li>
+          <li>Ein fehlerfreies Tracking bildet die Basis, um nachhaltigen <a href="/de/dienstleistungen/meta-ads">Erfolg mit Meta Ads</a> zu erzielen.</li>
         </ul>
 
         <h2>📈 Performance-Statistiken nach Optimierungsgrad</h2>
@@ -192,7 +192,7 @@ coverImage: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=600&
         <div class="highlight-box">
           <h4>📚 Weiterlesen</h4>
           <ul>
-            <li><a href="/blog/meta-ads-basari">Erfolg mit Meta Ads: Facebook und Instagram Werbung optimieren</a></li>
+            <li><a href="/blog/meta-reklamlarinda-para-kaybetmeyi-durdurun-2026">Fehler vermeiden bei Facebook und Instagram Ads (2026)</a></li>
             <li><a href="/de/dienstleistungen/meta-ads">Meta Ads Dienstleistungen von Salih Maral</a></li>
             <li><a href="/blog/meta-ads-retargeting-funnels">Meta Ads Retargeting Funnels: Bestandskunden reaktivieren</a></li>
           </ul>

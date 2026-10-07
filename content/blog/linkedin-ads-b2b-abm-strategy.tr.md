@@ -1,4 +1,4 @@
-﻿---
+---
 slug: "linkedin-ads-b2b-abm-strategy"
 lang: "tr"
 title: "LinkedIn Ads ile B2B Hesap Tabanlı Pazarlama (ABM) Stratejileri"
@@ -232,7 +232,7 @@ coverImage: "https://images.unsplash.com/photo-1579389083078-4e7018379f7e?w=600&
               <li><a href="/tr/hizmetler/google-ads">Salih Maral Google Ads Reklam Yönetimi Hizmeti</a></li>
               <li><a href="/blog/server-side-tracking-capi-guide">Sunucu Tarafı İzleme (Server-Side Tracking) ve Conversions API (CAPI) Rehberi</a></li>
               <li><a href="/blog/meta-ads-retargeting-funnels">Meta Ads Yeniden Hedefleme Hunileri ve Kitle Stratejileri</a></li>
-              <li><a href="/blog/seo-stratejileri-2026">2026 Yılında Arama Motoru Optimizasyonu (SEO) Stratejileri</a></li>
+              <li><a href="/blog/google-seo-ranking-factors-2026">Google SEO Sıralama Faktörleri 2026</a></li>
               <li><a href="/tr/hizmetler/seo">Salih Maral Profesyonel SEO ve GEO Hizmetleri</a></li>
             </ul>
           </div>

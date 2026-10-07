@@ -27,6 +27,12 @@ const nextConfig = {
       // 301: Eski Türkçe EN URL'ler → Yeni İngilizce URL'ler
       { source: '/en/hizmetler/yorum-yonetimi', destination: '/en/services/review-management', statusCode: 301 },
       { source: '/en/hizmetler/:service', destination: '/en/services/:service', statusCode: 301 },
+      // 301: Thin / Eski Blog Yazıları → Yetkin 2026 Ana Rehberleri (GSC Dizine Ekleme Çözümü)
+      { source: '/blog/meta-ads-basari', destination: '/blog/meta-reklamlarinda-para-kaybetmeyi-durdurun-2026', statusCode: 301 },
+      { source: '/blog/seo-stratejileri-2026', destination: '/blog/google-seo-ranking-factors-2026', statusCode: 301 },
+      { source: '/blog/tiktok-ads-rehber', destination: '/blog/tiktok-shop-vs-meta-advantage-plus-e-commerce-2026', statusCode: 301 },
+      { source: '/tr/blog/seo-stratejileri-2026', destination: '/blog/google-seo-ranking-factors-2026', statusCode: 301 },
+      { source: '/en/blog/meta-ads-basari', destination: '/blog/meta-reklamlarinda-para-kaybetmeyi-durdurun-2026', statusCode: 301 },
     ];
   },
   async headers() {

@@ -807,6 +807,7 @@ export default function Home({ initialLang = 'de' }) {
   const [isSubmitting, setIsSubmitting] = useState(false)
   const [latestPosts, setLatestPosts] = useState([])
   const [blogCategory, setBlogCategory] = useState('all')
+  const [serviceCategory, setServiceCategory] = useState('all')
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false)
   const [isServicesOpen, setIsServicesOpen] = useState(false)
   const [openFaq, setOpenFaq] = useState(null)

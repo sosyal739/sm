@@ -1,4 +1,4 @@
-﻿---
+---
 slug: "google-sge-search-ads-strategy"
 lang: "tr"
 title: "Google Arama Üretken Deneyimi (SGE) ve Arama Ağı Reklam Stratejileri"
@@ -177,7 +177,7 @@ coverImage: "https://images.unsplash.com/photo-1531297484001-80022131f5a1?w=600&
           <ul>
             <li><a href="/tr/blog/google-gemini-spark">Google Gemini Spark: Arka Planda 7/24 Çalışan Kişisel Yapay Zeka Ajanınız</a></li>
             <li><a href="/tr/blog/ai-seo-geoptimierung">Yapay Zeka Arama Motorları İçin SEO (GEO) Rehberi 2026</a></li>
-            <li><a href="/tr/blog/seo-stratejileri-2026">SEO Stratejileri 2026: Google'ın Yeni Algoritması</a></li>
+            <li><a href="/blog/google-seo-ranking-factors-2026">Google SEO Sıralama Faktörleri 2026</a></li>
           </ul>
         </div>
 

@@ -162,6 +162,7 @@ export async function generateMetadata({ params }) {
         de: `https://salihmaral.de/de/dienstleistungen/${key === 'yorum-yonetimi' ? 'bewertungsmanagement' : key}`,
         en: `https://salihmaral.de/en/services/${key === 'yorum-yonetimi' ? 'review-management' : key}`,
         tr: `https://salihmaral.de/tr/hizmetler/${key === 'yorum-yonetimi' ? 'yorum-yonetimi' : key}`,
+        'x-default': `https://salihmaral.de/de/dienstleistungen/${key === 'yorum-yonetimi' ? 'bewertungsmanagement' : key}`,
       }
     },
     openGraph: {
@@ -187,6 +188,33 @@ export async function generateMetadata({ params }) {
   }
 }
 
+export async function generateStaticParams() {
+  const baseServices = ['google-ads', 'meta-ads', 'youtube-ads', 'server-side-tracking', 'tiktok-ads', 'x-ads', 'seo', 'islamic-charity-ngo-marketing']
+  const params = []
+
+  // German
+  baseServices.forEach(service => {
+    params.push({ lang: 'de', service })
+  })
+  params.push({ lang: 'de', service: 'bewertungsmanagement' })
+  params.push({ lang: 'de', service: 'yorum-yonetimi' })
+
+  // English
+  baseServices.forEach(service => {
+    params.push({ lang: 'en', service })
+  })
+  params.push({ lang: 'en', service: 'review-management' })
+  params.push({ lang: 'en', service: 'yorum-yonetimi' })
+
+  // Turkish
+  baseServices.forEach(service => {
+    params.push({ lang: 'tr', service })
+  })
+  params.push({ lang: 'tr', service: 'yorum-yonetimi' })
+
+  return params
+}
+
 export default async function ServicePage({ params }) {
   const resolvedParams = params && typeof params.then === 'function' ? await params : params
   const { lang, service } = resolvedParams || {}
@@ -195,5 +223,86 @@ export default async function ServicePage({ params }) {
     notFound()
   }
 
-  return <ServiceDetailClient initialService={service} initialLang={lang || 'de'} />
+  const currentLang = lang || 'de'
+  let key = service || ''
+  if (service === 'bewertungsmanagement' || service === 'review-management') {
+    key = 'yorum-yonetimi'
+  }
+
+  const metaData = serviceMeta[key]?.[currentLang] || {
+    title: `${service || 'Dienstleistungen'} | Salih Maral`,
+    description: 'Professionelle Digital Marketing Dienstleistungen von Salih Maral.',
+  }
+
+  const pathPrefix = currentLang === 'de' ? 'de/dienstleistungen' : currentLang === 'en' ? 'en/services' : 'tr/hizmetler'
+  const serviceSlug = key === 'yorum-yonetimi' 
+    ? (currentLang === 'de' ? 'bewertungsmanagement' : currentLang === 'en' ? 'review-management' : 'yorum-yonetimi')
+    : key
+  const canonicalUrl = `https://salihmaral.de/${pathPrefix}/${serviceSlug}`
+
+  const serviceSchema = {
+    '@context': 'https://schema.org',
+    '@graph': [
+      {
+        '@type': 'Service',
+        '@id': `${canonicalUrl}#service`,
+        name: metaData.title,
+        description: metaData.description,
+        provider: {
+          '@type': 'ProfessionalService',
+          '@id': 'https://salihmaral.de/#organization',
+          name: 'Salih Maral Digital Marketing',
+          url: 'https://salihmaral.de',
+          telephone: '+49 176 8452 7954',
+          priceRange: '€€',
+          image: 'https://salihmaral.de/logo.png',
+          address: {
+            '@type': 'PostalAddress',
+            addressCountry: 'DE',
+          },
+        },
+        areaServed: [
+          { '@type': 'Country', name: 'Germany' },
+          { '@type': 'Country', name: 'Austria' },
+          { '@type': 'Country', name: 'Switzerland' },
+          { '@type': 'Country', name: 'Turkey' },
+        ],
+        url: canonicalUrl,
+      },
+      {
+        '@type': 'BreadcrumbList',
+        '@id': `${canonicalUrl}#breadcrumb`,
+        itemListElement: [
+          {
+            '@type': 'ListItem',
+            position: 1,
+            name: currentLang === 'de' ? 'Startseite' : currentLang === 'en' ? 'Home' : 'Ana Sayfa',
+            item: currentLang === 'de' ? 'https://salihmaral.de' : `https://salihmaral.de/${currentLang}`,
+          },
+          {
+            '@type': 'ListItem',
+            position: 2,
+            name: currentLang === 'de' ? 'Dienstleistungen' : currentLang === 'en' ? 'Services' : 'Hizmetler',
+            item: `https://salihmaral.de/${currentLang === 'de' ? 'de/dienstleistungen' : currentLang === 'en' ? 'en/services' : 'tr/hizmetler'}`,
+          },
+          {
+            '@type': 'ListItem',
+            position: 3,
+            name: metaData.title,
+            item: canonicalUrl,
+          },
+        ],
+      },
+    ],
+  }
+
+  return (
+    <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(serviceSchema) }}
+      />
+      <ServiceDetailClient initialService={key} initialLang={currentLang} />
+    </>
+  )
 }

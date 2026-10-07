@@ -1,6 +1,11 @@
-import { getPostBySlug, getAllPosts } from '@/lib/blog.server'
+import { getPostBySlug, getAllPosts, getAllSlugs } from '@/lib/blog.server'
 import BlogDetailClient from './BlogDetailClient'
 import { notFound } from 'next/navigation'
+
+export async function generateStaticParams() {
+  const slugs = getAllSlugs()
+  return slugs.map(slug => ({ slug }))
+}
 
 export async function generateMetadata({ params }) {
   try {

@@ -52,7 +52,10 @@ const servicesList = {
 export default function ServiceDetailClient({ initialService, initialLang }) {
   const router = useRouter()
   const params = useParams()
-  const service = params?.service || initialService
+  const rawService = params?.service || initialService
+  const service = (rawService === 'review-management' || rawService === 'bewertungsmanagement')
+    ? 'yorum-yonetimi'
+    : rawService
   const urlLang = params?.lang || initialLang
   const lang = urlLang && ['de', 'en', 'tr'].includes(urlLang) ? urlLang : 'de'
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
