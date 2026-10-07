@@ -187,7 +187,7 @@ export default function EcosystemMarquee({ lang = 'de' }) {
       <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[700px] h-[350px] bg-gradient-to-r from-[#5138EE]/18 via-purple-400/20 to-indigo-300/18 rounded-full blur-[90px] pointer-events-none z-0 animate-pulse-slow"></div>
 
       <div className="container mx-auto px-4 max-w-7xl mb-8 text-center relative z-10">
-        <div className="inline-flex items-center space-x-2 bg-slate-50 border border-slate-100 rounded-full px-4 py-1.5 mb-3 shadow-[0_2px_8px_rgba(0,0,0,0.02)]">
+        <div className="inline-flex items-center space-x-2 bg-slate-50 border border-slate-100 rounded-md px-3.5 py-1.5 mb-3 shadow-[0_2px_8px_rgba(0,0,0,0.02)]">
           <span className="w-2 h-2 rounded-full bg-emerald-500 animate-pulse"></span>
           <span className="text-xs font-bold uppercase tracking-wider text-slate-700">
             {current.badge}
@@ -211,9 +211,9 @@ export default function EcosystemMarquee({ lang = 'de' }) {
           {[...row1, ...row1].map((item, idx) => (
             <div
               key={idx}
-              className="flex items-center gap-3.5 bg-white px-5 py-3 rounded-2xl border border-slate-100 shadow-[0_4px_16px_rgba(0,0,0,0.03)] hover:shadow-[0_12px_28px_rgba(81,56,238,0.08)] hover:border-[#5138EE]/30 transition-all shrink-0 group cursor-default"
+              className="flex items-center gap-3.5 bg-white px-5 py-3 rounded-xl border border-slate-100 shadow-[0_4px_16px_rgba(0,0,0,0.03)] hover:shadow-[0_12px_28px_rgba(81,56,238,0.08)] hover:border-[#5138EE]/30 transition-all shrink-0 group cursor-default"
             >
-              <div className="w-9 h-9 rounded-xl bg-slate-50 flex items-center justify-center p-1.5 border border-slate-100 shadow-2xs">
+              <div className="w-9 h-9 rounded-lg bg-slate-50 flex items-center justify-center p-1.5 border border-slate-100 shadow-2xs">
                 {item.renderIcon()}
               </div>
               <div>
@@ -231,9 +231,9 @@ export default function EcosystemMarquee({ lang = 'de' }) {
           {[...row2, ...row2].map((item, idx) => (
             <div
               key={idx}
-              className="flex items-center gap-3.5 bg-white px-5 py-3 rounded-2xl border border-slate-100 shadow-[0_4px_16px_rgba(0,0,0,0.03)] hover:shadow-[0_12px_28px_rgba(16,185,129,0.08)] hover:border-emerald-300 transition-all shrink-0 group cursor-default"
+              className="flex items-center gap-3.5 bg-white px-5 py-3 rounded-xl border border-slate-100 shadow-[0_4px_16px_rgba(0,0,0,0.03)] hover:shadow-[0_12px_28px_rgba(16,185,129,0.08)] hover:border-emerald-300 transition-all shrink-0 group cursor-default"
             >
-              <div className="w-9 h-9 rounded-xl bg-slate-50 flex items-center justify-center p-1.5 border border-slate-100 shadow-2xs">
+              <div className="w-9 h-9 rounded-lg bg-slate-50 flex items-center justify-center p-1.5 border border-slate-100 shadow-2xs">
                 {item.renderIcon()}
               </div>
               <div>

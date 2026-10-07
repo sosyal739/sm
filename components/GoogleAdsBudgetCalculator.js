@@ -133,14 +133,14 @@ export default function GoogleAdsBudgetCalculator({ lang = 'de', defaultCity = '
   }
 
   return (
-    <div className="w-full max-w-5xl mx-auto my-12 p-6 sm:p-10 rounded-3xl bg-slate-900/90 border border-blue-500/30 shadow-2xl backdrop-blur-md relative overflow-hidden text-slate-100">
+    <div className="w-full max-w-5xl mx-auto my-12 p-6 sm:p-10 rounded-xl bg-slate-900/90 border border-blue-500/30 shadow-2xl backdrop-blur-md relative overflow-hidden text-slate-100">
       {/* Background ambient lighting */}
       <div className="absolute -top-32 -left-32 w-80 h-80 bg-blue-600/15 rounded-full blur-3xl pointer-events-none" />
       <div className="absolute -bottom-32 -right-32 w-80 h-80 bg-emerald-500/15 rounded-full blur-3xl pointer-events-none" />
 
       {/* Header */}
       <div className="text-center mb-10">
-        <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-blue-500/10 border border-blue-500/25 text-blue-400 text-xs font-bold uppercase tracking-wider mb-3">
+        <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-md bg-blue-500/10 border border-blue-500/25 text-blue-400 text-xs font-bold uppercase tracking-wider mb-3">
           <Calculator className="w-4 h-4 text-blue-400" />
           <span>{currentT.badge}</span>
         </div>
@@ -155,7 +155,7 @@ export default function GoogleAdsBudgetCalculator({ lang = 'de', defaultCity = '
       {/* Main interactive area */}
       <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
         {/* Left column: Controls & Sliders (7 cols) */}
-        <div className="lg:col-span-7 space-y-6 bg-slate-950/70 p-6 sm:p-8 rounded-2xl border border-slate-800">
+        <div className="lg:col-span-7 space-y-6 bg-slate-950/70 p-6 sm:p-8 rounded-lg border border-slate-800">
           {/* Industry Model Selector */}
           <div>
             <label className="block text-xs sm:text-sm font-semibold text-slate-300 mb-3">
@@ -171,7 +171,7 @@ export default function GoogleAdsBudgetCalculator({ lang = 'de', defaultCity = '
                   key={item.id}
                   type="button"
                   onClick={() => setModelType(item.id)}
-                  className={`px-3 py-2.5 rounded-xl text-xs sm:text-sm font-semibold transition-all border ${
+                  className={`px-3 py-2.5 rounded-lg text-xs sm:text-sm font-semibold transition-all border ${
                     modelType === item.id
                       ? 'bg-blue-600 text-white border-blue-400 shadow-md shadow-blue-500/20'
                       : 'bg-slate-900 text-slate-400 border-slate-800 hover:bg-slate-800 hover:text-white'
@@ -212,7 +212,7 @@ export default function GoogleAdsBudgetCalculator({ lang = 'de', defaultCity = '
 
           {/* Live Metric Cards Grid */}
           <div className="grid grid-cols-2 gap-3 pt-2">
-            <div className="p-3.5 rounded-xl bg-slate-900/90 border border-slate-800">
+            <div className="p-3.5 rounded-lg bg-slate-900/90 border border-slate-800">
               <div className="text-[11px] text-slate-400 uppercase font-semibold mb-1">
                 {currentT.estClicksLabel}
               </div>
@@ -224,7 +224,7 @@ export default function GoogleAdsBudgetCalculator({ lang = 'de', defaultCity = '
               </div>
             </div>
 
-            <div className="p-3.5 rounded-xl bg-blue-950/40 border border-blue-800/40">
+            <div className="p-3.5 rounded-lg bg-blue-950/40 border border-blue-800/40">
               <div className="text-[11px] text-blue-300 uppercase font-semibold mb-1">
                 {currentT.estConversionsLabel}
               </div>
@@ -240,19 +240,19 @@ export default function GoogleAdsBudgetCalculator({ lang = 'de', defaultCity = '
         </div>
 
         {/* Right column: ROI & Agency Cost Comparison (5 cols) */}
-        <div className="lg:col-span-5 bg-gradient-to-br from-slate-950 to-slate-900 p-6 sm:p-8 rounded-2xl border border-blue-500/20 flex flex-col justify-between space-y-6">
+        <div className="lg:col-span-5 bg-gradient-to-br from-slate-950 to-slate-900 p-6 sm:p-8 rounded-xl border border-blue-500/20 flex flex-col justify-between space-y-6">
           <div>
             <h4 className="text-xs uppercase tracking-wider text-slate-400 font-bold mb-4">
               {currentT.agencyCostHeader}
             </h4>
 
             <div className="space-y-3">
-              <div className="p-3 rounded-xl bg-slate-900 border border-slate-800 flex justify-between items-center text-xs sm:text-sm">
+              <div className="p-3 rounded-lg bg-slate-900 border border-slate-800 flex justify-between items-center text-xs sm:text-sm">
                 <span className="text-slate-400">{currentT.compProvision}</span>
                 <span className="font-bold text-rose-400 line-through">~{agencyCommissionCost} € / Mo.</span>
               </div>
 
-              <div className="p-3.5 rounded-xl bg-emerald-950/50 border border-emerald-500/40 flex justify-between items-center text-xs sm:text-sm shadow-sm">
+              <div className="p-3.5 rounded-lg bg-emerald-950/50 border border-emerald-500/40 flex justify-between items-center text-xs sm:text-sm shadow-sm">
                 <div>
                   <div className="font-bold text-emerald-300 flex items-center gap-1.5">
                     <CheckCircle2 className="w-4 h-4 text-emerald-400" />
@@ -265,7 +265,7 @@ export default function GoogleAdsBudgetCalculator({ lang = 'de', defaultCity = '
             </div>
 
             {monthlySavings > 0 && (
-              <div className="mt-4 p-3 rounded-xl bg-blue-500/10 border border-blue-500/20 text-xs text-blue-300 flex items-center gap-2">
+              <div className="mt-4 p-3 rounded-lg bg-blue-500/10 border border-blue-500/20 text-xs text-blue-300 flex items-center gap-2">
                 <TrendingUp className="w-4 h-4 text-blue-400 flex-shrink-0" />
                 <span>{currentT.savingsBadge}</span>
               </div>
@@ -277,7 +277,7 @@ export default function GoogleAdsBudgetCalculator({ lang = 'de', defaultCity = '
             <button
               type="button"
               onClick={handleWhatsAppClick}
-              className="w-full py-3.5 px-4 rounded-xl bg-emerald-600 hover:bg-emerald-500 text-white font-bold text-xs sm:text-sm flex items-center justify-center gap-2 transition-all shadow-lg shadow-emerald-900/30 cursor-pointer"
+              className="w-full py-3.5 px-4 rounded-lg bg-emerald-600 hover:bg-emerald-500 text-white font-bold text-xs sm:text-sm flex items-center justify-center gap-2 transition-all shadow-lg shadow-emerald-900/30 cursor-pointer"
             >
               <MessageSquare className="w-4 h-4" />
               <span>{currentT.whatsappCta}</span>
@@ -286,7 +286,7 @@ export default function GoogleAdsBudgetCalculator({ lang = 'de', defaultCity = '
             <button
               type="button"
               onClick={handleScrollToForm}
-              className="w-full py-3 px-4 rounded-xl bg-slate-800 hover:bg-slate-700 text-slate-200 hover:text-white font-semibold text-xs flex items-center justify-center gap-1.5 transition-all cursor-pointer"
+              className="w-full py-3 px-4 rounded-lg bg-slate-800 hover:bg-slate-700 text-slate-200 hover:text-white font-semibold text-xs flex items-center justify-center gap-1.5 transition-all cursor-pointer"
             >
               <span>{currentT.formCta}</span>
               <ArrowRight className="w-3.5 h-3.5" />

@@ -61,7 +61,7 @@ export default function MobileStickyBar({ lang: propLang }) {
       <a
         href="tel:+491724106463"
         onClick={handlePhone}
-        className="flex-1 inline-flex items-center justify-center space-x-1.5 bg-slate-100 hover:bg-slate-200 text-slate-800 text-xs font-semibold py-2.5 px-2 rounded-xl transition-colors border border-slate-300/70"
+        className="flex-1 inline-flex items-center justify-center space-x-1.5 bg-slate-100 hover:bg-slate-200 text-slate-800 text-xs font-semibold py-2.5 px-2 rounded-lg transition-colors border border-slate-300/70"
         aria-label={isTr ? 'Doğrudan Ara' : isEn ? 'Call directly' : 'Direkt anrufen'}
       >
         <Phone className="w-3.5 h-3.5 text-blue-600" />
@@ -74,7 +74,7 @@ export default function MobileStickyBar({ lang: propLang }) {
         target="_blank"
         rel="noopener noreferrer"
         onClick={handleWhatsApp}
-        className="flex-1 inline-flex items-center justify-center space-x-1.5 bg-[#25D366] hover:bg-[#20bd5a] text-white text-xs font-bold py-2.5 px-2 rounded-xl shadow-md transition-all"
+        className="flex-1 inline-flex items-center justify-center space-x-1.5 bg-[#25D366] hover:bg-[#20bd5a] text-white text-xs font-bold py-2.5 px-2 rounded-lg shadow-md transition-all"
         aria-label="WhatsApp Nachricht senden"
       >
         <MessageCircle className="w-4 h-4 fill-white" />
@@ -84,7 +84,7 @@ export default function MobileStickyBar({ lang: propLang }) {
       {/* Teklif / Erstgespräch */}
       <a
         href={contactHref}
-        className="flex-1 inline-flex items-center justify-center space-x-1 bg-blue-600 hover:bg-blue-700 text-white text-xs font-bold py-2.5 px-2 rounded-xl shadow-md transition-all"
+        className="flex-1 inline-flex items-center justify-center space-x-1 bg-blue-600 hover:bg-blue-700 text-white text-xs font-bold py-2.5 px-2 rounded-lg shadow-md transition-all"
         aria-label={isTr ? 'Ücretsiz Teklif Al' : isEn ? 'Request Free Audit' : 'Kostenloses Erstgespräch anfragen'}
       >
         <span>{isTr ? 'Teklif Al' : isEn ? 'Audit' : 'Angebot'}</span>

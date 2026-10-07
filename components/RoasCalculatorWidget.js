@@ -116,14 +116,14 @@ export default function RoasCalculatorWidget({ lang = 'de' }) {
   }
 
   return (
-    <div className="w-full max-w-4xl mx-auto my-12 p-6 sm:p-10 rounded-3xl bg-slate-900 border border-blue-500/30 shadow-2xl relative overflow-hidden">
+    <div className="w-full max-w-4xl mx-auto my-12 p-6 sm:p-10 rounded-xl bg-slate-900 border border-blue-500/30 shadow-2xl relative overflow-hidden">
       {/* Background glow */}
       <div className="absolute -top-24 -right-24 w-72 h-72 bg-blue-500/10 rounded-full blur-3xl pointer-events-none" />
       <div className="absolute -bottom-24 -left-24 w-72 h-72 bg-emerald-500/10 rounded-full blur-3xl pointer-events-none" />
 
       {/* Header */}
       <div className="text-center mb-8">
-        <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-blue-500/10 border border-blue-500/20 text-blue-400 text-xs font-bold uppercase tracking-wider mb-3">
+        <div className="inline-flex items-center gap-2 px-3 py-1 rounded-md bg-blue-500/10 border border-blue-500/20 text-blue-400 text-xs font-bold uppercase tracking-wider mb-3">
           <Calculator className="w-3.5 h-3.5" />
           <span>{currentT.badge}</span>
         </div>
@@ -138,7 +138,7 @@ export default function RoasCalculatorWidget({ lang = 'de' }) {
       {/* Calculator Grid */}
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
         {/* Sliders Area */}
-        <div className="space-y-6 bg-slate-950/60 p-6 rounded-2xl border border-slate-800">
+        <div className="space-y-6 bg-slate-950/60 p-6 rounded-lg border border-slate-800">
           {/* Budget Slider */}
           <div>
             <div className="flex justify-between items-center mb-2">
@@ -205,7 +205,7 @@ export default function RoasCalculatorWidget({ lang = 'de' }) {
         </div>
 
         {/* Results Box */}
-        <div className="p-6 rounded-2xl bg-gradient-to-b from-blue-950/40 to-slate-950 border border-blue-500/40 space-y-4 text-center sm:text-left">
+        <div className="p-6 rounded-xl bg-gradient-to-b from-blue-950/40 to-slate-950 border border-blue-500/40 space-y-4 text-center sm:text-left">
           <div>
             <div className="text-xs text-slate-400 mb-1">{currentT.currentRevLabel}</div>
             <div className="text-lg font-bold text-slate-300">{currentRevenue.toLocaleString()} €</div>
@@ -216,7 +216,7 @@ export default function RoasCalculatorWidget({ lang = 'de' }) {
             <div className="text-xl font-black text-white">{projectedRevenue.toLocaleString()} €</div>
           </div>
 
-          <div className="pt-3 border-t border-blue-500/30 p-3 rounded-xl bg-emerald-500/10 border border-emerald-500/20">
+          <div className="pt-3 border-t border-blue-500/30 p-3 rounded-lg bg-emerald-500/10 border border-emerald-500/20">
             <div className="text-xs text-emerald-300 font-medium mb-0.5">{currentT.additionalRevLabel}</div>
             <div className="text-2xl sm:text-3xl font-black text-emerald-400">
               +{additionalRevenue.toLocaleString()} € <span className="text-xs text-emerald-300/80 font-normal">/ ay</span>
@@ -226,13 +226,13 @@ export default function RoasCalculatorWidget({ lang = 'de' }) {
           {!showLeadForm ? (
             <button
               onClick={() => setShowLeadForm(true)}
-              className="w-full py-3.5 px-4 rounded-xl bg-blue-600 hover:bg-blue-500 text-white font-bold text-sm shadow-lg shadow-blue-500/25 transition-all flex items-center justify-center gap-2 cursor-pointer mt-4"
+              className="w-full py-3.5 px-4 rounded-lg bg-blue-600 hover:bg-blue-500 text-white font-bold text-sm shadow-lg shadow-blue-500/25 transition-all flex items-center justify-center gap-2 cursor-pointer mt-4"
             >
               <span>{currentT.ctaButton}</span>
               <ArrowRight className="w-4 h-4" />
             </button>
           ) : submitted ? (
-            <div className="p-4 rounded-xl bg-emerald-500/10 border border-emerald-500/30 text-emerald-300 text-xs font-semibold text-center mt-4">
+            <div className="p-4 rounded-lg bg-emerald-500/10 border border-emerald-500/30 text-emerald-300 text-xs font-semibold text-center mt-4">
               {currentT.successMsg}
             </div>
           ) : (
