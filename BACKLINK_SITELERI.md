@@ -64,6 +64,7 @@ Google botlarının anında taradığı ve açık kaynak yazılım / kurumsal te
   3. 🔗 [Google Ads Rechnung buchen & Reverse Charge 2026 Repo](https://github.com/sosyal739/google-ads-rechnung-buchen-reverse-charge-2026/blob/main/README.md)
   4. 🔗 [Türkiye'den Almanya Pazarına E-İhracat Rehberi Repo](https://github.com/sosyal739/turkiyeden-almanya-pazarina-eihracat-rehberi-2026/blob/main/README.md)
   5. 🔗 [Google Ads Agentur Dortmund & Ruhrgebiet Mittelstand Repo](https://github.com/sosyal739/google-ads-agentur-dortmund-ruhrgebiet-2026/blob/main/README.md)
+  6. 🔗 [Google Ads & Meta Ads Full-Funnel Synergy Germany 2026 Repo](https://github.com/sosyal739/google-ads-meta-ads-synergy-germany-2026/blob/master/README.md)
 
 ---
 
