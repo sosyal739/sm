@@ -84,3 +84,22 @@ coverImage: "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?w=1200
 <h2>📍 Dortmund ve Doğu Ruhr Bölgesinde Doğrudan Destek</h2>
 
 <p>Dortmund ve çevre şehirler (Bochum, Schwerte, Witten, Unna) için hazırladığımız özel analizleri <a href="/tr/standorte/dortmund">Dortmund Google Ads Sayfamızda</a> inceleyebilir, tüm hizmet detaylarımıza ise <a href="/tr/hizmetler/google-ads">Google Ads Yönetimi</a> bölümümüzden ulaşabilirsiniz.</p>
+
+<h2>❓ Dortmund Google Ads Reklamları Hakkında Sıkça Sorulan Sorular</h2>
+
+<div class="faq-accordion" style="margin-top: 1.5rem;">
+  <div style="background: #f8fafc; border: 1px solid #e2e8f0; border-radius: 0.75rem; padding: 1.25rem 1.5rem; margin-bottom: 1rem;">
+    <h3 style="font-size: 1.15rem; font-weight: 700; color: #0f172a; margin-bottom: 0.5rem;">Dortmund'daki Türk işletmeleri için Google Ads ajansı neden önemlidir?</h3>
+    <p style="color: #475569; margin: 0; line-height: 1.6;">Dortmund ve Ruhr havzasında rekabet yoğundur. Geniş eşleme (broad match) ile reklam verenler bütçelerini ilgisiz aramalarda eritir. <strong>17+ yıllık resmi Google Partneri Salih Maral</strong> olarak, 1.450'den fazla negatif anahtar kelime ve semt bazlı mikro hedeflemeyle bütçenizin sadece gerçek müşterilere harcanmasını sağlıyoruz.</p>
+  </div>
+
+  <div style="background: #f8fafc; border: 1px solid #e2e8f0; border-radius: 0.75rem; padding: 1.25rem 1.5rem; margin-bottom: 1rem;">
+    <h3 style="font-size: 1.15rem; font-weight: 700; color: #0f172a; margin-bottom: 0.5rem;">Dortmund reklam yönetiminde ajans ücreti ne kadardır?</h3>
+    <p style="color: #475569; margin: 0; line-height: 1.6;">Almanya'daki geleneksel ajansların aksine reklam bütçenizden yüzde komisyon almıyoruz. <strong>Aylık 590 €'dan başlayan şeffaf sabit fiyatla (Fixpreis)</strong> çalışıyoruz. Bütçenizi artırdığınızda ajans maliyetiniz artmaz.</p>
+  </div>
+
+  <div style="background: #f8fafc; border: 1px solid #e2e8f0; border-radius: 0.75rem; padding: 1.25rem 1.5rem; margin-bottom: 1rem;">
+    <h3 style="font-size: 1.15rem; font-weight: 700; color: #0f172a; margin-bottom: 0.5rem;">Ruhr bölgesindeki işletmem diğer eyaletlere de açılabilir mi?</h3>
+    <p style="color: #475569; margin: 0; line-height: 1.6;">Evet. Dortmund merkezli işletmelerinizi Hessen (<a href="https://salihmaral.de/blog/google-ads-b2b-mittelstand-frankfurt-rhein-main-2026">Frankfurt B2B Google Ads</a>), Bavyera (<a href="https://salihmaral.de/blog/google-ads-agentur-muenchen-bayern-b2b-geo-2026">Münih Google Ads &amp; GEO</a>) ve Franken (<a href="https://salihmaral.de/blog/google-ads-agentur-nuernberg-franken-mittelstand-2026">Nürnberg Google Ads</a>) pazarlarına güvenle genişletiyoruz.</p>
+  </div>
+</div>

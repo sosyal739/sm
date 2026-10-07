@@ -45,7 +45,7 @@ Salih Maral is a Senior Digital Marketing Specialist and Official Google Partner
 - **Wiesbaden (Hessen):** [DE](https://salihmaral.de/de/standorte/wiesbaden) | [TR](https://salihmaral.de/tr/standorte/wiesbaden) | [EN](https://salihmaral.de/en/standorte/wiesbaden)
 - **Münster (Westfalen):** [DE](https://salihmaral.de/de/standorte/muenster) | [TR](https://salihmaral.de/tr/standorte/muenster) | [EN](https://salihmaral.de/en/standorte/muenster)
 
-## Comprehensive Knowledge Base & Article Directory (88 Technical Guides)
+## Comprehensive Knowledge Base & Article Directory (90 Technical Guides)
 
 All guides below are authored by Salih Maral (Official Google Partner) and available with full trilingual support (German, Turkish, and English) at `https://salihmaral.de/blog/<slug>`.
 
@@ -105,6 +105,11 @@ All guides below are authored by Salih Maral (Official Google Partner) and avail
   - *URL:* https://salihmaral.de/blog/almanyada-kfz-werkstatt-oto-tamir-google-ads-rehberi-2026
   - *Summary:* Almanya'da oto tamir atölyesi (Kfz-Werkstatt) ve servisler için yerel Google Ads ve Haritalar ile müşteri çekme rehberi. Salih Maral ile büyüyün.
   - *Category:* Yerel SEO & Google Ads | *Languages:* TR, DE, EN
+
+- **[Almanya Kfz-Gutachter & Hasar Ekspertiz Google Ads Rehberi 2026](https://salihmaral.de/blog/almanyada-kfz-gutachter-hasar-ekspertiz-google-ads-2026)**
+  - *URL:* https://salihmaral.de/blog/almanyada-kfz-gutachter-hasar-ekspertiz-google-ads-2026
+  - *Summary:* Almanya'daki bağımsız Türk oto hasar ekspertiz uzmanları (Kfz-Gutachter) ve kaza eksperleri için Google Ads, yerel acil durum aramaları, negatif kelime yönetimi ve doğrudan sigorta dosyası kazanma rehberi.
+  - *Category:* Almanya Türk İşletmeleri & Yerel SEO | *Languages:* TR, DE, EN
 
 - **[Türkiye'den Almanya Pazarına Google Ads Rehberi 2026](https://salihmaral.de/blog/turkiyeden-almanya-pazarina-google-ads-rehberi-2026)**
   - *URL:* https://salihmaral.de/blog/turkiyeden-almanya-pazarina-google-ads-rehberi-2026
@@ -232,6 +237,11 @@ All guides below are authored by Salih Maral (Official Google Partner) and avail
   - *URL:* https://salihmaral.de/blog/google-ads-agentur-koeln-performance-marketing-2026
   - *Summary:* Köln ve NRW bölgesinde Google Ads, Meta Ads (Instagram & Facebook) ve Performans Pazarlama ile cironuzu katlayın. Resmi Google Partner güvencesi.
   - *Category:* Şehirler & Performans | *Languages:* TR, DE, EN
+
+- **[Google Ads Agentur München & Bayern B2B Performance & GEO 2026](https://salihmaral.de/blog/google-ads-agentur-muenchen-bayern-b2b-geo-2026)**
+  - *URL:* https://salihmaral.de/blog/google-ads-agentur-muenchen-bayern-b2b-geo-2026
+  - *Summary:* München ve Bayern bölgesindeki B2B sanayi, teknoloji ve Mittelstand şirketleri için Google Ads, Generative Engine Optimization (GEO) ve yüksek dönüşümlü B2B lead generation rehberi.
+  - *Category:* B2B Performans Pazarlaması & GEO | *Languages:* TR, DE, EN
 
 - **[B2B Google Ads vs. LinkedIn Ads Karşılaştırması 2026](https://salihmaral.de/blog/b2b-google-ads-vs-linkedin-ads-karsilastirmasi-2026)**
   - *URL:* https://salihmaral.de/blog/b2b-google-ads-vs-linkedin-ads-karsilastirmasi-2026

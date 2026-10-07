@@ -1276,11 +1276,15 @@ export default function Home({ initialLang = 'de' }) {
         </div>
       )}
 
-      {/* Hero Section (Ultra-Modern Agency Glassmorphism & High-Impact Typography) */}
-      <section className="pt-32 pb-20 px-4 relative overflow-hidden bg-gradient-to-b from-blue-50/40 via-white to-slate-50/50">
-        {/* Ambient background glows */}
-        <div className="absolute top-12 left-1/4 w-[600px] h-[350px] bg-blue-200/25 rounded-full blur-3xl pointer-events-none -z-10"></div>
-        <div className="absolute top-28 right-1/4 w-[500px] h-[300px] bg-emerald-200/20 rounded-full blur-3xl pointer-events-none -z-10"></div>
+      {/* Hero Section (Orphex Living White Canvas with Floating Mesh Aura & Dot Matrix) */}
+      <section className="pt-32 pb-20 px-4 relative overflow-hidden bg-white">
+        {/* Subtle Architectural Dot Matrix Grid Pattern (Orphex Living Background) */}
+        <div className="absolute inset-0 bg-grid-dots pointer-events-none opacity-60 -z-10"></div>
+
+        {/* Dynamic Living Ambient Glowing Mesh Orbs (Smooth Floating Lavender, Violet & Indigo Auras) */}
+        <div className="absolute top-1/4 left-1/2 -translate-x-1/2 w-[720px] h-[480px] bg-gradient-to-tr from-[#5138EE]/12 via-purple-300/15 to-indigo-200/10 rounded-full blur-[110px] pointer-events-none -z-10 animate-orb-1"></div>
+        <div className="absolute top-12 left-10 w-[520px] h-[380px] bg-gradient-to-br from-blue-400/10 to-indigo-300/12 rounded-full blur-[100px] pointer-events-none -z-10 animate-orb-2"></div>
+        <div className="absolute bottom-10 right-10 w-[550px] h-[380px] bg-gradient-to-tl from-purple-400/10 to-pink-300/10 rounded-full blur-[100px] pointer-events-none -z-10 animate-pulse-slow"></div>
 
         <div className="container mx-auto max-w-7xl">
           <div className="grid lg:grid-cols-12 gap-12 items-center">
@@ -1486,8 +1490,11 @@ export default function Home({ initialLang = 'de' }) {
         </div>
       </section>
 
+      {/* Almanya Pazarlama Ekosistemi - Multi-Row Flowing Marquee (Orphex Style - İlk Sayfa / Fold) */}
+      <EcosystemMarquee lang={lang} />
+
       {/* Stats Section (High-Contrast 6-Grid Modern Cards with Orphex Luxury Ambient Shadow) */}
-      <section className="py-14 bg-white border-y border-slate-100">
+      <section className="py-14 bg-white border-b border-slate-100">
         <div className="container mx-auto px-4 max-w-7xl">
           <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-4 md:gap-5">
             {[
@@ -1523,9 +1530,6 @@ export default function Home({ initialLang = 'de' }) {
           </div>
         </div>
       </section>
-
-      {/* Almanya Pazarlama Ekosistemi - Multi-Row Flowing Marquee (Orphex Style) */}
-      <EcosystemMarquee lang={lang} />
 
       {/* Services Section (Ultra-Prestigious 6-Card Grid with High Readability & 3D Accents) */}
       <section id="services" className="py-24 bg-white relative overflow-hidden">

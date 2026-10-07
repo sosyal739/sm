@@ -20,6 +20,29 @@
   100% { transform: translateX(-50%); }
 }
 
+@keyframes orb-float-1 {
+  0%, 100% {
+    transform: translate(0px, 0px) scale(1);
+  }
+  33% {
+    transform: translate(35px, -30px) scale(1.08);
+  }
+  66% {
+    transform: translate(-25px, 20px) scale(0.94);
+  }
+}
+@keyframes orb-float-2 {
+  0%, 100% {
+    transform: translate(0px, 0px) scale(1);
+  }
+  33% {
+    transform: translate(-30px, 35px) scale(1.06);
+  }
+  66% {
+    transform: translate(25px, -20px) scale(0.92);
+  }
+}
+
 .animate-pulse-slow {
   animation: pulse-slow 2s infinite;
 }
@@ -34,6 +57,16 @@
 }
 .animate-scroll:hover {
   animation-play-state: paused;
+}
+.animate-orb-1 {
+  animation: orb-float-1 16s ease-in-out infinite;
+}
+.animate-orb-2 {
+  animation: orb-float-2 20s ease-in-out infinite;
+}
+.bg-grid-dots {
+  background-image: radial-gradient(rgba(148, 163, 184, 0.22) 1px, transparent 1px);
+  background-size: 24px 24px;
 }
 
 @layer base {

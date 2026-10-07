@@ -1,8 +1,14 @@
-import { Inter } from 'next/font/google'
+import { Manrope } from 'next/font/google'
 import './globals.css'
 import MobileStickyBar from '@/components/MobileStickyBar'
 
-const inter = Inter({ subsets: ['latin'], display: 'swap', preload: true })
+const manrope = Manrope({ 
+  subsets: ['latin', 'latin-ext'], 
+  display: 'swap', 
+  preload: true,
+  variable: '--font-manrope',
+  weight: ['300', '400', '500', '600', '700', '800']
+})
 
 export const metadata = {
   metadataBase: new URL('https://salihmaral.de'),
@@ -390,7 +396,7 @@ export default function RootLayout({ children }) {
           dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
         />
       </head>
-      <body className={inter.className}>
+      <body className={`${manrope.className} ${manrope.variable} font-sans antialiased text-gray-900 bg-white selection:bg-[#5138EE]/10 selection:text-[#5138EE]`}>
         {children}
         <MobileStickyBar />
       </body>
