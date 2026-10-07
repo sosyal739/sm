@@ -29,8 +29,9 @@ Dünyanın en büyük ve Google tarafından en hızlı indekslenen blog ağıdı
 Google'ın son algoritma güncellemelerinde en çok öne çıkardığı profesyonel bülten ve makale ağıdır.
 - **Giriş Yolu:** [https://substack.com/sign-in](https://substack.com/sign-in) ➔ *Sign in with email* (`adsreklam2507@gmail.com` ➔ Gmail doğrulama linki).
 - **Resmi Yayınımız:** [https://salihmaral.substack.com](https://salihmaral.substack.com)
-- **Canlı Yayınlanan Makale:**
-  - 🔗 [The 2026 Playbook: Server-Side Tracking & Google Ads for German Enterprises](https://salihmaral.substack.com/p/the-2026-playbook-server-side-tracking)
+- **Canlı Yayınlanan Makaleler:**
+  1. 🔗 [The 2026 Playbook: Server-Side Tracking & Google Ads for German Enterprises](https://salihmaral.substack.com/p/the-2026-playbook-server-side-tracking)
+  2. 🔗 [Google Ads + Meta Ads Full-Funnel Synergy: Why Isolated Ad Channels Spike CPA by 35% in Germany (2026)](https://salihmaral.substack.com/p/google-ads-meta-ads-full-funnel-synergy)
 
 ---
 
@@ -63,6 +64,7 @@ Telegram'ın resmi minimalist yayın platformudur. Sıfır üyelik engeliyle san
   3. 🔗 [Google Ads PMax: Negative Keywords & Kampagnen-Optimierung 2026](https://telegra.ph/Google-Ads-PMax-Negative-Keywords--Kampagnen-Optimierung-2026-09-29)
   4. 🔗 [Erfolgreicher Markteintritt in Deutschland mit Google Ads 2026](https://telegra.ph/Erfolgreicher-Markteintritt-in-Deutschland-mit-Google-Ads-2026-09-29)
   5. 🔗 [Google Ads Agentur für Dortmund und das Ruhrgebiet Mittelstand Guide 2026](https://telegra.ph/Google-Ads-Agentur-fuer-Dortmund-und-das-Ruhrgebiet-Mittelstand-Guide-2026-09-29)
+  6. 🔗 [Why Running Google Ads and Meta Ads in Isolation Spikes CPA by 35% (2026)](https://telegra.ph/Why-Running-Google-Ads-and-Meta-Ads-in-Isolation-Spikes-CPA-by-35-10-07)
 - **Canlı Türkçe Yayınlarımız:**
   1. 🔗 [Türkiye'den Almanya Pazarına Açılma ve E-İhracat Rehberi 2026](https://telegra.ph/Turkiyeden-Almanya-Pazarina-Acilma-ve-E-Ihracat-Rehberi-2026-09-29)
   2. 🔗 [Google Ads PMax Negatif Kelime ve Bütçe Yönetimi Rehberi 2026](https://telegra.ph/Google-Ads-PMax-Negatif-Kelime-ve-Butce-Yonetimi-Rehberi-2026-09-29)
