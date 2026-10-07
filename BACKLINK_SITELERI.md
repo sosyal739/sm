@@ -15,7 +15,18 @@ Bu dosya, `salihmaral.de` web sitesinin Google ve AI arama motorlarındaki (Perp
 
 ## 🏆 Aktif Backlink Platformları & Canlı Yayın Rehberi
 
-### 1. Medium (Domain Authority: 96)
+### 1. LinkedIn Pulse & Articles (Domain Authority: 98)
+Dünyanın en prestijli kurumsal iş ve B2B ağıdır. Google'ın en yüksek güvenilirlik ve E-E-A-T puanı verdiği bir numaralı platformdur.
+- **Profil:** Salih Maral (Offizieller Google Partner)
+- **Canlı Yayınlanan Makale (Pulse):**
+  - 🔗 [Google Ads + Meta Ads Synergy: Why Isolated Ad Channels Spike CPA by 35% in Germany (2026 Strategy)](https://www.linkedin.com/pulse/google-ads-meta-synergy-why-isolated-ad-channels-spike-salih-maral-bxusf/)
+- **Canlı Akış Paylaşımı (Feed Post):**
+  - 🔗 [LinkedIn Feed Post](https://www.linkedin.com/feed/update/urn:li:ugcPost:7513674498802483200/)
+- *Hedef:* Google Ads, Meta Ads, Server-Side Tracking, Frankfurt ve Fiyat Rehberi sayfalarımız.
+
+---
+
+### 2. Medium (Domain Authority: 96)
 Dünyanın en büyük ve Google tarafından en hızlı indekslenen blog ağıdır.
 - **Giriş Yolu:** [https://medium.com](https://medium.com) ➔ *Sign In* ➔ *Sign in with email* (`adsreklam2507@gmail.com` ➔ Gmail'e gelen kod ile girilir).
 - **Profil:** [@adsreklam2507](https://medium.com/@adsreklam2507)
