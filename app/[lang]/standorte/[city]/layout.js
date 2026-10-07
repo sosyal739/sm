@@ -93,7 +93,6 @@ export default async function CityLayout({ children, params }) {
         name: `Salih Maral – Google Ads & Performance Marketing ${cityName}`,
         url: pageUrl,
         description: meta.description,
-        telephone: '+49 172 4106463',
         priceRange: '€€',
         image: 'https://salihmaral.de/hero.webp',
         address: {

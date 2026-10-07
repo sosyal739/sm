@@ -3,9 +3,8 @@
 import { useParams, useRouter } from 'next/navigation'
 import { Badge } from '@/components/ui/badge'
 import { Button } from '@/components/ui/button'
-import { ArrowLeft, Clock, Calendar, Menu, X, ChevronDown, MapPin, ArrowUpRight, Phone } from 'lucide-react'
+import { ArrowLeft, Clock, Calendar, Menu, X, ChevronDown, MapPin, ArrowUpRight, Mail } from 'lucide-react'
 import { useState, useEffect } from 'react'
-import { trackPhoneClick } from '@/lib/analytics'
 
 const servicesList = {
   de: [
@@ -61,7 +60,7 @@ const translations = {
       title: 'Profesyonel Dijital Pazarlama Hizmeti',
       subtitle: 'İşletmenizi büyütmek için hemen iletişime geçin!',
       button1: 'Ücretsiz Teklif Alın',
-      button2: 'Hemen Arayın'
+      button2: 'E-Posta Gönderin'
     },
     footer: '© 2026 Salih Maral. Tüm hakları saklıdır.',
     nav: {
@@ -84,7 +83,7 @@ const translations = {
       title: 'Professioneller Digital Marketing Service',
       subtitle: 'Kontaktieren Sie uns jetzt, um Ihr Unternehmen zu vergrößern!',
       button1: 'Kostenloses Angebot',
-      button2: 'Direkt anrufen'
+      button2: 'E-Mail senden'
     },
     footer: '© 2026 Salih Maral. Alle Rechte vorbehalten.',
     nav: {
@@ -107,7 +106,7 @@ const translations = {
       title: 'Professional Digital Marketing Service',
       subtitle: 'Contact us now to grow your business!',
       button1: 'Get Free Proposal',
-      button2: 'Call Directly'
+      button2: 'Send E-Mail'
     },
     footer: '© 2026 Salih Maral. All rights reserved.',
     nav: {
@@ -419,8 +418,8 @@ export default function BlogDetailClient({ initialPost, initialLang, relatedPost
                 <a href={`${lang === 'de' ? '' : `/${lang}`}/#contact`}>{t.cta.button1}</a>
               </Button>
               <Button size="lg" className="bg-slate-900 hover:bg-slate-800 text-white font-semibold px-8 flex items-center gap-2" asChild>
-                <a href="tel:+491724106463" onClick={() => trackPhoneClick()}>
-                  <Phone className="w-4 h-4 text-emerald-400" />
+                <a href="mailto:info@salihmaral.de">
+                  <Mail className="w-4 h-4 text-blue-400" />
                   <span>{t.cta.button2}</span>
                 </a>
               </Button>
@@ -566,11 +565,6 @@ export default function BlogDetailClient({ initialPost, initialLang, relatedPost
                 <div>
                   <a href="mailto:info@salihmaral.de" className="hover:text-blue-400 transition-colors">
                     ✉️ info@salihmaral.de
-                  </a>
-                </div>
-                <div>
-                  <a href="tel:+491724106463" className="hover:text-blue-400 transition-colors">
-                    📞 +49 (0) 172 4106463
                   </a>
                 </div>
               </div>

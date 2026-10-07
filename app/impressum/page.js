@@ -209,8 +209,8 @@ export default function ImpressumPage() {
 
               <h2 className="text-2xl font-bold text-slate-900 mt-6 mb-2">Kontakt</h2>
               <p>
-                Telefon: <a href="tel:+491724106463" className="text-blue-600 hover:underline">+49 172 4106463</a><br />
-                E-Mail: <a href="mailto:info@salihmaral.de" className="text-blue-600 hover:underline">info@salihmaral.de</a>
+                E-Mail: <a href="mailto:info@salihmaral.de" className="text-blue-600 hover:underline">info@salihmaral.de</a><br />
+                Elektronische Kontaktaufnahme: <a href="/#contact" className="text-blue-600 hover:underline">Kontaktformular</a>
               </p>
 
               <h2 className="text-2xl font-bold text-slate-900 mt-6 mb-2">Handelsregister</h2>

@@ -1,13 +1,13 @@
 'use client'
 
-import { trackLead, trackPhoneClick } from '@/lib/analytics'
+import { trackLead } from '@/lib/analytics'
 import GoogleAdsBudgetCalculator from '@/components/GoogleAdsBudgetCalculator'
 import { getCityGrowth } from '@/lib/cityGrowth'
 
 import React, { use, useState } from 'react'
 import Link from 'next/link'
 import { 
-  CheckCircle2, TrendingUp, ShieldCheck, ArrowRight, Star, Phone, Mail, MapPin, Send, Loader2,
+  CheckCircle2, TrendingUp, ShieldCheck, ArrowRight, Star, Mail, MapPin, Send, Loader2,
   ChevronRight, ChevronDown, Menu, X, ArrowUpRight, BookOpen
 } from 'lucide-react'
 
@@ -785,7 +785,6 @@ export default function CityPage({ params }) {
       '@type': 'ProfessionalService',
       name: `Salih Maral Google Ads & Performance Marketing - ${cityData.name}`,
       url: `https://salihmaral.de/${currentLang}/standorte/${city}`,
-      telephone: '+49-172-4106463',
       email: 'info@salihmaral.de',
       image: 'https://salihmaral.de/logo.png',
       priceRange: '€€',
@@ -1711,11 +1710,6 @@ export default function CityPage({ params }) {
               <div>
                 <a href="mailto:info@salihmaral.de" className="hover:text-blue-400 transition-colors">
                   ✉️ info@salihmaral.de
-                </a>
-              </div>
-              <div>
-                <a href="tel:+491724106463" className="hover:text-blue-400 transition-colors">
-                  📞 +49 (0) 172 4106463
                 </a>
               </div>
             </div>

@@ -128,7 +128,7 @@ const jsonLd = {
       image: { '@id': 'https://salihmaral.de/#logo' },
       contactPoint: {
         '@type': 'ContactPoint',
-        telephone: '+49-172-4106463',
+        email: 'info@salihmaral.de',
         contactType: 'customer service',
         availableLanguage: ['German', 'Turkish', 'English'],
         areaServed: 'DE'
@@ -186,7 +186,6 @@ const jsonLd = {
       '@id': 'https://salihmaral.de/#localbusiness',
       name: 'Salih Maral Digital Marketing',
       url: 'https://salihmaral.de',
-      telephone: '+49-172-4106463',
       email: 'info@salihmaral.de',
       image: 'https://salihmaral.de/logo.png',
       priceRange: '€€',

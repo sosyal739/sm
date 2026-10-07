@@ -2,10 +2,9 @@
 
 import { Button } from '@/components/ui/button'
 import { Card, CardContent } from '@/components/ui/card'
-import { ArrowLeft, Award, BarChart3, Globe, Users, Target, TrendingUp, CheckCircle, Phone, Menu, X, ChevronDown, MapPin, ArrowUpRight } from 'lucide-react'
+import { ArrowLeft, Award, BarChart3, Globe, Users, Target, TrendingUp, CheckCircle, Mail, Menu, X, ChevronDown, MapPin, ArrowUpRight } from 'lucide-react'
 import { useRouter } from 'next/navigation'
 import { useState, useEffect } from 'react'
-import { trackPhoneClick } from '@/lib/analytics'
 
 const servicesList = {
   de: [
@@ -101,7 +100,7 @@ const translations = {
       title: 'Bereit für digitales Wachstum?',
       desc: 'Kontaktieren Sie uns für eine kostenlose Erstberatung.',
       btn1: 'Kostenloses Angebot',
-      btn2: 'Direkt anrufen'
+      btn2: 'E-Mail senden'
     },
     footer: { rights: 'Alle Rechte vorbehalten.' },
     nav: {
@@ -164,7 +163,7 @@ const translations = {
       title: 'Dijital büyümeye hazır mısınız?',
       desc: 'Ücretsiz ilk danışmanlık için bizimle iletişime geçin.',
       btn1: 'Ücretsiz Teklif Alın',
-      btn2: 'Hemen Arayın'
+      btn2: 'E-Posta Gönderin'
     },
     footer: { rights: 'Tüm hakları saklıdır.' },
     nav: {
@@ -227,7 +226,7 @@ const translations = {
       title: 'Ready for digital growth?',
       desc: 'Contact us for a free initial consultation.',
       btn1: 'Get Free Proposal',
-      btn2: 'Call Directly'
+      btn2: 'Send E-Mail'
     },
     footer: { rights: 'All rights reserved.' },
     nav: {
@@ -539,8 +538,8 @@ export default function AboutPage() {
               {t.cta.btn1}
             </Button>
             <Button size="lg" className="bg-slate-900 hover:bg-slate-800 text-white font-bold" asChild>
-              <a href="tel:+491724106463" onClick={() => trackPhoneClick()}>
-                <Phone className="mr-2 h-5 w-5 text-emerald-400" />
+              <a href="mailto:info@salihmaral.de">
+                <Mail className="mr-2 h-5 w-5 text-blue-400" />
                 {t.cta.btn2}
               </a>
             </Button>
@@ -647,11 +646,6 @@ export default function AboutPage() {
                 <div>
                   <a href="mailto:info@salihmaral.de" className="hover:text-blue-400 transition-colors">
                     ✉️ info@salihmaral.de
-                  </a>
-                </div>
-                <div>
-                  <a href="tel:+491724106463" className="hover:text-blue-400 transition-colors">
-                    📞 +49 (0) 172 4106463
                   </a>
                 </div>
               </div>

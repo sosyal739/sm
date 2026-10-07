@@ -76,7 +76,6 @@ coverImage: "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?w=1200
   <h3 style="font-size: 1.7rem; font-weight: 800; color: white; margin-bottom: 0.6rem;">Dortmund'da Reklam Bütçenizi Boşa Harcamayın</h3>
   <p style="color: #cbd5e1; font-size: 1rem; max-width: 620px; margin: 0 auto 1.6rem auto; line-height: 1.6;">17+ yıllık resmi Google Partneri tecrübesiyle mevcut reklam hesabınızı veya sektör potansiyelinizi ücretsiz inceleyelim. Komisyonsuz, şeffaf ve sabit fiyat garantisi.</p>
   <div style="display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap;">
-    <a href="tel:+491724106463" style="display: inline-block; background: #0f172a; color: white; font-weight: 700; padding: 1rem 2.2rem; border-radius: 0.75rem; text-decoration: none; border: 1px solid rgba(255,255,255,0.2);">Doğrudan Arayın: +49 172 4106463 📞</a>
     <a href="/tr/standorte/dortmund" style="display: inline-block; background: #4285F4; color: white; font-weight: 800; padding: 1rem 2rem; border-radius: 0.85rem; text-decoration: none; font-size: 1.05rem; box-shadow: 0 10px 20px -5px rgba(66, 133, 244, 0.5);">Dortmund Şehir Sayfası ➔</a>
   </div>
 </div>

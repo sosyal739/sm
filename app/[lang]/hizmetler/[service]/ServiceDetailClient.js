@@ -4,9 +4,8 @@ import { useState } from 'react'
 import { useParams, useRouter } from 'next/navigation'
 import { Button } from '@/components/ui/button'
 import { Card, CardContent } from '@/components/ui/card'
-import { CheckCircle, ArrowLeft, ArrowUpRight, TrendingUp, Search, Image, ShoppingCart, Play, Zap, MapPin, Users, Heart, Video, MessageSquare, Share2, Target, BarChart3, Globe, Link, FileText, Shield, ShieldCheck, Cpu, Database, Lock, Code, Activity, Star, ThumbsDown, AlertTriangle, Eye, Award, Flame, Menu, X, ChevronDown, ChevronRight, Phone, Mail } from 'lucide-react'
+import { CheckCircle, ArrowLeft, ArrowUpRight, TrendingUp, Search, Image, ShoppingCart, Play, Zap, MapPin, Users, Heart, Video, MessageSquare, Share2, Target, BarChart3, Globe, Link, FileText, Shield, ShieldCheck, Cpu, Database, Lock, Code, Activity, Star, ThumbsDown, AlertTriangle, Eye, Award, Flame, Menu, X, ChevronDown, ChevronRight, Mail } from 'lucide-react'
 import ServiceDetailModules from '@/components/ServiceDetailModules'
-import { trackPhoneClick } from '@/lib/analytics'
 
 // Translations for navbar
 const navTranslations = {
@@ -1235,12 +1234,11 @@ export default function ServiceDetailClient({ initialService, initialLang }) {
               </button>
 
               <a
-                href="tel:+491724106463"
-                onClick={() => trackPhoneClick()}
+                href="mailto:info@salihmaral.de"
                 className="bg-slate-100 text-slate-900 border border-slate-300 hover:bg-slate-200 font-bold text-base px-7 py-4 rounded-2xl shadow-sm hover:shadow transition-all duration-300 flex items-center gap-2.5 cursor-pointer"
               >
-                <Phone className="h-5 w-5 text-[#4285F4]" />
-                <span>{lang === 'de' ? '+49 172 4106463' : lang === 'en' ? 'Call Directly' : 'Hemen Arayın'}</span>
+                <Mail className="h-5 w-5 text-[#4285F4]" />
+                <span>{lang === 'de' ? 'E-Mail senden' : lang === 'en' ? 'Send E-Mail' : 'E-Posta Gönderin'}</span>
               </a>
             </div>
 
@@ -2915,12 +2913,11 @@ export default function ServiceDetailClient({ initialService, initialLang }) {
               </button>
 
               <a
-                href="tel:+491724106463"
-                onClick={() => trackPhoneClick()}
+                href="mailto:info@salihmaral.de"
                 className="bg-slate-900 hover:bg-slate-800 text-white font-bold text-base px-8 py-4 rounded-2xl shadow-lg transition-all duration-300 hover:scale-105 flex items-center gap-2.5 cursor-pointer border border-white/20"
               >
-                <Phone className="h-5 w-5 text-emerald-400" />
-                <span>{lang === 'de' ? '+49 172 4106463' : lang === 'en' ? 'Call Directly' : 'Hemen Arayın (+49 172 4106463)'}</span>
+                <Mail className="h-5 w-5 text-blue-400" />
+                <span>{lang === 'de' ? 'E-Mail senden' : lang === 'en' ? 'Send E-Mail' : 'E-Posta Gönderin'}</span>
               </a>
             </div>
           </div>
@@ -2960,11 +2957,6 @@ export default function ServiceDetailClient({ initialService, initialLang }) {
                 <div>
                   <a href="mailto:info@salihmaral.de" className="hover:text-blue-400 transition-colors">
                     ✉️ info@salihmaral.de
-                  </a>
-                </div>
-                <div>
-                  <a href="tel:+491724106463" className="hover:text-blue-400 transition-colors">
-                    📞 +49 (0) 172 4106463
                   </a>
                 </div>
               </div>

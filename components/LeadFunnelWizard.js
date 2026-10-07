@@ -3,7 +3,7 @@
 import { trackLead } from '@/lib/analytics'
 
 import React, { useState } from 'react'
-import { CheckCircle, ArrowRight, ArrowLeft, Phone, ShoppingCart, Target, MapPin, Sparkles, Send, Loader2 } from 'lucide-react'
+import { CheckCircle, ArrowRight, ArrowLeft, Phone, ShoppingCart, Target, MapPin, Sparkles, Send, Loader2, Mail } from 'lucide-react'
 
 export default function LeadFunnelWizard({ lang = 'de' }) {
   const [step, setStep] = useState(1)
@@ -369,11 +369,11 @@ export default function LeadFunnelWizard({ lang = 'de' }) {
 
           <div className="pt-4 flex flex-col sm:flex-row items-center justify-center gap-3">
             <a
-              href="tel:+491724106463"
-              className="w-full sm:w-auto inline-flex items-center justify-center space-x-2 bg-[#4285F4] hover:bg-blue-600 text-white font-bold px-6 py-3.5 rounded-xl shadow-lg transition-all"
+              href="mailto:info@salihmaral.de"
+              className="w-full sm:w-auto inline-flex items-center justify-center space-x-2 bg-slate-900 hover:bg-slate-800 text-white font-bold px-6 py-3.5 rounded-xl shadow-lg transition-all"
             >
-              <Phone className="w-5 h-5" />
-              <span>{lang === 'tr' ? 'Acil Sorularınız İçin Doğrudan Arayın' : lang === 'en' ? 'Call Directly for Immediate Questions' : 'Direkt anrufen für dringende Fragen'}</span>
+              <Mail className="w-5 h-5 text-[#4285F4]" />
+              <span>info@salihmaral.de</span>
             </a>
           </div>
         </div>

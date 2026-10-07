@@ -91,6 +91,5 @@ coverImage: "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?w=1200
   <p style="color: #cbd5e1; font-size: 1.05rem; max-width: 680px; margin: 0 auto 1.75rem auto; line-height: 1.6;">Almanya e-ticaret ve B2B ihracat pazarına girerken reklam bütçenizi koruyun, resmi Google Partneri güvencesiyle doğrudan satış yapın.</p>
   <div style="display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap;">
     <a href="/#contact" style="display: inline-block; background: #4285F4; color: white; font-weight: 800; padding: 1.1rem 2.2rem; border-radius: 1rem; text-decoration: none; font-size: 1.05rem; box-shadow: 0 10px 25px -5px rgba(66, 133, 244, 0.6); transition: all 0.3s ease;">Ücretsiz Teklif Alın ➔</a>
-    <a href="tel:+491724106463" style="display: inline-block; background: #0f172a; color: white; font-weight: 800; padding: 1.1rem 2.2rem; border-radius: 1rem; text-decoration: none; font-size: 1.05rem; border: 1px solid rgba(255,255,255,0.2); transition: all 0.3s ease;">Doğrudan Arayın: +49 172 4106463 📞</a>
   </div>
 </div>

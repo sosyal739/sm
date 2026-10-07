@@ -4,7 +4,7 @@ import React, { use, useState } from 'react'
 import Link from 'next/link'
 import { 
   MapPin, ArrowRight, CheckCircle2, TrendingUp, ShieldCheck, Sparkles, Building2,
-  ChevronRight, ChevronDown, Menu, X, ArrowUpRight, BookOpen, Star, Mail, Phone
+  ChevronRight, ChevronDown, Menu, X, ArrowUpRight, BookOpen, Star, Mail
 } from 'lucide-react'
 
 const cities = [
@@ -330,7 +330,6 @@ export default function StandorteHubPage({ params }) {
       '@type': 'ProfessionalService',
       name: 'Salih Maral Google Ads & Performance Marketing - Standorte Deutschland',
       url: `https://salihmaral.de/${currentLang}/standorte`,
-      telephone: '+49-172-4106463',
       email: 'info@salihmaral.de',
       image: 'https://salihmaral.de/logo.png',
       priceRange: '€€',
@@ -797,11 +796,6 @@ export default function StandorteHubPage({ params }) {
                 <div>
                   <a href="mailto:info@salihmaral.de" className="hover:text-blue-400 transition-colors">
                     ✉️ info@salihmaral.de
-                  </a>
-                </div>
-                <div>
-                  <a href="tel:+491724106463" className="hover:text-blue-400 transition-colors">
-                    📞 +49 (0) 172 4106463
                   </a>
                 </div>
               </div>

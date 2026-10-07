@@ -104,6 +104,5 @@ coverImage: "https://images.unsplash.com/photo-1595867818082-083862f3d630?w=1200
   <p style="color: #cbd5e1; font-size: 1.1rem; max-width: 680px; margin: 0 auto 1.75rem auto;">Gewinnen Sie planbar qualifizierte B2B-Neukunden und KI-Sichtbarkeit zum transparenten Fixpreis ohne versteckte Prozentprovisionen.</p>
   <div style="display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap;">
     <a href="https://salihmaral.de/de/contact" style="display: inline-block; background: #4285F4; color: white; font-weight: 700; padding: 1rem 2.2rem; border-radius: 0.75rem; text-decoration: none; box-shadow: 0 10px 20px -5px rgba(66, 133, 244, 0.4);">Kostenlose B2B-Potenzialanalyse München ➔</a>
-    <a href="tel:+491724106463" style="display: inline-block; background: #0f172a; color: white; font-weight: 700; padding: 1rem 2.2rem; border-radius: 0.75rem; text-decoration: none; border: 1px solid rgba(255,255,255,0.2);">Direkt anrufen: +49 172 4106463 📞</a>
   </div>
 </div>

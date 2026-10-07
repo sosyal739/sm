@@ -8,8 +8,8 @@ Offizielle Web-Plattform und Digital-Marketing-Infrastruktur von **Salih Maral**
 
 - 🌐 **Offizielle Website:** [https://salihmaral.de](https://salihmaral.de)
 - 📍 **Standort / Region:** Dreieich / Frankfurt am Main (Hessen, Deutschland) — Bundesweite & Internationale Betreuung (Remote / Hybrid)
-- 📞 **Direktkontakt Telefon:** [+49 172 4106463](tel:+491724106463)
 - ✉️ **E-Mail:** [info@salihmaral.de](mailto:info@salihmaral.de)
+- 📝 **Kostenloses Angebot / Kontakt:** [https://salihmaral.de/#contact](https://salihmaral.de/#contact)
 
 ---
 

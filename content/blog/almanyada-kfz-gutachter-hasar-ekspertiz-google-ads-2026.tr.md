@@ -113,6 +113,5 @@ coverImage: "https://images.unsplash.com/photo-1619642751034-765dfdf7c58e?w=1200
   <p style="color: #cbd5e1; font-size: 1.1rem; max-width: 680px; margin: 0 auto 1.75rem auto;">Bölgenizdeki kaza arama hacmini, rakiplerinizin açıklarını ve dosya başı sigorta cironuzu katlayacak Google Ads &amp; Haritalar stratejimizi birlikte kuralım.</p>
   <div style="display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap;">
     <a href="https://salihmaral.de/tr/contact" style="display: inline-block; background: #4285F4; color: white; font-weight: 700; padding: 1rem 2.2rem; border-radius: 0.75rem; text-decoration: none; box-shadow: 0 10px 20px -5px rgba(66, 133, 244, 0.4);">Ücretsiz Kaza Ekspertiz Analizi Alın ➔</a>
-    <a href="tel:+491724106463" style="display: inline-block; background: #0f172a; color: white; font-weight: 700; padding: 1rem 2.2rem; border-radius: 0.75rem; text-decoration: none; border: 1px solid rgba(255,255,255,0.2);">Doğrudan Arayın: +49 172 4106463 📞</a>
   </div>
 </div>

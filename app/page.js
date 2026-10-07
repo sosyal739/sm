@@ -1,6 +1,6 @@
 'use client'
 
-import { trackLead, trackPhoneClick } from '@/lib/analytics'
+import { trackLead } from '@/lib/analytics'
 
 import { useState, useEffect } from 'react'
 import { Button } from '@/components/ui/button'
@@ -8,7 +8,7 @@ import { Card, CardContent } from '@/components/ui/card'
 import { Input } from '@/components/ui/input'
 import { Textarea } from '@/components/ui/textarea'
 import { Badge } from '@/components/ui/badge'
-import { Phone, Mail, CheckCircle, BarChart3, Users, Award, TrendingUp, Globe, Star, Sparkles, ArrowRight, Clock, Calendar, Flame, Cpu, Zap, Search, ShieldCheck, Layers, BookOpen, Menu, X, ChevronRight, MessageSquare, ChevronDown, HelpCircle } from 'lucide-react'
+import { Mail, CheckCircle, BarChart3, Users, Award, TrendingUp, Globe, Star, Sparkles, ArrowRight, Clock, Calendar, Flame, Cpu, Zap, Search, ShieldCheck, Layers, BookOpen, Menu, X, ChevronRight, MessageSquare, ChevronDown, HelpCircle } from 'lucide-react'
 import CookieConsent from '@/components/CookieConsent'
 import RoasCalculatorWidget from '@/components/RoasCalculatorWidget'
 import LeadFunnelWizard from '@/components/LeadFunnelWizard'
@@ -2188,19 +2188,15 @@ export default function Home({ initialLang = 'de' }) {
                       </div>
                     </a>
 
-                    <a 
-                      href="tel:+491724106463" 
-                      onClick={() => trackPhoneClick()}
-                      className="flex items-center space-x-3.5 p-3.5 rounded-2xl bg-white/5 hover:bg-white/10 border border-white/10 transition-colors group cursor-pointer"
-                    >
-                      <div className="w-10 h-10 bg-emerald-500/20 rounded-xl flex items-center justify-center shrink-0 shadow-sm group-hover:scale-105 transition-transform text-emerald-400">
-                        <Phone className="h-5 w-5 text-emerald-400" />
+                    <div className="flex items-center space-x-3.5 p-3.5 rounded-2xl bg-white/5 border border-white/10">
+                      <div className="w-10 h-10 bg-emerald-500/20 rounded-xl flex items-center justify-center shrink-0 text-emerald-400">
+                        <ShieldCheck className="h-5 w-5 text-emerald-400" />
                       </div>
                       <div>
-                        <p className="text-[11px] font-bold uppercase tracking-wider text-slate-400">{lang === 'de' ? 'Telefon' : lang === 'en' ? 'Phone' : 'Telefon'}</p>
-                        <p className="font-bold text-sm text-white">+49 172 4106463</p>
+                        <p className="text-[11px] font-bold uppercase tracking-wider text-slate-400">{lang === 'de' ? 'Transparenz' : lang === 'en' ? 'Pricing' : 'Fiyatlandırma'}</p>
+                        <p className="font-bold text-xs text-white">{lang === 'de' ? 'Fester Monats-Fixpreis (Keine Provision)' : lang === 'en' ? 'Transparent Flat-Fee (No Commission)' : 'Şeffaf Sabit Fiyat (Komisyonsuz)'}</p>
                       </div>
-                    </a>
+                    </div>
 
                     <div className="flex items-center space-x-3.5 p-3.5 rounded-2xl bg-white/5 border border-white/10">
                       <div className="w-10 h-10 bg-blue-500/20 rounded-xl flex items-center justify-center shrink-0 text-[#4285F4]">
@@ -2326,12 +2322,11 @@ export default function Home({ initialLang = 'de' }) {
                   <ArrowRight className="h-5 w-5 ml-1" />
                 </button>
                 <a
-                  href="tel:+491724106463"
-                  onClick={() => trackPhoneClick()}
+                  href="mailto:info@salihmaral.de"
                   className="bg-white/10 hover:bg-white/15 text-white border border-white/20 font-bold px-7 py-4 rounded-2xl transition-all duration-200 hover:scale-105 flex items-center gap-2 text-sm sm:text-base cursor-pointer"
                 >
-                  <Phone className="h-4 w-4 text-emerald-400" />
-                  <span>+49 172 4106463</span>
+                  <Mail className="h-4 w-4 text-blue-300" />
+                  <span>info@salihmaral.de</span>
                 </a>
               </div>
             </div>
@@ -2633,10 +2628,6 @@ export default function Home({ initialLang = 'de' }) {
                 <p className="flex items-center space-x-2">
                   <Mail className="h-4 w-4 text-[#4285F4]" />
                   <a href="mailto:info@salihmaral.de" className="hover:text-white transition-colors">info@salihmaral.de</a>
-                </p>
-                <p className="flex items-center space-x-2">
-                  <Phone className="h-4 w-4 text-emerald-400" />
-                  <a href="tel:+491724106463" onClick={() => trackPhoneClick()} className="hover:text-white transition-colors">+49 172 4106463</a>
                 </p>
                 <p className="text-xs text-gray-500 pt-2">Dreieich / Frankfurt am Main (Hessen) • Remote & Hybrid</p>
               </div>

@@ -704,11 +704,6 @@ export default function BlogPageClient({ initialPosts = [] }) {
                     ✉️ info@salihmaral.de
                   </a>
                 </div>
-                <div>
-                  <a href="tel:+491724106463" className="hover:text-blue-400 transition-colors">
-                    📞 +49 (0) 172 4106463
-                  </a>
-                </div>
               </div>
             </div>
 
