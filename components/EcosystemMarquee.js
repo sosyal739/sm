@@ -181,10 +181,10 @@ export default function EcosystemMarquee({ lang = 'de' }) {
   return (
     <section className="py-16 bg-white border-y border-slate-100 overflow-hidden relative">
       {/* Dot Matrix Background */}
-      <div className="absolute inset-0 bg-grid-dots pointer-events-none opacity-50 -z-10"></div>
+      <div className="absolute inset-0 bg-grid-dots pointer-events-none opacity-80 z-0"></div>
 
       {/* Living Ambient Aura behind Marquee */}
-      <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[700px] h-[350px] bg-gradient-to-r from-[#5138EE]/8 via-purple-300/10 to-indigo-200/8 rounded-full blur-[100px] pointer-events-none -z-10 animate-pulse-slow"></div>
+      <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[700px] h-[350px] bg-gradient-to-r from-[#5138EE]/18 via-purple-400/20 to-indigo-300/18 rounded-full blur-[90px] pointer-events-none z-0 animate-pulse-slow"></div>
 
       <div className="container mx-auto px-4 max-w-7xl mb-8 text-center relative z-10">
         <div className="inline-flex items-center space-x-2 bg-slate-50 border border-slate-100 rounded-full px-4 py-1.5 mb-3 shadow-[0_2px_8px_rgba(0,0,0,0.02)]">

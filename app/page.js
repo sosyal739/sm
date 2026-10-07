@@ -1279,14 +1279,14 @@ export default function Home({ initialLang = 'de' }) {
       {/* Hero Section (Orphex Living White Canvas with Floating Mesh Aura & Dot Matrix) */}
       <section className="pt-32 pb-20 px-4 relative overflow-hidden bg-white">
         {/* Subtle Architectural Dot Matrix Grid Pattern (Orphex Living Background) */}
-        <div className="absolute inset-0 bg-grid-dots pointer-events-none opacity-60 -z-10"></div>
+        <div className="absolute inset-0 bg-grid-dots pointer-events-none opacity-85 z-0"></div>
 
         {/* Dynamic Living Ambient Glowing Mesh Orbs (Smooth Floating Lavender, Violet & Indigo Auras) */}
-        <div className="absolute top-1/4 left-1/2 -translate-x-1/2 w-[720px] h-[480px] bg-gradient-to-tr from-[#5138EE]/12 via-purple-300/15 to-indigo-200/10 rounded-full blur-[110px] pointer-events-none -z-10 animate-orb-1"></div>
-        <div className="absolute top-12 left-10 w-[520px] h-[380px] bg-gradient-to-br from-blue-400/10 to-indigo-300/12 rounded-full blur-[100px] pointer-events-none -z-10 animate-orb-2"></div>
-        <div className="absolute bottom-10 right-10 w-[550px] h-[380px] bg-gradient-to-tl from-purple-400/10 to-pink-300/10 rounded-full blur-[100px] pointer-events-none -z-10 animate-pulse-slow"></div>
+        <div className="absolute top-1/4 left-1/2 -translate-x-1/2 w-[720px] h-[480px] bg-gradient-to-tr from-[#5138EE]/20 via-purple-400/25 to-indigo-300/20 rounded-full blur-[100px] pointer-events-none z-0 animate-orb-1"></div>
+        <div className="absolute top-12 left-10 w-[520px] h-[380px] bg-gradient-to-br from-blue-400/20 to-indigo-300/20 rounded-full blur-[90px] pointer-events-none z-0 animate-orb-2"></div>
+        <div className="absolute bottom-10 right-10 w-[550px] h-[380px] bg-gradient-to-tl from-purple-400/18 to-pink-300/15 rounded-full blur-[90px] pointer-events-none z-0 animate-pulse-slow"></div>
 
-        <div className="container mx-auto max-w-7xl">
+        <div className="container mx-auto max-w-7xl relative z-10">
           <div className="grid lg:grid-cols-12 gap-12 items-center">
             {/* Left Content Column */}
             <div className="lg:col-span-7 space-y-7 text-left">
@@ -2273,10 +2273,14 @@ export default function Home({ initialLang = 'de' }) {
                 {/* Image Container with Zoom Effect */}
                 <div className="h-48 sm:h-52 relative overflow-hidden bg-slate-100">
                   <img
-                    src={post.coverImage || 'https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=600&h=300&fit=crop&q=80'}
+                    src={post.coverImage || 'https://images.unsplash.com/photo-1619642751034-765dfdf7c58e?w=1200&h=630&fit=crop&q=80'}
                     alt={post.title}
                     className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700 ease-out"
                     loading="lazy"
+                    onError={(e) => {
+                      e.currentTarget.onerror = null;
+                      e.currentTarget.src = 'https://images.unsplash.com/photo-1619642751034-765dfdf7c58e?w=1200&h=630&fit=crop&q=80';
+                    }}
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-black/20 to-transparent" />
                   

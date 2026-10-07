@@ -65,7 +65,7 @@
   animation: orb-float-2 20s ease-in-out infinite;
 }
 .bg-grid-dots {
-  background-image: radial-gradient(rgba(148, 163, 184, 0.22) 1px, transparent 1px);
+  background-image: radial-gradient(rgba(100, 116, 139, 0.35) 1.25px, transparent 1.25px);
   background-size: 24px 24px;
 }
 
@@ -144,8 +144,9 @@
 @layer base {
   * {
     @apply border-border;
-    }
+  }
   body {
     @apply bg-background text-foreground;
-    }
+    font-family: var(--font-manrope), system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  }
 }
