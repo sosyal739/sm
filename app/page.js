@@ -1058,19 +1058,20 @@ export default function Home({ initialLang = 'de' }) {
                   <ChevronDown className={`w-4 h-4 transition-transform duration-200 ${isServicesOpen ? 'rotate-180 text-[#5138EE]' : 'text-slate-500'}`} />
                 </button>
                 
-                {/* Mega Menu Dropdown (Orphex Signature Luxury Shadow & Solid White) */}
+                {/* Mega Menu Dropdown (Orphex Signature Luxury Shadow, Dot Matrix & Solid White) */}
                 <div
-                  className={`absolute -left-16 sm:-left-24 lg:-left-32 top-full pt-3 w-[760px] max-w-[calc(100vw-2rem)] transition-all duration-200 z-[100] ${
+                  className={`absolute -left-16 sm:-left-24 lg:-left-32 top-full pt-3 w-[780px] max-w-[calc(100vw-2rem)] transition-all duration-200 z-[100] ${
                     isServicesOpen
                       ? 'opacity-100 visible translate-y-0 pointer-events-auto'
                       : 'opacity-0 invisible -translate-y-2 pointer-events-none'
                   }`}
                 >
-                  <div
-                    style={{ backgroundColor: '#ffffff' }}
-                    className="bg-white rounded-3xl shadow-[0_20px_60px_rgba(10,0,69,0.12),0_1px_3px_rgba(0,0,0,0.05)] border border-slate-100 ring-1 ring-slate-900/5 p-6"
-                  >
-                    <div className="grid grid-cols-2 gap-3.5">
+                  <div className="bg-white/98 backdrop-blur-2xl rounded-3xl shadow-[0_25px_70px_rgba(15,23,42,0.14)] border border-slate-200/90 ring-1 ring-slate-900/5 p-6 relative overflow-hidden">
+                    {/* Subtle Dot Matrix & Ambient Glow inside Mega Menu */}
+                    <div className="absolute inset-0 bg-grid-dots pointer-events-none opacity-35 z-0"></div>
+                    <div className="absolute -top-12 -right-12 w-64 h-64 bg-gradient-to-br from-blue-400/15 via-purple-300/15 to-transparent rounded-full blur-3xl pointer-events-none z-0"></div>
+
+                    <div className="grid grid-cols-2 gap-3 relative z-10">
                       {t.why.services.map((service, idx) => {
                         const iconData = getServiceIcon(service.icon)
                         const IconComponent = iconData.icon
@@ -1079,17 +1080,17 @@ export default function Home({ initialLang = 'de' }) {
                             key={idx}
                             href={svcUrl(lang, service.slug)}
                             onClick={() => setIsServicesOpen(false)}
-                            className="group/item flex items-start gap-4 p-3.5 rounded-2xl hover:bg-[#F9FAFB] transition-all border border-transparent hover:border-slate-100"
+                            className="group/item flex items-start gap-3.5 p-3 rounded-2xl hover:bg-slate-50/90 transition-all border border-transparent hover:border-slate-200/80 shadow-2xs hover:shadow-xs"
                           >
-                            <div className={`w-11 h-11 rounded-2xl flex items-center justify-center shrink-0 border ${iconData.color}`}>
+                            <div className={`w-11 h-11 rounded-2xl flex items-center justify-center shrink-0 border ${iconData.color} shadow-2xs group-hover/item:scale-105 transition-transform`}>
                               <IconComponent className="w-5 h-5" />
                             </div>
                             <div className="flex-1 min-w-0">
-                              <div className="font-extrabold text-[14px] text-gray-950 group-hover/item:text-[#5138EE] transition-colors flex items-center justify-between">
+                              <div className="font-extrabold text-[14px] text-gray-950 group-hover/item:text-[#4285F4] transition-colors flex items-center justify-between">
                                 <span className="truncate">{service.title}</span>
-                                <ChevronRight className="w-4 h-4 opacity-0 -translate-x-1 group-hover/item:opacity-100 group-hover/item:translate-x-0 transition-all text-[#5138EE] shrink-0 ml-1" />
+                                <ChevronRight className="w-4 h-4 opacity-0 -translate-x-1 group-hover/item:opacity-100 group-hover/item:translate-x-0 transition-all text-[#4285F4] shrink-0 ml-1" />
                               </div>
-                              <p className="text-[12px] text-slate-500 line-clamp-2 leading-relaxed mt-1">
+                              <p className="text-[12px] text-slate-500 line-clamp-1 leading-relaxed mt-0.5">
                                 {service.description}
                               </p>
                             </div>
@@ -1099,9 +1100,9 @@ export default function Home({ initialLang = 'de' }) {
                     </div>
 
                     {/* Mega Menu Bottom Bar */}
-                    <div className="mt-4 pt-4 border-t border-slate-100 flex items-center justify-between px-2 text-xs">
-                      <div className="flex items-center gap-2 text-slate-500 font-semibold">
-                        <span className="w-2 h-2 rounded-full bg-emerald-500"></span>
+                    <div className="mt-4 pt-4 border-t border-slate-100/90 flex items-center justify-between px-2 text-xs relative z-10">
+                      <div className="flex items-center gap-2 text-slate-600 font-semibold">
+                        <span className="w-2 h-2 rounded-full bg-emerald-500 animate-pulse"></span>
                         <span>
                           {lang === 'de'
                             ? 'Monatliche Fixpreise ohne prozentuale Provision • § 13b UStG'
@@ -1112,7 +1113,7 @@ export default function Home({ initialLang = 'de' }) {
                       </div>
                       <button
                         onClick={() => { scrollToSection('contact'); setIsServicesOpen(false); }}
-                        className="font-bold text-[#5138EE] hover:text-indigo-800 flex items-center gap-1 cursor-pointer transition-colors"
+                        className="font-bold text-[#4285F4] hover:text-blue-700 flex items-center gap-1 cursor-pointer transition-colors"
                       >
                         <span>{lang === 'de' ? 'Angebot anfordern' : lang === 'en' ? 'Get Proposal' : 'Hemen Teklif Alın'}</span>
                         <ArrowRight className="w-3.5 h-3.5" />
@@ -1133,7 +1134,7 @@ export default function Home({ initialLang = 'de' }) {
             {/* Right Side: Language Switcher + Mobile Hamburger Button */}
             <div className="flex items-center space-x-2">
               {/* Desktop Language Switcher */}
-              <div className="hidden sm:flex items-center space-x-1.5 bg-slate-100/80 p-1 rounded-xl border border-slate-200/60">
+              <div className="hidden sm:flex items-center space-x-1.5 bg-slate-100/90 p-1 rounded-xl border border-slate-200/70 shadow-2xs">
                 <button
                   onClick={() => handleLanguageChange('de')}
                   className={`px-2.5 py-1 text-xs font-bold rounded-lg transition-all cursor-pointer ${lang === 'de' ? 'bg-[#4285F4] text-white shadow-xs' : 'text-slate-600 hover:text-gray-900'}`}
@@ -1157,37 +1158,42 @@ export default function Home({ initialLang = 'de' }) {
               {/* Mobile Hamburger Button */}
               <button
                 onClick={() => setIsMobileMenuOpen(true)}
-                className="md:hidden p-2 rounded-xl bg-slate-100 text-gray-900 hover:bg-slate-200 transition-colors cursor-pointer"
+                className="md:hidden p-2.5 rounded-2xl bg-white border border-slate-200/80 text-gray-900 hover:bg-slate-50 transition-colors shadow-2xs cursor-pointer"
                 aria-label="Open Mobile Navigation"
               >
-                <Menu className="w-6 h-6 text-gray-900" />
+                <Menu className="w-5 h-5 text-gray-900" />
               </button>
             </div>
           </div>
         </div>
       </nav>
 
-      {/* Clean Solid Fullscreen Mobile Modal Menu (Zero Background Bleed) */}
+      {/* Clean Solid Fullscreen Mobile Modal Menu with Living Orphex Canvas & Dot Matrix */}
       {isMobileMenuOpen && (
-        <div className="md:hidden fixed inset-0 z-[999] bg-white flex flex-col animate-in fade-in duration-200">
+        <div className="md:hidden fixed inset-0 z-[999] bg-white/98 backdrop-blur-2xl flex flex-col animate-in fade-in duration-200 relative overflow-hidden">
+          {/* Architectural Dot Matrix & Ambient Glow inside Mobile Drawer */}
+          <div className="absolute inset-0 bg-grid-dots pointer-events-none opacity-50 z-0"></div>
+          <div className="absolute -top-12 -right-12 w-72 h-72 bg-gradient-to-br from-blue-400/20 via-purple-300/15 to-transparent rounded-full blur-3xl pointer-events-none z-0"></div>
+          <div className="absolute -bottom-12 -left-12 w-72 h-72 bg-gradient-to-tr from-emerald-400/15 to-indigo-300/15 rounded-full blur-3xl pointer-events-none z-0"></div>
+
           {/* Top Bar inside Menu */}
-          <div className="flex items-center justify-between px-5 py-4 border-b border-slate-100 bg-white">
+          <div className="flex items-center justify-between px-5 py-4 border-b border-slate-200/80 bg-white/80 backdrop-blur-md relative z-10">
             <a href={lang === 'de' ? '/' : `/${lang}`} onClick={() => setIsMobileMenuOpen(false)} className="flex items-center">
               <img src="/logo.png" alt="Salih Maral Logo" className="h-9 w-auto" width="36" height="36" />
             </a>
             <button
               onClick={() => setIsMobileMenuOpen(false)}
-              className="p-2 rounded-full bg-slate-100 text-gray-900 hover:bg-slate-200 transition-colors cursor-pointer"
+              className="p-2 rounded-full bg-slate-100 hover:bg-slate-200 text-gray-900 transition-colors cursor-pointer"
               aria-label="Close Menu"
             >
-              <X className="w-6 h-6 text-gray-900" />
+              <X className="w-5 h-5 text-gray-900" />
             </button>
           </div>
 
           {/* Scrollable Content inside Menu */}
-          <div className="flex-1 overflow-y-auto px-5 py-6 space-y-6 bg-white">
+          <div className="flex-1 overflow-y-auto px-5 py-6 space-y-6 relative z-10">
             {/* Language Segmented Control */}
-            <div className="flex items-center justify-between bg-slate-100 p-1.5 rounded-2xl">
+            <div className="flex items-center justify-between bg-slate-100/90 p-1.5 rounded-2xl border border-slate-200/80 shadow-inner">
               <button
                 onClick={() => { handleLanguageChange('de'); setIsMobileMenuOpen(false); }}
                 className={`flex-1 py-2 text-xs font-bold rounded-xl text-center transition-all ${lang === 'de' ? 'bg-[#4285F4] text-white shadow-sm' : 'text-slate-700'}`}
@@ -1208,28 +1214,37 @@ export default function Home({ initialLang = 'de' }) {
               </button>
             </div>
 
-            {/* Services List */}
+            {/* Services List with Colorful Icon Boxes */}
             <div className="space-y-2">
               <div className="text-xs font-black uppercase tracking-wider text-slate-400 px-2">
                 {lang === 'de' ? 'Dienstleistungen' : lang === 'tr' ? 'Hizmetlerimiz' : 'Services'}
               </div>
-              <div className="space-y-1.5">
-                {t.why.services.map((service, idx) => (
-                  <a
-                    key={idx}
-                    href={svcUrl(lang, service.slug)}
-                    onClick={() => setIsMobileMenuOpen(false)}
-                    className="flex items-center justify-between p-3.5 rounded-2xl bg-slate-50 hover:bg-blue-50 border border-slate-100 transition-colors"
-                  >
-                    <span className="font-bold text-sm text-gray-900">{service.title}</span>
-                    <ChevronRight className="w-4 h-4 text-slate-400" />
-                  </a>
-                ))}
+              <div className="space-y-2">
+                {t.why.services.map((service, idx) => {
+                  const iconData = getServiceIcon(service.icon)
+                  const IconComponent = iconData.icon
+                  return (
+                    <a
+                      key={idx}
+                      href={svcUrl(lang, service.slug)}
+                      onClick={() => setIsMobileMenuOpen(false)}
+                      className="flex items-center justify-between p-3 rounded-2xl bg-white/90 hover:bg-blue-50/80 border border-slate-200/80 shadow-2xs transition-all"
+                    >
+                      <div className="flex items-center gap-3 min-w-0">
+                        <div className={`w-9 h-9 rounded-xl flex items-center justify-center shrink-0 border ${iconData.color}`}>
+                          <IconComponent className="w-4 h-4" />
+                        </div>
+                        <span className="font-extrabold text-sm text-gray-950 truncate">{service.title}</span>
+                      </div>
+                      <ChevronRight className="w-4 h-4 text-slate-400 shrink-0 ml-2" />
+                    </a>
+                  )
+                })}
               </div>
             </div>
 
             {/* Quick Links */}
-            <div className="space-y-2 pt-2 border-t border-slate-100">
+            <div className="space-y-2 pt-2 border-t border-slate-200/70">
               <div className="text-xs font-black uppercase tracking-wider text-slate-400 px-2">
                 {lang === 'de' ? 'Seiten & Infos' : lang === 'tr' ? 'Sayfalar & Bilgi' : 'Pages & Info'}
               </div>
@@ -1237,26 +1252,26 @@ export default function Home({ initialLang = 'de' }) {
                 <a
                   href={lang === 'de' ? '/de/standorte' : lang === 'tr' ? '/tr/standorte' : '/en/standorte'}
                   onClick={() => setIsMobileMenuOpen(false)}
-                  className="p-3 rounded-xl bg-slate-50 text-center font-bold text-xs text-gray-900 border border-slate-100"
+                  className="p-3 rounded-2xl bg-white/90 text-center font-bold text-xs text-gray-900 border border-slate-200/80 shadow-2xs hover:bg-slate-50 transition-colors"
                 >
                   📍 {lang === 'de' ? '18 Standorte' : lang === 'tr' ? '18 Şehir' : '18 Locations'}
                 </a>
                 <a
                   href="/blog"
                   onClick={() => setIsMobileMenuOpen(false)}
-                  className="p-3 rounded-xl bg-slate-50 text-center font-bold text-xs text-gray-900 border border-slate-100"
+                  className="p-3 rounded-2xl bg-white/90 text-center font-bold text-xs text-gray-900 border border-slate-200/80 shadow-2xs hover:bg-slate-50 transition-colors"
                 >
                   📚 Blog & News
                 </a>
                 <button
                   onClick={() => { scrollToSection('success'); setIsMobileMenuOpen(false); }}
-                  className="p-3 rounded-xl bg-slate-50 text-center font-bold text-xs text-gray-900 border border-slate-100 cursor-pointer"
+                  className="p-3 rounded-2xl bg-white/90 text-center font-bold text-xs text-gray-900 border border-slate-200/80 shadow-2xs hover:bg-slate-50 transition-colors cursor-pointer"
                 >
                   🏆 {t.nav.success}
                 </button>
                 <button
                   onClick={() => { scrollToSection('about'); setIsMobileMenuOpen(false); }}
-                  className="p-3 rounded-xl bg-slate-50 text-center font-bold text-xs text-gray-900 border border-slate-100 cursor-pointer"
+                  className="p-3 rounded-2xl bg-white/90 text-center font-bold text-xs text-gray-900 border border-slate-200/80 shadow-2xs hover:bg-slate-50 transition-colors cursor-pointer"
                 >
                   ℹ️ {t.nav.about}
                 </button>
@@ -1267,7 +1282,7 @@ export default function Home({ initialLang = 'de' }) {
             <div className="pt-2">
               <button
                 onClick={() => { scrollToSection('contact'); setIsMobileMenuOpen(false); }}
-                className="w-full bg-[#4285F4] hover:bg-[#3367d6] text-white font-black py-4 rounded-2xl shadow-lg flex items-center justify-center space-x-2 text-sm cursor-pointer"
+                className="w-full bg-[#4285F4] hover:bg-[#3367d6] text-white font-black py-4 rounded-2xl shadow-xl shadow-blue-500/25 flex items-center justify-center space-x-2 text-sm cursor-pointer"
               >
                 <Mail className="w-4 h-4" />
                 <span>{t.hero.cta2}</span>
@@ -1495,8 +1510,11 @@ export default function Home({ initialLang = 'de' }) {
       <EcosystemMarquee lang={lang} />
 
       {/* Stats Section (High-Contrast 6-Grid Modern Cards with Orphex Luxury Ambient Shadow) */}
-      <section className="py-14 bg-white border-b border-slate-100">
-        <div className="container mx-auto px-4 max-w-7xl">
+      <section className="py-16 bg-white relative overflow-hidden border-b border-slate-100">
+        <div className="absolute inset-0 bg-grid-dots pointer-events-none opacity-40 -z-0"></div>
+        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[750px] h-[250px] bg-gradient-to-r from-blue-400/10 via-purple-300/10 to-indigo-400/10 rounded-full blur-[100px] pointer-events-none -z-0"></div>
+        
+        <div className="container mx-auto px-4 max-w-7xl relative z-10">
           <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-4 md:gap-5">
             {[
               { val: '17+', label: t.stats.experience, color: '#4285F4', trend: '2008 – 2026' },
@@ -1508,14 +1526,14 @@ export default function Home({ initialLang = 'de' }) {
             ].map((stat, i) => (
               <div
                 key={i}
-                className="bg-white rounded-3xl p-5 md:p-6 border border-slate-100 shadow-[0_4px_20px_rgba(0,0,0,0.03)] hover:shadow-[0_12px_30px_rgba(81,56,238,0.08)] transition-all duration-300 hover:-translate-y-1.5 flex flex-col justify-between text-center relative overflow-hidden group"
+                className="bg-white/95 backdrop-blur-xs rounded-3xl p-5 md:p-6 border border-slate-200/80 shadow-[0_4px_20px_rgba(0,0,0,0.03)] hover:shadow-[0_16px_36px_rgba(81,56,238,0.08)] hover:border-slate-300 transition-all duration-300 hover:-translate-y-1.5 flex flex-col justify-between text-center relative overflow-hidden group"
               >
                 <div
                   className="absolute top-0 left-0 right-0 h-1 transition-all duration-300 group-hover:h-1.5"
                   style={{ backgroundColor: stat.color }}
                 ></div>
 
-                <div className="inline-flex items-center justify-center space-x-1 bg-slate-50 border border-slate-100 px-2.5 py-0.5 rounded-full mb-3 shadow-[0_1px_3px_rgba(0,0,0,0.02)]">
+                <div className="inline-flex items-center justify-center space-x-1 bg-slate-50 border border-slate-200/80 px-2.5 py-0.5 rounded-full mb-3 shadow-[0_1px_3px_rgba(0,0,0,0.02)]">
                   <span className="text-[10px] font-bold text-slate-700">{stat.trend}</span>
                 </div>
 
@@ -1825,13 +1843,16 @@ export default function Home({ initialLang = 'de' }) {
 
       {/* Success & Verified Growth Section */}
       <section id="success" className="py-24 bg-white relative overflow-hidden border-t border-slate-100">
-        <div className="container mx-auto px-4 max-w-7xl">
+        <div className="absolute inset-0 bg-grid-dots pointer-events-none opacity-40 -z-0"></div>
+        <div className="absolute top-1/3 left-1/2 -translate-x-1/2 w-[850px] h-[400px] bg-gradient-to-r from-emerald-400/10 via-blue-400/10 to-indigo-400/10 rounded-full blur-[110px] pointer-events-none -z-0"></div>
+
+        <div className="container mx-auto px-4 max-w-7xl relative z-10">
           <div className="text-center mb-16">
-            <div className="inline-flex items-center space-x-2 bg-emerald-50 border border-emerald-200/80 rounded-full px-4 py-1.5 mb-4 shadow-sm">
+            <div className="inline-flex items-center space-x-2 bg-emerald-50 border border-emerald-200/80 rounded-full px-4 py-1.5 mb-4 shadow-2xs backdrop-blur-xs">
               <span className="w-2 h-2 rounded-full bg-emerald-500"></span>
               <span className="text-xs font-bold uppercase tracking-wider text-emerald-700">{t.success.subtitle}</span>
             </div>
-            <h2 className="text-3xl md:text-5xl font-black text-gray-900 mb-4 tracking-tight">{t.success.title}</h2>
+            <h2 className="text-3xl md:text-5xl font-black text-gray-950 mb-4 tracking-tight">{t.success.title}</h2>
             <p className="text-base md:text-lg text-slate-600 max-w-3xl mx-auto leading-relaxed">{t.success.description}</p>
           </div>
 
@@ -1842,7 +1863,7 @@ export default function Home({ initialLang = 'de' }) {
               return (
                 <div
                   key={index}
-                  className="bg-white rounded-3xl p-7 md:p-8 border border-slate-100 shadow-[0_4px_24px_rgba(0,0,0,0.03)] hover:shadow-[0_20px_45px_rgba(81,56,238,0.08)] transition-all duration-300 hover:-translate-y-1.5 relative overflow-hidden group text-center flex flex-col justify-between"
+                  className="bg-white/95 backdrop-blur-xs rounded-3xl p-7 md:p-8 border border-slate-200/80 shadow-[0_4px_24px_rgba(0,0,0,0.03)] hover:shadow-[0_20px_45px_rgba(81,56,238,0.08)] hover:border-slate-300 transition-all duration-300 hover:-translate-y-1.5 relative overflow-hidden group text-center flex flex-col justify-between"
                 >
                   <div
                     className="absolute top-0 left-0 right-0 h-1.5 transition-all duration-300 group-hover:h-2"
@@ -1851,13 +1872,16 @@ export default function Home({ initialLang = 'de' }) {
 
                   <div className="mb-6 flex justify-center">
                     <div
-                      className="w-16 h-16 rounded-2xl flex items-center justify-center shadow-md group-hover:scale-110 transition-transform duration-200"
-                      style={{ backgroundColor: `${accent}15` }}
+                      className="w-16 h-16 rounded-2xl flex items-center justify-center shadow-2xs border group-hover:scale-110 transition-transform duration-200"
+                      style={{ 
+                        backgroundColor: `${accent}12`,
+                        borderColor: `${accent}25`
+                      }}
                     >
-                      {index === 0 && <span className="text-2xl font-black" style={{ color: accent }}>📈</span>}
-                      {index === 1 && <span className="text-2xl font-black" style={{ color: accent }}>🏆</span>}
-                      {index === 2 && <span className="text-2xl font-black" style={{ color: accent }}>🚀</span>}
-                      {index === 3 && <span className="text-2xl font-black" style={{ color: accent }}>⚡</span>}
+                      {index === 0 && <TrendingUp className="w-7 h-7" style={{ color: accent }} />}
+                      {index === 1 && <Award className="w-7 h-7" style={{ color: accent }} />}
+                      {index === 2 && <Zap className="w-7 h-7" style={{ color: accent }} />}
+                      {index === 3 && <BarChart3 className="w-7 h-7" style={{ color: accent }} />}
                     </div>
                   </div>
 
@@ -1865,7 +1889,7 @@ export default function Home({ initialLang = 'de' }) {
                     <span className="text-xs font-bold uppercase tracking-wider text-slate-400 font-mono mb-1 block">
                       {metric.subtitle}
                     </span>
-                    <h3 className="text-xl font-bold text-gray-900 mb-2">
+                    <h3 className="text-xl font-bold text-gray-950 mb-2">
                       {metric.title}
                     </h3>
                   </div>
@@ -1882,11 +1906,11 @@ export default function Home({ initialLang = 'de' }) {
           {t.proofGallery && (
             <div className="mt-20 pt-16 border-t border-slate-200/80">
               <div className="text-center mb-12">
-                <div className="inline-flex items-center space-x-2 bg-blue-50 border border-blue-200/80 rounded-full px-4 py-1.5 mb-3 shadow-sm">
+                <div className="inline-flex items-center space-x-2 bg-blue-50 border border-blue-200/80 rounded-full px-4 py-1.5 mb-3 shadow-2xs backdrop-blur-xs">
                   <span className="w-2 h-2 rounded-full bg-[#4285F4] animate-pulse"></span>
                   <span className="text-xs font-bold uppercase tracking-wider text-[#4285F4]">{t.proofGallery.badge}</span>
                 </div>
-                <h3 className="text-2xl md:text-4xl font-black text-gray-900 mb-3 tracking-tight">
+                <h3 className="text-2xl md:text-4xl font-black text-gray-950 mb-3 tracking-tight">
                   {t.proofGallery.title}
                 </h3>
                 <p className="text-sm md:text-base text-slate-600 max-w-2xl mx-auto leading-relaxed">
@@ -1898,7 +1922,7 @@ export default function Home({ initialLang = 'de' }) {
                 {t.proofGallery.cards.map((card, idx) => (
                   <div
                     key={idx}
-                    className="bg-white rounded-3xl p-6 border border-slate-100 shadow-[0_4px_24px_rgba(0,0,0,0.03)] hover:shadow-[0_20px_50px_rgba(81,56,238,0.09)] transition-all duration-300 group overflow-hidden flex flex-col justify-between"
+                    className="bg-white/95 backdrop-blur-xs rounded-3xl p-6 border border-slate-200/80 shadow-[0_4px_24px_rgba(0,0,0,0.03)] hover:shadow-[0_20px_50px_rgba(81,56,238,0.09)] hover:border-slate-300 transition-all duration-300 group overflow-hidden flex flex-col justify-between"
                   >
                     <div>
                       <div className="flex items-center justify-between mb-4">
@@ -1911,7 +1935,7 @@ export default function Home({ initialLang = 'de' }) {
                       </div>
 
                       {/* Dashboard Image with Zoom on Hover */}
-                      <div className="rounded-2xl overflow-hidden border border-slate-100 mb-5 bg-slate-50 relative group-hover:border-blue-200 transition-colors shadow-inner">
+                      <div className="rounded-2xl overflow-hidden border border-slate-200/70 mb-5 bg-slate-50 relative group-hover:border-blue-200 transition-colors shadow-inner">
                         <img
                           src={card.image}
                           alt={card.title}
@@ -1923,7 +1947,7 @@ export default function Home({ initialLang = 'de' }) {
                       <div className="text-xs font-bold uppercase tracking-wider text-[#4285F4] mb-1 font-mono">
                         {card.subtitle}
                       </div>
-                      <h4 className="text-lg font-black text-gray-900 mb-2 group-hover:text-[#4285F4] transition-colors">
+                      <h4 className="text-lg font-black text-gray-950 mb-2 group-hover:text-[#4285F4] transition-colors">
                         {card.title}
                       </h4>
                       <p className="text-xs sm:text-sm text-slate-600 leading-relaxed mb-4">
@@ -1948,65 +1972,77 @@ export default function Home({ initialLang = 'de' }) {
       </section>
 
       {/* Interactive ROAS & ROI Calculator Lead Magnet */}
-      <section className="py-12 bg-slate-950 text-white relative">
-        <div className="container mx-auto px-4">
+      <section className="py-20 bg-white relative overflow-hidden border-t border-slate-100">
+        <div className="absolute inset-0 bg-grid-dots pointer-events-none opacity-40 -z-0"></div>
+        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[750px] h-[350px] bg-gradient-to-r from-blue-400/10 via-purple-300/10 to-emerald-400/10 rounded-full blur-[100px] pointer-events-none -z-0"></div>
+        <div className="container mx-auto px-4 relative z-10">
           <RoasCalculatorWidget lang={lang} />
         </div>
       </section>
 
       {/* Corporate High-Converting Banner Section */}
-      <section className="py-24 bg-slate-950 text-white relative overflow-hidden border-t border-slate-900">
-        {/* Glow ambient background */}
-        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[400px] bg-[#4285F4]/20 rounded-full blur-3xl pointer-events-none"></div>
+      <section className="py-20 bg-white relative overflow-hidden border-t border-slate-100">
+        {/* Glow ambient background & Dot Matrix */}
+        <div className="absolute inset-0 bg-grid-dots pointer-events-none opacity-40 -z-0"></div>
+        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[850px] h-[450px] bg-gradient-to-r from-blue-400/10 via-indigo-300/10 to-purple-400/10 rounded-full blur-[110px] pointer-events-none -z-0"></div>
 
         <div className="container mx-auto px-4 max-w-6xl relative z-10">
-          <div className="text-center mb-16">
-            <div className="inline-flex items-center space-x-2 bg-blue-500/10 border border-blue-400/30 rounded-full px-4 py-1.5 mb-4 shadow-sm">
-              <span className="w-2 h-2 rounded-full bg-[#4285F4] animate-pulse"></span>
-              <span className="text-xs font-bold uppercase tracking-wider text-[#4285F4]">{t.corporate.subtitle}</span>
-            </div>
-            <h2 className="text-3xl md:text-5xl font-black mb-4 tracking-tight">{t.corporate.title}</h2>
-            <p className="text-base md:text-lg text-slate-300 max-w-3xl mx-auto leading-relaxed">{t.corporate.description}</p>
-            
-            <div className="mt-8 flex justify-center">
-              <button
-                onClick={() => scrollToSection('contact')}
-                className="bg-[#4285F4] hover:bg-[#3367d6] text-white font-bold text-base px-9 py-4 rounded-2xl shadow-xl hover:shadow-2xl transition-all duration-300 hover:scale-105 flex items-center gap-2 cursor-pointer"
-              >
-                <span>{t.corporate.cta}</span>
-                <ArrowRight className="h-5 w-5" />
-              </button>
-            </div>
-          </div>
+          <div className="rounded-[2.5rem] bg-gradient-to-br from-slate-950 via-[#0B101E] to-slate-900 border border-slate-800 shadow-[0_20px_60px_-15px_rgba(15,23,42,0.25)] p-8 sm:p-14 relative overflow-hidden text-white">
+            {/* Ambient glow inside card */}
+            <div className="absolute top-0 right-0 w-96 h-96 bg-[#4285F4]/15 rounded-full blur-3xl pointer-events-none"></div>
+            <div className="absolute bottom-0 left-0 w-96 h-96 bg-purple-500/10 rounded-full blur-3xl pointer-events-none"></div>
 
-          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
-            {t.corporate.features.map((feature, index) => (
-              <div
-                key={index}
-                className="bg-slate-900/90 border border-slate-800/90 rounded-3xl p-7 hover:border-slate-700 shadow-xl transition-all duration-300 hover:-translate-y-1 backdrop-blur-sm"
-              >
-                <div className="w-12 h-12 rounded-2xl bg-blue-500/15 border border-blue-400/30 flex items-center justify-center mb-5 text-[#4285F4]">
-                  <CheckCircle className="h-6 w-6" />
-                </div>
-                <h3 className="text-lg font-bold text-white mb-2">{feature.title}</h3>
-                <p className="text-sm text-slate-400 leading-relaxed">{feature.description}</p>
+            <div className="text-center mb-14 relative z-10">
+              <div className="inline-flex items-center space-x-2 bg-blue-500/10 border border-blue-400/30 rounded-full px-4 py-1.5 mb-4 shadow-sm backdrop-blur-xs">
+                <span className="w-2 h-2 rounded-full bg-[#4285F4] animate-pulse"></span>
+                <span className="text-xs font-bold uppercase tracking-wider text-[#4285F4]">{t.corporate.subtitle}</span>
               </div>
-            ))}
+              <h2 className="text-3xl md:text-5xl font-black mb-4 tracking-tight">{t.corporate.title}</h2>
+              <p className="text-base md:text-lg text-slate-300 max-w-3xl mx-auto leading-relaxed">{t.corporate.description}</p>
+              
+              <div className="mt-8 flex justify-center">
+                <button
+                  onClick={() => scrollToSection('contact')}
+                  className="bg-[#4285F4] hover:bg-[#3367d6] text-white font-bold text-base px-9 py-4 rounded-2xl shadow-xl shadow-blue-500/25 hover:shadow-2xl transition-all duration-300 hover:scale-105 flex items-center gap-2 cursor-pointer"
+                >
+                  <span>{t.corporate.cta}</span>
+                  <ArrowRight className="h-5 w-5" />
+                </button>
+              </div>
+            </div>
+
+            <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 relative z-10">
+              {t.corporate.features.map((feature, index) => (
+                <div
+                  key={index}
+                  className="bg-slate-900/80 border border-slate-800 rounded-3xl p-7 hover:border-slate-700 shadow-xl transition-all duration-300 hover:-translate-y-1 backdrop-blur-sm"
+                >
+                  <div className="w-12 h-12 rounded-2xl bg-blue-500/15 border border-blue-400/30 flex items-center justify-center mb-5 text-[#4285F4]">
+                    <CheckCircle className="h-6 w-6" />
+                  </div>
+                  <h3 className="text-lg font-bold text-white mb-2">{feature.title}</h3>
+                  <p className="text-sm text-slate-400 leading-relaxed">{feature.description}</p>
+                </div>
+              ))}
+            </div>
           </div>
         </div>
       </section>
 
       {/* Testimonials Section */}
-      <section className="py-24 bg-white border-t border-slate-100">
-        <div className="container mx-auto px-4 max-w-7xl">
+      <section className="py-24 bg-white relative overflow-hidden border-t border-slate-100">
+        <div className="absolute inset-0 bg-grid-dots pointer-events-none opacity-40 -z-0"></div>
+        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[750px] h-[350px] bg-gradient-to-r from-amber-300/10 via-blue-400/10 to-purple-400/10 rounded-full blur-[100px] pointer-events-none -z-0"></div>
+
+        <div className="container mx-auto px-4 max-w-7xl relative z-10">
           <div className="text-center mb-16">
-            <div className="inline-flex items-center space-x-2 bg-amber-50 border border-amber-200/80 rounded-full px-4 py-1.5 mb-4 shadow-sm">
+            <div className="inline-flex items-center space-x-2 bg-amber-50 border border-amber-200/80 rounded-full px-4 py-1.5 mb-4 shadow-2xs backdrop-blur-xs">
               <span className="w-2 h-2 rounded-full bg-amber-500"></span>
               <span className="text-xs font-bold uppercase tracking-wider text-amber-700">{t.testimonials.subtitle}</span>
             </div>
-            <h2 className="text-3xl md:text-5xl font-black text-gray-900 mb-4 tracking-tight">{t.testimonials.title}</h2>
+            <h2 className="text-3xl md:text-5xl font-black text-gray-950 mb-4 tracking-tight">{t.testimonials.title}</h2>
             <div className="flex items-center justify-center space-x-2 mt-4">
-              <span className="text-4xl md:text-5xl font-black text-gray-900">5.0</span>
+              <span className="text-4xl md:text-5xl font-black text-gray-950">5.0</span>
               <div className="text-left ml-2">
                 <div className="flex text-amber-500">
                   {[...Array(5)].map((_, i) => <Star key={i} className="h-5 w-5 fill-current" />)}
@@ -2020,7 +2056,7 @@ export default function Home({ initialLang = 'de' }) {
             {t.testimonials.reviews.map((review, index) => (
               <div
                 key={index}
-                className="bg-white rounded-3xl p-8 border border-slate-100 shadow-[0_4px_24px_rgba(0,0,0,0.03)] hover:shadow-[0_16px_36px_rgba(81,56,238,0.08)] transition-all duration-300 hover:-translate-y-1 flex flex-col justify-between"
+                className="bg-white/95 backdrop-blur-xs rounded-3xl p-8 border border-slate-200/80 shadow-[0_4px_24px_rgba(0,0,0,0.03)] hover:shadow-[0_20px_45px_rgba(81,56,238,0.08)] hover:border-slate-300 transition-all duration-300 hover:-translate-y-1 flex flex-col justify-between"
               >
                 <div>
                   <div className="flex text-amber-500 mb-4">
@@ -2030,11 +2066,11 @@ export default function Home({ initialLang = 'de' }) {
                 </div>
 
                 <div className="flex items-center space-x-3 pt-4 border-t border-slate-100">
-                  <div className="w-11 h-11 rounded-2xl bg-gradient-to-tr from-[#4285F4] to-blue-400 flex items-center justify-center text-white font-bold text-sm shadow-sm">
+                  <div className="w-11 h-11 rounded-2xl bg-gradient-to-tr from-[#4285F4] to-blue-400 flex items-center justify-center text-white font-bold text-sm shadow-2xs">
                     {review.name.split(' ').map(n => n[0]).join('')}
                   </div>
                   <div>
-                    <p className="font-bold text-gray-900 text-sm">{review.name}</p>
+                    <p className="font-bold text-gray-950 text-sm">{review.name}</p>
                     <p className="text-xs text-slate-500 font-medium">{review.role}</p>
                   </div>
                 </div>
@@ -2045,14 +2081,17 @@ export default function Home({ initialLang = 'de' }) {
       </section>
 
       {/* About Section */}
-      <section id="about" className="py-24 bg-white border-t border-slate-100">
-        <div className="container mx-auto px-4 max-w-7xl">
+      <section id="about" className="py-24 bg-white relative overflow-hidden border-t border-slate-100">
+        <div className="absolute inset-0 bg-grid-dots pointer-events-none opacity-40 -z-0"></div>
+        <div className="absolute top-1/3 left-1/2 -translate-x-1/2 w-[800px] h-[400px] bg-gradient-to-r from-blue-400/10 via-indigo-300/10 to-emerald-400/10 rounded-full blur-[110px] pointer-events-none -z-0"></div>
+
+        <div className="container mx-auto px-4 max-w-7xl relative z-10">
           <div className="text-center mb-16">
-            <div className="inline-flex items-center space-x-2 bg-blue-50 border border-blue-200/80 rounded-full px-4 py-1.5 mb-4 shadow-sm">
+            <div className="inline-flex items-center space-x-2 bg-blue-50 border border-blue-200/80 rounded-full px-4 py-1.5 mb-4 shadow-2xs backdrop-blur-xs">
               <span className="w-2 h-2 rounded-full bg-[#4285F4]"></span>
               <span className="text-xs font-bold uppercase tracking-wider text-[#4285F4]">{t.about.subtitle}</span>
             </div>
-            <h2 className="text-3xl md:text-5xl font-black text-gray-900 mb-4 tracking-tight">{t.about.title}</h2>
+            <h2 className="text-3xl md:text-5xl font-black text-gray-950 mb-4 tracking-tight">{t.about.title}</h2>
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6 lg:gap-8">
@@ -2062,7 +2101,7 @@ export default function Home({ initialLang = 'de' }) {
               return (
                 <div
                   key={index}
-                  className="bg-white rounded-3xl p-8 border border-slate-100 shadow-[0_4px_24px_rgba(0,0,0,0.03)] hover:shadow-[0_16px_36px_rgba(81,56,238,0.08)] transition-all duration-300 hover:-translate-y-1.5 relative overflow-hidden group"
+                  className="bg-white/95 backdrop-blur-xs rounded-3xl p-8 border border-slate-200/80 shadow-[0_4px_24px_rgba(0,0,0,0.03)] hover:shadow-[0_20px_45px_rgba(81,56,238,0.08)] hover:border-slate-300 transition-all duration-300 hover:-translate-y-1.5 relative overflow-hidden group"
                 >
                   <div
                     className="absolute top-0 left-0 right-0 h-1.5 transition-all duration-300 group-hover:h-2"
@@ -2070,13 +2109,17 @@ export default function Home({ initialLang = 'de' }) {
                   ></div>
 
                   <div
-                    className="w-12 h-12 rounded-2xl flex items-center justify-center mb-6 shadow-sm group-hover:scale-110 transition-transform duration-200"
-                    style={{ backgroundColor: `${color}15`, color: color }}
+                    className="w-12 h-12 rounded-2xl flex items-center justify-center mb-6 shadow-2xs border group-hover:scale-110 transition-transform duration-200"
+                    style={{ 
+                      backgroundColor: `${color}12`, 
+                      borderColor: `${color}25`,
+                      color: color 
+                    }}
                   >
                     <CheckCircle className="h-6 w-6" />
                   </div>
 
-                  <h3 className="text-xl font-bold text-gray-900 mb-3 group-hover:text-[#4285F4] transition-colors">{feature.title}</h3>
+                  <h3 className="text-xl font-bold text-gray-950 mb-3 group-hover:text-[#4285F4] transition-colors">{feature.title}</h3>
                   <p className="text-sm text-slate-600 leading-relaxed">{feature.description}</p>
                 </div>
               )
@@ -2086,151 +2129,208 @@ export default function Home({ initialLang = 'de' }) {
       </section>
 
       {/* Interactive Strategy & Lead Funnel Wizard */}
-      <section className="py-8 bg-slate-50/50">
-        <div className="container mx-auto px-4">
+      <section className="py-16 bg-white relative overflow-hidden border-t border-slate-100">
+        <div className="absolute inset-0 bg-grid-dots pointer-events-none opacity-40 -z-0"></div>
+        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[750px] h-[350px] bg-gradient-to-r from-blue-400/10 via-purple-300/10 to-indigo-400/10 rounded-full blur-[100px] pointer-events-none -z-0"></div>
+        <div className="container mx-auto px-4 relative z-10">
           <LeadFunnelWizard lang={lang} />
         </div>
       </section>
 
       {/* Contact Section */}
       <div id="kontakt" className="relative -top-24 pointer-events-none" />
-      <section id="contact" className="py-20 bg-gradient-to-br from-gray-50 via-white to-gray-50 relative overflow-hidden">
-        {/* Background decorations */}
-        <div className="absolute top-0 left-0 w-96 h-96 bg-[#4285F4]/5 rounded-full blur-3xl -translate-x-1/2 -translate-y-1/2"></div>
-        <div className="absolute bottom-0 right-0 w-96 h-96 bg-[#34A853]/5 rounded-full blur-3xl translate-x-1/2 translate-y-1/2"></div>
+      <section id="contact" className="py-24 bg-white relative overflow-hidden border-t border-slate-100">
+        {/* Background decorations & Dot Matrix */}
+        <div className="absolute inset-0 bg-grid-dots pointer-events-none opacity-40 -z-0"></div>
+        <div className="absolute top-1/3 left-1/2 -translate-x-1/2 w-[850px] h-[400px] bg-gradient-to-r from-blue-400/10 via-indigo-300/10 to-emerald-400/10 rounded-full blur-[110px] pointer-events-none -z-0"></div>
         
-        <div className="container mx-auto px-4 relative z-10">
-          <div className="max-w-4xl mx-auto">
-            {/* Header with icon */}
-            <div className="text-center mb-12">
-              <div className="inline-flex items-center justify-center w-20 h-20 bg-gradient-to-br from-[#4285F4] to-[#34A853] rounded-2xl mb-6 shadow-xl">
-                <Mail className="h-10 w-10 text-white" />
-              </div>
-              <h2 className="text-4xl font-bold mb-4 bg-gradient-to-r from-[#4285F4] via-[#EA4335] to-[#FBBC04] bg-clip-text text-transparent">{t.contact.title}</h2>
-              <p className="text-lg text-muted-foreground max-w-xl mx-auto">{t.contact.subtitle}</p>
+        <div className="container mx-auto px-4 max-w-5xl relative z-10">
+          {/* Header */}
+          <div className="text-center mb-14">
+            <div className="inline-flex items-center space-x-2 bg-blue-50 border border-blue-200/80 rounded-full px-4 py-1.5 mb-4 shadow-2xs backdrop-blur-xs">
+              <span className="w-2 h-2 rounded-full bg-[#4285F4] animate-pulse"></span>
+              <span className="text-xs font-bold uppercase tracking-wider text-[#4285F4]">
+                {lang === 'de' ? 'Direkter Kontakt & Angebot' : lang === 'tr' ? 'Doğrudan İletişim & Teklif' : 'Direct Contact & Inquiries'}
+              </span>
             </div>
-            
-            {/* Main contact card with border */}
-            <Card className="border-2 border-[#4285F4]/20 shadow-2xl bg-white/80 backdrop-blur-sm rounded-3xl overflow-hidden">
-              <div className="grid md:grid-cols-5 gap-0">
-                {/* Left side - Contact info */}
-                <div className="md:col-span-2 bg-gradient-to-br from-[#4285F4] to-[#34A853] p-8 text-white flex flex-col justify-center">
-                  <h3 className="text-2xl font-bold mb-6">{lang === 'de' ? 'Kontaktinformationen' : lang === 'en' ? 'Contact Information' : 'İletişim Bilgileri'}</h3>
+            <h2 className="text-3xl sm:text-4xl md:text-5xl font-black text-gray-950 mb-4 tracking-tight">{t.contact.title}</h2>
+            <p className="text-base md:text-lg text-slate-600 max-w-xl mx-auto leading-relaxed">{t.contact.subtitle}</p>
+          </div>
+          
+          {/* Main contact card with luxury border */}
+          <div className="border border-slate-200/90 shadow-[0_20px_60px_-15px_rgba(15,23,42,0.12)] bg-white rounded-[2.5rem] overflow-hidden">
+            <div className="grid md:grid-cols-5 gap-0">
+              {/* Left side - Luxury Tech Dark Panel */}
+              <div className="md:col-span-2 bg-gradient-to-br from-slate-950 via-[#0B1220] to-slate-900 p-8 sm:p-10 text-white flex flex-col justify-between relative overflow-hidden">
+                <div className="absolute top-0 right-0 w-64 h-64 bg-[#4285F4]/15 rounded-full blur-3xl pointer-events-none"></div>
+                <div className="absolute bottom-0 left-0 w-64 h-64 bg-[#34A853]/15 rounded-full blur-3xl pointer-events-none"></div>
+
+                <div className="relative z-10">
+                  <div className="w-12 h-12 rounded-2xl bg-white/10 border border-white/15 flex items-center justify-center mb-6 text-[#4285F4]">
+                    <Mail className="h-6 w-6 text-white" />
+                  </div>
+                  <h3 className="text-2xl font-black mb-3 tracking-tight">
+                    {lang === 'de' ? 'Kontaktinformationen' : lang === 'en' ? 'Contact Information' : 'İletişim Bilgileri'}
+                  </h3>
+                  <p className="text-xs sm:text-sm text-slate-300 mb-8 leading-relaxed">
+                    {lang === 'de' 
+                      ? 'Persönliche Betreuung ohne Agentur-Wasserkopf. Sprechen Sie direkt mit Salih Maral.' 
+                      : lang === 'tr' 
+                      ? 'Aracı komisyonu olmadan doğrudan Salih Maral ile görüşün.' 
+                      : 'Direct consultation without agency overhead. Talk to Salih Maral directly.'}
+                  </p>
                   
-                  <div className="space-y-6">
-                    <div className="flex items-center space-x-4">
-                      <div className="w-12 h-12 bg-[#25D366] rounded-xl flex items-center justify-center">
-                        <MessageCircle className="h-6 w-6" />
+                  <div className="space-y-4">
+                    <a 
+                      href={`https://wa.me/491724106463?text=${lang === 'de' ? 'Hallo,%20ich%20interessiere%20mich%20für%20Ihre%20Digital%20Marketing%20Dienstleistungen.' : lang === 'en' ? 'Hello,%20I%20am%20interested%20in%20your%20digital%20marketing%20services.' : 'Merhaba,%20dijital%20pazarlama%20hizmetleriniz%20hakkında%20bilgi%20almak%20istiyorum.'}`} 
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      onClick={() => trackWhatsAppClick({ location: 'page' })}
+                      className="flex items-center space-x-3.5 p-3.5 rounded-2xl bg-white/5 hover:bg-white/10 border border-white/10 transition-colors group cursor-pointer"
+                    >
+                      <div className="w-10 h-10 bg-[#25D366] rounded-xl flex items-center justify-center shrink-0 shadow-sm group-hover:scale-105 transition-transform">
+                        <MessageCircle className="h-5 w-5 text-white" />
                       </div>
                       <div>
-                        <p className="text-sm opacity-80">WhatsApp</p>
-                        <a href={`https://wa.me/491724106463?text=${lang === 'de' ? 'Hallo,%20ich%20interessiere%20mich%20für%20Ihre%20Digital%20Marketing%20Dienstleistungen.' : lang === 'en' ? 'Hello,%20I%20am%20interested%20in%20your%20digital%20marketing%20services.' : 'Merhaba,%20dijital%20pazarlama%20hizmetleriniz%20hakkında%20bilgi%20almak%20istiyorum.'}`} target="_blank"
-                  onClick={() => trackWhatsAppClick({ location: 'page' })} className="font-semibold hover:underline">{lang === 'de' ? 'Jetzt schreiben' : lang === 'en' ? 'Message Now' : 'Hemen Yaz'}</a>
+                        <p className="text-[11px] font-bold uppercase tracking-wider text-slate-400">WhatsApp</p>
+                        <p className="font-bold text-sm text-white">{lang === 'de' ? 'Jetzt schreiben' : lang === 'en' ? 'Message Now' : 'Hemen Yazın'}</p>
+                      </div>
+                    </a>
+
+                    <div className="flex items-center space-x-3.5 p-3.5 rounded-2xl bg-white/5 border border-white/10">
+                      <div className="w-10 h-10 bg-blue-500/20 rounded-xl flex items-center justify-center shrink-0 text-[#4285F4]">
+                        <Globe className="h-5 w-5 text-blue-400" />
+                      </div>
+                      <div>
+                        <p className="text-[11px] font-bold uppercase tracking-wider text-slate-400">Standort</p>
+                        <p className="font-bold text-xs text-white">Dreieich / Frankfurt am Main</p>
                       </div>
                     </div>
-                  </div>
-                  
-                  <div className="mt-8 pt-6 border-t border-white/20">
-                    <p className="text-sm opacity-80">{lang === 'de' ? 'Antwort innerhalb von 24 Stunden' : lang === 'en' ? 'Response within 24 hours' : '24 saat içinde yanıt'}</p>
                   </div>
                 </div>
                 
-                {/* Right side - Form */}
-                <div className="md:col-span-3 p-8">
-                  <h3 className="text-xl font-bold mb-6 text-gray-800">{lang === 'de' ? 'Nachricht senden' : lang === 'en' ? 'Send Message' : 'Mesaj Gönder'}</h3>
-                  <form onSubmit={handleSubmit} className="space-y-4">
-                    {/* Anti-bot Honeypot trap - invisible to humans, traps automated spam bots */}
-                    <div className="hidden" aria-hidden="true" style={{ display: 'none', position: 'absolute', left: '-9999px' }}>
-                      <label htmlFor="b_check_main">Do not fill this</label>
-                      <input
-                        type="text"
-                        id="b_check_main"
-                        name="b_check"
-                        value={formData.b_check || ''}
-                        onChange={(e) => setFormData({ ...formData, b_check: e.target.value })}
-                        tabIndex={-1}
-                        autoComplete="off"
+                <div className="mt-8 pt-6 border-t border-white/10 relative z-10">
+                  <div className="flex items-center gap-2 text-xs text-slate-400">
+                    <span className="w-2 h-2 rounded-full bg-emerald-400 animate-pulse"></span>
+                    <span>{lang === 'de' ? 'Antwort garantiert innerhalb 24 Std.' : lang === 'en' ? 'Response within 24 hours guaranteed' : '24 saat içinde doğrudan geri dönüş'}</span>
+                  </div>
+                </div>
+              </div>
+              
+              {/* Right side - Form */}
+              <div className="md:col-span-3 p-8 sm:p-10 bg-white">
+                <h3 className="text-xl font-black mb-6 text-gray-950 tracking-tight">
+                  {lang === 'de' ? 'Nachricht senden' : lang === 'en' ? 'Send Message' : 'Mesaj Gönder'}
+                </h3>
+                <form onSubmit={handleSubmit} className="space-y-4">
+                  {/* Anti-bot Honeypot trap */}
+                  <div className="hidden" aria-hidden="true" style={{ display: 'none', position: 'absolute', left: '-9999px' }}>
+                    <label htmlFor="b_check_main">Do not fill this</label>
+                    <input
+                      type="text"
+                      id="b_check_main"
+                      name="b_check"
+                      value={formData.b_check || ''}
+                      onChange={(e) => setFormData({ ...formData, b_check: e.target.value })}
+                      tabIndex={-1}
+                      autoComplete="off"
+                    />
+                  </div>
+                  <div className="grid md:grid-cols-2 gap-4">
+                    <div>
+                      <Input
+                        placeholder={t.contact.form.name}
+                        value={formData.name}
+                        onChange={(e) => setFormData({ ...formData, name: e.target.value })}
+                        required
+                        className="border border-slate-200 focus:border-[#4285F4] rounded-2xl bg-slate-50/50 py-3 text-sm transition-colors"
                       />
-                    </div>
-                    <div className="grid md:grid-cols-2 gap-4">
-                      <div>
-                        <Input
-                          placeholder={t.contact.form.name}
-                          value={formData.name}
-                          onChange={(e) => setFormData({ ...formData, name: e.target.value })}
-                          required
-                          className="border-2 focus:border-[#4285F4] transition-colors"
-                        />
-                      </div>
-                      <div>
-                        <Input
-                          type="email"
-                          placeholder={t.contact.form.email}
-                          value={formData.email}
-                          onChange={(e) => setFormData({ ...formData, email: e.target.value })}
-                          required
-                          className="border-2 focus:border-[#4285F4] transition-colors"
-                        />
-                      </div>
                     </div>
                     <div>
                       <Input
-                        type="tel"
-                        placeholder={t.contact.form.phone}
-                        value={formData.phone}
-                        onChange={(e) => setFormData({ ...formData, phone: e.target.value })}
+                        type="email"
+                        placeholder={t.contact.form.email}
+                        value={formData.email}
+                        onChange={(e) => setFormData({ ...formData, email: e.target.value })}
                         required
-                        className="border-2 focus:border-[#4285F4] transition-colors"
+                        className="border border-slate-200 focus:border-[#4285F4] rounded-2xl bg-slate-50/50 py-3 text-sm transition-colors"
                       />
                     </div>
-                    <div>
-                      <Textarea
-                        placeholder={t.contact.form.message}
-                        value={formData.message}
-                        onChange={(e) => setFormData({ ...formData, message: e.target.value })}
-                        rows={5}
-                        required
-                        className="border-2 focus:border-[#4285F4] transition-colors"
-                      />
+                  </div>
+                  <div>
+                    <Input
+                      type="tel"
+                      placeholder={t.contact.form.phone}
+                      value={formData.phone}
+                      onChange={(e) => setFormData({ ...formData, phone: e.target.value })}
+                      required
+                      className="border border-slate-200 focus:border-[#4285F4] rounded-2xl bg-slate-50/50 py-3 text-sm transition-colors"
+                    />
+                  </div>
+                  <div>
+                    <Textarea
+                      placeholder={t.contact.form.message}
+                      value={formData.message}
+                      onChange={(e) => setFormData({ ...formData, message: e.target.value })}
+                      rows={5}
+                      required
+                      className="border border-slate-200 focus:border-[#4285F4] rounded-2xl bg-slate-50/50 py-3 text-sm transition-colors"
+                    />
+                  </div>
+                  {formStatus.message && (
+                    <div className={`p-4 rounded-2xl text-xs sm:text-sm font-semibold ${formStatus.type === 'success' ? 'bg-emerald-50 text-emerald-800 border border-emerald-200' : 'bg-red-50 text-red-800 border border-red-200'}`}>
+                      {formStatus.message}
                     </div>
-                    {formStatus.message && (
-                      <div className={`p-4 rounded-lg ${formStatus.type === 'success' ? 'bg-green-50 text-green-800 border border-green-200' : 'bg-red-50 text-red-800 border border-red-200'}`}>
-                        {formStatus.message}
-                      </div>
-                    )}
-                    <Button
-                      type="submit"
-                      size="lg"
-                      className="w-full bg-gradient-to-r from-[#4285F4] to-[#34A853] hover:from-[#3367d6] hover:to-[#2d9249] text-white shadow-lg hover:shadow-xl transition-all"
-                      disabled={isSubmitting}
-                    >
-                      {isSubmitting ? (lang === 'de' ? 'Wird gesendet...' : lang === 'en' ? 'Sending...' : 'Gönderiliyor...') : t.contact.form.submit}
-                    </Button>
-                  </form>
-                </div>
+                  )}
+                  <Button
+                    type="submit"
+                    size="lg"
+                    className="w-full bg-[#4285F4] hover:bg-[#3367d6] text-white font-black py-4 rounded-2xl shadow-xl shadow-blue-500/25 hover:shadow-2xl transition-all cursor-pointer text-sm"
+                    disabled={isSubmitting}
+                  >
+                    {isSubmitting ? (lang === 'de' ? 'Wird gesendet...' : lang === 'en' ? 'Sending...' : 'Gönderiliyor...') : t.contact.form.submit}
+                  </Button>
+                </form>
               </div>
-            </Card>
+            </div>
           </div>
         </div>
       </section>
 
-      {/* CTA Section */}
-      <section className="py-20 bg-gradient-to-br from-[#34A853] to-[#4285F4] text-white">
-        <div className="container mx-auto px-4 text-center">
-          <h2 className="text-4xl font-bold mb-4">{t.contact.cta.title}</h2>
-          <p className="text-lg mb-8 max-w-2xl mx-auto opacity-90">{t.contact.cta.description}</p>
-          <div className="flex flex-wrap justify-center gap-4">
-            <Button size="lg" className="bg-white text-[#4285F4] hover:bg-gray-100" onClick={() => scrollToSection('contact')}>
-              <Mail className="mr-2 h-5 w-5" />
-              {lang === 'de' ? 'Kostenloses Angebot' : lang === 'en' ? 'Free Quote' : 'Ücretsiz Teklif Alın'}
-            </Button>
-            <Button size="lg" className="bg-[#34A853] hover:bg-[#2d9249] text-white" asChild>
-              <a href={`https://wa.me/491724106463?text=${lang === 'de' ? 'Hallo,%20ich%20interessiere%20mich%20für%20Ihre%20Digital%20Marketing%20Dienstleistungen.' : lang === 'en' ? 'Hello,%20I%20am%20interested%20in%20your%20digital%20marketing%20services.' : 'Merhaba,%20dijital%20pazarlama%20hizmetleriniz%20hakkında%20bilgi%20almak%20istiyorum.'}`} target="_blank"
-                  onClick={() => trackWhatsAppClick({ location: 'page' })} rel="noopener noreferrer">
-                <MessageCircle className="mr-2 h-5 w-5" />
-                {t.contact.cta.whatsapp}
-              </a>
-            </Button>
+      {/* Floating CTA Section (Orphex Luxury Floating Module) */}
+      <section className="py-20 bg-white relative overflow-hidden border-t border-slate-100">
+        <div className="absolute inset-0 bg-grid-dots pointer-events-none opacity-40 -z-0"></div>
+        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[750px] h-[300px] bg-gradient-to-r from-blue-400/10 via-emerald-400/10 to-indigo-400/10 rounded-full blur-[100px] pointer-events-none -z-0"></div>
+
+        <div className="container mx-auto px-4 max-w-5xl relative z-10">
+          <div className="rounded-[2.5rem] bg-gradient-to-br from-[#0B1220] via-slate-900 to-[#0F172A] border border-slate-800 shadow-[0_20px_60px_-15px_rgba(15,23,42,0.3)] p-8 sm:p-14 text-center text-white relative overflow-hidden">
+            <div className="absolute -top-24 -right-24 w-72 h-72 bg-[#4285F4]/20 rounded-full blur-3xl pointer-events-none"></div>
+            <div className="absolute -bottom-24 -left-24 w-72 h-72 bg-[#34A853]/20 rounded-full blur-3xl pointer-events-none"></div>
+
+            <div className="relative z-10">
+              <h2 className="text-3xl md:text-4xl font-black mb-3 tracking-tight">{t.contact.cta.title}</h2>
+              <p className="text-sm md:text-base mb-8 max-w-2xl mx-auto text-slate-300 leading-relaxed">{t.contact.cta.description}</p>
+              
+              <div className="flex flex-wrap justify-center gap-4">
+                <button
+                  onClick={() => scrollToSection('contact')}
+                  className="bg-[#4285F4] hover:bg-[#3367d6] text-white font-bold px-7 py-3.5 rounded-2xl shadow-xl shadow-blue-500/25 transition-all duration-200 hover:scale-105 flex items-center gap-2 cursor-pointer text-sm"
+                >
+                  <Mail className="h-4 w-4" />
+                  <span>{lang === 'de' ? 'Kostenloses Angebot' : lang === 'en' ? 'Free Quote' : 'Ücretsiz Teklif Alın'}</span>
+                </button>
+                <a
+                  href={`https://wa.me/491724106463?text=${lang === 'de' ? 'Hallo,%20ich%20interessiere%20mich%20für%20Ihre%20Digital%20Marketing%20Dienstleistungen.' : lang === 'en' ? 'Hello,%20I%20am%20interested%20in%20your%20digital%20marketing%20services.' : 'Merhaba,%20dijital%20pazarlama%20hizmetleriniz%20hakkında%20bilgi%20almak%20istiyorum.'}`}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  onClick={() => trackWhatsAppClick({ location: 'page' })}
+                  className="bg-[#25D366] hover:bg-[#128C7E] text-white font-bold px-7 py-3.5 rounded-2xl shadow-xl shadow-emerald-500/25 transition-all duration-200 hover:scale-105 flex items-center gap-2 text-sm"
+                >
+                  <MessageCircle className="h-4 w-4" />
+                  <span>{t.contact.cta.whatsapp}</span>
+                </a>
+              </div>
+            </div>
           </div>
         </div>
       </section>
@@ -2432,24 +2532,29 @@ export default function Home({ initialLang = 'de' }) {
       </section>
 
       {/* Interactive Google Ads Budget & Cost Calculator Section */}
-      <section className="py-20 bg-slate-950 text-white relative overflow-hidden border-t border-slate-800">
+      <section className="py-20 bg-white relative overflow-hidden border-t border-slate-100">
+        <div className="absolute inset-0 bg-grid-dots pointer-events-none opacity-40 -z-0"></div>
+        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[750px] h-[350px] bg-gradient-to-r from-blue-400/10 via-purple-300/10 to-emerald-400/10 rounded-full blur-[100px] pointer-events-none -z-0"></div>
         <div className="container mx-auto px-4 max-w-5xl relative z-10">
           <GoogleAdsBudgetCalculator lang={lang} />
         </div>
       </section>
 
       {/* High-Authority Interactive FAQ Section (Targeting GSC & Telemetry Search Queries) */}
-      <section id="faq" className="py-20 bg-white relative overflow-hidden border-t border-slate-100">
+      <section id="faq" className="py-24 bg-white relative overflow-hidden border-t border-slate-100">
+        <div className="absolute inset-0 bg-grid-dots pointer-events-none opacity-40 -z-0"></div>
+        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[750px] h-[350px] bg-gradient-to-r from-blue-400/10 via-indigo-300/10 to-purple-400/10 rounded-full blur-[100px] pointer-events-none -z-0"></div>
+
         <div className="container mx-auto px-4 max-w-4xl relative z-10">
-          <div className="text-center mb-12">
-            <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-blue-50 text-[#4285F4] border border-blue-200/60 text-xs font-bold mb-3 shadow-xs">
+          <div className="text-center mb-14">
+            <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-blue-50 text-[#4285F4] border border-blue-200/80 text-xs font-bold mb-3 shadow-2xs backdrop-blur-xs">
               <HelpCircle className="w-4 h-4" />
               <span>{t.faq?.badge || 'FAQ'}</span>
             </div>
-            <h2 className="text-3xl sm:text-4xl font-extrabold text-gray-900 tracking-tight mb-4">
+            <h2 className="text-3xl sm:text-4xl md:text-5xl font-black text-gray-950 tracking-tight mb-4">
               {t.faq?.title}
             </h2>
-            <p className="text-base text-gray-600 max-w-2xl mx-auto">
+            <p className="text-base text-slate-600 max-w-2xl mx-auto leading-relaxed">
               {t.faq?.subtitle}
             </p>
           </div>
@@ -2460,22 +2565,22 @@ export default function Home({ initialLang = 'de' }) {
               return (
                 <div
                   key={idx}
-                  className="rounded-2xl border border-slate-100 bg-white overflow-hidden shadow-[0_2px_12px_rgba(0,0,0,0.02)] hover:shadow-[0_6px_20px_rgba(81,56,238,0.06)] hover:border-[#5138EE]/30 transition-all duration-200"
+                  className="rounded-3xl border border-slate-200/80 bg-white/95 backdrop-blur-xs overflow-hidden shadow-[0_2px_12px_rgba(0,0,0,0.02)] hover:shadow-[0_8px_24px_rgba(81,56,238,0.06)] hover:border-blue-200 transition-all duration-200"
                 >
                   <button
                     type="button"
                     onClick={() => setOpenFaq(isOpen ? null : idx)}
-                    className="w-full text-left px-6 py-5 flex items-center justify-between gap-4 font-bold text-base text-gray-900 hover:text-[#4285F4] transition-colors cursor-pointer"
+                    className="w-full text-left px-6 sm:px-7 py-5 flex items-center justify-between gap-4 font-bold text-base text-gray-950 hover:text-[#4285F4] transition-colors cursor-pointer"
                   >
-                    <span>{item.q}</span>
+                    <span className="font-extrabold">{item.q}</span>
                     <ChevronDown
-                      className={`w-5 h-5 text-gray-400 flex-shrink-0 transition-transform duration-300 ${
+                      className={`w-5 h-5 text-slate-400 flex-shrink-0 transition-transform duration-300 ${
                         isOpen ? 'rotate-180 text-[#4285F4]' : ''
                       }`}
                     />
                   </button>
                   {isOpen && (
-                    <div className="px-6 pb-6 text-sm text-gray-600 leading-relaxed border-t border-slate-100 pt-4 bg-slate-50/50">
+                    <div className="px-6 sm:px-7 pb-6 text-sm text-slate-600 leading-relaxed border-t border-slate-100 pt-4 bg-slate-50/50">
                       {item.a}
                     </div>
                   )}
@@ -2485,22 +2590,22 @@ export default function Home({ initialLang = 'de' }) {
           </div>
 
           {/* Quick Consultation Callout */}
-          <div className="mt-12 p-6 rounded-2xl bg-blue-50 border border-blue-200/80 text-center sm:flex sm:items-center sm:justify-between sm:text-left">
+          <div className="mt-14 p-7 sm:p-8 rounded-3xl bg-blue-50/70 border border-blue-200/80 backdrop-blur-xs text-center sm:flex sm:items-center sm:justify-between sm:text-left shadow-2xs">
             <div>
-              <h3 className="font-bold text-gray-900 text-base">
+              <h3 className="font-black text-gray-950 text-base sm:text-lg">
                 {lang === 'de' ? 'Haben Sie spezifische Fragen zu Ihrem Werbebudget?' : lang === 'tr' ? 'Reklam bütçeniz veya Google Ads hakkında sorunuz mu var?' : 'Do you have specific questions about your advertising budget?'}
               </h3>
-              <p className="text-xs text-gray-600 mt-0.5">
+              <p className="text-xs sm:text-sm text-slate-600 mt-1">
                 {lang === 'de' ? 'Kostenlose 30-minütige Potenzialanalyse mit Salih Maral buchen.' : lang === 'tr' ? 'Salih Maral ile 30 dakikalık ücretsiz büyüme analizi planlayın.' : 'Book a free 30-minute growth analysis with Salih Maral.'}
               </p>
             </div>
-            <div className="mt-4 sm:mt-0 flex-shrink-0">
+            <div className="mt-5 sm:mt-0 flex-shrink-0">
               <a
                 href={`https://wa.me/491724106463?text=${lang === 'de' ? 'Hallo,%20ich%20habe%20eine%20spezifische%20Frage%20zu%20Google%20Ads.' : lang === 'en' ? 'Hello,%20I%20have%20a%20specific%20question%20about%20Google%20Ads.' : 'Merhaba,%20Google%20Ads%20hesabımla%20ilgili%20danışmak%20istiyorum.'}`}
                 target="_blank"
                 rel="noopener noreferrer"
                 onClick={() => trackWhatsAppClick({ location: 'homepage_faq' })}
-                className="inline-flex items-center gap-2 bg-[#25D366] hover:bg-[#128C7E] text-white font-bold text-xs px-5 py-3 rounded-xl shadow-sm transition-all"
+                className="inline-flex items-center gap-2 bg-[#25D366] hover:bg-[#128C7E] text-white font-bold text-xs px-6 py-3.5 rounded-2xl shadow-md shadow-emerald-500/20 hover:scale-105 transition-all"
               >
                 <MessageCircle className="w-4 h-4" />
                 <span>WhatsApp</span>
