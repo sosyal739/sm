@@ -808,6 +808,7 @@ export default function Home({ initialLang = 'de' }) {
   const [latestPosts, setLatestPosts] = useState([])
   const [blogCategory, setBlogCategory] = useState('all')
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false)
+  const [isServicesOpen, setIsServicesOpen] = useState(false)
   const [openFaq, setOpenFaq] = useState(null)
 
   // Language change navigates to the correct URL
@@ -1041,15 +1042,33 @@ export default function Home({ initialLang = 'de' }) {
             
             {/* Desktop Navigation Links */}
             <div className="hidden md:flex items-center space-x-6">
-              <div className="relative group">
-                <button className="text-sm font-bold text-gray-900 hover:text-[#4285F4] transition-colors flex items-center gap-1.5 py-2 cursor-pointer">
+              <div
+                className="relative"
+                onMouseEnter={() => setIsServicesOpen(true)}
+                onMouseLeave={() => setIsServicesOpen(false)}
+              >
+                <button
+                  type="button"
+                  onClick={() => setIsServicesOpen((prev) => !prev)}
+                  className="text-sm font-bold text-gray-900 hover:text-[#4285F4] transition-colors flex items-center gap-1.5 py-2 cursor-pointer"
+                  aria-expanded={isServicesOpen}
+                >
                   <span>{t.nav.services}</span>
-                  <ChevronDown className="w-4 h-4 transition-transform duration-200 group-hover:rotate-180 text-slate-500 group-hover:text-[#4285F4]" />
+                  <ChevronDown className={`w-4 h-4 transition-transform duration-200 ${isServicesOpen ? 'rotate-180 text-[#4285F4]' : 'text-slate-500'}`} />
                 </button>
                 
-                {/* Mega Menu Dropdown (Orphex 2-Column Grid with Service Icons) */}
-                <div className="absolute -left-12 top-full pt-2 w-[740px] max-w-[90vw] opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 z-50">
-                  <div className="bg-white/98 backdrop-blur-xl rounded-3xl shadow-2xl border border-slate-200/90 p-5 sm:p-6">
+                {/* Mega Menu Dropdown (100% Solid White Opaque - No Background Bleed) */}
+                <div
+                  className={`absolute -left-16 sm:-left-24 lg:-left-32 top-full pt-2 w-[740px] max-w-[calc(100vw-2rem)] transition-all duration-200 z-[100] ${
+                    isServicesOpen
+                      ? 'opacity-100 visible translate-y-0 pointer-events-auto'
+                      : 'opacity-0 invisible -translate-y-2 pointer-events-none'
+                  }`}
+                >
+                  <div
+                    style={{ backgroundColor: '#ffffff', opacity: 1 }}
+                    className="rounded-3xl shadow-[0_25px_60px_rgba(0,0,0,0.22)] border border-slate-200 p-5 sm:p-6"
+                  >
                     <div className="grid grid-cols-2 gap-3">
                       {t.why.services.map((service, idx) => {
                         const iconData = getServiceIcon(service.icon)
@@ -1058,7 +1077,8 @@ export default function Home({ initialLang = 'de' }) {
                           <a
                             key={idx}
                             href={svcUrl(lang, service.slug)}
-                            className="group/item flex items-start gap-3.5 p-3 rounded-2xl hover:bg-slate-50/90 transition-all border border-transparent hover:border-slate-200/60"
+                            onClick={() => setIsServicesOpen(false)}
+                            className="group/item flex items-start gap-3.5 p-3 rounded-2xl hover:bg-slate-50 transition-all border border-transparent hover:border-slate-100"
                           >
                             <div className={`w-10 h-10 rounded-xl flex items-center justify-center shrink-0 border shadow-2xs ${iconData.color}`}>
                               <IconComponent className="w-5 h-5" />
@@ -1090,7 +1110,7 @@ export default function Home({ initialLang = 'de' }) {
                         </span>
                       </div>
                       <button
-                        onClick={() => scrollToSection('contact')}
+                        onClick={() => { scrollToSection('contact'); setIsServicesOpen(false); }}
                         className="font-bold text-[#4285F4] hover:text-blue-700 flex items-center gap-1 cursor-pointer transition-colors"
                       >
                         <span>{lang === 'de' ? 'Angebot anfordern' : lang === 'en' ? 'Get Proposal' : 'Hemen Teklif Alın'}</span>
