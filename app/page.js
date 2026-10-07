@@ -13,6 +13,7 @@ import CookieConsent from '@/components/CookieConsent'
 import RoasCalculatorWidget from '@/components/RoasCalculatorWidget'
 import LeadFunnelWizard from '@/components/LeadFunnelWizard'
 import GoogleAdsBudgetCalculator from '@/components/GoogleAdsBudgetCalculator'
+import OrphexInspiredShowcase from '@/components/OrphexInspiredShowcase'
 
 const translations = {
   tr: {
@@ -1193,13 +1194,24 @@ export default function Home({ initialLang = 'de' }) {
           <div className="grid lg:grid-cols-12 gap-12 items-center">
             {/* Left Content Column */}
             <div className="lg:col-span-7 space-y-7 text-left">
-              {/* Top Partner Badge */}
-              <div className="inline-flex items-center space-x-2.5 bg-white/95 border border-slate-200/90 rounded-full px-5 py-2 shadow-sm backdrop-blur-md">
-                <span className="w-2.5 h-2.5 rounded-full bg-emerald-500 animate-pulse"></span>
-                <span className="text-xs sm:text-sm font-bold text-slate-800 tracking-wide">
-                  2026 {lang === 'de' ? 'Performance & Growth Strategien' : lang === 'en' ? 'Performance & Growth Strategies' : 'Performans & Büyüme Stratejileri'}
+              {/* Top Partner Badge (Orphex Live Pill Style) */}
+              <button
+                onClick={() => scrollToSection('solutions')}
+                className="group inline-flex items-center gap-2.5 bg-white/95 border border-slate-200/90 hover:border-blue-400 rounded-full px-4 sm:px-5 py-2 shadow-xs hover:shadow-md transition-all duration-300 backdrop-blur-md text-left cursor-pointer"
+              >
+                <span className="flex h-2 w-2 relative">
+                  <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-emerald-400 opacity-75"></span>
+                  <span className="relative inline-flex rounded-full h-2 w-2 bg-emerald-500"></span>
                 </span>
-              </div>
+                <span className="text-xs sm:text-sm font-bold text-slate-800 tracking-wide group-hover:text-[#4285F4] transition-colors">
+                  {lang === 'de'
+                    ? '✨ 2026 KI-Google Ads & Fixpreis-Systeme'
+                    : lang === 'en'
+                    ? '✨ 2026 AI Google Ads & Flat-Fee Growth'
+                    : '✨ 2026 AI Destekli Google Ads & Fixpreis Yönetim'}
+                </span>
+                <ChevronRight className="w-4 h-4 text-slate-400 group-hover:text-[#4285F4] group-hover:translate-x-0.5 transition-all" />
+              </button>
 
               {/* Main Title */}
               <h1 className="text-4xl sm:text-6xl lg:text-7xl font-black leading-[1.08] tracking-tight text-gray-900">
@@ -1431,110 +1443,8 @@ export default function Home({ initialLang = 'de' }) {
         </div>
       </section>
 
-      {/* Technologies Section - ANIMATED CAROUSEL */}
-      <section className="py-16 bg-slate-50/60 overflow-hidden border-b border-slate-100">
-        <div className="container mx-auto px-4">
-          <h2 className="text-center text-xs font-bold text-slate-400 uppercase tracking-widest mb-10">{lang === 'de' ? 'VERWENDETE PROFESSIONELLE TECHNOLOGIEN' : lang === 'en' ? 'PROFESSIONAL TECHNOLOGIES USED' : 'KULLANDIĞIMIZ PROFESYONEL TEKNOLOJİLER'}</h2>
-          
-          {/* Infinite scroll animation */}
-          <div className="relative">
-            <div className="flex animate-scroll items-center space-x-16">
-              {/* Google */}
-              <div className="flex-shrink-0 flex items-center space-x-2 opacity-70 hover:opacity-100 transition-opacity">
-                <img src="https://upload.wikimedia.org/wikipedia/commons/2/2f/Google_2015_logo.svg" alt="Google" className="h-8 w-auto" width="98" height="32" loading="lazy" />
-              </div>
-
-              {/* Analytics */}
-              <div className="flex-shrink-0 flex items-center space-x-2 opacity-70 hover:opacity-100 transition-opacity">
-                <svg className="h-8 w-8" viewBox="0 0 24 24" fill="none">
-                  <path d="M22 12c0 5.523-4.477 10-10 10S2 17.523 2 12 6.477 2 12 2s10 4.477 10 10z" fill="#F9AB00"/>
-                  <path d="M12 2v10l8.66 5" stroke="#E37400" strokeWidth="2"/>
-                </svg>
-                <span className="text-sm font-medium text-gray-600">Analytics</span>
-              </div>
-
-              {/* WordPress */}
-              <div className="flex-shrink-0 flex items-center opacity-70 hover:opacity-100 transition-opacity">
-                <img src="https://upload.wikimedia.org/wikipedia/commons/9/98/WordPress_blue_logo.svg" alt="WordPress" className="h-8 w-auto" width="32" height="32" loading="lazy" />
-              </div>
-
-              {/* Google Ads */}
-              <div className="flex-shrink-0 flex items-center opacity-70 hover:opacity-100 transition-opacity">
-                <img src="https://upload.wikimedia.org/wikipedia/commons/c/c7/Google_Ads_logo.svg" alt="Google Ads" className="h-8 w-auto" width="32" height="32" loading="lazy" />
-              </div>
-
-              {/* Screaming Frog */}
-              <div className="flex-shrink-0 flex items-center space-x-2 opacity-70 hover:opacity-100 transition-opacity">
-                <svg className="h-8 w-8" viewBox="0 0 24 24" fill="#6DB33F">
-                  <circle cx="12" cy="12" r="10" fill="#6DB33F"/>
-                  <circle cx="9" cy="10" r="2" fill="white"/>
-                  <circle cx="15" cy="10" r="2" fill="white"/>
-                  <path d="M8 15c2 2 6 2 8 0" stroke="white" strokeWidth="1.5" fill="none"/>
-                </svg>
-                <span className="text-sm font-medium text-gray-600">ScreamingFrog</span>
-              </div>
-
-              {/* Meta */}
-              <div className="flex-shrink-0 flex items-center opacity-70 hover:opacity-100 transition-opacity">
-                <img src="https://upload.wikimedia.org/wikipedia/commons/7/7b/Meta_Platforms_Inc._logo.svg" alt="Meta" className="h-6 w-auto" width="80" height="24" loading="lazy" />
-              </div>
-
-              {/* Semrush */}
-              <div className="flex-shrink-0 flex items-center space-x-2 opacity-70 hover:opacity-100 transition-opacity">
-                <svg className="h-8 w-8" viewBox="0 0 24 24">
-                  <rect width="24" height="24" rx="4" fill="#FF622D"/>
-                  <text x="12" y="16" fontSize="10" fill="white" textAnchor="middle" fontWeight="bold">SE</text>
-                </svg>
-                <span className="text-sm font-medium text-gray-600">Semrush</span>
-              </div>
-
-              {/* Ahrefs */}
-              <div className="flex-shrink-0 flex items-center space-x-2 opacity-70 hover:opacity-100 transition-opacity">
-                <svg className="h-8 w-8" viewBox="0 0 24 24">
-                  <rect width="24" height="24" rx="4" fill="#FF6A3D"/>
-                  <text x="12" y="17" fontSize="14" fill="white" textAnchor="middle" fontWeight="bold">A</text>
-                </svg>
-                <span className="text-sm font-medium text-gray-600">Ahrefs</span>
-              </div>
-
-              {/* Duplicate for seamless loop */}
-              <div className="flex-shrink-0 flex items-center space-x-2 opacity-70 hover:opacity-100 transition-opacity">
-                <img src="https://upload.wikimedia.org/wikipedia/commons/2/2f/Google_2015_logo.svg" alt="Google" className="h-8 w-auto" width="98" height="32" loading="lazy" />
-              </div>
-
-              <div className="flex-shrink-0 flex items-center space-x-2 opacity-70 hover:opacity-100 transition-opacity">
-                <svg className="h-8 w-8" viewBox="0 0 24 24" fill="none">
-                  <path d="M22 12c0 5.523-4.477 10-10 10S2 17.523 2 12 6.477 2 12 2s10 4.477 10 10z" fill="#F9AB00"/>
-                  <path d="M12 2v10l8.66 5" stroke="#E37400" strokeWidth="2"/>
-                </svg>
-                <span className="text-sm font-medium text-gray-600">Analytics</span>
-              </div>
-
-              <div className="flex-shrink-0 flex items-center opacity-70 hover:opacity-100 transition-opacity">
-                <img src="https://upload.wikimedia.org/wikipedia/commons/9/98/WordPress_blue_logo.svg" alt="WordPress" className="h-8 w-auto" width="32" height="32" loading="lazy" />
-              </div>
-
-              <div className="flex-shrink-0 flex items-center opacity-70 hover:opacity-100 transition-opacity">
-                <img src="https://upload.wikimedia.org/wikipedia/commons/c/c7/Google_Ads_logo.svg" alt="Google Ads" className="h-8 w-auto" width="32" height="32" loading="lazy" />
-              </div>
-
-              <div className="flex-shrink-0 flex items-center space-x-2 opacity-70 hover:opacity-100 transition-opacity">
-                <svg className="h-8 w-8" viewBox="0 0 24 24" fill="#6DB33F">
-                  <circle cx="12" cy="12" r="10" fill="#6DB33F"/>
-                  <circle cx="9" cy="10" r="2" fill="white"/>
-                  <circle cx="15" cy="10" r="2" fill="white"/>
-                  <path d="M8 15c2 2 6 2 8 0" stroke="white" strokeWidth="1.5" fill="none"/>
-                </svg>
-                <span className="text-sm font-medium text-gray-600">ScreamingFrog</span>
-              </div>
-
-              <div className="flex-shrink-0 flex items-center opacity-70 hover:opacity-100 transition-opacity">
-                <img src="https://upload.wikimedia.org/wikipedia/commons/7/7b/Meta_Platforms_Inc._logo.svg" alt="Meta" className="h-6 w-auto" width="80" height="24" loading="lazy" />
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
+      {/* Orphex-Style Interactive Solutions, Multi-Row Ecosystem & AI Intelligence Showcase */}
+      <OrphexInspiredShowcase lang={lang} onContactClick={() => scrollToSection('contact')} />
 
       {/* Services Section (Ultra-Prestigious 6-Card Grid with High Readability & 3D Accents) */}
       <section id="services" className="py-24 bg-gradient-to-b from-white via-slate-50/60 to-white relative overflow-hidden">
