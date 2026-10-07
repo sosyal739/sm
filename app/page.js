@@ -780,21 +780,21 @@ const translations = {
 const getServiceIcon = (iconType) => {
   switch (iconType) {
     case 'google-ads':
-      return { icon: TrendingUp, color: 'bg-blue-50 text-[#4285F4] border-blue-100' }
+      return { icon: TrendingUp, color: 'bg-blue-50/80 text-[#4285F4] border-blue-100/60' }
     case 'meta':
-      return { icon: Zap, color: 'bg-indigo-50 text-indigo-600 border-indigo-100' }
+      return { icon: Zap, color: 'bg-[#F4F1FF] text-[#5138EE] border-[#EDE9FE]' }
     case 'tiktok':
-      return { icon: Sparkles, color: 'bg-rose-50 text-rose-600 border-rose-100' }
+      return { icon: Sparkles, color: 'bg-rose-50/80 text-rose-600 border-rose-100/60' }
     case 'x':
-      return { icon: MessageSquare, color: 'bg-slate-100 text-slate-800 border-slate-200' }
+      return { icon: MessageSquare, color: 'bg-slate-50 text-slate-700 border-slate-200/60' }
     case 'seo':
-      return { icon: Search, color: 'bg-emerald-50 text-emerald-600 border-emerald-100' }
+      return { icon: Search, color: 'bg-emerald-50/80 text-emerald-600 border-emerald-100/60' }
     case 'review':
-      return { icon: ShieldCheck, color: 'bg-amber-50 text-amber-600 border-amber-100' }
+      return { icon: ShieldCheck, color: 'bg-amber-50/80 text-amber-600 border-amber-100/60' }
     case 'tracking':
-      return { icon: Layers, color: 'bg-cyan-50 text-cyan-600 border-cyan-100' }
+      return { icon: Layers, color: 'bg-cyan-50/80 text-cyan-600 border-cyan-100/60' }
     case 'youtube':
-      return { icon: Flame, color: 'bg-red-50 text-red-600 border-red-100' }
+      return { icon: Flame, color: 'bg-red-50/80 text-red-600 border-red-100/60' }
     default:
       return { icon: Globe, color: 'bg-blue-50 text-[#4285F4] border-blue-100' }
   }
@@ -910,7 +910,7 @@ export default function Home({ initialLang = 'de' }) {
   }
 
   return (
-    <div className="min-h-screen bg-background">
+    <div className="min-h-screen bg-white text-gray-900">
       {/* SEO JSON-LD & Metadata */}
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({
           '@context': 'https://schema.org',
@@ -1029,8 +1029,8 @@ export default function Home({ initialLang = 'de' }) {
             }
           ]
         }) }} />
-      {/* Navigation */}
-      <nav className="fixed top-0 left-0 right-0 z-40 bg-white/95 backdrop-blur-md border-b border-slate-200/80 shadow-xs">
+      {/* Navigation (Orphex Pure White & Soft Ambient Glow Shadow) */}
+      <nav className="fixed top-0 left-0 right-0 z-50 bg-white border-b border-slate-100 shadow-[0_8px_28px_rgba(81,56,238,0.06)]">
         <div className="container mx-auto px-4 py-3 sm:py-4">
           <div className="flex items-center justify-between">
             <a href={lang === 'de' ? '/' : `/${lang}`} className="flex items-center">
@@ -1050,26 +1050,26 @@ export default function Home({ initialLang = 'de' }) {
                 <button
                   type="button"
                   onClick={() => setIsServicesOpen((prev) => !prev)}
-                  className="text-sm font-bold text-gray-900 hover:text-[#4285F4] transition-colors flex items-center gap-1.5 py-2 cursor-pointer"
+                  className="text-sm font-bold text-gray-900 hover:text-[#5138EE] transition-colors flex items-center gap-1.5 py-2 cursor-pointer"
                   aria-expanded={isServicesOpen}
                 >
                   <span>{t.nav.services}</span>
-                  <ChevronDown className={`w-4 h-4 transition-transform duration-200 ${isServicesOpen ? 'rotate-180 text-[#4285F4]' : 'text-slate-500'}`} />
+                  <ChevronDown className={`w-4 h-4 transition-transform duration-200 ${isServicesOpen ? 'rotate-180 text-[#5138EE]' : 'text-slate-500'}`} />
                 </button>
                 
-                {/* Mega Menu Dropdown (100% Solid White Opaque - No Background Bleed) */}
+                {/* Mega Menu Dropdown (Orphex Signature Luxury Shadow & Solid White) */}
                 <div
-                  className={`absolute -left-16 sm:-left-24 lg:-left-32 top-full pt-2 w-[740px] max-w-[calc(100vw-2rem)] transition-all duration-200 z-[100] ${
+                  className={`absolute -left-16 sm:-left-24 lg:-left-32 top-full pt-3 w-[760px] max-w-[calc(100vw-2rem)] transition-all duration-200 z-[100] ${
                     isServicesOpen
                       ? 'opacity-100 visible translate-y-0 pointer-events-auto'
                       : 'opacity-0 invisible -translate-y-2 pointer-events-none'
                   }`}
                 >
                   <div
-                    style={{ backgroundColor: '#ffffff', opacity: 1 }}
-                    className="rounded-3xl shadow-[0_25px_60px_rgba(0,0,0,0.22)] border border-slate-200 p-5 sm:p-6"
+                    style={{ backgroundColor: '#ffffff' }}
+                    className="bg-white rounded-3xl shadow-[0_20px_60px_rgba(10,0,69,0.12),0_1px_3px_rgba(0,0,0,0.05)] border border-slate-100 ring-1 ring-slate-900/5 p-6"
                   >
-                    <div className="grid grid-cols-2 gap-3">
+                    <div className="grid grid-cols-2 gap-3.5">
                       {t.why.services.map((service, idx) => {
                         const iconData = getServiceIcon(service.icon)
                         const IconComponent = iconData.icon
@@ -1078,17 +1078,17 @@ export default function Home({ initialLang = 'de' }) {
                             key={idx}
                             href={svcUrl(lang, service.slug)}
                             onClick={() => setIsServicesOpen(false)}
-                            className="group/item flex items-start gap-3.5 p-3 rounded-2xl hover:bg-slate-50 transition-all border border-transparent hover:border-slate-100"
+                            className="group/item flex items-start gap-4 p-3.5 rounded-2xl hover:bg-[#F9FAFB] transition-all border border-transparent hover:border-slate-100"
                           >
-                            <div className={`w-10 h-10 rounded-xl flex items-center justify-center shrink-0 border shadow-2xs ${iconData.color}`}>
+                            <div className={`w-11 h-11 rounded-2xl flex items-center justify-center shrink-0 border ${iconData.color}`}>
                               <IconComponent className="w-5 h-5" />
                             </div>
                             <div className="flex-1 min-w-0">
-                              <div className="font-extrabold text-sm text-gray-900 group-hover/item:text-[#4285F4] transition-colors flex items-center justify-between">
+                              <div className="font-extrabold text-[14px] text-gray-950 group-hover/item:text-[#5138EE] transition-colors flex items-center justify-between">
                                 <span className="truncate">{service.title}</span>
-                                <ChevronRight className="w-3.5 h-3.5 opacity-0 -translate-x-1 group-hover/item:opacity-100 group-hover/item:translate-x-0 transition-all text-[#4285F4] shrink-0 ml-1" />
+                                <ChevronRight className="w-4 h-4 opacity-0 -translate-x-1 group-hover/item:opacity-100 group-hover/item:translate-x-0 transition-all text-[#5138EE] shrink-0 ml-1" />
                               </div>
-                              <p className="text-xs text-slate-500 line-clamp-2 leading-relaxed mt-0.5">
+                              <p className="text-[12px] text-slate-500 line-clamp-2 leading-relaxed mt-1">
                                 {service.description}
                               </p>
                             </div>
@@ -1098,7 +1098,7 @@ export default function Home({ initialLang = 'de' }) {
                     </div>
 
                     {/* Mega Menu Bottom Bar */}
-                    <div className="mt-4 pt-3.5 border-t border-slate-100 flex items-center justify-between px-2 text-xs">
+                    <div className="mt-4 pt-4 border-t border-slate-100 flex items-center justify-between px-2 text-xs">
                       <div className="flex items-center gap-2 text-slate-500 font-semibold">
                         <span className="w-2 h-2 rounded-full bg-emerald-500"></span>
                         <span>
@@ -1111,7 +1111,7 @@ export default function Home({ initialLang = 'de' }) {
                       </div>
                       <button
                         onClick={() => { scrollToSection('contact'); setIsServicesOpen(false); }}
-                        className="font-bold text-[#4285F4] hover:text-blue-700 flex items-center gap-1 cursor-pointer transition-colors"
+                        className="font-bold text-[#5138EE] hover:text-indigo-800 flex items-center gap-1 cursor-pointer transition-colors"
                       >
                         <span>{lang === 'de' ? 'Angebot anfordern' : lang === 'en' ? 'Get Proposal' : 'Hemen Teklif Alın'}</span>
                         <ArrowRight className="w-3.5 h-3.5" />
@@ -1486,8 +1486,8 @@ export default function Home({ initialLang = 'de' }) {
         </div>
       </section>
 
-      {/* Stats Section (High-Contrast 6-Grid Modern Cards) */}
-      <section className="py-14 bg-white border-y border-slate-200/80">
+      {/* Stats Section (High-Contrast 6-Grid Modern Cards with Orphex Luxury Ambient Shadow) */}
+      <section className="py-14 bg-white border-y border-slate-100">
         <div className="container mx-auto px-4 max-w-7xl">
           <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-4 md:gap-5">
             {[
@@ -1500,14 +1500,14 @@ export default function Home({ initialLang = 'de' }) {
             ].map((stat, i) => (
               <div
                 key={i}
-                className="bg-slate-50/70 hover:bg-white rounded-3xl p-5 md:p-6 border border-slate-200/90 shadow-sm hover:shadow-xl transition-all duration-300 hover:-translate-y-1.5 flex flex-col justify-between text-center relative overflow-hidden group"
+                className="bg-white rounded-3xl p-5 md:p-6 border border-slate-100 shadow-[0_4px_20px_rgba(0,0,0,0.03)] hover:shadow-[0_12px_30px_rgba(81,56,238,0.08)] transition-all duration-300 hover:-translate-y-1.5 flex flex-col justify-between text-center relative overflow-hidden group"
               >
                 <div
                   className="absolute top-0 left-0 right-0 h-1 transition-all duration-300 group-hover:h-1.5"
                   style={{ backgroundColor: stat.color }}
                 ></div>
 
-                <div className="inline-flex items-center justify-center space-x-1 bg-white border border-slate-200/80 px-2.5 py-0.5 rounded-full mb-3 shadow-2xs">
+                <div className="inline-flex items-center justify-center space-x-1 bg-slate-50 border border-slate-100 px-2.5 py-0.5 rounded-full mb-3 shadow-[0_1px_3px_rgba(0,0,0,0.02)]">
                   <span className="text-[10px] font-bold text-slate-700">{stat.trend}</span>
                 </div>
 
@@ -1528,7 +1528,7 @@ export default function Home({ initialLang = 'de' }) {
       <EcosystemMarquee lang={lang} />
 
       {/* Services Section (Ultra-Prestigious 6-Card Grid with High Readability & 3D Accents) */}
-      <section id="services" className="py-24 bg-gradient-to-b from-white via-slate-50/60 to-white relative overflow-hidden">
+      <section id="services" className="py-24 bg-white relative overflow-hidden">
         <div className="container mx-auto px-4 max-w-7xl relative z-10">
           <div className="text-center mb-16">
             <div className="inline-flex items-center space-x-2 bg-blue-50 border border-blue-200/80 rounded-full px-4 py-1.5 mb-4 shadow-sm">
@@ -1639,7 +1639,7 @@ export default function Home({ initialLang = 'de' }) {
                   href={svcUrl(lang, service.slug)}
                   className="block group h-full"
                 >
-                  <div className="h-full bg-white rounded-3xl p-7 sm:p-8 md:p-9 border border-slate-200/90 shadow-lg hover:shadow-2xl transition-all duration-300 hover:-translate-y-2 flex flex-col justify-between relative overflow-hidden group">
+                  <div className="h-full bg-white rounded-3xl p-7 sm:p-8 md:p-9 border border-slate-100 shadow-[0_4px_24px_rgba(0,0,0,0.03)] hover:shadow-[0_20px_50px_rgba(81,56,238,0.09)] hover:border-[#5138EE]/20 transition-all duration-300 hover:-translate-y-2 flex flex-col justify-between relative overflow-hidden group">
                     {/* Top Accent Line */}
                     <div
                       className="absolute top-0 left-0 right-0 h-1.5 transition-all duration-300 group-hover:h-2.5"
@@ -1726,7 +1726,7 @@ export default function Home({ initialLang = 'de' }) {
       </section>
 
       {/* Success & Verified Growth Section */}
-      <section id="success" className="py-24 bg-gradient-to-b from-slate-50/80 via-white to-slate-50/60 relative overflow-hidden border-t border-slate-100">
+      <section id="success" className="py-24 bg-white relative overflow-hidden border-t border-slate-100">
         <div className="container mx-auto px-4 max-w-7xl">
           <div className="text-center mb-16">
             <div className="inline-flex items-center space-x-2 bg-emerald-50 border border-emerald-200/80 rounded-full px-4 py-1.5 mb-4 shadow-sm">
@@ -1744,7 +1744,7 @@ export default function Home({ initialLang = 'de' }) {
               return (
                 <div
                   key={index}
-                  className="bg-white rounded-3xl p-7 md:p-8 border border-slate-200/90 shadow-lg hover:shadow-2xl transition-all duration-300 hover:-translate-y-1.5 relative overflow-hidden group text-center flex flex-col justify-between"
+                  className="bg-white rounded-3xl p-7 md:p-8 border border-slate-100 shadow-[0_4px_24px_rgba(0,0,0,0.03)] hover:shadow-[0_20px_45px_rgba(81,56,238,0.08)] transition-all duration-300 hover:-translate-y-1.5 relative overflow-hidden group text-center flex flex-col justify-between"
                 >
                   <div
                     className="absolute top-0 left-0 right-0 h-1.5 transition-all duration-300 group-hover:h-2"
@@ -1800,7 +1800,7 @@ export default function Home({ initialLang = 'de' }) {
                 {t.proofGallery.cards.map((card, idx) => (
                   <div
                     key={idx}
-                    className="bg-white rounded-3xl p-6 border border-slate-200 shadow-xl hover:shadow-2xl transition-all duration-300 group overflow-hidden flex flex-col justify-between"
+                    className="bg-white rounded-3xl p-6 border border-slate-100 shadow-[0_4px_24px_rgba(0,0,0,0.03)] hover:shadow-[0_20px_50px_rgba(81,56,238,0.09)] transition-all duration-300 group overflow-hidden flex flex-col justify-between"
                   >
                     <div>
                       <div className="flex items-center justify-between mb-4">
@@ -1922,7 +1922,7 @@ export default function Home({ initialLang = 'de' }) {
             {t.testimonials.reviews.map((review, index) => (
               <div
                 key={index}
-                className="bg-slate-50/70 hover:bg-white rounded-3xl p-8 border border-slate-200/90 shadow-sm hover:shadow-xl transition-all duration-300 hover:-translate-y-1 flex flex-col justify-between"
+                className="bg-white rounded-3xl p-8 border border-slate-100 shadow-[0_4px_24px_rgba(0,0,0,0.03)] hover:shadow-[0_16px_36px_rgba(81,56,238,0.08)] transition-all duration-300 hover:-translate-y-1 flex flex-col justify-between"
               >
                 <div>
                   <div className="flex text-amber-500 mb-4">
@@ -1931,7 +1931,7 @@ export default function Home({ initialLang = 'de' }) {
                   <p className="text-sm md:text-base text-slate-700 italic mb-6 leading-relaxed">"{review.text}"</p>
                 </div>
 
-                <div className="flex items-center space-x-3 pt-4 border-t border-slate-200/60">
+                <div className="flex items-center space-x-3 pt-4 border-t border-slate-100">
                   <div className="w-11 h-11 rounded-2xl bg-gradient-to-tr from-[#4285F4] to-blue-400 flex items-center justify-center text-white font-bold text-sm shadow-sm">
                     {review.name.split(' ').map(n => n[0]).join('')}
                   </div>
@@ -1947,7 +1947,7 @@ export default function Home({ initialLang = 'de' }) {
       </section>
 
       {/* About Section */}
-      <section id="about" className="py-24 bg-gradient-to-b from-white via-slate-50/70 to-white border-t border-slate-100">
+      <section id="about" className="py-24 bg-white border-t border-slate-100">
         <div className="container mx-auto px-4 max-w-7xl">
           <div className="text-center mb-16">
             <div className="inline-flex items-center space-x-2 bg-blue-50 border border-blue-200/80 rounded-full px-4 py-1.5 mb-4 shadow-sm">
@@ -1964,7 +1964,7 @@ export default function Home({ initialLang = 'de' }) {
               return (
                 <div
                   key={index}
-                  className="bg-white rounded-3xl p-8 border border-slate-200/90 shadow-md hover:shadow-2xl transition-all duration-300 hover:-translate-y-1.5 relative overflow-hidden group"
+                  className="bg-white rounded-3xl p-8 border border-slate-100 shadow-[0_4px_24px_rgba(0,0,0,0.03)] hover:shadow-[0_16px_36px_rgba(81,56,238,0.08)] transition-all duration-300 hover:-translate-y-1.5 relative overflow-hidden group"
                 >
                   <div
                     className="absolute top-0 left-0 right-0 h-1.5 transition-all duration-300 group-hover:h-2"
@@ -2264,7 +2264,7 @@ export default function Home({ initialLang = 'de' }) {
               <a
                 key={post.slug || idx}
                 href={`/blog/${post.slug}`}
-                className="group relative flex flex-col bg-white rounded-2xl border border-gray-200/80 overflow-hidden shadow-sm hover:shadow-2xl hover:border-[#4285F4]/40 hover:-translate-y-2 transition-all duration-500"
+                className="group relative flex flex-col bg-white rounded-3xl border border-slate-100 overflow-hidden shadow-[0_4px_24px_rgba(0,0,0,0.03)] hover:shadow-[0_20px_50px_rgba(81,56,238,0.09)] hover:border-[#5138EE]/20 hover:-translate-y-1.5 transition-all duration-300"
               >
                 {/* Image Container with Zoom Effect */}
                 <div className="h-48 sm:h-52 relative overflow-hidden bg-slate-100">
@@ -2337,7 +2337,7 @@ export default function Home({ initialLang = 'de' }) {
       </section>
 
       {/* High-Authority Interactive FAQ Section (Targeting GSC & Telemetry Search Queries) */}
-      <section id="faq" className="py-20 bg-gradient-to-b from-slate-50 to-white relative overflow-hidden border-t border-slate-200/80">
+      <section id="faq" className="py-20 bg-white relative overflow-hidden border-t border-slate-100">
         <div className="container mx-auto px-4 max-w-4xl relative z-10">
           <div className="text-center mb-12">
             <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-blue-50 text-[#4285F4] border border-blue-200/60 text-xs font-bold mb-3 shadow-xs">
@@ -2358,7 +2358,7 @@ export default function Home({ initialLang = 'de' }) {
               return (
                 <div
                   key={idx}
-                  className="rounded-2xl border border-slate-200 bg-white overflow-hidden shadow-xs hover:border-blue-300 transition-all duration-200"
+                  className="rounded-2xl border border-slate-100 bg-white overflow-hidden shadow-[0_2px_12px_rgba(0,0,0,0.02)] hover:shadow-[0_6px_20px_rgba(81,56,238,0.06)] hover:border-[#5138EE]/30 transition-all duration-200"
                 >
                   <button
                     type="button"

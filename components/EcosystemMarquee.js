@@ -179,15 +179,15 @@ export default function EcosystemMarquee({ lang = 'de' }) {
   ]
 
   return (
-    <section className="py-16 bg-slate-50/70 border-y border-slate-200/70 overflow-hidden relative">
+    <section className="py-16 bg-white border-y border-slate-100 overflow-hidden relative">
       <div className="container mx-auto px-4 max-w-7xl mb-8 text-center">
-        <div className="inline-flex items-center space-x-2 bg-white border border-slate-200/80 rounded-full px-4 py-1.5 mb-3 shadow-2xs">
+        <div className="inline-flex items-center space-x-2 bg-slate-50 border border-slate-100 rounded-full px-4 py-1.5 mb-3 shadow-[0_2px_8px_rgba(0,0,0,0.02)]">
           <span className="w-2 h-2 rounded-full bg-emerald-500 animate-pulse"></span>
           <span className="text-xs font-bold uppercase tracking-wider text-slate-700">
             {current.badge}
           </span>
         </div>
-        <h2 className="text-2xl sm:text-3xl font-black text-gray-900 tracking-tight">
+        <h2 className="text-2xl sm:text-3xl font-black text-gray-950 tracking-tight">
           {current.title}
         </h2>
         <p className="text-xs sm:text-sm text-slate-600 max-w-xl mx-auto mt-1">
@@ -195,20 +195,24 @@ export default function EcosystemMarquee({ lang = 'de' }) {
         </p>
       </div>
 
+      {/* Edge Blur / Fade Masks for Smooth Orphex Infinite Flow */}
+      <div className="absolute left-0 top-0 bottom-0 w-24 sm:w-36 bg-gradient-to-r from-white via-white/80 to-transparent z-10 pointer-events-none"></div>
+      <div className="absolute right-0 top-0 bottom-0 w-24 sm:w-36 bg-gradient-to-l from-white via-white/80 to-transparent z-10 pointer-events-none"></div>
+
       {/* Row 1: Sliding Left with Google, Analytics, Search Console, Semrush, Ahrefs, Screaming Frog, Meta */}
       <div className="relative mb-4">
         <div className="flex animate-scroll items-center gap-4 w-max">
           {[...row1, ...row1].map((item, idx) => (
             <div
               key={idx}
-              className="flex items-center gap-3 bg-white px-5 py-3 rounded-2xl border border-slate-200/80 shadow-2xs hover:shadow-md hover:border-blue-300 transition-all shrink-0 group cursor-default"
+              className="flex items-center gap-3.5 bg-white px-5 py-3 rounded-2xl border border-slate-100 shadow-[0_4px_16px_rgba(0,0,0,0.03)] hover:shadow-[0_12px_28px_rgba(81,56,238,0.08)] hover:border-[#5138EE]/30 transition-all shrink-0 group cursor-default"
             >
               <div className="w-9 h-9 rounded-xl bg-slate-50 flex items-center justify-center p-1.5 border border-slate-100 shadow-2xs">
                 {item.renderIcon()}
               </div>
               <div>
-                <div className="text-xs font-bold text-gray-900 group-hover:text-[#4285F4] transition-colors">{item.name}</div>
-                <div className="text-[10px] font-medium text-slate-400">{item.badge}</div>
+                <div className="text-xs font-bold text-gray-950 group-hover:text-[#5138EE] transition-colors">{item.name}</div>
+                <div className="text-[10px] font-medium text-slate-500">{item.badge}</div>
               </div>
             </div>
           ))}
@@ -221,14 +225,14 @@ export default function EcosystemMarquee({ lang = 'de' }) {
           {[...row2, ...row2].map((item, idx) => (
             <div
               key={idx}
-              className="flex items-center gap-3 bg-white px-5 py-3 rounded-2xl border border-slate-200/80 shadow-2xs hover:shadow-md hover:border-emerald-300 transition-all shrink-0 group cursor-default"
+              className="flex items-center gap-3.5 bg-white px-5 py-3 rounded-2xl border border-slate-100 shadow-[0_4px_16px_rgba(0,0,0,0.03)] hover:shadow-[0_12px_28px_rgba(16,185,129,0.08)] hover:border-emerald-300 transition-all shrink-0 group cursor-default"
             >
               <div className="w-9 h-9 rounded-xl bg-slate-50 flex items-center justify-center p-1.5 border border-slate-100 shadow-2xs">
                 {item.renderIcon()}
               </div>
               <div>
-                <div className="text-xs font-bold text-gray-900 group-hover:text-emerald-600 transition-colors">{item.name}</div>
-                <div className="text-[10px] font-medium text-slate-400">{item.badge}</div>
+                <div className="text-xs font-bold text-gray-950 group-hover:text-emerald-600 transition-colors">{item.name}</div>
+                <div className="text-[10px] font-medium text-slate-500">{item.badge}</div>
               </div>
             </div>
           ))}
