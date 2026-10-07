@@ -72,7 +72,7 @@ export default function LeadFunnelWizard({ lang = 'de' }) {
         { id: 'b1', title: '500 € – 1.500 € / Ay', desc: 'Yerel işletmeler ve başlangıç için ideal' },
         { id: 'b2', title: '1.500 € – 5.000 € / Ay', desc: 'Bölgesel liderlik ve KOBİ büyümesi' },
         { id: 'b3', title: '5.000 € – 15.000 € / Ay', desc: 'E-ticaret ve B2B ölçekleme' },
-        { id: 'b4', title: '15.000 €+ / Ay', desc: 'Pazar hakimiyeti ve kurumsal hacim' },
+        { id: 'b4', title: '15.000 €+ / Ay', desc: 'Geniş ölçekli kurumsal büyüme' },
       ],
       labels: {
         website: 'Web Siteniz / Mağaza URL',

@@ -5,7 +5,7 @@ export default function EcosystemMarquee({ lang = 'de' }) {
     tr: {
       badge: 'ENTEGRASYONLAR & TEKNOLOJİLER',
       title: 'Almanya Pazarlama Ekosisteminizi Tek Merkezde Birleştirin',
-      subtitle: 'Google Ads, Analytics, Search Console, Semrush, Meta ve e-ticaret altyapılarınızla %100 entegre çalışıyoruz.'
+      subtitle: 'Google Ads, Analytics, Search Console, Semrush, Meta ve e-ticaret sistemlerinizle %100 entegre altyapı.'
     },
     de: {
       badge: 'INTEGRATIONEN & TECHNOLOGIEN',

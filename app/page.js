@@ -25,8 +25,8 @@ const translations = {
     },
     hero: {
       title: 'Almanya Google Ads Ajansı & Türk Dijital Pazarlama Uzmanı',
-      subtitle: 'Almanya & Avrupa Genelinde Sabit Fiyatlı Google Ads, Meta Ads ve SEO ile Cironuzu Katlayın',
-      description: 'Almanya ve Avrupa pazarında satışlarınızı katlayın. 17+ yıllık tecrübe ve Resmi Google Partner güvencesiyle Türk işletmeleri ve ihracatçı markalar için şeffaf, sabit fiyatlı (Fixpreis) reklam sistemleri kuruyoruz.',
+      subtitle: 'Almanya ve Avrupa Genelinde Sabit Fiyatlı (Fixpreis) Google Ads, Meta Ads ve SEO Danışmanlığı',
+      description: 'Ben Salih Maral. 2008 yılından bu yana Resmi Google Partner olarak Almanya\'daki Türk işletmeler ve Avrupa\'ya açılan ihracatçılar için şeffaf, sabit fiyatlı (Fixpreis) reklam sistemleri kurup yönetiyorum. Aracı komisyonu olmadan doğrudan benimle çalışırsınız.',
       cta1: 'WhatsApp',
       cta2: 'Hemen Teklif Alın',
       clients: 'Mutlu Müşteri & Şirket'
@@ -72,7 +72,7 @@ const translations = {
         },
         {
           title: 'SEO Hizmetleri',
-          description: 'Google\'da üst sıralarda yer alın. İç SEO, dış SEO ve teknik SEO ile organik trafiğinizi katlamak.',
+          description: 'Google\'da üst sıralarda yer alın. Sayfa içi, teknik SEO ve yerel otorite çalışmaları ile nitelikli organik ziyaretçi kazanın.',
           slug: 'seo',
           icon: 'seo'
         },
@@ -97,20 +97,20 @@ const translations = {
       ]
     },
     success: {
-      title: 'Tahminlerle Değil, Verilerle Büyüyün',
+      title: 'Ölçülebilir Verilerle Büyüme Stratejisi',
       subtitle: 'Kanıtlanmış Başarı',
-      description: 'Herkes "garanti" verirken, biz size gerçekleri sunuyoruz. Doğru bir dijital pazarlama uzmanı ile çalışmak; sadece tıklama sayısını artırmak değil, işletmenize giren potansiyel müşteri sayısını ve ciroyu katlamaktır.',
+      description: 'Doğru bir dijital pazarlama stratejisi; bütçenizi boşa harcamadan, doğrudan işletmenize telefon açan, teklif isteyen ve satın alan nitelikli müşterilere ulaşmaktır.',
       metrics: [
         { title: 'Ciro Artışı', subtitle: 'E-Ticaret' },
-        { title: '1. Sıra Hakimiyeti', subtitle: 'Google' },
-        { title: 'Görünürlük Rekoru', subtitle: 'Marka' },
-        { title: 'Trafik Patlaması', subtitle: 'Organik' }
+        { title: 'Google Zirvesi', subtitle: 'Google Arama' },
+        { title: 'Hedef Kitle Erişimi', subtitle: 'Marka Bilinirliği' },
+        { title: 'Organik Büyüme', subtitle: 'Organik Trafik' }
       ]
     },
     proofGallery: {
       badge: 'GERÇEK GOOGLE ADS PANEL VERİLERİ',
-      title: 'Tahminlerle Değil, 1.13M€+ Yönetilen Canlı Panel Verileriyle Konuşuyoruz',
-      description: 'Yapay zeka şablonları veya süslü vaatler değil; bizzat yönettiğimiz Google Ads ve YouTube hesaplarından alınan doğrulanmış canlı sonuçlar.',
+      title: '1.13M€+ Bütçe ile Yönettiğim Canlı Google Ads Panel Verileri',
+      description: '2008 yılından bu yana bizzat kurup optimize ettiğim Google Ads ve YouTube hesaplarından alınan doğrulanmış canlı veriler.',
       cards: [
         {
           title: '1.13M€+ Yönetilen Bütçe & 208.000+ Dönüşüm',
@@ -138,7 +138,7 @@ const translations = {
         },
         {
           title: '%64.78 Video Etkileşim Oranı & 19.3M İzlenme',
-          subtitle: 'YouTube Ads Hedef Kitle Hakimiyeti',
+          subtitle: 'YouTube Ads Doğrudan Kitle Hedefleme',
           stat: '40M Gösterim / 19.3M İzlenme',
           desc: 'Müzik ve kurumsal video tanıtımlarında %64.78 etkileşim oranıyla organik algoritmayı tetikleyen placement kurgusu.',
           image: '/proof/youtube-ads-19m-views.png',
@@ -148,14 +148,14 @@ const translations = {
     },
     corporate: {
       title: 'Size Özel Büyüme Planı Hazırlayalım',
-      subtitle: 'Standart Paketler Size Göre Değil mi?',
-      description: 'Her işletmenin dinamikleri farklıdır. Hedeflerinize, bütçenize ve sektörünüze uygun; tamamen size özel kurgulanmış bir dijital pazarlama stratejisi için masaya oturalım.',
+      subtitle: 'İşletmenizin İhtiyaçlarına Özel Strateji',
+      description: 'Her işletmenin dinamikleri farklıdır. Hedeflerinize, bütçenize ve sektörünüze uygun; tamamen işletmenize özel kurgulanmış bir dijital pazarlama stratejisi belirleyelim.',
       cta: 'Hemen Teklif Alın',
       features: [
         { title: 'Sektörel Rekabet Analizi', description: 'Rakiplerinizin önüne geçmeniz için derinlemesine pazar araştırması.' },
-        { title: '7/24 Öncelikli Destek', description: 'Sorularınız ve acil durumlar için her zaman ulaşılabilir özel danışmanlık.' },
-        { title: 'Kapsamlı Teknik Denetim', description: 'Sitenizin altyapısındaki en ufak hatayı bile tespit edip düzeltiyoruz.' },
-        { title: 'Dönüşüm Optimizasyonu', description: 'Sadece trafik değil, gelen ziyaretçiyi müşteriye çevirecek stratejiler.' }
+        { title: 'Birebir Uzman Desteği', description: 'Sorularınız ve güncellemeler için doğrudan benimle iletişimde kalırsınız.' },
+        { title: 'Kapsamlı Teknik Denetim', description: 'Sitenizin altyapısındaki teknik ve analitik hataları tespit edip bizzat optimize ederim.' },
+        { title: 'Dönüşüm Optimizasyonu', description: 'Ziyaretçileri doğrudan teklif isteyen veya arayan nitelikli müşterilere dönüştüren stratejiler.' }
       ]
     },
     testimonials: {
@@ -166,7 +166,7 @@ const translations = {
         {
           name: 'Mehmet Yılmaz',
           role: 'E-Ticaret Sahibi',
-          text: 'Google Ads kampanyalarımız için profesyonel bir uzman arayışındaydık. Salih Bey ile çalışmaya başladıktan sadece 2 ay sonra satışlarımız %180 arttı. Özellikle kampanya yönetimi ve ROI optimizasyonu konusundaki hakimiyeti mükemmel.',
+          text: 'Google Ads kampanyalarımız için profesyonel bir uzman arayışındaydık. Salih Bey ile çalışmaya başladıktan sadece 2 ay sonra satışlarımız %180 arttı. Özellikle kampanya yönetimi ve ROI optimizasyonu konusundaki uzmanlığı mükemmel.',
           rating: 5
         },
         {
@@ -184,38 +184,38 @@ const translations = {
       ]
     },
     about: {
-      title: 'Sıradan Bir Hizmet Değil, Dijital Hakimiyet Sunuyoruz',
+      title: '17 Yıllık Tecrübe ile Doğrudan ve Şeffaf Çalışma Prensibim',
       subtitle: 'Neden Salih Maral?',
       features: [
         {
           title: 'Veri Odaklı Strateji',
-          description: 'Varsayımlarla hareket etmiyoruz. Rakiplerinizin her adımını ve reklam algoritmalarını analiz eden matematiksel bir yaklaşımla, başarınızı şansa bırakmıyoruz.'
+          description: 'Varsayımlarla hareket etmiyorum. Rakiplerinizi ve reklam açık artırma verilerini düzenli inceleyerek bütçenizi en verimli kelimelere yönlendiririm.'
         },
         {
-          title: 'Teknik Mükemmellik',
-          description: 'Kampanya kurulumundan hedef kitle segmentasyonuna kadar her detayı optimize ediyoruz. Maksimum ROI için sürekli test ve iyileştirme yapıyoruz.'
+          title: 'Teknik Kurulum ve Takip',
+          description: 'Dönüşüm izleme (GA4, CAPI, sGTM) ve hedef kitle ayarlarını bizzat kurup test ederim. Reklam harcamanızın her kuruşunun karşılığını net görürsünüz.'
         },
         {
-          title: 'Butik Hizmet',
-          description: 'Fabrikasyon işler yapmıyoruz. Sınırlı sayıda müşteri kabul ederek, markanıza hak ettiği zamanı ayıran özel bir uzman ile birebir çalışırsınız.'
+          title: 'Butik ve Birebir Çalışma',
+          description: 'İşlerimi asistanlara veya junior çalışanlara devretmiyorum. Sınırlı sayıda işletmeyle bizzat çalışarak her hesaba gereken dikkati ve zamanı ayırırım.'
         },
         {
-          title: 'Satış Odaklı Büyüme',
-          description: 'Trafik bir araçtır, amaç ise satıştır. Hedefimiz sadece tıklama sayısını artırmak değil, dönüşüm oranlarını artırarak cironuzu maksimize etmektir.'
+          title: 'Net Satış ve Kârlılık Odaklı',
+          description: 'Trafik bir araçtır; asıl amaç ciro ve net kârdır. Tıklama sayısına odaklanmak yerine, dönüşüm oranlarını yükselterek işletmenizin net gelirini artırırım.'
         },
         {
           title: 'Şeffaf Raporlama',
-          description: 'Gizli saklı yok. "Ne yaptık, ne harcadık, ne kazandık?" sorularının cevabını her ay net, anlaşılır ve detaylı raporlarla masanıza koyuyoruz.'
+          description: 'Gizli komisyon veya karmaşık terimler yok. Ne harcandığını, hangi dönüşümlerin alındığını her ay net ve anlaşılır biçimde paylaşıyorum.'
         },
         {
-          title: '7/24 Kesintisiz Destek',
-          description: 'Ulaşılamayan ajanslardan sıkıldınız mı? Acil durumlarda ve aklınıza takılan her soruda, bir telefon kadar yakınınızda olan çözüm ortağınızız.'
+          title: 'Doğrudan İletişim',
+          description: 'Aracı müşteri temsilcileri olmadan, doğrudan hesabınızı yöneten uzmanla yani benimle görüşür; sorularınıza hızlı yanıt alırsınız.'
         }
       ]
     },
     contact: {
       title: 'Dijital Pazarlama Uzmanı ile İletişime Geçin',
-      subtitle: 'İşletmenizin büyümesine nasıl yardımcı olabileceğimizi keşfedin.',
+      subtitle: 'İşletmenizin büyümesine nasıl yardımcı olabileceğimi keşfedin.',
       form: {
         name: 'Adınız Soyadınız',
         email: 'E-posta Adresiniz',
@@ -228,7 +228,7 @@ const translations = {
       cta: {
         title: 'Bir Dijital Pazarlama Uzmanıyla Konuşmaya Hazır Mısınız?',
         description: 'Dijital dünyada kaybolmak yerine, doğru stratejilerle öne çıkın. Sorularınızı yanıtlamak ve size özel çözümler üretmek için buradayım.',
-        call: 'Bizi Arayın',
+        call: 'Beni Arayın',
         whatsapp: 'WhatsApp\'tan Yazın'
       }
     },
@@ -239,11 +239,11 @@ const translations = {
       items: [
         {
           q: 'Almanya\'da Google Ads Yönetimi ve Danışmanlık Ücretleri Ne Kadardır?',
-          a: 'Geleneksel ajanslar reklam bütçeniz üzerinden %15-%20 komisyon alarak maliyetinizi artırır. Biz Salih Maral olarak şeffaf, sürprizsiz ve aylık sabit fiyat (Fixpreis ab 590€ - 790€/ay) modeliyle çalışıyoruz. Bütçeniz kesintiye uğramadan doğrudan satış getirecek aramalara harcanır.'
+          a: 'Geleneksel ajanslar reklam bütçeniz üzerinden %15-%20 komisyon alarak maliyetinizi artırır. Ben Salih Maral olarak şeffaf, sürprizsiz ve aylık sabit fiyat (Fixpreis ab 590€ - 790€/ay) modeliyle çalışıyorum. Bütçeniz kesintiye uğramadan doğrudan satış getirecek aramalara harcanır.'
         },
         {
           q: 'Frankfurt, Köln ve Stuttgart\'taki Şirketler Neden Hâlâ "AdWords Ajansı" Olarak Arıyor?',
-          a: 'Google, reklam platformunun adını 2018\'de "Google Ads" olarak değiştirmiş olsa da, Almanya\'daki sanayi, makine ve B2B satın alma yöneticileri alışkanlık gereği hâlâ "AdWords Agentur" terimini kullanmaktadır. Frankfurt finans/B2B, Köln e-ticaret ve Stuttgart makine sektörüne özel çift odaklı stratejiler kuruyoruz.'
+          a: 'Google, reklam platformunun adını 2018\'de "Google Ads" olarak değiştirmiş olsa da, Almanya\'daki sanayi, makine ve B2B satın alma yöneticileri alışkanlık gereği hâlâ "AdWords Agentur" terimini kullanmaktadır. Frankfurt finans/B2B, Köln e-ticaret ve Stuttgart makine sektörüne özel çift odaklı stratejiler kuruyorum.'
         },
         {
           q: 'Almanya\'da Google ve Meta Ads Faturaları Nasıl Muhasebeleştirilir? (§13b UStG)',
@@ -255,18 +255,18 @@ const translations = {
         },
         {
           q: 'Performance Max (PMax) Kampanyalarında Negatif Anahtar Kelimeler Neden Zorunludur?',
-          a: 'Filtresiz PMax yapay zekası reklam bütçesinin %35\'e kadar olan kısmını kendi marka adınıza, kariyer/staj arayanlara veya kalitesiz mobil oyunlara harcar. Kampanya düzeyinde negatif listeler ve marka hariç tutma uygulayarak bütçeyi sadece kârlı yeni müşterilere yönlendiriyoruz.'
+          a: 'Filtresiz PMax yapay zekası reklam bütçesinin %35\'e kadar olan kısmını kendi marka adınıza, kariyer/staj arayanlara veya kalitesiz mobil oyunlara harcar. Kampanya düzeyinde negatif listeler ve marka hariç tutma uygulayarak bütçeyi sadece kârlı yeni müşterilere yönlendiriyorum.'
         },
         {
           q: 'Ruhr Bölgesi ve NRW SEO: Dortmund, Essen ve Marl İşletmeleri Google\'da Nasıl Zirveye Çıkar?',
-          a: 'Dortmund, Essen, Bochum ve Marl gibi sanayi ve nüfus yoğunluğu yüksek Ruhr metropollerinde, yerel schema (LocalBusiness), bölgesel servis siloları ve yüksek otorite sinyalleri ile ilk 3 organik sırayı elde ediyoruz.'
+          a: 'Dortmund, Essen, Bochum ve Marl gibi sanayi ve nüfus yoğunluğu yüksek Ruhr metropollerinde, yerel schema (LocalBusiness), bölgesel servis siloları ve yüksek otorite sinyalleri ile ilk 3 organik sırayı hedefleyip sonuç alıyoruz.'
         }
       ]
     },
     footer: {
-      description: 'Google Ads, Meta Ads ve SEO ile işletmenizi dijital dünyada zirveye taşıyoruz.',
+      description: 'Almanya ve Avrupa\'da Google Ads, Meta Ads ve SEO ile işletmeniz için şeffaf, ölçülebilir büyüme sistemleri.',
       rights: 'Tüm hakları saklıdır.',
-      about: 'Hakkımızda'
+      about: 'Hakkımda'
     }
   },
   de: {
@@ -279,7 +279,7 @@ const translations = {
     hero: {
       title: 'Google Ads & Digital Marketing Experte',
       subtitle: 'Google Ads Agentur, Meta Ads & SEO für planbaren ROI in Deutschland',
-      description: 'Verlieren Sie sich nicht im Chaos. Als offizieller Google Partner mit 17+ Jahren Erfahrung in Frankfurt & bundesweit bauen wir datengesteuerte, hochprofitable Performance-Systeme für Ihr Unternehmen auf.',
+      description: 'Ich bin Salih Maral. Als offizieller Google Partner mit 17+ Jahren Erfahrung betreue ich mittelständische Betriebe in Deutschland persönlich und transparent zum monatlichen Festpreis – ohne Agenturaufschläge oder wechselnde Junior-Kontakte.',
       cta1: 'WhatsApp',
       cta2: 'Kostenloses Angebot',
       clients: 'Zufriedene Kunden & Firmen'
@@ -350,20 +350,20 @@ const translations = {
       ]
     },
     success: {
-      title: 'Wachsen Sie mit Daten, nicht mit Schätzungen',
+      title: 'Profitable Kampagnen mit verifizierten Daten',
       subtitle: 'Bewährter Erfolg',
-      description: 'Während jeder "Garantien" gibt, präsentieren wir Ihnen die Fakten. Die Arbeit mit dem richtigen Digital Marketing Experten bedeutet nicht nur die Erhöhung der Klickzahlen, sondern die Vervielfachung der potenziellen Kunden und des Umsatzes Ihres Unternehmens.',
+      description: 'Professionelles Performance-Marketing bedeutet: Kein verschwendetes Werbebudget, sondern gezielte Ausrichtung auf kaufbereite Kunden, qualifizierte Anfragen und nachhaltigen Unternehmensgewinn.',
       metrics: [
         { title: 'Umsatzsteigerung', subtitle: 'E-Commerce' },
-        { title: 'Platz 1 Dominanz', subtitle: 'Google' },
-        { title: 'Sichtbarkeitsrekord', subtitle: 'Marke' },
-        { title: 'Traffic-Explosion', subtitle: 'Organisch' }
+        { title: 'Top-Platzierungen', subtitle: 'Google Suche' },
+        { title: 'Reichweite & Marke', subtitle: 'Markenbekanntheit' },
+        { title: 'Organisches Wachstum', subtitle: 'SEO & Sichtbarkeit' }
       ]
     },
     proofGallery: {
       badge: 'VERIFIZIERTE GOOGLE ADS DASHBOARDS',
-      title: 'Keine Spekulationen: 1,13 Mio. €+ verwaltetes Werbebudget & Live-Dashboards',
-      description: 'Keine KI-Versprechungen oder leere Worte: Verifizierte Live-Ergebnisse aus unseren direkt betreuten Google Ads- und YouTube-Konten.',
+      title: '1,13 Mio. €+ verwaltetes Werbebudget: Meine Live-Dashboards',
+      description: 'Seit 2008 von mir persönlich aufgebaute und betreute Google Ads- und YouTube-Kampagnen mit verifizierten Live-Ergebnissen.',
       cards: [
         {
           title: '1,13 Mio. € Budget & 208.000+ Conversions',
@@ -401,14 +401,14 @@ const translations = {
     },
     corporate: {
       title: 'Lassen Sie uns einen maßgeschneiderten Wachstumsplan für Sie erstellen',
-      subtitle: 'Passen Standard-Pakete nicht zu Ihnen?',
+      subtitle: 'Individuelle Betreuung für Ihr Geschäftsmodell',
       description: 'Jedes Unternehmen hat unterschiedliche Dynamiken. Lassen Sie uns für eine auf Ihre Ziele, Ihr Budget und Ihre Branche zugeschnittene Digital Marketing Strategie zusammensetzen.',
       cta: 'Jetzt Angebot anfordern',
       features: [
         { title: 'Branchenwettbewerbsanalyse', description: 'Tiefgehende Marktforschung, damit Sie Ihre Konkurrenten überholen können.' },
-        { title: '24/7 Prioritäts-Support', description: 'Immer erreichbare Spezialberatung für Ihre Fragen und Notfälle.' },
-        { title: 'Umfassendes technisches Audit', description: 'Wir erkennen und beheben selbst den kleinsten Fehler in der Infrastruktur Ihrer Website.' },
-        { title: 'Conversion-Optimierung', description: 'Nicht nur Traffic, sondern Strategien, die Besucher in Kunden verwandeln.' }
+        { title: 'Direkte Experten-Betreuung', description: 'Für Fragen und strategische Abstimmungen haben Sie direkten Kontakt zu mir.' },
+        { title: 'Umfassendes technisches Audit', description: 'Gründliche technische Analyse und direkte Behebung von Tracking- oder Strukturfehlern auf Ihrer Website.' },
+        { title: 'Conversion-Optimierung', description: 'Gezielte Maßnahmen, die qualifizierte Webseitenbesucher in zahlende Kunden und feste Anfragen umwandeln.' }
       ]
     },
     testimonials: {
@@ -437,32 +437,32 @@ const translations = {
       ]
     },
     about: {
-      title: 'Kein gewöhnlicher Service, wir bieten digitale Dominanz',
+      title: '17 Jahre Erfahrung: Mein persönlicher Anspruch an transparente Betreuung',
       subtitle: 'Warum Salih Maral?',
       features: [
         {
-          title: 'Datengetriebene Strategie',
-          description: 'Wir handeln nicht mit Annahmen. Mit einem mathematischen Ansatz, der jeden Schritt Ihrer Konkurrenten und Werbealgorithmen analysiert, überlassen wir Ihren Erfolg nicht dem Zufall.'
+          title: 'Datenbasierte Strategie',
+          description: 'Keine Spekulationen: Ich analysiere das tatsächliche Suchvolumen und Ihre Wettbewerber, um Ihr Budget gezielt auf kaufbereite Kunden zu lenken.'
         },
         {
-          title: 'Technische Exzellenz',
-          description: 'Wir optimieren jedes Detail vom Kampagnen-Setup bis zur Zielgruppensegmentierung. Wir führen kontinuierliche Tests und Verbesserungen für maximalen ROI durch.'
+          title: 'Präzises Tracking & Setup',
+          description: 'Vom Server-Side Tracking (sGTM, GA4, CAPI) bis zur Kampagnenstruktur setze ich alle technischen Grundlagen persönlich und DSGVO-konform auf.'
         },
         {
-          title: 'Boutique-Service',
-          description: 'Wir machen keine Fließbandarbeit. Durch die Annahme einer begrenzten Anzahl von Kunden arbeiten Sie direkt mit einem Spezialisten zusammen, der Ihrer Marke die Zeit widmet, die sie verdient.'
+          title: 'Persönliche Betreuung',
+          description: 'Keine Weitergabe an Junior-Manager. Als erfahrener Google Partner betreue ich eine ausgewählte Anzahl an Mandanten verlässlich und direkt.'
         },
         {
-          title: 'Verkaufsorientiertes Wachstum',
-          description: 'Traffic ist ein Werkzeug, das Ziel ist der Verkauf. Unser Ziel ist es nicht nur, die Anzahl der Klicks zu erhöhen, sondern Ihren Umsatz durch Erhöhung der Conversion-Raten zu maximieren.'
+          title: 'Fokus auf Umsatz & Rentabilität',
+          description: 'Traffic ist nur ein Hebel; das eigentliche Ziel ist planbarer Umsatz. Statt reiner Klickzahlen steigere ich gezielt Ihre Conversion-Rate für maximale Rentabilität.'
         },
         {
-          title: 'Transparentes Reporting',
-          description: 'Nichts Verstecktes. Die Antworten auf die Fragen "Was haben wir getan, was haben wir ausgegeben, was haben wir gewonnen?" legen wir Ihnen jeden Monat in klaren, verständlichen und detaillierten Berichten vor.'
+          title: 'Volle Kostentransparenz',
+          description: 'Keine versteckten Provisionen: Klare monatliche Fixpreise und direkte Einsicht in Ihr eigenes Werbekonto sorgen für 100%ige Transparenz.'
         },
         {
-          title: '24/7 ununterbrochener Support',
-          description: 'Sind Sie es leid, unerreichbare Agenturen zu haben? Ihr Lösungspartner ist nur einen Anruf entfernt bei Notfällen und jeder Frage, die Ihnen in den Sinn kommt.'
+          title: 'Direkter Ansprechpartner',
+          description: 'Kein Warten in Hotline-Warteschlangen. Bei Fragen oder Anpassungswünschen erreichen Sie mich persönlich und unkompliziert.'
         }
       ]
     },
@@ -481,7 +481,7 @@ const translations = {
       cta: {
         title: 'Sind Sie bereit, mit einem Digital Marketing Experten zu sprechen?',
         description: 'Anstatt in der digitalen Welt verloren zu gehen, heben Sie sich mit den richtigen Strategien ab. Ich bin hier, um Ihre Fragen zu beantworten und maßgeschneiderte Lösungen für Sie zu entwickeln.',
-        call: 'Rufen Sie uns an',
+        call: 'Rufen Sie mich an',
         whatsapp: 'Schreiben Sie über WhatsApp'
       }
     },
@@ -492,7 +492,7 @@ const translations = {
       items: [
         {
           q: 'Was kostet eine professionelle Google Ads Betreuung in Deutschland?',
-          a: 'Während traditionelle Agenturen 15% bis 20% Provision auf Ihr Werbebudget aufschlagen, setzen wir bei Salih Maral auf transparente monatliche Fixpreise (ab 590 € bis 790 € / Monat). Ihr Budget fließt zu 100% in profitable Klicks und Neukunden, ohne versteckte Zusatzkosten.'
+          a: 'Während traditionelle Agenturen 15% bis 20% Provision auf Ihr Werbebudget aufschlagen, arbeite ich bei Salih Maral mit transparenten monatlichen Fixpreisen (ab 590 € bis 790 € / Monat). Ihr Werbebudget fließt zu 100% in profitable Klicks und Neukunden, ohne versteckte Zusatzkosten.'
         },
         {
           q: 'Warum suchen Entscheider in Frankfurt, Köln & Stuttgart nach „AdWords Agentur“?',
@@ -504,11 +504,11 @@ const translations = {
         },
         {
           q: 'Wie gewinnen lokale Betriebe & Neugründer Kunden über Google Maps & Ads?',
-          a: 'Für Handwerker, Kanzleien, Ärzte und Gastronomie optimieren wir das Google Unternehmensprofil für die Top 3 der lokalen Google-Map-Ergebnisse. Ergänzt durch hyperlokale Google Suchanzeigen im Umkreis von 10–25 km generieren Betriebe ab Woche 1 direkte Anrufe und Aufträge.'
+          a: 'Für Handwerker, Kanzleien, Ärzte und Gastronomie optimiere ich das Google Unternehmensprofil für die Top 3 der lokalen Google-Map-Ergebnisse. Ergänzt durch hyperlokale Google Suchanzeigen im Umkreis von 10–25 km generieren Betriebe ab Woche 1 direkte Anrufe und Aufträge.'
         },
         {
           q: 'Warum sind kampagnenweite Negative Keywords in PMax Kampagnen unverzichtbar?',
-          a: 'Ungefilterte PMax Kampagnen verschwenden bis zu 35% des Klickbudgets für unproduktive App-Placements oder eigene Brand-Keywords. Durch Kampagnen-Negativlisten und Brand Exclusions stellen wir sicher, dass Ihr Budget ausschließlich in kaufbereite Neukunden investiert wird.'
+          a: 'Ungefilterte PMax Kampagnen verschwenden bis zu 35% des Klickbudgets für unproduktive App-Placements oder eigene Brand-Keywords. Durch Kampagnen-Negativlisten und Brand Exclusions stelle ich sicher, dass Ihr Budget ausschließlich in kaufbereite Neukunden investiert wird.'
         },
         {
           q: 'Suchmaschinenoptimierung für das Ruhrgebiet: Wie dominieren Firmen in Dortmund, Essen & Marl?',
@@ -517,9 +517,9 @@ const translations = {
       ]
     },
     footer: {
-      description: 'Wir bringen Ihr Unternehmen mit Google Ads, Meta Ads und SEO an die Spitze der digitalen Welt.',
+      description: 'Planbare Neukundengewinnung in Deutschland: Transparente Google Ads, Meta Ads und SEO-Betreuung zum monatlichen Festpreis.',
       rights: 'Alle Rechte vorbehalten.',
-      about: 'Über uns'
+      about: 'Über mich'
     }
   },
   en: {
@@ -531,8 +531,8 @@ const translations = {
     },
     hero: {
       title: 'Google Ads & Digital Marketing Specialist',
-      subtitle: 'Scale Your Business in Germany & Europe with Google Ads, Meta Ads & SEO',
-      description: 'Stop guessing your marketing spend. As an official Google Partner with 17+ years of experience, we build high-ROAS, data-driven customer acquisition systems that consistently grow your revenue.',
+      subtitle: 'Fixed-Price Google Ads, Meta Ads & SEO Consulting in Germany & Europe',
+      description: 'I am Salih Maral. As an official Google Partner with 17+ years of experience, I manage transparent, fixed-fee digital advertising campaigns for businesses in Germany and Europe. You work directly with a senior specialist without agency markups.',
       cta1: 'WhatsApp',
       cta2: 'Get Free Proposal',
       clients: 'Happy Clients & Brands'
@@ -578,7 +578,7 @@ const translations = {
         },
         {
           title: 'SEO Services',
-          description: 'Achieve top rankings on Google. On-page, off-page and technical SEO to multiply your organic traffic.',
+          description: 'Achieve sustainable top rankings on Google. High-standard on-page, off-page, and technical SEO designed for organic customer acquisition.',
           slug: 'seo',
           icon: 'seo'
         },
@@ -603,20 +603,20 @@ const translations = {
       ]
     },
     success: {
-      title: 'Grow with Data, Not Estimates',
+      title: 'Measurable Growth Driven by Verified Data',
       subtitle: 'Proven Success',
-      description: 'While everyone gives "guarantees", we present you with the facts. Working with the right digital marketing expert means not just increasing click numbers, but multiplying the number of potential customers and revenue entering your business.',
+      description: 'A solid performance marketing strategy focuses on what truly matters: eliminating wasted ad spend and connecting your business with qualified, high-intent customer leads.',
       metrics: [
         { title: 'Revenue Growth', subtitle: 'E-Commerce' },
-        { title: '1st Place Dominance', subtitle: 'Google' },
-        { title: 'Visibility Record', subtitle: 'Brand' },
-        { title: 'Traffic Explosion', subtitle: 'Organic' }
+        { title: 'Top Rankings', subtitle: 'Google Search' },
+        { title: 'Targeted Reach', subtitle: 'Brand Visibility' },
+        { title: 'Sustainable Growth', subtitle: 'Organic SEO' }
       ]
     },
     proofGallery: {
       badge: 'VERIFIED GOOGLE ADS DASHBOARDS',
-      title: 'Proven Evidence: Over €1.13M+ Managed Ad Spend & Live Dashboards',
-      description: 'No AI fluff or empty guarantees: Verified real-world campaign dashboards directly managed by Salih Maral (Google Partner).',
+      title: '€1.13M+ Managed Ad Spend: Live Verified Campaign Dashboards',
+      description: 'Verified live results from real-world Google Ads and YouTube campaigns directly managed and optimized by Salih Maral since 2008.',
       cards: [
         {
           title: '€1.13M+ Managed Ad Spend & 208,000+ Conversions',
@@ -654,14 +654,14 @@ const translations = {
     },
     corporate: {
       title: "Let's Prepare a Custom Growth Plan for You",
-      subtitle: 'Standard Packages Not for You?',
+      subtitle: 'Tailored Strategy for Your Business Model',
       description: 'Every business has different dynamics. Let\'s sit at the table for a digital marketing strategy completely tailored to your goals, budget and industry.',
       cta: 'Get a Quote Now',
       features: [
         { title: 'Industry Competition Analysis', description: 'In-depth market research for you to get ahead of your competitors.' },
-        { title: '24/7 Priority Support', description: 'Always accessible special consulting for your questions and emergencies.' },
-        { title: 'Comprehensive Technical Audit', description: 'We detect and fix even the smallest error in your website\'s infrastructure.' },
-        { title: 'Conversion Optimization', description: 'Not just traffic, but strategies that will turn visitors into customers.' }
+        { title: 'Direct Specialist Access', description: 'Direct communication with me for updates, strategic decisions, and fast answers.' },
+        { title: 'Comprehensive Technical Audit', description: 'Thorough technical audit and hands-on resolution of tracking, indexing, or performance issues.' },
+        { title: 'Conversion Optimization', description: 'Focused strategies designed to convert relevant website visitors into high-intent paying customers.' }
       ]
     },
     testimonials: {
@@ -690,32 +690,32 @@ const translations = {
       ]
     },
     about: {
-      title: 'Not an Ordinary Service, We Offer Digital Dominance',
+      title: '17+ Years of Experience: My Personal Approach to Marketing',
       subtitle: 'Why Salih Maral?',
       features: [
         {
           title: 'Data-Driven Strategy',
-          description: "We don't act with assumptions. With a mathematical approach that analyzes every move of your competitors and advertising algorithms, we don't leave your success to chance."
+          description: "No guesswork: I analyze real search intent and competitor landscape to focus your budget on qualified, ready-to-buy customers."
         },
         {
-          title: 'Technical Excellence',
-          description: 'We optimize every detail from campaign setup to audience segmentation. We do continuous testing and improvement for maximum ROI.'
+          title: 'Technical Precision & Tracking',
+          description: 'From Server-Side GTM, GA4 and Meta CAPI to granular campaign structuring, I personally configure every tracking touchpoint.'
         },
         {
-          title: 'Boutique Service',
-          description: "We don't do assembly line work. By accepting a limited number of clients, you work directly with a specialist who dedicates the time your brand deserves."
+          title: 'Boutique & Direct Collaboration',
+          description: 'Your account is never handed off to junior associates. I work with a selective client base to give your business senior-level attention.'
         },
         {
-          title: 'Sales-Oriented Growth',
-          description: 'Traffic is a tool, the goal is sales. Our goal is not just to increase the number of clicks, but to maximize your revenue by increasing conversion rates.'
+          title: 'Outcome & Profit Focused',
+          description: 'Impressions don\'t pay the bills. My core objective is generating qualified inquiries, confirmed sales, and consistent return on ad spend.'
         },
         {
           title: 'Transparent Reporting',
-          description: 'Nothing hidden. We put the answers to the questions "What did we do, what did we spend, what did we win?" on your table every month in clear, understandable and detailed reports.'
+          description: 'No hidden percentage markups. You always retain 100% ownership of your accounts and receive clear, honest monthly performance reviews.'
         },
         {
-          title: '24/7 Uninterrupted Support',
-          description: 'Tired of unreachable agencies? Your solution partner is just a phone call away in emergencies and any question that comes to your mind.'
+          title: 'Direct Accessibility',
+          description: 'No agency ticket queues. You have a direct line to the senior specialist actually managing and optimizing your campaigns.'
         }
       ]
     },
@@ -734,7 +734,7 @@ const translations = {
       cta: {
         title: 'Ready to Talk to a Digital Marketing Expert?',
         description: 'Instead of getting lost in the digital world, stand out with the right strategies. I am here to answer your questions and create customized solutions for you.',
-        call: 'Call Us',
+        call: 'Call Me Directly',
         whatsapp: 'Message on WhatsApp'
       }
     },
@@ -749,7 +749,7 @@ const translations = {
         },
         {
           q: 'Why Do Businesses in Frankfurt, Cologne & Stuttgart Search for "AdWords Agency"?',
-          a: 'German Mittelstand and B2B buyers still widely use the legacy term "AdWords Agentur". We deploy dual-targeted campaigns tailored to Frankfurt financial/B2B leads, Cologne e-commerce & Meta Ads, and Stuttgart manufacturing industries.'
+          a: 'German Mittelstand and B2B buyers still widely use the legacy term "AdWords Agentur". I deploy dual-targeted campaigns tailored to Frankfurt financial/B2B leads, Cologne e-commerce & Meta Ads, and Stuttgart manufacturing industries.'
         },
         {
           q: 'How Are Google Ads Invoices from Ireland Booked Under German Tax Law (§ 13b UStG)?',
@@ -757,7 +757,7 @@ const translations = {
         },
         {
           q: 'How Do Local Businesses and Startups Win Customers via Google Maps & Ads?',
-          a: 'We optimize Google Business Profiles for the Maps 3-Pack and combine it with geo-targeted search campaigns (radius 10–25 km) to deliver phone calls, store visits, and inquiries from week one.'
+          a: 'I optimize Google Business Profiles for the Maps 3-Pack and combine it with geo-targeted search campaigns (radius 10–25 km) to deliver phone calls, store visits, and inquiries from week one.'
         },
         {
           q: 'Why Are Campaign-Level Negative Keywords Mandatory in Performance Max?',
@@ -770,9 +770,9 @@ const translations = {
       ]
     },
     footer: {
-      description: 'We take your business to the top of the digital world with Google Ads, Meta Ads and SEO.',
+      description: 'Predictable customer acquisition in Germany & Europe: Transparent Google Ads, Meta Ads, and SEO consulting on a fixed-fee model.',
       rights: 'All rights reserved.',
-      about: 'About Us'
+      about: 'About'
     }
   }
 }

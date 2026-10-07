@@ -83,7 +83,7 @@ export default function GoogleAdsBudgetCalculator({ lang = 'de', defaultCity = '
       compProvision: 'Klasik Ajanslar (%15 Bütçe Komisyonu):',
       compFixpreis: 'Salih Maral (Şeffaf Sabit Fiyat):',
       savingsBadge: `Ayda yaklaşık ${monthlySavings} € ajans komisyonundan tasarruf edersiniz!`,
-      noCommissionBadge: 'Bütçeniz komisyona değil, doğrudan gerçek müşteriye harcanır!',
+      noCommissionBadge: 'Bütçenizin tamamı aracı komisyonu olmadan doğrudan gerçek müşteriye harcanır!',
       whatsappCta: 'Bu Bütçeyi WhatsApp\'tan Danışın',
       formCta: 'Ücretsiz Teklif & Bütçe Analizi İsteyin',
       guarantee: 'Resmi Google Partneri • 17+ Yıllık Tecrübe • Bağlayıcı Sözleşme Yok'
