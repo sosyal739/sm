@@ -26,7 +26,7 @@ const translations = {
     hero: {
       title: 'Almanya Google Ads Ajansı & Türk Dijital Pazarlama Uzmanı',
       subtitle: 'Almanya ve Avrupa Genelinde Sabit Fiyatlı (Fixpreis) Google Ads, Meta Ads ve SEO Danışmanlığı',
-      description: 'Ben Salih Maral. 2008 yılından bu yana Resmi Google Partner olarak Almanya\'daki Türk işletmeler ve Avrupa\'ya açılan ihracatçılar için şeffaf, sabit fiyatlı (Fixpreis) reklam sistemleri kurup yönetiyorum. Aracı komisyonu olmadan doğrudan benimle çalışırsınız.',
+      description: 'Ben Salih Maral. 2008 yılından bu yana Resmi Google Partner olarak Almanya\'daki Türk işletmeler ve Avrupa\'ya açılan ihracatçılar için kurumsal standartlarda, şeffaf ve yüksek performanslı reklam sistemleri kurup yönetiyorum.',
       cta1: 'WhatsApp',
       cta2: 'Hemen Teklif Alın',
       clients: 'Mutlu Müşteri & Şirket'
@@ -279,7 +279,7 @@ const translations = {
     hero: {
       title: 'Google Ads & Digital Marketing Experte',
       subtitle: 'Google Ads Agentur, Meta Ads & SEO für planbaren ROI in Deutschland',
-      description: 'Ich bin Salih Maral. Als offizieller Google Partner mit 17+ Jahren Erfahrung betreue ich mittelständische Betriebe in Deutschland persönlich und transparent zum monatlichen Festpreis – ohne Agenturaufschläge oder wechselnde Junior-Kontakte.',
+      description: 'Ich bin Salih Maral. Als offizieller Google Partner mit 17+ Jahren Erfahrung entwickle und steuere ich hochperformante, transparente Marketing-Systeme für Unternehmen in Deutschland und Europa nach höchsten Qualitätsstandards.',
       cta1: 'WhatsApp',
       cta2: 'Kostenloses Angebot',
       clients: 'Zufriedene Kunden & Firmen'
@@ -532,7 +532,7 @@ const translations = {
     hero: {
       title: 'Google Ads & Digital Marketing Specialist',
       subtitle: 'Fixed-Price Google Ads, Meta Ads & SEO Consulting in Germany & Europe',
-      description: 'I am Salih Maral. As an official Google Partner with 17+ years of experience, I manage transparent, fixed-fee digital advertising campaigns for businesses in Germany and Europe. You work directly with a senior specialist without agency markups.',
+      description: 'I am Salih Maral. As an official Google Partner with 17+ years of experience, I build and manage high-performance, transparent advertising systems for businesses in Germany and Europe with proven corporate expertise.',
       cta1: 'WhatsApp',
       cta2: 'Get Free Proposal',
       clients: 'Happy Clients & Brands'
@@ -2174,10 +2174,10 @@ export default function Home({ initialLang = 'de' }) {
                   </h3>
                   <p className="text-xs sm:text-sm text-slate-300 mb-8 leading-relaxed">
                     {lang === 'de' 
-                      ? 'Persönliche Betreuung ohne Agentur-Wasserkopf. Sprechen Sie direkt mit Salih Maral.' 
+                      ? 'Fundierte Beratung und ganzheitliche Betreuung auf höchstem Agentur-Niveau. Sprechen Sie direkt mit Salih Maral.' 
                       : lang === 'tr' 
-                      ? 'Aracı komisyonu olmadan doğrudan Salih Maral ile görüşün.' 
-                      : 'Direct consultation without agency overhead. Talk to Salih Maral directly.'}
+                      ? 'Kurumsal ajans kalitesinde, şeffaf ve sonuç odaklı büyüme stratejisi için doğrudan iletişime geçin.' 
+                      : 'Comprehensive strategy and enterprise execution. Speak directly with Salih Maral.'}
                   </p>
                   
                   <div className="space-y-4">
