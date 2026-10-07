@@ -1532,17 +1532,21 @@ export default function Home({ initialLang = 'de' }) {
         </div>
       </section>
 
-      {/* Services Section (Ultra-Prestigious 6-Card Grid with High Readability & 3D Accents) */}
+      {/* Services Section (Ultra-Prestigious Interactive Showcase with Modern Visual Hierarchy) */}
       <section id="services" className="py-24 bg-white relative overflow-hidden">
+        {/* Living Ambient Aura & Dot Matrix Background */}
+        <div className="absolute inset-0 bg-grid-dots pointer-events-none opacity-40 -z-0"></div>
+        <div className="absolute top-1/3 left-1/2 -translate-x-1/2 w-[850px] h-[450px] bg-gradient-to-r from-blue-400/10 via-indigo-300/10 to-purple-400/10 rounded-full blur-[110px] pointer-events-none -z-0"></div>
+
         <div className="container mx-auto px-4 max-w-7xl relative z-10">
-          <div className="text-center mb-16">
-            <div className="inline-flex items-center space-x-2 bg-blue-50 border border-blue-200/80 rounded-full px-4 py-1.5 mb-4 shadow-sm">
-              <span className="w-2 h-2 rounded-full bg-[#4285F4]"></span>
+          <div className="text-center mb-10">
+            <div className="inline-flex items-center space-x-2 bg-blue-50/90 border border-blue-200/80 rounded-full px-4 py-1.5 mb-4 shadow-2xs backdrop-blur-xs">
+              <span className="w-2 h-2 rounded-full bg-[#4285F4] animate-pulse"></span>
               <span className="text-xs font-bold uppercase tracking-wider text-[#4285F4]">
-                {lang === 'de' ? 'Spezialisierte Fachbereiche' : lang === 'en' ? 'Specialized Practice Areas' : 'Uzmanlık Alanlarımız'}
+                {lang === 'de' ? 'Leistungsübersicht & Spezialisierungen' : lang === 'en' ? 'Core Practice Areas & Solutions' : 'Uzmanlık Alanlarımız & Çözümler'}
               </span>
             </div>
-            <h2 className="text-3xl md:text-5xl font-black text-gray-900 mb-4 tracking-tight">
+            <h2 className="text-3xl sm:text-4xl md:text-5xl font-black text-gray-950 mb-4 tracking-tight">
               {lang === 'de' ? (
                 <>Umfassende <span className="text-[#4285F4]">Digital Marketing</span> Dienstleistungen</>
               ) : lang === 'en' ? (
@@ -1559,173 +1563,262 @@ export default function Home({ initialLang = 'de' }) {
                 : 'Öngörülebilir ROI, pazar liderliği ve sürdürülebilir ciro artışı için özel kurgulanmış stratejiler.'}
             </p>
           </div>
-          
-          <div className="grid sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6 lg:gap-8">
-            {t.why.services.map((service, index) => {
-              const metaBySlug = {
-                'google-ads': {
-                  accent: '#4285F4',
-                  tag: lang === 'de' ? 'Search & Shopping' : lang === 'en' ? 'Search & Shopping' : 'Arama & Alışveriş',
-                  pills: lang === 'de'
-                    ? ['1,74M+ Klicks generiert', 'Search, Shopping & PMax', 'ROAS & CPA Optimierung']
-                    : lang === 'en'
-                    ? ['1.74M+ Clicks Generated', 'Search, Shopping & PMax', 'ROAS & CPA Optimization']
-                    : ['1,74M+ Üretilen Tıklama', 'Search, Shopping & PMax', 'Maksimum ROAS & Kârlılık']
-                },
-                'meta-ads': {
-                  accent: '#1877F2',
-                  tag: lang === 'de' ? 'Instagram & Facebook' : lang === 'en' ? 'Instagram & Facebook' : 'Instagram & Facebook',
-                  pills: lang === 'de'
-                    ? ['Advantage+ Shopping & Reels', 'CAPI %92+ Match Score', 'B2B & B2C Instant Leads']
-                    : lang === 'en'
-                    ? ['Advantage+ Shopping & Reels', 'CAPI %92+ Match Score', 'B2B & B2C Instant Leads']
-                    : ['Advantage+ Shopping & Reels', 'CAPI %92+ Eşleşme Oranı', 'B2B & B2C Müşteri Talebi']
-                },
-                'tiktok-ads': {
-                  accent: '#000000',
-                  tag: lang === 'de' ? 'Viral Video & Shop' : lang === 'en' ? 'Viral Video & Shop' : 'Viral Video & TikTok Shop',
-                  pills: lang === 'de'
-                    ? ['Spark Ads & UGC Kampagnen', 'TikTok Shop Seller Center', '18,4M+ Videoaufrufe']
-                    : lang === 'en'
-                    ? ['Spark Ads & Viral UGC', 'TikTok Shop Seller Center', '18.4M+ Video Views']
-                    : ['Spark Ads & Viral UGC', 'TikTok Shop Satıcı Yönetimi', '18,4M+ Video İzlenme']
-                },
-                'x-ads': {
-                  accent: '#1DA1F2',
-                  tag: lang === 'de' ? 'B2B & Entscheider' : lang === 'en' ? 'B2B Decision Makers' : 'B2B & Karar Vericiler',
-                  pills: lang === 'de'
-                    ? ['B2B Entscheider-Targeting', 'Trend Takeover Kampagnen', '14,20 € CPL Skalierung']
-                    : lang === 'en'
-                    ? ['B2B Decision Maker Ads', 'Trend Takeover Campaigns', '€14.20 CPL Scalability']
-                    : ['B2B Karar Verici Hedefleme', 'Gündem & Trend Reklamları', '14,20 € CPL Ölçekleme']
-                },
-                'seo': {
-                  accent: '#0F9D58',
-                  tag: lang === 'de' ? 'Princeton GEO & KI-Suche' : lang === 'en' ? 'Princeton GEO & AI Search' : 'Princeton GEO & Yapay Zeka',
-                  pills: lang === 'de'
-                    ? ['Google Maps #1 Rankings', 'ChatGPT & Perplexity (GEO)', '100/100 Core Web Vitals']
-                    : lang === 'en'
-                    ? ['Google Maps #1 Rankings', 'ChatGPT & Perplexity (GEO)', '100/100 Core Web Vitals']
-                    : ['Google Haritalar #1. Sıra', 'ChatGPT & Perplexity (GEO)', '100/100 Core Web Vitals']
-                },
-                'yorum-yonetimi': {
-                  accent: '#EA4335',
-                  tag: lang === 'de' ? 'Reputation & Rechtsschutz' : lang === 'en' ? 'Reputation & Defense' : 'İtibar & Yasal Savunma',
-                  pills: lang === 'de'
-                    ? ['4.9★ Google & Trustpilot', '100% DSGVO & Fake-Schutz', 'Automatischer QR-Trichter']
-                    : lang === 'en'
-                    ? ['4.9★ Google & Trustpilot', '100% Fake Review Defense', 'Automated QR Review Funnel']
-                    : ['4.9★ Google & Trustpilot', '%100 Sahte Yorum Savunması', 'Otomatik QR Yorum Hunisi']
-                },
-                'server-side-tracking': {
-                  accent: '#0F9D58',
-                  tag: lang === 'de' ? 'Setup & CAPI' : lang === 'en' ? 'Setup & CAPI' : 'Kurulum & CAPI',
-                  pills: lang === 'de'
-                    ? ['Google Ads & Maps Setup', 'GA4, GMC & Search Console', 'Meta CAPI & Server-GTM']
-                    : lang === 'en'
-                    ? ['Google Ads & Maps Setup', 'GA4, GMC & Search Console', 'Meta CAPI & Server-GTM']
-                    : ['Google Ads & Harita Kurulumu', 'GA4, GMC & Search Console', 'Meta CAPI & Server-GTM']
-                },
-                'youtube-ads': {
-                  accent: '#FF0000',
-                  tag: lang === 'de' ? 'YouTube & Shorts Ads' : lang === 'en' ? 'YouTube & Shorts Ads' : 'YouTube & Shorts Reklamları',
-                  pills: lang === 'de'
-                    ? ['23,1M+ TrueView Aufrufe', '720+ Erfolgreiche Kampagnen', 'Shorts & In-Stream Ads']
-                    : lang === 'en'
-                    ? ['23.1M+ TrueView Views', '720+ Successful Campaigns', 'Shorts & In-Stream Ads']
-                    : ['23,1M+ TrueView İzlenme', '720+ Başarılı Kampanya', 'Shorts & In-Stream Reklamı']
-                }
-              }
-              const localizedMeta = metaBySlug[service.slug] || metaBySlug['google-ads']
 
+          {/* Interactive Category Filter Pills */}
+          <div className="flex items-center justify-center gap-2 mb-12 flex-wrap">
+            {[
+              { id: 'all', label: lang === 'de' ? 'Alle Leistungen (8)' : lang === 'en' ? 'All Services (8)' : 'Tüm Hizmetler (8)' },
+              { id: 'google', label: lang === 'de' ? 'Google & YouTube Ads' : lang === 'en' ? 'Google & YouTube Ads' : 'Google & YouTube Ads' },
+              { id: 'social', label: lang === 'de' ? 'Meta, TikTok & X Ads' : lang === 'en' ? 'Meta, TikTok & X Ads' : 'Meta, TikTok & X Ads' },
+              { id: 'seo', label: lang === 'de' ? 'SEO, Tracking & Reputation' : lang === 'en' ? 'SEO, Tracking & Reputation' : 'SEO, Tracking & İtibar' }
+            ].map(tab => {
+              const isActive = serviceCategory === tab.id
               return (
-                <a 
-                  key={index} 
-                  href={svcUrl(lang, service.slug)}
-                  className="block group h-full"
+                <button
+                  key={tab.id}
+                  onClick={() => setServiceCategory(tab.id)}
+                  className={`px-4 py-2 rounded-full text-xs sm:text-sm font-bold transition-all duration-200 cursor-pointer ${
+                    isActive 
+                      ? 'bg-gray-950 text-white shadow-md shadow-gray-950/20 scale-105' 
+                      : 'bg-white hover:bg-slate-50 text-slate-700 border border-slate-200/90 shadow-2xs hover:border-slate-300'
+                  }`}
                 >
-                  <div className="h-full bg-white rounded-3xl p-7 sm:p-8 md:p-9 border border-slate-100 shadow-[0_4px_24px_rgba(0,0,0,0.03)] hover:shadow-[0_20px_50px_rgba(81,56,238,0.09)] hover:border-[#5138EE]/20 transition-all duration-300 hover:-translate-y-2 flex flex-col justify-between relative overflow-hidden group">
-                    {/* Top Accent Line */}
-                    <div
-                      className="absolute top-0 left-0 right-0 h-1.5 transition-all duration-300 group-hover:h-2.5"
-                      style={{ backgroundColor: localizedMeta.accent }}
-                    ></div>
-
-                    <div className="flex flex-col flex-grow">
-                      {/* Header: Icon + Category Badge */}
-                      <div className="flex items-center justify-between mb-6">
-                        <div
-                          className="w-16 h-16 rounded-2xl flex items-center justify-center p-3.5 shadow-md group-hover:scale-110 group-hover:rotate-1 transition-all duration-300"
-                          style={{ backgroundColor: `${localizedMeta.accent}14` }}
-                        >
-                          {service.icon === 'google-ads' && (
-                            <img src="https://upload.wikimedia.org/wikipedia/commons/c/c7/Google_Ads_logo.svg" alt="Google Ads" className="w-9 h-9 object-contain" width="36" height="36" loading="lazy" />
-                          )}
-                          {service.icon === 'meta' && (
-                            <img src="https://upload.wikimedia.org/wikipedia/commons/7/7b/Meta_Platforms_Inc._logo.svg" alt="Meta" className="w-9 h-7 object-contain" width="36" height="28" loading="lazy" />
-                          )}
-                          {service.icon === 'tiktok' && (
-                            <img src="https://upload.wikimedia.org/wikipedia/en/a/a9/TikTok_logo.svg" alt="TikTok" className="w-9 h-9 object-contain" width="36" height="36" loading="lazy" />
-                          )}
-                          {service.icon === 'x' && (
-                            <svg className="w-9 h-9" viewBox="0 0 24 24" fill="currentColor"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
-                          )}
-                          {service.icon === 'tracking' && (
-                            <svg className="w-9 h-9 text-[#0F9D58]" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><rect x="2" y="2" width="20" height="8" rx="2" ry="2"/><rect x="2" y="14" width="20" height="8" rx="2" ry="2"/><line x1="6" y1="6" x2="6.01" y2="6"/><line x1="6" y1="18" x2="6.01" y2="18"/></svg>
-                          )}
-                          {service.icon === 'seo' && (
-                            <svg className="w-9 h-9" viewBox="0 0 24 24" fill="none" stroke="#0F9D58" strokeWidth="2.5"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.3-4.3"/></svg>
-                          )}
-                          {service.icon === 'review' && (
-                            <svg className="w-9 h-9" viewBox="0 0 24 24" fill="#FBBC04" stroke="#EA4335" strokeWidth="1.5"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
-                          )}
-                          {service.icon === 'youtube' && (
-                            <img src="https://upload.wikimedia.org/wikipedia/commons/0/09/YouTube_full-color_icon_%282017%29.svg" alt="YouTube" className="w-9 h-9 object-contain" width="36" height="36" loading="lazy" />
-                          )}
-                        </div>
-
-                        <span className="text-xs font-bold px-3.5 py-1.5 rounded-full bg-slate-50 border border-slate-200/80 text-slate-800 tracking-wide">
-                          {localizedMeta.tag}
-                        </span>
-                      </div>
-
-                      {/* Service Title with Fixed Min-Height for Strict Geometric Alignment */}
-                      <h3 className="text-xl sm:text-2xl font-black text-gray-900 mb-3 tracking-tight group-hover:text-[#4285F4] transition-colors leading-snug min-h-[58px] flex items-start">
-                        {service.title}
-                      </h3>
-
-                      {/* Description with Fixed Min-Height for Harmonized Vertical Flow */}
-                      <p className="text-sm text-slate-600 leading-relaxed mb-6 font-normal min-h-[72px]">
-                        {service.description}
-                      </p>
-
-                      {/* 3 High-Impact Localized Benefit Pills */}
-                      <div className="space-y-2.5 mb-6 mt-auto">
-                        {localizedMeta.pills.map((pill, pIdx) => (
-                          <div
-                            key={pIdx}
-                            className="flex items-center space-x-2.5 bg-slate-50/90 rounded-xl px-3.5 py-2 border border-slate-100/90 group-hover:border-slate-200/70 transition-colors"
-                          >
-                            <span className="w-1.5 h-1.5 rounded-full flex-shrink-0" style={{ backgroundColor: localizedMeta.accent }}></span>
-                            <span className="text-xs sm:text-sm font-semibold text-slate-800 tracking-tight">{pill}</span>
-                          </div>
-                        ))}
-                      </div>
-                    </div>
-
-                    {/* Bottom Action Pill Button - Strictly Pin-Aligned at Bottom */}
-                    <div className="pt-5 border-t border-slate-100 flex items-center justify-between text-xs sm:text-sm font-bold text-slate-800 group-hover:text-[#4285F4] transition-colors mt-2">
-                      <span className="flex items-center gap-1.5">
-                        {lang === 'de' ? 'Leistungsdetails & Strategie' : lang === 'en' ? 'Service Details & Strategy' : 'Hizmet Detayları & Strateji'}
-                      </span>
-                      <span className="w-8 h-8 rounded-full bg-slate-100 group-hover:bg-[#4285F4] group-hover:text-white flex items-center justify-center transition-all duration-300">
-                        ➔
-                      </span>
-                    </div>
-                  </div>
-                </a>
+                  {tab.label}
+                </button>
               )
             })}
+          </div>
+          
+          <div className="grid sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
+            {t.why.services
+              .filter(service => {
+                if (serviceCategory === 'all') return true
+                const categoryMap = {
+                  'google-ads': 'google',
+                  'youtube-ads': 'google',
+                  'meta-ads': 'social',
+                  'tiktok-ads': 'social',
+                  'x-ads': 'social',
+                  'seo': 'seo',
+                  'server-side-tracking': 'seo',
+                  'yorum-yonetimi': 'seo'
+                }
+                return categoryMap[service.slug] === serviceCategory
+              })
+              .map((service, index) => {
+                const metaBySlug = {
+                  'google-ads': {
+                    accent: '#4285F4',
+                    tag: lang === 'de' ? 'Search & Shopping' : lang === 'en' ? 'Search & Shopping' : 'Arama & Alışveriş',
+                    badge: lang === 'de' ? 'Flaggschiff' : lang === 'en' ? 'Core Specialism' : 'Ana Uzmanlık',
+                    pills: lang === 'de'
+                      ? ['1,74M+ Klicks generiert', 'Search, Shopping & PMax', 'ROAS & CPA Optimierung']
+                      : lang === 'en'
+                      ? ['1.74M+ Clicks Generated', 'Search, Shopping & PMax', 'ROAS & CPA Optimization']
+                      : ['1,74M+ Üretilen Tıklama', 'Search, Shopping & PMax', 'Maksimum ROAS & Kârlılık']
+                  },
+                  'meta-ads': {
+                    accent: '#1877F2',
+                    tag: lang === 'de' ? 'Instagram & Facebook' : lang === 'en' ? 'Instagram & Facebook' : 'Instagram & Facebook',
+                    badge: null,
+                    pills: lang === 'de'
+                      ? ['Advantage+ Shopping & Reels', 'CAPI %92+ Match Score', 'B2B & B2C Instant Leads']
+                      : lang === 'en'
+                      ? ['Advantage+ Shopping & Reels', 'CAPI %92+ Match Score', 'B2B & B2C Instant Leads']
+                      : ['Advantage+ Shopping & Reels', 'CAPI %92+ Eşleşme Oranı', 'B2B & B2C Müşteri Talebi']
+                  },
+                  'tiktok-ads': {
+                    accent: '#000000',
+                    tag: lang === 'de' ? 'Viral Video & Shop' : lang === 'en' ? 'Viral Video & Shop' : 'Viral Video & TikTok Shop',
+                    badge: null,
+                    pills: lang === 'de'
+                      ? ['Spark Ads & UGC Kampagnen', 'TikTok Shop Seller Center', '18,4M+ Videoaufrufe']
+                      : lang === 'en'
+                      ? ['Spark Ads & Viral UGC', 'TikTok Shop Seller Center', '18.4M+ Video Views']
+                      : ['Spark Ads & Viral UGC', 'TikTok Shop Satıcı Yönetimi', '18,4M+ Video İzlenme']
+                  },
+                  'x-ads': {
+                    accent: '#1DA1F2',
+                    tag: lang === 'de' ? 'B2B & Entscheider' : lang === 'en' ? 'B2B Decision Makers' : 'B2B & Karar Vericiler',
+                    badge: null,
+                    pills: lang === 'de'
+                      ? ['B2B Entscheider-Targeting', 'Trend Takeover Kampagnen', '14,20 € CPL Skalierung']
+                      : lang === 'en'
+                      ? ['B2B Decision Maker Ads', 'Trend Takeover Campaigns', '€14.20 CPL Scalability']
+                      : ['B2B Karar Verici Hedefleme', 'Gündem & Trend Reklamları', '14,20 € CPL Ölçekleme']
+                  },
+                  'seo': {
+                    accent: '#0F9D58',
+                    tag: lang === 'de' ? 'Princeton GEO & KI-Suche' : lang === 'en' ? 'Princeton GEO & AI Search' : 'Princeton GEO & Yapay Zeka',
+                    badge: lang === 'de' ? '100% Organisch' : lang === 'en' ? 'High Authority' : 'Yüksek Otorite',
+                    pills: lang === 'de'
+                      ? ['Google Maps #1 Rankings', 'ChatGPT & Perplexity (GEO)', '100/100 Core Web Vitals']
+                      : lang === 'en'
+                      ? ['Google Maps #1 Rankings', 'ChatGPT & Perplexity (GEO)', '100/100 Core Web Vitals']
+                      : ['Google Haritalar #1. Sıra', 'ChatGPT & Perplexity (GEO)', '100/100 Core Web Vitals']
+                  },
+                  'yorum-yonetimi': {
+                    accent: '#EA4335',
+                    tag: lang === 'de' ? 'Reputation & Rechtsschutz' : lang === 'en' ? 'Reputation & Defense' : 'İtibar & Yasal Savunma',
+                    badge: null,
+                    pills: lang === 'de'
+                      ? ['4.9★ Google & Trustpilot', '100% DSGVO & Fake-Schutz', 'Automatischer QR-Trichter']
+                      : lang === 'en'
+                      ? ['4.9★ Google & Trustpilot', '100% Fake Review Defense', 'Automated QR Review Funnel']
+                      : ['4.9★ Google & Trustpilot', '%100 Sahte Yorum Savunması', 'Otomatik QR Yorum Hunisi']
+                  },
+                  'server-side-tracking': {
+                    accent: '#0F9D58',
+                    tag: lang === 'de' ? 'Setup & CAPI' : lang === 'en' ? 'Setup & CAPI' : 'Kurulum & CAPI',
+                    badge: null,
+                    pills: lang === 'de'
+                      ? ['Google Ads & Maps Setup', 'GA4, GMC & Search Console', 'Meta CAPI & Server-GTM']
+                      : lang === 'en'
+                      ? ['Google Ads & Maps Setup', 'GA4, GMC & Search Console', 'Meta CAPI & Server-GTM']
+                      : ['Google Ads & Harita Kurulumu', 'GA4, GMC & Search Console', 'Meta CAPI & Server-GTM']
+                  },
+                  'youtube-ads': {
+                    accent: '#FF0000',
+                    tag: lang === 'de' ? 'YouTube & Shorts Ads' : lang === 'en' ? 'YouTube & Shorts Ads' : 'YouTube & Shorts Reklamları',
+                    badge: null,
+                    pills: lang === 'de'
+                      ? ['23,1M+ TrueView Aufrufe', '720+ Erfolgreiche Kampagnen', 'Shorts & In-Stream Ads']
+                      : lang === 'en'
+                      ? ['23.1M+ TrueView Views', '720+ Successful Campaigns', 'Shorts & In-Stream Ads']
+                      : ['23,1M+ TrueView İzlenme', '720+ Başarılı Kampanya', 'Shorts & In-Stream Reklamı']
+                  }
+                }
+                const localizedMeta = metaBySlug[service.slug] || metaBySlug['google-ads']
+
+                return (
+                  <a 
+                    key={index} 
+                    href={svcUrl(lang, service.slug)}
+                    className="block group h-full"
+                  >
+                    <div className="h-full bg-white rounded-3xl p-6 sm:p-7 border border-slate-200/80 shadow-[0_4px_20px_rgba(0,0,0,0.03)] hover:shadow-[0_20px_45px_-12px_rgba(15,23,42,0.12)] hover:border-slate-300 transition-all duration-300 hover:-translate-y-1.5 flex flex-col justify-between relative overflow-hidden group">
+                      {/* Top Delicate Accent Line */}
+                      <div
+                        className="absolute top-0 left-0 right-0 h-1 transition-all duration-300 group-hover:h-1.5"
+                        style={{ backgroundColor: localizedMeta.accent }}
+                      ></div>
+
+                      {/* Subtle hover background highlight */}
+                      <div 
+                        className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none rounded-3xl"
+                        style={{ background: `radial-gradient(circle at top right, ${localizedMeta.accent}08 0%, transparent 70%)` }}
+                      ></div>
+
+                      <div className="flex flex-col flex-grow relative z-10">
+                        {/* Header: Icon + Category Badge */}
+                        <div className="flex items-center justify-between mb-5">
+                          <div
+                            className="w-13 h-13 rounded-2xl flex items-center justify-center p-2.5 border shadow-2xs transition-transform duration-300 group-hover:scale-105"
+                            style={{ 
+                              backgroundColor: `${localizedMeta.accent}0D`, 
+                              borderColor: `${localizedMeta.accent}22` 
+                            }}
+                          >
+                            {service.icon === 'google-ads' && (
+                              <img src="https://upload.wikimedia.org/wikipedia/commons/c/c7/Google_Ads_logo.svg" alt="Google Ads" className="w-8 h-8 object-contain" width="32" height="32" loading="lazy" />
+                            )}
+                            {service.icon === 'meta' && (
+                              <img src="https://upload.wikimedia.org/wikipedia/commons/7/7b/Meta_Platforms_Inc._logo.svg" alt="Meta" className="w-8 h-6 object-contain" width="32" height="24" loading="lazy" />
+                            )}
+                            {service.icon === 'tiktok' && (
+                              <img src="https://upload.wikimedia.org/wikipedia/en/a/a9/TikTok_logo.svg" alt="TikTok" className="w-8 h-8 object-contain" width="32" height="32" loading="lazy" />
+                            )}
+                            {service.icon === 'x' && (
+                              <svg className="w-7 h-7" viewBox="0 0 24 24" fill="currentColor"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+                            )}
+                            {service.icon === 'tracking' && (
+                              <svg className="w-7 h-7 text-[#0F9D58]" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><rect x="2" y="2" width="20" height="8" rx="2" ry="2"/><rect x="2" y="14" width="20" height="8" rx="2" ry="2"/><line x1="6" y1="6" x2="6.01" y2="6"/><line x1="6" y1="18" x2="6.01" y2="18"/></svg>
+                            )}
+                            {service.icon === 'seo' && (
+                              <svg className="w-7 h-7" viewBox="0 0 24 24" fill="none" stroke="#0F9D58" strokeWidth="2.5"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.3-4.3"/></svg>
+                            )}
+                            {service.icon === 'review' && (
+                              <svg className="w-7 h-7" viewBox="0 0 24 24" fill="#FBBC04" stroke="#EA4335" strokeWidth="1.5"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                            )}
+                            {service.icon === 'youtube' && (
+                              <img src="https://upload.wikimedia.org/wikipedia/commons/0/09/YouTube_full-color_icon_%282017%29.svg" alt="YouTube" className="w-8 h-8 object-contain" width="32" height="32" loading="lazy" />
+                            )}
+                          </div>
+
+                          <div className="flex items-center gap-1.5">
+                            {localizedMeta.badge && (
+                              <span 
+                                className="text-[10px] font-extrabold uppercase tracking-wider px-2 py-0.5 rounded-full text-white shadow-2xs"
+                                style={{ backgroundColor: localizedMeta.accent }}
+                              >
+                                {localizedMeta.badge}
+                              </span>
+                            )}
+                            <span 
+                              className="text-[11px] font-bold px-3 py-1 rounded-full border tracking-wide transition-colors"
+                              style={{ 
+                                backgroundColor: `${localizedMeta.accent}0F`, 
+                                color: localizedMeta.accent, 
+                                borderColor: `${localizedMeta.accent}26` 
+                              }}
+                            >
+                              {localizedMeta.tag}
+                            </span>
+                          </div>
+                        </div>
+
+                        {/* Title */}
+                        <h3 className="text-lg sm:text-xl font-black text-gray-950 mb-2 tracking-tight group-hover:text-blue-600 transition-colors leading-snug min-h-[50px] flex items-start">
+                          {service.title}
+                        </h3>
+
+                        {/* Description */}
+                        <p className="text-xs sm:text-[13px] text-slate-600 leading-relaxed mb-5 font-normal min-h-[54px] line-clamp-3">
+                          {service.description}
+                        </p>
+
+                        {/* 3 High-Impact Key Deliverables (Clean Luxury Checklist - No Clunky Gray Boxes) */}
+                        <div className="space-y-2 mb-6 mt-auto pt-4 border-t border-slate-100">
+                          {localizedMeta.pills.map((pill, pIdx) => (
+                            <div key={pIdx} className="flex items-center gap-2.5">
+                              <div 
+                                className="w-4 h-4 rounded-full flex items-center justify-center shrink-0 shadow-2xs"
+                                style={{ 
+                                  backgroundColor: `${localizedMeta.accent}16`, 
+                                  color: localizedMeta.accent 
+                                }}
+                              >
+                                <svg className="w-2.5 h-2.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="3.5">
+                                  <path strokeLinecap="round" strokeLinejoin="round" d="M5 13l4 4L19 7" />
+                                </svg>
+                              </div>
+                              <span className="text-xs font-semibold text-slate-800 tracking-tight">
+                                {pill}
+                              </span>
+                            </div>
+                          ))}
+                        </div>
+                      </div>
+
+                      {/* Bottom Action Row */}
+                      <div className="pt-4 border-t border-slate-100 flex items-center justify-between text-xs sm:text-[13px] font-bold text-slate-900 group-hover:text-blue-600 transition-colors relative z-10">
+                        <span>
+                          {lang === 'de' ? 'Leistungsdetails & Strategie' : lang === 'en' ? 'Service Details & Strategy' : 'Hizmet Detayları & Strateji'}
+                        </span>
+                        <div 
+                          className="w-7 h-7 rounded-full flex items-center justify-center transition-all duration-300 group-hover:translate-x-1 shadow-2xs"
+                          style={{ 
+                            backgroundColor: `${localizedMeta.accent}14`, 
+                            color: localizedMeta.accent 
+                          }}
+                        >
+                          <ChevronRight className="w-4 h-4 stroke-[2.5]" />
+                        </div>
+                      </div>
+                    </div>
+                  </a>
+                )
+              })}
           </div>
         </div>
       </section>
