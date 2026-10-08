@@ -173,7 +173,7 @@ export default function GoogleAdsBudgetCalculator({ lang = 'de', defaultCity = '
                 {currentT.budgetLabel}
               </label>
               <span className="text-xl sm:text-2xl font-black text-blue-400 tracking-tight">
-                {monthlyBudget.toLocaleString()} € <span className="text-xs text-slate-400 font-normal">/ Monat</span>
+                {monthlyBudget.toLocaleString()} € <span className="text-xs text-slate-400 font-normal">{lang === 'tr' ? '/ Ay' : lang === 'en' ? '/ Month' : '/ Monat'}</span>
               </span>
             </div>
             <input
@@ -183,11 +183,11 @@ export default function GoogleAdsBudgetCalculator({ lang = 'de', defaultCity = '
               step="500"
               value={monthlyBudget}
               onChange={(e) => setMonthlyBudget(Number(e.target.value))}
-              className="w-full h-2.5 bg-slate-800 rounded-lg appearance-none cursor-pointer accent-blue-500 focus:outline-none"
+              className="w-full h-3 bg-slate-800 rounded-lg appearance-none cursor-pointer accent-blue-500 focus:outline-none"
             />
-            <div className="flex justify-between text-[11px] text-slate-400 mt-2 font-mono">
-              <span>1.000 € (Start)</span>
-              <span>5.000 € (Mittelstand)</span>
+            <div className="flex justify-between text-[10px] sm:text-[11px] text-slate-400 mt-2 font-mono">
+              <span>1.000 € {lang === 'tr' ? '(Başlangıç)' : lang === 'en' ? '(Starter)' : '(Start)'}</span>
+              <span>5.000 € {lang === 'tr' ? '(KOBİ)' : lang === 'en' ? '(Mid-Market)' : '(Mittelstand)'}</span>
               <span>10.000 €+</span>
               <span>20.000 €</span>
             </div>
@@ -200,7 +200,7 @@ export default function GoogleAdsBudgetCalculator({ lang = 'de', defaultCity = '
                 {currentT.estClicksLabel}
               </div>
               <div className="text-lg sm:text-xl font-bold text-white">
-                ~{estClicks.toLocaleString()} <span className="text-xs text-slate-400 font-normal">Klicks</span>
+                ~{estClicks.toLocaleString()} <span className="text-xs text-slate-400 font-normal">{lang === 'tr' ? 'Tıklama' : lang === 'en' ? 'Clicks' : 'Klicks'}</span>
               </div>
               <div className="text-[10px] text-slate-400 mt-0.5">
                 Ø CPC: ~{selected.avgCpc.toFixed(2)} €
@@ -241,9 +241,9 @@ export default function GoogleAdsBudgetCalculator({ lang = 'de', defaultCity = '
                     <CheckCircle2 className="w-4 h-4 text-emerald-400" />
                     <span>Salih Maral Fixpreis</span>
                   </div>
-                  <div className="text-[10px] text-slate-400">Keine prozentuale Beteiligung</div>
+                  <div className="text-[10px] text-slate-400">{lang === 'tr' ? 'Bütçeden komisyon kesintisi yok' : lang === 'en' ? 'Zero ad-spend percentage fee' : 'Keine prozentuale Beteiligung'}</div>
                 </div>
-                <span className="font-black text-base text-emerald-400">ab {salihMaralFixpreis} € / Mo.</span>
+                <span className="font-black text-base text-emerald-400">{lang === 'tr' ? `${salihMaralFixpreis} € / Ay'dan` : lang === 'en' ? `from ${salihMaralFixpreis} € / Mo.` : `ab ${salihMaralFixpreis} € / Mo.`}</span>
               </div>
             </div>
 

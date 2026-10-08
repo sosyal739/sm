@@ -1091,30 +1091,32 @@ export default function ServiceDetailClient({ initialService, initialLang }) {
 
             {/* Right: Languages & Mobile Hamburger */}
             <div className="flex items-center space-x-2">
-              <Button
-                variant={lang === 'de' ? 'default' : 'outline'}
-                size="sm"
-                onClick={() => handleLanguageChange('de')}
-                className={lang === 'de' ? 'bg-[#4285F4] text-white hover:bg-blue-600' : 'text-gray-700'}
-              >
-                DE
-              </Button>
-              <Button
-                variant={lang === 'en' ? 'default' : 'outline'}
-                size="sm"
-                onClick={() => handleLanguageChange('en')}
-                className={lang === 'en' ? 'bg-[#4285F4] text-white hover:bg-blue-600' : 'text-gray-700'}
-              >
-                EN
-              </Button>
-              <Button
-                variant={lang === 'tr' ? 'default' : 'outline'}
-                size="sm"
-                onClick={() => handleLanguageChange('tr')}
-                className={lang === 'tr' ? 'bg-[#4285F4] text-white hover:bg-blue-600' : 'text-gray-700'}
-              >
-                TR
-              </Button>
+              <div className="hidden sm:flex items-center space-x-1 bg-slate-100 p-1 rounded-xl">
+                <Button
+                  variant={lang === 'de' ? 'default' : 'outline'}
+                  size="sm"
+                  onClick={() => handleLanguageChange('de')}
+                  className={lang === 'de' ? 'bg-[#4285F4] text-white hover:bg-blue-600' : 'text-gray-700'}
+                >
+                  DE
+                </Button>
+                <Button
+                  variant={lang === 'en' ? 'default' : 'outline'}
+                  size="sm"
+                  onClick={() => handleLanguageChange('en')}
+                  className={lang === 'en' ? 'bg-[#4285F4] text-white hover:bg-blue-600' : 'text-gray-700'}
+                >
+                  EN
+                </Button>
+                <Button
+                  variant={lang === 'tr' ? 'default' : 'outline'}
+                  size="sm"
+                  onClick={() => handleLanguageChange('tr')}
+                  className={lang === 'tr' ? 'bg-[#4285F4] text-white hover:bg-blue-600' : 'text-gray-700'}
+                >
+                  TR
+                </Button>
+              </div>
 
               {/* Mobile menu toggle */}
               <button
@@ -1134,7 +1136,29 @@ export default function ServiceDetailClient({ initialService, initialLang }) {
 
         {/* Mobile Navigation Drawer */}
         {mobileMenuOpen && (
-          <div className="md:hidden border-t border-gray-100 bg-white px-4 py-4 space-y-3 shadow-lg animate-in fade-in">
+          <div className="md:hidden border-t border-gray-100 bg-white px-4 py-4 space-y-4 shadow-xl animate-in fade-in max-h-[calc(100vh-5rem)] overflow-y-auto">
+            {/* Mobile Language Switcher */}
+            <div className="flex items-center justify-between bg-slate-100 p-1.5 rounded-xl border border-slate-200/80">
+              <button
+                onClick={() => { handleLanguageChange('de'); setMobileMenuOpen(false); }}
+                className={`flex-1 py-2 text-xs font-bold rounded-lg text-center transition-all ${lang === 'de' ? 'bg-[#4285F4] text-white shadow-xs' : 'text-slate-700'}`}
+              >
+                🇩🇪 DE
+              </button>
+              <button
+                onClick={() => { handleLanguageChange('en'); setMobileMenuOpen(false); }}
+                className={`flex-1 py-2 text-xs font-bold rounded-lg text-center transition-all ${lang === 'en' ? 'bg-[#4285F4] text-white shadow-xs' : 'text-slate-700'}`}
+              >
+                🇬🇧 EN
+              </button>
+              <button
+                onClick={() => { handleLanguageChange('tr'); setMobileMenuOpen(false); }}
+                className={`flex-1 py-2 text-xs font-bold rounded-lg text-center transition-all ${lang === 'tr' ? 'bg-[#4285F4] text-white shadow-xs' : 'text-slate-700'}`}
+              >
+                🇹🇷 TR
+              </button>
+            </div>
+
             <div className="font-bold text-xs uppercase tracking-wider text-gray-400">
               {navT.services}
             </div>

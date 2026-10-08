@@ -293,7 +293,7 @@ export default function LeadFunnelWizard({ lang = 'de' }) {
                 required
                 value={formData.name}
                 onChange={(e) => setFormData({ ...formData, name: e.target.value })}
-                className="w-full px-4 py-3 rounded-xl border border-gray-200 focus:border-[#4285F4] focus:ring-2 focus:ring-blue-100 outline-none text-sm"
+                className="w-full px-4 py-3 rounded-xl border border-gray-200 focus:border-[#4285F4] focus:ring-2 focus:ring-blue-100 outline-none text-base sm:text-sm"
               />
             </div>
             <div>
@@ -303,7 +303,7 @@ export default function LeadFunnelWizard({ lang = 'de' }) {
                 placeholder={content.labels.websitePlaceholder}
                 value={formData.website}
                 onChange={(e) => setFormData({ ...formData, website: e.target.value })}
-                className="w-full px-4 py-3 rounded-xl border border-gray-200 focus:border-[#4285F4] focus:ring-2 focus:ring-blue-100 outline-none text-sm"
+                className="w-full px-4 py-3 rounded-xl border border-gray-200 focus:border-[#4285F4] focus:ring-2 focus:ring-blue-100 outline-none text-base sm:text-sm"
               />
             </div>
             <div>
@@ -313,7 +313,7 @@ export default function LeadFunnelWizard({ lang = 'de' }) {
                 required
                 value={formData.phone}
                 onChange={(e) => setFormData({ ...formData, phone: e.target.value })}
-                className="w-full px-4 py-3 rounded-xl border border-gray-200 focus:border-[#4285F4] focus:ring-2 focus:ring-blue-100 outline-none text-sm"
+                className="w-full px-4 py-3 rounded-xl border border-gray-200 focus:border-[#4285F4] focus:ring-2 focus:ring-blue-100 outline-none text-base sm:text-sm"
               />
             </div>
             <div>
@@ -323,7 +323,7 @@ export default function LeadFunnelWizard({ lang = 'de' }) {
                 required
                 value={formData.email}
                 onChange={(e) => setFormData({ ...formData, email: e.target.value })}
-                className="w-full px-4 py-3 rounded-xl border border-gray-200 focus:border-[#4285F4] focus:ring-2 focus:ring-blue-100 outline-none text-sm"
+                className="w-full px-4 py-3 rounded-xl border border-gray-200 focus:border-[#4285F4] focus:ring-2 focus:ring-blue-100 outline-none text-base sm:text-sm"
               />
             </div>
           </div>
@@ -334,7 +334,7 @@ export default function LeadFunnelWizard({ lang = 'de' }) {
               type="text"
               value={formData.note}
               onChange={(e) => setFormData({ ...formData, note: e.target.value })}
-              className="w-full px-4 py-3 rounded-xl border border-gray-200 focus:border-[#4285F4] focus:ring-2 focus:ring-blue-100 outline-none text-sm"
+              className="w-full px-4 py-3 rounded-xl border border-gray-200 focus:border-[#4285F4] focus:ring-2 focus:ring-blue-100 outline-none text-base sm:text-sm"
             />
           </div>
 

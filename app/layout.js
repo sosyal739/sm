@@ -395,7 +395,7 @@ export default function RootLayout({ children }) {
           dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
         />
       </head>
-      <body className={`${manrope.className} ${manrope.variable} font-sans antialiased text-gray-900 bg-white selection:bg-[#5138EE]/10 selection:text-[#5138EE]`}>
+      <body className={`${manrope.className} ${manrope.variable} font-sans antialiased text-gray-900 bg-white selection:bg-[#5138EE]/10 selection:text-[#5138EE] pb-20 md:pb-0`}>
         {children}
         <MobileStickyBar />
       </body>

@@ -851,6 +851,18 @@ export default function Home({ initialLang = 'de' }) {
     document.documentElement.lang = lang
   }, [lang])
 
+  // Smooth scroll to hash on initial load (e.g. /#contact)
+  useEffect(() => {
+    if (typeof window !== 'undefined' && window.location.hash) {
+      const id = window.location.hash.replace('#', '')
+      const timer = setTimeout(() => {
+        const el = document.getElementById(id)
+        if (el) el.scrollIntoView({ behavior: 'smooth' })
+      }, 350)
+      return () => clearTimeout(timer)
+    }
+  }, [])
+
   // Fetch real blog posts dynamically
   useEffect(() => {
     const controller = new AbortController()
@@ -1333,10 +1345,10 @@ export default function Home({ initialLang = 'de' }) {
               </p>
 
               {/* CTA Action Buttons */}
-              <div className="flex flex-wrap gap-4 pt-2">
+              <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 pt-2 w-full sm:w-auto">
                 <button
                   onClick={() => scrollToSection('contact')}
-                  className="bg-[#4285F4] hover:bg-[#3367d6] text-white font-bold text-base px-8 py-4 rounded-2xl shadow-xl hover:shadow-2xl transition-all duration-300 hover:scale-105 flex items-center gap-2 cursor-pointer"
+                  className="w-full sm:w-auto bg-[#4285F4] hover:bg-[#3367d6] text-white font-bold text-sm sm:text-base px-6 sm:px-8 py-3.5 sm:py-4 rounded-2xl shadow-xl hover:shadow-2xl transition-all duration-300 hover:scale-105 flex items-center justify-center gap-2 cursor-pointer"
                 >
                   <Mail className="h-5 w-5" />
                   <span>{t.hero.cta2}</span>
@@ -1345,7 +1357,7 @@ export default function Home({ initialLang = 'de' }) {
 
                 <button
                   onClick={() => scrollToSection('services')}
-                  className="bg-white hover:bg-slate-50 text-slate-800 border border-slate-200/90 font-bold text-base px-7 py-4 rounded-2xl shadow-2xs hover:shadow transition-all duration-300 flex items-center gap-2.5 cursor-pointer"
+                  className="w-full sm:w-auto bg-white hover:bg-slate-50 text-slate-800 border border-slate-200/90 font-bold text-sm sm:text-base px-6 sm:px-7 py-3.5 sm:py-4 rounded-2xl shadow-2xs hover:shadow transition-all duration-300 flex items-center justify-center gap-2.5 cursor-pointer"
                 >
                   <span>{t.hero.cta1}</span>
                   <ArrowRight className="h-4 w-4 text-slate-400" />
@@ -1402,7 +1414,7 @@ export default function Home({ initialLang = 'de' }) {
               <div className="relative w-full max-w-lg animate-hero-float">
                 
                 {/* Floating Top-Left Badge (Google Certified) */}
-                <div className="hidden sm:flex absolute -top-4 -left-4 z-20 bg-white/95 backdrop-blur-md border border-slate-200/90 rounded-2xl px-4 py-2.5 shadow-xl items-center gap-2.5 hover:scale-105 transition-transform duration-300 animate-badge-float1">
+                <div className="flex absolute -top-3 -left-2 sm:-top-4 sm:-left-4 z-20 bg-white/95 backdrop-blur-md border border-slate-200/90 rounded-2xl px-3 py-2 sm:px-4 sm:py-2.5 shadow-xl items-center gap-2 sm:gap-2.5 hover:scale-105 transition-transform duration-300 animate-badge-float1 scale-90 sm:scale-100 origin-top-left">
                   <div className="w-8 h-8 rounded-xl bg-blue-50 border border-blue-100 flex items-center justify-center p-1.5 shadow-xs">
                     <img src="https://upload.wikimedia.org/wikipedia/commons/c/c7/Google_Ads_logo.svg" alt="Google Ads" className="w-full h-full object-contain" width="24" height="24" loading="lazy" />
                   </div>
@@ -1509,7 +1521,7 @@ export default function Home({ initialLang = 'de' }) {
         <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[750px] h-[250px] bg-gradient-to-r from-blue-400/10 via-purple-300/10 to-indigo-400/10 rounded-full blur-[100px] pointer-events-none -z-0"></div>
         
         <div className="container mx-auto px-4 max-w-7xl relative z-10">
-          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-4 md:gap-5">
+          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-3 sm:gap-4 md:gap-5">
             {[
               { val: '17+', label: t.stats.experience, color: '#4285F4', trend: '2008 – 2026' },
               { val: '500+', label: t.stats.keywords, color: '#EA4335', trend: 'Google #1. Sıra' },
@@ -1520,22 +1532,22 @@ export default function Home({ initialLang = 'de' }) {
             ].map((stat, i) => (
               <div
                 key={i}
-                className="bg-white/95 backdrop-blur-xs rounded-3xl p-5 md:p-6 border border-slate-200/80 shadow-[0_4px_20px_rgba(0,0,0,0.03)] hover:shadow-[0_16px_36px_rgba(81,56,238,0.08)] hover:border-slate-300 transition-all duration-300 hover:-translate-y-1.5 flex flex-col justify-between text-center relative overflow-hidden group"
+                className="bg-white/95 backdrop-blur-xs rounded-2xl sm:rounded-3xl p-3.5 sm:p-5 md:p-6 border border-slate-200/80 shadow-[0_4px_20px_rgba(0,0,0,0.03)] hover:shadow-[0_16px_36px_rgba(81,56,238,0.08)] hover:border-slate-300 transition-all duration-300 hover:-translate-y-1.5 flex flex-col justify-between text-center relative overflow-hidden group"
               >
                 <div
                   className="absolute top-0 left-0 right-0 h-1 transition-all duration-300 group-hover:h-1.5"
                   style={{ backgroundColor: stat.color }}
                 ></div>
 
-                <div className="inline-flex items-center justify-center space-x-1 bg-slate-50 border border-slate-200/80 px-2.5 py-0.5 rounded-full mb-3 shadow-[0_1px_3px_rgba(0,0,0,0.02)]">
-                  <span className="text-[10px] font-bold text-slate-700">{stat.trend}</span>
+                <div className="inline-flex items-center justify-center space-x-1 bg-slate-50 border border-slate-200/80 px-2 py-0.5 rounded-full mb-2 sm:mb-3 shadow-[0_1px_3px_rgba(0,0,0,0.02)]">
+                  <span className="text-[9px] sm:text-[10px] font-bold text-slate-700">{stat.trend}</span>
                 </div>
 
-                <p className="text-3xl lg:text-4xl font-black mb-1 tracking-tight" style={{ color: stat.color }}>
+                <p className="text-2xl sm:text-3xl lg:text-4xl font-black mb-1 tracking-tight" style={{ color: stat.color }}>
                   {stat.val}
                 </p>
 
-                <p className="text-xs font-semibold text-slate-600 mt-1">
+                <p className="text-[11px] sm:text-xs font-semibold text-slate-600 mt-1">
                   {stat.label}
                 </p>
               </div>
@@ -2244,7 +2256,7 @@ export default function Home({ initialLang = 'de' }) {
                         value={formData.name}
                         onChange={(e) => setFormData({ ...formData, name: e.target.value })}
                         required
-                        className="border border-slate-200 focus:border-[#4285F4] rounded-2xl bg-slate-50/50 py-3 text-sm transition-colors"
+                        className="border border-slate-200 focus:border-[#4285F4] rounded-2xl bg-slate-50/50 py-3 text-base sm:text-sm transition-colors"
                       />
                     </div>
                     <div>
@@ -2254,7 +2266,7 @@ export default function Home({ initialLang = 'de' }) {
                         value={formData.email}
                         onChange={(e) => setFormData({ ...formData, email: e.target.value })}
                         required
-                        className="border border-slate-200 focus:border-[#4285F4] rounded-2xl bg-slate-50/50 py-3 text-sm transition-colors"
+                        className="border border-slate-200 focus:border-[#4285F4] rounded-2xl bg-slate-50/50 py-3 text-base sm:text-sm transition-colors"
                       />
                     </div>
                   </div>
@@ -2265,7 +2277,7 @@ export default function Home({ initialLang = 'de' }) {
                       value={formData.phone}
                       onChange={(e) => setFormData({ ...formData, phone: e.target.value })}
                       required
-                      className="border border-slate-200 focus:border-[#4285F4] rounded-2xl bg-slate-50/50 py-3 text-sm transition-colors"
+                      className="border border-slate-200 focus:border-[#4285F4] rounded-2xl bg-slate-50/50 py-3 text-base sm:text-sm transition-colors"
                     />
                   </div>
                   <div>
@@ -2275,7 +2287,7 @@ export default function Home({ initialLang = 'de' }) {
                       onChange={(e) => setFormData({ ...formData, message: e.target.value })}
                       rows={5}
                       required
-                      className="border border-slate-200 focus:border-[#4285F4] rounded-2xl bg-slate-50/50 py-3 text-sm transition-colors"
+                      className="border border-slate-200 focus:border-[#4285F4] rounded-2xl bg-slate-50/50 py-3 text-base sm:text-sm transition-colors"
                     />
                   </div>
                   {formStatus.message && (

@@ -346,9 +346,9 @@ export default function BlogPageClient({ initialPosts = [] }) {
             </div>
 
             {/* Right: Search, Languages & Mobile Hamburger */}
-            <div className="flex items-center space-x-3">
+            <div className="flex items-center space-x-2 sm:space-x-3">
               <AiSearchWidget currentLang={lang} />
-              <div className="flex items-center space-x-1 bg-gray-100 p-1 rounded-xl">
+              <div className="hidden sm:flex items-center space-x-1 bg-gray-100 p-1 rounded-xl">
                 <button
                   onClick={() => handleLanguageChange('de')}
                   className={`px-2.5 py-1 text-xs font-semibold rounded-lg transition-all ${lang === 'de' ? 'bg-[#4285F4] text-white shadow-sm' : 'text-gray-600 hover:text-gray-900'}`}
@@ -372,7 +372,7 @@ export default function BlogPageClient({ initialPosts = [] }) {
               {/* Mobile menu toggle */}
               <button
                 onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
-                className="md:hidden p-2 rounded-lg bg-gray-100 hover:bg-gray-200 text-gray-700 transition-colors ml-1 cursor-pointer"
+                className="md:hidden p-2 rounded-xl bg-gray-100 hover:bg-gray-200 text-gray-700 transition-colors cursor-pointer"
                 aria-label="Menü"
               >
                 {mobileMenuOpen ? <X className="w-5 h-5" /> : <Menu className="w-5 h-5" />}
@@ -383,7 +383,29 @@ export default function BlogPageClient({ initialPosts = [] }) {
 
         {/* Mobile Navigation Drawer */}
         {mobileMenuOpen && (
-          <div className="md:hidden border-t border-gray-100 bg-white px-4 py-4 space-y-3 shadow-lg animate-in fade-in">
+          <div className="md:hidden border-t border-gray-100 bg-white px-4 py-4 space-y-4 shadow-xl animate-in fade-in max-h-[calc(100vh-5rem)] overflow-y-auto">
+            {/* Mobile Language Switcher */}
+            <div className="flex items-center justify-between bg-slate-100 p-1.5 rounded-xl border border-slate-200/80">
+              <button
+                onClick={() => { handleLanguageChange('de'); setMobileMenuOpen(false); }}
+                className={`flex-1 py-2 text-xs font-bold rounded-lg text-center transition-all ${lang === 'de' ? 'bg-[#4285F4] text-white shadow-xs' : 'text-slate-700'}`}
+              >
+                🇩🇪 DE
+              </button>
+              <button
+                onClick={() => { handleLanguageChange('en'); setMobileMenuOpen(false); }}
+                className={`flex-1 py-2 text-xs font-bold rounded-lg text-center transition-all ${lang === 'en' ? 'bg-[#4285F4] text-white shadow-xs' : 'text-slate-700'}`}
+              >
+                🇬🇧 EN
+              </button>
+              <button
+                onClick={() => { handleLanguageChange('tr'); setMobileMenuOpen(false); }}
+                className={`flex-1 py-2 text-xs font-bold rounded-lg text-center transition-all ${lang === 'tr' ? 'bg-[#4285F4] text-white shadow-xs' : 'text-slate-700'}`}
+              >
+                🇹🇷 TR
+              </button>
+            </div>
+
             <div className="font-bold text-xs uppercase tracking-wider text-gray-400">
               {t.nav.services}
             </div>
@@ -392,7 +414,7 @@ export default function BlogPageClient({ initialPosts = [] }) {
                 <a
                   key={idx}
                   href={getLocalizedServiceUrl(lang, s.slug)}
-                  className="text-xs font-semibold text-gray-700 hover:text-[#4285F4] py-1 block"
+                  className="text-xs font-semibold text-gray-700 hover:text-[#4285F4] py-1.5 block"
                   onClick={() => setMobileMenuOpen(false)}
                 >
                   {s.title}
@@ -400,16 +422,16 @@ export default function BlogPageClient({ initialPosts = [] }) {
               ))}
             </div>
             <div className="pt-2 border-t border-gray-100 flex flex-col space-y-2 text-sm font-semibold">
-              <a href={`/${lang}/standorte`} className="text-[#4285F4] hover:underline" onClick={() => setMobileMenuOpen(false)}>
+              <a href={`/${lang}/standorte`} className="text-[#4285F4] hover:underline py-1" onClick={() => setMobileMenuOpen(false)}>
                 📍 {t.nav.standorte} (18 Metropolen)
               </a>
-              <a href="/blog" className="text-[#4285F4] font-bold" onClick={() => setMobileMenuOpen(false)}>
+              <a href="/blog" className="text-[#4285F4] font-bold py-1" onClick={() => setMobileMenuOpen(false)}>
                 📚 Blog & Ratgeber
               </a>
-              <a href={`${lang === 'de' ? '' : `/${lang}`}/#about`} className="text-gray-800 hover:text-[#4285F4]" onClick={() => setMobileMenuOpen(false)}>
+              <a href={`${lang === 'de' ? '' : `/${lang}`}/#about`} className="text-gray-800 hover:text-[#4285F4] py-1" onClick={() => setMobileMenuOpen(false)}>
                 👤 {t.nav.about}
               </a>
-              <a href={`${lang === 'de' ? '' : `/${lang}`}/#contact`} className="text-gray-800 hover:text-[#4285F4]" onClick={() => setMobileMenuOpen(false)}>
+              <a href={`${lang === 'de' ? '' : `/${lang}`}/#contact`} className="text-gray-800 hover:text-[#4285F4] py-1" onClick={() => setMobileMenuOpen(false)}>
                 ✉️ {t.nav.contact}
               </a>
             </div>
