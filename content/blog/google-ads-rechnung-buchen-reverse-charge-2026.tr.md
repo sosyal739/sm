@@ -75,10 +75,23 @@ coverImage: "https://images.unsplash.com/photo-1554224155-8d04cb21cd6c?w=600&h=3
   <li><strong>Bütçeyi Komisyonlu Ajanslara Kaptırmak:</strong> Birçok ajans reklam harcamanızın üzerinden %15-%20 komisyon alarak maliyetinizi artırır. Biz Salih Maral olarak <strong>şeffaf ve sabit fiyatlı (Fixpreis ab 590 €/ay)</strong> çalışarak bütçenizin doğrudan müşteriye dönüşmesini sağlıyoruz.</li>
 </ol>
 
-<div class="cta-box" style="background: linear-gradient(135deg, #1e3a8a 0%, #064e3b 100%); border: 2px solid #10b981; border-radius: 1.25rem; padding: 2rem; margin: 2.5rem 0; text-align: center; color: white;">
-  <h3 style="font-size: 1.5rem; font-weight: 800; color: white; margin-bottom: 0.5rem;">Google Ads Faturalarınız ve Reklam Bütçeniz Güvende mi?</h3>
-  <p style="color: #cbd5e1; font-size: 0.95rem; max-width: 600px; margin: 0 auto 1.5rem auto; line-height: 1.5;">Yanlış vergi ayarları ve kontrolsüz harcamalarla bütçenizi tüketmeyin. 17+ yıllık resmi Google Partneri Salih Maral ile hesabınızı ücretsiz inceleyelim.</p>
-  <a href="/#contact" style="display: inline-block; background: #4285F4; color: white; font-weight: 800; padding: 0.85rem 2rem; border-radius: 0.75rem; text-decoration: none; font-size: 1rem;">Ücretsiz Teklif Alın ➔</a>
+<div class="cta-box" style="background: linear-gradient(135deg, #0f172a 0%, #1e3a8a 50%, #064e3b 100%); border: 2px solid #38bdf8; border-radius: 1.25rem; padding: 2.2rem 1.8rem; margin: 2.5rem 0; text-align: center; color: white; box-shadow: 0 10px 25px -5px rgba(56, 189, 248, 0.25);">
+  <div style="display: inline-block; background: rgba(56, 189, 248, 0.2); border: 1px solid #38bdf8; color: #7dd3fc; font-weight: 700; font-size: 0.8rem; padding: 0.35rem 1rem; border-radius: 9999px; margin-bottom: 1rem; text-transform: uppercase; letter-spacing: 0.05em;">
+    🛡️ Ücretsiz 15 Dakikalık Hesap & Vergi Güvenlik Check-up
+  </div>
+  <h3 style="font-size: 1.6rem; font-weight: 800; color: white; margin-bottom: 0.75rem; line-height: 1.3;">Finanzamt Cezası veya Boşa Harcanan Reklam Bütçesi Riski Almayın</h3>
+  <p style="color: #cbd5e1; font-size: 0.98rem; max-width: 640px; margin: 0 auto 1.5rem auto; line-height: 1.6;">
+    Almanya'da faaliyet gösteren işletmenizin <strong>Google Ads USt-IdNr. vergi kaydını</strong>, fatura dökümlerini ve <strong>bütçenizi tüketen negatif anahtar kelime kaçaklarını</strong> 17+ yıllık resmi Google Partner tecrübesiyle ücretsiz denetleyelim.
+  </p>
+  <div style="display: flex; flex-wrap: wrap; justify-content: center; gap: 1rem; margin-top: 1rem;">
+    <a href="/tr#contact" style="display: inline-flex; align-items: center; justify-content: center; background: #3b82f6; hover:bg-blue-600; color: white; font-weight: 800; padding: 0.9rem 1.8rem; border-radius: 0.75rem; text-decoration: none; font-size: 1rem; box-shadow: 0 4px 14px rgba(59, 130, 246, 0.4);">
+      🚀 Ücretsiz Hesap Denetimi İsteyin ➔
+    </a>
+    <a href="mailto:info@salihmaral.de?subject=Google%20Ads%20Fatura%20ve%20Hesap%20Denetimi%20Talebi" style="display: inline-flex; align-items: center; justify-content: center; background: rgba(255, 255, 255, 0.1); border: 1px solid rgba(255, 255, 255, 0.3); color: white; font-weight: 700; padding: 0.9rem 1.5rem; border-radius: 0.75rem; text-decoration: none; font-size: 0.95rem;">
+      ✉️ info@salihmaral.de
+    </a>
+  </div>
+  <p style="color: #94a3b8; font-size: 0.82rem; margin-top: 1rem; margin-bottom: 0;">⚡ Komisyonsuz, şeffaf aylık sabit ücret modeli (Fixpreis ab 590 €/ay). Taahhütsüz & gizlilik garantili.</p>
 </div>
 
 <h2>💡 Bütçenizi Canlı Hesaplayın</h2>

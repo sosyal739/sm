@@ -72,11 +72,56 @@ coverImage: "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?w=1200
   <li><strong>Düğün Salonları & Organizasyon (Festsaal):</strong> Hafta sonu düğün ve nişan arayan gurbetçi ailelere yönelik bölgesel hedeflemeler.</li>
 </ol>
 
+<h2>📊 Dortmund & Ruhr Bölgesi Google Ads Sektör Maliyetleri (CPC & CPL)</h2>
+
+<p>Resmi Google Partneri olarak Ruhr bölgesindeki yüzlerce reklam açık artırmasını canlı analiz ediyoruz. Dortmund ve çevresindeki işletmeler için 2026 piyasa ortalamaları:</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Sektör (Dortmund & Çevresi)</th>
+      <th>Ortalama Tıklama (CPC)</th>
+      <th>Talep / Müşteri Başına Maliyet</th>
+      <th>Önerilen Aylık Bütçe</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>İnşaat, Tadilat & Banyo (Sanierung / Handwerk)</strong></td>
+      <td>4,20 € – 7,80 €</td>
+      <td>35,00 € – 52,00 €</td>
+      <td>1.200 € – 2.800 €</td>
+    </tr>
+    <tr>
+      <td><strong>Oto Tamir & Ekspertiz (Kfz-Werkstatt)</strong></td>
+      <td>3,50 € – 8,20 €</td>
+      <td>28,00 € – 48,00 €</td>
+      <td>1.000 € – 2.200 €</td>
+    </tr>
+    <tr>
+      <td><strong>Gastronomi & Paket Servis (Doğrudan Sipariş)</strong></td>
+      <td>0,80 € – 1,80 €</td>
+      <td>4,50 € – 8,50 €</td>
+      <td>800 € – 1.800 €</td>
+    </tr>
+    <tr>
+      <td><strong>Avukatlar, Hukuk & Mali Müşavirlik</strong></td>
+      <td>8,00 € – 18,00 €</td>
+      <td>45,00 € – 85,00 €</td>
+      <td>1.500 € – 3.500 €</td>
+    </tr>
+  </tbody>
+</table>
+
 <div class="cta-box" style="background: linear-gradient(135deg, #0f172a 0%, #1e1b4b 100%); border: 2px solid #4285F4; border-radius: 1.5rem; padding: 2.2rem; margin: 3rem 0; text-align: center; color: white; box-shadow: 0 20px 40px -15px rgba(66, 133, 244, 0.4);">
+  <div style="display: inline-block; background: rgba(66, 133, 244, 0.2); border: 1px solid #60a5fa; color: #93c5fd; font-weight: 700; font-size: 0.8rem; padding: 0.35rem 1rem; border-radius: 9999px; margin-bottom: 1rem; text-transform: uppercase;">
+    🎯 Dortmund & Ruhr Bölgesi Google Ads Ajansı
+  </div>
   <h3 style="font-size: 1.7rem; font-weight: 800; color: white; margin-bottom: 0.6rem;">Dortmund'da Reklam Bütçenizi Boşa Harcamayın</h3>
-  <p style="color: #cbd5e1; font-size: 1rem; max-width: 620px; margin: 0 auto 1.6rem auto; line-height: 1.6;">17+ yıllık resmi Google Partneri tecrübesiyle mevcut reklam hesabınızı veya sektör potansiyelinizi ücretsiz inceleyelim. Komisyonsuz, şeffaf ve sabit fiyat garantisi.</p>
+  <p style="color: #cbd5e1; font-size: 1rem; max-width: 620px; margin: 0 auto 1.6rem auto; line-height: 1.6;">17+ yıllık resmi Google Partneri tecrübesiyle mevcut reklam hesabınızı veya sektör potansiyelinizi ücretsiz inceleyelim. Komisyonsuz, şeffaf ve sabit fiyat garantisiyle (Fixpreis ab 590 €/ay) doğrudan Salih Maral ile çalışın.</p>
   <div style="display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap;">
-    <a href="/tr/standorte/dortmund" style="display: inline-block; background: #4285F4; color: white; font-weight: 800; padding: 1rem 2rem; border-radius: 0.85rem; text-decoration: none; font-size: 1.05rem; box-shadow: 0 10px 20px -5px rgba(66, 133, 244, 0.5);">Dortmund Şehir Sayfası ➔</a>
+    <a href="/tr#contact" style="display: inline-flex; align-items: center; justify-content: center; background: #4285F4; color: white; font-weight: 800; padding: 0.95rem 1.8rem; border-radius: 0.85rem; text-decoration: none; font-size: 1rem; box-shadow: 0 10px 20px -5px rgba(66, 133, 244, 0.5);">Ücretsiz Hesap Analizi İsteyin ➔</a>
+    <a href="mailto:info@salihmaral.de?subject=Dortmund%20Google%20Ads%20Talebi" style="display: inline-flex; align-items: center; justify-content: center; background: rgba(255, 255, 255, 0.1); border: 1px solid rgba(255, 255, 255, 0.3); color: white; font-weight: 700; padding: 0.95rem 1.5rem; border-radius: 0.85rem; text-decoration: none; font-size: 0.95rem;">E-Posta: info@salihmaral.de</a>
   </div>
 </div>
 

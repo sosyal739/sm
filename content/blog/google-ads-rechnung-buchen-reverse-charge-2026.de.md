@@ -77,10 +77,23 @@ coverImage: "https://images.unsplash.com/photo-1554224155-8d04cb21cd6c?w=600&h=3
   <li><strong>Fehlende ZM-Prüfung bei innergemeinschaftlichen Leistungen:</strong> Für empfangene Dienstleistungen muss der deutsche Unternehmer keine Zusammenfassende Meldung (ZM) abgeben, muss jedoch die USt-IdNr. von Google Ireland Limited (IE6388047V) in den Buchhaltungsunterlagen dokumentieren.</li>
 </ol>
 
-<div class="cta-box" style="background: linear-gradient(135deg, #0f172a 0%, #1e3a8a 100%); border: 2px solid #3b82f6; border-radius: 1.25rem; padding: 2rem; margin: 2.5rem 0; text-align: center; color: white;">
-  <h3 style="font-size: 1.5rem; font-weight: 800; color: white; margin-bottom: 0.5rem;">Vermeiden Sie unnötige Werbeausgaben & Steuerrisiken</h3>
-  <p style="color: #cbd5e1; font-size: 0.95rem; max-width: 600px; margin: 0 auto 1.5rem auto; line-height: 1.5;">Lassen Sie Ihr Google Ads Konto vom zertifizierten Google Partner (17+ Jahre Erfahrung) unverbindlich prüfen. Faire Festpreis-Betreuung ohne prozentuale Budget-Provision.</p>
-  <a href="/#contact" style="display: inline-block; background: #4285F4; color: white; font-weight: 800; padding: 0.85rem 2rem; border-radius: 0.75rem; text-decoration: none; font-size: 1rem;">Kostenloses Angebot anfordern ➔</a>
+<div class="cta-box" style="background: linear-gradient(135deg, #0f172a 0%, #1e3a8a 50%, #064e3b 100%); border: 2px solid #38bdf8; border-radius: 1.25rem; padding: 2.2rem 1.8rem; margin: 2.5rem 0; text-align: center; color: white; box-shadow: 0 10px 25px -5px rgba(56, 189, 248, 0.25);">
+  <div style="display: inline-block; background: rgba(56, 189, 248, 0.2); border: 1px solid #38bdf8; color: #7dd3fc; font-weight: 700; font-size: 0.8rem; padding: 0.35rem 1rem; border-radius: 9999px; margin-bottom: 1rem; text-transform: uppercase; letter-spacing: 0.05em;">
+    🛡️ Kostenloser 15-Minuten Google Ads & Rechnungs-Check
+  </div>
+  <h3 style="font-size: 1.6rem; font-weight: 800; color: white; margin-bottom: 0.75rem; line-height: 1.3;">Kein Steuerrisiko beim Finanzamt & keine Budgetverschwendung</h3>
+  <p style="color: #cbd5e1; font-size: 0.98rem; max-width: 640px; margin: 0 auto 1.5rem auto; line-height: 1.6;">
+    Wir überprüfen Ihre <strong>USt-IdNr.-Einstellungen bei Google Ads</strong>, die Reverse-Charge-Konformität Ihrer Monatsabrechnungen und identifizieren <strong>teure Klickbudgets-Lecks</strong> durch ineffiziente Suchbegriffe – unverbindlich und transparent.
+  </p>
+  <div style="display: flex; flex-wrap: wrap; justify-content: center; gap: 1rem; margin-top: 1rem;">
+    <a href="/#contact" style="display: inline-flex; align-items: center; justify-content: center; background: #3b82f6; color: white; font-weight: 800; padding: 0.9rem 1.8rem; border-radius: 0.75rem; text-decoration: none; font-size: 1rem; box-shadow: 0 4px 14px rgba(59, 130, 246, 0.4);">
+      🚀 Jetzt kostenloses Konto-Audit anfordern ➔
+    </a>
+    <a href="mailto:info@salihmaral.de?subject=Google%20Ads%20Konto-Check%20Anfrage" style="display: inline-flex; align-items: center; justify-content: center; background: rgba(255, 255, 255, 0.1); border: 1px solid rgba(255, 255, 255, 0.3); color: white; font-weight: 700; padding: 0.9rem 1.5rem; border-radius: 0.75rem; text-decoration: none; font-size: 0.95rem;">
+      ✉️ info@salihmaral.de
+    </a>
+  </div>
+  <p style="color: #94a3b8; font-size: 0.82rem; margin-top: 1rem; margin-bottom: 0;">⚡ Faire Festpreis-Betreuung ab 590 €/Monat ohne prozentuale Budget-Provision. Keine versteckten Kosten.</p>
 </div>
 
 <h2>💡 Fazit & Professionelle Google Ads Betreuung</h2>

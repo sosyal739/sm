@@ -72,11 +72,56 @@ coverImage: "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?w=1200
   <li><strong>Transparenter Festpreis:</strong> Keine prozentuale Beteiligung an Ihren Werbeausgaben. Unser Interesse ist es, Ihren CPA zu senken – nicht Ihr Budget sinnlos aufzublähen.</li>
 </ol>
 
+<h2>📊 Google Ads Benchmarks für Dortmund & Ruhrgebiet 2026 (CPC & CPL)</h2>
+
+<p>Als spezialisierte <strong>AdWords Agentur Dortmund</strong> analysieren wir monatlich hunderttausende Suchauktionen im Ruhrgebiet. Hier sind die realen Richtwerte für den Großraum Dortmund (Stand 2026):</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Branche in Dortmund & Ruhrgebiet</th>
+      <th>Durchschnittlicher CPC</th>
+      <th>Ziel-CPL (Kosten pro Anfrage)</th>
+      <th>Empfohlenes Monatsbudget</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>Handwerk & Sanierung (Badsanierung, Dach, Elektro)</strong></td>
+      <td>4,20 € – 7,80 €</td>
+      <td>35,00 € – 52,00 €</td>
+      <td>1.200 € – 2.800 €</td>
+    </tr>
+    <tr>
+      <td><strong>B2B, Maschinenbau & Industrietechnik</strong></td>
+      <td>7,50 € – 16,50 €</td>
+      <td>65,00 € – 110,00 €</td>
+      <td>2.000 € – 5.000 €</td>
+    </tr>
+    <tr>
+      <td><strong>Rechtsanwälte & Steuerberater</strong></td>
+      <td>8,00 € – 18,00 €</td>
+      <td>45,00 € – 85,00 €</td>
+      <td>1.500 € – 3.500 €</td>
+    </tr>
+    <tr>
+      <td><strong>Kfz-Werkstätten & Sachverständige</strong></td>
+      <td>3,50 € – 8,20 €</td>
+      <td>28,00 € – 48,00 €</td>
+      <td>1.000 € – 2.200 €</td>
+    </tr>
+  </tbody>
+</table>
+
 <div class="cta-box" style="background: linear-gradient(135deg, #0f172a 0%, #1e3a8a 100%); border: 2px solid #3b82f6; border-radius: 1.25rem; padding: 2.2rem; margin: 3rem 0; text-align: center; color: white; box-shadow: 0 20px 40px -15px rgba(59, 130, 246, 0.4);">
+  <div style="display: inline-block; background: rgba(59, 130, 246, 0.2); border: 1px solid #60a5fa; color: #93c5fd; font-weight: 700; font-size: 0.8rem; padding: 0.35rem 1rem; border-radius: 9999px; margin-bottom: 1rem; text-transform: uppercase;">
+    🎯 AdWords Agentur Dortmund & Ruhrgebiet
+  </div>
   <h3 style="font-size: 1.6rem; font-weight: 800; color: white; margin-bottom: 0.6rem;">Möchten Sie Dortmunds lukrativste Suchbegriffe dominieren?</h3>
-  <p style="color: #cbd5e1; font-size: 1rem; max-width: 620px; margin: 0 auto 1.6rem auto; line-height: 1.6;">Lassen Sie Ihr bestehendes Google Ads Konto oder Ihr Potenzial in Dortmund und Umgebung kostenlos analysieren. 17+ Jahre Erfahrung, direkte Partner-Betreuung.</p>
+  <p style="color: #cbd5e1; font-size: 1rem; max-width: 620px; margin: 0 auto 1.6rem auto; line-height: 1.6;">Lassen Sie Ihr bestehendes Google Ads Konto oder Ihr Potenzial in Dortmund, Bochum und dem Ruhrgebiet kostenlos analysieren. 17+ Jahre Erfahrung, direkte Betreuung durch Salih Maral (Offizieller Google Partner) – transparenter Fixpreis ohne Prozentprovision.</p>
   <div style="display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap;">
-    <a href="/de/standorte/dortmund" style="display: inline-block; background: #3b82f6; color: white; font-weight: 800; padding: 1rem 2rem; border-radius: 0.85rem; text-decoration: none; font-size: 1.05rem; box-shadow: 0 10px 20px -5px rgba(59, 130, 246, 0.5);">Standort Dortmund Details ➔</a>
+    <a href="/#contact" style="display: inline-flex; align-items: center; justify-content: center; background: #3b82f6; color: white; font-weight: 800; padding: 0.95rem 1.8rem; border-radius: 0.85rem; text-decoration: none; font-size: 1rem; box-shadow: 0 10px 20px -5px rgba(59, 130, 246, 0.5);">Kostenlose Potenzialanalyse anfordern ➔</a>
+    <a href="mailto:info@salihmaral.de?subject=Google%20Ads%20Dortmund%20Anfrage" style="display: inline-flex; align-items: center; justify-content: center; background: rgba(255, 255, 255, 0.1); border: 1px solid rgba(255, 255, 255, 0.3); color: white; font-weight: 700; padding: 0.95rem 1.5rem; border-radius: 0.85rem; text-decoration: none; font-size: 0.95rem;">Direkt per E-Mail kontaktieren</a>
   </div>
 </div>
 
