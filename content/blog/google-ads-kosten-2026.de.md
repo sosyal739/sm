@@ -6,7 +6,7 @@ excerpt: "Erfahren Sie, was Google Ads 2026 wirklich kostet. Salih Maral erklär
 category: "Google Ads"
 date: "2026-07-14"
 readTime: "9"
-coverImage: "https://images.unsplash.com/photo-1554224155-6726b3ff858f?w=600&h=300&fit=crop&q=80"
+coverImage: "https://images.unsplash.com/photo-1554224155-8d04cb21cd6c?w=1200&h=630&fit=crop&q=80"
 ---
 
 <div class="lead">

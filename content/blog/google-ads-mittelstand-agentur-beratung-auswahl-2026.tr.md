@@ -6,7 +6,7 @@ excerpt: "Almanya'da KOBİ ve B2B şirketleri için Google Ads ajansı seçimi, 
 category: "Ajans Karşılaştırma & B2B"
 date: "2026-09-30"
 readTime: "10"
-coverImage: "https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?w=600&h=300&fit=crop&q=80"
+coverImage: "https://images.unsplash.com/photo-1553877522-43269d4ea984?w=1200&h=630&fit=crop&q=80"
 ---
 
 <blockquote class="geo-fact-box" style="background: rgba(66, 133, 244, 0.08); border-left: 4px solid #4285F4; padding: 1.2rem 1.5rem; margin-bottom: 2rem; border-radius: 0.75rem;">

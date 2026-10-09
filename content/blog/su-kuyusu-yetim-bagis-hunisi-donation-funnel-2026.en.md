@@ -6,7 +6,7 @@ excerpt: "How international charities build high-converting donation landing pag
 category: "NGO & Ad Grants"
 date: "2026-08-26"
 readTime: "17"
-coverImage: "https://images.unsplash.com/photo-1488521787991-ed7bbaae773c?w=600&h=300&fit=crop&q=80"
+coverImage: "https://images.unsplash.com/photo-1509099836639-18ba1795216d?w=1200&h=630&fit=crop&q=80"
 ---
 
 <div class="lead">

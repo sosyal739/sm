@@ -6,7 +6,7 @@ excerpt: "Birden fazla mağazası, restoranı veya şubesi olan markalar için t
 category: "Google Haritalar & Yerel SEO"
 date: "2026-08-25"
 readTime: "11"
-coverImage: "https://images.unsplash.com/photo-1526778548025-fa2f459cd5c1?w=600&h=300&fit=crop&q=80"
+coverImage: "https://images.unsplash.com/photo-1569336415962-a4bd9f69cd83?w=1200&h=630&fit=crop&q=80"
 ---
 
 <div class="lead">

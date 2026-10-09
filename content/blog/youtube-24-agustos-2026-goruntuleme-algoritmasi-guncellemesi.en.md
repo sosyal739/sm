@@ -6,7 +6,7 @@ excerpt: "Starting August 24, 2026, YouTube counts views as soon as video playba
 category: "YouTube Ads & Algorithm"
 date: "2026-08-28"
 readTime: "15"
-coverImage: "https://images.unsplash.com/photo-1611162617213-7d7a39e9b1d7?w=600&h=300&fit=crop&q=80"
+coverImage: "https://images.unsplash.com/photo-1514525253161-7a46d19cd819?w=1200&h=630&fit=crop&q=80"
 ---
 
 <div class="lead">

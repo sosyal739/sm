@@ -6,7 +6,7 @@ excerpt: "Get ahead of your competitors in the social commerce market. TikTok Sh
 category: "TikTok Ads"
 date: "2026-03-20"
 readTime: "5"
-coverImage: "https://images.unsplash.com/photo-1542751371-adc38448a05e?w=600&h=300&fit=crop&q=80"
+coverImage: "https://images.unsplash.com/photo-1611162617213-7d7a39e9b1d7?w=1200&h=630&fit=crop&q=80"
 ---
 
         <div class="lead">

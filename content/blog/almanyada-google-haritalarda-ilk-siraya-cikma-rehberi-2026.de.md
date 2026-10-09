@@ -6,7 +6,7 @@ excerpt: "Werden Sie in Ihrer Region bei Google Maps nicht gefunden? So dominier
 category: "Türkische Unternehmen in DE"
 date: "2026-08-25"
 readTime: "17"
-coverImage: "https://images.unsplash.com/photo-1526778548025-fa2f459cd5c1?w=600&h=300&fit=crop&q=80"
+coverImage: "https://images.unsplash.com/photo-1524661135-423995f22d0b?w=1200&h=630&fit=crop&q=80"
 ---
 
 <div class="lead">

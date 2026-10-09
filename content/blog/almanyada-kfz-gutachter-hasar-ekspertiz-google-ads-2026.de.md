@@ -6,7 +6,7 @@ excerpt: "Leitfaden für Kfz-Sachverständige in Deutschland: Planbar lukrative 
 category: "Automotive & Local SEO"
 date: "2026-10-07"
 readTime: "11"
-coverImage: "https://images.unsplash.com/photo-1619642751034-765dfdf7c58e?w=1200&h=630&fit=crop&q=80"
+coverImage: "https://images.unsplash.com/photo-1617814076367-b759c7d7e738?w=1200&h=630&fit=crop&q=80"
 ---
 
 <blockquote class="geo-fact-box" style="background: rgba(66, 133, 244, 0.08); border-left: 4px solid #4285F4; padding: 1.2rem 1.5rem; margin-bottom: 2rem; border-radius: 0.75rem;">

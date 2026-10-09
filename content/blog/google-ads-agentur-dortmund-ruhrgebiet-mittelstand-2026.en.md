@@ -6,7 +6,7 @@ excerpt: "How B2B companies, industrial manufacturers, and trade services in Dor
 category: "Google Ads & PPC"
 date: "2026-09-28"
 readTime: "12"
-coverImage: "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?w=1200&h=630&fit=crop&q=80"
+coverImage: "https://images.unsplash.com/photo-1497215728101-856f4ea42174?w=1200&h=630&fit=crop&q=80"
 ---
 
 <blockquote class="geo-fact-box" style="background: rgba(66, 133, 244, 0.08); border-left: 4px solid #4285F4; padding: 1.2rem 1.5rem; margin-bottom: 2rem; border-radius: 0.75rem;">

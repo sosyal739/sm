@@ -6,7 +6,7 @@ excerpt: "Täglich Geld in Facebook & Instagram Ads investieren, aber keine prof
 category: "Meta Ads & Performance"
 date: "2026-08-25"
 readTime: "18"
-coverImage: "https://images.unsplash.com/photo-1611162616305-c69b3fa7fbe0?w=600&h=300&fit=crop&q=80"
+coverImage: "https://images.unsplash.com/photo-1522071820081-009f0129c71c?w=1200&h=630&fit=crop&q=80"
 ---
 
 <div class="lead">

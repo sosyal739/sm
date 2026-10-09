@@ -6,7 +6,7 @@ excerpt: "Özel klinikler, diş hekimleri, estetik merkezleri ve sağlık turizm
 category: "Sağlık & Yerel SEO"
 date: "2026-08-25"
 readTime: "19"
-coverImage: "https://images.unsplash.com/photo-1519494026892-80bbd2d6fd0d?w=600&h=300&fit=crop&q=80"
+coverImage: "https://images.unsplash.com/photo-1576091160550-2173dba999ef?w=1200&h=630&fit=crop&q=80"
 ---
 
 <div class="lead">

@@ -6,7 +6,7 @@ excerpt: "Scale your business across Germany. Bilingual consultation in Turkish 
 category: "Turkish Businesses in Germany"
 date: "2026-08-25"
 readTime: "18"
-coverImage: "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?w=600&h=300&fit=crop&q=80"
+coverImage: "https://images.unsplash.com/photo-1560179707-f14e90ef3623?w=1200&h=630&fit=crop&q=80"
 ---
 
 <div class="lead">

@@ -6,7 +6,7 @@ excerpt: "Wie Unternehmen in Deutschland Google Ads und Meta Rechnungen steuerli
 category: "Steuern & Buchhaltung"
 date: "2026-09-30"
 readTime: "9"
-coverImage: "https://images.unsplash.com/photo-1554224155-6726b3ff858f?w=600&h=300&fit=crop&q=80"
+coverImage: "https://images.unsplash.com/photo-1579532537598-459ecdaf39cc?w=1200&h=630&fit=crop&q=80"
 ---
 
 <blockquote class="geo-fact-box" style="background: rgba(66, 133, 244, 0.08); border-left: 4px solid #4285F4; padding: 1.2rem 1.5rem; margin-bottom: 2rem; border-radius: 0.75rem;">

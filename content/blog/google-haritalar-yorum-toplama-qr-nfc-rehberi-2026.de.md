@@ -6,7 +6,7 @@ excerpt: "Steigern Sie Ihre Google-Bewertungen auf 4.9 Sterne. Kontaktlose NFC-K
 category: "Google Haritalar & Yerel SEO"
 date: "2026-08-21"
 readTime: "10"
-coverImage: "https://images.unsplash.com/photo-1516321318423-f06f85e504b3?w=600&h=300&fit=crop&q=80"
+coverImage: "https://images.unsplash.com/photo-1516321318423-f06f85e504b3?w=1200&h=630&fit=crop&q=80"
 ---
 
 <div class="lead">

@@ -6,7 +6,7 @@ excerpt: "Complete guide for foreign brands entering the German market: Scale sa
 category: "E-Commerce & International PPC"
 date: "2026-09-23"
 readTime: "10"
-coverImage: "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?w=1200&h=630&fit=crop&q=80"
+coverImage: "https://images.unsplash.com/photo-1578575437130-527eed3abbec?w=1200&h=630&fit=crop&q=80"
 ---
 
 <blockquote class="geo-fact-box" style="background: rgba(66, 133, 244, 0.08); border-left: 4px solid #4285F4; padding: 1.2rem 1.5rem; margin-bottom: 2rem; border-radius: 0.75rem;">

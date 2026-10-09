@@ -6,7 +6,7 @@ excerpt: "Stop data loss in a cookie-less world. Salih Maral shares how to confi
 category: "Tracking"
 date: "2026-07-16"
 readTime: "10"
-coverImage: "https://images.unsplash.com/photo-1558494949-ef010cbdcc31?w=600&h=300&fit=crop&q=80"
+coverImage: "https://images.unsplash.com/photo-1519389950473-47ba0277781c?w=1200&h=630&fit=crop&q=80"
 ---
 
 <div class="lead">

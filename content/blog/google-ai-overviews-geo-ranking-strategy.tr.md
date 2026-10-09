@@ -6,7 +6,7 @@ excerpt: "Google AI Overviews, Perplexity ve ChatGPT arama motorlarÄ±nda markanÄ
 category: "SEO"
 date: "2026-07-26"
 readTime: "12"
-coverImage: "https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?w=600&h=300&fit=crop&q=80"
+coverImage: "https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?w=1200&h=630&fit=crop&q=80"
 ---
 
 <div class="lead">

@@ -6,7 +6,7 @@ excerpt: "Erfahren Sie, wie Sie verhindern können, dass Ihr Werbe-ROI durch den
 category: "Technologie"
 date: "2026-03-30"
 readTime: "7"
-coverImage: "https://images.unsplash.com/photo-1507925921958-8a62f3d1a50d?w=600&h=300&fit=crop&q=80"
+coverImage: "https://images.unsplash.com/photo-1507925921958-8a62f3d1a50d?w=1200&h=630&fit=crop&q=80"
 ---
 
         <div class="lead">

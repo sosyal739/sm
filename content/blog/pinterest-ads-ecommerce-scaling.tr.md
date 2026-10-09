@@ -6,7 +6,7 @@ excerpt: "Pinterest'te karlı kitlelere ulaşın. Salih Maral, Pinterest Perform
 category: "Pinterest Ads"
 date: "2026-07-16"
 readTime: "10"
-coverImage: "https://images.unsplash.com/photo-1611162617213-7d7a39e9b1d7?w=600&h=300&fit=crop&q=80"
+coverImage: "https://images.unsplash.com/photo-1556745757-8d76bdb6984b?w=1200&h=630&fit=crop&q=80"
 ---
 
 <div class="lead">

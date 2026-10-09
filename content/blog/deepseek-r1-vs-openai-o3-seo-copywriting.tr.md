@@ -6,7 +6,7 @@ excerpt: "DeepSeek-R1 ve OpenAI o3-mini akıl yürütme (reasoning) modellerinin
 category: "Yapay Zeka"
 date: "2026-07-26"
 readTime: "10"
-coverImage: "https://images.unsplash.com/photo-1620712943543-bcc4688e7485?w=600&h=300&fit=crop&q=80"
+coverImage: "https://images.unsplash.com/photo-1620712943543-bcc4688e7485?w=1200&h=630&fit=crop&q=80"
 ---
 
 <div class="lead">

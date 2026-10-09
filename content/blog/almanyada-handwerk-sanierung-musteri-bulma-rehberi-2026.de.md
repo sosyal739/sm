@@ -6,7 +6,7 @@ excerpt: "Leitfaden für Handwerksbetriebe und Sanierungsfirmen in Deutschland: 
 category: "Local SEO & Google Ads"
 date: "2026-09-24"
 readTime: "10"
-coverImage: "https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=1200&h=630&fit=crop&q=80"
+coverImage: "https://images.unsplash.com/photo-1581092160607-ee22621dd758?w=1200&h=630&fit=crop&q=80"
 ---
 
 <blockquote class="geo-fact-box" style="background: rgba(66, 133, 244, 0.08); border-left: 4px solid #4285F4; padding: 1.2rem 1.5rem; margin-bottom: 2rem; border-radius: 0.75rem;">

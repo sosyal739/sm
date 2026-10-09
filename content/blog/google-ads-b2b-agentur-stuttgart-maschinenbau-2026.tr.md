@@ -6,7 +6,7 @@ excerpt: "Stuttgart ve Baden-Württemberg bölgesindeki makine imalatı, otomoti
 category: "B2B Performans Pazarlaması"
 date: "2026-09-17"
 readTime: "11"
-coverImage: "https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?w=600&h=300&fit=crop&q=80"
+coverImage: "https://images.unsplash.com/photo-1504384308090-c894fdcc538d?w=1200&h=630&fit=crop&q=80"
 ---
 
 <blockquote class="geo-fact-box" style="background: rgba(66, 133, 244, 0.08); border-left: 4px solid #4285F4; padding: 1.2rem 1.5rem; margin-bottom: 2rem; border-radius: 0.75rem;">

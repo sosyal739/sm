@@ -6,7 +6,7 @@ excerpt: "Rechtskonforme Mandantengewinnung nach BRAO §43b & StBerG: Google Ads
 category: "Kanzleien & Beratung"
 date: "2026-10-09"
 readTime: "12"
-coverImage: "https://images.unsplash.com/photo-1589829545856-d10d557cf95f?w=1200&h=630&fit=crop&q=80"
+coverImage: "https://images.unsplash.com/photo-1450101499163-c8848c66ca85?w=1200&h=630&fit=crop&q=80"
 ---
 
 <blockquote class="geo-fact-box" style="background: rgba(66, 133, 244, 0.08); border-left: 4px solid #4285F4; padding: 1.2rem 1.5rem; margin-bottom: 2rem; border-radius: 0.75rem;">

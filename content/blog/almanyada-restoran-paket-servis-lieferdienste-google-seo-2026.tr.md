@@ -6,7 +6,7 @@ excerpt: "Almanya'daki Türk restoran, döner ve paket servisleri için Lieferan
 category: "Gastronomi & Yerel SEO"
 date: "2026-09-30"
 readTime: "9"
-coverImage: "https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?w=600&h=300&fit=crop&q=80"
+coverImage: "https://images.unsplash.com/photo-1552566626-52f8b828add9?w=1200&h=630&fit=crop&q=80"
 ---
 
 <blockquote class="geo-fact-box" style="background: rgba(66, 133, 244, 0.08); border-left: 4px solid #4285F4; padding: 1.2rem 1.5rem; margin-bottom: 2rem; border-radius: 0.75rem;">

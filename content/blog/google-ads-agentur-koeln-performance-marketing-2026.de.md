@@ -6,7 +6,7 @@ excerpt: "Führende Google Ads Agentur Köln & Performance Marketing für NRW. G
 category: "Standorte & Performance"
 date: "2026-08-28"
 readTime: "16"
-coverImage: "https://images.unsplash.com/photo-1513635269975-59663e0ac1ad?w=600&h=300&fit=crop&q=80"
+coverImage: "https://images.unsplash.com/photo-1497366811353-6870744d04b2?w=1200&h=630&fit=crop&q=80"
 ---
 
 <div class="lead">

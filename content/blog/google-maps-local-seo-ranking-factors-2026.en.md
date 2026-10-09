@@ -6,7 +6,7 @@ excerpt: "Dominate local Google Maps search results. Learn how to optimize your 
 category: "SEO & GEO"
 date: "2026-08-14"
 readTime: "15"
-coverImage: "https://images.unsplash.com/photo-1526778548025-fa2f459cd5c1?w=600&h=300&fit=crop&q=80"
+coverImage: "https://images.unsplash.com/photo-1516321497487-e288fb19713f?w=1200&h=630&fit=crop&q=80"
 ---
 
 <div class="lead">

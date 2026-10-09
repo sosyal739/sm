@@ -6,7 +6,7 @@ excerpt: "Erstellen Sie mit Programmatic SEO und KI-Modellen hunderte zielgerich
 category: "SEO"
 date: "2026-07-26"
 readTime: "11"
-coverImage: "https://images.unsplash.com/photo-1504868584819-f8e8b4b6d7e3?w=600&h=300&fit=crop&q=80"
+coverImage: "https://images.unsplash.com/photo-1571867424488-4565932edb41?w=1200&h=630&fit=crop&q=80"
 ---
 
 <div class="lead">

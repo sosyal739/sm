@@ -273,9 +273,41 @@ export default function BlogPageClient({ initialPosts = [] }) {
   const featuredPost = filteredPosts.length > 0 ? filteredPosts[0] : null
   const gridPosts = filteredPosts.length > 1 ? filteredPosts.slice(1) : filteredPosts
 
+  const fallbackImages = [
+    'https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=1200&h=630&fit=crop&q=80',
+    'https://images.unsplash.com/photo-1557804506-669a67965ba0?w=1200&h=630&fit=crop&q=80',
+    'https://images.unsplash.com/photo-1522071820081-009f0129c71c?w=1200&h=630&fit=crop&q=80',
+    'https://images.unsplash.com/photo-1551836022-d5d88e9218df?w=1200&h=630&fit=crop&q=80',
+    'https://images.unsplash.com/photo-1504868584819-f8e8b4b6d7e3?w=1200&h=630&fit=crop&q=80',
+    'https://images.unsplash.com/photo-1562577309-4932fdd64cd1?w=1200&h=630&fit=crop&q=80',
+    'https://images.unsplash.com/photo-1620712943543-bcc4688e7485?w=1200&h=630&fit=crop&q=80',
+    'https://images.unsplash.com/photo-1677442136019-21780ecad995?w=1200&h=630&fit=crop&q=80',
+    'https://images.unsplash.com/photo-1556740738-b6a63e27c4df?w=1200&h=630&fit=crop&q=80',
+    'https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?w=1200&h=630&fit=crop&q=80',
+    'https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?w=1200&h=630&fit=crop&q=80',
+    'https://images.unsplash.com/photo-1579532537598-459ecdaf39cc?w=1200&h=630&fit=crop&q=80'
+  ]
+
+  const getDeterministicFallback = (key = '') => {
+    let hash = 0
+    for (let i = 0; i < key.length; i++) {
+      hash = (hash << 5) - hash + key.charCodeAt(i)
+      hash |= 0
+    }
+    const index = Math.abs(hash) % fallbackImages.length
+    return fallbackImages[index]
+  }
+
   const getCategoryImage = (post) => {
-    if (post.coverImage) return post.coverImage
-    return 'https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=600&h=300&fit=crop&q=80'
+    if (post?.coverImage && !post.coverImage.includes('photo-1677442136019-21780efad99a')) {
+      return post.coverImage
+    }
+    return getDeterministicFallback(post?.slug || post?.title || 'digital-marketing')
+  }
+
+  const handleImageError = (e, post) => {
+    e.currentTarget.onerror = null
+    e.currentTarget.src = getDeterministicFallback(post?.slug || 'fallback')
   }
 
   return (
@@ -511,7 +543,7 @@ export default function BlogPageClient({ initialPosts = [] }) {
                     src={getCategoryImage(featuredPost)}
                     alt={featuredPost.title}
                     className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
-                    onError={(e) => { e.currentTarget.src = 'https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=600&h=300&fit=crop&q=80' }}
+                    onError={(e) => handleImageError(e, featuredPost)}
                   />
                   <div className="absolute top-4 left-4">
                     <Badge className="bg-[#4285F4] text-white font-bold px-3.5 py-1.5 shadow-md">
@@ -580,7 +612,7 @@ export default function BlogPageClient({ initialPosts = [] }) {
                         alt={post.title}
                         className="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
                         loading="lazy"
-                        onError={(e) => { e.currentTarget.src = 'https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=600&h=300&fit=crop&q=80' }}
+                        onError={(e) => handleImageError(e, post)}
                       />
                       <div className="absolute inset-0 bg-gradient-to-t from-gray-900/60 via-transparent to-transparent" />
                       <div className="absolute top-4 left-4 flex gap-2">

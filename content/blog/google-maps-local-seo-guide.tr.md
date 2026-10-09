@@ -6,7 +6,7 @@ excerpt: "Yerel aramaları domine edin. Salih Maral, Google Haritalar'da üst s�
 category: "SEO"
 date: "2026-07-16"
 readTime: "10"
-coverImage: "https://images.unsplash.com/photo-1524661135-423995f22d0b?w=600&h=300&fit=crop&q=80"
+coverImage: "https://images.unsplash.com/photo-1526778548025-fa2f459cd5c1?w=1200&h=630&fit=crop&q=80"
 ---
 
 <div class="lead">

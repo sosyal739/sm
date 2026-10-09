@@ -6,7 +6,7 @@ excerpt: "X reklamlarında nasıl öne çıkilir? X reklamları ile gerçek zama
 category: "X Ads"
 date: "2026-01-25"
 readTime: "5"
-coverImage: "https://images.unsplash.com/photo-1611605698335-8b1569810432?w=600&h=300&fit=crop&q=80"
+coverImage: "https://images.unsplash.com/photo-1611605698335-8b1569810432?w=1200&h=630&fit=crop&q=80"
 ---
 
         <div class="lead">

@@ -6,7 +6,7 @@ excerpt: "Arka planda 7/24 çalışan kişisel yapay zeka ajanınız. Görevleri
 category: "Teknoloji"
 date: "2026-07-03"
 readTime: "6"
-coverImage: "https://images.unsplash.com/photo-1677442136019-21780ecad995?w=600&h=300&fit=crop&q=80"
+coverImage: "https://images.unsplash.com/photo-1550745165-9bc0b252726f?w=1200&h=630&fit=crop&q=80"
 ---
 
         <div class="lead">

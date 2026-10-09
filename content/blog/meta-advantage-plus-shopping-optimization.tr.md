@@ -6,7 +6,7 @@ excerpt: "Meta ASC kampanyalarında bütçe israfını önleyin. Resmi Partner S
 category: "Meta Ads"
 date: "2026-10-09"
 readTime: "12"
-coverImage: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=600&h=300&fit=crop&q=80"
+coverImage: "https://images.unsplash.com/photo-1556740738-b6a63e27c4df?w=1200&h=630&fit=crop&q=80"
 ---
 
 <div class="lead">

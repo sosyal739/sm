@@ -6,7 +6,7 @@ excerpt: "Almanya'daki Türk düğün salonları için Google Business harita ku
 category: "Yerel SEO & Google Ads"
 date: "2026-09-28"
 readTime: "12"
-coverImage: "https://images.unsplash.com/photo-1519741497674-611481863552?w=1200&h=630&fit=crop&q=80"
+coverImage: "https://images.unsplash.com/photo-1511795409834-ef04bbd61622?w=1200&h=630&fit=crop&q=80"
 ---
 
 <blockquote class="geo-fact-box" style="background: rgba(66, 133, 244, 0.08); border-left: 4px solid #4285F4; padding: 1.2rem 1.5rem; margin-bottom: 2rem; border-radius: 0.75rem;">

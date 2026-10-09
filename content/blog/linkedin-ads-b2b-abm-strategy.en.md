@@ -6,7 +6,7 @@ excerpt: "Target key decision-makers effectively. Salih Maral reveals how to set
 category: "LinkedIn Ads"
 date: "2026-07-16"
 readTime: "10"
-coverImage: "https://images.unsplash.com/photo-1579389083078-4e7018379f7e?w=600&h=300&fit=crop&q=80"
+coverImage: "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=1200&h=630&fit=crop&q=80"
 ---
 
 <div class="lead">

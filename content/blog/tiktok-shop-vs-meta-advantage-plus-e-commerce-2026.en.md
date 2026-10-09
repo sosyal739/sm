@@ -6,7 +6,7 @@ excerpt: "Scale your e-commerce revenue: TikTok Shop or Meta Advantage+ Shopping
 category: "E-Commerce & Performance"
 date: "2026-08-25"
 readTime: "18"
-coverImage: "https://images.unsplash.com/photo-1556742049-0a67e5572293?w=600&h=300&fit=crop&q=80"
+coverImage: "https://images.unsplash.com/photo-1611162616305-c69b3fa7fbe0?w=1200&h=630&fit=crop&q=80"
 ---
 
 <div class="lead">

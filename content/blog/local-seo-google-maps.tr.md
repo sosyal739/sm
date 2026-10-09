@@ -6,7 +6,7 @@ excerpt: "Google Business Profile ile yerel satışlarınızı artırın. Google
 category: "SEO"
 date: "2026-03-25"
 readTime: "6"
-coverImage: "https://images.unsplash.com/photo-1524661135-423995f22d0b?w=600&h=300&fit=crop&q=80"
+coverImage: "https://images.unsplash.com/photo-1503376780353-7e6692767b70?w=1200&h=630&fit=crop&q=80"
 ---
 
         <div class="lead">

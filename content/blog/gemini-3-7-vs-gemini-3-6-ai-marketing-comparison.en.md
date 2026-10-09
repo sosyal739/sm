@@ -6,7 +6,7 @@ excerpt: "In-depth analysis of Google's new Gemini 3.7 featuring Hybrid Reasonin
 category: "Artificial Intelligence"
 date: "2026-08-14"
 readTime: "14"
-coverImage: "https://images.unsplash.com/photo-1677442136019-21780ecad995?w=600&h=300&fit=crop&q=80"
+coverImage: "https://images.unsplash.com/photo-1618172193763-c511deb635ca?w=1200&h=630&fit=crop&q=80"
 ---
 
 <div class="lead">

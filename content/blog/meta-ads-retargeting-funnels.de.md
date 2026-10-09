@@ -6,7 +6,7 @@ excerpt: "Nutzer zurück, die Ihre Website besucht haben. Hochkonvertierende Met
 category: "Meta Ads"
 date: "2026-03-05"
 readTime: "5"
-coverImage: "https://images.unsplash.com/photo-1557804506-669a67965ba0?w=600&h=300&fit=crop&q=80"
+coverImage: "https://images.unsplash.com/photo-1563986768609-322da13575f3?w=1200&h=630&fit=crop&q=80"
 ---
 
           <div class="lead">

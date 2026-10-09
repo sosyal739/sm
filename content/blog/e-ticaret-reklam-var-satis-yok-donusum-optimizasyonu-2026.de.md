@@ -6,7 +6,7 @@ excerpt: "Warum Website-Besucher nicht konvertieren. 5 kritische Conversion-Kill
 category: "Optimizasyon & ROAS Artırma"
 date: "2026-08-27"
 readTime: "15"
-coverImage: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=600&h=300&fit=crop&q=80"
+coverImage: "https://images.unsplash.com/photo-1522204523234-8729aa6e3d5f?w=1200&h=630&fit=crop&q=80"
 ---
 
 <div class="lead">

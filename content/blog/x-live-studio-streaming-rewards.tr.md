@@ -6,7 +6,7 @@ excerpt: "X (Twitter), Twitch ve YouTube'a rakip olan Live Studio'yu duyurdu. 1 
 category: "X Ads"
 date: "2026-07-03"
 readTime: "5"
-coverImage: "/x-live-studio-cover.png"
+coverImage: "https://images.unsplash.com/photo-1598488035139-bdbb2231ce04?w=1200&h=630&fit=crop&q=80"
 ---
 
         <div class="lead">

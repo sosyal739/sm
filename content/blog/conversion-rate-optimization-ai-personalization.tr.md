@@ -6,7 +6,7 @@ excerpt: "Web sitenize gelen trafiği satışa dönüştürmek için yapay zeka 
 category: "Dönüşüm Optimizasyonu"
 date: "2026-07-26"
 readTime: "10"
-coverImage: "https://images.unsplash.com/photo-1551836022-d5d88e9218df?w=600&h=300&fit=crop&q=80"
+coverImage: "https://images.unsplash.com/photo-1551836022-d5d88e9218df?w=1200&h=630&fit=crop&q=80"
 ---
 
 <div class="lead">

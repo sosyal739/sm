@@ -6,7 +6,7 @@ excerpt: "Step-by-step guide to verifying your Google Ads business identity, tax
 category: "Google Ads Kurulum & Doğrulama"
 date: "2026-08-20"
 readTime: "12"
-coverImage: "https://images.unsplash.com/photo-1554224155-8d04cb21cd6c?w=600&h=300&fit=crop&q=80"
+coverImage: "https://images.unsplash.com/photo-1590402494587-44b71d7772f6?w=1200&h=630&fit=crop&q=80"
 ---
 
 <div class="lead">

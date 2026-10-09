@@ -6,7 +6,7 @@ excerpt: "Wie Sie Ihre Marke in KI-generierten Antworten als primäre Quelle pos
 category: "SEO & GEO"
 date: "2026-08-14"
 readTime: "15"
-coverImage: "https://images.unsplash.com/photo-1504868584819-f8e8b4b6d7e3?w=600&h=300&fit=crop&q=80"
+coverImage: "https://images.unsplash.com/photo-1504868584819-f8e8b4b6d7e3?w=1200&h=630&fit=crop&q=80"
 ---
 
 <div class="lead">

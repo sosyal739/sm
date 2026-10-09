@@ -6,7 +6,7 @@ excerpt: "Comparing high-intent search capture with executive demographic target
 category: "B2B Pazarlama & Strateji"
 date: "2026-08-26"
 readTime: "12"
-coverImage: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=600&h=300&fit=crop&q=80"
+coverImage: "https://images.unsplash.com/photo-1521737604893-d14cc237f11d?w=1200&h=630&fit=crop&q=80"
 ---
 
 <div class="lead">

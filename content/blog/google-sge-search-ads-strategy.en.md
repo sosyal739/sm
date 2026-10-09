@@ -6,7 +6,7 @@ excerpt: "Leverage AI-driven search results. Salih Maral reveals new ad strategi
 category: "Google Ads"
 date: "2026-07-16"
 readTime: "10"
-coverImage: "https://images.unsplash.com/photo-1531297484001-80022131f5a1?w=600&h=300&fit=crop&q=80"
+coverImage: "https://images.unsplash.com/photo-1531403009284-440f080d1e12?w=1200&h=630&fit=crop&q=80"
 ---
 
 <div class="lead">

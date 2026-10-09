@@ -6,7 +6,7 @@ excerpt: "Are LinkedIn Ads too expensive for your B2B offer? Discover how to acq
 category: "B2B & X Ads"
 date: "2026-08-25"
 readTime: "17"
-coverImage: "https://images.unsplash.com/photo-1611605698335-8b1569810432?w=600&h=300&fit=crop&q=80"
+coverImage: "https://images.unsplash.com/photo-1507679799987-c73779587ccf?w=1200&h=630&fit=crop&q=80"
 ---
 
 <div class="lead">

@@ -6,7 +6,7 @@ excerpt: "Zakat-, Fitra- und Qurbani-Spenden vervielfachen: Wie islamische Hilfs
 category: "NGO & Ad Grants"
 date: "2026-08-26"
 readTime: "18"
-coverImage: "https://images.unsplash.com/photo-1564769625905-50e93615e769?w=600&h=300&fit=crop&q=80"
+coverImage: "https://images.unsplash.com/photo-1488521787991-ed7bbaae773c?w=1200&h=630&fit=crop&q=80"
 ---
 
 <div class="lead">

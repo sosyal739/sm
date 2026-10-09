@@ -6,7 +6,7 @@ excerpt: "Wie gemeinnützige Vereine und Stiftungen monatlich 10.000 Dollar kost
 category: "NGO & Ad Grants"
 date: "2026-08-26"
 readTime: "18"
-coverImage: "https://images.unsplash.com/photo-1532629345422-7515f3d16bb6?w=600&h=300&fit=crop&q=80"
+coverImage: "https://images.unsplash.com/photo-1564769625905-50e93615e769?w=1200&h=630&fit=crop&q=80"
 ---
 
 <div class="lead">

@@ -6,7 +6,7 @@ excerpt: "Erfahren Sie, wie Ihre Marke in Google AI Overviews, Perplexity und Ch
 category: "SEO"
 date: "2026-03-10"
 readTime: "7"
-coverImage: "https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?w=600&h=300&fit=crop&q=80"
+coverImage: "https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?w=1200&h=630&fit=crop&q=80"
 ---
 
           <div class="lead">

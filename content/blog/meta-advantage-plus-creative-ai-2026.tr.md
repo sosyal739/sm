@@ -6,7 +6,7 @@ excerpt: "Meta Advantage+ Alışveriş Kampanyaları (ASC) ile e-ticaret satış
 category: "Meta Ads"
 date: "2026-08-14"
 readTime: "15"
-coverImage: "https://images.unsplash.com/photo-1611162617474-5b21e879e113?w=600&h=300&fit=crop&q=80"
+coverImage: "https://images.unsplash.com/photo-1611162618071-b39a2ec055fb?w=1200&h=630&fit=crop&q=80"
 ---
 
 <div class="lead">

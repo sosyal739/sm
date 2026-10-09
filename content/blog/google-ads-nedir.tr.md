@@ -6,7 +6,7 @@ excerpt: "Google Ads, dünyanın en güçlü reklam platformudur. Salih Maral, 7
 category: "Google Ads"
 date: "2026-07-14"
 readTime: "8"
-coverImage: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=600&h=300&fit=crop&q=80"
+coverImage: "https://images.unsplash.com/photo-1562577309-4932fdd64cd1?w=1200&h=630&fit=crop&q=80"
 ---
 
 <div class="lead">

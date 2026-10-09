@@ -6,7 +6,7 @@ excerpt: "Resolve Merchant Center policy violations, fix GTIN errors, and get yo
 category: "E-Ticaret & Google Shopping"
 date: "2026-08-24"
 readTime: "13"
-coverImage: "https://images.unsplash.com/photo-1472851294608-062f824d29cc?w=600&h=300&fit=crop&q=80"
+coverImage: "https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?w=1200&h=630&fit=crop&q=80"
 ---
 
 <div class="lead">

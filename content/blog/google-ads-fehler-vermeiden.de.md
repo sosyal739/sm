@@ -6,7 +6,7 @@ excerpt: "Vermeiden Sie teure Fehler bei Google Ads. Salih Maral zeigt die 10 h√
 category: "Google Ads"
 date: "2026-07-14"
 readTime: "10"
-coverImage: "https://images.unsplash.com/photo-1450101499163-c8848c66ca85?w=600&h=300&fit=crop&q=80"
+coverImage: "https://images.unsplash.com/photo-1533750516457-a7f992034fec?w=1200&h=630&fit=crop&q=80"
 ---
 
 <div class="lead">

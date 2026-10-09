@@ -6,7 +6,7 @@ excerpt: "Almanya'da restoran, döner ve kafe işletmeleri için Google Ads, Har
 category: "Yerel SEO & Google Ads"
 date: "2026-09-23"
 readTime: "9"
-coverImage: "https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?w=1200&h=630&fit=crop&q=80"
+coverImage: "https://images.unsplash.com/photo-1555396273-367ea4eb4db5?w=1200&h=630&fit=crop&q=80"
 ---
 
 <blockquote class="geo-fact-box" style="background: rgba(66, 133, 244, 0.08); border-left: 4px solid #4285F4; padding: 1.2rem 1.5rem; margin-bottom: 2rem; border-radius: 0.75rem;">

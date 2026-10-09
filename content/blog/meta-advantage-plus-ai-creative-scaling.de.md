@@ -6,7 +6,7 @@ excerpt: "Steigern Sie Konversionsraten und ROAS von Meta Ads durch Advantage+ S
 category: "Meta Ads"
 date: "2026-07-26"
 readTime: "11"
-coverImage: "https://images.unsplash.com/photo-1432888622747-4eb9a8efeb07?w=600&h=300&fit=crop&q=80"
+coverImage: "https://images.unsplash.com/photo-1499750310107-5fef28a66643?w=1200&h=630&fit=crop&q=80"
 ---
 
 <div class="lead">

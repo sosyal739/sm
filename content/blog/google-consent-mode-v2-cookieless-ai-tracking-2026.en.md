@@ -6,7 +6,7 @@ excerpt: "GDPR and DMA compliant Consent Mode v2 architecture. Harness machine-l
 category: "Server-Side Tracking & Veri"
 date: "2026-08-22"
 readTime: "14"
-coverImage: "https://images.unsplash.com/photo-1504868584819-f8e8b4b6d7e3?w=600&h=300&fit=crop&q=80"
+coverImage: "https://images.unsplash.com/photo-1563986768494-4dee2763ff3f?w=1200&h=630&fit=crop&q=80"
 ---
 
 <div class="lead">

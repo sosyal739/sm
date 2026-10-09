@@ -6,7 +6,7 @@ excerpt: "Google Ads & B2B Performance Marketing für Unternehmen in Nürnberg, 
 category: "Standorte & B2B"
 date: "2026-09-30"
 readTime: "9"
-coverImage: "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?w=600&h=300&fit=crop&q=80"
+coverImage: "https://images.unsplash.com/photo-1552664730-d307ca884978?w=1200&h=630&fit=crop&q=80"
 ---
 
 <blockquote class="geo-fact-box" style="background: rgba(66, 133, 244, 0.08); border-left: 4px solid #4285F4; padding: 1.2rem 1.5rem; margin-bottom: 2rem; border-radius: 0.75rem;">

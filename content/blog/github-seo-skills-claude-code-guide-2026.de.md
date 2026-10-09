@@ -6,7 +6,7 @@ excerpt: "Wie Sie GitHub SEO Skills in Claude Code und KI-Editoren nutzen: Open-
 category: "SEO & GEO"
 date: "2026-08-21"
 readTime: "16"
-coverImage: "https://images.unsplash.com/photo-1555066931-4365d14bab8c?w=600&h=300&fit=crop&q=80"
+coverImage: "https://images.unsplash.com/photo-1579389083078-4e7018379f7e?w=1200&h=630&fit=crop&q=80"
 ---
 
 <div class="lead">

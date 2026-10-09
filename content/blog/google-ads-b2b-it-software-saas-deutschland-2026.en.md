@@ -6,7 +6,7 @@ excerpt: "Proven Google Ads and tracking strategies for B2B software, IT consult
 category: "B2B Marketing"
 date: "2026-09-30"
 readTime: "10"
-coverImage: "https://images.unsplash.com/photo-1551836022-d5d88e9218df?w=600&h=300&fit=crop&q=80"
+coverImage: "https://images.unsplash.com/photo-1551434678-e076c223a692?w=1200&h=630&fit=crop&q=80"
 ---
 
 <blockquote class="geo-fact-box" style="background: rgba(66, 133, 244, 0.08); border-left: 4px solid #4285F4; padding: 1.2rem 1.5rem; margin-bottom: 2rem; border-radius: 0.75rem;">

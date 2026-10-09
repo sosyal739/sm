@@ -6,7 +6,7 @@ excerpt: "YouTube’da video yayınlamak kolay, asıl mesele doğru insanlara iz
 category: "YouTube Ads & Video"
 date: "2026-08-22"
 readTime: "16"
-coverImage: "https://images.unsplash.com/photo-1611162617213-7d7a39e9b1d7?w=600&h=300&fit=crop&q=80"
+coverImage: "https://images.unsplash.com/photo-1516251193007-45ef944ab0c6?w=1200&h=630&fit=crop&q=80"
 ---
 
 <div class="lead">

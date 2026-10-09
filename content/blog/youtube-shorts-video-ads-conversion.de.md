@@ -6,7 +6,7 @@ excerpt: "Gewinnen Sie profitable Kunden mit YouTube Shorts und Videoanzeigen. S
 category: "Google Ads"
 date: "2026-07-16"
 readTime: "10"
-coverImage: "https://images.unsplash.com/photo-1611162618071-b39a2ec055fb?w=600&h=300&fit=crop&q=80"
+coverImage: "https://images.unsplash.com/photo-1542751371-adc38448a05e?w=1200&h=630&fit=crop&q=80"
 ---
 
         <div class="lead">

@@ -6,7 +6,7 @@ excerpt: "Google Ads Performance Max (PMax) kampanyalarınızda gerçek ROAS de�
 category: "Google Ads"
 date: "2026-08-14"
 readTime: "15"
-coverImage: "https://images.unsplash.com/photo-1533750516457-a7f992034fec?w=600&h=300&fit=crop&q=80"
+coverImage: "https://images.unsplash.com/photo-1497366216548-37526070297c?w=1200&h=630&fit=crop&q=80"
 ---
 
 <div class="lead">

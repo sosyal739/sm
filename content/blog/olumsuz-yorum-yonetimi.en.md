@@ -6,7 +6,7 @@ excerpt: "Learn how to remove fake, defamatory, and unfair 1-star reviews from G
 category: "Reputation"
 date: "2026-01-28"
 readTime: "6"
-coverImage: "https://images.unsplash.com/photo-1556745757-8d76bdb6984b?w=600&h=300&fit=crop&q=80"
+coverImage: "https://images.unsplash.com/photo-1588776814546-1ffcf47267a5?w=1200&h=630&fit=crop&q=80"
 ---
 
         <div class="lead">

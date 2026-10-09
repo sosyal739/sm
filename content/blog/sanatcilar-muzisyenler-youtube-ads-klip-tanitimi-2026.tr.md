@@ -6,7 +6,7 @@ excerpt: "Videonuz kaliteli olabilir ama doğru kitleye ulaşmıyorsa keşfedilm
 category: "YouTube Ads & Video"
 date: "2026-08-25"
 readTime: "17"
-coverImage: "https://images.unsplash.com/photo-1511671782779-c97d3d27a1d4?w=600&h=300&fit=crop&q=80"
+coverImage: "https://images.unsplash.com/photo-1511671782779-c97d3d27a1d4?w=1200&h=630&fit=crop&q=80"
 ---
 
 <div class="lead">

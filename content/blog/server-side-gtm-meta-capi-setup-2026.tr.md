@@ -6,7 +6,7 @@ excerpt: "Sunucu taraflı takip ile kayıp dönüşümleri geri kazanın. iOS en
 category: "Server-Side Tracking"
 date: "2026-08-14"
 readTime: "16"
-coverImage: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=600&h=300&fit=crop&q=80"
+coverImage: "https://images.unsplash.com/photo-1558494949-ef010cbdcc31?w=1200&h=630&fit=crop&q=80"
 ---
 
 <div class="lead">

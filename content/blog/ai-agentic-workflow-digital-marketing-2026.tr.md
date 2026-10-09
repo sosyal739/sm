@@ -6,7 +6,7 @@ excerpt: "Otonom yapay zeka ajanları (Agentic AI) ile Google Ads, Meta Ads ve S
 category: "Yapay Zeka"
 date: "2026-07-26"
 readTime: "11"
-coverImage: "https://images.unsplash.com/photo-1507925921958-8a62f3d1a50d?w=600&h=300&fit=crop&q=80"
+coverImage: "https://images.unsplash.com/photo-1534447677768-be436bb09401?w=1200&h=630&fit=crop&q=80"
 ---
 
 <div class="lead">

@@ -6,7 +6,7 @@ excerpt: "Track non-standard user behavior in Google Analytics 4. Salih Maral sh
 category: "Tracking"
 date: "2026-07-16"
 readTime: "10"
-coverImage: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=600&h=300&fit=crop&q=80"
+coverImage: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=1200&h=630&fit=crop&q=80"
 ---
 
 <div class="lead">

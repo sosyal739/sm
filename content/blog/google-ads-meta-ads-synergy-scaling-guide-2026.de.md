@@ -6,7 +6,7 @@ excerpt: "Wie Sie Meta Ads (Facebook & Instagram) und Google Ads gemeinsam nutze
 category: "Meta Ads & Google Ads"
 date: "2026-08-21"
 readTime: "18"
-coverImage: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=600&h=300&fit=crop&q=80"
+coverImage: "https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?w=1200&h=630&fit=crop&q=80"
 ---
 
 <div class="lead">

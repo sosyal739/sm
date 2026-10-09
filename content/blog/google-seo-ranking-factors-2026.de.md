@@ -6,7 +6,7 @@ excerpt: "Die neuesten Google-Algorithmus-Updates und E-E-A-T. Salih Maral zeigt
 category: "SEO"
 date: "2026-07-16"
 readTime: "10"
-coverImage: "https://images.unsplash.com/photo-1572021335469-31706a17aaef?w=600&h=300&fit=crop&q=80"
+coverImage: "https://images.unsplash.com/photo-1432888622747-4eb9a8efeb07?w=1200&h=630&fit=crop&q=80"
 ---
 
 <div class="lead">

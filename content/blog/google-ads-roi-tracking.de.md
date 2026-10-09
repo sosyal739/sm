@@ -6,7 +6,7 @@ excerpt: "Verschwenden Sie kein Werbebudget. Erfahren Sie, wie Sie durch richtig
 category: "Google Ads"
 date: "2026-03-01"
 readTime: "6"
-coverImage: "https://images.unsplash.com/photo-1551836022-d5d88e9218df?w=600&h=300&fit=crop&q=80"
+coverImage: "https://images.unsplash.com/photo-1526304640581-d334cdbbf45e?w=1200&h=630&fit=crop&q=80"
 ---
 
           <div class="lead">

@@ -6,7 +6,7 @@ excerpt: "Leverage the Google Gemini 3.6 AI model to accelerate Google Ads optim
 category: "Google Ads"
 date: "2026-07-26"
 readTime: "11"
-coverImage: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=600&h=300&fit=crop&q=80"
+coverImage: "https://images.unsplash.com/photo-1498050108023-c5249f4df085?w=1200&h=630&fit=crop&q=80"
 ---
 
 <div class="lead">

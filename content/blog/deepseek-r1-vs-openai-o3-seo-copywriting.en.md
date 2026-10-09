@@ -6,7 +6,7 @@ excerpt: "A performance breakdown of reasoning AI models DeepSeek-R1 and OpenAI 
 category: "Artificial Intelligence"
 date: "2026-07-26"
 readTime: "10"
-coverImage: "https://images.unsplash.com/photo-1620712943543-bcc4688e7485?w=600&h=300&fit=crop&q=80"
+coverImage: "https://images.unsplash.com/photo-1620712943543-bcc4688e7485?w=1200&h=630&fit=crop&q=80"
 ---
 
 <div class="lead">

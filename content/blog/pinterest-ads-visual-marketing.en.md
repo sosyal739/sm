@@ -6,7 +6,7 @@ excerpt: "Reach profitable audiences on the visual search engine Pinterest. E-co
 category: "SEO"
 date: "2026-04-10"
 readTime: "5"
-coverImage: "https://images.unsplash.com/photo-1611162617213-7d7a39e9b1d7?w=600&h=300&fit=crop&q=80"
+coverImage: "https://images.unsplash.com/photo-1491438590914-bc09fcaaf77a?w=1200&h=630&fit=crop&q=80"
 ---
 
         <div class="lead">

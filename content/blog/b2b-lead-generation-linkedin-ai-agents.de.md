@@ -6,7 +6,7 @@ excerpt: "Leitfaden für B2B-Unternehmen zur qualifizierten Lead-Generierung mit
 category: "LinkedIn Ads"
 date: "2026-07-26"
 readTime: "11"
-coverImage: "https://images.unsplash.com/photo-1557804506-669a67965ba0?w=600&h=300&fit=crop&q=80"
+coverImage: "https://images.unsplash.com/photo-1557804506-669a67965ba0?w=1200&h=630&fit=crop&q=80"
 ---
 
 <div class="lead">

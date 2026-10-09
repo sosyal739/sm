@@ -6,7 +6,7 @@ excerpt: "Erstellen Sie AI-Inhalte gemäß den EEAT-Standards ohne Qualitätsein
 category: "SEO"
 date: "2026-04-05"
 readTime: "6"
-coverImage: "https://images.unsplash.com/photo-1620712943543-bcc4688e7485?w=600&h=300&fit=crop&q=80"
+coverImage: "https://images.unsplash.com/photo-1555066931-4365d14bab8c?w=1200&h=630&fit=crop&q=80"
 ---
 
         <div class="lead">

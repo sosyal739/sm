@@ -6,7 +6,7 @@ excerpt: "Google Ads und Meta Ads Leitfaden für Haartransplantation und Medizin
 category: "Türkische Unternehmen in DE"
 date: "2026-09-28"
 readTime: "13"
-coverImage: "https://images.unsplash.com/photo-1519494026892-80bbd2d6fd0d?w=1200&h=630&fit=crop&q=80"
+coverImage: "https://images.unsplash.com/photo-1584515979956-d9f6e5d09982?w=1200&h=630&fit=crop&q=80"
 ---
 
 <blockquote class="geo-fact-box" style="background: rgba(66, 133, 244, 0.08); border-left: 4px solid #4285F4; padding: 1.2rem 1.5rem; margin-bottom: 2rem; border-radius: 0.75rem;">

@@ -6,7 +6,7 @@ excerpt: "Vermeiden Sie Datenverluste im Marketing 2026: Einrichtungs-Leitfaden 
 category: "Server-Side Tracking"
 date: "2026-07-26"
 readTime: "12"
-coverImage: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=600&h=300&fit=crop&q=80"
+coverImage: "https://images.unsplash.com/photo-1487754180451-c456f719a1fc?w=1200&h=630&fit=crop&q=80"
 ---
 
 <div class="lead">

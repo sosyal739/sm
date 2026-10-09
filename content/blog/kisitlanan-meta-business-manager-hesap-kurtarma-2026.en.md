@@ -6,7 +6,7 @@ excerpt: "Actionable appeal blueprint to reinstate disabled Facebook & Instagram
 category: "Meta Ads & Hesap Güvenliği"
 date: "2026-08-23"
 readTime: "11"
-coverImage: "https://images.unsplash.com/photo-1563986768609-322da13575f3?w=600&h=300&fit=crop&q=80"
+coverImage: "https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?w=1200&h=630&fit=crop&q=80"
 ---
 
 <div class="lead">

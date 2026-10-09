@@ -6,7 +6,7 @@ excerpt: "Täglich Budget in Google Ads investieren, aber das Telefon steht stil
 category: "Google Ads & PPC"
 date: "2026-08-25"
 readTime: "19"
-coverImage: "https://images.unsplash.com/photo-1571867424488-4565932edb41?w=600&h=300&fit=crop&q=80"
+coverImage: "https://images.unsplash.com/photo-1517048676732-d65bc937f952?w=1200&h=630&fit=crop&q=80"
 ---
 
 <div class="lead">
