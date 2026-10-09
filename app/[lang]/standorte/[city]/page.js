@@ -655,37 +655,65 @@ const strategicGuides = [
       en: 'Google Ads Agency Costs 2026: How Much Does Professional Management Cost in Germany?'
     },
     tag: {
-      de: 'Preise & ROI Benchmark',
-      tr: 'Fiyat & ROI Analizi',
-      en: 'Pricing & ROI Benchmark'
+      de: 'Preise & Fixpreis Benchmark',
+      tr: 'Fiyat & Sabit Ücret Analizi',
+      en: 'Pricing & Flat-Fee Benchmark'
     },
     readTime: '8 Min.'
   },
   {
-    href: '/blog/google-ads-negative-keywords-ausschlussliste-deutschland-2026',
+    href: '/blog/almanyada-avukat-steuerberater-google-ads-yerel-seo-2026',
     title: {
-      de: '500+ Google Ads Negativ-Keywords Liste: Ausschlussliste Deutschland 2026',
-      tr: '500+ Negatif Anahtar Kelime Listesi: Almanya Reklamlarında Bütçe İsrafını Önleme 2026',
-      en: '500+ Google Ads Negative Keywords List: Germany Master Exclusion 2026'
+      de: 'Google Ads für Anwälte & Steuerberater in Deutschland: BRAO-konforme Mandantengewinnung',
+      tr: 'Almanya\'da Avukat ve Steuerberater İçin Google Ads & Yerel SEO Rehberi 2026',
+      en: 'Google Ads for Law Firms & Tax Advisors in Germany: BRAO-Compliant Client Acquisition'
     },
     tag: {
-      de: 'Budgetschutz & PMax',
-      tr: 'Bütçe Koruma & PMax',
-      en: 'Budget Protection & PMax'
+      de: 'Kanzleien & BRAO § 43b',
+      tr: 'Hukuk & Steuerberater',
+      en: 'Legal & Compliance'
     },
-    readTime: '12 Min.'
+    readTime: '11 Min.'
   },
   {
-    href: '/blog/google-ads-b2b-it-software-saas-deutschland-2026',
+    href: '/blog/google-ads-agentur-dortmund-ruhrgebiet-mittelstand-2026',
     title: {
-      de: 'Google Ads für B2B, IT & Software SaaS in Deutschland: LinkedIn vs. Google Ads',
-      tr: 'Almanya\'da B2B, IT ve Yazılım Şirketleri İçin Google Ads: LinkedIn vs. Google Ads',
-      en: 'Google Ads for B2B, IT & Software SaaS in Germany: LinkedIn vs. Google Ads'
+      de: 'Google Ads Agentur Dortmund & Ruhrgebiet 2026: Mittelstand & B2B Branchen-Benchmarks',
+      tr: 'Dortmund & Ruhr Bölgesi Google Ads Ajansı: KOBİ ve B2B Sektör Analizleri 2026',
+      en: 'Google Ads Agency Dortmund & Ruhr Area 2026: Mid-Market & B2B Industry Benchmarks'
     },
     tag: {
-      de: 'B2B Lead-Generierung',
-      tr: 'B2B Müşteri Kazanımı',
-      en: 'B2B Lead Generation'
+      de: 'Ruhrgebiet & B2B Mittelstand',
+      tr: 'Ruhr & Sanayi KOBİ',
+      en: 'Ruhr Area & Mid-Market'
+    },
+    readTime: '10 Min.'
+  },
+  {
+    href: '/blog/google-ads-rechnung-buchen-reverse-charge-2026',
+    title: {
+      de: 'Google Ads Rechnung richtig buchen & Reverse Charge 2026: USt-IdNr Leitfaden Deutschland',
+      tr: 'Google Ads Faturası Nasıl Muhasebeleştirilir & Reverse Charge 2026 Rehberi',
+      en: 'How to Book Google Ads Invoices & Reverse Charge in Germany 2026'
+    },
+    tag: {
+      de: 'Steuern & Reverse Charge',
+      tr: 'Vergi & Fatura Rehberi',
+      en: 'Taxes & Invoicing'
+    },
+    readTime: '9 Min.'
+  },
+  {
+    href: '/blog/meta-advantage-plus-shopping-optimization',
+    title: {
+      de: 'Meta Advantage+ Shopping Kampagnen (ASC): CPA senken, Creative Fatigue stoppen & ROAS skalieren',
+      tr: 'Advantage+ Shopping Kampanyalarında CPA Düşürme, Creative Fatigue ve Satış Katlama Rehberi',
+      en: 'Meta Advantage+ Shopping Campaigns (ASC): Lower CPA, Stop Creative Fatigue & Scale ROAS'
+    },
+    tag: {
+      de: 'Meta Ads & Advantage+',
+      tr: 'Meta Ads & E-Ticaret',
+      en: 'Meta Ads & Advantage+'
     },
     readTime: '10 Min.'
   },
@@ -697,7 +725,7 @@ const strategicGuides = [
       en: 'Trades & Renovation in Germany: MyHammer Dependency vs. Own Google Ads 2026'
     },
     tag: {
-      de: 'Handwerk & Bau',
+      de: 'Handwerk & Sanierung',
       tr: 'İnşaat & Usta',
       en: 'Trades & Construction'
     },
@@ -1503,7 +1531,7 @@ export default function CityPage({ params }) {
             </Link>
           </div>
 
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5">
             {strategicGuides.map((guide, idx) => (
               <Link
                 key={idx}

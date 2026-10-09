@@ -18,16 +18,16 @@ const serviceMeta = {
   },
   'meta-ads': {
     de: {
-      title: 'Meta Ads Agentur (Facebook & Instagram) | Salih Maral',
-      description: 'Advantage+ Shopping Kampagnen und Creative AI für planbare E-Commerce Skalierung und niedrigere CPAs auf Instagram & Facebook.',
+      title: 'Meta Ads Agentur Deutschland (Facebook & Instagram) | Salih Maral',
+      description: 'Zertifizierte Meta Ads Betreuung zum Fixpreis: Advantage+ Shopping, Creative AI & CAPI für messbare E-Commerce Skalierung und minimale CPAs.',
     },
     en: {
-      title: 'Meta Ads Management (Facebook & Instagram) | Salih Maral',
-      description: 'Advantage+ Shopping Campaigns and Creative AI for predictable e-commerce scaling and lower CPAs across Instagram & Facebook.',
+      title: 'Meta Ads Agency Germany (Facebook & Instagram) | Salih Maral',
+      description: 'Certified Meta Ads management in Germany: Advantage+ Shopping, Creative AI, and Server-Side CAPI to scale e-commerce and lower CPAs.',
     },
     tr: {
-      title: 'Meta Ads Yönetimi (Facebook & Instagram) | Salih Maral',
-      description: 'Advantage+ Alışveriş Kampanyaları ve Yapay Zeka Kreatifleri ile Instagram ve Facebook satışlarınızı kârlı şekilde ölçekleyin.',
+      title: 'Almanya Meta Ads Ajansı (Facebook & Instagram) | Salih Maral',
+      description: 'Almanya ve Avrupa pazarı için Meta Ads yönetimi: Advantage+ Alışveriş, CAPI ve yapay zeka kreatifleri ile satışlarınızı ve ROAS\'ınızı katlayın.',
     },
   },
   'youtube-ads': {
@@ -128,6 +128,101 @@ const serviceMeta = {
       description: 'Google Haritalar ve Trustpilot üzerindeki haksız, sahte 1 yıldızlı yorumların yasal zeminde hızlıca kaldırılması.',
     },
   },
+}
+
+const serviceFaqs = {
+  'meta-ads': {
+    de: [
+      {
+        q: 'Was kostet die professionelle Meta Ads Betreuung (Fixpreis vs. prozentuale Provision)?',
+        a: 'Bei Salih Maral betreuen wir Ihre Facebook und Instagram Ads zu transparenten monatlichen Fixpreisen ab 590 €/Monat – ohne prozentuale Umsatzbeteiligung an Ihrem Werbebudget. So stellen wir sicher, dass das primäre Ziel die Senkung Ihres CPA und die Steigerung Ihres Netto-ROAS ist, statt Ihr Werbebudget künstlich in die Höhe zu treiben.'
+      },
+      {
+        q: 'Wie bekämpft man Creative Fatigue (Anzeigenmüdigkeit) auf Instagram & Facebook?',
+        a: 'Creative Fatigue tritt ein, wenn dieselbe Zielgruppe ein Werbemittel zu oft sieht, wodurch Frequenz steigt und Klickraten (CTR) einbrechen. Wir lösen dies durch eine wöchentliche Creative-Pipeline mit systematischer Diversifikation: UGC-Videos, statische Problem-Lösungs-Grafiken und dynamische Advantage+ Karussell-Anzeigen.'
+      },
+      {
+        q: 'Was ist der Vorteil von Meta Advantage+ Shopping Campaigns (ASC)?',
+        a: 'Advantage+ Shopping Campaigns nutzen maschinelles Lernen, um bis zu 150 Kreativ-Assets automatisch mit kaufbereiten Nutzern zu matchen. Wir begrenzen den Bestandskunden-Anteil (Customer Budget Cap) strategisch auf 5-15%, um echtes Neukundenwachstum zu sichern.'
+      },
+      {
+        q: 'Warum ist die Meta Conversions API (CAPI) mit Server-Side GTM in Deutschland Pflicht?',
+        a: 'Durch strenge DSGVO/TTDSG-Cookie-Banner und Safari ITP gehen über 30% der Browser-Pixel-Events verloren. Über Server-Side CAPI stellen wir sicher, dass Kauf- und Lead-Signale datenschutzkonform und verlustfrei an Meta übertragen werden, was den Algorithmus stabilisiert und den CPA nachweislich senkt.'
+      }
+    ],
+    en: [
+      {
+        q: 'What are the fees for professional Meta Ads management (Flat fee vs % of spend)?',
+        a: 'We operate on a transparent monthly flat fee (Fixpreis) starting from €590/month rather than taking percentage cuts from your ad budget. This ensures our priority is strictly to reduce your CPA and scale profitable net ROAS without artificial budget inflation.'
+      },
+      {
+        q: 'How do you prevent Creative Fatigue on Facebook & Instagram Ads?',
+        a: 'Creative Fatigue occurs when audience frequency spikes and CTR drops due to overexposed ads. We eliminate this with a weekly creative pipeline: UGC video hooks, static problem-solution infographics, and dynamic Advantage+ catalog carousels.'
+      },
+      {
+        q: 'What are the advantages of Meta Advantage+ Shopping Campaigns (ASC)?',
+        a: 'Advantage+ Shopping Campaigns leverage machine learning to dynamically match up to 150 assets with high-intent buyers. By implementing a strict 5-15% Customer Budget Cap, we prevent algorithm waste on repeat buyers and secure true incremental acquisition.'
+      },
+      {
+        q: 'Why is Meta Conversions API (CAPI) with Server-Side GTM mandatory in Germany?',
+        a: 'Strict German privacy regulations (TTDSG) and browser cookie restrictions block over 30% of browser pixel events. Server-Side CAPI restores loss-free, compliant event signals to Meta, lowering CPA and improving algorithm precision.'
+      }
+    ],
+    tr: [
+      {
+        q: "Almanya'da profesyonel Meta Ads yönetimi ücreti nedir (Sabit fiyat mı, bütçe komisyonu mu)?",
+        a: "Reklam harcamanızdan %10-15 komisyon kesmek yerine aylık 590 €'dan başlayan şeffaf ve sabit hizmet bedeli (Fixpreis) ile çalışıyoruz. Bu sayede ajansın bütçenizi gereksiz yükseltmesini engelliyor, doğrudan dönüşüm başı maliyetinizi (CPA) düşürüp kârlılığınızı (ROAS) katlamaya odaklanıyoruz."
+      },
+      {
+        q: "Facebook ve Instagram reklamlarında Creative Fatigue (Reklam Yorgunluğu) nasıl çözülür?",
+        a: "Hedef kitlenin aynı reklamı defalarca görmesi sonucu sıklık artar ve tıklama oranları (CTR) düşer. Haftalık yeni kreatif testleri, kullanıcı deneyimi (UGC) videoları, problem-çözüm grafikleri ve Advantage+ dinamik katalog formatları ile reklam yorgunluğunu tamamen ortadan kaldırıyoruz."
+      },
+      {
+        q: "Meta Advantage+ Alışveriş Kampanyaları (ASC) nedir ve ne gibi avantajlar sağlar?",
+        a: "Meta Advantage+ Shopping, makine öğrenimi ile 150 adede kadar kreatif varyasyonunu satın alma olasılığı en yüksek kullanıcılarla otomatik eşleştirir. Mevcut müşteri bütçe sınırını (Customer Budget Cap) %10-15 seviyesinde tutarak bütçenin eski alıcılarda tükenmesini engelliyor, kârlı yeni müşteri akışı sağlıyoruz."
+      },
+      {
+        q: "Almanya'da Meta Conversions API (CAPI) ve sunucu taraflı takip neden zorunludur?",
+        a: "Avrupa Birliği ve Almanya çerez yasaları (TTDSG/GDPR) ile tarayıcı engelleyicileri piksel verilerinin %30'undan fazlasını siler. Server-Side CAPI ile satın alma ve lead sinyalleri sunucu üzerinden kayıpsız iletilir; yapay zekanın veri körlüğü önlenir ve maliyetler düşer."
+      }
+    ]
+  },
+  'google-ads': {
+    de: [
+      {
+        q: 'Google Ads Agentur Preise & Kosten: Wie rechnen Sie ab (Fixpreis oder Prozent vom Ad Spend)?',
+        a: 'Wir setzen bewusst auf eine transparente monatliche Betreuungspauschale (Fixpreis ab 590 €/Monat) statt prozentualer Umsatzprovisionen. Unser Ziel ist es nicht, Ihr Werbebudget künstlich in die Höhe zu treiben, sondern Ihre Kosten pro Conversion (CPA) zu senken und Ihren ROAS zu maximieren.'
+      },
+      {
+        q: 'Wie schnell stellen sich erste messbare Ergebnisse mit Google Ads ein?',
+        a: 'Google Search Kampagnen generieren ab dem ersten Schaltungstag qualifizierte Suchanfragen und Leads. Durch kontinuierliche Suchbegriffsanalyse, negative Keywords und Conversion-Tracking stabilisiert sich der optimale CPA innerhalb von 14 bis 30 Tagen.'
+      },
+      {
+        q: 'Bieten Sie auch mehrsprachige Betreuung (Deutsch & Türkisch) an?',
+        a: 'Ja. Als offizieller Google Partner mit über 17 Jahren Praxiserfahrung beraten wir Unternehmen in ganz Deutschland fließend auf Deutsch, Türkisch und Englisch.'
+      }
+    ],
+    en: [
+      {
+        q: 'Google Ads Agency Costs & Pricing: How do you charge (Flat fee or % of ad spend)?',
+        a: 'We deliberately operate on a transparent monthly flat-fee model (from €590/month) rather than taking a percentage of your ad spend. This aligns our goals strictly with lowering your CPA and boosting your ROAS.'
+      },
+      {
+        q: 'How fast can we see measurable results with Google Ads?',
+        a: 'Search campaigns generate qualified intent clicks from day one. With negative keyword pruning and server-side tracking, optimal acquisition cost is typically achieved within 14 to 30 days.'
+      }
+    ],
+    tr: [
+      {
+        q: 'Google Ads Ajans Ücretleri: Nasıl çalışıyorsunuz (Sabit fiyat mı, bütçe komisyonu mu)?',
+        a: "Yönetilen bütçeden %10 - %15 komisyon kesmek yerine aylık 590 €'dan başlayan şeffaf ve sabit hizmet bedeli (Fixpreis) ile çalışıyoruz. Bütçenizi şişirmeden doğrudan maliyetlerinizi düşürmeye ve kârlılığı artırmaya odaklanıyoruz."
+      },
+      {
+        q: 'Google Ads reklamları ne kadar sürede sonuç verir?',
+        a: 'Arama ağı reklamları yayına girdiği ilk günden itibaren telefon ve teklif talebi getirmeye başlar. Negatif kelime optimizasyonu ve doğru takip ile 14-30 gün içinde en yüksek kârlılık oranına ulaşılır.'
+      }
+    ]
+  }
 }
 
 export async function generateMetadata({ params }) {
@@ -294,6 +389,22 @@ export default async function ServicePage({ params }) {
         ],
       },
     ],
+  }
+
+  const currentFaqs = serviceFaqs[key]?.[currentLang] || []
+  if (currentFaqs.length > 0) {
+    serviceSchema['@graph'].push({
+      '@type': 'FAQPage',
+      '@id': `${canonicalUrl}#faq`,
+      mainEntity: currentFaqs.map(item => ({
+        '@type': 'Question',
+        name: item.q,
+        acceptedAnswer: {
+          '@type': 'Answer',
+          text: item.a,
+        },
+      })),
+    })
   }
 
   return (
