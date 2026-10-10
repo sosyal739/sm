@@ -1,6 +1,7 @@
 import { Manrope } from 'next/font/google'
 import './globals.css'
 import MobileStickyBar from '@/components/MobileStickyBar'
+import CookieConsent from '@/components/CookieConsent'
 
 const manrope = Manrope({ 
   subsets: ['latin', 'latin-ext'], 
@@ -398,6 +399,7 @@ export default function RootLayout({ children }) {
       <body className={`${manrope.className} ${manrope.variable} font-sans antialiased text-gray-900 bg-white selection:bg-[#5138EE]/10 selection:text-[#5138EE] pb-20 md:pb-0`}>
         {children}
         <MobileStickyBar />
+        <CookieConsent />
       </body>
     </html>
   )

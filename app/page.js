@@ -9,7 +9,6 @@ import { Input } from '@/components/ui/input'
 import { Textarea } from '@/components/ui/textarea'
 import { Badge } from '@/components/ui/badge'
 import { Mail, CheckCircle, BarChart3, Users, Award, TrendingUp, Globe, Star, Sparkles, ArrowRight, Clock, Calendar, Flame, Cpu, Zap, Search, ShieldCheck, Layers, BookOpen, Menu, X, ChevronRight, MessageSquare, ChevronDown, HelpCircle } from 'lucide-react'
-import CookieConsent from '@/components/CookieConsent'
 import RoasCalculatorWidget from '@/components/RoasCalculatorWidget'
 import LeadFunnelWizard from '@/components/LeadFunnelWizard'
 import GoogleAdsBudgetCalculator from '@/components/GoogleAdsBudgetCalculator'
@@ -2702,17 +2701,14 @@ export default function Home({ initialLang = 'de' }) {
               </a>
             </div>
             <div className="flex items-center space-x-6 mt-4 md:mt-0">
-              <a href="/about" className="hover:text-white transition-colors">{t.footer.about || 'Über uns'}</a>
-              <a href="/impressum" className="hover:text-white transition-colors">Impressum</a>
-              <a href="/datenschutz" className="hover:text-white transition-colors">Datenschutzerklärung</a>
+              <a href="/about" className="hover:text-white transition-colors">{t.footer?.about || (lang === 'tr' ? 'Hakkımda' : lang === 'en' ? 'About' : 'Über mich')}</a>
+              <a href="/impressum" className="hover:text-white transition-colors">{lang === 'tr' ? 'Künye' : lang === 'en' ? 'Legal Notice' : 'Impressum'}</a>
+              <a href="/datenschutz" className="hover:text-white transition-colors">{lang === 'tr' ? 'Gizlilik Politikası' : lang === 'en' ? 'Privacy Policy' : 'Datenschutzerklärung'}</a>
               <a href="/blog" className="hover:text-white transition-colors">Blog</a>
             </div>
           </div>
         </div>
       </footer>
-      
-      {/* Cookie Consent Banner */}
-      <CookieConsent />
     </div>
   )
 }
