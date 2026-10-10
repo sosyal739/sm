@@ -211,6 +211,7 @@ export default function CookieConsent({ currentLang }) {
       try {
         const savedPrefs = JSON.parse(consent)
         setPreferences(savedPrefs)
+        updateGoogleConsent(savedPrefs)
         if (savedPrefs.analytics) {
           loadGoogleAnalytics()
         } else {
@@ -222,6 +223,17 @@ export default function CookieConsent({ currentLang }) {
     }
   }, [])
 
+  const updateGoogleConsent = (prefs) => {
+    if (typeof window !== 'undefined' && typeof window.gtag === 'function') {
+      window.gtag('consent', 'update', {
+        analytics_storage: prefs.analytics ? 'granted' : 'denied',
+        ad_storage: prefs.marketing ? 'granted' : 'denied',
+        ad_user_data: prefs.marketing ? 'granted' : 'denied',
+        ad_personalization: prefs.marketing ? 'granted' : 'denied',
+      })
+    }
+  }
+
   const savePreferences = (prefs) => {
     localStorage.setItem('cookieConsent', JSON.stringify(prefs))
     localStorage.setItem('cookieConsentDate', new Date().toISOString())
@@ -230,6 +242,7 @@ export default function CookieConsent({ currentLang }) {
     setShowBanner(false)
     setShowSettings(false)
     
+    updateGoogleConsent(prefs)
     if (prefs.analytics) {
       loadGoogleAnalytics()
     } else {
