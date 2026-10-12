@@ -962,6 +962,23 @@ export default function ServiceDetailClient({ initialService, initialLang }) {
     }
   }
 
+  // STK / Spendenmarketing: kendi H1 ve metinleri (Google Ads sayfasının kopyası olmasın)
+  servicesData['islamic-charity-ngo-marketing'] = {
+    ...servicesData['google-ads'],
+    title: lang === 'de' ? 'Spendenmarketing & Google Ad Grants für NGOs' : lang === 'en' ? 'Donation Marketing & Google Ad Grants for NGOs' : 'STK ve Dernekler İçin Bağış Pazarlaması',
+    subtitle: lang === 'de'
+      ? 'Mehr Spenden für Brunnen, Waisen und Nothilfe — mit bis zu $10.000/Monat Ad Grants.'
+      : lang === 'en'
+      ? 'More donations for water wells, orphans and emergency relief — with up to $10,000/month in Ad Grants.'
+      : 'Su kuyusu, yetim ve acil yardım için daha fazla bağış — aylık $10.000 değerinde Ad Grants ile.',
+    description: lang === 'de'
+      ? 'Wir betreuen Spendenkampagnen und Google Ad Grants für gemeinnützige Organisationen, inklusive Ramadan- und Kurban-Appellen, Conversion-Tracking und Richtlinien-Compliance.'
+      : lang === 'en'
+      ? 'We manage donation campaigns and Google Ad Grants for non-profits, including Ramadan and Qurbani appeals, conversion tracking and policy compliance.'
+      : 'Dernekler için bağış kampanyalarını ve Google Ad Grants hesaplarını yönetiyoruz: Ramazan ve Kurban kampanyaları, dönüşüm takibi ve politika uyumu dahil.',
+    badge: lang === 'de' ? 'Google Ad Grants Experte' : lang === 'en' ? 'Google Ad Grants Expert' : 'Google Ad Grants Uzmanı',
+  }
+
   // Servis verisini al
   const data = servicesData[service] || servicesData['google-ads']
 

@@ -18,7 +18,7 @@ const serviceMeta = {
   },
   'meta-ads': {
     de: {
-      title: 'Meta Ads Agentur Deutschland (Facebook & Instagram) | Salih Maral',
+      title: 'Meta Ads Agentur Deutschland (Facebook & Instagram) | S. Maral',
       description: 'Zertifizierte Meta Ads Betreuung zum Fixpreis: Advantage+ Shopping, Creative AI & CAPI für messbare E-Commerce Skalierung und minimale CPAs.',
     },
     en: {
@@ -33,7 +33,7 @@ const serviceMeta = {
   'youtube-ads': {
     de: {
       title: 'YouTube Ads Betreuung & Video-Wachstum | Salih Maral',
-      description: 'Erreichen Sie echte Zuschauer und loyale Abonnenten mit zielgerichteten In-Feed & Shorts Video Ads auf YouTube.',
+      description: 'Erreichen Sie echte Zuschauer und loyale Abonnenten mit zielgerichteten In-Feed & Shorts Video Ads auf YouTube. Zum Fixpreis, mit klarem Tracking.',
     },
     en: {
       title: 'YouTube Ads & Video Growth Services | Salih Maral',
@@ -65,7 +65,7 @@ const serviceMeta = {
     },
     en: {
       title: 'TikTok Ads Management Services | Salih Maral',
-      description: 'Viral direct-response campaigns and Spark Ads for rapid e-commerce growth and high conversion rates on TikTok.',
+      description: 'Viral direct-response campaigns and Spark Ads for rapid e-commerce growth and high conversion rates on TikTok. Flat monthly fee, full tracking.',
     },
     tr: {
       title: 'TikTok Ads Reklam Yönetimi | Salih Maral',
@@ -75,7 +75,7 @@ const serviceMeta = {
   'x-ads': {
     de: {
       title: 'X (Twitter) Ads Betreuung & B2B Lead Gen | Salih Maral',
-      description: 'Positionieren Sie Ihre Marke bei Trendthemen und Entscheidern. B2B Lead-Generierung und Reichweite auf X.',
+      description: 'Positionieren Sie Ihre Marke bei Trendthemen und Entscheidern. B2B Lead-Generierung und Reichweite auf X, zum transparenten Fixpreis.',
     },
     en: {
       title: 'X (Twitter) Ads Management & B2B Leads | Salih Maral',
@@ -83,7 +83,7 @@ const serviceMeta = {
     },
     tr: {
       title: 'X (Twitter) Ads Reklam Yönetimi ve B2B Büyüme | Salih Maral',
-      description: 'Karar vericilere ve trend konulara doğrudan ulaşın. B2B müşteri kazanımı ve yüksek etkileşimli X reklamları.',
+      description: 'Karar vericilere ve trend konulara doğrudan ulaşın. B2B müşteri kazanımı ve yüksek etkileşimli X reklamları, sabit aylık ücretle.',
     },
   },
   'seo': {
@@ -111,7 +111,7 @@ const serviceMeta = {
     },
     tr: {
       title: 'STK & Dernekler İçin Dijital Pazarlama | Salih Maral',
-      description: 'Su kuyusu, yetim ve Ramazan/Kurban bağış hunileri. $10.000/aylık ücretsiz Google Ad Grants hibe reklam yönetimi.',
+      description: 'Su kuyusu, yetim ve Ramazan/Kurban bağış hunileri. $10.000/aylık ücretsiz Google Ad Grants hibe reklam yönetimi ve dernekler için dönüşüm takibi.',
     },
   },
   'yorum-yonetimi': {

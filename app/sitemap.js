@@ -13,8 +13,6 @@ export default async function sitemap() {
     '/en',
     '/about',
     '/blog',
-    '/impressum',
-    '/datenschutz',
   ]
 
   const staticEntries = staticRoutes.map((route) => ({
