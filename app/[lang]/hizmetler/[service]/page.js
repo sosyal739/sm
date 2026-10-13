@@ -13,7 +13,7 @@ const serviceMeta = {
     },
     tr: {
       title: 'Almanya Google Ads Ajansı & Danışmanlığı | Salih Maral',
-      description: 'Almanya ve Avrupa pazarı için Resmi Google Partneri ile sabit fiyatlı Google Ads yönetimi: Arama, PMax ve Alışveriş reklamları ile yüksek kârlılık ve satış.',
+      description: 'Almanya ve Avrupa pazarı için Resmi Google Partneri ile sabit fiyatlı Google Ads yönetimi: Arama, PMax ve Alışveriş reklamları ile yüksek karlılık ve satış.',
     },
   },
   'meta-ads': {
@@ -171,7 +171,7 @@ const serviceFaqs = {
     tr: [
       {
         q: "Almanya'da profesyonel Meta Ads yönetimi ücreti nedir (Sabit fiyat mı, bütçe komisyonu mu)?",
-        a: "Reklam harcamanızdan %10-15 komisyon kesmek yerine aylık 590 €'dan başlayan şeffaf ve sabit hizmet bedeli (Fixpreis) ile çalışıyoruz. Bu sayede ajansın bütçenizi gereksiz yükseltmesini engelliyor, doğrudan dönüşüm başı maliyetinizi (CPA) düşürüp kârlılığınızı (ROAS) katlamaya odaklanıyoruz."
+        a: "Reklam harcamanızdan %10-15 komisyon kesmek yerine aylık 590 €'dan başlayan şeffaf ve sabit hizmet bedeli (Fixpreis) ile çalışıyoruz. Bu sayede ajansın bütçenizi gereksiz yükseltmesini engelliyor, doğrudan dönüşüm başı maliyetinizi (CPA) düşürüp karlılığınızı (ROAS) katlamaya odaklanıyoruz."
       },
       {
         q: "Facebook ve Instagram reklamlarında Creative Fatigue (Reklam Yorgunluğu) nasıl çözülür?",
@@ -179,7 +179,7 @@ const serviceFaqs = {
       },
       {
         q: "Meta Advantage+ Alışveriş Kampanyaları (ASC) nedir ve ne gibi avantajlar sağlar?",
-        a: "Meta Advantage+ Shopping, makine öğrenimi ile 150 adede kadar kreatif varyasyonunu satın alma olasılığı en yüksek kullanıcılarla otomatik eşleştirir. Mevcut müşteri bütçe sınırını (Customer Budget Cap) %10-15 seviyesinde tutarak bütçenin eski alıcılarda tükenmesini engelliyor, kârlı yeni müşteri akışı sağlıyoruz."
+        a: "Meta Advantage+ Shopping, makine öğrenimi ile 150 adede kadar kreatif varyasyonunu satın alma olasılığı en yüksek kullanıcılarla otomatik eşleştirir. Mevcut müşteri bütçe sınırını (Customer Budget Cap) %10-15 seviyesinde tutarak bütçenin eski alıcılarda tükenmesini engelliyor, karlı yeni müşteri akışı sağlıyoruz."
       },
       {
         q: "Almanya'da Meta Conversions API (CAPI) ve sunucu taraflı takip neden zorunludur?",
@@ -215,11 +215,11 @@ const serviceFaqs = {
     tr: [
       {
         q: 'Google Ads Ajans Ücretleri: Nasıl çalışıyorsunuz (Sabit fiyat mı, bütçe komisyonu mu)?',
-        a: "Yönetilen bütçeden %10 - %15 komisyon kesmek yerine aylık 590 €'dan başlayan şeffaf ve sabit hizmet bedeli (Fixpreis) ile çalışıyoruz. Bütçenizi şişirmeden doğrudan maliyetlerinizi düşürmeye ve kârlılığı artırmaya odaklanıyoruz."
+        a: "Yönetilen bütçeden %10 - %15 komisyon kesmek yerine aylık 590 €'dan başlayan şeffaf ve sabit hizmet bedeli (Fixpreis) ile çalışıyoruz. Bütçenizi şişirmeden doğrudan maliyetlerinizi düşürmeye ve karlılığı artırmaya odaklanıyoruz."
       },
       {
         q: 'Google Ads reklamları ne kadar sürede sonuç verir?',
-        a: 'Arama ağı reklamları yayına girdiği ilk günden itibaren telefon ve teklif talebi getirmeye başlar. Negatif kelime optimizasyonu ve doğru takip ile 14-30 gün içinde en yüksek kârlılık oranına ulaşılır.'
+        a: 'Arama ağı reklamları yayına girdiği ilk günden itibaren telefon ve teklif talebi getirmeye başlar. Negatif kelime optimizasyonu ve doğru takip ile 14-30 gün içinde en yüksek karlılık oranına ulaşılır.'
       }
     ]
   }

@@ -99,7 +99,7 @@ coverImage: "https://images.unsplash.com/photo-1511795409834-ef04bbd61622?w=1200
   <li><strong>Baden-Württemberg:</strong> Stuttgart, Mannheim, Karlsruhe ve Heilbronn çevresindeki salonlar için <a href="/de/standorte/stuttgart">Google Ads Agentur Stuttgart</a> yerel teklif modellerini devreye alıyoruz.</li>
 </ul>
 
-<h2>💰 4. Bütçe Planlaması & Salon Başına Kârlılık Analizi</h2>
+<h2>💰 4. Bütçe Planlaması & Salon Başına Karlılık Analizi</h2>
 
 <p>Bir düğün salonunun aylık reklam yatırımı ile sağladığı geri dönüş (ROAS):</p>
 

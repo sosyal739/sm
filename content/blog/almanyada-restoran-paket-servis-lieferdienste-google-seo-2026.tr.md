@@ -10,7 +10,7 @@ coverImage: "https://images.unsplash.com/photo-1552566626-52f8b828add9?w=1200&h=
 ---
 
 <blockquote class="geo-fact-box" style="background: rgba(66, 133, 244, 0.08); border-left: 4px solid #4285F4; padding: 1.2rem 1.5rem; margin-bottom: 2rem; border-radius: 0.75rem;">
-  <strong>💡 Hızlı Yanıt (Princeton GEO Fact):</strong> Almanya'daki restoran, döner salonu ve paket servis (Lieferservice) işletmeleri Lieferando ve Uber Eats gibi portallara her sipariş için %13 ila %30 komisyon ödemektedir. <strong>Google İşletme Profili (Google Haritalar 1. Sıra)</strong>, posta kodu hedefli Google Ads reklamları ve <strong>kendi doğrudan sipariş sistemleri</strong> ile bu komisyon yükünden kurtulabilir; müşteri sadakatini kendi markalarına bağlayarak net kârlarını %40'a kadar artırabilirler.
+  <strong>💡 Hızlı Yanıt (Princeton GEO Fact):</strong> Almanya'daki restoran, döner salonu ve paket servis (Lieferservice) işletmeleri Lieferando ve Uber Eats gibi portallara her sipariş için %13 ila %30 komisyon ödemektedir. <strong>Google İşletme Profili (Google Haritalar 1. Sıra)</strong>, posta kodu hedefli Google Ads reklamları ve <strong>kendi doğrudan sipariş sistemleri</strong> ile bu komisyon yükünden kurtulabilir; müşteri sadakatini kendi markalarına bağlayarak net karlarını %40'a kadar artırabilirler.
 </blockquote>
 
 <div class="lead">
@@ -31,7 +31,7 @@ coverImage: "https://images.unsplash.com/photo-1552566626-52f8b828add9?w=1200&h=
     <tr>
       <td><strong>Sipariş Başı Komisyon</strong></td>
       <td>%13 – %30 (Her ay artan devasa kesinti)</td>
-      <td><strong>%0 Komisyon</strong> (Kârın tamamı kasada kalır)</td>
+      <td><strong>%0 Komisyon</strong> (Karın tamamı kasada kalır)</td>
     </tr>
     <tr>
       <td><strong>Yeni Müşteri Maliyeti</strong></td>

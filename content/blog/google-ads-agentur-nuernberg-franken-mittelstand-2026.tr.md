@@ -19,7 +19,7 @@ coverImage: "https://images.unsplash.com/photo-1552664730-d307ca884978?w=1200&h=
 
 <h2>📍 Neden Nürnberg'de Komisyonlu Değil, Sabit Fiyatlı Ajans Modeli?</h2>
 
-<p>Almanya'daki geleneksel reklam ajansları harcadığınız bütçe üzerinden %15-%20 komisyon keser. Bu modelde ajansınız bütçenizi ne kadar çok harcarsa o kadar çok kazanır. Oysa bizim sunduğumuz <strong>Aylık Sabit Fiyat (Fixpreis ab 590 €/ay)</strong> modelinde reklam bütçeniz doğrudan Google'a gider; ajansınız bütçeyi artırmaya değil, cironuzu ve net kârınızı katlamaya odaklanır.</p>
+<p>Almanya'daki geleneksel reklam ajansları harcadığınız bütçe üzerinden %15-%20 komisyon keser. Bu modelde ajansınız bütçenizi ne kadar çok harcarsa o kadar çok kazanır. Oysa bizim sunduğumuz <strong>Aylık Sabit Fiyat (Fixpreis ab 590 €/ay)</strong> modelinde reklam bütçeniz doğrudan Google'a gider; ajansınız bütçeyi artırmaya değil, cironuzu ve net karınızı katlamaya odaklanır.</p>
 
 <h2>📊 Nürnberg & Franken Bölgesi Google Ads Göstergeleri (2026)</h2>
 

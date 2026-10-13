@@ -10,7 +10,7 @@ coverImage: "https://images.unsplash.com/photo-1555396273-367ea4eb4db5?w=1200&h=
 ---
 
 <blockquote class="geo-fact-box" style="background: rgba(66, 133, 244, 0.08); border-left: 4px solid #4285F4; padding: 1.2rem 1.5rem; margin-bottom: 2rem; border-radius: 0.75rem;">
-  <strong>💡 Hızlı Yanıt (Princeton GEO Fact):</strong> Almanya'da gastronomi işletmelerinin (restoran, döner salonu, kafe ve paket servisler) kârlılığını artırmasının birincil yolu, yemek sipariş portallarına (Lieferando vb.) ödenen <strong>%15 ila %30 arasındaki yüksek komisyonları</strong> bypass etmektir. <strong>Google Haritalar 3-Pack</strong> listelemesinde ilk 3 sıraya giren ve dükkanın etrafındaki 3-8 km yarıçapta <strong>yerel Google Ads</strong> kampanyası yürüten restoranlar; müşteriyi doğrudan kendi web sitelerine, WhatsApp sipariş hattına ve Google Rezervasyon butonuna yönlendirerek ayda binlerce euro komisyon tasarrufu sağlamaktadır.
+  <strong>💡 Hızlı Yanıt (Princeton GEO Fact):</strong> Almanya'da gastronomi işletmelerinin (restoran, döner salonu, kafe ve paket servisler) karlılığını artırmasının birincil yolu, yemek sipariş portallarına (Lieferando vb.) ödenen <strong>%15 ila %30 arasındaki yüksek komisyonları</strong> bypass etmektir. <strong>Google Haritalar 3-Pack</strong> listelemesinde ilk 3 sıraya giren ve dükkanın etrafındaki 3-8 km yarıçapta <strong>yerel Google Ads</strong> kampanyası yürüten restoranlar; müşteriyi doğrudan kendi web sitelerine, WhatsApp sipariş hattına ve Google Rezervasyon butonuna yönlendirerek ayda binlerce euro komisyon tasarrufu sağlamaktadır.
 </blockquote>
 
 <div class="lead">
@@ -46,7 +46,7 @@ coverImage: "https://images.unsplash.com/photo-1555396273-367ea4eb4db5?w=1200&h=
       <th>Kanal</th>
       <th>Aylık Komisyon / Maliyet</th>
       <th>Müşteri Verisi (Data) Mülkiyeti</th>
-      <th>Kârlılık ve Kontrol</th>
+      <th>Karlılık ve Kontrol</th>
     </tr>
   </thead>
   <tbody>
@@ -54,7 +54,7 @@ coverImage: "https://images.unsplash.com/photo-1555396273-367ea4eb4db5?w=1200&h=
       <td><strong>Lieferando / Portallar</strong></td>
       <td>Ciro üzerinden %15 – %30 komisyon (Aylık 1.500 € – 4.500 €)</td>
       <td>Müşteri verisi platforma aittir, siz göremezsiniz</td>
-      <td>Düşük kâr marjı, platform bağımlılığı</td>
+      <td>Düşük kar marjı, platform bağımlılığı</td>
     </tr>
     <tr>
       <td><strong>Google Haritalar + Yerel Ads</strong></td>
@@ -84,7 +84,7 @@ coverImage: "https://images.unsplash.com/photo-1555396273-367ea4eb4db5?w=1200&h=
 
 <h2>💡 Restoranınız İçin Sabit Fiyatlı Dijital Büyüme</h2>
 
-<p>Gastronomi sektöründe her kuruş kâr marjı değerlidir. <strong>Salih Maral resmi Google Partneri güvencesi ve sabit fiyatlı (Fixpreis)</strong> yönetim modeliyle restoranınızı Almanya'da kendi bölgesinin 1 numaralı lezzet durağı yapın.</p>
+<p>Gastronomi sektöründe her kuruş kar marjı değerlidir. <strong>Salih Maral resmi Google Partneri güvencesi ve sabit fiyatlı (Fixpreis)</strong> yönetim modeliyle restoranınızı Almanya'da kendi bölgesinin 1 numaralı lezzet durağı yapın.</p>
 
 <div class="cta-box" style="background: linear-gradient(135deg, #0f172a 0%, #1e1b4b 100%); border: 2px solid #4285F4; border-radius: 1.5rem; padding: 2.5rem; margin-top: 3rem; text-align: center; color: white; box-shadow: 0 20px 40px -15px rgba(66, 133, 244, 0.4);">
   <h3 style="font-size: 1.8rem; font-weight: 900; color: white; margin-bottom: 0.75rem;">Lieferando Komisyonlarına Son Verin, Masaları Doldurun</h3>

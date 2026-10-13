@@ -59,7 +59,7 @@ coverImage: "https://images.unsplash.com/photo-1576091160550-2173dba999ef?w=1200
 <h2>🚀 Klinikler İçin 4 Aşamalı Hasta Kazanma Formülü</h2>
 
 <h3>1. Yüksek Değerli Tedavi Anahtar Kelimeleri</h3>
-<p>Genel terimler yerine doğrudan yüksek kârlılığa sahip tedavilere odaklanıyoruz: İmplant, şeffaf plak (invisalign), rinoplasti, saç ekimi, tüp bebek veya göz lazeri gibi spesifik tedaviler.</p>
+<p>Genel terimler yerine doğrudan yüksek karlılığa sahip tedavilere odaklanıyoruz: İmplant, şeffaf plak (invisalign), rinoplasti, saç ekimi, tüp bebek veya göz lazeri gibi spesifik tedaviler.</p>
 
 <h3>2. Google Haritalar (Local Pack) ve Yerel Arama Hakimiyeti</h3>
 <p>Kliniğinizin Google İşletme Profilini optimize ederek, bölgenizde arama yapan hastaların karşısına haritada ilk 3 sırada (Local 3-Pack) çıkmasını sağlıyoruz.</p>

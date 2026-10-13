@@ -60,9 +60,9 @@ coverImage: "https://images.unsplash.com/photo-1617814076367-b759c7d7e738?w=1200
 </table>
 </div>
 
-<h2>🎯 Kfz-Gutachter Büroları İçin En Kârlı 4 Arama Segmenti</h2>
+<h2>🎯 Kfz-Gutachter Büroları İçin En Karlı 4 Arama Segmenti</h2>
 
-<p>Google Ads bütçenizi düşük kârlı veya zaman alıcı işlere değil, sigortanın tam ödeme yaptığı yüksek kârlı dosyalara odaklıyoruz:</p>
+<p>Google Ads bütçenizi düşük karlı veya zaman alıcı işlere değil, sigortanın tam ödeme yaptığı yüksek karlı dosyalara odaklıyoruz:</p>
 
 <ul>
   <li><strong>1. Kusursuz Kaza Hasarı (Haftpflichtschaden &amp; Unfallgutachten):</strong> Karşı tarafın hatalı olduğu kazalarda araç sahibi için tamamen masrafsızdır. Sigorta bağımsız ekspertiz ücretini, avukat masrafını ve kiralık araç (Mietwagen) bedelini ödemek zorundadır. Dosya başı ortalama eksper geliri: <strong>850 € – 2.200 €</strong>.</li>

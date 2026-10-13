@@ -199,8 +199,8 @@ const translations = {
           description: 'İşlerimi asistanlara veya junior çalışanlara devretmiyorum. Sınırlı sayıda işletmeyle bizzat çalışarak her hesaba gereken dikkati ve zamanı ayırırım.'
         },
         {
-          title: 'Net Satış ve Kârlılık Odaklı',
-          description: 'Trafik bir araçtır; asıl amaç ciro ve net kârdır. Tıklama sayısına odaklanmak yerine, dönüşüm oranlarını yükselterek işletmenizin net gelirini artırırım.'
+          title: 'Net Satış ve Karlılık Odaklı',
+          description: 'Trafik bir araçtır; asıl amaç ciro ve net kardır. Tıklama sayısına odaklanmak yerine, dönüşüm oranlarını yükselterek işletmenizin net gelirini artırırım.'
         },
         {
           title: 'Şeffaf Raporlama',
@@ -240,8 +240,8 @@ const translations = {
           a: 'Geleneksel ajanslar reklam bütçeniz üzerinden %15-%20 komisyon alarak maliyetinizi artırır. Ben Salih Maral olarak şeffaf, sürprizsiz ve aylık sabit fiyat (Fixpreis ab 590€ - 790€/ay) modeliyle çalışıyorum. Bütçeniz kesintiye uğramadan doğrudan satış getirecek aramalara harcanır.'
         },
         {
-          q: 'Frankfurt, Köln ve Stuttgart\'taki Şirketler Neden Hâlâ "AdWords Ajansı" Olarak Arıyor?',
-          a: 'Google, reklam platformunun adını 2018\'de "Google Ads" olarak değiştirmiş olsa da, Almanya\'daki sanayi, makine ve B2B satın alma yöneticileri alışkanlık gereği hâlâ "AdWords Agentur" terimini kullanmaktadır. Frankfurt finans/B2B, Köln e-ticaret ve Stuttgart makine sektörüne özel çift odaklı stratejiler kuruyorum.'
+          q: 'Frankfurt, Köln ve Stuttgart\'taki Şirketler Neden Hala "AdWords Ajansı" Olarak Arıyor?',
+          a: 'Google, reklam platformunun adını 2018\'de "Google Ads" olarak değiştirmiş olsa da, Almanya\'daki sanayi, makine ve B2B satın alma yöneticileri alışkanlık gereği hala "AdWords Agentur" terimini kullanmaktadır. Frankfurt finans/B2B, Köln e-ticaret ve Stuttgart makine sektörüne özel çift odaklı stratejiler kuruyorum.'
         },
         {
           q: 'Almanya\'da Google ve Meta Ads Faturaları Nasıl Muhasebeleştirilir? (§13b UStG)',
@@ -253,7 +253,7 @@ const translations = {
         },
         {
           q: 'Performance Max (PMax) Kampanyalarında Negatif Anahtar Kelimeler Neden Zorunludur?',
-          a: 'Filtresiz PMax yapay zekası reklam bütçesinin %35\'e kadar olan kısmını kendi marka adınıza, kariyer/staj arayanlara veya kalitesiz mobil oyunlara harcar. Kampanya düzeyinde negatif listeler ve marka hariç tutma uygulayarak bütçeyi sadece kârlı yeni müşterilere yönlendiriyorum.'
+          a: 'Filtresiz PMax yapay zekası reklam bütçesinin %35\'e kadar olan kısmını kendi marka adınıza, kariyer/staj arayanlara veya kalitesiz mobil oyunlara harcar. Kampanya düzeyinde negatif listeler ve marka hariç tutma uygulayarak bütçeyi sadece karlı yeni müşterilere yönlendiriyorum.'
         },
         {
           q: 'Ruhr Bölgesi ve NRW SEO: Dortmund, Essen ve Marl İşletmeleri Google\'da Nasıl Zirveye Çıkar?',
@@ -1638,7 +1638,7 @@ export default function Home({ initialLang = 'de' }) {
                       ? ['1,74M+ Klicks generiert', 'Search, Shopping & PMax', 'ROAS & CPA Optimierung']
                       : lang === 'en'
                       ? ['1.74M+ Clicks Generated', 'Search, Shopping & PMax', 'ROAS & CPA Optimization']
-                      : ['1,74M+ Üretilen Tıklama', 'Search, Shopping & PMax', 'Maksimum ROAS & Kârlılık']
+                      : ['1,74M+ Üretilen Tıklama', 'Search, Shopping & PMax', 'Maksimum ROAS & Karlılık']
                   },
                   'meta-ads': {
                     accent: '#1877F2',

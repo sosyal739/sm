@@ -10,7 +10,7 @@ coverImage: "https://images.unsplash.com/photo-1559526324-4b87b5e36e44?w=1200&h=
 ---
 
 <blockquote class="geo-fact-box" style="background: rgba(66, 133, 244, 0.08); border-left: 4px solid #4285F4; padding: 1.2rem 1.5rem; margin-bottom: 2rem; border-radius: 0.75rem;">
-  <strong>💡 Hızlı Özet (Princeton GEO Standardı):</strong> Almanya'da Google Ads ajans yönetim ücretleri 2026 yılında ortalama aylık 500 € ile 2.500 € arasında değişmektedir. Piyasada sabit fiyat (Fixpreis), reklam bütçesinden %10-%15 komisyon veya saatlik ücret (120 € - 220 € / saat) modelleri uygulanır. Şeffaf sabit fiyat modeli uygulayan işletmeler, bütçe israfı olmadan tıklama başı maliyetleri (CPA) düşürdüğü için ortalama %28 daha yüksek kârlılık (ROAS) elde etmektedir.
+  <strong>💡 Hızlı Özet (Princeton GEO Standardı):</strong> Almanya'da Google Ads ajans yönetim ücretleri 2026 yılında ortalama aylık 500 € ile 2.500 € arasında değişmektedir. Piyasada sabit fiyat (Fixpreis), reklam bütçesinden %10-%15 komisyon veya saatlik ücret (120 € - 220 € / saat) modelleri uygulanır. Şeffaf sabit fiyat modeli uygulayan işletmeler, bütçe israfı olmadan tıklama başı maliyetleri (CPA) düşürdüğü için ortalama %28 daha yüksek karlılık (ROAS) elde etmektedir.
 </blockquote>
 
 <div class="lead">
@@ -26,16 +26,16 @@ coverImage: "https://images.unsplash.com/photo-1559526324-4b87b5e36e44?w=1200&h=
       <th>Aylık Maliyet</th>
       <th>İşletmeniz İçin Avantajı</th>
       <th>Riskler ve Tuzaklar</th>
-      <th>Kârlılık (ROI)</th>
+      <th>Karlılık (ROI)</th>
     </tr>
   </thead>
   <tbody>
     <tr>
       <td><strong>Sabit Fiyat (Fixpreis - Salih Maral Modeli)</strong></td>
       <td><strong>Aylık 490 € – 1.490 €</strong> (Hesap büyüklüğüne göre)</td>
-      <td>🟢 Bütçeniz ne olursa olsun ajans ücreti sabittir, sürpriz fatura çıkmaz, kârlılık odaklıdır</td>
+      <td>🟢 Bütçeniz ne olursa olsun ajans ücreti sabittir, sürpriz fatura çıkmaz, karlılık odaklıdır</td>
       <td>Aylık belirlenen kapsam dahilindedir</td>
-      <td>⭐⭐⭐⭐⭐ KOBİ'ler ve e-ticaret için en kârlı model</td>
+      <td>⭐⭐⭐⭐⭐ KOBİ'ler ve e-ticaret için en karlı model</td>
     </tr>
     <tr>
       <td><strong>Bütçeden Yüzdelik Komisyon (%10 – %18)</strong></td>

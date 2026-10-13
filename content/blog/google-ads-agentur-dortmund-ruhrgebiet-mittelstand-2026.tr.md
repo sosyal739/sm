@@ -24,7 +24,7 @@ coverImage: "https://images.unsplash.com/photo-1497215728101-856f4ea42174?w=1200
 <ul>
   <li><strong>Yanlış Yarıçap (Radius) Belirleme:</strong> Dortmund-Hörde'deki bir tesisatçı veya fayans ustasının reklamı, gitmediği Duisburg veya Gelsenkirchen'deki kullanıcılara gösterilir ve tıklama başına 10-15 € boşa gider.</li>
   <li><strong>Negatif Kelime Kullanmamak:</strong> "Kendin yap", "ücretsiz", "iş ilanları", "staj" gibi satın alma niyeti olmayan aramalar elenmediği için bütçe 2-3 günde tükenir.</li>
-  <li><strong>Ajans Komisyonu Tuzağı:</strong> Birçok ajans reklam harcamanızın üzerinden %15-%20 pay alır. Bu modelde ajans bütçenizi ne kadar çok harcarsa o kadar çok kazanır. Biz ise <strong>sabit fiyatla</strong> çalışır, bütçenizi düşürüp kârınızı artırmayı hedefleriz.</li>
+  <li><strong>Ajans Komisyonu Tuzağı:</strong> Birçok ajans reklam harcamanızın üzerinden %15-%20 pay alır. Bu modelde ajans bütçenizi ne kadar çok harcarsa o kadar çok kazanır. Biz ise <strong>sabit fiyatla</strong> çalışır, bütçenizi düşürüp karınızı artırmayı hedefleriz.</li>
 </ul>
 
 <h2>📈 Dortmund Vaka Analizi: İnşaat & Tadilat Firmasında %180 Talep Artışı</h2>

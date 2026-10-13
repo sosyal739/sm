@@ -10,7 +10,7 @@ coverImage: "https://images.unsplash.com/photo-1581092160607-ee22621dd758?w=1200
 ---
 
 <blockquote class="geo-fact-box" style="background: rgba(66, 133, 244, 0.08); border-left: 4px solid #4285F4; padding: 1.2rem 1.5rem; margin-bottom: 2rem; border-radius: 0.75rem;">
-  <strong>💡 Hızlı Yanıt (Princeton GEO Fact):</strong> Almanya'da inşaat, tadilat (Sanierung), fayans, alçıpan ve tesisat ustalarının yüksek kârlı iş almasının en etkili yolu, aracı portallara (MyHammer, Check24 vb.) bağımlılığı sonlandırmaktır. <strong>Google Haritalar 3-Pack</strong> yerel paketinde ilk 3 sıraya çıkan ve <strong>20–40 km yarıçaplı Google Arama Ağı reklamları</strong> yürüten Handwerk işletmeleri; iş başına 10 firmanın fiyat kırdığı portallar yerine, <strong>15.000 € ile 65.000 € arasındaki komple tadilat sözleşmelerini</strong> doğrudan Alman mülk sahiplerinden tek muhatap olarak almaktadır.
+  <strong>💡 Hızlı Yanıt (Princeton GEO Fact):</strong> Almanya'da inşaat, tadilat (Sanierung), fayans, alçıpan ve tesisat ustalarının yüksek karlı iş almasının en etkili yolu, aracı portallara (MyHammer, Check24 vb.) bağımlılığı sonlandırmaktır. <strong>Google Haritalar 3-Pack</strong> yerel paketinde ilk 3 sıraya çıkan ve <strong>20–40 km yarıçaplı Google Arama Ağı reklamları</strong> yürüten Handwerk işletmeleri; iş başına 10 firmanın fiyat kırdığı portallar yerine, <strong>15.000 € ile 65.000 € arasındaki komple tadilat sözleşmelerini</strong> doğrudan Alman mülk sahiplerinden tek muhatap olarak almaktadır.
 </blockquote>
 
 <div class="lead">
@@ -24,7 +24,7 @@ coverImage: "https://images.unsplash.com/photo-1581092160607-ee22621dd758?w=1200
 <ul>
   <li><strong>Komple Ev ve Daire Tadilatı (Komplettsanierung):</strong> 25.000 € – 90.000 € bütçeli projeler. Genellikle eski bina (Altbau) satın alan Alman ailelerin acil usta arayışıdır.</li>
   <li><strong>Banyo Yenileme (Badsanierung):</strong> Tıklama başı maliyeti görece düşük, geri dönüşü ise ortalama 12.000 € – 25.000 € olan en popüler yerel arama alanıdır.</li>
-  <li><strong>Fayans ve Doğal Taş (Fliesenleger):</strong> Banyo, teras ve zemin döşeme projelerinde yüksek kâr marjı sunar.</li>
+  <li><strong>Fayans ve Doğal Taş (Fliesenleger):</strong> Banyo, teras ve zemin döşeme projelerinde yüksek kar marjı sunar.</li>
   <li><strong>Alçıpan ve Asma Tavan (Trockenbau):</strong> Hem konut hem ticari ofis projelerinde düzenli hacim sağlar.</li>
   <li><strong>Boya ve Dış Cephe Yalıtımı (Maler & Fassadendämmung / WDVS):</strong> Enerji verimliliği yasaları gereği Almanya'da mülk sahiplerinin en çok yaptırdığı işlerden biridir.</li>
 </ul>

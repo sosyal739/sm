@@ -650,7 +650,7 @@ export default function AboutPage() {
               </a>
               <p className="text-xs text-slate-400 leading-relaxed">
                 {lang === 'tr'
-                  ? 'Resmi Google Partner sertifikalı Salih Maral, 17+ yıllık tecrübesiyle Almanya ve Avrupa genelinde Google Ads, Meta Ads, SEO ve Server-Side Tracking ile kârlı büyüme sağlar.'
+                  ? 'Resmi Google Partner sertifikalı Salih Maral, 17+ yıllık tecrübesiyle Almanya ve Avrupa genelinde Google Ads, Meta Ads, SEO ve Server-Side Tracking ile karlı büyüme sağlar.'
                   : lang === 'en'
                   ? 'Official Google Partner Salih Maral delivers scalable revenue growth across Germany & Europe through Google Ads, Meta Ads, SEO and Server-Side Tracking with 17+ years experience.'
                   : 'Offizieller Google Partner Salih Maral liefert planbares Umsatzwachstum in Deutschland und Europa durch Google Ads, Meta Ads, SEO und Server-Side Tracking mit über 17 Jahren Erfahrung.'}

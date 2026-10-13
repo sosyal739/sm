@@ -1006,7 +1006,7 @@ module.exports = {
         </div>
 
         <h2>🚀 Sonuç</h2>
-        <p>Özellikle moda, ev dekorasyonu, güzellik ve kendin yap (DIY) sektörlerindeyseniz, Pinterest e-ticaret satışlarınızı ölçeklendirmek için kullanabileceğiniz en kârlı görsel arama motorudur.</p>
+        <p>Özellikle moda, ev dekorasyonu, güzellik ve kendin yap (DIY) sektörlerindeyseniz, Pinterest e-ticaret satışlarınızı ölçeklendirmek için kullanabileceğiniz en karlı görsel arama motorudur.</p>
       `
     },
     de: {

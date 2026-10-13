@@ -46,7 +46,7 @@ coverImage: "https://images.unsplash.com/photo-1517048676732-d65bc937f952?w=1200
     <tr>
       <td><strong>ROAS / Dönüşüm Oranı</strong></td>
       <td>%1 – %2 (Düşük dönüşüm, yüksek maliyet)</td>
-      <td><strong>%8 – %18 (Yüksek kârlılık, düşük CPA)</strong></td>
+      <td><strong>%8 – %18 (Yüksek karlılık, düşük CPA)</strong></td>
     </tr>
     <tr>
       <td><strong>Resmi Statü</strong></td>
@@ -62,7 +62,7 @@ coverImage: "https://images.unsplash.com/photo-1517048676732-d65bc937f952?w=1200
 <p>Son 90 günde harcanan bütçeyi inceleyip para kaybettiren tüm alakasız terimleri derhal engelliyoruz.</p>
 
 <h3>2. Performance Max & Arama Ağı Kusursuz Eşleştirmesi</h3>
-<p>Google yapay zekasını doğru birinci taraf dönüşüm verisiyle besleyerek en yüksek kârlılığı getiren müşterileri bulmasını sağlıyoruz.</p>
+<p>Google yapay zekasını doğru birinci taraf dönüşüm verisiyle besleyerek en yüksek karlılığı getiren müşterileri bulmasını sağlıyoruz.</p>
 
 <h3>3. Yüksek Dönüşümlü Açılış Sayfası Optimizasyonu (CRO)</h3>
 <p>Tıklayan her ziyaretçiyi doğrudan "Hemen Ara" veya "Teklif Formu" butonuna yönlendiren net satış psikolojisi kuruyoruz.</p>
@@ -72,6 +72,6 @@ coverImage: "https://images.unsplash.com/photo-1517048676732-d65bc937f952?w=1200
     🎯 GOOGLE ADS HESABINIZI CANLI İNCELEYELİM
   </div>
   <h3 style="font-size: 1.7rem; font-weight: 900; color: white; margin-bottom: 0.75rem;">Google Reklamlarında Boşa Giden Bütçenizi Geri Kazanın</h3>
-  <p style="color: #cbd5e1; font-size: 1rem; max-width: 640px; margin: 0 auto 1.75rem auto; line-height: 1.6;">Reklam bütçenizi kârlı bir satış motoruna dönüştürmek için hemen formu doldurun. <strong>Ücretsiz Google Ads Hesap Denetimi</strong> ile nerede para kaybettiğinizi birlikte görelim.</p>
+  <p style="color: #cbd5e1; font-size: 1rem; max-width: 640px; margin: 0 auto 1.75rem auto; line-height: 1.6;">Reklam bütçenizi karlı bir satış motoruna dönüştürmek için hemen formu doldurun. <strong>Ücretsiz Google Ads Hesap Denetimi</strong> ile nerede para kaybettiğinizi birlikte görelim.</p>
   <a href="https://salihmaral.de/tr#contact" style="display: inline-block; background: #10b981; color: white; font-weight: 800; padding: 1rem 2.4rem; border-radius: 1rem; text-decoration: none; font-size: 1.05rem; box-shadow: 0 10px 25px -5px rgba(16, 185, 129, 0.6); transition: all 0.3s ease;">Ücretsiz Google Ads Hesap Analizi Alın ➔</a>
 </div>

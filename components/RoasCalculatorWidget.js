@@ -64,7 +64,7 @@ export default function RoasCalculatorWidget({ lang = 'de' }) {
       emailPlaceholder: 'E-Posta Adresiniz',
       webPlaceholder: 'Web Siteniz (örn: www.site.com)',
       submitBtn: 'Ücretsiz Analiz Raporunu Al ➔',
-      successMsg: 'Talebiniz alındı! İşletmenize özel detaylı büyüme ve kâr analizi e-posta adresinize gönderilecektir.'
+      successMsg: 'Talebiniz alındı! İşletmenize özel detaylı büyüme ve kar analizi e-posta adresinize gönderilecektir.'
     },
     en: {
       badge: 'Interactive ROI & ROAS Calculator',

@@ -72,7 +72,7 @@ export default function GoogleAdsBudgetCalculator({ lang = 'de', defaultCity = '
     tr: {
       badge: 'İnteraktif Bütçe & Maliyet Hesaplayıcı 2026',
       title: `Google Ads Bütçe & Maliyet Hesaplama Aracı${cityText ? ` (${defaultCity})` : ''}`,
-      subtitle: 'Hangi bütçeyle kaç müşteri veya sipariş kazanabileceğinizi ve şeffaf yönetim avantajıyla elde edeceğiniz kâr potansiyelini anında görün.',
+      subtitle: 'Hangi bütçeyle kaç müşteri veya sipariş kazanabileceğinizi ve şeffaf yönetim avantajıyla elde edeceğiniz kar potansiyelini anında görün.',
       budgetLabel: 'Aylık Reklam Bütçeniz:',
       industryLabel: 'İş Modeli / Sektör Seçin:',
       estClicksLabel: 'Tahmini Ziyaretçi (Tıklama):',

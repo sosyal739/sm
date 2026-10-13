@@ -65,9 +65,9 @@ coverImage: "https://images.unsplash.com/photo-1578575437130-527eed3abbec?w=1200
       <td>%100 sizin mülkiyetinizde ve güvencenizde</td>
     </tr>
     <tr>
-      <td><strong>Kâr Marjı (Net)</strong></td>
+      <td><strong>Kar Marjı (Net)</strong></td>
       <td>Düşük (Fiyat rekabeti ve komisyonlar eritir)</td>
-      <td><strong>Yüksek</strong> (Marka değeri ve doğrudan satış kârı)</td>
+      <td><strong>Yüksek</strong> (Marka değeri ve doğrudan satış karı)</td>
     </tr>
   </tbody>
 </table>

@@ -46,7 +46,7 @@ export default async function CityLayout({ children, params }) {
     },
     {
       q: `${cityName} bölgesinde Google reklamları ne kadar sürede sonuç verir?`,
-      a: `Arama ağı reklamları yayınlandığı ilk günden itibaren telefon ve form talepleri getirmeye başlar. Negatif kelime optimizasyonu ve Server-Side Tracking ile ilk 14-30 gün içinde en yüksek kârlılığa ulaşılır.`
+      a: `Arama ağı reklamları yayınlandığı ilk günden itibaren telefon ve form talepleri getirmeye başlar. Negatif kelime optimizasyonu ve Server-Side Tracking ile ilk 14-30 gün içinde en yüksek karlılığa ulaşılır.`
     },
     {
       q: `${cityName} için Türkçe ve Almanca çift dilli danışmanlık veriyor musunuz?`,

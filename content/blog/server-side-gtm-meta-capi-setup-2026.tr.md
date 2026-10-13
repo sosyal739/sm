@@ -111,7 +111,7 @@ coverImage: "https://images.unsplash.com/photo-1558494949-ef010cbdcc31?w=1200&h=
       <td><strong>Reklam Harcaması Getirisi (ROAS)</strong></td>
       <td>2,4x</td>
       <td>3,7x</td>
-      <td><strong>+%54 net kampanya kârlılığı</strong></td>
+      <td><strong>+%54 net kampanya karlılığı</strong></td>
     </tr>
   </tbody>
 </table>

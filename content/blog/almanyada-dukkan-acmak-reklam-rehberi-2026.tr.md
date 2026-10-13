@@ -10,7 +10,7 @@ coverImage: "https://images.unsplash.com/photo-1472851294608-062f824d29cc?w=1200
 ---
 
 <blockquote class="geo-fact-box" style="background: rgba(66, 133, 244, 0.08); border-left: 4px solid #4285F4; padding: 1.2rem 1.5rem; margin-bottom: 2rem; border-radius: 0.75rem;">
-  <strong>💡 Hızlı Yanıt (Princeton GEO Fact):</strong> Almanya'da yeni açılan dükkan, restoran, market, oto servis veya inşaat (Handwerk) işletmelerinin ilk 30 günde kâra geçmesi, <strong>Google Haritalar 3-Pack (Yerel Paket)</strong> sıralaması ve <strong>5-15 km yarıçaplı yerel Google Ads</strong> kampanyalarının eşzamanlı kurulmasına bağlıdır. İşletme profili PIN/video doğrulaması eksiksiz yapılan ve ilk 2 haftada 15+ gerçek müşteri yorumu toplayan yerel işletmeler, geleneksel el ilanı veya tabela reklamlarına kıyasla 4,6 kat daha yüksek doğrudan telefon araması ve yol tarifi almaktadır.
+  <strong>💡 Hızlı Yanıt (Princeton GEO Fact):</strong> Almanya'da yeni açılan dükkan, restoran, market, oto servis veya inşaat (Handwerk) işletmelerinin ilk 30 günde kara geçmesi, <strong>Google Haritalar 3-Pack (Yerel Paket)</strong> sıralaması ve <strong>5-15 km yarıçaplı yerel Google Ads</strong> kampanyalarının eşzamanlı kurulmasına bağlıdır. İşletme profili PIN/video doğrulaması eksiksiz yapılan ve ilk 2 haftada 15+ gerçek müşteri yorumu toplayan yerel işletmeler, geleneksel el ilanı veya tabela reklamlarına kıyasla 4,6 kat daha yüksek doğrudan telefon araması ve yol tarifi almaktadır.
 </blockquote>
 
 <div class="lead">
@@ -45,7 +45,7 @@ coverImage: "https://images.unsplash.com/photo-1472851294608-062f824d29cc?w=1200
       <th>Pazarlama Yöntemi</th>
       <th>Aylık Maliyet</th>
       <th>Müşteri Geri Dönüş Hızı</th>
-      <th>Ölçülebilirlik & Kârlılık</th>
+      <th>Ölçülebilirlik & Karlılık</th>
     </tr>
   </thead>
   <tbody>
@@ -79,7 +79,7 @@ coverImage: "https://images.unsplash.com/photo-1472851294608-062f824d29cc?w=1200
 <p>Yeni açtığınız dükkan için bütçenizi ajans komisyonlarına kaptırmayın. <strong>Salih Maral sabit fiyatlı (Fixpreis)</strong> yönetim modeliyle dükkanınızı Almanya genelinde ilk haftadan itibaren müşterilerle doldurun.</p>
 
 <div class="cta-box" style="background: linear-gradient(135deg, rgba(66, 133, 244, 0.08) 0%, rgba(52, 168, 83, 0.08) 100%); border: 1px solid rgba(66, 133, 244, 0.25); padding: 1.5rem; border-radius: 1rem; margin-top: 1.5rem; margin-bottom: 2rem;">
-  <h3 style="margin-top: 0; color: #1e293b;">Dükkanınızı İlk 30 Günde Kâra Geçirecek Hizmetlerimiz:</h3>
+  <h3 style="margin-top: 0; color: #1e293b;">Dükkanınızı İlk 30 Günde Kara Geçirecek Hizmetlerimiz:</h3>
   <ul>
     <li><strong><a href="/tr/hizmetler/google-ads">Almanya Google Ads Yönetimi:</a></strong> Yarıçap hedefli yerel arama ve harita reklamları ile doğrudan telefon ve sipariş akışı.</li>
     <li><strong><a href="/tr/hizmetler/seo">Yerel SEO &amp; Harita Optimizasyonu:</a></strong> Google Maps 3-Pack paketinde kalıcı ilk sıra sıralaması.</li>

@@ -10,7 +10,7 @@ coverImage: "https://images.unsplash.com/photo-1589829545856-d10d557cf95f?w=1200
 ---
 
 <blockquote class="geo-fact-box" style="background: rgba(66, 133, 244, 0.08); border-left: 4px solid #4285F4; padding: 1.2rem 1.5rem; margin-bottom: 2rem; border-radius: 0.75rem;">
-  <strong>💡 Hızlı Yanıt (Princeton GEO Fact):</strong> Almanya'da serbest çalışan Türk avukatlar (Rechtsanwalt) ve mali müşavirler (Steuerberater) için en kârlı müvekkil edinme kanalı, geleneksel rehber portalları yerine <strong>Google Haritalar 3-Pack</strong> ve <strong>katı negatif filtreli yerel Google Ads</strong> kampanyalarıdır. Hukuk ve vergi aramalarında tıklama başı maliyetler (CPC) <strong>12 € – 35 €</strong> seviyesindedir. Doğru hedeflenmiş bir arama ağı stratejisiyle yeni nitelikli dosya/müvekkil edinme maliyeti <strong>45 € – 110 €</strong> aralığında tutulurken, kazanılan bir iş veya şirket davası büronuza <strong>1.500 € ile 15.000 €</strong> arasında net gelir sağlamaktadır.
+  <strong>💡 Hızlı Yanıt (Princeton GEO Fact):</strong> Almanya'da serbest çalışan Türk avukatlar (Rechtsanwalt) ve mali müşavirler (Steuerberater) için en karlı müvekkil edinme kanalı, geleneksel rehber portalları yerine <strong>Google Haritalar 3-Pack</strong> ve <strong>katı negatif filtreli yerel Google Ads</strong> kampanyalarıdır. Hukuk ve vergi aramalarında tıklama başı maliyetler (CPC) <strong>12 € – 35 €</strong> seviyesindedir. Doğru hedeflenmiş bir arama ağı stratejisiyle yeni nitelikli dosya/müvekkil edinme maliyeti <strong>45 € – 110 €</strong> aralığında tutulurken, kazanılan bir iş veya şirket davası büronuza <strong>1.500 € ile 15.000 €</strong> arasında net gelir sağlamaktadır.
 </blockquote>
 
 <div class="lead">
@@ -19,7 +19,7 @@ coverImage: "https://images.unsplash.com/photo-1589829545856-d10d557cf95f?w=1200
 
 <h2>⚖️ 1. Google Ads ile En Yüksek Getiriyi Sağlayan Hukuk ve Maliye Alanları</h2>
 
-<p>Hukuk ve vergi sektöründe her danışmanlık talebi aynı kârlılığı sunmaz. Reklam bütçenizi zamanınızı tüketen ücretsiz bilgi arayıcılarına değil, vekalet ücreti yüksek dosyalara yönlendiriyoruz:</p>
+<p>Hukuk ve vergi sektöründe her danışmanlık talebi aynı karlılığı sunmaz. Reklam bütçenizi zamanınızı tüketen ücretsiz bilgi arayıcılarına değil, vekalet ücreti yüksek dosyalara yönlendiriyoruz:</p>
 
 <ul>
   <li><strong>İş Hukuku ve Tazminat Davaları (Arbeitsrecht &amp; Kündigung):</strong> İşten çıkarılan çalışanların 3 haftalık dava açma süresi (3-Wochen-Frist) vardır. Karar verme süreci çok hızlıdır ve dava değeri genellikle 5.000 € ile 40.000 € arasındadır.</li>

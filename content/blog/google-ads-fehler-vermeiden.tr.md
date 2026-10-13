@@ -50,8 +50,8 @@ coverImage: "https://images.unsplash.com/photo-1533750516457-a7f992034fec?w=1200
 
 <h3>6. Bütçenin Yanlış Dağıtılması</h3>
 <p><strong>Problem:</strong> Tüm pazarlama bütçesi, kampanyaların gerçek performans metrikleri (ROAS veya EBM) dikkate alınmaksızın eşit olarak paylaştırılır.</p>
-<p><strong>Etki:</strong> Kötü performans gösteren kampanyalar, aksi takdirde yüksek kâr getirebilecek başarılı kampanyalara ayrılabilecek bütçeyi yutar. Bu, büyüme potansiyelinizi ciddi şekilde kısıtlar. Bütçe planlaması hakkında daha fazla bilgi için <a href="/blog/google-ads-kosten-2026">Google Ads Maliyetleri 2026</a> makalemizi inceleyebilirsiniz.</p>
-<p><strong>Çözüm:</strong> Her bir kampanyanın performansını analiz edin. Hedef değerinizin üzerinde bir EBM'ye sahip kampanyalardan bütçeyi çekin ve bu bütçeyi, kârlı bir şekilde dönüşüm sağlayan ve hala gösterim payı potansiyeli olan kampanyalara kaydırın.</p>
+<p><strong>Etki:</strong> Kötü performans gösteren kampanyalar, aksi takdirde yüksek kar getirebilecek başarılı kampanyalara ayrılabilecek bütçeyi yutar. Bu, büyüme potansiyelinizi ciddi şekilde kısıtlar. Bütçe planlaması hakkında daha fazla bilgi için <a href="/blog/google-ads-kosten-2026">Google Ads Maliyetleri 2026</a> makalemizi inceleyebilirsiniz.</p>
+<p><strong>Çözüm:</strong> Her bir kampanyanın performansını analiz edin. Hedef değerinizin üzerinde bir EBM'ye sahip kampanyalardan bütçeyi çekin ve bu bütçeyi, karlı bir şekilde dönüşüm sağlayan ve hala gösterim payı potansiyeli olan kampanyalara kaydırın.</p>
 
 <h3>7. Yanlış Teklif Stratejilerinin Seçilmesi</h3>
 <p><strong>Problem:</strong> "Hedef EBM" veya "Hedef ROAS" gibi otomatik teklif stratejileri (Akıllı Teklif), hesap henüz yeterli tarihsel dönüşüm verisine sahip olmadan çok erken etkinleştirilir.</p>
@@ -70,7 +70,7 @@ coverImage: "https://images.unsplash.com/photo-1533750516457-a7f992034fec?w=1200
 
 <h3>10. Kampanya Yapısının Çok Düz veya Karmaşık Olması</h3>
 <p><strong>Problem:</strong> Tüm anahtar kelimeler, konuları veya kullanıcı niyetleri ne olursa olsun tek bir kampanyaya veya reklam grubuna doldurulur.</p>
-<p><strong>Etki:</strong> Her anahtar kelime için yüksek alaka düzeyine sahip reklamlar yazmak imkansız hale gelir. Bütçe kontrolü son derece zorlaşır ve hangi spesifik ürün kategorisinin veya hizmetin aslında size kâr getirdiğini belirleyemezsiniz. Temelleri anlamak için <a href="/blog/google-ads-nedir">Google Ads Nedir?</a> rehberimizi okuyabilirsiniz.</p>
+<p><strong>Etki:</strong> Her anahtar kelime için yüksek alaka düzeyine sahip reklamlar yazmak imkansız hale gelir. Bütçe kontrolü son derece zorlaşır ve hangi spesifik ürün kategorisinin veya hizmetin aslında size kar getirdiğini belirleyemezsiniz. Temelleri anlamak için <a href="/blog/google-ads-nedir">Google Ads Nedir?</a> rehberimizi okuyabilirsiniz.</p>
 <p><strong>Çözüm:</strong> Google Ads hesabınızı web siteniz kadar mantıklı bir şekilde yapılandırın. Farklı ürün kategorileri veya hizmetler için ayrı kampanyalar oluşturun. Anahtar kelime, reklam ve açılış sayfası arasında en yüksek alaka düzeyini sağlamak için Tek Anahtar Kelimelik Reklam Grupları (SKAG) veya tematik olarak daraltılmış reklam grupları (STAG) kullanın.</p>
 
 <h2>📊 Bütçe Optimizasyonu İçin İstatistikler ve Tablolar</h2>
@@ -162,7 +162,7 @@ coverImage: "https://images.unsplash.com/photo-1533750516457-a7f992034fec?w=1200
       <li>3. Geniş Eşlemeli anahtar kelimeleri duraklatın veya Sıralı/Tam Eşlemeye dönüştürün.</li>
       <li>4. Reklam metinlerini inceleyin: Başlıklar aranan anahtar kelimeyi tam olarak içeriyor mu?</li>
       <li>5. Açılış sayfasını test edin: Kullanıcı reklamda vaat edilen teklifi 3 saniye içinde bulabiliyor mu?</li>
-      <li>6. Kampanya bütçelerini analiz edin: Parayı "yakan" kampanyalardan alıp kârlı olanlara aktarın.</li>
+      <li>6. Kampanya bütçelerini analiz edin: Parayı "yakan" kampanyalardan alıp karlı olanlara aktarın.</li>
       <li>7. Teklif stratejilerini değerlendirin: Hedef EBM/ROAS kampanyalarının yeterli geçmiş verisi (15+ dönüşüm) var mı?</li>
       <li>8. Mobil performansı kontrol edin: Sayfalar hızlı yükleniyor mu ve formlar akıllı telefonlarda çalışıyor mu?</li>
       <li>9. A/B testleri kurgulayın: Her reklam grubu için en az 2 aktif reklam varyasyonu oluşturun.</li>
@@ -183,7 +183,7 @@ coverImage: "https://images.unsplash.com/photo-1533750516457-a7f992034fec?w=1200
 <p>Negatif anahtar kelime eklemek veya bütçeleri ayarlamak gibi bazı değişiklikler anında etki gösterir. Ancak, yapısal değişiklikler ve Akıllı Teklif stratejilerindeki düzenlemeler genellikle algoritmanın değişiklikleri işlemesi ve performansı stabilize etmesi için 7 ila 14 günlük bir öğrenme sürecine ihtiyaç duyar.</p>
 
 <div class="lead">
-  <p>En sık yapılan bu 10 Google Ads hatasından kaçınmak, reklam bütçenizi kârlı hale getirmenin en önemli adımıdır. Hesabınızı analiz etmek ve optimize etmek için yardıma mı ihtiyacınız var? Profesyonel bir denetim için <strong>Salih Maral</strong> ile iletişime geçin ve kampanyalarınızın tüm potansiyelini birlikte ortaya çıkaralım.</p>
+  <p>En sık yapılan bu 10 Google Ads hatasından kaçınmak, reklam bütçenizi karlı hale getirmenin en önemli adımıdır. Hesabınızı analiz etmek ve optimize etmek için yardıma mı ihtiyacınız var? Profesyonel bir denetim için <strong>Salih Maral</strong> ile iletişime geçin ve kampanyalarınızın tüm potansiyelini birlikte ortaya çıkaralım.</p>
 </div>
 
 

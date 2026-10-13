@@ -57,7 +57,7 @@ export default function LeadFunnelWizard({ lang = 'de' }) {
     tr: {
       badge: 'AKILLI BÜYÜME SİHİRBAZI',
       title: '3 Adımda Size Özel Dijital Pazarlama Stratejisi',
-      subtitle: '2 kısa soruyu yanıtlayın, Salih Maral\'dan şeffaf ve kârlı büyüme teklifinizi hemen alın.',
+      subtitle: '2 kısa soruyu yanıtlayın, Salih Maral\'dan şeffaf ve karlı büyüme teklifinizi hemen alın.',
       step1Title: '1. İşletmenizin birincil büyüme hedefi nedir?',
       step2Title: '2. Aylık planlanan reklam bütçeniz ne kadar?',
       step3Title: '3. Teklif ve analiz raporunu kime iletelim?',

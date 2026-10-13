@@ -89,4 +89,4 @@ coverImage: "https://images.unsplash.com/photo-1514525253161-7a46d19cd819?w=1200
 </blockquote>
 
 <h2>📞 YouTube Kampanyalarınızı ve Kanalınızı Yeni Algoritmaya Hazırlayın</h2>
-<p>YouTube Ads reklam stratejinizi yeni izlenme standartlarına göre yapılandırmak, Shorts reklamlarında maksimum dönüşüm almak ve video izlenmelerinizi kârlı müşterilere dönüştürmek için <a href="/tr/hizmetler/youtube-ads">YouTube Ads Reklam Yönetimi</a> sayfamızdan bizimle iletişime geçebilirsiniz.</p>
+<p>YouTube Ads reklam stratejinizi yeni izlenme standartlarına göre yapılandırmak, Shorts reklamlarında maksimum dönüşüm almak ve video izlenmelerinizi karlı müşterilere dönüştürmek için <a href="/tr/hizmetler/youtube-ads">YouTube Ads Reklam Yönetimi</a> sayfamızdan bizimle iletişime geçebilirsiniz.</p>

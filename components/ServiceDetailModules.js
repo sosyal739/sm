@@ -592,7 +592,7 @@ export default function ServiceDetailModules({ serviceSlug, lang = 'de', primary
               categoryName: 'AKILLI TEKLİF & ROAS',
               accentColor: '#8B5CF6',
               items: [
-                { badge: 'SMART BIDDING', title: 'Hedef ROAS (tROAS) Skalalama', desc: 'Belirlenen kârlılık oranında bütçeyi güvenle büyütme' },
+                { badge: 'SMART BIDDING', title: 'Hedef ROAS (tROAS) Skalalama', desc: 'Belirlenen karlılık oranında bütçeyi güvenle büyütme' },
                 { badge: 'CPA CONTROL', title: 'Hedef CPA (tCPA) Optimizasyonu', desc: 'Müşteri kazanım maliyetini minimuma indirme' },
                 { badge: 'MAX CONVERSIONS', title: 'Dönüşümleri En Üst Düzeye Çıkarma', desc: 'Yapay zekanın en yüksek dönüşüm getiren anlara teklif vermesi' },
                 { badge: 'VALUE RULES', title: 'Dönüşüm Değeri Kuralları', desc: 'Yüksek değerli müşteri segmentlerine daha yüksek teklif' },
@@ -894,7 +894,7 @@ export default function ServiceDetailModules({ serviceSlug, lang = 'de', primary
               categoryName: 'KİTLE STRATEJİSİ & ÖLÇEKLENME',
               accentColor: '#10B981',
               items: [
-                { badge: 'BROAD TARGET', title: 'Geniş Hedefleme (Broad) Mimarisi', desc: 'Algoritmanın en kârlı alıcıyı serbestçe bulmasını sağlama' },
+                { badge: 'BROAD TARGET', title: 'Geniş Hedefleme (Broad) Mimarisi', desc: 'Algoritmanın en karlı alıcıyı serbestçe bulmasını sağlama' },
                 { badge: 'LOOKALIKE', title: 'Benzer Kitleler (Lookalike Audiences)', desc: 'Mevcut en iyi müşterilerinizin ikizlerini bulma' },
                 { badge: 'LTV UPLOAD', title: 'Müşteri Listesi (LTV) Yükleme', desc: 'Yüksek bütçeli eski müşterileri VIP kampanyalarla hedefleme' },
                 { badge: 'EXCLUSIONS', title: 'Alıcı Hariç Tutma (Exclusion Lists)', desc: 'Son 30 günde satın alanlara boşuna para harcamama' },

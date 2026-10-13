@@ -192,11 +192,11 @@ export default function ServiceDetailClient({ initialService, initialLang }) {
       faq: [
         {
           q: lang === 'de' ? 'Google Ads Agentur Preise & Kosten: Wie rechnen Sie ab (Fixpreis oder Prozent vom Ad Spend)?' : lang === 'en' ? 'Google Ads Agency Costs & Pricing: How do you charge (Flat fee or % of ad spend)?' : 'Google Ads Ajans Ücretleri & Maliyetleri: Nasıl çalışıyorsunuz (Sabit fiyat mı, bütçe yüzdesi mi)?',
-          a: lang === 'de' ? 'Wir setzen bewusst auf eine transparente monatliche Betreuungspauschale (Fixpreis) statt prozentualer Umsatzprovisionen (10% - 15% Ad Spend). Das bedeutet: Unser Ziel ist es nicht, Ihr Werbebudget künstlich in die Höhe zu treiben, sondern Ihre Kosten pro Conversion (CPA) zu senken und Ihren ROAS zu maximieren. Keine versteckten Gebühren, volle Planungssicherheit.' : lang === 'en' ? 'We deliberately operate on a transparent monthly flat-fee (Fixpreis) model rather than taking a percentage of your ad spend (10% - 15%). This eliminates conflicts of interest: our objective is strictly to lower your CPA and maximize your ROAS rather than inflating your ad budget. 100% predictable costs.' : 'Yönetilen bütçeden %10 - %15 komisyon kesmek yerine şeffaf ve sabit aylık hizmet bedeli (Fixpreis) ile çalışıyoruz. Bu sayede ajansın bütçenizi gereksiz yere artırmasını engelliyor, doğrudan dönüşüm başı maliyetlerinizi (CPA) düşürmeye ve kârlılığınızı (ROAS) katlamaya odaklanıyoruz. Sıfır gizli maliyet, tam bütçe güvenliği.'
+          a: lang === 'de' ? 'Wir setzen bewusst auf eine transparente monatliche Betreuungspauschale (Fixpreis) statt prozentualer Umsatzprovisionen (10% - 15% Ad Spend). Das bedeutet: Unser Ziel ist es nicht, Ihr Werbebudget künstlich in die Höhe zu treiben, sondern Ihre Kosten pro Conversion (CPA) zu senken und Ihren ROAS zu maximieren. Keine versteckten Gebühren, volle Planungssicherheit.' : lang === 'en' ? 'We deliberately operate on a transparent monthly flat-fee (Fixpreis) model rather than taking a percentage of your ad spend (10% - 15%). This eliminates conflicts of interest: our objective is strictly to lower your CPA and maximize your ROAS rather than inflating your ad budget. 100% predictable costs.' : 'Yönetilen bütçeden %10 - %15 komisyon kesmek yerine şeffaf ve sabit aylık hizmet bedeli (Fixpreis) ile çalışıyoruz. Bu sayede ajansın bütçenizi gereksiz yere artırmasını engelliyor, doğrudan dönüşüm başı maliyetlerinizi (CPA) düşürmeye ve karlılığınızı (ROAS) katlamaya odaklanıyoruz. Sıfır gizli maliyet, tam bütçe güvenliği.'
         },
         { 
           q: lang === 'de' ? 'Wie hoch sollte mein tägliches Werbebudget sein?' : lang === 'en' ? 'How much should my daily ad budget be?' : 'Günlük reklam bütçem ne kadar olmalı?',
-          a: lang === 'de' ? 'Es gibt kein Mindestbudget, aber um wettbewerbsfähig zu sein, müssen wir die Kosten pro Klick in Ihrer Branche analysieren. Wir empfehlen ein optimales Testbudget, um Daten zu sammeln. Wenn Kampagnen profitabel werden, erhöhen wir das Budget schrittweise.' : lang === 'en' ? 'There is no minimum budget, but to be competitive, we need to analyze the cost per click in your industry. We recommend an optimal test budget to collect data. As campaigns become profitable, we gradually increase the budget.' : 'Google Ads\'te minimum bütçe şartı yoktur, ancak rekabetçi olabilmek için sektörünüzün tıklama başı maliyet oranlarına bakmak gerekir. Veriyi toplamak için optimum bir test bütçesi öneriyoruz. Kampanyalar kârlı hale geldikçe bütçeyi kademeli artırıyoruz.'
+          a: lang === 'de' ? 'Es gibt kein Mindestbudget, aber um wettbewerbsfähig zu sein, müssen wir die Kosten pro Klick in Ihrer Branche analysieren. Wir empfehlen ein optimales Testbudget, um Daten zu sammeln. Wenn Kampagnen profitabel werden, erhöhen wir das Budget schrittweise.' : lang === 'en' ? 'There is no minimum budget, but to be competitive, we need to analyze the cost per click in your industry. We recommend an optimal test budget to collect data. As campaigns become profitable, we gradually increase the budget.' : 'Google Ads\'te minimum bütçe şartı yoktur, ancak rekabetçi olabilmek için sektörünüzün tıklama başı maliyet oranlarına bakmak gerekir. Veriyi toplamak için optimum bir test bütçesi öneriyoruz. Kampanyalar karlı hale geldikçe bütçeyi kademeli artırıyoruz.'
         },
         { 
           q: lang === 'de' ? 'Kann ich Anzeigen unter dem Namen meiner Konkurrenten schalten?' : lang === 'en' ? 'Can I advertise under my competitors\' names?' : 'Rakiplerimin isminde reklam verebilir miyim?',
@@ -339,7 +339,7 @@ export default function ServiceDetailClient({ initialService, initialLang }) {
         ? 'Facebook & Instagram Ads, die profitabel skalieren — von Advantage+ bis Retargeting.'
         : lang === 'en'
         ? 'Facebook & Instagram Ads that scale profitably — from Advantage+ to Retargeting.'
-        : 'Kârlı ölçeklenen Facebook & Instagram reklamları — Advantage+\'tan Retargeting\'e.',
+        : 'Karlı ölçeklenen Facebook & Instagram reklamları — Advantage+\'tan Retargeting\'e.',
       description: lang === 'de'
         ? 'Mit präzisem demografischen Targeting, Conversions API (CAPI) und hochkonvertierenden Kreativ-Konzepten verwandeln wir Facebook- und Instagram-Nutzer in kaufende Kunden. Messbar, datenbasiert und mit maximalem ROAS.'
         : lang === 'en'
@@ -421,7 +421,7 @@ export default function ServiceDetailClient({ initialService, initialLang }) {
       faq: [
         {
           q: lang === 'de' ? 'Was kostet die professionelle Meta Ads Betreuung (Fixpreis vs. prozentuale Provision)?' : lang === 'en' ? 'What are the fees for professional Meta Ads management (Flat fee vs % of spend)?' : 'Almanya\'da profesyonel Meta Ads yönetimi ücreti nedir (Sabit fiyat mı, bütçe komisyonu mu)?',
-          a: lang === 'de' ? 'Bei Salih Maral betreuen wir Ihre Facebook und Instagram Ads zu transparenten monatlichen Fixpreisen ab 590 €/Monat – ohne prozentuale Umsatzbeteiligung an Ihrem Werbebudget (10% - 15% Ad Spend Trap). So stellen wir sicher, dass das primäre Ziel die Senkung Ihres CPA und die Steigerung Ihres Netto-ROAS ist, statt Ihr Werbebudget künstlich in die Höhe zu treiben.' : lang === 'en' ? 'We operate on a transparent monthly flat fee (Fixpreis) starting from €590/month rather than taking percentage cuts from your ad budget (10% - 15%). This ensures our priority is strictly to reduce your CPA and scale profitable net ROAS without artificial budget inflation.' : 'Reklam harcamanızdan %10-15 komisyon kesmek yerine aylık 590 €\'dan başlayan şeffaf ve sabit hizmet bedeli (Fixpreis) ile çalışıyoruz. Bu sayede ajansın bütçenizi gereksiz yükseltmesini engelliyor, doğrudan dönüşüm başı maliyetinizi (CPA) düşürüp kârlılığınızı (ROAS) katlamaya odaklanıyoruz.'
+          a: lang === 'de' ? 'Bei Salih Maral betreuen wir Ihre Facebook und Instagram Ads zu transparenten monatlichen Fixpreisen ab 590 €/Monat – ohne prozentuale Umsatzbeteiligung an Ihrem Werbebudget (10% - 15% Ad Spend Trap). So stellen wir sicher, dass das primäre Ziel die Senkung Ihres CPA und die Steigerung Ihres Netto-ROAS ist, statt Ihr Werbebudget künstlich in die Höhe zu treiben.' : lang === 'en' ? 'We operate on a transparent monthly flat fee (Fixpreis) starting from €590/month rather than taking percentage cuts from your ad budget (10% - 15%). This ensures our priority is strictly to reduce your CPA and scale profitable net ROAS without artificial budget inflation.' : 'Reklam harcamanızdan %10-15 komisyon kesmek yerine aylık 590 €\'dan başlayan şeffaf ve sabit hizmet bedeli (Fixpreis) ile çalışıyoruz. Bu sayede ajansın bütçenizi gereksiz yükseltmesini engelliyor, doğrudan dönüşüm başı maliyetinizi (CPA) düşürüp karlılığınızı (ROAS) katlamaya odaklanıyoruz.'
         },
         {
           q: lang === 'de' ? 'Wie bekämpft man Creative Fatigue (Anzeigenmüdigkeit) auf Instagram & Facebook?' : lang === 'en' ? 'How do you prevent Creative Fatigue on Facebook & Instagram Ads?' : 'Facebook ve Instagram reklamlarında Creative Fatigue (Reklam Yorgunluğu) nasıl çözülür?',
@@ -429,7 +429,7 @@ export default function ServiceDetailClient({ initialService, initialLang }) {
         },
         {
           q: lang === 'de' ? 'Was ist der Vorteil von Meta Advantage+ Shopping Campaigns (ASC)?' : lang === 'en' ? 'What are the advantages of Meta Advantage+ Shopping Campaigns (ASC)?' : 'Meta Advantage+ Alışveriş Kampanyaları (ASC) nedir ve ne gibi avantajlar sağlar?',
-          a: lang === 'de' ? 'Advantage+ Shopping Campaigns nutzen maschinelles Lernen, um bis zu 150 Kreativ-Assets automatisch mit kaufbereiten Nutzern zu matchen. Wir begrenzen den Bestandskunden-Anteil (Customer Budget Cap) strategisch auf 5-15%, um echtes Neukundenwachstum zu sichern und Budgetverschwendung an Altkunden zu verhindern.' : lang === 'en' ? 'Advantage+ Shopping Campaigns leverage machine learning to dynamically match up to 150 assets with high-intent buyers. By implementing a strict 5-15% Customer Budget Cap, we prevent algorithm waste on repeat buyers and secure true incremental acquisition.' : 'Meta Advantage+ Shopping, makine öğrenimi ile 150 adede kadar kreatif varyasyonunu satın alma olasılığı en yüksek kullanıcılarla otomatik eşleştirir. Mevcut müşteri bütçe sınırını (Customer Budget Cap) %10-15 seviyesinde tutarak bütçenin eski alıcılarda tükenmesini engelliyor, kârlı yeni müşteri akışı sağlıyoruz.'
+          a: lang === 'de' ? 'Advantage+ Shopping Campaigns nutzen maschinelles Lernen, um bis zu 150 Kreativ-Assets automatisch mit kaufbereiten Nutzern zu matchen. Wir begrenzen den Bestandskunden-Anteil (Customer Budget Cap) strategisch auf 5-15%, um echtes Neukundenwachstum zu sichern und Budgetverschwendung an Altkunden zu verhindern.' : lang === 'en' ? 'Advantage+ Shopping Campaigns leverage machine learning to dynamically match up to 150 assets with high-intent buyers. By implementing a strict 5-15% Customer Budget Cap, we prevent algorithm waste on repeat buyers and secure true incremental acquisition.' : 'Meta Advantage+ Shopping, makine öğrenimi ile 150 adede kadar kreatif varyasyonunu satın alma olasılığı en yüksek kullanıcılarla otomatik eşleştirir. Mevcut müşteri bütçe sınırını (Customer Budget Cap) %10-15 seviyesinde tutarak bütçenin eski alıcılarda tükenmesini engelliyor, karlı yeni müşteri akışı sağlıyoruz.'
         },
         {
           q: lang === 'de' ? 'Warum ist die Meta Conversions API (CAPI) mit Server-Side GTM in Deutschland Pflicht?' : lang === 'en' ? 'Why is Meta Conversions API (CAPI) with Server-Side GTM mandatory in Germany?' : 'Almanya\'da Meta Conversions API (CAPI) ve sunucu taraflı takip neden zorunludur?',
@@ -826,7 +826,7 @@ export default function ServiceDetailClient({ initialService, initialLang }) {
       ],
       process: [
         { step: '01', title: 'SEO Audit', desc: lang === 'de' ? 'Wir analysieren Ihre Website detailliert nach 200+ Faktoren.' : lang === 'en' ? 'We analyze your website in detail with 200+ factors.' : 'Mevcut sitenizi 200+ faktörde detaylı analiz ediyoruz.' },
-        { step: '02', title: lang === 'de' ? 'Keyword & GEO' : lang === 'en' ? 'Keyword & GEO' : 'Keyword & GEO', desc: lang === 'de' ? 'Wir identifizieren profitable Suchbegriffe und KI-Zitierfähigkeiten.' : lang === 'en' ? 'We identify profitable search queries and AI citability.' : 'Kârlı arama terimlerini ve yapay zeka alıntılanabilirliğini belirliyoruz.' },
+        { step: '02', title: lang === 'de' ? 'Keyword & GEO' : lang === 'en' ? 'Keyword & GEO' : 'Keyword & GEO', desc: lang === 'de' ? 'Wir identifizieren profitable Suchbegriffe und KI-Zitierfähigkeiten.' : lang === 'en' ? 'We identify profitable search queries and AI citability.' : 'Karlı arama terimlerini ve yapay zeka alıntılanabilirliğini belirliyoruz.' },
         { step: '03', title: lang === 'de' ? 'Optimierung' : lang === 'en' ? 'Optimization' : 'Optimizasyon', desc: lang === 'de' ? 'Wir führen technische, On-Page und Off-Page Optimierungen durch.' : lang === 'en' ? 'We implement technical, on-page and off-page optimizations.' : 'Teknik, on-page ve off-page optimizasyonları uyguluyoruz.' },
         { step: '04', title: lang === 'de' ? 'Überwachung' : lang === 'en' ? 'Monitoring' : 'İzleme', desc: lang === 'de' ? 'Wir überwachen Rankings und liefern monatliche transparente Berichte.' : lang === 'en' ? 'We monitor rankings and provide monthly transparent reports.' : 'Sıralamaları izliyor, aylık şeffaf raporlar sunuyoruz.' }
       ],
@@ -1541,7 +1541,7 @@ export default function ServiceDetailClient({ initialService, initialLang }) {
                         {lang === 'de' ? 'Betreuung & Seniorität' : lang === 'en' ? 'Seniority & Management' : 'Yönetim & Kıdem'}
                       </th>
                       <th className="p-4 md:p-5 text-right">
-                        {lang === 'de' ? 'Rentabilität & ROAS' : lang === 'en' ? 'Profitability & ROAS' : 'Kârlılık & ROAS'}
+                        {lang === 'de' ? 'Rentabilität & ROAS' : lang === 'en' ? 'Profitability & ROAS' : 'Karlılık & ROAS'}
                       </th>
                     </tr>
                   </thead>
@@ -1562,7 +1562,7 @@ export default function ServiceDetailClient({ initialService, initialLang }) {
                         {lang === 'de' ? '17+ Jahre Senior Google Partner direkt' : lang === 'en' ? 'Directly managed by 17+ yr Senior Google Partner' : 'Doğrudan 17+ yıllık Kıdemli Google Partneri'}
                       </td>
                       <td className="p-4 md:p-5 text-right font-black text-emerald-600">
-                        {lang === 'de' ? '⭐⭐⭐⭐⭐ Maximaler ROI' : lang === 'en' ? '⭐⭐⭐⭐⭐ Maximum ROI' : '⭐⭐⭐⭐⭐ Maksimum Kârlılık'}
+                        {lang === 'de' ? '⭐⭐⭐⭐⭐ Maximaler ROI' : lang === 'en' ? '⭐⭐⭐⭐⭐ Maximum ROI' : '⭐⭐⭐⭐⭐ Maksimum Karlılık'}
                       </td>
                     </tr>
                     {/* Percentage of Ad Spend */}
@@ -1611,7 +1611,7 @@ export default function ServiceDetailClient({ initialService, initialLang }) {
                     ? 'Ein transparentes Fixpreis-Modell schützt Ihr Marketingbudget vor unnötigen Mehrkosten.'
                     : lang === 'en'
                     ? 'A transparent flat-fee model shields your marketing budget from unnecessary agency markups.'
-                    : 'Şeffaf ve sabit fiyatlı çalışma modeli, reklam bütçenizi ajans komisyonlarından korur ve doğrudan kârlılığa odaklanır.'}
+                    : 'Şeffaf ve sabit fiyatlı çalışma modeli, reklam bütçenizi ajans komisyonlarından korur ve doğrudan karlılığa odaklanır.'}
                 </span>
                 <span className="font-bold text-[#4285F4]">
                   {lang === 'de' ? 'Geprüfter Princeton GEO Standard 2026' : lang === 'en' ? 'Verified Princeton GEO Standard 2026' : 'Doğrulanmış Princeton GEO Standardı 2026'}
@@ -1664,7 +1664,7 @@ export default function ServiceDetailClient({ initialService, initialLang }) {
                       <th className="p-4 md:p-5">{lang === 'de' ? 'Creative-Strategie' : lang === 'en' ? 'Creative Strategy' : 'Kreatif Strateji'}</th>
                       <th className="p-4 md:p-5">{lang === 'de' ? 'Tracking & CAPI' : lang === 'en' ? 'Tracking & CAPI' : 'Takip & CAPI'}</th>
                       <th className="p-4 md:p-5">{lang === 'de' ? 'Betreuung & Seniorität' : lang === 'en' ? 'Management Seniority' : 'Yönetim Kıdemi'}</th>
-                      <th className="p-4 md:p-5 text-right">{lang === 'de' ? 'Kosten & ROI' : lang === 'en' ? 'Cost & ROAS' : 'Ücret & Kârlılık'}</th>
+                      <th className="p-4 md:p-5 text-right">{lang === 'de' ? 'Kosten & ROI' : lang === 'en' ? 'Cost & ROAS' : 'Ücret & Karlılık'}</th>
                     </tr>
                   </thead>
                   <tbody className="divide-y divide-slate-100 text-xs md:text-sm">
@@ -1683,7 +1683,7 @@ export default function ServiceDetailClient({ initialService, initialLang }) {
                         {lang === 'de' ? '17+ Jahre Senior Meta Partner direkt' : lang === 'en' ? '17+ yr Senior Meta Partner directly' : 'Doğrudan 17+ yıllık Kıdemli Meta Partneri'}
                       </td>
                       <td className="p-4 md:p-5 text-right font-black text-emerald-600">
-                        {lang === 'de' ? '⭐⭐⭐⭐⭐ Fixpreis, 100% ROI-Fokus' : lang === 'en' ? '⭐⭐⭐⭐⭐ Flat fee, 100% ROAS focus' : '⭐⭐⭐⭐⭐ Sabit Fiyat, %100 Kârlılık'}
+                        {lang === 'de' ? '⭐⭐⭐⭐⭐ Fixpreis, 100% ROI-Fokus' : lang === 'en' ? '⭐⭐⭐⭐⭐ Flat fee, 100% ROAS focus' : '⭐⭐⭐⭐⭐ Sabit Fiyat, %100 Karlılık'}
                       </td>
                     </tr>
                     <tr className="hover:bg-slate-50/80 transition-colors">
@@ -1747,7 +1747,7 @@ export default function ServiceDetailClient({ initialService, initialLang }) {
                   ? '23,1 Mio.+ echte TrueView-Views und 0% Fake-Traffic: Wie YouTube Ads als profitabler Conversion-Kanal skaliert werden.'
                   : lang === 'en'
                   ? '23.1M+ verified TrueView views and 0% bot traffic: Scaling YouTube into a predictable customer acquisition channel.'
-                  : '23,1 Milyon+ doğrulanmış TrueView izlenmesi ve %0 bot trafiği: YouTube reklamlarını kârlı bir müşteri kazanım kanalına dönüştürme.'}
+                  : '23,1 Milyon+ doğrulanmış TrueView izlenmesi ve %0 bot trafiği: YouTube reklamlarını karlı bir müşteri kazanım kanalına dönüştürme.'}
               </p>
             </div>
 
@@ -1764,7 +1764,7 @@ export default function ServiceDetailClient({ initialService, initialLang }) {
                       <th className="p-4 md:p-5">{lang === 'de' ? 'Reichweite & View-Rate' : lang === 'en' ? 'Reach & View Rate' : 'Erişim & İzleme Oranı'}</th>
                       <th className="p-4 md:p-5">{lang === 'de' ? 'Bot- & Fake-Schutz' : lang === 'en' ? 'Bot & Fraud Protection' : 'Bot & Sahte Trafik Koruması'}</th>
                       <th className="p-4 md:p-5">{lang === 'de' ? 'Funnels & Formate' : lang === 'en' ? 'Funnels & Formats' : 'Huniler & Formatlar'}</th>
-                      <th className="p-4 md:p-5 text-right">{lang === 'de' ? 'CPV & Wirtschaftlichkeit' : lang === 'en' ? 'CPV & Economics' : 'CPV & Kârlılık'}</th>
+                      <th className="p-4 md:p-5 text-right">{lang === 'de' ? 'CPV & Wirtschaftlichkeit' : lang === 'en' ? 'CPV & Economics' : 'CPV & Karlılık'}</th>
                     </tr>
                   </thead>
                   <tbody className="divide-y divide-slate-100 text-xs md:text-sm">
@@ -2768,7 +2768,7 @@ export default function ServiceDetailClient({ initialService, initialLang }) {
                 {lang === 'de' ? 'Wir schalten nicht nur Werbung,' : lang === 'en' ? "We Don't Just Run Ads," : 'Reklamı Açıp Bırakmıyoruz,'}
                 <br />
                 <span className="text-[#4285F4]">
-                  {lang === 'de' ? 'Wir optimieren die Rentabilität.' : lang === 'en' ? 'We Optimize Profitability.' : 'Kârlılığı Optimize Ediyoruz.'}
+                  {lang === 'de' ? 'Wir optimieren die Rentabilität.' : lang === 'en' ? 'We Optimize Profitability.' : 'Karlılığı Optimize Ediyoruz.'}
                 </span>
               </h2>
               <p className="text-base md:text-lg text-gray-600 max-w-2xl mx-auto leading-relaxed">
@@ -2796,7 +2796,7 @@ export default function ServiceDetailClient({ initialService, initialLang }) {
                 {
                   step: '04',
                   title: lang === 'de' ? 'Skalierung' : lang === 'en' ? 'Scaling' : 'Ölçekleme',
-                  desc: lang === 'de' ? 'Nachdem wir profitable Kampagnen identifiziert haben, erhöhen wir das Budget kontrolliert und stoppen Verlustkampagnen.' : lang === 'en' ? 'After identifying profitable campaigns, we increase budget in a controlled manner and stop losing campaigns.' : 'Kâr getiren kampanyaları tespit edip bütçeyi kontrollü artırıyor, zarar edenleri anında durduruyoruz.'
+                  desc: lang === 'de' ? 'Nachdem wir profitable Kampagnen identifiziert haben, erhöhen wir das Budget kontrolliert und stoppen Verlustkampagnen.' : lang === 'en' ? 'After identifying profitable campaigns, we increase budget in a controlled manner and stop losing campaigns.' : 'Kar getiren kampanyaları tespit edip bütçeyi kontrollü artırıyor, zarar edenleri anında durduruyoruz.'
                 }
               ].map((item, i) => (
                 <div key={i} className="bg-slate-50 rounded-3xl p-7 border border-slate-200/80 hover:shadow-xl transition-all duration-300 hover:-translate-y-1 flex flex-col justify-between">
@@ -2942,7 +2942,7 @@ export default function ServiceDetailClient({ initialService, initialLang }) {
                     : lang === 'en'
                     ? 'Free Google Ads Analysis — in 30 Minutes.'
                     : 'Ücretsiz Google Ads Analizi — 30 Dakikada.')
-                : (lang === 'de' ? 'Bereit für planbares, profitables Wachstum?' : lang === 'en' ? 'Ready for Predictable, Profitable Growth?' : 'Planlı ve Kârlı Büyümeye Hazır mısınız?')}
+                : (lang === 'de' ? 'Bereit für planbares, profitables Wachstum?' : lang === 'en' ? 'Ready for Predictable, Profitable Growth?' : 'Planlı ve Karlı Büyümeye Hazır mısınız?')}
             </h2>
 
             <p className="text-base md:text-lg text-slate-300 max-w-2xl mx-auto mb-10 leading-relaxed">
@@ -2990,7 +2990,7 @@ export default function ServiceDetailClient({ initialService, initialLang }) {
               </a>
               <p className="text-xs text-slate-400 leading-relaxed">
                 {lang === 'tr'
-                  ? 'Resmi Google Partner sertifikalı Salih Maral, 17+ yıllık tecrübesiyle Almanya ve Avrupa genelinde Google Ads, Meta Ads, SEO ve Server-Side Tracking ile kârlı büyüme sağlar.'
+                  ? 'Resmi Google Partner sertifikalı Salih Maral, 17+ yıllık tecrübesiyle Almanya ve Avrupa genelinde Google Ads, Meta Ads, SEO ve Server-Side Tracking ile karlı büyüme sağlar.'
                   : lang === 'en'
                   ? 'Official Google Partner Salih Maral delivers scalable revenue growth across Germany & Europe through Google Ads, Meta Ads, SEO and Server-Side Tracking with 17+ years experience.'
                   : 'Offizieller Google Partner Salih Maral liefert planbares Umsatzwachstum in Deutschland und Europa durch Google Ads, Meta Ads, SEO und Server-Side Tracking mit über 17 Jahren Erfahrung.'}

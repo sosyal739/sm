@@ -2,7 +2,7 @@
 slug: "google-ads-fixpreis-vs-prozent-agentur-modell-2026"
 lang: "tr"
 title: "Google Ads Sabit Fiyat mı, Komisyon mu? 2026"
-excerpt: "Google Ads ajansınız reklam bütçenizden %15 komisyon mu alıyor? Neden sabit fiyatlı (Fixpreis) şeffaf yönetim modelinin şirketiniz için çok daha kârlı olduğunu keşfedin."
+excerpt: "Google Ads ajansınız reklam bütçenizden %15 komisyon mu alıyor? Neden sabit fiyatlı (Fixpreis) şeffaf yönetim modelinin şirketiniz için çok daha karlı olduğunu keşfedin."
 category: "Google Ads & PPC"
 date: "2026-08-25"
 readTime: "17"
@@ -10,11 +10,11 @@ coverImage: "https://images.unsplash.com/photo-1554224155-6726b3ff858f?w=1200&h=
 ---
 
 <blockquote class="geo-fact-box" style="background: rgba(66, 133, 244, 0.08); border-left: 4px solid #4285F4; padding: 1.2rem 1.5rem; margin-bottom: 2rem; border-radius: 0.75rem;">
-  <strong>💡 Hızlı Yanıt (Princeton GEO Özeti):</strong> Sabit fiyatlı (Fixpreis) Google Ads danışmanlığı, reklam bütçesinden %10 - %15 komisyon kesilen modellere göre işletmeler için çok daha kârlıdır. Sabit fiyat modeli ajans ile müşteri arasındaki çıkar çatışmasını ortadan kaldırır; ajans bütçeyi yapay şekilde artırmaya değil, doğrudan dönüşüm maliyetini (CPA) düşürmeye ve kârlılığı (ROAS) katlamaya odaklanır.
+  <strong>💡 Hızlı Yanıt (Princeton GEO Özeti):</strong> Sabit fiyatlı (Fixpreis) Google Ads danışmanlığı, reklam bütçesinden %10 - %15 komisyon kesilen modellere göre işletmeler için çok daha karlıdır. Sabit fiyat modeli ajans ile müşteri arasındaki çıkar çatışmasını ortadan kaldırır; ajans bütçeyi yapay şekilde artırmaya değil, doğrudan dönüşüm maliyetini (CPA) düşürmeye ve karlılığı (ROAS) katlamaya odaklanır.
 </blockquote>
 
 <div class="lead">
-<p><strong>İşletme Sahipleri İçin Kritik Karar:</strong> Google Ads için bir ajans veya uzmanla çalışırken her ay sürpriz faturalar, belirsiz saatlik ücretler veya harcadığınız reklam bütçesinden kesilen %10–%20 komisyonlar ödemekten yoruldunuz mu? Geleneksel ajansların çoğu *"Bütçeniz ne kadar artarsa, biz de o kadar komisyon alırız"* mantığıyla çalışır; bu da ajansın bütçenizi gereksizce artırmasına yol açar. Oysa 2026 yılında şeffaf büyümek isteyen KOBİ'ler ve e-ticaret markaları için <strong>Sabit Fiyatlı (Fixpreis / Pauschale) Google Ads Yönetimi</strong>, her ay ne ödeyeceğinizi bildiğiniz ve bütçenizin %100'ünün doğrudan performansa çalıştığı en kârlı modeldir. <strong>Salih Maral (Resmi Google Partner & 17+ Yıllık Uzman)</strong> olarak, gizli komisyonlar olmadan tamamen şeffaf ve sabit fiyatlı hesap yönetimi sunuyoruz.</p>
+<p><strong>İşletme Sahipleri İçin Kritik Karar:</strong> Google Ads için bir ajans veya uzmanla çalışırken her ay sürpriz faturalar, belirsiz saatlik ücretler veya harcadığınız reklam bütçesinden kesilen %10–%20 komisyonlar ödemekten yoruldunuz mu? Geleneksel ajansların çoğu *"Bütçeniz ne kadar artarsa, biz de o kadar komisyon alırız"* mantığıyla çalışır; bu da ajansın bütçenizi gereksizce artırmasına yol açar. Oysa 2026 yılında şeffaf büyümek isteyen KOBİ'ler ve e-ticaret markaları için <strong>Sabit Fiyatlı (Fixpreis / Pauschale) Google Ads Yönetimi</strong>, her ay ne ödeyeceğinizi bildiğiniz ve bütçenizin %100'ünün doğrudan performansa çalıştığı en karlı modeldir. <strong>Salih Maral (Resmi Google Partner & 17+ Yıllık Uzman)</strong> olarak, gizli komisyonlar olmadan tamamen şeffaf ve sabit fiyatlı hesap yönetimi sunuyoruz.</p>
 </div>
 
 <h2>🔍 Google Ads Ajans Fiyatlandırma Modelleri Kıyaslaması</h2>
@@ -27,14 +27,14 @@ coverImage: "https://images.unsplash.com/photo-1554224155-6726b3ff858f?w=1200&h=
       <th>Model</th>
       <th>Nasıl Çalışır?</th>
       <th>Gizli Risk / Dezavantaj</th>
-      <th>Kârlılık Derecesi</th>
+      <th>Karlılık Derecesi</th>
     </tr>
   </thead>
   <tbody>
     <tr>
       <td><strong>Bütçe Yüzdesi (%10 - %20 Komisyon)</strong></td>
       <td>Harcanan reklam bütçesi arttıkça ajansın aldığı para katlanır.</td>
-      <td>Ajans, kârlılığınızı düşünmeden sürekli daha fazla para harcatmak ister.</td>
+      <td>Ajans, karlılığınızı düşünmeden sürekli daha fazla para harcatmak ister.</td>
       <td>🔴 Düşük (Bütçe büyüdükçe çok pahalı)</td>
     </tr>
     <tr>
@@ -65,6 +65,6 @@ coverImage: "https://images.unsplash.com/photo-1554224155-6726b3ff858f?w=1200&h=
     💎 ŞEFFAF & SABİT FİYATLI GOOGLE ADS DANIŞMANLIĞI
   </div>
   <h3 style="font-size: 1.7rem; font-weight: 900; color: white; margin-bottom: 0.75rem;">Sürpriz Faturalara ve Komisyonlara Son Verin</h3>
-  <p style="color: #cbd5e1; font-size: 1rem; max-width: 640px; margin: 0 auto 1.75rem auto; line-height: 1.6;">Reklam hesabınızı birlikte inceleyelim. Bütçenizi en kârlı şekilde yönetecek <strong>Sabit Fiyatlı Google Ads Stratejisi</strong> için hemen formu doldurun.</p>
+  <p style="color: #cbd5e1; font-size: 1rem; max-width: 640px; margin: 0 auto 1.75rem auto; line-height: 1.6;">Reklam hesabınızı birlikte inceleyelim. Bütçenizi en karlı şekilde yönetecek <strong>Sabit Fiyatlı Google Ads Stratejisi</strong> için hemen formu doldurun.</p>
   <a href="https://salihmaral.de/tr#contact" style="display: inline-block; background: #3b82f6; color: white; font-weight: 800; padding: 1rem 2.4rem; border-radius: 1rem; text-decoration: none; font-size: 1.05rem; box-shadow: 0 10px 25px -5px rgba(59, 130, 246, 0.6); transition: all 0.3s ease;">Sabit Fiyatlı Teklif ve Analiz Alın ➔</a>
 </div>

@@ -28,7 +28,7 @@ const cityDetails = {
     tr: {
       heroTitle: 'Frankfurt Google Ads & Dijital Pazarlama Ajansı',
       heroSub: 'Frankfurt, Dreieich & Rhein-Main Bölgesi Resmi Google Partneri',
-      intro: 'Frankfurt ve çevresindeki rekabetçi pazarda işletmenizi Google aramalarında ve Meta reklamlarında 1. sıraya taşıyoruz. 17+ yıllık uzmanlıkla harcanan her reklam bütçesini kâra dönüştüren sistemler kuruyoruz.',
+      intro: 'Frankfurt ve çevresindeki rekabetçi pazarda işletmenizi Google aramalarında ve Meta reklamlarında 1. sıraya taşıyoruz. 17+ yıllık uzmanlıkla harcanan her reklam bütçesini kara dönüştüren sistemler kuruyoruz.',
       cta: 'Frankfurt İçin Ücretsiz Teklif Alın',
     },
     en: {
@@ -53,7 +53,7 @@ const cityDetails = {
     },
     tr: {
       heroTitle: 'Düsseldorf Google Ads & SEO Ajansı',
-      heroSub: 'Düsseldorf & NRW Bölgesi İçin Kârlı Reklam Yönetimi',
+      heroSub: 'Düsseldorf & NRW Bölgesi İçin Karlı Reklam Yönetimi',
       intro: 'Düsseldorf ve NRW bölgesindeki e-ticaret ve hizmet firmaları için Google Ads, Meta Ads ve SEO danışmanlığı ile satışlarınızı ve organik görünürlüğünüzü katlıyoruz.',
       cta: 'Düsseldorf İçin Ücretsiz Teklif Alın',
     },
@@ -106,7 +106,7 @@ const cityDetails = {
     tr: {
       heroTitle: 'Münih Google Ads & SEO Danışmanlığı',
       heroSub: 'Münih ve Bavyera Bölgesi İçin Premium Dijital Pazarlama',
-      intro: 'Münih pazarında yüksek kârlılıkla büyümek isteyen markalar için Google Ads, Meta Ads ve SEO danışmanlığı ile satışlarınızı katlıyoruz.',
+      intro: 'Münih pazarında yüksek karlılıkla büyümek isteyen markalar için Google Ads, Meta Ads ve SEO danışmanlığı ile satışlarınızı katlıyoruz.',
       cta: 'Münih İçin Ücretsiz Teklif Alın',
     },
     en: {
@@ -158,7 +158,7 @@ const cityDetails = {
     tr: {
       heroTitle: 'Berlin Google Ads & Dijital Büyüme Ajansı',
       heroSub: 'Berlin Genelindeki İşletmeler İçin Resmi Google Partneri',
-      intro: 'Berlin genelindeki start-up, e-ticaret ve yerel firmalar için Google Ads, Meta Ads ve SEO ile bütçenizi en kârlı şekilde büyüten reklam stratejileri.',
+      intro: 'Berlin genelindeki start-up, e-ticaret ve yerel firmalar için Google Ads, Meta Ads ve SEO ile bütçenizi en karlı şekilde büyüten reklam stratejileri.',
       cta: 'Berlin İçin Ücretsiz Teklif Alın',
     },
     en: {
@@ -184,7 +184,7 @@ const cityDetails = {
     tr: {
       heroTitle: 'Hamburg Google Ads & E-Ticaret Reklam Ajansı',
       heroSub: 'Hamburg, HafenCity ve Kuzey Almanya Resmi Google Partneri',
-      intro: 'Hamburg ve çevresindeki e-ticaret markaları, lojistik ve yerel işletmeler için Google Arama, Alışveriş ve Meta reklamlarını sabit fiyatlı (Fixpreis) şeffaf modelle yönetiyoruz. 17+ yıllık uzmanlıkla bütçenizi israf etmeden yüksek kârlılıkla cironuzu katlıyoruz.',
+      intro: 'Hamburg ve çevresindeki e-ticaret markaları, lojistik ve yerel işletmeler için Google Arama, Alışveriş ve Meta reklamlarını sabit fiyatlı (Fixpreis) şeffaf modelle yönetiyoruz. 17+ yıllık uzmanlıkla bütçenizi israf etmeden yüksek karlılıkla cironuzu katlıyoruz.',
       cta: 'Hamburg İçin Ücretsiz Teklif Alın',
     },
     en: {
@@ -235,7 +235,7 @@ const cityDetails = {
     },
     tr: {
       heroTitle: 'Dortmund & Ruhr Bölgesi Google Ads Ajansı',
-      heroSub: 'Dortmund, Essen ve Ruhr Bölgesi İçin Kârlı Reklam Yönetimi',
+      heroSub: 'Dortmund, Essen ve Ruhr Bölgesi İçin Karlı Reklam Yönetimi',
       intro: 'Dortmund, Essen, Marl ve Ruhr bölgesindeki sanayi, inşaat ve hizmet firmaları için Google Ads ve bölgesel SEO ile cironuzu katlıyoruz.',
       cta: 'Dortmund İçin Ücretsiz Teklif Alın',
     },
@@ -262,7 +262,7 @@ const cityDetails = {
     tr: {
       heroTitle: 'Leipzig & Saksonya Google Ads Reklam Ajansı',
       heroSub: 'Leipzig, Halle ve Dresden İçin Resmi Google Partneri',
-      intro: 'Leipzig ve Mitteldeutschland bölgesindeki e-ticaret, teknoloji ve yerel hizmet firmaları için sabit fiyatlı Google Ads ve Meta reklam yönetimi ile kârlı büyüme sağlıyoruz.',
+      intro: 'Leipzig ve Mitteldeutschland bölgesindeki e-ticaret, teknoloji ve yerel hizmet firmaları için sabit fiyatlı Google Ads ve Meta reklam yönetimi ile karlı büyüme sağlıyoruz.',
       cta: 'Leipzig İçin Ücretsiz Teklif Alın',
     },
     en: {
@@ -313,7 +313,7 @@ const cityDetails = {
     },
     tr: {
       heroTitle: 'Essen Google Ads & SEO Ajansı',
-      heroSub: 'Essen ve Ruhr Bölgesi İçin Kârlı Reklam Yönetimi',
+      heroSub: 'Essen ve Ruhr Bölgesi İçin Karlı Reklam Yönetimi',
       intro: 'Essen ve Ruhr bölgesinde faaliyet gösteren sanayi, e-ticaret ve yerel hizmet firmaları için Google Ads ve Meta Ads danışmanlığı sunuyoruz.',
       cta: 'Essen İçin Ücretsiz Teklif Alın',
     },
@@ -444,7 +444,7 @@ const cityDetails = {
     tr: {
       heroTitle: 'Karlsruhe Google Ads & B2B Pazarlama Ajansı',
       heroSub: 'Karlsruhe ve Baden Bölgesi İçin Resmi Google Partneri',
-      intro: "Karlsruhe'deki teknoloji, yazılım, e-ticaret ve yerel hizmet firmaları için kârlı Google Ads ve dijital pazarlama stratejileri.",
+      intro: "Karlsruhe'deki teknoloji, yazılım, e-ticaret ve yerel hizmet firmaları için karlı Google Ads ve dijital pazarlama stratejileri.",
       cta: 'Karlsruhe İçin Ücretsiz Teklif Alın',
     },
     en: {
@@ -503,7 +503,7 @@ const servicesList = [
     },
     tr: {
       name: 'Google Ads Yönetimi',
-      desc: 'Arama, Alışveriş, PMax ve YouTube reklamları ile kârlı müşteri kazanımı.',
+      desc: 'Arama, Alışveriş, PMax ve YouTube reklamları ile karlı müşteri kazanımı.',
       badge: 'Resmi Google Partneri',
       bullets: ['Akıllı Teklif & ROAS Ölçekleme', 'Gereksiz Tıklama Engelleyici Liste', 'Komisyonsuz Şeffaf Sabit Fiyat']
     },
@@ -895,7 +895,7 @@ export default function CityPage({ params }) {
           acceptedAnswer: {
             '@type': 'Answer',
             text: currentLang === 'tr'
-              ? 'Aylık 1.000 € ile 1.500 € reklam bütçesinden itibaren profesyonel ajans yönetimi kendini hızlıca amorti eder. Sabit fiyatlı modelimizle harcanan her euronun kâra dönüşmesini sağlıyoruz.'
+              ? 'Aylık 1.000 € ile 1.500 € reklam bütçesinden itibaren profesyonel ajans yönetimi kendini hızlıca amorti eder. Sabit fiyatlı modelimizle harcanan her euronun kara dönüşmesini sağlıyoruz.'
               : currentLang === 'en'
               ? 'Starting from a monthly ad spend of 1,000 € to 1,500 €, hiring a certified Google Ads agency yields a strong positive ROI with our transparent flat-fee model.'
               : 'Bereits ab einem monatlichen Werbebudget von 1.000 € bis 1.500 € rechnet sich eine professionelle Google Ads Agentur für KMUs und Dienstleister. Durch unser transparentes Fixpreis-Modell fließt Ihr Budget zu 100% in kaufbereite Kundenkontakte statt teure Agenturprovisionen.'
@@ -927,7 +927,7 @@ export default function CityPage({ params }) {
           acceptedAnswer: {
             '@type': 'Answer',
             text: currentLang === 'tr'
-              ? 'Kampanyalar yayına girdikten sonra ilk 24-48 saat içinde hedef kitlenizden gerçek tıklamalar ve müşteri talepleri gelmeye başlar. Algoritmik Smart Bidding optimizasyonu ile 14-30 gün içinde en yüksek kârlılığa (ROAS) ulaşılır.'
+              ? 'Kampanyalar yayına girdikten sonra ilk 24-48 saat içinde hedef kitlenizden gerçek tıklamalar ve müşteri talepleri gelmeye başlar. Algoritmik Smart Bidding optimizasyonu ile 14-30 gün içinde en yüksek karlılığa (ROAS) ulaşılır.'
               : currentLang === 'en'
               ? 'First qualified leads start coming within 24 to 48 hours of campaign launch. Full Smart Bidding efficiency is typically unlocked within 14 to 30 days.'
               : 'Erste Klicks und qualifizierte Anfragen treffen bereits in den ersten 24 bis 48 Stunden nach Kampagnenstart ein. Nach 14 bis 30 Tagen Smart-Bidding-Lernphase erreicht die Kampagne ihren vollen ROAS.'
@@ -943,7 +943,7 @@ export default function CityPage({ params }) {
           acceptedAnswer: {
             '@type': 'Answer',
             text: currentLang === 'tr'
-              ? 'Hayır. Müşterilerimizi 12 aylık bağlayıcı sözleşmelerle değil, her ay ürettiğimiz kârlılık ve ciro artışı ile yanımızda tutuyoruz.'
+              ? 'Hayır. Müşterilerimizi 12 aylık bağlayıcı sözleşmelerle değil, her ay ürettiğimiz karlılık ve ciro artışı ile yanımızda tutuyoruz.'
               : currentLang === 'en'
               ? 'No. We work on flexible terms without 12-month lock-ins. You stay because of measurable results.'
               : 'Nein. Wir verzichten auf starre 12-Monats-Verträge. Unsere Kunden bleiben durch nachweisbaren ROAS und kontinuierliche Neukundengewinnung.'
@@ -1479,7 +1479,7 @@ export default function CityPage({ params }) {
               </h3>
               <p className="text-sm text-slate-300 leading-relaxed">
                 {currentLang === 'tr'
-                  ? 'Kampanyalar yayına girdikten sonra ilk 24-48 saat içinde hedef kitlenizden gerçek tıklamalar ve müşteri talepleri gelmeye başlar. Algoritmik Smart Bidding optimizasyonu ile 14-30 gün içinde en yüksek kârlılığa (ROAS) ulaşılır.'
+                  ? 'Kampanyalar yayına girdikten sonra ilk 24-48 saat içinde hedef kitlenizden gerçek tıklamalar ve müşteri talepleri gelmeye başlar. Algoritmik Smart Bidding optimizasyonu ile 14-30 gün içinde en yüksek karlılığa (ROAS) ulaşılır.'
                   : currentLang === 'en'
                   ? 'First qualified leads start coming within 24 to 48 hours of campaign launch. Full Smart Bidding efficiency is typically unlocked within 14 to 30 days.'
                   : 'Erste Klicks und qualifizierte Anfragen treffen bereits in den ersten 24 bis 48 Stunden nach Kampagnenstart ein. Nach 14 bis 30 Tagen Smart-Bidding-Lernphase erreicht die Kampagne ihren vollen ROAS.'}
@@ -1496,7 +1496,7 @@ export default function CityPage({ params }) {
               </h3>
               <p className="text-sm text-slate-300 leading-relaxed">
                 {currentLang === 'tr'
-                  ? 'Hayır. Müşterilerimizi 12 aylık bağlayıcı sözleşmelerle değil, her ay ürettiğimiz kârlılık ve ciro artışı ile yanımızda tutuyoruz.'
+                  ? 'Hayır. Müşterilerimizi 12 aylık bağlayıcı sözleşmelerle değil, her ay ürettiğimiz karlılık ve ciro artışı ile yanımızda tutuyoruz.'
                   : currentLang === 'en'
                   ? 'No. We work on flexible terms without 12-month lock-ins. You stay because of measurable results.'
                   : 'Nein. Wir verzichten auf starre 12-Monats-Verträge. Unsere Kunden bleiben durch nachweisbaren ROAS und kontinuierliche Neukundengewinnung.'}
@@ -1576,7 +1576,7 @@ export default function CityPage({ params }) {
             </h2>
             <p className="text-slate-300 text-sm sm:text-base max-w-xl mx-auto">
               {currentLang === 'tr'
-                ? 'Formu doldurun, işletmenizin reklam potansiyeli ve kâr planı hakkında size e-posta ile detaylı analiz sunalım.'
+                ? 'Formu doldurun, işletmenizin reklam potansiyeli ve kar planı hakkında size e-posta ile detaylı analiz sunalım.'
                 : currentLang === 'en'
                 ? 'Fill out the form below. We will send you a tailored growth strategy directly to your inbox.'
                 : 'Füllen Sie das Formular aus. Wir analysieren Ihre Potenziale und senden Ihnen ein maßgeschneidertes Angebot direkt per E-Mail zu.'}

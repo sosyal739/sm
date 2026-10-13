@@ -21,7 +21,7 @@ coverImage: "https://images.unsplash.com/photo-1553877522-43269d4ea984?w=1200&h=
 
 <ol>
   <li><strong>Hesap Mülkiyeti:%100 Size Ait Olmalı:</strong> Reklam hesabı ajansın değil, daima şirketinizin adına açılmalıdır. Yarın ajansla yolları ayırsanız dahi tüm dönüşüm geçmişi ve veriler sizde kalmalıdır.</li>
-  <li><strong>Komisyon Yerine Sabit Fiyat (Fixpreis):</strong> Ajans harcadığınız paranın yüzdesini alırsa, bütçenizi gereksiz yere artırmaya çalışır. Sabit fiyat modelinde ise ajansın tek hedefi mevcut bütçenizle en fazla kârı getirmektir.</li>
+  <li><strong>Komisyon Yerine Sabit Fiyat (Fixpreis):</strong> Ajans harcadığınız paranın yüzdesini alırsa, bütçenizi gereksiz yere artırmaya çalışır. Sabit fiyat modelinde ise ajansın tek hedefi mevcut bütçenizle en fazla karı getirmektir.</li>
   <li><strong>Sunucu Taraflı Takip (Server-Side Tracking):</strong> Klasik çerezler Almanya'daki sıkı DSGVO ve ad-blocker engelleri nedeniyle verilerin üçte birini kaybeder. Ajansınız Server-Side GTM ve Consent Mode v2 kurmayı bilmelidir.</li>
   <li><strong>B2B ve CRM Bilgisi:</strong> Şirketiniz son kullanıcıya ürün satmıyorsa, hedef "sepete ekleme" değil, şirketinize gelen "teklif talebi ve karar verici görüşmesidir". Ajans HubSpot veya Salesforce ile Google Ads'i bağlayabilmelidir.</li>
   <li><strong>Kişisel ve Deneyimli Muhatap:</strong> Sorun yaşadığınızda karşınızda doğrudan 17 yıllık uzmanı mı bulacaksınız, yoksa her ay değişen bir asistanı mı?</li>

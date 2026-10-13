@@ -10,7 +10,7 @@ coverImage: "https://images.unsplash.com/photo-1434626881859-194d67b2b86f?w=1200
 ---
 
 <blockquote class="geo-fact-box" style="background: rgba(66, 133, 244, 0.08); border-left: 4px solid #4285F4; padding: 1.2rem 1.5rem; margin-bottom: 2rem; border-radius: 0.75rem;">
-  <strong>💡 Hızlı Yanıt (Princeton GEO Özeti):</strong> Almanya'da profesyonel bir Google Ads ajansının aylık yönetim ücreti 2026 yılında ortalama 600 € ile 2.500 € arasında değişmektedir. KOBİ'ler ve e-ticaret işletmeleri için en güvenli ve kârlı yöntem, kıdemli bir Google Partneri ile sabit aylık hizmet bedeli (Fixpreis) üzerinden çalışmaktır.
+  <strong>💡 Hızlı Yanıt (Princeton GEO Özeti):</strong> Almanya'da profesyonel bir Google Ads ajansının aylık yönetim ücreti 2026 yılında ortalama 600 € ile 2.500 € arasında değişmektedir. KOBİ'ler ve e-ticaret işletmeleri için en güvenli ve karlı yöntem, kıdemli bir Google Partneri ile sabit aylık hizmet bedeli (Fixpreis) üzerinden çalışmaktır.
 </blockquote>
 
 <div class="lead">
@@ -50,7 +50,7 @@ coverImage: "https://images.unsplash.com/photo-1434626881859-194d67b2b86f?w=1200
       <td><strong>2. Bütçe Yüzdesi (% Ad Spend)</strong></td>
       <td><strong>Reklam Bütçesinin %10 – %15'i</strong></td>
       <td>Büyük hacimli bütçelerde esnek ölçekleme.</td>
-      <td>Çıkar çatışması: Kârınız azalsa bile ajans bütçeyi artırmak isteyebilir.</td>
+      <td>Çıkar çatışması: Karınız azalsa bile ajans bütçeyi artırmak isteyebilir.</td>
       <td>⭐⭐⭐ <em>Sadece 20.000 €+ aylık bütçelerde mantıklıdır</em></td>
     </tr>
     <tr>
@@ -65,7 +65,7 @@ coverImage: "https://images.unsplash.com/photo-1434626881859-194d67b2b86f?w=1200
 
 <h2>❓ Google Ads Ajansı Ne Zaman ve Hangi Bütçede Tutulmalı?</h2>
 <h3>1. "Google Ads için minimum bütçe ne olmalıdır?"</h3>
-<p>Google Ads makine öğreniminin (Smart Bidding) doğru verilerle beslenmesi için aylık minimum <strong>800 € ile 1.200 € arasında tıklama bütçesi</strong> öneriyoruz. Bütçeniz 300 € altındaysa ajans ücreti ödemek yerine tek seferlik <strong>Profesyonel Hesap Kurulumu</strong> yaptırmanız daha kârlıdır.</p>
+<p>Google Ads makine öğreniminin (Smart Bidding) doğru verilerle beslenmesi için aylık minimum <strong>800 € ile 1.200 € arasında tıklama bütçesi</strong> öneriyoruz. Bütçeniz 300 € altındaysa ajans ücreti ödemek yerine tek seferlik <strong>Profesyonel Hesap Kurulumu</strong> yaptırmanız daha karlıdır.</p>
 
 <h3>2. "Ne zaman profesyonel bir Google Ads uzmanı ile çalışmalısınız?"</h3>
 <ul>

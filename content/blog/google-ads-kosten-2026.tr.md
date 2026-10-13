@@ -76,7 +76,7 @@ coverImage: "https://images.unsplash.com/photo-1554224155-8d04cb21cd6c?w=1200&h=
   </tbody>
 </table>
 
-<p>Tabloda açıkça görüldüğü üzere, bir avukatın veya finansal danışmanın web sitesine bir ziyaretçi çekmek için çok daha yüksek bütçeler ayırması gerekmektedir. Ancak bu ekonomik açıdan son derece mantıklıdır. Bir hukuk bürosu için kazanılan yeni bir müvekkil on binlerce lira değerinde olabilir, bu nedenle 45 ₺'lik bir tıklama mükemmel bir yatırımdır. Buna karşılık, bir e-ticaret sitesi 150 ₺'ye tişört satıyor olabilir; burada tıklama fiyatı elbette 45 ₺ olamaz, aksi takdirde tüm kârlılık anında yok olur.</p>
+<p>Tabloda açıkça görüldüğü üzere, bir avukatın veya finansal danışmanın web sitesine bir ziyaretçi çekmek için çok daha yüksek bütçeler ayırması gerekmektedir. Ancak bu ekonomik açıdan son derece mantıklıdır. Bir hukuk bürosu için kazanılan yeni bir müvekkil on binlerce lira değerinde olabilir, bu nedenle 45 ₺'lik bir tıklama mükemmel bir yatırımdır. Buna karşılık, bir e-ticaret sitesi 150 ₺'ye tişört satıyor olabilir; burada tıklama fiyatı elbette 45 ₺ olamaz, aksi takdirde tüm karlılık anında yok olur.</p>
 
 <h2>⚙️ Google Ads'in En Önemli Maliyet Bileşenleri</h2>
 <p>Eğer <a href="/tr/hizmetler/google-ads">profesyonel Google Ads yönetimi</a> hizmeti alıyorsanız, düzenli olarak çeşitli kısaltmalarla karşılaşacaksınız. Maliyet değerlendirmesi ve optimizasyonun temelini oluşturdukları için bu metrikleri anlamak hayati önem taşır:</p>
@@ -86,7 +86,7 @@ coverImage: "https://images.unsplash.com/photo-1554224155-8d04cb21cd6c?w=1200&h=
     <li><strong>CPC (Cost-per-Click):</strong> Bir kullanıcı reklamınıza fiziksel olarak tıkladığında ödediğiniz net tutardır. Arama Ağı kampanyaları için standart faturalandırma modelidir.</li>
     <li><strong>CPM (Cost-per-Mille):</strong> Bin gösterim başına maliyettir. Bu model, anında tıklamadan ziyade marka bilinirliğinin (Brand Awareness) ön planda olduğu Görüntülü Reklam Ağı ve YouTube kampanyalarında sıklıkla kullanılır.</li>
     <li><strong>CPA (Cost-per-Action / Cost-per-Acquisition):</strong> Dönüşüm başına maliyettir (örneğin bir satın alma, bir form doldurma veya bir telefon araması). Bu, hizmet sağlayıcılar için genellikle en önemli metriktir. Eğer 1000 ₺ harcayıp 5 form (lead) toplarsanız, CPA değeriniz 200 ₺'dir.</li>
-    <li><strong>ROAS (Return on Ad Spend):</strong> Reklam harcamasının getirisidir. Reklama yatırdığınız her 1 ₺ için elde ettiğiniz gelir. Eğer 5.000 ₺ yatırım yapıp 25.000 ₺ ciro elde ederseniz, ROAS oranınız %500 (veya 5:1) olur. Özellikle e-ticarette bu metrik kutsal kâsedir.</li>
+    <li><strong>ROAS (Return on Ad Spend):</strong> Reklam harcamasının getirisidir. Reklama yatırdığınız her 1 ₺ için elde ettiğiniz gelir. Eğer 5.000 ₺ yatırım yapıp 25.000 ₺ ciro elde ederseniz, ROAS oranınız %500 (veya 5:1) olur. Özellikle e-ticarette bu metrik kutsal kasedir.</li>
   </ul>
 </div>
 
@@ -98,7 +98,7 @@ coverImage: "https://images.unsplash.com/photo-1554224155-8d04cb21cd6c?w=1200&h=
 <p>"Doğru" bütçe sorusunun en iyi cevabı, gerçekçi iş hedefleri belirlemekten geçer. Bütçeniz, Google'ın makine öğrenimi algoritmalarının etkili bir şekilde çalışması için yeterli veriyi toplayacak kadar büyük olmalı, ancak kampanyalar henüz ilk öğrenme aşamasındayken işletmenizi finansal olarak tehlikeye atmayacak şekilde hesaplanmalıdır.</p>
 
 <h3>Küçük İşletmeler ve Girişimler İçin</h3>
-<p>Yerel bir mağaza, küçük bir hizmet işletmesi veya sınırlı sermayeye sahip bir girişim iseniz, aylık en az 3.000 ₺ ile 10.000 ₺ (günlük yaklaşık 100 ₺ - 330 ₺) arasında bir başlangıç bütçesi öneriyoruz. Bu bütçe ile çoğu sektörde günlük 20 ile 60 arasında tıklama elde edebilirsiniz. Bu hacim, ilk potansiyel müşterileri yakalamak ve hangi anahtar kelimelerin gerçekten performans gösterdiğini test etmek için yeterlidir. Bu aşamada, bütçenizi çok fazla kampanyaya dağıtmamak kritik önem taşır. Yalnızca en kârlı ürünlerinize veya hizmetlerinize ve satın alma niyeti en yüksek, çok spesifik arama terimlerine (long-tail keywords) odaklanın.</p>
+<p>Yerel bir mağaza, küçük bir hizmet işletmesi veya sınırlı sermayeye sahip bir girişim iseniz, aylık en az 3.000 ₺ ile 10.000 ₺ (günlük yaklaşık 100 ₺ - 330 ₺) arasında bir başlangıç bütçesi öneriyoruz. Bu bütçe ile çoğu sektörde günlük 20 ile 60 arasında tıklama elde edebilirsiniz. Bu hacim, ilk potansiyel müşterileri yakalamak ve hangi anahtar kelimelerin gerçekten performans gösterdiğini test etmek için yeterlidir. Bu aşamada, bütçenizi çok fazla kampanyaya dağıtmamak kritik önem taşır. Yalnızca en karlı ürünlerinize veya hizmetlerinize ve satın alma niyeti en yüksek, çok spesifik arama terimlerine (long-tail keywords) odaklanın.</p>
 
 <h3>Orta Ölçekli İşletmeler (KOBİ'ler) İçin</h3>
 <p>Google Ads'i birincil büyüme motoru olarak kullanmayı hedefleyen oturmuş orta ölçekli şirketler için gerçekçi bir bütçe genellikle aylık 15.000 ₺ ile 50.000+ ₺ arasındadır. Bu ölçekte, reklam gösterimini tüm Google ekosistemi (Arama, Görüntülü Reklam, YouTube, Gmail, Haritalar) genelinde optimize eden <a href="/blog/google-ads-pmax-optimization">Performance Max (PMax) kampanyaları</a> gibi çok daha gelişmiş stratejiler uygulayabilirsiniz. Daha yüksek bir bütçe, Google'ın Akıllı Teklif (Smart Bidding) algoritmalarının çok daha hızlı öğrenmesini sağlayarak reklamlarınızı dönüşüm sağlama olasılığı en yüksek kullanıcılara hassas bir şekilde sunar. Ek olarak, sitenizi terk eden kullanıcıları geri kazanmak için güçlü yeniden pazarlama (retargeting) kampanyaları yürütebilirsiniz.</p>
@@ -152,7 +152,7 @@ coverImage: "https://images.unsplash.com/photo-1554224155-8d04cb21cd6c?w=1200&h=
   <h3>ROI Hesaplama Formülü</h3>
   <p><strong>ROI (%) = ((Ciro - Reklam Harcaması - Ürün Maliyeti) / (Reklam Harcaması + Ürün Maliyeti)) x 100</strong></p>
   <p><em>Örnek:</em> Bir ürünü 500 ₺'ye satıyorsunuz. Üretim maliyetiniz 150 ₺. Bir satış elde etmek için Google Ads'te 50 ₺ harcadınız (CPA = 50 ₺).<br>
-  Kâr = 500 ₺ - 150 ₺ - 50 ₺ = 300 ₺.<br>
+  Kar = 500 ₺ - 150 ₺ - 50 ₺ = 300 ₺.<br>
   ROI = (300 ₺ / 200 ₺) x 100 = %150.</p>
   <p>Profesyonel ölçüm altyapısının kurulumu hakkında derinlemesine bilgi için, lütfen <a href="/blog/google-ads-roi-tracking">Google Ads ROI Takibi</a> hakkındaki kapsamlı rehberimizi okuyun.</p>
 </div>
@@ -177,8 +177,8 @@ coverImage: "https://images.unsplash.com/photo-1554224155-8d04cb21cd6c?w=1200&h=
   <h3>2. CPC maliyetlerim neden aniden yükseldi?</h3>
   <p>Ani maliyet artışları çeşitli değişkenlerden kaynaklanabilir. En yaygın neden artan rekabettir; pazarınıza yeni rakipler girmiş olabilir veya mevcut rakipleriniz tekliflerini agresif bir şekilde artırmış olabilir. Alternatif olarak, Kalite Puanınız düşmüş olabilir (örneğin web sitesi değişikliklerinin alaka düzeyini veya sayfa hızını düşürmesi nedeniyle), bu da reklam konumunuzu korumak için daha fazla ödeme yapmanıza neden olur. Sezonsallık da birçok sektörde maliyetleri etkileyen devasa bir faktördür.</p>
 
-  <h3>3. Reklam harcamalarından kârlı bir getiri elde etmek ne kadar sürer?</h3>
-  <p>Google Ads, bir gecede anında zenginlik getiren sihirli bir değnek değildir. Makine öğrenimi algoritmaları bir "öğrenme aşamasına" ihtiyaç duyar. Genel olarak, istikrarlı ve oldukça kârlı bir ROI elde etmeden önce 2 ila 3 aylık aktif bir optimizasyon süreci beklemeniz gerekir. Bu ilk haftalar, veri satın alma süreci olarak görülmelidir. Ne kadar çok veri biriktirirseniz, algoritmalar uzun vadede kampanyalarınızı o kadar verimli ve uygun maliyetli bir şekilde sunabilir.</p>
+  <h3>3. Reklam harcamalarından karlı bir getiri elde etmek ne kadar sürer?</h3>
+  <p>Google Ads, bir gecede anında zenginlik getiren sihirli bir değnek değildir. Makine öğrenimi algoritmaları bir "öğrenme aşamasına" ihtiyaç duyar. Genel olarak, istikrarlı ve oldukça karlı bir ROI elde etmeden önce 2 ila 3 aylık aktif bir optimizasyon süreci beklemeniz gerekir. Bu ilk haftalar, veri satın alma süreci olarak görülmelidir. Ne kadar çok veri biriktirirseniz, algoritmalar uzun vadede kampanyalarınızı o kadar verimli ve uygun maliyetli bir şekilde sunabilir.</p>
 </div>
 
 <h2>Sonuç: Google Ads Maliyetine Değer Mi?</h2>

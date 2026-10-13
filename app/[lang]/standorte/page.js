@@ -51,7 +51,7 @@ const servicesList = [
     },
     tr: {
       name: 'Google Ads Yönetimi',
-      desc: 'Arama, Alışveriş, PMax ve YouTube reklamları ile kârlı müşteri kazanımı.',
+      desc: 'Arama, Alışveriş, PMax ve YouTube reklamları ile karlı müşteri kazanımı.',
       badge: 'Resmi Google Partneri',
       bullets: ['Akıllı Teklif & ROAS Ölçekleme', 'Gereksiz Tıklama Engelleyici Liste', 'Komisyonsuz Şeffaf Sabit Fiyat']
     },
