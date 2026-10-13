@@ -72,3 +72,13 @@ coverImage: "https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?w=1200
 <p>While tax compliance ensures zero VAT loss, advertising performance determines your net profit. Unlike traditional agencies taking a 15%–20% commission on your media spend, Salih Maral operates on a <strong>transparent monthly flat-fee model (Fixpreis from €590/month)</strong>.</p>
 
 <p>Calculate your expected revenue growth using our interactive <a href="/en/standorte/frankfurt">Google Ads Budget Calculator</a> or compare market rates in our guide on <a href="/blog/google-ads-agentur-preise-kosten-deutschland-2026">Google Ads Agency Costs in Germany</a>.</p>
+
+<div class="highlight-box" style="margin-top: 2rem;">
+  <h4>📚 Related German Tax & Bookkeeping Guides</h4>
+  <ul>
+    <li><a href="/blog/google-ads-meta-ads-betriebsausgabe-finanzamt-leitfaden-2026">Deducting Google & Meta Ads as Operating Expenses at the Finanzamt (2026 Guide)</a></li>
+    <li><a href="/blog/google-ads-meta-ads-umsatzsteuer-vorsteuer-leitfaden-2026">Google & Meta Ads VAT & Input Tax Deduction Guide (§ 13b UStG)</a></li>
+    <li><a href="/blog/google-ads-reklamveren-dogrulamasi-rehberi-2026">Google Ads Advertiser Verification Step-by-Step</a></li>
+    <li><a href="/en/services/google-ads">Certified Google Ads Management with Transparent Flat Retainers</a></li>
+  </ul>
+</div>

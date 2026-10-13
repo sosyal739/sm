@@ -97,3 +97,13 @@ coverImage: "https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?w=1200
 <h2>💡 Bütçenizi Canlı Hesaplayın</h2>
 
 <p>Almanya genelinde en karlı reklam bütçesini planlamak için <a href="/tr/standorte/frankfurt">Google Ads Frankfurt Ajansı</a> sayfamızı, Ruhr bölgesindeki Türk işletmeleri için <a href="/blog/google-ads-agentur-dortmund-ruhrgebiet-mittelstand-2026">Google Ads Dortmund & Ruhr Bölgesi</a> rehberimizi veya Almanya geneli piyasa fiyatlarını öğrenmek için <a href="/blog/google-ads-agentur-preise-kosten-deutschland-2026">Google Ads Ajans Ücretleri Rehberimizi</a> inceleyebilirsiniz.</p>
+
+<div class="highlight-box" style="margin-top: 2rem;">
+  <h4>📚 Almanya Vergi ve Muhasebe Rehberlerimiz</h4>
+  <ul>
+    <li><a href="/blog/google-ads-meta-ads-betriebsausgabe-finanzamt-leitfaden-2026">Google ve Meta Reklamlarını Finanzamt'ta Gider Gösterme (2026 Rehberi)</a></li>
+    <li><a href="/blog/google-ads-meta-ads-umsatzsteuer-vorsteuer-leitfaden-2026">Google ve Meta Reklamlarında KDV & Vorsteuer İndirimi (§ 13b UStG)</a></li>
+    <li><a href="/blog/google-ads-reklamveren-dogrulamasi-rehberi-2026">Google Ads Reklamveren Doğrulaması Adım Adım Rehber</a></li>
+    <li><a href="/tr/hizmetler/google-ads">Resmi Partner Güvencesiyle Sabit Fiyatlı Google Ads Yönetimi</a></li>
+  </ul>
+</div>

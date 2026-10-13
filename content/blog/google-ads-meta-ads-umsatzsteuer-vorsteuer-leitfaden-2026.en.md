@@ -83,4 +83,4 @@ coverImage: "https://images.unsplash.com/photo-1579532537598-459ecdaf39cc?w=1200
 
 <h2>📍 Related Strategic Accounting Guides</h2>
 
-<p>Review our foundational guide on <a href="/blog/google-ads-rechnung-buchen-reverse-charge-2026">Booking Google Ads Invoices (§13b UStG)</a> and our protocol for <a href="/blog/google-ads-reklamveren-dogrulamasi-rehberi-2026">Google Advertiser Verification</a>. For agency budgeting insights, consult our <a href="/blog/google-ads-agentur-preise-kosten-deutschland-2026">German PPC Agency Pricing Guide</a>.</p>
+<p>Review our foundational guide on <a href="/blog/google-ads-rechnung-buchen-reverse-charge-2026">Booking Google Ads Invoices (§13b UStG)</a> and our compliance playbook on <a href="/blog/google-ads-meta-ads-betriebsausgabe-finanzamt-leitfaden-2026">Deducting Google & Meta Ads as Operating Expenses at the Finanzamt (2026)</a>. Also consult our protocol for <a href="/blog/google-ads-reklamveren-dogrulamasi-rehberi-2026">Google Advertiser Verification</a> and our <a href="/blog/google-ads-agentur-preise-kosten-deutschland-2026">German PPC Agency Pricing Guide</a>.</p>
