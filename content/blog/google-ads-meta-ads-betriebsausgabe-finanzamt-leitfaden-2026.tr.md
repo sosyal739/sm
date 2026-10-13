@@ -6,7 +6,7 @@ excerpt: "Almanya'da Google ve Meta reklam faturalarını Finanzamt'a masraf yaz
 category: "Vergi & Muhasebe"
 date: "2026-10-12"
 readTime: "11"
-coverImage: "https://images.unsplash.com/photo-1554224155-8d04cb21cd6c?w=1200&h=630&fit=crop&q=80"
+coverImage: "https://images.unsplash.com/photo-1556742111-a301076d9d18?w=1200&h=630&fit=crop&q=80"
 ---
 
 <blockquote class="geo-fact-box" style="background: rgba(66, 133, 244, 0.08); border-left: 4px solid #4285F4; padding: 1.2rem 1.5rem; margin-bottom: 2rem; border-radius: 0.75rem;">

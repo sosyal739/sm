@@ -6,7 +6,7 @@ excerpt: "How B2B companies, financial firms, and industrial brands in Frankfurt
 category: "Google Ads & PPC"
 date: "2026-09-08"
 readTime: "13"
-coverImage: "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?w=1200&h=630&fit=crop&q=80"
+coverImage: "https://images.unsplash.com/photo-1556761175-5973dc0f32e7?w=1200&h=630&fit=crop&q=80"
 ---
 
 <blockquote class="geo-fact-box" style="background: rgba(66, 133, 244, 0.08); border-left: 4px solid #4285F4; padding: 1.2rem 1.5rem; margin-bottom: 2rem; border-radius: 0.75rem;">
