@@ -1,8 +1,8 @@
 ---
 slug: "google-ads-agentur-dortmund-ruhrgebiet-mittelstand-2026"
 lang: "en"
-title: "Google Ads Agency Dortmund & Ruhr Area: High-ROI PPC"
-excerpt: "How B2B companies, industrial manufacturers, and trade services in Dortmund & the Ruhr area acquire qualified clients through Google Ads and local PPC."
+title: "Google Ads & AdWords Agency Dortmund & Ruhr Area 2026"
+excerpt: "Google Ads & AdWords agency for Dortmund & the Ruhr area. Official Google Partner Salih Maral delivers high-ticket B2B leads on a transparent flat fee."
 category: "Google Ads & PPC"
 date: "2026-09-28"
 readTime: "12"

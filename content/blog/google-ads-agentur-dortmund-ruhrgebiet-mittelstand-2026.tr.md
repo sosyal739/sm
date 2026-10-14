@@ -1,8 +1,8 @@
 ---
 slug: "google-ads-agentur-dortmund-ruhrgebiet-mittelstand-2026"
 lang: "tr"
-title: "Dortmund Google Ads Ajansı | Ruhr Bölgesi Müşteri Rehberi"
-excerpt: "Dortmund, Bochum ve Ruhr bölgesindeki işletmeler ve esnaflar için Google Ads, yerel SEO ve harita reklamlarıyla karlı müşteri kazanma rehberi."
+title: "Dortmund Google Ads & AdWords Ajansı | Ruhr Rehberi 2026"
+excerpt: "Dortmund, Bochum ve Ruhr bölgesi işletmeleri için Google Ads & AdWords ajansı. Salih Maral ile sabit fiyata garantili kurumsal müşteri kazanımı."
 category: "Google Ads & PPC"
 date: "2026-09-28"
 readTime: "12"

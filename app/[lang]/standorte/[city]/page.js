@@ -67,14 +67,14 @@ const cityDetails = {
   koeln: {
     name: 'Köln',
     region: 'Nordrhein-Westfalen (NRW)',
-    tagline: 'Google Ads Agentur Köln, Meta Ads (Facebook & Instagram) & Performance Marketing',
+    tagline: 'Google Ads & AdWords Agentur Köln — Offizieller Google Partner • Fixpreis',
     description: 'Erreichen Sie Top-Rankings bei Google, profitable Google Ads Betreuung und konvertierende Facebook & Instagram Ads mit Ihrer Performance Marketing Agentur in Köln.',
     stats: { clients: '60+', roas: '4.3x', experience: '17+ Jahre' },
     industries: ['Medien & Kreativwirtschaft', 'E-Commerce & Startups', 'Gesundheitswesen & Ärzte', 'Handwerk, Kanzleien & B2B'],
     de: {
-      heroTitle: 'Google Ads, Meta & Performance Marketing Agentur Köln',
+      heroTitle: 'Google Ads & AdWords Agentur Köln',
       heroSub: 'Zertifizierte Google Ads Betreuung & Social Ads (Facebook & Instagram) für Köln & Rheinland',
-      intro: 'Als spezialisierte Performance Marketing Agentur in Köln verbinden wir profitables Suchmaschinenmarketing (Google Ads & AdWords Köln) mit hochkonvertierenden Social Media Kampagnen (Facebook Ads Agentur Köln & Instagram Ads Köln). Mit 17+ Jahren Erfahrung als offizieller Google Partner bieten wir Kölner Unternehmen transparente Betreuung zum Fixpreis, modernes Server-Side Tracking und maximale ROAS-Steigerung.',
+      intro: 'Als spezialisierte Google Ads & AdWords Agentur in Köln verbinden wir profitables Suchmaschinenmarketing mit hochkonvertierenden Social Media Kampagnen (Facebook & Instagram Ads). Mit 17+ Jahren Erfahrung als offizieller Google Partner bieten wir Kölner Unternehmen transparente Betreuung zum Fixpreis ab 590 €/Monat, modernes Server-Side Tracking und maximale ROAS-Steigerung.',
       cta: 'Jetzt unverbindliches Angebot für Köln anfordern',
     },
     tr: {
@@ -119,14 +119,14 @@ const cityDetails = {
   stuttgart: {
     name: 'Stuttgart',
     region: 'Baden-Württemberg',
-    tagline: 'Google Ads Agentur Stuttgart — B2B & E-Commerce Spezialist für Baden-Württemberg',
+    tagline: 'Google Ads & AdWords Agentur Stuttgart & Ludwigsburg — Partner • Fixpreis',
     description: 'Zertifizierte Google Ads Betreuung & B2B Performance Marketing für Stuttgart, Esslingen, Ludwigsburg und ganz Baden-Württemberg.',
     stats: { clients: '65+', roas: '4.2x', experience: '17+ Jahre' },
     industries: ['Maschinenbau & Industrie', 'B2B & IT-Dienstleister', 'E-Commerce & D2C', 'Handwerk & Gewerbe'],
     de: {
-      heroTitle: 'Google Ads Agentur Stuttgart & B2B Performance',
-      heroSub: 'Zertifizierte Google Ads Betreuung für Stuttgart, Esslingen & Baden-Württemberg',
-      intro: 'Als offizielle Google Ads Agentur in Stuttgart entwickeln wir hochrentable Werbestrategien für den baden-württembergischen Mittelstand, Industrie, Maschinenbau und E-Commerce. Messbare B2B-Leads, planbare Kosten durch faire Fixpreis-Modelle und 17+ Jahre Praxiserfahrung direkt vom Senior Google Partner.',
+      heroTitle: 'Google Ads & AdWords Agentur Stuttgart & Ludwigsburg',
+      heroSub: 'Zertifizierte Google Ads & AdWords Betreuung für Stuttgart, Ludwigsburg & B2B Mittelstand',
+      intro: 'Als offizielle Google Ads & AdWords Agentur in Stuttgart und Ludwigsburg entwickeln wir hochrentable Werbestrategien für den baden-württembergischen Mittelstand, Industrie, Maschinenbau und E-Commerce. Messbare B2B-Leads, planbare Kosten durch faire Fixpreis-Modelle ab 590 €/Monat und 17+ Jahre Praxiserfahrung direkt vom Senior Google Partner.',
       cta: 'Jetzt unverbindliches Angebot für Stuttgart anfordern',
     },
     tr: {

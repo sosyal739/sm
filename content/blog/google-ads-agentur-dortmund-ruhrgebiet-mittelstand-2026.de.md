@@ -1,8 +1,8 @@
 ---
 slug: "google-ads-agentur-dortmund-ruhrgebiet-mittelstand-2026"
 lang: "de"
-title: "Google Ads Agentur Dortmund & Ruhrgebiet: Mehr Neukunden"
-excerpt: "Wie Industrie, Handwerk und Mittelstand in Dortmund & Ruhrgebiet mit Google Ads, Performance Max und lokalem Geo-Targeting planbar wachsen."
+title: "Google Ads & AdWords Agentur Dortmund & Ruhrgebiet 2026"
+excerpt: "Google Ads & AdWords Agentur Dortmund & Ruhrgebiet. Salih Maral bringt Mittelstand & Handwerk auf Platz 1 bei Google. Festpreis ab 590 € ohne Provision."
 category: "Google Ads & PPC"
 date: "2026-09-28"
 readTime: "12"

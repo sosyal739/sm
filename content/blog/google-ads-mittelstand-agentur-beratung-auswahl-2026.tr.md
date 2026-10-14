@@ -1,8 +1,8 @@
 ---
 slug: "google-ads-mittelstand-agentur-beratung-auswahl-2026"
 lang: "tr"
-title: "Alman KOBİ'leri İçin Google Ads Ajansı Seçim Rehberi 2026"
-excerpt: "Almanya'da KOBİ ve B2B şirketleri için Google Ads ajansı seçimi, aylık maliyetler ve sabit fiyat avantajları. 17+ yıllık uzman deneyimiyle."
+title: "Almanya KOBİ & Mittelstand İçin En İyi Google Ads Ajansı"
+excerpt: "Almanya'da KOBİ ve B2B şirketleri için Google Ads ajansı seçimi, sabit fiyat avantajları ve SQL müşteri kazanımı. 17+ yıllık Resmi Google Partneri."
 category: "Ajans Karşılaştırma & B2B"
 date: "2026-09-30"
 readTime: "10"

@@ -1,8 +1,8 @@
 ---
 slug: "google-ads-mittelstand-agentur-beratung-auswahl-2026"
 lang: "en"
-title: "Google Ads for Mittelstand: Agency Selection Guide 2026"
-excerpt: "How German Mittelstand and SMEs choose the right Google Ads agency, benchmark monthly retainers, and avoid budget waste. Expert guide 2026."
+title: "Best Google Ads Agency for German Mittelstand & SMEs 2026"
+excerpt: "Google Ads agency for German Mittelstand and SMEs. Agency evaluation criteria, flat-fee retainers, and B2B tracking by 17+ year Google Partner Salih Maral."
 category: "Agency Comparison & B2B"
 date: "2026-09-30"
 readTime: "10"
