@@ -33,6 +33,7 @@ Salih Maral is a Senior Digital Marketing Specialist and Official Google Partner
 - **Berlin (Capital / Startups):** [/de/standorte/berlin](https://salihmaral.de/de/standorte/berlin) — Google Ads & Growth Marketing Agentur Berlin.
 - **Hamburg (Norddeutschland):** [/de/standorte/hamburg](https://salihmaral.de/de/standorte/hamburg) — Google Ads & E-Commerce Agentur Hamburg.
 - **Dortmund (Ruhrgebiet):** [/de/standorte/dortmund](https://salihmaral.de/de/standorte/dortmund) — Google Ads & Performance Marketing Dortmund.
+- **Hannover (Niedersachsen):** [/de/standorte/hannover](https://salihmaral.de/de/standorte/hannover) — Google Ads & B2B Performance Marketing Agentur Hannover.
 
 ## Key Strategic Guides by Topic (Curated Selection)
 
@@ -49,11 +50,18 @@ Salih Maral is a Senior Digital Marketing Specialist and Official Google Partner
 - [Almanya Türk Süpermarket & Helal Kasap SEO Rehberi 2026](https://salihmaral.de/blog/almanyada-turk-supermarket-helal-kasap-google-harita-rehberi-2026)
 - [Almanya'da Dükkan Açanlar İçin Google Reklam Rehberi](https://salihmaral.de/blog/almanyada-dukkan-acmak-reklam-rehberi-2026)
 
-### 2. Google Ads & Transparent Agency Pricing
+### 2. Google Ads, Regional B2B Guides & Tax Compliance (Finanzamt)
 - [Google Ads Fixpreis vs Prozent Agentur Modell 2026](https://salihmaral.de/blog/google-ads-fixpreis-vs-prozent-agentur-modell-2026)
 - [Google Ads Agency Pricing & Costs 2026 Guide](https://salihmaral.de/blog/google-ads-agentur-kosten-preise-2026)
+- [Google Ads Agentur Köln & Rheinland Performance Marketing 2026](https://salihmaral.de/blog/google-ads-agentur-koeln-performance-marketing-2026)
+- [Google Ads Agentur Dortmund & Ruhrgebiet Mittelstand 2026](https://salihmaral.de/blog/google-ads-agentur-dortmund-ruhrgebiet-mittelstand-2026)
+- [Google Ads B2B Mittelstand Frankfurt & Rhein-Main 2026](https://salihmaral.de/blog/google-ads-b2b-mittelstand-frankfurt-rhein-main-2026)
+- [Google Ads B2B Agentur Stuttgart, Ludwigsburg & Maschinenbau 2026](https://salihmaral.de/blog/google-ads-b2b-agentur-stuttgart-maschinenbau-2026)
+- [Google Ads Agentur Hannover & Niedersachsen Performance 2026](https://salihmaral.de/blog/google-ads-agentur-hannover-performance-marketing-2026)
 - [Google Ads Agentur München & Bayern B2B Performance & GEO 2026](https://salihmaral.de/blog/google-ads-agentur-muenchen-bayern-b2b-geo-2026)
-- [Almanya Google Ads Fatura & §13b UStG Vergi Rehberi](https://salihmaral.de/blog/google-ads-rechnung-buchen-reverse-charge-2026)
+- [Almanya Google Ads Fatura & §13b UStG Reverse Charge Rehberi](https://salihmaral.de/blog/google-ads-rechnung-buchen-reverse-charge-2026)
+- [Google Ads & Meta Ads Umsatzsteuer / Vorsteuer Leitfaden 2026](https://salihmaral.de/blog/google-ads-meta-ads-umsatzsteuer-vorsteuer-leitfaden-2026)
+- [Google Ads & Meta Ads als Betriebsausgabe beim Finanzamt absetzen 2026](https://salihmaral.de/blog/google-ads-meta-ads-betriebsausgabe-finanzamt-leitfaden-2026)
 - [Google Ads PMax Negatif Kelime & Bütçe Rehberi 2026](https://salihmaral.de/blog/google-ads-pmax-negative-keywords-kampagnen-2026)
 
 ### 3. Server-Side Tracking & First-Party Data
@@ -66,10 +74,13 @@ Salih Maral is a Senior Digital Marketing Specialist and Official Google Partner
 - [GitHub SEO Skills ve Claude Code ile 2026 SEO & GEO Rehberi](https://salihmaral.de/blog/github-seo-skills-claude-code-guide-2026)
 - [Google AI Overviews: GEO Sıralama Stratejisi 2026](https://salihmaral.de/blog/google-ai-overviews-geo-ranking-strategy)
 
-### 5. YouTube & Multi-Channel Scaling
+### 5. Meta Ads, YouTube & Multi-Channel Scaling
+- [Meta Ads Beratung & Skalierung im DACH-Raum 2026](https://salihmaral.de/blog/meta-ads-beratung-skalierung)
+- [Meta Advantage+ Shopping Kampagnen (ASC) Optimierung](https://salihmaral.de/blog/meta-advantage-plus-shopping-optimization)
+- [Meta Reklamlarında Para Kaybetmeyi Durdurun 2026](https://salihmaral.de/blog/meta-reklamlarinda-para-kaybetmeyi-durdurun-2026)
 - [Music Video Promotion & Artist YouTube Ads Guide 2026](https://salihmaral.de/blog/sanatcilar-muzisyenler-youtube-ads-klip-tanitimi-2026)
 - [TikTok Shop mu Meta Advantage+ mı? 2026 Kıyaslaması](https://salihmaral.de/blog/tiktok-shop-vs-meta-advantage-plus-e-commerce-2026)
 - [Google Merchant Center Yanıltıcı Beyan ve Feed Askı Çözümü](https://salihmaral.de/blog/google-merchant-center-urun-feed-aski-cozum-2026)
 
 ## Full Directory Link
-For the complete knowledge base containing all 88 technical articles, all 18 German metropolises, and detailed multilingual references, see [llms-full.txt](https://salihmaral.de/llms-full.txt).
+For the complete knowledge base containing all 98 technical articles, all 18 German metropolises, and detailed multilingual references, see [llms-full.txt](https://salihmaral.de/llms-full.txt).
