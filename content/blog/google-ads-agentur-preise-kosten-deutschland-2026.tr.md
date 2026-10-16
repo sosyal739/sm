@@ -74,5 +74,72 @@ coverImage: "https://images.unsplash.com/photo-1559526324-4b87b5e36e44?w=1200&h=
   <p><em>"Reklam bütçesi işletmenizin alın teridir. Bir ajans bütçenizi harcamakla değil, harcanan her 1 Euro'yu ciroya dönüştürmekle mükelleftir."</em> — <strong>Salih Maral</strong></p>
 </blockquote>
 
+<h2>📈 Almanya'da Tıklama Başına Ne Kadar Ödersiniz? (Sektörel CPC Fiyatları 2026)</h2>
+
+<p>Google Ads maliyetlerinizi belirleyen en temel veri, sektörünüzdeki ortalama tıklama başı maliyettir (Cost-per-Click / CPC). Almanya genelinde sektörlere göre 2026 ortalama tıklama fiyatları şöyledir:</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Sektör / İş Kolu (Almanya)</th>
+      <th>Ortalama Tıklama Ücreti (CPC)</th>
+      <th>Rekabet Seviyesi</th>
+      <th>Ortalama Dönüşüm Oranı</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>E-Ticaret & Perakende</strong></td>
+      <td>0,85 € - 1,50 €</td>
+      <td>Çok Yüksek</td>
+      <td>%2,5 - %4,0</td>
+    </tr>
+    <tr>
+      <td><strong>Hukuk, Avukat & Danışmanlık</strong></td>
+      <td>4,50 € - 12,00 €</td>
+      <td>Yüksek</td>
+      <td>%4,0 - %6,5</td>
+    </tr>
+    <tr>
+      <td><strong>Doktorlar, Klinikler & Sağlık</strong></td>
+      <td>2,50 € - 5,00 €</td>
+      <td>Orta - Yüksek</td>
+      <td>%5,0 - %8,0</td>
+    </tr>
+    <tr>
+      <td><strong>Handwerk, Tadilat & İnşaat Ustaları</strong></td>
+      <td>1,80 € - 4,50 €</td>
+      <td>Orta - Yüksek</td>
+      <td>%7,0 - %12,0</td>
+    </tr>
+    <tr>
+      <td><strong>B2B Sanayi, Makine & Toptan Ticaret</strong></td>
+      <td>3,50 € - 8,50 €</td>
+      <td>Yüksek</td>
+      <td>%3,0 - %5,5</td>
+    </tr>
+    <tr>
+      <td><strong>Mali Müşavir (Steuerberater) & Finans</strong></td>
+      <td>4,00 € - 9,50 €</td>
+      <td>Çok Yüksek</td>
+      <td>%4,5 - %7,0</td>
+    </tr>
+    <tr>
+      <td><strong>Restoran, Döner & Paket Servis</strong></td>
+      <td>0,60 € - 1,80 €</td>
+      <td>Orta</td>
+      <td>%6,0 - %10,0</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>Avukatlık veya sanayi sektöründe bir tıklama için 8 € ödemek pahalı gibi görünebilir; ancak kazanılan tek bir kurumsal müşterinin getirdiği ciro binlerce Euro olduğundan bu yatırım oldukça karlıdır. E-ticarette ise sepet ortalamasına göre tıklama başı maliyetin 1 € civarında tutulması esastır.</p>
+
+<div class="cta-box" style="background: linear-gradient(135deg, rgba(66, 133, 244, 0.08) 0%, rgba(52, 168, 83, 0.08) 100%); border: 1px solid rgba(66, 133, 244, 0.2); border-radius: 1rem; padding: 2rem; margin: 3rem 0; text-align: center;">
+  <h3 style="margin-top: 0; color: #1a73e8;">🎯 Ücretsiz Google Ads Hesap & Bütçe Analizi</h3>
+  <p style="max-width: 650px; margin: 0.5rem auto 1.5rem; color: #3c4043;">Mevcut reklam hesabınızı veya planladığınız bütçeyi 17+ yıllık Kıdemli Google Partneri Salih Maral ile ücretsiz inceleyin. Bütçenizi tüketen gereksiz tıklamaları ayıklayalım ve garantili sabit fiyatla (Fixpreis) cironuzu artıralım.</p>
+  <a href="/#contact" style="display: inline-block; background: #1a73e8; color: #ffffff; padding: 0.9rem 2rem; border-radius: 0.5rem; text-decoration: none; font-weight: 600; font-size: 1.05rem;">Ücretsiz Teklif & Hesap Analizi İste →</a>
+</div>
+
 <h2>📞 Almanya'da Sabit Fiyatlı Teklif Alın</h2>
-<p>İşletmeniz için en uygun reklam stratejisini ve aylık sabit fiyat paketlerimizi öğrenmek için <a href="/tr/hizmetler/google-ads">Google Ads Hizmet Sayfamızı inceleyin</a> veya WhatsApp üzerinden doğrudan danışmanlık alın.</p>
+<p>İşletmeniz için en uygun reklam stratejisini ve aylık sabit fiyat paketlerimizi öğrenmek için <a href="/tr/hizmetler/google-ads">Google Ads Hizmet Sayfamızı inceleyin</a> veya doğrudan web sitemizdeki iletişim formundan bize ulaşın.</p>

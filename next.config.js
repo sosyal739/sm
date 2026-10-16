@@ -33,6 +33,15 @@ const nextConfig = {
       { source: '/blog/tiktok-ads-rehber', destination: '/blog/tiktok-shop-vs-meta-advantage-plus-e-commerce-2026', statusCode: 301 },
       { source: '/tr/blog/seo-stratejileri-2026', destination: '/blog/google-seo-ranking-factors-2026', statusCode: 301 },
       { source: '/en/blog/meta-ads-basari', destination: '/blog/meta-reklamlarinda-para-kaybetmeyi-durdurun-2026', statusCode: 301 },
+      // 301: Fiyat Yamyamlığı Çözümü (3 Ayrı Yazı -> Tek Ana Fiyat Rehberi)
+      { source: '/blog/google-ads-agentur-kosten-preise-2026', destination: '/blog/google-ads-agentur-preise-kosten-deutschland-2026', statusCode: 301 },
+      { source: '/blog/google-ads-kosten-2026', destination: '/blog/google-ads-agentur-preise-kosten-deutschland-2026', statusCode: 301 },
+      // 301: Yinelenen Blog Çiftleri Birleştirme (Zero Keyword Cannibalization)
+      { source: '/blog/local-seo-google-maps', destination: '/blog/google-maps-local-seo-ranking-factors-2026', statusCode: 301 },
+      { source: '/blog/google-maps-local-seo-guide', destination: '/blog/google-maps-local-seo-ranking-factors-2026', statusCode: 301 },
+      { source: '/blog/tiktok-shop-social-commerce', destination: '/blog/tiktok-shop-vs-meta-advantage-plus-e-commerce-2026', statusCode: 301 },
+      { source: '/blog/tiktok-shop-ecommerce-scaling', destination: '/blog/tiktok-shop-vs-meta-advantage-plus-e-commerce-2026', statusCode: 301 },
+      { source: '/blog/meta-advantage-plus-ai-creative-scaling', destination: '/blog/meta-advantage-plus-creative-ai-2026', statusCode: 301 },
     ];
   },
   async headers() {

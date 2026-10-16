@@ -102,6 +102,12 @@ coverImage: "https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?w=1200
 
 <p>Besonders im wettbewerbsintensiven B2B- und Dienstleistungssektor in Wirtschaftsmetropolen wie unserer <a href="/de/standorte/frankfurt">Google Ads Agentur Frankfurt am Main</a> oder für den produzierenden Mittelstand in Nordrhein-Westfalen (siehe unseren Spezialleitfaden <a href="/blog/google-ads-agentur-dortmund-ruhrgebiet-mittelstand-2026">Google Ads Agentur Dortmund & Ruhrgebiet</a>) sorgt diese exakte Kostenkontrolle für spürbar höhere Margen. Informieren Sie sich auch über die branchenweiten <a href="/blog/google-ads-agentur-preise-kosten-deutschland-2026">Google Ads Agentur Preise & Kosten in Deutschland 2026</a>.</p>
 
+<div class="cta-box" style="background: linear-gradient(135deg, rgba(66, 133, 244, 0.08) 0%, rgba(52, 168, 83, 0.08) 100%); border: 1px solid rgba(66, 133, 244, 0.2); border-radius: 1rem; padding: 2rem; margin: 2.5rem 0; text-align: center;">
+  <h3 style="margin-top: 0; color: #1a73e8;">🎯 Kostenlose Google Ads Potenzial- & Budget-Analyse</h3>
+  <p style="max-width: 650px; margin: 0.5rem auto 1.5rem; color: #3c4043;">Lassen Sie Ihr bestehendes Konto oder Ihre Buchhaltungseinstellungen unverbindlich von Senior Google Partner Salih Maral prüfen. Wir zeigen Ihnen, wie Sie Steuerfehler vermeiden, Streuverluste eliminieren und den maximalen ROAS zum garantierten Fixpreis erzielen.</p>
+  <a href="/#contact" style="display: inline-block; background: #1a73e8; color: #ffffff; padding: 0.9rem 2rem; border-radius: 0.5rem; text-decoration: none; font-weight: 600; font-size: 1.05rem;">Jetzt kostenlose Analyse anfordern →</a>
+</div>
+
 <div class="highlight-box" style="margin-top: 2rem;">
   <h4>📚 Verwandte Steuer- und Buchhaltungs-Ratgeber</h4>
   <ul>

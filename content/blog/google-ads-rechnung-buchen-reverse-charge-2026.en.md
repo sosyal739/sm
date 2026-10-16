@@ -73,6 +73,12 @@ coverImage: "https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?w=1200
 
 <p>Calculate your expected revenue growth using our interactive <a href="/en/standorte/frankfurt">Google Ads Budget Calculator</a> or compare market rates in our guide on <a href="/blog/google-ads-agentur-preise-kosten-deutschland-2026">Google Ads Agency Costs in Germany</a>.</p>
 
+<div class="cta-box" style="background: linear-gradient(135deg, rgba(66, 133, 244, 0.08) 0%, rgba(52, 168, 83, 0.08) 100%); border: 1px solid rgba(66, 133, 244, 0.2); border-radius: 1rem; padding: 2rem; margin: 2.5rem 0; text-align: center;">
+  <h3 style="margin-top: 0; color: #1a73e8;">🎯 Free Google Ads Account & Budget Audit</h3>
+  <p style="max-width: 650px; margin: 0.5rem auto 1.5rem; color: #3c4043;">Get your current ad account or bookkeeping settings reviewed by Official Google Partner Salih Maral. Discover how to avoid tax pitfalls, eliminate wasted spend, and maximize ROAS with our guaranteed flat fee.</p>
+  <a href="/en#contact" style="display: inline-block; background: #1a73e8; color: #ffffff; padding: 0.9rem 2rem; border-radius: 0.5rem; text-decoration: none; font-weight: 600; font-size: 1.05rem;">Claim Your Free Audit →</a>
+</div>
+
 <div class="highlight-box" style="margin-top: 2rem;">
   <h4>📚 Related German Tax & Bookkeeping Guides</h4>
   <ul>

@@ -98,6 +98,12 @@ coverImage: "https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?w=1200
 
 <p>Almanya genelinde en karlı reklam bütçesini planlamak için <a href="/tr/standorte/frankfurt">Google Ads Frankfurt Ajansı</a> sayfamızı, Ruhr bölgesindeki Türk işletmeleri için <a href="/blog/google-ads-agentur-dortmund-ruhrgebiet-mittelstand-2026">Google Ads Dortmund & Ruhr Bölgesi</a> rehberimizi veya Almanya geneli piyasa fiyatlarını öğrenmek için <a href="/blog/google-ads-agentur-preise-kosten-deutschland-2026">Google Ads Ajans Ücretleri Rehberimizi</a> inceleyebilirsiniz.</p>
 
+<div class="cta-box" style="background: linear-gradient(135deg, rgba(66, 133, 244, 0.08) 0%, rgba(52, 168, 83, 0.08) 100%); border: 1px solid rgba(66, 133, 244, 0.2); border-radius: 1rem; padding: 2rem; margin: 2.5rem 0; text-align: center;">
+  <h3 style="margin-top: 0; color: #1a73e8;">🎯 Ücretsiz Google Ads Hesap & Bütçe Analizi</h3>
+  <p style="max-width: 650px; margin: 0.5rem auto 1.5rem; color: #3c4043;">Mevcut reklam hesabınızı veya muhasebe ayarlarınızı Resmi Google Partneri Salih Maral ile ücretsiz inceleyin. Vergi hatalarını önleyen, bütçe israfını sıfırlayan ve cironuzu katlayan sabit ücretli yönetim modelini keşfedin.</p>
+  <a href="/tr#contact" style="display: inline-block; background: #1a73e8; color: #ffffff; padding: 0.9rem 2rem; border-radius: 0.5rem; text-decoration: none; font-weight: 600; font-size: 1.05rem;">Ücretsiz Hesap Analizi Talep Edin →</a>
+</div>
+
 <div class="highlight-box" style="margin-top: 2rem;">
   <h4>📚 Almanya Vergi ve Muhasebe Rehberlerimiz</h4>
   <ul>

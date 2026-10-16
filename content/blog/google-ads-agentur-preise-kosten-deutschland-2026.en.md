@@ -70,5 +70,72 @@ coverImage: "https://images.unsplash.com/photo-1559526324-4b87b5e36e44?w=1200&h=
   <li><strong>Direct Senior Management:</strong> Campaigns managed directly by a 17+ year Senior Google Partner.</li>
 </ul>
 
+<h2>📈 Average Cost-per-Click (CPC) by Industry in Germany (2026)</h2>
+
+<p>Your actual ad spend is largely determined by the average Cost-per-Click (CPC) in your specific industry. In Germany, benchmark CPCs vary significantly across sectors:</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Industry / Sector (Germany)</th>
+      <th>Average CPC (€)</th>
+      <th>Competition Level</th>
+      <th>Typical Conversion Rate</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>E-Commerce & Retail</strong></td>
+      <td>€0.85 – €1.50</td>
+      <td>Very High</td>
+      <td>2.5% – 4.0%</td>
+    </tr>
+    <tr>
+      <td><strong>Legal & Law Firms (Anwälte)</strong></td>
+      <td>€4.50 – €12.00</td>
+      <td>High</td>
+      <td>4.0% – 6.5%</td>
+    </tr>
+    <tr>
+      <td><strong>Healthcare, Doctors & Clinics</strong></td>
+      <td>€2.50 – €5.00</td>
+      <td>Medium to High</td>
+      <td>5.0% – 8.0%</td>
+    </tr>
+    <tr>
+      <td><strong>Handwerk, Construction & Trades</strong></td>
+      <td>€1.80 – €4.50</td>
+      <td>Medium to High</td>
+      <td>7.0% – 12.0%</td>
+    </tr>
+    <tr>
+      <td><strong>B2B Manufacturing & Industrial IT</strong></td>
+      <td>€3.50 – €8.50</td>
+      <td>High</td>
+      <td>3.0% – 5.5%</td>
+    </tr>
+    <tr>
+      <td><strong>Finance, Insurance & Tax Advisory</strong></td>
+      <td>€4.00 – €9.50</td>
+      <td>Very High</td>
+      <td>4.5% – 7.0%</td>
+    </tr>
+    <tr>
+      <td><strong>Gastronomy & Delivery Services</strong></td>
+      <td>€0.60 – €1.80</td>
+      <td>Medium</td>
+      <td>6.0% – 10.0%</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>Paying €8.00 per click for a corporate law firm or B2B machinery manufacturer is often significantly more profitable than a €0.80 click in e-commerce, as the average deal value ranges in the tens of thousands of euros.</p>
+
+<div class="cta-box" style="background: linear-gradient(135deg, rgba(66, 133, 244, 0.08) 0%, rgba(52, 168, 83, 0.08) 100%); border: 1px solid rgba(66, 133, 244, 0.2); border-radius: 1rem; padding: 2rem; margin: 3rem 0; text-align: center;">
+  <h3 style="margin-top: 0; color: #1a73e8;">🎯 Free Google Ads Potential & Budget Audit</h3>
+  <p style="max-width: 650px; margin: 0.5rem auto 1.5rem; color: #3c4043;">Have your existing Google Ads account or planned marketing budget reviewed by 17+ year Senior Google Partner Salih Maral. Discover where ad spend is being wasted and how to scale ROAS on a transparent monthly flat fee.</p>
+  <a href="/#contact" style="display: inline-block; background: #1a73e8; color: #ffffff; padding: 0.9rem 2rem; border-radius: 0.5rem; text-decoration: none; font-weight: 600; font-size: 1.05rem;">Request Free Audit & Proposal →</a>
+</div>
+
 <h2>📞 Request a Transparent Flat-Fee Proposal</h2>
-<p>Discover the most profitable Google Ads strategy for your industry in Germany. <a href="/en/services/google-ads">Explore our Google Ads Flat Fee Services</a> or contact us via WhatsApp for a direct consultation.</p>
+<p>Discover the most profitable Google Ads strategy for your industry in Germany. <a href="/en/services/google-ads">Explore our Google Ads Flat Fee Services</a> or contact us via our website contact form for an initial consultation.</p>

@@ -106,5 +106,72 @@ coverImage: "https://images.unsplash.com/photo-1559526324-4b87b5e36e44?w=1200&h=
   <p><em>"Werbebudget ist das Kapital Ihres Unternehmens. Eine Agentur sollte dafür bezahlt werden, dieses Kapital zu vermehren – nicht prozentual daran mitzuverdienen, wenn Sie mehr ausgeben."</em> — <strong>Salih Maral</strong></p>
 </blockquote>
 
+<h2>📈 Was kostet ein Klick bei Google Ads? (Durchschnittliche CPC-Kosten nach Branche 2026)</h2>
+
+<p>Die Klickpreise (Cost-per-Click oder CPC) bestimmen maßgeblich, wie viel Budget Sie monatlich investieren müssen. Je nach Branche und Wettbewerb variieren die Klickpreise in Deutschland erheblich:</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Branche / Sektor in Deutschland</th>
+      <th>Durchschnittlicher CPC (€)</th>
+      <th>Wettbewerbsintensität</th>
+      <th>Typische Conversion-Rate</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>E-Commerce & Einzelhandel</strong></td>
+      <td>0,85 € - 1,50 €</td>
+      <td>Sehr Hoch</td>
+      <td>2,5% - 4,0%</td>
+    </tr>
+    <tr>
+      <td><strong>Rechtsberatung & Anwälte</strong></td>
+      <td>4,50 € - 12,00 €</td>
+      <td>Hoch</td>
+      <td>4,0% - 6,5%</td>
+    </tr>
+    <tr>
+      <td><strong>Gesundheit, Ärzte & Medizin</strong></td>
+      <td>2,50 € - 5,00 €</td>
+      <td>Mittel bis Hoch</td>
+      <td>5,0% - 8,0%</td>
+    </tr>
+    <tr>
+      <td><strong>Handwerk, Sanierung & Bauträger</strong></td>
+      <td>1,80 € - 4,50 €</td>
+      <td>Mittel bis Hoch</td>
+      <td>7,0% - 12,0%</td>
+    </tr>
+    <tr>
+      <td><strong>B2B Industrie, Maschinenbau & IT</strong></td>
+      <td>3,50 € - 8,50 €</td>
+      <td>Hoch</td>
+      <td>3,0% - 5,5%</td>
+    </tr>
+    <tr>
+      <td><strong>Finanzen, Kredite & Versicherungen</strong></td>
+      <td>4,00 € - 9,50 €</td>
+      <td>Sehr Hoch</td>
+      <td>4,5% - 7,0%</td>
+    </tr>
+    <tr>
+      <td><strong>Gastronomie & Lieferservice</strong></td>
+      <td>0,60 € - 1,80 €</td>
+      <td>Mittel</td>
+      <td>6,0% - 10,0%</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>Ein Klick für 8 € bei einem Anwalt oder Industrie-Zulieferer ist oft rentabler als ein 0,80 € Klick im E-Commerce, da der durchschnittliche Auftragswert (Customer Lifetime Value) im vier- bis fünfstelligen Bereich liegt.</p>
+
+<div class="cta-box" style="background: linear-gradient(135deg, rgba(66, 133, 244, 0.08) 0%, rgba(52, 168, 83, 0.08) 100%); border: 1px solid rgba(66, 133, 244, 0.2); border-radius: 1rem; padding: 2rem; margin: 3rem 0; text-align: center;">
+  <h3 style="margin-top: 0; color: #1a73e8;">🎯 Kostenlose Google Ads Potenzial- & Budget-Analyse</h3>
+  <p style="max-width: 650px; margin: 0.5rem auto 1.5rem; color: #3c4043;">Lassen Sie Ihr bestehendes Konto oder Ihr geplantes Werbebudget unverbindlich von Senior Google Partner Salih Maral prüfen. Wir zeigen Ihnen, wie Sie Streuverluste eliminieren und den maximalen ROAS zum garantierten Fixpreis erzielen.</p>
+  <a href="/#contact" style="display: inline-block; background: #1a73e8; color: #ffffff; padding: 0.9rem 2rem; border-radius: 0.5rem; text-decoration: none; font-weight: 600; font-size: 1.05rem;">Jetzt kostenlose Analyse anfordern →</a>
+</div>
+
 <h2>📞 Transparentes Angebot zum Fixpreis anfordern</h2>
-<p>Möchten Sie erfahren, welches Budget und Setup für Ihre Branche das profitabelste ist? <a href="/de/dienstleistungen/google-ads">Erfahren Sie mehr über unsere Google Ads Betreuung zum Fixpreis</a> oder fordern Sie ein unverbindliches Erstgespräch an.</p>
+<p>Möchten Sie erfahren, welches Budget und Setup für Ihre Branche das profitabelste ist? <a href="/de/dienstleistungen/google-ads">Erfahren Sie mehr über unsere Google Ads Betreuung zum Fixpreis</a> oder fordern Sie über unser Kontaktformular ein unverbindliches Erstgespräch an.</p>
