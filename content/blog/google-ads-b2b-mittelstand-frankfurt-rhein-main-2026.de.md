@@ -63,3 +63,5 @@ coverImage: "https://images.unsplash.com/photo-1556761175-5973dc0f32e7?w=1200&h=
 
 <h2>📍 Lokale Betreuung für Frankfurt am Main & Rhein-Main</h2>
 <p>Möchten Sie Ihre B2B-Akquise in Frankfurt planbar machen? Besuchen Sie unsere <a href="/de/standorte/frankfurt">Google Ads Agentur Frankfurt Informationsseite</a> oder vereinbaren Sie ein persönliches Beratungsgespräch.</p>
+
+<p><strong>Direkt zur Leistung:</strong> <a href="/de/standorte/frankfurt">Google Ads Agentur Frankfurt – Leistungen, Festpreis ab 590 € und kostenlose Analyse</a>.</p>

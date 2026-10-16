@@ -153,3 +153,5 @@ coverImage: "https://images.unsplash.com/photo-1497366811353-6870744d04b2?w=1200
     <li><a href="/blog/google-ads-agentur-preise-kosten-deutschland-2026">Google Ads Agency Pricing in Germany 2026</a></li>
   </ul>
 </div>
+
+<p><strong>Go straight to the service:</strong> <a href="/en/standorte/koeln">Google Ads agency Cologne – services, flat fee from €590 and free analysis</a>.</p>

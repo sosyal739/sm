@@ -1,8 +1,8 @@
 ---
 slug: "google-ads-agentur-dortmund-ruhrgebiet-mittelstand-2026"
 lang: "de"
-title: "Google Ads & AdWords Agentur Dortmund & Ruhrgebiet 2026"
-excerpt: "Google Ads & AdWords Agentur Dortmund & Ruhrgebiet. Salih Maral bringt Mittelstand & Handwerk auf Platz 1 bei Google. Festpreis ab 590 € ohne Provision."
+title: "Google Ads in Dortmund & Ruhrgebiet: Ratgeber Mittelstand 2026"
+excerpt: "Google Ads in Dortmund & im Ruhrgebiet: Ratgeber für Mittelstand & Handwerk mit CPC- und CPL-Benchmarks 2026, Fallstudie und Festpreis ab 590 € ohne Provision."
 category: "Google Ads & PPC"
 date: "2026-09-28"
 readTime: "12"
@@ -147,3 +147,5 @@ coverImage: "https://images.unsplash.com/photo-1497215728101-856f4ea42174?w=1200
     <p style="color: #475569; margin: 0; line-height: 1.6;">Für expandierende Mittelständler synchronisieren wir Ruhrgebiets-Kampagnen nahtlos mit unseren B2B-Systemen in anderen Wirtschaftszentren wie <a href="https://salihmaral.de/blog/google-ads-b2b-mittelstand-frankfurt-rhein-main-2026">B2B Google Ads Frankfurt &amp; Rhein-Main</a>, unserer <a href="https://salihmaral.de/blog/google-ads-agentur-muenchen-bayern-b2b-geo-2026">Google Ads Agentur München &amp; Bayern</a> und unserem Hub für <a href="https://salihmaral.de/blog/google-ads-agentur-nuernberg-franken-mittelstand-2026">Google Ads Nürnberg &amp; Franken</a>.</p>
   </div>
 </div>
+
+<p><strong>Direkt zur Leistung:</strong> <a href="/de/standorte/dortmund">Google Ads Agentur Dortmund – Leistungen, Festpreis ab 590 € und kostenlose Analyse</a>.</p>

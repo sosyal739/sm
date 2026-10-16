@@ -163,3 +163,5 @@ coverImage: "https://images.unsplash.com/photo-1497366811353-6870744d04b2?w=1200
     <li><a href="/blog/google-ads-agentur-preise-kosten-deutschland-2026">Google Ads Kosten & Agenturpreise 2026</a></li>
   </ul>
 </div>
+
+<p><strong>Direkt zur Leistung:</strong> <a href="/de/standorte/koeln">Google Ads Agentur Köln – Leistungen, Festpreis ab 590 € und kostenlose Analyse</a>.</p>

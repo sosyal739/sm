@@ -147,3 +147,5 @@ coverImage: "https://images.unsplash.com/photo-1497215728101-856f4ea42174?w=1200
     <p style="color: #475569; margin: 0; line-height: 1.6;">Evet. Dortmund merkezli işletmelerinizi Hessen (<a href="https://salihmaral.de/blog/google-ads-b2b-mittelstand-frankfurt-rhein-main-2026">Frankfurt B2B Google Ads</a>), Bavyera (<a href="https://salihmaral.de/blog/google-ads-agentur-muenchen-bayern-b2b-geo-2026">Münih Google Ads &amp; GEO</a>) ve Franken (<a href="https://salihmaral.de/blog/google-ads-agentur-nuernberg-franken-mittelstand-2026">Nürnberg Google Ads</a>) pazarlarına güvenle genişletiyoruz.</p>
   </div>
 </div>
+
+<p><strong>Doğrudan hizmete geçin:</strong> <a href="/tr/standorte/dortmund">Dortmund Google Ads ajansı – hizmetler, 590 €'dan başlayan sabit fiyat ve ücretsiz analiz</a>.</p>

@@ -1,8 +1,8 @@
 ---
 slug: "google-ads-mittelstand-agentur-beratung-auswahl-2026"
 lang: "de"
-title: "Beste Google Ads Agentur für Mittelstand & KMU 2026"
-excerpt: "Google Ads Agentur für Mittelstand & KMU in Deutschland. Auswahl-Kriterien, Fixpreis-Modelle & B2B Lead-Tracking 2026. Salih Maral (17+ Jahre Partner)."
+title: "Google Ads im Mittelstand: Agentur für KMU wählen 2026"
+excerpt: "Google Ads im Mittelstand: Die 5 Auswahlkriterien für die richtige Agentur, Preise & Fixpreis-Modelle ab 590 € und B2B-Lead-Tracking 2026. Von Salih Maral."
 category: "Agentur-Vergleich & B2B"
 date: "2026-09-30"
 readTime: "10"

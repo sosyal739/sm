@@ -81,3 +81,5 @@ coverImage: "https://images.unsplash.com/photo-1497215728101-856f4ea42174?w=1200
 <h2>📍 Local PPC Management for Dortmund & NRW</h2>
 
 <p>Learn more about our local services on our <a href="/en/standorte/dortmund">Google Ads Agency Dortmund page</a> or explore our <a href="/en/services/google-ads">Google Ads Management overview</a>.</p>
+
+<p><strong>Go straight to the service:</strong> <a href="/en/standorte/dortmund">Google Ads agency Dortmund – services, flat fee from €590 and free analysis</a>.</p>

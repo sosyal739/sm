@@ -152,3 +152,5 @@ coverImage: "https://images.unsplash.com/photo-1497366811353-6870744d04b2?w=1200
     <li><a href="/blog/google-ads-rechnung-buchen-reverse-charge-2026">Google Ads Reklam Faturası & Vergi Rehberi</a></li>
   </ul>
 </div>
+
+<p><strong>Doğrudan hizmete geçin:</strong> <a href="/tr/standorte/koeln">Köln Google Ads ajansı – hizmetler, 590 €'dan başlayan sabit fiyat ve ücretsiz analiz</a>.</p>

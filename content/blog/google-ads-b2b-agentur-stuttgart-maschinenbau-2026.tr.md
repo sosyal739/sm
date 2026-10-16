@@ -154,3 +154,5 @@ coverImage: "https://images.unsplash.com/photo-1504384308090-c894fdcc538d?w=1200
     <li><a href="/blog/google-ads-negative-keywords-ausschlussliste-deutschland-2026">Google Ads Negatif Anahtar Kelime Listesi</a></li>
   </ul>
 </div>
+
+<p><strong>Doğrudan hizmete geçin:</strong> <a href="/tr/standorte/stuttgart">Stuttgart Google Ads ajansı – hizmetler, 590 €'dan başlayan sabit fiyat ve ücretsiz analiz</a>.</p>

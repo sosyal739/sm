@@ -29,3 +29,5 @@ coverImage: "https://images.unsplash.com/photo-1556761175-5973dc0f32e7?w=1200&h=
 
 <h2>📍 Frankfurt ve Rhein-Main Bölgesinde Profesyonel Reklam Yönetimi</h2>
 <p>Frankfurt'taki işletmeniz için karlı bir büyüme planı oluşturmak istiyorsanız <a href="/tr/standorte/frankfurt">Frankfurt Google Ads Ajansı sayfamızı ziyaret edin</a> veya hemen bizimle iletişime geçin.</p>
+
+<p><strong>Doğrudan hizmete geçin:</strong> <a href="/tr/standorte/frankfurt">Frankfurt Google Ads ajansı – hizmetler, 590 €'dan başlayan sabit fiyat ve ücretsiz analiz</a>.</p>

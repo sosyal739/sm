@@ -27,3 +27,5 @@ coverImage: "https://images.unsplash.com/photo-1556761175-5973dc0f32e7?w=1200&h=
 
 <h2>📍 Local PPC Partner for Frankfurt & Rhine-Main</h2>
 <p>Ready to scale your B2B lead generation in Frankfurt? Visit our <a href="/en/standorte/frankfurt">Google Ads Agency Frankfurt page</a> or contact us directly via WhatsApp.</p>
+
+<p><strong>Go straight to the service:</strong> <a href="/en/standorte/frankfurt">Google Ads agency Frankfurt – services, flat fee from €590 and free analysis</a>.</p>
