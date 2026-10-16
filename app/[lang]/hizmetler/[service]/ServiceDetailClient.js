@@ -24,7 +24,8 @@ const servicesList = {
     { title: 'TikTok Ads', slug: 'tiktok-ads' },
     { title: 'X (Twitter) Ads', slug: 'x-ads' },
     { title: 'SEO Hizmetleri', slug: 'seo' },
-    { title: 'Olumsuz Yorum Yönetimi', slug: 'yorum-yonetimi' }
+    { title: 'Olumsuz Yorum Yönetimi', slug: 'yorum-yonetimi' },
+    { title: 'STK ve Dernekler İçin Bağış Pazarlaması', slug: 'islamic-charity-ngo-marketing' }
   ],
   de: [
     { title: 'Google Ads Management', slug: 'google-ads' },
@@ -34,7 +35,8 @@ const servicesList = {
     { title: 'TikTok Ads', slug: 'tiktok-ads' },
     { title: 'X (Twitter) Ads', slug: 'x-ads' },
     { title: 'SEO Dienstleistungen', slug: 'seo' },
-    { title: 'Bewertungsmanagement', slug: 'yorum-yonetimi' }
+    { title: 'Bewertungsmanagement', slug: 'yorum-yonetimi' },
+    { title: 'Spendenmarketing & Google Ad Grants für NGOs', slug: 'islamic-charity-ngo-marketing' }
   ],
   en: [
     { title: 'Google Ads Management', slug: 'google-ads' },
@@ -44,7 +46,8 @@ const servicesList = {
     { title: 'TikTok Ads', slug: 'tiktok-ads' },
     { title: 'X (Twitter) Ads', slug: 'x-ads' },
     { title: 'SEO Services', slug: 'seo' },
-    { title: 'Review Management', slug: 'yorum-yonetimi' }
+    { title: 'Review Management', slug: 'yorum-yonetimi' },
+    { title: 'Donation Marketing & Google Ad Grants for NGOs', slug: 'islamic-charity-ngo-marketing' }
   ]
 }
 

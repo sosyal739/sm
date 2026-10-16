@@ -2,7 +2,7 @@
 
 import { trackLead } from '@/lib/analytics'
 import GoogleAdsBudgetCalculator from '@/components/GoogleAdsBudgetCalculator'
-import { getCityGrowth } from '@/lib/cityGrowth'
+import { getCityGrowth, getOtherCities } from '@/lib/cityGrowth'
 
 import React, { use, useState } from 'react'
 import Link from 'next/link'
@@ -1349,6 +1349,17 @@ export default function CityPage({ params }) {
           <Link href={`/${currentLang}/standorte`} className="px-4 py-2 rounded-full bg-blue-600/20 border border-blue-500/40 text-sm text-blue-200 hover:bg-blue-600/30">
             {currentLang === 'tr' ? 'Tüm şehirler' : currentLang === 'en' ? 'All cities' : 'Alle Städte'}
           </Link>
+        </div>
+
+        <h2 className="text-2xl font-bold text-white mt-12 mb-4">
+          {currentLang === 'tr' ? 'Diğer şehirlerde Google Ads' : currentLang === 'en' ? 'Google Ads in other cities' : 'Google Ads in weiteren Städten'}
+        </h2>
+        <div className="flex flex-wrap gap-3">
+          {getOtherCities(city, currentLang).map((c) => (
+            <Link key={c.href} href={c.href} className="px-4 py-2 rounded-full bg-slate-900 border border-slate-700 text-sm text-slate-200 hover:border-blue-500 hover:text-white">
+              {c.label}
+            </Link>
+          ))}
         </div>
       </section>
 
