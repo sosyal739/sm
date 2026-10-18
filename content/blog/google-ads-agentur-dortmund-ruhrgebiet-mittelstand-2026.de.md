@@ -1,8 +1,8 @@
 ---
 slug: "google-ads-agentur-dortmund-ruhrgebiet-mittelstand-2026"
 lang: "de"
-title: "Google Ads in Dortmund & Ruhrgebiet: Ratgeber Mittelstand 2026"
-excerpt: "Google Ads in Dortmund & im Ruhrgebiet: Ratgeber für Mittelstand & Handwerk mit CPC- und CPL-Benchmarks 2026, Fallstudie und Festpreis ab 590 € ohne Provision."
+title: "Google Ads Agentur Dortmund & Ruhrgebiet: Festpreis 2026"
+excerpt: "Google Ads für Dortmund & Ruhrgebiet: Benchmarks 2026 für Mittelstand & Handwerk, Fallstudie und transparenter Festpreis ab 590 € ohne Provision."
 category: "Google Ads & PPC"
 date: "2026-09-28"
 readTime: "12"

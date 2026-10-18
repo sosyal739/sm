@@ -122,10 +122,22 @@ export default async function sitemap() {
     })
 
     uniqueSlugs.forEach((slug) => {
+      const matchingFiles = files.filter(f => f.startsWith(`${slug}.`))
+      let latestMtime = null
+      matchingFiles.forEach(f => {
+        try {
+          const stats = fs.statSync(path.join(postsDir, f))
+          if (!latestMtime || stats.mtime > latestMtime) {
+            latestMtime = stats.mtime
+          }
+        } catch (e) {}
+      })
+      const postDate = latestMtime ? latestMtime.toISOString().split('T')[0] : '2026-08-01'
+
       blogEntries.push({
         url: `${baseUrl}/blog/${slug}`,
-        lastModified: currentDate,
-        changeFrequency: 'monthly',
+        lastModified: postDate,
+        changeFrequency: 'weekly',
         priority: 0.8,
       })
     })

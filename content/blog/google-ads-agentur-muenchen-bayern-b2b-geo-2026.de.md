@@ -96,7 +96,7 @@ coverImage: "https://images.unsplash.com/photo-1556155092-490a1ba16284?w=1200&h=
 <ul>
   <li>Erfahren Sie mehr über unsere B2B-Systeme am Finanzplatz Frankfurt in unserem Leitfaden <a href="https://salihmaral.de/blog/google-ads-b2b-mittelstand-frankfurt-rhein-main-2026">B2B Google Ads Frankfurt &amp; Rhein-Main</a>.</li>
   <li>Entdecken Sie unsere Performance-Strategien für das Ruhrgebiet unter <a href="https://salihmaral.de/blog/google-ads-agentur-dortmund-ruhrgebiet-mittelstand-2026">Google Ads Agentur Dortmund &amp; Ruhrgebiet</a>.</li>
-  <li>Lesen Sie unsere Expertise für die Metropolregion Franken unter <a href="https://salihmaral.de/blog/google-ads-agentur-nuernberg-franken-mittelstand-2026">Google Ads Agentur Nürnberg &amp; Franken</a>.</li>
+  <li>Lesen Sie unsere Expertise für die Metropolregion Franken unter <a href="https://salihmaral.de/blog/google-ads-agentur-nuernberg-franken-mittelstand-2026">Google Ads Agentur Nürnberg &amp; Franken</a> sowie auf unserer Standortseite <a href="https://salihmaral.de/de/standorte/nuernberg">Google Ads &amp; AdWords Agentur Nürnberg</a>.</li>
   <li>Für Software- und Cloud-Unternehmen empfehlen wir unseren Guide <a href="https://salihmaral.de/blog/google-ads-b2b-it-software-saas-deutschland-2026">B2B Google Ads für IT &amp; SaaS in Deutschland</a>.</li>
 </ul>
 

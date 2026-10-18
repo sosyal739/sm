@@ -100,7 +100,7 @@ coverImage: "https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?w=1200
 
 <p>Die steuerliche Erfassung von Google Ads Werbekosten ist dank § 13b UStG für vorsteuerabzugsberechtigte Unternehmen kostenneutral. Entscheidend ist jedoch, dass das Werbebudget nicht durch ineffiziente Kampagneneinstellungen verpufft. Mit unserem <strong>transparenten Monats-Fixpreis (ab 590 €/Monat)</strong> erhalten Sie maximale Rentabilität ohne prozentuale Provisionsaufschläge.</p>
 
-<p>Besonders im wettbewerbsintensiven B2B- und Dienstleistungssektor in Wirtschaftsmetropolen wie unserer <a href="/de/standorte/frankfurt">Google Ads Agentur Frankfurt am Main</a> oder für den produzierenden Mittelstand in Nordrhein-Westfalen (siehe unseren Spezialleitfaden <a href="/blog/google-ads-agentur-dortmund-ruhrgebiet-mittelstand-2026">Google Ads Agentur Dortmund & Ruhrgebiet</a>) sorgt diese exakte Kostenkontrolle für spürbar höhere Margen. Informieren Sie sich auch über die branchenweiten <a href="/blog/google-ads-agentur-preise-kosten-deutschland-2026">Google Ads Agentur Preise & Kosten in Deutschland 2026</a>.</p>
+<p>Besonders im wettbewerbsintensiven B2B- und Dienstleistungssektor in Wirtschaftsmetropolen wie unserer <a href="/de/standorte/frankfurt">Google Ads Agentur Frankfurt am Main</a>, unserer <a href="/de/standorte/koeln">Google Ads Agentur Köln</a>, der <a href="/de/standorte/stuttgart">Google Ads Agentur Stuttgart</a> sowie in Franken (<a href="/de/standorte/nuernberg">Google Ads Agentur Nürnberg</a>) oder für den produzierenden Mittelstand (siehe unseren praxisnahen Leitfaden <a href="/blog/google-ads-mittelstand-agentur-beratung-auswahl-2026">Google Ads Agentur für den Mittelstand: Auswahl & Fixpreis</a> und die <a href="/blog/google-ads-agentur-dortmund-ruhrgebiet-mittelstand-2026">Google Ads Agentur Dortmund & Ruhrgebiet</a>) sorgt diese exakte Kostenkontrolle für spürbar höhere Margen. Informieren Sie sich auch über die branchenweiten <a href="/blog/google-ads-agentur-preise-kosten-deutschland-2026">Google Ads Agentur Preise & Kosten in Deutschland 2026</a>.</p>
 
 <div class="cta-box" style="background: linear-gradient(135deg, rgba(66, 133, 244, 0.08) 0%, rgba(52, 168, 83, 0.08) 100%); border: 1px solid rgba(66, 133, 244, 0.2); border-radius: 1rem; padding: 2rem; margin: 2.5rem 0; text-align: center;">
   <h3 style="margin-top: 0; color: #1a73e8;">🎯 Kostenlose Google Ads Potenzial- & Budget-Analyse</h3>
@@ -111,6 +111,7 @@ coverImage: "https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?w=1200
 <div class="highlight-box" style="margin-top: 2rem;">
   <h4>📚 Verwandte Steuer- und Buchhaltungs-Ratgeber</h4>
   <ul>
+    <li><a href="/blog/google-ads-mittelstand-agentur-beratung-auswahl-2026">Google Ads Agentur für den Mittelstand: Beratung, Auswahl & Fixpreis 2026</a></li>
     <li><a href="/blog/google-ads-meta-ads-betriebsausgabe-finanzamt-leitfaden-2026">Google & Meta Ads als Betriebsausgabe beim Finanzamt absetzen (Leitfaden 2026)</a></li>
     <li><a href="/blog/google-ads-meta-ads-umsatzsteuer-vorsteuer-leitfaden-2026">Google & Meta Ads Umsatzsteuer & Vorsteuerabzug (§ 13b UStG)</a></li>
     <li><a href="/blog/google-ads-reklamveren-dogrulamasi-rehberi-2026">Google Ads Werbetreibenden-Überprüfung (Verification Guide)</a></li>
