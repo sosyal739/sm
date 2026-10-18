@@ -152,7 +152,7 @@ coverImage: "https://images.unsplash.com/photo-1618172193763-c511deb635ca?w=1200
     <li><a href="/tr/hizmetler/google-ads">Google Ads Yönetimi ve Danışmanlık Hizmetleri — Salih Maral</a></li>
     <li><a href="/tr/hizmetler/seo">GEO ve Arama Motoru Optimizasyonu Hizmetleri</a></li>
     <li><a href="/blog/gemini-3-6-vs-claude-chatgpt-ai-comparison">Gemini 3.6 vs. Claude vs. ChatGPT Karşılaştırması</a></li>
-    <li><a href="/blog/server-side-tracking-first-party-ai-attribution">Server-Side Tracking ve Birinci Taraf Veri İle AI İlişkilendirme</a></li>
+    <li><a href="/blog/server-side-tracking-capi-guide">Server-Side Tracking ve Birinci Taraf Veri İle AI İlişkilendirme</a></li>
   </ul>
 </div>
 

@@ -41,6 +41,9 @@ const nextConfig = {
       { source: '/blog/google-maps-local-seo-guide', destination: '/blog/google-maps-local-seo-ranking-factors-2026', statusCode: 301 },
       { source: '/blog/tiktok-shop-social-commerce', destination: '/blog/tiktok-shop-vs-meta-advantage-plus-e-commerce-2026', statusCode: 301 },
       { source: '/blog/tiktok-shop-ecommerce-scaling', destination: '/blog/tiktok-shop-vs-meta-advantage-plus-e-commerce-2026', statusCode: 301 },
+      // 301: Thin Yazılar → Güçlü Rehberler (GSC: "Tarandı/Keşfedildi - dizine eklenmedi")
+      { source: '/blog/x-twitter-ads', destination: '/blog/x-twitter-b2b-musteri-kazanma-rehberi-2026', statusCode: 301 },
+      { source: '/blog/server-side-tracking-first-party-ai-attribution', destination: '/blog/server-side-tracking-capi-guide', statusCode: 301 },
       { source: '/blog/meta-advantage-plus-ai-creative-scaling', destination: '/blog/meta-advantage-plus-creative-ai-2026', statusCode: 301 },
     ];
   },

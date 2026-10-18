@@ -394,8 +394,8 @@ All guides below are authored by Salih Maral (Official Google Partner) and avail
   - *Summary:* Çerezsiz 2026 dünyasında veri kaybını durdurun. Salih Maral, GTM Server-Side ve Meta CAPI ile ölçümleme kalitesini artırma yollarını paylaşıyor.
   - *Category:* Tracking | *Languages:* TR, DE, EN
 
-- **[iOS 14+ Sonrası First-Party Veri ile Reklam Algoritmalarını Güçlendirme](https://salihmaral.de/blog/server-side-tracking-first-party-ai-attribution)**
-  - *URL:* https://salihmaral.de/blog/server-side-tracking-first-party-ai-attribution
+- **[iOS 14+ Sonrası First-Party Veri ile Reklam Algoritmalarını Güçlendirme](https://salihmaral.de/blog/server-side-tracking-capi-guide)**
+  - *URL:* https://salihmaral.de/blog/server-side-tracking-capi-guide
   - *Summary:* Üçüncü taraf çerezlerin olmadığı 2026 reklam ortamında Server-Side Tracking, Conversions API (CAPI) ve AI tabanlı atıf (attribution) modelleri ile veri kaybını önleyin.
   - *Category:* Server-Side Tracking | *Languages:* TR, DE, EN
 
@@ -466,8 +466,8 @@ All guides below are authored by Salih Maral (Official Google Partner) and avail
   - *Summary:* Kurumsal müşterilere, CEO'lara ve yatırımcılara ulaşmak LinkedIn'de çok mu pahalı? X Ads ile 1/4 maliyetle yüksek bütçeli B2B müşteriler kazanın.
   - *Category:* B2B & X Ads | *Languages:* TR, DE, EN
 
-- **[X (Twitter) Reklamları ile Yüksek Gelirli Karar Vericilere Nasıl Ulaşılır?](https://salihmaral.de/blog/x-twitter-ads)**
-  - *URL:* https://salihmaral.de/blog/x-twitter-ads
+- **[X (Twitter) Reklamları ile Yüksek Gelirli Karar Vericilere Nasıl Ulaşılır?](https://salihmaral.de/blog/x-twitter-b2b-musteri-kazanma-rehberi-2026)**
+  - *URL:* https://salihmaral.de/blog/x-twitter-b2b-musteri-kazanma-rehberi-2026
   - *Summary:* X reklamlarında nasıl öne çıkilir? X reklamları ile gerçek zamanlı pazarlama stratejilerini öğrenin.
   - *Category:* X Ads | *Languages:* TR, DE, EN
 

@@ -152,7 +152,7 @@ coverImage: "https://images.unsplash.com/photo-1618172193763-c511deb635ca?w=1200
     <li><a href="/de/dienstleistungen/google-ads">Google Ads Agentur & Experte in Deutschland — Salih Maral</a></li>
     <li><a href="/de/dienstleistungen/seo">SEO & GEO Optimierung für nachhaltige Top-Rankings</a></li>
     <li><a href="/blog/gemini-3-6-vs-claude-chatgpt-ai-comparison">Gemini 3.6 vs. Claude vs. ChatGPT Vergleich</a></li>
-    <li><a href="/blog/server-side-tracking-first-party-ai-attribution">Server-Side Tracking & First-Party Data für AI-Attribution</a></li>
+    <li><a href="/blog/server-side-tracking-capi-guide">Server-Side Tracking & First-Party Data für AI-Attribution</a></li>
   </ul>
 </div>
 

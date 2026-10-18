@@ -107,7 +107,7 @@ coverImage: "https://images.unsplash.com/photo-1534447677768-be436bb09401?w=1200
   <ul>
     <li><a href="/de/dienstleistungen/google-ads">Salih Maral — Professionelle Google Ads Beratung & KI-Automatisierung</a></li>
     <li><a href="/blog/gemini-3-6-vs-claude-chatgpt-ai-comparison">Gemini 3.6 vs Claude 3.7 vs ChatGPT 4.5 Vergleich</a></li>
-    <li><a href="/blog/server-side-tracking-first-party-ai-attribution">Server-Side Tracking & KI-Attributionsmodelle</a></li>
+    <li><a href="/blog/server-side-tracking-capi-guide">Server-Side Tracking & KI-Attributionsmodelle</a></li>
   </ul>
 </div>
 

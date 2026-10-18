@@ -126,7 +126,7 @@ coverImage: "https://images.unsplash.com/photo-1504868584819-f8e8b4b6d7e3?w=1200
     <li><a href="/de/dienstleistungen/seo">SEO & GEO Dienstleistungen Deutschland — Salih Maral</a></li>
     <li><a href="/de/dienstleistungen/google-ads">Google Ads Kampagnenmanagement & ROI-Skalierung</a></li>
     <li><a href="/blog/gemini-3-7-vs-gemini-3-6-ai-marketing-comparison">Google Gemini 3.7 vs. 3.6 Hybrid Reasoning Vergleich</a></li>
-    <li><a href="/blog/server-side-tracking-first-party-ai-attribution">Server-Side Tracking & First-Party Data Attribution</a></li>
+    <li><a href="/blog/server-side-tracking-capi-guide">Server-Side Tracking & First-Party Data Attribution</a></li>
   </ul>
 </div>
 

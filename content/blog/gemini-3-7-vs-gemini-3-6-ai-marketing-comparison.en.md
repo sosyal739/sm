@@ -152,7 +152,7 @@ coverImage: "https://images.unsplash.com/photo-1618172193763-c511deb635ca?w=1200
     <li><a href="/en/services/google-ads">Google Ads Management & Expert Services — Salih Maral</a></li>
     <li><a href="/en/services/seo">Generative Engine Optimization (GEO) & Search Strategy</a></li>
     <li><a href="/blog/gemini-3-6-vs-claude-chatgpt-ai-comparison">Gemini 3.6 vs. Claude vs. ChatGPT AI Comparison</a></li>
-    <li><a href="/blog/server-side-tracking-first-party-ai-attribution">Server-Side Tracking & First-Party Data Attribution</a></li>
+    <li><a href="/blog/server-side-tracking-capi-guide">Server-Side Tracking & First-Party Data Attribution</a></li>
   </ul>
 </div>
 

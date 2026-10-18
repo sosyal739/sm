@@ -126,7 +126,7 @@ coverImage: "https://images.unsplash.com/photo-1504868584819-f8e8b4b6d7e3?w=1200
     <li><a href="/tr/hizmetler/seo">SEO ve GEO Danışmanlık Hizmetleri — Salih Maral</a></li>
     <li><a href="/tr/hizmetler/google-ads">Google Ads Kampanya Yönetimi ve ROI Ölçekleme</a></li>
     <li><a href="/blog/gemini-3-7-vs-gemini-3-6-ai-marketing-comparison">Google Gemini 3.7 vs. 3.6 Hibrit Muhakeme Kıyaslaması</a></li>
-    <li><a href="/blog/server-side-tracking-first-party-ai-attribution">Server-Side Tracking ve Birinci Taraf Veri Stratejisi</a></li>
+    <li><a href="/blog/server-side-tracking-capi-guide">Server-Side Tracking ve Birinci Taraf Veri Stratejisi</a></li>
   </ul>
 </div>
 
