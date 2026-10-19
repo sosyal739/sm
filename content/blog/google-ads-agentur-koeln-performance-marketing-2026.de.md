@@ -1,8 +1,8 @@
 ---
 slug: "google-ads-agentur-koeln-performance-marketing-2026"
 lang: "de"
-title: "Google Ads in Köln & Rheinland: B2B Ratgeber & CPC Benchmarks 2026"
-excerpt: "B2B Ratgeber für Google Ads in Köln & Rheinland: Klickpreise (CPC), Wettbewerbsanalyse und Wachstumsstrategien für Handwerk, Kanzleien & Mittelstand 2026."
+title: "Google Ads Agentur Köln: Festpreis & Benchmarks 2026"
+excerpt: "Google Ads in Köln: Kölner CPC-Benchmarks 2026, 5 Kriterien für Handwerk & Mittelstand und transparenter Festpreis ab 590 € ohne Provision."
 category: "Standorte & Performance"
 date: "2026-08-28"
 readTime: "12"
@@ -14,7 +14,10 @@ coverImage: "https://images.unsplash.com/photo-1497366811353-6870744d04b2?w=1200
 </blockquote>
 
 <div class="lead">
-<p style="background: rgba(66, 133, 244, 0.06); border-left: 4px solid #1a73e8; padding: 0.8rem 1.2rem; border-radius: 0.5rem; margin-bottom: 1.5rem;"><strong>Suchen Sie direkte Agenturbetreuung in Köln?</strong> Besuchen Sie unsere offizielle Landingpage: <a href="/de/standorte/koeln" style="font-weight: 600; color: #1a73e8;">Google Ads & AdWords Agentur Köln (Fixpreis) →</a></p>
+<div class="standort-bridge-box" style="background: rgba(66, 133, 244, 0.08); border-left: 4px solid #1a73e8; border-radius: 0.5rem; padding: 1rem 1.25rem; margin-bottom: 1.5rem;">
+  <strong style="color: #1a73e8;">📍 Direkte Betreuung vor Ort gesucht?</strong>
+  <p style="margin: 0.4rem 0 0 0; font-size: 0.95rem; color: #1f2937;">Zur offiziellen Kölner Leistungsseite mit persönlicher Betreuung und transparentem Festpreis ab 590 €/Monat: <a href="/de/standorte/koeln" style="font-weight: 700; color: #1a73e8; text-decoration: underline;">Google Ads &amp; AdWords Agentur Köln (Leistungen &amp; Fixpreis) →</a></p>
+</div>
 <p>Köln ist das wirtschaftliche Herz des Rheinlands. Zwischen Rheinauhafen, Ehrenfeld, Deutz, Rodenkirchen und der Kölner Altstadt konkurrieren tausende Dienstleister um zahlungskräftige Kunden. Wer hier auf standardisierte Massen-Werbung setzt, verbrennt fünfstellige Budgets ohne messbare Anfragen. Eine erfolgreiche <strong>Google Ads Betreuung in Köln</strong> erfordert chirurgische Präzision: postleitzahlengenaues Geo-Targeting, konsequente Filterung von Streuverlusten (Negative Keywords) und ein verlustfreies Server-Side Tracking.</p>
 </div>
 
