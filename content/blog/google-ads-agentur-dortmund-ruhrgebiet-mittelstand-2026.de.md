@@ -127,7 +127,7 @@ coverImage: "https://images.unsplash.com/photo-1497215728101-856f4ea42174?w=1200
 
 <h2>📍 Lokale Google Ads Betreuung für Dortmund & NRW</h2>
 
-<p>Erfahren Sie mehr über unsere lokalen Strategien und Budget-Planungen direkt auf unserer <a href="/de/standorte/dortmund">Google Ads Agentur Dortmund Standortseite</a> oder informieren Sie sich über unsere <a href="/de/dienstleistungen/google-ads">Google Ads Betreuung im Detail</a>.</p>
+<p>Als zertifizierte <strong>Google Ads Agentur für Nordrhein-Westfalen (NRW)</strong> betreuen wir neben Dortmund auch die führenden Wirtschaftszentren des Landes – darunter Düsseldorf (siehe unsere <a href="/de/standorte/duesseldorf">Google Ads Agentur Düsseldorf & NRW</a>), Essen, Duisburg sowie das Rheinland (siehe <a href="/blog/google-ads-agentur-koeln-performance-marketing-2026">Google Ads Agentur Köln</a>). Erfahren Sie mehr auf unserer lokalen <a href="/de/standorte/dortmund">Google Ads Agentur Dortmund Standortseite</a> oder unserer Übersicht zur <a href="/de/dienstleistungen/google-ads">Google Ads Betreuung im Detail</a>.</p>
 
 <h2>❓ Häufig gestellte Fragen zu Google Ads &amp; AdWords in Dortmund</h2>
 

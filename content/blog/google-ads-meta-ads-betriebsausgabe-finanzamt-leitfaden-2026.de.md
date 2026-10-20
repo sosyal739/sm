@@ -139,6 +139,7 @@ coverImage: "https://images.unsplash.com/photo-1556742111-a301076d9d18?w=1200&h=
     <li><a href="/blog/google-ads-meta-ads-umsatzsteuer-vorsteuer-leitfaden-2026">Google & Meta Ads Umsatzsteuer & Vorsteuer Leitfaden</a></li>
     <li><a href="/de/dienstleistungen/google-ads">Google Ads Betreuung & Optimierung</a></li>
     <li><a href="/de/dienstleistungen/meta-ads">Meta Ads (Facebook & Instagram) Betreuung</a></li>
+    <li><a href="/blog/google-ads-agentur-koeln-performance-marketing-2026">Google Ads Agentur Köln: Kölner CPC-Benchmarks & KMU-Leitfaden</a></li>
     <li><a href="/blog/google-ads-agentur-preise-kosten-deutschland-2026">Google Ads Kosten & Agenturpreise im Vergleich</a></li>
   </ul>
 </div>
