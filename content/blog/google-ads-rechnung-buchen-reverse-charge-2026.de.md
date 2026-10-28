@@ -114,6 +114,7 @@ coverImage: "https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?w=1200
     <li><a href="/blog/google-ads-mittelstand-agentur-beratung-auswahl-2026">Google Ads Agentur für den Mittelstand: Beratung, Auswahl & Fixpreis 2026</a></li>
     <li><a href="/blog/google-ads-meta-ads-betriebsausgabe-finanzamt-leitfaden-2026">Google & Meta Ads als Betriebsausgabe beim Finanzamt absetzen (Leitfaden 2026)</a></li>
     <li><a href="/blog/google-ads-meta-ads-umsatzsteuer-vorsteuer-leitfaden-2026">Google & Meta Ads Umsatzsteuer & Vorsteuerabzug (§ 13b UStG)</a></li>
+    <li><a href="/blog/meta-ads-rechnung-buchen-reverse-charge-2026">Meta Ads Rechnung buchen: Reverse Charge & Vorsteuer 2026</a></li>
     <li><a href="/blog/google-ads-reklamveren-dogrulamasi-rehberi-2026">Google Ads Werbetreibenden-Überprüfung (Verification Guide)</a></li>
     <li><a href="/de/dienstleistungen/google-ads">Zertifizierte Google Ads Betreuung zum Festpreis</a></li>
   </ul>
