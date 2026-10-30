@@ -1,8 +1,8 @@
 ---
 slug: "almanyada-avukat-steuerberater-google-ads-yerel-seo-2026"
 lang: "tr"
-title: "Almanya Avukat & Steuerberater Google Ads Rehberi 2026"
-excerpt: "Almanya'daki avukatlar ve mali müşavirler için BRAO §43b uyumlu Google Ads, yerel SEO ve Google yorum yönetimiyle yüksek bütçeli müvekkil rehberi."
+title: "Almanya Avukat & Steuerberater Google Ads (2026 Rehber)"
+excerpt: "Almanya'da avukat ve mali müşavirler (Steuerberater) için BRAO §43b uyumlu Google Ads, yerel harita ve kurumsal müvekkil kazanma rehberi (2026)."
 category: "Profesyonel Hizmetler"
 date: "2026-10-09"
 readTime: "12"
