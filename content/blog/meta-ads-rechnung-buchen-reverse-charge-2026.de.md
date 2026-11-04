@@ -1,8 +1,8 @@
 ---
 slug: "meta-ads-rechnung-buchen-reverse-charge-2026"
 lang: "de"
-title: "Meta Ads Rechnung buchen: Reverse Charge & Vorsteuer 2026"
-excerpt: "Facebook- und Instagram-Werbung korrekt verbuchen: Meta Platforms Ireland, §13b UStG, USt-IdNr., UStVA-Kennziffern 46/47/67 und die häufigsten Fehler – Leitfaden 2026."
+title: "Meta Ads Rechnung buchen 2026: SKR03/SKR04 & §13b UStG"
+excerpt: "Meta, Facebook & Instagram Ads Rechnung buchen: SKR03 (4600/3123) & SKR04 (6600/5923), §13b Reverse-Charge, USt-IdNr. im Business Manager & DATEV 2026."
 category: "Steuern & Finanzen"
 date: "2026-10-28"
 readTime: "8"
@@ -15,6 +15,23 @@ coverImage: "https://images.unsplash.com/photo-1554224155-6726b3ff858f?w=1200&h=
 
 <div class="lead">
 <p><strong>Facebook- und Instagram-Werbung ist für viele Händler, Praxen und Dienstleister der größte Marketingposten – und bei der Buchhaltung ein häufiger Stolperstein.</strong> Auf der Meta-Rechnung steht keine Mehrwertsteuer, aber die Steuer ist trotzdem geschuldet. Dieser Leitfaden zeigt Schritt für Schritt, wie Sie Meta Ads Rechnungen sauber verbuchen, welche Angaben das Finanzamt sehen will und wo Fehler Geld kosten.</p>
+</div>
+
+<div class="standort-bridge-box" style="background: linear-gradient(135deg, rgba(15, 23, 42, 0.96) 0%, rgba(30, 58, 138, 0.95) 100%); border: 1px solid #3b82f6; border-left: 5px solid #38bdf8; border-radius: 0.85rem; padding: 1.25rem 1.5rem; margin-bottom: 2rem; color: #f8fafc; box-shadow: 0 10px 25px -5px rgba(30, 58, 138, 0.3);">
+  <div style="font-size: 0.8rem; font-weight: 800; text-transform: uppercase; letter-spacing: 0.05em; color: #7dd3fc; margin-bottom: 0.35rem;">
+    ⚡ Meta-Belege im Griff – aber liefern Ihre Facebook &amp; Instagram Ads genug Leads?
+  </div>
+  <p style="margin: 0 0 0.9rem 0; font-size: 0.95rem; color: #e2e8f0; line-height: 1.55;">
+    Neben einer finanzamtkonformen § 13b-Abrechnung entscheidet die <strong>Meta Conversions API (Server-Side Tracking)</strong> über Ihren CPL und ROAS. Sichern Sie sich jetzt unseren <strong>kostenlosen 15-Minuten Meta &amp; Google Ads Konto-Check</strong> (auf <strong>Deutsch &amp; Türkçe</strong>) zum transparenten Festpreis ab 590 €/Monat.
+  </p>
+  <div style="display: flex; flex-wrap: wrap; gap: 0.75rem;">
+    <a href="/#contact" style="display: inline-flex; align-items: center; background: #3b82f6; color: #ffffff; font-weight: 700; font-size: 0.9rem; padding: 0.6rem 1.2rem; border-radius: 0.6rem; text-decoration: none;">
+      🚀 Kostenlosen 15-Min. Meta Ads Check anfordern →
+    </a>
+    <a href="/de/dienstleistungen/meta-ads" style="display: inline-flex; align-items: center; background: rgba(255, 255, 255, 0.1); border: 1px solid rgba(255, 255, 255, 0.25); color: #f8fafc; font-weight: 600; font-size: 0.88rem; padding: 0.6rem 1.1rem; border-radius: 0.6rem; text-decoration: none;">
+      Meta Ads Betreuung (Fixpreis) ansehen
+    </a>
+  </div>
 </div>
 
 <h2>📋 So funktioniert die Umsatzsteuer bei Meta Ads</h2>

@@ -1,8 +1,8 @@
 ---
 slug: "google-ads-rechnung-buchen-reverse-charge-2026"
 lang: "de"
-title: "Google Ads Rechnung buchen: §13b UStG Leitfaden 2026"
-excerpt: "Wie deutsche Unternehmen Google Ads Rechnungen aus Irland mit §13b UStG (Reverse-Charge) ohne Vorsteuerabzug und fehlerfrei verbuchen. Praxis-Tipps 2026."
+title: "Google Ads Rechnung buchen 2026: SKR03/SKR04 & §13b UStG"
+excerpt: "Google Ads Rechnung richtig buchen: SKR03 (4600/3123) & SKR04 (6600/3837), §13b UStG Reverse-Charge, DATEV-Steuerschlüssel 94 & Vorsteuerabzug 2026."
 category: "Steuern & Finanzen"
 date: "2026-09-17"
 readTime: "9"
@@ -15,6 +15,23 @@ coverImage: "https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?w=1200
 
 <div class="lead">
 <p><strong>Google Ads Rechnungen korrekt buchen und Steuerrisiken vermeiden:</strong> Tausende mittelständische Unternehmen, Handwerker und Online-Händler in Deutschland investieren monatlich in Google Such- und Display-Werbung. Doch bei der Verbuchung der Werbeausgaben kommt es in der Finanzbuchhaltung regelmäßig zu Unsicherheiten: Warum steht auf der Rechnung 0% Mehrwertsteuer? Auf welches SKR03- oder SKR04-Konto gehört der Werbeaufwand? Als <strong>Offizieller Google Partner mit 17+ Jahren Erfahrung</strong> erklären wir die steuerlichen Spielregeln transparent und praxisnah.</p>
+</div>
+
+<div class="standort-bridge-box" style="background: linear-gradient(135deg, rgba(15, 23, 42, 0.96) 0%, rgba(30, 58, 138, 0.95) 100%); border: 1px solid #3b82f6; border-left: 5px solid #38bdf8; border-radius: 0.85rem; padding: 1.25rem 1.5rem; margin-bottom: 2rem; color: #f8fafc; box-shadow: 0 10px 25px -5px rgba(30, 58, 138, 0.3);">
+  <div style="font-size: 0.8rem; font-weight: 800; text-transform: uppercase; letter-spacing: 0.05em; color: #7dd3fc; margin-bottom: 0.35rem;">
+    ⚡ Buchhaltung sauber – aber verbrennt Ihr Google Ads Konto monatlich Budget?
+  </div>
+  <p style="margin: 0 0 0.9rem 0; font-size: 0.95rem; color: #e2e8f0; line-height: 1.55;">
+    Die korrekte § 13b-Verbuchung spart Ihnen Ärger beim Finanzamt – unser <strong>kostenloser 15-Minuten Google Ads Konto-Check</strong> spart Ihnen durchschnittlich <strong>25 % bis 40 % Streuverluste</strong> durch präzisere Keywords, Negativlisten und Server-Side-Tracking. Transparent zum monatlichen Fixpreis ab 590 € (Beratung auf <strong>Deutsch &amp; Türkçe</strong>).
+  </p>
+  <div style="display: flex; flex-wrap: wrap; gap: 0.75rem;">
+    <a href="/#contact" style="display: inline-flex; align-items: center; background: #3b82f6; color: #ffffff; font-weight: 700; font-size: 0.9rem; padding: 0.6rem 1.2rem; border-radius: 0.6rem; text-decoration: none;">
+      🚀 Kostenlosen 15-Min. Werbekonto-Check anfordern →
+    </a>
+    <a href="/de/dienstleistungen/google-ads" style="display: inline-flex; align-items: center; background: rgba(255, 255, 255, 0.1); border: 1px solid rgba(255, 255, 255, 0.25); color: #f8fafc; font-weight: 600; font-size: 0.88rem; padding: 0.6rem 1.1rem; border-radius: 0.6rem; text-decoration: none;">
+      Google Ads Betreuung (Fixpreis) ansehen
+    </a>
+  </div>
 </div>
 
 <h2>📋 Die 4 wichtigsten Schritte zur Verbuchung einer Google Ads Rechnung</h2>

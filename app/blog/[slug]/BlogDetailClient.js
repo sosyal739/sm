@@ -120,7 +120,7 @@ const translations = {
   }
 }
 
-export default function BlogDetailClient({ initialPost, initialLang, relatedPosts = [] }) {
+export default function BlogDetailClient({ initialPost, initialLang, relatedPosts = [], lockInitialLang = false }) {
   const params = useParams()
   const { slug } = params
   const [lang, setLang] = useState(initialLang || 'de')
@@ -131,6 +131,7 @@ export default function BlogDetailClient({ initialPost, initialLang, relatedPost
 
   // Restore preferred language on mount
   useEffect(() => {
+    if (lockInitialLang) return
     const savedLang = localStorage.getItem('preferredLanguage')
     if (savedLang && ['de', 'en', 'tr'].includes(savedLang)) {
       setLang(savedLang)

@@ -1,6 +1,7 @@
 import fs from 'fs'
 import path from 'path'
 import matter from 'gray-matter'
+import { TR_INDEXED_BLOG_SLUGS } from '@/lib/blog.server'
 
 export default async function sitemap() {
   const baseUrl = 'https://salihmaral.de'
@@ -133,13 +134,34 @@ export default async function sitemap() {
         } catch (e) {}
       })
       const postDate = latestMtime ? latestMtime.toISOString().split('T')[0] : '2026-08-01'
+      const hasTrIndexed = TR_INDEXED_BLOG_SLUGS.includes(slug)
+      const alternates = hasTrIndexed
+        ? {
+            languages: {
+              de: `${baseUrl}/blog/${slug}`,
+              tr: `${baseUrl}/tr/blog/${slug}`,
+              'x-default': `${baseUrl}/blog/${slug}`,
+            },
+          }
+        : undefined
 
       blogEntries.push({
         url: `${baseUrl}/blog/${slug}`,
         lastModified: postDate,
         changeFrequency: 'weekly',
         priority: 0.8,
+        ...(alternates ? { alternates } : {}),
       })
+
+      if (hasTrIndexed) {
+        blogEntries.push({
+          url: `${baseUrl}/tr/blog/${slug}`,
+          lastModified: postDate,
+          changeFrequency: 'weekly',
+          priority: 0.85,
+          alternates,
+        })
+      }
     })
   }
 

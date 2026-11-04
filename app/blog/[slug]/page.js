@@ -1,4 +1,4 @@
-import { getPostBySlug, getAllPosts, getAllSlugs } from '@/lib/blog.server'
+import { getPostBySlug, getAllPosts, getAllSlugs, TR_INDEXED_BLOG_SLUGS } from '@/lib/blog.server'
 import BlogDetailClient from './BlogDetailClient'
 import { notFound } from 'next/navigation'
 
@@ -47,6 +47,7 @@ export async function generateMetadata({ params }) {
       description = description.slice(0, 155).replace(/\s+\S*$/, '') + '...'
     }
     const canonicalUrl = `https://salihmaral.de/blog/${slug}`
+    const hasTrIndexed = TR_INDEXED_BLOG_SLUGS.includes(slug)
 
     return {
       title: {
@@ -55,6 +56,15 @@ export async function generateMetadata({ params }) {
       description: description,
       alternates: {
         canonical: canonicalUrl,
+        ...(hasTrIndexed
+          ? {
+              languages: {
+                de: canonicalUrl,
+                tr: `https://salihmaral.de/tr/blog/${slug}`,
+                'x-default': canonicalUrl,
+              },
+            }
+          : {}),
       },
       openGraph: {
         title: fullTitle,

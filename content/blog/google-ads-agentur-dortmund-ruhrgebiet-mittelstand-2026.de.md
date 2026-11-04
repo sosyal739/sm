@@ -1,7 +1,7 @@
 ---
 slug: "google-ads-agentur-dortmund-ruhrgebiet-mittelstand-2026"
 lang: "de"
-title: "Google Ads Agentur Dortmund & Ruhrgebiet: Festpreis 2026"
+title: "Google Ads & AdWords Agentur Dortmund: Festpreis ab 590 €"
 excerpt: "Google Ads für Dortmund & Ruhrgebiet: Benchmarks 2026 für Mittelstand & Handwerk, Fallstudie und transparenter Festpreis ab 590 € ohne Provision."
 category: "Google Ads & PPC"
 date: "2026-09-28"
@@ -15,6 +15,11 @@ coverImage: "https://images.unsplash.com/photo-1497215728101-856f4ea42174?w=1200
 
 <div class="lead">
 <p><strong>Google Ads Betreuung für Dortmund und das östliche Ruhrgebiet:</strong> Der Wandel Dortmunds von der Kohle- und Stahlstadt zum modernen Technologie-, Logistik- und Dienstleistungsstandort bietet enorme Chancen für den Mittelstand. Ob Maschinenbau, Zerspanungstechnik, Handwerk (Sanierung, Dachdecker, Elektro), E-Commerce oder Kanzleien: Wer heute qualifizierte Neukunden oder B2B-Partner sucht, muss bei Google auf Platz 1 stehen. Als <strong>Offizieller Google Partner mit 17+ Jahren Erfahrung</strong> betreuen wir Unternehmen in Dortmund mit einem <strong>planbaren Monats-Festpreis (ohne Prozent-Provision vom Werbebudget)</strong>.</p>
+</div>
+
+<div class="standort-bridge-box" style="background: rgba(66, 133, 244, 0.08); border-left: 4px solid #1a73e8; border-radius: 0.5rem; padding: 1rem 1.25rem; margin-bottom: 1.5rem;">
+  <strong style="color: #1a73e8;">📍 Direkte Betreuung vor Ort in Dortmund gesucht?</strong>
+  <p style="margin: 0.4rem 0 0 0; font-size: 0.95rem; color: #1f2937;">Zur offiziellen Dortmunder Leistungsseite mit persönlicher Betreuung und transparentem Festpreis ab 590 €/Monat: <a href="/de/standorte/dortmund" style="font-weight: 700; color: #1a73e8; text-decoration: underline;">Google Ads &amp; AdWords Agentur Dortmund (Leistungen &amp; Fixpreis) →</a></p>
 </div>
 
 <h2>🔍 Warum generische Google Ads im Ruhrgebiet scheitern</h2>

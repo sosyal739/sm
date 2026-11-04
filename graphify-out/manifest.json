@@ -1,0 +1,2618 @@
+{
+  ".devcontainer/devcontainer.json": {
+    "mtime": 1790038628.4406235,
+    "seen": 1792020517.0696647,
+    "ast_hash": "043abec9f791074c83f1ac090fdfcc82",
+    "semantic_hash": ""
+  },
+  "app/[lang]/hizmetler/[service]/ServiceDetailClient.js": {
+    "mtime": 1791932502.5022645,
+    "seen": 1792020517.069669,
+    "ast_hash": "4ec3b450bec123528fc2793810c6e409",
+    "semantic_hash": ""
+  },
+  "app/[lang]/hizmetler/[service]/layout.js": {
+    "mtime": 1787791454.0798614,
+    "seen": 1792020517.069671,
+    "ast_hash": "1c1db9d33357590e187f7ed0e9d2dbbe",
+    "semantic_hash": ""
+  },
+  "app/[lang]/hizmetler/[service]/page.js": {
+    "mtime": 1791932502.500264,
+    "seen": 1792020517.0696716,
+    "ast_hash": "412796e5a299d64d085acc9b5e5a1d41",
+    "semantic_hash": ""
+  },
+  "app/[lang]/layout.js": {
+    "mtime": 1789938932.4319313,
+    "seen": 1792020517.069673,
+    "ast_hash": "b4f9d048e71db92b2b3804f658335286",
+    "semantic_hash": ""
+  },
+  "app/[lang]/page.js": {
+    "mtime": 1788729922.1879206,
+    "seen": 1792020517.0696735,
+    "ast_hash": "640e1d6e0f6eefd39c2854275362db4e",
+    "semantic_hash": ""
+  },
+  "app/[lang]/standorte/[city]/layout.js": {
+    "mtime": 1791932502.5032637,
+    "seen": 1792020517.0696745,
+    "ast_hash": "9dc2499c384642f887ad140256dc54f4",
+    "semantic_hash": ""
+  },
+  "app/[lang]/standorte/[city]/page.js": {
+    "mtime": 1792016061.771033,
+    "seen": 1792020517.069675,
+    "ast_hash": "02efc2e15bb5034ca0de2cf88e32216a",
+    "semantic_hash": ""
+  },
+  "app/[lang]/standorte/layout.js": {
+    "mtime": 1789938952.674612,
+    "seen": 1792020517.069676,
+    "ast_hash": "b4b766c04ee34e8bead44d1d8cfe7ebb",
+    "semantic_hash": ""
+  },
+  "app/[lang]/standorte/page.js": {
+    "mtime": 1791932502.5032637,
+    "seen": 1792020517.0696769,
+    "ast_hash": "60a15cf1333d17e0adf55730e8195939",
+    "semantic_hash": ""
+  },
+  "app/about/layout.js": {
+    "mtime": 1790610060.4078777,
+    "seen": 1792020517.0696776,
+    "ast_hash": "a3c6674459b896696c1d81cc5ead9a35",
+    "semantic_hash": ""
+  },
+  "app/about/page.js": {
+    "mtime": 1791932502.4972668,
+    "seen": 1792020517.0696785,
+    "ast_hash": "71edd9e1eb862f7a6ba552060f60316e",
+    "semantic_hash": ""
+  },
+  "app/api/[[...path]]/route.js": {
+    "mtime": 1791170292.4988954,
+    "seen": 1792020517.0696793,
+    "ast_hash": "26ee85ac28847caf7b32416266ba4457",
+    "semantic_hash": ""
+  },
+  "app/api/ai-advisor/route.js": {
+    "mtime": 1791403952.1265793,
+    "seen": 1792020517.0696802,
+    "ast_hash": "1fbfbec11b35e29cbc3ae74102b5af2d",
+    "semantic_hash": ""
+  },
+  "app/api/blog/[slug]/route.js": {
+    "mtime": 1783037061.293245,
+    "seen": 1792020517.069681,
+    "ast_hash": "15d6a4f330f680223f14ac543498b25e",
+    "semantic_hash": ""
+  },
+  "app/api/blog/route.js": {
+    "mtime": 1783037056.4103153,
+    "seen": 1792020517.0696814,
+    "ast_hash": "691f2381f790b33af40072fb3888cdec",
+    "semantic_hash": ""
+  },
+  "app/api/contact/route.js": {
+    "mtime": 1791170311.2241516,
+    "seen": 1792020517.069682,
+    "ast_hash": "f81cf0feab17bee1abe06e40f13642a1",
+    "semantic_hash": ""
+  },
+  "app/api/search/route.js": {
+    "mtime": 1785017609.4201183,
+    "seen": 1792020517.0696824,
+    "ast_hash": "d0a9f6a9dd28375f8a9c1eea25556d4c",
+    "semantic_hash": ""
+  },
+  "app/blog/BlogPageClient.js": {
+    "mtime": 1791932502.4982643,
+    "seen": 1792020517.0696828,
+    "ast_hash": "b5f3c35b413f1a0b6b6594ef204ea1e5",
+    "semantic_hash": ""
+  },
+  "app/blog/[slug]/BlogDetailClient.js": {
+    "mtime": 1791932502.4992645,
+    "seen": 1792020517.0696838,
+    "ast_hash": "0b659ae6f873df7a52f8d6ac91f04816",
+    "semantic_hash": ""
+  },
+  "app/blog/[slug]/layout.js": {
+    "mtime": 1788472420.2548892,
+    "seen": 1792020517.0696845,
+    "ast_hash": "b77b9cc9a0ca2b9268ae44123badba43",
+    "semantic_hash": ""
+  },
+  "app/blog/[slug]/page.js": {
+    "mtime": 1791401010.5141695,
+    "seen": 1792020517.0696855,
+    "ast_hash": "0f079bb43e63ba12ce08654fbac3e080",
+    "semantic_hash": ""
+  },
+  "app/blog/layout.js": {
+    "mtime": 1786665823.0275664,
+    "seen": 1792020517.0696864,
+    "ast_hash": "cf0a50a01ae39ed7304318dbe18587cb",
+    "semantic_hash": ""
+  },
+  "app/blog/page.js": {
+    "mtime": 1788729996.2406151,
+    "seen": 1792020517.0696874,
+    "ast_hash": "298e297f845fbde8e46870958caeb6c0",
+    "semantic_hash": ""
+  },
+  "app/datenschutz/layout.js": {
+    "mtime": 1791764812.5933366,
+    "seen": 1792020517.0696878,
+    "ast_hash": "a598c3cc923d735bc41b01d56a0e0861",
+    "semantic_hash": ""
+  },
+  "app/datenschutz/page.js": {
+    "mtime": 1791403167.0503194,
+    "seen": 1792020517.0696886,
+    "ast_hash": "db7cba118d22efe3e6b43424355d11cd",
+    "semantic_hash": ""
+  },
+  "app/impressum/layout.js": {
+    "mtime": 1791764812.5581546,
+    "seen": 1792020517.069689,
+    "ast_hash": "6df4facb928d98c094606500e158e1a9",
+    "semantic_hash": ""
+  },
+  "app/impressum/page.js": {
+    "mtime": 1791403998.524569,
+    "seen": 1792020517.0696895,
+    "ast_hash": "8d5aeb4253326aeb5f50304b10c448fa",
+    "semantic_hash": ""
+  },
+  "app/layout.js": {
+    "mtime": 1791590708.8340442,
+    "seen": 1792020517.0696905,
+    "ast_hash": "a36c6968e8a7e8fc02f401b9d3164543",
+    "semantic_hash": ""
+  },
+  "app/page.js": {
+    "mtime": 1791932502.4962676,
+    "seen": 1792020517.069691,
+    "ast_hash": "90d0402f10a975cb26ff3d2960475cb3",
+    "semantic_hash": ""
+  },
+  "app/sitemap.js": {
+    "mtime": 1791764812.6590145,
+    "seen": 1792020517.0696914,
+    "ast_hash": "68f7afb367d2239f66433e7f377bd56a",
+    "semantic_hash": ""
+  },
+  "components.json": {
+    "mtime": 1782859743.331735,
+    "seen": 1792020517.0696924,
+    "ast_hash": "efa621f15df66f6867a21dddab56dd3f",
+    "semantic_hash": ""
+  },
+  "components/AiSearchWidget.jsx": {
+    "mtime": 1785017615.6421793,
+    "seen": 1792020517.0696929,
+    "ast_hash": "07f676dab5d0fccdaa76204cec7ee63c",
+    "semantic_hash": ""
+  },
+  "components/CookieConsent.js": {
+    "mtime": 1791591837.5335455,
+    "seen": 1792020517.0696938,
+    "ast_hash": "bf1a02a1b810c43fbabf9dcd4201e82c",
+    "semantic_hash": ""
+  },
+  "components/EcosystemMarquee.js": {
+    "mtime": 1791454509.5233252,
+    "seen": 1792020517.0696945,
+    "ast_hash": "2ac87c88a4b4fb03d91e45f2c90aa2f3",
+    "semantic_hash": ""
+  },
+  "components/GoogleAdsBudgetCalculator.js": {
+    "mtime": 1791932502.5052638,
+    "seen": 1792020517.069695,
+    "ast_hash": "1179fbcc7ff62320924fe27a90bb353b",
+    "semantic_hash": ""
+  },
+  "components/LeadFunnelWizard.js": {
+    "mtime": 1791932502.5052638,
+    "seen": 1792020517.0696955,
+    "ast_hash": "b908ee532821d9296d4283c0e5d4d718",
+    "semantic_hash": ""
+  },
+  "components/MobileStickyBar.js": {
+    "mtime": 1791454413.5058866,
+    "seen": 1792020517.069696,
+    "ast_hash": "99e8d2cc7cb015613a4e236898154509",
+    "semantic_hash": ""
+  },
+  "components/RoasCalculatorWidget.js": {
+    "mtime": 1791932502.5062656,
+    "seen": 1792020517.0696967,
+    "ast_hash": "72ec9d07834b46564b60abbb55547c00",
+    "semantic_hash": ""
+  },
+  "components/RoasCpaCalculator.jsx": {
+    "mtime": 1785024338.9894967,
+    "seen": 1792020517.0696974,
+    "ast_hash": "1bbf8fe029e1ab0a59f75f2f7bf09870",
+    "semantic_hash": ""
+  },
+  "components/ServiceDetailModules.js": {
+    "mtime": 1791932502.5062656,
+    "seen": 1792020517.0696979,
+    "ast_hash": "2504d0dae9e373a36759140429250894",
+    "semantic_hash": ""
+  },
+  "components/ui/accordion.jsx": {
+    "mtime": 1782859743.332734,
+    "seen": 1792020517.0696983,
+    "ast_hash": "b08aa0a34e6482b4ea205133874b061b",
+    "semantic_hash": ""
+  },
+  "components/ui/alert-dialog.jsx": {
+    "mtime": 1782859743.332734,
+    "seen": 1792020517.069699,
+    "ast_hash": "b96d26ee238d34cfed6a5df3da94c896",
+    "semantic_hash": ""
+  },
+  "components/ui/alert.jsx": {
+    "mtime": 1782859743.332734,
+    "seen": 1792020517.0697002,
+    "ast_hash": "207fa30ee81ff024e0a05301bcf60626",
+    "semantic_hash": ""
+  },
+  "components/ui/aspect-ratio.jsx": {
+    "mtime": 1782859743.333749,
+    "seen": 1792020517.0697014,
+    "ast_hash": "9efb83cde0f9d15cbeb963c09b8a4373",
+    "semantic_hash": ""
+  },
+  "components/ui/avatar.jsx": {
+    "mtime": 1782859743.333749,
+    "seen": 1792020517.069702,
+    "ast_hash": "9d8326a1af018848b6d83e6e60cda080",
+    "semantic_hash": ""
+  },
+  "components/ui/badge.jsx": {
+    "mtime": 1782859743.333749,
+    "seen": 1792020517.0697026,
+    "ast_hash": "6d218c99805c24961981e4dba98fdf13",
+    "semantic_hash": ""
+  },
+  "components/ui/breadcrumb.jsx": {
+    "mtime": 1782859743.3347316,
+    "seen": 1792020517.0697033,
+    "ast_hash": "5b4a8a8dff8cb41298081baa26dbf191",
+    "semantic_hash": ""
+  },
+  "components/ui/button.jsx": {
+    "mtime": 1782859743.3347316,
+    "seen": 1792020517.0697043,
+    "ast_hash": "ca6a39866cf1913d4c4e5914ee08949f",
+    "semantic_hash": ""
+  },
+  "components/ui/calendar.jsx": {
+    "mtime": 1782859743.3347316,
+    "seen": 1792020517.0697048,
+    "ast_hash": "b19ff7f178cab3d6dac2e44ee44c7130",
+    "semantic_hash": ""
+  },
+  "components/ui/card.jsx": {
+    "mtime": 1782859743.3347316,
+    "seen": 1792020517.0697052,
+    "ast_hash": "cebc57b73ad5f141f5367b43148ec83e",
+    "semantic_hash": ""
+  },
+  "components/ui/carousel.jsx": {
+    "mtime": 1782859743.3357399,
+    "seen": 1792020517.0697057,
+    "ast_hash": "a1b8f42ce7609adbe375c21fe25f3ec9",
+    "semantic_hash": ""
+  },
+  "components/ui/chart.jsx": {
+    "mtime": 1782859743.3357399,
+    "seen": 1792020517.0697062,
+    "ast_hash": "3ffbcaa5af2a5a18afac0fa68f0c2bf9",
+    "semantic_hash": ""
+  },
+  "components/ui/checkbox.jsx": {
+    "mtime": 1782859743.3357399,
+    "seen": 1792020517.0697067,
+    "ast_hash": "538af360ed1ac9df1e2a56de492e385d",
+    "semantic_hash": ""
+  },
+  "components/ui/collapsible.jsx": {
+    "mtime": 1782859743.3357399,
+    "seen": 1792020517.0697072,
+    "ast_hash": "cb66adfc183b69da16a00c9e5ddf1fb2",
+    "semantic_hash": ""
+  },
+  "components/ui/command.jsx": {
+    "mtime": 1782859743.3367324,
+    "seen": 1792020517.0697079,
+    "ast_hash": "88952d9f917456afee22d5b26b9ab8f2",
+    "semantic_hash": ""
+  },
+  "components/ui/context-menu.jsx": {
+    "mtime": 1782859743.3367324,
+    "seen": 1792020517.0697083,
+    "ast_hash": "9b1fe597070c37ddd3ede2d3f86852c0",
+    "semantic_hash": ""
+  },
+  "components/ui/dialog.jsx": {
+    "mtime": 1782859743.3367324,
+    "seen": 1792020517.0697093,
+    "ast_hash": "97455b588e8823af4d941306870ca7f9",
+    "semantic_hash": ""
+  },
+  "components/ui/drawer.jsx": {
+    "mtime": 1782859743.3367324,
+    "seen": 1792020517.0697098,
+    "ast_hash": "55e869c32611f9a7977d03a31be02a70",
+    "semantic_hash": ""
+  },
+  "components/ui/dropdown-menu.jsx": {
+    "mtime": 1782859743.3367324,
+    "seen": 1792020517.0697103,
+    "ast_hash": "f7ac60b7087b07f1355a01a730c66259",
+    "semantic_hash": ""
+  },
+  "components/ui/form.jsx": {
+    "mtime": 1782859743.3377364,
+    "seen": 1792020517.0697112,
+    "ast_hash": "f1b20087319a80b9d4bd5f1a9420368a",
+    "semantic_hash": ""
+  },
+  "components/ui/hover-card.jsx": {
+    "mtime": 1782859743.3377364,
+    "seen": 1792020517.0697117,
+    "ast_hash": "eabd4b12ee9710e75900b8e731578516",
+    "semantic_hash": ""
+  },
+  "components/ui/input-otp.jsx": {
+    "mtime": 1782859743.3377364,
+    "seen": 1792020517.0697122,
+    "ast_hash": "ad3ca4f41802e72ae13fac1cc8d63a2e",
+    "semantic_hash": ""
+  },
+  "components/ui/input.jsx": {
+    "mtime": 1782859743.3377364,
+    "seen": 1792020517.0697129,
+    "ast_hash": "68a1da1b9b9a119ee11aec426ba59a93",
+    "semantic_hash": ""
+  },
+  "components/ui/label.jsx": {
+    "mtime": 1782859743.338732,
+    "seen": 1792020517.0697134,
+    "ast_hash": "fd6ea0614d235735f45c7aa38f3ecb35",
+    "semantic_hash": ""
+  },
+  "components/ui/menubar.jsx": {
+    "mtime": 1782859743.338732,
+    "seen": 1792020517.0697138,
+    "ast_hash": "341326af470ec3da58a6db2861f0bfdd",
+    "semantic_hash": ""
+  },
+  "components/ui/navigation-menu.jsx": {
+    "mtime": 1782859743.338732,
+    "seen": 1792020517.0697148,
+    "ast_hash": "73a7af62957b30be1d0e70e94c6e0f7b",
+    "semantic_hash": ""
+  },
+  "components/ui/pagination.jsx": {
+    "mtime": 1782859743.338732,
+    "seen": 1792020517.0697153,
+    "ast_hash": "75fb604ebfe91687867cf5f38a44cce7",
+    "semantic_hash": ""
+  },
+  "components/ui/popover.jsx": {
+    "mtime": 1782859743.3397322,
+    "seen": 1792020517.0697157,
+    "ast_hash": "ae7217d83c5a913674ca178f9f671162",
+    "semantic_hash": ""
+  },
+  "components/ui/progress.jsx": {
+    "mtime": 1782859743.3397322,
+    "seen": 1792020517.0697162,
+    "ast_hash": "22d643a654bb67d98f99a92ace2e34e0",
+    "semantic_hash": ""
+  },
+  "components/ui/radio-group.jsx": {
+    "mtime": 1782859743.3397322,
+    "seen": 1792020517.0697167,
+    "ast_hash": "51bb6e378857b83713efeb795f825526",
+    "semantic_hash": ""
+  },
+  "components/ui/resizable.jsx": {
+    "mtime": 1782859743.3397322,
+    "seen": 1792020517.0697172,
+    "ast_hash": "da139d29b0894a0ceeb63e13805dcf7d",
+    "semantic_hash": ""
+  },
+  "components/ui/scroll-area.jsx": {
+    "mtime": 1782859743.3407345,
+    "seen": 1792020517.0697181,
+    "ast_hash": "aa9ba4267c3b3df1bb3e98d03abd7aaf",
+    "semantic_hash": ""
+  },
+  "components/ui/select.jsx": {
+    "mtime": 1782859743.3407345,
+    "seen": 1792020517.0697186,
+    "ast_hash": "fbbf9e5a2304eaf4ca6aee3bb0abd10b",
+    "semantic_hash": ""
+  },
+  "components/ui/separator.jsx": {
+    "mtime": 1782859743.3417335,
+    "seen": 1792020517.069719,
+    "ast_hash": "2dd303c1e68f7de63dcc9012d3424193",
+    "semantic_hash": ""
+  },
+  "components/ui/sheet.jsx": {
+    "mtime": 1782859743.3417335,
+    "seen": 1792020517.0697198,
+    "ast_hash": "26dcf15d87abbb3a496eba22f2bfffc7",
+    "semantic_hash": ""
+  },
+  "components/ui/sidebar.jsx": {
+    "mtime": 1782859743.3417335,
+    "seen": 1792020517.0697203,
+    "ast_hash": "de6dd9b97eb6e2b3b203d75e0dee6668",
+    "semantic_hash": ""
+  },
+  "components/ui/skeleton.jsx": {
+    "mtime": 1782859743.3427355,
+    "seen": 1792020517.0697207,
+    "ast_hash": "21ae0c4be942e1905c6a405b430bf890",
+    "semantic_hash": ""
+  },
+  "components/ui/slider.jsx": {
+    "mtime": 1782859743.3427355,
+    "seen": 1792020517.0697222,
+    "ast_hash": "a00ee6317acd44e20a8df6ea40738807",
+    "semantic_hash": ""
+  },
+  "components/ui/sonner.jsx": {
+    "mtime": 1782859743.3427355,
+    "seen": 1792020517.0697227,
+    "ast_hash": "ee6f850b65502eee6f72e6b4b672eae1",
+    "semantic_hash": ""
+  },
+  "components/ui/switch.jsx": {
+    "mtime": 1782859743.3427355,
+    "seen": 1792020517.0697234,
+    "ast_hash": "fc98a597404e4ed74893ca52c0042ed9",
+    "semantic_hash": ""
+  },
+  "components/ui/table.jsx": {
+    "mtime": 1782859743.3437338,
+    "seen": 1792020517.069724,
+    "ast_hash": "c62cc8e3aee43f709186522a3097db88",
+    "semantic_hash": ""
+  },
+  "components/ui/tabs.jsx": {
+    "mtime": 1782859743.3437338,
+    "seen": 1792020517.069725,
+    "ast_hash": "fa271d551a63082e0bf5b945dedb9336",
+    "semantic_hash": ""
+  },
+  "components/ui/textarea.jsx": {
+    "mtime": 1782859743.3437338,
+    "seen": 1792020517.0697258,
+    "ast_hash": "17dee4732837794fb334d53fe61c0446",
+    "semantic_hash": ""
+  },
+  "components/ui/toast.jsx": {
+    "mtime": 1782859743.3437338,
+    "seen": 1792020517.0697262,
+    "ast_hash": "6cc241f5621b71072fae72ed5337deab",
+    "semantic_hash": ""
+  },
+  "components/ui/toaster.jsx": {
+    "mtime": 1782859743.3447337,
+    "seen": 1792020517.0697267,
+    "ast_hash": "bbe8cec54d3cdf11f2be1e0eba15c543",
+    "semantic_hash": ""
+  },
+  "components/ui/toggle-group.jsx": {
+    "mtime": 1782859743.3447337,
+    "seen": 1792020517.069728,
+    "ast_hash": "f15163eb03c21914b9f80791e5ec34ef",
+    "semantic_hash": ""
+  },
+  "components/ui/toggle.jsx": {
+    "mtime": 1782859743.3447337,
+    "seen": 1792020517.0697289,
+    "ast_hash": "00fd341e7d7fbce4e9c2b14a2cd861aa",
+    "semantic_hash": ""
+  },
+  "components/ui/tooltip.jsx": {
+    "mtime": 1782859743.3447337,
+    "seen": 1792020517.0697293,
+    "ast_hash": "8d3576005fdfed9823e5a0149538f0cc",
+    "semantic_hash": ""
+  },
+  "hooks/use-mobile.jsx": {
+    "mtime": 1782859743.3457332,
+    "seen": 1792020517.0697303,
+    "ast_hash": "21cadcc97434bd72c2e17fe9cdadb88a",
+    "semantic_hash": ""
+  },
+  "hooks/use-toast.js": {
+    "mtime": 1782859743.3457332,
+    "seen": 1792020517.069731,
+    "ast_hash": "df175c0decacd63ca6c11a7449465d6b",
+    "semantic_hash": ""
+  },
+  "jsconfig.json": {
+    "mtime": 1782859743.3457332,
+    "seen": 1792020517.0697315,
+    "ast_hash": "8ed0df510031f9117e2486d3e365d4c3",
+    "semantic_hash": ""
+  },
+  "lib/analytics.js": {
+    "mtime": 1791404037.3941548,
+    "seen": 1792020517.0697324,
+    "ast_hash": "dd843faab847764a41d55240791cc14f",
+    "semantic_hash": ""
+  },
+  "lib/blog.server.js": {
+    "mtime": 1783037050.6770103,
+    "seen": 1792020517.069733,
+    "ast_hash": "60bd1571c88d8fd613510cc3054dd486",
+    "semantic_hash": ""
+  },
+  "lib/cityGrowth.js": {
+    "mtime": 1792016050.4920046,
+    "seen": 1792020517.0697334,
+    "ast_hash": "761f98863a6822f27a79a31098ac17c7",
+    "semantic_hash": ""
+  },
+  "lib/utils.js": {
+    "mtime": 1782859743.3457332,
+    "seen": 1792020517.069734,
+    "ast_hash": "eff53006b93cfdef4aef148f202f1c3c",
+    "semantic_hash": ""
+  },
+  "new_posts.js": {
+    "mtime": 1791932502.486031,
+    "seen": 1792020517.0697346,
+    "ast_hash": "1ccb7eced49c3aa2fd7b8109d300c28b",
+    "semantic_hash": ""
+  },
+  "next.config.js": {
+    "mtime": 1791400987.4105875,
+    "seen": 1792020517.0697355,
+    "ast_hash": "bf062b79ae9f612df328fabb465840a1",
+    "semantic_hash": ""
+  },
+  "package.json": {
+    "mtime": 1791164062.0474112,
+    "seen": 1792020517.0697362,
+    "ast_hash": "990e515d5a8e1d772954f58d3d2271e0",
+    "semantic_hash": ""
+  },
+  "postcss.config.js": {
+    "mtime": 1782859743.3477333,
+    "seen": 1792020517.069737,
+    "ast_hash": "0527204ac791d1e1aade6424f3489e99",
+    "semantic_hash": ""
+  },
+  "tailwind.config.js": {
+    "mtime": 1791398128.6234064,
+    "seen": 1792020517.0697374,
+    "ast_hash": "15b5963033969ffcf441844b6165d337",
+    "semantic_hash": ""
+  },
+  "tests/__init__.py": {
+    "mtime": 1782859743.3637366,
+    "seen": 1792020517.069738,
+    "ast_hash": "d41d8cd98f00b204e9800998ecf8427e",
+    "semantic_hash": ""
+  },
+  "vercel.json": {
+    "mtime": 1782859743.3637366,
+    "seen": 1792020517.0697389,
+    "ast_hash": "3afe03cdcda78e18da1d35bd0abbf5a5",
+    "semantic_hash": ""
+  },
+  ".emergent/emergent.yml": {
+    "mtime": 1782859743.322735,
+    "seen": 1792020517.0697396,
+    "ast_hash": "cb9b455c40841693c4f256bb035ea55b",
+    "semantic_hash": ""
+  },
+  ".emergent/summary.txt": {
+    "mtime": 1782859743.3237364,
+    "seen": 1792020517.06974,
+    "ast_hash": "f11d37afb06b0481ee924f0040005322",
+    "semantic_hash": ""
+  },
+  "BACKLINK_SITELERI.md": {
+    "mtime": 1791399888.752474,
+    "seen": 1792020517.0697405,
+    "ast_hash": "6d663994913b564b02a3129814eefade",
+    "semantic_hash": ""
+  },
+  "README.md": {
+    "mtime": 1791404004.8756979,
+    "seen": 1792020517.069741,
+    "ast_hash": "b9bcd322c10e01d40357b87d72effe4d",
+    "semantic_hash": ""
+  },
+  "content/blog/ai-agentic-workflow-digital-marketing-2026.de.md": {
+    "mtime": 1791590021.572642,
+    "seen": 1792020517.0697417,
+    "ast_hash": "92d16837cb13f2450482ee1e706e3321",
+    "semantic_hash": ""
+  },
+  "content/blog/ai-agentic-workflow-digital-marketing-2026.en.md": {
+    "mtime": 1791590021.5736418,
+    "seen": 1792020517.0697424,
+    "ast_hash": "dfdad91449210fcc60dc5adb6f837ea9",
+    "semantic_hash": ""
+  },
+  "content/blog/ai-agentic-workflow-digital-marketing-2026.tr.md": {
+    "mtime": 1791590021.5736418,
+    "seen": 1792020517.0697432,
+    "ast_hash": "b9003cfe43f07ecd694ab4addd3cfab5",
+    "semantic_hash": ""
+  },
+  "content/blog/ai-content-marketing-scale.de.md": {
+    "mtime": 1791590021.5746412,
+    "seen": 1792020517.0697436,
+    "ast_hash": "49faf2935c0e90836662810a70ecf44b",
+    "semantic_hash": ""
+  },
+  "content/blog/ai-content-marketing-scale.en.md": {
+    "mtime": 1791590021.5756426,
+    "seen": 1792020517.069744,
+    "ast_hash": "07fea8efcd062e3e8000a2da12f014bd",
+    "semantic_hash": ""
+  },
+  "content/blog/ai-content-marketing-scale.tr.md": {
+    "mtime": 1791590021.5756426,
+    "seen": 1792020517.0697446,
+    "ast_hash": "0c8d9e32194dd9a5731c21f402d7a34e",
+    "semantic_hash": ""
+  },
+  "content/blog/ai-seo-geoptimierung.de.md": {
+    "mtime": 1791590021.5766416,
+    "seen": 1792020517.069745,
+    "ast_hash": "3b96a896486cfb5461c692f51ee09c22",
+    "semantic_hash": ""
+  },
+  "content/blog/ai-seo-geoptimierung.en.md": {
+    "mtime": 1791590021.5776417,
+    "seen": 1792020517.069746,
+    "ast_hash": "ce2735a4a9afda87c8cc727418ca0511",
+    "semantic_hash": ""
+  },
+  "content/blog/ai-seo-geoptimierung.tr.md": {
+    "mtime": 1791590021.5776417,
+    "seen": 1792020517.0697463,
+    "ast_hash": "9e81d9a95dcd79b8ff463eb802bc25e4",
+    "semantic_hash": ""
+  },
+  "content/blog/almanyada-avukat-steuerberater-google-ads-yerel-seo-2026.de.md": {
+    "mtime": 1791590021.584649,
+    "seen": 1792020517.069747,
+    "ast_hash": "402ce6340e5efc64c7f80b4e201a83fc",
+    "semantic_hash": ""
+  },
+  "content/blog/almanyada-avukat-steuerberater-google-ads-yerel-seo-2026.en.md": {
+    "mtime": 1791590021.5906484,
+    "seen": 1792020517.0697474,
+    "ast_hash": "da0b69900421a2279764c7d3eff00664",
+    "semantic_hash": ""
+  },
+  "content/blog/almanyada-avukat-steuerberater-google-ads-yerel-seo-2026.tr.md": {
+    "mtime": 1791590021.5906484,
+    "seen": 1792020517.0697482,
+    "ast_hash": "d85c70778c625e70e18ea554f2187bff",
+    "semantic_hash": ""
+  },
+  "content/blog/almanyada-dugun-salonu-restoran-reklam-rehberi-2026.de.md": {
+    "mtime": 1791590021.596649,
+    "seen": 1792020517.0697489,
+    "ast_hash": "2a2c55987568d831ee52c45062e927d6",
+    "semantic_hash": ""
+  },
+  "content/blog/almanyada-dugun-salonu-restoran-reklam-rehberi-2026.en.md": {
+    "mtime": 1791590021.6050494,
+    "seen": 1792020517.0697496,
+    "ast_hash": "e2d8022ef2c3038cae6c45109de83dd9",
+    "semantic_hash": ""
+  },
+  "content/blog/almanyada-dugun-salonu-restoran-reklam-rehberi-2026.tr.md": {
+    "mtime": 1791932502.5112667,
+    "seen": 1792020517.0697503,
+    "ast_hash": "7aae870cf72b5bb5c718385a8935b1b6",
+    "semantic_hash": ""
+  },
+  "content/blog/almanyada-dukkan-acmak-reklam-rehberi-2026.de.md": {
+    "mtime": 1791590021.612739,
+    "seen": 1792020517.0697508,
+    "ast_hash": "356e61a80203023ae3b09a724b2d0674",
+    "semantic_hash": ""
+  },
+  "content/blog/almanyada-dukkan-acmak-reklam-rehberi-2026.en.md": {
+    "mtime": 1791590021.618527,
+    "seen": 1792020517.0697515,
+    "ast_hash": "427d7747cd3ca9343e471b7acf81f44c",
+    "semantic_hash": ""
+  },
+  "content/blog/almanyada-dukkan-acmak-reklam-rehberi-2026.tr.md": {
+    "mtime": 1791932502.5117726,
+    "seen": 1792020517.069752,
+    "ast_hash": "265bbcaf360e4f012349d3239dbc1419",
+    "semantic_hash": ""
+  },
+  "content/blog/almanyada-google-business-harita-kurulumu-restoran-2026.de.md": {
+    "mtime": 1791590021.625814,
+    "seen": 1792020517.0697527,
+    "ast_hash": "068dda548f3d4a66ef23c1eff7ce9a7f",
+    "semantic_hash": ""
+  },
+  "content/blog/almanyada-google-business-harita-kurulumu-restoran-2026.en.md": {
+    "mtime": 1791590021.6318183,
+    "seen": 1792020517.0697534,
+    "ast_hash": "da0dfc23eaf335608e6d13a97892df26",
+    "semantic_hash": ""
+  },
+  "content/blog/almanyada-google-business-harita-kurulumu-restoran-2026.tr.md": {
+    "mtime": 1791590021.632863,
+    "seen": 1792020517.069754,
+    "ast_hash": "fc023b88bebd091fc1aa38fba3231e43",
+    "semantic_hash": ""
+  },
+  "content/blog/almanyada-google-haritalarda-ilk-siraya-cikma-rehberi-2026.de.md": {
+    "mtime": 1791590021.6423469,
+    "seen": 1792020517.0697544,
+    "ast_hash": "8902c02682662701f6bf723afb8d5c6b",
+    "semantic_hash": ""
+  },
+  "content/blog/almanyada-google-haritalarda-ilk-siraya-cikma-rehberi-2026.en.md": {
+    "mtime": 1791590021.6535892,
+    "seen": 1792020517.0697548,
+    "ast_hash": "4edddf6347aa3a382e1a6b23ae72990d",
+    "semantic_hash": ""
+  },
+  "content/blog/almanyada-google-haritalarda-ilk-siraya-cikma-rehberi-2026.tr.md": {
+    "mtime": 1791590021.6535892,
+    "seen": 1792020517.0697553,
+    "ast_hash": "69316f9048c488be37f712dda54071c0",
+    "semantic_hash": ""
+  },
+  "content/blog/almanyada-handwerk-sanierung-musteri-bulma-rehberi-2026.de.md": {
+    "mtime": 1791590021.6610491,
+    "seen": 1792020517.0697565,
+    "ast_hash": "03c9a43f4c3b23eaa8b0b27d6d644a48",
+    "semantic_hash": ""
+  },
+  "content/blog/almanyada-handwerk-sanierung-musteri-bulma-rehberi-2026.en.md": {
+    "mtime": 1791590021.6673796,
+    "seen": 1792020517.069757,
+    "ast_hash": "ad65aac16acb9d21c28e5ba8c9ccda7c",
+    "semantic_hash": ""
+  },
+  "content/blog/almanyada-handwerk-sanierung-musteri-bulma-rehberi-2026.tr.md": {
+    "mtime": 1791932502.5117726,
+    "seen": 1792020517.0697575,
+    "ast_hash": "b63d1ae45befbe626ff0be77b23f6edf",
+    "semantic_hash": ""
+  },
+  "content/blog/almanyada-handwerk-sanierung-myhammer-vs-google-ads-2026.de.md": {
+    "mtime": 1791590021.674408,
+    "seen": 1792020517.069758,
+    "ast_hash": "db987718535dc21b8001773a4c6d8cf0",
+    "semantic_hash": ""
+  },
+  "content/blog/almanyada-handwerk-sanierung-myhammer-vs-google-ads-2026.en.md": {
+    "mtime": 1791590021.6799586,
+    "seen": 1792020517.0697587,
+    "ast_hash": "d8133d91d30990aeb70d746b40cb28b3",
+    "semantic_hash": ""
+  },
+  "content/blog/almanyada-handwerk-sanierung-myhammer-vs-google-ads-2026.tr.md": {
+    "mtime": 1791932502.5127761,
+    "seen": 1792020517.0697591,
+    "ast_hash": "3883b9764196fead164e25f0d8067e02",
+    "semantic_hash": ""
+  },
+  "content/blog/almanyada-kfz-gutachter-hasar-ekspertiz-google-ads-2026.de.md": {
+    "mtime": 1791590021.6869576,
+    "seen": 1792020517.0697598,
+    "ast_hash": "80154dc23e1d77a95553aa0fc964b1fe",
+    "semantic_hash": ""
+  },
+  "content/blog/almanyada-kfz-gutachter-hasar-ekspertiz-google-ads-2026.en.md": {
+    "mtime": 1791590021.6934695,
+    "seen": 1792020517.0697606,
+    "ast_hash": "79a4f6123c83d5b037006de302ace238",
+    "semantic_hash": ""
+  },
+  "content/blog/almanyada-kfz-gutachter-hasar-ekspertiz-google-ads-2026.tr.md": {
+    "mtime": 1791932502.5127761,
+    "seen": 1792020517.069761,
+    "ast_hash": "de95d4233cb98d4a165def042f0a361a",
+    "semantic_hash": ""
+  },
+  "content/blog/almanyada-kfz-werkstatt-oto-tamir-google-ads-rehberi-2026.de.md": {
+    "mtime": 1790383361.8697238,
+    "seen": 1792020517.0697615,
+    "ast_hash": "f2a63fed248a25fe217752b8f2b0160f",
+    "semantic_hash": ""
+  },
+  "content/blog/almanyada-kfz-werkstatt-oto-tamir-google-ads-rehberi-2026.en.md": {
+    "mtime": 1790383373.3785677,
+    "seen": 1792020517.069762,
+    "ast_hash": "c75772158f50b69042f7eb4554fcba06",
+    "semantic_hash": ""
+  },
+  "content/blog/almanyada-kfz-werkstatt-oto-tamir-google-ads-rehberi-2026.tr.md": {
+    "mtime": 1791932502.5137763,
+    "seen": 1792020517.0697625,
+    "ast_hash": "daff436b282156219ece50ba00b6a9d7",
+    "semantic_hash": ""
+  },
+  "content/blog/almanyada-restoran-doner-google-ads-harita-rehberi-2026.de.md": {
+    "mtime": 1791590021.7110627,
+    "seen": 1792020517.0697634,
+    "ast_hash": "134dd3e018613154157dca71fa5c0797",
+    "semantic_hash": ""
+  },
+  "content/blog/almanyada-restoran-doner-google-ads-harita-rehberi-2026.en.md": {
+    "mtime": 1791590021.7170632,
+    "seen": 1792020517.069764,
+    "ast_hash": "924920be2396983ebf46eb2d513d1398",
+    "semantic_hash": ""
+  },
+  "content/blog/almanyada-restoran-doner-google-ads-harita-rehberi-2026.tr.md": {
+    "mtime": 1791932502.5137763,
+    "seen": 1792020517.0697644,
+    "ast_hash": "5f93e4be392fd74e032459ac5fb62d6c",
+    "semantic_hash": ""
+  },
+  "content/blog/almanyada-restoran-paket-servis-lieferdienste-google-seo-2026.de.md": {
+    "mtime": 1791590021.7240603,
+    "seen": 1792020517.0697649,
+    "ast_hash": "982a3fc47a312dd53a53c3ea67871765",
+    "semantic_hash": ""
+  },
+  "content/blog/almanyada-restoran-paket-servis-lieferdienste-google-seo-2026.en.md": {
+    "mtime": 1791590021.7300594,
+    "seen": 1792020517.0697653,
+    "ast_hash": "f2b5a4ee7b322ac5b51575da40406444",
+    "semantic_hash": ""
+  },
+  "content/blog/almanyada-restoran-paket-servis-lieferdienste-google-seo-2026.tr.md": {
+    "mtime": 1791932502.514776,
+    "seen": 1792020517.0697658,
+    "ast_hash": "e6f9d77a4f5617c4c4c674640b0c357b",
+    "semantic_hash": ""
+  },
+  "content/blog/almanyada-sac-ekimi-saglik-turizmi-google-ads-rehberi-2026.de.md": {
+    "mtime": 1791590021.736063,
+    "seen": 1792020517.0697668,
+    "ast_hash": "a40d4b9c8493bcb85d1107a6d45875da",
+    "semantic_hash": ""
+  },
+  "content/blog/almanyada-sac-ekimi-saglik-turizmi-google-ads-rehberi-2026.en.md": {
+    "mtime": 1791590021.7410614,
+    "seen": 1792020517.0697672,
+    "ast_hash": "151a56a81a5d0ec2b6f917205fe6fa8a",
+    "semantic_hash": ""
+  },
+  "content/blog/almanyada-sac-ekimi-saglik-turizmi-google-ads-rehberi-2026.tr.md": {
+    "mtime": 1791590021.7420595,
+    "seen": 1792020517.0697677,
+    "ast_hash": "b939c60f57419ea24d087a1336ef22a0",
+    "semantic_hash": ""
+  },
+  "content/blog/almanyada-turk-avukat-steuerberater-google-ads-rehberi-2026.de.md": {
+    "mtime": 1790469351.58052,
+    "seen": 1792020517.0697684,
+    "ast_hash": "6b9e3569bdfb4a9fdd441bd2d5c19e9e",
+    "semantic_hash": ""
+  },
+  "content/blog/almanyada-turk-avukat-steuerberater-google-ads-rehberi-2026.en.md": {
+    "mtime": 1790469366.431719,
+    "seen": 1792020517.069769,
+    "ast_hash": "0a03b15496e7b978492570f0f8b58b65",
+    "semantic_hash": ""
+  },
+  "content/blog/almanyada-turk-avukat-steuerberater-google-ads-rehberi-2026.tr.md": {
+    "mtime": 1791932502.5157762,
+    "seen": 1792020517.0697694,
+    "ast_hash": "711662ef0be12061887a9cf2253e3991",
+    "semantic_hash": ""
+  },
+  "content/blog/almanyada-turk-supermarket-helal-kasap-google-harita-rehberi-2026.de.md": {
+    "mtime": 1790623037.009357,
+    "seen": 1792020517.06977,
+    "ast_hash": "8c71759f2679cefc5432bd3343cb8d1c",
+    "semantic_hash": ""
+  },
+  "content/blog/almanyada-turk-supermarket-helal-kasap-google-harita-rehberi-2026.en.md": {
+    "mtime": 1790623053.7271237,
+    "seen": 1792020517.0697708,
+    "ast_hash": "9147eba116b0c7ca8c4b186cc29cecfe",
+    "semantic_hash": ""
+  },
+  "content/blog/almanyada-turk-supermarket-helal-kasap-google-harita-rehberi-2026.tr.md": {
+    "mtime": 1791404028.875874,
+    "seen": 1792020517.0697713,
+    "ast_hash": "002dcc84ecc0a5edda5f028488eb81e1",
+    "semantic_hash": ""
+  },
+  "content/blog/almanyadaki-turk-isletmeleri-icin-google-ads-rehberi-2026.de.md": {
+    "mtime": 1791590021.7720597,
+    "seen": 1792020517.0697718,
+    "ast_hash": "5ef0ca5b1abcd3d14d8514bbd8600a89",
+    "semantic_hash": ""
+  },
+  "content/blog/almanyadaki-turk-isletmeleri-icin-google-ads-rehberi-2026.en.md": {
+    "mtime": 1791590021.7790596,
+    "seen": 1792020517.0697722,
+    "ast_hash": "067371d21ea57546a9d6d0fad194bd17",
+    "semantic_hash": ""
+  },
+  "content/blog/almanyadaki-turk-isletmeleri-icin-google-ads-rehberi-2026.tr.md": {
+    "mtime": 1791590021.7790596,
+    "seen": 1792020517.0697727,
+    "ast_hash": "99d7b4cf878366bba708d7214162796a",
+    "semantic_hash": ""
+  },
+  "content/blog/b2b-google-ads-vs-linkedin-ads-karsilastirmasi-2026.de.md": {
+    "mtime": 1791590021.7800608,
+    "seen": 1792020517.0697732,
+    "ast_hash": "4af34cfed50559b9c23284fa839f56c7",
+    "semantic_hash": ""
+  },
+  "content/blog/b2b-google-ads-vs-linkedin-ads-karsilastirmasi-2026.en.md": {
+    "mtime": 1791590021.7850597,
+    "seen": 1792020517.0697742,
+    "ast_hash": "5e4ae9a27828565394c8bbe9c3ba78c5",
+    "semantic_hash": ""
+  },
+  "content/blog/b2b-google-ads-vs-linkedin-ads-karsilastirmasi-2026.tr.md": {
+    "mtime": 1791932502.5157762,
+    "seen": 1792020517.0697746,
+    "ast_hash": "1de4c9781253576cb3983f16284c3ab4",
+    "semantic_hash": ""
+  },
+  "content/blog/b2b-lead-generation-linkedin-ai-agents.de.md": {
+    "mtime": 1791590021.7860627,
+    "seen": 1792020517.0697753,
+    "ast_hash": "d3d928635559701ed417c63933487bd5",
+    "semantic_hash": ""
+  },
+  "content/blog/b2b-lead-generation-linkedin-ai-agents.en.md": {
+    "mtime": 1791590021.7870667,
+    "seen": 1792020517.0697758,
+    "ast_hash": "a46df41899e1e3ff6531607a19d6cf76",
+    "semantic_hash": ""
+  },
+  "content/blog/b2b-lead-generation-linkedin-ai-agents.tr.md": {
+    "mtime": 1791590021.788066,
+    "seen": 1792020517.0697763,
+    "ast_hash": "a6cdded66201bfcb44e3b727208c13c6",
+    "semantic_hash": ""
+  },
+  "content/blog/coklu-sube-google-isletme-profili-haritalar-yonetimi-2026.de.md": {
+    "mtime": 1791590021.7890668,
+    "seen": 1792020517.069777,
+    "ast_hash": "eb464e646ef8288368918a3e878edc74",
+    "semantic_hash": ""
+  },
+  "content/blog/coklu-sube-google-isletme-profili-haritalar-yonetimi-2026.en.md": {
+    "mtime": 1791590021.7900662,
+    "seen": 1792020517.0697777,
+    "ast_hash": "bae1c2943fdd1534568834d627f3f8d5",
+    "semantic_hash": ""
+  },
+  "content/blog/coklu-sube-google-isletme-profili-haritalar-yonetimi-2026.tr.md": {
+    "mtime": 1791590021.7900662,
+    "seen": 1792020517.0697782,
+    "ast_hash": "7a578ad3eb5e60a39a4aa5d01eb897e4",
+    "semantic_hash": ""
+  },
+  "content/blog/conversion-rate-optimization-ai-personalization.de.md": {
+    "mtime": 1791590021.7910662,
+    "seen": 1792020517.0697787,
+    "ast_hash": "e0a4b2aac4f151a929cc09d0eb9b4aee",
+    "semantic_hash": ""
+  },
+  "content/blog/conversion-rate-optimization-ai-personalization.en.md": {
+    "mtime": 1791590021.7920668,
+    "seen": 1792020517.06978,
+    "ast_hash": "8dfd7c03ecaa406901f1cf85ac11e425",
+    "semantic_hash": ""
+  },
+  "content/blog/conversion-rate-optimization-ai-personalization.tr.md": {
+    "mtime": 1791590021.7920668,
+    "seen": 1792020517.0697808,
+    "ast_hash": "93253be62d49ff28e7ef0563b21463b2",
+    "semantic_hash": ""
+  },
+  "content/blog/deepseek-r1-vs-openai-o3-seo-copywriting.de.md": {
+    "mtime": 1791590021.7930665,
+    "seen": 1792020517.0697815,
+    "ast_hash": "b2e682800a93a2ff15b1df87b163a14a",
+    "semantic_hash": ""
+  },
+  "content/blog/deepseek-r1-vs-openai-o3-seo-copywriting.en.md": {
+    "mtime": 1791590021.7940662,
+    "seen": 1792020517.069782,
+    "ast_hash": "ee01769864a5996d3d57455a39197edc",
+    "semantic_hash": ""
+  },
+  "content/blog/deepseek-r1-vs-openai-o3-seo-copywriting.tr.md": {
+    "mtime": 1791590021.7940662,
+    "seen": 1792020517.0697825,
+    "ast_hash": "3a97355c0b01f53771e7e67110812458",
+    "semantic_hash": ""
+  },
+  "content/blog/e-ticaret-reklam-var-satis-yok-donusum-optimizasyonu-2026.de.md": {
+    "mtime": 1791590021.7950666,
+    "seen": 1792020517.0697832,
+    "ast_hash": "f0d3e484da92d3e92da98e589bba30fc",
+    "semantic_hash": ""
+  },
+  "content/blog/e-ticaret-reklam-var-satis-yok-donusum-optimizasyonu-2026.en.md": {
+    "mtime": 1791590021.7960663,
+    "seen": 1792020517.069784,
+    "ast_hash": "dc108b34420bbef16dfd447d6e9a9feb",
+    "semantic_hash": ""
+  },
+  "content/blog/e-ticaret-reklam-var-satis-yok-donusum-optimizasyonu-2026.tr.md": {
+    "mtime": 1791590021.7960663,
+    "seen": 1792020517.0697844,
+    "ast_hash": "3fb2ca9f02b7509ecbec758a4ffc70bf",
+    "semantic_hash": ""
+  },
+  "content/blog/first-party-data-marketing.de.md": {
+    "mtime": 1791590021.7970686,
+    "seen": 1792020517.0697846,
+    "ast_hash": "af4a83f3c5749f3908d4b665bb3c0adc",
+    "semantic_hash": ""
+  },
+  "content/blog/first-party-data-marketing.en.md": {
+    "mtime": 1791590021.7980669,
+    "seen": 1792020517.0697854,
+    "ast_hash": "eeb8a7e1b86c2ea11f51efcc630ef973",
+    "semantic_hash": ""
+  },
+  "content/blog/first-party-data-marketing.tr.md": {
+    "mtime": 1791590021.7980669,
+    "seen": 1792020517.0697858,
+    "ast_hash": "b319acf80d852cc19b2ddd1c20a9c85e",
+    "semantic_hash": ""
+  },
+  "content/blog/ga4-custom-events-funnels.de.md": {
+    "mtime": 1791590021.8055775,
+    "seen": 1792020517.0697863,
+    "ast_hash": "089b7030419ce1eeb9ed9bf8f85809e5",
+    "semantic_hash": ""
+  },
+  "content/blog/ga4-custom-events-funnels.en.md": {
+    "mtime": 1791590021.8155816,
+    "seen": 1792020517.0697868,
+    "ast_hash": "37d5d6f496ffa707f4ad8ac1b4bdd1bc",
+    "semantic_hash": ""
+  },
+  "content/blog/ga4-custom-events-funnels.tr.md": {
+    "mtime": 1791590021.816581,
+    "seen": 1792020517.0697877,
+    "ast_hash": "af28fd96e4dd7ad5d5fde97ac4a908b2",
+    "semantic_hash": ""
+  },
+  "content/blog/gemini-3-6-vs-claude-chatgpt-ai-comparison.de.md": {
+    "mtime": 1791590021.8175812,
+    "seen": 1792020517.0697882,
+    "ast_hash": "9a64f28589ff9ca6011c68d02e80264d",
+    "semantic_hash": ""
+  },
+  "content/blog/gemini-3-6-vs-claude-chatgpt-ai-comparison.en.md": {
+    "mtime": 1791590021.8175812,
+    "seen": 1792020517.0697887,
+    "ast_hash": "d96c6465c59f306e22edde3edc33b31c",
+    "semantic_hash": ""
+  },
+  "content/blog/gemini-3-6-vs-claude-chatgpt-ai-comparison.tr.md": {
+    "mtime": 1791590021.8185816,
+    "seen": 1792020517.0697892,
+    "ast_hash": "e92fff52499098e31ffa2f1676b5afd9",
+    "semantic_hash": ""
+  },
+  "content/blog/gemini-3-7-vs-gemini-3-6-ai-marketing-comparison.de.md": {
+    "mtime": 1791590021.8270936,
+    "seen": 1792020517.0697896,
+    "ast_hash": "f1d3d03eda16eeac0cb761ff6004c3eb",
+    "semantic_hash": ""
+  },
+  "content/blog/gemini-3-7-vs-gemini-3-6-ai-marketing-comparison.en.md": {
+    "mtime": 1791590021.8350945,
+    "seen": 1792020517.0697901,
+    "ast_hash": "8090c12080c7e1de0b722354870968ee",
+    "semantic_hash": ""
+  },
+  "content/blog/gemini-3-7-vs-gemini-3-6-ai-marketing-comparison.tr.md": {
+    "mtime": 1791590021.8350945,
+    "seen": 1792020517.069791,
+    "ast_hash": "df811e4ac48d749078c7d974e4d12013",
+    "semantic_hash": ""
+  },
+  "content/blog/geo-ai-search-citation-factors-2026.de.md": {
+    "mtime": 1791590021.836094,
+    "seen": 1792020517.0697918,
+    "ast_hash": "ab9592144262c3327320eac9fb2fa738",
+    "semantic_hash": ""
+  },
+  "content/blog/geo-ai-search-citation-factors-2026.en.md": {
+    "mtime": 1791590021.8370938,
+    "seen": 1792020517.0697923,
+    "ast_hash": "437c4ceb5dd5ce3f1dbd38de63de2765",
+    "semantic_hash": ""
+  },
+  "content/blog/geo-ai-search-citation-factors-2026.tr.md": {
+    "mtime": 1791590021.8370938,
+    "seen": 1792020517.069793,
+    "ast_hash": "866cbbd9d60bed00ac40d1e7f9ffc839",
+    "semantic_hash": ""
+  },
+  "content/blog/geo-ai-seo-generative-engine-optimization-guide-2026.de.md": {
+    "mtime": 1791590021.8461206,
+    "seen": 1792020517.0697935,
+    "ast_hash": "2cc604a503fd4b3ef7b1468024b04fd5",
+    "semantic_hash": ""
+  },
+  "content/blog/geo-ai-seo-generative-engine-optimization-guide-2026.en.md": {
+    "mtime": 1791590021.852118,
+    "seen": 1792020517.069794,
+    "ast_hash": "7fc671d4325df9cfd6dbc1a59a3bc849",
+    "semantic_hash": ""
+  },
+  "content/blog/geo-ai-seo-generative-engine-optimization-guide-2026.tr.md": {
+    "mtime": 1791590021.852118,
+    "seen": 1792020517.069795,
+    "ast_hash": "c5e4b72b7085d7954133f5983ce33b69",
+    "semantic_hash": ""
+  },
+  "content/blog/github-seo-skills-claude-code-guide-2026.de.md": {
+    "mtime": 1791590021.8612196,
+    "seen": 1792020517.0697954,
+    "ast_hash": "2c08b0b9ccb709d94d621bcc39869900",
+    "semantic_hash": ""
+  },
+  "content/blog/github-seo-skills-claude-code-guide-2026.en.md": {
+    "mtime": 1791590021.870731,
+    "seen": 1792020517.0697958,
+    "ast_hash": "727474e87a1414a619de3eed8e93dd37",
+    "semantic_hash": ""
+  },
+  "content/blog/github-seo-skills-claude-code-guide-2026.tr.md": {
+    "mtime": 1791590021.8717308,
+    "seen": 1792020517.0697963,
+    "ast_hash": "98d6e120993714031f0257c70199ff0e",
+    "semantic_hash": ""
+  },
+  "content/blog/google-ad-grants-islamic-charity-rehberi-2026.de.md": {
+    "mtime": 1791590021.8810918,
+    "seen": 1792020517.0697968,
+    "ast_hash": "476eb37947fa3dc0a73c88c908223462",
+    "semantic_hash": ""
+  },
+  "content/blog/google-ad-grants-islamic-charity-rehberi-2026.en.md": {
+    "mtime": 1791590021.889096,
+    "seen": 1792020517.0697973,
+    "ast_hash": "0334fa7ffb44f9bbb804ca1b3fc301cc",
+    "semantic_hash": ""
+  },
+  "content/blog/google-ad-grants-islamic-charity-rehberi-2026.tr.md": {
+    "mtime": 1791932502.5187776,
+    "seen": 1792020517.069798,
+    "ast_hash": "bcddee5292f60c3246e64bfaef0c3691",
+    "semantic_hash": ""
+  },
+  "content/blog/google-ads-agentur-dortmund-ruhrgebiet-mittelstand-2026.de.md": {
+    "mtime": 1792016075.0193937,
+    "seen": 1792020517.0697985,
+    "ast_hash": "ad565a5ea871f7856f8bbd46788d33de",
+    "semantic_hash": ""
+  },
+  "content/blog/google-ads-agentur-dortmund-ruhrgebiet-mittelstand-2026.en.md": {
+    "mtime": 1792016080.5365944,
+    "seen": 1792020517.069799,
+    "ast_hash": "a69756860dbfd8f1c2f0b2d27d16c51e",
+    "semantic_hash": ""
+  },
+  "content/blog/google-ads-agentur-dortmund-ruhrgebiet-mittelstand-2026.tr.md": {
+    "mtime": 1792016078.1086378,
+    "seen": 1792020517.0697994,
+    "ast_hash": "df17e9a9a09b7d5a9b93ca1865a0fc43",
+    "semantic_hash": ""
+  },
+  "content/blog/google-ads-agentur-hannover-performance-marketing-2026.de.md": {
+    "mtime": 1791841022.320877,
+    "seen": 1792020517.0698001,
+    "ast_hash": "5dd8c094cfc84967e71c0bedfcf6fc58",
+    "semantic_hash": ""
+  },
+  "content/blog/google-ads-agentur-hannover-performance-marketing-2026.en.md": {
+    "mtime": 1791841040.6037793,
+    "seen": 1792020517.0698006,
+    "ast_hash": "16d9ac8c1dc6a695910fb8897cc4516b",
+    "semantic_hash": ""
+  },
+  "content/blog/google-ads-agentur-hannover-performance-marketing-2026.tr.md": {
+    "mtime": 1791841033.1476488,
+    "seen": 1792020517.0698013,
+    "ast_hash": "5d661b9655e2778949d94bb1b6ddfb6f",
+    "semantic_hash": ""
+  },
+  "content/blog/google-ads-agentur-koeln-performance-marketing-2026.de.md": {
+    "mtime": 1791761363.8394146,
+    "seen": 1792020517.069802,
+    "ast_hash": "15d380859f18f73d5720f2ade2da824a",
+    "semantic_hash": ""
+  },
+  "content/blog/google-ads-agentur-koeln-performance-marketing-2026.en.md": {
+    "mtime": 1791761390.707687,
+    "seen": 1792020517.0698025,
+    "ast_hash": "54277502bb347a850f03c1f40ab90ce3",
+    "semantic_hash": ""
+  },
+  "content/blog/google-ads-agentur-koeln-performance-marketing-2026.tr.md": {
+    "mtime": 1791761378.820799,
+    "seen": 1792020517.069803,
+    "ast_hash": "b515d4e27eff8219ccc2dad58bb737aa",
+    "semantic_hash": ""
+  },
+  "content/blog/google-ads-agentur-kosten-preise-2026.de.md": {
+    "mtime": 1791590021.9252682,
+    "seen": 1792020517.0698035,
+    "ast_hash": "333d7a2e49ed379a492321d8b685fa79",
+    "semantic_hash": ""
+  },
+  "content/blog/google-ads-agentur-kosten-preise-2026.en.md": {
+    "mtime": 1791590021.9307706,
+    "seen": 1792020517.069804,
+    "ast_hash": "a627b8961c17d946ae45e2deaf0c77c3",
+    "semantic_hash": ""
+  },
+  "content/blog/google-ads-agentur-kosten-preise-2026.tr.md": {
+    "mtime": 1791932502.519776,
+    "seen": 1792020517.069805,
+    "ast_hash": "840f225a828cb42be1a23ac0ed88491a",
+    "semantic_hash": ""
+  },
+  "content/blog/google-ads-agentur-muenchen-bayern-b2b-geo-2026.de.md": {
+    "mtime": 1791590021.938122,
+    "seen": 1792020517.0698054,
+    "ast_hash": "b1ed5e68016017fe2e0ed8de95ce7413",
+    "semantic_hash": ""
+  },
+  "content/blog/google-ads-agentur-muenchen-bayern-b2b-geo-2026.en.md": {
+    "mtime": 1791590021.9451227,
+    "seen": 1792020517.069806,
+    "ast_hash": "4522eefea7a2d5caf1f4a22f39844007",
+    "semantic_hash": ""
+  },
+  "content/blog/google-ads-agentur-muenchen-bayern-b2b-geo-2026.tr.md": {
+    "mtime": 1791590021.9451227,
+    "seen": 1792020517.0698066,
+    "ast_hash": "deb5966b8f5fb0895951b116849b3283",
+    "semantic_hash": ""
+  },
+  "content/blog/google-ads-agentur-nuernberg-franken-mittelstand-2026.de.md": {
+    "mtime": 1791590021.9511216,
+    "seen": 1792020517.069807,
+    "ast_hash": "47374eb9ffd86858111f36f815886ba0",
+    "semantic_hash": ""
+  },
+  "content/blog/google-ads-agentur-nuernberg-franken-mittelstand-2026.en.md": {
+    "mtime": 1791590021.9561217,
+    "seen": 1792020517.0698075,
+    "ast_hash": "2b3db5553e38d719025df086a53c0c7d",
+    "semantic_hash": ""
+  },
+  "content/blog/google-ads-agentur-nuernberg-franken-mittelstand-2026.tr.md": {
+    "mtime": 1791932502.520776,
+    "seen": 1792020517.0698085,
+    "ast_hash": "a94c9ba863b6b2ef9e6ae77e6c829878",
+    "semantic_hash": ""
+  },
+  "content/blog/google-ads-agentur-preise-kosten-deutschland-2026.de.md": {
+    "mtime": 1791590021.9621215,
+    "seen": 1792020517.069809,
+    "ast_hash": "1e36211bfb69099e7af9b7c958c31e03",
+    "semantic_hash": ""
+  },
+  "content/blog/google-ads-agentur-preise-kosten-deutschland-2026.en.md": {
+    "mtime": 1791590021.968122,
+    "seen": 1792020517.0698094,
+    "ast_hash": "c2a4578b021df766ca29136624131988",
+    "semantic_hash": ""
+  },
+  "content/blog/google-ads-agentur-preise-kosten-deutschland-2026.tr.md": {
+    "mtime": 1791932502.520776,
+    "seen": 1792020517.0698102,
+    "ast_hash": "4a80c61809c9f3d7f5c22ddf004ff7c8",
+    "semantic_hash": ""
+  },
+  "content/blog/google-ads-b2b-agentur-stuttgart-maschinenbau-2026.de.md": {
+    "mtime": 1791928889.5073814,
+    "seen": 1792020517.0698106,
+    "ast_hash": "0f32e76900c21a571cf038686d183acb",
+    "semantic_hash": ""
+  },
+  "content/blog/google-ads-b2b-agentur-stuttgart-maschinenbau-2026.en.md": {
+    "mtime": 1791928939.246115,
+    "seen": 1792020517.0698113,
+    "ast_hash": "eeb59d7c9b9f99ff84783f532add377d",
+    "semantic_hash": ""
+  },
+  "content/blog/google-ads-b2b-agentur-stuttgart-maschinenbau-2026.tr.md": {
+    "mtime": 1791932502.5217783,
+    "seen": 1792020517.0698123,
+    "ast_hash": "11056fc1c656f90e43cd70750309165a",
+    "semantic_hash": ""
+  },
+  "content/blog/google-ads-b2b-it-software-saas-deutschland-2026.de.md": {
+    "mtime": 1791590021.9871256,
+    "seen": 1792020517.0698128,
+    "ast_hash": "4475d8835e8b483bd24c38ac484b22df",
+    "semantic_hash": ""
+  },
+  "content/blog/google-ads-b2b-it-software-saas-deutschland-2026.en.md": {
+    "mtime": 1791590021.992632,
+    "seen": 1792020517.0698133,
+    "ast_hash": "96b032e0dae0a47e2ac850c31a43fde7",
+    "semantic_hash": ""
+  },
+  "content/blog/google-ads-b2b-it-software-saas-deutschland-2026.tr.md": {
+    "mtime": 1791590021.992632,
+    "seen": 1792020517.0698137,
+    "ast_hash": "6fefcb30e1c8ee324f8b99555adea3a6",
+    "semantic_hash": ""
+  },
+  "content/blog/google-ads-b2b-mittelstand-frankfurt-rhein-main-2026.de.md": {
+    "mtime": 1791932972.3933768,
+    "seen": 1792020517.0698142,
+    "ast_hash": "bda136fbaa006cb4148bc70a4feb152c",
+    "semantic_hash": ""
+  },
+  "content/blog/google-ads-b2b-mittelstand-frankfurt-rhein-main-2026.en.md": {
+    "mtime": 1791932972.3933768,
+    "seen": 1792020517.0698152,
+    "ast_hash": "607f9eea61f08f07543cf79f944bb7b5",
+    "semantic_hash": ""
+  },
+  "content/blog/google-ads-b2b-mittelstand-frankfurt-rhein-main-2026.tr.md": {
+    "mtime": 1791932972.3933768,
+    "seen": 1792020517.0698156,
+    "ast_hash": "7d249c74b111313031dc0cb547eff30e",
+    "semantic_hash": ""
+  },
+  "content/blog/google-ads-fehler-vermeiden.de.md": {
+    "mtime": 1791590022.011006,
+    "seen": 1792020517.069816,
+    "ast_hash": "60e6a0f02561a250842ba6fffbf23935",
+    "semantic_hash": ""
+  },
+  "content/blog/google-ads-fehler-vermeiden.en.md": {
+    "mtime": 1791590022.0200243,
+    "seen": 1792020517.0698166,
+    "ast_hash": "efd382e4cf37414532388bcb7605e9f7",
+    "semantic_hash": ""
+  },
+  "content/blog/google-ads-fehler-vermeiden.tr.md": {
+    "mtime": 1791932502.5227761,
+    "seen": 1792020517.069817,
+    "ast_hash": "e2ac0da3c5bec202a103f4ae61dd6897",
+    "semantic_hash": ""
+  },
+  "content/blog/google-ads-fixpreis-vs-prozent-agentur-modell-2026.de.md": {
+    "mtime": 1791590022.026548,
+    "seen": 1792020517.0698175,
+    "ast_hash": "2dbb2974aa49a3c544abdf2cbde5eb34",
+    "semantic_hash": ""
+  },
+  "content/blog/google-ads-fixpreis-vs-prozent-agentur-modell-2026.en.md": {
+    "mtime": 1791590022.035065,
+    "seen": 1792020517.069818,
+    "ast_hash": "19d14ec051bbb323cb9d7975c833bb91",
+    "semantic_hash": ""
+  },
+  "content/blog/google-ads-fixpreis-vs-prozent-agentur-modell-2026.tr.md": {
+    "mtime": 1791932502.5227761,
+    "seen": 1792020517.0698187,
+    "ast_hash": "a6ac897ac40553561a173d77a10af4ed",
+    "semantic_hash": ""
+  },
+  "content/blog/google-ads-kosten-2026.de.md": {
+    "mtime": 1791590022.044069,
+    "seen": 1792020517.0698195,
+    "ast_hash": "934dba4195c3e7f5c6ff4f828cd44aa1",
+    "semantic_hash": ""
+  },
+  "content/blog/google-ads-kosten-2026.en.md": {
+    "mtime": 1791590022.0521755,
+    "seen": 1792020517.06982,
+    "ast_hash": "937db09a96655dee67512b417f9bd4a8",
+    "semantic_hash": ""
+  },
+  "content/blog/google-ads-kosten-2026.tr.md": {
+    "mtime": 1791932502.523776,
+    "seen": 1792020517.0698204,
+    "ast_hash": "cc3fe9070ad19a1863f54d85958fcd62",
+    "semantic_hash": ""
+  },
+  "content/blog/google-ads-meta-ads-betriebsausgabe-finanzamt-leitfaden-2026.de.md": {
+    "mtime": 1791932972.394378,
+    "seen": 1792020517.069821,
+    "ast_hash": "4d52ca261d24b57fbc8478f417dd2d2b",
+    "semantic_hash": ""
+  },
+  "content/blog/google-ads-meta-ads-betriebsausgabe-finanzamt-leitfaden-2026.en.md": {
+    "mtime": 1791932972.3953772,
+    "seen": 1792020517.0698216,
+    "ast_hash": "a53c2105241cec5aa1647514ac108f1c",
+    "semantic_hash": ""
+  },
+  "content/blog/google-ads-meta-ads-betriebsausgabe-finanzamt-leitfaden-2026.tr.md": {
+    "mtime": 1791932972.394378,
+    "seen": 1792020517.0698218,
+    "ast_hash": "30dbc388a1c7d0cff2246dcc374cd2b7",
+    "semantic_hash": ""
+  },
+  "content/blog/google-ads-meta-ads-synergy-scaling-guide-2026.de.md": {
+    "mtime": 1791590022.0611982,
+    "seen": 1792020517.0698228,
+    "ast_hash": "4e397f08418e6bd53699a869092a5b81",
+    "semantic_hash": ""
+  },
+  "content/blog/google-ads-meta-ads-synergy-scaling-guide-2026.en.md": {
+    "mtime": 1791590022.069909,
+    "seen": 1792020517.069823,
+    "ast_hash": "6fb60499777a033721f70ed060bab3de",
+    "semantic_hash": ""
+  },
+  "content/blog/google-ads-meta-ads-synergy-scaling-guide-2026.tr.md": {
+    "mtime": 1791932502.5247765,
+    "seen": 1792020517.0698237,
+    "ast_hash": "f96ed15b5c7fc7b0d4189c5766bb0c1d",
+    "semantic_hash": ""
+  },
+  "content/blog/google-ads-meta-ads-umsatzsteuer-vorsteuer-leitfaden-2026.de.md": {
+    "mtime": 1791928990.3800857,
+    "seen": 1792020517.0698242,
+    "ast_hash": "3d600308e413a2b3417908c3dc4f4183",
+    "semantic_hash": ""
+  },
+  "content/blog/google-ads-meta-ads-umsatzsteuer-vorsteuer-leitfaden-2026.en.md": {
+    "mtime": 1791929091.0923994,
+    "seen": 1792020517.0698247,
+    "ast_hash": "249528e0b0128d872dfc38b829e943bb",
+    "semantic_hash": ""
+  },
+  "content/blog/google-ads-meta-ads-umsatzsteuer-vorsteuer-leitfaden-2026.tr.md": {
+    "mtime": 1791928994.5280201,
+    "seen": 1792020517.0698252,
+    "ast_hash": "bcd01e615a2edc6f4c03173d0229961c",
+    "semantic_hash": ""
+  },
+  "content/blog/google-ads-mittelstand-agentur-beratung-auswahl-2026.de.md": {
+    "mtime": 1792016094.5347087,
+    "seen": 1792020517.069826,
+    "ast_hash": "f5c500d5e7feebda62f5044dc575d640",
+    "semantic_hash": ""
+  },
+  "content/blog/google-ads-mittelstand-agentur-beratung-auswahl-2026.en.md": {
+    "mtime": 1792016102.3131661,
+    "seen": 1792020517.0698264,
+    "ast_hash": "70e05d410b0556b6cb2695e3402a042f",
+    "semantic_hash": ""
+  },
+  "content/blog/google-ads-mittelstand-agentur-beratung-auswahl-2026.tr.md": {
+    "mtime": 1792016097.8318508,
+    "seen": 1792020517.0698268,
+    "ast_hash": "0262a68083805494ce626faa2cc85655",
+    "semantic_hash": ""
+  },
+  "content/blog/google-ads-nedir.de.md": {
+    "mtime": 1791590022.1000395,
+    "seen": 1792020517.0698276,
+    "ast_hash": "89c5af7ef90bc25ba0d50008c91a22e1",
+    "semantic_hash": ""
+  },
+  "content/blog/google-ads-nedir.en.md": {
+    "mtime": 1791590022.1085484,
+    "seen": 1792020517.069828,
+    "ast_hash": "382edd0dd8232c052363bcfe54f76632",
+    "semantic_hash": ""
+  },
+  "content/blog/google-ads-nedir.tr.md": {
+    "mtime": 1791932502.5257785,
+    "seen": 1792020517.0698285,
+    "ast_hash": "e115438df9e1778af359928c63a554cf",
+    "semantic_hash": ""
+  },
+  "content/blog/google-ads-negative-keywords-ausschlussliste-deutschland-2026.de.md": {
+    "mtime": 1791159975.7895434,
+    "seen": 1792020517.0698292,
+    "ast_hash": "81f828b2fef563cb3355f7bf66436088",
+    "semantic_hash": ""
+  },
+  "content/blog/google-ads-negative-keywords-ausschlussliste-deutschland-2026.en.md": {
+    "mtime": 1791159999.7264555,
+    "seen": 1792020517.0698297,
+    "ast_hash": "b3a2c4f1802df9854b6bd44bc18a09a6",
+    "semantic_hash": ""
+  },
+  "content/blog/google-ads-negative-keywords-ausschlussliste-deutschland-2026.tr.md": {
+    "mtime": 1791159991.5584803,
+    "seen": 1792020517.0698304,
+    "ast_hash": "d3789654bc9340b726b94e52987f1a21",
+    "semantic_hash": ""
+  },
+  "content/blog/google-ads-pmax-negative-keywords-kampagnen-2026.de.md": {
+    "mtime": 1791590022.12155,
+    "seen": 1792020517.069831,
+    "ast_hash": "75c62ef717a966ae4f8142f93481901d",
+    "semantic_hash": ""
+  },
+  "content/blog/google-ads-pmax-negative-keywords-kampagnen-2026.en.md": {
+    "mtime": 1791590022.122551,
+    "seen": 1792020517.0698314,
+    "ast_hash": "60513e79de4d646adcdea69d949227be",
+    "semantic_hash": ""
+  },
+  "content/blog/google-ads-pmax-negative-keywords-kampagnen-2026.tr.md": {
+    "mtime": 1791590022.122551,
+    "seen": 1792020517.0698318,
+    "ast_hash": "530262605124860144db3efbcf857654",
+    "semantic_hash": ""
+  },
+  "content/blog/google-ads-pmax-optimization.de.md": {
+    "mtime": 1791590022.1235497,
+    "seen": 1792020517.0698326,
+    "ast_hash": "5e567fff178792afd5e5d9e5bbcbe3dc",
+    "semantic_hash": ""
+  },
+  "content/blog/google-ads-pmax-optimization.en.md": {
+    "mtime": 1791590022.124554,
+    "seen": 1792020517.0698333,
+    "ast_hash": "0ff3082b2a708c1cc7a110de5ffd20dc",
+    "semantic_hash": ""
+  },
+  "content/blog/google-ads-pmax-optimization.tr.md": {
+    "mtime": 1791590022.124554,
+    "seen": 1792020517.0698338,
+    "ast_hash": "47b65a81b71477cd5c2e067c28a4d61c",
+    "semantic_hash": ""
+  },
+  "content/blog/google-ads-pmax-smart-bidding-guide-2026.de.md": {
+    "mtime": 1791590022.125554,
+    "seen": 1792020517.0698342,
+    "ast_hash": "de89517aecd20afb41f8bc256279a781",
+    "semantic_hash": ""
+  },
+  "content/blog/google-ads-pmax-smart-bidding-guide-2026.en.md": {
+    "mtime": 1791590022.126553,
+    "seen": 1792020517.0698347,
+    "ast_hash": "58302ece21a8415d4fcb81845e13f050",
+    "semantic_hash": ""
+  },
+  "content/blog/google-ads-pmax-smart-bidding-guide-2026.tr.md": {
+    "mtime": 1791932502.5267763,
+    "seen": 1792020517.0698352,
+    "ast_hash": "cb34dfe869a098e0fe9fa645545e0662",
+    "semantic_hash": ""
+  },
+  "content/blog/google-ads-rechnung-buchen-reverse-charge-2026.de.md": {
+    "mtime": 1791928976.6291335,
+    "seen": 1792020517.0698357,
+    "ast_hash": "26b35d64b2cde8332ee6d20709542f13",
+    "semantic_hash": ""
+  },
+  "content/blog/google-ads-rechnung-buchen-reverse-charge-2026.en.md": {
+    "mtime": 1791928985.7916894,
+    "seen": 1792020517.0698364,
+    "ast_hash": "70a199ca2e886227ffc3f8e101661e48",
+    "semantic_hash": ""
+  },
+  "content/blog/google-ads-rechnung-buchen-reverse-charge-2026.tr.md": {
+    "mtime": 1791928981.3166037,
+    "seen": 1792020517.0698369,
+    "ast_hash": "bc9f166024110b5f5cefe3430022f052",
+    "semantic_hash": ""
+  },
+  "content/blog/google-ads-reklamveren-dogrulamasi-rehberi-2026.de.md": {
+    "mtime": 1791590022.141054,
+    "seen": 1792020517.0698373,
+    "ast_hash": "ad30d2d685eea875955fcb8903c6e42f",
+    "semantic_hash": ""
+  },
+  "content/blog/google-ads-reklamveren-dogrulamasi-rehberi-2026.en.md": {
+    "mtime": 1791590022.1420598,
+    "seen": 1792020517.0698378,
+    "ast_hash": "2d7d03d0e51a8f58e97cea081718920f",
+    "semantic_hash": ""
+  },
+  "content/blog/google-ads-reklamveren-dogrulamasi-rehberi-2026.tr.md": {
+    "mtime": 1791590022.1420598,
+    "seen": 1792020517.0698383,
+    "ast_hash": "da1766c5d12c2a0d71ca4b518dd6cbff",
+    "semantic_hash": ""
+  },
+  "content/blog/google-ads-roi-tracking.de.md": {
+    "mtime": 1791590022.1460617,
+    "seen": 1792020517.069839,
+    "ast_hash": "f1d238f86199e9a35214785015a0c44c",
+    "semantic_hash": ""
+  },
+  "content/blog/google-ads-roi-tracking.en.md": {
+    "mtime": 1791590022.1480622,
+    "seen": 1792020517.0698397,
+    "ast_hash": "3a23ee51d9b1d706c811a2d6486c2d2c",
+    "semantic_hash": ""
+  },
+  "content/blog/google-ads-roi-tracking.tr.md": {
+    "mtime": 1791590022.1490636,
+    "seen": 1792020517.0698404,
+    "ast_hash": "ce40172f0128ed7ec38c1c7e3821bb93",
+    "semantic_hash": ""
+  },
+  "content/blog/google-ads-tiklama-cok-satis-yok-cozum-2026.de.md": {
+    "mtime": 1791590022.1600604,
+    "seen": 1792020517.069841,
+    "ast_hash": "68b4e7b81f6aeb2f15331d258ebecf7e",
+    "semantic_hash": ""
+  },
+  "content/blog/google-ads-tiklama-cok-satis-yok-cozum-2026.en.md": {
+    "mtime": 1791590022.1690602,
+    "seen": 1792020517.0698414,
+    "ast_hash": "c6b28c9887574add240f4939be3d54de",
+    "semantic_hash": ""
+  },
+  "content/blog/google-ads-tiklama-cok-satis-yok-cozum-2026.tr.md": {
+    "mtime": 1791932502.527778,
+    "seen": 1792020517.0698419,
+    "ast_hash": "e2aedfedfb9e79c7eae88cbd436eed6a",
+    "semantic_hash": ""
+  },
+  "content/blog/google-ai-overviews-geo-ranking-strategy.de.md": {
+    "mtime": 1791590022.17006,
+    "seen": 1792020517.0698423,
+    "ast_hash": "12264b06e7fe07033320855a6b6c6218",
+    "semantic_hash": ""
+  },
+  "content/blog/google-ai-overviews-geo-ranking-strategy.en.md": {
+    "mtime": 1791590022.171063,
+    "seen": 1792020517.0698433,
+    "ast_hash": "49cc5b12daa7a8a506e42a56e4624913",
+    "semantic_hash": ""
+  },
+  "content/blog/google-ai-overviews-geo-ranking-strategy.tr.md": {
+    "mtime": 1791590022.1720605,
+    "seen": 1792020517.0698438,
+    "ast_hash": "1d43ce9a6ffdf83c60decbe6ba33ad60",
+    "semantic_hash": ""
+  },
+  "content/blog/google-consent-mode-v2-cookieless-ai-tracking-2026.de.md": {
+    "mtime": 1791590022.1730614,
+    "seen": 1792020517.0698442,
+    "ast_hash": "27ccce7b6154c9a5f50cf8ba823f2c69",
+    "semantic_hash": ""
+  },
+  "content/blog/google-consent-mode-v2-cookieless-ai-tracking-2026.en.md": {
+    "mtime": 1791590022.1740606,
+    "seen": 1792020517.0698447,
+    "ast_hash": "92f7af5c057020b8cbce6ab1bb8051c5",
+    "semantic_hash": ""
+  },
+  "content/blog/google-consent-mode-v2-cookieless-ai-tracking-2026.tr.md": {
+    "mtime": 1791590022.1740606,
+    "seen": 1792020517.0698454,
+    "ast_hash": "d00562047d60d94ca8bf61dc23f11916",
+    "semantic_hash": ""
+  },
+  "content/blog/google-gemini-3-6-seo-ads-automation.de.md": {
+    "mtime": 1791590022.1750593,
+    "seen": 1792020517.069846,
+    "ast_hash": "0ee1ad25f38a1ea7394ef6ad9847e103",
+    "semantic_hash": ""
+  },
+  "content/blog/google-gemini-3-6-seo-ads-automation.en.md": {
+    "mtime": 1791590022.1760619,
+    "seen": 1792020517.0698466,
+    "ast_hash": "45fc167432347348a40f859151b5bead",
+    "semantic_hash": ""
+  },
+  "content/blog/google-gemini-3-6-seo-ads-automation.tr.md": {
+    "mtime": 1791590022.1760619,
+    "seen": 1792020517.0698469,
+    "ast_hash": "3ee5c84758be15be463b221bd31ad408",
+    "semantic_hash": ""
+  },
+  "content/blog/google-gemini-spark.de.md": {
+    "mtime": 1791590022.1770616,
+    "seen": 1792020517.0698476,
+    "ast_hash": "4740af16f99372abcf29e2180c022583",
+    "semantic_hash": ""
+  },
+  "content/blog/google-gemini-spark.en.md": {
+    "mtime": 1791590022.1790607,
+    "seen": 1792020517.069848,
+    "ast_hash": "8f77a2eaad2e3fd1ce8eb0c5975bab6f",
+    "semantic_hash": ""
+  },
+  "content/blog/google-gemini-spark.tr.md": {
+    "mtime": 1791590022.1790607,
+    "seen": 1792020517.0698485,
+    "ast_hash": "1ad84e8058d50ea3381df8ecff90c7ea",
+    "semantic_hash": ""
+  },
+  "content/blog/google-haritalar-yorum-toplama-qr-nfc-rehberi-2026.de.md": {
+    "mtime": 1791590022.1800609,
+    "seen": 1792020517.069849,
+    "ast_hash": "4cc1c68723a227d26f9c8398a08b5f2f",
+    "semantic_hash": ""
+  },
+  "content/blog/google-haritalar-yorum-toplama-qr-nfc-rehberi-2026.en.md": {
+    "mtime": 1791590022.1820614,
+    "seen": 1792020517.06985,
+    "ast_hash": "ef074aeb83c48e33d383ccea74223e54",
+    "semantic_hash": ""
+  },
+  "content/blog/google-haritalar-yorum-toplama-qr-nfc-rehberi-2026.tr.md": {
+    "mtime": 1791590022.1820614,
+    "seen": 1792020517.0698504,
+    "ast_hash": "95d4733e5868caa5b933dcbe2310ed1e",
+    "semantic_hash": ""
+  },
+  "content/blog/google-maps-local-seo-guide.de.md": {
+    "mtime": 1791590022.1920667,
+    "seen": 1792020517.069851,
+    "ast_hash": "7c828afece44287d88e800895c2fe55a",
+    "semantic_hash": ""
+  },
+  "content/blog/google-maps-local-seo-guide.en.md": {
+    "mtime": 1791590022.2000632,
+    "seen": 1792020517.0698514,
+    "ast_hash": "f8bfc23843b6c7d9e766477a9ce9a278",
+    "semantic_hash": ""
+  },
+  "content/blog/google-maps-local-seo-guide.tr.md": {
+    "mtime": 1791932502.5287845,
+    "seen": 1792020517.069852,
+    "ast_hash": "5ca1d8bda8374d5e404805f4d4db5703",
+    "semantic_hash": ""
+  },
+  "content/blog/google-maps-local-seo-ranking-factors-2026.de.md": {
+    "mtime": 1791590022.2025714,
+    "seen": 1792020517.0698526,
+    "ast_hash": "ec68e8ede3b2e233a918230c960a2319",
+    "semantic_hash": ""
+  },
+  "content/blog/google-maps-local-seo-ranking-factors-2026.en.md": {
+    "mtime": 1791590022.203572,
+    "seen": 1792020517.069853,
+    "ast_hash": "ef0aae2fade75a963fc5a3e54319cbda",
+    "semantic_hash": ""
+  },
+  "content/blog/google-maps-local-seo-ranking-factors-2026.tr.md": {
+    "mtime": 1791590022.203572,
+    "seen": 1792020517.0698538,
+    "ast_hash": "1f6c67d2d98d2be79291a8c63cec185f",
+    "semantic_hash": ""
+  },
+  "content/blog/google-merchant-center-urun-feed-aski-cozum-2026.de.md": {
+    "mtime": 1791590022.204573,
+    "seen": 1792020517.0698545,
+    "ast_hash": "730301b14e872c9be020b842b38c3b73",
+    "semantic_hash": ""
+  },
+  "content/blog/google-merchant-center-urun-feed-aski-cozum-2026.en.md": {
+    "mtime": 1791590022.2055714,
+    "seen": 1792020517.069855,
+    "ast_hash": "9d0d364a805a52542058217265f864f8",
+    "semantic_hash": ""
+  },
+  "content/blog/google-merchant-center-urun-feed-aski-cozum-2026.tr.md": {
+    "mtime": 1791590022.2055714,
+    "seen": 1792020517.0698555,
+    "ast_hash": "3160ea30de005985e642fc08d74a8fa7",
+    "semantic_hash": ""
+  },
+  "content/blog/google-seo-ranking-factors-2026.de.md": {
+    "mtime": 1791590022.2105708,
+    "seen": 1792020517.069856,
+    "ast_hash": "578c1d931210b8031963be09e726535b",
+    "semantic_hash": ""
+  },
+  "content/blog/google-seo-ranking-factors-2026.en.md": {
+    "mtime": 1791590022.2185767,
+    "seen": 1792020517.0698564,
+    "ast_hash": "f9fcc214e48ebf8a16dd09be45d8b424",
+    "semantic_hash": ""
+  },
+  "content/blog/google-seo-ranking-factors-2026.tr.md": {
+    "mtime": 1791590022.2195761,
+    "seen": 1792020517.0698574,
+    "ast_hash": "d269cb0988d68915fa5ae2851c4feafa",
+    "semantic_hash": ""
+  },
+  "content/blog/google-sge-search-ads-strategy.de.md": {
+    "mtime": 1791590022.2278202,
+    "seen": 1792020517.0698578,
+    "ast_hash": "9e5fa5f7e6e83dd7ff134e93dda06011",
+    "semantic_hash": ""
+  },
+  "content/blog/google-sge-search-ads-strategy.en.md": {
+    "mtime": 1791590022.2358248,
+    "seen": 1792020517.0698583,
+    "ast_hash": "12ba65a7ef96e567d2e0cbf1fdcf795b",
+    "semantic_hash": ""
+  },
+  "content/blog/google-sge-search-ads-strategy.tr.md": {
+    "mtime": 1791590022.236826,
+    "seen": 1792020517.0698588,
+    "ast_hash": "ac483aec3f313cc4b5af0da109adb907",
+    "semantic_hash": ""
+  },
+  "content/blog/kisitlanan-meta-business-manager-hesap-kurtarma-2026.de.md": {
+    "mtime": 1791590022.2426536,
+    "seen": 1792020517.0698595,
+    "ast_hash": "484f0354002dae29af167a6bcb10af7c",
+    "semantic_hash": ""
+  },
+  "content/blog/kisitlanan-meta-business-manager-hesap-kurtarma-2026.en.md": {
+    "mtime": 1791590022.2436604,
+    "seen": 1792020517.06986,
+    "ast_hash": "ce4e66e74a5dc8cd504443844b0c9d89",
+    "semantic_hash": ""
+  },
+  "content/blog/kisitlanan-meta-business-manager-hesap-kurtarma-2026.tr.md": {
+    "mtime": 1791590022.2436604,
+    "seen": 1792020517.0698607,
+    "ast_hash": "f6a8ddcc370bb449f58c09db440e8f69",
+    "semantic_hash": ""
+  },
+  "content/blog/klinikler-doktorlar-google-ads-saglik-pazarlamasi-2026.de.md": {
+    "mtime": 1791590022.252659,
+    "seen": 1792020517.0698612,
+    "ast_hash": "e74bd16d2c407b5c7213d3a576200361",
+    "semantic_hash": ""
+  },
+  "content/blog/klinikler-doktorlar-google-ads-saglik-pazarlamasi-2026.en.md": {
+    "mtime": 1791590022.259667,
+    "seen": 1792020517.069862,
+    "ast_hash": "7eb9dad84afed6fbda89e7d4a5024557",
+    "semantic_hash": ""
+  },
+  "content/blog/klinikler-doktorlar-google-ads-saglik-pazarlamasi-2026.tr.md": {
+    "mtime": 1791932502.5307822,
+    "seen": 1792020517.0698624,
+    "ast_hash": "e0fc8c42b8400abb6fc1ff9b0c7f9d15",
+    "semantic_hash": ""
+  },
+  "content/blog/linkedin-ads-b2b-abm-strategy.de.md": {
+    "mtime": 1791590022.270203,
+    "seen": 1792020517.0698628,
+    "ast_hash": "5d43e145ef1219058c111c7d67c9b2a5",
+    "semantic_hash": ""
+  },
+  "content/blog/linkedin-ads-b2b-abm-strategy.en.md": {
+    "mtime": 1791590022.2782092,
+    "seen": 1792020517.0698638,
+    "ast_hash": "5b5202be3e03042c082884f478ee2630",
+    "semantic_hash": ""
+  },
+  "content/blog/linkedin-ads-b2b-abm-strategy.tr.md": {
+    "mtime": 1791590022.2782092,
+    "seen": 1792020517.0698643,
+    "ast_hash": "b3dbade9e82f2b84d0b06df7aa99d37a",
+    "semantic_hash": ""
+  },
+  "content/blog/local-seo-google-maps.de.md": {
+    "mtime": 1791590022.2792082,
+    "seen": 1792020517.0698647,
+    "ast_hash": "09669e7186a77900752c7f87005756b9",
+    "semantic_hash": ""
+  },
+  "content/blog/local-seo-google-maps.en.md": {
+    "mtime": 1791590022.280208,
+    "seen": 1792020517.0698652,
+    "ast_hash": "305c0468de84ac2b220bfda8d2793c33",
+    "semantic_hash": ""
+  },
+  "content/blog/local-seo-google-maps.tr.md": {
+    "mtime": 1791590022.280208,
+    "seen": 1792020517.069866,
+    "ast_hash": "40b7d52ac7bb3a67851b6153bf2308c5",
+    "semantic_hash": ""
+  },
+  "content/blog/meta-ads-beratung-skalierung.de.md": {
+    "mtime": 1791590022.2882383,
+    "seen": 1792020517.0698664,
+    "ast_hash": "b5499a5011c56674d3654462dedd8223",
+    "semantic_hash": ""
+  },
+  "content/blog/meta-ads-beratung-skalierung.en.md": {
+    "mtime": 1791590022.2949421,
+    "seen": 1792020517.069867,
+    "ast_hash": "ff854b96f3e37cd234e6c9ac73f2cabb",
+    "semantic_hash": ""
+  },
+  "content/blog/meta-ads-beratung-skalierung.tr.md": {
+    "mtime": 1791590022.2954588,
+    "seen": 1792020517.0698676,
+    "ast_hash": "28a1f4f95af10ee4e50b58ea3dd45d37",
+    "semantic_hash": ""
+  },
+  "content/blog/meta-ads-retargeting-funnels.de.md": {
+    "mtime": 1791590022.2964947,
+    "seen": 1792020517.069868,
+    "ast_hash": "2f642f2148bf7fb9d2f9189cc16bf18c",
+    "semantic_hash": ""
+  },
+  "content/blog/meta-ads-retargeting-funnels.en.md": {
+    "mtime": 1791590022.297529,
+    "seen": 1792020517.0698686,
+    "ast_hash": "1eb4e72014ed0ff5640423503fcae6c8",
+    "semantic_hash": ""
+  },
+  "content/blog/meta-ads-retargeting-funnels.tr.md": {
+    "mtime": 1791590022.297529,
+    "seen": 1792020517.0698693,
+    "ast_hash": "dd03b493aa0fd11d72f35b656029777d",
+    "semantic_hash": ""
+  },
+  "content/blog/meta-advantage-plus-ai-creative-scaling.de.md": {
+    "mtime": 1791590022.298536,
+    "seen": 1792020517.0698698,
+    "ast_hash": "bd7ea59c6d1b86bad145d6c0904875f6",
+    "semantic_hash": ""
+  },
+  "content/blog/meta-advantage-plus-ai-creative-scaling.en.md": {
+    "mtime": 1791590022.300086,
+    "seen": 1792020517.0698702,
+    "ast_hash": "58f9063428ef46e828331905ad24819d",
+    "semantic_hash": ""
+  },
+  "content/blog/meta-advantage-plus-ai-creative-scaling.tr.md": {
+    "mtime": 1791590022.300086,
+    "seen": 1792020517.069871,
+    "ast_hash": "39f5e2bc8d63b3a0f35c77320cdf76e8",
+    "semantic_hash": ""
+  },
+  "content/blog/meta-advantage-plus-creative-ai-2026.de.md": {
+    "mtime": 1791590022.3016493,
+    "seen": 1792020517.0698714,
+    "ast_hash": "d8b0aa079a6b8bb4a74087d2e64479ce",
+    "semantic_hash": ""
+  },
+  "content/blog/meta-advantage-plus-creative-ai-2026.en.md": {
+    "mtime": 1791590022.3026557,
+    "seen": 1792020517.069872,
+    "ast_hash": "7ca7cdc7b25fc6202d498848f0fddc78",
+    "semantic_hash": ""
+  },
+  "content/blog/meta-advantage-plus-creative-ai-2026.tr.md": {
+    "mtime": 1791932502.5327823,
+    "seen": 1792020517.0698724,
+    "ast_hash": "9ac5e4d2687cb5bfedec00387fef81b7",
+    "semantic_hash": ""
+  },
+  "content/blog/meta-advantage-plus-shopping-optimization.de.md": {
+    "mtime": 1791590022.3091376,
+    "seen": 1792020517.0698733,
+    "ast_hash": "58f0d61f6f381555ae46b0bac9acb42d",
+    "semantic_hash": ""
+  },
+  "content/blog/meta-advantage-plus-shopping-optimization.en.md": {
+    "mtime": 1791590022.316138,
+    "seen": 1792020517.0698738,
+    "ast_hash": "0414823ceaac61c9b82fc5035501f5ee",
+    "semantic_hash": ""
+  },
+  "content/blog/meta-advantage-plus-shopping-optimization.tr.md": {
+    "mtime": 1791590022.3171408,
+    "seen": 1792020517.0698743,
+    "ast_hash": "210437fc221f44cbbebe5553f4a3c8f4",
+    "semantic_hash": ""
+  },
+  "content/blog/meta-reklamlarinda-para-kaybetmeyi-durdurun-2026.de.md": {
+    "mtime": 1791590022.3261425,
+    "seen": 1792020517.0698748,
+    "ast_hash": "8ac26b8ee17174b8563946b814e28cf0",
+    "semantic_hash": ""
+  },
+  "content/blog/meta-reklamlarinda-para-kaybetmeyi-durdurun-2026.en.md": {
+    "mtime": 1791590022.3361392,
+    "seen": 1792020517.0698755,
+    "ast_hash": "3906f03a6212cddf9243d335cd34b285",
+    "semantic_hash": ""
+  },
+  "content/blog/meta-reklamlarinda-para-kaybetmeyi-durdurun-2026.tr.md": {
+    "mtime": 1791932502.5327823,
+    "seen": 1792020517.069876,
+    "ast_hash": "dfce5150239028464925b53715a5135e",
+    "semantic_hash": ""
+  },
+  "content/blog/olumsuz-yorum-yonetimi.de.md": {
+    "mtime": 1791590022.337139,
+    "seen": 1792020517.0698767,
+    "ast_hash": "20cd33c353ecd92f5937aadf4a1c69d0",
+    "semantic_hash": ""
+  },
+  "content/blog/olumsuz-yorum-yonetimi.en.md": {
+    "mtime": 1791590022.3381376,
+    "seen": 1792020517.0698798,
+    "ast_hash": "934fa3f433be0eba5eb375fed02e82aa",
+    "semantic_hash": ""
+  },
+  "content/blog/olumsuz-yorum-yonetimi.tr.md": {
+    "mtime": 1791590022.3391383,
+    "seen": 1792020517.0698805,
+    "ast_hash": "ba65fc7d30c5cf679a997895c4bd63da",
+    "semantic_hash": ""
+  },
+  "content/blog/pinterest-ads-ecommerce-scaling.de.md": {
+    "mtime": 1791590022.347139,
+    "seen": 1792020517.0698812,
+    "ast_hash": "9a16b7ff965fb1b13cbb51cc7eb15846",
+    "semantic_hash": ""
+  },
+  "content/blog/pinterest-ads-ecommerce-scaling.en.md": {
+    "mtime": 1791590022.3541403,
+    "seen": 1792020517.0698817,
+    "ast_hash": "a67b7495647d68f1bbf3510fe9d93aaf",
+    "semantic_hash": ""
+  },
+  "content/blog/pinterest-ads-ecommerce-scaling.tr.md": {
+    "mtime": 1791590022.355139,
+    "seen": 1792020517.0698822,
+    "ast_hash": "366b191c2392dc14ba693359f4c382f3",
+    "semantic_hash": ""
+  },
+  "content/blog/pinterest-ads-visual-marketing.de.md": {
+    "mtime": 1791590022.3561378,
+    "seen": 1792020517.0698826,
+    "ast_hash": "52af5690d98650543817f9e91f43321c",
+    "semantic_hash": ""
+  },
+  "content/blog/pinterest-ads-visual-marketing.en.md": {
+    "mtime": 1791590022.357137,
+    "seen": 1792020517.069883,
+    "ast_hash": "7c325339911ed7d87951fac311166c52",
+    "semantic_hash": ""
+  },
+  "content/blog/pinterest-ads-visual-marketing.tr.md": {
+    "mtime": 1791932502.5337844,
+    "seen": 1792020517.0698836,
+    "ast_hash": "56fc165305844e514c0d926d32d1b91c",
+    "semantic_hash": ""
+  },
+  "content/blog/programmatic-seo-ai-content-hubs.de.md": {
+    "mtime": 1791590022.358137,
+    "seen": 1792020517.069884,
+    "ast_hash": "1cd18cb24b412a0ee299e5a08b17eed1",
+    "semantic_hash": ""
+  },
+  "content/blog/programmatic-seo-ai-content-hubs.en.md": {
+    "mtime": 1791590022.358137,
+    "seen": 1792020517.0698848,
+    "ast_hash": "5f7db1bab8e68a5749c66bdb5dfe0967",
+    "semantic_hash": ""
+  },
+  "content/blog/programmatic-seo-ai-content-hubs.tr.md": {
+    "mtime": 1791590022.3591375,
+    "seen": 1792020517.0698853,
+    "ast_hash": "78e627febe22dd5646cfa3ae92068431",
+    "semantic_hash": ""
+  },
+  "content/blog/ramazan-kurban-zekat-bagis-reklam-stratejileri-2026.de.md": {
+    "mtime": 1791590022.3661394,
+    "seen": 1792020517.0698857,
+    "ast_hash": "91cda3bb3606452f2904b6f4233def3f",
+    "semantic_hash": ""
+  },
+  "content/blog/ramazan-kurban-zekat-bagis-reklam-stratejileri-2026.en.md": {
+    "mtime": 1791590022.3736565,
+    "seen": 1792020517.0698862,
+    "ast_hash": "998a3cf8146ea95b685ff50db5542437",
+    "semantic_hash": ""
+  },
+  "content/blog/ramazan-kurban-zekat-bagis-reklam-stratejileri-2026.tr.md": {
+    "mtime": 1791590022.3736565,
+    "seen": 1792020517.0698867,
+    "ast_hash": "bcc4700a5e86bfabf2292eeef567fc67",
+    "semantic_hash": ""
+  },
+  "content/blog/sanatcilar-muzisyenler-youtube-ads-klip-tanitimi-2026.de.md": {
+    "mtime": 1791590022.3836598,
+    "seen": 1792020517.0698874,
+    "ast_hash": "ce81dc06de68468b391e70239230b941",
+    "semantic_hash": ""
+  },
+  "content/blog/sanatcilar-muzisyenler-youtube-ads-klip-tanitimi-2026.en.md": {
+    "mtime": 1791590022.3916612,
+    "seen": 1792020517.0698884,
+    "ast_hash": "a84e98b515f2548741e29ade4096172f",
+    "semantic_hash": ""
+  },
+  "content/blog/sanatcilar-muzisyenler-youtube-ads-klip-tanitimi-2026.tr.md": {
+    "mtime": 1791590022.3916612,
+    "seen": 1792020517.0698888,
+    "ast_hash": "f1718a7dfcbd231842ad1ee64e9f44af",
+    "semantic_hash": ""
+  },
+  "content/blog/server-side-gtm-meta-capi-setup-2026.de.md": {
+    "mtime": 1791590022.3926606,
+    "seen": 1792020517.0698893,
+    "ast_hash": "d3ff363ddaaf5e3bbb8c7f10f5349344",
+    "semantic_hash": ""
+  },
+  "content/blog/server-side-gtm-meta-capi-setup-2026.en.md": {
+    "mtime": 1791590022.39366,
+    "seen": 1792020517.06989,
+    "ast_hash": "35820ed2578ce1210b791a728e3b86ff",
+    "semantic_hash": ""
+  },
+  "content/blog/server-side-gtm-meta-capi-setup-2026.tr.md": {
+    "mtime": 1791932502.534783,
+    "seen": 1792020517.0698903,
+    "ast_hash": "3d3618dc46c561a138c8fb07a657e542",
+    "semantic_hash": ""
+  },
+  "content/blog/server-side-tracking-capi-guide.de.md": {
+    "mtime": 1791590022.4036877,
+    "seen": 1792020517.0698907,
+    "ast_hash": "51491050f8401a5102bf8d5ea4ee88d8",
+    "semantic_hash": ""
+  },
+  "content/blog/server-side-tracking-capi-guide.en.md": {
+    "mtime": 1791590022.4116874,
+    "seen": 1792020517.0698917,
+    "ast_hash": "87d483fb2f1fdb7f9ea38651e8873411",
+    "semantic_hash": ""
+  },
+  "content/blog/server-side-tracking-capi-guide.tr.md": {
+    "mtime": 1791590022.4116874,
+    "seen": 1792020517.0698922,
+    "ast_hash": "95f71ab79d828b92ad3272f8f1faf585",
+    "semantic_hash": ""
+  },
+  "content/blog/server-side-tracking-first-party-ai-attribution.de.md": {
+    "mtime": 1791590022.4126928,
+    "seen": 1792020517.0698926,
+    "ast_hash": "abd8c18383014de8514245034a254d3c",
+    "semantic_hash": ""
+  },
+  "content/blog/server-side-tracking-first-party-ai-attribution.en.md": {
+    "mtime": 1791590022.420691,
+    "seen": 1792020517.0698931,
+    "ast_hash": "475b913abd3d4b113af81cdcd5396d24",
+    "semantic_hash": ""
+  },
+  "content/blog/server-side-tracking-first-party-ai-attribution.tr.md": {
+    "mtime": 1791590022.420691,
+    "seen": 1792020517.0698936,
+    "ast_hash": "0d3ba9347b3aeeca3ca4b4d7f89be062",
+    "semantic_hash": ""
+  },
+  "content/blog/su-kuyusu-yetim-bagis-hunisi-donation-funnel-2026.de.md": {
+    "mtime": 1791590022.4289644,
+    "seen": 1792020517.069894,
+    "ast_hash": "e9f90eaeb2933417a25143bc37693045",
+    "semantic_hash": ""
+  },
+  "content/blog/su-kuyusu-yetim-bagis-hunisi-donation-funnel-2026.en.md": {
+    "mtime": 1791590022.4359713,
+    "seen": 1792020517.0698946,
+    "ast_hash": "f49752e382c281beb26c6eb3431b8be6",
+    "semantic_hash": ""
+  },
+  "content/blog/su-kuyusu-yetim-bagis-hunisi-donation-funnel-2026.tr.md": {
+    "mtime": 1791590022.4359713,
+    "seen": 1792020517.0698953,
+    "ast_hash": "8b0ad7061bfc1c65301fafbe350459d5",
+    "semantic_hash": ""
+  },
+  "content/blog/tiktok-shop-ecommerce-scaling.de.md": {
+    "mtime": 1791590022.4462073,
+    "seen": 1792020517.0698957,
+    "ast_hash": "b0fb88ff0faba9eed59d8e7689786fb9",
+    "semantic_hash": ""
+  },
+  "content/blog/tiktok-shop-ecommerce-scaling.en.md": {
+    "mtime": 1791590022.4538338,
+    "seen": 1792020517.0698962,
+    "ast_hash": "ca3c31f6d0bd7b1f628b59be7f36d3b2",
+    "semantic_hash": ""
+  },
+  "content/blog/tiktok-shop-ecommerce-scaling.tr.md": {
+    "mtime": 1791590022.4538338,
+    "seen": 1792020517.069897,
+    "ast_hash": "b1fdf7f18b2e2a6f748a75b69450c66d",
+    "semantic_hash": ""
+  },
+  "content/blog/tiktok-shop-social-commerce.de.md": {
+    "mtime": 1791590022.454839,
+    "seen": 1792020517.0698974,
+    "ast_hash": "df6ad17e709d599c6222495103436747",
+    "semantic_hash": ""
+  },
+  "content/blog/tiktok-shop-social-commerce.en.md": {
+    "mtime": 1791590022.4558392,
+    "seen": 1792020517.0698977,
+    "ast_hash": "3d5ccfbcf4585400c9ea815b53376d49",
+    "semantic_hash": ""
+  },
+  "content/blog/tiktok-shop-social-commerce.tr.md": {
+    "mtime": 1791590022.4558392,
+    "seen": 1792020517.0698981,
+    "ast_hash": "ad6b8aed83d3d561b45ee200afb9f97d",
+    "semantic_hash": ""
+  },
+  "content/blog/tiktok-shop-vs-meta-advantage-plus-e-commerce-2026.de.md": {
+    "mtime": 1791590022.464888,
+    "seen": 1792020517.0698988,
+    "ast_hash": "fc865312fc365c45e5d6bb5aba8321f8",
+    "semantic_hash": ""
+  },
+  "content/blog/tiktok-shop-vs-meta-advantage-plus-e-commerce-2026.en.md": {
+    "mtime": 1791590022.47358,
+    "seen": 1792020517.0698993,
+    "ast_hash": "e589da66fd6fb18037a6f5d5b667758d",
+    "semantic_hash": ""
+  },
+  "content/blog/tiktok-shop-vs-meta-advantage-plus-e-commerce-2026.tr.md": {
+    "mtime": 1791932502.5367832,
+    "seen": 1792020517.0698998,
+    "ast_hash": "f8064132cd4912ed3627f9564219641a",
+    "semantic_hash": ""
+  },
+  "content/blog/turkiyeden-almanya-pazarina-google-ads-rehberi-2026.de.md": {
+    "mtime": 1791590022.481584,
+    "seen": 1792020517.0699003,
+    "ast_hash": "32896f32a0aa06330f8dd737da39dc12",
+    "semantic_hash": ""
+  },
+  "content/blog/turkiyeden-almanya-pazarina-google-ads-rehberi-2026.en.md": {
+    "mtime": 1791590022.4875846,
+    "seen": 1792020517.0699008,
+    "ast_hash": "09100f7036119a72b50ea353cc1e670a",
+    "semantic_hash": ""
+  },
+  "content/blog/turkiyeden-almanya-pazarina-google-ads-rehberi-2026.tr.md": {
+    "mtime": 1791932502.5367832,
+    "seen": 1792020517.0699012,
+    "ast_hash": "6017dd8ff96499d95758f524cf71896b",
+    "semantic_hash": ""
+  },
+  "content/blog/x-live-studio-streaming-rewards.de.md": {
+    "mtime": 1791590022.488583,
+    "seen": 1792020517.069902,
+    "ast_hash": "8230ce8ed13c79e032ac78d15341b43d",
+    "semantic_hash": ""
+  },
+  "content/blog/x-live-studio-streaming-rewards.en.md": {
+    "mtime": 1791590022.4895828,
+    "seen": 1792020517.0699027,
+    "ast_hash": "2181d57c222de99028c4c4e4c712327f",
+    "semantic_hash": ""
+  },
+  "content/blog/x-live-studio-streaming-rewards.tr.md": {
+    "mtime": 1791590022.4895828,
+    "seen": 1792020517.0699031,
+    "ast_hash": "481333c854c39e9a0a4a22b88cd5aea9",
+    "semantic_hash": ""
+  },
+  "content/blog/x-twitter-ads.de.md": {
+    "mtime": 1791590022.4905832,
+    "seen": 1792020517.0699036,
+    "ast_hash": "4f6f6d9891f9a2114c7d77984286fdc9",
+    "semantic_hash": ""
+  },
+  "content/blog/x-twitter-ads.en.md": {
+    "mtime": 1791590022.491583,
+    "seen": 1792020517.069904,
+    "ast_hash": "b2788c8857e2a7906464aae016c5cddc",
+    "semantic_hash": ""
+  },
+  "content/blog/x-twitter-ads.tr.md": {
+    "mtime": 1791590022.491583,
+    "seen": 1792020517.0699046,
+    "ast_hash": "dccfd844e7eb3a17091f73ea10dc7bc3",
+    "semantic_hash": ""
+  },
+  "content/blog/x-twitter-b2b-musteri-kazanma-rehberi-2026.de.md": {
+    "mtime": 1791590022.4998374,
+    "seen": 1792020517.0699055,
+    "ast_hash": "ff2b67f37bb53f81409b5e7597ca2c0c",
+    "semantic_hash": ""
+  },
+  "content/blog/x-twitter-b2b-musteri-kazanma-rehberi-2026.en.md": {
+    "mtime": 1791590022.509868,
+    "seen": 1792020517.069906,
+    "ast_hash": "25fcd9d8e4abc7e2a649f53499c13fbc",
+    "semantic_hash": ""
+  },
+  "content/blog/x-twitter-b2b-musteri-kazanma-rehberi-2026.tr.md": {
+    "mtime": 1791590022.509868,
+    "seen": 1792020517.0699065,
+    "ast_hash": "d2adf7d91a99cc06d15d627ac5d02b68",
+    "semantic_hash": ""
+  },
+  "content/blog/youtube-24-agustos-2026-goruntuleme-algoritmasi-guncellemesi.de.md": {
+    "mtime": 1791590022.5108674,
+    "seen": 1792020517.069907,
+    "ast_hash": "e04fa6ee5dece8654f7b6f3b22833c69",
+    "semantic_hash": ""
+  },
+  "content/blog/youtube-24-agustos-2026-goruntuleme-algoritmasi-guncellemesi.en.md": {
+    "mtime": 1791590022.5168684,
+    "seen": 1792020517.0699074,
+    "ast_hash": "d1635e2e14ebb5c177cd5e956f94ef4b",
+    "semantic_hash": ""
+  },
+  "content/blog/youtube-24-agustos-2026-goruntuleme-algoritmasi-guncellemesi.tr.md": {
+    "mtime": 1791932502.5377846,
+    "seen": 1792020517.069908,
+    "ast_hash": "4b0357b4500c9e44489243749fa6385f",
+    "semantic_hash": ""
+  },
+  "content/blog/youtube-ads-video-views-channel-growth-2026.de.md": {
+    "mtime": 1791590022.5238657,
+    "seen": 1792020517.0699084,
+    "ast_hash": "8792c76f1a1a61514ae64e9f1ac67d8a",
+    "semantic_hash": ""
+  },
+  "content/blog/youtube-ads-video-views-channel-growth-2026.en.md": {
+    "mtime": 1791590022.5298688,
+    "seen": 1792020517.069909,
+    "ast_hash": "a6b6a789ea3ffbdbeddcc936b5f841a5",
+    "semantic_hash": ""
+  },
+  "content/blog/youtube-ads-video-views-channel-growth-2026.tr.md": {
+    "mtime": 1791590022.5308685,
+    "seen": 1792020517.0699096,
+    "ast_hash": "6655113005df03d1df7ec10bb9770552",
+    "semantic_hash": ""
+  },
+  "content/blog/youtube-shorts-video-ads-conversion.de.md": {
+    "mtime": 1791590022.537869,
+    "seen": 1792020517.06991,
+    "ast_hash": "31893bd52290ca3142a0475496f44f61",
+    "semantic_hash": ""
+  },
+  "content/blog/youtube-shorts-video-ads-conversion.en.md": {
+    "mtime": 1791590022.5453787,
+    "seen": 1792020517.0699105,
+    "ast_hash": "a2d00be16d4883c7a0b32dc5339af9d3",
+    "semantic_hash": ""
+  },
+  "content/blog/youtube-shorts-video-ads-conversion.tr.md": {
+    "mtime": 1791932502.538784,
+    "seen": 1792020517.069911,
+    "ast_hash": "11b95c39994c626547a592fe02caf8b9",
+    "semantic_hash": ""
+  },
+  "content/blog_archived/meta-ads-basari.de.md": {
+    "mtime": 1788471911.7089927,
+    "seen": 1792020517.0699115,
+    "ast_hash": "1ce9be987604d7a93efc2b8003f41a41",
+    "semantic_hash": ""
+  },
+  "content/blog_archived/meta-ads-basari.en.md": {
+    "mtime": 1787363324.1109362,
+    "seen": 1792020517.069912,
+    "ast_hash": "88a324aada66a10de92e582a0b59202b",
+    "semantic_hash": ""
+  },
+  "content/blog_archived/meta-ads-basari.tr.md": {
+    "mtime": 1787363324.0899296,
+    "seen": 1792020517.0699127,
+    "ast_hash": "50904a8f0349081b390cb18537ccb4ae",
+    "semantic_hash": ""
+  },
+  "content/blog_archived/seo-stratejileri-2026.de.md": {
+    "mtime": 1788471911.841019,
+    "seen": 1792020517.0699134,
+    "ast_hash": "feb23361fae7532006205c67dbbdf508",
+    "semantic_hash": ""
+  },
+  "content/blog_archived/seo-stratejileri-2026.en.md": {
+    "mtime": 1787363324.3249555,
+    "seen": 1792020517.0699139,
+    "ast_hash": "02f72b71b50e5cce72532332041e78ed",
+    "semantic_hash": ""
+  },
+  "content/blog_archived/seo-stratejileri-2026.tr.md": {
+    "mtime": 1787363324.303445,
+    "seen": 1792020517.0699143,
+    "ast_hash": "d2603d980fd0e94d3b56b2d709156cb3",
+    "semantic_hash": ""
+  },
+  "content/blog_archived/tiktok-ads-rehber.de.md": {
+    "mtime": 1788471911.8876297,
+    "seen": 1792020517.0699148,
+    "ast_hash": "f5ed40ba93e094d43a56c44c29b6d972",
+    "semantic_hash": ""
+  },
+  "content/blog_archived/tiktok-ads-rehber.en.md": {
+    "mtime": 1787363324.5442438,
+    "seen": 1792020517.0699153,
+    "ast_hash": "626032bc85a0be07cb41651d0fb39e2c",
+    "semantic_hash": ""
+  },
+  "content/blog_archived/tiktok-ads-rehber.tr.md": {
+    "mtime": 1787363324.5210946,
+    "seen": 1792020517.069916,
+    "ast_hash": "0b687859c3d578d99d6a64df95df7d91",
+    "semantic_hash": ""
+  },
+  "memory/PRD.md": {
+    "mtime": 1782859743.3467333,
+    "seen": 1792020517.0699165,
+    "ast_hash": "0fde7686ab9a7b4049c0412a40b5ee80",
+    "semantic_hash": ""
+  },
+  "public/7a3cefaeeed24a1e9a2d8d135a935481.txt": {
+    "mtime": 1787278302.6955006,
+    "seen": 1792020517.069917,
+    "ast_hash": "590a7e5433009021c5b3d4b30d59a04a",
+    "semantic_hash": ""
+  },
+  "public/llms-full.txt": {
+    "mtime": 1791932502.5417824,
+    "seen": 1792020517.0699174,
+    "ast_hash": "45fcce5092f757a1d3b8b78e8ce2068d",
+    "semantic_hash": ""
+  },
+  "public/llms.txt": {
+    "mtime": 1791404015.3553774,
+    "seen": 1792020517.0699182,
+    "ast_hash": "7a553ea3971dc0fd7da407613b056194",
+    "semantic_hash": ""
+  },
+  "public/pricing.md": {
+    "mtime": 1791404021.5759857,
+    "seen": 1792020517.0699186,
+    "ast_hash": "faa70e3c0424e9ae844b0768a74a6472",
+    "semantic_hash": ""
+  },
+  "public/robots.txt": {
+    "mtime": 1790623983.5850854,
+    "seen": 1792020517.0699193,
+    "ast_hash": "2f4652978b300ee0ca00d6f1afaa8bae",
+    "semantic_hash": ""
+  },
+  "test_result.md": {
+    "mtime": 1782859743.3627372,
+    "seen": 1792020517.0699198,
+    "ast_hash": "260454560649db9093cc68db2c331e68",
+    "semantic_hash": ""
+  },
+  "public/android-chrome-192x192.png": {
+    "mtime": 1782859743.3477333,
+    "seen": 1792020517.0699205,
+    "ast_hash": "3fcb2fe128f39c6cb98ff2b74e9f3094",
+    "semantic_hash": ""
+  },
+  "public/android-chrome-512x512.png": {
+    "mtime": 1782859743.3487332,
+    "seen": 1792020517.069921,
+    "ast_hash": "10a83507a074edda55f0862bf77cf95b",
+    "semantic_hash": ""
+  },
+  "public/apple-touch-icon.png": {
+    "mtime": 1782859743.3487332,
+    "seen": 1792020517.0699215,
+    "ast_hash": "79333dd1a5e6790c00f8a718002cd3e1",
+    "semantic_hash": ""
+  },
+  "public/favicon-16x16.png": {
+    "mtime": 1782859743.3487332,
+    "seen": 1792020517.0699222,
+    "ast_hash": "aea1f7dc2593a126fecdd00633681368",
+    "semantic_hash": ""
+  },
+  "public/favicon-32x32.png": {
+    "mtime": 1782859743.3497334,
+    "seen": 1792020517.069923,
+    "ast_hash": "a0473ec3bdeaee7a96e49bb8fae6718d",
+    "semantic_hash": ""
+  },
+  "public/favicon-48x48.png": {
+    "mtime": 1782859743.3497334,
+    "seen": 1792020517.0699234,
+    "ast_hash": "733cc869c0180e8964e291a6c373edfa",
+    "semantic_hash": ""
+  },
+  "public/favicon.png": {
+    "mtime": 1782859743.354737,
+    "seen": 1792020517.0699239,
+    "ast_hash": "017f2c6bed4e8d06b9e4444f31f9f8fc",
+    "semantic_hash": ""
+  },
+  "public/hero-mobile.webp": {
+    "mtime": 1782859743.354737,
+    "seen": 1792020517.0699244,
+    "ast_hash": "20e22098710a146041d377861aad414f",
+    "semantic_hash": ""
+  },
+  "public/hero.jpg": {
+    "mtime": 1782859743.3557403,
+    "seen": 1792020517.069925,
+    "ast_hash": "a4c092d8a8aa5b40f8d088e02655d3ea",
+    "semantic_hash": ""
+  },
+  "public/hero.webp": {
+    "mtime": 1782859743.3557403,
+    "seen": 1792020517.0699255,
+    "ast_hash": "9742bee812f01890be941f7a7afaaa51",
+    "semantic_hash": ""
+  },
+  "public/logo-md.webp": {
+    "mtime": 1782859743.3557403,
+    "seen": 1792020517.0699263,
+    "ast_hash": "010f4e39ac220bc9ffea66f24929a5fc",
+    "semantic_hash": ""
+  },
+  "public/logo-og.png": {
+    "mtime": 1782859743.3567407,
+    "seen": 1792020517.069927,
+    "ast_hash": "3abc27a28462c6eecf167b140d861631",
+    "semantic_hash": ""
+  },
+  "public/logo-sm.webp": {
+    "mtime": 1782859743.3567407,
+    "seen": 1792020517.0699275,
+    "ast_hash": "046d23fe62175b957b90b60ff8e76f30",
+    "semantic_hash": ""
+  },
+  "public/logo.png": {
+    "mtime": 1782859743.360744,
+    "seen": 1792020517.069928,
+    "ast_hash": "017f2c6bed4e8d06b9e4444f31f9f8fc",
+    "semantic_hash": ""
+  },
+  "public/proof/google-ads-1-13m-spend-208k-conv.png": {
+    "mtime": 1787689387.8115318,
+    "seen": 1792020517.0699284,
+    "ast_hash": "92fe81ab8c1add5e95536f9f71e2b8af",
+    "semantic_hash": ""
+  },
+  "public/proof/google-ads-roas-1104.png": {
+    "mtime": 1787689387.8104827,
+    "seen": 1792020517.069929,
+    "ast_hash": "efe1bb2113bcaa2117969b0c52e412c6",
+    "semantic_hash": ""
+  },
+  "public/proof/youtube-ads-19m-views.png": {
+    "mtime": 1787689387.812575,
+    "seen": 1792020517.0699294,
+    "ast_hash": "78c967f341b470b032e291ec0f8a2742",
+    "semantic_hash": ""
+  },
+  "public/proof/youtube-ads-23m-views-720-campaigns.png": {
+    "mtime": 1787689387.813619,
+    "seen": 1792020517.06993,
+    "ast_hash": "ec4c5159137cd5d5ffeaf98ec79218d3",
+    "semantic_hash": ""
+  },
+  "public/x-live-studio-cover.png": {
+    "mtime": 1783039673.2456174,
+    "seen": 1792020517.0699306,
+    "ast_hash": "2984b9e33e3fb070ab717c89e41b1a24",
+    "semantic_hash": ""
+  }
+}

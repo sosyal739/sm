@@ -1,8 +1,8 @@
 ---
 slug: "google-ads-meta-ads-betriebsausgabe-finanzamt-leitfaden-2026"
 lang: "de"
-title: "Google & Meta Ads beim Finanzamt als Betriebsausgabe absetzen"
-excerpt: "Google Ads & Meta Ads Rechnungen als Betriebsausgabe beim Finanzamt absetzen. Leitfaden zu Reverse Charge §13b UStG, Vorsteuer & Rechnungs-Download 2026."
+title: "Google & Meta Ads absetzen 2026: Betriebsausgabe (§4 EStG)"
+excerpt: "Google Ads & Meta Werbekosten beim Finanzamt absetzen: 100 % Betriebsausgabe (§ 4 EStG), Reverse Charge § 13b UStG, Vorsteuer & Rechnungs-Download 2026."
 category: "Steuern & Buchhaltung"
 date: "2026-10-12"
 readTime: "11"
@@ -15,6 +15,23 @@ coverImage: "https://images.unsplash.com/photo-1556742111-a301076d9d18?w=1200&h=
 
 <div class="lead">
 <p>Marketingausgaben sind für deutsche Unternehmen unverzichtbar, um im digitalen Raum Neukunden zu gewinnen. Ob Handwerksbetrieb, Facharztpraxis, Kanzlei oder E-Commerce-Shop: Jeder für Google Ads oder Meta Ads aufgewendete Euro mindert den steuerpflichtigen Gewinn. Dennoch führen fehlerhafte Rechnungseinstellungen bei Betriebsprüfungen durch das Finanzamt immer wieder zu Nachzahlungen. Als offizieller Google Partner mit <strong>17+ Jahren Erfahrung</strong> erklären wir Ihnen Schritt für Schritt, wie Sie Ihre Werberechnungen finanzamtsicher buchen und steuerlich optimal absetzen.</p>
+</div>
+
+<div class="standort-bridge-box" style="background: linear-gradient(135deg, rgba(15, 23, 42, 0.96) 0%, rgba(30, 58, 138, 0.95) 100%); border: 1px solid #3b82f6; border-left: 5px solid #38bdf8; border-radius: 0.85rem; padding: 1.25rem 1.5rem; margin-bottom: 2rem; color: #f8fafc; box-shadow: 0 10px 25px -5px rgba(30, 58, 138, 0.3);">
+  <div style="font-size: 0.8rem; font-weight: 800; text-transform: uppercase; letter-spacing: 0.05em; color: #7dd3fc; margin-bottom: 0.35rem;">
+    ⚡ 100 % steuerlich absetzbar: Holen Sie das Maximum aus jedem Werbe-Euro
+  </div>
+  <p style="margin: 0 0 0.9rem 0; font-size: 0.95rem; color: #e2e8f0; line-height: 1.55;">
+    Sowohl Ihr Werbebudget als auch unsere <strong>Google Partner Betreuung (ab 590 €/Monat Festpreis, mit ordnungsgemäßer deutscher Rechnung nach § 14 UStG)</strong> sind zu 100 % als Betriebsausgabe absetzbar. Lassen Sie Ihr Konto jetzt kostenlos prüfen – auf <strong>Deutsch oder Türkçe</strong>.
+  </p>
+  <div style="display: flex; flex-wrap: wrap; gap: 0.75rem;">
+    <a href="/#contact" style="display: inline-flex; align-items: center; background: #3b82f6; color: #ffffff; font-weight: 700; font-size: 0.9rem; padding: 0.6rem 1.2rem; border-radius: 0.6rem; text-decoration: none;">
+      🚀 Kostenlose 15-Min. Potenzialanalyse starten →
+    </a>
+    <a href="/de/dienstleistungen/google-ads" style="display: inline-flex; align-items: center; background: rgba(255, 255, 255, 0.1); border: 1px solid rgba(255, 255, 255, 0.25); color: #f8fafc; font-weight: 600; font-size: 0.88rem; padding: 0.6rem 1.1rem; border-radius: 0.6rem; text-decoration: none;">
+      Leistungen &amp; Festpreise ansehen
+    </a>
+  </div>
 </div>
 
 <h2>🏢 Welche Steuern mindern Google- und Meta-Werbekosten?</h2>

@@ -4,7 +4,7 @@ slug: "google-ads-meta-ads-umsatzsteuer-vorsteuer-leitfaden-2026"
 
 lang: "de"
 
-title: "Google & Meta Ads Vorsteuer absetzen: §13b UStG Anleitung 2026"
+title: "Google & Meta Ads ohne MwSt.? Reverse-Charge §13b UStG"
 
 excerpt: "Schritt-für-Schritt-Anleitung für Google & Meta Ads Rechnungen: §13b UStG Reverse Charge, DATEV SKR03/SKR04 Buchungssätze & Vorsteuerabzug fehlerfrei buchen."
 
@@ -35,6 +35,23 @@ coverImage: "https://images.unsplash.com/photo-1579532537598-459ecdaf39cc?w=1200
 </div>
 
 
+
+<div class="standort-bridge-box" style="background: linear-gradient(135deg, rgba(15, 23, 42, 0.96) 0%, rgba(30, 58, 138, 0.95) 100%); border: 1px solid #3b82f6; border-left: 5px solid #38bdf8; border-radius: 0.85rem; padding: 1.25rem 1.5rem; margin-bottom: 2rem; color: #f8fafc; box-shadow: 0 10px 25px -5px rgba(30, 58, 138, 0.3);">
+  <div style="font-size: 0.8rem; font-weight: 800; text-transform: uppercase; letter-spacing: 0.05em; color: #7dd3fc; margin-bottom: 0.35rem;">
+    ⚡ 100 % rechtssichere Abrechnung &amp; maximaler ROAS für Ihr Werbebudget
+  </div>
+  <p style="margin: 0 0 0.9rem 0; font-size: 0.95rem; color: #e2e8f0; line-height: 1.55;">
+    Als in Deutschland (Dreieich / Region Frankfurt) ansässiger <strong>Offizieller Google Partner</strong> richten wir Ihre Google- &amp; Meta-Werbekonten steuerlich sauber ein und senken Ihre Kosten pro Neukunde (CPA) zum transparenten Festpreis ab 590 €/Monat – inklusive deutscher Rechnung mit ausgewiesener MwSt. (Beratung auf <strong>Deutsch &amp; Türkçe</strong>).
+  </p>
+  <div style="display: flex; flex-wrap: wrap; gap: 0.75rem;">
+    <a href="/#contact" style="display: inline-flex; align-items: center; background: #3b82f6; color: #ffffff; font-weight: 700; font-size: 0.9rem; padding: 0.6rem 1.2rem; border-radius: 0.6rem; text-decoration: none;">
+      🚀 Kostenlosen 15-Min. Werbekonto-Check anfordern →
+    </a>
+    <a href="/de/dienstleistungen/google-ads" style="display: inline-flex; align-items: center; background: rgba(255, 255, 255, 0.1); border: 1px solid rgba(255, 255, 255, 0.25); color: #f8fafc; font-weight: 600; font-size: 0.88rem; padding: 0.6rem 1.1rem; border-radius: 0.6rem; text-decoration: none;">
+      Google &amp; Meta Ads Festpreis-Pakete
+    </a>
+  </div>
+</div>
 
 <h2>📋 Google Ads vs. Meta Ads Rechnungsdaten im Überblick</h2>
 
