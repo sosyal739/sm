@@ -1,3 +1,11 @@
+import { notFound } from 'next/navigation'
+
+export const dynamicParams = false
+
+export function generateStaticParams() {
+  return [{ lang: 'tr' }, { lang: 'en' }, { lang: 'de' }]
+}
+
 const langMeta = {
   de: {
     title: 'Salih Maral – Google Ads, Meta Ads & SEO Experte',
@@ -18,6 +26,9 @@ const langMeta = {
 
 export async function generateMetadata({ params }) {
   const { lang } = await params
+  if (!['de', 'en', 'tr'].includes(lang)) {
+    return {}
+  }
   const currentLang = lang || 'de'
   const meta = langMeta[currentLang] || langMeta.de
 
@@ -43,6 +54,10 @@ export async function generateMetadata({ params }) {
   }
 }
 
-export default function LangLayout({ children }) {
+export default async function LangLayout({ children, params }) {
+  const { lang } = await params
+  if (!['de', 'en', 'tr'].includes(lang)) {
+    notFound()
+  }
   return <>{children}</>
 }

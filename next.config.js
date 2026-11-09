@@ -21,6 +21,15 @@ const nextConfig = {
     return [
       // 301: /de → / (Almanca ana sayfa kök dizindir; kopya sayfa ve GSC kanonik uyarısını önler)
       { source: '/de', destination: '/', statusCode: 301 },
+      // 301: İletişim & Danışmanlık CTA Yönlendirmeleri (Soft-404 ve kırık CTA önleme)
+      { source: '/kontakt', destination: '/#contact', statusCode: 301 },
+      { source: '/contact', destination: '/en#contact', statusCode: 301 },
+      { source: '/iletisim', destination: '/tr#contact', statusCode: 301 },
+      { source: '/de/kontakt', destination: '/#contact', statusCode: 301 },
+      { source: '/de/contact', destination: '/#contact', statusCode: 301 },
+      { source: '/en/contact', destination: '/en#contact', statusCode: 301 },
+      { source: '/tr/contact', destination: '/tr#contact', statusCode: 301 },
+      { source: '/tr/iletisim', destination: '/tr#contact', statusCode: 301 },
       // 301: Eski Türkçe DE URL'ler → Yeni Almanca URL'ler
       { source: '/de/hizmetler/yorum-yonetimi', destination: '/de/dienstleistungen/bewertungsmanagement', statusCode: 301 },
       { source: '/de/hizmetler/:service', destination: '/de/dienstleistungen/:service', statusCode: 301 },

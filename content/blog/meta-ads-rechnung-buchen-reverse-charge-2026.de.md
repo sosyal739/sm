@@ -2,7 +2,7 @@
 slug: "meta-ads-rechnung-buchen-reverse-charge-2026"
 lang: "de"
 title: "Meta Ads Rechnung buchen 2026: SKR03/SKR04 & §13b UStG"
-excerpt: "Meta, Facebook & Instagram Ads Rechnung buchen: SKR03 (4600/3123) & SKR04 (6600/5923), §13b Reverse-Charge, USt-IdNr. im Business Manager & DATEV 2026."
+excerpt: "Meta, Facebook & Instagram Ads Rechnung richtig buchen: §13b UStG Reverse-Charge Anleitung, SKR03/SKR04 Kontenrahmen, USt-IdNr. Setup & DATEV-Checkliste 2026."
 category: "Steuern & Finanzen"
 date: "2026-10-28"
 readTime: "8"

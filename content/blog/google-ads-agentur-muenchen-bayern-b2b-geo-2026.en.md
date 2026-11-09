@@ -104,6 +104,6 @@ coverImage: "https://images.unsplash.com/photo-1556155092-490a1ba16284?w=1200&h=
   <h3 style="font-size: 1.8rem; font-weight: 800; color: #ffffff; margin-bottom: 0.75rem;">Dominate the Munich &amp; Bavarian B2B Market</h3>
   <p style="color: #cbd5e1; font-size: 1.1rem; max-width: 680px; margin: 0 auto 1.75rem auto;">Scale your qualified B2B lead generation and generative AI search visibility with flat-fee agency certainty.</p>
   <div style="display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap;">
-    <a href="https://salihmaral.de/en/contact" style="display: inline-block; background: #4285F4; color: white; font-weight: 700; padding: 1rem 2.2rem; border-radius: 0.75rem; text-decoration: none; box-shadow: 0 10px 20px -5px rgba(66, 133, 244, 0.4);">Request Free Munich B2B Potential Audit ➔</a>
+    <a href="https://salihmaral.de/en#contact" style="display: inline-block; background: #4285F4; color: white; font-weight: 700; padding: 1rem 2.2rem; border-radius: 0.75rem; text-decoration: none; box-shadow: 0 10px 20px -5px rgba(66, 133, 244, 0.4);">Request Free Munich B2B Potential Audit ➔</a>
   </div>
 </div>

@@ -274,5 +274,5 @@ original erkennen</code></pre>
 <div class="cta-box" style="background: linear-gradient(135deg, #1e3a8a 0%, #3b82f6 100%); color: white; padding: 2rem; border-radius: 1rem; margin-top: 3rem; text-align: center;">
   <h3 style="color: white; margin-bottom: 1rem;">Google Ads Bütçenizin Boşa Gitmesini İstemiyor Musunuz?</h3>
   <p style="margin-bottom: 1.5rem; opacity: 0.95;">17+ Yıllık Resmi Google Partneri tecrübemizle hesabınızı ücretsiz denetliyor, bütçenizi kemiren tüm gereksiz aramaları tek tek temizliyoruz.</p>
-  <a href="/iletisim" style="background: white; color: #1e3a8a; padding: 0.75rem 1.5rem; border-radius: 0.5rem; font-weight: bold; text-decoration: none; display: inline-block;">Ücretsiz Hesap Denetimi İsteyin</a>
+  <a href="/tr#contact" style="background: white; color: #1e3a8a; padding: 0.75rem 1.5rem; border-radius: 0.5rem; font-weight: bold; text-decoration: none; display: inline-block;">Ücretsiz Hesap Denetimi İsteyin</a>
 </div>

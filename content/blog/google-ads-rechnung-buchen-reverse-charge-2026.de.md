@@ -2,7 +2,7 @@
 slug: "google-ads-rechnung-buchen-reverse-charge-2026"
 lang: "de"
 title: "Google Ads Rechnung buchen 2026: SKR03/SKR04 & §13b UStG"
-excerpt: "Google Ads Rechnung richtig buchen: SKR03 (4600/3123) & SKR04 (6600/3837), §13b UStG Reverse-Charge, DATEV-Steuerschlüssel 94 & Vorsteuerabzug 2026."
+excerpt: "Google Ads Rechnung aus Irland fehlerfrei verbuchen: Schritt-für-Schritt-Anleitung für SKR03 & SKR04, §13b UStG Reverse-Charge, DATEV & PDF-Download 2026."
 category: "Steuern & Finanzen"
 date: "2026-09-17"
 readTime: "9"
@@ -143,5 +143,5 @@ coverImage: "https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?w=1200
 <h3 style="margin-top: 0; color: #1a73e8; font-size: 1.25rem;">Rechtssichere Google Ads Betreuung für Ihr Unternehmen gesucht?</h3>
 <p style="margin-bottom: 1.25rem; font-size: 0.95rem; color: #374151;">Sparen Sie Steuerrisiken und unnötige Klickkosten. <strong>Salih Maral</strong> (Offizieller Google Partner mit 17+ Jahren Erfahrung) betreut Ihre Kampagnen zum transparenten monatlichen Festpreis – finanzamtkonform mit ordnungsgemäßer Reverse-Charge-Rechnung.</p>
 <a href="https://wa.me/4917631119747?text=Hallo%20Herr%20Maral,%20ich%20interessiere%20mich%20f%C3%BCr%20eine%20Google%20Ads%20Betreuung." target="_blank" rel="noopener noreferrer" style="display: inline-block; background: #25D366; color: #ffffff; font-weight: 700; padding: 0.75rem 1.5rem; border-radius: 0.5rem; text-decoration: none; margin-right: 0.5rem;">WhatsApp Direktkontakt →</a>
-<a href="/kontakt" style="display: inline-block; background: #1a73e8; color: #ffffff; font-weight: 700; padding: 0.75rem 1.5rem; border-radius: 0.5rem; text-decoration: none;">Kostenlose Erstberatung buchen →</a>
+<a href="/#contact" style="display: inline-block; background: #1a73e8; color: #ffffff; font-weight: 700; padding: 0.75rem 1.5rem; border-radius: 0.5rem; text-decoration: none;">Kostenlose Erstberatung buchen →</a>
 </div>

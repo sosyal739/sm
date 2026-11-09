@@ -104,6 +104,6 @@ coverImage: "https://images.unsplash.com/photo-1556155092-490a1ba16284?w=1200&h=
   <h3 style="font-size: 1.8rem; font-weight: 800; color: #ffffff; margin-bottom: 0.75rem;">Marktführerschaft in München &amp; Bayern sichern</h3>
   <p style="color: #cbd5e1; font-size: 1.1rem; max-width: 680px; margin: 0 auto 1.75rem auto;">Gewinnen Sie planbar qualifizierte B2B-Neukunden und KI-Sichtbarkeit zum transparenten Fixpreis ohne versteckte Prozentprovisionen.</p>
   <div style="display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap;">
-    <a href="https://salihmaral.de/de/contact" style="display: inline-block; background: #4285F4; color: white; font-weight: 700; padding: 1rem 2.2rem; border-radius: 0.75rem; text-decoration: none; box-shadow: 0 10px 20px -5px rgba(66, 133, 244, 0.4);">Kostenlose B2B-Potenzialanalyse München ➔</a>
+    <a href="https://salihmaral.de/#contact" style="display: inline-block; background: #4285F4; color: white; font-weight: 700; padding: 1rem 2.2rem; border-radius: 0.75rem; text-decoration: none; box-shadow: 0 10px 20px -5px rgba(66, 133, 244, 0.4);">Kostenlose B2B-Potenzialanalyse München ➔</a>
   </div>
 </div>

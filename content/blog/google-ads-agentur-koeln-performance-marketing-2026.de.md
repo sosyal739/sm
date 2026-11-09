@@ -1,8 +1,8 @@
 ---
 slug: "google-ads-agentur-koeln-performance-marketing-2026"
 lang: "de"
-title: "Google Ads & AdWords Agentur Köln: Festpreis 590 € (2026)"
-excerpt: "Google Ads für kleine Unternehmen & Mittelstand in Köln: Zertifizierter Google Ads Experte Köln, CPC-Benchmarks 2026 & Festpreis ab 590 € ohne Provision."
+title: "Google Ads in Köln: Branchen-Benchmarks & CPC-Report 2026"
+excerpt: "Praxis-Leitfaden & Klickpreis-Report (CPC/CPL) 2026 für Kölner Mittelstand, Handwerk & Kanzleien: PLZ-Geo-Targeting, Local 3-Pack & Fallstudien."
 category: "Standorte & Performance"
 date: "2026-08-28"
 readTime: "12"

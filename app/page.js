@@ -1326,11 +1326,11 @@ export default function Home({ initialLang = 'de' }) {
               {/* Main Title */}
               <h1 className="text-4xl sm:text-6xl lg:text-7xl font-black leading-[1.08] tracking-tight text-gray-900">
                 {lang === 'de' ? (
-                  <>Skalieren Sie Ihr Unternehmen mit <span className="text-[#4285F4]">Google Ads</span>, Meta Ads & SEO</>
+                  <>Skalieren Sie Ihr Unternehmen mit{` `}<span className="text-[#4285F4]">Google Ads</span>, Meta Ads & SEO</>
                 ) : lang === 'en' ? (
-                  <>Scale Your Business with <span className="text-[#4285F4]">Google Ads</span>, Meta Ads & SEO</>
+                  <>Scale Your Business with{` `}<span className="text-[#4285F4]">Google Ads</span>, Meta Ads & SEO</>
                 ) : (
-                  <>İşletmenizi <span className="text-[#4285F4]">Google Ads</span>, Meta Ads & SEO ile Büyütün</>
+                  <>İşletmenizi{` `}<span className="text-[#4285F4]">Google Ads</span>, Meta Ads & SEO ile Büyütün</>
                 )}
               </h1>
 

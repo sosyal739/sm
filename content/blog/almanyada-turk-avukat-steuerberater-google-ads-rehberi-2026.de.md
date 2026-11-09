@@ -1,8 +1,8 @@
 ---
 slug: "almanyada-turk-avukat-steuerberater-google-ads-rehberi-2026"
 lang: "de"
-title: "Google Ads & Local SEO für Anwälte & Steuerberater"
-excerpt: "Leitfaden für Rechtsanwälte und Steuerberater in Deutschland: Planbar qualifizierte Mandanten über Google Ads und Google Maps gewinnen. Salih Maral."
+title: "Zweisprachige Kanzleien (DE/TR): Mandanten gewinnen 2026"
+excerpt: "Spezial-Leitfaden für deutsch-türkische Rechtsanwälte und Steuerberater in Deutschland: Türkische Mandanten und KMU über Google Maps & Search gewinnen."
 category: "Local SEO & Google Ads"
 date: "2026-09-27"
 readTime: "10"

@@ -1,8 +1,8 @@
 ---
 slug: "almanyada-avukat-steuerberater-google-ads-yerel-seo-2026"
 lang: "de"
-title: "Google Ads für Steuerberater & Anwälte (BRAO §43b) 2026"
-excerpt: "Google Ads für Steuerberater & AdWords für Anwälte: Rechtskonforme Mandantengewinnung nach BRAO § 43b & StBerG, CPC-Benchmarks & Festpreis ab 590 €."
+title: "Werberechts-Leitfaden Kanzleien: § 43b BRAO & § 57a StBerG"
+excerpt: "Was ist bei Kanzleiwerbung nach § 43b BRAO, § 57a StBerG und UWG erlaubt? Berufsrechtlicher Leitfaden für Rechtsanwälte und Steuerberater in Deutschland."
 category: "Kanzleien & Beratung"
 date: "2026-10-09"
 readTime: "12"

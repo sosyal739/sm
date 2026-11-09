@@ -264,5 +264,5 @@ original erkennen</code></pre>
 <div class="cta-box" style="background: linear-gradient(135deg, #1e3a8a 0%, #3b82f6 100%); color: white; padding: 2rem; border-radius: 1rem; margin-top: 3rem; text-align: center;">
   <h3 style="color: white; margin-bottom: 1rem;">Möchten Sie Ihr Google Ads Budget vor Verschwendung schützen?</h3>
   <p style="margin-bottom: 1.5rem; opacity: 0.95;">Wir auditieren Ihr Google Ads Konto, bereinigen Ihre Suchbegriffe und implementieren branchenspezifische Ausschlusslisten für maximale Rentabilität.</p>
-  <a href="/de/kontakt" style="background: white; color: #1e3a8a; padding: 0.75rem 1.5rem; border-radius: 0.5rem; font-weight: bold; text-decoration: none; display: inline-block;">Kostenloses Google Ads Audit anfragen</a>
+  <a href="/#contact" style="background: white; color: #1e3a8a; padding: 0.75rem 1.5rem; border-radius: 0.5rem; font-weight: bold; text-decoration: none; display: inline-block;">Kostenloses Google Ads Audit anfragen</a>
 </div>

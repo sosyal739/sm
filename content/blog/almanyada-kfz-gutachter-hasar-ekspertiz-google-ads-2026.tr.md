@@ -1,7 +1,7 @@
 ---
 slug: "almanyada-kfz-gutachter-hasar-ekspertiz-google-ads-2026"
 lang: "tr"
-title: "Almanya Kfz-Gutachter Google Ads & Hasar Eksperi Rehberi 2026"
+title: "Almanya Kfz-Gutachter & Hasar Eksperi Google Ads 2026"
 excerpt: "Almanya'daki Türk Kfz-Gutachter ve hasar ekspertiz büroları için kaza tespit ve değer kaybı dosyalarını Google Ads ile çekme rehberi 2026."
 category: "Otomotiv & Yerel SEO"
 date: "2026-10-07"
@@ -112,6 +112,6 @@ coverImage: "https://images.unsplash.com/photo-1617814076367-b759c7d7e738?w=1200
   <h3 style="font-size: 1.8rem; font-weight: 800; color: #ffffff; margin-bottom: 0.75rem;">Büronuz İçin Aylık 15 – 30 Yeni Kaza Dosyası Alın</h3>
   <p style="color: #cbd5e1; font-size: 1.1rem; max-width: 680px; margin: 0 auto 1.75rem auto;">Bölgenizdeki kaza arama hacmini, rakiplerinizin açıklarını ve dosya başı sigorta cironuzu katlayacak Google Ads &amp; Haritalar stratejimizi birlikte kuralım.</p>
   <div style="display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap;">
-    <a href="https://salihmaral.de/tr/contact" style="display: inline-block; background: #4285F4; color: white; font-weight: 700; padding: 1rem 2.2rem; border-radius: 0.75rem; text-decoration: none; box-shadow: 0 10px 20px -5px rgba(66, 133, 244, 0.4);">Ücretsiz Kaza Ekspertiz Analizi Alın ➔</a>
+    <a href="https://salihmaral.de/tr#contact" style="display: inline-block; background: #4285F4; color: white; font-weight: 700; padding: 1rem 2.2rem; border-radius: 0.75rem; text-decoration: none; box-shadow: 0 10px 20px -5px rgba(66, 133, 244, 0.4);">Ücretsiz Kaza Ekspertiz Analizi Alın ➔</a>
   </div>
 </div>

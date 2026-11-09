@@ -112,6 +112,6 @@ coverImage: "https://images.unsplash.com/photo-1617814076367-b759c7d7e738?w=1200
   <h3 style="font-size: 1.8rem; font-weight: 800; color: #ffffff; margin-bottom: 0.75rem;">15 bis 30 neue Unfallgutachten pro Monat für Ihr Büro</h3>
   <p style="color: #cbd5e1; font-size: 1.1rem; max-width: 680px; margin: 0 auto 1.75rem auto;">Lassen Sie uns Ihr regionales Unfallvolumen analysieren und eine profitable Google Ads &amp; Maps Akquisitionsstrategie für Ihr Sachverständigenbüro aufsetzen.</p>
   <div style="display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap;">
-    <a href="https://salihmaral.de/de/contact" style="display: inline-block; background: #4285F4; color: white; font-weight: 700; padding: 1rem 2.2rem; border-radius: 0.75rem; text-decoration: none; box-shadow: 0 10px 20px -5px rgba(66, 133, 244, 0.4);">Kostenloses Kanzleigespräch vereinbaren ➔</a>
+    <a href="https://salihmaral.de/#contact" style="display: inline-block; background: #4285F4; color: white; font-weight: 700; padding: 1rem 2.2rem; border-radius: 0.75rem; text-decoration: none; box-shadow: 0 10px 20px -5px rgba(66, 133, 244, 0.4);">Kostenloses Kanzleigespräch vereinbaren ➔</a>
   </div>
 </div>
