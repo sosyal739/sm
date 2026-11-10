@@ -202,9 +202,9 @@ const cityDetails = {
     stats: { clients: '55+', roas: '4.2x', experience: '17+ Jahre' },
     industries: ['Mittelstand & B2B', 'Tech & IT-Dienstleister', 'Handwerk & Industrie', 'Kliniken & Praxen'],
     de: {
-      heroTitle: 'Google Ads Agentur Nürnberg',
-      heroSub: 'Ihr Google Partner für Nürnberg, Fürth & Erlangen',
-      intro: 'In der Metropolregion Nürnberg optimieren wir Ihre Google Ads, Meta Ads und SEO-Funnels für messbare Kundenanfragen und planbare Neukundengewinnung.',
+      heroTitle: 'Google Ads & AdWords Agentur Nürnberg',
+      heroSub: 'Ihr Google Partner für Nürnberg, Fürth & Erlangen • Festpreis ab 590 €',
+      intro: 'Als zertifizierte Google Ads & AdWords Agentur in der Metropolregion Nürnberg optimieren wir Ihre Google Ads, Meta Ads und SEO-Funnels zum planbaren Festpreis ab 590 €/Monat ohne Budgetprovision für messbare Kundenanfragen.',
       cta: 'Jetzt unverbindliches Angebot anfordern',
     },
     tr: {
@@ -228,9 +228,9 @@ const cityDetails = {
     stats: { clients: '65+', roas: '4.3x', experience: '17+ Jahre' },
     industries: ['Handwerk & Sanierung', 'B2B & Logistik', 'E-Commerce & Handel', 'Lokale Dienstleister'],
     de: {
-      heroTitle: 'Google Ads Agentur Dortmund & Ruhrgebiet',
-      heroSub: 'Performance Marketing für Dortmund, Essen & das Ruhrgebiet',
-      intro: 'Das Ruhrgebiet (Dortmund, Essen, Bochum, Marl und Kreis Recklinghausen) ist der dynamischste Ballungsraum in NRW. Wir positionieren Ihr Unternehmen bei Google ganz oben und sichern Ihnen planbare Direktaufträge.',
+      heroTitle: 'Google Ads & AdWords Agentur Dortmund & Ruhrgebiet',
+      heroSub: 'Performance Marketing & AdWords Betreuung für Dortmund, Essen & das Ruhrgebiet',
+      intro: 'Als spezialisierte Google Ads & AdWords Agentur für Dortmund und das Ruhrgebiet (Essen, Bochum, Marl und Kreis Recklinghausen) positionieren wir Ihr Unternehmen bei Google ganz oben und sichern Ihnen planbare Direktaufträge zum fairen Festpreis ab 590 €/Monat ohne Prozentprovision.',
       cta: 'Jetzt unverbindliches Angebot anfordern',
     },
     tr: {
@@ -358,9 +358,9 @@ const cityDetails = {
     stats: { clients: '50+', roas: '4.3x', experience: '17+ Jahre' },
     industries: ['Messen & B2B-Services', 'Handwerk & Sanierung', 'E-Commerce & Handel', 'Kanzleien & Ärzte'],
     de: {
-      heroTitle: 'Google Ads Agentur Hannover',
-      heroSub: 'Zertifizierter Google Partner für Hannover & Niedersachsen',
-      intro: 'Hannover als bedeutende Messe- und Handelsstadt verlangt präzises Zielgruppen-Targeting. Wir optimieren Ihre Google Ads und Meta Ads Kampagnen für maximalen Return on Ad Spend.',
+      heroTitle: 'Google Ads & AdWords Agentur Hannover',
+      heroSub: 'Zertifizierter Google Partner für Hannover & Niedersachsen • Festpreis ab 590 €',
+      intro: 'Als zertifizierte Google Ads & AdWords Agentur in Hannover (Mitte, List, Südstadt, Garbsen und Langenhagen) steuern wir Ihre Google Search, PMax und Meta Ads Kampagnen für maximalen Return on Ad Spend – zum transparenten Festpreis ab 590 €/Monat ohne Budgetprovision.',
       cta: 'Jetzt Angebot für Hannover anfordern',
     },
     tr: {
@@ -807,151 +807,93 @@ export default function CityPage({ params }) {
     }
   }
 
-  const schemaJsonLd = [
-    {
-      '@context': 'https://schema.org',
-      '@type': 'ProfessionalService',
-      name: `Salih Maral Google Ads & Performance Marketing - ${cityData.name}`,
-      url: `https://salihmaral.de/${currentLang}/standorte/${city}`,
-      email: 'info@salihmaral.de',
-      image: 'https://salihmaral.de/logo.png',
-      priceRange: '€€',
-      founder: {
-        '@type': 'Person',
-        name: 'Salih Maral',
-        jobTitle: 'Official Google Partner & Senior Digital Marketing Expert'
+  const schemaJsonLd = {
+    '@context': 'https://schema.org',
+    '@type': 'FAQPage',
+    '@id': `https://salihmaral.de/${currentLang}/standorte/${city}#faq`,
+    mainEntity: [
+      {
+        '@type': 'Question',
+        name: currentLang === 'tr'
+          ? `${cityData.name} Google Ads ajansı yönetim ücreti ne kadardır?`
+          : currentLang === 'en'
+          ? `How much does Google Ads management cost in ${cityData.name}?`
+          : `Was kostet eine professionelle Google Ads & AdWords Betreuung in ${cityData.name}?`,
+        acceptedAnswer: {
+          '@type': 'Answer',
+          text: currentLang === 'tr'
+            ? `${cityData.name} ve çevresindeki işletmeler için Google Ads yönetimini bütçeden komisyon almadan, aylık şeffaf sabit fiyat (Fixpreis) modeliyle yürütüyoruz. Sürpriz ek maliyet yoktur.`
+            : currentLang === 'en'
+            ? `We manage Google Ads for businesses in ${cityData.name} on a predictable flat-fee retainer with zero percentage-of-ad-spend conflicts.`
+            : `Wir betreuen Google Ads und AdWords Kampagnen für Unternehmen in ${cityData.name} zum fairen und planbaren monatlichen Fixpreis ab 590 €/Monat statt unberechenbarer Prozent-Provisionen auf Ihr Werbebudget.`
+        }
       },
-      areaServed: city === 'dortmund'
-        ? [
-            { '@type': 'City', name: 'Dortmund' },
-            { '@type': 'City', name: 'Essen' },
-            { '@type': 'City', name: 'Bochum' },
-            { '@type': 'City', name: 'Marl' },
-            { '@type': 'AdministrativeArea', name: 'Kreis Recklinghausen' },
-            { '@type': 'AdministrativeArea', name: 'Ruhrgebiet' }
-          ]
-        : {
-            '@type': 'City',
-            name: cityData.name
-          },
-      aggregateRating: {
-        '@type': 'AggregateRating',
-        ratingValue: '5.0',
-        reviewCount: '312',
-        bestRating: '5'
+      {
+        '@type': 'Question',
+        name: currentLang === 'tr'
+          ? 'Bir Google Ads ajansı ile çalışmak için hangi bütçeden başlamak mantıklıdır?'
+          : currentLang === 'en'
+          ? 'From what budget does a Google Ads agency make sense?'
+          : 'Ab welchem Budget lohnt sich eine professionelle Google Ads & AdWords Agentur?',
+        acceptedAnswer: {
+          '@type': 'Answer',
+          text: currentLang === 'tr'
+            ? 'Aylık 1.000 € ile 1.500 € reklam bütçesinden itibaren profesyonel ajans yönetimi kendini hızlıca amorti eder. Sabit fiyatlı modelimizle harcanan her euronun kara dönüşmesini sağlıyoruz.'
+            : currentLang === 'en'
+            ? 'Starting from a monthly ad spend of 1,000 € to 1,500 €, hiring a certified Google Ads agency yields a strong positive ROI with our transparent flat-fee model.'
+            : 'Bereits ab einem monatlichen Werbebudget von 1.000 € bis 1.500 € rechnet sich eine professionelle Google Ads Agentur für KMUs und Dienstleister. Durch unser transparentes Fixpreis-Modell fließt Ihr Budget zu 100% in kaufbereite Kundenkontakte statt teure Agenturprovisionen.'
+        }
+      },
+      {
+        '@type': 'Question',
+        name: currentLang === 'tr'
+          ? 'Bir işletme ne zaman Google Ads ajansı tutmalıdır?'
+          : currentLang === 'en'
+          ? 'When should a business hire a Google Ads agency?'
+          : 'Ab wann sollte ein Unternehmen eine Google Ads & AdWords Agentur beauftragen?',
+        acceptedAnswer: {
+          '@type': 'Answer',
+          text: currentLang === 'tr'
+            ? 'Mevcut reklam maliyetleriniz (CPA) yükseldiğinde, şirket içi zaman yetersiz kaldığında veya profesyonel Server-Side dönüşüm takibi ile ölçeklenmek istediğinizde ajans desteği şarttır.'
+            : currentLang === 'en'
+            ? 'You should hire an agency when internal time is constrained, CPA is too high, or you require expert Smart Bidding and Server-Side tracking to scale.'
+            : 'Unternehmen sollten eine Agentur beauftragen, sobald interne Ressourcen an Grenzen stoßen, Klickpreise ohne ausreichende Leads steigen oder Conversion-Tracking (Consent Mode v2 & Server-Side CAPI) professionell eingerichtet werden muss, um Streuverluste zu stoppen.'
+        }
+      },
+      {
+        '@type': 'Question',
+        name: currentLang === 'tr'
+          ? `${cityData.name} pazarında Google Ads sonuçlarını ne zaman görürüm?`
+          : currentLang === 'en'
+          ? `How quickly can I see results in ${cityData.name}?`
+          : `Wie schnell sind messbare Ergebnisse bei Google Ads in ${cityData.name} sichtbar?`,
+        acceptedAnswer: {
+          '@type': 'Answer',
+          text: currentLang === 'tr'
+            ? 'Kampanyalar yayına girdikten sonra ilk 24-48 saat içinde hedef kitlenizden gerçek tıklamalar ve müşteri talepleri gelmeye başlar. Algoritmik Smart Bidding optimizasyonu ile 14-30 gün içinde en yüksek karlılığa (ROAS) ulaşılır.'
+            : currentLang === 'en'
+            ? 'First qualified leads start coming within 24 to 48 hours of campaign launch. Full Smart Bidding efficiency is typically unlocked within 14 to 30 days.'
+            : 'Erste Klicks und qualifizierte Anfragen treffen bereits in den ersten 24 bis 48 Stunden nach Kampagnenstart ein. Nach 14 bis 30 Tagen Smart-Bidding-Lernphase erreicht die Kampagne ihren vollen ROAS.'
+        }
+      },
+      {
+        '@type': 'Question',
+        name: currentLang === 'tr'
+          ? `${cityData.name} için uzun süreli sözleşme zorunluluğu var mı?`
+          : currentLang === 'en'
+          ? `Are there long-term lock-in contracts?`
+          : `Gibt es langfristige Knebelverträge?`,
+        acceptedAnswer: {
+          '@type': 'Answer',
+          text: currentLang === 'tr'
+            ? 'Hayır. Müşterilerimizi 12 aylık bağlayıcı sözleşmelerle değil, her ay ürettiğimiz karlılık ve ciro artışı ile yanımızda tutuyoruz.'
+            : currentLang === 'en'
+            ? 'No. We work on flexible terms without 12-month lock-ins. You stay because of measurable results.'
+            : 'Nein. Wir verzichten auf starre 12-Monats-Verträge. Unsere Kunden bleiben durch nachweisbaren ROAS und kontinuierliche Neukundengewinnung.'
+        }
       }
-    },
-    {
-      '@context': 'https://schema.org',
-      '@type': 'BreadcrumbList',
-      itemListElement: [
-        {
-          '@type': 'ListItem',
-          position: 1,
-          name: currentLang === 'tr' ? 'Ana Sayfa' : currentLang === 'en' ? 'Home' : 'Startseite',
-          item: currentLang === 'de' ? 'https://salihmaral.de' : `https://salihmaral.de/${currentLang}`
-        },
-        {
-          '@type': 'ListItem',
-          position: 2,
-          name: currentLang === 'tr' ? 'Şehirler' : currentLang === 'en' ? 'Locations' : 'Standorte',
-          item: `https://salihmaral.de/${currentLang}/standorte`
-        },
-        {
-          '@type': 'ListItem',
-          position: 3,
-          name: cityData.name,
-          item: `https://salihmaral.de/${currentLang}/standorte/${city}`
-        }
-      ]
-    },
-    {
-      '@context': 'https://schema.org',
-      '@type': 'FAQPage',
-      mainEntity: [
-        {
-          '@type': 'Question',
-          name: currentLang === 'tr'
-            ? `${cityData.name} Google Ads ajansı yönetim ücreti ne kadardır?`
-            : currentLang === 'en'
-            ? `How much does Google Ads management cost in ${cityData.name}?`
-            : `Was kostet eine professionelle Google Ads Betreuung in ${cityData.name}?`,
-          acceptedAnswer: {
-            '@type': 'Answer',
-            text: currentLang === 'tr'
-              ? `${cityData.name} ve çevresindeki işletmeler için Google Ads yönetimini bütçeden komisyon almadan, aylık şeffaf sabit fiyat (Fixpreis) modeliyle yürütüyoruz. Sürpriz ek maliyet yoktur.`
-              : currentLang === 'en'
-              ? `We manage Google Ads for businesses in ${cityData.name} on a predictable flat-fee retainer with zero percentage-of-ad-spend conflicts.`
-              : `Wir betreuen Google Ads für Unternehmen in ${cityData.name} zum fairen und planbaren monatlichen Fixpreis (Pauschale) statt unberechenbarer Prozent-Provisionen auf Ihr Werbebudget.`
-          }
-        },
-        {
-          '@type': 'Question',
-          name: currentLang === 'tr'
-            ? 'Bir Google Ads ajansı ile çalışmak için hangi bütçeden başlamak mantıklıdır?'
-            : currentLang === 'en'
-            ? 'From what budget does a Google Ads agency make sense?'
-            : 'Ab welchem Budget lohnt sich eine professionelle Google Ads & AdWords Agentur?',
-          acceptedAnswer: {
-            '@type': 'Answer',
-            text: currentLang === 'tr'
-              ? 'Aylık 1.000 € ile 1.500 € reklam bütçesinden itibaren profesyonel ajans yönetimi kendini hızlıca amorti eder. Sabit fiyatlı modelimizle harcanan her euronun kara dönüşmesini sağlıyoruz.'
-              : currentLang === 'en'
-              ? 'Starting from a monthly ad spend of 1,000 € to 1,500 €, hiring a certified Google Ads agency yields a strong positive ROI with our transparent flat-fee model.'
-              : 'Bereits ab einem monatlichen Werbebudget von 1.000 € bis 1.500 € rechnet sich eine professionelle Google Ads Agentur für KMUs und Dienstleister. Durch unser transparentes Fixpreis-Modell fließt Ihr Budget zu 100% in kaufbereite Kundenkontakte statt teure Agenturprovisionen.'
-          }
-        },
-        {
-          '@type': 'Question',
-          name: currentLang === 'tr'
-            ? 'Bir işletme ne zaman Google Ads ajansı tutmalıdır?'
-            : currentLang === 'en'
-            ? 'When should a business hire a Google Ads agency?'
-            : 'Ab wann sollte ein Unternehmen eine Google Ads & AdWords Agentur beauftragen?',
-          acceptedAnswer: {
-            '@type': 'Answer',
-            text: currentLang === 'tr'
-              ? 'Mevcut reklam maliyetleriniz (CPA) yükseldiğinde, şirket içi zaman yetersiz kaldığında veya profesyonel Server-Side dönüşüm takibi ile ölçeklenmek istediğinizde ajans desteği şarttır.'
-              : currentLang === 'en'
-              ? 'You should hire an agency when internal time is constrained, CPA is too high, or you require expert Smart Bidding and Server-Side tracking to scale.'
-              : 'Unternehmen sollten eine Agentur beauftragen, sobald interne Ressourcen an Grenzen stoßen, Klickpreise ohne ausreichende Leads steigen oder Conversion-Tracking (Consent Mode v2 & Server-Side CAPI) professionell eingerichtet werden muss, um Streuverluste zu stoppen.'
-          }
-        },
-        {
-          '@type': 'Question',
-          name: currentLang === 'tr'
-            ? `${cityData.name} pazarında Google Ads sonuçlarını ne zaman görürüm?`
-            : currentLang === 'en'
-            ? `How quickly can I see results in ${cityData.name}?`
-            : `Wie schnell sind messbare Ergebnisse bei Google Ads in ${cityData.name} sichtbar?`,
-          acceptedAnswer: {
-            '@type': 'Answer',
-            text: currentLang === 'tr'
-              ? 'Kampanyalar yayına girdikten sonra ilk 24-48 saat içinde hedef kitlenizden gerçek tıklamalar ve müşteri talepleri gelmeye başlar. Algoritmik Smart Bidding optimizasyonu ile 14-30 gün içinde en yüksek karlılığa (ROAS) ulaşılır.'
-              : currentLang === 'en'
-              ? 'First qualified leads start coming within 24 to 48 hours of campaign launch. Full Smart Bidding efficiency is typically unlocked within 14 to 30 days.'
-              : 'Erste Klicks und qualifizierte Anfragen treffen bereits in den ersten 24 bis 48 Stunden nach Kampagnenstart ein. Nach 14 bis 30 Tagen Smart-Bidding-Lernphase erreicht die Kampagne ihren vollen ROAS.'
-          }
-        },
-        {
-          '@type': 'Question',
-          name: currentLang === 'tr'
-            ? `${cityData.name} için uzun süreli sözleşme zorunluluğu var mı?`
-            : currentLang === 'en'
-            ? `Are there long-term lock-in contracts?`
-            : `Gibt es langfristige Knebelverträge?`,
-          acceptedAnswer: {
-            '@type': 'Answer',
-            text: currentLang === 'tr'
-              ? 'Hayır. Müşterilerimizi 12 aylık bağlayıcı sözleşmelerle değil, her ay ürettiğimiz karlılık ve ciro artışı ile yanımızda tutuyoruz.'
-              : currentLang === 'en'
-              ? 'No. We work on flexible terms without 12-month lock-ins. You stay because of measurable results.'
-              : 'Nein. Wir verzichten auf starre 12-Monats-Verträge. Unsere Kunden bleiben durch nachweisbaren ROAS und kontinuierliche Neukundengewinnung.'
-          }
-        }
-      ]
-    }
-  ]
+    ]
+  }
 
   return (
     <div className="min-h-screen bg-slate-950 text-slate-100 flex flex-col selection:bg-blue-500 selection:text-white">
