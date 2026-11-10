@@ -1,7 +1,7 @@
 ---
 slug: "google-seo-ranking-factors-2026"
 lang: "de"
-title: "Die 9 wichtigsten Google Ranking-Faktoren 2026 (Live-Fallstudie)"
+title: "Die 9 wichtigsten Google Ranking-Faktoren 2026 | SEO"
 excerpt: "Die neuesten Google-Algorithmus-Updates und E-E-A-T. Salih Maral zeigt, wie Sie Autorität aufbauen und Top-Rankings erzielen."
 category: "SEO"
 date: "2026-07-16"

@@ -1,7 +1,7 @@
 ---
 slug: "kisitlanan-meta-business-manager-hesap-kurtarma-2026"
 lang: "de"
-title: "Gesperrtes Meta Werbekonto & Business Manager reaktivieren 2026"
+title: "Gesperrtes Meta Werbekonto & Business Manager lösen"
 excerpt: "Schritt-für-Schritt-Anleitung zur Entsperrung von Facebook & Instagram Werbekonten. Einspruchsverfahren und Richtlinienkonformität."
 category: "Meta Ads & Hesap Güvenliği"
 date: "2026-08-23"

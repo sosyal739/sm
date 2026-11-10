@@ -1,7 +1,7 @@
 ---
 slug: "google-ads-agentur-nuernberg-franken-mittelstand-2026"
 lang: "de"
-title: "Google Ads in Nürnberg & Franken: B2B Ratgeber & CPC Benchmarks 2026"
+title: "Google Ads in Nürnberg & Franken: B2B & CPC-Report 2026"
 excerpt: "B2B Ratgeber für Google Ads in Nürnberg, Fürth & Erlangen: Klickpreise (CPC), MedTech & Maschinenbau Benchmarks und Wachstumsstrategien 2026."
 category: "Standorte & B2B"
 date: "2026-09-30"

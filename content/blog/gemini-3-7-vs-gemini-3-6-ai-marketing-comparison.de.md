@@ -2,7 +2,7 @@
 slug: "gemini-3-7-vs-gemini-3-6-ai-marketing-comparison"
 lang: "de"
 title: "Gemini 3.7 vs. 3.6: Hybrides Denken im Marketing & SEO"
-excerpt: "Detaillierte Analyse des neuen Google Gemini 3.7 mit Hybrid Reasoning im Vergleich zu Gemini 3.6. Wie Marketer und E-Commerce-Unternehmen Google Ads und GEO-Rankings revolutionieren."
+excerpt: "Analyse von Google Gemini 3.7 mit Hybrid Reasoning im Vergleich zu Gemini 3.6: Wie Marketer und Online-Shops Google Ads und GEO-Rankings optimieren."
 category: "Künstliche Intelligenz"
 date: "2026-08-14"
 readTime: "14"

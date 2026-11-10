@@ -2,7 +2,7 @@
 slug: "ai-seo-geoptimierung"
 lang: "de"
 title: "SEO für KI-Suchmaschinen (GEO) Leitfaden 2026"
-excerpt: "Erfahren Sie, wie Ihre Marke in Google AI Overviews, Perplexity und ChatGPT zitiert und hervorgehoben wird."
+excerpt: "Erfahren Sie, wie Ihre Marke in Google AI Overviews, Perplexity und ChatGPT als primäre Quelle zitiert wird. Konkrete Princeton GEO-Strategien für 2026."
 category: "SEO"
 date: "2026-03-10"
 readTime: "7"

@@ -2,7 +2,7 @@
 slug: "google-ads-tiklama-cok-satis-yok-cozum-2026"
 lang: "de"
 title: "Viele Klicks, keine Kunden bei Google Ads? Budget retten"
-excerpt: "Täglich Budget in Google Ads investieren, aber das Telefon steht still? Entdecken Sie die 4 versteckten Fehler und wie ein zertifizierter Google Partner Ihren ROI rettet."
+excerpt: "Täglich Budget in Google Ads investieren, aber das Telefon steht still? Entdecken Sie die 4 häufigsten Fehler und wie Sie Streuverluste sofort stoppen."
 category: "Google Ads & PPC"
 date: "2026-08-25"
 readTime: "19"

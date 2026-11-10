@@ -2,7 +2,7 @@
 slug: "meta-advantage-plus-creative-ai-2026"
 lang: "de"
 title: "Creative Fatigue bei Meta Ads stoppen: KI-Creative Guide"
-excerpt: "Der ultimative Leitfaden für Meta Advantage+ Shopping Kampagnen (ASC). Wie Sie Creative AI nutzen, Werbeermüdung eliminieren und E-Commerce-Umsätze profitabel skalieren."
+excerpt: "Praxisleitfaden für Meta Advantage+ Shopping Kampagnen (ASC): Wie Sie Creative AI nutzen, Anzeigenmüdigkeit stoppen und E-Commerce-Umsätze skalieren."
 category: "Meta Ads"
 date: "2026-08-14"
 readTime: "15"

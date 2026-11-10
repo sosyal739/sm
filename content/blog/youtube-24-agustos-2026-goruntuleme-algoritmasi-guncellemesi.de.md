@@ -2,7 +2,7 @@
 slug: "youtube-24-agustos-2026-goruntuleme-algoritmasi-guncellemesi"
 lang: "de"
 title: "YouTube Algorithmus-Update: Was passiert mit Einnahmen?"
-excerpt: "Ab dem 24. August 2026 zählt YouTube Videoaufrufe ab der 1. Sekunde für Shorts, VOD & Livestreams. Auswirkung auf YPP Einnahmen, Vor- und Nachteile im Experten-Check."
+excerpt: "YouTube View-Algorithmus-Update 2026: Wie Videoaufrufe für Shorts, VOD und Livestreams gezählt werden und was das für Werbetreibende und Creator bedeutet."
 category: "YouTube Ads & Algorithmus"
 date: "2026-08-28"
 readTime: "15"

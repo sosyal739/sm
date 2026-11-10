@@ -2,7 +2,7 @@
 slug: "linkedin-ads-b2b-abm-strategy"
 lang: "de"
 title: "B2B Account-Based Marketing (ABM) mit LinkedIn Ads"
-excerpt: "Sprechen Sie Entscheidungsträger gezielt an. Salih Maral erklärt LinkedIn Insight Tag und ABM-Kampagnenstrukturen."
+excerpt: "Sprechen Sie B2B-Entscheider gezielt an: Praxisleitfaden für LinkedIn Insight Tag, Account-Based Marketing (ABM) und Lead-Gen-Formulare."
 category: "LinkedIn Ads"
 date: "2026-07-16"
 readTime: "10"

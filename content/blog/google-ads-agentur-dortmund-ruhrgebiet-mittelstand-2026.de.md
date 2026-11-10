@@ -1,7 +1,7 @@
 ---
 slug: "google-ads-agentur-dortmund-ruhrgebiet-mittelstand-2026"
 lang: "de"
-title: "Google Ads im Ruhrgebiet & Dortmund: B2B & CPC-Report 2026"
+title: "Google Ads Dortmund & Ruhrgebiet: B2B CPC-Report 2026"
 excerpt: "B2B-Ratgeber & Klickpreis-Benchmarks 2026 für Dortmund und das Ruhrgebiet: Streuverluste zwischen Nachbarstädten stoppen & +180 % mehr Anfragen erzielen."
 category: "Google Ads & PPC"
 date: "2026-09-28"

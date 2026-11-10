@@ -1,8 +1,8 @@
 ﻿---
 slug: "ai-content-marketing-scale"
 lang: "de"
-title: "KI-Content-Erstellung: Traffic skalieren ohne Qualitätsverlust"
-excerpt: "Erstellen Sie AI-Inhalte gemäß den EEAT-Standards ohne Qualitätseinbußen."
+title: "KI-Content-Erstellung: Traffic skalieren mit E-E-A-T"
+excerpt: "Erstellen Sie KI-Inhalte gemäß den Google E-E-A-T-Standards ohne Qualitätseinbußen. Praxisleitfaden für nachhaltiges organisches Traffic-Wachstum 2026."
 category: "SEO"
 date: "2026-04-05"
 readTime: "6"

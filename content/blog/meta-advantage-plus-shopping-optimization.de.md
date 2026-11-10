@@ -1,7 +1,7 @@
 ---
 slug: "meta-advantage-plus-shopping-optimization"
 lang: "de"
-title: "Meta Advantage+ Shopping Kampagnen (ASC): CPA senken, Creative Fatigue stoppen & ROAS skalieren 2026"
+title: "Meta Advantage+ Shopping (ASC): CPA senken & ROAS 2026"
 excerpt: "Vermeiden Sie Budgetverschwendung bei Meta ASC-Kampagnen. Offizieller Partner Salih Maral zeigt Setups gegen Creative Fatigue für maximalen ROAS."
 category: "Meta Ads"
 date: "2026-10-09"

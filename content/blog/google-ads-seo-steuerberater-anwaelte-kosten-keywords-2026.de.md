@@ -1,8 +1,8 @@
 ---
 slug: "google-ads-seo-steuerberater-anwaelte-kosten-keywords-2026"
 lang: "de"
-title: "Google Ads & SEO für Steuerberater und Anwälte: Kosten, Keywords, Budget 2026"
-excerpt: "So gewinnen Kanzleien und Steuerberater Mandanten über Google Ads und SEO: Keyword-Cluster, Budgetrahmen, berufsrechtliche Grenzen (UWG, BRAO, StBerG) und ein 90-Tage-Plan."
+title: "Google Ads & SEO für Steuerberater & Anwälte 2026"
+excerpt: "So gewinnen Kanzleien und Steuerberater planbar Mandanten über Google Ads und SEO: Keyword-Cluster, Budgetrahmen, Berufsrecht (BRAO/StBerG) & 90-Tage-Plan."
 category: "Local SEO & Google Ads"
 date: "2026-10-28"
 readTime: "10"

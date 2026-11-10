@@ -1,8 +1,8 @@
 ﻿---
 slug: "google-gemini-spark"
 lang: "de"
-title: "Google Gemini Spark: Ihr persönlicher 24/7-Hintergrund-KI-Agent"
-excerpt: "Ihr persönlicher 24/7-Hintergrund-KI-Agent, der Aufgaben ausführt, sogar während Sie schlafen."
+title: "Google Gemini Spark: 24/7 KI-Agent für Marketing 2026"
+excerpt: "Google Gemini Spark im Praxischeck: Wie der autonome 24/7-Hintergrund-KI-Agent komplexe Marketing-, SEO- und Datenanalyse-Aufgaben automatisiert."
 category: "Technologie"
 date: "2026-07-03"
 readTime: "6"

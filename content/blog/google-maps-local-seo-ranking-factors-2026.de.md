@@ -1,8 +1,8 @@
 ﻿---
 slug: "google-maps-local-seo-ranking-factors-2026"
 lang: "de"
-title: "Google Maps Ranking Faktoren 2026: So dominieren Sie Ihre Region"
-excerpt: "Dominieren Sie die lokalen Google Maps Suchergebnisse. Wie Sie Ihr Unternehmensprofil optimieren, unberechtigte 1-Stern-Bewertungen löschen und Neukunden gewinnen."
+title: "Google Maps Ranking-Faktoren 2026: Local SEO Guide"
+excerpt: "Dominieren Sie die lokalen Google Maps Suchergebnisse: Unternehmensprofil optimieren, unberechtigte 1-Stern-Bewertungen löschen und lokal Kunden gewinnen."
 category: "SEO & GEO"
 date: "2026-08-14"
 readTime: "15"

@@ -2,7 +2,7 @@
 slug: "almanyadaki-turk-isletmeleri-icin-google-ads-rehberi-2026"
 lang: "de"
 title: "Google Ads für türkische Unternehmen in Deutschland"
-excerpt: "Erfolgreiches Online-Marketing für türkischstämmige Unternehmer in Deutschland. Zweisprachige Betreuung, transparente Kosten & zertifizierte Google Partner Qualität."
+excerpt: "Erfolgreiches Online-Marketing für türkischstämmige Unternehmer in Deutschland: Zweisprachige Betreuung, transparente Fixpreise & Google Partner Qualität."
 category: "Türkische Unternehmen in DE"
 date: "2026-08-25"
 readTime: "18"

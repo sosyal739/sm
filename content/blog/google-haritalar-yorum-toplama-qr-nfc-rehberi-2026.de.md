@@ -1,7 +1,7 @@
 ---
 slug: "google-haritalar-yorum-toplama-qr-nfc-rehberi-2026"
 lang: "de"
-title: "Google Maps 5-Sterne Bewertungen sammeln: QR & NFC Guide 2026"
+title: "Google Maps 5-Sterne Bewertungen: QR & NFC Guide 2026"
 excerpt: "Steigern Sie Ihre Google-Bewertungen auf 4.9 Sterne. Kontaktlose NFC-Karten und smarte QR-Code-Systeme für lokale Unternehmen."
 category: "Google Haritalar & Yerel SEO"
 date: "2026-08-21"

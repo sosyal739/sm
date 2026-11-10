@@ -1,7 +1,7 @@
 ---
 slug: "google-ads-agentur-muenchen-bayern-b2b-geo-2026"
 lang: "de"
-title: "Google Ads in München & Bayern: B2B Ratgeber & CPC Benchmarks 2026"
+title: "Google Ads in München & Bayern: B2B & CPC-Report 2026"
 excerpt: "B2B Ratgeber für Google Ads & GEO in München: Klickpreise (CPC), KI-Suche (ChatGPT/Perplexity) und B2B-Leitfaden für den bayerischen Mittelstand 2026."
 category: "Standorte & GEO"
 date: "2026-10-07"

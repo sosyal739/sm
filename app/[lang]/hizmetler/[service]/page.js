@@ -18,7 +18,7 @@ const serviceMeta = {
   },
   'meta-ads': {
     de: {
-      title: 'Meta Ads Agentur Deutschland (Facebook & Instagram) | S. Maral',
+      title: 'Meta Ads Agentur (Facebook & Instagram) | Salih Maral',
       description: 'Zertifizierte Meta Ads Betreuung zum Fixpreis: Advantage+ Shopping, Creative AI & CAPI für messbare E-Commerce Skalierung und minimale CPAs.',
     },
     en: {
@@ -61,15 +61,15 @@ const serviceMeta = {
   'tiktok-ads': {
     de: {
       title: 'TikTok Ads Betreuung & E-Commerce | Salih Maral',
-      description: 'Virale Performance-Kampagnen und Spark Ads für dynamisches E-Commerce-Wachstum und hohe Conversion-Raten auf TikTok.',
+      description: 'Virale Performance-Kampagnen, Spark Ads und TikTok Events API für dynamisches E-Commerce-Wachstum und hohe Conversion-Raten zum Fixpreis.',
     },
     en: {
-      title: 'TikTok Ads Management Services | Salih Maral',
+      title: 'TikTok Ads Agency & E-Commerce Growth | Salih Maral',
       description: 'Viral direct-response campaigns and Spark Ads for rapid e-commerce growth and high conversion rates on TikTok. Flat monthly fee, full tracking.',
     },
     tr: {
-      title: 'TikTok Ads Reklam Yönetimi | Salih Maral',
-      description: 'Viral kreatif kurguları ve Spark Ads ile genç kitleyi müşteriye dönüştüren doğrudan satış odaklı TikTok reklamları.',
+      title: 'TikTok Ads & E-Ticaret Reklam Yönetimi | Salih Maral',
+      description: 'Viral kreatif kurguları, Spark Ads ve TikTok Events API ile genç kitleyi müşteriye dönüştüren doğrudan satış odaklı TikTok reklam yönetimi.',
     },
   },
   'x-ads': {
@@ -79,7 +79,7 @@ const serviceMeta = {
     },
     en: {
       title: 'X (Twitter) Ads Management & B2B Leads | Salih Maral',
-      description: 'Position your brand in front of decision-makers. B2B lead generation, app installs, and viral reach on X (Twitter).',
+      description: 'Position your brand in front of decision-makers. B2B lead generation, app installs, and viral reach on X (Twitter) with transparent flat-fee pricing.',
     },
     tr: {
       title: 'X (Twitter) Ads Reklam Yönetimi ve B2B Büyüme | Salih Maral',
@@ -121,11 +121,11 @@ const serviceMeta = {
     },
     en: {
       title: 'Review & Online Reputation Management | Salih Maral',
-      description: 'Legally remove unfair 1-star reviews on Google Maps and Trustpilot. Protect your reputation and win customer trust.',
+      description: 'Legally remove unfair 1-star reviews on Google Maps and Trustpilot in Germany. Protect your local business reputation and win customer trust.',
     },
     tr: {
       title: 'Olumsuz Yorum ve İtibar Yönetimi | Salih Maral',
-      description: 'Google Haritalar ve Trustpilot üzerindeki haksız, sahte 1 yıldızlı yorumların yasal zeminde hızlıca kaldırılması.',
+      description: 'Almanya Google Haritalar ve Trustpilot üzerindeki haksız, sahte 1 yıldızlı yorumların BGH içtihatlarına uygun yasal zeminde hızlıca kaldırılması.',
     },
   },
 }

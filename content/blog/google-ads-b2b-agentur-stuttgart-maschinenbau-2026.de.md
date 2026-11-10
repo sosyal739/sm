@@ -1,7 +1,7 @@
 ---
 slug: "google-ads-b2b-agentur-stuttgart-maschinenbau-2026"
 lang: "de"
-title: "Google Ads in Stuttgart & Ludwigsburg: B2B Ratgeber & CPC Benchmarks 2026"
+title: "Google Ads in Stuttgart & Ludwigsburg: CPC-Report 2026"
 excerpt: "B2B Ratgeber für Google Ads in Stuttgart & Ludwigsburg: Klickpreise (CPC) für Maschinenbau, Handwerk & Industrie sowie Wachstumsstrategien 2026."
 category: "B2B Performance Marketing"
 date: "2026-09-17"

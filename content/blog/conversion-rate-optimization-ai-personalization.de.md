@@ -2,7 +2,7 @@
 slug: "conversion-rate-optimization-ai-personalization"
 lang: "de"
 title: "CRO & KI-Personalisierung: Mehr Verkäufe erzielen 2026"
-excerpt: "Conversion-Rate-Optimierung Schritt für Schritt: Messung, Analyse, A/B-Tests und KI-Personalisierung, die ohne Pauschalversprechen und DSGVO-konform funktioniert."
+excerpt: "Conversion-Rate-Optimierung Schritt für Schritt: Messung, A/B-Tests und KI-Personalisierung, die DSGVO-konform im deutschen Markt funktioniert."
 category: "Conversion Optimierung"
 date: "2026-10-18"
 readTime: "9"

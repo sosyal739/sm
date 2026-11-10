@@ -1,7 +1,7 @@
 ---
 slug: "meta-ads-beratung-skalierung"
 lang: "de"
-title: "Meta Ads Agentur & Skalierung 2026: Facebook & Instagram Ads"
+title: "Meta Ads Skalierung 2026: Facebook & Instagram Ads"
 excerpt: "Meta Ads Werbebudgets profitabel skalieren. Salih Maral (Google & Meta Experte) zeigt Auditierung, Advantage+ ASC, CAPI Tracking und Creative-Tests."
 category: "Meta Ads"
 date: "2026-07-16"

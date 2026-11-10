@@ -2,7 +2,7 @@
 slug: "meta-ads-retargeting-funnels"
 lang: "de"
 title: "Shop-Besucher zurückholen: Der Meta Retargeting Funnel"
-excerpt: "Nutzer zurück, die Ihre Website besucht haben. Hochkonvertierende Meta Ads Retargeting-Funnels für E-Commerce."
+excerpt: "Gewinnen Sie kaufbereite Website-Besucher zurück: Hochkonvertierende Meta Ads Retargeting-Funnels mit Server-Side CAPI für profitables E-Commerce-Wachstum."
 category: "Meta Ads"
 date: "2026-03-05"
 readTime: "5"

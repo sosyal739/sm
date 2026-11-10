@@ -2,7 +2,7 @@
 slug: "google-sge-search-ads-strategy"
 lang: "de"
 title: "Google SGE & AI Search: Suchanzeigen-Strategie 2026"
-excerpt: "Dominieren Sie die KI-gestützten Google-Suchergebnisse. Salih Maral zeigt neue Strategien für SGE und AI Overviews."
+excerpt: "Dominieren Sie die KI-gestützten Google-Suchergebnisse: Neue Kampagnen- und Gebotsstrategien für Google AI Overviews (SGE) und KI-Suchintentionen 2026."
 category: "Google Ads"
 date: "2026-07-16"
 readTime: "10"
