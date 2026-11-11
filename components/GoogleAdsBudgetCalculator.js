@@ -55,7 +55,7 @@ export default function GoogleAdsBudgetCalculator({ lang = 'de', defaultCity = '
     de: {
       badge: 'Interaktiver Budget- & Kostenrechner 2026',
       title: `Google Ads Budget & Agenturkosten Rechner${cityText}`,
-      subtitle: 'Berechnen Sie in Echtzeit, ab welchem Werbebudget sich eine professionelle Google Ads & AdWords Betreuung rechnet und wie viele Kundenanfragen Sie erwarten können.',
+      subtitle: 'Berechnen Sie in Echtzeit, ab welchem Werbebudget sich eine professionelle SEA- & AdWords-Betreuung rechnet und wie viele Kundenanfragen Sie erwarten können.',
       budgetLabel: 'Monatliches Werbebudget:',
       industryLabel: 'Geschäftsmodell / Branche wählen:',
       estClicksLabel: 'Geschätzte Klicks:',

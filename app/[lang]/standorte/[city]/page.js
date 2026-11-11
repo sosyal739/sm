@@ -1544,7 +1544,7 @@ export default function CityPage({ params }) {
 
           <form onSubmit={handleSubmit} className="space-y-4 text-left">
             {/* Anti-bot Honeypot trap - invisible to humans, traps automated spam bots */}
-            <div className="hidden" aria-hidden="true" style={{ display: 'none', position: 'absolute', left: '-9999px' }}>
+            <div className="hidden absolute -left-[9999px]" aria-hidden="true">
               <label htmlFor="b_check_city">Do not fill this</label>
               <input
                 type="text"

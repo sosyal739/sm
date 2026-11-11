@@ -15,6 +15,14 @@ import GoogleAdsBudgetCalculator from '@/components/GoogleAdsBudgetCalculator'
 import EcosystemMarquee from '@/components/EcosystemMarquee'
 import { MotionSection } from '@/components/Reveal'
 
+// Sichtbares Aktualisierungsdatum (G-DATES): bei inhaltlichen Änderungen der Startseite anpassen.
+const PAGE_UPDATED_ISO = '2026-11-11'
+const PAGE_UPDATED_LABEL = {
+  de: 'Zuletzt aktualisiert: 11. November 2026',
+  en: 'Last updated: November 11, 2026',
+  tr: 'Son güncelleme: 11 Kasım 2026',
+}
+
 const translations = {
   tr: {
     nav: {
@@ -324,19 +332,19 @@ const translations = {
         },
         {
           title: 'SEO Dienstleistungen',
-          description: 'Erreichen Sie Top-Rankings bei Google. On-Page, Off-Page und technisches SEO für mehr organischen Traffic.',
+          description: 'Erreichen Sie Top-Rankings in der organischen Suche. On-Page, Off-Page und technisches SEO für mehr qualifizierten Traffic.',
           slug: 'seo',
           icon: 'seo'
         },
         {
           title: 'Negative Bewertungen Löschen',
-          description: 'Entfernen Sie ungerechte Bewertungen bei Google Maps und Trustpilot. Schützen Sie Ihren Ruf.',
+          description: 'Entfernen Sie ungerechte Bewertungen in Kartendiensten und auf Trustpilot. Schützen Sie Ihren Ruf.',
           slug: 'yorum-yonetimi',
           icon: 'review'
         },
         {
           title: 'Werbekonto- & Tracking-Setup',
-          description: 'Google Ads Eröffnung, Verifizierung, GA4, Search Console, GMC, Meta Pixel, CAPI, sGTM und Google Maps schlüsselfertig.',
+          description: 'Werbekonto-Eröffnung, Verifizierung, GA4, Search Console, GMC, Meta Pixel, CAPI, sGTM und Unternehmensprofil schlüsselfertig.',
           slug: 'server-side-tracking',
           icon: 'tracking'
         },
@@ -354,7 +362,7 @@ const translations = {
       description: 'Professionelles Performance-Marketing bedeutet: Kein verschwendetes Werbebudget, sondern gezielte Ausrichtung auf kaufbereite Kunden, qualifizierte Anfragen und nachhaltigen Unternehmensgewinn.',
       metrics: [
         { title: 'Umsatzsteigerung', subtitle: 'E-Commerce' },
-        { title: 'Top-Platzierungen', subtitle: 'Google Suche' },
+        { title: 'Top-Platzierungen', subtitle: 'Organische Suche' },
         { title: 'Reichweite & Marke', subtitle: 'Markenbekanntheit' },
         { title: 'Organisches Wachstum', subtitle: 'SEO & Sichtbarkeit' }
       ]
@@ -362,11 +370,11 @@ const translations = {
     proofGallery: {
       badge: 'VERIFIZIERTE GOOGLE ADS DASHBOARDS',
       title: '1,13 Mio. €+ verwaltetes Werbebudget: Meine Live-Dashboards',
-      description: 'Seit 2008 von mir persönlich aufgebaute und betreute Google Ads- und YouTube-Kampagnen mit verifizierten Live-Ergebnissen.',
+      description: 'Seit 2008 von mir persönlich aufgebaute und betreute Such-, Shopping- und YouTube-Kampagnen mit verifizierten Live-Ergebnissen.',
       cards: [
         {
           title: '1,13 Mio. € Budget & 208.000+ Conversions',
-          subtitle: 'Google Ads Search & Shopping',
+          subtitle: 'Search & Shopping Kampagnen',
           stat: '1,74M Klicks / 150M Impressionen',
           desc: '10 Jahre verifizierte Kampagnenhistorie: Mit 1,13 Mio. € Budget wurden über 208.000 bestätigte Kundenanfragen und Verkäufe generiert.',
           image: '/proof/google-ads-1-13m-spend-208k-conv.png',
@@ -376,7 +384,7 @@ const translations = {
           title: '1.104,05 % (11,04x) E-Commerce Rekord-ROAS',
           subtitle: 'Performance & Umsatz-Skalierung',
           stat: '119.000 Conversions / 204K Klicks',
-          desc: 'Google Ads E-Commerce Kampagne mit 1.104 % ROAS. Für jeden eingesetzten Euro Werbebudget wurden 11,04 € Netto-Umsatz erzielt.',
+          desc: 'E-Commerce-Suchkampagne mit 1.104 % ROAS. Für jeden eingesetzten Euro Werbebudget wurden 11,04 € Netto-Umsatz erzielt.',
           image: '/proof/google-ads-roas-1104.png',
           badge: '11.04x ROAS'
         },
@@ -449,7 +457,7 @@ const translations = {
         },
         {
           title: 'Persönliche Betreuung',
-          description: 'Keine Weitergabe an Junior-Manager. Als erfahrener Google Partner betreue ich eine ausgewählte Anzahl an Mandanten verlässlich und direkt.'
+          description: 'Keine Weitergabe an Junior-Manager. Als erfahrener, zertifizierter Partner betreue ich eine ausgewählte Anzahl an Mandanten verlässlich und direkt.'
         },
         {
           title: 'Fokus auf Umsatz & Rentabilität',
@@ -486,7 +494,7 @@ const translations = {
     faq: {
       badge: 'Häufig gestellte Fragen',
       title: 'Google Ads & Performance Marketing FAQ Deutschland',
-      subtitle: 'Transparente Antworten zu Agenturkosten, Google Ads Betreuung, § 13b UStG Rechnungen und lokaler Neukundengewinnung.',
+      subtitle: 'Transparente Antworten zu Agenturkosten, SEA-Betreuung, § 13b UStG Rechnungen und lokaler Neukundengewinnung.',
       items: [
         {
           q: 'Was kostet eine professionelle Google Ads Betreuung in Deutschland?',
@@ -502,7 +510,7 @@ const translations = {
         },
         {
           q: 'Wie gewinnen lokale Betriebe & Neugründer Kunden über Google Maps & Ads?',
-          a: 'Für Handwerker, Kanzleien, Ärzte und Gastronomie optimiere ich das Google Unternehmensprofil für die Top 3 der lokalen Google-Map-Ergebnisse. Ergänzt durch hyperlokale Google Suchanzeigen im Umkreis von 10–25 km generieren Betriebe ab Woche 1 direkte Anrufe und Aufträge.'
+          a: 'Für Handwerker, Kanzleien, Ärzte und Gastronomie optimiere ich das Unternehmensprofil für die Top 3 der lokalen Kartenergebnisse. Ergänzt durch hyperlokale Suchanzeigen im Umkreis von 10–25 km generieren Betriebe ab Woche 1 direkte Anrufe und Aufträge.'
         },
         {
           q: 'Warum sind kampagnenweite Negative Keywords in PMax Kampagnen unverzichtbar?',
@@ -515,7 +523,7 @@ const translations = {
       ]
     },
     footer: {
-      description: 'Planbare Neukundengewinnung in Deutschland: Transparente Google Ads, Meta Ads und SEO-Betreuung zum monatlichen Festpreis.',
+      description: 'Planbare Neukundengewinnung in Deutschland: Transparente SEA-, Social-Ads- und SEO-Betreuung zum monatlichen Festpreis.',
       rights: 'Alle Rechte vorbehalten.',
       about: 'Über mich'
     }
@@ -933,6 +941,7 @@ export default function Home({ initialLang = 'de' }) {
               isPartOf: { '@id': 'https://salihmaral.de/#website' },
               about: { '@id': 'https://salihmaral.de/#organization' },
               description: t.hero.description,
+              dateModified: PAGE_UPDATED_ISO,
               inLanguage: lang === 'de' ? 'de-DE' : lang === 'tr' ? 'tr-TR' : 'en-US'
             },
             {
@@ -1006,7 +1015,8 @@ export default function Home({ initialLang = 'de' }) {
             },
             {
               '@type': 'ProfessionalService',
-              name: 'Salih Maral Digital Marketing',
+              name: 'Salih Maral',
+              alternateName: 'Salih Maral Digital Marketing',
               description: lang === 'de' ? 'Professionelle Digital Marketing Dienstleistungen' : lang === 'tr' ? 'Profesyonel Dijital Pazarlama Hizmetleri' : 'Professional Digital Marketing Services',
               url: `https://salihmaral.de${lang === 'de' ? '/' : `/${lang}`}`,
               priceRange: '€€',
@@ -1524,7 +1534,7 @@ export default function Home({ initialLang = 'de' }) {
           <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-3 sm:gap-4 md:gap-5">
             {[
               { val: '17+', label: t.stats.experience, color: '#4285F4', trend: '2008 – 2026' },
-              { val: '500+', label: t.stats.keywords, color: '#EA4335', trend: 'Google #1. Sıra' },
+              { val: '500+', label: t.stats.keywords, color: '#EA4335', trend: lang === 'de' ? 'Platz 1 organisch' : lang === 'en' ? 'Rank #1 organic' : 'Google #1. Sıra' },
               { val: '300+', label: t.stats.brands, color: '#FBBC04', trend: 'Global & Yerel' },
               { val: '+250%', label: t.stats.traffic, color: '#34A853', trend: 'Organik Büyüme' },
               { val: '+180%', label: t.stats.roi, color: '#4285F4', trend: 'Ort. ROI Artışı' },
@@ -1592,7 +1602,7 @@ export default function Home({ initialLang = 'de' }) {
           <div className="flex items-center justify-center gap-2 mb-12 flex-wrap">
             {[
               { id: 'all', label: lang === 'de' ? 'Alle Leistungen (8)' : lang === 'en' ? 'All Services (8)' : 'Tüm Hizmetler (8)' },
-              { id: 'google', label: lang === 'de' ? 'Google & YouTube Ads' : lang === 'en' ? 'Google & YouTube Ads' : 'Google & YouTube Ads' },
+              { id: 'google', label: lang === 'de' ? 'Search & YouTube Ads' : lang === 'en' ? 'Google & YouTube Ads' : 'Google & YouTube Ads' },
               { id: 'social', label: lang === 'de' ? 'Meta, TikTok & X Ads' : lang === 'en' ? 'Meta, TikTok & X Ads' : 'Meta, TikTok & X Ads' },
               { id: 'seo', label: lang === 'de' ? 'SEO, Tracking & Reputation' : lang === 'en' ? 'SEO, Tracking & Reputation' : 'SEO, Tracking & İtibar' }
             ].map(tab => {
@@ -1676,7 +1686,7 @@ export default function Home({ initialLang = 'de' }) {
                     tag: lang === 'de' ? 'Princeton GEO & KI-Suche' : lang === 'en' ? 'Princeton GEO & AI Search' : 'Princeton GEO & Yapay Zeka',
                     badge: lang === 'de' ? '100% Organisch' : lang === 'en' ? 'High Authority' : 'Yüksek Otorite',
                     pills: lang === 'de'
-                      ? ['Google Maps #1 Rankings', 'ChatGPT & Perplexity (GEO)', '100/100 Core Web Vitals']
+                      ? ['Local 3-Pack #1 Rankings', 'ChatGPT & Perplexity (GEO)', '100/100 Core Web Vitals']
                       : lang === 'en'
                       ? ['Google Maps #1 Rankings', 'ChatGPT & Perplexity (GEO)', '100/100 Core Web Vitals']
                       : ['Google Haritalar #1. Sıra', 'ChatGPT & Perplexity (GEO)', '100/100 Core Web Vitals']
@@ -1696,7 +1706,7 @@ export default function Home({ initialLang = 'de' }) {
                     tag: lang === 'de' ? 'Setup & CAPI' : lang === 'en' ? 'Setup & CAPI' : 'Kurulum & CAPI',
                     badge: null,
                     pills: lang === 'de'
-                      ? ['Google Ads & Maps Setup', 'GA4, GMC & Search Console', 'Meta CAPI & Server-GTM']
+                      ? ['Werbekonto & Maps Setup', 'GA4, GMC & Search Console', 'Meta CAPI & Server-GTM']
                       : lang === 'en'
                       ? ['Google Ads & Maps Setup', 'GA4, GMC & Search Console', 'Meta CAPI & Server-GTM']
                       : ['Google Ads & Harita Kurulumu', 'GA4, GMC & Search Console', 'Meta CAPI & Server-GTM']
@@ -1936,7 +1946,7 @@ export default function Home({ initialLang = 'de' }) {
                           {card.badge}
                         </span>
                         <span className="text-xs font-bold text-emerald-600 bg-emerald-50 px-2.5 py-1 rounded-full border border-emerald-200 flex items-center gap-1">
-                          ✓ {lang === 'de' ? 'Offizielles Google Dashboard' : lang === 'en' ? 'Verified Google Dashboard' : 'Doğrulanmış Google Paneli'}
+                          ✓ {lang === 'de' ? 'Original-Screenshot aus dem Werbekonto' : lang === 'en' ? 'Verified Google Dashboard' : 'Doğrulanmış Google Paneli'}
                         </span>
                       </div>
 
@@ -2237,7 +2247,7 @@ export default function Home({ initialLang = 'de' }) {
                 </h3>
                 <form onSubmit={handleSubmit} className="space-y-4">
                   {/* Anti-bot Honeypot trap */}
-                  <div className="hidden" aria-hidden="true" style={{ display: 'none', position: 'absolute', left: '-9999px' }}>
+                  <div className="hidden absolute -left-[9999px]" aria-hidden="true">
                     <label htmlFor="b_check_main">Do not fill this</label>
                     <input
                       type="text"
@@ -2405,7 +2415,7 @@ export default function Home({ initialLang = 'de' }) {
               {
                 slug: 'gemini-3-7-vs-gemini-3-6-ai-marketing-comparison',
                 title: lang === 'de' ? 'Gemini 3.7 vs. 3.6: Hybrides Denken im Marketing' : lang === 'en' ? 'Gemini 3.7 vs. 3.6: Hybrid Reasoning for Marketing' : 'Gemini 3.7 vs. 3.6: Pazarlama ve SEO Kıyaslaması',
-                excerpt: lang === 'de' ? 'Detaillierte Analyse des neuen Gemini 3.7 Thinking Mode für Google Ads & SEO.' : lang === 'en' ? 'In-depth analysis of the new Gemini 3.7 Thinking Mode for Google Ads & SEO.' : 'Google Ads ve SEO otomasyonu için yeni Gemini 3.7 Thinking Mode detaylı analizi.',
+                excerpt: lang === 'de' ? 'Detaillierte Analyse des neuen Gemini 3.7 Thinking Mode für Suchanzeigen & SEO.' : lang === 'en' ? 'In-depth analysis of the new Gemini 3.7 Thinking Mode for Google Ads & SEO.' : 'Google Ads ve SEO otomasyonu için yeni Gemini 3.7 Thinking Mode detaylı analizi.',
                 category: lang === 'de' ? 'Künstliche Intelligenz' : lang === 'en' ? 'Artificial Intelligence' : 'Yapay Zeka',
                 readTime: '14',
                 coverImage: 'https://images.unsplash.com/photo-1677442136019-21780ecad995?w=600&h=300&fit=crop&q=80',
@@ -2671,10 +2681,10 @@ export default function Home({ initialLang = 'de' }) {
             <div>
               <h4 className="font-semibold mb-4">{lang === 'de' ? 'Aktuelle Fachartikel' : lang === 'en' ? 'Strategy Guides' : 'Uzman Rehberleri'}</h4>
               <ul className="space-y-1.5 text-xs text-gray-400">
-                <li><a href="/blog/google-ads-fixpreis-vs-prozent-agentur-modell-2026" className="hover:text-[#4285F4] transition-colors">{lang === 'de' ? 'Google Ads Fixpreis vs. %' : lang === 'en' ? 'Flat Fee vs. Commission' : 'Google Ads Sabit Fiyat vs Komisyon'}</a></li>
+                <li><a href="/blog/google-ads-fixpreis-vs-prozent-agentur-modell-2026" className="hover:text-[#4285F4] transition-colors">{lang === 'de' ? 'Ads-Betreuung: Fixpreis vs. %' : lang === 'en' ? 'Flat Fee vs. Commission' : 'Google Ads Sabit Fiyat vs Komisyon'}</a></li>
                 <li><a href="/blog/meta-reklamlarinda-para-kaybetmeyi-durdurun-2026" className="hover:text-[#4285F4] transition-colors">{lang === 'de' ? 'Meta Ads ROAS Skalierung' : lang === 'en' ? 'Meta Ads ROAS Scaling' : 'Meta Ads ROAS Skalalama'}</a></li>
                 <li><a href="/blog/server-side-gtm-meta-capi-setup-2026" className="hover:text-[#4285F4] transition-colors">{lang === 'de' ? 'Server-Side GTM & CAPI' : lang === 'en' ? 'Server-Side GTM Setup' : 'Server-Side GTM & CAPI'}</a></li>
-                <li><a href="/blog/google-ai-overviews-geo-ranking-strategy" className="hover:text-[#4285F4] transition-colors">{lang === 'de' ? 'Google AI Overviews & GEO' : lang === 'en' ? 'AI Overviews & GEO Strategy' : 'AI Overviews ve GEO Stratejisi'}</a></li>
+                <li><a href="/blog/google-ai-overviews-geo-ranking-strategy" className="hover:text-[#4285F4] transition-colors">{lang === 'de' ? 'AI Overviews & GEO' : lang === 'en' ? 'AI Overviews & GEO Strategy' : 'AI Overviews ve GEO Stratejisi'}</a></li>
                 <li><a href="/blog/google-consent-mode-v2-cookieless-ai-tracking-2026" className="hover:text-[#4285F4] transition-colors">Consent Mode v2 Setup</a></li>
                 <li><a href="/blog" className="text-[#4285F4] font-bold hover:underline block pt-1">{lang === 'de' ? 'Zum Blog-Archiv →' : lang === 'en' ? 'All Strategy Guides →' : 'Tüm Blog Rehberleri →'}</a></li>
               </ul>
@@ -2683,6 +2693,7 @@ export default function Home({ initialLang = 'de' }) {
           <div className="border-t border-gray-800 pt-8 flex flex-col md:flex-row items-center justify-between text-sm text-gray-400">
             <div className="flex items-center space-x-6">
               <p>© 2026 Salih Maral. {t.footer.rights}</p>
+              <p><time dateTime={PAGE_UPDATED_ISO}>{PAGE_UPDATED_LABEL[lang] || PAGE_UPDATED_LABEL.de}</time></p>
               {/* Google Partners Badge in Footer */}
               <a
                 href="https://www.google.com/partners/agency?id=5868261912&_gl=1*18i960o*_ga*MTA1ODA5OTYxNS4xNzU4MDYxMzU4*_ga_V9K47ZG8NP*czE3NzgyODEzNzIkbzI1MyRnMSR0MTc3ODI4MzkyMiRqNjAkbDAkaDA"

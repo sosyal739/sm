@@ -8,8 +8,9 @@ export const MotionSection = ({ children, ...props }) => {
   if (reduce) return <section {...props}>{children}</section>
   return (
     <motion.section
-      initial={{ opacity: 0, y: 28 }}
-      whileInView={{ opacity: 1, y: 0 }}
+      // Kein opacity:0 im SSR-HTML: Inhalt bleibt für Crawler/ohne JS sichtbar, nur die Bewegung wird animiert.
+      initial={{ y: 28 }}
+      whileInView={{ y: 0 }}
       viewport={{ once: true, amount: 0.08 }}
       transition={{ duration: 0.6, ease: [0.22, 1, 0.36, 1] }}
       {...props}

@@ -1,6 +1,11 @@
 'use client'
 
+import { useEffect, useState } from 'react'
+
 export default function EcosystemMarquee({ lang = 'de' }) {
+  // Loop-Kopie erst nach Hydration rendern: SSR-HTML nennt jedes Tool nur einmal.
+  const [loopReady, setLoopReady] = useState(false)
+  useEffect(() => setLoopReady(true), [])
   const content = {
     tr: {
       badge: 'ENTEGRASYONLAR & TEKNOLOJİLER',
@@ -208,7 +213,7 @@ export default function EcosystemMarquee({ lang = 'de' }) {
       {/* Row 1: Sliding Left with Google, Analytics, Search Console, Semrush, Ahrefs, Screaming Frog, Meta */}
       <div className="relative mb-3 sm:mb-4">
         <div className="flex animate-scroll items-center gap-3 sm:gap-4 w-max">
-          {[...row1, ...row1].map((item, idx) => (
+          {(loopReady ? [...row1, ...row1] : row1).map((item, idx) => (
             <div
               key={idx}
               className="flex items-center gap-2.5 sm:gap-3.5 bg-white px-3.5 py-2 sm:px-5 sm:py-3 rounded-xl sm:rounded-2xl border border-slate-100 shadow-[0_4px_16px_rgba(0,0,0,0.03)] hover:shadow-[0_12px_28px_rgba(81,56,238,0.08)] hover:border-[#5138EE]/30 transition-all shrink-0 group cursor-default"
@@ -228,7 +233,7 @@ export default function EcosystemMarquee({ lang = 'de' }) {
       {/* Row 2: Sliding Right (Reverse) with Shopify, WordPress, sGTM, Merchant Center, YouTube, TikTok, Maps */}
       <div className="relative">
         <div className="flex animate-scroll items-center gap-3 sm:gap-4 w-max" style={{ animationDirection: 'reverse', animationDuration: '32s' }}>
-          {[...row2, ...row2].map((item, idx) => (
+          {(loopReady ? [...row2, ...row2] : row2).map((item, idx) => (
             <div
               key={idx}
               className="flex items-center gap-2.5 sm:gap-3.5 bg-white px-3.5 py-2 sm:px-5 sm:py-3 rounded-xl sm:rounded-2xl border border-slate-100 shadow-[0_4px_16px_rgba(0,0,0,0.03)] hover:shadow-[0_12px_28px_rgba(16,185,129,0.08)] hover:border-emerald-300 transition-all shrink-0 group cursor-default"

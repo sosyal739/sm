@@ -63,7 +63,7 @@ export const metadata = {
     title: 'Salih Maral - Digital Marketing Experte & Google Partner',
     description: 'Google Ads, Meta Ads & SEO Experte mit 17+ Jahren Erfahrung. Steigern Sie Ihren ROI mit professionellem Digital Marketing.',
     url: 'https://salihmaral.de',
-    siteName: 'Salih Maral Digital Marketing',
+    siteName: 'Salih Maral',
     images: [
       {
         url: '/logo-og.png',
@@ -116,7 +116,8 @@ const jsonLd = {
     {
       '@type': 'Organization',
       '@id': 'https://salihmaral.de/#organization',
-      name: 'Salih Maral Digital Marketing',
+      name: 'Salih Maral',
+      alternateName: 'Salih Maral Digital Marketing',
       url: 'https://salihmaral.de',
       logo: {
         '@type': 'ImageObject',
@@ -146,7 +147,8 @@ const jsonLd = {
       '@type': 'WebSite',
       '@id': 'https://salihmaral.de/#website',
       url: 'https://salihmaral.de',
-      name: 'Salih Maral Digital Marketing',
+      name: 'Salih Maral',
+      alternateName: 'Salih Maral Digital Marketing',
       publisher: { '@id': 'https://salihmaral.de/#organization' },
       inLanguage: ['de-DE', 'en-US', 'tr-TR']
     },
@@ -185,7 +187,8 @@ const jsonLd = {
     {
       '@type': ['LocalBusiness', 'ProfessionalService'],
       '@id': 'https://salihmaral.de/#localbusiness',
-      name: 'Salih Maral Digital Marketing',
+      name: 'Salih Maral',
+      alternateName: 'Salih Maral Digital Marketing',
       url: 'https://salihmaral.de',
       email: 'info@salihmaral.de',
       image: 'https://salihmaral.de/logo.png',
@@ -381,6 +384,7 @@ export default function RootLayout({ children }) {
         <link rel="icon" type="image/png" sizes="192x192" href="/android-chrome-192x192.png" />
         <link rel="icon" type="image/png" sizes="512x512" href="/android-chrome-512x512.png" />
         <link rel="manifest" href="/site.webmanifest" />
+        <link rel="alternate" type="application/rss+xml" title="Salih Maral Blog (RSS)" href="https://salihmaral.de/feed.xml" />
         
         <meta name="theme-color" content="#4285F4" />
         <meta name="msapplication-TileColor" content="#4285F4" />

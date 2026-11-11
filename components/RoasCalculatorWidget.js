@@ -25,7 +25,7 @@ export default function RoasCalculatorWidget({ lang = 'de' }) {
     de: {
       badge: 'Interaktiver ROI & ROAS Rechner',
       title: 'Wie viel Mehrumsatz steckt in Ihrem Werbebudget?',
-      subtitle: 'Berechnen Sie in Echtzeit Ihr ungenutztes Umsatzpotenzial mit Google Ads & Meta Ads.',
+      subtitle: 'Berechnen Sie in Echtzeit Ihr ungenutztes Umsatzpotenzial mit Such- und Social-Ads.',
       budgetLabel: 'Monatliches Werbebudget:',
       currentRoasLabel: 'Aktueller ROAS:',
       targetRoasLabel: 'Ziel-ROAS mit Salih Maral:',
@@ -238,7 +238,7 @@ export default function RoasCalculatorWidget({ lang = 'de' }) {
           ) : (
             <form onSubmit={handleLeadSubmit} className="space-y-3 mt-4 text-left">
               {/* Anti-bot Honeypot trap - invisible to humans, traps automated spam bots */}
-              <div className="hidden" aria-hidden="true" style={{ display: 'none', position: 'absolute', left: '-9999px' }}>
+              <div className="hidden absolute -left-[9999px]" aria-hidden="true">
                 <label htmlFor="b_check_roas">Do not fill this</label>
                 <input
                   type="text"
