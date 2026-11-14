@@ -84,6 +84,8 @@ coverImage: "https://images.unsplash.com/photo-1554224155-6726b3ff858f?w=1200&h=
   <h4>📚 Verwandte Steuer- und Buchhaltungs-Ratgeber</h4>
   <ul>
     <li><a href="/blog/google-ads-rechnung-buchen-reverse-charge-2026">Google Ads Rechnung buchen: §13b UStG Leitfaden 2026</a></li>
+    <li><a href="/blog/google-ads-meta-ads-rechnung-lexoffice-sevdesk-datev-2026">Google &amp; Meta Ads in Lexoffice, SevDesk &amp; DATEV buchen (§ 13b UStG Schritt-für-Schritt)</a></li>
+    <li><a href="/blog/tiktok-linkedin-ads-rechnung-buchen-reverse-charge-2026">TikTok &amp; LinkedIn Ads Rechnung buchen: SKR03/SKR04 &amp; Reverse-Charge 2026</a></li>
     <li><a href="/blog/google-ads-meta-ads-umsatzsteuer-vorsteuer-leitfaden-2026">Google & Meta Ads Umsatzsteuer & Vorsteuerabzug</a></li>
     <li><a href="/blog/google-ads-meta-ads-betriebsausgabe-finanzamt-leitfaden-2026">Google & Meta Ads als Betriebsausgabe absetzen</a></li>
   </ul>
