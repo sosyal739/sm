@@ -1,3 +1,5 @@
+import HtmlShell from '@/components/HtmlShell'
+
 export const metadata = {
   title: { absolute: 'Datenschutzerklärung | Salih Maral' },
   description: 'Datenschutzerklärung von salihmaral.de: Informationen zur Verarbeitung personenbezogener Daten, Cookies und Tracking.',
@@ -6,5 +8,5 @@ export const metadata = {
 }
 
 export default function Layout({ children }) {
-  return children
+  return <HtmlShell lang="de">{children}</HtmlShell>
 }

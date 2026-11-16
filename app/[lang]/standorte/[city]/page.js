@@ -1281,6 +1281,68 @@ export default function CityPage({ params }) {
         <p className="text-slate-300 leading-relaxed max-w-3xl mb-6">{growth.budget}</p>
         <p className="text-slate-300 leading-relaxed max-w-3xl mb-12">{growth.firstMonth}</p>
 
+        {city === 'koeln' && (
+          <div className="mb-14 rounded-3xl bg-slate-900 border border-blue-500/30 p-6 sm:p-8">
+            <h2 className="text-2xl sm:text-3xl font-bold text-white mb-3">
+              {currentLang === 'tr'
+                ? 'Köln Sektör Bazlı Google Ads Maliyet (CPC & CPL) Tablosu 2026'
+                : currentLang === 'en'
+                ? 'Cologne Google Ads CPC & Cost-Per-Lead Benchmarks 2026'
+                : 'Kölner Google Ads Branchen-Benchmarks & Klickpreise (CPC/CPL) 2026'}
+            </h2>
+            <p className="text-sm text-slate-300 leading-relaxed mb-6 max-w-3xl">
+              {currentLang === 'tr'
+                ? 'Köln içi (Ehrenfeld, Lindenthal, Deutz, Innenstadt) arama kampanyalarında gereksiz banliyö tıklamalarını filtreleyerek elde edilen gerçek ortalama CPC ve dönüşüm aralıkları:'
+                : currentLang === 'en'
+                ? 'Real auction benchmarks across Cologne districts (Innenstadt, Ehrenfeld, Lindenthal, Deutz, Rodenkirchen) with strict postcode targeting:'
+                : 'Praxis-Benchmarks für den Wirtschaftsraum Köln (Innenstadt, Ehrenfeld, Lindenthal, Deutz, Rodenkirchen) bei präzisem PLZ-Geo-Targeting und sauberem Conversion-Tracking:'}
+            </p>
+            <div className="overflow-x-auto">
+              <table className="w-full text-left text-sm border-collapse">
+                <thead>
+                  <tr className="border-b border-slate-700 text-xs uppercase text-blue-300">
+                    <th className="py-3 pr-4">Branche / Sektor in Köln</th>
+                    <th className="py-3 pr-4">Ø CPC Köln</th>
+                    <th className="py-3 pr-4">Ø Conversion-Rate</th>
+                    <th className="py-3 pr-4">Ø Kosten pro Lead</th>
+                    <th className="py-3">Typischer Ziel-ROI</th>
+                  </tr>
+                </thead>
+                <tbody className="divide-y divide-slate-800 text-slate-200">
+                  <tr>
+                    <td className="py-3 pr-4 font-semibold">Handwerk &amp; Sanierung (Sanitär, Dach, Elektro)</td>
+                    <td className="py-3 pr-4">3,20 € – 8,50 €</td>
+                    <td className="py-3 pr-4">8,5 % – 14,0 %</td>
+                    <td className="py-3 pr-4">28 € – 65 €</td>
+                    <td className="py-3 text-emerald-400 font-bold">5.5x – 9.0x ROI</td>
+                  </tr>
+                  <tr>
+                    <td className="py-3 pr-4 font-semibold">Rechtsanwälte &amp; Steuerberater</td>
+                    <td className="py-3 pr-4">5,80 € – 18,50 €</td>
+                    <td className="py-3 pr-4">6,0 % – 11,5 %</td>
+                    <td className="py-3 pr-4">45 € – 110 €</td>
+                    <td className="py-3 text-emerald-400 font-bold">Mandate ab 1.500 €</td>
+                  </tr>
+                  <tr>
+                    <td className="py-3 pr-4 font-semibold">Fachärzte, Zahnärzte &amp; Praxen</td>
+                    <td className="py-3 pr-4">1,80 € – 4,90 €</td>
+                    <td className="py-3 pr-4">7,0 % – 12,0 %</td>
+                    <td className="py-3 pr-4">22 € – 55 €</td>
+                    <td className="py-3 text-emerald-400 font-bold">4.0x – 7.2x ROI</td>
+                  </tr>
+                  <tr>
+                    <td className="py-3 pr-4 font-semibold">B2B Dienstleister, Medien &amp; IT</td>
+                    <td className="py-3 pr-4">4,50 € – 14,00 €</td>
+                    <td className="py-3 pr-4">4,5 % – 8,5 %</td>
+                    <td className="py-3 pr-4">55 € – 140 €</td>
+                    <td className="py-3 text-emerald-400 font-bold">Hoher LTV / B2B-Deals</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        )}
+
         <h2 className="text-2xl font-bold text-white mb-4">{growth.linksTitle}</h2>
         <div className="flex flex-wrap gap-3">
           {growth.links.map((link) => (

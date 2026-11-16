@@ -1,7 +1,7 @@
 'use client'
 
 import { useParams, redirect, notFound } from 'next/navigation'
-import Home from '../page'
+import Home from '../(home)/page'
 
 export default function LangHomePage() {
   const { lang } = useParams()

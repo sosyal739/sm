@@ -4,7 +4,7 @@ slug: "google-ads-meta-ads-umsatzsteuer-vorsteuer-leitfaden-2026"
 
 lang: "de"
 
-title: "Google & Meta Ads ohne MwSt.? Reverse-Charge §13b UStG"
+title: "Google & Meta Ads §13b UStVA: Kz. 84/67 + Rechner"
 
 excerpt: "Warum steht 0 % MwSt. auf Ihrer Google & Meta Ads Rechnung? §13b UStG Reverse-Charge Leitfaden, UStVA-Kennziffern, DATEV-Checkliste & PDF-Abruf 2026."
 
@@ -185,7 +185,7 @@ coverImage: "https://images.unsplash.com/photo-1579532537598-459ecdaf39cc?w=1200
 
 
 
-<p>Lesen Sie auch unseren Grundlagenartikel <a href="/blog/google-ads-rechnung-buchen-reverse-charge-2026">Google Ads Rechnung buchen (§13b UStG)</a>, unseren Ratgeber <a href="/blog/google-ads-mittelstand-agentur-beratung-auswahl-2026">Google Ads Agentur für den Mittelstand (Auswahl & Fixpreis)</a> sowie unseren umfassenden Praxisleitfaden <a href="/blog/google-ads-meta-ads-betriebsausgabe-finanzamt-leitfaden-2026">Google & Meta Ads als Betriebsausgabe beim Finanzamt absetzen (2026)</a>. Für regionale Unternehmen in Nordrhein-Westfalen, Baden-Württemberg und Bayern bieten wir spezialisierte Betreuung: Informieren Sie sich auf unseren Standortseiten für die <a href="/de/standorte/koeln">Google Ads Agentur Köln</a> (siehe auch unseren Spezialleitfaden <a href="/blog/google-ads-agentur-koeln-performance-marketing-2026">Google Ads Agentur Köln & Kölner CPC-Benchmarks</a>), die <a href="/de/standorte/stuttgart">Google Ads Agentur Stuttgart</a> sowie die <a href="/de/standorte/nuernberg">Google Ads Agentur Nürnberg</a>. Zur rechtssicheren Kontoführung empfehlen wir zudem unseren Leitfaden zur <a href="/blog/google-ads-reklamveren-dogrulamasi-rehberi-2026">Google Ads Werbetreibenden-Überprüfung</a> sowie unseren <a href="/blog/google-ads-agentur-preise-kosten-deutschland-2026">Agenturpreis-Vergleich</a> für planbare Fixpreise.</p>
+<p>Lesen Sie auch unseren Grundlagenartikel <a href="/blog/google-ads-rechnung-buchen-reverse-charge-2026">Google Ads Rechnung buchen (§13b UStG)</a>, unseren Ratgeber <a href="/blog/google-ads-mittelstand-agentur-beratung-auswahl-2026">Google Ads Agentur für den Mittelstand (Auswahl & Fixpreis)</a> sowie unseren umfassenden Praxisleitfaden <a href="/blog/google-ads-meta-ads-betriebsausgabe-finanzamt-leitfaden-2026">Google & Meta Ads als Betriebsausgabe beim Finanzamt absetzen (2026)</a>. Für regionale Unternehmen in Nordrhein-Westfalen, Baden-Württemberg und Bayern bieten wir spezialisierte Betreuung: Informieren Sie sich auf unseren Standortseiten für die <a href="/de/standorte/koeln">Google Ads Agentur Köln (inkl. Kölner CPC-Benchmarks)</a>, die <a href="/de/standorte/stuttgart">Google Ads Agentur Stuttgart</a> sowie die <a href="/de/standorte/nuernberg">Google Ads Agentur Nürnberg</a>. Zur rechtssicheren Kontoführung empfehlen wir zudem unseren Leitfaden zur <a href="/blog/google-ads-reklamveren-dogrulamasi-rehberi-2026">Google Ads Werbetreibenden-Überprüfung</a> sowie unseren <a href="/blog/google-ads-agentur-preise-kosten-deutschland-2026">Agenturpreis-Vergleich</a> für planbare Fixpreise.</p>
 
 
 

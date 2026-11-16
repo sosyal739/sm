@@ -5,6 +5,7 @@ import { Badge } from '@/components/ui/badge'
 import { Button } from '@/components/ui/button'
 import { ArrowLeft, Clock, Calendar, Menu, X, ChevronDown, MapPin, ArrowUpRight, Mail } from 'lucide-react'
 import { useState, useEffect } from 'react'
+import BuchungssatzRechner from '@/components/BuchungssatzRechner'
 
 const servicesList = {
   de: [
@@ -425,6 +426,9 @@ export default function BlogDetailClient({ initialPost, initialLang, relatedPost
         <div className="container mx-auto max-w-4xl">
           <article className="bg-white rounded-2xl shadow-xl overflow-hidden">
             <div className="p-8 md:p-12">
+              {/(rechnung-buchen|umsatzsteuer-vorsteuer|lexoffice-sevdesk-datev|betriebsausgabe-finanzamt)/.test(post.slug || '') && (
+                <BuchungssatzRechner lang={lang} />
+              )}
               <div
                 className="blog-content"
                 dangerouslySetInnerHTML={{ __html: post.content }}

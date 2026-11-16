@@ -39,6 +39,7 @@ export async function generateMetadata({ params }) {
       title: meta.title,
       description: meta.description,
       url: canonicalUrl,
+      locale: currentLang === 'tr' ? 'tr_TR' : currentLang === 'en' ? 'en_US' : 'de_DE',
       type: 'website',
     },
   }

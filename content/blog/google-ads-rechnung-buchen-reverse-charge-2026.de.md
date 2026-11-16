@@ -1,7 +1,7 @@
 ---
 slug: "google-ads-rechnung-buchen-reverse-charge-2026"
 lang: "de"
-title: "Google Ads Rechnung buchen 2026: SKR03/SKR04 & §13b UStG"
+title: "Google Ads Rechnung buchen: SKR03/04 + §13b Rechner"
 excerpt: "Google Ads Rechnung aus Irland fehlerfrei verbuchen: Schritt-für-Schritt-Anleitung für SKR03 & SKR04, §13b UStG Reverse-Charge, DATEV & PDF-Download 2026."
 category: "Steuern & Finanzen"
 date: "2026-09-17"
@@ -117,7 +117,7 @@ coverImage: "https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?w=1200
 
 <p>Die steuerliche Erfassung von Google Ads Werbekosten ist dank § 13b UStG für vorsteuerabzugsberechtigte Unternehmen kostenneutral. Entscheidend ist jedoch, dass das Werbebudget nicht durch ineffiziente Kampagneneinstellungen verpufft. Mit unserem <strong>transparenten Monats-Fixpreis (ab 590 €/Monat)</strong> erhalten Sie maximale Rentabilität ohne prozentuale Provisionsaufschläge.</p>
 
-<p>Besonders im wettbewerbsintensiven B2B- und Dienstleistungssektor in Wirtschaftsmetropolen wie unserer <a href="/de/standorte/frankfurt">Google Ads Agentur Frankfurt am Main</a>, unserer <a href="/de/standorte/koeln">Google Ads Agentur Köln</a> (sowie unserem <a href="/blog/google-ads-agentur-koeln-performance-marketing-2026">Kölner Google Ads & CPC-Ratgeber</a>), der <a href="/de/standorte/stuttgart">Google Ads Agentur Stuttgart</a> sowie in Franken (<a href="/de/standorte/nuernberg">Google Ads Agentur Nürnberg</a>) oder für den produzierenden Mittelstand (siehe unseren praxisnahen Leitfaden <a href="/blog/google-ads-mittelstand-agentur-beratung-auswahl-2026">Google Ads Agentur für den Mittelstand: Auswahl & Fixpreis</a> und die <a href="/blog/google-ads-agentur-dortmund-ruhrgebiet-mittelstand-2026">Google Ads Agentur Dortmund & Ruhrgebiet</a>) sorgt diese exakte Kostenkontrolle für spürbar höhere Margen. Informieren Sie sich auch über die branchenweiten <a href="/blog/google-ads-agentur-preise-kosten-deutschland-2026">Google Ads Agentur Preise & Kosten in Deutschland 2026</a>.</p>
+<p>Besonders im wettbewerbsintensiven B2B- und Dienstleistungssektor in Wirtschaftsmetropolen wie unserer <a href="/de/standorte/frankfurt">Google Ads Agentur Frankfurt am Main</a>, unserer <a href="/de/standorte/koeln">Google Ads Agentur Köln (inkl. Kölner CPC-Benchmarks)</a>, der <a href="/de/standorte/stuttgart">Google Ads Agentur Stuttgart</a> sowie in Franken (<a href="/de/standorte/nuernberg">Google Ads Agentur Nürnberg</a>) oder für den produzierenden Mittelstand (siehe unseren praxisnahen Leitfaden <a href="/blog/google-ads-mittelstand-agentur-beratung-auswahl-2026">Google Ads Agentur für den Mittelstand: Auswahl & Fixpreis</a> und die <a href="/blog/google-ads-agentur-dortmund-ruhrgebiet-mittelstand-2026">Google Ads Agentur Dortmund & Ruhrgebiet</a>) sorgt diese exakte Kostenkontrolle für spürbar höhere Margen. Informieren Sie sich auch über die branchenweiten <a href="/blog/google-ads-agentur-preise-kosten-deutschland-2026">Google Ads Agentur Preise & Kosten in Deutschland 2026</a>.</p>
 
 <div class="cta-box" style="background: linear-gradient(135deg, rgba(66, 133, 244, 0.08) 0%, rgba(52, 168, 83, 0.08) 100%); border: 1px solid rgba(66, 133, 244, 0.2); border-radius: 1rem; padding: 2rem; margin: 2.5rem 0; text-align: center;">
   <h3 style="margin-top: 0; color: #1a73e8;">🎯 Kostenlose Google Ads Potenzial- & Budget-Analyse</h3>
@@ -134,6 +134,7 @@ coverImage: "https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?w=1200
     <li><a href="/blog/meta-ads-rechnung-buchen-reverse-charge-2026">Meta Ads Rechnung buchen: Reverse Charge & Vorsteuer 2026</a></li>
     <li><a href="/blog/google-ads-meta-ads-rechnung-lexoffice-sevdesk-datev-2026">Google &amp; Meta Ads in Lexoffice, SevDesk &amp; DATEV buchen (§ 13b UStG Schritt-für-Schritt)</a></li>
     <li><a href="/blog/tiktok-linkedin-ads-rechnung-buchen-reverse-charge-2026">TikTok &amp; LinkedIn Ads Rechnung buchen: SKR03/SKR04 &amp; Reverse-Charge 2026</a></li>
+    <li><a href="/blog/microsoft-bing-amazon-ads-rechnung-buchen-reverse-charge-2026">Microsoft (Bing) &amp; Amazon Ads Rechnung buchen: § 13b vs. 19% deutsche USt 2026</a></li>
     <li><a href="/blog/google-ads-reklamveren-dogrulamasi-rehberi-2026">Google Ads Werbetreibenden-Überprüfung (Verification Guide)</a></li>
     <li><a href="/de/dienstleistungen/google-ads">Zertifizierte Google Ads Betreuung zum Festpreis</a></li>
   </ul>

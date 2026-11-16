@@ -1,3 +1,5 @@
+import HtmlShell from '@/components/HtmlShell'
+
 export const metadata = {
   title: { absolute: 'Impressum | Salih Maral' },
   description: 'Impressum und Anbieterkennzeichnung von Salih Maral, Digital Marketing Experte und Google Partner.',
@@ -6,5 +8,5 @@ export const metadata = {
 }
 
 export default function Layout({ children }) {
-  return children
+  return <HtmlShell lang="de">{children}</HtmlShell>
 }

@@ -54,6 +54,10 @@ const nextConfig = {
       { source: '/blog/x-twitter-ads', destination: '/blog/x-twitter-b2b-musteri-kazanma-rehberi-2026', statusCode: 301 },
       { source: '/blog/server-side-tracking-first-party-ai-attribution', destination: '/blog/server-side-tracking-capi-guide', statusCode: 301 },
       { source: '/blog/meta-advantage-plus-ai-creative-scaling', destination: '/blog/meta-advantage-plus-creative-ai-2026', statusCode: 301 },
+      // 301: Köln Keyword-Kannibalisierung Konsolidierung (Blog -> /standorte/koeln)
+      { source: '/blog/google-ads-agentur-koeln-performance-marketing-2026', destination: '/de/standorte/koeln', statusCode: 301 },
+      { source: '/tr/blog/google-ads-agentur-koeln-performance-marketing-2026', destination: '/tr/standorte/koeln', statusCode: 301 },
+      { source: '/en/blog/google-ads-agentur-koeln-performance-marketing-2026', destination: '/en/standorte/koeln', statusCode: 301 },
     ];
   },
   async headers() {

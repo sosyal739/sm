@@ -1,3 +1,5 @@
+import HtmlShell from '@/components/HtmlShell'
+
 export const metadata = {
   title: {
     absolute: 'Über Salih Maral | Google Ads Partner seit 2009',
@@ -9,5 +11,5 @@ export const metadata = {
 }
 
 export default function AboutLayout({ children }) {
-  return children
+  return <HtmlShell lang="de">{children}</HtmlShell>
 }

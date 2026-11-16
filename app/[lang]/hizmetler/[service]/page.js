@@ -264,6 +264,7 @@ export async function generateMetadata({ params }) {
       title: metaData.title,
       description: metaData.description,
       url: canonicalUrl,
+      locale: currentLang === 'tr' ? 'tr_TR' : currentLang === 'en' ? 'en_US' : 'de_DE',
       images: [
         {
           url: 'https://salihmaral.de/logo-og.png',

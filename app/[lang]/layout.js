@@ -1,4 +1,5 @@
 import { notFound } from 'next/navigation'
+import HtmlShell from '@/components/HtmlShell'
 
 export const dynamicParams = false
 
@@ -11,16 +12,19 @@ const langMeta = {
     title: 'Salih Maral – Google Ads, Meta Ads & SEO Experte',
     description: 'Zertifizierter Google Partner mit 17+ Jahren Erfahrung. Performance Marketing mit Google Ads, Meta Ads, TikTok Ads & SEO.',
     canonical: 'https://salihmaral.de',
+    ogLocale: 'de_DE',
   },
   en: {
     title: 'Google Ads Agency Germany & PPC Expert | Salih Maral',
     description: 'Scale your business in Germany with certified flat-fee Google Ads, Meta Ads, TikTok Ads & SEO management by an official 17+ yr Senior Google Partner.',
     canonical: 'https://salihmaral.de/en',
+    ogLocale: 'en_US',
   },
   tr: {
     title: 'Almanya Google Ads Ajansı & SEO Uzmanı | Salih Maral',
     description: 'Almanya ve Avrupa pazarında büyümek isteyen markalar ve gurbetçi işletmeler için Resmi Google Partneri ile sabit fiyatlı Google Ads, Meta Ads & Yerel SEO.',
     canonical: 'https://salihmaral.de/tr',
+    ogLocale: 'tr_TR',
   },
 }
 
@@ -50,6 +54,7 @@ export async function generateMetadata({ params }) {
       title: meta.title,
       description: meta.description,
       url: meta.canonical,
+      locale: meta.ogLocale,
     },
   }
 }
@@ -59,5 +64,5 @@ export default async function LangLayout({ children, params }) {
   if (!['de', 'en', 'tr'].includes(lang)) {
     notFound()
   }
-  return <>{children}</>
+  return <HtmlShell lang={lang}>{children}</HtmlShell>
 }
