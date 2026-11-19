@@ -121,7 +121,20 @@ export async function POST(request) {
     }
 
     const body = await request.json()
-    const { name, email, phone, company, message, language, b_check, _gotcha, website_hp } = body
+    const {
+      name,
+      email,
+      phone,
+      company,
+      message,
+      language,
+      service,
+      formSource,
+      pageUrl,
+      b_check,
+      _gotcha,
+      website_hp,
+    } = body
 
     // 3. Honeypot Anti-Bot Filter (Silently trap automated spam bots)
     if (b_check || _gotcha || website_hp) {
@@ -155,6 +168,9 @@ export async function POST(request) {
       typeof email !== 'string' || email.length > 120 ||
       (phone && (typeof phone !== 'string' || phone.length > 40)) ||
       (company && (typeof company !== 'string' || company.length > 100)) ||
+      (service && (typeof service !== 'string' || service.length > 120)) ||
+      (formSource && (typeof formSource !== 'string' || formSource.length > 100)) ||
+      (pageUrl && (typeof pageUrl !== 'string' || pageUrl.length > 300)) ||
       typeof message !== 'string' || message.length > 3000
     ) {
       return Response.json(
@@ -182,6 +198,9 @@ export async function POST(request) {
     const cleanEmail = escapeHtml(email.trim())
     const cleanPhone = phone ? escapeHtml(phone.replace(/[\r\n]/g, ' ').trim()) : ''
     const cleanCompany = company ? escapeHtml(company.replace(/[\r\n]/g, ' ').trim()) : ''
+    const cleanService = service ? escapeHtml(service.replace(/[\r\n]/g, ' ').trim()) : ''
+    const cleanFormSource = formSource ? escapeHtml(formSource.replace(/[\r\n]/g, ' ').trim()) : 'Web Sitesi Formu'
+    const cleanPageUrl = pageUrl ? escapeHtml(pageUrl.replace(/[\r\n]/g, ' ').trim()) : ''
     const cleanMessage = escapeHtml(message.trim())
     const cleanLang = ['de', 'tr', 'en'].includes(language) ? language : 'de'
 
@@ -191,6 +210,9 @@ export async function POST(request) {
       email: cleanEmail,
       phone: cleanPhone || 'N/A',
       company: cleanCompany || 'N/A',
+      service: cleanService || 'N/A',
+      formSource: cleanFormSource,
+      pageUrl: cleanPageUrl || 'N/A',
       language: cleanLang,
       ip: clientIp,
     })
@@ -222,6 +244,16 @@ export async function POST(request) {
     </div>
     <div class="content">
       <div class="field">
+        <div class="label">Doldurulan Form &amp; Sayfa</div>
+        <div class="value">${cleanFormSource}${cleanPageUrl ? ` &bull; <span style="color: #475569; font-weight: 500;">salihmaral.de${cleanPageUrl}</span>` : ''}</div>
+      </div>
+      ${cleanService ? `
+      <div class="field">
+        <div class="label">İstenen Hizmet / Konu</div>
+        <div class="value" style="border-left-color: #f59e0b; background: #fffbeb;">${cleanService}</div>
+      </div>
+      ` : ''}
+      <div class="field">
         <div class="label">Ad Soyad</div>
         <div class="value">${cleanName}</div>
       </div>
@@ -240,7 +272,7 @@ export async function POST(request) {
       </div>
       ` : ''}
       <div class="field">
-        <div class="label">Sayfa / Dil</div>
+        <div class="label">Dil</div>
         <div class="value">${cleanLang === 'tr' ? 'Türkçe (TR)' : cleanLang === 'en' ? 'İngilizce (EN)' : 'Almanca (DE)'}</div>
       </div>
       <div class="field">
@@ -259,13 +291,14 @@ export async function POST(request) {
 
     let sentVia = 'ionos_smtp'
     let emailId = null
+    const subjectService = cleanService ? ` — ${cleanService}` : ''
 
     try {
       const smtpRes = await primaryTransporter.sendMail({
         from: '"Salih Maral Web Sitesi" <info@salihmaral.de>',
         to: contactEmail,
         replyTo: email,
-        subject: `📬 Yeni Teklif Talebi: ${cleanName} (${cleanCompany || 'Bireysel'}) - salihmaral.de`,
+        subject: `📬 Yeni Teklif Talebi: ${cleanName}${subjectService} (${cleanCompany || 'Bireysel'}) - salihmaral.de`,
         html: emailHtml,
       })
       emailId = smtpRes.messageId
@@ -277,7 +310,7 @@ export async function POST(request) {
           from: 'Salih Maral Website <onboarding@resend.dev>',
           to: process.env.RESEND_FALLBACK_EMAIL || 'salihmaralde@gmail.com',
           replyTo: email,
-          subject: `📬 [Yedek Kanal] Yeni Teklif Talebi: ${cleanName} (${cleanCompany || 'Bireysel'})`,
+          subject: `📬 [Yedek Kanal] Yeni Teklif Talebi: ${cleanName}${subjectService} (${cleanCompany || 'Bireysel'})`,
           html: emailHtml,
         })
         sentVia = 'resend_fallback'

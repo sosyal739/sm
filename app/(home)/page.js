@@ -807,7 +807,7 @@ const getServiceIcon = (iconType) => {
 
 export default function Home({ initialLang = 'de' }) {
   const [lang, setLang] = useState(initialLang)
-  const [formData, setFormData] = useState({ name: '', email: '', phone: '', message: '' })
+  const [formData, setFormData] = useState({ name: '', email: '', phone: '', company: '', service: '', message: '' })
   const [formStatus, setFormStatus] = useState({ type: '', message: '' })
   const [isSubmitting, setIsSubmitting] = useState(false)
   const [latestPosts, setLatestPosts] = useState([])
@@ -906,13 +906,18 @@ export default function Home({ initialLang = 'de' }) {
       const response = await fetch('/api/contact', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ ...formData, language: lang })
+        body: JSON.stringify({
+          ...formData,
+          language: lang,
+          formSource: 'Ana Sayfa İletişim Formu',
+          pageUrl: typeof window !== 'undefined' ? window.location.pathname + window.location.hash : '/',
+        })
       })
 
       if (response.ok) {
-        trackLead({ formName: 'homepage_contact', method: 'contact_form' })
+        trackLead({ formName: 'homepage_contact', service: formData.service || 'general', method: 'contact_form' })
         setFormStatus({ type: 'success', message: t.contact.form.success })
-        setFormData({ name: '', email: '', phone: '', message: '' })
+        setFormData({ name: '', email: '', phone: '', company: '', service: '', message: '' })
       } else {
         setFormStatus({ type: 'error', message: t.contact.form.error })
       }
@@ -2280,15 +2285,44 @@ export default function Home({ initialLang = 'de' }) {
                       />
                     </div>
                   </div>
+                  <div className="grid md:grid-cols-2 gap-4">
+                    <div>
+                      <Input
+                        type="tel"
+                        placeholder={t.contact.form.phone}
+                        value={formData.phone}
+                        onChange={(e) => setFormData({ ...formData, phone: e.target.value })}
+                        required
+                        className="border border-slate-200 focus:border-[#4285F4] rounded-2xl bg-slate-50/50 py-3 text-base sm:text-sm transition-colors"
+                      />
+                    </div>
+                    <div>
+                      <Input
+                        placeholder={lang === 'de' ? 'Firma / Website (Optional)' : lang === 'en' ? 'Company / Website (Optional)' : 'Firma / Web Sitesi (Opsiyonel)'}
+                        value={formData.company}
+                        onChange={(e) => setFormData({ ...formData, company: e.target.value })}
+                        className="border border-slate-200 focus:border-[#4285F4] rounded-2xl bg-slate-50/50 py-3 text-base sm:text-sm transition-colors"
+                      />
+                    </div>
+                  </div>
                   <div>
-                    <Input
-                      type="tel"
-                      placeholder={t.contact.form.phone}
-                      value={formData.phone}
-                      onChange={(e) => setFormData({ ...formData, phone: e.target.value })}
+                    <select
+                      value={formData.service}
+                      onChange={(e) => setFormData({ ...formData, service: e.target.value })}
                       required
-                      className="border border-slate-200 focus:border-[#4285F4] rounded-2xl bg-slate-50/50 py-3 text-base sm:text-sm transition-colors"
-                    />
+                      aria-label={lang === 'de' ? 'Gewünschte Leistung' : lang === 'en' ? 'Desired Service' : 'İlgilendiğiniz Hizmet'}
+                      className="w-full h-11 px-3.5 border border-slate-200 focus:border-[#4285F4] focus:outline-none rounded-2xl bg-slate-50/50 text-base sm:text-sm text-gray-900 transition-colors"
+                    >
+                      <option value="" disabled>
+                        {lang === 'de' ? 'Welche Leistung benötigen Sie? *' : lang === 'en' ? 'Which service are you interested in? *' : 'Hangi hizmetle ilgileniyorsunuz? *'}
+                      </option>
+                      <option value="Google Ads">Google Ads (Search, PMax, Shopping)</option>
+                      <option value="Meta Ads (Instagram & Facebook)">Meta Ads (Instagram & Facebook)</option>
+                      <option value="SEO & AI Sichtbarkeit (GEO)">{lang === 'de' ? 'SEO & AI-Sichtbarkeit (GEO)' : lang === 'en' ? 'SEO & AI Visibility (GEO)' : 'SEO & Yapay Zeka Görünürlüğü (GEO)'}</option>
+                      <option value="Website & Landing Page">{lang === 'de' ? 'Website & Landing Page Entwicklung' : lang === 'en' ? 'Website & Landing Page Development' : 'Web Sitesi & Landing Page Tasarımı'}</option>
+                      <option value="Komplettpaket Performance Marketing">{lang === 'de' ? 'Komplettpaket Performance Marketing' : lang === 'en' ? 'Full-Funnel Performance Marketing' : 'Tam Kapsamlı Performans Pazarlama'}</option>
+                      <option value="Beratung / Sonstiges">{lang === 'de' ? 'Kostenlose Erstberatung / Sonstiges' : lang === 'en' ? 'Free Consultation / Other' : 'Ücretsiz Ön Görüşme / Diğer'}</option>
+                    </select>
                   </div>
                   <div>
                     <Textarea

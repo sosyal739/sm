@@ -771,7 +771,11 @@ export default function CityPage({ params }) {
           name: formData.name,
           email: formData.email,
           phone: formData.phone,
-          message: `[Standort: ${cityData.name}] Firma: ${formData.company || 'N/A'} - Nachricht: ${formData.message}`,
+          company: formData.company,
+          service: `Yerel Google Ads & Performans Pazarlama (${cityData.name})`,
+          formSource: `Şehir Sayfası Formu (${cityData.name})`,
+          pageUrl: typeof window !== 'undefined' ? window.location.pathname : '',
+          message: formData.message,
           language: currentLang,
           b_check: formData.b_check || ''
         })

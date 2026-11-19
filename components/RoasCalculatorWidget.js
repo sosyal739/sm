@@ -102,6 +102,10 @@ export default function RoasCalculatorWidget({ lang = 'de' }) {
         body: JSON.stringify({
           name: formData.name,
           email: formData.email,
+          company: formData.website || '',
+          service: `ROAS Büyüme Planı (${budget}€ bütçe)`,
+          formSource: 'ROAS Hesaplayıcı Formu',
+          pageUrl: typeof window !== 'undefined' ? window.location.pathname : '',
           message: `[ROAS Hesaplayıcı] Bütçe: ${budget}€, Mevcut ROAS: ${currentRoas}x, Hedef ROAS: ${targetRoas}x, Ek Ciro: ${additionalRevenue}€, Web: ${formData.website || 'N/A'}`,
           language: lang,
           b_check: formData.b_check || ''

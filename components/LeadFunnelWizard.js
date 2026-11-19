@@ -154,6 +154,10 @@ export default function LeadFunnelWizard({ lang = 'de' }) {
           name: formData.name,
           email: formData.email,
           phone: formData.phone,
+          company: formData.website || '',
+          service: goal,
+          formSource: 'Adım Adım Teklif Sihirbazı (Funnel Wizard)',
+          pageUrl: typeof window !== 'undefined' ? window.location.pathname : '',
           message: fullMessage,
           language: lang,
           b_check: formData.b_check || ''
