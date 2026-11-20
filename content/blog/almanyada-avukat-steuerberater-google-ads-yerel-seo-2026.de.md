@@ -17,6 +17,11 @@ coverImage: "https://images.unsplash.com/photo-1450101499163-c8848c66ca85?w=1200
 <p><strong>Planbare Mandantengewinnung für Rechtsanwälte und Steuerberater:</strong> Wenn Privatpersonen oder mittelständische Unternehmen in Deutschland mit arbeitsrechtlichen Kündigungen, Scheidungen, Steuerstrafverfahren oder komplexen M&A-Verträgen konfrontiert sind, suchen über 80% der Ratsuchenden zunächst bei Google nach einer spezialisierten Kanzlei in ihrer Region. Als <strong>Offizieller Google Partner mit 17+ Jahren Erfahrung</strong> unterstützen wir Rechtsanwälte und Steuerberater bei der berufsrechtskonformen Google Ads- und Local-SEO-Positionierung zum <strong>transparenten Monats-Festpreis</strong>.</p>
 </div>
 
+<div class="kanzlei-bridge-box" style="background: rgba(66, 133, 244, 0.08); border-left: 4px solid #1a73e8; border-radius: 0.5rem; padding: 1rem 1.25rem; margin-bottom: 1.5rem;">
+  <strong style="color: #1a73e8;">📊 Fokus dieses Leitfadens (§ 43b BRAO &amp; § 57a StBerG):</strong>
+  <p style="margin: 0.4rem 0 0 0; font-size: 0.95rem; color: #1f2937;">Hier behandeln wir die berufsrechtlichen Grenzen der Kanzleiwerbung. Konkrete Suchbegriffe, Klickpreise (CPC) und Kampagnen-Setups finden Sie in unserem Hauptleitfaden: <a href="/blog/google-ads-seo-steuerberater-anwaelte-kosten-keywords-2026" style="font-weight: 700; color: #1a73e8; text-decoration: underline;">Google Ads &amp; SEO für Steuerberater und Kanzleien: Keywords &amp; CPC 2026 →</a></p>
+</div>
+
 <h2>⚖️ Berufsrechtlich saubere Kanzleien-Werbung: BRAO § 43b & StBerG § 57a</h2>
 
 <p>Google Ads für Anwälte ist heute ein fester Bestandteil moderner Kanzleistrategien, sofern die ethischen und gesetzlichen Richtlinien eingehalten werden:</p>

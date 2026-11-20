@@ -195,13 +195,18 @@ export default function BuchungssatzRechner({ lang = 'de' }) {
         </div>
       </div>
 
-      <div className="mt-5 flex flex-wrap items-center justify-between gap-3 pt-4 border-t border-slate-800">
-        <span className="text-xs text-slate-300">
-          Monatlich bis zu 35 % Streuverlust im Google/Meta Konto vermeiden (Betreuung zum Fixpreis ab 590 €)
-        </span>
+      <div className="mt-5 rounded-xl bg-blue-950/60 border border-blue-500/40 p-4 flex flex-wrap items-center justify-between gap-3">
+        <div>
+          <span className="inline-block text-[11px] font-bold uppercase tracking-wider text-emerald-300 mb-0.5">
+            Offizieller Google Partner · Deutsch &amp; Türkisch
+          </span>
+          <p className="text-xs sm:text-sm text-slate-200 m-0">
+            Kostenloser Google &amp; Meta Ads Konto-Check — Betreuung zum Fixpreis ab 590 €/Monat ohne Budgetprovision.
+          </p>
+        </div>
         <a
           href="/#contact"
-          className="inline-flex items-center gap-1.5 rounded-xl bg-blue-600 hover:bg-blue-500 px-4 py-2 text-xs font-bold text-white transition-colors"
+          className="inline-flex items-center gap-1.5 rounded-xl bg-blue-600 hover:bg-blue-500 px-4 py-2.5 text-xs font-bold text-white transition-colors shrink-0"
         >
           <span>Kostenlosen Konto-Check anfragen</span>
           <ArrowRight className="w-3.5 h-3.5" />
