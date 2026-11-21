@@ -816,6 +816,7 @@ export default function Home({ initialLang = 'de' }) {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false)
   const [isServicesOpen, setIsServicesOpen] = useState(false)
   const [openFaq, setOpenFaq] = useState(null)
+  const [suggestedLang, setSuggestedLang] = useState(null)
 
   // Language change navigates to the correct URL
   const handleLanguageChange = (newLang) => {
@@ -827,32 +828,30 @@ export default function Home({ initialLang = 'de' }) {
     }
   }
 
-  // Automatic Country & Browser Language Detection on First Visit
+  // Non-blocking browser language suggestion (never redirects Googlebot or overrides URL canonicals)
   useEffect(() => {
     try {
       if (typeof window !== 'undefined') {
+        if (/bot|crawl|spider|google|bing|lighthouse|slurp|yandex/i.test(navigator.userAgent || '')) return
         const savedLang = localStorage.getItem('preferredLanguage')
-        // Only run auto-detection if user hasn't explicitly chosen a language
-        if (!savedLang) {
-          const timeZone = (Intl && Intl.DateTimeFormat().resolvedOptions().timeZone) || ''
+        const dismissed = sessionStorage.getItem('langBannerDismissed')
+        if (!savedLang && !dismissed) {
           const navLangs = navigator.languages ? Array.from(navigator.languages) : [navigator.language || '']
           const primaryNavLang = (navLangs[0] || '').toLowerCase()
-          
-          const isTurkish = primaryNavLang.startsWith('tr') || timeZone.toLowerCase().includes('istanbul')
-          const isGerman = primaryNavLang.startsWith('de') || timeZone.toLowerCase().includes('berlin') || timeZone.toLowerCase().includes('vienna') || timeZone.toLowerCase().includes('zurich')
-          const isEnglish = primaryNavLang.startsWith('en')
-
-          if (isTurkish && initialLang !== 'tr') {
-            window.location.replace('/tr')
-          } else if (isGerman && initialLang !== 'de') {
-            window.location.replace('/')
-          } else if (isEnglish && initialLang !== 'en' && !isTurkish && !isGerman) {
-            window.location.replace('/en')
+          const detected = primaryNavLang.startsWith('tr')
+            ? 'tr'
+            : primaryNavLang.startsWith('de')
+            ? 'de'
+            : primaryNavLang.startsWith('en')
+            ? 'en'
+            : null
+          if (detected && detected !== lang) {
+            setSuggestedLang(detected)
           }
         }
       }
     } catch (e) {}
-  }, [initialLang])
+  }, [lang])
 
   // Update html lang attribute for SEO
   useEffect(() => {
@@ -1056,6 +1055,45 @@ export default function Home({ initialLang = 'de' }) {
         }) }} />
       {/* Navigation (Orphex Pure White & Soft Ambient Glow Shadow) */}
       <nav className="fixed top-0 left-0 right-0 z-50 bg-white border-b border-slate-100 shadow-[0_8px_28px_rgba(81,56,238,0.06)]">
+        {suggestedLang && (
+          <div
+            role="region"
+            aria-label="Language suggestion"
+            className="fixed top-20 left-1/2 -translate-x-1/2 z-50 w-[calc(100%-2rem)] max-w-md rounded-2xl border border-indigo-200 bg-white/95 px-4 py-2.5 shadow-xl backdrop-blur-md flex items-center justify-between gap-3"
+          >
+            <span className="text-xs sm:text-sm font-semibold text-gray-800">
+              {suggestedLang === 'tr'
+                ? '🇹🇷 Türkçe devam etmek ister misiniz?'
+                : suggestedLang === 'en'
+                ? '🇬🇧 Prefer viewing this page in English?'
+                : '🇩🇪 Möchten Sie auf Deutsch fortfahren?'}
+            </span>
+            <div className="flex items-center gap-1.5 shrink-0">
+              <button
+                type="button"
+                onClick={() => handleLanguageChange(suggestedLang)}
+                className="rounded-xl bg-[#5138EE] hover:bg-[#432bd4] px-3 py-1.5 text-xs font-bold text-white transition-colors cursor-pointer"
+              >
+                {suggestedLang === 'tr'
+                  ? "Türkçe'ye Geç"
+                  : suggestedLang === 'en'
+                  ? 'Switch to English'
+                  : 'Zu Deutsch'}
+              </button>
+              <button
+                type="button"
+                aria-label="Close"
+                onClick={() => {
+                  try { sessionStorage.setItem('langBannerDismissed', '1') } catch (e) {}
+                  setSuggestedLang(null)
+                }}
+                className="rounded-lg p-1 text-gray-400 hover:bg-gray-100 hover:text-gray-700 transition-colors cursor-pointer"
+              >
+                <X className="w-4 h-4" />
+              </button>
+            </div>
+          </div>
+        )}
         <div className="container mx-auto px-4 py-3 sm:py-4">
           <div className="flex items-center justify-between">
             <a href={lang === 'de' ? '/' : `/${lang}`} className="flex items-center">
