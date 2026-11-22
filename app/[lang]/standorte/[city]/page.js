@@ -1584,7 +1584,13 @@ export default function CityPage({ params }) {
           <div className="text-center mb-8">
             <div className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-amber-500/10 text-amber-300 text-xs font-bold mb-4">
               <Star className="w-3.5 h-3.5 fill-amber-400 text-amber-400" />
-              <span>5.0 / 5.0 Google Bewertung (312+ Rezensionen)</span>
+              <span>
+                {currentLang === 'tr'
+                  ? '5.0 / 5.0 Google Değerlendirmesi (312+ Yorum)'
+                  : currentLang === 'en'
+                  ? '5.0 / 5.0 Google Rating (312+ Reviews)'
+                  : '5.0 / 5.0 Google Bewertung (312+ Rezensionen)'}
+              </span>
             </div>
             <h2 className="text-3xl sm:text-4xl font-extrabold text-white mb-3">
               {currentLang === 'tr'
@@ -1632,7 +1638,7 @@ export default function CityPage({ params }) {
                   required
                   value={formData.name}
                   onChange={(e) => setFormData({ ...formData, name: e.target.value })}
-                  placeholder="Max Mustermann"
+                  placeholder={currentLang === 'tr' ? 'Adınız Soyadınız' : currentLang === 'en' ? 'John Smith' : 'Max Mustermann'}
                   className="w-full px-4 py-3 rounded-xl bg-slate-900/90 border border-slate-700 text-white placeholder-slate-500 focus:outline-none focus:border-blue-500 text-sm transition-colors"
                 />
               </div>
@@ -1646,7 +1652,7 @@ export default function CityPage({ params }) {
                   required
                   value={formData.email}
                   onChange={(e) => setFormData({ ...formData, email: e.target.value })}
-                  placeholder="name@unternehmen.de"
+                  placeholder={currentLang === 'tr' ? 'ad@firmaniz.de' : currentLang === 'en' ? 'name@company.com' : 'name@unternehmen.de'}
                   className="w-full px-4 py-3 rounded-xl bg-slate-900/90 border border-slate-700 text-white placeholder-slate-500 focus:outline-none focus:border-blue-500 text-sm transition-colors"
                 />
               </div>
@@ -1674,7 +1680,7 @@ export default function CityPage({ params }) {
                   type="text"
                   value={formData.company}
                   onChange={(e) => setFormData({ ...formData, company: e.target.value })}
-                  placeholder="www.ihre-website.de"
+                  placeholder={currentLang === 'tr' ? 'www.siteniz.de' : currentLang === 'en' ? 'www.yourcompany.com' : 'www.ihre-website.de'}
                   className="w-full px-4 py-3 rounded-xl bg-slate-900/90 border border-slate-700 text-white placeholder-slate-500 focus:outline-none focus:border-blue-500 text-sm transition-colors"
                 />
               </div>
@@ -1689,7 +1695,13 @@ export default function CityPage({ params }) {
                 rows={4}
                 value={formData.message}
                 onChange={(e) => setFormData({ ...formData, message: e.target.value })}
-                placeholder={currentLang === 'tr' ? 'Örn: Google Ads ve Meta Ads ile satışlarımızı artırmak istiyoruz...' : 'Z.B. Wir möchten unsere Google Ads Kampagnen in dieser Region optimieren und den ROAS steigern...'}
+                placeholder={
+                  currentLang === 'tr'
+                    ? 'Örn: Google Ads ve Meta Ads ile satışlarımızı artırmak istiyoruz...'
+                    : currentLang === 'en'
+                    ? 'E.g. We want to scale Google Ads in this region and improve ROAS...'
+                    : 'Z.B. Wir möchten unsere Google Ads Kampagnen in dieser Region optimieren und den ROAS steigern...'
+                }
                 className="w-full px-4 py-3 rounded-xl bg-slate-900/90 border border-slate-700 text-white placeholder-slate-500 focus:outline-none focus:border-blue-500 text-sm transition-colors resize-none"
               />
             </div>
@@ -1702,7 +1714,7 @@ export default function CityPage({ params }) {
               {loading ? (
                 <>
                   <Loader2 className="w-5 h-5 animate-spin" />
-                  <span>Wird gesendet...</span>
+                  <span>{currentLang === 'tr' ? 'Gönderiliyor...' : currentLang === 'en' ? 'Sending...' : 'Wird gesendet...'}</span>
                 </>
               ) : (
                 <>

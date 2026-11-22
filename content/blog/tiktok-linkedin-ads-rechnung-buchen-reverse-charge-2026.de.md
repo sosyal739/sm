@@ -2,7 +2,7 @@
 slug: "tiktok-linkedin-ads-rechnung-buchen-reverse-charge-2026"
 lang: "de"
 title: "TikTok & LinkedIn Ads Rechnung buchen: SKR03/SKR04 2026"
-excerpt: "TikTok Ads & LinkedIn Ads Rechnungen aus Irland verbuchen: SKR03 Konto 3123 & SKR04 Konto 5923, § 13b UStG Reverse-Charge, UStVA Kennziffer 84/67 2026."
+excerpt: "TikTok Ads & LinkedIn Ads Rechnungen aus Irland richtig verbuchen: Alle SKR03/SKR04 Buchungssätze, §13b UStG Reverse-Charge, UStVA-Felder & DATEV 2026."
 category: "Steuern & Finanzen"
 date: "2026-11-11"
 readTime: "9"

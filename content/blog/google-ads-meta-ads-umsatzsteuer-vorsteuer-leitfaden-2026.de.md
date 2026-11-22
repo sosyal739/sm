@@ -4,9 +4,9 @@ slug: "google-ads-meta-ads-umsatzsteuer-vorsteuer-leitfaden-2026"
 
 lang: "de"
 
-title: "Google & Meta Ads §13b UStVA: Kz. 84/67 + Rechner"
+title: "Google & Meta Ads ohne MwSt.? Reverse-Charge §13b UStG"
 
-excerpt: "Warum steht 0 % MwSt. auf Ihrer Google & Meta Ads Rechnung? §13b UStG Reverse-Charge Leitfaden, UStVA-Kennziffern, DATEV-Checkliste & PDF-Abruf 2026."
+excerpt: "0 % MwSt. auf Google, Facebook & Meta Ads Rechnungen erklärt: §13b UStG Reverse-Charge, UStVA-Kennziffern, Vorsteuerabzug & interaktiver Rechner 2026."
 
 category: "Steuern & Buchhaltung"
 

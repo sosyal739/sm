@@ -1,8 +1,8 @@
 ---
 slug: "google-ads-rechnung-buchen-reverse-charge-2026"
 lang: "de"
-title: "Google Ads Rechnung buchen: SKR03/04 + §13b Rechner"
-excerpt: "Google Ads Rechnung aus Irland fehlerfrei verbuchen: Schritt-für-Schritt-Anleitung für SKR03 & SKR04, §13b UStG Reverse-Charge, DATEV & PDF-Download 2026."
+title: "Google Ads Rechnung buchen 2026: SKR03/SKR04 & §13b UStG"
+excerpt: "Google Ads Rechnung aus Irland buchen: SKR03 & SKR04 Leitfaden, §13b UStG Reverse-Charge, DATEV-Tipps & kostenloser Buchungssatz-Rechner 2026."
 category: "Steuern & Finanzen"
 date: "2026-09-17"
 readTime: "9"
