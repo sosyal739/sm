@@ -862,15 +862,15 @@ export default function ServiceDetailClient({ initialService, initialLang }) {
     'yorum-yonetimi': {
       title: lang === 'de' ? 'Bewertungsmanagement' : lang === 'en' ? 'Review Management' : 'Olumsuz Yorum Yönetimi',
       subtitle: lang === 'de'
-        ? '4.9★ Google Reputation aufbauen — unfaire Bewertungen rechtssicher entfernen.'
+        ? '4.9★ Google Reputation aufbauen — unberechtigte Bewertungen prüfen und die Entfernung beantragen.'
         : lang === 'en'
-        ? 'Build a 4.9★ Google reputation — legally remove unfair reviews.'
-        : '4.9★ Google itibarı oluşturun — haksız olumsuz yorumları yasal güvenceyle kaldırın.',
+        ? 'Build a 4.9★ Google reputation — review unfair reviews and request their removal.'
+        : '4.9★ Google itibarı oluşturun — haksız yorumları inceliyor, kaldırılması için başvuruyoruz.',
       description: lang === 'de'
-        ? 'Wir schützen Ihren guten Ruf: Mit rechtssicherer Entfernung von unfairen Google- und Trustpilot-Bewertungen sowie automatisierten Bewertungskampagnen steigern wir Ihre Durchschnittsbewertung und Ihren Kundenstrom.'
+        ? 'Wir schützen Ihren guten Ruf: Wir prüfen unfaire Google- und Trustpilot-Bewertungen auf Richtlinienverstöße, beantragen deren Entfernung und steigern mit regelkonformen Bewertungskampagnen Ihre Durchschnittsbewertung und Ihren Kundenstrom.'
         : lang === 'en'
-        ? 'Protect and amplify your brand reputation: With legally compliant removal of fake Google/Trustpilot reviews and automated review generation funnels, we elevate your rating and local customer trust.'
-        : 'İtibarınızı koruyor ve güçlendiriyoruz: Google Maps ve Trustpilot üzerindeki haksız/sahte yorumların yasal güvenceyle kaldırılması ve otomatik yorum toplama sistemleriyle puanınızı zirveye taşıyoruz.',
+        ? 'Protect and amplify your brand reputation: we check unfair Google/Trustpilot reviews for policy violations, request their removal, and raise your rating with compliant review campaigns.'
+        : 'İtibarınızı koruyor ve güçlendiriyoruz: Google Maps ve Trustpilot üzerindeki haksız/sahte yorumları kural ihlali açısından inceliyor, kaldırılması için başvuruyor ve kurallara uygun yorum toplama kampanyalarıyla puanınızı yükseltiyoruz.',
       badge: lang === 'de' ? 'Reputationsmanagement-Experte' : lang === 'en' ? 'Reputation Management Expert' : 'İtibar Yönetimi Uzmanı',
       primaryColor: '#EA4335',
       secondaryColor: '#FBBC04',
@@ -899,7 +899,7 @@ export default function ServiceDetailClient({ initialService, initialLang }) {
         {
           title: lang === 'de' ? 'Trustpilot Management' : lang === 'en' ? 'Trustpilot Management' : 'Trustpilot Yönetimi',
           subtitle: lang === 'de' ? 'E-Commerce Reputation' : lang === 'en' ? 'E-Commerce Reputation' : 'E-Ticaret İtibarı',
-          desc: lang === 'de' ? 'Wir entfernen unfaire Bewertungen auf Trustpilot und verwalten Ihre Reputation.' : lang === 'en' ? 'We remove unfair reviews on Trustpilot and manage your reputation.' : 'Trustpilot\'ta haksız yorumları kaldırıyor, itibarınızı yönetiyoruz.',
+          desc: lang === 'de' ? 'Wir beantragen die Entfernung unfairer Bewertungen auf Trustpilot und verwalten Ihre Reputation.' : lang === 'en' ? 'We request the removal of unfair reviews on Trustpilot and manage your reputation.' : 'Trustpilot\'ta haksız yorumların kaldırılması için başvuruyor, itibarınızı yönetiyoruz.',
           icon: Star,
           items: lang === 'de' ? ['Bewertungsanalyse', 'Entfernungsantrag', 'Antwortstrategie', 'Bewertungsverbesserung'] : lang === 'en' ? ['Review analysis', 'Removal request', 'Response strategy', 'Rating improvement'] : ['Yorum analizi', 'Kaldırma başvurusu', 'Yanıt stratejisi', 'Puan iyileştirme']
         },
@@ -942,7 +942,7 @@ export default function ServiceDetailClient({ initialService, initialLang }) {
         { title: lang === 'de' ? 'Schnelle Ergebnisse' : lang === 'en' ? 'Fast Results' : 'Hızlı Sonuç', desc: lang === 'de' ? 'Erste Aktionen innerhalb von 24-72 Stunden' : lang === 'en' ? 'First actions within 24-72 hours' : '24-72 saat içinde ilk aksiyonlar' },
         { title: lang === 'de' ? 'Rechtlicher Prozess' : lang === 'en' ? 'Legal Process' : 'Yasal Süreç', desc: lang === 'de' ? 'Rechtliche Unterstützung bei Bedarf' : lang === 'en' ? 'Legal support when needed' : 'Gerektiğinde hukuki destek' },
         { title: lang === 'de' ? 'Vertraulichkeit' : lang === 'en' ? 'Confidentiality' : 'Gizlilik', desc: lang === 'de' ? 'Alle Prozesse werden vertraulich durchgeführt' : lang === 'en' ? 'All processes are conducted confidentially' : 'Tüm süreçler gizli yürütülür' },
-        { title: lang === 'de' ? 'Garantie' : lang === 'en' ? 'Guarantee' : 'Garanti', desc: lang === 'de' ? 'Rückerstattung bei Misserfolg' : lang === 'en' ? 'Refund if unsuccessful' : 'Sonuç alınamazsa ücret iadesi' }
+        { title: lang === 'de' ? 'Ehrliche Erwartungen' : lang === 'en' ? 'Honest Expectations' : 'Dürüst Beklenti', desc: lang === 'de' ? 'Keine Garantie auf Löschung, die Entscheidung trifft die Plattform' : lang === 'en' ? 'No guarantee of removal; the platform decides' : 'Kaldırma garantisi yok, karar platforma aittir' }
       ],
       faq: [
         { 
@@ -955,7 +955,7 @@ export default function ServiceDetailClient({ initialService, initialLang }) {
         },
         { 
           q: lang === 'de' ? 'Was passiert, wenn die Bewertung nicht entfernt wird?' : lang === 'en' ? 'What happens if the review is not removed?' : 'Yorum kaldırılmazsa ne olur?',
-          a: lang === 'de' ? 'Wenn wir die Bewertung nicht entfernen können, helfen wir Ihnen mit alternativen Strategien: professionelle Antwort schreiben, positive Bewertungen fördern oder rechtliche Schritte einleiten. Bei Misserfolg bieten wir je nach Vereinbarung eine Rückerstattung an.' : lang === 'en' ? 'If we can\'t remove the review, we help you with alternative strategies: writing a professional response, encouraging positive reviews, or initiating legal action. In case of failure, we offer a refund depending on the agreement.' : 'Yorumu kaldıramazsak alternatif stratejilerle yardımcı oluyoruz: profesyonel yanıt yazma, olumlu yorum teşviki veya hukuki süreç başlatma. Başarısızlık durumunda anlaşmaya göre ücret iadesi sunuyoruz.'
+          a: lang === 'de' ? 'Wenn wir die Bewertung nicht entfernen können, helfen wir Ihnen mit alternativen Strategien: professionelle Antwort schreiben, positive Bewertungen fördern oder rechtliche Schritte einleiten. Eine Löschung können wir nicht garantieren, die Entscheidung trifft die Plattform.' : lang === 'en' ? 'If we can\'t remove the review, we help you with alternative strategies: writing a professional response, encouraging positive reviews, or initiating legal action. We cannot guarantee removal; the platform makes the decision.' : 'Yorumu kaldıramazsak alternatif stratejilerle yardımcı oluyoruz: profesyonel yanıt yazma, olumlu yorum teşviki veya hukuki süreç başlatma. Kaldırmayı garanti edemeyiz, karar platforma aittir.'
         },
         { 
           q: lang === 'de' ? 'Ist der Service vertraulich?' : lang === 'en' ? 'Is the service confidential?' : 'Hizmet gizli mi?',
@@ -2393,7 +2393,7 @@ export default function ServiceDetailClient({ initialService, initialLang }) {
           'yorum-yonetimi': {
             badge: 'Google Business & Trustpilot Reputation Management',
             title: lang === 'de' ? <>Verifizierte Ergebnisse aus <span className="text-[#EA4335]">Bewertungs-</span> Projekten</> : lang === 'en' ? <>Verified Results from <span className="text-[#EA4335]">Review Management</span> Cases</> : <>Doğrulanmış <span className="text-[#EA4335]">İtibar & Yorum</span> Başarıları</>,
-            desc: lang === 'de' ? 'Rechtssichere Löschung unberechtigter 1-Stern-Bewertungen und automatisierte Generierung von 5-Sterne-Kundenstimmen.' : lang === 'en' ? 'Legally compliant removal of fake 1-star reviews and automated generation of verified 5-star customer feedback.' : 'Haksız 1 yıldızlı yorumların yasal olarak kaldırılması ve gerçek 5 yıldızlı müşteri yorumlarının artırılması.',
+            desc: lang === 'de' ? 'Entfernung unberechtigter 1-Stern-Bewertungen beantragen und regelkonform echte 5-Sterne-Kundenstimmen einholen.' : lang === 'en' ? 'Requesting the removal of unjustified 1-star reviews and collecting genuine 5-star customer feedback in line with platform rules.' : 'Haksız 1 yıldızlı yorumların kaldırılması için başvuru ve kurallara uygun gerçek 5 yıldızlı müşteri yorumları.',
             accentColor: '#EA4335',
             ctaTitle: lang === 'de' ? 'Möchten Sie Ihren Google-Schnitt auf 4.9★ anheben?' : lang === 'en' ? 'Want to elevate your Google rating to 4.9★?' : 'Google puanınızı 4.9★ seviyesine yükseltmek ister misiniz?',
             ctaDesc: lang === 'de' ? 'Wir prüfen Ihre negativen Bewertungen kostenlos auf Richtlinienverstöße und Erfolgsaussichten.' : lang === 'en' ? 'We audit your negative reviews for policy violations and removal feasibility for free.' : 'Olumsuz yorumlarınızı platform kuralları ve kaldırılabilirlik açısından ücretsiz inceliyoruz.',

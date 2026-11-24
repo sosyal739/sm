@@ -117,7 +117,7 @@ const serviceMeta = {
   'yorum-yonetimi': {
     de: {
       title: 'Bewertungsmanagement & Google Maps SEO | Salih Maral',
-      description: 'Löschung unberechtigter 1-Stern-Bewertungen auf Google Maps und Trustpilot. Schützen Sie Ihre digitale Unternehmensreputation.',
+      description: 'Entfernung unberechtigter 1-Stern-Bewertungen auf Google Maps und Trustpilot beantragen. Schützen Sie Ihre Unternehmensreputation.',
     },
     en: {
       title: 'Review & Online Reputation Management | Salih Maral',

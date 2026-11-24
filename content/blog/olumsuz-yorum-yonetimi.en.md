@@ -65,7 +65,7 @@ coverImage: "https://images.unsplash.com/photo-1588776814546-1ffcf47267a5?w=1200
 
         <div class="highlight-box success">
           <h4>✅ Time and Success Rate</h4>
-          <p>We get results in an average of 3-7 days. Our success rate is 95%+. If unsuccessful, we refund the fee.</p>
+          <p>Processing takes a few days to several weeks depending on the platform. We cannot guarantee removal; the platform decides. Genuine, factual criticism stays online, and we help you respond to it professionally.</p>
         </div>
 
         <h2>⭐ Building Positive Reputation</h2>

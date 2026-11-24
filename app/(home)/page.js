@@ -2532,7 +2532,7 @@ export default function Home({ initialLang = 'de' }) {
               {
                 slug: 'google-maps-local-seo-ranking-factors-2026',
                 title: lang === 'de' ? 'Google Maps SEO 2026: Top-Rankings im Local 3-Pack' : lang === 'en' ? 'Google Maps SEO 2026: Dominate the Local 3-Pack' : 'Google Haritalar SEO 2026: Local 3-Pack Zirvesi',
-                excerpt: lang === 'de' ? 'Lokale Rankings dominieren und gefälschte 1-Stern-Bewertungen rechtssicher entfernen.' : lang === 'en' ? 'Dominate regional searches and legally eliminate fake 1-star reviews.' : 'Bölgenizde 1. sıraya çıkma ve sahte 1 yıldızlı yorumları sildirme taktikleri.',
+                excerpt: lang === 'de' ? 'Lokale Rankings dominieren und gefälschte 1-Stern-Bewertungen melden.' : lang === 'en' ? 'Dominate regional searches and report fake 1-star reviews.' : 'Bölgenizde 1. sıraya çıkma ve sahte 1 yıldızlı yorumları sildirme taktikleri.',
                 category: 'SEO & GEO',
                 readTime: '15',
                 coverImage: 'https://images.unsplash.com/photo-1526778548025-fa2f459cd5c1?w=600&h=300&fit=crop&q=80',

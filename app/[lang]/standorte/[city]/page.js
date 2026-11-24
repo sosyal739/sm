@@ -614,7 +614,7 @@ const servicesList = [
       name: 'Google Bewertungsmanagement',
       desc: 'Entfernung unberechtigter 1-Stern-Rezensionen und Schutz Ihres guten Rufs.',
       badge: 'Reputationsschutz',
-      bullets: ['Rechtssichere Löschung von Fake-Bewertungen', 'Sicherung des 4.8+ Sterne Durchschnitts', 'Steigerung der Conversion-Rate um bis zu 27%']
+      bullets: ['Entfernung von Fake-Bewertungen beantragen', 'Sicherung des 4.8+ Sterne Durchschnitts', 'Steigerung der Conversion-Rate um bis zu 27%']
     },
     tr: {
       name: 'Google Yorum Yönetimi & İtibar',

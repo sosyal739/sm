@@ -83,7 +83,7 @@ coverImage: "https://images.unsplash.com/photo-1472851294608-062f824d29cc?w=1200
   <ul>
     <li><strong><a href="/de/dienstleistungen/google-ads">Google Ads Betreuung zum Fixpreis:</a></strong> Radius-gezielte Suchanzeigen für planbare Neukunden und Anrufe ab Tag 1.</li>
     <li><strong><a href="/de/dienstleistungen/seo">Local SEO &amp; Google Maps Optimierung:</a></strong> Dauerhafte Top-3-Platzierung im Google Local Pack für Ihre Stadt.</li>
-    <li><strong><a href="/de/dienstleistungen/bewertungsmanagement">Bewertungsmanagement &amp; Reputationsschutz:</a></strong> Rechtssichere Löschung unberechtigter 1-Stern-Bewertungen und Aufbau echter 5-Sterne-Rezensionen.</li>
+    <li><strong><a href="/de/dienstleistungen/bewertungsmanagement">Bewertungsmanagement &amp; Reputationsschutz:</a></strong> Antrag auf Entfernung unberechtigter 1-Stern-Bewertungen und Aufbau echter 5-Sterne-Rezensionen.</li>
     <li><strong><a href="/de/dienstleistungen/server-side-tracking">Tracking- &amp; Werbekonto-Setup:</a></strong> Lückenlose Einrichtung von Google Ads, GA4 E-Commerce und Meta CAPI.</li>
   </ul>
   <p style="margin-bottom: 0;">Entdecken Sie Antworten auf häufige Fragen in unserem <a href="/#faq"><strong>Google Ads FAQ-Bereich</strong></a> oder buchen Sie direkt eine kostenlose 30-minütige Potenzialanalyse mit Salih Maral.</p>

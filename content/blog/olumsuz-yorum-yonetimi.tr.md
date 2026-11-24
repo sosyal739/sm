@@ -65,7 +65,7 @@ coverImage: "https://images.unsplash.com/photo-1588776814546-1ffcf47267a5?w=1200
 
         <div class="highlight-box success">
           <h4>✅ Süre ve Başarı Oranı</h4>
-          <p>Ortalama 3-7 gün içinde sonuç alıyoruz. Başarı oranımız %95+. Başarısız olursak ücret iadesi yapıyoruz.</p>
+          <p>İşlem süresi platforma göre birkaç günden birkaç haftaya kadar değişir. Kaldırmayı garanti edemeyiz, karar platforma aittir. Gerçek ve olgusal eleştiriler kalır; bunlara profesyonelce yanıt vermenize yardımcı oluruz.</p>
         </div>
 
         <h2>⭐ Pozitif İtibar Oluşturma</h2>
