@@ -1469,7 +1469,7 @@ export default function Home({ initialLang = 'de' }) {
                 {/* Floating Top-Left Badge (Google Certified) */}
                 <div className="flex absolute -top-3 -left-2 sm:-top-4 sm:-left-4 z-20 bg-white/95 backdrop-blur-md border border-slate-200/90 rounded-2xl px-3 py-2 sm:px-4 sm:py-2.5 shadow-xl items-center gap-2 sm:gap-2.5 hover:scale-105 transition-transform duration-300 animate-badge-float1 scale-90 sm:scale-100 origin-top-left">
                   <div className="w-8 h-8 rounded-xl bg-blue-50 border border-blue-100 flex items-center justify-center p-1.5 shadow-xs">
-                    <img src="https://upload.wikimedia.org/wikipedia/commons/c/c7/Google_Ads_logo.svg" alt="Google Ads" className="w-full h-full object-contain" width="24" height="24" loading="lazy" />
+                    <img src="/logos/google-ads.svg" alt="Google Ads" className="w-full h-full object-contain" width="24" height="24" loading="lazy" />
                   </div>
                   <div>
                     <div className="flex items-center gap-1">
@@ -1509,7 +1509,7 @@ export default function Home({ initialLang = 'de' }) {
                     >
                       <div className="flex items-center space-x-3">
                         <img
-                          src="https://upload.wikimedia.org/wikipedia/commons/2/2f/Google_2015_logo.svg"
+                          src="/logos/google.svg"
                           alt="Google"
                           className="h-5 w-auto"
                           width="64"
@@ -1797,13 +1797,13 @@ export default function Home({ initialLang = 'de' }) {
                             }}
                           >
                             {service.icon === 'google-ads' && (
-                              <img src="https://upload.wikimedia.org/wikipedia/commons/c/c7/Google_Ads_logo.svg" alt="Google Ads" className="w-8 h-8 object-contain" width="32" height="32" loading="lazy" />
+                              <img src="/logos/google-ads.svg" alt="Google Ads" className="w-8 h-8 object-contain" width="32" height="32" loading="lazy" />
                             )}
                             {service.icon === 'meta' && (
-                              <img src="https://upload.wikimedia.org/wikipedia/commons/7/7b/Meta_Platforms_Inc._logo.svg" alt="Meta" className="w-8 h-6 object-contain" width="32" height="24" loading="lazy" />
+                              <img src="/logos/meta.svg" alt="Meta" className="w-8 h-6 object-contain" width="32" height="24" loading="lazy" />
                             )}
                             {service.icon === 'tiktok' && (
-                              <img src="https://upload.wikimedia.org/wikipedia/en/a/a9/TikTok_logo.svg" alt="TikTok" className="w-8 h-8 object-contain" width="32" height="32" loading="lazy" />
+                              <img src="/logos/tiktok.svg" alt="TikTok" className="w-8 h-8 object-contain" width="32" height="32" loading="lazy" />
                             )}
                             {service.icon === 'x' && (
                               <svg className="w-7 h-7" viewBox="0 0 24 24" fill="currentColor"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
@@ -1818,7 +1818,7 @@ export default function Home({ initialLang = 'de' }) {
                               <svg className="w-7 h-7" viewBox="0 0 24 24" fill="#FBBC04" stroke="#EA4335" strokeWidth="1.5"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
                             )}
                             {service.icon === 'youtube' && (
-                              <img src="https://upload.wikimedia.org/wikipedia/commons/0/09/YouTube_full-color_icon_%282017%29.svg" alt="YouTube" className="w-8 h-8 object-contain" width="32" height="32" loading="lazy" />
+                              <img src="/logos/youtube.svg" alt="YouTube" className="w-8 h-8 object-contain" width="32" height="32" loading="lazy" />
                             )}
                           </div>
 
