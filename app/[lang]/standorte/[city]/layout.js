@@ -1,4 +1,4 @@
-import { getCityMeta, getCityGrowth } from '@/lib/cityGrowth'
+import { getCityMeta, getCityGrowth, getCityName } from '@/lib/cityGrowth'
 
 export async function generateMetadata({ params }) {
   const { lang = 'de', city = 'frankfurt' } = await params
@@ -37,7 +37,7 @@ export default async function CityLayout({ children, params }) {
   const currentLang = ['de', 'tr', 'en'].includes(lang) ? lang : 'de'
   const meta = getCityMeta(city, currentLang)
   
-  const cityName = city.charAt(0).toUpperCase() + city.slice(1)
+  const cityName = getCityName(city, currentLang)
   const pageUrl = `https://salihmaral.de/${currentLang}/standorte/${city}`
 
   const faqData = currentLang === 'tr' ? [
@@ -115,7 +115,7 @@ export default async function CityLayout({ children, params }) {
             '@type': 'ListItem',
             position: 1,
             name: currentLang === 'tr' ? 'Ana Sayfa' : currentLang === 'en' ? 'Home' : 'Startseite',
-            item: `https://salihmaral.de/${currentLang}`
+            item: currentLang === 'de' ? 'https://salihmaral.de/' : `https://salihmaral.de/${currentLang}`
           },
           {
             '@type': 'ListItem',

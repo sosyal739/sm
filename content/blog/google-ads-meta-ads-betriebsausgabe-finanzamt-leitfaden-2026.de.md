@@ -2,7 +2,7 @@
 slug: "google-ads-meta-ads-betriebsausgabe-finanzamt-leitfaden-2026"
 lang: "de"
 title: "Google & Meta Ads absetzen 2026: Betriebsausgabe (§4 EStG)"
-excerpt: "Google Ads & Meta Werbekosten beim Finanzamt absetzen: 100 % Betriebsausgabe (§ 4 EStG), Reverse Charge § 13b UStG, Vorsteuer & Rechnungs-Download 2026."
+excerpt: "Google & Meta Ads rechtssicher als Betriebsausgabe absetzen: § 4 EStG, SKR03/SKR04 Buchung, § 13b UStG & Finanzamt-Checkliste gegen Prüfungsfehler."
 category: "Steuern & Buchhaltung"
 date: "2026-10-12"
 readTime: "11"
@@ -159,6 +159,7 @@ coverImage: "https://images.unsplash.com/photo-1556742111-a301076d9d18?w=1200&h=
     <li><a href="/de/standorte/koeln">Google Ads Agentur Köln: Kölner CPC-Benchmarks &amp; Fixpreis</a></li>
     <li><a href="/blog/google-ads-agentur-preise-kosten-deutschland-2026">Google Ads Kosten & Agenturpreise im Vergleich</a></li>
   </ul>
+  <p class="mt-3 text-sm">Regionale Betreuung vor Ort: <a href="/de/standorte/frankfurt">Google Ads Agentur Frankfurt am Main</a>, <a href="/de/standorte/nuernberg">Google Ads Agentur Nürnberg</a>, <a href="/de/standorte/muenster">Google Ads Agentur Münster</a> und <a href="/de/standorte/wiesbaden">Google Ads Agentur Wiesbaden</a>.</p>
 </div>
 
 
